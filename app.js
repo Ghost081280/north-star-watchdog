@@ -121,14 +121,16 @@ function renderBriefing() {
     const content = document.getElementById('briefing-content');
     const time = document.getElementById('briefing-time');
     
+    if (!content) return;
+    
     if (!DATA.stats?.briefing) {
-        content.innerHTML = '<p>AI briefing loading...</p>';
+        content.textContent = 'AI briefing loading...';
         return;
     }
     
-    content.innerHTML = `<p>${DATA.stats.briefing}</p>`;
+    content.textContent = DATA.stats.briefing;
     
-    if (DATA.stats.lastUpdated) {
+    if (DATA.stats.lastUpdated && time) {
         const date = new Date(DATA.stats.lastUpdated);
         time.textContent = date.toLocaleString();
     }
