@@ -322,9 +322,13 @@ async function performSearch(query) {
         existingAnalysis.remove();
     }
     
-    // Scroll to results
+    // Scroll to results with offset for sticky header
     setTimeout(() => {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+        const searchHeight = document.querySelector('.search-section')?.offsetHeight || 0;
+        const offset = headerHeight + searchHeight + 20;
+        const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: sectionTop, behavior: 'smooth' });
     }, 100);
     
     currentResults = { grants: [], contracts: [], nonprofits: [], campaigns: [], local: [] };
@@ -467,9 +471,13 @@ async function doDeepResearch() {
     const deepResearch = document.getElementById('deep-research');
     deepResearch.style.display = 'block';
     
-    // Scroll to deep research
+    // Scroll to deep research with offset for sticky header
     setTimeout(() => {
-        deepResearch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+        const searchHeight = document.querySelector('.search-section')?.offsetHeight || 0;
+        const offset = headerHeight + searchHeight + 20;
+        const sectionTop = deepResearch.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: sectionTop, behavior: 'smooth' });
     }, 100);
     
     const q = encodeURIComponent(currentQuery + ' Minnesota fraud');
