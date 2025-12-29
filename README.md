@@ -1,12 +1,28 @@
 # ⭐ North Star Watchdog
 
-## Minnesota's $9B+ Fraud Scandal — AI-Powered Investigation Service
+## Minnesota's $9 Billion Fraud Scandal — AI-Powered Investigation Service
 
 [![Live Site](https://img.shields.io/badge/🔴_LIVE-Visit_Site-gold?style=for-the-badge)](https://ghost081280.github.io/north-star-watchdog/)
 [![Cost](https://img.shields.io/badge/💰-100%25_FREE-22c55e?style=for-the-badge)](#)
 [![No Login](https://img.shields.io/badge/🔓-No_Login_Required-3b82f6?style=for-the-badge)](#)
-[![AI Powered](https://img.shields.io/badge/🤖-AI_Powered-a855f7?style=for-the-badge)](#)
-[![Auto Updates](https://img.shields.io/badge/🔄-Auto_Updating-ef4444?style=for-the-badge)](#)
+[![AI Powered](https://img.shields.io/badge/🤖-AI_Managed-a855f7?style=for-the-badge)](#)
+[![Auto Updates](https://img.shields.io/badge/🔄-Updates_Hourly-ef4444?style=for-the-badge)](#)
+
+---
+
+## 🤖 This Entire Site is Managed by AI
+
+**Heads up:** This site runs on autopilot. Every hour, AI:
+- Scans the news for Minnesota fraud stories
+- Decides what's trending and what's breaking
+- Adds new key figures when they appear in headlines
+- Generates investigation angles and story ideas
+- Writes the daily briefing you see on the homepage
+- Updates the stats and search suggestions
+
+**We built it. AI runs it.** We have no idea what it's going to surface next — and that's kind of the point. The AI follows the story wherever it goes.
+
+All content is AI-generated from public news sources. Always verify information independently.
 
 ---
 
