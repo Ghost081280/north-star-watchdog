@@ -1,0 +1,91 @@
+# ============================================
+# NORTH STAR WATCHDOG V4 - AUTONOMOUS AI UPDATER
+# 
+# Runs every hour:
+# 1. Scrapes Google News RSS
+# 2. Sends to Groq AI for analysis
+# 3. AI updates ALL site sections:
+#    - Breaking news
+#    - Trending topics
+#    - Active investigations
+#    - Key figures
+#    - Story ideas
+#    - Search terms to monitor
+# 
+# SETUP REQUIRED:
+# 1. Get FREE Groq API key: https://console.groq.com/keys
+# 2. Add to GitHub Secrets: Settings → Secrets → Actions
+#    Name: GROQ_API_KEY
+#    Value: gsk_your_key_here
+#
+# COST: 100% FREE (Groq free tier = 14,400 requests/day)
+# ============================================
+
+name: AI Site Updater
+
+on:
+  schedule:
+    # Run every hour at minute 7
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    # Manual trigger for testing
+
+jobs:
+  ai-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Run AI Updater
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/ai-updater.js
+      
+      - name: Check for changes
+        id: check
+        run: |
+          git add data/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected, will commit"
+          fi
+      
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "AI Updater Bot"
+          git config user.email "ai-bot@northstarwatchdog.com"
+          
+          # Create commit message with summary
+          BREAKING=$(cat data/news.json | grep -o '"title":"[^"]*"' | head -1 | cut -d'"' -f4 | cut -c1-50)
+          
+          git commit -m "🤖 AI Update: ${BREAKING}..." -m "Updated: news, trending, investigations, figures" -m "Time: $(TZ='America/Chicago' date +'%Y-%m-%d %H:%M CST')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        run: |
+          echo "## 🌟 North Star Watchdog AI Update" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Time:** $(TZ='America/Chicago' date)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/news.json ]; then
+            echo "### 📰 Breaking News" >> $GITHUB_STEP_SUMMARY
+            cat data/news.json | grep -o '"title":"[^"]*"' | head -1 >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "### 📁 Files Updated" >> $GITHUB_STEP_SUMMARY
+          ls -la data/ >> $GITHUB_STEP_SUMMARY
