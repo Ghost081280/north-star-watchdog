@@ -88,32 +88,35 @@
             </div>
         </div>
         
-        <!-- Deep Research Panel - THE NEW APPROACH -->
+        <!-- Deep Research Panel - ACTUALLY SEARCHES THE WEB -->
         <div class="research-panel" id="research-panel" style="display: none;">
             <div class="research-header">
-                <h3>🔍 Deep Research & AI Analysis</h3>
-                <p>We found your database results. Now dig deeper:</p>
+                <h3>🔍 Deep Research Results</h3>
+                <p>We searched news, DOJ records, and court filings for you:</p>
             </div>
             
+            <!-- Actual Web Search Results -->
             <div class="research-section">
-                <h4>📰 Search News & Court Records</h4>
-                <p class="research-desc">Click to search trusted sources for more information:</p>
-                <div class="research-links" id="research-links"></div>
+                <h4>📰 News & Articles Found</h4>
+                <div id="web-research-results">
+                    <div class="research-loading"><div class="spinner"></div><p>Searching...</p></div>
+                </div>
             </div>
             
+            <!-- AI Analysis Section -->
             <div class="research-section">
-                <h4>🤖 Analyze with Your Favorite AI</h4>
-                <p class="research-desc">Copy your research summary, then open any AI to analyze:</p>
+                <h4>🤖 Take to Your AI for Analysis</h4>
+                <p class="research-desc">We compiled your database results + news findings. Copy and paste into any AI:</p>
                 
                 <div class="ai-prompt-box">
-                    <label>Your Research Summary (copy this):</label>
-                    <textarea id="ai-prompt" readonly rows="6"></textarea>
+                    <label>📋 Your Complete Research Summary:</label>
+                    <textarea id="ai-prompt" readonly rows="12"></textarea>
                     <button id="copy-prompt-btn" class="btn-copy" onclick="copyPrompt()">📋 Copy to Clipboard</button>
                 </div>
                 
-                <p class="research-desc">Then open your preferred AI:</p>
+                <p class="research-desc">Open your preferred AI and paste:</p>
                 <div class="ai-links" id="ai-links"></div>
-                <p class="ai-note">All free to use! Just paste your research summary and ask questions.</p>
+                <p class="ai-note">💡 All free! Just paste your research and ask follow-up questions.</p>
             </div>
         </div>
         
