@@ -73,20 +73,34 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 Get deep research
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                Take to your AI for further analysis
+                AI analyzes for you
             </div>
             <h2 class="hero-title">Minnesota's <span class="highlight">$9 Billion+</span> Fraud Scandal</h2>
-            <p class="hero-subtitle">We search <strong>government databases</strong> and compile <strong>news, videos, and court records</strong> for you. Then take your research to ChatGPT, Claude, Gemini, or Grok for deeper analysis.</p>
+            <p class="hero-subtitle">We search <strong>government databases</strong>, compile <strong>news, videos, and court records</strong>, and <strong>analyze everything with AI</strong> — then you can continue with your favorite AI for deeper investigation.</p>
             <div class="hero-stats">
-                <div class="stat"><span class="stat-value">93+</span><span class="stat-label">Charged</span></div>
-                <div class="stat"><span class="stat-value">57+</span><span class="stat-label">Convicted</span></div>
-                <div class="stat"><span class="stat-value">$9B+</span><span class="stat-label">Alleged</span></div>
+                <div class="stat"><span class="stat-value" id="stat-charged">93+</span><span class="stat-label">Charged</span></div>
+                <div class="stat"><span class="stat-value" id="stat-convicted">57+</span><span class="stat-label">Convicted</span></div>
+                <div class="stat"><span class="stat-value" id="stat-alleged">$9B+</span><span class="stat-label">Alleged</span></div>
                 <div class="stat"><span class="stat-value" id="stat-investigations">4</span><span class="stat-label">Cases</span></div>
             </div>
             <p class="last-updated">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                 Last updated: <span id="last-updated-time">Loading...</span>
             </p>
+        </div>
+    </section>
+
+    <!-- AI Daily Briefing -->
+    <section class="briefing-section" id="briefing-section">
+        <div class="briefing-container">
+            <div class="briefing-header">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><path d="M12 8v8M8 12h8"/><circle cx="12" cy="20" r="2"/></svg>
+                <h3>AI Daily Briefing</h3>
+                <span class="briefing-time" id="briefing-time"></span>
+            </div>
+            <div class="briefing-content" id="briefing-content">
+                <p class="loading-text">Loading AI briefing...</p>
+            </div>
         </div>
     </section>
 
@@ -220,7 +234,7 @@
         <section class="section" id="stories-section">
             <div class="section-header">
                 <h2>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/></svg>
                     Investigate This
                     <span class="auto-badge">AI-Generated</span>
                 </h2>
@@ -311,15 +325,15 @@
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                                Get news & court records
-                            </li>
-                            <li>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                                Download results as CSV
+                                Get news, videos & court records
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
-                                Analyze with any AI
+                                AI analyzes everything for you
+                            </li>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                                Export & continue in your AI
                             </li>
                         </ul>
                     </div>
@@ -330,7 +344,9 @@
                             <li><a href="https://usaspending.gov" target="_blank" rel="noopener">USASpending.gov</a></li>
                             <li><a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofits</a></li>
                             <li><a href="https://www.fec.gov" target="_blank" rel="noopener">FEC.gov</a></li>
-                            <li><a href="https://news.google.com" target="_blank" rel="noopener">Google News</a></li>
+                            <li><a href="https://news.google.com" target="_blank" rel="noopener">Google News RSS</a></li>
+                            <li><a href="https://www.courtlistener.com" target="_blank" rel="noopener">Court Listener</a></li>
+                            <li><a href="https://www.justice.gov/usao-mn" target="_blank" rel="noopener">DOJ Minnesota</a></li>
                         </ul>
                     </div>
                     
@@ -351,7 +367,14 @@
             </div>
             
             <div class="footer-bottom">
-                <p class="disclaimer"><strong>Disclaimer:</strong> All individuals are presumed innocent until proven guilty. Verify all information independently.</p>
+                <p class="ai-disclaimer"><strong>AI-Curated Content:</strong> This site is managed and updated hourly by AI. All content, trending topics, and analysis are AI-generated. Always verify information independently.</p>
+                <p class="disclaimer"><strong>Legal Disclaimer:</strong> All individuals are presumed innocent until proven guilty. This is a research tool, not legal advice.</p>
+                <div class="footer-actions">
+                    <a href="https://x.com/intent/tweet?text=@Ghost081280%20Please%20add%20coverage%20for%20my%20state:%20" target="_blank" rel="noopener" class="suggest-state-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Suggest a State
+                    </a>
+                </div>
                 <p class="copyright">© 2025 North Star Watchdog | MIT License | Built by <a href="https://x.com/Ghost081280" target="_blank" rel="noopener">@Ghost081280</a></p>
             </div>
         </div>
