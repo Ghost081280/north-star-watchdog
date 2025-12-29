@@ -132,9 +132,28 @@ function renderBriefing() {
     
     if (DATA.stats.lastUpdated && time) {
         const date = new Date(DATA.stats.lastUpdated);
-        time.textContent = date.toLocaleString();
+        time.textContent = 'Updated: ' + date.toLocaleString();
     }
 }
+
+function openBriefing() {
+    document.getElementById('briefing-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeBriefing() {
+    document.getElementById('briefing-modal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal on escape key or click outside
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeBriefing();
+});
+
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('briefing-modal')) closeBriefing();
+});
 
 function renderBreaking() {
     if (!DATA.news?.breaking) return;
