@@ -440,3 +440,135 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
         justify-content: center;
     }
 }
+
+/* ============================================
+   WEB RESEARCH RESULTS
+   ============================================ */
+
+.research-loading {
+    text-align: center;
+    padding: 30px;
+}
+
+.research-loading p {
+    color: var(--text2);
+    margin-top: 10px;
+}
+
+.web-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.web-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.web-result-card {
+    display: block;
+    padding: 14px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.web-result-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    background: var(--bg4);
+}
+
+.web-result-source {
+    font-size: 10px;
+    color: var(--gold);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.web-result-title {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.web-result-date {
+    font-size: 10px;
+    color: var(--text3);
+    font-family: var(--mono);
+}
+
+.no-web-results {
+    color: var(--text2);
+    margin-bottom: 12px;
+}
+
+.more-search-links {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+}
+
+.more-search-links p {
+    color: var(--text2);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.manual-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.manual-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background: var(--bg4);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 11px;
+    transition: all 0.2s;
+}
+
+.manual-link:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+/* Larger AI prompt box */
+.ai-prompt-box textarea {
+    min-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .web-results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .manual-links {
+        flex-direction: column;
+    }
+    
+    .manual-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
