@@ -1,10 +1,10 @@
 /* ============================================
-   NORTH STAR WATCHDOG V5 - NO API KEYS NEEDED
+   NORTH STAR WATCHDOG V5 - DEEP RESEARCH
    
    - Site auto-updates hourly via AI (GitHub Actions)
-   - User searches get web research links
-   - "Take to Your AI" - opens ChatGPT/Claude/Gemini/Grok
-   - Zero friction, zero API keys for users
+   - User searches get REAL web research
+   - Shows actual news/articles found
+   - Then gives prompt for their AI
    ============================================ */
 
 const CONFIG = {
@@ -15,7 +15,7 @@ const CONFIG = {
     FEC_KEY: 'bhv66hmghpNdcPqd82WMszdJhspXQDKhoqeteL1U'
 };
 
-// AI chat URLs - user picks their favorite
+// AI chat URLs
 const AI_CHATS = {
     chatgpt: { name: 'ChatGPT', url: 'https://chat.openai.com/', icon: '🤖' },
     claude: { name: 'Claude', url: 'https://claude.ai/', icon: '🧠' },
@@ -24,28 +24,17 @@ const AI_CHATS = {
     perplexity: { name: 'Perplexity', url: 'https://perplexity.ai/', icon: '🔍' }
 };
 
-// Deep research sources
-const RESEARCH_SOURCES = [
-    { name: 'DOJ Minnesota', url: 'https://www.google.com/search?q=site:justice.gov/usao-mn+', icon: '⚖️' },
-    { name: 'Google News', url: 'https://news.google.com/search?q=', icon: '📰' },
-    { name: 'Court Listener', url: 'https://www.courtlistener.com/?q=', icon: '🏛️' },
-    { name: 'MPR News', url: 'https://www.google.com/search?q=site:mprnews.org+', icon: '📻' },
-    { name: 'Star Tribune', url: 'https://www.google.com/search?q=site:startribune.com+', icon: '📰' },
-    { name: 'FOX 9', url: 'https://www.google.com/search?q=site:fox9.com+', icon: '📺' },
-    { name: 'KSTP', url: 'https://www.google.com/search?q=site:kstp.com+', icon: '📺' },
-    { name: 'House Oversight', url: 'https://www.google.com/search?q=site:oversight.house.gov+minnesota+', icon: '🏛️' }
-];
-
 let DATA = { news: null, trending: null, investigations: null, figures: null, storyIdeas: null };
 let currentQuery = '';
 let currentResults = {};
+let webResearchResults = [];
 
 // ============================================
 // INITIALIZATION
 // ============================================
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('%c⭐ North Star Watchdog V5', 'color:#d4af37;font-size:20px;font-weight:bold');
-    console.log('%c🚀 Zero API Keys Needed!', 'color:#22c55e');
+    console.log('%c🔍 Deep Research Edition', 'color:#22c55e');
     
     await Promise.all([
         loadData('news'), loadData('trending'), loadData('investigations'),
@@ -72,7 +61,7 @@ async function loadData(filename, key = null) {
 }
 
 // ============================================
-// RENDER SECTIONS (same as V4)
+// RENDER SECTIONS
 // ============================================
 function renderBreaking() {
     if (!DATA.news?.breaking) return;
@@ -177,7 +166,7 @@ function formatStatus(s) { return { investigating: 'Under Investigation', convic
 function setupEventListeners() {
     document.getElementById('search-btn').addEventListener('click', () => doSearch(document.getElementById('search-input').value));
     document.getElementById('search-input').addEventListener('keypress', e => { if (e.key === 'Enter') doSearch(e.target.value); });
-    document.getElementById('research-btn').addEventListener('click', showResearchPanel);
+    document.getElementById('research-btn').addEventListener('click', doDeepResearch);
     document.getElementById('export-btn').addEventListener('click', exportCSV);
     document.getElementById('close-results-btn').addEventListener('click', () => document.getElementById('results-section').style.display = 'none');
 }
@@ -205,6 +194,7 @@ async function performSearch(query) {
     content.innerHTML = '';
     document.getElementById('results-query').textContent = query;
     document.getElementById('research-panel').style.display = 'none';
+    webResearchResults = [];
     
     section.scrollIntoView({ behavior: 'smooth' });
     
@@ -281,7 +271,7 @@ function renderResults() {
         <div class="summary-card"><span class="count">${totals.nonprofits}</span><span class="label">Nonprofits</span></div>
     `;
     
-    if (total === 0) { content.innerHTML = '<p class="no-results">No database results. Click "Deep Research" for web search.</p>'; return; }
+    if (total === 0) { content.innerHTML = '<p class="no-results">No database results. Click "Deep Research + AI" to search news & web.</p>'; return; }
     
     let html = '';
     if (totals.local) html += renderResultGroup('🚨 Flagged / Under Investigation', currentResults.local, true);
@@ -307,76 +297,226 @@ function renderResultGroup(title, items, flagged = false) {
 }
 
 // ============================================
-// DEEP RESEARCH PANEL - NO API KEY NEEDED!
+// DEEP RESEARCH - ACTUALLY SEARCHES THE WEB!
 // ============================================
-function showResearchPanel() {
+async function doDeepResearch() {
     const panel = document.getElementById('research-panel');
     panel.style.display = 'block';
     
-    const q = encodeURIComponent(currentQuery + ' Minnesota fraud');
-    const qSimple = encodeURIComponent(currentQuery);
+    const resultsDiv = document.getElementById('web-research-results');
+    resultsDiv.innerHTML = '<div class="research-loading"><div class="spinner"></div><p>Searching news, DOJ, and court records...</p></div>';
     
-    // Build research summary for AI prompt
-    const summary = buildResearchSummary();
-    const aiPrompt = encodeURIComponent(`I'm researching "${currentQuery}" in connection with Minnesota's $9 billion fraud scandal. Here's what I found in government databases:\n\n${summary}\n\nPlease help me:\n1. Understand any connections or red flags\n2. Suggest what else I should investigate\n3. Explain the significance of these findings`);
+    // Scroll to panel
+    panel.scrollIntoView({ behavior: 'smooth' });
     
-    // Research links
-    document.getElementById('research-links').innerHTML = RESEARCH_SOURCES.map(s => 
-        `<a href="${s.url}${q}" target="_blank" class="research-link">${s.icon} ${s.name}</a>`
-    ).join('');
+    webResearchResults = [];
     
-    // AI chat links with pre-filled prompt
-    document.getElementById('ai-links').innerHTML = Object.entries(AI_CHATS).map(([key, ai]) => 
-        `<a href="${ai.url}" target="_blank" class="ai-link" onclick="copyPromptToClipboard()" title="Opens ${ai.name} - paste your research summary">
-            ${ai.icon} ${ai.name}
-        </a>`
-    ).join('');
+    // Search multiple sources via Google News RSS
+    const searchTerms = [
+        `${currentQuery} Minnesota fraud`,
+        `${currentQuery} Minnesota investigation`,
+        `${currentQuery} indicted OR charged OR convicted`
+    ];
     
-    // Copyable prompt
-    document.getElementById('ai-prompt').value = decodeURIComponent(aiPrompt);
+    // Fetch from Google News RSS
+    for (const term of searchTerms) {
+        try {
+            const articles = await fetchGoogleNews(term);
+            webResearchResults.push(...articles);
+        } catch (e) {
+            console.log('Search error:', e);
+        }
+    }
+    
+    // Deduplicate by title
+    const seen = new Set();
+    webResearchResults = webResearchResults.filter(a => {
+        const key = a.title.toLowerCase().substring(0, 50);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+    });
+    
+    // Sort by date (newest first)
+    webResearchResults.sort((a, b) => new Date(b.rawDate || 0) - new Date(a.rawDate || 0));
+    
+    // Render results
+    renderWebResearch();
 }
 
-function buildResearchSummary() {
-    const lines = [];
+async function fetchGoogleNews(searchTerm) {
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(searchTerm)}&hl=en-US&gl=US&ceid=US:en`;
+    
+    try {
+        const res = await fetch(`${CONFIG.CORS_PROXY}${encodeURIComponent(url)}`);
+        if (!res.ok) return [];
+        
+        const text = await res.text();
+        const articles = [];
+        
+        // Parse RSS XML
+        const itemMatches = text.match(/<item>([\s\S]*?)<\/item>/g) || [];
+        
+        for (const item of itemMatches.slice(0, 5)) {
+            const title = (item.match(/<title>(.*?)<\/title>/) || [])[1] || '';
+            const link = (item.match(/<link>(.*?)<\/link>/) || [])[1] || '';
+            const pubDate = (item.match(/<pubDate>(.*?)<\/pubDate>/) || [])[1] || '';
+            
+            // Clean title
+            let cleanTitle = title.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+            const dashIdx = cleanTitle.lastIndexOf(' - ');
+            const source = dashIdx > -1 ? cleanTitle.substring(dashIdx + 3) : 'News';
+            cleanTitle = dashIdx > -1 ? cleanTitle.substring(0, dashIdx) : cleanTitle;
+            
+            if (cleanTitle && link) {
+                articles.push({
+                    title: cleanTitle,
+                    source: source,
+                    link: link,
+                    date: pubDate ? new Date(pubDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Recent',
+                    rawDate: pubDate ? new Date(pubDate) : null
+                });
+            }
+        }
+        
+        return articles;
+    } catch (e) {
+        console.log('Fetch error:', e);
+        return [];
+    }
+}
+
+function renderWebResearch() {
+    const resultsDiv = document.getElementById('web-research-results');
+    
+    if (webResearchResults.length === 0) {
+        resultsDiv.innerHTML = `
+            <p class="no-web-results">No recent news found. Try the manual search links below:</p>
+            <div class="manual-search-links">
+                ${getManualSearchLinks()}
+            </div>
+        `;
+    } else {
+        resultsDiv.innerHTML = `
+            <div class="web-results-header">
+                <span>📰 Found ${webResearchResults.length} articles</span>
+            </div>
+            <div class="web-results-grid">
+                ${webResearchResults.slice(0, 10).map(a => `
+                    <a href="${a.link}" target="_blank" class="web-result-card">
+                        <div class="web-result-source">${esc(a.source)}</div>
+                        <div class="web-result-title">${esc(a.title)}</div>
+                        <div class="web-result-date">${a.date}</div>
+                    </a>
+                `).join('')}
+            </div>
+            <div class="more-search-links">
+                <p>Search more sources:</p>
+                ${getManualSearchLinks()}
+            </div>
+        `;
+    }
+    
+    // Build and show the AI prompt
+    buildAIPrompt();
+}
+
+function getManualSearchLinks() {
+    const q = encodeURIComponent(currentQuery + ' Minnesota fraud');
+    return `
+        <div class="manual-links">
+            <a href="https://www.google.com/search?q=site:justice.gov/usao-mn+${q}" target="_blank" class="manual-link">⚖️ DOJ Minnesota</a>
+            <a href="https://news.google.com/search?q=${q}" target="_blank" class="manual-link">📰 Google News</a>
+            <a href="https://www.courtlistener.com/?q=${encodeURIComponent(currentQuery)}" target="_blank" class="manual-link">🏛️ Court Records</a>
+            <a href="https://www.google.com/search?q=site:startribune.com+${q}" target="_blank" class="manual-link">📰 Star Tribune</a>
+            <a href="https://www.google.com/search?q=site:fox9.com+${q}" target="_blank" class="manual-link">📺 FOX 9</a>
+            <a href="https://www.google.com/search?q=site:mprnews.org+${q}" target="_blank" class="manual-link">📻 MPR News</a>
+        </div>
+    `;
+}
+
+function buildAIPrompt() {
+    // Build comprehensive research summary
+    let summary = `I'm researching "${currentQuery}" in connection with Minnesota's $9 billion fraud scandal.\n\n`;
+    
+    // Add database findings
+    summary += `=== DATABASE FINDINGS ===\n`;
     
     if (currentResults.local.length) {
-        lines.push('FLAGGED RECORDS:');
-        currentResults.local.forEach(r => lines.push(`- ${r.name}: ${r.description}`));
+        summary += `\n🚨 FLAGGED RECORDS:\n`;
+        currentResults.local.forEach(r => {
+            summary += `• ${r.name}: ${r.description}\n`;
+        });
     }
     
     if (currentResults.grants.length) {
-        lines.push('\nFEDERAL GRANTS:');
-        currentResults.grants.slice(0, 5).forEach(r => lines.push(`- ${r.name}: ${fmt(r.amount)}`));
+        summary += `\n💰 FEDERAL GRANTS:\n`;
+        currentResults.grants.slice(0, 5).forEach(r => {
+            summary += `• ${r.name}: ${fmt(r.amount)}\n`;
+        });
     }
     
     if (currentResults.nonprofits.length) {
-        lines.push('\nNONPROFITS:');
-        currentResults.nonprofits.slice(0, 5).forEach(r => lines.push(`- ${r.name} (${r.description})`));
+        summary += `\n🏢 NONPROFITS:\n`;
+        currentResults.nonprofits.slice(0, 5).forEach(r => {
+            summary += `• ${r.name} (${r.description})\n`;
+        });
     }
     
     if (currentResults.campaigns.length) {
-        lines.push('\nCAMPAIGN FINANCE:');
-        currentResults.campaigns.slice(0, 5).forEach(r => lines.push(`- ${r.name}: ${fmt(r.amount)}`));
+        summary += `\n🗳️ CAMPAIGN FINANCE:\n`;
+        currentResults.campaigns.slice(0, 5).forEach(r => {
+            summary += `• ${r.name}: ${fmt(r.amount)}\n`;
+        });
     }
     
-    return lines.join('\n') || 'No specific database matches found.';
-}
-
-function copyPromptToClipboard() {
-    const prompt = document.getElementById('ai-prompt');
-    prompt.select();
-    document.execCommand('copy');
+    // Add news findings
+    if (webResearchResults.length) {
+        summary += `\n=== RECENT NEWS (${webResearchResults.length} articles found) ===\n`;
+        webResearchResults.slice(0, 8).forEach(a => {
+            summary += `• "${a.title}" (${a.source}, ${a.date})\n`;
+        });
+    }
     
-    // Show feedback
-    const btn = document.getElementById('copy-prompt-btn');
-    const original = btn.textContent;
-    btn.textContent = '✓ Copied!';
-    btn.style.background = '#22c55e';
-    setTimeout(() => { btn.textContent = original; btn.style.background = ''; }, 2000);
+    // Add context
+    summary += `\n=== BACKGROUND ===\n`;
+    summary += `Minnesota is facing a $9B+ fraud scandal across multiple programs:\n`;
+    summary += `• Feeding Our Future: $250M stolen, 78 indicted, 57+ convicted\n`;
+    summary += `• CCAP Daycare: $1B+ estimated fraud, 62 investigations\n`;
+    summary += `• EIDBI Autism Services: $220M+ fraud\n`;
+    summary += `• Housing Stabilization: $302M, program terminated\n`;
+    
+    // Add questions
+    summary += `\n=== HELP ME UNDERSTAND ===\n`;
+    summary += `1. What connections or red flags do you see in this data?\n`;
+    summary += `2. What patterns should I investigate further?\n`;
+    summary += `3. What questions should I be asking?\n`;
+    summary += `4. What other public records should I search?`;
+    
+    document.getElementById('ai-prompt').value = summary;
+    
+    // Render AI links
+    document.getElementById('ai-links').innerHTML = Object.entries(AI_CHATS).map(([key, ai]) => 
+        `<a href="${ai.url}" target="_blank" class="ai-link" title="Open ${ai.name} and paste your research">
+            ${ai.icon} ${ai.name}
+        </a>`
+    ).join('');
 }
 
 function copyPrompt() {
-    copyPromptToClipboard();
+    const prompt = document.getElementById('ai-prompt');
+    prompt.select();
+    prompt.setSelectionRange(0, 99999); // Mobile support
+    
+    navigator.clipboard.writeText(prompt.value).then(() => {
+        const btn = document.getElementById('copy-prompt-btn');
+        const original = btn.innerHTML;
+        btn.innerHTML = '✅ Copied!';
+        btn.style.background = '#22c55e';
+        setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; }, 2000);
+    }).catch(() => {
+        document.execCommand('copy');
+    });
 }
 
 // ============================================
@@ -387,12 +527,20 @@ function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.
 
 function exportCSV() {
     const all = Object.values(currentResults).flat();
+    
+    // Add web research to export
+    webResearchResults.forEach(a => {
+        all.push({ name: a.title, source: a.source, amount: '', description: a.link, status: a.date });
+    });
+    
     if (!all.length) { alert('No results to export'); return; }
-    const csv = ['Name,Source,Amount,Description,Status', ...all.map(r => 
-        `"${r.name}","${r.source}","${r.amount||''}","${r.description}","${r.status||''}"`
+    
+    const csv = ['Name,Source,Amount,Description,Date/Status', ...all.map(r => 
+        `"${(r.name||'').replace(/"/g, '""')}","${r.source||''}","${r.amount||''}","${(r.description||'').replace(/"/g, '""')}","${r.status||r.date||''}"`
     )].join('\n');
+    
     const link = document.createElement('a');
     link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
-    link.download = `north-star-${currentQuery.replace(/\s+/g, '-')}.csv`;
+    link.download = `north-star-${currentQuery.replace(/\s+/g, '-')}-${new Date().toISOString().split('T')[0]}.csv`;
     link.click();
 }
