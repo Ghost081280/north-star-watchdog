@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Watchdog | Minnesota Fraud Investigation Platform</title>
-    <meta name="description" content="Track Minnesota's $9B+ fraud scandal. Search government databases, get research links, take findings to your favorite AI.">
+    <meta name="description" content="Track Minnesota's $9B+ fraud scandal. Search government databases, get deep research with news and court records, analyze with AI.">
     <meta property="og:title" content="North Star Watchdog | Minnesota Fraud Tracker">
     <meta name="twitter:creator" content="@Ghost081280">
     
@@ -19,10 +19,15 @@
         <div class="breaking-content">
             <span class="breaking-badge"><span class="pulse-dot"></span>BREAKING</span>
             <span class="breaking-text" id="breaking-text">Loading...</span>
-            <a href="#" id="breaking-source" class="breaking-source" target="_blank">Source</a>
-            <span class="ai-badge">🤖 Auto-Updated Hourly</span>
+            <a href="#" id="breaking-source" class="breaking-source" target="_blank" rel="noopener">View Source</a>
+            <span class="auto-update-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Auto-Updated
+            </span>
         </div>
-        <button class="breaking-close" onclick="this.parentElement.style.display='none'">✕</button>
+        <button class="breaking-close" onclick="this.parentElement.style.display='none'" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
     </div>
 
     <!-- Header -->
@@ -30,7 +35,16 @@
         <div class="header-content">
             <a href="/" class="logo">
                 <div class="logo-shield">
-                    <svg viewBox="0 0 60 72" fill="none"><path d="M30 0L60 12V36C60 54 45 66 30 72C15 66 0 54 0 36V12L30 0Z" fill="url(#sg)" stroke="#d4af37" stroke-width="2"/><polygon points="30,16 35,28 48,28 38,36 42,48 30,40 18,48 22,36 12,28 25,28" fill="#d4af37"/><defs><linearGradient id="sg" x1="30" y1="0" x2="30" y2="72"><stop offset="0%" stop-color="#1a1a1a"/><stop offset="100%" stop-color="#0a0a0a"/></linearGradient></defs></svg>
+                    <svg viewBox="0 0 60 72" fill="none">
+                        <path d="M30 0L60 12V36C60 54 45 66 30 72C15 66 0 54 0 36V12L30 0Z" fill="url(#shield-grad)" stroke="#d4af37" stroke-width="2"/>
+                        <polygon points="30,16 35,28 48,28 38,36 42,48 30,40 18,48 22,36 12,28 25,28" fill="#d4af37"/>
+                        <defs>
+                            <linearGradient id="shield-grad" x1="30" y1="0" x2="30" y2="72">
+                                <stop offset="0%" stop-color="#1a1a1a"/>
+                                <stop offset="100%" stop-color="#0a0a0a"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
                 <div class="logo-text">
                     <h1>North Star Watchdog</h1>
@@ -38,10 +52,13 @@
                 </div>
             </a>
             <div class="header-actions">
-                <a href="#report-fraud" class="btn-report">Report Fraud</a>
+                <a href="#report-section" class="btn-report">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                    Report Fraud
+                </a>
                 <div class="header-badges">
                     <span class="badge badge-free">100% FREE</span>
-                    <span class="badge badge-live">LIVE</span>
+                    <span class="badge badge-live"><span class="live-dot"></span>LIVE</span>
                 </div>
             </div>
         </div>
@@ -50,16 +67,26 @@
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">🔍 Search databases → 📊 Get results → 🤖 Take to your AI for analysis</div>
+            <div class="hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                Search databases
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Get deep research
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Take to your AI for further analysis
+            </div>
             <h2 class="hero-title">Minnesota's <span class="highlight">$9 Billion+</span> Fraud Scandal</h2>
-            <p class="hero-subtitle">Search <strong>government databases</strong>, download results, then analyze with <strong>ChatGPT, Claude, Gemini, or Grok</strong> — your choice, no API keys needed.</p>
+            <p class="hero-subtitle">We search <strong>government databases</strong> and compile <strong>news, videos, and court records</strong> for you. Then take your research to ChatGPT, Claude, Gemini, or Grok for deeper analysis.</p>
             <div class="hero-stats">
                 <div class="stat"><span class="stat-value">93+</span><span class="stat-label">Charged</span></div>
                 <div class="stat"><span class="stat-value">57+</span><span class="stat-label">Convicted</span></div>
                 <div class="stat"><span class="stat-value">$9B+</span><span class="stat-label">Alleged</span></div>
                 <div class="stat"><span class="stat-value" id="stat-investigations">4</span><span class="stat-label">Cases</span></div>
             </div>
-            <p class="last-updated">Site auto-updates: <span id="last-updated-time">Loading...</span></p>
+            <p class="last-updated">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Last updated: <span id="last-updated-time">Loading...</span>
+            </p>
         </div>
     </section>
 
@@ -67,7 +94,7 @@
     <section class="search-section" id="search-section">
         <div class="search-container">
             <div class="search-wrapper">
-                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                 <input type="text" id="search-input" class="search-input" placeholder="Search organizations, politicians, programs..." autocomplete="off">
                 <button id="search-btn" class="search-btn">Search</button>
             </div>
@@ -82,47 +109,83 @@
         <div class="results-header">
             <h2>Results for "<span id="results-query"></span>"</h2>
             <div class="results-actions">
-                <button id="research-btn" class="action-btn btn-research">🔍 Deep Research + AI</button>
-                <button id="export-btn" class="action-btn">📥 Export CSV</button>
-                <button id="close-results-btn" class="action-btn btn-close">Close</button>
-            </div>
-        </div>
-        
-        <!-- Deep Research Panel - ACTUALLY SEARCHES THE WEB -->
-        <div class="research-panel" id="research-panel" style="display: none;">
-            <div class="research-header">
-                <h3>🔍 Deep Research Results</h3>
-                <p>We searched news, DOJ records, and court filings for you:</p>
-            </div>
-            
-            <!-- Actual Web Search Results -->
-            <div class="research-section">
-                <h4>📰 News & Articles Found</h4>
-                <div id="web-research-results">
-                    <div class="research-loading"><div class="spinner"></div><p>Searching...</p></div>
-                </div>
-            </div>
-            
-            <!-- AI Analysis Section -->
-            <div class="research-section">
-                <h4>🤖 Take to Your AI for Analysis</h4>
-                <p class="research-desc">We compiled your database results + news findings. Copy and paste into any AI:</p>
-                
-                <div class="ai-prompt-box">
-                    <label>📋 Your Complete Research Summary:</label>
-                    <textarea id="ai-prompt" readonly rows="12"></textarea>
-                    <button id="copy-prompt-btn" class="btn-copy" onclick="copyPrompt()">📋 Copy to Clipboard</button>
-                </div>
-                
-                <p class="research-desc">Open your preferred AI and paste:</p>
-                <div class="ai-links" id="ai-links"></div>
-                <p class="ai-note">💡 All free! Just paste your research and ask follow-up questions.</p>
+                <button id="export-btn" class="action-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Export CSV
+                </button>
+                <button id="close-results-btn" class="action-btn btn-close">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    Close
+                </button>
             </div>
         </div>
         
         <div class="results-summary" id="results-summary"></div>
-        <div class="loading-state" id="loading-state" style="display: none;"><div class="spinner"></div><p>Searching databases...</p></div>
+        <div class="loading-state" id="loading-state" style="display: none;">
+            <div class="spinner"></div>
+            <p>Searching databases & gathering research...</p>
+        </div>
         <div class="results-content" id="results-content"></div>
+        
+        <!-- Deep Research - SHOWN AUTOMATICALLY WITH RESULTS -->
+        <div class="deep-research" id="deep-research" style="display: none;">
+            <div class="deep-research-header">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+                    Deep Research
+                </h3>
+                <p>We found additional sources for your investigation:</p>
+            </div>
+            
+            <!-- Video Results -->
+            <div class="research-category">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg>
+                    Videos
+                </h4>
+                <div class="research-links" id="video-links"></div>
+            </div>
+            
+            <!-- News Results -->
+            <div class="research-category">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1M19 20a2 2 0 01-2-2V8m2 12a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>
+                    In The News
+                </h4>
+                <div class="news-results" id="news-results"></div>
+            </div>
+            
+            <!-- Court & Government Records -->
+            <div class="research-category">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M12 3l9 7H3l9-7z"/><path d="M5 10v11M19 10v11M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"/></svg>
+                    Court & Government Records
+                </h4>
+                <div class="research-links" id="court-links"></div>
+            </div>
+            
+            <!-- AI Analysis Section -->
+            <div class="ai-section">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><path d="M12 8v8M8 12h8"/><circle cx="12" cy="20" r="2"/></svg>
+                    Take to Your AI for Further Analysis
+                </h4>
+                <p class="ai-desc">We compiled all your research. Copy and paste into any AI:</p>
+                
+                <div class="ai-prompt-box">
+                    <div class="prompt-header">
+                        <span>Your Complete Research Summary</span>
+                        <button id="copy-prompt-btn" class="btn-copy" onclick="copyPrompt()">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            Copy
+                        </button>
+                    </div>
+                    <textarea id="ai-prompt" readonly rows="10"></textarea>
+                </div>
+                
+                <div class="ai-links" id="ai-links"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Main Content -->
@@ -130,7 +193,11 @@
         <!-- Live News -->
         <section class="section" id="news-section">
             <div class="section-header">
-                <h2>📰 Live News <span class="auto-badge">Auto-Updated</span></h2>
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1M19 20a2 2 0 01-2-2V8m2 12a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>
+                    Live News
+                    <span class="auto-badge">Auto-Updated</span>
+                </h2>
                 <p class="section-sub">Latest headlines on Minnesota fraud investigations</p>
             </div>
             <div class="news-grid" id="news-grid"><p class="loading-text">Loading...</p></div>
@@ -139,7 +206,11 @@
         <!-- Trending -->
         <section class="section" id="trending-section">
             <div class="section-header">
-                <h2>📈 Trending Now <span class="auto-badge">AI-Curated</span></h2>
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    Trending Now
+                    <span class="auto-badge">AI-Curated</span>
+                </h2>
                 <p class="section-sub">What's making news + suggested search terms</p>
             </div>
             <div class="trending-grid" id="trending-grid"><p class="loading-text">Loading...</p></div>
@@ -148,7 +219,11 @@
         <!-- Story Ideas -->
         <section class="section" id="stories-section">
             <div class="section-header">
-                <h2>💡 Investigate This <span class="auto-badge">AI-Generated</span></h2>
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                    Investigate This
+                    <span class="auto-badge">AI-Generated</span>
+                </h2>
                 <p class="section-sub">Investigation angles based on news patterns</p>
             </div>
             <div class="stories-grid" id="stories-grid"><p class="loading-text">Loading...</p></div>
@@ -157,7 +232,11 @@
         <!-- Investigations -->
         <section class="section" id="investigations-section">
             <div class="section-header">
-                <h2>🔍 Active Investigations <span class="auto-badge">AI-Monitored</span></h2>
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    Active Investigations
+                    <span class="auto-badge">AI-Monitored</span>
+                </h2>
             </div>
             <div class="investigations-grid" id="investigations-grid"><p class="loading-text">Loading...</p></div>
         </section>
@@ -165,52 +244,123 @@
         <!-- Key Figures -->
         <section class="section" id="figures-section">
             <div class="section-header">
-                <h2>👤 Key Figures <span class="auto-badge">AI-Tracked</span></h2>
+                <h2>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Key Figures
+                    <span class="auto-badge">AI-Tracked</span>
+                </h2>
             </div>
             <div class="figures-grid" id="figures-grid"><p class="loading-text">Loading...</p></div>
         </section>
     </main>
 
     <!-- Report Fraud -->
-    <section class="report-section" id="report-fraud">
+    <section class="report-section" id="report-section">
         <div class="report-content">
-            <h2>🚨 Report Suspected Fraud</h2>
+            <h2>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                Report Suspected Fraud
+            </h2>
+            <p class="report-desc">If you have information about fraud, report it to the appropriate agency:</p>
             <div class="report-agencies">
-                <a href="https://tips.fbi.gov/" target="_blank" class="agency-card"><strong>FBI Tips</strong><span>Federal crimes</span></a>
-                <a href="https://oig.hhs.gov/fraud/report-fraud/" target="_blank" class="agency-card"><strong>HHS OIG</strong><span>Medicare/Medicaid</span></a>
-                <a href="https://www.ag.state.mn.us/Office/Complaint.asp" target="_blank" class="agency-card"><strong>MN Attorney General</strong><span>State fraud</span></a>
-                <a href="https://mn.gov/dhs/general-public/about-dhs/contact-us/fraud/" target="_blank" class="agency-card"><strong>MN DHS</strong><span>Welfare fraud</span></a>
+                <a href="https://tips.fbi.gov/" target="_blank" rel="noopener" class="agency-card">
+                    <strong>FBI Tips</strong>
+                    <span>Federal crimes</span>
+                </a>
+                <a href="https://oig.hhs.gov/fraud/report-fraud/" target="_blank" rel="noopener" class="agency-card">
+                    <strong>HHS OIG</strong>
+                    <span>Medicare/Medicaid</span>
+                </a>
+                <a href="https://www.ag.state.mn.us/Office/Complaint.asp" target="_blank" rel="noopener" class="agency-card">
+                    <strong>MN Attorney General</strong>
+                    <span>State fraud</span>
+                </a>
+                <a href="https://mn.gov/dhs/general-public/about-dhs/contact-us/fraud/" target="_blank" rel="noopener" class="agency-card">
+                    <strong>MN DHS</strong>
+                    <span>Welfare fraud</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <strong>North Star Watchdog</strong>
-                <span>Citizen Fraud Investigation Platform</span>
-                <p style="margin-top:8px;font-size:11px;color:#606060">100% FREE • No API keys needed • No login required</p>
-            </div>
-            <div class="footer-ai">
-                <h4>How It Works</h4>
-                <div class="credit-list">
-                    <span>🔍 Search government databases (USASpending, ProPublica, FEC)</span>
-                    <span>📥 Download results as CSV</span>
-                    <span>🤖 Take to ChatGPT, Claude, Gemini, or Grok for analysis</span>
-                    <span>📰 Site auto-updates hourly via AI</span>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 60 72" fill="none" width="40" height="48">
+                            <path d="M30 0L60 12V36C60 54 45 66 30 72C15 66 0 54 0 36V12L30 0Z" fill="#1a1a1a" stroke="#d4af37" stroke-width="2"/>
+                            <polygon points="30,16 35,28 48,28 38,36 42,48 30,40 18,48 22,36 12,28 25,28" fill="#d4af37"/>
+                        </svg>
+                        <div>
+                            <strong>North Star Watchdog</strong>
+                            <span>Citizen Fraud Investigation Platform</span>
+                        </div>
+                    </div>
+                    <p class="footer-tagline">100% FREE • No API keys • No login required</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>How It Works</h4>
+                        <ul>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                                Search government databases
+                            </li>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                                Get news & court records
+                            </li>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                                Download results as CSV
+                            </li>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
+                                Analyze with any AI
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Data Sources</h4>
+                        <ul>
+                            <li><a href="https://usaspending.gov" target="_blank" rel="noopener">USASpending.gov</a></li>
+                            <li><a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofits</a></li>
+                            <li><a href="https://www.fec.gov" target="_blank" rel="noopener">FEC.gov</a></li>
+                            <li><a href="https://news.google.com" target="_blank" rel="noopener">Google News</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://x.com/Ghost081280" target="_blank" rel="noopener" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                @Ghost081280
+                            </a>
+                            <a href="https://github.com/Ghost081280/north-star-watchdog" target="_blank" rel="noopener" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-connect">
-                <a href="https://x.com/Ghost081280" target="_blank" class="btn-x">@Ghost081280</a>
-                <a href="https://github.com/Ghost081280/north-star-watchdog" target="_blank" class="btn-gh">GitHub</a>
-            </div>
-            <div class="footer-legal">
-                <p><strong>Disclaimer:</strong> All individuals presumed innocent. Verify all information independently.</p>
-                <p>© 2025 North Star Watchdog | MIT License | Built by @Ghost081280</p>
+            
+            <div class="footer-bottom">
+                <p class="disclaimer"><strong>Disclaimer:</strong> All individuals are presumed innocent until proven guilty. Verify all information independently.</p>
+                <p class="copyright">© 2025 North Star Watchdog | MIT License | Built by <a href="https://x.com/Ghost081280" target="_blank" rel="noopener">@Ghost081280</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <script src="app.js"></script>
 </body>
