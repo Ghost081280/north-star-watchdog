@@ -1,6 +1,6 @@
 # ⭐ North Star Watchdog
 
-## Minnesota's $9 Billion Fraud Scandal — Investigation Platform
+## Minnesota's $9B+ Fraud Scandal — AI-Powered Investigation Service
 
 [![Live Site](https://img.shields.io/badge/🔴_LIVE-Visit_Site-gold?style=for-the-badge)](https://ghost081280.github.io/north-star-watchdog/)
 [![Cost](https://img.shields.io/badge/💰-100%25_FREE-22c55e?style=for-the-badge)](#)
