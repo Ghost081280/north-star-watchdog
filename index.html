@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Watchdog | Minnesota Fraud Investigation Tracker</title>
+    <meta name="description" content="Track Minnesota fraud investigations across 6 government databases. Feeding Our Future, CCAP Daycare, Autism Services, Housing Stabilization fraud tracker for citizen journalists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+    
+<style>
+/* ============================================
+   NORTH STAR WATCHDOG - COMPLETE STYLES
+   Minnesota Fraud Investigation Tracker
+   Standalone Version - December 28, 2025
+   ============================================ */
+
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111111;
+    --bg-surface: #1a1a1a;
+    --bg-elevated: #222222;
+    --border-default: #2a2a2a;
+    --border-hover: #3a3a3a;
+    --border-active: #d4af37;
+    --gold: #d4af37;
+    --gold-light: #e8c547;
+    --gold-dark: #b8952e;
+    --red: #ef4444;
+    --red-light: #f87171;
+    --red-dark: #dc2626;
+    --green: #22c55e;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+    --orange: #f97316;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --text-muted: #666666;
+    --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+    --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.3);
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
+::selection { background: var(--gold); color: var(--bg-primary); }
+
+.header { background: var(--bg-secondary); border-bottom: 1px solid var(--border-default); padding: var(--space-md) var(--space-lg); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+.header-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); }
+.logo { display: flex; align-items: center; gap: var(--space-md); }
+.logo-icon { font-size: 2.5rem; filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); animation: pulse-glow 2s ease-in-out infinite; }
+@keyframes pulse-glow { 0%, 100% { filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5)); } 50% { filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8)); } }
+.logo-text h1 { font-size: 1.5rem; font-weight: 700; color: var(--gold); letter-spacing: -0.02em; }
+.tagline { font-size: 0.85rem; color: var(--text-secondary); }
+.header-badges { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+.badge { padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 500; font-family: var(--font-mono); }
+.badge-live { background: rgba(239, 68, 68, 0.2); color: var(--red-light); border: 1px solid var(--red); animation: pulse-live 1.5s ease-in-out infinite; }
+@keyframes pulse-live { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+.badge-databases { background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid var(--blue); }
+.badge-updated { background: var(--bg-surface); color: var(--text-secondary); border: 1px solid var(--border-default); }
+
+.alert-banner { background: linear-gradient(90deg, rgba(239, 68, 68, 0.15) 0%, rgba(212, 175, 55, 0.15) 100%); border-bottom: 1px solid var(--red-dark); padding: var(--space-sm) var(--space-lg); }
+.alert-content { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: var(--space-md); }
+.alert-icon { font-size: 1.25rem; animation: shake 0.5s ease-in-out infinite; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-2px); } 75% { transform: translateX(2px); } }
+.alert-text { flex: 1; font-size: 0.9rem; }
+.alert-close { background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer; padding: 0 var(--space-sm); transition: color var(--transition-fast); }
+.alert-close:hover { color: var(--text-primary); }
+
+.main-content { max-width: 1400px; margin: 0 auto; padding: var(--space-xl) var(--space-lg); }
+.search-section { margin-bottom: var(--space-2xl); }
+.search-container { max-width: 800px; margin: 0 auto; }
+.search-wrapper { display: flex; align-items: center; background: var(--bg-surface); border: 2px solid var(--border-default); border-radius: var(--radius-lg); padding: var(--space-sm); transition: border-color var(--transition-normal), box-shadow var(--transition-normal); }
+.search-wrapper:focus-within { border-color: var(--gold); box-shadow: var(--shadow-glow); }
+.search-icon { padding: 0 var(--space-md); font-size: 1.25rem; }
+.search-input { flex: 1; background: none; border: none; color: var(--text-primary); font-size: 1rem; font-family: var(--font-primary); outline: none; padding: var(--space-md) 0; }
+.search-input::placeholder { color: var(--text-muted); }
+.search-btn { background: var(--gold); color: var(--bg-primary); border: none; padding: var(--space-md) var(--space-lg); border-radius: var(--radius-md); font-size: 0.9rem; font-weight: 600; font-family: var(--font-primary); cursor: pointer; transition: all var(--transition-fast); white-space: nowrap; }
+.search-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
+.search-hint { text-align: center; color: var(--text-muted); font-size: 0.8rem; margin-top: var(--space-md); }
+
+.section-header { margin-bottom: var(--space-lg); }
+.section-header h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: var(--space-xs); }
+.section-subtitle { color: var(--text-secondary); font-size: 0.9rem; }
+
+.investigations-section, .trending-section, .figures-section { margin-bottom: var(--space-2xl); }
+.investigations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg); }
+.investigation-card { background: var(--bg-surface); border: 2px solid var(--border-default); border-radius: var(--radius-lg); padding: var(--space-lg); cursor: pointer; transition: all var(--transition-normal); position: relative; overflow: hidden; }
+.investigation-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--red); }
+.investigation-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.investigation-card-header { display: flex; align-items: flex-start; gap: var(--space-md); margin-bottom: var(--space-md); }
+.investigation-emoji { font-size: 2rem; }
+.investigation-title { flex: 1; }
+.investigation-title h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: var(--space-xs); }
+.investigation-amount { font-size: 1.5rem; font-weight: 700; color: var(--red); font-family: var(--font-mono); }
+.investigation-status { display: inline-block; padding: var(--space-xs) var(--space-sm); background: rgba(239, 68, 68, 0.2); color: var(--red-light); border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 500; margin-bottom: var(--space-md); }
+.investigation-description { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; }
+.investigation-click-hint { margin-top: var(--space-md); color: var(--gold); font-size: 0.8rem; opacity: 0; transition: opacity var(--transition-fast); }
+.investigation-card:hover .investigation-click-hint { opacity: 1; }
+
+.trending-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-md); }
+.trending-card { background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: var(--space-md); cursor: pointer; transition: all var(--transition-normal); display: flex; align-items: flex-start; gap: var(--space-md); }
+.trending-card:hover { border-color: var(--gold); background: var(--bg-elevated); transform: translateX(4px); }
+.trending-emoji { font-size: 1.5rem; flex-shrink: 0; }
+.trending-info { flex: 1; min-width: 0; }
+.trending-name { font-weight: 600; font-size: 0.95rem; margin-bottom: var(--space-xs); }
+.trending-role { color: var(--text-secondary); font-size: 0.8rem; margin-bottom: var(--space-xs); }
+.trending-why { color: var(--gold); font-size: 0.75rem; font-weight: 500; }
+.trending-date { color: var(--text-muted); font-size: 0.7rem; font-family: var(--font-mono); }
+
+.figures-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); }
+.figure-card { background: var(--bg-surface); border: 2px solid var(--border-default); border-radius: var(--radius-lg); padding: var(--space-lg); cursor: pointer; transition: all var(--transition-normal); }
+.figure-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.figure-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-md); }
+.figure-name { font-size: 1.1rem; font-weight: 600; }
+.figure-role { color: var(--text-secondary); font-size: 0.85rem; }
+.figure-status { padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+.figure-status.investigating { background: rgba(249, 115, 22, 0.2); color: var(--orange); }
+.figure-status.convicted { background: rgba(239, 68, 68, 0.2); color: var(--red); }
+.figure-allegations { margin-bottom: var(--space-md); }
+.figure-allegations h4 { font-size: 0.8rem; color: var(--text-muted); margin-bottom: var(--space-sm); text-transform: uppercase; letter-spacing: 0.05em; }
+.figure-allegations ul { list-style: none; }
+.figure-allegations li { color: var(--text-secondary); font-size: 0.85rem; padding-left: var(--space-md); position: relative; margin-bottom: var(--space-xs); }
+.figure-allegations li::before { content: '•'; position: absolute; left: 0; color: var(--red); }
+.figure-investigated-by { color: var(--text-muted); font-size: 0.75rem; border-top: 1px solid var(--border-default); padding-top: var(--space-sm); }
+
+.results-section { background: var(--bg-secondary); border: 2px solid var(--border-default); border-radius: var(--radius-xl); padding: var(--space-xl); margin-bottom: var(--space-2xl); animation: slideIn 0.3s ease; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.results-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-lg); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--border-default); }
+.results-header h2 { font-size: 1.25rem; }
+#results-query { color: var(--gold); }
+.results-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+.action-btn { padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); font-size: 0.85rem; font-weight: 500; font-family: var(--font-primary); cursor: pointer; transition: all var(--transition-fast); border: 1px solid var(--border-default); background: var(--bg-surface); color: var(--text-primary); }
+.action-btn:hover { border-color: var(--gold); background: var(--bg-elevated); }
+.deep-search-btn { background: var(--gold); color: var(--bg-primary); border-color: var(--gold); }
+.deep-search-btn:hover { background: var(--gold-light); border-color: var(--gold-light); }
+.close-btn:hover { border-color: var(--red); color: var(--red); }
+
+.results-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-md); margin-bottom: var(--space-lg); }
+.summary-card { background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: var(--space-md); text-align: center; }
+.summary-count { font-size: 1.75rem; font-weight: 700; color: var(--gold); font-family: var(--font-mono); }
+.summary-label { color: var(--text-secondary); font-size: 0.8rem; margin-top: var(--space-xs); }
+
+.loading-state { text-align: center; padding: var(--space-2xl); }
+.loading-spinner { font-size: 3rem; animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.loading-text { color: var(--text-secondary); margin: var(--space-md) 0; }
+.loading-apis { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm); }
+.api-name { padding: var(--space-xs) var(--space-sm); background: var(--bg-surface); border-radius: var(--radius-sm); font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted); transition: all var(--transition-fast); }
+.api-name[data-status="loading"] { color: var(--gold); background: rgba(212, 175, 55, 0.1); }
+.api-name[data-status="complete"] { color: var(--green); background: rgba(34, 197, 94, 0.1); }
+.api-name[data-status="error"] { color: var(--red); background: rgba(239, 68, 68, 0.1); }
+
+.gov-results { display: flex; flex-direction: column; gap: var(--space-lg); }
+.result-group { background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md); overflow: hidden; }
+.result-group-header { background: var(--bg-elevated); padding: var(--space-md); border-bottom: 1px solid var(--border-default); display: flex; justify-content: space-between; align-items: center; }
+.result-group-title { font-weight: 600; display: flex; align-items: center; gap: var(--space-sm); }
+.result-group-count { background: var(--gold); color: var(--bg-primary); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; }
+.result-items { max-height: 400px; overflow-y: auto; }
+.result-item { padding: var(--space-md); border-bottom: 1px solid var(--border-default); transition: background var(--transition-fast); }
+.result-item:last-child { border-bottom: none; }
+.result-item:hover { background: var(--bg-elevated); }
+.result-item.flagged { border-left: 3px solid var(--red); background: rgba(239, 68, 68, 0.05); }
+.result-item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-sm); }
+.result-item-name { font-weight: 600; }
+.result-item-amount { color: var(--gold); font-family: var(--font-mono); font-weight: 600; }
+.result-item-description { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: var(--space-sm); }
+.result-item-meta { display: flex; gap: var(--space-md); flex-wrap: wrap; }
+.result-item-source { color: var(--text-muted); font-size: 0.75rem; font-family: var(--font-mono); }
+.result-item-link { color: var(--blue); font-size: 0.75rem; text-decoration: none; }
+.result-item-link:hover { text-decoration: underline; }
+.result-item-flag { display: inline-flex; align-items: center; gap: var(--space-xs); padding: var(--space-xs) var(--space-sm); background: rgba(239, 68, 68, 0.2); color: var(--red); border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 600; margin-bottom: var(--space-sm); }
+
+.deep-results { margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 2px solid var(--gold); animation: slideIn 0.3s ease; }
+.deep-results-header { margin-bottom: var(--space-lg); }
+.deep-results-header h3 { color: var(--gold); font-size: 1.1rem; margin-bottom: var(--space-xs); }
+.deep-results-header p { color: var(--text-secondary); font-size: 0.85rem; }
+.resource-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); margin-top: var(--space-md); }
+.resource-link { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-md); background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md); color: var(--text-primary); text-decoration: none; transition: all var(--transition-fast); }
+.resource-link:hover { border-color: var(--gold); background: var(--bg-elevated); }
+.resource-link span:first-child { font-size: 1.25rem; }
+
+.modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: var(--space-lg); }
+.modal.active { display: flex; }
+.modal-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(4px); }
+.modal-content { position: relative; background: var(--bg-secondary); border: 2px solid var(--border-default); border-radius: var(--radius-xl); max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; animation: modalSlideIn 0.3s ease; }
+@keyframes modalSlideIn { from { opacity: 0; transform: scale(0.95) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+.modal-close { position: absolute; top: var(--space-md); right: var(--space-md); background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer; padding: var(--space-sm); z-index: 10; }
+.modal-close:hover { color: var(--text-primary); }
+.modal-header { padding: var(--space-xl); border-bottom: 1px solid var(--border-default); }
+.modal-header h2 { font-size: 1.5rem; margin-bottom: var(--space-sm); display: flex; align-items: center; gap: var(--space-md); }
+.modal-amount { font-size: 2rem; font-weight: 700; color: var(--red); font-family: var(--font-mono); margin-bottom: var(--space-sm); }
+.modal-status { display: inline-block; padding: var(--space-xs) var(--space-sm); background: rgba(239, 68, 68, 0.2); color: var(--red-light); border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 500; }
+.modal-body { padding: var(--space-xl); }
+.modal-section { margin-bottom: var(--space-xl); }
+.modal-section:last-child { margin-bottom: 0; }
+.modal-section h3 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-md); }
+.modal-facts { display: flex; flex-direction: column; gap: var(--space-sm); }
+.modal-fact { color: var(--text-secondary); padding-left: var(--space-md); position: relative; }
+.modal-fact::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+.modal-orgs { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.modal-org { padding: var(--space-sm) var(--space-md); background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md); font-size: 0.85rem; cursor: pointer; transition: all var(--transition-fast); font-family: var(--font-primary); color: var(--text-primary); }
+.modal-org:hover { border-color: var(--gold); background: var(--bg-elevated); }
+.modal-timeline { position: relative; padding-left: var(--space-lg); }
+.modal-timeline::before { content: ''; position: absolute; left: 4px; top: 0; bottom: 0; width: 2px; background: var(--border-default); }
+.timeline-item { position: relative; margin-bottom: var(--space-md); }
+.timeline-item::before { content: ''; position: absolute; left: calc(-1 * var(--space-lg) + 1px); top: 6px; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; }
+.timeline-date { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); }
+.timeline-event { color: var(--text-secondary); font-size: 0.9rem; }
+
+.share-modal-content { padding: var(--space-xl); text-align: center; max-width: 400px; }
+.share-modal-content h3 { margin-bottom: var(--space-lg); }
+.share-buttons { display: flex; flex-direction: column; gap: var(--space-sm); }
+.share-link { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); padding: var(--space-md); border-radius: var(--radius-md); text-decoration: none; font-weight: 500; transition: all var(--transition-fast); border: none; cursor: pointer; font-family: var(--font-primary); font-size: 0.95rem; }
+.share-twitter { background: #1a1a1a; color: white; border: 1px solid #333; }
+.share-twitter:hover { background: #2a2a2a; }
+.share-facebook { background: #1877f2; color: white; }
+.share-facebook:hover { background: #166fe5; }
+.share-linkedin { background: #0a66c2; color: white; }
+.share-linkedin:hover { background: #095bb5; }
+.share-copy { background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-default); }
+.share-copy:hover { border-color: var(--gold); }
+.copy-feedback { margin-top: var(--space-md); color: var(--green); font-size: 0.9rem; }
+
+.footer { background: var(--bg-secondary); border-top: 1px solid var(--border-default); padding: var(--space-xl) var(--space-lg); margin-top: var(--space-2xl); }
+.footer-content { max-width: 1400px; margin: 0 auto; display: grid; gap: var(--space-lg); }
+.footer-info p { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: var(--space-sm); }
+.footer-disclaimer { color: var(--text-muted) !important; font-size: 0.75rem !important; line-height: 1.6; }
+.footer-links { display: flex; gap: var(--space-lg); flex-wrap: wrap; }
+.footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.85rem; transition: color var(--transition-fast); }
+.footer-links a:hover { color: var(--gold); }
+.footer-credit { color: var(--text-muted); font-size: 0.8rem; }
+.footer-credit a { color: var(--gold); text-decoration: none; }
+
+.no-results { text-align: center; padding: var(--space-2xl); color: var(--text-muted); }
+
+@media (max-width: 768px) {
+    .header-content { flex-direction: column; align-items: flex-start; }
+    .search-wrapper { flex-direction: column; padding: var(--space-md); }
+    .search-input { width: 100%; text-align: center; }
+    .search-btn { width: 100%; margin-top: var(--space-sm); }
+    .search-icon { display: none; }
+    .results-header { flex-direction: column; align-items: flex-start; }
+    .results-actions { width: 100%; }
+    .action-btn { flex: 1; text-align: center; }
+    .modal-content { margin: var(--space-md); max-height: 90vh; }
+    .investigations-grid, .figures-grid, .trending-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">⭐</span>
+                <div class="logo-text">
+                    <h1>North Star Watchdog</h1>
+                    <p class="tagline">Following the Money in Minnesota's $1B+ Fraud Scandal</p>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-live">🔴 LIVE DATA</span>
+                <span class="badge badge-databases">📊 6 Databases</span>
+                <span class="badge badge-updated">Last updated: <span id="last-updated">Dec 28, 2025 at 11:00 PM CST</span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Alert Banner -->
+    <div class="alert-banner">
+        <div class="alert-content">
+            <span class="alert-icon">🚨</span>
+            <span class="alert-text"><strong>BREAKING:</strong> FBI Director Kash Patel announces agent surge to Minnesota. House Oversight investigating $1B+ fraud under Gov. Walz. 90+ charged, 57+ convicted. Treasury probing Al-Shabaab links.</span>
+            <button class="alert-close" onclick="this.parentElement.parentElement.style.display='none'" aria-label="Close alert">×</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search organizations, politicians, or programs..." autocomplete="off">
+                    <button id="search-btn" class="search-btn">Search Databases</button>
+                </div>
+                <p class="search-hint">Search 6 official databases: Federal grants, contracts, nonprofits, campaign finance, MN business records, and active fraud investigations</p>
+            </div>
+        </section>
+
+        <!-- Active Investigations -->
+        <section class="investigations-section">
+            <div class="section-header">
+                <h2>🔴 Active Investigations</h2>
+                <p class="section-subtitle">Click any card for details and connected organizations</p>
+            </div>
+            <div class="investigations-grid" id="investigations-grid"></div>
+        </section>
+
+        <!-- Trending Topics -->
+        <section class="trending-section">
+            <div class="section-header">
+                <h2>📈 Trending Now</h2>
+                <p class="section-subtitle">Hot topics from today's news • Auto-updated daily via web search</p>
+            </div>
+            <div class="trending-grid" id="trending-grid"></div>
+        </section>
+
+        <!-- Key Figures -->
+        <section class="figures-section">
+            <div class="section-header">
+                <h2>👤 Key Figures Under Scrutiny</h2>
+                <p class="section-subtitle">Click to search government databases</p>
+            </div>
+            <div class="figures-grid" id="figures-grid"></div>
+        </section>
+
+        <!-- Search Results (Hidden) -->
+        <section class="results-section" id="results-section" style="display: none;">
+            <div class="results-header">
+                <h2>📊 Search Results: <span id="results-query"></span></h2>
+                <div class="results-actions">
+                    <button id="deep-search-btn" class="action-btn deep-search-btn">🔍 Search Deeper</button>
+                    <button id="export-btn" class="action-btn export-btn">📥 Export CSV</button>
+                    <button id="share-btn" class="action-btn share-btn">📤 Share</button>
+                    <button id="close-results-btn" class="action-btn close-btn">✕ Close</button>
+                </div>
+            </div>
+            <div class="results-summary" id="results-summary"></div>
+            <div class="loading-state" id="loading-state" style="display: none;">
+                <div class="loading-spinner">⚙️</div>
+                <p class="loading-text">Searching 6 government databases...</p>
+                <div class="loading-apis">
+                    <span class="api-name" data-status="pending">USASpending Grants</span>
+                    <span class="api-name" data-status="pending">USASpending Contracts</span>
+                    <span class="api-name" data-status="pending">ProPublica Nonprofits</span>
+                    <span class="api-name" data-status="pending">FEC Campaign Finance</span>
+                    <span class="api-name" data-status="pending">MN Business Records</span>
+                    <span class="api-name" data-status="pending">Federal Investigations</span>
+                </div>
+            </div>
+            <div class="gov-results" id="gov-results"></div>
+            <div class="deep-results" id="deep-results" style="display: none;">
+                <div class="deep-results-header">
+                    <h3>📰 Media Coverage & Investigative Resources</h3>
+                    <p>Credible news sources covering this topic</p>
+                </div>
+                <div class="deep-results-content" id="deep-results-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Investigation Modal -->
+    <div class="modal" id="investigation-modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header" id="modal-header"></div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal" id="share-modal">
+        <div class="modal-overlay" onclick="closeShareModal()"></div>
+        <div class="modal-content share-modal-content">
+            <button class="modal-close" onclick="closeShareModal()">×</button>
+            <h3>📤 Share This Search</h3>
+            <div class="share-buttons">
+                <a href="#" id="share-twitter" class="share-link share-twitter" target="_blank"><span>𝕏</span> Share on X</a>
+                <a href="#" id="share-facebook" class="share-link share-facebook" target="_blank"><span>f</span> Share on Facebook</a>
+                <a href="#" id="share-linkedin" class="share-link share-linkedin" target="_blank"><span>in</span> Share on LinkedIn</a>
+                <button id="copy-link-btn" class="share-link share-copy"><span>🔗</span> Copy Link</button>
+            </div>
+            <div class="copy-feedback" id="copy-feedback" style="display: none;">✓ Link copied to clipboard!</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>⭐ North Star Watchdog</strong> — A citizen journalism research tool</p>
+                <p class="footer-disclaimer">Data sourced from official government databases and DOJ press releases. All individuals are presumed innocent until proven guilty. "Alleged" indicates unproven claims. For educational and research purposes only. Standalone proof file generated December 28, 2025.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Ghost081280/north-star-watchdog" target="_blank">GitHub</a>
+                <a href="https://www.justice.gov/usao-mn/pr" target="_blank">DOJ Minnesota</a>
+                <a href="https://oversight.house.gov" target="_blank">House Oversight</a>
+            </div>
+            <div class="footer-credit">Built by <a href="https://x.com/Ghost081280" target="_blank">@Ghost081280</a></div>
+        </div>
+    </footer>
+
+<script>
+/* ============================================
+   NORTH STAR WATCHDOG - STANDALONE VERSION
+   All JavaScript embedded for proof file
+   December 28, 2025
+   ============================================ */
+
+const CONFIG = {
+    FEC_API_KEY: 'bhv66hmghpNdcPqd82WMszdJhspXQDKhoqeteL1U',
+    CORS_PROXY: 'https://api.allorigins.win/raw?url=',
+    USA_SPENDING_BASE: 'https://api.usaspending.gov/api/v2',
+    PROPUBLICA_BASE: 'https://projects.propublica.org/nonprofits/api/v2',
+    FEC_BASE: 'https://api.open.fec.gov/v1'
+};
+
+const INVESTIGATIONS = [
+    { id: 'feeding-our-future', emoji: '🍽️', title: 'Feeding Our Future', amount: '$250 Million', amountNum: 250000000, status: '78 Indicted • 57+ Convicted', description: 'Largest COVID-19 pandemic relief fraud in U.S. history. Nonprofit claimed to feed thousands of children but funds were stolen.', keyFacts: ['Aimee Bock (mastermind) convicted March 19, 2025 on all counts', 'Salim Said convicted - Safari Restaurant received $16M+', '$120,000 attempted juror bribery - 5 charged, all pled guilty', '$60-70M recovered ($30M cash, rest in real estate/vehicles)', 'Money used for mansions, luxury cars, lavish spending'], organizations: ['Feeding Our Future', 'Safari Restaurant', 'Advance Youth Athletic Development', 'Smart Therapy LLC', 'Empire Cuisine & Market'], politicalConnections: ['Guhaad Hashi Said - Omar campaign enforcer, pled guilty Aug 2025', 'Safari Restaurant - Site of Omar 2018 victory party'], timeline: [{ date: 'Sept 2022', event: 'FBI raids, 47 initial indictments' }, { date: '2024', event: 'First trial: 5 convicted, juror bribery attempt' }, { date: 'March 2025', event: 'Aimee Bock & Salim Said convicted' }, { date: 'Dec 2025', event: '$5.2M restitution sought from Bock' }], source: 'https://www.justice.gov/usao-mn/pr/federal-jury-finds-feeding-our-future-mastermind-and-co-defendant-guilty-250-million' },
+    { id: 'ccap-daycare', emoji: '👶', title: 'CCAP Daycare Fraud', amount: '$1B+ Potential', amountNum: 1000000000, status: '62 Active Investigations', description: 'Child Care Assistance Program fraud involving "ghost daycares" that claim children but provide no services.', keyFacts: ['Quality Learning Center: $7.8M since 2019, 95 violations', 'Nick Shirley viral video Dec 23-26, 2025 exposed $110M+', 'DHS has 62 active investigations into CCAP providers', 'Total fraud could exceed $1 billion per U.S. Attorney', 'Woman yelled "It\'s ICE! Don\'t open up!" when confronted'], organizations: ['Quality Learning Center', 'Multiple daycares under investigation'], politicalConnections: ['Gov. Walz administration oversaw DHS during fraud period'], timeline: [{ date: 'Jan 2025', event: 'KSTP reports 62 active CCAP investigations' }, { date: 'Dec 23, 2025', event: 'Nick Shirley posts viral clip' }, { date: 'Dec 26, 2025', event: 'Full 42-minute video released' }, { date: 'Dec 28, 2025', event: 'FBI Director announces agent surge' }], source: 'https://kstp.com/kstp-news/top-news/62-investigations-underway-involving-federally-funded-minnesota-child-care-centers/' },
+    { id: 'autism-eidbi', emoji: '🧩', title: 'Autism Services (EIDBI)', amount: '$220M+ Potential', amountNum: 220000000, status: '2 Charged • Active Investigation', description: 'Autism therapy fraud. Providers paid kickbacks to parents, hired unqualified staff, billed for services never provided.', keyFacts: ['Smart Therapy LLC: $14M+ fraud, owner pled guilty Dec 18, 2025', 'Star Autism Center: $6M+ fraud, owner charged Dec 18, 2025', 'Kickbacks paid to parents to enroll children', 'Hired unqualified 18-19 year olds as "therapists"', 'Total EIDBI billing 2018-2025: $1.6 billion'], organizations: ['Smart Therapy LLC', 'Star Autism Center'], politicalConnections: ['Asha Hassan also convicted in Feeding Our Future'], timeline: [{ date: 'Sept 2025', event: 'First defendant charged' }, { date: 'Dec 18, 2025', event: 'Hassan pled guilty; Yussuf charged' }], source: 'https://www.justice.gov/usao-mn/pr/first-defendant-charged-autism-fraud-scheme-0' },
+    { id: 'housing-stabilization', emoji: '🏠', title: 'Housing Stabilization', amount: '$302 Million', amountNum: 302000000, status: '13 Charged • Program Terminated', description: 'Medicaid Housing program paid $302M (vs $12M budgeted). Providers billed for services never provided.', keyFacts: ['Program predicted $2.6M annually, paid $302M in 4.5 years', '2024 alone: $104 million paid out', '"Fraud tourism" - Philadelphia men came for "easy money"', 'Program terminated August 1, 2025', 'U.S. Attorney: "vast majority" was fraudulent'], organizations: ['Brilliant Minds Services LLC', 'Leo Human Services LLC', 'Faladcare Inc.', 'Pristine Health LLC'], politicalConnections: ['Minnesota was first state to offer this Medicaid program'], timeline: [{ date: 'July 2020', event: 'Program launches' }, { date: 'Aug 2025', event: 'Program terminated by DHS' }, { date: 'Sept 2025', event: 'First 8 defendants charged' }, { date: 'Dec 2025', event: '5 more defendants charged' }], source: 'https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabilization-fraud-cases' }
+];
+
+const TRENDING_TOPICS = [
+    { emoji: '🔴', name: 'FBI Agent Surge', role: 'Breaking News', why: 'Kash Patel announces agents deployed', date: 'Dec 28, 2025', searchTerm: 'FBI Minnesota fraud' },
+    { emoji: '📹', name: 'Nick Shirley Video', role: 'Viral Investigation', why: '$110M+ fraud exposed in one day', date: 'Dec 26, 2025', searchTerm: 'Nick Shirley Quality Learning Center' },
+    { emoji: '👔', name: 'Tim Walz', role: 'Governor', why: 'House Oversight & Treasury investigating', date: 'Dec 22, 2025', searchTerm: 'Tim Walz' },
+    { emoji: '🏛️', name: 'House Oversight', role: 'Congress', why: 'Comer expands investigation', date: 'Dec 22, 2025', searchTerm: 'House Oversight Minnesota fraud' },
+    { emoji: '🍽️', name: 'Quality Learning Center', role: 'Daycare', why: '$4M received, 95 violations', date: 'Dec 26, 2025', searchTerm: 'Quality Learning Center Minneapolis' },
+    { emoji: '💰', name: '$9 Billion Estimate', role: 'U.S. Attorney', why: 'Thompson: 50%+ may be fraud', date: 'Dec 18, 2025', searchTerm: 'Joe Thompson Minnesota 9 billion' },
+    { emoji: '🏦', name: 'Treasury Investigation', role: 'Al-Shabaab Probe', why: 'Bessent investigating terror links', date: 'Dec 1, 2025', searchTerm: 'Treasury Minnesota Al-Shabaab' },
+    { emoji: '👩‍⚖️', name: 'Ilhan Omar', role: 'Representative', why: 'Campaign official convicted', date: 'Aug 2025', searchTerm: 'Ilhan Omar Guhaad Said' }
+];
+
+const KEY_FIGURES = [
+    { name: 'Tim Walz', role: 'Governor of Minnesota', status: 'investigating', statusLabel: 'Under Investigation', allegations: ['House Oversight Committee investigation (Dec 2025)', 'Treasury Dept investigating Al-Shabaab funding', 'Whistleblowers allege retaliation'], investigatedBy: 'House Oversight, Treasury Dept', searchTerm: 'Tim Walz' },
+    { name: 'Keith Ellison', role: 'Minnesota Attorney General', status: 'investigating', statusLabel: 'Under Scrutiny', allegations: ['House Oversight Committee letter (Dec 2025)', 'Alleged on tape promising to help FOF', 'Campaign donations from fraud meeting'], investigatedBy: 'House Oversight Committee', searchTerm: 'Keith Ellison' },
+    { name: 'Aimee Bock', role: 'Feeding Our Future Founder', status: 'convicted', statusLabel: 'Convicted', allegations: ['Wire fraud - 4 counts (convicted)', 'Conspiracy to commit wire fraud', 'Bribery & conspiracy'], investigatedBy: 'DOJ, FBI, IRS', searchTerm: 'Aimee Bock' },
+    { name: 'Guhaad Hashi Said', role: 'Omar Campaign Official', status: 'convicted', statusLabel: 'Pled Guilty', allegations: ['Wire fraud - $2.9M stolen', 'Money laundering', 'Ran fake food site'], investigatedBy: 'DOJ, FBI', searchTerm: 'Guhaad Hashi Said' }
+];
+
+const CURATED_FRAUD_ENTITIES = {
+    'feeding our future': { flagged: true, type: 'Federal Investigation', status: 'Convicted - $250M fraud', details: 'Nonprofit that stole $250M from child nutrition programs', source: 'DOJ Minnesota' },
+    'safari restaurant': { flagged: true, type: 'Federal Investigation', status: 'Owner convicted March 2025', details: 'Received $16M+ in fraudulent meal reimbursements', source: 'DOJ Minnesota' },
+    'quality learning center': { flagged: true, type: 'Under Investigation', status: 'Active - 95 violations', details: '$7.8M in CCAP funding, viral video Dec 2025', source: 'MN DHS' },
+    'smart therapy': { flagged: true, type: 'Federal Investigation', status: 'Owner pled guilty Dec 2025', details: '$14M+ in autism services fraud', source: 'DOJ Minnesota' },
+    'star autism center': { flagged: true, type: 'Federal Investigation', status: 'Owner charged Dec 2025', details: '$6M+ in autism services fraud', source: 'DOJ Minnesota' },
+    'brilliant minds services': { flagged: true, type: 'Federal Investigation', status: '4 defendants charged', details: '$2.3M in housing fraud', source: 'DOJ Minnesota' },
+    'advance youth athletic development': { flagged: true, type: 'Federal Investigation', status: 'Operator pled guilty', details: '$2.9M fraud by Guhaad Said', source: 'DOJ Minnesota' },
+    'aimee bock': { flagged: true, type: 'Convicted', status: 'All counts - March 2025', details: 'FOF mastermind', source: 'DOJ' },
+    'salim said': { flagged: true, type: 'Convicted', status: 'All counts - March 2025', details: 'Safari Restaurant owner', source: 'DOJ' },
+    'guhaad hashi said': { flagged: true, type: 'Convicted', status: 'Pled guilty Aug 2025', details: 'Omar campaign enforcer', source: 'DOJ' },
+    'tim walz': { flagged: false, type: 'Political Figure', status: 'Under investigation', details: 'Governor - not personally charged', source: 'House Oversight' },
+    'keith ellison': { flagged: false, type: 'Political Figure', status: 'Under scrutiny', details: 'AG - received Comer letter', source: 'House Oversight' },
+    'ilhan omar': { flagged: false, type: 'Political Figure', status: 'Associates convicted', details: 'Not charged - campaign official convicted', source: 'Public records' }
+};
+
+const CREDIBLE_MEDIA_SOURCES = [
+    { name: 'DOJ Minnesota', icon: '⚖️', searchUrl: 'https://www.google.com/search?q=site:justice.gov/usao-mn+' },
+    { name: 'MPR News', icon: '📻', searchUrl: 'https://www.google.com/search?q=site:mprnews.org+' },
+    { name: 'Star Tribune', icon: '📰', searchUrl: 'https://www.google.com/search?q=site:startribune.com+' },
+    { name: 'FOX 9 Minneapolis', icon: '📺', searchUrl: 'https://www.google.com/search?q=site:fox9.com+' },
+    { name: 'KSTP News', icon: '📡', searchUrl: 'https://www.google.com/search?q=site:kstp.com+' },
+    { name: 'Minnesota Reformer', icon: '🔍', searchUrl: 'https://www.google.com/search?q=site:minnesotareformer.com+' },
+    { name: 'CBS Minnesota', icon: '📺', searchUrl: 'https://www.google.com/search?q=site:cbsnews.com/minnesota+' },
+    { name: 'House Oversight', icon: '🏛️', searchUrl: 'https://www.google.com/search?q=site:oversight.house.gov+minnesota+' }
+];
+
+let currentSearchQuery = '';
+let currentResults = { grants: [], contracts: [], nonprofits: [], campaigns: [], mnBusiness: [], investigations: [] };
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderInvestigations();
+    renderTrendingTopics();
+    renderKeyFigures();
+    setupEventListeners();
+});
+
+function renderInvestigations() {
+    document.getElementById('investigations-grid').innerHTML = INVESTIGATIONS.map(inv => `
+        <div class="investigation-card" onclick="openInvestigationModal('${inv.id}')">
+            <div class="investigation-card-header">
+                <span class="investigation-emoji">${inv.emoji}</span>
+                <div class="investigation-title"><h3>${inv.title}</h3><div class="investigation-amount">${inv.amount}</div></div>
+            </div>
+            <div class="investigation-status">${inv.status}</div>
+            <p class="investigation-description">${inv.description}</p>
+            <p class="investigation-click-hint">Click for details →</p>
+        </div>
+    `).join('');
+}
+
+function renderTrendingTopics() {
+    document.getElementById('trending-grid').innerHTML = TRENDING_TOPICS.map(t => `
+        <div class="trending-card" onclick="searchTopic('${escapeHtml(t.searchTerm)}')">
+            <span class="trending-emoji">${t.emoji}</span>
+            <div class="trending-info">
+                <div class="trending-name">${t.name}</div>
+                <div class="trending-role">${t.role}</div>
+                <div class="trending-why">${t.why}</div>
+                <div class="trending-date">${t.date}</div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function renderKeyFigures() {
+    document.getElementById('figures-grid').innerHTML = KEY_FIGURES.map(f => `
+        <div class="figure-card" onclick="searchTopic('${escapeHtml(f.searchTerm)}')">
+            <div class="figure-header">
+                <div><div class="figure-name">${f.name}</div><div class="figure-role">${f.role}</div></div>
+                <span class="figure-status ${f.status}">${f.statusLabel}</span>
+            </div>
+            <div class="figure-allegations"><h4>Allegations/Status</h4><ul>${f.allegations.map(a => `<li>${a}</li>`).join('')}</ul></div>
+            <div class="figure-investigated-by"><strong>Investigated by:</strong> ${f.investigatedBy}</div>
+        </div>
+    `).join('');
+}
+
+function setupEventListeners() {
+    const searchInput = document.getElementById('search-input');
+    document.getElementById('search-btn').addEventListener('click', () => performSearch(searchInput.value));
+    searchInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') performSearch(searchInput.value); });
+    document.getElementById('deep-search-btn').addEventListener('click', performDeepSearch);
+    document.getElementById('export-btn').addEventListener('click', exportToCSV);
+    document.getElementById('share-btn').addEventListener('click', openShareModal);
+    document.getElementById('close-results-btn').addEventListener('click', closeResults);
+    document.getElementById('copy-link-btn').addEventListener('click', copyShareLink);
+}
+
+function searchTopic(term) {
+    document.getElementById('search-input').value = term;
+    performSearch(term);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+async function performSearch(query) {
+    if (!query.trim()) return;
+    currentSearchQuery = query.trim();
+    document.getElementById('results-section').style.display = 'block';
+    document.getElementById('loading-state').style.display = 'block';
+    document.getElementById('gov-results').innerHTML = '';
+    document.getElementById('deep-results').style.display = 'none';
+    document.getElementById('results-query').textContent = query;
+    document.querySelectorAll('.api-name').forEach(el => el.setAttribute('data-status', 'pending'));
+    currentResults = { grants: [], contracts: [], nonprofits: [], campaigns: [], mnBusiness: [], investigations: [] };
+    await Promise.allSettled([searchUSASpendingGrants(query), searchUSASpendingContracts(query), searchProPublicaNonprofits(query), searchFECCampaigns(query), searchMNBusiness(query), searchFederalInvestigations(query)]);
+    document.getElementById('loading-state').style.display = 'none';
+    renderResults();
+}
+
+async function searchUSASpendingGrants(query) {
+    updateApiStatus(0, 'loading');
+    try {
+        const response = await fetch(`${CONFIG.USA_SPENDING_BASE}/search/spending_by_award/`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ filters: { keywords: [query], recipient_locations: [{ country: 'USA', state: 'MN' }], award_type_codes: ['02', '03', '04', '05'] }, fields: ['Award ID', 'Recipient Name', 'Award Amount', 'Description', 'Awarding Agency'], page: 1, limit: 20, sort: 'Award Amount', order: 'desc' }) });
+        if (response.ok) { const data = await response.json(); currentResults.grants = (data.results || []).map(r => ({ name: r['Recipient Name'] || 'Unknown', amount: r['Award Amount'] || 0, description: r['Description'] || 'Federal grant', source: 'USASpending.gov', url: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(query)}` })); updateApiStatus(0, 'complete'); } else { updateApiStatus(0, 'error'); }
+    } catch (e) { updateApiStatus(0, 'error'); }
+}
+
+async function searchUSASpendingContracts(query) {
+    updateApiStatus(1, 'loading');
+    try {
+        const response = await fetch(`${CONFIG.USA_SPENDING_BASE}/search/spending_by_award/`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ filters: { keywords: [query], recipient_locations: [{ country: 'USA', state: 'MN' }], award_type_codes: ['A', 'B', 'C', 'D'] }, fields: ['Award ID', 'Recipient Name', 'Award Amount', 'Description', 'Awarding Agency'], page: 1, limit: 20, sort: 'Award Amount', order: 'desc' }) });
+        if (response.ok) { const data = await response.json(); currentResults.contracts = (data.results || []).map(r => ({ name: r['Recipient Name'] || 'Unknown', amount: r['Award Amount'] || 0, description: r['Description'] || 'Federal contract', source: 'USASpending.gov', url: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(query)}` })); updateApiStatus(1, 'complete'); } else { updateApiStatus(1, 'error'); }
+    } catch (e) { updateApiStatus(1, 'error'); }
+}
+
+async function searchProPublicaNonprofits(query) {
+    updateApiStatus(2, 'loading');
+    try {
+        const url = `${CONFIG.CORS_PROXY}${encodeURIComponent(`${CONFIG.PROPUBLICA_BASE}/search.json?q=${encodeURIComponent(query)}&state[id]=MN`)}`;
+        const response = await fetch(url);
+        if (response.ok) { const data = await response.json(); currentResults.nonprofits = (data.organizations || []).slice(0, 20).map(org => ({ name: org.name || 'Unknown', amount: org.income_amount || 0, description: `EIN: ${org.ein || 'N/A'} | ${org.city || ''}, ${org.state || 'MN'}`, source: 'ProPublica', url: `https://projects.propublica.org/nonprofits/organizations/${org.ein}` })); updateApiStatus(2, 'complete'); } else { updateApiStatus(2, 'error'); }
+    } catch (e) { updateApiStatus(2, 'error'); }
+}
+
+async function searchFECCampaigns(query) {
+    updateApiStatus(3, 'loading');
+    try {
+        const response = await fetch(`${CONFIG.FEC_BASE}/committees/?api_key=${CONFIG.FEC_API_KEY}&q=${encodeURIComponent(query)}&state=MN&per_page=20`);
+        if (response.ok) { const data = await response.json(); currentResults.campaigns = (data.results || []).map(c => ({ name: c.name || 'Unknown', amount: c.receipts || 0, description: `${c.designation_full || ''} | ${c.party_full || ''}`, source: 'FEC.gov', url: `https://www.fec.gov/data/committee/${c.committee_id}/` })); updateApiStatus(3, 'complete'); } else { updateApiStatus(3, 'error'); }
+    } catch (e) { updateApiStatus(3, 'error'); }
+}
+
+function searchMNBusiness(query) {
+    updateApiStatus(4, 'loading');
+    const queryLower = query.toLowerCase();
+    currentResults.mnBusiness = Object.entries(CURATED_FRAUD_ENTITIES).filter(([key]) => key.includes(queryLower) || queryLower.includes(key)).map(([key, entity]) => ({ name: key.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '), amount: 0, description: entity.details, source: entity.source, url: '#', flagged: entity.flagged, status: entity.status }));
+    updateApiStatus(4, 'complete');
+}
+
+function searchFederalInvestigations(query) {
+    updateApiStatus(5, 'loading');
+    const queryLower = query.toLowerCase();
+    currentResults.investigations = INVESTIGATIONS.filter(inv => inv.title.toLowerCase().includes(queryLower) || inv.organizations.some(org => org.toLowerCase().includes(queryLower)) || inv.description.toLowerCase().includes(queryLower)).map(inv => ({ name: inv.title, amount: inv.amountNum, description: `${inv.status} - ${inv.description.substring(0, 100)}...`, source: 'DOJ Minnesota', url: inv.source, flagged: true }));
+    updateApiStatus(5, 'complete');
+}
+
+function updateApiStatus(index, status) { const apiNames = document.querySelectorAll('.api-name'); if (apiNames[index]) apiNames[index].setAttribute('data-status', status); }
+
+function renderResults() {
+    const govResults = document.getElementById('gov-results');
+    const totals = { grants: currentResults.grants.length, contracts: currentResults.contracts.length, nonprofits: currentResults.nonprofits.length, campaigns: currentResults.campaigns.length, mn: currentResults.mnBusiness.length, investigations: currentResults.investigations.length };
+    const total = Object.values(totals).reduce((a, b) => a + b, 0);
+    document.getElementById('results-summary').innerHTML = `<div class="summary-card"><div class="summary-count">${total}</div><div class="summary-label">Total Results</div></div><div class="summary-card"><div class="summary-count">${totals.grants}</div><div class="summary-label">Grants</div></div><div class="summary-card"><div class="summary-count">${totals.contracts}</div><div class="summary-label">Contracts</div></div><div class="summary-card"><div class="summary-count">${totals.nonprofits}</div><div class="summary-label">Nonprofits</div></div><div class="summary-card"><div class="summary-count">${totals.campaigns}</div><div class="summary-label">Campaigns</div></div><div class="summary-card"><div class="summary-count" style="color:var(--red)">${totals.investigations + totals.mn}</div><div class="summary-label">Flagged</div></div>`;
+    if (total === 0) { govResults.innerHTML = `<div class="no-results"><p>No results for "${escapeHtml(currentSearchQuery)}"</p></div>`; return; }
+    let html = '';
+    const flaggedItems = [...currentResults.investigations, ...currentResults.mnBusiness.filter(m => m.flagged)];
+    if (flaggedItems.length > 0) html += renderResultGroup('🔴 Federal Investigations & Flagged', flaggedItems);
+    if (totals.grants > 0) html += renderResultGroup('💵 Federal Grants', currentResults.grants);
+    if (totals.contracts > 0) html += renderResultGroup('📋 Federal Contracts', currentResults.contracts);
+    if (totals.nonprofits > 0) html += renderResultGroup('🏢 Nonprofits', currentResults.nonprofits);
+    if (totals.campaigns > 0) html += renderResultGroup('🗳️ Campaign Finance', currentResults.campaigns);
+    govResults.innerHTML = html;
+}
+
+function renderResultGroup(title, items) {
+    return `<div class="result-group"><div class="result-group-header"><span class="result-group-title">${title}</span><span class="result-group-count">${items.length}</span></div><div class="result-items">${items.map(item => `<div class="result-item ${item.flagged ? 'flagged' : ''}"><div class="result-item-header"><span class="result-item-name">${escapeHtml(item.name)}</span>${item.amount ? `<span class="result-item-amount">${formatCurrency(item.amount)}</span>` : ''}</div>${item.status ? `<div class="result-item-flag">⚠️ ${item.status}</div>` : ''}<div class="result-item-description">${escapeHtml(item.description)}</div><div class="result-item-meta"><span class="result-item-source">${item.source}</span>${item.url && item.url !== '#' ? `<a href="${item.url}" target="_blank" class="result-item-link">View Source →</a>` : ''}</div></div>`).join('')}</div></div>`;
+}
+
+function performDeepSearch() {
+    const deepResults = document.getElementById('deep-results');
+    deepResults.style.display = 'block';
+    const query = encodeURIComponent(currentSearchQuery + ' Minnesota fraud');
+    document.getElementById('deep-results-content').innerHTML = `<p style="margin-bottom:var(--space-lg)">Click to search credible sources for "<strong>${escapeHtml(currentSearchQuery)}</strong>"</p><h4 style="color:var(--gold);margin:var(--space-lg) 0 var(--space-md)">📰 Minnesota News Sources</h4><div class="resource-links">${CREDIBLE_MEDIA_SOURCES.map(s => `<a href="${s.searchUrl}${query}" target="_blank" class="resource-link"><span>${s.icon}</span><span>Search ${s.name}</span></a>`).join('')}</div><h4 style="color:var(--gold);margin:var(--space-lg) 0 var(--space-md)">🔍 Additional Resources</h4><div class="resource-links"><a href="https://www.youtube.com/results?search_query=${query}" target="_blank" class="resource-link"><span>📹</span><span>YouTube</span></a><a href="https://news.google.com/search?q=${query}" target="_blank" class="resource-link"><span>📰</span><span>Google News</span></a><a href="https://www.courtlistener.com/?q=${encodeURIComponent(currentSearchQuery)}" target="_blank" class="resource-link"><span>⚖️</span><span>Court Records</span></a><a href="https://twitter.com/search?q=${query}&f=live" target="_blank" class="resource-link"><span>𝕏</span><span>X/Twitter</span></a></div>`;
+    deepResults.scrollIntoView({ behavior: 'smooth' });
+}
+
+function openInvestigationModal(id) {
+    const inv = INVESTIGATIONS.find(i => i.id === id);
+    if (!inv) return;
+    document.getElementById('modal-header').innerHTML = `<h2><span>${inv.emoji}</span> ${inv.title}</h2><div class="modal-amount">${inv.amount}</div><span class="modal-status">${inv.status}</span>`;
+    document.getElementById('modal-body').innerHTML = `<div class="modal-section"><h3>Key Facts</h3><div class="modal-facts">${inv.keyFacts.map(f => `<p class="modal-fact">${f}</p>`).join('')}</div></div><div class="modal-section"><h3>Connected Organizations (Click to Search)</h3><div class="modal-orgs">${inv.organizations.map(org => `<button class="modal-org" onclick="searchFromModal('${escapeHtml(org)}')">${org}</button>`).join('')}</div></div>${inv.politicalConnections ? `<div class="modal-section"><h3>Political Connections</h3><div class="modal-facts">${inv.politicalConnections.map(c => `<p class="modal-fact">${c}</p>`).join('')}</div></div>` : ''}<div class="modal-section"><h3>Timeline</h3><div class="modal-timeline">${inv.timeline.map(t => `<div class="timeline-item"><div class="timeline-date">${t.date}</div><div class="timeline-event">${t.event}</div></div>`).join('')}</div></div><div class="modal-section"><a href="${inv.source}" target="_blank" class="resource-link" style="display:inline-flex"><span>📄</span><span>View DOJ Source</span></a></div>`;
+    document.getElementById('investigation-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() { document.getElementById('investigation-modal').classList.remove('active'); document.body.style.overflow = ''; }
+function searchFromModal(term) { closeModal(); searchTopic(term); }
+function closeResults() { document.getElementById('results-section').style.display = 'none'; }
+
+function openShareModal() {
+    const query = encodeURIComponent(currentSearchQuery);
+    const url = encodeURIComponent(window.location.href.split('?')[0] + '?q=' + query);
+    const text = encodeURIComponent(`Researching "${currentSearchQuery}" on North Star Watchdog`);
+    document.getElementById('share-twitter').href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+    document.getElementById('share-facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+    document.getElementById('share-linkedin').href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    document.getElementById('share-modal').classList.add('active');
+}
+
+function closeShareModal() { document.getElementById('share-modal').classList.remove('active'); document.getElementById('copy-feedback').style.display = 'none'; }
+
+function copyShareLink() {
+    const url = window.location.href.split('?')[0] + '?q=' + encodeURIComponent(currentSearchQuery);
+    navigator.clipboard.writeText(url).then(() => { document.getElementById('copy-feedback').style.display = 'block'; setTimeout(() => document.getElementById('copy-feedback').style.display = 'none', 2000); });
+}
+
+function exportToCSV() {
+    const all = [...currentResults.investigations.map(r => ({ ...r, category: 'Investigation' })), ...currentResults.mnBusiness.map(r => ({ ...r, category: 'Flagged' })), ...currentResults.grants.map(r => ({ ...r, category: 'Grant' })), ...currentResults.contracts.map(r => ({ ...r, category: 'Contract' })), ...currentResults.nonprofits.map(r => ({ ...r, category: 'Nonprofit' })), ...currentResults.campaigns.map(r => ({ ...r, category: 'Campaign' }))];
+    if (!all.length) { alert('No results to export'); return; }
+    const csv = [['Name', 'Category', 'Amount', 'Description', 'Source', 'URL', 'Status'].join(','), ...all.map(r => [escapeCSV(r.name), escapeCSV(r.category), r.amount ? formatCurrency(r.amount) : '', escapeCSV(r.description), escapeCSV(r.source), r.url || '', escapeCSV(r.status || '')].join(','))].join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `north-star-watchdog-${currentSearchQuery.replace(/\s+/g, '-')}-${new Date().toISOString().split('T')[0]}.csv`;
+    link.click();
+}
+
+function escapeCSV(str) { if (!str) return ''; str = String(str); return str.includes(',') || str.includes('"') || str.includes('\n') ? '"' + str.replace(/"/g, '""') + '"' : str; }
+function formatCurrency(n) { return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(n); }
+function escapeHtml(str) { if (!str) return ''; const d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
+
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeModal(); closeShareModal(); } });
+window.addEventListener('load', () => { const q = new URLSearchParams(window.location.search).get('q'); if (q) { document.getElementById('search-input').value = q; performSearch(q); } });
+</script>
+</body>
+</html>
