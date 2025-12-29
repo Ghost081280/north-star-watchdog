@@ -52,6 +52,10 @@
                 </div>
             </a>
             <div class="header-actions">
+                <button class="btn-briefing" onclick="openBriefing()">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
+                    AI Briefing
+                </button>
                 <a href="#report-section" class="btn-report">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
                     Report Fraud
@@ -101,18 +105,25 @@
             <div class="quick-searches" id="quick-searches">
                 <span class="quick-label">Trending:</span>
             </div>
-            
-            <!-- AI Daily Briefing - below search -->
-            <div class="briefing-inline" id="briefing-section">
-                <div class="briefing-header-inline">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
-                    <span>AI Briefing</span>
-                    <span class="briefing-time" id="briefing-time"></span>
-                </div>
-                <p class="briefing-content-inline" id="briefing-content">Loading AI briefing...</p>
-            </div>
         </div>
     </section>
+
+    <!-- AI Briefing Modal -->
+    <div class="briefing-modal" id="briefing-modal">
+        <div class="briefing-modal-content">
+            <div class="briefing-modal-header">
+                <div class="briefing-modal-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
+                    <span>AI Daily Briefing</span>
+                </div>
+                <button class="briefing-modal-close" onclick="closeBriefing()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <p class="briefing-modal-time" id="briefing-time"></p>
+            <div class="briefing-modal-body" id="briefing-content">Loading AI briefing...</div>
+        </div>
+    </div>
 
     <!-- Results Section -->
     <section class="results-section" id="results-section" style="display: none;">
