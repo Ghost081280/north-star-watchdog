@@ -183,7 +183,7 @@ function renderTrending() {
             <h3 class="trending-topic">${esc(t.topic)}</h3>
             <p class="trending-reason">${esc(t.reason)}</p>
             <div class="trending-searches">
-                ${t.suggestedSearches.map(s => `<span class="search-tag" onclick="doSearch('${esc(s)}')">${esc(s)}</span>`).join('')}
+                ${t.suggestedSearches.map(s => `<span class="search-tag" onclick="doSearch(\`${s.replace(/`/g, '\\`')}\`)">${esc(s)}</span>`).join('')}
             </div>
         </div>
     `).join('');
@@ -198,7 +198,7 @@ function renderStoryIdeas() {
             <h3 class="story-title">${esc(idea.title)}</h3>
             <p class="story-desc">${esc(idea.description)}</p>
             <div class="story-searches">
-                ${idea.searches.map(s => `<span class="search-tag" onclick="doSearch('${esc(s)}')">${esc(s)}</span>`).join('')}
+                ${idea.searches.map(s => `<span class="search-tag" onclick="doSearch(\`${s.replace(/`/g, '\\`')}\`)">${esc(s)}</span>`).join('')}
             </div>
         </div>
     `).join('');
@@ -209,7 +209,7 @@ function renderInvestigations() {
     if (!DATA.investigations?.cases?.length) { grid.innerHTML = '<p class="empty">Loading...</p>'; return; }
     document.getElementById('stat-investigations').textContent = DATA.investigations.cases.length;
     grid.innerHTML = DATA.investigations.cases.map(c => `
-        <div class="investigation-card" onclick="doSearch('${esc(c.name)}')">
+        <div class="investigation-card" onclick="doSearch(\`${c.name.replace(/`/g, '\\`')}\`)">
             ${c.isNew ? '<span class="new-badge">NEW</span>' : ''}
             <h3>${esc(c.name)}</h3>
             <div class="inv-amount">${esc(c.amount)}</div>
