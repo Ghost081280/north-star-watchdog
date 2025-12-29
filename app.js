@@ -28,7 +28,7 @@ const AI_CHATS = [
     { name: 'Perplexity', url: 'https://perplexity.ai/' }
 ];
 
-let DATA = { news: null, trending: null, investigations: null, figures: null, storyIdeas: null };
+let DATA = { news: null, trending: null, investigations: null, figures: null, storyIdeas: null, stats: null };
 let currentQuery = '';
 let currentResults = {};
 let webResearchResults = [];
@@ -41,10 +41,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     await Promise.all([
         loadData('news'), loadData('trending'), loadData('investigations'),
-        loadData('figures'), loadData('story-ideas', 'storyIdeas')
+        loadData('figures'), loadData('story-ideas', 'storyIdeas'), loadData('stats')
     ]);
     
     renderBreaking();
+    renderStats();
+    renderBriefing();
     renderNews();
     renderTrending();
     renderStoryIdeas();
@@ -81,6 +83,57 @@ function setupBackToTop() {
 // ============================================
 // RENDER SECTIONS
 // ============================================
+function renderStats() {
+    if (!DATA.stats) return;
+    const s = DATA.stats;
+    
+    // Update stat values with animation
+    animateCounter('stat-charged', s.charged?.count || 93);
+    animateCounter('stat-convicted', s.convicted?.count || 57);
+    
+    const allegedEl = document.getElementById('stat-alleged');
+    if (allegedEl) allegedEl.textContent = s.alleged?.amount || '$9B+';
+    
+    const casesEl = document.getElementById('stat-investigations');
+    if (casesEl) casesEl.textContent = s.cases?.count || 4;
+}
+
+function animateCounter(elementId, target) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    
+    let current = 0;
+    const duration = 1500;
+    const step = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            el.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            el.textContent = Math.floor(current) + '+';
+        }
+    }, 16);
+}
+
+function renderBriefing() {
+    const content = document.getElementById('briefing-content');
+    const time = document.getElementById('briefing-time');
+    
+    if (!DATA.stats?.briefing) {
+        content.innerHTML = '<p>AI briefing loading...</p>';
+        return;
+    }
+    
+    content.innerHTML = `<p>${DATA.stats.briefing}</p>`;
+    
+    if (DATA.stats.lastUpdated) {
+        const date = new Date(DATA.stats.lastUpdated);
+        time.textContent = date.toLocaleString();
+    }
+}
+
 function renderBreaking() {
     if (!DATA.news?.breaking) return;
     const b = DATA.news.breaking;
@@ -149,7 +202,7 @@ function renderFigures() {
     const grid = document.getElementById('figures-grid');
     if (!DATA.figures?.people?.length) { grid.innerHTML = '<p class="empty">Loading...</p>'; return; }
     grid.innerHTML = DATA.figures.people.map(p => `
-        <div class="figure-card">
+        <div class="figure-card${p.isNew ? ' figure-card-new' : ''}">
             ${p.isNew ? '<span class="new-badge">NEW</span>' : ''}
             <div class="figure-header">
                 <div><h3>${esc(p.name)}</h3><span class="figure-role">${esc(p.role)}</span></div>
@@ -157,7 +210,7 @@ function renderFigures() {
             </div>
             <ul class="figure-allegations">${(p.allegations || []).map(a => `<li>${esc(a)}</li>`).join('')}</ul>
             <p class="figure-update">${esc(p.latestUpdate)}</p>
-            <button class="btn-search-figure" onclick="doSearch('${esc(p.name)}')">Search "${esc(p.name)}"</button>
+            <button class="btn-search-figure" onclick="doSearch(\`${p.name.replace(/`/g, '\\`')}\`)">Search "${esc(p.name)}"</button>
         </div>
     `).join('');
 }
@@ -273,12 +326,26 @@ function searchLocalData(query) {
     const q = query.toLowerCase();
     DATA.investigations?.cases?.forEach(c => {
         if (c.name.toLowerCase().includes(q)) {
-            currentResults.local.push({ name: c.name, amount: c.amount, description: c.latestUpdate, source: 'Investigation', flagged: true });
+            currentResults.local.push({ 
+                name: c.name, 
+                amount: c.amount, 
+                description: c.latestUpdate, 
+                source: 'Investigation', 
+                url: c.sourceUrl || 'https://www.justice.gov/usao-mn',
+                flagged: true 
+            });
         }
     });
     DATA.figures?.people?.forEach(p => {
         if (p.name.toLowerCase().includes(q)) {
-            currentResults.local.push({ name: p.name, description: `${p.role} - ${p.latestUpdate}`, source: 'Key Figure', status: formatStatus(p.status), flagged: p.status !== 'cleared' });
+            currentResults.local.push({ 
+                name: p.name, 
+                description: `${p.role} - ${p.latestUpdate}`, 
+                source: 'Key Figure', 
+                url: p.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(p.name + ' Minnesota fraud')}`,
+                status: formatStatus(p.status), 
+                flagged: p.status !== 'cleared' 
+            });
         }
     });
 }
@@ -287,11 +354,17 @@ async function searchUSASpending(query, type, codes) {
     try {
         const res = await fetch(`${CONFIG.USA_SPENDING}/search/spending_by_award/`, {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ filters: { keywords: [query], recipient_locations: [{ country: 'USA', state: 'MN' }], award_type_codes: codes }, fields: ['Recipient Name', 'Award Amount', 'Description'], page: 1, limit: 10, sort: 'Award Amount', order: 'desc' })
+            body: JSON.stringify({ filters: { keywords: [query], recipient_locations: [{ country: 'USA', state: 'MN' }], award_type_codes: codes }, fields: ['Recipient Name', 'Award Amount', 'Description', 'Award ID'], page: 1, limit: 10, sort: 'Award Amount', order: 'desc' })
         });
         if (res.ok) {
             const data = await res.json();
-            currentResults[type] = (data.results || []).map(r => ({ name: r['Recipient Name'] || 'Unknown', amount: r['Award Amount'] || 0, description: r['Description'] || `Federal ${type}`, source: 'USASpending' }));
+            currentResults[type] = (data.results || []).map(r => ({ 
+                name: r['Recipient Name'] || 'Unknown', 
+                amount: r['Award Amount'] || 0, 
+                description: r['Description'] || `Federal ${type}`, 
+                source: 'USASpending',
+                url: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(query)}`
+            }));
         }
     } catch (e) {}
 }
