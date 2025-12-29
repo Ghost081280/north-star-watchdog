@@ -90,20 +90,6 @@
         </div>
     </section>
 
-    <!-- AI Daily Briefing -->
-    <section class="briefing-section" id="briefing-section">
-        <div class="briefing-container">
-            <div class="briefing-header">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><path d="M12 8v8M8 12h8"/><circle cx="12" cy="20" r="2"/></svg>
-                <h3>AI Daily Briefing</h3>
-                <span class="briefing-time" id="briefing-time"></span>
-            </div>
-            <div class="briefing-content" id="briefing-content">
-                <p class="loading-text">Loading AI briefing...</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Search -->
     <section class="search-section" id="search-section">
         <div class="search-container">
@@ -113,7 +99,17 @@
                 <button id="search-btn" class="search-btn">Search</button>
             </div>
             <div class="quick-searches" id="quick-searches">
-                <span class="quick-label">Quick:</span>
+                <span class="quick-label">Trending:</span>
+            </div>
+            
+            <!-- AI Daily Briefing - below search -->
+            <div class="briefing-inline" id="briefing-section">
+                <div class="briefing-header-inline">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
+                    <span>AI Briefing</span>
+                    <span class="briefing-time" id="briefing-time"></span>
+                </div>
+                <p class="briefing-content-inline" id="briefing-content">Loading AI briefing...</p>
             </div>
         </div>
     </section>
@@ -313,6 +309,14 @@
                         </div>
                     </div>
                     <p class="footer-tagline">100% FREE • No API keys • No login required</p>
+                    
+                    <div class="footer-ai-notice">
+                        <p class="ai-disclaimer-inline">🤖 <strong>AI-Managed:</strong> This entire site is curated and updated hourly by AI. Content, trending topics, key figures, and analysis are all AI-generated.</p>
+                        <a href="https://x.com/intent/tweet?text=@Ghost081280%20Please%20add%20coverage%20for%20my%20state:%20" target="_blank" rel="noopener" class="suggest-state-btn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Suggest a State
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
@@ -367,14 +371,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p class="ai-disclaimer"><strong>AI-Curated Content:</strong> This site is managed and updated hourly by AI. All content, trending topics, and analysis are AI-generated. Always verify information independently.</p>
-                <p class="disclaimer"><strong>Legal Disclaimer:</strong> All individuals are presumed innocent until proven guilty. This is a research tool, not legal advice.</p>
-                <div class="footer-actions">
-                    <a href="https://x.com/intent/tweet?text=@Ghost081280%20Please%20add%20coverage%20for%20my%20state:%20" target="_blank" rel="noopener" class="suggest-state-btn">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        Suggest a State
-                    </a>
-                </div>
+                <p class="legal-line">All individuals are presumed innocent until proven guilty. This is a research tool, not legal advice. Always verify independently.</p>
                 <p class="copyright">© 2025 North Star Watchdog | MIT License | Built by <a href="https://x.com/Ghost081280" target="_blank" rel="noopener">@Ghost081280</a></p>
             </div>
         </div>
