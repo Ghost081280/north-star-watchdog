@@ -164,9 +164,29 @@ function renderFigures() {
 
 function renderQuickSearches() {
     const searches = [];
-    DATA.trending?.topics?.slice(0, 3).forEach(t => { if (t.suggestedSearches?.[0]) searches.push(t.suggestedSearches[0]); });
-    DATA.figures?.people?.slice(0, 2).forEach(p => searches.push(p.name));
-    document.getElementById('quick-searches').innerHTML = `<span class="quick-label">Quick:</span>` +
+    
+    // First: Get trending topic names (AI-curated, updates hourly)
+    DATA.trending?.topics?.forEach(t => {
+        if (t.topic) searches.push(t.topic);
+    });
+    
+    // Fallback: If no trending, use suggested searches from trending
+    if (searches.length < 3) {
+        DATA.trending?.topics?.forEach(t => {
+            t.suggestedSearches?.forEach(s => {
+                if (!searches.includes(s)) searches.push(s);
+            });
+        });
+    }
+    
+    // Fallback: Add key figures if still need more
+    if (searches.length < 5) {
+        DATA.figures?.people?.slice(0, 3).forEach(p => {
+            if (!searches.includes(p.name)) searches.push(p.name);
+        });
+    }
+    
+    document.getElementById('quick-searches').innerHTML = `<span class="quick-label">Trending:</span>` +
         searches.slice(0, 5).map(s => `<span class="quick-tag" onclick="doSearch('${esc(s)}')">${esc(s)}</span>`).join('');
 }
 
