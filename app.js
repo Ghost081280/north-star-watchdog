@@ -187,7 +187,7 @@ function renderQuickSearches() {
     }
     
     document.getElementById('quick-searches').innerHTML = `<span class="quick-label">Trending:</span>` +
-        searches.slice(0, 5).map(s => `<span class="quick-tag" onclick="doSearch('${esc(s)}')">${esc(s)}</span>`).join('');
+        searches.slice(0, 5).map(s => `<span class="quick-tag" onclick="doSearch(\`${s.replace(/`/g, '\\`')}\`)">${esc(s)}</span>`).join('');
 }
 
 function updateLastUpdated() {
@@ -241,6 +241,12 @@ async function performSearch(query) {
     content.innerHTML = '';
     deepResearch.style.display = 'none';
     document.getElementById('results-query').textContent = query;
+    
+    // Clear old AI analysis
+    const existingAnalysis = document.getElementById('ai-analysis-result');
+    if (existingAnalysis) {
+        existingAnalysis.remove();
+    }
     
     // Scroll to results
     setTimeout(() => {
@@ -497,6 +503,12 @@ async function fetchGoogleNews(searchTerm) {
 // ============================================
 async function runAIAnalysis() {
     const aiSection = document.querySelector('.ai-section');
+    
+    // Remove any existing analysis result first
+    const existingAnalysis = document.getElementById('ai-analysis-result');
+    if (existingAnalysis) {
+        existingAnalysis.remove();
+    }
     
     // Show loading in AI section
     const analysisDiv = document.createElement('div');
