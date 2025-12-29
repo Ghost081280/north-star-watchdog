@@ -28,14 +28,9 @@ All content is AI-generated from public news sources. Always verify information 
 
 ## 🔍 What Is This?
 
-A free tool to help citizens, journalists, and researchers investigate Minnesota's massive fraud scandal — estimated at **$9 billion or more** across multiple programs:
+A free tool to help citizens, journalists, and researchers investigate Minnesota's massive fraud scandal — estimated at **$9 billion or more** across multiple state programs including childcare, food programs, autism services, and housing.
 
-| Scandal | Amount | Status |
-|---------|--------|--------|
-| **Feeding Our Future** | $250M+ | 78 indicted, 57+ convicted |
-| **CCAP Daycare Fraud** | $1B+ | 62 active investigations |
-| **EIDBI Autism Services** | $220M+ | Under investigation |
-| **Housing Stabilization** | $302M | Program terminated |
+The AI tracks active investigations, key figures, and breaking news automatically. Visit the live site to see the current state of things.
 
 ---
 
@@ -114,17 +109,13 @@ Every hour, our AI automatically:
 
 ## 📰 What The Site Tracks
 
-### Active Investigations
-- Feeding Our Future ($250M+)
-- CCAP Daycare Fraud ($1B+)
-- EIDBI Autism Services ($220M+)
-- Housing Stabilization ($302M)
+The AI monitors and updates:
+- **Active Investigations** — Major fraud cases across Minnesota
+- **Key Figures** — Politicians, administrators, and convicted individuals
+- **Trending Topics** — What's making news right now
+- **Story Ideas** — AI-generated investigation angles
 
-### Key Figures
-The site tracks politicians, administrators, and convicted fraudsters including their current status (Under Investigation, Charged, Convicted).
-
-### Trending Topics
-AI-curated list of what's making news right now, updated hourly.
+All of this updates hourly. Visit the live site for the current state.
 
 ---
 
