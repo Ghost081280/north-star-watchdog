@@ -208,9 +208,16 @@ Based on the news, provide a JSON response with these sections:
     {
       "title": "Investigation angle headline",
       "description": "Brief description",
-      "searches": ["related search 1", "related search 2"]
+      "searches": ["related search 1", "related search 2"],
+      "badge": "Follow Up|Breaking|Pattern|Connection"
     }
-  ]
+  ],
+  "stats": {
+    "charged": 93,
+    "convicted": 57,
+    "alleged": "$9B+"
+  },
+  "briefing": "A 2-3 sentence summary of today's key developments for visitors. Start with 'Good morning/afternoon.' Be informative and direct about what's happening in the investigation."
 }
 
 IMPORTANT:
@@ -219,6 +226,8 @@ IMPORTANT:
 - Be conservative - don't make up information
 - trending should have 3-5 items
 - storyIdeas should have 2-4 items based on patterns in the news
+- Update stats.charged/convicted only if news confirms new numbers
+- briefing should summarize the most important things a visitor should know TODAY
 - Return ONLY valid JSON, no other text`;
 
     try {
@@ -345,6 +354,32 @@ async function updateAllData(articles, aiAnalysis) {
     }
     searchTerms.lastUpdated = timestamp;
     saveData('search-terms.json', searchTerms);
+    
+    // 7. Update stats.json with AI briefing
+    const statsData = {
+        lastUpdated: timestamp,
+        charged: {
+            count: aiAnalysis?.stats?.charged || 93,
+            source: "DOJ Minnesota & Court Records",
+            sourceUrl: "https://www.justice.gov/usao-mn"
+        },
+        convicted: {
+            count: aiAnalysis?.stats?.convicted || 57,
+            source: "DOJ Feeding Our Future Case",
+            sourceUrl: "https://www.justice.gov/usao-mn/pr/feeding-our-future"
+        },
+        alleged: {
+            amount: aiAnalysis?.stats?.alleged || "$9B+",
+            source: "House Oversight Committee",
+            sourceUrl: "https://oversight.house.gov/"
+        },
+        cases: {
+            count: investigations.cases?.length || 4,
+            list: investigations.cases?.map(c => c.name) || []
+        },
+        briefing: aiAnalysis?.briefing || "Good morning. The AI is currently analyzing the latest developments in Minnesota's fraud investigations. Check back soon for today's briefing."
+    };
+    saveData('stats.json', statsData);
     
     console.log('✅ All data files updated!');
 }
