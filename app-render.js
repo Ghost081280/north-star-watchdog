@@ -476,22 +476,19 @@ function renderDetective() {
     // Load red flags from data
     const redFlags = DATA.redFlags?.flags || [];
     
-    // Source sets for different finding types
-    const SOURCE_SETS = [
-        { apis: ['Google News', 'DOJ Press', 'MN DHS', 'Court Records'], count: 15 },
-        { apis: ['Censys', 'SecurityTrails', 'SAM.gov', 'Hunter.io'], count: 18 },
-        { apis: ['FBI Records', 'OFAC Sanctions', 'OIG Exclusions', 'VirusTotal'], count: 22 },
-        { apis: ['IntelX', 'Public Filings', 'State Records', 'Numverify'], count: 14 },
-        { apis: ['Google News', 'FBI Records', 'DOJ Press', 'OFAC Sanctions'], count: 19 },
-        { apis: ['MN DHS', 'Court Records', 'SAM.gov', 'Public Filings'], count: 16 }
-    ];
+    // Get the ACTUAL sources used from the data (set by backend)
+    const globalSourcesUsed = DATA.redFlags?.sourcesUsed || ['Google News', 'DOJ Press', 'FBI Press', 'SAM.gov', 'OFAC Sanctions', 'OIG Exclusions'];
+    const globalSourceCount = DATA.redFlags?.sourceCount || globalSourcesUsed.length;
     
     // Generate findings from various sources
     let findings = [];
     
     // Add red flags from data
     redFlags.forEach((flag, idx) => {
-        const sourceSet = SOURCE_SETS[idx % SOURCE_SETS.length];
+        // Use the sources from the actual flag if available, otherwise use global
+        const flagSources = flag.sourcesUsed || globalSourcesUsed;
+        const flagSourceCount = flag.sourceCount || globalSourceCount;
+        
         findings.push({
             type: 'red-flag',
             typeLabel: 'Red Flag',
@@ -499,13 +496,15 @@ function renderDetective() {
             description: flag.description,
             entities: flag.entities || [],
             confidence: flag.priority === 'high' ? 85 : flag.priority === 'medium' ? 65 : 45,
-            apisUsed: sourceSet.apis,
-            totalSources: sourceSet.count
+            apisUsed: flagSources,
+            totalSources: flagSourceCount
         });
     });
     
-    // Default findings if no red flags loaded
+    // Default findings if no red flags loaded (show what sources WOULD be used)
     if (findings.length === 0) {
+        const defaultSources = ['Google News', 'SAM.gov', 'OFAC Sanctions', 'OIG Exclusions', 'DOJ Press', 'FBI Press'];
+        
         findings.push({
             type: 'red-flag',
             typeLabel: 'Red Flag',
@@ -513,8 +512,8 @@ function renderDetective() {
             description: 'Detected unusual spike in child care provider registrations immediately following enforcement actions.',
             entities: ['CCAP Daycare Fraud', 'Minnesota DHS'],
             confidence: 87,
-            apisUsed: ['MN DHS', 'Google News', 'Court Records', 'SecurityTrails'],
-            totalSources: 18
+            apisUsed: defaultSources,
+            totalSources: defaultSources.length
         });
         
         findings.push({
@@ -524,8 +523,8 @@ function renderDetective() {
             description: 'Multiple CCAP-funded facilities registered to same physical addresses.',
             entities: ['Feeding Our Future', 'Safari Restaurant'],
             confidence: 72,
-            apisUsed: ['Censys', 'Hunter.io', 'SAM.gov', 'Public Filings'],
-            totalSources: 14
+            apisUsed: defaultSources,
+            totalSources: defaultSources.length
         });
         
         findings.push({
@@ -535,8 +534,8 @@ function renderDetective() {
             description: 'Providers showed 500%+ increases in reimbursement claims within months of enrollment.',
             entities: ['Advance Youth Athletic', 'Brilliant Minds'],
             confidence: 91,
-            apisUsed: ['DOJ Press', 'FBI Records', 'OFAC Sanctions', 'Court Records'],
-            totalSources: 22
+            apisUsed: defaultSources,
+            totalSources: defaultSources.length
         });
     }
     
@@ -564,10 +563,9 @@ function renderDetective() {
         const circumference = 2 * Math.PI * 40;
         const dashOffset = circumference * (1 - gaugePercent);
         
-        // Use varied source set if not already set
-        const sourceSet = f.apisUsed ? f : SOURCE_SETS[idx % SOURCE_SETS.length];
-        const apis = f.apisUsed || sourceSet.apis;
-        const count = f.totalSources || sourceSet.count;
+        // Use the sources from this specific finding
+        const apis = f.apisUsed || globalSourcesUsed;
+        const count = f.totalSources || apis.length;
         
         return `
             <div class="detective-card ${cardClass}">
