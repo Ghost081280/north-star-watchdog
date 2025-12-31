@@ -157,10 +157,16 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 4. trending.json
+    // 4. trending.json - PRESERVE existing if AI returns empty
     // ============================================
+    const existingTrending = readJson('trending.json', { topics: [] });
+    const newTopics = analysis.trending || [];
+    
+    // Only update if AI found new topics, otherwise keep existing
+    const finalTopics = newTopics.length > 0 ? newTopics : existingTrending.topics;
+    
     writeJson('trending.json', {
-        topics: (analysis.trending || []).slice(0, 10),
+        topics: finalTopics.slice(0, 10),
         lastUpdated: now
     });
     
@@ -195,10 +201,16 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 6. story-ideas.json
+    // 6. story-ideas.json - PRESERVE existing if AI returns empty
     // ============================================
+    const existingIdeas = readJson('story-ideas.json', { ideas: [] });
+    const newIdeas = analysis.storyIdeas || [];
+    
+    // Only update if AI found new ideas, otherwise keep existing
+    const finalIdeas = newIdeas.length > 0 ? newIdeas : existingIdeas.ideas;
+    
     writeJson('story-ideas.json', {
-        ideas: (analysis.storyIdeas || []).slice(0, 10),
+        ideas: finalIdeas.slice(0, 10),
         lastUpdated: now
     });
     
@@ -217,11 +229,16 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     };
     
     // Fix briefing greeting
-    const briefing = fixBriefingGreeting(analysis.briefing);
+    let briefing = fixBriefingGreeting(analysis.briefing);
+    
+    // Don't overwrite good briefing with placeholder
+    if (!briefing || briefing === 'Analysis unavailable - no data to process.' || briefing === 'No briefing generated.') {
+        briefing = existingStats.briefing;
+    }
     
     writeJson('stats.json', {
         ...stats,
-        briefing: briefing || existingStats.briefing || 'No briefing available.',
+        briefing: briefing || 'AI briefing will appear after first successful scan.',
         lastUpdated: now
     });
 }
