@@ -306,14 +306,20 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
     
     // 9. Update red-flags.json
     console.log('  Updating red-flags.json...');
-    let redFlags = loadData('red-flags.json') || { flags: [], flagTypes: [] };
+    let redFlags = loadData('red-flags.json') || { flags: [], flagTypes: [], sourcesUsed: [] };
+    
+    // Get sources actually used from OSINT results
+    const sourcesUsed = osintResults?.sourcesUsed || ['Google News', 'DOJ Press', 'FBI Press', 'SAM.gov', 'OFAC Sanctions', 'OIG Exclusions'];
+    const sourceCount = osintResults?.sourceCount || sourcesUsed.length;
     
     // Add red flags from AI analysis
     if (aiAnalysis?.redFlags?.length > 0) {
         const newFlags = aiAnalysis.redFlags.map(f => ({
             ...f,
             detectedAt: timestamp,
-            source: 'ai-analysis'
+            source: 'ai-analysis',
+            sourcesUsed: sourcesUsed,
+            sourceCount: sourceCount
         }));
         redFlags.flags = [...newFlags, ...redFlags.flags].slice(0, 100);
     }
@@ -326,11 +332,16 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
             entities: p.entities,
             priority: p.priority,
             detectedAt: timestamp,
-            source: 'ai-detective'
+            source: 'ai-detective',
+            sourcesUsed: sourcesUsed,
+            sourceCount: sourceCount
         }));
         redFlags.flags = [...detectiveFlags, ...redFlags.flags].slice(0, 100);
     }
     
+    // Store global sources used for this run
+    redFlags.sourcesUsed = sourcesUsed;
+    redFlags.sourceCount = sourceCount;
     redFlags.lastUpdated = timestamp;
     saveData('red-flags.json', redFlags);
     
