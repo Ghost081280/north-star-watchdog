@@ -196,6 +196,7 @@
     </div>
     
     <button class="run-btn" id="run-btn" onclick="runAllDiagnostics()">▶ RUN FULL DIAGNOSTIC</button>
+    <button class="run-btn" id="copy-btn" onclick="copyResults()" style="margin-left:10px;background:#2563eb;">📋 COPY ALL RESULTS</button>
     
     <div class="progress-bar" id="progress-bar" style="display:none;">
         <div class="progress-fill" id="progress-fill" style="width:0%">0%</div>
@@ -1328,6 +1329,214 @@ async function runAllDiagnostics() {
     document.getElementById('run-time').textContent = 'Completed: ' + new Date().toLocaleString();
     btn.disabled = false;
     btn.textContent = '▶ RUN FULL DIAGNOSTIC';
+}
+
+// ============================================
+// COPY RESULTS FUNCTION
+// ============================================
+
+function copyResults() {
+    const timestamp = new Date().toISOString();
+    let report = `NORTH STAR WATCHDOG - DIAGNOSTIC REPORT
+Generated: ${timestamp}
+==========================================
+
+SUMMARY
+-------
+✓ Passed: ${RESULTS.pass}
+✗ Failed: ${RESULTS.fail}
+⚠ Warnings: ${RESULTS.warn}
+Total Tests: ${RESULTS.total}
+
+`;
+
+    // Stats
+    if (DATA.stats) {
+        report += `STATS
+-----
+Charged: ${DATA.stats.charged || 'N/A'}
+Convicted: ${DATA.stats.convicted || 'N/A'}
+Alleged: ${DATA.stats.alleged || 'N/A'}
+Active Cases: ${DATA.stats.activeCases || 'N/A'}
+
+`;
+    }
+
+    // Briefing
+    if (DATA.stats?.briefing) {
+        report += `AI BRIEFING
+-----------
+${DATA.stats.briefing}
+
+`;
+    }
+
+    // Investigations
+    if (DATA.investigations?.cases) {
+        report += `INVESTIGATIONS (${DATA.investigations.cases.length})
+--------------
+`;
+        DATA.investigations.cases.forEach(c => {
+            report += `• ${c.name}: ${c.amount} - ${c.status}
+  ${c.description || 'No description'}
+  Source: ${c.sourceUrl || 'None'}
+  Searches: ${(c.searches || []).join(', ') || 'None'}
+
+`;
+        });
+    }
+
+    // Figures
+    if (DATA.figures?.people) {
+        report += `KEY FIGURES (${DATA.figures.people.length})
+-----------
+`;
+        DATA.figures.people.forEach(p => {
+            report += `• ${p.name} (${p.role}) - ${p.status}
+  Organization: ${p.organization || 'N/A'}
+  Allegations: ${(p.allegations || []).join(', ') || 'None'}
+
+`;
+        });
+    }
+
+    // Trending
+    if (DATA.trending?.topics) {
+        report += `TRENDING TOPICS (${DATA.trending.topics.length})
+---------------
+`;
+        DATA.trending.topics.forEach(t => {
+            report += `• ${t.topic} (Heat: ${t.heat || 'N/A'})
+  ${t.description || 'No description'}
+
+`;
+        });
+    }
+
+    // Story Ideas
+    if (DATA.storyideas?.ideas) {
+        report += `STORY IDEAS (${DATA.storyideas.ideas.length})
+-----------
+`;
+        DATA.storyideas.ideas.forEach(i => {
+            report += `• ${i.title}
+  Angle: ${i.angle || 'N/A'}
+  Priority: ${i.priority || 'N/A'}
+  Questions: ${(i.questions || []).length}
+
+`;
+        });
+    }
+
+    // Red Flags
+    if (DATA.redflags?.flags) {
+        report += `RED FLAGS / AI DETECTIVE (${DATA.redflags.flags.length})
+-----------------------
+Sources Used: ${(DATA.redflags.sourcesUsed || []).join(', ') || 'None'}
+Sources Checked: ${(DATA.redflags.sourcesChecked || []).join(', ') || 'None'}
+
+`;
+        DATA.redflags.flags.forEach(f => {
+            report += `• ${f.type} (Confidence: ${f.confidence || 'N/A'}%)
+  ${f.description || 'No description'}
+  Entities: ${(f.entities || []).join(', ') || 'None'}
+  APIs Used: ${(f.apisUsed || []).join(', ') || 'None'}
+
+`;
+        });
+    }
+
+    // News
+    if (DATA.news?.articles) {
+        report += `NEWS ARTICLES (${DATA.news.articles.length})
+-------------
+`;
+        if (DATA.news.breaking) {
+            report += `BREAKING: ${DATA.news.breaking.title}
+
+`;
+        }
+        DATA.news.articles.slice(0, 10).forEach(a => {
+            report += `• ${a.title}
+  Source: ${a.source || 'Unknown'} | Query: ${a.query || 'N/A'}
+  ${a.link}
+
+`;
+        });
+    }
+
+    // Learning
+    if (DATA.learning) {
+        report += `SELF-LEARNING SYSTEM
+--------------------
+Search Queries (${(DATA.learning.searchQueries || []).length}):
+${(DATA.learning.searchQueries || []).map(q => `  • ${q}`).join('\n')}
+
+Tracked Entities (${(DATA.learning.trackedEntities || []).length}):
+${(DATA.learning.trackedEntities || []).map(e => `  • ${e}`).join('\n')}
+
+Last Learning Update: ${DATA.learning.lastLearningUpdate || 'Never'}
+
+`;
+    }
+
+    // Test Results Log
+    report += `TEST LOG
+--------
+`;
+    LOG.forEach(l => {
+        const icon = l.type === 'pass' ? '✓' : l.type === 'fail' ? '✗' : l.type === 'warn' ? '⚠' : 'ℹ';
+        report += `[${l.time}] ${icon} ${l.msg}
+`;
+    });
+
+    // Raw JSON data
+    report += `
+==========================================
+RAW DATA (JSON)
+==========================================
+
+--- stats.json ---
+${JSON.stringify(DATA.stats, null, 2)}
+
+--- investigations.json ---
+${JSON.stringify(DATA.investigations, null, 2)}
+
+--- figures.json ---
+${JSON.stringify(DATA.figures, null, 2)}
+
+--- trending.json ---
+${JSON.stringify(DATA.trending, null, 2)}
+
+--- story-ideas.json ---
+${JSON.stringify(DATA.storyideas, null, 2)}
+
+--- red-flags.json ---
+${JSON.stringify(DATA.redflags, null, 2)}
+
+--- news.json ---
+${JSON.stringify(DATA.news, null, 2)}
+
+--- learning.json ---
+${JSON.stringify(DATA.learning, null, 2)}
+`;
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(report).then(() => {
+        const btn = document.getElementById('copy-btn');
+        const original = btn.textContent;
+        btn.textContent = '✓ COPIED!';
+        btn.style.background = '#16a34a';
+        setTimeout(() => {
+            btn.textContent = original;
+            btn.style.background = '#2563eb';
+        }, 2000);
+        log('Results copied to clipboard', 'pass');
+    }).catch(err => {
+        log('Failed to copy: ' + err.message, 'fail');
+        // Fallback: show in alert
+        alert('Copy failed. Report:\n\n' + report.substring(0, 5000) + '...');
+    });
 }
 
 // ============================================
