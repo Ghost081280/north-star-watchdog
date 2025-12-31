@@ -4,84 +4,48 @@
       "id": "rf-001",
       "type": "federal_charges",
       "description": "70+ individuals and organizations charged in connection with the Feeding Our Future fraud scheme, one of the largest pandemic fraud cases in U.S. history.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
+      "entities": ["Feeding Our Future", "Aimee Bock"],
       "confidence": 95,
       "source": "DOJ Press Release",
       "sourceUrl": "https://www.justice.gov/usao-mn",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits"
-      ],
-      "detectedAt": "2024-12-31T00:00:00.000Z",
-      "isNew": false
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "OpenCorporates"],
+      "detectedAt": "2024-12-31T00:00:00.000Z"
     },
     {
       "id": "rf-002",
       "type": "program_termination",
       "description": "Minnesota Housing Stabilization Services program terminated after $302M in suspected fraud discovered.",
-      "entities": [
-        "Minnesota DHS",
-        "Housing Stabilization Services"
-      ],
+      "entities": ["Minnesota DHS", "Housing Stabilization Services"],
       "confidence": 90,
       "source": "Minnesota DHS",
-      "apisUsed": [
-        "Google News",
-        "USASpending"
-      ],
-      "detectedAt": "2024-12-31T00:00:00.000Z",
-      "isNew": false
+      "sourceUrl": "https://mn.gov/dhs/",
+      "apisUsed": ["Google News", "USASpending", "OpenCorporates"],
+      "detectedAt": "2024-12-31T00:00:00.000Z"
     },
     {
       "id": "rf-003",
       "type": "federal_freeze",
       "description": "HHS froze all CCAP payments to Minnesota amid fraud investigation estimated at $1B+.",
-      "entities": [
-        "HHS",
-        "Minnesota CCAP",
-        "Child Care Assistance Program"
-      ],
+      "entities": ["HHS", "Minnesota CCAP", "Child Care Assistance Program"],
       "confidence": 92,
       "source": "Federal Register",
-      "apisUsed": [
-        "Google News",
-        "FEC",
-        "OIG Exclusions"
-      ],
-      "detectedAt": "2024-12-31T00:00:00.000Z",
-      "isNew": false
+      "sourceUrl": "https://www.federalregister.gov/",
+      "apisUsed": ["Google News", "FEC", "OIG Exclusions", "USASpending"],
+      "detectedAt": "2024-12-31T00:00:00.000Z"
     },
     {
       "id": "rf-004",
       "type": "nonprofit_red_flag",
       "description": "Multiple nonprofits showed explosive growth in federal funding during pandemic years followed by fraud charges.",
-      "entities": [
-        "Feeding Our Future",
-        "Partners in Nutrition"
-      ],
+      "entities": ["Feeding Our Future", "Partners in Nutrition"],
       "confidence": 85,
       "source": "ProPublica Nonprofits",
-      "apisUsed": [
-        "ProPublica Nonprofits",
-        "OpenCorporates"
-      ],
-      "detectedAt": "2024-12-31T00:00:00.000Z",
-      "isNew": false
+      "sourceUrl": "https://projects.propublica.org/nonprofits/",
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OpenCorporates"],
+      "detectedAt": "2024-12-31T00:00:00.000Z"
     }
   ],
-  "sourcesUsed": [
-    "Google News"
-  ],
-  "sourcesChecked": [
-    "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
-    "OIG Exclusions",
-    "OpenCorporates",
-    "USASpending"
-  ],
-  "lastUpdated": "2025-12-31T19:27:35.088Z"
+  "sourcesUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
+  "sourcesChecked": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
+  "lastUpdated": "2024-12-31T00:00:00.000Z"
 }
