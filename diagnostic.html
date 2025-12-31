@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Watchdog - System Diagnostic</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        .header {
+            text-align: center;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .header h1 { color: #d4af37; margin-bottom: 10px; }
+        .timestamp { color: #888; font-size: 12px; }
+        
+        .section {
+            border: 1px solid #333;
+            margin-bottom: 20px;
+            background: #111;
+        }
+        .section-header {
+            background: #1a1a1a;
+            padding: 10px 15px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-title { color: #d4af37; font-weight: bold; }
+        .section-content { padding: 15px; }
+        
+        .status { padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: bold; }
+        .status-pass { background: #0f5132; color: #75b798; }
+        .status-fail { background: #842029; color: #ea868f; }
+        .status-warn { background: #664d03; color: #ffda6a; }
+        .status-pending { background: #333; color: #888; }
+        
+        .test-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #222;
+        }
+        .test-row:last-child { border-bottom: none; }
+        .test-name { color: #ccc; }
+        .test-detail { color: #666; font-size: 11px; margin-top: 3px; }
+        
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .data-card {
+            background: #1a1a1a;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        .data-card-title { color: #d4af37; font-size: 11px; margin-bottom: 5px; }
+        .data-card-value { color: #00ff00; font-size: 18px; font-weight: bold; }
+        .data-card-detail { color: #666; font-size: 10px; margin-top: 3px; }
+        
+        .json-preview {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 10px;
+            font-size: 11px;
+            max-height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        
+        .progress-bar {
+            background: #333;
+            height: 20px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #d4af37, #00ff00);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .log-output {
+            background: #000;
+            border: 1px solid #333;
+            padding: 10px;
+            font-size: 11px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .log-line { margin: 2px 0; }
+        .log-pass { color: #75b798; }
+        .log-fail { color: #ea868f; }
+        .log-warn { color: #ffda6a; }
+        .log-info { color: #6ea8fe; }
+        
+        .run-btn {
+            background: #d4af37;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .run-btn:hover { background: #e5c158; }
+        .run-btn:disabled { background: #666; cursor: not-allowed; }
+        
+        .summary-box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .summary-item {
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #333;
+        }
+        .summary-item.pass { border-color: #0f5132; }
+        .summary-item.fail { border-color: #842029; }
+        .summary-item.warn { border-color: #664d03; }
+        .summary-count { font-size: 32px; font-weight: bold; }
+        .summary-label { font-size: 11px; color: #888; margin-top: 5px; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #333; }
+        th { color: #d4af37; background: #1a1a1a; }
+        
+        .expandable { cursor: pointer; }
+        .expandable:hover { background: #1a1a1a; }
+        .expand-content { display: none; padding: 10px; background: #0a0a0a; }
+        .expand-content.show { display: block; }
+        
+        .api-status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 8px;
+        }
+        .api-item {
+            padding: 8px;
+            background: #1a1a1a;
+            border-left: 3px solid #333;
+            font-size: 11px;
+        }
+        .api-item.active { border-left-color: #75b798; }
+        .api-item.inactive { border-left-color: #ea868f; }
+        .api-item.unknown { border-left-color: #ffda6a; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⭐ NORTH STAR WATCHDOG</h1>
+        <div>SYSTEM DIAGNOSTIC v2.0</div>
+        <div class="timestamp" id="run-time">Not yet run</div>
+    </div>
+    
+    <!-- Summary -->
+    <div class="summary-box" id="summary-box">
+        <div class="summary-item" id="sum-pass">
+            <div class="summary-count" id="pass-count">-</div>
+            <div class="summary-label">PASSED</div>
+        </div>
+        <div class="summary-item" id="sum-fail">
+            <div class="summary-count" id="fail-count">-</div>
+            <div class="summary-label">FAILED</div>
+        </div>
+        <div class="summary-item" id="sum-warn">
+            <div class="summary-count" id="warn-count">-</div>
+            <div class="summary-label">WARNINGS</div>
+        </div>
+        <div class="summary-item">
+            <div class="summary-count" id="total-count">-</div>
+            <div class="summary-label">TOTAL TESTS</div>
+        </div>
+    </div>
+    
+    <button class="run-btn" id="run-btn" onclick="runAllDiagnostics()">▶ RUN FULL DIAGNOSTIC</button>
+    
+    <div class="progress-bar" id="progress-bar" style="display:none;">
+        <div class="progress-fill" id="progress-fill" style="width:0%">0%</div>
+    </div>
+    
+    <!-- Section 1: Data Files -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📁 DATA FILES</span>
+            <span class="status status-pending" id="status-files">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="files-tests"></div>
+            <div class="data-grid" id="files-grid"></div>
+        </div>
+    </div>
+    
+    <!-- Section 2: Stats Validation -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📊 STATS VALIDATION</span>
+            <span class="status status-pending" id="status-stats">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="stats-tests"></div>
+        </div>
+    </div>
+    
+    <!-- Section 3: AI Briefing Analysis -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🤖 AI BRIEFING ANALYSIS</span>
+            <span class="status status-pending" id="status-briefing">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="briefing-tests"></div>
+            <div id="briefing-content"></div>
+        </div>
+    </div>
+    
+    <!-- Section 4: Investigations -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🔍 INVESTIGATIONS</span>
+            <span class="status status-pending" id="status-inv">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="inv-tests"></div>
+            <table id="inv-table">
+                <thead><tr><th>Name</th><th>Amount</th><th>Status</th><th>Description</th><th>Searches</th></tr></thead>
+                <tbody id="inv-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 5: Key Figures -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">👤 KEY FIGURES</span>
+            <span class="status status-pending" id="status-figures">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="figures-tests"></div>
+            <table id="figures-table">
+                <thead><tr><th>Name</th><th>Role</th><th>Organization</th><th>Status</th><th>Allegations</th></tr></thead>
+                <tbody id="figures-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 6: Trending Topics -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📈 TRENDING TOPICS</span>
+            <span class="status status-pending" id="status-trending">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="trending-tests"></div>
+            <table id="trending-table">
+                <thead><tr><th>Topic</th><th>Category</th><th>Heat</th><th>Description</th><th>Searches</th></tr></thead>
+                <tbody id="trending-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 7: Story Ideas -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">💡 STORY IDEAS (Investigate This)</span>
+            <span class="status status-pending" id="status-ideas">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="ideas-tests"></div>
+            <table id="ideas-table">
+                <thead><tr><th>Title</th><th>Angle</th><th>Priority</th><th>Questions</th><th>Searches</th></tr></thead>
+                <tbody id="ideas-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 8: Red Flags (AI Detective) -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🚨 RED FLAGS (AI Detective)</span>
+            <span class="status status-pending" id="status-redflags">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="redflags-tests"></div>
+            <div id="redflags-sources"></div>
+            <table id="redflags-table">
+                <thead><tr><th>Type</th><th>Description</th><th>Confidence</th><th>Entities</th><th>APIs Used</th></tr></thead>
+                <tbody id="redflags-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 9: News Articles -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📰 NEWS ARTICLES</span>
+            <span class="status status-pending" id="status-news">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="news-tests"></div>
+            <div id="news-breaking"></div>
+            <table id="news-table">
+                <thead><tr><th>Title</th><th>Source</th><th>Date</th><th>Query</th></tr></thead>
+                <tbody id="news-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Section 10: Learning System -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🧠 SELF-LEARNING SYSTEM</span>
+            <span class="status status-pending" id="status-learning">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="learning-tests"></div>
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="data-card-title">SEARCH QUERIES</div>
+                    <div class="data-card-value" id="learning-queries">-</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-card-title">TRACKED ENTITIES</div>
+                    <div class="data-card-value" id="learning-entities">-</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-card-title">LAST LEARNING UPDATE</div>
+                    <div class="data-card-value" id="learning-updated">-</div>
+                </div>
+            </div>
+            <div id="learning-queries-list"></div>
+            <div id="learning-entities-list"></div>
+        </div>
+    </div>
+    
+    <!-- Section 11: Data Sources / APIs -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🔌 DATA SOURCES / APIs</span>
+            <span class="status status-pending" id="status-apis">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="apis-tests"></div>
+            <div class="api-status-grid" id="apis-grid"></div>
+        </div>
+    </div>
+    
+    <!-- Section 12: Frontend Rendering -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🖥️ FRONTEND RENDERING</span>
+            <span class="status status-pending" id="status-frontend">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="frontend-tests"></div>
+        </div>
+    </div>
+    
+    <!-- Section 13: Cross-References -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">🔗 CROSS-REFERENCES & CONSISTENCY</span>
+            <span class="status status-pending" id="status-xref">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="xref-tests"></div>
+        </div>
+    </div>
+    
+    <!-- Section 14: Workflow Readiness -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">⚙️ WORKFLOW READINESS</span>
+            <span class="status status-pending" id="status-workflow">PENDING</span>
+        </div>
+        <div class="section-content">
+            <div id="workflow-tests"></div>
+        </div>
+    </div>
+    
+    <!-- Log Output -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📋 DIAGNOSTIC LOG</span>
+        </div>
+        <div class="section-content">
+            <div class="log-output" id="log-output"></div>
+        </div>
+    </div>
+    
+    <!-- Raw Data Preview -->
+    <div class="section">
+        <div class="section-header">
+            <span class="section-title">📄 RAW DATA PREVIEW</span>
+        </div>
+        <div class="section-content">
+            <div style="margin-bottom:10px;">
+                <button onclick="showRawData('stats')" class="run-btn" style="padding:5px 10px;font-size:11px;">stats.json</button>
+                <button onclick="showRawData('investigations')" class="run-btn" style="padding:5px 10px;font-size:11px;">investigations.json</button>
+                <button onclick="showRawData('figures')" class="run-btn" style="padding:5px 10px;font-size:11px;">figures.json</button>
+                <button onclick="showRawData('trending')" class="run-btn" style="padding:5px 10px;font-size:11px;">trending.json</button>
+                <button onclick="showRawData('story-ideas')" class="run-btn" style="padding:5px 10px;font-size:11px;">story-ideas.json</button>
+                <button onclick="showRawData('red-flags')" class="run-btn" style="padding:5px 10px;font-size:11px;">red-flags.json</button>
+                <button onclick="showRawData('news')" class="run-btn" style="padding:5px 10px;font-size:11px;">news.json</button>
+                <button onclick="showRawData('learning')" class="run-btn" style="padding:5px 10px;font-size:11px;">learning.json</button>
+            </div>
+            <div class="json-preview" id="raw-data-preview">Click a button above to view raw JSON data</div>
+        </div>
+    </div>
+
+<script>
+// ============================================
+// GLOBAL STATE
+// ============================================
+const DATA = {};
+const RESULTS = { pass: 0, fail: 0, warn: 0, total: 0 };
+const LOG = [];
+
+// Expected data sources
+const EXPECTED_SOURCES = [
+    'Google News',
+    'ProPublica Nonprofits',
+    'FEC',
+    'OIG Exclusions',
+    'OpenCorporates',
+    'USASpending'
+];
+
+// ============================================
+// UTILITY FUNCTIONS
+// ============================================
+function log(msg, type = 'info') {
+    const time = new Date().toLocaleTimeString();
+    LOG.push({ time, msg, type });
+    const el = document.getElementById('log-output');
+    el.innerHTML += `<div class="log-line log-${type}">[${time}] ${msg}</div>`;
+    el.scrollTop = el.scrollHeight;
+}
+
+function updateProgress(pct) {
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-fill').textContent = pct + '%';
+}
+
+function setStatus(id, status) {
+    const el = document.getElementById(id);
+    el.className = 'status status-' + status;
+    el.textContent = status.toUpperCase();
+}
+
+function addTest(containerId, name, passed, detail = '') {
+    RESULTS.total++;
+    let status = 'pass';
+    if (passed === true) {
+        RESULTS.pass++;
+    } else if (passed === false) {
+        RESULTS.fail++;
+        status = 'fail';
+    } else {
+        RESULTS.warn++;
+        status = 'warn';
+    }
+    
+    const container = document.getElementById(containerId);
+    container.innerHTML += `
+        <div class="test-row">
+            <div>
+                <div class="test-name">${name}</div>
+                ${detail ? `<div class="test-detail">${detail}</div>` : ''}
+            </div>
+            <span class="status status-${status}">${status.toUpperCase()}</span>
+        </div>
+    `;
+    return status;
+}
+
+function updateSummary() {
+    document.getElementById('pass-count').textContent = RESULTS.pass;
+    document.getElementById('fail-count').textContent = RESULTS.fail;
+    document.getElementById('warn-count').textContent = RESULTS.warn;
+    document.getElementById('total-count').textContent = RESULTS.total;
+    
+    document.getElementById('sum-pass').className = 'summary-item' + (RESULTS.pass > 0 ? ' pass' : '');
+    document.getElementById('sum-fail').className = 'summary-item' + (RESULTS.fail > 0 ? ' fail' : '');
+    document.getElementById('sum-warn').className = 'summary-item' + (RESULTS.warn > 0 ? ' warn' : '');
+}
+
+async function loadJson(filename) {
+    try {
+        const res = await fetch(`data/${filename}.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
+    } catch (e) {
+        log(`Failed to load ${filename}.json: ${e.message}`, 'fail');
+        return null;
+    }
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function formatDate(dateStr) {
+    if (!dateStr) return 'N/A';
+    try {
+        return new Date(dateStr).toLocaleString();
+    } catch {
+        return dateStr;
+    }
+}
+
+// ============================================
+// DIAGNOSTIC TESTS
+// ============================================
+
+async function testDataFiles() {
+    log('Testing data files...', 'info');
+    const files = ['stats', 'investigations', 'figures', 'trending', 'story-ideas', 'red-flags', 'news', 'learning'];
+    let allPassed = true;
+    
+    const grid = document.getElementById('files-grid');
+    grid.innerHTML = '';
+    
+    for (const file of files) {
+        const data = await loadJson(file);
+        const key = file.replace('-', '');
+        DATA[key] = data;
+        
+        const exists = data !== null;
+        const hasContent = data && Object.keys(data).length > 0;
+        const hasLastUpdated = data && data.lastUpdated;
+        
+        addTest('files-tests', `${file}.json exists`, exists);
+        addTest('files-tests', `${file}.json has content`, hasContent, exists ? `${Object.keys(data).length} keys` : '');
+        
+        if (!exists || !hasContent) allPassed = false;
+        
+        grid.innerHTML += `
+            <div class="data-card">
+                <div class="data-card-title">${file}.json</div>
+                <div class="data-card-value" style="color:${exists ? '#75b798' : '#ea868f'}">${exists ? '✓' : '✗'}</div>
+                <div class="data-card-detail">${hasLastUpdated ? formatDate(data.lastUpdated) : 'No timestamp'}</div>
+            </div>
+        `;
+    }
+    
+    setStatus('status-files', allPassed ? 'pass' : 'fail');
+    log(`Data files: ${allPassed ? 'All loaded' : 'Some missing'}`, allPassed ? 'pass' : 'fail');
+}
+
+function testStats() {
+    log('Testing stats validation...', 'info');
+    const stats = DATA.stats;
+    let allPassed = true;
+    
+    if (!stats) {
+        addTest('stats-tests', 'Stats data loaded', false);
+        setStatus('status-stats', 'fail');
+        return;
+    }
+    
+    // Test charged
+    const hasCharged = typeof stats.charged === 'number' && stats.charged > 0;
+    addTest('stats-tests', 'Charged count exists and > 0', hasCharged, `Value: ${stats.charged}`);
+    if (!hasCharged) allPassed = false;
+    
+    // Test convicted
+    const hasConvicted = typeof stats.convicted === 'number' && stats.convicted > 0;
+    addTest('stats-tests', 'Convicted count exists and > 0', hasConvicted, `Value: ${stats.convicted}`);
+    if (!hasConvicted) allPassed = false;
+    
+    // Test alleged
+    const hasAlleged = stats.alleged && stats.alleged !== '$0';
+    addTest('stats-tests', 'Alleged amount exists and not $0', hasAlleged, `Value: ${stats.alleged}`);
+    if (!hasAlleged) allPassed = false;
+    
+    // Test alleged matches title ($9B)
+    const matchesTitle = stats.alleged && stats.alleged.includes('9') && stats.alleged.includes('B');
+    addTest('stats-tests', 'Alleged matches homepage title ($9B+)', matchesTitle, `Value: ${stats.alleged}`);
+    if (!matchesTitle) allPassed = false;
+    
+    // Test active cases
+    const hasActiveCases = typeof stats.activeCases === 'number' && stats.activeCases > 0;
+    addTest('stats-tests', 'Active cases count exists and > 0', hasActiveCases, `Value: ${stats.activeCases}`);
+    if (!hasActiveCases) allPassed = false;
+    
+    // Test convicted <= charged
+    const validRatio = stats.convicted <= stats.charged;
+    addTest('stats-tests', 'Convicted <= Charged (logical)', validRatio, `${stats.convicted} <= ${stats.charged}`);
+    if (!validRatio) allPassed = false;
+    
+    setStatus('status-stats', allPassed ? 'pass' : 'fail');
+}
+
+function testBriefing() {
+    log('Testing AI briefing...', 'info');
+    const stats = DATA.stats;
+    let allPassed = true;
+    
+    if (!stats || !stats.briefing) {
+        addTest('briefing-tests', 'Briefing exists', false);
+        setStatus('status-briefing', 'fail');
+        return;
+    }
+    
+    const briefing = stats.briefing;
+    
+    // Test briefing exists and has content
+    const hasContent = briefing.length > 50;
+    addTest('briefing-tests', 'Briefing has substantial content (>50 chars)', hasContent, `Length: ${briefing.length} chars`);
+    if (!hasContent) allPassed = false;
+    
+    // Test not a placeholder
+    const notPlaceholder = !briefing.includes('unavailable') && !briefing.includes('loading') && !briefing.includes('No briefing');
+    addTest('briefing-tests', 'Briefing is not a placeholder', notPlaceholder);
+    if (!notPlaceholder) allPassed = false;
+    
+    // Test doesn't start with greeting
+    const noGreeting = !briefing.match(/^(Good morning|Good afternoon|Good evening|Hello|Hi)/i);
+    addTest('briefing-tests', 'Briefing does not start with greeting', noGreeting);
+    if (!noGreeting) allPassed = false;
+    
+    // Test mentions key topics
+    const mentionsFOF = briefing.toLowerCase().includes('feeding our future') || briefing.toLowerCase().includes('fof');
+    addTest('briefing-tests', 'Briefing mentions Feeding Our Future', mentionsFOF);
+    
+    const mentionsFraud = briefing.toLowerCase().includes('fraud');
+    addTest('briefing-tests', 'Briefing mentions fraud', mentionsFraud);
+    
+    const mentionsMinnesota = briefing.toLowerCase().includes('minnesota') || briefing.toLowerCase().includes('mn');
+    addTest('briefing-tests', 'Briefing mentions Minnesota', mentionsMinnesota);
+    
+    // Test is multi-sentence (synthesizes multiple sources)
+    const sentences = briefing.split(/[.!?]+/).filter(s => s.trim().length > 10);
+    const isMultiSentence = sentences.length >= 3;
+    addTest('briefing-tests', 'Briefing is multi-sentence (synthesizes data)', isMultiSentence, `${sentences.length} sentences`);
+    if (!isMultiSentence) allPassed = false;
+    
+    // Display briefing
+    document.getElementById('briefing-content').innerHTML = `
+        <div style="margin-top:15px; padding:15px; background:#1a1a1a; border-left:3px solid #d4af37;">
+            <div style="color:#d4af37; font-size:11px; margin-bottom:10px;">CURRENT BRIEFING:</div>
+            <div style="color:#ccc; line-height:1.6;">${escapeHtml(briefing)}</div>
+        </div>
+    `;
+    
+    setStatus('status-briefing', allPassed ? 'pass' : (mentionsFOF && mentionsFraud ? 'warn' : 'fail'));
+}
+
+function testInvestigations() {
+    log('Testing investigations...', 'info');
+    const inv = DATA.investigations;
+    let allPassed = true;
+    
+    if (!inv || !inv.cases) {
+        addTest('inv-tests', 'Investigations data loaded', false);
+        setStatus('status-inv', 'fail');
+        return;
+    }
+    
+    const cases = inv.cases;
+    
+    // Test has cases
+    const hasCases = cases.length > 0;
+    addTest('inv-tests', 'Has at least 1 investigation', hasCases, `Count: ${cases.length}`);
+    if (!hasCases) allPassed = false;
+    
+    // Test each case has required fields
+    let validCases = 0;
+    for (const c of cases) {
+        if (c.name && c.amount && c.status) validCases++;
+    }
+    const allValid = validCases === cases.length;
+    addTest('inv-tests', 'All cases have name, amount, status', allValid, `${validCases}/${cases.length} valid`);
+    if (!allValid) allPassed = false;
+    
+    // Test cases have descriptions
+    const withDesc = cases.filter(c => c.description && c.description.length > 20).length;
+    const hasDescriptions = withDesc === cases.length;
+    addTest('inv-tests', 'All cases have descriptions', hasDescriptions, `${withDesc}/${cases.length} with descriptions`);
+    if (!hasDescriptions) allPassed = false;
+    
+    // Test cases have search terms
+    const withSearches = cases.filter(c => c.searches && c.searches.length > 0).length;
+    const hasSearches = withSearches === cases.length;
+    addTest('inv-tests', 'All cases have search terms', hasSearches, `${withSearches}/${cases.length} with searches`);
+    if (!hasSearches) allPassed = false;
+    
+    // Populate table
+    const tbody = document.getElementById('inv-tbody');
+    tbody.innerHTML = '';
+    for (const c of cases) {
+        tbody.innerHTML += `
+            <tr>
+                <td>${escapeHtml(c.name)}</td>
+                <td>${escapeHtml(c.amount)}</td>
+                <td>${escapeHtml(c.status)}</td>
+                <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(c.description || 'MISSING')}</td>
+                <td>${c.searches ? c.searches.map(s => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(s)}</span>`).join('') : '<span style="color:#ea868f;">MISSING</span>'}</td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-inv', allPassed ? 'pass' : 'fail');
+}
+
+function testFigures() {
+    log('Testing key figures...', 'info');
+    const fig = DATA.figures;
+    let allPassed = true;
+    
+    if (!fig || !fig.people) {
+        addTest('figures-tests', 'Figures data loaded', false);
+        setStatus('status-figures', 'fail');
+        return;
+    }
+    
+    const people = fig.people;
+    
+    // Test has figures
+    const hasFigures = people.length > 0;
+    addTest('figures-tests', 'Has at least 1 figure', hasFigures, `Count: ${people.length}`);
+    if (!hasFigures) allPassed = false;
+    
+    // Test has multiple figures
+    const hasMultiple = people.length >= 3;
+    addTest('figures-tests', 'Has multiple figures (>=3)', hasMultiple, `Count: ${people.length}`);
+    if (!hasMultiple) allPassed = false;
+    
+    // Test each figure has required fields
+    let validFigures = 0;
+    for (const p of people) {
+        if (p.name && p.role && p.status) validFigures++;
+    }
+    const allValid = validFigures === people.length;
+    addTest('figures-tests', 'All figures have name, role, status', allValid, `${validFigures}/${people.length} valid`);
+    if (!allValid) allPassed = false;
+    
+    // Test figures have allegations
+    const withAllegations = people.filter(p => p.allegations && p.allegations.length > 0).length;
+    addTest('figures-tests', 'Figures have allegations listed', withAllegations > 0, `${withAllegations}/${people.length} with allegations`);
+    
+    // Populate table
+    const tbody = document.getElementById('figures-tbody');
+    tbody.innerHTML = '';
+    for (const p of people) {
+        tbody.innerHTML += `
+            <tr>
+                <td>${escapeHtml(p.name)}</td>
+                <td>${escapeHtml(p.role)}</td>
+                <td>${escapeHtml(p.organization || 'N/A')}</td>
+                <td><span class="status status-${p.status === 'convicted' ? 'fail' : 'warn'}">${escapeHtml(p.status)}</span></td>
+                <td>${p.allegations ? p.allegations.map(a => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(a)}</span>`).join('') : 'N/A'}</td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-figures', allPassed ? 'pass' : 'fail');
+}
+
+function testTrending() {
+    log('Testing trending topics...', 'info');
+    const trend = DATA.trending;
+    let allPassed = true;
+    
+    if (!trend || !trend.topics) {
+        addTest('trending-tests', 'Trending data loaded', false);
+        setStatus('status-trending', 'fail');
+        return;
+    }
+    
+    const topics = trend.topics;
+    
+    // Test has topics
+    const hasTopics = topics.length > 0;
+    addTest('trending-tests', 'Has at least 1 trending topic', hasTopics, `Count: ${topics.length}`);
+    if (!hasTopics) allPassed = false;
+    
+    // Test not empty array (was a bug)
+    const notEmpty = topics.length > 0;
+    addTest('trending-tests', 'Topics array not empty (bug check)', notEmpty);
+    if (!notEmpty) allPassed = false;
+    
+    // Test each topic has required fields
+    let validTopics = 0;
+    for (const t of topics) {
+        if (t.topic && t.description) validTopics++;
+    }
+    const allValid = validTopics === topics.length;
+    addTest('trending-tests', 'All topics have name and description', allValid, `${validTopics}/${topics.length} valid`);
+    if (!allValid) allPassed = false;
+    
+    // Test topics have heat scores
+    const withHeat = topics.filter(t => typeof t.heat === 'number').length;
+    addTest('trending-tests', 'Topics have heat scores', withHeat === topics.length, `${withHeat}/${topics.length} with heat`);
+    
+    // Populate table
+    const tbody = document.getElementById('trending-tbody');
+    tbody.innerHTML = '';
+    for (const t of topics) {
+        tbody.innerHTML += `
+            <tr>
+                <td>${escapeHtml(t.topic)}</td>
+                <td>${escapeHtml(t.category || 'N/A')}</td>
+                <td>${t.heat || 'N/A'}</td>
+                <td style="max-width:200px;">${escapeHtml(t.description || 'MISSING')}</td>
+                <td>${t.suggestedSearches ? t.suggestedSearches.map(s => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(s)}</span>`).join('') : 'N/A'}</td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-trending', allPassed ? 'pass' : 'fail');
+}
+
+function testStoryIdeas() {
+    log('Testing story ideas (Investigate This)...', 'info');
+    const ideas = DATA.storyideas;
+    let allPassed = true;
+    
+    if (!ideas || !ideas.ideas) {
+        addTest('ideas-tests', 'Story ideas data loaded', false);
+        setStatus('status-ideas', 'fail');
+        return;
+    }
+    
+    const list = ideas.ideas;
+    
+    // Test has ideas
+    const hasIdeas = list.length > 0;
+    addTest('ideas-tests', 'Has at least 1 story idea', hasIdeas, `Count: ${list.length}`);
+    if (!hasIdeas) allPassed = false;
+    
+    // Test not empty array (was a bug)
+    const notEmpty = list.length > 0;
+    addTest('ideas-tests', 'Ideas array not empty (bug check)', notEmpty);
+    if (!notEmpty) allPassed = false;
+    
+    // Test each idea has required fields
+    let validIdeas = 0;
+    for (const i of list) {
+        if (i.title && i.angle) validIdeas++;
+    }
+    const allValid = validIdeas === list.length;
+    addTest('ideas-tests', 'All ideas have title and angle', allValid, `${validIdeas}/${list.length} valid`);
+    if (!allValid) allPassed = false;
+    
+    // Test ideas have questions
+    const withQuestions = list.filter(i => i.questions && i.questions.length > 0).length;
+    addTest('ideas-tests', 'Ideas have investigation questions', withQuestions === list.length, `${withQuestions}/${list.length} with questions`);
+    
+    // Populate table
+    const tbody = document.getElementById('ideas-tbody');
+    tbody.innerHTML = '';
+    for (const i of list) {
+        tbody.innerHTML += `
+            <tr>
+                <td>${escapeHtml(i.title)}</td>
+                <td style="max-width:200px;">${escapeHtml(i.angle || 'MISSING')}</td>
+                <td>${escapeHtml(i.priority || 'N/A')}</td>
+                <td>${i.questions ? i.questions.length + ' questions' : '<span style="color:#ea868f;">MISSING</span>'}</td>
+                <td>${i.searches ? i.searches.map(s => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(s)}</span>`).join('') : 'N/A'}</td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-ideas', allPassed ? 'pass' : 'fail');
+}
+
+function testRedFlags() {
+    log('Testing red flags (AI Detective)...', 'info');
+    const rf = DATA.redflags;
+    let allPassed = true;
+    
+    if (!rf || !rf.flags) {
+        addTest('redflags-tests', 'Red flags data loaded', false);
+        setStatus('status-redflags', 'fail');
+        return;
+    }
+    
+    const flags = rf.flags;
+    
+    // Test has flags
+    const hasFlags = flags.length > 0;
+    addTest('redflags-tests', 'Has at least 1 red flag', hasFlags, `Count: ${flags.length}`);
+    if (!hasFlags) allPassed = false;
+    
+    // Test sourcesUsed exists
+    const hasSourcesUsed = rf.sourcesUsed && rf.sourcesUsed.length > 0;
+    addTest('redflags-tests', 'Sources used array exists', hasSourcesUsed, `Sources: ${rf.sourcesUsed?.join(', ') || 'NONE'}`);
+    if (!hasSourcesUsed) allPassed = false;
+    
+    // Test multiple sources used (not just Google News)
+    const multipleSourcesUsed = rf.sourcesUsed && rf.sourcesUsed.length > 1;
+    addTest('redflags-tests', 'Multiple data sources used (not just Google News)', multipleSourcesUsed, `Count: ${rf.sourcesUsed?.length || 0}`);
+    if (!multipleSourcesUsed) allPassed = false;
+    
+    // Test expected sources
+    for (const src of EXPECTED_SOURCES) {
+        const used = rf.sourcesUsed?.includes(src) || rf.sourcesChecked?.includes(src);
+        addTest('redflags-tests', `Source: ${src}`, used ? true : 'warn', used ? 'Active' : 'Not found');
+    }
+    
+    // Test flags have confidence scores
+    const withConfidence = flags.filter(f => typeof f.confidence === 'number').length;
+    addTest('redflags-tests', 'Flags have confidence scores', withConfidence === flags.length, `${withConfidence}/${flags.length}`);
+    
+    // Test flags have apisUsed (not just global sourcesUsed)
+    const withApis = flags.filter(f => f.apisUsed && f.apisUsed.length > 0).length;
+    addTest('redflags-tests', 'Each flag has apisUsed array', withApis === flags.length, `${withApis}/${flags.length} with per-flag APIs`);
+    if (withApis !== flags.length) allPassed = false;
+    
+    // Test flags show multiple APIs (not just Google News)
+    const withMultipleApis = flags.filter(f => f.apisUsed && f.apisUsed.length > 1).length;
+    addTest('redflags-tests', 'Flags show multiple APIs (not just Google News)', withMultipleApis > 0, `${withMultipleApis}/${flags.length} with 2+ APIs`);
+    
+    // Display sources
+    document.getElementById('redflags-sources').innerHTML = `
+        <div style="margin-bottom:15px;">
+            <div style="color:#d4af37; font-size:11px; margin-bottom:5px;">SOURCES USED:</div>
+            <div class="api-status-grid">
+                ${EXPECTED_SOURCES.map(src => {
+                    const used = rf.sourcesUsed?.includes(src);
+                    const checked = rf.sourcesChecked?.includes(src);
+                    return `<div class="api-item ${used ? 'active' : (checked ? 'unknown' : 'inactive')}">${src}<br><span style="font-size:9px;color:#888;">${used ? '✓ Data returned' : (checked ? '? Checked' : '✗ Not checked')}</span></div>`;
+                }).join('')}
+            </div>
+        </div>
+    `;
+    
+    // Populate table
+    const tbody = document.getElementById('redflags-tbody');
+    tbody.innerHTML = '';
+    for (const f of flags) {
+        tbody.innerHTML += `
+            <tr>
+                <td>${escapeHtml(f.type)}</td>
+                <td style="max-width:250px;">${escapeHtml(f.description)}</td>
+                <td><span style="color:${f.confidence >= 90 ? '#75b798' : (f.confidence >= 75 ? '#ffda6a' : '#ea868f')}">${f.confidence}%</span></td>
+                <td>${f.entities ? f.entities.map(e => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(e)}</span>`).join('') : 'N/A'}</td>
+                <td>${f.apisUsed ? f.apisUsed.map(a => `<span style="background:#1a3a1a;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(a)}</span>`).join('') : '<span style="color:#ea868f;">NOT SHOWN</span>'}</td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-redflags', allPassed ? 'pass' : 'fail');
+}
+
+function testNews() {
+    log('Testing news articles...', 'info');
+    const news = DATA.news;
+    let allPassed = true;
+    
+    if (!news) {
+        addTest('news-tests', 'News data loaded', false);
+        setStatus('status-news', 'fail');
+        return;
+    }
+    
+    const articles = news.articles || [];
+    
+    // Test has articles
+    const hasArticles = articles.length > 0;
+    addTest('news-tests', 'Has at least 1 news article', hasArticles, `Count: ${articles.length}`);
+    if (!hasArticles) allPassed = false;
+    
+    // Test has breaking news
+    const hasBreaking = news.breaking && news.breaking.title;
+    addTest('news-tests', 'Has breaking news item', hasBreaking, news.breaking?.title?.substring(0, 50) + '...' || 'NONE');
+    
+    // Test articles have required fields
+    let validArticles = 0;
+    for (const a of articles) {
+        if (a.title && a.link) validArticles++;
+    }
+    addTest('news-tests', 'Articles have title and link', validArticles === articles.length, `${validArticles}/${articles.length}`);
+    
+    // Test articles have sources
+    const withSource = articles.filter(a => a.source).length;
+    addTest('news-tests', 'Articles have source attribution', withSource > 0, `${withSource}/${articles.length}`);
+    
+    // Display breaking news
+    if (news.breaking) {
+        document.getElementById('news-breaking').innerHTML = `
+            <div style="margin-bottom:15px; padding:10px; background:#3a1a1a; border-left:3px solid #ea868f;">
+                <div style="color:#ea868f; font-size:11px; margin-bottom:5px;">BREAKING:</div>
+                <div style="color:#fff;">${escapeHtml(news.breaking.title)}</div>
+                <div style="color:#888; font-size:10px; margin-top:5px;">Source: ${escapeHtml(news.breaking.source || 'Unknown')}</div>
+            </div>
+        `;
+    }
+    
+    // Populate table (first 10)
+    const tbody = document.getElementById('news-tbody');
+    tbody.innerHTML = '';
+    for (const a of articles.slice(0, 10)) {
+        tbody.innerHTML += `
+            <tr>
+                <td style="max-width:300px;"><a href="${escapeHtml(a.link)}" target="_blank" style="color:#6ea8fe;">${escapeHtml(a.title)}</a></td>
+                <td>${escapeHtml(a.source || 'Unknown')}</td>
+                <td>${formatDate(a.pubDate)}</td>
+                <td><span style="background:#333;padding:2px 5px;font-size:10px;">${escapeHtml(a.query || 'N/A')}</span></td>
+            </tr>
+        `;
+    }
+    
+    setStatus('status-news', allPassed ? 'pass' : 'fail');
+}
+
+function testLearning() {
+    log('Testing self-learning system...', 'info');
+    const learn = DATA.learning;
+    let allPassed = true;
+    
+    if (!learn) {
+        addTest('learning-tests', 'Learning data loaded', false);
+        setStatus('status-learning', 'fail');
+        return;
+    }
+    
+    // Test has search queries
+    const queries = learn.searchQueries || [];
+    const hasQueries = queries.length > 0;
+    addTest('learning-tests', 'Has search queries', hasQueries, `Count: ${queries.length}`);
+    if (!hasQueries) allPassed = false;
+    
+    // Test has enough queries
+    const enoughQueries = queries.length >= 8;
+    addTest('learning-tests', 'Has sufficient queries (>=8)', enoughQueries, `Count: ${queries.length}`);
+    
+    // Test has tracked entities
+    const entities = learn.trackedEntities || [];
+    const hasEntities = entities.length > 0;
+    addTest('learning-tests', 'Has tracked entities', hasEntities, `Count: ${entities.length}`);
+    if (!hasEntities) allPassed = false;
+    
+    // Test has lastLearningUpdate
+    const hasTimestamp = !!learn.lastLearningUpdate;
+    addTest('learning-tests', 'Has learning timestamp', hasTimestamp, formatDate(learn.lastLearningUpdate));
+    
+    // Test queries include key terms
+    const keyTerms = ['Minnesota', 'fraud', 'Feeding Our Future'];
+    for (const term of keyTerms) {
+        const hasTerm = queries.some(q => q.toLowerCase().includes(term.toLowerCase()));
+        addTest('learning-tests', `Queries include "${term}"`, hasTerm);
+    }
+    
+    // Update display
+    document.getElementById('learning-queries').textContent = queries.length;
+    document.getElementById('learning-entities').textContent = entities.length;
+    document.getElementById('learning-updated').textContent = formatDate(learn.lastLearningUpdate);
+    
+    // Show queries list
+    document.getElementById('learning-queries-list').innerHTML = `
+        <div style="margin-top:15px;">
+            <div style="color:#d4af37; font-size:11px; margin-bottom:5px;">SEARCH QUERIES (${queries.length}):</div>
+            <div style="display:flex; flex-wrap:wrap; gap:5px;">
+                ${queries.map(q => `<span style="background:#1a1a1a; padding:3px 8px; font-size:10px; border:1px solid #333;">${escapeHtml(q)}</span>`).join('')}
+            </div>
+        </div>
+    `;
+    
+    // Show entities list
+    document.getElementById('learning-entities-list').innerHTML = `
+        <div style="margin-top:15px;">
+            <div style="color:#d4af37; font-size:11px; margin-bottom:5px;">TRACKED ENTITIES (${entities.length}):</div>
+            <div style="display:flex; flex-wrap:wrap; gap:5px;">
+                ${entities.map(e => `<span style="background:#1a3a1a; padding:3px 8px; font-size:10px; border:1px solid #333;">${escapeHtml(e)}</span>`).join('')}
+            </div>
+        </div>
+    `;
+    
+    setStatus('status-learning', allPassed ? 'pass' : 'fail');
+}
+
+function testApis() {
+    log('Testing API/data sources...', 'info');
+    
+    const rf = DATA.redflags || {};
+    const sourcesUsed = rf.sourcesUsed || [];
+    const sourcesChecked = rf.sourcesChecked || [];
+    
+    let activeCount = 0;
+    
+    const grid = document.getElementById('apis-grid');
+    grid.innerHTML = '';
+    
+    for (const src of EXPECTED_SOURCES) {
+        const used = sourcesUsed.includes(src);
+        const checked = sourcesChecked.includes(src);
+        
+        if (used) activeCount++;
+        
+        grid.innerHTML += `
+            <div class="api-item ${used ? 'active' : (checked ? 'unknown' : 'inactive')}">
+                <div>${src}</div>
+                <div style="font-size:9px; color:#888; margin-top:3px;">
+                    ${used ? '✓ Data returned' : (checked ? '⚠ Checked, no data' : '✗ Not checked')}
+                </div>
+            </div>
+        `;
+        
+        addTest('apis-tests', `${src} integration`, used ? true : (checked ? 'warn' : false));
+    }
+    
+    // Overall status
+    const allActive = activeCount === EXPECTED_SOURCES.length;
+    const someActive = activeCount > 1;
+    
+    addTest('apis-tests', 'Multiple APIs returning data', someActive, `${activeCount}/${EXPECTED_SOURCES.length} active`);
+    
+    setStatus('status-apis', allActive ? 'pass' : (someActive ? 'warn' : 'fail'));
+}
+
+function testFrontend() {
+    log('Testing frontend rendering...', 'info');
+    let allPassed = true;
+    
+    // Check if app files exist (we can't actually load them from diagnostic, but we can check DATA)
+    
+    // Test stats would render correctly
+    const statsWouldRender = DATA.stats && DATA.stats.charged > 0 && DATA.stats.alleged !== '$0';
+    addTest('frontend-tests', 'Stats would render (not $0, not 0)', statsWouldRender);
+    if (!statsWouldRender) allPassed = false;
+    
+    // Test briefing would render
+    const briefingWouldRender = DATA.stats?.briefing && DATA.stats.briefing.length > 50;
+    addTest('frontend-tests', 'Briefing would render', briefingWouldRender);
+    if (!briefingWouldRender) allPassed = false;
+    
+    // Test investigations would render
+    const invWouldRender = DATA.investigations?.cases?.length > 0;
+    addTest('frontend-tests', 'Investigations would render', invWouldRender);
+    if (!invWouldRender) allPassed = false;
+    
+    // Test figures would render
+    const figWouldRender = DATA.figures?.people?.length > 0;
+    addTest('frontend-tests', 'Key Figures would render', figWouldRender);
+    if (!figWouldRender) allPassed = false;
+    
+    // Test trending would render
+    const trendWouldRender = DATA.trending?.topics?.length > 0;
+    addTest('frontend-tests', 'Trending would render', trendWouldRender);
+    if (!trendWouldRender) allPassed = false;
+    
+    // Test story ideas would render
+    const ideasWouldRender = DATA.storyideas?.ideas?.length > 0;
+    addTest('frontend-tests', 'Story Ideas would render', ideasWouldRender);
+    if (!ideasWouldRender) allPassed = false;
+    
+    // Test red flags would render
+    const rfWouldRender = DATA.redflags?.flags?.length > 0;
+    addTest('frontend-tests', 'AI Detective would render', rfWouldRender);
+    if (!rfWouldRender) allPassed = false;
+    
+    // Test news would render
+    const newsWouldRender = DATA.news?.articles?.length > 0;
+    addTest('frontend-tests', 'News would render', newsWouldRender);
+    if (!newsWouldRender) allPassed = false;
+    
+    setStatus('status-frontend', allPassed ? 'pass' : 'fail');
+}
+
+function testCrossReferences() {
+    log('Testing cross-references and consistency...', 'info');
+    let allPassed = true;
+    
+    // Test: activeCases matches investigations count
+    const statsCases = DATA.stats?.activeCases || 0;
+    const invCases = DATA.investigations?.cases?.length || 0;
+    const casesMatch = statsCases <= invCases + 2; // Allow some variance
+    addTest('xref-tests', 'Stats activeCases ~ Investigations count', casesMatch, `Stats: ${statsCases}, Investigations: ${invCases}`);
+    
+    // Test: Figures mentioned in red flags exist in figures list
+    const figureNames = (DATA.figures?.people || []).map(p => p.name?.toLowerCase());
+    const rfEntities = [];
+    for (const rf of (DATA.redflags?.flags || [])) {
+        for (const e of (rf.entities || [])) {
+            if (!rfEntities.includes(e.toLowerCase())) rfEntities.push(e.toLowerCase());
+        }
+    }
+    const entityOverlap = rfEntities.filter(e => figureNames.some(f => f && e.includes(f))).length;
+    addTest('xref-tests', 'Red flag entities exist in figures', entityOverlap > 0 || rfEntities.length === 0, `${entityOverlap} matches`);
+    
+    // Test: Trending topics relate to investigations
+    const invNames = (DATA.investigations?.cases || []).map(c => c.name?.toLowerCase());
+    const trendTopics = (DATA.trending?.topics || []).map(t => t.topic?.toLowerCase());
+    const topicRelevance = trendTopics.some(t => invNames.some(i => i && t && (t.includes(i) || i.includes(t))));
+    addTest('xref-tests', 'Trending topics relate to investigations', topicRelevance || trendTopics.length === 0, 'warn');
+    
+    // Test: Learning entities include key figures
+    const learnEntities = (DATA.learning?.trackedEntities || []).map(e => e.toLowerCase());
+    const figInLearn = figureNames.filter(f => f && learnEntities.some(e => e.includes(f))).length;
+    addTest('xref-tests', 'Learning tracks key figures', figInLearn > 0 || figureNames.length === 0, `${figInLearn} tracked`);
+    
+    // Test: News queries match learning queries
+    const learnQueries = DATA.learning?.searchQueries || [];
+    addTest('xref-tests', 'Learning has search queries for scraper', learnQueries.length >= 8, `${learnQueries.length} queries`);
+    
+    // Test: All timestamps are recent (within 7 days)
+    const now = Date.now();
+    const sevenDays = 7 * 24 * 60 * 60 * 1000;
+    const timestamps = [
+        DATA.stats?.lastUpdated,
+        DATA.investigations?.lastUpdated,
+        DATA.news?.lastUpdated,
+        DATA.redflags?.lastUpdated
+    ].filter(Boolean);
+    
+    const recentTimestamps = timestamps.filter(t => (now - new Date(t).getTime()) < sevenDays).length;
+    addTest('xref-tests', 'Data timestamps are recent (<7 days)', recentTimestamps === timestamps.length || timestamps.length === 0, `${recentTimestamps}/${timestamps.length} recent`);
+    
+    setStatus('status-xref', allPassed ? 'pass' : 'warn');
+}
+
+function testWorkflow() {
+    log('Testing workflow readiness...', 'info');
+    
+    // We can't actually test the workflow from the browser, but we can check prerequisites
+    
+    // Test: All required data files exist
+    const requiredFiles = ['stats', 'investigations', 'figures', 'trending', 'storyideas', 'redflags', 'news', 'learning'];
+    const existingFiles = requiredFiles.filter(f => DATA[f] !== null && DATA[f] !== undefined);
+    addTest('workflow-tests', 'All data files exist', existingFiles.length === requiredFiles.length, `${existingFiles.length}/${requiredFiles.length}`);
+    
+    // Test: Data structure is valid for ai-files.js
+    const statsValid = DATA.stats && typeof DATA.stats.charged === 'number';
+    addTest('workflow-tests', 'Stats structure valid for ai-files.js', statsValid);
+    
+    const invValid = DATA.investigations && Array.isArray(DATA.investigations.cases);
+    addTest('workflow-tests', 'Investigations structure valid', invValid);
+    
+    const figValid = DATA.figures && Array.isArray(DATA.figures.people);
+    addTest('workflow-tests', 'Figures structure valid', figValid);
+    
+    const learnValid = DATA.learning && Array.isArray(DATA.learning.searchQueries);
+    addTest('workflow-tests', 'Learning structure valid for ai-scraper.js', learnValid);
+    
+    // Test: Self-learning would work
+    const learnHasEntities = DATA.learning?.trackedEntities?.length > 0;
+    addTest('workflow-tests', 'Self-learning has entities to expand', learnHasEntities);
+    
+    // Test: ai-files.js preserve logic would work
+    const preserveWouldWork = DATA.trending?.topics?.length > 0 || DATA.storyideas?.ideas?.length > 0;
+    addTest('workflow-tests', 'Data preservation logic has data to preserve', preserveWouldWork);
+    
+    setStatus('status-workflow', 'pass');
+}
+
+// ============================================
+// MAIN DIAGNOSTIC RUNNER
+// ============================================
+
+async function runAllDiagnostics() {
+    const btn = document.getElementById('run-btn');
+    btn.disabled = true;
+    btn.textContent = 'RUNNING...';
+    
+    document.getElementById('progress-bar').style.display = 'block';
+    document.getElementById('run-time').textContent = 'Running: ' + new Date().toLocaleString();
+    document.getElementById('log-output').innerHTML = '';
+    
+    // Reset results
+    RESULTS.pass = 0;
+    RESULTS.fail = 0;
+    RESULTS.warn = 0;
+    RESULTS.total = 0;
+    
+    // Clear all test containers
+    const testContainers = document.querySelectorAll('[id$="-tests"]');
+    testContainers.forEach(c => c.innerHTML = '');
+    
+    log('Starting full diagnostic...', 'info');
+    
+    const tests = [
+        { name: 'Data Files', fn: testDataFiles, pct: 10 },
+        { name: 'Stats', fn: testStats, pct: 20 },
+        { name: 'Briefing', fn: testBriefing, pct: 30 },
+        { name: 'Investigations', fn: testInvestigations, pct: 40 },
+        { name: 'Figures', fn: testFigures, pct: 50 },
+        { name: 'Trending', fn: testTrending, pct: 55 },
+        { name: 'Story Ideas', fn: testStoryIdeas, pct: 60 },
+        { name: 'Red Flags', fn: testRedFlags, pct: 70 },
+        { name: 'News', fn: testNews, pct: 80 },
+        { name: 'Learning', fn: testLearning, pct: 85 },
+        { name: 'APIs', fn: testApis, pct: 90 },
+        { name: 'Frontend', fn: testFrontend, pct: 93 },
+        { name: 'Cross-Refs', fn: testCrossReferences, pct: 96 },
+        { name: 'Workflow', fn: testWorkflow, pct: 100 }
+    ];
+    
+    for (const test of tests) {
+        try {
+            await test.fn();
+        } catch (e) {
+            log(`Error in ${test.name}: ${e.message}`, 'fail');
+        }
+        updateProgress(test.pct);
+        updateSummary();
+        await new Promise(r => setTimeout(r, 100));
+    }
+    
+    log(`Diagnostic complete: ${RESULTS.pass} passed, ${RESULTS.fail} failed, ${RESULTS.warn} warnings`, 
+        RESULTS.fail > 0 ? 'fail' : (RESULTS.warn > 0 ? 'warn' : 'pass'));
+    
+    document.getElementById('run-time').textContent = 'Completed: ' + new Date().toLocaleString();
+    btn.disabled = false;
+    btn.textContent = '▶ RUN FULL DIAGNOSTIC';
+}
+
+// ============================================
+// RAW DATA VIEWER
+// ============================================
+
+async function showRawData(filename) {
+    const preview = document.getElementById('raw-data-preview');
+    try {
+        const res = await fetch(`data/${filename}.json?t=${Date.now()}`);
+        const data = await res.json();
+        preview.textContent = JSON.stringify(data, null, 2);
+    } catch (e) {
+        preview.textContent = `Error loading ${filename}.json: ${e.message}`;
+    }
+}
+
+// Auto-run on load
+window.addEventListener('DOMContentLoaded', () => {
+    log('Diagnostic page loaded. Click RUN FULL DIAGNOSTIC to begin.', 'info');
+});
+</script>
+</body>
+</html>
