@@ -4,33 +4,51 @@
       "id": "rf-seed-001",
       "type": "federal_charges",
       "description": "70+ individuals and organizations charged in connection with the Feeding Our Future fraud scheme, one of the largest pandemic fraud cases in U.S. history.",
-      "entities": ["Feeding Our Future", "Aimee Bock"],
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
       "confidence": 95,
       "source": "DOJ Press Release",
       "sourceUrl": "https://www.justice.gov/usao-mn",
-      "detectedAt": "2024-01-01T00:00:00.000Z"
+      "detectedAt": "2024-01-01T00:00:00.000Z",
+      "isNew": false
     },
     {
       "id": "rf-seed-002",
       "type": "convictions",
       "description": "Multiple defendants have been convicted and sentenced in federal court for their roles in the fraud scheme.",
-      "entities": ["Feeding Our Future defendants"],
+      "entities": [
+        "Feeding Our Future defendants"
+      ],
       "confidence": 95,
       "source": "Court Records",
-      "detectedAt": "2024-01-01T00:00:00.000Z"
+      "detectedAt": "2024-01-01T00:00:00.000Z",
+      "isNew": false
     },
     {
       "id": "rf-seed-003",
       "type": "program_fraud",
       "description": "Federal child nutrition program funds allegedly diverted through fraudulent meal site claims during the pandemic.",
-      "entities": ["USDA Child Nutrition Program"],
+      "entities": [
+        "USDA Child Nutrition Program"
+      ],
       "confidence": 88,
       "source": "Google News",
-      "detectedAt": "2024-01-01T00:00:00.000Z"
+      "detectedAt": "2024-01-01T00:00:00.000Z",
+      "isNew": false
     }
   ],
-  "sourcesUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions"],
-  "sourcesChecked": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
-  "lastUpdated": "2024-01-01T00:00:00.000Z",
-  "note": "Red flags detected automatically by AI analysis of news"
+  "sourcesUsed": [
+    "Google News"
+  ],
+  "sourcesChecked": [
+    "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
+    "OIG Exclusions",
+    "OpenCorporates",
+    "USASpending"
+  ],
+  "lastUpdated": "2025-12-31T18:55:01.968Z"
 }
