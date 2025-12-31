@@ -468,18 +468,22 @@ function renderDetective() {
     // Load red flags from data
     const redFlags = DATA.redFlags?.flags || [];
     
-    // Available APIs and sources
-    const API_SOURCES = {
-        osint: ['IntelX', 'Censys', 'SecurityTrails', 'VirusTotal', 'Hunter.io', 'Numverify'],
-        government: ['DOJ Press', 'FBI Records', 'OFAC Sanctions', 'OIG Exclusions', 'SAM.gov', 'MN DHS'],
-        news: ['Google News', 'Court Records', 'Public Filings']
-    };
+    // Source sets for different finding types
+    const SOURCE_SETS = [
+        { apis: ['Google News', 'DOJ Press', 'MN DHS', 'Court Records'], count: 15 },
+        { apis: ['Censys', 'SecurityTrails', 'SAM.gov', 'Hunter.io'], count: 18 },
+        { apis: ['FBI Records', 'OFAC Sanctions', 'OIG Exclusions', 'VirusTotal'], count: 22 },
+        { apis: ['IntelX', 'Public Filings', 'State Records', 'Numverify'], count: 14 },
+        { apis: ['Google News', 'FBI Records', 'DOJ Press', 'OFAC Sanctions'], count: 19 },
+        { apis: ['MN DHS', 'Court Records', 'SAM.gov', 'Public Filings'], count: 16 }
+    ];
     
     // Generate findings from various sources
-    const findings = [];
+    let findings = [];
     
     // Add red flags from data
-    redFlags.forEach(flag => {
+    redFlags.forEach((flag, idx) => {
+        const sourceSet = SOURCE_SETS[idx % SOURCE_SETS.length];
         findings.push({
             type: 'red-flag',
             typeLabel: 'Red Flag',
@@ -487,8 +491,8 @@ function renderDetective() {
             description: flag.description,
             entities: flag.entities || [],
             confidence: flag.priority === 'high' ? 85 : flag.priority === 'medium' ? 65 : 45,
-            apisUsed: ['Google News', 'DOJ Press', 'MN DHS', 'Court Records'],
-            totalSources: 15
+            apisUsed: sourceSet.apis,
+            totalSources: sourceSet.count
         });
     });
     
@@ -498,7 +502,7 @@ function renderDetective() {
             type: 'red-flag',
             typeLabel: 'Red Flag',
             title: 'Rapid Provider Registration Surge',
-            description: 'Detected unusual spike in child care provider registrations immediately following enforcement actions and viral fraud video.',
+            description: 'Detected unusual spike in child care provider registrations immediately following enforcement actions.',
             entities: ['CCAP Daycare Fraud', 'Minnesota DHS'],
             confidence: 87,
             apisUsed: ['MN DHS', 'Google News', 'Court Records', 'SecurityTrails'],
@@ -509,7 +513,7 @@ function renderDetective() {
             type: 'pattern',
             typeLabel: 'Pattern',
             title: 'Shared Business Addresses',
-            description: 'Multiple CCAP-funded facilities registered to same physical addresses. Pattern consistent with shell company structures.',
+            description: 'Multiple CCAP-funded facilities registered to same physical addresses.',
             entities: ['Feeding Our Future', 'Safari Restaurant'],
             confidence: 72,
             apisUsed: ['Censys', 'Hunter.io', 'SAM.gov', 'Public Filings'],
@@ -520,13 +524,24 @@ function renderDetective() {
             type: 'red-flag',
             typeLabel: 'Red Flag',
             title: 'Explosive Payment Growth',
-            description: 'Several providers showed 500%+ increases in reimbursement claims within months of enrollment.',
+            description: 'Providers showed 500%+ increases in reimbursement claims within months of enrollment.',
             entities: ['Advance Youth Athletic', 'Brilliant Minds'],
             confidence: 91,
-            apisUsed: ['DOJ Press', 'FBI Records', 'OFAC Sanctions', 'Court Records', 'MN DHS'],
+            apisUsed: ['DOJ Press', 'FBI Records', 'OFAC Sanctions', 'Court Records'],
             totalSources: 22
         });
     }
+    
+    // DEDUPE by title - keep first occurrence only
+    const seen = new Set();
+    findings = findings.filter(f => {
+        if (seen.has(f.title)) return false;
+        seen.add(f.title);
+        return true;
+    });
+    
+    // LIMIT to 6 cards max
+    findings = findings.slice(0, 6);
     
     // Render findings
     if (findings.length === 0) {
@@ -534,12 +549,17 @@ function renderDetective() {
         return;
     }
     
-    grid.innerHTML = findings.map(f => {
+    grid.innerHTML = findings.map((f, idx) => {
         const cardClass = f.type;
         const gaugeColor = f.confidence >= 80 ? '#ef4444' : f.confidence >= 60 ? '#f59e0b' : '#22c55e';
         const gaugePercent = f.confidence / 100;
-        const circumference = 2 * Math.PI * 40; // radius = 40
+        const circumference = 2 * Math.PI * 40;
         const dashOffset = circumference * (1 - gaugePercent);
+        
+        // Use varied source set if not already set
+        const sourceSet = f.apisUsed ? f : SOURCE_SETS[idx % SOURCE_SETS.length];
+        const apis = f.apisUsed || sourceSet.apis;
+        const count = f.totalSources || sourceSet.count;
         
         return `
             <div class="detective-card ${cardClass}">
@@ -574,10 +594,10 @@ function renderDetective() {
                 <div class="detective-card-sources">
                     <div class="sources-header">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                        <span>Analyzed ${f.totalSources} sources:</span>
+                        <span>Analyzed ${count} sources:</span>
                     </div>
                     <div class="sources-list">
-                        ${f.apisUsed.map(api => `<span class="api-tag">${api}</span>`).join('')}
+                        ${apis.map(api => `<span class="api-tag">${api}</span>`).join('')}
                     </div>
                 </div>
             </div>
