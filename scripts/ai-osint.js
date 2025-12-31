@@ -626,6 +626,7 @@ async function searchSAM(query) {
 // ============================================
 // SAM.gov EXCLUSIONS - Federal Ban List (CRITICAL FOR FRAUD)
 // V4 API - https://open.gsa.gov/api/exclusions-api/
+// Requires at least one search parameter besides api_key
 // ============================================
 
 async function searchSAMExclusions(query) {
@@ -639,9 +640,11 @@ async function searchSAMExclusions(query) {
     console.log(`    SAM Exclusions: Checking if "${query}" is on federal ban list...`);
     
     try {
-        // V4 endpoint - use q parameter for free text search
-        // The exclusionName parameter requires exact format, q is more flexible
-        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&q=${encodeURIComponent(query)}`;
+        // V4 endpoint - use exclusionName parameter (NOT inside q parameter per docs)
+        // exclusionName accepts partial text and applies AND between words
+        // Must also include recordStatus=Active to get valid results
+        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&exclusionName=${encodeURIComponent(query)}&recordStatus=Active`;
+        
         const result = await makeRequest(url, { 
             timeout: 20000
         });
@@ -681,15 +684,16 @@ async function searchSAMExclusions(query) {
             };
         }
         
-        // Check for totalRecords = 0 response
+        // Check for totalRecords = 0 response (empty but valid)
         if (result.success && result.data?.totalRecords === 0) {
             console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
             return { source: 'SAM Exclusions', available: true, found: 0, query };
         }
         
-        // If we got here, log the error for debugging
-        console.log(`    SAM Exclusions: Unexpected response - ${JSON.stringify(result.error || result.data).substring(0, 100)}`);
-        return { source: 'SAM Exclusions', available: true, found: 0, query, note: 'API response unexpected' };
+        // Log error details for debugging
+        const errorMsg = typeof result.error === 'string' ? result.error : JSON.stringify(result.error || result.data || 'unknown');
+        console.log(`    SAM Exclusions: API error - ${errorMsg.substring(0, 150)}`);
+        return { source: 'SAM Exclusions', available: true, found: 0, query, note: 'API returned error' };
     } catch (e) {
         console.log(`    SAM Exclusions: Error - ${e.message}`);
         return { source: 'SAM Exclusions', available: true, found: 0, query, error: e.message };
@@ -700,14 +704,125 @@ async function searchSAMExclusions(query) {
 // Optional OSINT APIs (require registration)
 // ============================================
 
-// IntelligenceX
+// Hunter.io - Email Discovery
+async function findEmails(domain) {
+    const key = process.env.HUNTER_API_KEY;
+    if (!key) return { source: 'Hunter.io', available: false, suggestion: 'Add HUNTER_API_KEY' };
+    
+    console.log(`    Hunter.io: Finding emails at ${domain}...`);
+    
+    const url = `https://api.hunter.io/v2/domain-search?domain=${domain}&api_key=${key}`;
+    const result = await makeRequest(url, { timeout: 15000 });
+    
+    if (result.success && result.data?.data?.emails) {
+        const emails = result.data.data.emails.slice(0, 10).map(e => ({
+            email: e.value,
+            type: e.type,
+            confidence: e.confidence,
+            firstName: e.first_name,
+            lastName: e.last_name,
+            position: e.position
+        }));
+        
+        return {
+            source: 'Hunter.io',
+            available: true,
+            domain,
+            emails,
+            organization: result.data.data.organization,
+            pattern: result.data.data.pattern
+        };
+    }
+    
+    return { source: 'Hunter.io', available: true, domain, emails: [] };
+}
+
+// SecurityTrails - DNS History
+async function getDnsHistory(domain) {
+    const key = process.env.SECURITYTRAILS_API_KEY;
+    if (!key) return { source: 'SecurityTrails', available: false, suggestion: 'Add SECURITYTRAILS_API_KEY' };
+    
+    console.log(`    SecurityTrails: Getting DNS for ${domain}...`);
+    
+    const url = `https://api.securitytrails.com/v1/domain/${domain}`;
+    const result = await makeRequest(url, {
+        timeout: 15000,
+        headers: { 'APIKEY': key }
+    });
+    
+    if (result.success && result.data?.current_dns) {
+        return {
+            source: 'SecurityTrails',
+            available: true,
+            domain,
+            dns: result.data.current_dns,
+            alexaRank: result.data.alexa_rank,
+            hostProvider: result.data.host_provider
+        };
+    }
+    
+    return { source: 'SecurityTrails', available: true, domain, dns: null };
+}
+
+// Censys - Infrastructure Search
+async function searchCensys(query) {
+    const key = process.env.CENSYS_API_KEY;
+    const id = process.env.CENSYS_API_ID;
+    const secret = process.env.CENSYS_API_SECRET;
+    
+    const hasAuth = key || (id && secret);
+    if (!hasAuth) return { source: 'Censys', available: false, suggestion: 'Add CENSYS_API_KEY' };
+    
+    console.log(`    Censys: Searching for ${query}...`);
+    
+    let authHeader;
+    if (key) {
+        authHeader = `Bearer ${key}`;
+    } else {
+        const auth = Buffer.from(`${id}:${secret}`).toString('base64');
+        authHeader = `Basic ${auth}`;
+    }
+    
+    const url = `https://search.censys.io/api/v2/hosts/search?q=${encodeURIComponent(query)}&per_page=5`;
+    const result = await makeRequest(url, {
+        timeout: 15000,
+        headers: { 'Authorization': authHeader }
+    });
+    
+    if (result.success && result.data?.result?.hits) {
+        const hosts = result.data.result.hits.map(h => ({
+            ip: h.ip,
+            services: h.services?.map(s => s.service_name) || [],
+            location: h.location?.country || 'Unknown'
+        }));
+        
+        return {
+            source: 'Censys',
+            available: true,
+            query,
+            hosts
+        };
+    }
+    
+    return { source: 'Censys', available: true, query, hosts: [] };
+}
+
+// IntelligenceX - Dark Web Search
 async function searchIntelX(query) {
     const key = process.env.INTELX_API_KEY;
     if (!key) return { source: 'IntelligenceX', available: false, suggestion: 'Add INTELX_API_KEY' };
     
     console.log(`    IntelX: Searching dark web for "${query}"...`);
-    // Implementation would go here
-    return { source: 'IntelligenceX', available: true, query, note: 'Check IntelX dashboard' };
+    
+    // IntelX requires a two-step process: start search, then get results
+    // For now, return the dashboard link
+    return { 
+        source: 'IntelligenceX', 
+        available: true, 
+        query, 
+        dashboardUrl: `https://intelx.io/?s=${encodeURIComponent(query)}`,
+        note: 'Check IntelX dashboard for results'
+    };
 }
 
 // VirusTotal
@@ -948,30 +1063,16 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     }
     
     // ============================================
-    // Optional: SAM.gov (if key available)
+    // 9. SAM.gov EXCLUSIONS - Federal Ban List (CRITICAL)
     // ============================================
     if (process.env.SAM_API_KEY) {
-        console.log('\n  [Bonus] SAM.gov Entity Registration...');
-        sourcesChecked.push('SAM.gov');
-        
-        for (const org of uniqueOrgs.slice(0, 2)) {
-            const sam = await searchSAM(org);
-            if (sam.found > 0) {
-                if (!sourcesUsed.includes('SAM.gov')) sourcesUsed.push('SAM.gov');
-                results.government.push(sam);
-            }
-        }
-        
-        // ============================================
-        // SAM.gov EXCLUSIONS - Check for banned entities! 🚨
-        // ============================================
-        console.log('\n  [CRITICAL] SAM.gov Exclusions (Federal Ban List)...');
+        console.log('\n  [9/12] SAM.gov Exclusions (Federal Ban List)...');
         sourcesChecked.push('SAM Exclusions');
         
         // Initialize exclusions array if not exists
         if (!results.exclusions) results.exclusions = [];
         
-        // Check all persons AND orgs against exclusions list
+        // Check all persons AND orgs against federal ban list
         for (const name of [...uniquePersons, ...uniqueOrgs].slice(0, 5)) {
             const exclusions = await searchSAMExclusions(name);
             if (exclusions.found > 0) {
@@ -979,7 +1080,108 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
                 results.exclusions.push(exclusions);
                 console.log(`    🚨 ALERT: "${name}" has ${exclusions.found} exclusion records!`);
             }
-            await new Promise(r => setTimeout(r, 300));
+            await new Promise(r => setTimeout(r, 500));
+        }
+    }
+    
+    // ============================================
+    // 10. VirusTotal - Domain Reputation (if key available)
+    // ============================================
+    if (process.env.VIRUSTOTAL_API_KEY) {
+        console.log('\n  [10/12] VirusTotal Domain Checks...');
+        sourcesChecked.push('VirusTotal');
+        
+        // Check any domains found in entities
+        const domains = entities.filter(e => e.includes('.')).slice(0, 3);
+        for (const domain of domains) {
+            const vt = await checkVirusTotal(domain);
+            if (vt.available && vt.malicious !== undefined) {
+                if (!sourcesUsed.includes('VirusTotal')) sourcesUsed.push('VirusTotal');
+                results.domains.push(vt);
+                if (vt.malicious > 0) {
+                    console.log(`    ⚠️ VirusTotal: ${domain} flagged by ${vt.malicious} engines!`);
+                }
+            }
+            await new Promise(r => setTimeout(r, 500));
+        }
+    }
+    
+    // ============================================
+    // 10. Hunter.io - Email Discovery (if key available)
+    // ============================================
+    if (process.env.HUNTER_API_KEY) {
+        console.log('\n  [10/12] Hunter.io Email Discovery...');
+        sourcesChecked.push('Hunter.io');
+        
+        // Search for emails at domains
+        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
+        for (const domain of domains) {
+            const emails = await findEmails(domain);
+            if (emails.available && emails.emails?.length > 0) {
+                if (!sourcesUsed.includes('Hunter.io')) sourcesUsed.push('Hunter.io');
+                results.emails = results.emails || [];
+                results.emails.push(emails);
+                console.log(`    Hunter.io: Found ${emails.emails.length} emails at ${domain}`);
+            }
+            await new Promise(r => setTimeout(r, 500));
+        }
+    }
+    
+    // ============================================
+    // 11. SecurityTrails - DNS History (if key available)
+    // ============================================
+    if (process.env.SECURITYTRAILS_API_KEY) {
+        console.log('\n  [11/12] SecurityTrails DNS History...');
+        sourcesChecked.push('SecurityTrails');
+        
+        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
+        for (const domain of domains) {
+            const dns = await getDnsHistory(domain);
+            if (dns.available && dns.dns) {
+                if (!sourcesUsed.includes('SecurityTrails')) sourcesUsed.push('SecurityTrails');
+                results.infrastructure = results.infrastructure || [];
+                results.infrastructure.push(dns);
+                console.log(`    SecurityTrails: Got DNS for ${domain}`);
+            }
+            await new Promise(r => setTimeout(r, 500));
+        }
+    }
+    
+    // ============================================
+    // 12. IntelligenceX - Dark Web (if key available)
+    // ============================================
+    if (process.env.INTELX_API_KEY) {
+        console.log('\n  [12/12] IntelligenceX Dark Web...');
+        sourcesChecked.push('IntelligenceX');
+        
+        for (const term of searchTerms.slice(0, 2)) {
+            const intel = await searchIntelX(term);
+            if (intel.available) {
+                if (!sourcesUsed.includes('IntelligenceX')) sourcesUsed.push('IntelligenceX');
+                results.darkweb = results.darkweb || [];
+                results.darkweb.push(intel);
+            }
+            await new Promise(r => setTimeout(r, 500));
+        }
+    }
+    
+    // ============================================
+    // Censys - Infrastructure (if key available)
+    // ============================================
+    if (process.env.CENSYS_API_KEY || (process.env.CENSYS_API_ID && process.env.CENSYS_API_SECRET)) {
+        console.log('\n  [Bonus] Censys Infrastructure...');
+        sourcesChecked.push('Censys');
+        
+        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
+        for (const domain of domains) {
+            const censys = await searchCensys(domain);
+            if (censys.available && censys.hosts?.length > 0) {
+                if (!sourcesUsed.includes('Censys')) sourcesUsed.push('Censys');
+                results.infrastructure = results.infrastructure || [];
+                results.infrastructure.push(censys);
+                console.log(`    Censys: Found ${censys.hosts.length} hosts for ${domain}`);
+            }
+            await new Promise(r => setTimeout(r, 500));
         }
     }
     
@@ -1036,10 +1238,13 @@ module.exports = {
     searchOIGExclusions,
     scrapeDOJPress,
     scrapeFBIPress,
-    searchSAM,
-    searchSAMExclusions,  // Federal ban list - CRITICAL
-    // Optional APIs
-    searchIntelX,
-    checkVirusTotal,
-    lookupWhois
+    // SAM.gov (requires free key)
+    searchSAMExclusions,
+    // Paid/Registered APIs
+    findEmails,        // Hunter.io
+    getDnsHistory,     // SecurityTrails
+    searchCensys,      // Censys
+    searchIntelX,      // IntelligenceX
+    checkVirusTotal,   // VirusTotal
+    lookupWhois        // WHOIS (free)
 };
