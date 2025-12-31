@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Star Watchdog - Diagnostic Test Suite</title>
+    <title>North Star Watchdog - Diagnostic v2.0</title>
     <style>
         :root {
             --bg: #0a0a0a;
@@ -14,7 +14,6 @@
             --red: #ef4444;
             --green: #22c55e;
             --blue: #3b82f6;
-            --purple: #a855f7;
             --text: #ffffff;
             --text2: #a0a0a0;
         }
@@ -29,7 +28,6 @@
         .container { max-width: 1200px; margin: 0 auto; }
         h1 { color: var(--gold); margin-bottom: 10px; }
         h2 { color: var(--gold); margin: 30px 0 15px; font-size: 1.3rem; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-        h3 { color: var(--text); margin: 20px 0 10px; font-size: 1rem; }
         .subtitle { color: var(--text2); margin-bottom: 30px; }
         
         .test-section {
@@ -42,7 +40,7 @@
         
         .test-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 12px;
             padding: 12px;
             background: var(--bg3);
@@ -55,21 +53,19 @@
             height: 12px;
             border-radius: 50%;
             flex-shrink: 0;
+            margin-top: 4px;
         }
         .status.pending { background: var(--text2); }
-        .status.success { background: var(--green); }
+        .status.pass { background: var(--green); }
         .status.fail { background: var(--red); }
-        .status.warning { background: #f59e0b; }
+        .status.warn { background: #f59e0b; }
+        .status.info { background: var(--blue); }
         
-        .test-name { flex: 1; }
-        .test-result { 
-            font-family: monospace; 
-            font-size: 12px; 
+        .test-name { flex: 1; font-weight: 500; }
+        .test-detail { 
             color: var(--text2);
-            max-width: 400px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            font-size: 13px;
+            margin-top: 4px;
         }
         
         button {
@@ -83,64 +79,29 @@
             margin: 10px 5px 10px 0;
         }
         button:hover { background: #e8c547; }
-        button:disabled { background: var(--text2); cursor: not-allowed; }
-        
-        .log {
+        button.secondary {
             background: var(--bg3);
+            color: var(--text);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 15px;
-            font-family: monospace;
-            font-size: 12px;
-            max-height: 300px;
-            overflow-y: auto;
-            white-space: pre-wrap;
-            word-break: break-all;
+        }
+        button.secondary:hover { background: var(--border); }
+        button.copy-btn {
+            background: var(--green);
+            font-size: 16px;
+            padding: 15px 30px;
         }
         
-        .log-entry { margin-bottom: 8px; }
-        .log-entry.error { color: var(--red); }
-        .log-entry.success { color: var(--green); }
-        .log-entry.warning { color: #f59e0b; }
-        .log-entry.info { color: var(--blue); }
-        
-        .code-block {
-            background: var(--bg3);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 15px;
-            font-family: monospace;
-            font-size: 11px;
-            overflow-x: auto;
-            margin: 10px 0;
-            white-space: pre-wrap;
-        }
-        
-        .issue-card {
-            background: var(--bg3);
-            border-left: 4px solid var(--red);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .issue-card.warning { border-left-color: #f59e0b; }
-        .issue-card.info { border-left-color: var(--blue); }
-        .issue-card.fixed { border-left-color: var(--green); }
-        
-        .issue-title { font-weight: 600; margin-bottom: 5px; }
-        .issue-desc { color: var(--text2); font-size: 14px; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-bottom: 20px; }
         
         .stat-card {
             background: var(--bg3);
             border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
-        .stat-value { font-size: 2rem; font-weight: 700; color: var(--gold); }
-        .stat-label { color: var(--text2); font-size: 12px; }
+        .stat-value { font-size: 1.8rem; font-weight: 700; }
+        .stat-label { color: var(--text2); font-size: 11px; text-transform: uppercase; }
         
         .progress-bar {
             height: 8px;
@@ -155,17 +116,17 @@
             transition: width 0.3s ease;
         }
         
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
+        .code-block {
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Consolas', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-word;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-        th { color: var(--gold); }
         
         .tag {
             display: inline-block;
@@ -173,41 +134,53 @@
             border-radius: 4px;
             font-size: 10px;
             font-weight: 600;
+            margin-left: 8px;
         }
         .tag-pass { background: rgba(34, 197, 94, 0.2); color: var(--green); }
         .tag-fail { background: rgba(239, 68, 68, 0.2); color: var(--red); }
         .tag-warn { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
-        .tag-info { background: rgba(59, 130, 246, 0.2); color: var(--blue); }
+        .tag-fixed { background: rgba(34, 197, 94, 0.2); color: var(--green); }
+        .tag-new { background: rgba(168, 85, 247, 0.2); color: #a855f7; }
         
-        input[type="text"] {
-            padding: 10px;
-            width: 300px;
+        #full-report {
             background: var(--bg3);
             border: 1px solid var(--border);
-            color: var(--text);
-            border-radius: 6px;
-            margin-right: 10px;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            max-height: 600px;
+            overflow-y: auto;
+            margin-top: 20px;
         }
         
-        .rec-item {
-            background: var(--bg3);
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 10px;
+        .copy-success {
+            background: var(--green) !important;
+            animation: pulse 0.3s ease;
         }
-        .rec-title { font-weight: 600; margin-bottom: 10px; }
-        .rec-steps { color: var(--text2); font-size: 13px; margin-left: 20px; }
-        .rec-steps li { margin: 5px 0; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .section-status {
+            float: right;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🔍 North Star Watchdog - Diagnostic Suite</h1>
-        <p class="subtitle">Full system audit &amp; bug detection for the AI-powered fraud investigation platform</p>
+        <h1>🔍 North Star Watchdog - Diagnostic v2.0</h1>
+        <p class="subtitle">Updated Dec 31, 2025 - Includes checks for recent bug fixes</p>
         
         <div class="grid">
             <div class="stat-card">
-                <div class="stat-value" id="total-tests">0</div>
+                <div class="stat-value" id="total-tests" style="color: var(--gold)">0</div>
                 <div class="stat-label">Total Tests</div>
             </div>
             <div class="stat-card">
@@ -219,8 +192,12 @@
                 <div class="stat-label">Failed</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="issues-found" style="color: #f59e0b">0</div>
-                <div class="stat-label">Issues Found</div>
+                <div class="stat-value" id="warn-tests" style="color: #f59e0b">0</div>
+                <div class="stat-label">Warnings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="fixed-tests" style="color: var(--green)">0</div>
+                <div class="stat-label">Fixed</div>
             </div>
         </div>
         
@@ -229,646 +206,797 @@
         </div>
         
         <button id="btn-run-all">🚀 Run All Tests</button>
-        <button id="btn-clear">🗑️ Clear Results</button>
-        <button id="btn-export">📄 Export Report</button>
+        <button id="btn-copy-report" class="copy-btn">📋 Copy Full Report to Clipboard</button>
         
-        <h2>1. Briefing Greeting Logic Test</h2>
-        <div class="test-section">
-            <p>Testing the fixBriefingGreeting() function to ensure correct time-based greetings.</p>
-            <div id="briefing-tests"></div>
-            <h3>Current Time Analysis</h3>
-            <div class="code-block" id="time-analysis">Click "Run All Tests" to analyze...</div>
-            <h3>Bug Analysis</h3>
-            <div id="briefing-issues"></div>
-        </div>
+        <!-- Test Sections -->
+        <h2>1. File Structure <span class="section-status" id="section1-status"></span></h2>
+        <div class="test-section" id="section-structure"></div>
         
-        <h2>2. API Connectivity Audit</h2>
-        <div class="test-section">
-            <p>Testing if each API is actually being called and returning data.</p>
-            <button id="btn-test-apis">🔌 Test All APIs</button>
-            <div id="api-tests"></div>
-            <h3>API Response Log</h3>
-            <div class="log" id="api-log">Click "Test All APIs" to begin...</div>
-        </div>
+        <h2>2. Data Files <span class="section-status" id="section2-status"></span></h2>
+        <div class="test-section" id="section-data"></div>
         
-        <h2>3. URL Validation (404 Check)</h2>
-        <div class="test-section">
-            <p>Checking all sourceUrls in data files for 404 errors.</p>
-            <button id="btn-validate-urls">🔗 Validate All URLs</button>
-            <table>
-                <thead>
-                    <tr><th>File</th><th>Entity</th><th>URL</th><th>Status</th></tr>
-                </thead>
-                <tbody id="url-tbody"></tbody>
-            </table>
-        </div>
+        <h2>3. Briefing & Greeting <span class="section-status" id="section3-status"></span></h2>
+        <div class="test-section" id="section-briefing"></div>
         
-        <h2>4. Sources Displayed vs Sources Used</h2>
-        <div class="test-section">
-            <p>Verifying that the sources shown in the frontend match what was actually queried.</p>
-            <div id="sources-comparison"></div>
-            <h3>Data Flow Analysis</h3>
-            <div class="code-block" id="sources-flow">Click "Run All Tests" to analyze...</div>
-        </div>
+        <h2>4. Search Functionality <span class="section-status" id="section4-status"></span></h2>
+        <div class="test-section" id="section-search"></div>
         
-        <h2>5. Confidence Score Analysis</h2>
-        <div class="test-section">
-            <p>Checking if confidence scores are dynamic or hardcoded.</p>
-            <div id="confidence-analysis"></div>
-            <h3>Current Confidence Distribution</h3>
-            <div class="code-block" id="confidence-distribution">Click "Run All Tests" to analyze...</div>
-        </div>
+        <h2>5. Deduplication <span class="section-status" id="section5-status"></span></h2>
+        <div class="test-section" id="section-dedup"></div>
         
-        <h2>6. Search Results Bug Test</h2>
-        <div class="test-section">
-            <p>Testing the "No recent news found" bug.</p>
-            <input type="text" id="search-test-input" placeholder="Enter search term..." value="Feeding Our Future">
-            <button id="btn-test-search">🔍 Test Search</button>
-            <div id="search-results"></div>
-        </div>
+        <h2>6. Confidence Scores <span class="section-status" id="section6-status"></span></h2>
+        <div class="test-section" id="section-confidence"></div>
         
-        <h2>7. Data File Integrity Check</h2>
-        <div class="test-section">
-            <p>Validating JSON structure and required fields in all data files.</p>
-            <button id="btn-validate-data">📁 Validate Data Files</button>
-            <div id="data-validation"></div>
-        </div>
+        <h2>7. Sources Display <span class="section-status" id="section7-status"></span></h2>
+        <div class="test-section" id="section-sources"></div>
         
-        <h2>8. Two-Way Chat (ai-responder.js) Test</h2>
-        <div class="test-section">
-            <p>Testing command detection for GitHub issue responses.</p>
-            <div id="chat-tests"></div>
-            <h3>Command Detection Test</h3>
-            <input type="text" id="chat-command" placeholder="Enter a command (e.g., 'approved', 'dismiss')..." style="width: 400px;">
-            <button id="btn-test-chat">🤖 Test Command</button>
-            <div class="code-block" id="chat-result">Enter a command and click test...</div>
-        </div>
+        <h2>8. Frontend Code <span class="section-status" id="section8-status"></span></h2>
+        <div class="test-section" id="section-frontend"></div>
         
-        <h2>9. Code Analysis - Identified Issues</h2>
-        <div class="test-section">
-            <div id="code-issues"></div>
-        </div>
+        <h2>9. Backend Scripts <span class="section-status" id="section9-status"></span></h2>
+        <div class="test-section" id="section-backend"></div>
         
-        <h2>10. Fix Recommendations</h2>
-        <div class="test-section">
-            <div id="recommendations"></div>
-        </div>
+        <h2>10. API Configuration <span class="section-status" id="section10-status"></span></h2>
+        <div class="test-section" id="section-api"></div>
         
-        <h2>📋 Full Diagnostic Log</h2>
-        <div class="log" id="full-log" style="max-height: 500px;">Diagnostic suite ready. Click "Run All Tests" to begin.</div>
+        <h2>📋 Full Report (Copy This)</h2>
+        <button id="btn-copy-report-2" class="copy-btn" style="margin-bottom: 15px;">📋 Copy Full Report to Clipboard</button>
+        <div id="full-report">Click "Run All Tests" to generate report...</div>
     </div>
     
     <script>
-        // State
-        var state = {
-            tests: [],
-            issues: [],
+        const BASE_URL = 'https://ghost081280.github.io/north-star-watchdog';
+        const RAW_URL = 'https://raw.githubusercontent.com/Ghost081280/north-star-watchdog/main';
+        
+        let results = {
+            total: 0,
             passed: 0,
             failed: 0,
-            total: 0
+            warnings: 0,
+            fixed: 0,
+            tests: [],
+            report: ''
         };
         
-        // Logging
-        function log(message, type) {
-            type = type || 'info';
-            var logEl = document.getElementById('full-log');
-            var entry = document.createElement('div');
-            entry.className = 'log-entry ' + type;
-            entry.textContent = '[' + new Date().toLocaleTimeString() + '] ' + message;
-            logEl.appendChild(entry);
-            logEl.scrollTop = logEl.scrollHeight;
-        }
-        
-        function addIssue(title, description, severity) {
-            state.issues.push({ title: title, description: description, severity: severity || 'error' });
-            document.getElementById('issues-found').textContent = state.issues.length;
+        function addTest(section, name, status, detail, tags = []) {
+            results.total++;
+            if (status === 'pass') results.passed++;
+            else if (status === 'fail') results.failed++;
+            else if (status === 'warn') results.warnings++;
+            if (tags.includes('FIXED')) results.fixed++;
+            
+            results.tests.push({ section, name, status, detail, tags });
+            
+            const container = document.getElementById(`section-${section}`);
+            const tagHtml = tags.map(t => {
+                if (t === 'FIXED') return '<span class="tag tag-fixed">✓ FIXED</span>';
+                if (t === 'NEW') return '<span class="tag tag-new">NEW</span>';
+                return `<span class="tag tag-warn">${t}</span>`;
+            }).join('');
+            
+            container.innerHTML += `
+                <div class="test-item">
+                    <div class="status ${status}"></div>
+                    <div>
+                        <div class="test-name">${name} ${tagHtml}</div>
+                        <div class="test-detail">${detail}</div>
+                    </div>
+                </div>
+            `;
+            
+            updateStats();
         }
         
         function updateStats() {
-            document.getElementById('total-tests').textContent = state.total;
-            document.getElementById('passed-tests').textContent = state.passed;
-            document.getElementById('failed-tests').textContent = state.failed;
-            var pct = state.total > 0 ? ((state.passed + state.failed) / state.total) * 100 : 0;
+            document.getElementById('total-tests').textContent = results.total;
+            document.getElementById('passed-tests').textContent = results.passed;
+            document.getElementById('failed-tests').textContent = results.failed;
+            document.getElementById('warn-tests').textContent = results.warnings;
+            document.getElementById('fixed-tests').textContent = results.fixed;
+            
+            const pct = results.total > 0 ? (results.passed / results.total) * 100 : 0;
             document.getElementById('progress').style.width = pct + '%';
         }
         
-        // 1. Briefing Greeting Tests
-        function testBriefingGreeting() {
-            log('Testing briefing greeting logic...', 'info');
-            
-            var container = document.getElementById('briefing-tests');
-            var timeAnalysis = document.getElementById('time-analysis');
-            var issuesContainer = document.getElementById('briefing-issues');
-            
-            var now = new Date();
-            var cstString = now.toLocaleString('en-US', { timeZone: 'America/Chicago' });
-            var cstDate = new Date(cstString);
-            var hour = cstDate.getHours();
-            
-            var expectedGreeting = '';
-            if (hour >= 5 && hour < 12) {
-                expectedGreeting = 'Good morning! ☀️';
-            } else if (hour >= 12 && hour < 17) {
-                expectedGreeting = 'Good afternoon! 👋';
-            } else {
-                expectedGreeting = 'Good evening! 🌙';
+        function setSectionStatus(num, passed, total) {
+            const el = document.getElementById(`section${num}-status`);
+            const pct = total > 0 ? Math.round((passed / total) * 100) : 0;
+            el.textContent = `${passed}/${total} (${pct}%)`;
+            el.style.background = pct === 100 ? 'rgba(34,197,94,0.2)' : pct >= 50 ? 'rgba(245,158,11,0.2)' : 'rgba(239,68,68,0.2)';
+            el.style.color = pct === 100 ? 'var(--green)' : pct >= 50 ? '#f59e0b' : 'var(--red)';
+        }
+        
+        async function fetchFile(path) {
+            try {
+                const res = await fetch(`${RAW_URL}/${path}?t=${Date.now()}`);
+                if (!res.ok) return null;
+                return await res.text();
+            } catch (e) {
+                return null;
             }
+        }
+        
+        async function fetchJSON(path) {
+            try {
+                const res = await fetch(`${BASE_URL}/${path}?t=${Date.now()}`);
+                if (!res.ok) return null;
+                return await res.json();
+            } catch (e) {
+                return null;
+            }
+        }
+        
+        // ============ TEST SECTIONS ============
+        
+        async function testFileStructure() {
+            let passed = 0, total = 0;
             
-            timeAnalysis.textContent = 
-                'Current UTC: ' + now.toISOString() + '\n' +
-                'Current CST: ' + cstString + '\n' +
-                'CST Hour: ' + hour + '\n\n' +
-                'Expected Greeting Logic:\n' +
-                '- Hours 5-11:  "Good morning! ☀️"\n' +
-                '- Hours 12-16: "Good afternoon! 👋"\n' +
-                '- Hours 17-23 & 0-4: "Good evening! 🌙"\n\n' +
-                'Current Hour (' + hour + ') should show: "' + expectedGreeting + '"';
-            
-            // Test the fix function
-            function fixBriefingGreeting(briefing) {
-                var now = new Date();
-                var cstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
-                var h = cstTime.getHours();
-                
-                var correctGreeting;
-                if (h >= 5 && h < 12) {
-                    correctGreeting = 'Good morning! ☀️';
-                } else if (h >= 12 && h < 17) {
-                    correctGreeting = 'Good afternoon! 👋';
+            // Check /app folder files
+            const appFiles = ['app-core.js', 'app-search.js', 'app-render.js', 'app-research.js'];
+            for (const file of appFiles) {
+                total++;
+                const content = await fetchFile(`app/${file}`);
+                if (content && content.length > 100) {
+                    passed++;
+                    addTest('structure', `app/${file} exists`, 'pass', `File found (${content.length} bytes)`, ['FIXED']);
                 } else {
-                    correctGreeting = 'Good evening! 🌙';
+                    addTest('structure', `app/${file} exists`, 'fail', 'File missing or empty - frontend will break!');
                 }
-                
-                var fixed = briefing
-                    .replace(/^Good morning\.?\s*!?\s*☀️?\s*/i, '')
-                    .replace(/^Good afternoon\.?\s*!?\s*👋?\s*/i, '')
-                    .replace(/^Good evening\.?\s*!?\s*🌙?\s*/i, '');
-                
-                return { fixed: correctGreeting + ' ' + fixed.trim(), correctGreeting: correctGreeting, hour: h };
             }
             
-            var testCases = [
-                { input: 'Good morning. HHS froze payments.', name: 'Wrong morning greeting' },
-                { input: 'Good afternoon. Big news today.', name: 'Wrong afternoon greeting' },
-                { input: 'Good evening. Breaking news.', name: 'Wrong evening greeting' },
-                { input: 'HHS froze all payments.', name: 'No greeting at all' }
+            // Check OLD root files are GONE
+            const oldFiles = ['app.js', 'app-core.js', 'app-search.js', 'app-render.js', 'app-research.js'];
+            for (const file of oldFiles) {
+                total++;
+                const content = await fetchFile(file);
+                if (!content) {
+                    passed++;
+                    addTest('structure', `Root ${file} removed`, 'pass', 'Old file correctly deleted', ['FIXED']);
+                } else {
+                    addTest('structure', `Root ${file} removed`, 'fail', 'Old file still exists - delete it!');
+                }
+            }
+            
+            // Check index.html points to /app folder
+            total++;
+            const indexHtml = await fetchFile('index.html');
+            if (indexHtml && indexHtml.includes('src="app/app-core.js"')) {
+                passed++;
+                addTest('structure', 'index.html uses /app folder paths', 'pass', 'Script tags correctly point to app/ folder', ['FIXED']);
+            } else {
+                addTest('structure', 'index.html uses /app folder paths', 'fail', 'Script tags still pointing to root files');
+            }
+            
+            // Check scripts folder
+            const scriptFiles = ['ai-core.js', 'ai-files.js', 'ai-analyzer.js', 'ai-detective.js', 'ai-osint.js', 'ai-scraper.js'];
+            for (const file of scriptFiles) {
+                total++;
+                const content = await fetchFile(`scripts/${file}`);
+                if (content && content.length > 100) {
+                    passed++;
+                    addTest('structure', `scripts/${file} exists`, 'pass', `Backend script found (${content.length} bytes)`);
+                } else {
+                    addTest('structure', `scripts/${file} exists`, 'fail', 'Backend script missing');
+                }
+            }
+            
+            setSectionStatus(1, passed, total);
+        }
+        
+        async function testDataFiles() {
+            let passed = 0, total = 0;
+            
+            const dataFiles = [
+                { name: 'news.json', required: ['articles', 'lastUpdated'] },
+                { name: 'figures.json', required: ['people', 'lastUpdated'] },
+                { name: 'investigations.json', required: ['cases', 'lastUpdated'] },
+                { name: 'trending.json', required: ['topics', 'lastUpdated'] },
+                { name: 'stats.json', required: ['charged', 'convicted', 'alleged', 'briefing'] },
+                { name: 'red-flags.json', required: ['flags', 'lastUpdated'] },
+                { name: 'story-ideas.json', required: ['ideas'] },
+                { name: 'search-terms.json', required: ['terms'] }
             ];
             
-            var html = '';
-            testCases.forEach(function(test, i) {
-                var result = fixBriefingGreeting(test.input);
-                var passed = result.fixed.indexOf(result.correctGreeting) === 0;
-                
-                state.total++;
-                if (passed) state.passed++; else state.failed++;
-                
-                html += '<div class="test-item">' +
-                    '<div class="status ' + (passed ? 'success' : 'fail') + '"></div>' +
-                    '<div class="test-name">Test ' + (i + 1) + ': ' + test.name + '</div>' +
-                    '<div class="test-result">' + (passed ? 'PASS' : 'FAIL') + ' - Output: "' + result.fixed.substring(0, 40) + '..."</div>' +
-                '</div>';
-            });
-            
-            container.innerHTML = html;
-            
-            // Issues
-            issuesContainer.innerHTML = 
-                '<div class="issue-card">' +
-                    '<div class="issue-title">🐛 Bug Found: fixBriefingGreeting() not in main workflow</div>' +
-                    '<div class="issue-desc">The function exists in ai-updater.js but the workflow runs ai-core.js. ' +
-                    'The fix function needs to be added to ai-files.js to actually execute.</div>' +
-                '</div>';
-            
-            addIssue('Briefing Greeting Not Fixed', 'fixBriefingGreeting() is in ai-updater.js but workflow runs ai-core.js', 'error');
-            updateStats();
-            log('Briefing greeting tests complete', 'success');
-        }
-        
-        // 2. API Tests
-        function testAllApis() {
-            log('Starting API connectivity tests...', 'info');
-            
-            var container = document.getElementById('api-tests');
-            var logEl = document.getElementById('api-log');
-            logEl.innerHTML = '';
-            container.innerHTML = '';
-            
-            var apis = [
-                { name: 'Google News RSS', note: 'Used for news scraping' },
-                { name: 'SAM.gov (Demo)', note: 'Federal registrations - FREE' },
-                { name: 'OFAC Screening', note: 'Treasury sanctions - FREE' },
-                { name: 'OIG Exclusions', note: 'HHS exclusions - FREE' },
-                { name: 'DOJ Press', note: 'Justice Dept news - FREE' },
-                { name: 'FBI Press', note: 'FBI news - FREE' },
-                { name: 'USASpending', note: 'Federal grants/contracts' },
-                { name: 'ProPublica Nonprofits', note: 'Nonprofit data' },
-                { name: 'FEC Campaign Finance', note: 'Political donations' },
-                { name: 'IntelligenceX', note: 'Requires INTELX_API_KEY' },
-                { name: 'Censys', note: 'Requires CENSYS_API_KEY' },
-                { name: 'SecurityTrails', note: 'Requires SECURITYTRAILS_API_KEY' },
-                { name: 'VirusTotal', note: 'Requires VIRUSTOTAL_API_KEY' },
-                { name: 'Hunter.io', note: 'Requires HUNTER_API_KEY' }
-            ];
-            
-            apis.forEach(function(api) {
-                var html = '<div class="test-item">' +
-                    '<div class="status warning"></div>' +
-                    '<div class="test-name">' + api.name + '</div>' +
-                    '<div class="test-result">' + api.note + '</div>' +
-                '</div>';
-                container.innerHTML += html;
-                logEl.innerHTML += '[' + api.name + '] ' + api.note + '\n';
-            });
-            
-            logEl.innerHTML += '\n⚠️ Note: Full API testing requires server-side execution.\n';
-            logEl.innerHTML += 'Browser CORS restrictions prevent direct testing from this page.\n';
-            logEl.innerHTML += 'Check GitHub Actions logs for actual API status.';
-            
-            log('API audit complete - see notes for each API', 'warning');
-        }
-        
-        // 3. URL Validation
-        function validateUrls() {
-            log('Starting URL validation...', 'info');
-            
-            var tbody = document.getElementById('url-tbody');
-            
-            var urlsToTest = [
-                { file: 'figures.json', entity: 'Aimee Bock', url: 'https://www.cbsnews.com/' },
-                { file: 'figures.json', entity: 'Tim Walz', url: 'https://www.newsation.com/' },
-                { file: 'figures.json', entity: 'Ilhan Omar Husband', url: 'https://www.foxnews.com/...' },
-                { file: 'investigations.json', entity: 'FOF', url: 'https://www.cbsnews.com/' },
-                { file: 'investigations.json', entity: 'CCAP', url: 'https://www.audacy.com/' },
-                { file: 'stats.json', entity: 'DOJ MN', url: 'https://www.justice.gov/usao-mn' },
-                { file: 'red-flags.json', entity: 'Various', url: 'Multiple URLs with Hindi chars!' }
-            ];
-            
-            tbody.innerHTML = '';
-            urlsToTest.forEach(function(item) {
-                var row = '<tr>' +
-                    '<td>' + item.file + '</td>' +
-                    '<td>' + item.entity + '</td>' +
-                    '<td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;">' + item.url + '</td>' +
-                    '<td><span class="tag tag-warn">Needs Server Check</span></td>' +
-                '</tr>';
-                tbody.innerHTML += row;
-            });
-            
-            tbody.innerHTML += '<tr><td colspan="4" style="color:var(--text2);font-size:12px;">' +
-                '⚠️ URL validation requires server-side checking. Add validateUrl() to ai-files.js</td></tr>';
-            
-            addIssue('No URL Validation', 'Dead links can be saved to data files - no validation exists', 'warning');
-            log('URL validation analysis complete', 'warning');
-        }
-        
-        // 4. Sources Flow
-        function analyzeSourcesFlow() {
-            log('Analyzing sources data flow...', 'info');
-            
-            var container = document.getElementById('sources-comparison');
-            var flowEl = document.getElementById('sources-flow');
-            
-            flowEl.textContent = 
-                'DATA FLOW ANALYSIS:\n\n' +
-                '1. ai-osint.js → enrichFindings()\n' +
-                '   - Creates: results.sourcesUsed = []\n' +
-                '   - Populates when API returns data\n' +
-                '   - Returns: { sourcesUsed, sourceCount }\n\n' +
-                '2. ai-files.js → updateAllDataFiles()\n' +
-                '   - Gets: sourcesUsed from osintResults\n' +
-                '   - PROBLEM: Falls back to hardcoded defaults!\n' +
-                '   - Saves to: red-flags.json\n\n' +
-                '3. app-render.js → renderDetective()\n' +
-                '   - Loads: DATA.redFlags?.sourcesUsed\n' +
-                '   - Displays same sources for ALL cards';
-            
-            container.innerHTML = 
-                '<div class="issue-card warning">' +
-                    '<div class="issue-title">⚠️ Default Sources Override Real Data</div>' +
-                    '<div class="issue-desc">When OSINT fails, hardcoded defaults are shown: ' +
-                    '"Google News, DOJ Press, FBI Press, SAM.gov, OFAC, OIG" even if not queried.</div>' +
-                '</div>' +
-                '<div class="issue-card info">' +
-                    '<div class="issue-title">ℹ️ All Cards Show Same Sources</div>' +
-                    '<div class="issue-desc">Frontend uses globalSourcesUsed for all detective cards, ' +
-                    'even if individual flags have different sources.</div>' +
-                '</div>';
-            
-            addIssue('Sources Not Per-Finding', 'All detective cards show same global sources', 'warning');
-            log('Sources analysis complete', 'success');
-        }
-        
-        // 5. Confidence Analysis
-        function analyzeConfidenceScores() {
-            log('Analyzing confidence score logic...', 'info');
-            
-            var container = document.getElementById('confidence-analysis');
-            var distEl = document.getElementById('confidence-distribution');
-            
-            distEl.textContent = 
-                'CONFIDENCE SCORE CALCULATION (from ai-core.js):\n\n' +
-                'Base Score: 50\n' +
-                '+ entities > 1: +10\n' +
-                '+ entities > 3: +10\n' +
-                '+ has sourceUrl: +15\n' +
-                '+ description > 100 chars: +10\n' +
-                '+ priority "high": +15\n' +
-                'Max: 99\n\n' +
-                'RESULT: Most high-priority findings = 75-85%\n' +
-                'This is WHY all scores look similar!';
-            
-            container.innerHTML = 
-                '<div class="issue-card warning">' +
-                    '<div class="issue-title">⚠️ Confidence Scores Not Truly Dynamic</div>' +
-                    '<div class="issue-desc">calculateConfidence() uses basic heuristics. ' +
-                    'The AI doesn\'t calculate confidence per-finding based on actual evidence.</div>' +
-                '</div>' +
-                '<div class="issue-card info">' +
-                    '<div class="issue-title">💡 Recommendation</div>' +
-                    '<div class="issue-desc">Have Groq AI return "confidence": 0-100 for each red flag ' +
-                    'in its JSON response, based on number of sources and evidence quality.</div>' +
-                '</div>';
-            
-            addIssue('Confidence Not AI-Generated', 'Scores are heuristic-based, not AI-determined', 'warning');
-            log('Confidence analysis complete', 'success');
-        }
-        
-        // 6. Search Test
-        function testSearch() {
-            var query = document.getElementById('search-test-input').value || 'Feeding Our Future';
-            log('Testing search for: "' + query + '"', 'info');
-            
-            var container = document.getElementById('search-results');
-            
-            container.innerHTML = 
-                '<h3>Search Results for "' + query + '"</h3>' +
-                '<div class="issue-card">' +
-                    '<div class="issue-title">🐛 "No recent news found" Bug Explanation</div>' +
-                    '<div class="issue-desc">' +
-                        '<p>The search function in app-search.js only searches:</p>' +
-                        '<ul style="margin:10px 0 10px 20px;">' +
-                            '<li>✓ DATA.investigations (cases)</li>' +
-                            '<li>✓ DATA.figures (people)</li>' +
-                            '<li>✗ DATA.news (articles) - MISSING!</li>' +
-                        '</ul>' +
-                        '<p>The "In The News" section in deep research fetches LIVE from Google News RSS, ' +
-                        'not from stored news.json articles.</p>' +
-                        '<p><strong>Fix:</strong> Add news.json search to searchLocalData() in app-search.js</p>' +
-                    '</div>' +
-                '</div>';
-            
-            addIssue('Search Missing News', 'searchLocalData() does not include news.json articles', 'error');
-            log('Search test complete', 'success');
-        }
-        
-        // 7. Data Validation
-        function validateDataFiles() {
-            log('Validating data file structure...', 'info');
-            
-            var container = document.getElementById('data-validation');
-            
-            var files = [
-                { name: 'news.json', required: 'breaking, articles, lastUpdated' },
-                { name: 'figures.json', required: 'people, lastUpdated' },
-                { name: 'investigations.json', required: 'cases, lastUpdated' },
-                { name: 'trending.json', required: 'topics, lastUpdated' },
-                { name: 'stats.json', required: 'charged, convicted, alleged, cases, briefing' },
-                { name: 'red-flags.json', required: 'flags, lastUpdated, sourcesUsed' }
-            ];
-            
-            var html = '<h3>Expected Data Structure</h3>';
-            files.forEach(function(file) {
-                html += '<div class="test-item">' +
-                    '<div class="status warning"></div>' +
-                    '<div class="test-name">' + file.name + '</div>' +
-                    '<div class="test-result">Required: ' + file.required + '</div>' +
-                '</div>';
-            });
-            
-            html += '<div class="issue-card info">' +
-                '<div class="issue-title">ℹ️ Data Validation Note</div>' +
-                '<div class="issue-desc">No schema validation exists in ai-files.js. ' +
-                'Add validation before saving to prevent malformed data.</div>' +
-            '</div>';
-            
-            container.innerHTML = html;
-            log('Data validation analysis complete', 'success');
-        }
-        
-        // 8. Chat Command Detection
-        function detectCommand(comment) {
-            var text = comment.toLowerCase().trim();
-            
-            if (/\b(approved|confirmed|verified|verify|confirm)\b/.test(text)) {
-                return { action: 'approve', confidence: 'high' };
-            }
-            if (/\b(dismiss|ignore|false positive|wrong|incorrect)\b/.test(text)) {
-                return { action: 'dismiss', confidence: 'high' };
-            }
-            if (/\b(dig deeper|investigate|more info|look into|expand|research)\b/.test(text)) {
-                return { action: 'investigate', confidence: 'high' };
-            }
-            if (/\b(priority|urgent|escalate|important|critical)\b/.test(text)) {
-                return { action: 'escalate', confidence: 'high' };
-            }
-            if (/\b(watching|monitoring|following|tracking)\b/.test(text)) {
-                return { action: 'watching', confidence: 'high' };
-            }
-            if (/\b(good job|nice|thanks|great|awesome)\b/.test(text)) {
-                return { action: 'acknowledge', confidence: 'high' };
-            }
-            if (/\?$/.test(text) || /\b(what|why|how|when|where|who)\b/.test(text)) {
-                return { action: 'question', confidence: 'medium' };
+            for (const file of dataFiles) {
+                total++;
+                const data = await fetchJSON(`data/${file.name}`);
+                if (data) {
+                    const missing = file.required.filter(f => !(f in data));
+                    if (missing.length === 0) {
+                        passed++;
+                        addTest('data', `data/${file.name} valid`, 'pass', `All required fields present`);
+                    } else {
+                        addTest('data', `data/${file.name} valid`, 'warn', `Missing fields: ${missing.join(', ')}`);
+                    }
+                } else {
+                    addTest('data', `data/${file.name} valid`, 'fail', 'File not found or invalid JSON');
+                }
             }
             
-            return { action: 'unknown', confidence: 'low' };
+            // Check lastUpdated timestamps are recent
+            total++;
+            const stats = await fetchJSON('data/stats.json');
+            if (stats?.lastUpdated) {
+                const lastUpdate = new Date(stats.lastUpdated);
+                const hoursSince = (Date.now() - lastUpdate.getTime()) / (1000 * 60 * 60);
+                if (hoursSince < 2) {
+                    passed++;
+                    addTest('data', 'Data freshness', 'pass', `Last update: ${hoursSince.toFixed(1)} hours ago`);
+                } else if (hoursSince < 24) {
+                    addTest('data', 'Data freshness', 'warn', `Last update: ${hoursSince.toFixed(1)} hours ago - should be hourly`);
+                } else {
+                    addTest('data', 'Data freshness', 'fail', `Last update: ${hoursSince.toFixed(1)} hours ago - AI updater not running?`);
+                }
+            } else {
+                addTest('data', 'Data freshness', 'fail', 'No lastUpdated timestamp found');
+            }
+            
+            setSectionStatus(2, passed, total);
         }
         
-        function loadChatTests() {
-            var container = document.getElementById('chat-tests');
+        async function testBriefing() {
+            let passed = 0, total = 0;
             
-            var commands = [
-                { input: 'approved', expected: 'approve' },
-                { input: 'This looks confirmed', expected: 'approve' },
-                { input: 'dismiss this', expected: 'dismiss' },
-                { input: 'false positive', expected: 'dismiss' },
-                { input: 'dig deeper', expected: 'investigate' },
-                { input: 'urgent priority', expected: 'escalate' },
-                { input: 'watching this', expected: 'watching' },
-                { input: 'good job', expected: 'acknowledge' },
-                { input: 'what does this mean?', expected: 'question' },
-                { input: 'random text here', expected: 'unknown' }
-            ];
+            const stats = await fetchJSON('data/stats.json');
+            const briefing = stats?.briefing || '';
             
-            var html = '<h3>Command Detection Tests</h3>';
-            commands.forEach(function(cmd, i) {
-                var detected = detectCommand(cmd.input);
-                var passed = detected.action === cmd.expected;
-                
-                state.total++;
-                if (passed) state.passed++; else state.failed++;
-                
-                html += '<div class="test-item">' +
-                    '<div class="status ' + (passed ? 'success' : 'fail') + '"></div>' +
-                    '<div class="test-name">"' + cmd.input + '"</div>' +
-                    '<div class="test-result">Expected: ' + cmd.expected + ', Got: ' + detected.action + '</div>' +
-                '</div>';
-            });
+            // Check for double greeting bug
+            total++;
+            const greetingMatches = briefing.match(/Good (morning|afternoon|evening)/gi) || [];
+            if (greetingMatches.length === 1) {
+                passed++;
+                addTest('briefing', 'Single greeting in briefing', 'pass', `Found exactly 1 greeting: "${greetingMatches[0]}"`);
+            } else if (greetingMatches.length === 0) {
+                addTest('briefing', 'Single greeting in briefing', 'warn', 'No greeting found in briefing');
+            } else {
+                addTest('briefing', 'Single greeting in briefing', 'fail', `DOUBLE GREETING BUG: Found ${greetingMatches.length} greetings: ${greetingMatches.join(', ')}`);
+            }
             
-            container.innerHTML = html;
-            updateStats();
+            // Check greeting matches current time
+            total++;
+            const now = new Date();
+            const cstHour = parseInt(now.toLocaleString('en-US', { timeZone: 'America/Chicago', hour: 'numeric', hour12: false }));
+            let expectedGreeting = 'evening';
+            if (cstHour >= 5 && cstHour < 12) expectedGreeting = 'morning';
+            else if (cstHour >= 12 && cstHour < 17) expectedGreeting = 'afternoon';
+            
+            if (briefing.toLowerCase().includes(expectedGreeting)) {
+                passed++;
+                addTest('briefing', 'Greeting matches CST time', 'pass', `CST hour ${cstHour} → "${expectedGreeting}" greeting found`);
+            } else {
+                addTest('briefing', 'Greeting matches CST time', 'fail', `CST hour ${cstHour} expects "${expectedGreeting}" but briefing says: "${briefing.substring(0, 50)}..."`);
+            }
+            
+            // Check briefing content quality
+            total++;
+            if (briefing.length > 100) {
+                passed++;
+                addTest('briefing', 'Briefing has substance', 'pass', `Briefing length: ${briefing.length} chars`);
+            } else {
+                addTest('briefing', 'Briefing has substance', 'warn', `Briefing too short (${briefing.length} chars) - may just be headline rewrite`);
+            }
+            
+            // Check if fixBriefingGreeting exists in ai-files.js
+            total++;
+            const aiFiles = await fetchFile('scripts/ai-files.js');
+            if (aiFiles && aiFiles.includes('fixBriefingGreeting')) {
+                passed++;
+                addTest('briefing', 'fixBriefingGreeting() in ai-files.js', 'pass', 'Function exists in correct file', ['FIXED']);
+            } else {
+                addTest('briefing', 'fixBriefingGreeting() in ai-files.js', 'fail', 'Function missing - greeting fix not applied');
+            }
+            
+            // Show actual briefing content
+            addTest('briefing', 'Current briefing content', 'info', briefing || '(empty)');
+            
+            setSectionStatus(3, passed, total);
         }
         
-        function testChatCommand() {
-            var input = document.getElementById('chat-command').value;
-            var result = detectCommand(input);
-            document.getElementById('chat-result').textContent = 
-                'Input: "' + input + '"\n' +
-                'Detected Action: ' + result.action + '\n' +
-                'Confidence: ' + result.confidence;
+        async function testSearch() {
+            let passed = 0, total = 0;
+            
+            // Check if app-search.js searches news
+            total++;
+            const searchJs = await fetchFile('app/app-search.js');
+            if (searchJs && searchJs.includes('DATA.news') && searchJs.includes('articles')) {
+                passed++;
+                addTest('search', 'Search includes news.json', 'pass', 'searchLocalData() now searches news articles', ['FIXED']);
+            } else {
+                addTest('search', 'Search includes news.json', 'fail', 'searchLocalData() still missing news.json search');
+            }
+            
+            // Check if currentResults.news exists
+            total++;
+            if (searchJs && searchJs.includes('currentResults.news')) {
+                passed++;
+                addTest('search', 'News results array exists', 'pass', 'currentResults.news is populated', ['FIXED']);
+            } else {
+                addTest('search', 'News results array exists', 'fail', 'No currentResults.news array');
+            }
+            
+            // Check if app-render.js renders news results
+            total++;
+            const renderJs = await fetchFile('app/app-render.js');
+            if (renderJs && renderJs.includes('News Articles') && renderJs.includes('totals.news')) {
+                passed++;
+                addTest('search', 'News results rendered', 'pass', 'renderResults() displays news section', ['FIXED']);
+            } else {
+                addTest('search', 'News results rendered', 'fail', 'News results not being displayed');
+            }
+            
+            // Check breaking news search
+            total++;
+            if (searchJs && searchJs.includes('breaking') && searchJs.includes('isBreaking')) {
+                passed++;
+                addTest('search', 'Breaking news search', 'pass', 'Breaking news articles included in search', ['FIXED']);
+            } else {
+                addTest('search', 'Breaking news search', 'warn', 'Breaking news may not be searchable');
+            }
+            
+            setSectionStatus(4, passed, total);
         }
         
-        // 9. Code Issues
-        function identifyCodeIssues() {
-            var container = document.getElementById('code-issues');
+        async function testDeduplication() {
+            let passed = 0, total = 0;
             
-            var issues = [
-                { title: '🐛 fixBriefingGreeting() not in main workflow', desc: 'Function in ai-updater.js but workflow runs ai-core.js', severity: 'error' },
-                { title: '🐛 fetchWithTimeout() not defined', desc: 'ai-osint.js calls fetchWithTimeout() but only makeRequest() exists', severity: 'error' },
-                { title: '🐛 Search missing news articles', desc: 'searchLocalData() only searches investigations + figures, not news', severity: 'error' },
-                { title: '🐛 No URL validation', desc: '404s and malformed URLs can be saved to data files', severity: 'error' },
-                { title: '⚠️ Hardcoded fallback sources', desc: 'When OSINT fails, hardcoded sources shown as if queried', severity: 'warning' },
-                { title: '⚠️ All confidence scores similar', desc: 'Heuristic-based calculation, most high-priority = 75-85%', severity: 'warning' },
-                { title: '⚠️ Missing GitHub labels', desc: 'Need: verified, false-positive, high-priority', severity: 'warning' },
-                { title: '⚠️ Red flags not deduplicated', desc: 'Same flag can appear multiple times in red-flags.json', severity: 'warning' },
-                { title: 'ℹ️ app.js still exists (redundant)', desc: 'Delete app.js - modular files are now used', severity: 'info' }
-            ];
+            // Check ai-files.js for improved dedup
+            total++;
+            const aiFiles = await fetchFile('scripts/ai-files.js');
+            if (aiFiles && aiFiles.includes('normalizeForDedup')) {
+                passed++;
+                addTest('dedup', 'normalizeForDedup() exists', 'pass', 'Improved deduplication function added', ['FIXED']);
+            } else {
+                addTest('dedup', 'normalizeForDedup() exists', 'fail', 'Missing improved deduplication');
+            }
             
-            var html = '';
-            issues.forEach(function(issue) {
-                var cardClass = 'issue-card';
-                if (issue.severity === 'warning') cardClass += ' warning';
-                if (issue.severity === 'info') cardClass += ' info';
-                
-                html += '<div class="' + cardClass + '">' +
-                    '<div class="issue-title">' + issue.title + '</div>' +
-                    '<div class="issue-desc">' + issue.desc + '</div>' +
-                '</div>';
-            });
+            // Check dedup uses word extraction
+            total++;
+            if (aiFiles && aiFiles.includes('filter(w => w.length >')) {
+                passed++;
+                addTest('dedup', 'Dedup filters short words', 'pass', 'Word-based normalization for better matching', ['FIXED']);
+            } else {
+                addTest('dedup', 'Dedup filters short words', 'warn', 'May still use simple string matching');
+            }
             
-            container.innerHTML = html;
+            // Check frontend dedup in app-render.js
+            total++;
+            const renderJs = await fetchFile('app/app-render.js');
+            if (renderJs && renderJs.includes('seenKeys') && renderJs.includes('normalizeForDedup')) {
+                passed++;
+                addTest('dedup', 'Frontend deduplication', 'pass', 'renderDetective() deduplicates before display', ['FIXED']);
+            } else {
+                addTest('dedup', 'Frontend deduplication', 'fail', 'Detective cards may show duplicates');
+            }
+            
+            // Check actual red-flags.json for duplicates
+            total++;
+            const redFlags = await fetchJSON('data/red-flags.json');
+            if (redFlags?.flags) {
+                const descriptions = redFlags.flags.map(f => f.description?.toLowerCase().substring(0, 50));
+                const uniqueDescs = new Set(descriptions);
+                const dupCount = descriptions.length - uniqueDescs.size;
+                if (dupCount === 0) {
+                    passed++;
+                    addTest('dedup', 'No duplicates in red-flags.json', 'pass', `${redFlags.flags.length} unique flags`);
+                } else {
+                    addTest('dedup', 'No duplicates in red-flags.json', 'warn', `Found ~${dupCount} potential duplicates in ${redFlags.flags.length} flags`);
+                }
+            } else {
+                addTest('dedup', 'No duplicates in red-flags.json', 'fail', 'Could not load red-flags.json');
+            }
+            
+            setSectionStatus(5, passed, total);
         }
         
-        // 10. Recommendations
-        function generateRecommendations() {
-            var container = document.getElementById('recommendations');
+        async function testConfidenceScores() {
+            let passed = 0, total = 0;
             
-            var recs = [
-                { priority: 'HIGH', title: '1. Fix Briefing Greeting', steps: ['Add fixBriefingGreeting() to ai-files.js', 'Call it when saving statsData.briefing', 'Test with different CST hours'] },
-                { priority: 'HIGH', title: '2. Fix fetchWithTimeout Bug', steps: ['Replace fetchWithTimeout() with makeRequest() in ai-osint.js', 'Or define the missing function'] },
-                { priority: 'HIGH', title: '3. Add News to Search', steps: ['In app-search.js searchLocalData()', 'Add: DATA.news?.articles?.forEach(...)', 'Push matches to currentResults.local'] },
-                { priority: 'HIGH', title: '4. Delete app.js', steps: ['Remove redundant app.js from repo', 'Keep only modular files (app-core.js, etc.)'] },
-                { priority: 'MEDIUM', title: '5. Add URL Validation', steps: ['Create validateUrl() in ai-files.js', 'Check URL returns 200 before saving', 'Fallback to Google search if 404'] },
-                { priority: 'MEDIUM', title: '6. Create GitHub Labels', steps: ['Go to repo → Issues → Labels', 'Create: verified (green)', 'Create: false-positive (gray)', 'Create: high-priority (red)'] },
-                { priority: 'MEDIUM', title: '7. Fix Sources Display', steps: ['Only add to sourcesUsed[] when API returns data', 'Pass sources per-flag, not global', 'Update app-render.js to use flag.sourcesUsed'] },
-                { priority: 'LOW', title: '8. AI-Generated Confidence', steps: ['Update AI prompt to return confidence per redFlag', 'Remove calculateConfidence() heuristics', 'Use AI-provided confidence directly'] }
-            ];
+            // Check red-flags.json confidence distribution
+            total++;
+            const redFlags = await fetchJSON('data/red-flags.json');
+            if (redFlags?.flags?.length > 0) {
+                const confidences = redFlags.flags.map(f => f.confidence || 0).filter(c => c > 0);
+                if (confidences.length > 0) {
+                    const avg = confidences.reduce((a, b) => a + b, 0) / confidences.length;
+                    const min = Math.min(...confidences);
+                    const max = Math.max(...confidences);
+                    const range = max - min;
+                    
+                    if (range > 20) {
+                        passed++;
+                        addTest('confidence', 'Confidence score variety', 'pass', `Range: ${min}-${max} (${range} spread), Avg: ${avg.toFixed(0)}`);
+                    } else {
+                        addTest('confidence', 'Confidence score variety', 'warn', `All scores similar: ${min}-${max} (only ${range} spread) - likely hardcoded`, ['NEEDS FIX']);
+                    }
+                    
+                    // Distribution breakdown
+                    const dist = { '90-100': 0, '80-89': 0, '70-79': 0, '60-69': 0, 'below 60': 0 };
+                    confidences.forEach(c => {
+                        if (c >= 90) dist['90-100']++;
+                        else if (c >= 80) dist['80-89']++;
+                        else if (c >= 70) dist['70-79']++;
+                        else if (c >= 60) dist['60-69']++;
+                        else dist['below 60']++;
+                    });
+                    addTest('confidence', 'Confidence distribution', 'info', 
+                        `90-100: ${dist['90-100']}, 80-89: ${dist['80-89']}, 70-79: ${dist['70-79']}, 60-69: ${dist['60-69']}, <60: ${dist['below 60']}`);
+                } else {
+                    addTest('confidence', 'Confidence score variety', 'fail', 'No confidence scores found in flags');
+                }
+            } else {
+                addTest('confidence', 'Confidence score variety', 'fail', 'No red flags to analyze');
+            }
             
-            var html = '';
-            recs.forEach(function(rec) {
-                var color = rec.priority === 'HIGH' ? 'var(--red)' : rec.priority === 'MEDIUM' ? '#f59e0b' : 'var(--blue)';
-                
-                html += '<div class="rec-item">' +
-                    '<div class="rec-title" style="color:' + color + '">[' + rec.priority + '] ' + rec.title + '</div>' +
-                    '<ol class="rec-steps">';
-                
-                rec.steps.forEach(function(step) {
-                    html += '<li>' + step + '</li>';
-                });
-                
-                html += '</ol></div>';
-            });
+            // Check if AI generates confidence
+            total++;
+            const aiAnalyzer = await fetchFile('scripts/ai-analyzer.js');
+            if (aiAnalyzer && aiAnalyzer.includes('"confidence"') && aiAnalyzer.includes('redFlag')) {
+                passed++;
+                addTest('confidence', 'AI returns confidence in prompt', 'pass', 'Prompt asks AI for confidence per red flag');
+            } else {
+                addTest('confidence', 'AI returns confidence in prompt', 'fail', 'AI prompt does not request confidence scores - using heuristics instead', ['NEEDS FIX']);
+            }
             
-            container.innerHTML = html;
+            // Check calculateConfidence function
+            total++;
+            const aiCore = await fetchFile('scripts/ai-core.js');
+            if (aiCore && aiCore.includes('calculateConfidence')) {
+                addTest('confidence', 'calculateConfidence() exists', 'warn', 'Heuristic-based calculation still in use - should use AI-generated scores', ['NEEDS FIX']);
+            } else {
+                passed++;
+                addTest('confidence', 'calculateConfidence() removed', 'pass', 'Heuristic function removed, using AI scores');
+            }
+            
+            setSectionStatus(6, passed, total);
         }
         
-        // Main Functions
-        function runAllTests() {
-            clearResults();
-            log('Starting full diagnostic suite...', 'info');
+        async function testSources() {
+            let passed = 0, total = 0;
             
-            testBriefingGreeting();
-            analyzeSourcesFlow();
-            analyzeConfidenceScores();
-            loadChatTests();
-            identifyCodeIssues();
-            generateRecommendations();
+            // Check if sources come from OSINT
+            total++;
+            const redFlags = await fetchJSON('data/red-flags.json');
+            if (redFlags?.sourcesUsed?.length > 0) {
+                passed++;
+                addTest('sources', 'Global sourcesUsed populated', 'pass', `Sources: ${redFlags.sourcesUsed.join(', ')}`);
+            } else if (redFlags?.sourceCount === 0) {
+                addTest('sources', 'Global sourcesUsed populated', 'warn', 'No OSINT sources available (API keys missing?)');
+            } else {
+                addTest('sources', 'Global sourcesUsed populated', 'fail', 'sourcesUsed array missing from red-flags.json');
+            }
             
-            log('All tests complete! See results above.', 'success');
+            // Check for hardcoded fallback
+            total++;
+            const aiFiles = await fetchFile('scripts/ai-files.js');
+            if (aiFiles && !aiFiles.includes("'Google News', 'DOJ Press'")) {
+                passed++;
+                addTest('sources', 'No hardcoded source fallback', 'pass', 'Sources only come from actual OSINT queries', ['FIXED']);
+            } else {
+                addTest('sources', 'No hardcoded source fallback', 'fail', 'Hardcoded fallback sources still present');
+            }
+            
+            // Check if individual flags have sources
+            total++;
+            if (redFlags?.flags?.some(f => f.sourcesUsed?.length > 0)) {
+                passed++;
+                addTest('sources', 'Per-flag sources', 'pass', 'Individual flags have their own sourcesUsed');
+            } else {
+                addTest('sources', 'Per-flag sources', 'warn', 'Flags use global sources instead of per-flag');
+            }
+            
+            // Check frontend uses flag.sourcesUsed
+            total++;
+            const renderJs = await fetchFile('app/app-render.js');
+            if (renderJs && renderJs.includes('finding.sourcesUsed')) {
+                passed++;
+                addTest('sources', 'Frontend uses per-flag sources', 'pass', 'renderDetective() checks finding.sourcesUsed', ['FIXED']);
+            } else {
+                addTest('sources', 'Frontend uses per-flag sources', 'warn', 'Frontend may only use global sources');
+            }
+            
+            setSectionStatus(7, passed, total);
         }
         
-        function clearResults() {
-            state.tests = [];
-            state.issues = [];
-            state.passed = 0;
-            state.failed = 0;
-            state.total = 0;
+        async function testFrontend() {
+            let passed = 0, total = 0;
             
-            document.getElementById('full-log').innerHTML = 'Results cleared. Click "Run All Tests" to begin.';
-            document.getElementById('briefing-tests').innerHTML = '';
-            document.getElementById('api-tests').innerHTML = '';
-            document.getElementById('url-tbody').innerHTML = '';
-            document.getElementById('sources-comparison').innerHTML = '';
-            document.getElementById('confidence-analysis').innerHTML = '';
-            document.getElementById('search-results').innerHTML = '';
-            document.getElementById('data-validation').innerHTML = '';
-            document.getElementById('chat-tests').innerHTML = '';
-            document.getElementById('code-issues').innerHTML = '';
-            document.getElementById('recommendations').innerHTML = '';
-            document.getElementById('briefing-issues').innerHTML = '';
-            document.getElementById('time-analysis').textContent = 'Click "Run All Tests" to analyze...';
-            document.getElementById('sources-flow').textContent = 'Click "Run All Tests" to analyze...';
-            document.getElementById('confidence-distribution').textContent = 'Click "Run All Tests" to analyze...';
+            // Check apostrophe fix
+            total++;
+            const renderJs = await fetchFile('app/app-render.js');
+            if (renderJs && renderJs.includes('data-search=') && renderJs.includes('this.dataset.search')) {
+                passed++;
+                addTest('frontend', 'Apostrophe bug fixed', 'pass', 'onclick handlers use data-search attribute', ['FIXED']);
+            } else {
+                addTest('frontend', 'Apostrophe bug fixed', 'fail', "Names like O'Brien will break search");
+            }
             
-            updateStats();
+            // Check escAttr function
+            total++;
+            const coreJs = await fetchFile('app/app-core.js');
+            if (coreJs && coreJs.includes('escAttr')) {
+                passed++;
+                addTest('frontend', 'escAttr() utility exists', 'pass', 'HTML attribute escaping function available', ['FIXED']);
+            } else {
+                addTest('frontend', 'escAttr() utility exists', 'fail', 'Missing escAttr() - XSS vulnerability');
+            }
+            
+            // Check esc function
+            total++;
+            if (coreJs && coreJs.includes('function esc(')) {
+                passed++;
+                addTest('frontend', 'esc() utility exists', 'pass', 'HTML content escaping function available');
+            } else {
+                addTest('frontend', 'esc() utility exists', 'fail', 'Missing esc() function');
+            }
+            
+            // Check CONFIG object
+            total++;
+            if (coreJs && coreJs.includes('const CONFIG')) {
+                passed++;
+                addTest('frontend', 'CONFIG object defined', 'pass', 'Global configuration available');
+            } else {
+                addTest('frontend', 'CONFIG object defined', 'fail', 'Missing CONFIG object');
+            }
+            
+            // Check DATA store
+            total++;
+            if (coreJs && coreJs.includes('const DATA =') || coreJs?.includes('let DATA =')) {
+                passed++;
+                addTest('frontend', 'DATA store defined', 'pass', 'Global data store available');
+            } else {
+                addTest('frontend', 'DATA store defined', 'fail', 'Missing DATA store');
+            }
+            
+            setSectionStatus(8, passed, total);
         }
         
-        function exportReport() {
-            var report = {
-                timestamp: new Date().toISOString(),
-                summary: {
-                    total: state.total,
-                    passed: state.passed,
-                    failed: state.failed,
-                    issues: state.issues.length
-                },
-                issues: state.issues,
-                logs: document.getElementById('full-log').innerText
+        async function testBackend() {
+            let passed = 0, total = 0;
+            
+            // Check ai-files.js has key functions
+            total++;
+            const aiFiles = await fetchFile('scripts/ai-files.js');
+            const requiredFuncs = ['updateAllDataFiles', 'loadData', 'saveData', 'fixBriefingGreeting', 'deduplicateFlags'];
+            const missingFuncs = requiredFuncs.filter(f => !aiFiles?.includes(f));
+            if (missingFuncs.length === 0) {
+                passed++;
+                addTest('backend', 'ai-files.js complete', 'pass', 'All required functions present');
+            } else {
+                addTest('backend', 'ai-files.js complete', 'fail', `Missing functions: ${missingFuncs.join(', ')}`);
+            }
+            
+            // Check ai-core.js orchestration
+            total++;
+            const aiCore = await fetchFile('scripts/ai-core.js');
+            if (aiCore && aiCore.includes('updateAllDataFiles') && aiCore.includes('require')) {
+                passed++;
+                addTest('backend', 'ai-core.js orchestration', 'pass', 'Main script properly orchestrates modules');
+            } else {
+                addTest('backend', 'ai-core.js orchestration', 'warn', 'Check ai-core.js imports and flow');
+            }
+            
+            // Check GitHub workflow exists
+            total++;
+            const workflow = await fetchFile('.github/workflows/ai-updater.yml');
+            if (workflow && workflow.includes('schedule') && workflow.includes('cron')) {
+                passed++;
+                addTest('backend', 'GitHub Actions workflow', 'pass', 'Scheduled workflow configured');
+            } else {
+                addTest('backend', 'GitHub Actions workflow', 'fail', 'Missing or incomplete workflow file');
+            }
+            
+            // Check workflow runs ai-core.js
+            total++;
+            if (workflow && workflow.includes('ai-core.js')) {
+                passed++;
+                addTest('backend', 'Workflow runs ai-core.js', 'pass', 'Correct entry point configured');
+            } else {
+                addTest('backend', 'Workflow runs ai-core.js', 'fail', 'Workflow may be running wrong script');
+            }
+            
+            setSectionStatus(9, passed, total);
+        }
+        
+        async function testAPIConfig() {
+            let passed = 0, total = 0;
+            
+            // Check OSINT module
+            total++;
+            const osint = await fetchFile('scripts/ai-osint.js');
+            if (osint && osint.includes('makeRequest')) {
+                passed++;
+                addTest('api', 'OSINT module has makeRequest()', 'pass', 'API request function available');
+            } else {
+                addTest('api', 'OSINT module has makeRequest()', 'fail', 'Missing makeRequest() function');
+            }
+            
+            // Check for fetchWithTimeout (should NOT exist if using makeRequest)
+            total++;
+            if (osint && !osint.includes('fetchWithTimeout')) {
+                passed++;
+                addTest('api', 'No fetchWithTimeout() calls', 'pass', 'Using makeRequest() consistently');
+            } else if (osint && osint.includes('fetchWithTimeout') && !osint.includes('function fetchWithTimeout')) {
+                addTest('api', 'No fetchWithTimeout() calls', 'fail', 'Calls fetchWithTimeout() but function not defined!');
+            } else {
+                passed++;
+                addTest('api', 'No fetchWithTimeout() calls', 'pass', 'fetchWithTimeout defined or not used');
+            }
+            
+            // List expected API keys
+            const expectedKeys = ['GROQ_API_KEY', 'GITHUB_TOKEN', 'INTELX_API_KEY', 'CENSYS_API_ID', 'SECURITYTRAILS_API_KEY'];
+            addTest('api', 'Expected API keys', 'info', expectedKeys.join(', '));
+            
+            // Check if free APIs are configured
+            total++;
+            const freeAPIs = ['SAM.gov', 'OFAC', 'OIG', 'DOJ', 'FBI', 'USASpending', 'ProPublica', 'FEC'];
+            if (osint) {
+                const configured = freeAPIs.filter(api => osint.toLowerCase().includes(api.toLowerCase()));
+                if (configured.length >= 4) {
+                    passed++;
+                    addTest('api', 'Free APIs configured', 'pass', `Found: ${configured.join(', ')}`);
+                } else {
+                    addTest('api', 'Free APIs configured', 'warn', `Only found: ${configured.join(', ') || 'none'}`);
+                }
+            }
+            
+            setSectionStatus(10, passed, total);
+        }
+        
+        // ============ REPORT GENERATION ============
+        
+        function generateReport() {
+            const timestamp = new Date().toISOString();
+            let report = `
+╔══════════════════════════════════════════════════════════════════╗
+║        NORTH STAR WATCHDOG - DIAGNOSTIC REPORT v2.0              ║
+║        Generated: ${timestamp}              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+SUMMARY
+═══════
+Total Tests:  ${results.total}
+Passed:       ${results.passed} ✓
+Failed:       ${results.failed} ✗
+Warnings:     ${results.warnings} ⚠
+Fixed Issues: ${results.fixed} 🔧
+
+Pass Rate:    ${results.total > 0 ? ((results.passed / results.total) * 100).toFixed(1) : 0}%
+
+`;
+            
+            // Group tests by section
+            const sections = {
+                'structure': '1. FILE STRUCTURE',
+                'data': '2. DATA FILES',
+                'briefing': '3. BRIEFING & GREETING',
+                'search': '4. SEARCH FUNCTIONALITY',
+                'dedup': '5. DEDUPLICATION',
+                'confidence': '6. CONFIDENCE SCORES',
+                'sources': '7. SOURCES DISPLAY',
+                'frontend': '8. FRONTEND CODE',
+                'backend': '9. BACKEND SCRIPTS',
+                'api': '10. API CONFIGURATION'
             };
             
-            var blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement('a');
-            a.href = url;
-            a.download = 'north-star-diagnostic-' + new Date().toISOString().split('T')[0] + '.json';
-            a.click();
+            for (const [key, title] of Object.entries(sections)) {
+                const sectionTests = results.tests.filter(t => t.section === key);
+                if (sectionTests.length === 0) continue;
+                
+                const sectionPassed = sectionTests.filter(t => t.status === 'pass').length;
+                const sectionTotal = sectionTests.filter(t => t.status !== 'info').length;
+                
+                report += `
+${title}
+${'═'.repeat(title.length)}
+Status: ${sectionPassed}/${sectionTotal} passed
+
+`;
+                
+                for (const test of sectionTests) {
+                    const icon = test.status === 'pass' ? '✓' : test.status === 'fail' ? '✗' : test.status === 'warn' ? '⚠' : 'ℹ';
+                    const tags = test.tags.length > 0 ? ` [${test.tags.join(', ')}]` : '';
+                    report += `${icon} ${test.name}${tags}
+  └─ ${test.detail}
+
+`;
+                }
+            }
             
-            log('Report exported', 'success');
+            // Add action items
+            const failures = results.tests.filter(t => t.status === 'fail');
+            const warnings = results.tests.filter(t => t.status === 'warn');
+            const needsFix = results.tests.filter(t => t.tags.includes('NEEDS FIX'));
+            
+            report += `
+ACTION ITEMS
+════════════
+
+HIGH PRIORITY (Failures):
+`;
+            if (failures.length === 0) {
+                report += '  None! All critical tests passing.\n';
+            } else {
+                failures.forEach((f, i) => {
+                    report += `  ${i + 1}. ${f.name}\n     → ${f.detail}\n`;
+                });
+            }
+            
+            report += `
+MEDIUM PRIORITY (Needs Fix):
+`;
+            if (needsFix.length === 0) {
+                report += '  None!\n';
+            } else {
+                needsFix.forEach((f, i) => {
+                    report += `  ${i + 1}. ${f.name}\n     → ${f.detail}\n`;
+                });
+            }
+            
+            report += `
+LOW PRIORITY (Warnings):
+`;
+            if (warnings.length === 0) {
+                report += '  None!\n';
+            } else {
+                warnings.forEach((f, i) => {
+                    report += `  ${i + 1}. ${f.name}\n     → ${f.detail}\n`;
+                });
+            }
+            
+            report += `
+═══════════════════════════════════════════════════════════════════
+                         END OF REPORT
+═══════════════════════════════════════════════════════════════════
+`;
+            
+            results.report = report;
+            document.getElementById('full-report').textContent = report;
         }
         
-        // Event Listeners
-        document.getElementById('btn-run-all').addEventListener('click', runAllTests);
-        document.getElementById('btn-clear').addEventListener('click', clearResults);
-        document.getElementById('btn-export').addEventListener('click', exportReport);
-        document.getElementById('btn-test-apis').addEventListener('click', testAllApis);
-        document.getElementById('btn-validate-urls').addEventListener('click', validateUrls);
-        document.getElementById('btn-test-search').addEventListener('click', testSearch);
-        document.getElementById('btn-validate-data').addEventListener('click', validateDataFiles);
-        document.getElementById('btn-test-chat').addEventListener('click', testChatCommand);
+        async function copyReport() {
+            try {
+                await navigator.clipboard.writeText(results.report);
+                const btns = document.querySelectorAll('.copy-btn');
+                btns.forEach(btn => {
+                    btn.classList.add('copy-success');
+                    btn.textContent = '✓ Copied!';
+                    setTimeout(() => {
+                        btn.classList.remove('copy-success');
+                        btn.textContent = '📋 Copy Full Report to Clipboard';
+                    }, 2000);
+                });
+            } catch (e) {
+                alert('Copy failed. Please select and copy manually.');
+            }
+        }
         
-        // Init
-        log('North Star Watchdog Diagnostic Suite loaded', 'info');
-        log('Click "Run All Tests" to begin diagnostics', 'info');
+        async function runAllTests() {
+            // Reset
+            results = { total: 0, passed: 0, failed: 0, warnings: 0, fixed: 0, tests: [], report: '' };
+            document.querySelectorAll('.test-section').forEach(s => s.innerHTML = '<p style="color:var(--text2)">Running tests...</p>');
+            document.querySelectorAll('.section-status').forEach(s => s.textContent = '');
+            updateStats();
+            
+            // Run all tests
+            await testFileStructure();
+            await testDataFiles();
+            await testBriefing();
+            await testSearch();
+            await testDeduplication();
+            await testConfidenceScores();
+            await testSources();
+            await testFrontend();
+            await testBackend();
+            await testAPIConfig();
+            
+            // Generate report
+            generateReport();
+        }
+        
+        // Event listeners
+        document.getElementById('btn-run-all').addEventListener('click', runAllTests);
+        document.getElementById('btn-copy-report').addEventListener('click', copyReport);
+        document.getElementById('btn-copy-report-2').addEventListener('click', copyReport);
     </script>
 </body>
 </html>
