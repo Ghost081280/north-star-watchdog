@@ -444,11 +444,53 @@ async function updateAllData(articles, aiAnalysis) {
             source: "FBI / DOJ Minnesota",
             sourceUrl: "https://www.fbi.gov/contact-us/field-offices/minneapolis"
         },
-        briefing: aiAnalysis?.briefing || "Good morning. The AI is currently analyzing the latest developments in Minnesota's fraud investigations. Check back soon for today's briefing."
+        briefing: fixBriefingGreeting(aiAnalysis?.briefing || "The AI is currently analyzing the latest developments in Minnesota's fraud investigations. Check back soon for today's briefing.")
     };
     saveData('stats.json', statsData);
     
     console.log('All data files updated!');
+}
+
+// Fix the greeting based on actual CST time (Groq is too dumb to do this)
+function fixBriefingGreeting(briefing) {
+    // Get current CST hour
+    const now = new Date();
+    const cstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+    const hour = cstTime.getHours();
+    
+    // Determine correct greeting
+    let correctGreeting;
+    if (hour >= 5 && hour < 12) {
+        correctGreeting = "Good morning! ☀️";
+    } else if (hour >= 12 && hour < 17) {
+        correctGreeting = "Good afternoon! 👋";
+    } else {
+        correctGreeting = "Good evening! 🌙";
+    }
+    
+    // Replace any wrong greeting
+    let fixed = briefing
+        .replace(/^Good morning\.?\s*/i, correctGreeting + ' ')
+        .replace(/^Good afternoon\.?\s*/i, correctGreeting + ' ')
+        .replace(/^Good evening\.?\s*/i, correctGreeting + ' ');
+    
+    // If no greeting found, prepend correct one
+    if (!fixed.startsWith('Good')) {
+        fixed = correctGreeting + ' ' + fixed;
+    }
+    
+    // Add sassy opener if missing
+    if (!fixed.includes('Holy smokes') && !fixed.includes("believe this") && !fixed.includes("While you were")) {
+        fixed = fixed.replace(correctGreeting + ' ', correctGreeting + ' Holy smokes - ');
+    }
+    
+    // Add robot sign-off if missing
+    if (!fixed.includes('🤖') && !fixed.includes('robots')) {
+        fixed = fixed.replace(/\.?\s*$/, '. The robots never sleep. 🤖');
+    }
+    
+    console.log(`  Briefing greeting fixed to: ${correctGreeting}`);
+    return fixed;
 }
 
 // ============================================
