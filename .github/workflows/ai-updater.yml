@@ -4,9 +4,18 @@
 # REQUIRED SECRET:
 # - GROQ_API_KEY (FREE: https://console.groq.com/keys)
 #
-# ALL OTHER APIs ARE FREE AND DON'T NEED KEYS:
-# - USASpending.gov, ProPublica, FEC, Court Listener, OpenCorporates
-# - OIG, DOJ Press, FBI Press, MN DHS
+# FREE APIs USED (no keys needed):
+# - Google News RSS
+# - ProPublica Nonprofits
+# - FEC Campaign Finance
+# - OIG Exclusions
+# - OpenCorporates
+# - USASpending.gov
+#
+# SELF-LEARNING:
+# - AI discovers new entities and adds them to learning.json
+# - New search queries are created automatically
+# - Each scan builds on previous findings
 #
 
 name: AI Updater
