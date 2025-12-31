@@ -344,4 +344,80 @@ ${flag.sourceUrl ? `\n[View Source](${flag.sourceUrl})` : ''}
     return created;
 }
 
-module.exports = { updateAllDataFiles, createGitHubIssues };
+/**
+ * Update learning.json with new search queries and entities discovered by AI
+ */
+function updateLearning(analysis) {
+    const learningPath = path.join(DATA_DIR, 'learning.json');
+    
+    let learning = {
+        searchQueries: [],
+        trackedEntities: [],
+        discoveredSources: [],
+        suggestedApis: []
+    };
+    
+    // Load existing learning file
+    try {
+        if (fs.existsSync(learningPath)) {
+            learning = JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+        }
+    } catch (e) {
+        console.log(`  ⚠ Could not load learning.json: ${e.message}`);
+    }
+    
+    // Extract new entities from analysis
+    const newEntities = [];
+    
+    // From figures
+    for (const fig of (analysis.figures || [])) {
+        if (fig.name && !learning.trackedEntities.includes(fig.name)) {
+            newEntities.push(fig.name);
+        }
+        if (fig.organization && !learning.trackedEntities.includes(fig.organization)) {
+            newEntities.push(fig.organization);
+        }
+    }
+    
+    // From investigations
+    for (const inv of (analysis.investigations || [])) {
+        if (inv.name && !learning.trackedEntities.includes(inv.name)) {
+            newEntities.push(inv.name);
+        }
+    }
+    
+    // From red flags
+    for (const rf of (analysis.redFlags || [])) {
+        for (const entity of (rf.entities || [])) {
+            if (!learning.trackedEntities.includes(entity)) {
+                newEntities.push(entity);
+            }
+        }
+    }
+    
+    // Add new entities to tracked list
+    if (newEntities.length > 0) {
+        learning.trackedEntities = [...new Set([...learning.trackedEntities, ...newEntities])];
+        console.log(`  ✓ Added ${newEntities.length} new entities to track`);
+        
+        // Create new search queries for new entities
+        for (const entity of newEntities) {
+            const query = `${entity} fraud`;
+            if (!learning.searchQueries.includes(query)) {
+                learning.searchQueries.push(query);
+            }
+        }
+    }
+    
+    // Limit search queries to prevent bloat
+    learning.searchQueries = learning.searchQueries.slice(0, 30);
+    learning.trackedEntities = learning.trackedEntities.slice(0, 100);
+    
+    learning.lastLearningUpdate = new Date().toISOString();
+    
+    // Save updated learning file
+    writeJson('learning.json', learning);
+    console.log(`  ✓ Learning file updated (${learning.searchQueries.length} queries, ${learning.trackedEntities.length} entities)`);
+}
+
+module.exports = { updateAllDataFiles, createGitHubIssues, updateLearning };
