@@ -134,7 +134,7 @@ async function detectPatterns(articles, aiAnalysis, historicalData) {
         if (count >= 5) {
             patterns.push({
                 type: 'coverage_spike',
-                entity,
+                entities: [entity],
                 count,
                 description: `"${entity}" mentioned in ${count} articles - unusual activity`,
                 priority: count >= 8 ? 'high' : 'medium'
