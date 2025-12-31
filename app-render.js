@@ -86,7 +86,15 @@ function renderBriefing() {
     
     if (DATA.stats.lastUpdated && time) {
         const date = new Date(DATA.stats.lastUpdated);
-        time.textContent = 'Updated: ' + date.toLocaleString();
+        time.textContent = 'Updated: ' + date.toLocaleString('en-US', {
+            timeZone: 'America/New_York',
+            month: 'numeric',
+            day: 'numeric',
+            year: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+        }) + ' EST';
     }
 }
 
