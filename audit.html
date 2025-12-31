@@ -40,6 +40,7 @@
         .status.error { background: #ef4444; color: #fff; }
         .status.warning { background: #f59e0b; color: #000; }
         .status.checking { background: #3b82f6; color: #fff; }
+        .status.complete { background: #8b5cf6; color: #fff; }
         a { color: #60a5fa; }
         .name { font-weight: bold; color: #fff; }
         .url { font-size: 12px; color: #888; word-break: break-all; }
@@ -53,8 +54,17 @@
             cursor: pointer;
             font-weight: bold;
             margin-right: 10px;
+            margin-bottom: 10px;
         }
         .btn:hover { background: #b8972e; }
+        .btn:disabled { background: #555; color: #888; cursor: not-allowed; }
+        .btn-copy {
+            background: #3b82f6;
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+        .btn-copy:hover { background: #2563eb; }
+        .btn-copy.copied { background: #22c55e; }
         .summary { 
             display: flex; 
             gap: 20px; 
@@ -81,15 +91,67 @@
             margin-top: 10px;
             font-size: 13px;
         }
+        .scan-status {
+            background: #1a1a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .scan-status.active { display: block; }
+        .progress-bar {
+            height: 8px;
+            background: #333;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #d4af37;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .section-header h2 {
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+        .copy-all-btn {
+            margin-top: 20px;
+            width: 100%;
+        }
+        pre {
+            background: #0a0a0a;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 12px;
+            margin-top: 10px;
+            display: none;
+        }
+        pre.show { display: block; }
     </style>
 </head>
 <body>
     <h1>🔍 North Star Watchdog - Link & Data Audit</h1>
     
     <div class="section">
-        <button class="btn" onclick="runFullAudit()">Run Full Audit</button>
-        <button class="btn" onclick="checkLinksOnly()">Check Links Only</button>
-        <button class="btn" onclick="checkDataOnly()">Check Data Only</button>
+        <button class="btn" id="btn-full" onclick="runFullAudit()">Run Full Audit</button>
+        <button class="btn" id="btn-links" onclick="checkLinksOnly()">Check Links Only</button>
+        <button class="btn" id="btn-data" onclick="checkDataOnly()">Check Data Only</button>
+        <button class="btn btn-copy" id="btn-copy-all" onclick="copyAllResults()" style="display:none;">📋 Copy All Results</button>
+    </div>
+    
+    <div class="scan-status" id="scan-status">
+        <div><strong>Status:</strong> <span id="status-text">Starting scan...</span></div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
     </div>
     
     <div class="summary" id="summary" style="display:none;">
@@ -108,6 +170,8 @@
     </div>
     
     <div id="results"></div>
+    
+    <pre id="raw-results"></pre>
 
     <script>
         // Known journalists/whistleblowers who should NOT be in Key Figures or Trending buttons
@@ -118,6 +182,10 @@
             'project veritas'
         ];
         
+        // Store all results for copying
+        let allResults = [];
+        let rawResultsText = '';
+        
         // Check if a name is a journalist/whistleblower
         function isJournalist(name) {
             const lower = name.toLowerCase();
@@ -127,6 +195,20 @@
         let errorCount = 0;
         let warningCount = 0;
         let successCount = 0;
+        let totalChecks = 0;
+        let completedChecks = 0;
+        
+        function setButtonsDisabled(disabled) {
+            document.getElementById('btn-full').disabled = disabled;
+            document.getElementById('btn-links').disabled = disabled;
+            document.getElementById('btn-data').disabled = disabled;
+        }
+        
+        function updateProgress(text, percent) {
+            document.getElementById('scan-status').classList.add('active');
+            document.getElementById('status-text').textContent = text;
+            document.getElementById('progress-fill').style.width = percent + '%';
+        }
         
         function updateSummary() {
             document.getElementById('summary').style.display = 'flex';
@@ -135,14 +217,74 @@
             document.getElementById('success-count').textContent = successCount;
         }
         
-        function addResult(section, html) {
-            let container = document.getElementById('section-' + section);
+        function addResult(section, html, resultObj) {
+            let container = document.getElementById('section-' + section.replace(/\s+/g, '-'));
             if (!container) {
                 const results = document.getElementById('results');
-                results.innerHTML += `<h2>${section}</h2><div id="section-${section}" class="section"></div>`;
-                container = document.getElementById('section-' + section);
+                results.innerHTML += `
+                    <div class="section-header">
+                        <h2>${section}</h2>
+                        <button class="btn btn-copy" onclick="copySectionResults('${section}')">📋 Copy ${section}</button>
+                    </div>
+                    <div id="section-${section.replace(/\s+/g, '-')}" class="section" data-section="${section}"></div>
+                `;
+                container = document.getElementById('section-' + section.replace(/\s+/g, '-'));
             }
             container.innerHTML += html;
+            
+            if (resultObj) {
+                allResults.push({ section, ...resultObj });
+            }
+        }
+        
+        function copySectionResults(section) {
+            const sectionResults = allResults.filter(r => r.section === section);
+            const text = sectionResults.map(r => {
+                let line = `${r.name}: ${r.status}`;
+                if (r.url) line += ` | URL: ${r.url}`;
+                if (r.message) line += ` | ${r.message}`;
+                if (r.isJournalist) line += ` | ⚠️ JOURNALIST`;
+                return line;
+            }).join('\n');
+            
+            copyToClipboard(`=== ${section} ===\n${text}`, event.target);
+        }
+        
+        function copyAllResults() {
+            let text = `NORTH STAR WATCHDOG AUDIT RESULTS\n`;
+            text += `================================\n`;
+            text += `Date: ${new Date().toLocaleString()}\n\n`;
+            text += `SUMMARY:\n`;
+            text += `- Errors: ${errorCount}\n`;
+            text += `- Warnings: ${warningCount}\n`;
+            text += `- OK: ${successCount}\n\n`;
+            
+            const sections = [...new Set(allResults.map(r => r.section))];
+            for (const section of sections) {
+                text += `=== ${section} ===\n`;
+                const sectionResults = allResults.filter(r => r.section === section);
+                for (const r of sectionResults) {
+                    let line = `${r.name}: ${r.status}`;
+                    if (r.url) line += `\n  URL: ${r.url}`;
+                    if (r.message) line += `\n  Note: ${r.message}`;
+                    if (r.isJournalist) line += `\n  ⚠️ JOURNALIST DETECTED`;
+                    text += line + '\n\n';
+                }
+            }
+            
+            copyToClipboard(text, document.getElementById('btn-copy-all'));
+        }
+        
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
         }
         
         async function checkLink(url, name, section) {
@@ -160,6 +302,19 @@
                 return { status: 'error', message: 'Known broken DOJ URL - needs update' };
             }
             
+            // Check for other known broken patterns
+            if (url.includes('kare11.com') && url.includes('%20')) {
+                errorCount++;
+                updateSummary();
+                return { status: 'error', message: 'Malformed URL with encoded spaces' };
+            }
+            
+            if (url.includes('cbsnews.com/news/hhs-freezes-child-care-payments-minnesota-fraud-allegations')) {
+                errorCount++;
+                updateSummary();
+                return { status: 'error', message: 'Known broken CBS URL' };
+            }
+            
             // Flag landing pages
             if (url === 'https://mn.gov/dhs/' || 
                 url === 'https://www.justice.gov/usao-mn' ||
@@ -169,6 +324,13 @@
                 return { status: 'warning', message: 'Landing page only - no specific article' };
             }
             
+            // Flag news.google.com searches as non-permanent
+            if (url.includes('news.google.com/search')) {
+                warningCount++;
+                updateSummary();
+                return { status: 'warning', message: 'Google News search - results may change' };
+            }
+            
             successCount++;
             updateSummary();
             return { status: 'ok', message: 'URL looks valid' };
@@ -176,7 +338,7 @@
         
         async function loadJSON(file) {
             try {
-                const response = await fetch('data/' + file);
+                const response = await fetch('data/' + file + '?t=' + Date.now());
                 if (!response.ok) throw new Error('File not found');
                 return await response.json();
             } catch (e) {
@@ -185,9 +347,11 @@
         }
         
         async function auditFigures() {
+            updateProgress('Checking Key Figures...', 20);
             const data = await loadJSON('figures.json');
             if (!data) {
-                addResult('Key Figures', '<div class="item error"><span class="name">figures.json</span> <span class="status error">NOT FOUND</span></div>');
+                addResult('Key Figures', '<div class="item error"><span class="name">figures.json</span> <span class="status error">NOT FOUND</span></div>', 
+                    { name: 'figures.json', status: 'ERROR', message: 'File not found' });
                 errorCount++;
                 updateSummary();
                 return;
@@ -198,7 +362,11 @@
                 const isJourn = isJournalist(person.name);
                 
                 let itemClass = linkResult.status;
-                if (isJourn) itemClass = 'error';
+                if (isJourn) {
+                    itemClass = 'error';
+                    errorCount++;
+                    updateSummary();
+                }
                 
                 let html = `<div class="item ${itemClass}">
                     <div><span class="name">${person.name}</span> 
@@ -211,19 +379,27 @@
                 
                 if (isJourn) {
                     html += `<div class="journalist-check">⚠️ <strong>JOURNALIST/WHISTLEBLOWER DETECTED!</strong> This person should NOT be in Key Figures. They are a reporter, not someone under investigation.</div>`;
-                    errorCount++;
-                    updateSummary();
                 }
                 
                 html += `</div>`;
-                addResult('Key Figures', html);
+                addResult('Key Figures', html, {
+                    name: person.name,
+                    status: isJourn ? 'JOURNALIST' : linkResult.status.toUpperCase(),
+                    url: person.sourceUrl,
+                    message: linkResult.message,
+                    isJournalist: isJourn,
+                    role: person.role,
+                    figureStatus: person.status
+                });
             }
         }
         
         async function auditInvestigations() {
+            updateProgress('Checking Investigations...', 40);
             const data = await loadJSON('investigations.json');
             if (!data) {
-                addResult('Active Investigations', '<div class="item error"><span class="name">investigations.json</span> <span class="status error">NOT FOUND</span></div>');
+                addResult('Active Investigations', '<div class="item error"><span class="name">investigations.json</span> <span class="status error">NOT FOUND</span></div>',
+                    { name: 'investigations.json', status: 'ERROR', message: 'File not found' });
                 errorCount++;
                 updateSummary();
                 return;
@@ -240,14 +416,23 @@
                     <div class="url"><strong>URL:</strong> <a href="${inv.sourceUrl}" target="_blank">${inv.sourceUrl}</a></div>
                     <div><strong>Link Check:</strong> ${linkResult.message}</div>
                 </div>`;
-                addResult('Active Investigations', html);
+                addResult('Active Investigations', html, {
+                    name: inv.name,
+                    status: linkResult.status.toUpperCase(),
+                    url: inv.sourceUrl,
+                    message: linkResult.message,
+                    amount: inv.amount,
+                    invStatus: inv.status
+                });
             }
         }
         
         async function auditTrending() {
+            updateProgress('Checking Trending Topics...', 60);
             const data = await loadJSON('trending.json');
             if (!data) {
-                addResult('Trending Topics', '<div class="item error"><span class="name">trending.json</span> <span class="status error">NOT FOUND</span></div>');
+                addResult('Trending Topics', '<div class="item error"><span class="name">trending.json</span> <span class="status error">NOT FOUND</span></div>',
+                    { name: 'trending.json', status: 'ERROR', message: 'File not found' });
                 errorCount++;
                 updateSummary();
                 return;
@@ -257,31 +442,44 @@
                 const isJourn = isJournalist(topic.topic);
                 let itemClass = isJourn ? 'warning' : 'success';
                 
+                if (!isJourn) {
+                    successCount++;
+                    updateSummary();
+                } else {
+                    warningCount++;
+                    updateSummary();
+                }
+                
                 let html = `<div class="item ${itemClass}">
                     <div><span class="name">${topic.topic}</span>
                         ${topic.isNew ? '<span class="status ok">NEW</span>' : ''}
+                        ${isJourn ? '<span class="status warning">JOURNALIST</span>' : ''}
                     </div>
                     <div><strong>Reason:</strong> ${topic.reason || 'N/A'}</div>
                     <div><strong>Suggested Searches:</strong> ${(topic.suggestedSearches || []).join(', ')}</div>`;
                 
                 if (isJourn) {
                     html += `<div class="journalist-check">⚠️ <strong>NOTE:</strong> This topic includes a journalist/reporter name. If this appears as a BUTTON below the search bar, it should be removed. If it's in the Trending Now SECTION with investigation context, it may be OK.</div>`;
-                    warningCount++;
-                    updateSummary();
-                } else {
-                    successCount++;
-                    updateSummary();
                 }
                 
                 html += `</div>`;
-                addResult('Trending Topics', html);
+                addResult('Trending Topics', html, {
+                    name: topic.topic,
+                    status: isJourn ? 'JOURNALIST WARNING' : 'OK',
+                    message: isJourn ? 'May need removal from search buttons' : 'OK',
+                    isJournalist: isJourn,
+                    isNew: topic.isNew,
+                    searches: topic.suggestedSearches
+                });
             }
         }
         
         async function auditStats() {
+            updateProgress('Checking Stats...', 10);
             const data = await loadJSON('stats.json');
             if (!data) {
-                addResult('Stats', '<div class="item error"><span class="name">stats.json</span> <span class="status error">NOT FOUND</span></div>');
+                addResult('Stats', '<div class="item error"><span class="name">stats.json</span> <span class="status error">NOT FOUND</span></div>',
+                    { name: 'stats.json', status: 'ERROR', message: 'File not found' });
                 errorCount++;
                 updateSummary();
                 return;
@@ -306,14 +504,23 @@
                     <div class="url"><strong>URL:</strong> <a href="${stat.data.sourceUrl}" target="_blank">${stat.data.sourceUrl}</a></div>
                     <div><strong>Link Check:</strong> ${linkResult.message}</div>
                 </div>`;
-                addResult('Stats', html);
+                addResult('Stats', html, {
+                    name: stat.name,
+                    status: linkResult.status.toUpperCase(),
+                    url: stat.data.sourceUrl,
+                    message: linkResult.message,
+                    value: stat.data.count || stat.data.amount,
+                    source: stat.data.source
+                });
             }
         }
         
         async function auditNews() {
+            updateProgress('Checking News...', 80);
             const data = await loadJSON('news.json');
             if (!data) {
-                addResult('News', '<div class="item error"><span class="name">news.json</span> <span class="status error">NOT FOUND</span></div>');
+                addResult('News', '<div class="item error"><span class="name">news.json</span> <span class="status error">NOT FOUND</span></div>',
+                    { name: 'news.json', status: 'ERROR', message: 'File not found' });
                 errorCount++;
                 updateSummary();
                 return;
@@ -325,21 +532,41 @@
                     <div><span class="name">BREAKING: ${data.breaking.title}</span></div>
                     <div><strong>Source:</strong> ${data.breaking.source}</div>
                 </div>`;
-                addResult('News', html);
+                addResult('News', html, {
+                    name: 'Breaking News',
+                    status: 'OK',
+                    message: data.breaking.title,
+                    source: data.breaking.source
+                });
                 successCount++;
                 updateSummary();
             }
             
             // Check articles count
             const articleCount = (data.articles || []).length;
-            addResult('News', `<div class="item success"><span class="name">${articleCount} articles loaded</span></div>`);
+            addResult('News', `<div class="item success"><span class="name">${articleCount} articles loaded</span> <span class="status ok">OK</span></div>`, {
+                name: 'Article Count',
+                status: 'OK',
+                message: `${articleCount} articles`
+            });
+            successCount++;
+            updateSummary();
+        }
+        
+        function finishScan() {
+            updateProgress('✅ Scan Complete!', 100);
+            document.getElementById('status-text').innerHTML = `✅ <strong>Scan Complete!</strong> Found ${errorCount} errors, ${warningCount} warnings, ${successCount} OK`;
+            document.getElementById('btn-copy-all').style.display = 'inline-block';
+            setButtonsDisabled(false);
         }
         
         async function runFullAudit() {
-            document.getElementById('results').innerHTML = '<p>Running full audit...</p>';
+            document.getElementById('results').innerHTML = '';
+            allResults = [];
             errorCount = 0;
             warningCount = 0;
             successCount = 0;
+            setButtonsDisabled(true);
             
             await auditStats();
             await auditFigures();
@@ -348,31 +575,38 @@
             await auditNews();
             
             updateSummary();
+            finishScan();
         }
         
         async function checkLinksOnly() {
-            document.getElementById('results').innerHTML = '<p>Checking links...</p>';
+            document.getElementById('results').innerHTML = '';
+            allResults = [];
             errorCount = 0;
             warningCount = 0;
             successCount = 0;
+            setButtonsDisabled(true);
             
             await auditStats();
             await auditFigures();
             await auditInvestigations();
             
             updateSummary();
+            finishScan();
         }
         
         async function checkDataOnly() {
-            document.getElementById('results').innerHTML = '<p>Checking data for issues...</p>';
+            document.getElementById('results').innerHTML = '';
+            allResults = [];
             errorCount = 0;
             warningCount = 0;
             successCount = 0;
+            setButtonsDisabled(true);
             
             await auditFigures();
             await auditTrending();
             
             updateSummary();
+            finishScan();
         }
     </script>
 </body>
