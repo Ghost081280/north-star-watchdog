@@ -171,7 +171,7 @@ Based on the news, provide a JSON response with these sections:
     "convicted": 57,
     "alleged": "$9B+"
   },
-  "briefing": "A 2-3 sentence summary of TODAY's key developments. DO NOT start with any greeting like 'Good morning' or 'Good afternoon' - just start directly with the news content.",
+  "briefing": "A 2-3 sentence SYNTHESIS of key developments. DO NOT just summarize the top headline - combine insights from multiple articles, mention any red flags or patterns detected, and note any key figure updates. DO NOT start with any greeting. Example good briefing: 'Federal authorities have frozen $X in childcare payments amid expanding fraud allegations. [Person] faces new charges while investigators examine connections to [Pattern]. X new cases emerged this week across multiple programs.'",
   "entitiesForOsint": ["domain.com", "Organization Name", "Person Name"]
 }
 
