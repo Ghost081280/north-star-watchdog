@@ -3058,11 +3058,57 @@ a.figure-status:hover {
     border-top: 1px solid #2a2a2a;
 }
 
-.detective-card-sources svg {
+.sources-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    color: #888;
+}
+
+.sources-header svg {
     width: 12px;
     height: 12px;
-    vertical-align: middle;
-    margin-right: 4px;
+}
+
+.sources-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.api-tag {
+    font-size: 9px;
+    padding: 2px 6px;
+    background: rgba(100, 100, 100, 0.2);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 3px;
+    color: #888;
+}
+
+/* Circular Confidence Gauge */
+.confidence-gauge {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.confidence-gauge svg {
+    transform: rotate(0deg);
+}
+
+.confidence-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.confidence-percent {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
 }
 
 .detective-card-action {
