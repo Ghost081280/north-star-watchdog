@@ -148,9 +148,9 @@ function renderCourtGovLinks(q) {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10l4-4 4 4M8 14l4 4 4-4"/></svg>
             OpenSecrets
         </a>
-        <a href="https://www.followthemoney.org/search?s=${qName}" target="_blank" rel="noopener" class="research-link">
+        <a href="https://www.opensecrets.org/donor-lookup?name=${qName}" target="_blank" rel="noopener" class="research-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            FollowTheMoney
+            OpenSecrets Donors
         </a>
         
         <!-- Nonprofits -->
