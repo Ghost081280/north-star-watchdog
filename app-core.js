@@ -107,7 +107,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadData('investigations'),
         loadData('figures'), 
         loadData('story-ideas', 'storyIdeas'), 
-        loadData('stats')
+        loadData('stats'),
+        loadData('red-flags', 'redFlags')
     ]);
     
     // Render all sections
@@ -115,6 +116,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderStats();
     renderBriefing();
     renderNews();
+    renderDetective();
     renderTrending();
     renderStoryIdeas();
     renderInvestigations();
