@@ -5,7 +5,7 @@
  * FIXES APPLIED:
  * - Improved red flag deduplication (normalizes text before comparison)
  * - URL validation for all saved URLs
- * - Briefing greeting fix verified
+ * - Briefing greeting fix - strips ALL greetings anywhere in text
  */
 
 const fs = require('fs');
@@ -16,7 +16,7 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPOSITORY || 'Ghost081280/north-star-watchdog';
 
 // ============================================
-// BRIEFING GREETING FIX
+// BRIEFING GREETING FIX - IMPROVED
 // ============================================
 
 function fixBriefingGreeting(briefing) {
@@ -26,16 +26,25 @@ function fixBriefingGreeting(briefing) {
     
     const correctGreeting = getCorrectGreeting();
     
-    // Remove any existing greeting
+    // Remove ALL greetings ANYWHERE in the text (not just at start)
+    // Handle various formats: "Good morning.", "Good morning!", "Good morning! ☀️", etc.
     let fixed = briefing
-        .replace(/^Good morning\.?\s*!?\s*☀️?\s*/i, '')
-        .replace(/^Good afternoon\.?\s*!?\s*👋?\s*/i, '')
-        .replace(/^Good evening\.?\s*!?\s*🌙?\s*/i, '')
-        .replace(/^Good night\.?\s*!?\s*🌙?\s*/i, '')
+        .replace(/Good\s+morning[.!]?\s*☀️?\s*/gi, '')
+        .replace(/Good\s+afternoon[.!]?\s*👋?\s*/gi, '')
+        .replace(/Good\s+evening[.!]?\s*🌙?\s*/gi, '')
+        .replace(/Good\s+night[.!]?\s*🌙?\s*/gi, '')
         .trim();
+    
+    // Clean up any double spaces left behind
+    fixed = fixed.replace(/\s+/g, ' ').trim();
     
     if (!fixed || fixed.length < 10) {
         fixed = 'The AI is analyzing the latest developments in Minnesota fraud investigations.';
+    }
+    
+    // Ensure first letter after greeting is capitalized
+    if (fixed.length > 0) {
+        fixed = fixed.charAt(0).toUpperCase() + fixed.slice(1);
     }
     
     return correctGreeting + ' ' + fixed;
@@ -43,6 +52,7 @@ function fixBriefingGreeting(briefing) {
 
 function getCorrectGreeting() {
     const now = new Date();
+    // CST is UTC-6 (or UTC-5 during DST, but we'll use -6 for consistency)
     const cstOffset = -6 * 60;
     const utcMinutes = now.getUTCHours() * 60 + now.getUTCMinutes();
     let cstMinutes = utcMinutes + cstOffset;
@@ -461,7 +471,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
     programs.lastUpdated = timestamp;
     saveData('high-risk-programs.json', programs);
     
-    // 9. Update red-flags.json - IMPROVED DEDUPLICATION
+    // 9. Update red-flags.json - WITH AI CONFIDENCE SCORES
     console.log('  Updating red-flags.json...');
     let redFlags = loadData('red-flags.json') || { flags: [], flagTypes: [], sourcesUsed: [] };
     
@@ -473,14 +483,16 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
         console.log('    Warning: No OSINT sources available');
     }
     
-    // Collect new flags
+    // Collect new flags - NOW WITH AI CONFIDENCE SCORES
     const newFlags = [];
     
-    // Add from AI analysis
+    // Add from AI analysis - use AI-provided confidence
     if (aiAnalysis?.redFlags?.length > 0) {
         aiAnalysis.redFlags.forEach(f => {
             newFlags.push({
                 ...f,
+                // Use AI-provided confidence, fallback to 70 if not provided
+                confidence: f.confidence || 70,
                 detectedAt: timestamp,
                 source: 'ai-analysis',
                 sourcesUsed: sourcesUsed,
@@ -489,7 +501,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
         });
     }
     
-    // Add from detective
+    // Add from detective - use AI-provided confidence
     if (detectiveFindings?.suspiciousPatterns?.length > 0) {
         detectiveFindings.suspiciousPatterns.forEach(p => {
             newFlags.push({
@@ -497,6 +509,8 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
                 description: p.description,
                 entities: p.entities,
                 priority: p.priority,
+                // Use AI-provided confidence, fallback to 70 if not provided
+                confidence: p.confidence || 70,
                 detectedAt: timestamp,
                 source: 'ai-detective',
                 sourcesUsed: sourcesUsed,
