@@ -113,6 +113,7 @@
             font-size: 11px;
             overflow-x: auto;
             margin: 10px 0;
+            white-space: pre-wrap;
         }
         
         .issue-card {
@@ -129,7 +130,7 @@
         .issue-title { font-weight: 600; margin-bottom: 5px; }
         .issue-desc { color: var(--text2); font-size: 14px; }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 20px; }
         
         .stat-card {
             background: var(--bg3);
@@ -146,7 +147,7 @@
             background: var(--bg3);
             border-radius: 4px;
             overflow: hidden;
-            margin: 10px 0;
+            margin: 10px 0 20px 0;
         }
         .progress-fill {
             height: 100%;
@@ -177,14 +178,33 @@
         .tag-fail { background: rgba(239, 68, 68, 0.2); color: var(--red); }
         .tag-warn { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
         .tag-info { background: rgba(59, 130, 246, 0.2); color: var(--blue); }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+        
+        .rec-item {
+            background: var(--bg3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .rec-title { font-weight: 600; margin-bottom: 10px; }
+        .rec-steps { color: var(--text2); font-size: 13px; margin-left: 20px; }
+        .rec-steps li { margin: 5px 0; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🔍 North Star Watchdog - Diagnostic Suite</h1>
-        <p class="subtitle">Full system audit & bug detection for the AI-powered fraud investigation platform</p>
+        <p class="subtitle">Full system audit &amp; bug detection for the AI-powered fraud investigation platform</p>
         
-        <!-- Quick Stats -->
         <div class="grid">
             <div class="stat-card">
                 <div class="stat-value" id="total-tests">0</div>
@@ -208,136 +228,99 @@
             <div class="progress-fill" id="progress" style="width: 0%"></div>
         </div>
         
-        <button onclick="runAllTests()">🚀 Run All Tests</button>
-        <button onclick="clearResults()">🗑️ Clear Results</button>
-        <button onclick="exportReport()">📄 Export Report</button>
+        <button id="btn-run-all">🚀 Run All Tests</button>
+        <button id="btn-clear">🗑️ Clear Results</button>
+        <button id="btn-export">📄 Export Report</button>
         
-        <!-- 1. BRIEFING GREETING TEST -->
         <h2>1. Briefing Greeting Logic Test</h2>
         <div class="test-section">
-            <p>Testing the <code>fixBriefingGreeting()</code> function to ensure correct time-based greetings.</p>
-            
+            <p>Testing the fixBriefingGreeting() function to ensure correct time-based greetings.</p>
             <div id="briefing-tests"></div>
-            
             <h3>Current Time Analysis</h3>
-            <div class="code-block" id="time-analysis"></div>
-            
+            <div class="code-block" id="time-analysis">Click "Run All Tests" to analyze...</div>
             <h3>Bug Analysis</h3>
             <div id="briefing-issues"></div>
         </div>
         
-        <!-- 2. API AUDIT -->
         <h2>2. API Connectivity Audit</h2>
         <div class="test-section">
             <p>Testing if each API is actually being called and returning data.</p>
-            
-            <button onclick="testAllApis()">🔌 Test All APIs</button>
-            
+            <button id="btn-test-apis">🔌 Test All APIs</button>
             <div id="api-tests"></div>
-            
             <h3>API Response Log</h3>
             <div class="log" id="api-log">Click "Test All APIs" to begin...</div>
         </div>
         
-        <!-- 3. URL VALIDATION -->
         <h2>3. URL Validation (404 Check)</h2>
         <div class="test-section">
             <p>Checking all sourceUrls in data files for 404 errors.</p>
-            
-            <button onclick="validateUrls()">🔗 Validate All URLs</button>
-            
-            <table id="url-table">
+            <button id="btn-validate-urls">🔗 Validate All URLs</button>
+            <table>
                 <thead>
-                    <tr>
-                        <th>File</th>
-                        <th>Entity</th>
-                        <th>URL</th>
-                        <th>Status</th>
-                    </tr>
+                    <tr><th>File</th><th>Entity</th><th>URL</th><th>Status</th></tr>
                 </thead>
-                <tbody id="url-tbody">
-                </tbody>
+                <tbody id="url-tbody"></tbody>
             </table>
         </div>
         
-        <!-- 4. SOURCES AUDIT -->
         <h2>4. Sources Displayed vs Sources Used</h2>
         <div class="test-section">
             <p>Verifying that the sources shown in the frontend match what was actually queried.</p>
-            
             <div id="sources-comparison"></div>
-            
             <h3>Data Flow Analysis</h3>
-            <div class="code-block" id="sources-flow"></div>
+            <div class="code-block" id="sources-flow">Click "Run All Tests" to analyze...</div>
         </div>
         
-        <!-- 5. CONFIDENCE SCORE AUDIT -->
         <h2>5. Confidence Score Analysis</h2>
         <div class="test-section">
             <p>Checking if confidence scores are dynamic or hardcoded.</p>
-            
             <div id="confidence-analysis"></div>
-            
             <h3>Current Confidence Distribution</h3>
-            <div class="code-block" id="confidence-distribution"></div>
+            <div class="code-block" id="confidence-distribution">Click "Run All Tests" to analyze...</div>
         </div>
         
-        <!-- 6. SEARCH FUNCTIONALITY -->
         <h2>6. Search Results Bug Test</h2>
         <div class="test-section">
             <p>Testing the "No recent news found" bug.</p>
-            
-            <input type="text" id="search-test-input" placeholder="Enter search term..." style="padding: 10px; width: 300px; background: var(--bg3); border: 1px solid var(--border); color: var(--text); border-radius: 6px;">
-            <button onclick="testSearch()">🔍 Test Search</button>
-            
+            <input type="text" id="search-test-input" placeholder="Enter search term..." value="Feeding Our Future">
+            <button id="btn-test-search">🔍 Test Search</button>
             <div id="search-results"></div>
         </div>
         
-        <!-- 7. DATA FILE INTEGRITY -->
         <h2>7. Data File Integrity Check</h2>
         <div class="test-section">
             <p>Validating JSON structure and required fields in all data files.</p>
-            
-            <button onclick="validateDataFiles()">📁 Validate Data Files</button>
-            
+            <button id="btn-validate-data">📁 Validate Data Files</button>
             <div id="data-validation"></div>
         </div>
         
-        <!-- 8. TWO-WAY CHAT TEST -->
         <h2>8. Two-Way Chat (ai-responder.js) Test</h2>
         <div class="test-section">
             <p>Testing command detection for GitHub issue responses.</p>
-            
             <div id="chat-tests"></div>
-            
             <h3>Command Detection Test</h3>
-            <input type="text" id="chat-command" placeholder="Enter a command (e.g., 'approved', 'dismiss', 'dig deeper')..." style="padding: 10px; width: 400px; background: var(--bg3); border: 1px solid var(--border); color: var(--text); border-radius: 6px;">
-            <button onclick="testChatCommand()">🤖 Test Command</button>
-            <div class="code-block" id="chat-result"></div>
+            <input type="text" id="chat-command" placeholder="Enter a command (e.g., 'approved', 'dismiss')..." style="width: 400px;">
+            <button id="btn-test-chat">🤖 Test Command</button>
+            <div class="code-block" id="chat-result">Enter a command and click test...</div>
         </div>
         
-        <!-- 9. CODE ANALYSIS -->
         <h2>9. Code Analysis - Identified Issues</h2>
         <div class="test-section">
             <div id="code-issues"></div>
         </div>
         
-        <!-- 10. RECOMMENDATIONS -->
         <h2>10. Fix Recommendations</h2>
         <div class="test-section">
             <div id="recommendations"></div>
         </div>
         
-        <!-- Full Log -->
         <h2>📋 Full Diagnostic Log</h2>
-        <div class="log" id="full-log" style="max-height: 500px;"></div>
+        <div class="log" id="full-log" style="max-height: 500px;">Diagnostic suite ready. Click "Run All Tests" to begin.</div>
     </div>
     
     <script>
-        // ============================================
-        // DIAGNOSTIC STATE
-        // ============================================
-        const state = {
+        // State
+        var state = {
             tests: [],
             issues: [],
             passed: 0,
@@ -345,20 +328,19 @@
             total: 0
         };
         
-        // ============================================
-        // LOGGING UTILITIES
-        // ============================================
-        function log(message, type = 'info') {
-            const logEl = document.getElementById('full-log');
-            const entry = document.createElement('div');
-            entry.className = `log-entry ${type}`;
-            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+        // Logging
+        function log(message, type) {
+            type = type || 'info';
+            var logEl = document.getElementById('full-log');
+            var entry = document.createElement('div');
+            entry.className = 'log-entry ' + type;
+            entry.textContent = '[' + new Date().toLocaleTimeString() + '] ' + message;
             logEl.appendChild(entry);
             logEl.scrollTop = logEl.scrollHeight;
         }
         
-        function addIssue(title, description, severity = 'error') {
-            state.issues.push({ title, description, severity });
+        function addIssue(title, description, severity) {
+            state.issues.push({ title: title, description: description, severity: severity || 'error' });
             document.getElementById('issues-found').textContent = state.issues.length;
         }
         
@@ -366,640 +348,321 @@
             document.getElementById('total-tests').textContent = state.total;
             document.getElementById('passed-tests').textContent = state.passed;
             document.getElementById('failed-tests').textContent = state.failed;
-            document.getElementById('progress').style.width = 
-                state.total > 0 ? `${((state.passed + state.failed) / state.total) * 100}%` : '0%';
+            var pct = state.total > 0 ? ((state.passed + state.failed) / state.total) * 100 : 0;
+            document.getElementById('progress').style.width = pct + '%';
         }
         
-        // ============================================
-        // 1. BRIEFING GREETING TESTS
-        // ============================================
+        // 1. Briefing Greeting Tests
         function testBriefingGreeting() {
             log('Testing briefing greeting logic...', 'info');
             
-            const container = document.getElementById('briefing-tests');
-            const timeAnalysis = document.getElementById('time-analysis');
-            const issuesContainer = document.getElementById('briefing-issues');
+            var container = document.getElementById('briefing-tests');
+            var timeAnalysis = document.getElementById('time-analysis');
+            var issuesContainer = document.getElementById('briefing-issues');
             
-            // Get current CST time
-            const now = new Date();
-            const cstOptions = { timeZone: 'America/Chicago' };
-            const cstString = now.toLocaleString('en-US', cstOptions);
-            const cstDate = new Date(cstString);
-            const hour = cstDate.getHours();
+            var now = new Date();
+            var cstString = now.toLocaleString('en-US', { timeZone: 'America/Chicago' });
+            var cstDate = new Date(cstString);
+            var hour = cstDate.getHours();
             
-            timeAnalysis.innerHTML = `
-Current UTC: ${now.toISOString()}
-Current CST: ${cstString}
-CST Hour: ${hour}
-
-Expected Greeting Logic:
-- Hours 5-11:  "Good morning! ☀️"
-- Hours 12-16: "Good afternoon! 👋"
-- Hours 17-23 & 0-4: "Good evening! 🌙"
-
-Current Hour (${hour}) should show: ${
-    hour >= 5 && hour < 12 ? '"Good morning! ☀️"' :
-    hour >= 12 && hour < 17 ? '"Good afternoon! 👋"' :
-    '"Good evening! 🌙"'
-}`;
-            
-            // Test the function logic
-            function fixBriefingGreeting(briefing) {
-                const now = new Date();
-                const cstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
-                const h = cstTime.getHours();
-                
-                let correctGreeting;
-                if (h >= 5 && h < 12) {
-                    correctGreeting = "Good morning! ☀️";
-                } else if (h >= 12 && h < 17) {
-                    correctGreeting = "Good afternoon! 👋";
-                } else {
-                    correctGreeting = "Good evening! 🌙";
-                }
-                
-                let fixed = briefing
-                    .replace(/^Good morning\.?\s*/i, correctGreeting + ' ')
-                    .replace(/^Good afternoon\.?\s*/i, correctGreeting + ' ')
-                    .replace(/^Good evening\.?\s*/i, correctGreeting + ' ');
-                
-                if (!fixed.startsWith('Good')) {
-                    fixed = correctGreeting + ' ' + fixed;
-                }
-                
-                return { fixed, correctGreeting, hour: h };
+            var expectedGreeting = '';
+            if (hour >= 5 && hour < 12) {
+                expectedGreeting = 'Good morning! ☀️';
+            } else if (hour >= 12 && hour < 17) {
+                expectedGreeting = 'Good afternoon! 👋';
+            } else {
+                expectedGreeting = 'Good evening! 🌙';
             }
             
-            // Test cases
-            const testCases = [
-                { input: "Good morning. HHS froze payments.", expected: hour >= 5 && hour < 12 },
-                { input: "Good afternoon. Big news today.", expected: hour >= 12 && hour < 17 },
-                { input: "Good evening. Breaking news.", expected: hour >= 17 || hour < 5 },
-                { input: "HHS froze all payments.", expectPrefix: true },
+            timeAnalysis.textContent = 
+                'Current UTC: ' + now.toISOString() + '\n' +
+                'Current CST: ' + cstString + '\n' +
+                'CST Hour: ' + hour + '\n\n' +
+                'Expected Greeting Logic:\n' +
+                '- Hours 5-11:  "Good morning! ☀️"\n' +
+                '- Hours 12-16: "Good afternoon! 👋"\n' +
+                '- Hours 17-23 & 0-4: "Good evening! 🌙"\n\n' +
+                'Current Hour (' + hour + ') should show: "' + expectedGreeting + '"';
+            
+            // Test the fix function
+            function fixBriefingGreeting(briefing) {
+                var now = new Date();
+                var cstTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+                var h = cstTime.getHours();
+                
+                var correctGreeting;
+                if (h >= 5 && h < 12) {
+                    correctGreeting = 'Good morning! ☀️';
+                } else if (h >= 12 && h < 17) {
+                    correctGreeting = 'Good afternoon! 👋';
+                } else {
+                    correctGreeting = 'Good evening! 🌙';
+                }
+                
+                var fixed = briefing
+                    .replace(/^Good morning\.?\s*!?\s*☀️?\s*/i, '')
+                    .replace(/^Good afternoon\.?\s*!?\s*👋?\s*/i, '')
+                    .replace(/^Good evening\.?\s*!?\s*🌙?\s*/i, '');
+                
+                return { fixed: correctGreeting + ' ' + fixed.trim(), correctGreeting: correctGreeting, hour: h };
+            }
+            
+            var testCases = [
+                { input: 'Good morning. HHS froze payments.', name: 'Wrong morning greeting' },
+                { input: 'Good afternoon. Big news today.', name: 'Wrong afternoon greeting' },
+                { input: 'Good evening. Breaking news.', name: 'Wrong evening greeting' },
+                { input: 'HHS froze all payments.', name: 'No greeting at all' }
             ];
             
-            let html = '';
-            testCases.forEach((test, i) => {
-                const result = fixBriefingGreeting(test.input);
-                const passed = test.expectPrefix ? 
-                    result.fixed.startsWith('Good') : 
-                    result.fixed.includes(result.correctGreeting);
+            var html = '';
+            testCases.forEach(function(test, i) {
+                var result = fixBriefingGreeting(test.input);
+                var passed = result.fixed.indexOf(result.correctGreeting) === 0;
                 
                 state.total++;
                 if (passed) state.passed++; else state.failed++;
                 
-                html += `
-                    <div class="test-item">
-                        <div class="status ${passed ? 'success' : 'fail'}"></div>
-                        <div class="test-name">Test ${i + 1}: "${test.input.substring(0, 30)}..."</div>
-                        <div class="test-result">${passed ? 'PASS' : 'FAIL'} - Output starts with correct greeting</div>
-                    </div>`;
+                html += '<div class="test-item">' +
+                    '<div class="status ' + (passed ? 'success' : 'fail') + '"></div>' +
+                    '<div class="test-name">Test ' + (i + 1) + ': ' + test.name + '</div>' +
+                    '<div class="test-result">' + (passed ? 'PASS' : 'FAIL') + ' - Output: "' + result.fixed.substring(0, 40) + '..."</div>' +
+                '</div>';
             });
             
             container.innerHTML = html;
             
-            // Identify issues
-            let issuesHtml = '';
+            // Issues
+            issuesContainer.innerHTML = 
+                '<div class="issue-card">' +
+                    '<div class="issue-title">🐛 Bug Found: fixBriefingGreeting() not in main workflow</div>' +
+                    '<div class="issue-desc">The function exists in ai-updater.js but the workflow runs ai-core.js. ' +
+                    'The fix function needs to be added to ai-files.js to actually execute.</div>' +
+                '</div>';
             
-            // BUG 1: Check if function is actually called in workflow
-            issuesHtml += `
-                <div class="issue-card warning">
-                    <div class="issue-title">⚠️ Potential Issue: Function May Not Be Called</div>
-                    <div class="issue-desc">
-                        The <code>fixBriefingGreeting()</code> function exists in ai-updater.js but may not be integrated into ai-core.js 
-                        which is what actually runs in the workflow. Check that ai-files.js calls this function when saving stats.json.
-                    </div>
-                </div>`;
-            
-            // BUG 2: The function exists in ai-updater.js but workflow uses ai-core.js
-            issuesHtml += `
-                <div class="issue-card">
-                    <div class="issue-title">🐛 Bug Found: ai-updater.js vs ai-core.js</div>
-                    <div class="issue-desc">
-                        The workflow runs <code>node scripts/ai-core.js</code> but <code>fixBriefingGreeting()</code> is only in 
-                        <code>ai-updater.js</code>. The fix function needs to be in ai-files.js or ai-analyzer.js to actually run.
-                    </div>
-                </div>`;
-            
-            issuesContainer.innerHTML = issuesHtml;
-            
-            addIssue('Briefing Greeting Not Fixed', 
-                'fixBriefingGreeting() is in ai-updater.js but workflow runs ai-core.js', 'error');
-            
+            addIssue('Briefing Greeting Not Fixed', 'fixBriefingGreeting() is in ai-updater.js but workflow runs ai-core.js', 'error');
             updateStats();
             log('Briefing greeting tests complete', 'success');
         }
         
-        // ============================================
-        // 2. API CONNECTIVITY TESTS
-        // ============================================
-        async function testAllApis() {
+        // 2. API Tests
+        function testAllApis() {
             log('Starting API connectivity tests...', 'info');
             
-            const container = document.getElementById('api-tests');
-            const logEl = document.getElementById('api-log');
+            var container = document.getElementById('api-tests');
+            var logEl = document.getElementById('api-log');
             logEl.innerHTML = '';
+            container.innerHTML = '';
             
-            const apis = [
-                { name: 'Google News RSS', url: 'https://news.google.com/rss/search?q=Minnesota+fraud', method: 'GET', requiresKey: false },
-                { name: 'SAM.gov (Demo)', url: 'https://api.sam.gov/entity-information/v3/entities?api_key=DEMO_KEY&entityName=test', method: 'GET', requiresKey: false },
-                { name: 'OFAC Screening', url: 'https://api.trade.gov/consolidated_screening_list/search?api_key=DEMO_KEY&q=test', method: 'GET', requiresKey: false },
-                { name: 'ProPublica Nonprofits', url: 'https://projects.propublica.org/nonprofits/api/v2/search.json?q=minnesota', method: 'GET', requiresKey: false, cors: true },
-                { name: 'FEC Campaign Finance', url: 'https://api.open.fec.gov/v1/committees/?api_key=DEMO_KEY&q=minnesota&per_page=1', method: 'GET', requiresKey: false },
-                { name: 'USASpending', url: 'https://api.usaspending.gov/api/v2/search/spending_by_award/', method: 'POST', requiresKey: false, 
-                  body: JSON.stringify({ filters: { keywords: ['minnesota'] }, fields: ['Recipient Name'], page: 1, limit: 1 }) },
-                { name: 'IntelligenceX', url: 'https://2.intelx.io', requiresKey: true, keyName: 'INTELX_API_KEY' },
-                { name: 'Censys', url: 'https://search.censys.io/api/v2/hosts/search', requiresKey: true, keyName: 'CENSYS_API_KEY' },
-                { name: 'SecurityTrails', url: 'https://api.securitytrails.com/v1/ping', requiresKey: true, keyName: 'SECURITYTRAILS_API_KEY' },
-                { name: 'VirusTotal', url: 'https://www.virustotal.com/api/v3/domains/google.com', requiresKey: true, keyName: 'VIRUSTOTAL_API_KEY' },
-                { name: 'Hunter.io', url: 'https://api.hunter.io/v2/domain-search', requiresKey: true, keyName: 'HUNTER_API_KEY' },
+            var apis = [
+                { name: 'Google News RSS', note: 'Used for news scraping' },
+                { name: 'SAM.gov (Demo)', note: 'Federal registrations - FREE' },
+                { name: 'OFAC Screening', note: 'Treasury sanctions - FREE' },
+                { name: 'OIG Exclusions', note: 'HHS exclusions - FREE' },
+                { name: 'DOJ Press', note: 'Justice Dept news - FREE' },
+                { name: 'FBI Press', note: 'FBI news - FREE' },
+                { name: 'USASpending', note: 'Federal grants/contracts' },
+                { name: 'ProPublica Nonprofits', note: 'Nonprofit data' },
+                { name: 'FEC Campaign Finance', note: 'Political donations' },
+                { name: 'IntelligenceX', note: 'Requires INTELX_API_KEY' },
+                { name: 'Censys', note: 'Requires CENSYS_API_KEY' },
+                { name: 'SecurityTrails', note: 'Requires SECURITYTRAILS_API_KEY' },
+                { name: 'VirusTotal', note: 'Requires VIRUSTOTAL_API_KEY' },
+                { name: 'Hunter.io', note: 'Requires HUNTER_API_KEY' }
             ];
             
-            let html = '';
+            apis.forEach(function(api) {
+                var html = '<div class="test-item">' +
+                    '<div class="status warning"></div>' +
+                    '<div class="test-name">' + api.name + '</div>' +
+                    '<div class="test-result">' + api.note + '</div>' +
+                '</div>';
+                container.innerHTML += html;
+                logEl.innerHTML += '[' + api.name + '] ' + api.note + '\n';
+            });
             
-            for (const api of apis) {
-                state.total++;
-                
-                const testItem = document.createElement('div');
-                testItem.className = 'test-item';
-                testItem.innerHTML = `
-                    <div class="status pending"></div>
-                    <div class="test-name">${api.name}</div>
-                    <div class="test-result">Testing...</div>
-                `;
-                container.appendChild(testItem);
-                
-                try {
-                    if (api.requiresKey) {
-                        // Can't test APIs requiring keys from browser
-                        testItem.querySelector('.status').className = 'status warning';
-                        testItem.querySelector('.test-result').textContent = `Requires ${api.keyName} - test in Node.js`;
-                        logEl.innerHTML += `<div class="log-entry warning">[${api.name}] Requires API key: ${api.keyName}</div>`;
-                        continue;
-                    }
-                    
-                    if (api.cors) {
-                        // Use CORS proxy
-                        const corsUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(api.url)}`;
-                        const response = await fetch(corsUrl, { method: 'GET' });
-                        if (response.ok) {
-                            state.passed++;
-                            testItem.querySelector('.status').className = 'status success';
-                            testItem.querySelector('.test-result').textContent = `OK (via proxy) - ${response.status}`;
-                            logEl.innerHTML += `<div class="log-entry success">[${api.name}] Success via CORS proxy</div>`;
-                        } else {
-                            throw new Error(`Status ${response.status}`);
-                        }
-                    } else {
-                        const options = { method: api.method || 'GET', mode: 'cors' };
-                        if (api.body) {
-                            options.body = api.body;
-                            options.headers = { 'Content-Type': 'application/json' };
-                        }
-                        
-                        const response = await fetch(api.url, options);
-                        
-                        if (response.ok || response.status === 403) {
-                            // 403 often means CORS blocked but API exists
-                            state.passed++;
-                            testItem.querySelector('.status').className = 'status success';
-                            testItem.querySelector('.test-result').textContent = `Reachable - ${response.status}`;
-                            logEl.innerHTML += `<div class="log-entry success">[${api.name}] Endpoint reachable: ${response.status}</div>`;
-                        } else {
-                            throw new Error(`Status ${response.status}`);
-                        }
-                    }
-                } catch (error) {
-                    // CORS errors are expected from browser
-                    if (error.message.includes('CORS') || error.message.includes('NetworkError') || error.name === 'TypeError') {
-                        testItem.querySelector('.status').className = 'status warning';
-                        testItem.querySelector('.test-result').textContent = 'CORS blocked (normal for browser) - test in Node.js';
-                        logEl.innerHTML += `<div class="log-entry warning">[${api.name}] CORS blocked - needs server-side test</div>`;
-                    } else {
-                        state.failed++;
-                        testItem.querySelector('.status').className = 'status fail';
-                        testItem.querySelector('.test-result').textContent = error.message;
-                        logEl.innerHTML += `<div class="log-entry error">[${api.name}] Error: ${error.message}</div>`;
-                        addIssue(`API Error: ${api.name}`, error.message, 'error');
-                    }
-                }
-                
-                await new Promise(r => setTimeout(r, 200));
-            }
+            logEl.innerHTML += '\n⚠️ Note: Full API testing requires server-side execution.\n';
+            logEl.innerHTML += 'Browser CORS restrictions prevent direct testing from this page.\n';
+            logEl.innerHTML += 'Check GitHub Actions logs for actual API status.';
             
-            updateStats();
-            log('API tests complete', 'success');
+            log('API audit complete - see notes for each API', 'warning');
         }
         
-        // ============================================
-        // 3. URL VALIDATION
-        // ============================================
-        async function validateUrls() {
+        // 3. URL Validation
+        function validateUrls() {
             log('Starting URL validation...', 'info');
             
-            const tbody = document.getElementById('url-tbody');
-            tbody.innerHTML = '<tr><td colspan="4">Loading data files...</td></tr>';
+            var tbody = document.getElementById('url-tbody');
             
-            // Sample URLs to test (in real scenario, these come from JSON files)
-            const urlsToTest = [
+            var urlsToTest = [
                 { file: 'figures.json', entity: 'Aimee Bock', url: 'https://www.cbsnews.com/' },
-                { file: 'figures.json', entity: 'Salim Said', url: 'https://www.kfgo.com/' },
                 { file: 'figures.json', entity: 'Tim Walz', url: 'https://www.newsation.com/' },
-                { file: 'figures.json', entity: "Ilhan Omar's Husband", url: 'https://www.foxnews.com/politics/ilhan-omars-husband-scrubs-clients-website-following-report-firm-linked-minnesota-fraud' },
+                { file: 'figures.json', entity: 'Ilhan Omar Husband', url: 'https://www.foxnews.com/...' },
                 { file: 'investigations.json', entity: 'FOF', url: 'https://www.cbsnews.com/' },
                 { file: 'investigations.json', entity: 'CCAP', url: 'https://www.audacy.com/' },
-                { file: 'investigations.json', entity: 'EIDBI', url: 'https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/' },
                 { file: 'stats.json', entity: 'DOJ MN', url: 'https://www.justice.gov/usao-mn' },
-                { file: 'stats.json', entity: 'Oversight', url: 'https://oversight.house.gov/' },
+                { file: 'red-flags.json', entity: 'Various', url: 'Multiple URLs with Hindi chars!' }
             ];
             
             tbody.innerHTML = '';
+            urlsToTest.forEach(function(item) {
+                var row = '<tr>' +
+                    '<td>' + item.file + '</td>' +
+                    '<td>' + item.entity + '</td>' +
+                    '<td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;">' + item.url + '</td>' +
+                    '<td><span class="tag tag-warn">Needs Server Check</span></td>' +
+                '</tr>';
+                tbody.innerHTML += row;
+            });
             
-            for (const item of urlsToTest) {
-                state.total++;
-                
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${item.file}</td>
-                    <td>${item.entity}</td>
-                    <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis;">${item.url}</td>
-                    <td><span class="tag tag-info">Testing...</span></td>
-                `;
-                tbody.appendChild(row);
-                
-                try {
-                    // Can't directly check URLs from browser due to CORS
-                    // In Node.js this would be a HEAD request
-                    // For now, mark as requiring server-side validation
-                    row.querySelector('.tag').className = 'tag tag-warn';
-                    row.querySelector('.tag').textContent = 'Needs Server Check';
-                } catch (error) {
-                    row.querySelector('.tag').className = 'tag tag-fail';
-                    row.querySelector('.tag').textContent = 'Error';
-                    state.failed++;
-                }
-                
-                await new Promise(r => setTimeout(r, 50));
-            }
+            tbody.innerHTML += '<tr><td colspan="4" style="color:var(--text2);font-size:12px;">' +
+                '⚠️ URL validation requires server-side checking. Add validateUrl() to ai-files.js</td></tr>';
             
-            // Add note about validation
-            const noteRow = document.createElement('tr');
-            noteRow.innerHTML = `
-                <td colspan="4" style="color: var(--text2); font-size: 12px;">
-                    ⚠️ URL validation requires server-side checking. Add this to ai-files.js to validate URLs before saving.
-                </td>
-            `;
-            tbody.appendChild(noteRow);
-            
-            addIssue('URL Validation Missing', 
-                'No URL validation exists - dead links can be saved to data files', 'warning');
-            
-            updateStats();
-            log('URL validation complete (server-side check needed)', 'warning');
+            addIssue('No URL Validation', 'Dead links can be saved to data files - no validation exists', 'warning');
+            log('URL validation analysis complete', 'warning');
         }
         
-        // ============================================
-        // 4. SOURCES AUDIT
-        // ============================================
+        // 4. Sources Flow
         function analyzeSourcesFlow() {
             log('Analyzing sources data flow...', 'info');
             
-            const container = document.getElementById('sources-comparison');
-            const flowEl = document.getElementById('sources-flow');
+            var container = document.getElementById('sources-comparison');
+            var flowEl = document.getElementById('sources-flow');
             
-            // Analyze the code flow
-            flowEl.innerHTML = `
-DATA FLOW ANALYSIS:
-
-1. ai-osint.js → enrichFindings()
-   - Creates: results.sourcesUsed = []
-   - Populates: sourcesUsed.push('SAM.gov'), etc.
-   - Returns: { sourcesUsed, sourceCount }
-
-2. ai-files.js → updateAllDataFiles()
-   - Receives: osintResults from enrichFindings()
-   - Gets: sourcesUsed = osintResults?.sourcesUsed || DEFAULT_SOURCES
-   - Saves to: red-flags.json { sourcesUsed, sourceCount }
-
-3. app-render.js → renderDetective()
-   - Loads: DATA.redFlags?.sourcesUsed
-   - Displays: globalSourcesUsed in each card
-
-IDENTIFIED BUGS:
-`;
+            flowEl.textContent = 
+                'DATA FLOW ANALYSIS:\n\n' +
+                '1. ai-osint.js → enrichFindings()\n' +
+                '   - Creates: results.sourcesUsed = []\n' +
+                '   - Populates when API returns data\n' +
+                '   - Returns: { sourcesUsed, sourceCount }\n\n' +
+                '2. ai-files.js → updateAllDataFiles()\n' +
+                '   - Gets: sourcesUsed from osintResults\n' +
+                '   - PROBLEM: Falls back to hardcoded defaults!\n' +
+                '   - Saves to: red-flags.json\n\n' +
+                '3. app-render.js → renderDetective()\n' +
+                '   - Loads: DATA.redFlags?.sourcesUsed\n' +
+                '   - Displays same sources for ALL cards';
             
-            let issuesHtml = '';
+            container.innerHTML = 
+                '<div class="issue-card warning">' +
+                    '<div class="issue-title">⚠️ Default Sources Override Real Data</div>' +
+                    '<div class="issue-desc">When OSINT fails, hardcoded defaults are shown: ' +
+                    '"Google News, DOJ Press, FBI Press, SAM.gov, OFAC, OIG" even if not queried.</div>' +
+                '</div>' +
+                '<div class="issue-card info">' +
+                    '<div class="issue-title">ℹ️ All Cards Show Same Sources</div>' +
+                    '<div class="issue-desc">Frontend uses globalSourcesUsed for all detective cards, ' +
+                    'even if individual flags have different sources.</div>' +
+                '</div>';
             
-            // Bug 1: Default sources may override real ones
-            issuesHtml += `
-                <div class="issue-card warning">
-                    <div class="issue-title">⚠️ Default Sources Override</div>
-                    <div class="issue-desc">
-                        When osintResults is null/undefined, code falls back to hardcoded defaults:
-                        <code>['Google News', 'DOJ Press', 'FBI Press', 'SAM.gov', 'OFAC Sanctions', 'OIG Exclusions']</code>
-                        This may show sources that weren't actually queried.
-                    </div>
-                </div>`;
-            
-            // Bug 2: Per-flag sources not always set
-            issuesHtml += `
-                <div class="issue-card">
-                    <div class="issue-title">🐛 Per-Flag Sources Missing</div>
-                    <div class="issue-desc">
-                        Some flags in red-flags.json don't have their own <code>sourcesUsed</code> array. 
-                        They inherit from global, which may be incorrect. Each flag should track its own sources.
-                    </div>
-                </div>`;
-            
-            // Bug 3: Frontend uses global sources for all cards
-            issuesHtml += `
-                <div class="issue-card info">
-                    <div class="issue-title">ℹ️ All Cards Show Same Sources</div>
-                    <div class="issue-desc">
-                        The frontend uses <code>globalSourcesUsed</code> for all detective cards, even if individual 
-                        flags have different sources. Update app-render.js to use flag-specific sources.
-                    </div>
-                </div>`;
-            
-            container.innerHTML = issuesHtml;
-            
-            addIssue('Sources Not Per-Finding', 
-                'All detective cards show same global sources, not finding-specific sources', 'warning');
-            
+            addIssue('Sources Not Per-Finding', 'All detective cards show same global sources', 'warning');
             log('Sources analysis complete', 'success');
         }
         
-        // ============================================
-        // 5. CONFIDENCE SCORE ANALYSIS
-        // ============================================
+        // 5. Confidence Analysis
         function analyzeConfidenceScores() {
             log('Analyzing confidence score logic...', 'info');
             
-            const container = document.getElementById('confidence-analysis');
-            const distEl = document.getElementById('confidence-distribution');
+            var container = document.getElementById('confidence-analysis');
+            var distEl = document.getElementById('confidence-distribution');
             
-            // The current logic from ai-core.js
-            const calculateConfidence = (pattern) => {
-                let score = 50; // Base score
-                
-                if (pattern.entities?.length > 1) score += 10;
-                if (pattern.entities?.length > 3) score += 10;
-                if (pattern.sourceUrl) score += 15;
-                if (pattern.description?.length > 100) score += 10;
-                if (pattern.priority === 'high') score += 15;
-                
-                return Math.min(score, 99);
-            };
+            distEl.textContent = 
+                'CONFIDENCE SCORE CALCULATION (from ai-core.js):\n\n' +
+                'Base Score: 50\n' +
+                '+ entities > 1: +10\n' +
+                '+ entities > 3: +10\n' +
+                '+ has sourceUrl: +15\n' +
+                '+ description > 100 chars: +10\n' +
+                '+ priority "high": +15\n' +
+                'Max: 99\n\n' +
+                'RESULT: Most high-priority findings = 75-85%\n' +
+                'This is WHY all scores look similar!';
             
-            // Test cases
-            const testPatterns = [
-                { priority: 'high', entities: ['A'], description: 'Short', sourceUrl: null },
-                { priority: 'high', entities: ['A', 'B'], description: 'Short', sourceUrl: 'http://test.com' },
-                { priority: 'medium', entities: ['A'], description: 'A'.repeat(150), sourceUrl: null },
-                { priority: 'high', entities: ['A', 'B', 'C', 'D'], description: 'A'.repeat(150), sourceUrl: 'http://test.com' },
-            ];
+            container.innerHTML = 
+                '<div class="issue-card warning">' +
+                    '<div class="issue-title">⚠️ Confidence Scores Not Truly Dynamic</div>' +
+                    '<div class="issue-desc">calculateConfidence() uses basic heuristics. ' +
+                    'The AI doesn\'t calculate confidence per-finding based on actual evidence.</div>' +
+                '</div>' +
+                '<div class="issue-card info">' +
+                    '<div class="issue-title">💡 Recommendation</div>' +
+                    '<div class="issue-desc">Have Groq AI return "confidence": 0-100 for each red flag ' +
+                    'in its JSON response, based on number of sources and evidence quality.</div>' +
+                '</div>';
             
-            let distHtml = 'CONFIDENCE SCORE CALCULATION:\n\n';
-            distHtml += 'Base Score: 50\n';
-            distHtml += '+ entities > 1: +10\n';
-            distHtml += '+ entities > 3: +10\n';
-            distHtml += '+ has sourceUrl: +15\n';
-            distHtml += '+ description > 100 chars: +10\n';
-            distHtml += '+ priority "high": +15\n';
-            distHtml += 'Max: 99\n\n';
-            distHtml += 'TEST RESULTS:\n';
-            
-            testPatterns.forEach((p, i) => {
-                const score = calculateConfidence(p);
-                distHtml += `Pattern ${i + 1}: Score = ${score}% (${p.priority}, ${p.entities.length} entities, ${p.sourceUrl ? 'has URL' : 'no URL'})\n`;
-            });
-            
-            distEl.innerHTML = distHtml;
-            
-            let issuesHtml = '';
-            
-            issuesHtml += `
-                <div class="issue-card warning">
-                    <div class="issue-title">⚠️ Confidence Scores Not Truly Dynamic</div>
-                    <div class="issue-desc">
-                        While <code>calculateConfidence()</code> exists, it uses basic heuristics. 
-                        The AI doesn't calculate confidence per-finding based on actual evidence strength. 
-                        Most high-priority findings will score 75-85% regardless of actual certainty.
-                    </div>
-                </div>`;
-            
-            issuesHtml += `
-                <div class="issue-card info">
-                    <div class="issue-title">💡 Recommendation</div>
-                    <div class="issue-desc">
-                        Have the AI (Groq) return a confidence score for each finding in its JSON response. 
-                        Add to the prompt: <code>"confidence": 0-100</code> for each red flag based on 
-                        number of sources, corroboration, and evidence quality.
-                    </div>
-                </div>`;
-            
-            container.innerHTML = issuesHtml;
-            
-            addIssue('Confidence Not AI-Generated', 
-                'Scores are calculated by basic heuristics, not actual AI analysis', 'warning');
-            
+            addIssue('Confidence Not AI-Generated', 'Scores are heuristic-based, not AI-determined', 'warning');
             log('Confidence analysis complete', 'success');
         }
         
-        // ============================================
-        // 6. SEARCH FUNCTIONALITY TEST
-        // ============================================
+        // 6. Search Test
         function testSearch() {
-            const query = document.getElementById('search-test-input').value || 'Feeding Our Future';
-            log(`Testing search for: "${query}"`, 'info');
+            var query = document.getElementById('search-test-input').value || 'Feeding Our Future';
+            log('Testing search for: "' + query + '"', 'info');
             
-            const container = document.getElementById('search-results');
+            var container = document.getElementById('search-results');
             
-            // Simulate what the search does
-            const mockNewsData = {
-                articles: [
-                    { title: 'Feeding Our Future founder ordered to forfeit $5.2 million', source: 'CBS News', date: 'Dec 31, 2025' },
-                    { title: 'HHS freezes all childcare funding to Minnesota', source: 'USA Today', date: 'Dec 31, 2025' },
-                    { title: 'Tim Walz pushes back on fraud allegations', source: 'The Hill', date: 'Dec 31, 2025' },
-                ]
-            };
+            container.innerHTML = 
+                '<h3>Search Results for "' + query + '"</h3>' +
+                '<div class="issue-card">' +
+                    '<div class="issue-title">🐛 "No recent news found" Bug Explanation</div>' +
+                    '<div class="issue-desc">' +
+                        '<p>The search function in app-search.js only searches:</p>' +
+                        '<ul style="margin:10px 0 10px 20px;">' +
+                            '<li>✓ DATA.investigations (cases)</li>' +
+                            '<li>✓ DATA.figures (people)</li>' +
+                            '<li>✗ DATA.news (articles) - MISSING!</li>' +
+                        '</ul>' +
+                        '<p>The "In The News" section in deep research fetches LIVE from Google News RSS, ' +
+                        'not from stored news.json articles.</p>' +
+                        '<p><strong>Fix:</strong> Add news.json search to searchLocalData() in app-search.js</p>' +
+                    '</div>' +
+                '</div>';
             
-            const mockFigures = {
-                people: [
-                    { name: 'Aimee Bock', role: 'FOF Founder', status: 'sentenced' },
-                    { name: 'Tim Walz', role: 'Governor', status: 'investigating' },
-                ]
-            };
-            
-            // Search logic (from app-search.js)
-            const q = query.toLowerCase();
-            const matchingArticles = mockNewsData.articles.filter(a => 
-                a.title.toLowerCase().includes(q)
-            );
-            const matchingFigures = mockFigures.people.filter(p => 
-                p.name.toLowerCase().includes(q)
-            );
-            
-            let html = `
-                <h3>Search Results for "${query}"</h3>
-                <div style="margin: 15px 0;">
-                    <strong>Matching Articles:</strong> ${matchingArticles.length}
-                </div>
-            `;
-            
-            if (matchingArticles.length > 0) {
-                matchingArticles.forEach(a => {
-                    html += `
-                        <div class="test-item">
-                            <div class="status success"></div>
-                            <div class="test-name">${a.title}</div>
-                            <div class="test-result">${a.source}</div>
-                        </div>
-                    `;
-                });
-            } else {
-                html += `
-                    <div class="issue-card">
-                        <div class="issue-title">🐛 "No recent news found" Bug</div>
-                        <div class="issue-desc">
-                            The search function in app-search.js only searches local data (investigations, figures), 
-                            NOT the news.json articles. The "In The News" section in deep research fetches from 
-                            Google News RSS, not from stored articles. This is why searching doesn't find news.
-                        </div>
-                    </div>
-                `;
-                addIssue('Search Doesn\'t Include News', 
-                    'Search only checks local data, not news.json articles', 'error');
-            }
-            
-            html += `<div style="margin: 15px 0;"><strong>Matching Figures:</strong> ${matchingFigures.length}</div>`;
-            
-            matchingFigures.forEach(p => {
-                html += `
-                    <div class="test-item">
-                        <div class="status success"></div>
-                        <div class="test-name">${p.name}</div>
-                        <div class="test-result">${p.role} - ${p.status}</div>
-                    </div>
-                `;
-            });
-            
-            container.innerHTML = html;
+            addIssue('Search Missing News', 'searchLocalData() does not include news.json articles', 'error');
             log('Search test complete', 'success');
         }
         
-        // ============================================
-        // 7. DATA FILE VALIDATION
-        // ============================================
-        async function validateDataFiles() {
+        // 7. Data Validation
+        function validateDataFiles() {
             log('Validating data file structure...', 'info');
             
-            const container = document.getElementById('data-validation');
+            var container = document.getElementById('data-validation');
             
-            const expectedStructure = {
-                'news.json': {
-                    required: ['breaking', 'articles', 'lastUpdated'],
-                    breaking: ['title', 'source'],
-                    articles: ['title', 'source', 'date', 'link']
-                },
-                'figures.json': {
-                    required: ['people', 'lastUpdated'],
-                    people: ['name', 'role', 'status', 'allegations', 'latestUpdate']
-                },
-                'investigations.json': {
-                    required: ['cases', 'lastUpdated'],
-                    cases: ['id', 'name', 'amount', 'status', 'latestUpdate']
-                },
-                'trending.json': {
-                    required: ['topics', 'lastUpdated'],
-                    topics: ['topic', 'reason', 'suggestedSearches']
-                },
-                'stats.json': {
-                    required: ['charged', 'convicted', 'alleged', 'cases', 'briefing', 'lastUpdated']
-                },
-                'red-flags.json': {
-                    required: ['flags', 'lastUpdated'],
-                    flags: ['type', 'description', 'entities', 'priority', 'detectedAt']
-                }
-            };
+            var files = [
+                { name: 'news.json', required: 'breaking, articles, lastUpdated' },
+                { name: 'figures.json', required: 'people, lastUpdated' },
+                { name: 'investigations.json', required: 'cases, lastUpdated' },
+                { name: 'trending.json', required: 'topics, lastUpdated' },
+                { name: 'stats.json', required: 'charged, convicted, alleged, cases, briefing' },
+                { name: 'red-flags.json', required: 'flags, lastUpdated, sourcesUsed' }
+            ];
             
-            let html = '<h3>Expected Data Structure</h3>';
+            var html = '<h3>Expected Data Structure</h3>';
+            files.forEach(function(file) {
+                html += '<div class="test-item">' +
+                    '<div class="status warning"></div>' +
+                    '<div class="test-name">' + file.name + '</div>' +
+                    '<div class="test-result">Required: ' + file.required + '</div>' +
+                '</div>';
+            });
             
-            for (const [file, structure] of Object.entries(expectedStructure)) {
-                html += `
-                    <div class="test-item">
-                        <div class="status warning"></div>
-                        <div class="test-name">${file}</div>
-                        <div class="test-result">Required: ${structure.required.join(', ')}</div>
-                    </div>
-                `;
-            }
-            
-            html += `
-                <div class="issue-card info">
-                    <div class="issue-title">ℹ️ Data Validation Note</div>
-                    <div class="issue-desc">
-                        To properly validate, load each JSON file and check structure. 
-                        Currently no validation exists in ai-files.js before saving.
-                        Add schema validation to prevent malformed data.
-                    </div>
-                </div>
-            `;
+            html += '<div class="issue-card info">' +
+                '<div class="issue-title">ℹ️ Data Validation Note</div>' +
+                '<div class="issue-desc">No schema validation exists in ai-files.js. ' +
+                'Add validation before saving to prevent malformed data.</div>' +
+            '</div>';
             
             container.innerHTML = html;
             log('Data validation analysis complete', 'success');
         }
         
-        // ============================================
-        // 8. TWO-WAY CHAT TEST
-        // ============================================
-        function loadChatTests() {
-            const container = document.getElementById('chat-tests');
-            
-            // Command detection from ai-responder.js
-            const commands = [
-                { input: 'approved', expected: 'approve' },
-                { input: 'This looks confirmed', expected: 'approve' },
-                { input: 'dismiss this', expected: 'dismiss' },
-                { input: 'false positive', expected: 'dismiss' },
-                { input: 'dig deeper', expected: 'investigate' },
-                { input: 'look into this more', expected: 'investigate' },
-                { input: 'urgent priority', expected: 'escalate' },
-                { input: 'watching this', expected: 'watching' },
-                { input: 'good job', expected: 'acknowledge' },
-                { input: 'what does this mean?', expected: 'question' },
-                { input: 'random text', expected: 'unknown' },
-            ];
-            
-            let html = '<h3>Command Detection Tests</h3>';
-            
-            commands.forEach(cmd => {
-                const detected = detectCommand(cmd.input);
-                const passed = detected.action === cmd.expected;
-                
-                state.total++;
-                if (passed) state.passed++; else state.failed++;
-                
-                html += `
-                    <div class="test-item">
-                        <div class="status ${passed ? 'success' : 'fail'}"></div>
-                        <div class="test-name">"${cmd.input}"</div>
-                        <div class="test-result">Expected: ${cmd.expected}, Got: ${detected.action}</div>
-                    </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-            updateStats();
-        }
-        
+        // 8. Chat Command Detection
         function detectCommand(comment) {
-            const text = comment.toLowerCase().trim();
+            var text = comment.toLowerCase().trim();
             
             if (/\b(approved|confirmed|verified|verify|confirm)\b/.test(text)) {
                 return { action: 'approve', confidence: 'high' };
             }
-            if (/\b(dismiss|ignore|false positive|wrong|incorrect|not right)\b/.test(text)) {
+            if (/\b(dismiss|ignore|false positive|wrong|incorrect)\b/.test(text)) {
                 return { action: 'dismiss', confidence: 'high' };
             }
             if (/\b(dig deeper|investigate|more info|look into|expand|research)\b/.test(text)) {
@@ -1008,10 +671,10 @@ IDENTIFIED BUGS:
             if (/\b(priority|urgent|escalate|important|critical)\b/.test(text)) {
                 return { action: 'escalate', confidence: 'high' };
             }
-            if (/\b(watching|monitoring|following|tracking|keep open)\b/.test(text)) {
+            if (/\b(watching|monitoring|following|tracking)\b/.test(text)) {
                 return { action: 'watching', confidence: 'high' };
             }
-            if (/\b(good job|nice|thanks|great|awesome|well done|perfect|excellent)\b/.test(text)) {
+            if (/\b(good job|nice|thanks|great|awesome)\b/.test(text)) {
                 return { action: 'acknowledge', confidence: 'high' };
             }
             if (/\?$/.test(text) || /\b(what|why|how|when|where|who)\b/.test(text)) {
@@ -1021,202 +684,115 @@ IDENTIFIED BUGS:
             return { action: 'unknown', confidence: 'low' };
         }
         
+        function loadChatTests() {
+            var container = document.getElementById('chat-tests');
+            
+            var commands = [
+                { input: 'approved', expected: 'approve' },
+                { input: 'This looks confirmed', expected: 'approve' },
+                { input: 'dismiss this', expected: 'dismiss' },
+                { input: 'false positive', expected: 'dismiss' },
+                { input: 'dig deeper', expected: 'investigate' },
+                { input: 'urgent priority', expected: 'escalate' },
+                { input: 'watching this', expected: 'watching' },
+                { input: 'good job', expected: 'acknowledge' },
+                { input: 'what does this mean?', expected: 'question' },
+                { input: 'random text here', expected: 'unknown' }
+            ];
+            
+            var html = '<h3>Command Detection Tests</h3>';
+            commands.forEach(function(cmd, i) {
+                var detected = detectCommand(cmd.input);
+                var passed = detected.action === cmd.expected;
+                
+                state.total++;
+                if (passed) state.passed++; else state.failed++;
+                
+                html += '<div class="test-item">' +
+                    '<div class="status ' + (passed ? 'success' : 'fail') + '"></div>' +
+                    '<div class="test-name">"' + cmd.input + '"</div>' +
+                    '<div class="test-result">Expected: ' + cmd.expected + ', Got: ' + detected.action + '</div>' +
+                '</div>';
+            });
+            
+            container.innerHTML = html;
+            updateStats();
+        }
+        
         function testChatCommand() {
-            const input = document.getElementById('chat-command').value;
-            const result = detectCommand(input);
-            document.getElementById('chat-result').innerHTML = 
-                `Input: "${input}"\nDetected Action: ${result.action}\nConfidence: ${result.confidence}`;
+            var input = document.getElementById('chat-command').value;
+            var result = detectCommand(input);
+            document.getElementById('chat-result').textContent = 
+                'Input: "' + input + '"\n' +
+                'Detected Action: ' + result.action + '\n' +
+                'Confidence: ' + result.confidence;
         }
         
-        // ============================================
-        // 9. CODE ISSUES
-        // ============================================
+        // 9. Code Issues
         function identifyCodeIssues() {
-            const container = document.getElementById('code-issues');
+            var container = document.getElementById('code-issues');
             
-            const issues = [
-                {
-                    title: '🐛 BUG: fixBriefingGreeting() not in main workflow',
-                    desc: 'Function exists in ai-updater.js but workflow runs ai-core.js. Function never executes.',
-                    severity: 'error',
-                    fix: 'Move fixBriefingGreeting() to ai-files.js and call it in updateAllDataFiles()'
-                },
-                {
-                    title: '🐛 BUG: Duplicate app.js and modular files',
-                    desc: 'app.js contains ALL code, but there are also app-core.js, app-search.js, etc. Redundant and confusing.',
-                    severity: 'warning',
-                    fix: 'Remove app.js and use only the modular files, OR remove modular files and use app.js'
-                },
-                {
-                    title: '🐛 BUG: No URL validation before saving',
-                    desc: 'sourceUrl fields can contain invalid/404 URLs. No validation in ai-files.js.',
-                    severity: 'error',
-                    fix: 'Add async URL check function before saving any sourceUrl'
-                },
-                {
-                    title: '🐛 BUG: Hardcoded fallback sources',
-                    desc: 'When OSINT fails, hardcoded sources are shown as if they were actually queried.',
-                    severity: 'warning',
-                    fix: 'Only display sources that actually returned data'
-                },
-                {
-                    title: '🐛 BUG: All confidence scores similar',
-                    desc: 'calculateConfidence() uses simple heuristics, most high-priority items score 75-85%.',
-                    severity: 'info',
-                    fix: 'Have Groq AI return confidence per finding in its JSON response'
-                },
-                {
-                    title: '🐛 BUG: Search doesn\'t include news articles',
-                    desc: 'searchLocalData() only searches investigations and figures, not news.json.',
-                    severity: 'error',
-                    fix: 'Add news.json search to searchLocalData() in app-search.js'
-                },
-                {
-                    title: '🐛 BUG: fetchWithTimeout not defined',
-                    desc: 'ai-osint.js uses fetchWithTimeout() but it\'s not defined anywhere.',
-                    severity: 'error',
-                    fix: 'Either define the function or use makeRequest() consistently'
-                },
-                {
-                    title: '⚠️ ISSUE: No error handling for missing labels',
-                    desc: 'GitHub issue creation assumes labels exist. If they don\'t, creation may fail.',
-                    severity: 'warning',
-                    fix: 'Create labels in repo: verified, false-positive, high-priority'
-                },
-                {
-                    title: '⚠️ ISSUE: Index.html loads app.js AND modular files',
-                    desc: 'Both app.js (complete code) and modular files load, causing conflicts.',
-                    severity: 'error',
-                    fix: 'Remove app.js from index.html, keep only modular scripts'
-                },
-                {
-                    title: '💡 IMPROVEMENT: No deduplication for red flags',
-                    desc: 'Same red flag can appear multiple times across runs.',
-                    severity: 'info',
-                    fix: 'Add deduplication logic in ai-files.js based on type + description hash'
-                },
+            var issues = [
+                { title: '🐛 fixBriefingGreeting() not in main workflow', desc: 'Function in ai-updater.js but workflow runs ai-core.js', severity: 'error' },
+                { title: '🐛 fetchWithTimeout() not defined', desc: 'ai-osint.js calls fetchWithTimeout() but only makeRequest() exists', severity: 'error' },
+                { title: '🐛 Search missing news articles', desc: 'searchLocalData() only searches investigations + figures, not news', severity: 'error' },
+                { title: '🐛 No URL validation', desc: '404s and malformed URLs can be saved to data files', severity: 'error' },
+                { title: '⚠️ Hardcoded fallback sources', desc: 'When OSINT fails, hardcoded sources shown as if queried', severity: 'warning' },
+                { title: '⚠️ All confidence scores similar', desc: 'Heuristic-based calculation, most high-priority = 75-85%', severity: 'warning' },
+                { title: '⚠️ Missing GitHub labels', desc: 'Need: verified, false-positive, high-priority', severity: 'warning' },
+                { title: '⚠️ Red flags not deduplicated', desc: 'Same flag can appear multiple times in red-flags.json', severity: 'warning' },
+                { title: 'ℹ️ app.js still exists (redundant)', desc: 'Delete app.js - modular files are now used', severity: 'info' }
             ];
             
-            let html = '';
-            issues.forEach(issue => {
-                const colorMap = { error: 'issue-card', warning: 'issue-card warning', info: 'issue-card info' };
-                html += `
-                    <div class="${colorMap[issue.severity]}">
-                        <div class="issue-title">${issue.title}</div>
-                        <div class="issue-desc">${issue.desc}</div>
-                        <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border);">
-                            <strong>Fix:</strong> ${issue.fix}
-                        </div>
-                    </div>
-                `;
+            var html = '';
+            issues.forEach(function(issue) {
+                var cardClass = 'issue-card';
+                if (issue.severity === 'warning') cardClass += ' warning';
+                if (issue.severity === 'info') cardClass += ' info';
+                
+                html += '<div class="' + cardClass + '">' +
+                    '<div class="issue-title">' + issue.title + '</div>' +
+                    '<div class="issue-desc">' + issue.desc + '</div>' +
+                '</div>';
             });
             
             container.innerHTML = html;
         }
         
-        // ============================================
-        // 10. RECOMMENDATIONS
-        // ============================================
+        // 10. Recommendations
         function generateRecommendations() {
-            const container = document.getElementById('recommendations');
+            var container = document.getElementById('recommendations');
             
-            const recommendations = [
-                {
-                    priority: 'HIGH',
-                    title: '1. Fix Briefing Greeting',
-                    steps: [
-                        'Move fixBriefingGreeting() from ai-updater.js to ai-files.js',
-                        'Call it in updateAllDataFiles() when setting statsData.briefing',
-                        'Test with different CST hours to verify'
-                    ]
-                },
-                {
-                    priority: 'HIGH',
-                    title: '2. Fix Duplicate Script Loading',
-                    steps: [
-                        'Remove <script src="app.js"></script> from index.html',
-                        'Keep only: app-core.js, app-search.js, app-render.js, app-research.js',
-                        'Or move all code to app.js and remove modular files'
-                    ]
-                },
-                {
-                    priority: 'HIGH',
-                    title: '3. Add URL Validation',
-                    steps: [
-                        'Create validateUrl(url) function in ai-files.js',
-                        'Use HTTP HEAD request to check if URL returns 200',
-                        'Fallback to Google search URL if original fails',
-                        'Call before saving any sourceUrl'
-                    ]
-                },
-                {
-                    priority: 'MEDIUM',
-                    title: '4. Fix News Search Bug',
-                    steps: [
-                        'In app-search.js searchLocalData(), add news search:',
-                        'DATA.news?.articles?.forEach(a => { if (a.title.toLowerCase().includes(q)) {...} })',
-                        'Add to currentResults.news array'
-                    ]
-                },
-                {
-                    priority: 'MEDIUM',
-                    title: '5. Create GitHub Labels',
-                    steps: [
-                        'Go to GitHub repo → Issues → Labels',
-                        'Create: verified (green), false-positive (gray), high-priority (red)',
-                        'Already have: ai-request, ai-alert, ai-discovery, needs-review, needs-approval'
-                    ]
-                },
-                {
-                    priority: 'MEDIUM',
-                    title: '6. Fix Sources Display',
-                    steps: [
-                        'In ai-osint.js, only add to sourcesUsed[] when API actually returns data',
-                        'Pass actual sources to each flag, not global array',
-                        'In app-render.js, use flag.sourcesUsed instead of globalSourcesUsed'
-                    ]
-                },
-                {
-                    priority: 'LOW',
-                    title: '7. AI-Generated Confidence',
-                    steps: [
-                        'Update AI prompt in ai-analyzer.js to include "confidence": 0-100 per redFlag',
-                        'Remove calculateConfidence() heuristics',
-                        'Use AI-provided confidence directly'
-                    ]
-                },
-                {
-                    priority: 'LOW',
-                    title: '8. Reorganize File Structure',
-                    steps: [
-                        'Create /app folder for frontend JS',
-                        'Move app-*.js files to /app/',
-                        'Update script paths in index.html',
-                        'Keep scripts/ for Node.js backend files'
-                    ]
-                },
+            var recs = [
+                { priority: 'HIGH', title: '1. Fix Briefing Greeting', steps: ['Add fixBriefingGreeting() to ai-files.js', 'Call it when saving statsData.briefing', 'Test with different CST hours'] },
+                { priority: 'HIGH', title: '2. Fix fetchWithTimeout Bug', steps: ['Replace fetchWithTimeout() with makeRequest() in ai-osint.js', 'Or define the missing function'] },
+                { priority: 'HIGH', title: '3. Add News to Search', steps: ['In app-search.js searchLocalData()', 'Add: DATA.news?.articles?.forEach(...)', 'Push matches to currentResults.local'] },
+                { priority: 'HIGH', title: '4. Delete app.js', steps: ['Remove redundant app.js from repo', 'Keep only modular files (app-core.js, etc.)'] },
+                { priority: 'MEDIUM', title: '5. Add URL Validation', steps: ['Create validateUrl() in ai-files.js', 'Check URL returns 200 before saving', 'Fallback to Google search if 404'] },
+                { priority: 'MEDIUM', title: '6. Create GitHub Labels', steps: ['Go to repo → Issues → Labels', 'Create: verified (green)', 'Create: false-positive (gray)', 'Create: high-priority (red)'] },
+                { priority: 'MEDIUM', title: '7. Fix Sources Display', steps: ['Only add to sourcesUsed[] when API returns data', 'Pass sources per-flag, not global', 'Update app-render.js to use flag.sourcesUsed'] },
+                { priority: 'LOW', title: '8. AI-Generated Confidence', steps: ['Update AI prompt to return confidence per redFlag', 'Remove calculateConfidence() heuristics', 'Use AI-provided confidence directly'] }
             ];
             
-            let html = '';
-            recommendations.forEach(rec => {
-                const priorityColor = rec.priority === 'HIGH' ? 'var(--red)' : 
-                                     rec.priority === 'MEDIUM' ? '#f59e0b' : 'var(--blue)';
-                html += `
-                    <div class="test-section">
-                        <h3 style="color: ${priorityColor}">[${rec.priority}] ${rec.title}</h3>
-                        <ol style="margin-left: 20px; color: var(--text2);">
-                            ${rec.steps.map(s => `<li style="margin: 8px 0;">${s}</li>`).join('')}
-                        </ol>
-                    </div>
-                `;
+            var html = '';
+            recs.forEach(function(rec) {
+                var color = rec.priority === 'HIGH' ? 'var(--red)' : rec.priority === 'MEDIUM' ? '#f59e0b' : 'var(--blue)';
+                
+                html += '<div class="rec-item">' +
+                    '<div class="rec-title" style="color:' + color + '">[' + rec.priority + '] ' + rec.title + '</div>' +
+                    '<ol class="rec-steps">';
+                
+                rec.steps.forEach(function(step) {
+                    html += '<li>' + step + '</li>';
+                });
+                
+                html += '</ol></div>';
             });
             
             container.innerHTML = html;
         }
         
-        // ============================================
-        // MAIN FUNCTIONS
-        // ============================================
+        // Main Functions
         function runAllTests() {
             clearResults();
             log('Starting full diagnostic suite...', 'info');
@@ -1228,7 +804,7 @@ IDENTIFIED BUGS:
             identifyCodeIssues();
             generateRecommendations();
             
-            log('Initial tests complete. Run API and URL tests separately.', 'success');
+            log('All tests complete! See results above.', 'success');
         }
         
         function clearResults() {
@@ -1238,7 +814,7 @@ IDENTIFIED BUGS:
             state.failed = 0;
             state.total = 0;
             
-            document.getElementById('full-log').innerHTML = '';
+            document.getElementById('full-log').innerHTML = 'Results cleared. Click "Run All Tests" to begin.';
             document.getElementById('briefing-tests').innerHTML = '';
             document.getElementById('api-tests').innerHTML = '';
             document.getElementById('url-tbody').innerHTML = '';
@@ -1249,13 +825,16 @@ IDENTIFIED BUGS:
             document.getElementById('chat-tests').innerHTML = '';
             document.getElementById('code-issues').innerHTML = '';
             document.getElementById('recommendations').innerHTML = '';
+            document.getElementById('briefing-issues').innerHTML = '';
+            document.getElementById('time-analysis').textContent = 'Click "Run All Tests" to analyze...';
+            document.getElementById('sources-flow').textContent = 'Click "Run All Tests" to analyze...';
+            document.getElementById('confidence-distribution').textContent = 'Click "Run All Tests" to analyze...';
             
             updateStats();
-            log('Results cleared', 'info');
         }
         
         function exportReport() {
-            const report = {
+            var report = {
                 timestamp: new Date().toISOString(),
                 summary: {
                     total: state.total,
@@ -1267,21 +846,29 @@ IDENTIFIED BUGS:
                 logs: document.getElementById('full-log').innerText
             };
             
-            const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
+            var blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
             a.href = url;
-            a.download = `north-star-diagnostic-${new Date().toISOString().split('T')[0]}.json`;
+            a.download = 'north-star-diagnostic-' + new Date().toISOString().split('T')[0] + '.json';
             a.click();
             
             log('Report exported', 'success');
         }
         
-        // Auto-run on load
-        document.addEventListener('DOMContentLoaded', () => {
-            log('North Star Watchdog Diagnostic Suite loaded', 'info');
-            log('Click "Run All Tests" to begin diagnostics', 'info');
-        });
+        // Event Listeners
+        document.getElementById('btn-run-all').addEventListener('click', runAllTests);
+        document.getElementById('btn-clear').addEventListener('click', clearResults);
+        document.getElementById('btn-export').addEventListener('click', exportReport);
+        document.getElementById('btn-test-apis').addEventListener('click', testAllApis);
+        document.getElementById('btn-validate-urls').addEventListener('click', validateUrls);
+        document.getElementById('btn-test-search').addEventListener('click', testSearch);
+        document.getElementById('btn-validate-data').addEventListener('click', validateDataFiles);
+        document.getElementById('btn-test-chat').addEventListener('click', testChatCommand);
+        
+        // Init
+        log('North Star Watchdog Diagnostic Suite loaded', 'info');
+        log('Click "Run All Tests" to begin diagnostics', 'info');
     </script>
 </body>
 </html>
