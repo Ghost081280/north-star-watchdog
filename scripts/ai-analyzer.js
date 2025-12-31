@@ -1,283 +1,219 @@
 /**
  * NORTH STAR WATCHDOG - AI ANALYZER
- * Handles all GROQ AI analysis and intelligence extraction
  * 
- * FIX: Added confidence score (0-100) request for each red flag
+ * Uses GROQ (free) to analyze news and extract:
+ * - Key figures (people involved in fraud cases)
+ * - Active investigations
+ * - Trending topics
+ * - Red flags (potential fraud indicators)
+ * - Story ideas for journalists
+ * - Stats (charged, convicted, amounts)
+ * - AI briefing synthesis
+ * 
+ * REQUIRES: GROQ_API_KEY environment variable
  */
 
 const https = require('https');
-const fs = require('fs');
-
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const GROQ_MODEL = 'llama-3.3-70b-versatile';
 
 /**
- * Call Groq AI API
+ * Call GROQ API
  */
-async function callGroqAI(prompt, maxTokens = 3000) {
+async function callGroq(messages, maxTokens = 4000) {
+    const apiKey = process.env.GROQ_API_KEY;
+    if (!apiKey) throw new Error('GROQ_API_KEY not set');
+    
+    const body = JSON.stringify({
+        model: 'llama-3.1-70b-versatile',
+        messages,
+        max_tokens: maxTokens,
+        temperature: 0.3
+    });
+    
     return new Promise((resolve, reject) => {
-        const data = JSON.stringify({
-            model: GROQ_MODEL,
-            messages: [{ role: 'user', content: prompt }],
-            temperature: 0.2,
-            max_tokens: maxTokens
-        });
-        
-        const options = {
+        const req = https.request({
             hostname: 'api.groq.com',
             path: '/openai/v1/chat/completions',
             method: 'POST',
             headers: {
-                'Authorization': `Bearer ${GROQ_API_KEY}`,
+                'Authorization': `Bearer ${apiKey}`,
                 'Content-Type': 'application/json',
-                'Content-Length': Buffer.byteLength(data)
-            }
-        };
-        
-        const req = https.request(options, (res) => {
-            let body = '';
-            res.on('data', chunk => body += chunk);
+                'Content-Length': Buffer.byteLength(body)
+            },
+            timeout: 60000
+        }, (res) => {
+            let data = '';
+            res.on('data', chunk => data += chunk);
             res.on('end', () => {
                 try {
-                    const json = JSON.parse(body);
-                    if (json.choices && json.choices[0]) {
-                        resolve(json.choices[0].message.content);
-                    } else if (json.error) {
-                        reject(new Error(json.error.message || 'Groq API error'));
-                    } else {
-                        reject(new Error('No response from Groq'));
-                    }
+                    const json = JSON.parse(data);
+                    if (json.error) reject(new Error(json.error.message));
+                    else resolve(json.choices?.[0]?.message?.content || '');
                 } catch (e) {
-                    reject(e);
+                    reject(new Error('Failed to parse GROQ response'));
                 }
             });
         });
         
         req.on('error', reject);
-        req.setTimeout(60000, () => {
-            req.destroy();
-            reject(new Error('Groq API timeout'));
-        });
-        req.write(data);
+        req.on('timeout', () => { req.destroy(); reject(new Error('GROQ timeout')); });
+        req.write(body);
         req.end();
     });
 }
 
 /**
- * Load current data for context
+ * Parse JSON from AI response (handles markdown code blocks)
  */
-function loadCurrentData() {
-    const load = (file) => {
-        try {
-            return JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'));
-        } catch {
-            return null;
-        }
-    };
+function parseAIJson(text) {
+    // Remove markdown code blocks
+    let clean = text.replace(/```json\n?/gi, '').replace(/```\n?/gi, '').trim();
     
-    return {
-        figures: load('figures.json')?.people?.map(p => p.name) || [],
-        investigations: load('investigations.json')?.cases?.map(c => c.name) || [],
-        highRiskPrograms: load('high-risk-programs.json')?.programs || [],
-        searchTerms: load('search-terms.json')?.terms || []
-    };
+    // Find JSON object or array
+    const jsonMatch = clean.match(/[\[{][\s\S]*[\]}]/);
+    if (jsonMatch) {
+        return JSON.parse(jsonMatch[0]);
+    }
+    
+    throw new Error('No valid JSON found in AI response');
 }
 
 /**
- * Analyze news articles with AI
+ * Analyze news with GROQ AI
  */
-async function analyzeNews(articles) {
-    console.log('  Sending to Groq AI for analysis...');
+async function analyzeWithGroq(newsData) {
+    console.log('  Sending to GROQ for analysis...');
     
-    const currentData = loadCurrentData();
+    const articles = newsData.articles || [];
+    if (!articles.length) {
+        console.log('  ⚠ No articles to analyze');
+        return getEmptyAnalysis();
+    }
     
-    const articleSummary = articles.slice(0, 25).map((a, i) => 
-        `${i+1}. "${a.title}" (${a.source}, ${a.date})`
-    ).join('\n');
+    // Prepare article summaries for AI
+    const articleText = articles.slice(0, 30).map((a, i) => 
+        `[${i + 1}] ${a.title} (${a.source}, ${a.pubDate?.split('T')[0] || 'recent'})\n${a.description || ''}`
+    ).join('\n\n');
     
-    const prompt = `You are an AI editor for a Minnesota fraud investigation tracking website that updates HOURLY. Analyze these recent news articles and provide structured updates.
+    const systemPrompt = `You are an investigative journalist AI analyzing Minnesota fraud news. 
+Your job is to extract REAL information from the articles provided - never make things up.
+Only include information that is explicitly stated or strongly implied in the articles.`;
 
-RECENT NEWS ARTICLES:
-${articleSummary}
+    const userPrompt = `Analyze these Minnesota fraud news articles and extract information.
 
-CURRENT TRACKED INVESTIGATIONS:
-- Feeding Our Future ($250M, 78 indicted, 57+ convicted)
-- CCAP Daycare Fraud ($1B+ estimated, 62+ investigations)
-- EIDBI Autism Services ($220M+, 2 charged)
-- Housing Stabilization ($302M, program terminated)
+ARTICLES:
+${articleText}
 
-CURRENT KEY FIGURES: ${currentData.figures.join(', ') || 'None tracked yet'}
-
-HIGH-RISK PROGRAMS BEING MONITORED: ${currentData.highRiskPrograms.join(', ') || 'None'}
-
-Based on the news, provide a JSON response with these sections:
+Return a JSON object with these fields:
 
 {
-  "breaking": {
-    "title": "Most important headline (rewrite concisely)",
-    "source": "Source name",
-    "link": "URL if available or empty string",
-    "importance": "Why this matters in 1 sentence"
-  },
+  "figures": [
+    {
+      "name": "Full Name",
+      "role": "Their role/title",
+      "organization": "Organization name",
+      "status": "charged|convicted|sentenced|indicted|investigating|cleared",
+      "amount": "$X million" or null,
+      "description": "1-2 sentence summary",
+      "sourceArticle": "Title of article this came from"
+    }
+  ],
+  "investigations": [
+    {
+      "name": "Investigation/Case name",
+      "type": "federal|state|ongoing",
+      "amount": "$X" or null,
+      "defendants": 5,
+      "status": "active|concluded",
+      "description": "Brief description",
+      "sourceArticle": "Title of article"
+    }
+  ],
   "trending": [
     {
-      "topic": "Topic name (short)",
-      "reason": "Why trending now",
-      "suggestedSearches": ["search term 1", "search term 2", "search term 3"],
-      "isNew": true
+      "topic": "Topic name",
+      "category": "legal|political|financial|program",
+      "heat": 85,
+      "description": "Why this is trending",
+      "relatedArticles": 3
     }
   ],
-  "investigationUpdates": [
-    {
-      "name": "Investigation name",
-      "update": "What's new",
-      "sourceUrl": "URL to source",
-      "isNew": false
-    }
-  ],
-  "figureUpdates": [
-    {
-      "name": "Person name",
-      "role": "Their role",
-      "update": "Status change or new development",
-      "status": "investigating|charged|convicted|sentenced|cleared",
-      "sourceUrl": "URL to source",
-      "isNew": false
-    }
-  ],
-  "newSearchTerms": ["new term to monitor", "another new term"],
-  "newHighRiskPrograms": ["program name if discovered"],
   "redFlags": [
     {
-      "type": "pattern_type",
-      "description": "What was detected",
-      "entities": ["entity names"],
-      "sourceUrl": "URL",
-      "priority": "high|medium|low",
-      "confidence": 75
+      "type": "misappropriation|false_claims|kickbacks|shell_company|etc",
+      "description": "What was found",
+      "entities": ["Person or Org name"],
+      "confidence": 75,
+      "source": "Google News",
+      "sourceUrl": "article URL if available",
+      "sourceArticle": "Article title"
     }
   ],
   "storyIdeas": [
     {
-      "title": "Investigation angle headline",
-      "description": "Brief description",
-      "searches": ["related search 1", "related search 2"],
-      "badge": "Follow Up|Breaking|Pattern|Connection",
-      "isNew": true
+      "title": "Story headline",
+      "angle": "Investigative angle",
+      "questions": ["Key question 1", "Key question 2"],
+      "sources": ["Potential source 1"]
     }
   ],
   "stats": {
     "charged": 93,
     "convicted": 57,
-    "alleged": "$9B+"
+    "alleged": "$9B",
+    "activeCases": 4
   },
-  "briefing": "A 2-3 sentence SYNTHESIS of key developments. DO NOT just summarize the top headline - combine insights from multiple articles, mention any red flags or patterns detected, and note any key figure updates. DO NOT start with any greeting. Example good briefing: 'Federal authorities have frozen $X in childcare payments amid expanding fraud allegations. [Person] faces new charges while investigators examine connections to [Pattern]. X new cases emerged this week across multiple programs.'",
-  "entitiesForOsint": ["domain.com", "Organization Name", "Person Name"]
+  "briefing": "A 2-3 paragraph synthesis of the most important developments across ALL the news. This should NOT just summarize one article - it should connect patterns, highlight key updates, and provide context about the overall state of Minnesota fraud investigations."
 }
 
-IMPORTANT RULES:
-- Only include REAL updates from the news articles
-- Set isNew=true only if this is genuinely NEW (not in our current lists)
-- ALWAYS include sourceUrl when possible - link to the actual news source
-- Be conservative - don't make up information
-- trending should have 3-5 items, newest/hottest first
-- storyIdeas should have 2-4 actionable investigation angles
-- Update stats only if news CONFIRMS new numbers
-- briefing should be what a visitor needs to know RIGHT NOW - NO GREETING
-- newSearchTerms: names, orgs, or terms mentioned that we should monitor
-- redFlags: patterns you detect (same address, explosive growth, connections)
-- entitiesForOsint: domains, org names, or people names worth deep investigation
-- Return ONLY valid JSON, no markdown, no other text
+IMPORTANT:
+- confidence scores: 90+ = official charges/convictions, 75-89 = credible reports, 60-74 = allegations, below 60 = unconfirmed
+- Only include figures/investigations that are EXPLICITLY mentioned in the articles
+- The briefing should synthesize ALL articles, not just repeat one headline
+- For stats, use the ACTUAL numbers mentioned in the articles, or estimate based on cumulative reporting
+- Be accurate - this is for journalists who will verify
 
-CONFIDENCE SCORING FOR RED FLAGS (REQUIRED):
-Each redFlag MUST include a "confidence" field from 0-100 based on evidence strength:
-- 90-100: Multiple official sources (DOJ, FBI, court records), documented evidence
-- 75-89: Single official source OR multiple credible news reports confirming
-- 60-74: Pattern matches known fraud but from single news source
-- 45-59: Suspicious but unconfirmed, needs verification
-- Below 45: Speculative, flag for monitoring only
-
-Example confidence assignments:
-- "DOJ announced charges against X" → confidence: 95
-- "Star Tribune reports X under investigation" → confidence: 78
-- "Pattern similar to FOF scheme detected" → confidence: 65
-- "Unverified tip about suspicious activity" → confidence: 40
-
-CRITICAL VERIFICATION RULES FOR KEY FIGURES:
-- NEVER add journalists, YouTubers, whistleblowers, or investigators to figureUpdates
-- Only add people who are ACTUALLY charged, convicted, or under OFFICIAL investigation
-- If someone is REPORTING on fraud (like Nick Shirley), they are NOT a figure - skip them
-- Verify the person's role: are they accused of fraud or exposing fraud? Only add the accused.
-- Status must be one of: "investigating" (by DOJ/FBI/State), "charged", "convicted", "sentenced"
-- Do NOT add politicians unless they are under OFFICIAL investigation (not just criticism)
-- If unsure whether someone should be added, DO NOT add them
-
-VERIFICATION CHECKLIST before adding a figure:
-1. Is this person accused of fraud? (Yes = maybe add, No = skip)
-2. Is this person a journalist/reporter/YouTuber? (Yes = skip)
-3. Is there an official DOJ/FBI/State investigation? (Yes = add with "investigating")
-4. Have charges been filed? (Yes = add with "charged")
-5. Is there a conviction? (Yes = add with "convicted")
-6. Is the source URL valid and from official/reliable source? (Yes = add)`;
+Return ONLY valid JSON, no other text.`;
 
     try {
-        const response = await callGroqAI(prompt);
+        const response = await callGroq([
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt }
+        ]);
         
-        // Extract JSON from response
-        const jsonMatch = response.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-            const parsed = JSON.parse(jsonMatch[0]);
-            
-            // Ensure all red flags have confidence scores
-            if (parsed.redFlags) {
-                parsed.redFlags = parsed.redFlags.map(flag => ({
-                    ...flag,
-                    confidence: flag.confidence || 70 // Default to 70 if AI didn't provide
-                }));
-            }
-            
-            console.log('  AI analysis complete');
-            return parsed;
-        }
-        throw new Error('No JSON found in response');
+        const analysis = parseAIJson(response);
+        
+        // Validate and clean response
+        return {
+            figures: Array.isArray(analysis.figures) ? analysis.figures : [],
+            investigations: Array.isArray(analysis.investigations) ? analysis.investigations : [],
+            trending: Array.isArray(analysis.trending) ? analysis.trending : [],
+            redFlags: Array.isArray(analysis.redFlags) ? analysis.redFlags : [],
+            storyIdeas: Array.isArray(analysis.storyIdeas) ? analysis.storyIdeas : [],
+            stats: analysis.stats || { charged: 0, convicted: 0, alleged: '$0', activeCases: 0 },
+            briefing: analysis.briefing || 'No briefing generated.',
+            lastUpdated: new Date().toISOString()
+        };
+        
     } catch (error) {
-        console.error('  AI Analysis error:', error.message);
-        return null;
+        console.error('  ❌ GROQ analysis failed:', error.message);
+        return getEmptyAnalysis();
     }
 }
 
 /**
- * Get AI analysis for a specific entity (for OSINT enrichment)
+ * Return empty analysis structure
  */
-async function analyzeEntity(entityName, context) {
-    const prompt = `Analyze this entity in the context of Minnesota fraud investigations:
-
-ENTITY: ${entityName}
-CONTEXT: ${context}
-
-Provide a brief JSON response:
-{
-  "riskLevel": "high|medium|low|unknown",
-  "connections": ["known connections"],
-  "suggestedSearches": ["what to look for"],
-  "notes": "brief analysis"
+function getEmptyAnalysis() {
+    return {
+        figures: [],
+        investigations: [],
+        trending: [],
+        redFlags: [],
+        storyIdeas: [],
+        stats: { charged: 0, convicted: 0, alleged: '$0', activeCases: 0 },
+        briefing: 'Analysis unavailable - no data to process.',
+        lastUpdated: new Date().toISOString()
+    };
 }
 
-Return ONLY valid JSON.`;
-
-    try {
-        const response = await callGroqAI(prompt, 500);
-        const jsonMatch = response.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-            return JSON.parse(jsonMatch[0]);
-        }
-    } catch {
-        return null;
-    }
-}
-
-module.exports = {
-    analyzeNews,
-    analyzeEntity,
-    callGroqAI
-};
+module.exports = { analyzeWithGroq };
