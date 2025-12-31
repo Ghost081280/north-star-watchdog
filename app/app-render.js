@@ -6,6 +6,7 @@
    - News results now render in renderResults()
    - Improved detective card deduplication
    - All onclick handlers use data-search attributes
+   - Uses AI-provided confidence scores (not hardcoded)
    ============================================ */
 
 // ============================================
@@ -480,7 +481,7 @@ function renderResultGroup(title, items, flagged = false, isLinkGroup = false, i
 
 // ============================================
 // AI DETECTIVE RENDERING
-// FIX: Improved deduplication - uses normalized key
+// FIX: Uses AI-provided confidence scores
 // ============================================
 
 function renderDetective() {
@@ -511,7 +512,8 @@ function renderDetective() {
             title: flag.type?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'Suspicious Pattern',
             description: flag.description,
             entities: flag.entities || [],
-            confidence: flag.priority === 'high' ? 85 : flag.priority === 'medium' ? 65 : 45,
+            // FIX: Use AI-provided confidence score, fallback to priority-based only if not available
+            confidence: flag.confidence || (flag.priority === 'high' ? 85 : flag.priority === 'medium' ? 65 : 45),
             apisUsed: flagSources,
             totalSources: flagSourceCount,
             // Add normalized key for better deduplication
