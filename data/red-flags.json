@@ -1,13 +1,34 @@
 {
   "flags": [
     {
+      "type": "funding freeze",
+      "description": "HHS freezes all childcare funding to Minnesota due to fraud concerns",
+      "entities": [
+        "US Department of Health and Human Services",
+        "Minnesota child care programs"
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2025-12-31/us-freezes-childcare-payments-to-minnesota-over-fraud-claims",
+      "priority": "high",
+      "confidence": 95,
+      "detectedAt": "2025-12-31T16:18:42.255Z",
+      "source": "ai-analysis",
+      "sourcesUsed": [
+        "Google News",
+        "OIG Exclusions",
+        "DOJ Press",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
       "type": "coverage_spike",
       "description": "\"Feeding Our Future\" mentioned in 8 articles - unusual activity",
       "entities": [
         "Feeding Our Future"
       ],
       "priority": "high",
-      "detectedAt": "2025-12-31T15:30:07.064Z",
+      "confidence": 70,
+      "detectedAt": "2025-12-31T16:18:42.255Z",
       "source": "ai-detective",
       "sourcesUsed": [
         "Google News",
@@ -125,23 +146,6 @@
       "sourceCount": 4
     },
     {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "priority": "medium",
-      "detectedAt": "2025-12-31T09:34:10.819Z",
-      "source": "ai-detective",
-      "sourcesUsed": [
-        "Google News",
-        "OIG Exclusions",
-        "DOJ Press",
-        "FBI Press"
-      ],
-      "sourceCount": 4
-    },
-    {
       "type": "pattern_type",
       "description": "Multiple allegations of fraud in Minnesota's child care system",
       "entities": [
@@ -204,23 +208,6 @@
       ],
       "priority": "high",
       "detectedAt": "2025-12-31T06:47:06.940Z",
-      "source": "ai-detective",
-      "sourcesUsed": [
-        "Google News",
-        "OIG Exclusions",
-        "DOJ Press",
-        "FBI Press"
-      ],
-      "sourceCount": 4
-    },
-    {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 10 articles - unusual activity",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "priority": "high",
-      "detectedAt": "2025-12-31T05:57:46.536Z",
       "source": "ai-detective",
       "sourcesUsed": [
         "Google News",
@@ -318,16 +305,6 @@
       "source": "ai-detective"
     },
     {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 5 articles - unusual activity",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "priority": "medium",
-      "detectedAt": "2025-12-31T04:46:05.489Z",
-      "source": "ai-detective"
-    },
-    {
       "type": "funding pause",
       "description": "The Health Department has paused child care funding to Minnesota due to the state's fraud scandal.",
       "entities": [
@@ -336,13 +313,6 @@
       ],
       "priority": "high",
       "detectedAt": "2025-12-31T04:46:05.489Z",
-      "source": "ai-detective"
-    },
-    {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 6 articles - unusual activity",
-      "priority": "medium",
-      "detectedAt": "2025-12-31T04:03:55.518Z",
       "source": "ai-detective"
     },
     {
@@ -379,7 +349,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T15:30:07.064Z",
+  "lastUpdated": "2025-12-31T16:18:42.255Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
