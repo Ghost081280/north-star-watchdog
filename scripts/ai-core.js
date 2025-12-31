@@ -22,7 +22,7 @@ const path = require('path');
 const { scrapeGoogleNews } = require('./ai-scraper');
 const { analyzeWithGroq } = require('./ai-analyzer');
 const { enrichFindings } = require('./ai-osint');
-const { updateAllDataFiles, createGitHubIssues } = require('./ai-files');
+const { updateAllDataFiles, createGitHubIssues, updateLearning } = require('./ai-files');
 
 // ============================================
 // MAIN WORKFLOW
@@ -105,6 +105,16 @@ async function main() {
         
         const issuesCreated = await createGitHubIssues(aiAnalysis.redFlags || []);
         console.log(`✓ Created ${issuesCreated} new GitHub issues`);
+        
+        // ============================================
+        // STEP 6: Self-Learning (update search queries)
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 6: SELF-LEARNING');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        updateLearning(aiAnalysis);
+        console.log('✓ Learning file updated with new entities and search queries');
         
         // ============================================
         // DONE
