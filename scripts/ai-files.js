@@ -171,15 +171,49 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 5. red-flags.json
+    // 5. red-flags.json - Attach OSINT sources to each flag
     // ============================================
     const existingFlags = readJson('red-flags.json', { flags: [] });
-    const newFlags = (analysis.redFlags || []).map(rf => ({
-        ...rf,
-        id: `rf-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-        detectedAt: now,
-        isNew: true
-    }));
+    
+    // Build list of all sources that returned data
+    const allSourcesUsed = [
+        'Google News', // Always used since we scraped it
+        ...(osint.sourcesUsed || [])
+    ];
+    
+    const newFlags = (analysis.redFlags || []).map(rf => {
+        // Determine which APIs are relevant to this flag's entities
+        const flagEntities = (rf.entities || []).map(e => e.toLowerCase());
+        const relevantApis = ['Google News']; // Always include Google News
+        
+        // Check if OSINT found data for any of this flag's entities
+        if (osint.nonprofits?.some(n => flagEntities.some(e => n.query?.toLowerCase().includes(e)))) {
+            relevantApis.push('ProPublica Nonprofits');
+        }
+        if (osint.campaigns?.some(c => flagEntities.some(e => c.query?.toLowerCase().includes(e)))) {
+            relevantApis.push('FEC');
+        }
+        if (osint.exclusions?.some(x => flagEntities.some(e => x.query?.toLowerCase().includes(e)))) {
+            relevantApis.push('OIG Exclusions');
+        }
+        if (osint.companies?.some(c => flagEntities.some(e => c.query?.toLowerCase().includes(e)))) {
+            relevantApis.push('OpenCorporates');
+        }
+        if (osint.spending?.some(s => flagEntities.some(e => s.query?.toLowerCase().includes(e)))) {
+            relevantApis.push('USASpending');
+        }
+        
+        // If no specific matches, show all sources that were checked
+        const apisUsed = relevantApis.length > 1 ? relevantApis : allSourcesUsed;
+        
+        return {
+            ...rf,
+            id: `rf-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+            apisUsed: apisUsed,
+            detectedAt: now,
+            isNew: true
+        };
+    });
     
     // Dedupe by type + first 100 chars of description
     const allFlags = deduplicateItems(
@@ -187,15 +221,9 @@ async function updateAllDataFiles({ news, analysis, osint }) {
         f => `${f.type}-${(f.description || '').substring(0, 100)}`
     ).slice(0, 50);
     
-    // Mark which sources actually returned data
-    const sourcesUsed = [
-        'Google News', // Always used since we scraped it
-        ...(osint.sourcesUsed || [])
-    ];
-    
     writeJson('red-flags.json', {
         flags: allFlags,
-        sourcesUsed,
+        sourcesUsed: allSourcesUsed,
         sourcesChecked: ['Google News', ...(osint.sourcesChecked || [])],
         lastUpdated: now
     });
