@@ -265,7 +265,7 @@ Based on the news, provide a JSON response with these sections:
     "convicted": 57,
     "alleged": "$9B+"
   },
-  "briefing": "A 2-3 sentence summary of TODAY's key developments. Start with 'Good morning/afternoon.' Be direct about what's happening NOW."
+  "briefing": "A 2-3 sentence sassy summary. Use correct greeting based on CST time. Be playful but informative - like 'You're not gonna believe this...' or 'While you were sleeping...' or 'Holy smokes!' Make it engaging and punchy."
 }
 
 IMPORTANT RULES:
@@ -276,7 +276,7 @@ IMPORTANT RULES:
 - trending should have 3-5 items, newest/hottest first
 - storyIdeas should have 2-4 actionable investigation angles
 - Update stats only if news CONFIRMS new numbers
-- briefing should be what a visitor needs to know RIGHT NOW
+- briefing should be SASSY and engaging - the AI Detective has personality! Use time-appropriate greeting (morning before noon CST, afternoon noon-5pm, evening after 5pm). End with something like "The robots never sleep. 🤖" or "Your AI Detective is on it."
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - Return ONLY valid JSON, no markdown, no other text`;
