@@ -184,7 +184,24 @@ IMPORTANT RULES:
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - entitiesForOsint: domains, org names, or people names worth deep investigation
-- Return ONLY valid JSON, no markdown, no other text`;
+- Return ONLY valid JSON, no markdown, no other text
+
+CRITICAL VERIFICATION RULES FOR KEY FIGURES:
+- NEVER add journalists, YouTubers, whistleblowers, or investigators to figureUpdates
+- Only add people who are ACTUALLY charged, convicted, or under OFFICIAL investigation
+- If someone is REPORTING on fraud (like Nick Shirley), they are NOT a figure - skip them
+- Verify the person's role: are they accused of fraud or exposing fraud? Only add the accused.
+- Status must be one of: "investigating" (by DOJ/FBI/State), "charged", "convicted", "sentenced"
+- Do NOT add politicians unless they are under OFFICIAL investigation (not just criticism)
+- If unsure whether someone should be added, DO NOT add them
+
+VERIFICATION CHECKLIST before adding a figure:
+1. Is this person accused of fraud? (Yes = maybe add, No = skip)
+2. Is this person a journalist/reporter/YouTuber? (Yes = skip)
+3. Is there an official DOJ/FBI/State investigation? (Yes = add with "investigating")
+4. Have charges been filed? (Yes = add with "charged")
+5. Is there a conviction? (Yes = add with "convicted")
+6. Is the source URL valid and from official/reliable source? (Yes = add)`;
 
     try {
         const response = await callGroqAI(prompt);
