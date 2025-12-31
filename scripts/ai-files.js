@@ -5,10 +5,157 @@
 
 const fs = require('fs');
 const https = require('https');
+const http = require('http');
 
 // GitHub configuration from environment
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPO = process.env.GITHUB_REPOSITORY || 'Ghost081280/north-star-watchdog';
+
+// ============================================
+// BRIEFING GREETING FIX
+// ============================================
+
+/**
+ * Fix greeting based on Central Standard Time
+ * Groq sometimes returns wrong time-based greetings
+ */
+function fixBriefingGreeting(briefing) {
+    if (!briefing || typeof briefing !== 'string') {
+        return getCorrectGreeting() + ' The AI is analyzing the latest developments.';
+    }
+    
+    // Get correct greeting for current CST time
+    const correctGreeting = getCorrectGreeting();
+    
+    // Remove any existing greeting (case insensitive, with or without emoji)
+    let fixed = briefing
+        .replace(/^Good morning\.?\s*!?\s*☀️?\s*/i, '')
+        .replace(/^Good afternoon\.?\s*!?\s*👋?\s*/i, '')
+        .replace(/^Good evening\.?\s*!?\s*🌙?\s*/i, '')
+        .replace(/^Good night\.?\s*!?\s*🌙?\s*/i, '')
+        .trim();
+    
+    // If nothing left after removing greeting, add default content
+    if (!fixed || fixed.length < 10) {
+        fixed = 'The AI is analyzing the latest developments in Minnesota fraud investigations.';
+    }
+    
+    return correctGreeting + ' ' + fixed;
+}
+
+/**
+ * Get correct greeting based on CST time
+ */
+function getCorrectGreeting() {
+    const now = new Date();
+    // Convert to CST (UTC-6)
+    const cstOffset = -6 * 60; // CST is UTC-6
+    const utcMinutes = now.getUTCHours() * 60 + now.getUTCMinutes();
+    let cstMinutes = utcMinutes + cstOffset;
+    if (cstMinutes < 0) cstMinutes += 24 * 60;
+    const cstHour = Math.floor(cstMinutes / 60) % 24;
+    
+    if (cstHour >= 5 && cstHour < 12) {
+        return 'Good morning! ☀️';
+    } else if (cstHour >= 12 && cstHour < 17) {
+        return 'Good afternoon! 👋';
+    } else {
+        return 'Good evening! 🌙';
+    }
+}
+
+// ============================================
+// URL VALIDATION
+// ============================================
+
+/**
+ * Validate a URL by checking if it's properly formatted and reachable
+ * Returns the original URL if valid, or a fallback Google search URL
+ */
+async function validateUrl(url, entityName) {
+    if (!url || typeof url !== 'string') {
+        return createFallbackUrl(entityName);
+    }
+    
+    // Check for obviously malformed URLs
+    if (url.includes('undefined') || url.includes('null')) {
+        console.log(`    URL validation: Malformed URL for ${entityName}`);
+        return createFallbackUrl(entityName);
+    }
+    
+    // Check for non-ASCII characters (like Hindi)
+    if (/[^\x00-\x7F]/.test(url)) {
+        console.log(`    URL validation: Non-ASCII characters in URL for ${entityName}`);
+        return createFallbackUrl(entityName);
+    }
+    
+    // Basic URL format check
+    try {
+        new URL(url);
+    } catch {
+        console.log(`    URL validation: Invalid URL format for ${entityName}`);
+        return createFallbackUrl(entityName);
+    }
+    
+    // Try HEAD request to check if URL is reachable
+    try {
+        const isValid = await checkUrlReachable(url);
+        if (isValid) {
+            return url;
+        } else {
+            console.log(`    URL validation: Unreachable URL for ${entityName}`);
+            return createFallbackUrl(entityName);
+        }
+    } catch {
+        // If check fails, keep the URL but log it
+        console.log(`    URL validation: Check failed for ${entityName}, keeping original`);
+        return url;
+    }
+}
+
+/**
+ * Check if URL is reachable via HEAD request
+ */
+function checkUrlReachable(url) {
+    return new Promise((resolve) => {
+        try {
+            const urlObj = new URL(url);
+            const client = urlObj.protocol === 'https:' ? https : http;
+            
+            const req = client.request({
+                hostname: urlObj.hostname,
+                path: urlObj.pathname + urlObj.search,
+                method: 'HEAD',
+                timeout: 5000,
+                headers: {
+                    'User-Agent': 'NorthStarWatchdog/1.0'
+                }
+            }, (res) => {
+                // 2xx and 3xx are valid
+                resolve(res.statusCode >= 200 && res.statusCode < 400);
+            });
+            
+            req.on('error', () => resolve(false));
+            req.on('timeout', () => {
+                req.destroy();
+                resolve(false);
+            });
+            req.end();
+        } catch {
+            resolve(false);
+        }
+    });
+}
+
+/**
+ * Create fallback Google News search URL
+ */
+function createFallbackUrl(entityName) {
+    if (!entityName) {
+        return 'https://www.justice.gov/usao-mn';
+    }
+    return `https://news.google.com/search?q=${encodeURIComponent(entityName + ' Minnesota fraud')}`;
+}
 
 // ============================================
 // FILE OPERATIONS
@@ -130,6 +277,40 @@ async function checkApprovedIssues() {
 }
 
 // ============================================
+// RED FLAG DEDUPLICATION
+// ============================================
+
+/**
+ * Create hash for deduplication
+ */
+function createFlagHash(flag) {
+    const key = `${flag.type || ''}-${(flag.description || '').substring(0, 100)}`;
+    // Simple hash
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) {
+        const char = key.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash.toString(16);
+}
+
+/**
+ * Deduplicate red flags array
+ */
+function deduplicateFlags(flags) {
+    const seen = new Set();
+    return flags.filter(flag => {
+        const hash = createFlagHash(flag);
+        if (seen.has(hash)) {
+            return false;
+        }
+        seen.add(hash);
+        return true;
+    });
+}
+
+// ============================================
 // DATA FILE UPDATERS
 // ============================================
 
@@ -176,9 +357,13 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
                 c.name.toLowerCase().includes(update.name.toLowerCase()) ||
                 update.name.toLowerCase().includes(c.name.toLowerCase())
             );
+            
+            // Validate URL before saving
+            const validatedUrl = await validateUrl(update.sourceUrl, update.name);
+            
             if (existing) {
                 existing.latestUpdate = update.update;
-                existing.sourceUrl = update.sourceUrl || existing.sourceUrl;
+                existing.sourceUrl = validatedUrl;
                 existing.lastUpdated = timestamp;
                 existing.isNew = false;
             } else if (update.isNew) {
@@ -188,7 +373,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
                     amount: update.amount || 'Under Investigation',
                     status: update.status || 'Active Investigation',
                     latestUpdate: update.update,
-                    sourceUrl: update.sourceUrl,
+                    sourceUrl: validatedUrl,
                     isNew: true,
                     addedDate: timestamp,
                     lastUpdated: timestamp
@@ -207,10 +392,14 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
             const existing = figures.people.find(p => 
                 p.name.toLowerCase() === update.name.toLowerCase()
             );
+            
+            // Validate URL before saving
+            const validatedUrl = await validateUrl(update.sourceUrl, update.name);
+            
             if (existing) {
                 existing.latestUpdate = update.update;
                 existing.status = update.status || existing.status;
-                existing.sourceUrl = update.sourceUrl || existing.sourceUrl;
+                existing.sourceUrl = validatedUrl;
                 existing.lastUpdated = timestamp;
                 existing.isNew = false;
             } else if (update.isNew) {
@@ -220,7 +409,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
                     status: update.status,
                     allegations: [update.update],
                     latestUpdate: update.update,
-                    sourceUrl: update.sourceUrl,
+                    sourceUrl: validatedUrl,
                     isNew: true,
                     addedDate: timestamp,
                     lastUpdated: timestamp
@@ -241,8 +430,11 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
         lastUpdated: timestamp
     });
     
-    // 6. Update stats.json with AI briefing
+    // 6. Update stats.json with AI briefing - FIX GREETING HERE
     console.log('  Updating stats.json...');
+    const rawBriefing = aiAnalysis?.briefing || 'The AI is analyzing the latest developments in Minnesota fraud investigations.';
+    const fixedBriefing = fixBriefingGreeting(rawBriefing);
+    
     const statsData = {
         lastUpdated: timestamp,
         charged: {
@@ -266,7 +458,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
             source: "FBI / DOJ Minnesota",
             sourceUrl: "https://www.fbi.gov/contact-us/field-offices/minneapolis"
         },
-        briefing: aiAnalysis?.briefing || "Good morning. The AI is currently analyzing the latest developments in Minnesota's fraud investigations. Check back soon for today's briefing."
+        briefing: fixedBriefing
     };
     saveData('stats.json', statsData);
     
@@ -304,13 +496,18 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
     programs.lastUpdated = timestamp;
     saveData('high-risk-programs.json', programs);
     
-    // 9. Update red-flags.json
+    // 9. Update red-flags.json with DEDUPLICATION
     console.log('  Updating red-flags.json...');
     let redFlags = loadData('red-flags.json') || { flags: [], flagTypes: [], sourcesUsed: [] };
     
-    // Get sources actually used from OSINT results
-    const sourcesUsed = osintResults?.sourcesUsed || ['Google News', 'DOJ Press', 'FBI Press', 'SAM.gov', 'OFAC Sanctions', 'OIG Exclusions'];
+    // Get sources actually used from OSINT results - NO FALLBACK TO HARDCODED
+    const sourcesUsed = osintResults?.sourcesUsed || [];
     const sourceCount = osintResults?.sourceCount || sourcesUsed.length;
+    
+    // Only add sources if we actually have them
+    if (sourcesUsed.length === 0) {
+        console.log('    Warning: No OSINT sources available for this run');
+    }
     
     // Add red flags from AI analysis
     if (aiAnalysis?.redFlags?.length > 0) {
@@ -321,7 +518,7 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
             sourcesUsed: sourcesUsed,
             sourceCount: sourceCount
         }));
-        redFlags.flags = [...newFlags, ...redFlags.flags].slice(0, 100);
+        redFlags.flags = [...newFlags, ...redFlags.flags];
     }
     
     // Add patterns from detective
@@ -336,8 +533,11 @@ async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osint
             sourcesUsed: sourcesUsed,
             sourceCount: sourceCount
         }));
-        redFlags.flags = [...detectiveFlags, ...redFlags.flags].slice(0, 100);
+        redFlags.flags = [...detectiveFlags, ...redFlags.flags];
     }
+    
+    // DEDUPLICATE before saving
+    redFlags.flags = deduplicateFlags(redFlags.flags).slice(0, 100);
     
     // Store global sources used for this run
     redFlags.sourcesUsed = sourcesUsed;
@@ -366,5 +566,9 @@ module.exports = {
     saveData,
     createGitHubIssue,
     checkApprovedIssues,
-    updateAllDataFiles
+    updateAllDataFiles,
+    fixBriefingGreeting,
+    getCorrectGreeting,
+    validateUrl,
+    deduplicateFlags
 };
