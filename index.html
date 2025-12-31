@@ -68,7 +68,10 @@
                 AI analyzes for you
             </div>
             <h2 class="hero-title">Minnesota's <span class="highlight">$9 Billion+</span> Fraud Scandal</h2>
-            <p class="hero-subtitle">We search <strong>government databases</strong>, compile <strong>news, videos, and court records</strong>, and <strong>analyze everything with AI</strong> — then you can continue with your favorite AI for deeper investigation.</p>
+            <p class="hero-source-note">
+                <a href="https://oversight.house.gov/" target="_blank" rel="noopener" class="source-badge">Source: House Oversight Committee</a>
+            </p>
+            <p class="hero-subtitle">We search <strong>government databases</strong>, compile <strong>news, videos, and court records</strong>, and <strong>analyze everything with AI</strong> - then you can continue with your favorite AI for deeper investigation.</p>
             <div class="hero-stats">
                 <div class="stat"><span class="stat-value" id="stat-charged">93+</span><span class="stat-label">Charged</span></div>
                 <div class="stat"><span class="stat-value" id="stat-convicted">57+</span><span class="stat-label">Convicted</span></div>
@@ -102,7 +105,7 @@
             <div class="briefing-modal-header">
                 <div class="briefing-modal-title">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
-                    <span>AI Daily Briefing</span>
+                    <span>AI Hourly Briefing</span>
                 </div>
                 <button class="briefing-modal-close" onclick="closeBriefing()">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -132,11 +135,11 @@
         <div class="results-summary" id="results-summary"></div>
         <div class="loading-state" id="loading-state" style="display: none;">
             <div class="spinner"></div>
-            <p>Searching databases & gathering research...</p>
+            <p>Searching databases and gathering research...</p>
         </div>
         <div class="results-content" id="results-content"></div>
         
-        <!-- Deep Research - SHOWN AUTOMATICALLY WITH RESULTS -->
+        <!-- Deep Research -->
         <div class="deep-research" id="deep-research" style="display: none;">
             <div class="deep-research-header">
                 <h3>
@@ -146,11 +149,11 @@
                 <p>We found additional sources for your investigation:</p>
             </div>
             
-            <!-- Video Results -->
+            <!-- Video & Social Results -->
             <div class="research-category">
                 <h4>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3V9z"/></svg>
-                    Videos
+                    Videos and Social
                 </h4>
                 <div class="research-links" id="video-links"></div>
             </div>
@@ -164,11 +167,11 @@
                 <div class="news-results" id="news-results"></div>
             </div>
             
-            <!-- Court & Government Records -->
+            <!-- Court, Government & OSINT Records -->
             <div class="research-category">
                 <h4>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M12 3l9 7H3l9-7z"/><path d="M5 10v11M19 10v11M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"/></svg>
-                    Court & Government Records
+                    Court, Government and OSINT
                 </h4>
                 <div class="research-links" id="court-links"></div>
             </div>
@@ -205,7 +208,7 @@
                 <h2>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1M19 20a2 2 0 01-2-2V8m2 12a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>
                     Live News
-                    <span class="auto-badge">Auto-Updated</span>
+                    <span class="auto-badge">Hourly Updates</span>
                 </h2>
                 <p class="section-sub">Latest headlines on Minnesota fraud investigations</p>
             </div>
@@ -218,7 +221,7 @@
                 <h2>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                     Trending Now
-                    <span class="auto-badge">AI-Curated</span>
+                    <span class="auto-badge">Hourly AI Scan</span>
                 </h2>
                 <p class="section-sub">What's making news + suggested search terms</p>
             </div>
@@ -244,7 +247,7 @@
                 <h2>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                     Active Investigations
-                    <span class="auto-badge">AI-Monitored</span>
+                    <span class="auto-badge">Hourly Updates</span>
                 </h2>
             </div>
             <div class="investigations-grid" id="investigations-grid"><p class="loading-text">Loading...</p></div>
@@ -278,10 +281,10 @@
                             <span>AI-Powered Investigation Service</span>
                         </div>
                     </div>
-                    <p class="footer-tagline">100% FREE • No API keys • No login required</p>
+                    <p class="footer-tagline">100% FREE - No API keys - No login required</p>
                     
                     <div class="footer-ai-notice">
-                        <p class="ai-disclaimer-inline">🤖 <strong>AI-Managed:</strong> This entire site is curated and updated hourly by AI. Content, trending topics, key figures, and analysis are all AI-generated.</p>
+                        <p class="ai-disclaimer-inline"><strong>AI-Managed:</strong> This entire site is curated and updated hourly by AI. Content, trending topics, key figures, and analysis are all AI-generated.</p>
                         <a href="https://x.com/intent/tweet?text=@Ghost081280%20Please%20add%20coverage%20for%20my%20state:%20" target="_blank" rel="noopener" class="suggest-state-btn">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             Suggest a State
@@ -299,7 +302,7 @@
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                                Get news, videos & court records
+                                Get news, videos and court records
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
@@ -307,7 +310,7 @@
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                                Export & continue in your AI
+                                Export and continue in your AI
                             </li>
                         </ul>
                     </div>
@@ -342,7 +345,7 @@
             
             <div class="footer-bottom">
                 <p class="legal-line">All individuals are presumed innocent until proven guilty. This is a research tool, not legal advice.</p>
-                <p class="copyright">© 2025 North Star Watchdog | Built by <a href="https://x.com/Ghost081280" target="_blank" rel="noopener">@Ghost081280</a></p>
+                <p class="copyright">2025 North Star Watchdog | Built by <a href="https://x.com/Ghost081280" target="_blank" rel="noopener">@Ghost081280</a></p>
             </div>
         </div>
     </footer>
@@ -352,6 +355,10 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
 
-    <script src="app.js"></script>
+    <!-- Modular JavaScript Files -->
+    <script src="app-core.js"></script>
+    <script src="app-search.js"></script>
+    <script src="app-render.js"></script>
+    <script src="app-research.js"></script>
 </body>
 </html>
