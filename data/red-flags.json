@@ -2,15 +2,15 @@
   "flags": [
     {
       "type": "pattern_type",
-      "description": "Similarities between Feeding Our Future and other alleged fraud schemes in Minnesota",
+      "description": "Similarities between Feeding Our Future and CCAP daycare fraud schemes",
       "entities": [
         "Feeding Our Future",
-        "CCAP Daycare Fraud"
+        "CCAP"
       ],
-      "sourceUrl": "https://www.usatoday.com/",
+      "sourceUrl": "https://www.kfgo.com/",
       "priority": "high",
       "confidence": 80,
-      "detectedAt": "2025-12-31T17:26:43.820Z",
+      "detectedAt": "2025-12-31T17:31:07.925Z",
       "source": "ai-analysis",
       "sourcesUsed": [
         "Google News",
@@ -29,8 +29,29 @@
       ],
       "priority": "high",
       "confidence": 70,
-      "detectedAt": "2025-12-31T17:26:43.820Z",
+      "detectedAt": "2025-12-31T17:31:07.925Z",
       "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "GROQ AI",
+        "ProPublica Nonprofits",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 5
+    },
+    {
+      "type": "pattern_type",
+      "description": "Similarities between Feeding Our Future and other alleged fraud schemes in Minnesota",
+      "entities": [
+        "Feeding Our Future",
+        "CCAP Daycare Fraud"
+      ],
+      "sourceUrl": "https://www.usatoday.com/",
+      "priority": "high",
+      "confidence": 80,
+      "detectedAt": "2025-12-31T17:26:43.820Z",
+      "source": "ai-analysis",
       "sourcesUsed": [
         "Google News",
         "GROQ AI",
@@ -61,26 +82,6 @@
         "FBI Press"
       ],
       "sourceCount": 6
-    },
-    {
-      "type": "pattern_type",
-      "description": "Similarities between Feeding Our Future and CCAP daycare fraud schemes",
-      "entities": [
-        "Feeding Our Future",
-        "CCAP"
-      ],
-      "sourceUrl": "https://www.usatoday.com/",
-      "priority": "high",
-      "confidence": 80,
-      "detectedAt": "2025-12-31T17:03:47.215Z",
-      "source": "ai-analysis",
-      "sourcesUsed": [
-        "ProPublica Nonprofits",
-        "FEC Campaign Finance",
-        "OIG Exclusions",
-        "FBI Press"
-      ],
-      "sourceCount": 4
     },
     {
       "type": "funding patterns",
@@ -433,7 +434,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T17:26:43.820Z",
+  "lastUpdated": "2025-12-31T17:31:07.925Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
