@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "pattern_type",
+      "description": "Similarities between Feeding Our Future and other alleged fraud schemes in Minnesota",
+      "entities": [
+        "Feeding Our Future",
+        "CCAP Daycare Fraud"
+      ],
+      "sourceUrl": "https://www.usatoday.com/",
+      "priority": "high",
+      "confidence": 80,
+      "detectedAt": "2025-12-31T17:26:43.820Z",
+      "source": "ai-analysis",
+      "sourcesUsed": [
+        "Google News",
+        "GROQ AI",
+        "ProPublica Nonprofits",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 5
+    },
+    {
+      "type": "coverage_spike",
+      "description": "\"Feeding Our Future\" mentioned in 9 articles - unusual activity",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "priority": "high",
+      "confidence": 70,
+      "detectedAt": "2025-12-31T17:26:43.820Z",
+      "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "GROQ AI",
+        "ProPublica Nonprofits",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 5
+    },
+    {
       "type": "Explosive Growth",
       "description": "Rapid expansion of child care programs in Minnesota",
       "entities": [
@@ -12,26 +52,6 @@
       "confidence": 80,
       "detectedAt": "2025-12-31T17:24:02.672Z",
       "source": "ai-analysis",
-      "sourcesUsed": [
-        "Google News",
-        "GROQ AI",
-        "ProPublica Nonprofits",
-        "FEC Campaign Finance",
-        "OIG Exclusions",
-        "FBI Press"
-      ],
-      "sourceCount": 6
-    },
-    {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "priority": "medium",
-      "confidence": 70,
-      "detectedAt": "2025-12-31T17:24:02.672Z",
-      "source": "ai-detective",
       "sourcesUsed": [
         "Google News",
         "GROQ AI",
@@ -413,7 +433,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T17:24:02.672Z",
+  "lastUpdated": "2025-12-31T17:26:43.820Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
@@ -432,9 +452,8 @@
     "Google News",
     "GROQ AI",
     "ProPublica Nonprofits",
-    "FEC Campaign Finance",
     "OIG Exclusions",
     "FBI Press"
   ],
-  "sourceCount": 6
+  "sourceCount": 5
 }
