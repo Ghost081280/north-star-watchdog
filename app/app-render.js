@@ -17,55 +17,62 @@ function renderStats() {
     if (!DATA.stats) return;
     const s = DATA.stats;
     
+    // Stats come directly from AI analysis - no hardcoded fallbacks
+    // If no data, show 0 until first scan runs
+    
     // Charged stat - clickable
     const chargedEl = document.getElementById('stat-charged');
     if (chargedEl) {
-        chargedEl.textContent = (s.charged?.count || 93) + '+';
+        const charged = s.charged || 0;
+        chargedEl.textContent = charged + '+';
         chargedEl.parentElement.style.cursor = 'pointer';
         chargedEl.parentElement.onclick = () => showStatSource(
             'Charged', 
-            s.charged?.count || 93, 
-            s.charged?.source || 'DOJ Minnesota & Court Records', 
-            s.charged?.sourceUrl || 'https://www.justice.gov/usao-mn'
+            charged, 
+            'AI Analysis of News', 
+            'https://www.justice.gov/usao-mn'
         );
     }
     
     // Convicted stat - clickable
     const convictedEl = document.getElementById('stat-convicted');
     if (convictedEl) {
-        convictedEl.textContent = (s.convicted?.count || 57) + '+';
+        const convicted = s.convicted || 0;
+        convictedEl.textContent = convicted + '+';
         convictedEl.parentElement.style.cursor = 'pointer';
         convictedEl.parentElement.onclick = () => showStatSource(
             'Convicted', 
-            s.convicted?.count || 57, 
-            s.convicted?.source || 'DOJ Feeding Our Future Case', 
-            s.convicted?.sourceUrl || 'https://www.justice.gov/usao-mn/pr/feeding-our-future'
+            convicted, 
+            'AI Analysis of News', 
+            'https://www.justice.gov/usao-mn'
         );
     }
     
     // Alleged amount stat - clickable
     const allegedEl = document.getElementById('stat-alleged');
     if (allegedEl) {
-        allegedEl.textContent = s.alleged?.amount || '$9B+';
+        const alleged = s.alleged || '$0';
+        allegedEl.textContent = alleged;
         allegedEl.parentElement.style.cursor = 'pointer';
         allegedEl.parentElement.onclick = () => showStatSource(
             'Alleged Fraud', 
-            s.alleged?.amount || '$9B+', 
-            s.alleged?.source || 'House Oversight Committee', 
-            s.alleged?.sourceUrl || 'https://oversight.house.gov/'
+            alleged, 
+            'AI Analysis of News', 
+            'https://oversight.house.gov/'
         );
     }
     
     // Cases count stat - clickable
     const casesEl = document.getElementById('stat-investigations');
     if (casesEl) {
-        casesEl.textContent = s.cases?.count || 4;
+        const cases = s.activeCases || DATA.investigations?.cases?.length || 0;
+        casesEl.textContent = cases;
         casesEl.parentElement.style.cursor = 'pointer';
         casesEl.parentElement.onclick = () => showStatSource(
             'Active Cases', 
-            s.cases?.count || 4, 
-            s.cases?.source || 'FBI / DOJ Minnesota', 
-            s.cases?.sourceUrl || 'https://www.fbi.gov/contact-us/field-offices/minneapolis'
+            cases, 
+            'AI Analysis of News', 
+            'https://www.fbi.gov/contact-us/field-offices/minneapolis'
         );
     }
 }
