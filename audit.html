@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Watchdog - Link & Data Audit</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a; 
+            color: #e0e0e0; 
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 { color: #d4af37; margin-bottom: 20px; }
+        h2 { color: #d4af37; margin: 30px 0 15px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        h3 { color: #888; margin: 20px 0 10px; }
+        .section { background: #1a1a1a; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .item { 
+            background: #252525; 
+            padding: 15px; 
+            border-radius: 6px; 
+            margin-bottom: 10px;
+            border-left: 4px solid #444;
+        }
+        .item.error { border-left-color: #ef4444; background: #1a0a0a; }
+        .item.warning { border-left-color: #f59e0b; background: #1a1505; }
+        .item.success { border-left-color: #22c55e; background: #0a1a0a; }
+        .item.checking { border-left-color: #3b82f6; }
+        .status { 
+            display: inline-block; 
+            padding: 2px 8px; 
+            border-radius: 4px; 
+            font-size: 12px; 
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status.ok { background: #22c55e; color: #000; }
+        .status.error { background: #ef4444; color: #fff; }
+        .status.warning { background: #f59e0b; color: #000; }
+        .status.checking { background: #3b82f6; color: #fff; }
+        a { color: #60a5fa; }
+        .name { font-weight: bold; color: #fff; }
+        .url { font-size: 12px; color: #888; word-break: break-all; }
+        .issue { color: #f59e0b; font-style: italic; }
+        .btn { 
+            background: #d4af37; 
+            color: #000; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn:hover { background: #b8972e; }
+        .summary { 
+            display: flex; 
+            gap: 20px; 
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .summary-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 120px;
+        }
+        .summary-card .count { font-size: 36px; font-weight: bold; }
+        .summary-card .label { color: #888; font-size: 14px; }
+        .summary-card.errors .count { color: #ef4444; }
+        .summary-card.warnings .count { color: #f59e0b; }
+        .summary-card.success .count { color: #22c55e; }
+        #results { margin-top: 20px; }
+        .journalist-check { 
+            background: #2a1a1a; 
+            padding: 10px; 
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 North Star Watchdog - Link & Data Audit</h1>
+    
+    <div class="section">
+        <button class="btn" onclick="runFullAudit()">Run Full Audit</button>
+        <button class="btn" onclick="checkLinksOnly()">Check Links Only</button>
+        <button class="btn" onclick="checkDataOnly()">Check Data Only</button>
+    </div>
+    
+    <div class="summary" id="summary" style="display:none;">
+        <div class="summary-card errors">
+            <div class="count" id="error-count">0</div>
+            <div class="label">Errors (404s)</div>
+        </div>
+        <div class="summary-card warnings">
+            <div class="count" id="warning-count">0</div>
+            <div class="label">Warnings</div>
+        </div>
+        <div class="summary-card success">
+            <div class="count" id="success-count">0</div>
+            <div class="label">OK</div>
+        </div>
+    </div>
+    
+    <div id="results"></div>
+
+    <script>
+        // Known journalists/whistleblowers who should NOT be in Key Figures or Trending buttons
+        const JOURNALISTS_WHISTLEBLOWERS = [
+            'nick shirley',
+            'kayseh magan',
+            'james o\'keefe',
+            'project veritas'
+        ];
+        
+        // Check if a name is a journalist/whistleblower
+        function isJournalist(name) {
+            const lower = name.toLowerCase();
+            return JOURNALISTS_WHISTLEBLOWERS.some(j => lower.includes(j));
+        }
+        
+        let errorCount = 0;
+        let warningCount = 0;
+        let successCount = 0;
+        
+        function updateSummary() {
+            document.getElementById('summary').style.display = 'flex';
+            document.getElementById('error-count').textContent = errorCount;
+            document.getElementById('warning-count').textContent = warningCount;
+            document.getElementById('success-count').textContent = successCount;
+        }
+        
+        function addResult(section, html) {
+            let container = document.getElementById('section-' + section);
+            if (!container) {
+                const results = document.getElementById('results');
+                results.innerHTML += `<h2>${section}</h2><div id="section-${section}" class="section"></div>`;
+                container = document.getElementById('section-' + section);
+            }
+            container.innerHTML += html;
+        }
+        
+        async function checkLink(url, name, section) {
+            if (!url || url === '') {
+                warningCount++;
+                updateSummary();
+                return { status: 'warning', message: 'No URL provided' };
+            }
+            
+            // For most links, we can't actually check due to CORS
+            // But we can flag known bad patterns
+            if (url.includes('/pr/feeding-our-future') && !url.includes('federal-jury')) {
+                errorCount++;
+                updateSummary();
+                return { status: 'error', message: 'Known broken DOJ URL - needs update' };
+            }
+            
+            // Flag landing pages
+            if (url === 'https://mn.gov/dhs/' || 
+                url === 'https://www.justice.gov/usao-mn' ||
+                url === 'https://oversight.house.gov/') {
+                warningCount++;
+                updateSummary();
+                return { status: 'warning', message: 'Landing page only - no specific article' };
+            }
+            
+            successCount++;
+            updateSummary();
+            return { status: 'ok', message: 'URL looks valid' };
+        }
+        
+        async function loadJSON(file) {
+            try {
+                const response = await fetch('data/' + file);
+                if (!response.ok) throw new Error('File not found');
+                return await response.json();
+            } catch (e) {
+                return null;
+            }
+        }
+        
+        async function auditFigures() {
+            const data = await loadJSON('figures.json');
+            if (!data) {
+                addResult('Key Figures', '<div class="item error"><span class="name">figures.json</span> <span class="status error">NOT FOUND</span></div>');
+                errorCount++;
+                updateSummary();
+                return;
+            }
+            
+            for (const person of data.people || []) {
+                const linkResult = await checkLink(person.sourceUrl, person.name, 'figures');
+                const isJourn = isJournalist(person.name);
+                
+                let itemClass = linkResult.status;
+                if (isJourn) itemClass = 'error';
+                
+                let html = `<div class="item ${itemClass}">
+                    <div><span class="name">${person.name}</span> 
+                        <span class="status ${person.status === 'convicted' ? 'ok' : 'warning'}">${person.status}</span>
+                        <span class="status ${linkResult.status}">${linkResult.status.toUpperCase()}</span>
+                    </div>
+                    <div><strong>Role:</strong> ${person.role}</div>
+                    <div class="url"><strong>URL:</strong> <a href="${person.sourceUrl}" target="_blank">${person.sourceUrl}</a></div>
+                    <div><strong>Link Check:</strong> ${linkResult.message}</div>`;
+                
+                if (isJourn) {
+                    html += `<div class="journalist-check">⚠️ <strong>JOURNALIST/WHISTLEBLOWER DETECTED!</strong> This person should NOT be in Key Figures. They are a reporter, not someone under investigation.</div>`;
+                    errorCount++;
+                    updateSummary();
+                }
+                
+                html += `</div>`;
+                addResult('Key Figures', html);
+            }
+        }
+        
+        async function auditInvestigations() {
+            const data = await loadJSON('investigations.json');
+            if (!data) {
+                addResult('Active Investigations', '<div class="item error"><span class="name">investigations.json</span> <span class="status error">NOT FOUND</span></div>');
+                errorCount++;
+                updateSummary();
+                return;
+            }
+            
+            for (const inv of data.cases || []) {
+                const linkResult = await checkLink(inv.sourceUrl, inv.name, 'investigations');
+                
+                let html = `<div class="item ${linkResult.status}">
+                    <div><span class="name">${inv.name}</span> 
+                        <span class="status ${linkResult.status}">${linkResult.status.toUpperCase()}</span>
+                    </div>
+                    <div><strong>Amount:</strong> ${inv.amount} | <strong>Status:</strong> ${inv.status}</div>
+                    <div class="url"><strong>URL:</strong> <a href="${inv.sourceUrl}" target="_blank">${inv.sourceUrl}</a></div>
+                    <div><strong>Link Check:</strong> ${linkResult.message}</div>
+                </div>`;
+                addResult('Active Investigations', html);
+            }
+        }
+        
+        async function auditTrending() {
+            const data = await loadJSON('trending.json');
+            if (!data) {
+                addResult('Trending Topics', '<div class="item error"><span class="name">trending.json</span> <span class="status error">NOT FOUND</span></div>');
+                errorCount++;
+                updateSummary();
+                return;
+            }
+            
+            for (const topic of data.topics || []) {
+                const isJourn = isJournalist(topic.topic);
+                let itemClass = isJourn ? 'warning' : 'success';
+                
+                let html = `<div class="item ${itemClass}">
+                    <div><span class="name">${topic.topic}</span>
+                        ${topic.isNew ? '<span class="status ok">NEW</span>' : ''}
+                    </div>
+                    <div><strong>Reason:</strong> ${topic.reason || 'N/A'}</div>
+                    <div><strong>Suggested Searches:</strong> ${(topic.suggestedSearches || []).join(', ')}</div>`;
+                
+                if (isJourn) {
+                    html += `<div class="journalist-check">⚠️ <strong>NOTE:</strong> This topic includes a journalist/reporter name. If this appears as a BUTTON below the search bar, it should be removed. If it's in the Trending Now SECTION with investigation context, it may be OK.</div>`;
+                    warningCount++;
+                    updateSummary();
+                } else {
+                    successCount++;
+                    updateSummary();
+                }
+                
+                html += `</div>`;
+                addResult('Trending Topics', html);
+            }
+        }
+        
+        async function auditStats() {
+            const data = await loadJSON('stats.json');
+            if (!data) {
+                addResult('Stats', '<div class="item error"><span class="name">stats.json</span> <span class="status error">NOT FOUND</span></div>');
+                errorCount++;
+                updateSummary();
+                return;
+            }
+            
+            const stats = [
+                { name: 'Charged', data: data.charged },
+                { name: 'Convicted', data: data.convicted },
+                { name: 'Alleged', data: data.alleged },
+                { name: 'Cases', data: data.cases }
+            ];
+            
+            for (const stat of stats) {
+                if (!stat.data) continue;
+                const linkResult = await checkLink(stat.data.sourceUrl, stat.name, 'stats');
+                
+                let html = `<div class="item ${linkResult.status}">
+                    <div><span class="name">${stat.name}</span>: ${stat.data.count || stat.data.amount || 'N/A'}
+                        <span class="status ${linkResult.status}">${linkResult.status.toUpperCase()}</span>
+                    </div>
+                    <div><strong>Source:</strong> ${stat.data.source}</div>
+                    <div class="url"><strong>URL:</strong> <a href="${stat.data.sourceUrl}" target="_blank">${stat.data.sourceUrl}</a></div>
+                    <div><strong>Link Check:</strong> ${linkResult.message}</div>
+                </div>`;
+                addResult('Stats', html);
+            }
+        }
+        
+        async function auditNews() {
+            const data = await loadJSON('news.json');
+            if (!data) {
+                addResult('News', '<div class="item error"><span class="name">news.json</span> <span class="status error">NOT FOUND</span></div>');
+                errorCount++;
+                updateSummary();
+                return;
+            }
+            
+            // Check breaking news
+            if (data.breaking) {
+                let html = `<div class="item success">
+                    <div><span class="name">BREAKING: ${data.breaking.title}</span></div>
+                    <div><strong>Source:</strong> ${data.breaking.source}</div>
+                </div>`;
+                addResult('News', html);
+                successCount++;
+                updateSummary();
+            }
+            
+            // Check articles count
+            const articleCount = (data.articles || []).length;
+            addResult('News', `<div class="item success"><span class="name">${articleCount} articles loaded</span></div>`);
+        }
+        
+        async function runFullAudit() {
+            document.getElementById('results').innerHTML = '<p>Running full audit...</p>';
+            errorCount = 0;
+            warningCount = 0;
+            successCount = 0;
+            
+            await auditStats();
+            await auditFigures();
+            await auditInvestigations();
+            await auditTrending();
+            await auditNews();
+            
+            updateSummary();
+        }
+        
+        async function checkLinksOnly() {
+            document.getElementById('results').innerHTML = '<p>Checking links...</p>';
+            errorCount = 0;
+            warningCount = 0;
+            successCount = 0;
+            
+            await auditStats();
+            await auditFigures();
+            await auditInvestigations();
+            
+            updateSummary();
+        }
+        
+        async function checkDataOnly() {
+            document.getElementById('results').innerHTML = '<p>Checking data for issues...</p>';
+            errorCount = 0;
+            warningCount = 0;
+            successCount = 0;
+            
+            await auditFigures();
+            await auditTrending();
+            
+            updateSummary();
+        }
+    </script>
+</body>
+</html>
