@@ -639,13 +639,11 @@ async function searchSAMExclusions(query) {
     console.log(`    SAM Exclusions: Checking if "${query}" is on federal ban list...`);
     
     try {
-        // V4 endpoint with exclusionName parameter (searches name field)
-        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&exclusionName=${encodeURIComponent(query)}`;
+        // V4 endpoint - use q parameter for free text search
+        // The exclusionName parameter requires exact format, q is more flexible
+        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&q=${encodeURIComponent(query)}`;
         const result = await makeRequest(url, { 
-            timeout: 20000,
-            headers: {
-                'Accept': 'application/json'
-            }
+            timeout: 20000
         });
         
         console.log(`    SAM Exclusions: Response status ${result.status}, success: ${result.success}`);
@@ -683,15 +681,15 @@ async function searchSAMExclusions(query) {
             };
         }
         
-        // No excludedEntity array means no matches
+        // Check for totalRecords = 0 response
         if (result.success && result.data?.totalRecords === 0) {
             console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
             return { source: 'SAM Exclusions', available: true, found: 0, query };
         }
         
-        console.log(`    SAM Exclusions: Unexpected response structure`);
-        if (result.error) console.log(`    SAM Exclusions: Error - ${result.error}`);
-        return { source: 'SAM Exclusions', available: true, found: 0, query };
+        // If we got here, log the error for debugging
+        console.log(`    SAM Exclusions: Unexpected response - ${JSON.stringify(result.error || result.data).substring(0, 100)}`);
+        return { source: 'SAM Exclusions', available: true, found: 0, query, note: 'API response unexpected' };
     } catch (e) {
         console.log(`    SAM Exclusions: Error - ${e.message}`);
         return { source: 'SAM Exclusions', available: true, found: 0, query, error: e.message };
