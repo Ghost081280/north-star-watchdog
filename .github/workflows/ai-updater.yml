@@ -122,7 +122,7 @@ jobs:
           echo "### APIs Used This Run" >> $GITHUB_STEP_SUMMARY
           echo "- GROQ: Active" >> $GITHUB_STEP_SUMMARY
           if [ -n "$INTELX_API_KEY" ]; then echo "- IntelligenceX: Active"; fi >> $GITHUB_STEP_SUMMARY
-          if [ -n "$CENSYS_API_ID" ]; then echo "- Censys: Active"; fi >> $GITHUB_STEP_SUMMARY
+          if [ -n "$CENSYS_API_ID" ] || [ -n "$CENSYS_API_KEY" ]; then echo "- Censys: Active"; fi >> $GITHUB_STEP_SUMMARY
           if [ -n "$VIRUSTOTAL_API_KEY" ]; then echo "- VirusTotal: Active"; fi >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
