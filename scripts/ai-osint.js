@@ -625,6 +625,7 @@ async function searchSAM(query) {
 
 // ============================================
 // SAM.gov EXCLUSIONS - Federal Ban List (CRITICAL FOR FRAUD)
+// V4 API - https://open.gsa.gov/api/exclusions-api/
 // ============================================
 
 async function searchSAMExclusions(query) {
@@ -638,60 +639,58 @@ async function searchSAMExclusions(query) {
     console.log(`    SAM Exclusions: Checking if "${query}" is on federal ban list...`);
     
     try {
-        // Search exclusions by name - use correct endpoint
-        const url = `https://api.sam.gov/entity-information/v2/exclusions?name=${encodeURIComponent(query)}&page=0&size=10`;
+        // V4 endpoint with exclusionName parameter (searches name field)
+        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&exclusionName=${encodeURIComponent(query)}`;
         const result = await makeRequest(url, { 
             timeout: 20000,
             headers: {
-                'X-Api-Key': apiKey,
                 'Accept': 'application/json'
             }
         });
         
         console.log(`    SAM Exclusions: Response status ${result.status}, success: ${result.success}`);
         
-        if (result.success && result.data?.results) {
-            const exclusions = result.data.results.slice(0, 10).map(e => ({
-                name: e.name || 'Unknown',
-                uei: e.ueiSAM,
-                cage: e.cageCode,
-                exclusionType: e.exclusionType,
-                exclusionProgram: e.exclusionProgram,
-                excludingAgency: e.excludingAgencyCode,
-                activationDate: e.activationDate,
-                terminationDate: e.terminationDate,
-                description: e.description,
-                classificationType: e.classificationType
+        if (result.success && result.data?.excludedEntity) {
+            const exclusions = result.data.excludedEntity.slice(0, 10).map(e => ({
+                name: e.exclusionIdentification?.entityName || 
+                      `${e.exclusionIdentification?.firstName || ''} ${e.exclusionIdentification?.lastName || ''}`.trim() || 
+                      'Unknown',
+                uei: e.exclusionIdentification?.ueiSAM,
+                cage: e.exclusionIdentification?.cageCode,
+                exclusionType: e.exclusionDetails?.exclusionType,
+                exclusionProgram: e.exclusionDetails?.exclusionProgram,
+                excludingAgency: e.exclusionDetails?.excludingAgencyName,
+                activationDate: e.exclusionActions?.listOfActions?.[0]?.activateDate,
+                terminationDate: e.exclusionActions?.listOfActions?.[0]?.terminationDate,
+                classificationType: e.exclusionDetails?.classificationType
             }));
             
-            if (exclusions.length > 0) {
-                console.log(`    🚨 SAM Exclusions: FOUND ${exclusions.length} BANNED ENTITIES matching "${query}"!`);
+            const totalRecords = result.data.totalRecords || exclusions.length;
+            
+            if (totalRecords > 0) {
+                console.log(`    🚨 SAM Exclusions: FOUND ${totalRecords} BANNED ENTITIES matching "${query}"!`);
             } else {
-                console.log(`    SAM Exclusions: "${query}" is NOT on the ban list ✓`);
+                console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
             }
             
             return {
                 source: 'SAM Exclusions',
                 available: true,
-                found: exclusions.length,
+                found: totalRecords,
                 exclusions,
                 query,
-                warning: exclusions.length > 0 ? '🚨 FEDERAL EXCLUSION MATCH - Entity may be BANNED from federal contracts!' : null
+                warning: totalRecords > 0 ? '🚨 FEDERAL EXCLUSION MATCH - Entity may be BANNED from federal contracts!' : null
             };
         }
         
-        // Check if response has different structure
-        if (result.success && result.data?.totalRecords !== undefined) {
-            console.log(`    SAM Exclusions: ${result.data.totalRecords} total records, "${query}" checked`);
-            return {
-                source: 'SAM Exclusions',
-                available: true,
-                found: result.data.totalRecords || 0,
-                query
-            };
+        // No excludedEntity array means no matches
+        if (result.success && result.data?.totalRecords === 0) {
+            console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
+            return { source: 'SAM Exclusions', available: true, found: 0, query };
         }
         
-        console.log(`    SAM Exclusions: No results structure in response`);
+        console.log(`    SAM Exclusions: Unexpected response structure`);
+        if (result.error) console.log(`    SAM Exclusions: Error - ${result.error}`);
         return { source: 'SAM Exclusions', available: true, found: 0, query };
     } catch (e) {
         console.log(`    SAM Exclusions: Error - ${e.message}`);
