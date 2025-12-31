@@ -1,567 +1,330 @@
 /**
- * NORTH STAR WATCHDOG - AI FILES
- * Handles all file operations and GitHub Issues communication
+ * NORTH STAR WATCHDOG - FILE UPDATER
  * 
- * FIXES APPLIED:
- * - Improved red flag deduplication (normalizes text before comparison)
- * - URL validation for all saved URLs
- * - Briefing greeting fix - strips ALL greetings anywhere in text
+ * Updates all data/*.json files with real data from the scan.
+ * Creates GitHub Issues for high-confidence red flags.
+ * 
+ * NO HARDCODED DATA - everything comes from the scan.
  */
 
 const fs = require('fs');
+const path = require('path');
 const https = require('https');
-const http = require('http');
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const GITHUB_REPO = process.env.GITHUB_REPOSITORY || 'Ghost081280/north-star-watchdog';
+const DATA_DIR = path.join(__dirname, '..', 'data');
 
-// ============================================
-// BRIEFING GREETING FIX - IMPROVED
-// ============================================
+/**
+ * Ensure data directory exists
+ */
+function ensureDataDir() {
+    if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+}
 
+/**
+ * Read existing JSON file or return default
+ */
+function readJson(filename, defaultValue = {}) {
+    const filepath = path.join(DATA_DIR, filename);
+    try {
+        if (fs.existsSync(filepath)) {
+            return JSON.parse(fs.readFileSync(filepath, 'utf8'));
+        }
+    } catch (e) {
+        console.log(`  ⚠ Could not read ${filename}: ${e.message}`);
+    }
+    return defaultValue;
+}
+
+/**
+ * Write JSON file
+ */
+function writeJson(filename, data) {
+    const filepath = path.join(DATA_DIR, filename);
+    fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
+    console.log(`  ✓ Updated ${filename}`);
+}
+
+/**
+ * Fix briefing greeting if it starts with "Good morning/afternoon/evening"
+ */
 function fixBriefingGreeting(briefing) {
-    if (!briefing || typeof briefing !== 'string') {
-        return getCorrectGreeting() + ' The AI is analyzing the latest developments.';
-    }
+    if (!briefing) return briefing;
     
-    const correctGreeting = getCorrectGreeting();
-    
-    // Remove ALL greetings ANYWHERE in the text (not just at start)
-    // Handle various formats: "Good morning.", "Good morning!", "Good morning! ☀️", etc.
-    let fixed = briefing
-        .replace(/Good\s+morning[.!]?\s*☀️?\s*/gi, '')
-        .replace(/Good\s+afternoon[.!]?\s*👋?\s*/gi, '')
-        .replace(/Good\s+evening[.!]?\s*🌙?\s*/gi, '')
-        .replace(/Good\s+night[.!]?\s*🌙?\s*/gi, '')
-        .trim();
-    
-    // Clean up any double spaces left behind
-    fixed = fixed.replace(/\s+/g, ' ').trim();
-    
-    if (!fixed || fixed.length < 10) {
-        fixed = 'The AI is analyzing the latest developments in Minnesota fraud investigations.';
-    }
-    
-    // Ensure first letter after greeting is capitalized
-    if (fixed.length > 0) {
-        fixed = fixed.charAt(0).toUpperCase() + fixed.slice(1);
-    }
-    
-    return correctGreeting + ' ' + fixed;
-}
-
-function getCorrectGreeting() {
-    const now = new Date();
-    // CST is UTC-6 (or UTC-5 during DST, but we'll use -6 for consistency)
-    const cstOffset = -6 * 60;
-    const utcMinutes = now.getUTCHours() * 60 + now.getUTCMinutes();
-    let cstMinutes = utcMinutes + cstOffset;
-    if (cstMinutes < 0) cstMinutes += 24 * 60;
-    const cstHour = Math.floor(cstMinutes / 60) % 24;
-    
-    if (cstHour >= 5 && cstHour < 12) {
-        return 'Good morning! ☀️';
-    } else if (cstHour >= 12 && cstHour < 17) {
-        return 'Good afternoon! 👋';
-    } else {
-        return 'Good evening! 🌙';
-    }
-}
-
-// ============================================
-// URL VALIDATION
-// ============================================
-
-async function validateUrl(url, entityName) {
-    if (!url || typeof url !== 'string') {
-        return createFallbackUrl(entityName);
-    }
-    
-    // Check for malformed URLs
-    if (url.includes('undefined') || url.includes('null')) {
-        console.log(`    URL validation: Malformed URL for ${entityName}`);
-        return createFallbackUrl(entityName);
-    }
-    
-    // Check for non-ASCII characters (like Hindi)
-    if (/[^\x00-\x7F]/.test(url)) {
-        console.log(`    URL validation: Non-ASCII characters in URL for ${entityName}`);
-        return createFallbackUrl(entityName);
-    }
-    
-    // Basic URL format check
-    try {
-        new URL(url);
-    } catch {
-        console.log(`    URL validation: Invalid URL format for ${entityName}`);
-        return createFallbackUrl(entityName);
-    }
-    
-    // Skip reachability check to speed up processing, just return URL
-    return url;
-}
-
-function createFallbackUrl(entityName) {
-    if (!entityName) {
-        return 'https://www.justice.gov/usao-mn';
-    }
-    return `https://news.google.com/search?q=${encodeURIComponent(entityName + ' Minnesota fraud')}`;
-}
-
-// ============================================
-// FILE OPERATIONS
-// ============================================
-
-function loadData(filename) {
-    try {
-        return JSON.parse(fs.readFileSync(`data/${filename}`, 'utf8'));
-    } catch {
-        return null;
-    }
-}
-
-function saveData(filename, data) {
-    fs.writeFileSync(`data/${filename}`, JSON.stringify(data, null, 2));
-    console.log(`    Saved ${filename}`);
-}
-
-// ============================================
-// GITHUB ISSUES
-// ============================================
-
-async function createGitHubIssue({ title, body, labels = [] }) {
-    if (!GITHUB_TOKEN) {
-        console.log(`    [ISSUE] ${title}`);
-        console.log(`    (No GITHUB_TOKEN - issue not created)`);
-        return null;
-    }
-    
-    const [owner, repo] = GITHUB_REPO.split('/');
-    
-    return new Promise((resolve) => {
-        const data = JSON.stringify({
-            title: `[AI] ${title}`,
-            body: `${body}\n\n---\n*This issue was automatically created by the AI Updater at ${new Date().toISOString()}*`,
-            labels: ['ai-request', ...labels]
-        });
-        
-        const options = {
-            hostname: 'api.github.com',
-            path: `/repos/${owner}/${repo}/issues`,
-            method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${GITHUB_TOKEN}`,
-                'Content-Type': 'application/json',
-                'User-Agent': 'NorthStarWatchdog-AI',
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Length': Buffer.byteLength(data)
-            }
-        };
-        
-        const req = https.request(options, (res) => {
-            let body = '';
-            res.on('data', chunk => body += chunk);
-            res.on('end', () => {
-                try {
-                    const result = JSON.parse(body);
-                    if (result.number) {
-                        console.log(`    Created issue #${result.number}: ${title}`);
-                        resolve(result);
-                    } else {
-                        console.log(`    Failed to create issue: ${body.substring(0, 100)}`);
-                        resolve(null);
-                    }
-                } catch {
-                    resolve(null);
-                }
-            });
-        });
-        
-        req.on('error', () => resolve(null));
-        req.write(data);
-        req.end();
-    });
-}
-
-async function checkApprovedIssues() {
-    if (!GITHUB_TOKEN) return [];
-    
-    const [owner, repo] = GITHUB_REPO.split('/');
-    
-    return new Promise((resolve) => {
-        const options = {
-            hostname: 'api.github.com',
-            path: `/repos/${owner}/${repo}/issues?labels=needs-approval&state=open`,
-            method: 'GET',
-            headers: {
-                'Authorization': `Bearer ${GITHUB_TOKEN}`,
-                'User-Agent': 'NorthStarWatchdog-AI',
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        };
-        
-        https.get(options, (res) => {
-            let body = '';
-            res.on('data', chunk => body += chunk);
-            res.on('end', () => {
-                try {
-                    const issues = JSON.parse(body);
-                    resolve(Array.isArray(issues) ? issues : []);
-                } catch {
-                    resolve([]);
-                }
-            });
-        }).on('error', () => resolve([]));
-    });
-}
-
-// ============================================
-// IMPROVED RED FLAG DEDUPLICATION
-// ============================================
-
-/**
- * Normalize text for deduplication
- * - Lowercase
- * - Remove special characters
- * - Extract key words
- * - Sort alphabetically
- */
-function normalizeForDedup(text) {
-    if (!text) return '';
-    return text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .split(/\s+/)
-        .filter(w => w.length > 3) // Only words with 4+ chars
-        .sort()
-        .join('');
+    // Remove time-based greetings
+    return briefing
+        .replace(/^Good (morning|afternoon|evening)[,.]?\s*/i, '')
+        .replace(/^Hello[,.]?\s*/i, '')
+        .replace(/^Hi[,.]?\s*/i, '');
 }
 
 /**
- * Create hash for deduplication - IMPROVED
- * Uses normalized type + normalized key words from description
+ * Deduplicate items by creating a hash
  */
-function createFlagHash(flag) {
-    const normType = normalizeForDedup(flag.type || '');
-    const normDesc = normalizeForDedup(flag.description || '');
-    
-    // Also include sorted entity names
-    const normEntities = (flag.entities || [])
-        .map(e => normalizeForDedup(e))
-        .sort()
-        .join('');
-    
-    const key = `${normType}-${normDesc.substring(0, 50)}-${normEntities.substring(0, 30)}`;
-    
-    // Simple hash
-    let hash = 0;
-    for (let i = 0; i < key.length; i++) {
-        const char = key.charCodeAt(i);
-        hash = ((hash << 5) - hash) + char;
-        hash = hash & hash;
-    }
-    return hash.toString(16);
-}
-
-/**
- * Deduplicate red flags array - IMPROVED
- * More aggressive deduplication based on normalized content
- */
-function deduplicateFlags(flags) {
+function deduplicateItems(items, hashFn) {
     const seen = new Set();
-    const seenDescriptions = new Set();
-    
-    return flags.filter(flag => {
-        // Method 1: Hash-based dedup
-        const hash = createFlagHash(flag);
-        if (seen.has(hash)) {
-            return false;
-        }
+    return items.filter(item => {
+        const hash = hashFn(item);
+        if (seen.has(hash)) return false;
         seen.add(hash);
-        
-        // Method 2: Normalized description similarity
-        const normDesc = normalizeForDedup(flag.description || '').substring(0, 60);
-        if (seenDescriptions.has(normDesc)) {
-            return false;
-        }
-        seenDescriptions.add(normDesc);
-        
         return true;
     });
 }
 
-// ============================================
-// DATA FILE UPDATERS
-// ============================================
-
-async function updateAllDataFiles(articles, aiAnalysis, detectiveFindings, osintResults) {
-    const timestamp = new Date().toISOString();
+/**
+ * Update all data files
+ */
+async function updateAllDataFiles({ news, analysis, osint }) {
+    ensureDataDir();
     
-    // 1. Update news.json
-    console.log('  Updating news.json...');
-    const newsData = {
-        breaking: aiAnalysis?.breaking || {
-            title: articles[0]?.title || 'Minnesota fraud investigations continue',
-            source: articles[0]?.source || 'Various',
-            link: articles[0]?.link || '',
-            importance: 'Latest development in ongoing investigations'
-        },
-        articles: articles.slice(0, 12).map(a => ({
-            title: a.title,
-            source: a.source,
-            date: a.date,
-            link: a.link
-        })),
-        lastUpdated: timestamp
-    };
-    saveData('news.json', newsData);
+    const now = new Date().toISOString();
     
-    // 2. Update trending.json
-    console.log('  Updating trending.json...');
-    const trendingTopics = aiAnalysis?.trending || [];
-    trendingTopics.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
-    saveData('trending.json', {
-        topics: trendingTopics,
-        lastUpdated: timestamp
+    // ============================================
+    // 1. news.json
+    // ============================================
+    const existingNews = readJson('news.json', { articles: [] });
+    const newArticles = news.articles || [];
+    
+    // Merge and dedupe by URL
+    const allArticles = deduplicateItems(
+        [...newArticles, ...(existingNews.articles || [])],
+        a => a.link
+    ).slice(0, 100); // Keep last 100
+    
+    writeJson('news.json', {
+        articles: allArticles,
+        breaking: news.breaking || allArticles[0] || null,
+        lastUpdated: now
     });
     
-    // 3. Update investigations.json
-    console.log('  Updating investigations.json...');
-    let investigations = loadData('investigations.json') || { cases: [], lastUpdated: '' };
-    if (aiAnalysis?.investigationUpdates) {
-        for (const update of aiAnalysis.investigationUpdates) {
-            const existing = investigations.cases.find(c => 
-                c.name.toLowerCase().includes(update.name.toLowerCase()) ||
-                update.name.toLowerCase().includes(c.name.toLowerCase())
-            );
-            
-            const validatedUrl = await validateUrl(update.sourceUrl, update.name);
-            
-            if (existing) {
-                existing.latestUpdate = update.update;
-                existing.sourceUrl = validatedUrl;
-                existing.lastUpdated = timestamp;
-                existing.isNew = false;
-            } else if (update.isNew) {
-                investigations.cases.unshift({
-                    id: update.name.toLowerCase().replace(/\s+/g, '-'),
-                    name: update.name,
-                    amount: update.amount || 'Under Investigation',
-                    status: update.status || 'Active Investigation',
-                    latestUpdate: update.update,
-                    sourceUrl: validatedUrl,
-                    isNew: true,
-                    addedDate: timestamp,
-                    lastUpdated: timestamp
-                });
-            }
-        }
-    }
-    investigations.lastUpdated = timestamp;
-    saveData('investigations.json', investigations);
+    // ============================================
+    // 2. figures.json
+    // ============================================
+    const existingFigures = readJson('figures.json', { people: [] });
+    const newFigures = (analysis.figures || []).map(f => ({
+        ...f,
+        lastUpdated: now,
+        isNew: !existingFigures.people?.some(p => 
+            p.name?.toLowerCase() === f.name?.toLowerCase()
+        )
+    }));
     
-    // 4. Update figures.json
-    console.log('  Updating figures.json...');
-    let figures = loadData('figures.json') || { people: [], lastUpdated: '' };
-    if (aiAnalysis?.figureUpdates) {
-        for (const update of aiAnalysis.figureUpdates) {
-            const existing = figures.people.find(p => 
-                p.name.toLowerCase() === update.name.toLowerCase()
-            );
-            
-            const validatedUrl = await validateUrl(update.sourceUrl, update.name);
-            
-            if (existing) {
-                existing.latestUpdate = update.update;
-                existing.status = update.status || existing.status;
-                existing.sourceUrl = validatedUrl;
-                existing.lastUpdated = timestamp;
-                existing.isNew = false;
-            } else if (update.isNew) {
-                figures.people.unshift({
-                    name: update.name,
-                    role: update.role,
-                    status: update.status,
-                    allegations: [update.update],
-                    latestUpdate: update.update,
-                    sourceUrl: validatedUrl,
-                    isNew: true,
-                    addedDate: timestamp,
-                    lastUpdated: timestamp
-                });
-            }
-        }
+    // Merge - update existing, add new
+    const figureMap = new Map();
+    for (const f of existingFigures.people || []) {
+        if (f.name) figureMap.set(f.name.toLowerCase(), f);
     }
-    figures.people.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
-    figures.lastUpdated = timestamp;
-    saveData('figures.json', figures);
+    for (const f of newFigures) {
+        if (f.name) figureMap.set(f.name.toLowerCase(), { 
+            ...figureMap.get(f.name.toLowerCase()), 
+            ...f 
+        });
+    }
     
-    // 5. Update story-ideas.json
-    console.log('  Updating story-ideas.json...');
-    const storyIdeas = aiAnalysis?.storyIdeas || [];
-    storyIdeas.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
-    saveData('story-ideas.json', {
-        ideas: storyIdeas.slice(0, 8),
-        lastUpdated: timestamp
+    writeJson('figures.json', {
+        people: Array.from(figureMap.values()).slice(0, 50),
+        lastUpdated: now
     });
     
-    // 6. Update stats.json - FIX GREETING
-    console.log('  Updating stats.json...');
-    const rawBriefing = aiAnalysis?.briefing || 'The AI is analyzing the latest developments.';
-    const fixedBriefing = fixBriefingGreeting(rawBriefing);
+    // ============================================
+    // 3. investigations.json
+    // ============================================
+    const existingInv = readJson('investigations.json', { cases: [] });
+    const newInv = (analysis.investigations || []).map(i => ({
+        ...i,
+        lastUpdated: now,
+        isNew: !existingInv.cases?.some(c => 
+            c.name?.toLowerCase() === i.name?.toLowerCase()
+        )
+    }));
     
-    const statsData = {
-        lastUpdated: timestamp,
-        charged: {
-            count: aiAnalysis?.stats?.charged || 93,
-            source: "DOJ Minnesota & Court Records",
-            sourceUrl: "https://www.justice.gov/usao-mn"
-        },
-        convicted: {
-            count: aiAnalysis?.stats?.convicted || 57,
-            source: "DOJ Feeding Our Future Case",
-            sourceUrl: "https://www.justice.gov/usao-mn/pr/feeding-our-future"
-        },
-        alleged: {
-            amount: aiAnalysis?.stats?.alleged || "$9B+",
-            source: "House Oversight Committee",
-            sourceUrl: "https://oversight.house.gov/"
-        },
-        cases: {
-            count: investigations.cases?.length || 4,
-            list: investigations.cases?.map(c => c.name) || [],
-            source: "FBI / DOJ Minnesota",
-            sourceUrl: "https://www.fbi.gov/contact-us/field-offices/minneapolis"
-        },
-        briefing: fixedBriefing
+    // Merge investigations
+    const invMap = new Map();
+    for (const i of existingInv.cases || []) {
+        if (i.name) invMap.set(i.name.toLowerCase(), i);
+    }
+    for (const i of newInv) {
+        if (i.name) invMap.set(i.name.toLowerCase(), {
+            ...invMap.get(i.name.toLowerCase()),
+            ...i
+        });
+    }
+    
+    writeJson('investigations.json', {
+        cases: Array.from(invMap.values()).slice(0, 30),
+        lastUpdated: now
+    });
+    
+    // ============================================
+    // 4. trending.json
+    // ============================================
+    writeJson('trending.json', {
+        topics: (analysis.trending || []).slice(0, 10),
+        lastUpdated: now
+    });
+    
+    // ============================================
+    // 5. red-flags.json
+    // ============================================
+    const existingFlags = readJson('red-flags.json', { flags: [] });
+    const newFlags = (analysis.redFlags || []).map(rf => ({
+        ...rf,
+        id: `rf-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+        detectedAt: now,
+        isNew: true
+    }));
+    
+    // Dedupe by type + first 100 chars of description
+    const allFlags = deduplicateItems(
+        [...newFlags, ...(existingFlags.flags || []).map(f => ({ ...f, isNew: false }))],
+        f => `${f.type}-${(f.description || '').substring(0, 100)}`
+    ).slice(0, 50);
+    
+    // Mark which sources actually returned data
+    const sourcesUsed = [
+        'Google News', // Always used since we scraped it
+        ...(osint.sourcesUsed || [])
+    ];
+    
+    writeJson('red-flags.json', {
+        flags: allFlags,
+        sourcesUsed,
+        sourcesChecked: ['Google News', ...(osint.sourcesChecked || [])],
+        lastUpdated: now
+    });
+    
+    // ============================================
+    // 6. story-ideas.json
+    // ============================================
+    writeJson('story-ideas.json', {
+        ideas: (analysis.storyIdeas || []).slice(0, 10),
+        lastUpdated: now
+    });
+    
+    // ============================================
+    // 7. stats.json
+    // ============================================
+    const existingStats = readJson('stats.json', {});
+    const newStats = analysis.stats || {};
+    
+    // Only update stats if AI provided them and they're higher
+    const stats = {
+        charged: Math.max(existingStats.charged || 0, newStats.charged || 0),
+        convicted: Math.max(existingStats.convicted || 0, newStats.convicted || 0),
+        alleged: newStats.alleged || existingStats.alleged || '$0',
+        activeCases: newStats.activeCases || existingStats.activeCases || 0
     };
-    saveData('stats.json', statsData);
     
-    // 7. Update search-terms.json
-    console.log('  Updating search-terms.json...');
-    let searchTerms = loadData('search-terms.json') || { terms: [] };
-    if (aiAnalysis?.newSearchTerms?.length > 0) {
-        const newTerms = aiAnalysis.newSearchTerms.filter(t => 
-            t && !searchTerms.terms.some(existing => 
-                existing.toLowerCase() === t.toLowerCase()
-            )
-        );
-        if (newTerms.length > 0) {
-            searchTerms.terms = [...newTerms, ...searchTerms.terms].slice(0, 50);
-            console.log(`    Added ${newTerms.length} new search terms`);
-        }
-    }
-    searchTerms.lastUpdated = timestamp;
-    saveData('search-terms.json', searchTerms);
+    // Fix briefing greeting
+    const briefing = fixBriefingGreeting(analysis.briefing);
     
-    // 8. Update high-risk-programs.json
-    console.log('  Updating high-risk-programs.json...');
-    let programs = loadData('high-risk-programs.json') || { programs: [] };
-    if (aiAnalysis?.newHighRiskPrograms?.length > 0) {
-        const newProgs = aiAnalysis.newHighRiskPrograms.filter(p => 
-            p && !programs.programs.some(existing => 
-                existing.toLowerCase() === p.toLowerCase()
-            )
-        );
-        if (newProgs.length > 0) {
-            programs.programs.push(...newProgs);
-            console.log(`    Added ${newProgs.length} new high-risk programs`);
-        }
-    }
-    programs.lastUpdated = timestamp;
-    saveData('high-risk-programs.json', programs);
-    
-    // 9. Update red-flags.json - WITH AI CONFIDENCE SCORES
-    console.log('  Updating red-flags.json...');
-    let redFlags = loadData('red-flags.json') || { flags: [], flagTypes: [], sourcesUsed: [] };
-    
-    // Get sources from OSINT - no fallback
-    const sourcesUsed = osintResults?.sourcesUsed || [];
-    const sourceCount = osintResults?.sourceCount || sourcesUsed.length;
-    
-    if (sourcesUsed.length === 0) {
-        console.log('    Warning: No OSINT sources available');
-    }
-    
-    // Collect new flags - NOW WITH AI CONFIDENCE SCORES
-    const newFlags = [];
-    
-    // Add from AI analysis - use AI-provided confidence
-    if (aiAnalysis?.redFlags?.length > 0) {
-        aiAnalysis.redFlags.forEach(f => {
-            newFlags.push({
-                ...f,
-                // Use AI-provided confidence, fallback to 70 if not provided
-                confidence: f.confidence || 70,
-                detectedAt: timestamp,
-                source: 'ai-analysis',
-                sourcesUsed: sourcesUsed,
-                sourceCount: sourceCount
-            });
-        });
-    }
-    
-    // Add from detective - use AI-provided confidence
-    if (detectiveFindings?.suspiciousPatterns?.length > 0) {
-        detectiveFindings.suspiciousPatterns.forEach(p => {
-            newFlags.push({
-                type: p.type,
-                description: p.description,
-                entities: p.entities,
-                priority: p.priority,
-                // Use AI-provided confidence, fallback to 70 if not provided
-                confidence: p.confidence || 70,
-                detectedAt: timestamp,
-                source: 'ai-detective',
-                sourcesUsed: sourcesUsed,
-                sourceCount: sourceCount
-            });
-        });
-    }
-    
-    // Combine with existing
-    redFlags.flags = [...newFlags, ...redFlags.flags];
-    
-    // IMPROVED DEDUPLICATION
-    const beforeCount = redFlags.flags.length;
-    redFlags.flags = deduplicateFlags(redFlags.flags).slice(0, 100);
-    const afterCount = redFlags.flags.length;
-    
-    if (beforeCount !== afterCount) {
-        console.log(`    Deduplicated: ${beforeCount} → ${afterCount} flags`);
-    }
-    
-    redFlags.sourcesUsed = sourcesUsed;
-    redFlags.sourceCount = sourceCount;
-    redFlags.lastUpdated = timestamp;
-    saveData('red-flags.json', redFlags);
-    
-    // 10. Update osint-results.json
-    if (osintResults && (osintResults.domains?.length > 0 || osintResults.emails?.length > 0)) {
-        console.log('  Updating osint-results.json...');
-        let osintData = loadData('osint-results.json') || { results: [], lastUpdated: '' };
-        osintData.results.unshift({
-            timestamp,
-            ...osintResults
-        });
-        osintData.results = osintData.results.slice(0, 50);
-        osintData.lastUpdated = timestamp;
-        saveData('osint-results.json', osintData);
-    }
-    
-    console.log('  All data files updated!');
+    writeJson('stats.json', {
+        ...stats,
+        briefing: briefing || existingStats.briefing || 'No briefing available.',
+        lastUpdated: now
+    });
 }
 
-module.exports = {
-    loadData,
-    saveData,
-    createGitHubIssue,
-    checkApprovedIssues,
-    updateAllDataFiles,
-    fixBriefingGreeting,
-    getCorrectGreeting,
-    validateUrl,
-    deduplicateFlags,
-    normalizeForDedup,
-    createFlagHash
-};
+/**
+ * Create GitHub Issues for high-confidence red flags
+ */
+async function createGitHubIssues(redFlags) {
+    const token = process.env.GITHUB_TOKEN;
+    const repo = process.env.GITHUB_REPOSITORY;
+    
+    if (!token || !repo) {
+        console.log('  ⚠ GitHub token or repo not set - skipping issue creation');
+        return 0;
+    }
+    
+    // Only create issues for high-confidence flags
+    const highConfidence = (redFlags || []).filter(rf => 
+        rf.confidence >= 75 && rf.isNew !== false
+    );
+    
+    if (!highConfidence.length) {
+        console.log('  No high-confidence new flags to create issues for');
+        return 0;
+    }
+    
+    let created = 0;
+    
+    for (const flag of highConfidence.slice(0, 3)) { // Max 3 issues per run
+        try {
+            const title = `🚩 ${flag.type}: ${(flag.entities || []).join(', ') || 'Unknown Entity'}`;
+            const body = `## Red Flag Detected
+
+**Type:** ${flag.type}
+**Confidence:** ${flag.confidence}%
+**Source:** ${flag.source || 'AI Analysis'}
+
+### Description
+${flag.description}
+
+### Entities Involved
+${(flag.entities || []).map(e => `- ${e}`).join('\n') || 'No specific entities identified'}
+
+### Source Article
+${flag.sourceArticle || 'Not specified'}
+${flag.sourceUrl ? `\n[View Source](${flag.sourceUrl})` : ''}
+
+---
+*Detected by North Star Watchdog AI on ${new Date().toISOString()}*
+*This is an automated detection - please verify before taking action*`;
+
+            const [owner, repoName] = repo.split('/');
+            
+            const postData = JSON.stringify({
+                title,
+                body,
+                labels: ['ai-detected', flag.confidence >= 90 ? 'high-priority' : 'needs-verification']
+            });
+            
+            await new Promise((resolve, reject) => {
+                const req = https.request({
+                    hostname: 'api.github.com',
+                    path: `/repos/${owner}/${repoName}/issues`,
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'User-Agent': 'NorthStarWatchdog',
+                        'Content-Type': 'application/json',
+                        'Content-Length': Buffer.byteLength(postData)
+                    }
+                }, (res) => {
+                    let data = '';
+                    res.on('data', chunk => data += chunk);
+                    res.on('end', () => {
+                        if (res.statusCode === 201) {
+                            created++;
+                            console.log(`  ✓ Created issue: ${title.substring(0, 50)}...`);
+                            resolve();
+                        } else {
+                            console.log(`  ⚠ Failed to create issue: ${res.statusCode}`);
+                            resolve();
+                        }
+                    });
+                });
+                
+                req.on('error', (e) => {
+                    console.log(`  ⚠ Issue creation error: ${e.message}`);
+                    resolve();
+                });
+                
+                req.write(postData);
+                req.end();
+            });
+            
+            // Rate limit
+            await new Promise(r => setTimeout(r, 1000));
+            
+        } catch (error) {
+            console.log(`  ⚠ Issue creation failed: ${error.message}`);
+        }
+    }
+    
+    return created;
+}
+
+module.exports = { updateAllDataFiles, createGitHubIssues };
