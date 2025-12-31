@@ -3,12 +3,17 @@
  * 
  * Scrapes Google News RSS feed for Minnesota fraud stories.
  * This is FREE and requires no API key.
+ * 
+ * SELF-LEARNING: Reads search queries from data/learning.json
+ * so the AI can add new terms as it discovers them.
  */
 
 const https = require('https');
+const fs = require('fs');
+const path = require('path');
 
-// Search queries for comprehensive coverage
-const SEARCH_QUERIES = [
+// Default search queries (fallback if learning.json doesn't exist)
+const DEFAULT_QUERIES = [
     'Minnesota nonprofit fraud',
     'Minnesota charity fraud',
     'Minnesota embezzlement charges',
@@ -18,6 +23,26 @@ const SEARCH_QUERIES = [
     'Minnesota fraud conviction',
     'Minnesota theft charges nonprofit'
 ];
+
+/**
+ * Load search queries from learning.json or use defaults
+ */
+function loadSearchQueries() {
+    const learningPath = path.join(__dirname, '..', 'data', 'learning.json');
+    try {
+        if (fs.existsSync(learningPath)) {
+            const learning = JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+            if (learning.searchQueries && learning.searchQueries.length > 0) {
+                console.log(`  ✓ Loaded ${learning.searchQueries.length} search queries from learning.json`);
+                return learning.searchQueries;
+            }
+        }
+    } catch (e) {
+        console.log(`  ⚠ Could not load learning.json: ${e.message}`);
+    }
+    console.log(`  ✓ Using ${DEFAULT_QUERIES.length} default search queries`);
+    return DEFAULT_QUERIES;
+}
 
 /**
  * Fetch URL with timeout
@@ -87,10 +112,13 @@ function cleanText(text) {
 async function scrapeGoogleNews() {
     console.log('  Scraping Google News RSS feeds...');
     
+    // Load queries from learning.json (self-learning feature)
+    const searchQueries = loadSearchQueries();
+    
     const allArticles = [];
     const seenUrls = new Set();
     
-    for (const query of SEARCH_QUERIES) {
+    for (const query of searchQueries) {
         try {
             const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US:en`;
             console.log(`    Searching: "${query}"`);
@@ -132,7 +160,7 @@ async function scrapeGoogleNews() {
         articles: allArticles.slice(0, 50), // Keep top 50
         breaking,
         lastUpdated: new Date().toISOString(),
-        queriesUsed: SEARCH_QUERIES
+        queriesUsed: searchQueries
     };
 }
 
