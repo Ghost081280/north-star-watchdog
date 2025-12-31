@@ -8,6 +8,7 @@
 # 4. Enriches with OSINT data (6 free APIs)
 # 5. Updates ALL site sections
 # 6. Creates GitHub Issues to communicate with you
+# 7. Reads your replies and responds! (two-way chat)
 # 
 # REQUIRED SECRET:
 # - GROQ_API_KEY (FREE: https://console.groq.com/keys)
@@ -27,6 +28,9 @@
 # - api-key (green)
 # - needs-review (yellow)
 # - needs-approval (red)
+# - verified (green) - for approved findings
+# - false-positive (gray) - for dismissed findings
+# - high-priority (red) - for escalated findings
 # ============================================
 
 name: AI Site Updater
@@ -53,6 +57,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      
+      - name: Process Issue Replies (Two-Way Chat)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/ai-responder.js
       
       - name: Run AI Updater
         env:
