@@ -1,24 +1,32 @@
 # ============================================
-# NORTH STAR WATCHDOG V4 - AUTONOMOUS AI UPDATER
+# NORTH STAR WATCHDOG V2 - AUTONOMOUS AI UPDATER
 # 
 # Runs every hour:
 # 1. Scrapes Google News RSS
 # 2. Sends to Groq AI for analysis
-# 3. AI updates ALL site sections:
-#    - Breaking news
-#    - Trending topics
-#    - Active investigations
-#    - Key figures
-#    - Story ideas
-#    - Search terms to monitor
+# 3. Runs pattern detection (AI Detective)
+# 4. Enriches with OSINT data (6 free APIs)
+# 5. Updates ALL site sections
+# 6. Creates GitHub Issues to communicate with you
 # 
-# SETUP REQUIRED:
-# 1. Get FREE Groq API key: https://console.groq.com/keys
-# 2. Add to GitHub Secrets: Settings → Secrets → Actions
-#    Name: GROQ_API_KEY
-#    Value: gsk_your_key_here
+# REQUIRED SECRET:
+# - GROQ_API_KEY (FREE: https://console.groq.com/keys)
 #
-# COST: 100% FREE (Groq free tier = 14,400 requests/day)
+# OPTIONAL SECRETS (all FREE, add when ready):
+# - INTELX_API_KEY (dark web: https://intelx.io/signup)
+# - CENSYS_API_ID + CENSYS_API_SECRET (infrastructure: https://search.censys.io/register)
+# - SECURITYTRAILS_API_KEY (DNS history: https://securitytrails.com/app/signup)
+# - VIRUSTOTAL_API_KEY (reputation: https://www.virustotal.com/gui/join-us)
+# - HUNTER_API_KEY (emails: https://hunter.io/users/sign_up)
+# - NUMVERIFY_API_KEY (phones: https://numverify.com/product)
+#
+# LABELS TO CREATE IN YOUR REPO:
+# - ai-request (blue)
+# - ai-alert (orange)
+# - ai-discovery (purple)
+# - api-key (green)
+# - needs-review (yellow)
+# - needs-approval (red)
 # ============================================
 
 name: AI Site Updater
@@ -35,6 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
     
     steps:
       - name: Checkout repository
@@ -47,8 +56,20 @@ jobs:
       
       - name: Run AI Updater
         env:
+          # Required
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: node scripts/ai-updater.js
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          # Optional OSINT APIs
+          INTELX_API_KEY: ${{ secrets.INTELX_API_KEY }}
+          CENSYS_API_ID: ${{ secrets.CENSYS_API_ID }}
+          CENSYS_API_SECRET: ${{ secrets.CENSYS_API_SECRET }}
+          CENSYS_API_KEY: ${{ secrets.CENSYS_API_KEY }}
+          SECURITYTRAILS_API_KEY: ${{ secrets.SECURITYTRAILS_API_KEY }}
+          VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
+          HUNTER_API_KEY: ${{ secrets.HUNTER_API_KEY }}
+          NUMVERIFY_API_KEY: ${{ secrets.NUMVERIFY_API_KEY }}
+        run: node scripts/ai-core.js
       
       - name: Check for changes
         id: check
@@ -65,27 +86,46 @@ jobs:
       - name: Commit and push
         if: steps.check.outputs.changed == 'true'
         run: |
-          git config user.name "AI Updater Bot"
+          git config user.name "North Star AI"
           git config user.email "ai-bot@northstarwatchdog.com"
           
           # Create commit message with summary
           BREAKING=$(cat data/news.json | grep -o '"title":"[^"]*"' | head -1 | cut -d'"' -f4 | cut -c1-50)
           
-          git commit -m "🤖 AI Update: ${BREAKING}..." -m "Updated: news, trending, investigations, figures" -m "Time: $(TZ='America/Chicago' date +'%Y-%m-%d %H:%M CST')"
+          git commit -m "AI Update: ${BREAKING}..." -m "Updated: news, trending, investigations, figures, red-flags" -m "Time: $(TZ='America/Chicago' date +'%Y-%m-%d %H:%M CST')"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Summary
         run: |
-          echo "## 🌟 North Star Watchdog AI Update" >> $GITHUB_STEP_SUMMARY
+          echo "## North Star Watchdog AI Update" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(TZ='America/Chicago' date)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Breaking news
           if [ -f data/news.json ]; then
-            echo "### 📰 Breaking News" >> $GITHUB_STEP_SUMMARY
+            echo "### Breaking News" >> $GITHUB_STEP_SUMMARY
             cat data/news.json | grep -o '"title":"[^"]*"' | head -1 >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
           fi
-          echo "### 📁 Files Updated" >> $GITHUB_STEP_SUMMARY
+          
+          # Red flags detected
+          if [ -f data/red-flags.json ]; then
+            FLAGS=$(cat data/red-flags.json | grep -o '"type"' | wc -l)
+            echo "### Red Flags Tracked: $FLAGS" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          # API status
+          echo "### APIs Used This Run" >> $GITHUB_STEP_SUMMARY
+          echo "- GROQ: Active" >> $GITHUB_STEP_SUMMARY
+          if [ -n "$INTELX_API_KEY" ]; then echo "- IntelligenceX: Active"; fi >> $GITHUB_STEP_SUMMARY
+          if [ -n "$CENSYS_API_ID" ]; then echo "- Censys: Active"; fi >> $GITHUB_STEP_SUMMARY
+          if [ -n "$VIRUSTOTAL_API_KEY" ]; then echo "- VirusTotal: Active"; fi >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Files updated
+          echo "### Files Updated" >> $GITHUB_STEP_SUMMARY
           ls -la data/ >> $GITHUB_STEP_SUMMARY
