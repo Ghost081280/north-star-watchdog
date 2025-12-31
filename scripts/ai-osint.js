@@ -565,45 +565,62 @@ async function searchSAM(query) {
     const apiKey = process.env.SAM_API_KEY;
     
     if (!apiKey) {
-        console.log(`    SAM.gov: No API key (get free key at api.sam.gov)`);
+        console.log(`    SAM.gov: No API key (get free key at sam.gov)`);
         return {
             source: 'SAM.gov',
             available: false,
-            suggestion: 'Get free API key at https://api.sam.gov - add as SAM_API_KEY',
+            suggestion: 'Get free API key at https://sam.gov - add as SAM_API_KEY',
             searchUrl: `https://sam.gov/search/?q=${encodeURIComponent(query)}&page=1`
         };
     }
     
     console.log(`    SAM.gov: Searching "${query}"...`);
     
-    const url = `https://api.sam.gov/entity-information/v3/entities?api_key=${apiKey}&entityEFTIndicator=&q=${encodeURIComponent(query)}&includeSections=entityRegistration&registrationStatus=A`;
-    const result = await makeRequest(url, { timeout: 20000 });
-    
-    if (result.success && result.data?.entityData) {
-        const entities = result.data.entityData.slice(0, 10).map(e => ({
-            name: e.entityRegistration?.legalBusinessName || 'Unknown',
-            dba: e.entityRegistration?.dbaName,
-            uei: e.entityRegistration?.ueiSAM,
-            cage: e.entityRegistration?.cageCode,
-            status: e.entityRegistration?.registrationStatus,
-            expirationDate: e.entityRegistration?.registrationExpirationDate,
-            physicalAddress: e.entityRegistration?.physicalAddress
-        }));
+    try {
+        // Use legalBusinessName search parameter
+        const url = `https://api.sam.gov/entity-information/v3/entities?legalBusinessName=${encodeURIComponent(query)}&registrationStatus=A&includeSections=entityRegistration&page=0&size=10`;
+        const result = await makeRequest(url, { 
+            timeout: 20000,
+            headers: {
+                'X-Api-Key': apiKey,
+                'Accept': 'application/json'
+            }
+        });
         
-        if (entities.length > 0) {
-            console.log(`    SAM.gov: Found ${entities.length} entities`);
+        console.log(`    SAM.gov: Response status ${result.status}, success: ${result.success}`);
+        
+        if (result.success && result.data?.entityData) {
+            const entities = result.data.entityData.slice(0, 10).map(e => ({
+                name: e.entityRegistration?.legalBusinessName || 'Unknown',
+                dba: e.entityRegistration?.dbaName,
+                uei: e.entityRegistration?.ueiSAM,
+                cage: e.entityRegistration?.cageCode,
+                status: e.entityRegistration?.registrationStatus,
+                expirationDate: e.entityRegistration?.registrationExpirationDate,
+                physicalAddress: e.entityRegistration?.physicalAddress
+            }));
+            
+            if (entities.length > 0) {
+                console.log(`    SAM.gov: Found ${entities.length} entities`);
+            } else {
+                console.log(`    SAM.gov: No entities found for "${query}"`);
+            }
+            
+            return {
+                source: 'SAM.gov',
+                available: true,
+                found: entities.length,
+                entities,
+                query
+            };
         }
         
-        return {
-            source: 'SAM.gov',
-            available: true,
-            found: entities.length,
-            entities,
-            query
-        };
+        console.log(`    SAM.gov: No data in response for "${query}"`);
+        return { source: 'SAM.gov', available: true, found: 0, query };
+    } catch (e) {
+        console.log(`    SAM.gov: Error - ${e.message}`);
+        return { source: 'SAM.gov', available: true, found: 0, query, error: e.message };
     }
-    
-    return { source: 'SAM.gov', available: true, found: 0, query };
 }
 
 // ============================================
@@ -620,39 +637,66 @@ async function searchSAMExclusions(query) {
     
     console.log(`    SAM Exclusions: Checking if "${query}" is on federal ban list...`);
     
-    // Search exclusions by name
-    const url = `https://api.sam.gov/entity-information/v2/exclusions?api_key=${apiKey}&q=${encodeURIComponent(query)}&page=0&size=10`;
-    const result = await makeRequest(url, { timeout: 20000 });
-    
-    if (result.success && result.data?.results) {
-        const exclusions = result.data.results.slice(0, 10).map(e => ({
-            name: e.name || 'Unknown',
-            uei: e.ueiSAM,
-            cage: e.cageCode,
-            exclusionType: e.exclusionType,
-            exclusionProgram: e.exclusionProgram,
-            excludingAgency: e.excludingAgencyCode,
-            activationDate: e.activationDate,
-            terminationDate: e.terminationDate,
-            description: e.description,
-            classificationType: e.classificationType
-        }));
+    try {
+        // Search exclusions by name - use correct endpoint
+        const url = `https://api.sam.gov/entity-information/v2/exclusions?name=${encodeURIComponent(query)}&page=0&size=10`;
+        const result = await makeRequest(url, { 
+            timeout: 20000,
+            headers: {
+                'X-Api-Key': apiKey,
+                'Accept': 'application/json'
+            }
+        });
         
-        if (exclusions.length > 0) {
-            console.log(`    🚨 SAM Exclusions: FOUND ${exclusions.length} BANNED ENTITIES matching "${query}"!`);
+        console.log(`    SAM Exclusions: Response status ${result.status}, success: ${result.success}`);
+        
+        if (result.success && result.data?.results) {
+            const exclusions = result.data.results.slice(0, 10).map(e => ({
+                name: e.name || 'Unknown',
+                uei: e.ueiSAM,
+                cage: e.cageCode,
+                exclusionType: e.exclusionType,
+                exclusionProgram: e.exclusionProgram,
+                excludingAgency: e.excludingAgencyCode,
+                activationDate: e.activationDate,
+                terminationDate: e.terminationDate,
+                description: e.description,
+                classificationType: e.classificationType
+            }));
+            
+            if (exclusions.length > 0) {
+                console.log(`    🚨 SAM Exclusions: FOUND ${exclusions.length} BANNED ENTITIES matching "${query}"!`);
+            } else {
+                console.log(`    SAM Exclusions: "${query}" is NOT on the ban list ✓`);
+            }
+            
+            return {
+                source: 'SAM Exclusions',
+                available: true,
+                found: exclusions.length,
+                exclusions,
+                query,
+                warning: exclusions.length > 0 ? '🚨 FEDERAL EXCLUSION MATCH - Entity may be BANNED from federal contracts!' : null
+            };
         }
         
-        return {
-            source: 'SAM Exclusions',
-            available: true,
-            found: exclusions.length,
-            exclusions,
-            query,
-            warning: exclusions.length > 0 ? '🚨 FEDERAL EXCLUSION MATCH - Entity may be BANNED from federal contracts!' : null
-        };
+        // Check if response has different structure
+        if (result.success && result.data?.totalRecords !== undefined) {
+            console.log(`    SAM Exclusions: ${result.data.totalRecords} total records, "${query}" checked`);
+            return {
+                source: 'SAM Exclusions',
+                available: true,
+                found: result.data.totalRecords || 0,
+                query
+            };
+        }
+        
+        console.log(`    SAM Exclusions: No results structure in response`);
+        return { source: 'SAM Exclusions', available: true, found: 0, query };
+    } catch (e) {
+        console.log(`    SAM Exclusions: Error - ${e.message}`);
+        return { source: 'SAM Exclusions', available: true, found: 0, query, error: e.message };
     }
-    
-    return { source: 'SAM Exclusions', available: true, found: 0, query };
 }
 
 // ============================================
