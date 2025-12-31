@@ -74,33 +74,38 @@ const APIS = {
 };
 
 /**
- * Generic HTTPS request helper
+ * Generic HTTPS request helper with timeout
  */
 function makeRequest(url, options = {}) {
-    return new Promise((resolve, reject) => {
-        const isHttps = url.startsWith('https');
-        const client = isHttps ? https : http;
-        
-        const req = client.get(url, {
-            headers: options.headers || {},
-            timeout: 10000
-        }, (res) => {
-            let data = '';
-            res.on('data', chunk => data += chunk);
-            res.on('end', () => {
-                try {
-                    resolve(JSON.parse(data));
-                } catch {
-                    resolve({ raw: data });
-                }
+    return new Promise((resolve) => {
+        try {
+            const isHttps = url.startsWith('https');
+            const client = isHttps ? https : http;
+            const timeout = options.timeout || 10000;
+            
+            const req = client.get(url, {
+                headers: options.headers || {},
+                timeout: timeout
+            }, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                    try {
+                        resolve(JSON.parse(data));
+                    } catch {
+                        resolve({ raw: data });
+                    }
+                });
             });
-        });
-        
-        req.on('error', () => resolve(null));
-        req.on('timeout', () => {
-            req.destroy();
+            
+            req.on('error', () => resolve(null));
+            req.on('timeout', () => {
+                req.destroy();
+                resolve(null);
+            });
+        } catch {
             resolve(null);
-        });
+        }
     });
 }
 
@@ -117,7 +122,7 @@ async function searchSAM(query) {
         // SAM.gov entity search - works without API key for basic info
         const url = `https://api.sam.gov/entity-information/v3/entities?api_key=DEMO_KEY&entityName=${encodeURIComponent(query)}&registrationStatus=A`;
         
-        const result = await fetchWithTimeout(url);
+        const result = await makeRequest(url);
         
         if (result?.entityData) {
             const entities = result.entityData.slice(0, 5).map(e => ({
@@ -158,7 +163,7 @@ async function searchOFAC(query) {
         // OFAC consolidated screening list
         const url = `https://api.trade.gov/consolidated_screening_list/search?api_key=DEMO_KEY&q=${encodeURIComponent(query)}&sources=SDN,DPL`;
         
-        const result = await fetchWithTimeout(url);
+        const result = await makeRequest(url);
         
         if (result?.results) {
             const matches = result.results.slice(0, 5).map(r => ({
@@ -196,8 +201,6 @@ async function searchOIG(query) {
         console.log(`    OIG: Searching exclusions for "${query}"`);
         
         // OIG LEIE (List of Excluded Individuals/Entities)
-        const url = `https://oig.hhs.gov/exclusions/downloadables/exclusion_api.json`;
-        
         // Note: OIG doesn't have a search API, we check if entity might be excluded
         // In production, you'd download and search the full list
         
@@ -266,8 +269,6 @@ async function searchIntelX(query) {
     
     try {
         // Start search
-        const searchUrl = `${APIS.INTELX.baseUrl}/intelligent/search`;
-        // Note: IntelX requires POST for search, simplified for this implementation
         console.log(`    IntelX: Searching for "${query}"`);
         
         return {
@@ -517,7 +518,7 @@ async function lookupWhois(domain) {
 async function enrichFindings(aiAnalysis, detectiveFindings) {
     console.log('  Running OSINT enrichment...');
     
-    // Track which sources we actually query
+    // Track which sources we actually query AND get data from
     const sourcesUsed = [];
     
     const results = {
@@ -546,30 +547,28 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     for (const term of searchTerms.slice(0, 3)) {
         // SAM.gov - Federal registrations
         const sam = await searchSAM(term);
-        if (sam.available) {
+        if (sam.available && sam.found > 0) {
+            // Only add to sourcesUsed if we got actual data
             if (!sourcesUsed.includes('SAM.gov')) sourcesUsed.push('SAM.gov');
-            if (sam.found > 0) {
-                results.government.push({
-                    source: 'SAM.gov',
-                    query: term,
-                    found: sam.found,
-                    entities: sam.entities
-                });
-            }
+            results.government.push({
+                source: 'SAM.gov',
+                query: term,
+                found: sam.found,
+                entities: sam.entities
+            });
         }
         
         // OFAC - Sanctions check
         const ofac = await searchOFAC(term);
-        if (ofac.available) {
+        if (ofac.available && ofac.found > 0) {
+            // Only add to sourcesUsed if we got actual matches
             if (!sourcesUsed.includes('OFAC Sanctions')) sourcesUsed.push('OFAC Sanctions');
-            if (ofac.found > 0) {
-                results.government.push({
-                    source: 'OFAC Sanctions',
-                    query: term,
-                    found: ofac.found,
-                    matches: ofac.matches
-                });
-            }
+            results.government.push({
+                source: 'OFAC Sanctions',
+                query: term,
+                found: ofac.found,
+                matches: ofac.matches
+            });
         }
         
         // OIG - Exclusions check
@@ -722,6 +721,7 @@ function getApiStatus() {
 module.exports = {
     enrichFindings,
     getApiStatus,
+    makeRequest,
     // Government APIs (FREE)
     searchSAM,
     searchOFAC,
