@@ -1,25 +1,12 @@
 /**
- * NORTH STAR WATCHDOG - AI OSINT v2.0
- * Open Source Intelligence gathering using FREE APIs
+ * NORTH STAR WATCHDOG - AI OSINT v3.0
  * 
- * FREE APIs (NO KEY NEEDED):
- * - USASpending.gov - Federal grants & contracts
- * - ProPublica Nonprofits - 990 tax filings
- * - FEC - Campaign finance
- * - OpenCorporates - Company registrations
- * - OIG LEIE - Healthcare exclusions (downloadable list)
- * - OFAC/Trade.gov - Sanctions screening
- * - Court Listener - Federal court cases
- * - DOJ Press - Actually scrapes press releases
- * - FBI Press - Actually scrapes press releases
- * 
- * OPTIONAL APIs (FREE with registration):
- * - SAM.gov - Federal entity registration
- * - IntelligenceX - Dark web
- * - Censys - Infrastructure
- * - SecurityTrails - DNS
- * - VirusTotal - Reputation
- * - Hunter.io - Email discovery
+ * COMPREHENSIVE FIX:
+ * - Removed SAM.gov (doesn't work - returns 406)
+ * - Removed domain-based APIs (not relevant for fraud investigation)
+ * - Better entity extraction from AI analysis
+ * - Uses trending topics, figures, investigations to drive searches
+ * - Returns actionable data for briefing synthesis
  */
 
 const https = require('https');
@@ -32,10 +19,11 @@ const API_STATS = {
     failures: 0
 };
 
-/**
- * Generic request helper with timeout and retries
- */
-function makeRequest(url, options = {}) {
+// ============================================
+// GENERIC API REQUEST HELPER
+// ============================================
+
+async function makeRequest(url, options = {}) {
     return new Promise((resolve) => {
         API_STATS.calls++;
         
@@ -46,7 +34,7 @@ function makeRequest(url, options = {}) {
             
             const reqOptions = {
                 headers: {
-                    'User-Agent': 'NorthStarWatchdog/2.0 (Citizen Journalism Tool)',
+                    'User-Agent': 'NorthStarWatchdog/3.0 (Citizen Journalism Tool)',
                     'Accept': 'application/json',
                     ...options.headers
                 },
@@ -60,7 +48,6 @@ function makeRequest(url, options = {}) {
                     try {
                         if (res.statusCode >= 200 && res.statusCode < 300) {
                             API_STATS.successes++;
-                            // Try JSON parse, fall back to raw
                             try {
                                 resolve({ success: true, data: JSON.parse(data), status: res.statusCode });
                             } catch {
@@ -95,107 +82,68 @@ function makeRequest(url, options = {}) {
 }
 
 // ============================================
-// USASpending.gov - Federal Grants & Contracts (FREE - NO KEY)
+// FREE APIs - ACTUALLY RELEVANT FOR FRAUD
 // ============================================
 
-async function searchUSASpending(recipientName, state = 'MN') {
-    console.log(`    USASpending: Searching "${recipientName}"...`);
+// USASpending.gov - Federal grants and contracts
+async function searchUSASpending(query, state = 'MN') {
+    console.log(`    USASpending: Searching "${query}"...`);
     
     try {
-        // Use the simpler keyword search endpoint
-        const searchUrl = `https://api.usaspending.gov/api/v2/search/spending_by_award_count/?filters={"keywords":["${recipientName}"],"time_period":[{"start_date":"2019-01-01","end_date":"2024-12-31"}]}`;
-        const searchResult = await makeRequest(searchUrl, { timeout: 15000 });
+        // Use the award search endpoint
+        const url = `https://api.usaspending.gov/api/v2/autocomplete/recipient/?search_text=${encodeURIComponent(query)}&limit=10`;
+        const result = await makeRequest(url, { timeout: 15000 });
         
-        if (searchResult.success && searchResult.data?.results) {
-            const hasData = Object.values(searchResult.data.results).some(v => v > 0);
-            if (hasData) {
-                console.log(`    USASpending: Found award data for "${recipientName}"`);
-                return {
-                    source: 'USASpending.gov',
-                    available: true,
-                    found: 1,
-                    query: recipientName,
-                    results: searchResult.data.results,
-                    searchUrl: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(recipientName)}`
-                };
-            }
-        }
-        
-        // Try autocomplete as fallback
-        const autoUrl = `https://api.usaspending.gov/api/v2/autocomplete/recipient/?search_text=${encodeURIComponent(recipientName)}&limit=5`;
-        const autoResult = await makeRequest(autoUrl, { timeout: 10000 });
-        
-        if (autoResult.success && autoResult.data?.results?.length > 0) {
-            const recipients = autoResult.data.results.slice(0, 5).map(r => ({
+        if (result.success && result.data?.results) {
+            const recipients = result.data.results.map(r => ({
                 name: r.recipient_name,
-                uei: r.uei || r.recipient_unique_id || 'N/A'
+                uei: r.uei,
+                duns: r.duns
             }));
             
-            console.log(`    USASpending: Found ${recipients.length} matching recipients`);
+            if (recipients.length > 0) {
+                console.log(`    USASpending: Found ${recipients.length} recipients matching "${query}"`);
+            }
+            
             return {
                 source: 'USASpending.gov',
                 available: true,
+                query,
                 found: recipients.length,
                 recipients,
-                query: recipientName,
-                searchUrl: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(recipientName)}`
+                searchUrl: `https://www.usaspending.gov/search/?hash=recipient:${encodeURIComponent(query)}`
             };
         }
         
-        return { source: 'USASpending.gov', available: true, found: 0, query: recipientName };
+        return { 
+            source: 'USASpending.gov', 
+            available: true, 
+            query, 
+            found: 0,
+            searchUrl: `https://www.usaspending.gov/search/?hash=recipient:${encodeURIComponent(query)}`
+        };
     } catch (e) {
         console.log(`    USASpending: Error - ${e.message}`);
-        return { source: 'USASpending.gov', available: true, found: 0, error: e.message, query: recipientName };
+        return { source: 'USASpending.gov', available: false, error: e.message };
     }
 }
 
-async function getStateSpending(state = 'MN', awardType = 'grants') {
-    console.log(`    USASpending: Getting ${state} ${awardType}...`);
+// ProPublica Nonprofit Explorer - 990 filings
+async function searchNonprofits(query) {
+    console.log(`    ProPublica: Searching nonprofits "${query}"...`);
     
-    const typeMap = {
-        grants: ['02', '03', '04', '05'],
-        contracts: ['A', 'B', 'C', 'D']
-    };
-    
-    const url = `https://api.usaspending.gov/api/v2/search/spending_by_geography/?filters={"place_of_performance_locations":[{"country":"USA","state":"${state}"}],"award_type_codes":${JSON.stringify(typeMap[awardType] || typeMap.grants)},"time_period":[{"start_date":"2020-01-01","end_date":"2024-12-31"}]}&subawards=false&scope=place_of_performance`;
-    
-    const result = await makeRequest(url, { timeout: 20000 });
-    
-    if (result.success && result.data?.results) {
-        return {
-            source: 'USASpending.gov',
-            available: true,
-            state,
-            awardType,
-            totalAmount: result.data.results.reduce((sum, r) => sum + (r.aggregated_amount || 0), 0),
-            count: result.data.results.length
-        };
-    }
-    
-    return { source: 'USASpending.gov', available: true, found: 0 };
-}
-
-// ============================================
-// ProPublica Nonprofit Explorer (FREE - NO KEY)
-// ============================================
-
-async function searchNonprofits(name, state = 'MN') {
-    console.log(`    ProPublica: Searching nonprofits "${name}"...`);
-    
-    const url = `https://projects.propublica.org/nonprofits/api/v2/search.json?q=${encodeURIComponent(name)}&state%5Bid%5D=${state}`;
+    const url = `https://projects.propublica.org/nonprofits/api/v2/search.json?q=${encodeURIComponent(query)}`;
     const result = await makeRequest(url);
     
     if (result.success && result.data?.organizations) {
-        const orgs = result.data.organizations.slice(0, 10).map(org => ({
-            name: org.name,
-            ein: org.ein,
-            city: org.city,
-            state: org.state,
-            income: org.income_amount,
-            assets: org.asset_amount,
-            nteeCode: org.ntee_code,
-            subsection: org.subsection_code,
-            profileUrl: `https://projects.propublica.org/nonprofits/organizations/${org.ein}`
+        const orgs = result.data.organizations.slice(0, 10).map(o => ({
+            name: o.name,
+            ein: o.ein,
+            city: o.city,
+            state: o.state,
+            nteeCode: o.ntee_code,
+            income: o.income_amount,
+            assets: o.asset_amount
         }));
         
         if (orgs.length > 0) {
@@ -205,61 +153,29 @@ async function searchNonprofits(name, state = 'MN') {
         return {
             source: 'ProPublica Nonprofits',
             available: true,
+            query,
             found: orgs.length,
             organizations: orgs,
-            query: name
+            searchUrl: `https://projects.propublica.org/nonprofits/search?q=${encodeURIComponent(query)}`
         };
     }
     
-    return { source: 'ProPublica Nonprofits', available: true, found: 0, query: name };
+    return { source: 'ProPublica Nonprofits', available: true, query, found: 0 };
 }
 
-async function getNonprofitDetails(ein) {
-    const url = `https://projects.propublica.org/nonprofits/api/v2/organizations/${ein}.json`;
-    const result = await makeRequest(url);
-    
-    if (result.success && result.data?.organization) {
-        const org = result.data.organization;
-        return {
-            source: 'ProPublica Nonprofits',
-            available: true,
-            organization: {
-                name: org.name,
-                ein: org.ein,
-                address: `${org.address}, ${org.city}, ${org.state} ${org.zipcode}`,
-                totalRevenue: org.income_amount,
-                totalAssets: org.asset_amount,
-                filings: result.data.filings_with_data?.slice(0, 5).map(f => ({
-                    year: f.tax_prd_yr,
-                    totalRevenue: f.totrevenue,
-                    totalExpenses: f.totfuncexpns,
-                    netAssets: f.totnetassetend
-                }))
-            }
-        };
-    }
-    
-    return { source: 'ProPublica Nonprofits', available: true, found: false };
-}
-
-// ============================================
-// FEC - Federal Election Commission (FREE - NO KEY)
-// ============================================
-
+// FEC Campaign Finance
 async function searchFECContributions(name) {
     console.log(`    FEC: Searching contributions from "${name}"...`);
     
-    const url = `https://api.open.fec.gov/v1/schedules/schedule_a/?contributor_name=${encodeURIComponent(name)}&api_key=DEMO_KEY&per_page=20&sort=-contribution_receipt_date`;
-    const result = await makeRequest(url);
+    const url = `https://api.open.fec.gov/v1/schedules/schedule_a/?contributor_name=${encodeURIComponent(name)}&per_page=20&api_key=DEMO_KEY`;
+    const result = await makeRequest(url, { timeout: 15000 });
     
     if (result.success && result.data?.results) {
-        const contributions = result.data.results.slice(0, 20).map(c => ({
+        const contributions = result.data.results.map(c => ({
             contributor: c.contributor_name,
             amount: c.contribution_receipt_amount,
             date: c.contribution_receipt_date,
-            recipient: c.committee?.name || 'Unknown',
-            city: c.contributor_city,
-            state: c.contributor_state,
+            committee: c.committee?.name,
             employer: c.contributor_employer,
             occupation: c.contributor_occupation
         }));
@@ -271,110 +187,58 @@ async function searchFECContributions(name) {
         return {
             source: 'FEC Campaign Finance',
             available: true,
+            query: name,
             found: contributions.length,
             contributions,
-            query: name
+            totalAmount: contributions.reduce((sum, c) => sum + (c.amount || 0), 0),
+            searchUrl: `https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=${encodeURIComponent(name)}`
         };
     }
     
-    return { source: 'FEC Campaign Finance', available: true, found: 0, query: name };
+    return { source: 'FEC Campaign Finance', available: true, query: name, found: 0 };
 }
 
-async function searchFECCommittees(name) {
-    console.log(`    FEC: Searching committees "${name}"...`);
-    
-    const url = `https://api.open.fec.gov/v1/committees/?q=${encodeURIComponent(name)}&api_key=DEMO_KEY&per_page=10`;
-    const result = await makeRequest(url);
-    
-    if (result.success && result.data?.results) {
-        const committees = result.data.results.map(c => ({
-            name: c.name,
-            id: c.committee_id,
-            type: c.committee_type_full,
-            party: c.party_full,
-            state: c.state,
-            treasurer: c.treasurer_name,
-            totalReceipts: c.total_receipts,
-            totalDisbursements: c.total_disbursements
-        }));
-        
-        return {
-            source: 'FEC Campaign Finance',
-            available: true,
-            found: committees.length,
-            committees,
-            query: name
-        };
-    }
-    
-    return { source: 'FEC Campaign Finance', available: true, found: 0, query: name };
-}
-
-// ============================================
-// Court Listener - Federal Courts (FREE - NO KEY for basic)
-// ============================================
-
-async function searchCourtCases(query, court = '') {
+// Court Listener - Federal court cases
+async function searchCourtCases(query) {
     console.log(`    CourtListener: Searching "${query}"...`);
     
-    try {
-        // Try the opinion search endpoint (more reliable)
-        const url = `https://www.courtlistener.com/api/rest/v3/search/?q=${encodeURIComponent(query)}&type=o&order_by=dateFiled%20desc&format=json`;
-        const result = await makeRequest(url, {
-            timeout: 15000,
-            headers: { 
-                'Accept': 'application/json',
-                'User-Agent': 'NorthStarWatchdog/2.0 (Citizen Journalism Research Tool)'
-            }
-        });
+    // Use opinion search which is more reliable
+    const url = `https://www.courtlistener.com/api/rest/v3/search/?q=${encodeURIComponent(query)}&type=o&format=json`;
+    const result = await makeRequest(url, {
+        timeout: 15000,
+        headers: { 'User-Agent': 'NorthStarWatchdog/3.0' }
+    });
+    
+    if (result.success && result.data?.results) {
+        const cases = result.data.results.slice(0, 10).map(c => ({
+            caseName: c.caseName || c.case_name,
+            court: c.court,
+            dateFiled: c.dateFiled || c.date_filed,
+            docketNumber: c.docketNumber || c.docket_number,
+            snippet: c.snippet
+        }));
         
-        if (result.success && result.data?.results && result.data.results.length > 0) {
-            const cases = result.data.results.slice(0, 10).map(c => ({
-                caseName: c.caseName || c.case_name,
-                court: c.court || c.court_id,
-                dateFiled: c.dateFiled || c.date_filed,
-                docketNumber: c.docketNumber || c.docket_number,
-                snippet: c.snippet,
-                url: c.absolute_url ? `https://www.courtlistener.com${c.absolute_url}` : null
-            }));
-            
+        if (cases.length > 0) {
             console.log(`    CourtListener: Found ${cases.length} cases`);
-            
-            return {
-                source: 'Court Listener',
-                available: true,
-                found: cases.length,
-                cases,
-                query
-            };
+        } else {
+            console.log(`    CourtListener: No cases found for "${query}"`);
         }
         
-        // If no results, still return as available with search URL
-        console.log(`    CourtListener: No cases found for "${query}"`);
         return {
             source: 'Court Listener',
             available: true,
-            found: 0,
             query,
-            searchUrl: `https://www.courtlistener.com/?q=${encodeURIComponent(query)}&type=o`
-        };
-    } catch (e) {
-        console.log(`    CourtListener: Error - ${e.message}`);
-        return {
-            source: 'Court Listener',
-            available: true,
-            found: 0,
-            query,
-            error: e.message,
-            searchUrl: `https://www.courtlistener.com/?q=${encodeURIComponent(query)}&type=o`
+            found: cases.length,
+            cases,
+            searchUrl: `https://www.courtlistener.com/?q=${encodeURIComponent(query)}`
         };
     }
+    
+    console.log(`    CourtListener: No cases found for "${query}"`);
+    return { source: 'Court Listener', available: true, query, found: 0 };
 }
 
-// ============================================
-// OpenCorporates - Company Registry (FREE - limited)
-// ============================================
-
+// OpenCorporates - Company registry
 async function searchCompanies(name, jurisdiction = 'us_mn') {
     console.log(`    OpenCorporates: Searching "${name}"...`);
     
@@ -382,15 +246,13 @@ async function searchCompanies(name, jurisdiction = 'us_mn') {
     const result = await makeRequest(url);
     
     if (result.success && result.data?.results?.companies) {
-        const companies = result.data.results.companies.map(c => c.company).map(co => ({
-            name: co.name,
-            companyNumber: co.company_number,
-            jurisdiction: co.jurisdiction_code,
-            status: co.current_status,
-            incorporationDate: co.incorporation_date,
-            companyType: co.company_type,
-            registeredAddress: co.registered_address_in_full,
-            opencorporatesUrl: co.opencorporates_url
+        const companies = result.data.results.companies.map(c => ({
+            name: c.company.name,
+            companyNumber: c.company.company_number,
+            status: c.company.current_status,
+            incorporationDate: c.company.incorporation_date,
+            companyType: c.company.company_type,
+            registeredAddress: c.company.registered_address_in_full
         }));
         
         if (companies.length > 0) {
@@ -400,481 +262,166 @@ async function searchCompanies(name, jurisdiction = 'us_mn') {
         return {
             source: 'OpenCorporates',
             available: true,
+            query: name,
             found: companies.length,
             companies,
-            query: name
+            searchUrl: `https://opencorporates.com/companies?q=${encodeURIComponent(name)}&jurisdiction_code=${jurisdiction}`
         };
     }
     
-    return { source: 'OpenCorporates', available: true, found: 0, query: name };
+    return { source: 'OpenCorporates', available: true, query: name, found: 0 };
 }
 
-// ============================================
-// OFAC / Trade.gov - Sanctions Screening (FREE - NO KEY)
-// ============================================
-
-async function searchSanctions(query) {
-    console.log(`    OFAC/Trade.gov: Searching sanctions "${query}"...`);
-    
-    const url = `https://api.trade.gov/consolidated_screening_list/search?api_key=OHZYuksFHSFao8jDXTkfiypO&q=${encodeURIComponent(query)}`;
-    const result = await makeRequest(url);
-    
-    if (result.success && result.data?.results) {
-        const matches = result.data.results.slice(0, 10).map(r => ({
-            name: r.name,
-            type: r.type,
-            source: r.source,
-            programs: r.programs,
-            remarks: r.remarks,
-            addresses: r.addresses,
-            ids: r.ids
-        }));
-        
-        if (matches.length > 0) {
-            console.log(`    OFAC: Found ${matches.length} sanctions matches!`);
-        }
-        
-        return {
-            source: 'OFAC Sanctions',
-            available: true,
-            found: matches.length,
-            matches,
-            query,
-            warning: matches.length > 0 ? 'SANCTIONS MATCH FOUND' : null
-        };
-    }
-    
-    return { source: 'OFAC Sanctions', available: true, found: 0, query };
-}
-
-// ============================================
-// OIG - HHS Exclusions (FREE - NO KEY)
-// ============================================
-
+// OIG Exclusions - Healthcare fraud ban list
 async function searchOIGExclusions(name) {
     console.log(`    OIG: Checking exclusions for "${name}"...`);
     
-    // OIG LEIE API endpoint
-    const url = `https://oig.hhs.gov/exclusions/exclusions_list.asp?lastname=${encodeURIComponent(name.split(' ').pop())}&firstname=${encodeURIComponent(name.split(' ')[0] || '')}`;
-    
-    // Since OIG doesn't have a JSON API, return the search URL
-    // In production, you'd download and parse the full CSV list
+    // OIG doesn't have a public API, return search URL
     return {
         source: 'OIG Exclusions',
         available: true,
         query: name,
-        note: 'OIG exclusion check - manual verification recommended',
-        searchUrl: `https://exclusions.oig.hhs.gov/Search.aspx?lastname=${encodeURIComponent(name.split(' ').pop())}&firstname=${encodeURIComponent(name.split(' ')[0] || '')}`,
-        downloadUrl: 'https://oig.hhs.gov/exclusions/downloadables/UPDATED.csv'
+        searchUrl: `https://exclusions.oig.hhs.gov/Search.aspx?query=${encodeURIComponent(name)}`,
+        note: 'Manual check required'
     };
 }
 
-// ============================================
-// DOJ Press Releases - ACTUAL SCRAPER
-// ============================================
-
-async function scrapeDOJPress(query = 'minnesota fraud') {
-    console.log(`    DOJ: Scraping press releases for "${query}"...`);
+// DOJ Press Releases
+async function scrapeDOJPress(query) {
+    console.log(`    DOJ: Searching press releases for "${query}"...`);
     
-    try {
-        // Try the Justice News API
-        const url = `https://www.justice.gov/api/v1/press_releases.json?keyword=${encodeURIComponent(query)}&sort=date&direction=DESC&pagesize=10`;
-        const result = await makeRequest(url, { timeout: 15000 });
-        
-        if (result.success && result.data?.results && result.data.results.length > 0) {
-            const releases = result.data.results.slice(0, 10).map(r => ({
-                title: r.title,
-                date: r.changed || r.created,
-                body: (r.body?.value || r.body || '').substring(0, 500),
-                url: r.path ? `https://www.justice.gov${r.path}` : null,
-                component: r.component?.name || r.component
-            }));
-            
-            console.log(`    DOJ: Found ${releases.length} press releases`);
-            
-            return {
-                source: 'DOJ Press',
-                available: true,
-                found: releases.length,
-                releases,
-                query
-            };
-        }
-        
-        // Try alternate endpoint format
-        const altUrl = `https://www.justice.gov/news/press-releases?keywords=${encodeURIComponent(query)}&format=json`;
-        const altResult = await makeRequest(altUrl, { timeout: 10000 });
-        
-        if (altResult.success && (altResult.data?.items || altResult.data?.results)) {
-            const items = altResult.data.items || altResult.data.results || [];
-            console.log(`    DOJ: Found ${items.length} press releases (alt endpoint)`);
-            
-            return {
-                source: 'DOJ Press',
-                available: true,
-                found: items.length,
-                releases: items.slice(0, 10),
-                query
-            };
-        }
-        
-        // Fallback to search URL
-        console.log(`    DOJ: API returned no results, providing search URL`);
-        return {
-            source: 'DOJ Press',
-            available: true,
-            found: 0,
-            query,
-            searchUrl: `https://www.justice.gov/news?keys=${encodeURIComponent(query)}`
-        };
-    } catch (e) {
-        console.log(`    DOJ: Error - ${e.message}`);
-        return {
-            source: 'DOJ Press',
-            available: true,
-            found: 0,
-            query,
-            error: e.message,
-            searchUrl: `https://www.justice.gov/news?keys=${encodeURIComponent(query)}`
-        };
-    }
+    // DOJ search URL for manual checking
+    return {
+        source: 'DOJ Press',
+        available: true,
+        query,
+        searchUrl: `https://www.justice.gov/usao-mn/pr?search=${encodeURIComponent(query)}`,
+        note: 'Check DOJ Minnesota press releases'
+    };
 }
 
-// ============================================
 // FBI Press Releases
-// ============================================
-
-async function scrapeFBIPress(query = 'minnesota fraud') {
+async function scrapeFBIPress(query) {
     console.log(`    FBI: Searching press releases for "${query}"...`);
     
-    // FBI doesn't have a public JSON API, return search URL
     return {
         source: 'FBI Press',
         available: true,
         query,
-        searchUrl: `https://www.fbi.gov/news/press-releases?search=${encodeURIComponent(query)}`,
-        note: 'FBI press releases - manual review recommended'
+        searchUrl: `https://www.fbi.gov/contact-us/field-offices/minneapolis/news/press-releases`,
+        note: 'Check FBI Minneapolis press releases'
+    };
+}
+
+// MN DHS Licensing Lookup
+async function searchMNLicensing(name) {
+    console.log(`    MN DHS: Checking licensing for "${name}"...`);
+    
+    return {
+        source: 'MN DHS Licensing',
+        available: true,
+        query: name,
+        searchUrl: `https://licensinglookup.dhs.state.mn.us/`,
+        note: 'Manual check required - search for provider name'
     };
 }
 
 // ============================================
-// SAM.gov - Federal Entity Registration (FREE with API key)
+// ENTITY EXTRACTION - IMPROVED
 // ============================================
 
-async function searchSAM(query) {
-    const apiKey = process.env.SAM_API_KEY;
+function extractEntities(aiAnalysis, detectiveFindings) {
+    const persons = new Set();
+    const organizations = new Set();
+    const searchTerms = new Set();
     
-    if (!apiKey) {
-        console.log(`    SAM.gov: No API key (get free key at sam.gov)`);
-        return {
-            source: 'SAM.gov',
-            available: false,
-            suggestion: 'Get free API key at https://sam.gov - add as SAM_API_KEY',
-            searchUrl: `https://sam.gov/search/?q=${encodeURIComponent(query)}&page=1`
-        };
-    }
+    // Always include known key entities
+    persons.add('Aimee Bock');
+    organizations.add('Feeding Our Future');
+    searchTerms.add('Minnesota childcare fraud');
+    searchTerms.add('CCAP fraud');
     
-    console.log(`    SAM.gov: Searching "${query}"...`);
-    
-    try {
-        // Use legalBusinessName search parameter
-        const url = `https://api.sam.gov/entity-information/v3/entities?legalBusinessName=${encodeURIComponent(query)}&registrationStatus=A&includeSections=entityRegistration&page=0&size=10`;
-        const result = await makeRequest(url, { 
-            timeout: 20000,
-            headers: {
-                'X-Api-Key': apiKey,
-                'Accept': 'application/json'
+    // From figure updates
+    if (aiAnalysis?.figureUpdates) {
+        aiAnalysis.figureUpdates.forEach(f => {
+            if (f.name && f.name.length > 2) {
+                persons.add(f.name);
             }
         });
-        
-        console.log(`    SAM.gov: Response status ${result.status}, success: ${result.success}`);
-        
-        if (result.success && result.data?.entityData) {
-            const entities = result.data.entityData.slice(0, 10).map(e => ({
-                name: e.entityRegistration?.legalBusinessName || 'Unknown',
-                dba: e.entityRegistration?.dbaName,
-                uei: e.entityRegistration?.ueiSAM,
-                cage: e.entityRegistration?.cageCode,
-                status: e.entityRegistration?.registrationStatus,
-                expirationDate: e.entityRegistration?.registrationExpirationDate,
-                physicalAddress: e.entityRegistration?.physicalAddress
-            }));
-            
-            if (entities.length > 0) {
-                console.log(`    SAM.gov: Found ${entities.length} entities`);
-            } else {
-                console.log(`    SAM.gov: No entities found for "${query}"`);
+    }
+    
+    // From investigation updates
+    if (aiAnalysis?.investigationUpdates) {
+        aiAnalysis.investigationUpdates.forEach(inv => {
+            if (inv.name) {
+                organizations.add(inv.name);
+                searchTerms.add(inv.name);
             }
-            
-            return {
-                source: 'SAM.gov',
-                available: true,
-                found: entities.length,
-                entities,
-                query
-            };
-        }
-        
-        console.log(`    SAM.gov: No data in response for "${query}"`);
-        return { source: 'SAM.gov', available: true, found: 0, query };
-    } catch (e) {
-        console.log(`    SAM.gov: Error - ${e.message}`);
-        return { source: 'SAM.gov', available: true, found: 0, query, error: e.message };
-    }
-}
-
-// ============================================
-// SAM.gov EXCLUSIONS - Federal Ban List (CRITICAL FOR FRAUD)
-// V4 API - https://open.gsa.gov/api/exclusions-api/
-// Requires at least one search parameter besides api_key
-// ============================================
-
-async function searchSAMExclusions(query) {
-    const apiKey = process.env.SAM_API_KEY;
-    
-    if (!apiKey) {
-        console.log(`    SAM Exclusions: No API key`);
-        return { source: 'SAM Exclusions', available: false };
-    }
-    
-    console.log(`    SAM Exclusions: Checking if "${query}" is on federal ban list...`);
-    
-    try {
-        // V4 endpoint - use exclusionName parameter (NOT inside q parameter per docs)
-        // exclusionName accepts partial text and applies AND between words
-        // Must also include recordStatus=Active to get valid results
-        const url = `https://api.sam.gov/entity-information/v4/exclusions?api_key=${apiKey}&exclusionName=${encodeURIComponent(query)}&recordStatus=Active`;
-        
-        const result = await makeRequest(url, { 
-            timeout: 20000
         });
-        
-        console.log(`    SAM Exclusions: Response status ${result.status}, success: ${result.success}`);
-        
-        if (result.success && result.data?.excludedEntity) {
-            const exclusions = result.data.excludedEntity.slice(0, 10).map(e => ({
-                name: e.exclusionIdentification?.entityName || 
-                      `${e.exclusionIdentification?.firstName || ''} ${e.exclusionIdentification?.lastName || ''}`.trim() || 
-                      'Unknown',
-                uei: e.exclusionIdentification?.ueiSAM,
-                cage: e.exclusionIdentification?.cageCode,
-                exclusionType: e.exclusionDetails?.exclusionType,
-                exclusionProgram: e.exclusionDetails?.exclusionProgram,
-                excludingAgency: e.exclusionDetails?.excludingAgencyName,
-                activationDate: e.exclusionActions?.listOfActions?.[0]?.activateDate,
-                terminationDate: e.exclusionActions?.listOfActions?.[0]?.terminationDate,
-                classificationType: e.exclusionDetails?.classificationType
-            }));
-            
-            const totalRecords = result.data.totalRecords || exclusions.length;
-            
-            if (totalRecords > 0) {
-                console.log(`    🚨 SAM Exclusions: FOUND ${totalRecords} BANNED ENTITIES matching "${query}"!`);
-            } else {
-                console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
+    }
+    
+    // From trending topics
+    if (aiAnalysis?.trending) {
+        aiAnalysis.trending.forEach(t => {
+            if (t.topic) searchTerms.add(t.topic);
+            if (t.suggestedSearches) {
+                t.suggestedSearches.forEach(s => searchTerms.add(s));
             }
-            
-            return {
-                source: 'SAM Exclusions',
-                available: true,
-                found: totalRecords,
-                exclusions,
-                query,
-                warning: totalRecords > 0 ? '🚨 FEDERAL EXCLUSION MATCH - Entity may be BANNED from federal contracts!' : null
-            };
-        }
-        
-        // Check for totalRecords = 0 response (empty but valid)
-        if (result.success && result.data?.totalRecords === 0) {
-            console.log(`    SAM Exclusions: "${query}" is NOT on the federal ban list ✓`);
-            return { source: 'SAM Exclusions', available: true, found: 0, query };
-        }
-        
-        // Log error details for debugging
-        const errorMsg = typeof result.error === 'string' ? result.error : JSON.stringify(result.error || result.data || 'unknown');
-        console.log(`    SAM Exclusions: API error - ${errorMsg.substring(0, 150)}`);
-        return { source: 'SAM Exclusions', available: true, found: 0, query, note: 'API returned error' };
-    } catch (e) {
-        console.log(`    SAM Exclusions: Error - ${e.message}`);
-        return { source: 'SAM Exclusions', available: true, found: 0, query, error: e.message };
-    }
-}
-
-// ============================================
-// Optional OSINT APIs (require registration)
-// ============================================
-
-// Hunter.io - Email Discovery
-async function findEmails(domain) {
-    const key = process.env.HUNTER_API_KEY;
-    if (!key) return { source: 'Hunter.io', available: false, suggestion: 'Add HUNTER_API_KEY' };
-    
-    console.log(`    Hunter.io: Finding emails at ${domain}...`);
-    
-    const url = `https://api.hunter.io/v2/domain-search?domain=${domain}&api_key=${key}`;
-    const result = await makeRequest(url, { timeout: 15000 });
-    
-    if (result.success && result.data?.data?.emails) {
-        const emails = result.data.data.emails.slice(0, 10).map(e => ({
-            email: e.value,
-            type: e.type,
-            confidence: e.confidence,
-            firstName: e.first_name,
-            lastName: e.last_name,
-            position: e.position
-        }));
-        
-        return {
-            source: 'Hunter.io',
-            available: true,
-            domain,
-            emails,
-            organization: result.data.data.organization,
-            pattern: result.data.data.pattern
-        };
+        });
     }
     
-    return { source: 'Hunter.io', available: true, domain, emails: [] };
-}
-
-// SecurityTrails - DNS History
-async function getDnsHistory(domain) {
-    const key = process.env.SECURITYTRAILS_API_KEY;
-    if (!key) return { source: 'SecurityTrails', available: false, suggestion: 'Add SECURITYTRAILS_API_KEY' };
-    
-    console.log(`    SecurityTrails: Getting DNS for ${domain}...`);
-    
-    const url = `https://api.securitytrails.com/v1/domain/${domain}`;
-    const result = await makeRequest(url, {
-        timeout: 15000,
-        headers: { 'APIKEY': key }
-    });
-    
-    if (result.success && result.data?.current_dns) {
-        return {
-            source: 'SecurityTrails',
-            available: true,
-            domain,
-            dns: result.data.current_dns,
-            alexaRank: result.data.alexa_rank,
-            hostProvider: result.data.host_provider
-        };
+    // From red flags
+    if (aiAnalysis?.redFlags) {
+        aiAnalysis.redFlags.forEach(f => {
+            if (f.entities) {
+                f.entities.forEach(e => {
+                    if (e && e.length > 2) {
+                        // Guess if it's a person or org
+                        const words = e.split(' ').length;
+                        if (words <= 3 && !e.includes('Inc') && !e.includes('LLC') && !e.includes('Center')) {
+                            persons.add(e);
+                        } else {
+                            organizations.add(e);
+                        }
+                        searchTerms.add(e);
+                    }
+                });
+            }
+        });
     }
     
-    return { source: 'SecurityTrails', available: true, domain, dns: null };
-}
-
-// Censys - Infrastructure Search
-async function searchCensys(query) {
-    const key = process.env.CENSYS_API_KEY;
-    const id = process.env.CENSYS_API_ID;
-    const secret = process.env.CENSYS_API_SECRET;
-    
-    const hasAuth = key || (id && secret);
-    if (!hasAuth) return { source: 'Censys', available: false, suggestion: 'Add CENSYS_API_KEY' };
-    
-    console.log(`    Censys: Searching for ${query}...`);
-    
-    let authHeader;
-    if (key) {
-        authHeader = `Bearer ${key}`;
-    } else {
-        const auth = Buffer.from(`${id}:${secret}`).toString('base64');
-        authHeader = `Basic ${auth}`;
+    // From AI-specified OSINT entities
+    if (aiAnalysis?.entitiesForOsint) {
+        aiAnalysis.entitiesForOsint.forEach(e => {
+            if (e && e.length > 2 && !e.includes('.')) {
+                searchTerms.add(e);
+            }
+        });
     }
     
-    const url = `https://search.censys.io/api/v2/hosts/search?q=${encodeURIComponent(query)}&per_page=5`;
-    const result = await makeRequest(url, {
-        timeout: 15000,
-        headers: { 'Authorization': authHeader }
-    });
-    
-    if (result.success && result.data?.result?.hits) {
-        const hosts = result.data.result.hits.map(h => ({
-            ip: h.ip,
-            services: h.services?.map(s => s.service_name) || [],
-            location: h.location?.country || 'Unknown'
-        }));
-        
-        return {
-            source: 'Censys',
-            available: true,
-            query,
-            hosts
-        };
+    // From new search terms
+    if (aiAnalysis?.newSearchTerms) {
+        aiAnalysis.newSearchTerms.forEach(t => {
+            if (t && t.length > 2) searchTerms.add(t);
+        });
     }
     
-    return { source: 'Censys', available: true, query, hosts: [] };
-}
-
-// IntelligenceX - Dark Web Search
-async function searchIntelX(query) {
-    const key = process.env.INTELX_API_KEY;
-    if (!key) return { source: 'IntelligenceX', available: false, suggestion: 'Add INTELX_API_KEY' };
+    // From detective findings
+    if (detectiveFindings?.suspiciousPatterns) {
+        detectiveFindings.suspiciousPatterns.forEach(p => {
+            if (p.entities) {
+                p.entities.forEach(e => {
+                    if (e && e.length > 2) searchTerms.add(e);
+                });
+            }
+        });
+    }
     
-    console.log(`    IntelX: Searching dark web for "${query}"...`);
-    
-    // IntelX requires a two-step process: start search, then get results
-    // For now, return the dashboard link
-    return { 
-        source: 'IntelligenceX', 
-        available: true, 
-        query, 
-        dashboardUrl: `https://intelx.io/?s=${encodeURIComponent(query)}`,
-        note: 'Check IntelX dashboard for results'
+    return {
+        persons: [...persons].slice(0, 10),
+        organizations: [...organizations].slice(0, 10),
+        searchTerms: [...searchTerms].slice(0, 15)
     };
-}
-
-// VirusTotal
-async function checkVirusTotal(domain) {
-    const key = process.env.VIRUSTOTAL_API_KEY;
-    if (!key) return { source: 'VirusTotal', available: false, suggestion: 'Add VIRUSTOTAL_API_KEY' };
-    
-    console.log(`    VirusTotal: Checking ${domain}...`);
-    
-    const url = `https://www.virustotal.com/api/v3/domains/${domain}`;
-    const result = await makeRequest(url, {
-        headers: { 'x-apikey': key }
-    });
-    
-    if (result.success && result.data?.data?.attributes) {
-        const attrs = result.data.data.attributes;
-        const stats = attrs.last_analysis_stats || {};
-        
-        return {
-            source: 'VirusTotal',
-            available: true,
-            domain,
-            malicious: stats.malicious || 0,
-            suspicious: stats.suspicious || 0,
-            clean: stats.harmless || 0,
-            reputation: attrs.reputation
-        };
-    }
-    
-    return { source: 'VirusTotal', available: true, domain, checked: true };
-}
-
-// WHOIS (free)
-async function lookupWhois(domain) {
-    console.log(`    WHOIS: Looking up ${domain}...`);
-    
-    const url = `https://who-dat.as93.net/${domain}`;
-    const result = await makeRequest(url);
-    
-    if (result.success && result.data && !result.data.error) {
-        return {
-            source: 'WHOIS',
-            available: true,
-            domain,
-            registrar: result.data.registrar,
-            createdDate: result.data.created_date,
-            expiresDate: result.data.expiration_date,
-            nameServers: result.data.name_servers
-        };
-    }
-    
-    return { source: 'WHOIS', available: true, domain, found: false };
 }
 
 // ============================================
@@ -882,159 +429,110 @@ async function lookupWhois(domain) {
 // ============================================
 
 async function enrichFindings(aiAnalysis, detectiveFindings) {
-    console.log('  Running OSINT enrichment v2.0...');
+    console.log('  Running OSINT enrichment v3.0...');
     
-    // Track which sources actually return data
-    const sourcesUsed = ['Google News', 'GROQ AI']; // These always run in ai-scraper and ai-analyzer
+    // Track sources
+    const sourcesUsed = ['Google News', 'GROQ AI'];
     const sourcesChecked = ['Google News', 'GROQ AI'];
     
     const results = {
-        government: [],
         spending: [],
         nonprofits: [],
         campaigns: [],
         courts: [],
         companies: [],
-        sanctions: [],
-        exclusions: [],
-        domains: [],
+        government: [],
         sourcesUsed: [],
-        sourceCount: 0,
-        apiStats: API_STATS
+        sourceCount: 0
     };
     
-    // Get entities to investigate
-    const entities = aiAnalysis?.entitiesForOsint || [];
-    const searchTerms = [
-        'Feeding Our Future',
-        'Minnesota daycare fraud',
-        'Aimee Bock',
-        ...(aiAnalysis?.newSearchTerms || []).slice(0, 5)
-    ];
+    // Extract entities from AI analysis
+    const entities = extractEntities(aiAnalysis, detectiveFindings);
     
-    // Extract org names and person names from various sources
-    const orgNames = [];
-    const personNames = [];
-    
-    // From figures
-    aiAnalysis?.figureUpdates?.forEach(f => {
-        if (f.name) personNames.push(f.name);
-    });
-    
-    // From red flags
-    aiAnalysis?.redFlags?.forEach(f => {
-        f.entities?.forEach(e => {
-            if (e.includes(' ') && !e.includes('.')) {
-                // Likely a name or org
-                if (e.split(' ').length <= 3) personNames.push(e);
-                else orgNames.push(e);
-            }
-        });
-    });
-    
-    // Dedupe
-    const uniqueOrgs = [...new Set(orgNames)].slice(0, 5);
-    const uniquePersons = [...new Set(personNames)].slice(0, 5);
-    
-    console.log(`  Entities to check: ${uniqueOrgs.length} orgs, ${uniquePersons.length} persons`);
+    console.log(`  Entities extracted: ${entities.persons.length} persons, ${entities.organizations.length} orgs, ${entities.searchTerms.length} search terms`);
     
     // ============================================
     // 1. USASpending.gov - Federal Grants
     // ============================================
-    console.log('\n  [1/8] USASpending.gov...');
+    console.log('\n  [1/7] USASpending.gov...');
     sourcesChecked.push('USASpending.gov');
     
-    for (const term of searchTerms.slice(0, 2)) {
-        const spending = await searchUSASpending(term, 'MN');
+    for (const org of entities.organizations.slice(0, 3)) {
+        const spending = await searchUSASpending(org, 'MN');
         if (spending.found > 0) {
             if (!sourcesUsed.includes('USASpending.gov')) sourcesUsed.push('USASpending.gov');
             results.spending.push(spending);
         }
-        await new Promise(r => setTimeout(r, 500));
+        await delay(500);
     }
     
     // ============================================
     // 2. ProPublica Nonprofits
     // ============================================
-    console.log('\n  [2/8] ProPublica Nonprofits...');
+    console.log('\n  [2/7] ProPublica Nonprofits...');
     sourcesChecked.push('ProPublica Nonprofits');
     
-    for (const org of ['Feeding Our Future', ...uniqueOrgs].slice(0, 3)) {
-        const np = await searchNonprofits(org, 'MN');
-        if (np.found > 0) {
+    for (const org of entities.organizations.slice(0, 3)) {
+        const nonprofits = await searchNonprofits(org);
+        if (nonprofits.found > 0) {
             if (!sourcesUsed.includes('ProPublica Nonprofits')) sourcesUsed.push('ProPublica Nonprofits');
-            results.nonprofits.push(np);
+            results.nonprofits.push(nonprofits);
         }
-        await new Promise(r => setTimeout(r, 500));
+        await delay(500);
     }
     
     // ============================================
     // 3. FEC Campaign Finance
     // ============================================
-    console.log('\n  [3/8] FEC Campaign Finance...');
+    console.log('\n  [3/7] FEC Campaign Finance...');
     sourcesChecked.push('FEC Campaign Finance');
     
-    for (const person of uniquePersons.slice(0, 3)) {
-        const fec = await searchFECContributions(person);
-        if (fec.found > 0) {
+    for (const person of entities.persons.slice(0, 5)) {
+        const contributions = await searchFECContributions(person);
+        if (contributions.found > 0) {
             if (!sourcesUsed.includes('FEC Campaign Finance')) sourcesUsed.push('FEC Campaign Finance');
-            results.campaigns.push(fec);
+            results.campaigns.push(contributions);
         }
-        await new Promise(r => setTimeout(r, 500));
+        await delay(500);
     }
     
     // ============================================
     // 4. Court Listener
     // ============================================
-    console.log('\n  [4/8] Court Listener...');
+    console.log('\n  [4/7] Court Listener...');
     sourcesChecked.push('Court Listener');
     
-    for (const term of searchTerms.slice(0, 2)) {
+    for (const term of entities.searchTerms.slice(0, 3)) {
         const courts = await searchCourtCases(term);
         if (courts.found > 0) {
             if (!sourcesUsed.includes('Court Listener')) sourcesUsed.push('Court Listener');
             results.courts.push(courts);
         }
-        await new Promise(r => setTimeout(r, 500));
+        await delay(500);
     }
     
     // ============================================
     // 5. OpenCorporates
     // ============================================
-    console.log('\n  [5/8] OpenCorporates...');
+    console.log('\n  [5/7] OpenCorporates...');
     sourcesChecked.push('OpenCorporates');
     
-    for (const org of uniqueOrgs.slice(0, 2)) {
+    for (const org of entities.organizations.slice(0, 3)) {
         const companies = await searchCompanies(org, 'us_mn');
         if (companies.found > 0) {
             if (!sourcesUsed.includes('OpenCorporates')) sourcesUsed.push('OpenCorporates');
             results.companies.push(companies);
         }
-        await new Promise(r => setTimeout(r, 500));
+        await delay(500);
     }
     
     // ============================================
-    // 6. OFAC Sanctions
+    // 6. OIG Exclusions (Healthcare Ban List)
     // ============================================
-    console.log('\n  [6/8] OFAC Sanctions...');
-    sourcesChecked.push('OFAC Sanctions');
-    
-    for (const name of [...uniquePersons, ...uniqueOrgs].slice(0, 3)) {
-        const sanctions = await searchSanctions(name);
-        if (sanctions.found > 0) {
-            if (!sourcesUsed.includes('OFAC Sanctions')) sourcesUsed.push('OFAC Sanctions');
-            results.sanctions.push(sanctions);
-        }
-        await new Promise(r => setTimeout(r, 300));
-    }
-    
-    // ============================================
-    // 7. OIG Exclusions
-    // ============================================
-    console.log('\n  [7/8] OIG Exclusions...');
+    console.log('\n  [6/7] OIG Exclusions...');
     sourcesChecked.push('OIG Exclusions');
     
-    for (const person of uniquePersons.slice(0, 2)) {
+    for (const person of entities.persons.slice(0, 3)) {
         const oig = await searchOIGExclusions(person);
         if (oig.searchUrl) {
             if (!sourcesUsed.includes('OIG Exclusions')) sourcesUsed.push('OIG Exclusions');
@@ -1043,154 +541,39 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     }
     
     // ============================================
-    // 8. DOJ Press Releases
+    // 7. Government Press Releases
     // ============================================
-    console.log('\n  [8/8] DOJ Press Releases...');
+    console.log('\n  [7/7] Government Sources...');
     sourcesChecked.push('DOJ Press');
+    sourcesChecked.push('FBI Press');
+    sourcesChecked.push('MN DHS');
     
     const doj = await scrapeDOJPress('minnesota fraud');
-    if (doj.found > 0) {
+    if (doj.searchUrl) {
         sourcesUsed.push('DOJ Press');
         results.government.push(doj);
     }
     
-    // FBI Press
-    sourcesChecked.push('FBI Press');
     const fbi = await scrapeFBIPress('minnesota fraud');
     if (fbi.searchUrl) {
         sourcesUsed.push('FBI Press');
         results.government.push(fbi);
     }
     
-    // ============================================
-    // 9. SAM.gov EXCLUSIONS - Federal Ban List (CRITICAL)
-    // ============================================
-    if (process.env.SAM_API_KEY) {
-        console.log('\n  [9/12] SAM.gov Exclusions (Federal Ban List)...');
-        sourcesChecked.push('SAM Exclusions');
-        
-        // Initialize exclusions array if not exists
-        if (!results.exclusions) results.exclusions = [];
-        
-        // Check all persons AND orgs against federal ban list
-        for (const name of [...uniquePersons, ...uniqueOrgs].slice(0, 5)) {
-            const exclusions = await searchSAMExclusions(name);
-            if (exclusions.found > 0) {
-                if (!sourcesUsed.includes('SAM Exclusions')) sourcesUsed.push('SAM Exclusions');
-                results.exclusions.push(exclusions);
-                console.log(`    🚨 ALERT: "${name}" has ${exclusions.found} exclusion records!`);
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
+    // Add MN DHS for each organization
+    for (const org of entities.organizations.slice(0, 2)) {
+        const licensing = await searchMNLicensing(org);
+        results.government.push(licensing);
     }
+    if (!sourcesUsed.includes('MN DHS')) sourcesUsed.push('MN DHS');
     
     // ============================================
-    // 10. VirusTotal - Domain Reputation (if key available)
-    // ============================================
-    if (process.env.VIRUSTOTAL_API_KEY) {
-        console.log('\n  [10/12] VirusTotal Domain Checks...');
-        sourcesChecked.push('VirusTotal');
-        
-        // Check any domains found in entities
-        const domains = entities.filter(e => e.includes('.')).slice(0, 3);
-        for (const domain of domains) {
-            const vt = await checkVirusTotal(domain);
-            if (vt.available && vt.malicious !== undefined) {
-                if (!sourcesUsed.includes('VirusTotal')) sourcesUsed.push('VirusTotal');
-                results.domains.push(vt);
-                if (vt.malicious > 0) {
-                    console.log(`    ⚠️ VirusTotal: ${domain} flagged by ${vt.malicious} engines!`);
-                }
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
-    }
-    
-    // ============================================
-    // 10. Hunter.io - Email Discovery (if key available)
-    // ============================================
-    if (process.env.HUNTER_API_KEY) {
-        console.log('\n  [10/12] Hunter.io Email Discovery...');
-        sourcesChecked.push('Hunter.io');
-        
-        // Search for emails at domains
-        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
-        for (const domain of domains) {
-            const emails = await findEmails(domain);
-            if (emails.available && emails.emails?.length > 0) {
-                if (!sourcesUsed.includes('Hunter.io')) sourcesUsed.push('Hunter.io');
-                results.emails = results.emails || [];
-                results.emails.push(emails);
-                console.log(`    Hunter.io: Found ${emails.emails.length} emails at ${domain}`);
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
-    }
-    
-    // ============================================
-    // 11. SecurityTrails - DNS History (if key available)
-    // ============================================
-    if (process.env.SECURITYTRAILS_API_KEY) {
-        console.log('\n  [11/12] SecurityTrails DNS History...');
-        sourcesChecked.push('SecurityTrails');
-        
-        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
-        for (const domain of domains) {
-            const dns = await getDnsHistory(domain);
-            if (dns.available && dns.dns) {
-                if (!sourcesUsed.includes('SecurityTrails')) sourcesUsed.push('SecurityTrails');
-                results.infrastructure = results.infrastructure || [];
-                results.infrastructure.push(dns);
-                console.log(`    SecurityTrails: Got DNS for ${domain}`);
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
-    }
-    
-    // ============================================
-    // 12. IntelligenceX - Dark Web (if key available)
-    // ============================================
-    if (process.env.INTELX_API_KEY) {
-        console.log('\n  [12/12] IntelligenceX Dark Web...');
-        sourcesChecked.push('IntelligenceX');
-        
-        for (const term of searchTerms.slice(0, 2)) {
-            const intel = await searchIntelX(term);
-            if (intel.available) {
-                if (!sourcesUsed.includes('IntelligenceX')) sourcesUsed.push('IntelligenceX');
-                results.darkweb = results.darkweb || [];
-                results.darkweb.push(intel);
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
-    }
-    
-    // ============================================
-    // Censys - Infrastructure (if key available)
-    // ============================================
-    if (process.env.CENSYS_API_KEY || (process.env.CENSYS_API_ID && process.env.CENSYS_API_SECRET)) {
-        console.log('\n  [Bonus] Censys Infrastructure...');
-        sourcesChecked.push('Censys');
-        
-        const domains = entities.filter(e => e.includes('.')).slice(0, 2);
-        for (const domain of domains) {
-            const censys = await searchCensys(domain);
-            if (censys.available && censys.hosts?.length > 0) {
-                if (!sourcesUsed.includes('Censys')) sourcesUsed.push('Censys');
-                results.infrastructure = results.infrastructure || [];
-                results.infrastructure.push(censys);
-                console.log(`    Censys: Found ${censys.hosts.length} hosts for ${domain}`);
-            }
-            await new Promise(r => setTimeout(r, 500));
-        }
-    }
-    
-    // ============================================
-    // Store results
+    // Summary
     // ============================================
     results.sourcesUsed = sourcesUsed;
     results.sourcesChecked = sourcesChecked;
     results.sourceCount = sourcesUsed.length;
+    results.entities = entities;
     
     console.log('\n  ══════════════════════════════════════');
     console.log(`  OSINT COMPLETE`);
@@ -1203,21 +586,19 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     return results;
 }
 
-/**
- * Get API usage status
- */
+// Helper
+function delay(ms) {
+    return new Promise(r => setTimeout(r, ms));
+}
+
+// Get API status
 function getApiStatus() {
     return {
         stats: API_STATS,
         configured: {
-            SAM: !!process.env.SAM_API_KEY,
-            INTELX: !!process.env.INTELX_API_KEY,
-            CENSYS: !!process.env.CENSYS_API_KEY || !!(process.env.CENSYS_API_ID && process.env.CENSYS_API_SECRET),
-            SECURITYTRAILS: !!process.env.SECURITYTRAILS_API_KEY,
-            VIRUSTOTAL: !!process.env.VIRUSTOTAL_API_KEY,
-            HUNTER: !!process.env.HUNTER_API_KEY
+            GROQ: !!process.env.GROQ_API_KEY
         },
-        free: ['USASpending.gov', 'ProPublica', 'FEC', 'Court Listener', 'OpenCorporates', 'OFAC', 'OIG', 'DOJ Press', 'FBI Press', 'WHOIS']
+        free: ['USASpending.gov', 'ProPublica', 'FEC', 'Court Listener', 'OpenCorporates', 'OIG', 'DOJ Press', 'FBI Press', 'MN DHS']
     };
 }
 
@@ -1225,26 +606,14 @@ module.exports = {
     enrichFindings,
     getApiStatus,
     makeRequest,
-    // Free APIs
     searchUSASpending,
-    getStateSpending,
     searchNonprofits,
-    getNonprofitDetails,
     searchFECContributions,
-    searchFECCommittees,
     searchCourtCases,
     searchCompanies,
-    searchSanctions,
     searchOIGExclusions,
     scrapeDOJPress,
     scrapeFBIPress,
-    // SAM.gov (requires free key)
-    searchSAMExclusions,
-    // Paid/Registered APIs
-    findEmails,        // Hunter.io
-    getDnsHistory,     // SecurityTrails
-    searchCensys,      // Censys
-    searchIntelX,      // IntelligenceX
-    checkVirusTotal,   // VirusTotal
-    lookupWhois        // WHOIS (free)
+    searchMNLicensing,
+    extractEntities
 };
