@@ -96,15 +96,69 @@ async function main() {
             
             // Create issue for manual review if high-priority pattern found
             for (const pattern of detectiveFindings.suspiciousPatterns) {
-                if (pattern.priority === 'high') {
+                if (pattern.priority === 'high' || pattern.priority === 'medium') {
+                    // Calculate confidence score based on evidence
+                    const confidenceScore = calculateConfidence(pattern);
+                    const confidenceEmoji = confidenceScore >= 80 ? '🔴' : confidenceScore >= 60 ? '🟡' : '🟢';
+                    
+                    // Build friendly message
+                    const friendlyBody = buildFriendlyIssue(pattern, confidenceScore, confidenceEmoji);
+                    
                     await files.createGitHubIssue({
-                        title: `Pattern Detected: ${pattern.type}`,
-                        body: `**AI Detective found a suspicious pattern:**\n\n${pattern.description}\n\n**Entities involved:** ${pattern.entities?.join(', ') || 'Unknown'}\n\n**Recommended action:** ${pattern.recommendation || 'Manual review needed'}`,
-                        labels: ['ai-discovery', 'needs-review']
+                        title: `🔍 ${pattern.type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
+                        body: friendlyBody,
+                        labels: ['ai-discovery', 'needs-review', confidenceScore >= 80 ? 'high-priority' : 'medium-priority']
                     });
                 }
             }
         }
+
+// Helper function to calculate confidence
+function calculateConfidence(pattern) {
+    let score = 50; // Base score
+    
+    if (pattern.entities?.length > 1) score += 10;
+    if (pattern.entities?.length > 3) score += 10;
+    if (pattern.sourceUrl) score += 15;
+    if (pattern.description?.length > 100) score += 10;
+    if (pattern.priority === 'high') score += 15;
+    
+    return Math.min(score, 99);
+}
+
+// Helper function to build friendly issue body
+function buildFriendlyIssue(pattern, confidence, emoji) {
+    const entities = pattern.entities?.join(', ') || 'Unknown';
+    const searches = pattern.entities?.map(e => 
+        `- [Search "${e}"](https://ghost081280.github.io/north-star-watchdog/?q=${encodeURIComponent(e)})`
+    ).join('\n') || '';
+    
+    return `Hey Andrew! 👋
+
+I noticed something interesting while scanning the news and databases:
+
+## ${emoji} ${pattern.type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+
+**What I found:** ${pattern.description}
+
+**Confidence Score:** ${confidence}% ${emoji}
+
+**Entities involved:**
+${pattern.entities?.map(e => `- ${e}`).join('\n') || '- Unknown'}
+
+## 🔗 Quick Links
+${searches}
+- [Search on site](https://ghost081280.github.io/north-star-watchdog/?q=${encodeURIComponent(entities.split(',')[0])})
+- [DOJ Minnesota](https://www.justice.gov/usao-mn)
+- [MN DHS Licensing](https://licensinglookup.dhs.state.mn.us/)
+
+## 💡 Recommended Action
+${pattern.recommendation || 'Take a look when you have time - might be worth digging into.'}
+
+---
+*Your AI Detective 🕵️*
+*Scanned at: ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })} CST*`;
+}
 
         // ========================================
         // PHASE 4: OSINT ENRICHMENT (if APIs available)
@@ -118,8 +172,18 @@ async function main() {
             if (status.percentUsed > 80) {
                 console.log(`WARNING: ${api} at ${status.percentUsed}% of limit`);
                 await files.createGitHubIssue({
-                    title: `API Limit Warning: ${api}`,
-                    body: `**${api}** is at **${status.percentUsed}%** of its monthly/daily limit.\n\nUsed: ${status.used}/${status.limit}\nResets: ${status.resetDate || 'Daily'}\n\nI'll use free alternatives until it resets.`,
+                    title: `⚠️ Heads up: ${api} API running low`,
+                    body: `Hey Andrew! 👋
+
+Just a heads up - I'm running low on my **${api}** API quota.
+
+**Current usage:** ${status.used}/${status.limit} (${status.percentUsed}%)
+**Resets:** ${status.resetDate || 'Daily'}
+
+Don't worry though - I'll automatically switch to free alternatives until it resets. You don't need to do anything, just wanted to keep you in the loop!
+
+---
+*Your AI Detective 🕵️*`,
                     labels: ['ai-alert', 'api-key']
                 });
             }
@@ -139,8 +203,20 @@ async function main() {
         // Report new high-risk programs discovered
         if (aiAnalysis?.newHighRiskPrograms?.length > 0) {
             await files.createGitHubIssue({
-                title: `New High-Risk Program Discovered: ${aiAnalysis.newHighRiskPrograms[0]}`,
-                body: `**AI discovered a new program that may be at risk for fraud:**\n\n${aiAnalysis.newHighRiskPrograms.join('\n- ')}\n\nThis has been added to the tracking list automatically.\n\nReply with "approved" to confirm, or close this issue if not relevant.`,
+                title: `🚨 New High-Risk Program: ${aiAnalysis.newHighRiskPrograms[0]}`,
+                body: `Hey Andrew! 👋
+
+I found a program that might be worth keeping an eye on:
+
+**Programs flagged:**
+${aiAnalysis.newHighRiskPrograms.map(p => `- ${p}`).join('\n')}
+
+I've added ${aiAnalysis.newHighRiskPrograms.length > 1 ? 'these' : 'this'} to my tracking list automatically. I'll watch for any news or patterns involving ${aiAnalysis.newHighRiskPrograms.length > 1 ? 'them' : 'it'}.
+
+**Your call:** Reply "approved" if this looks legit, or close this issue if it's not relevant.
+
+---
+*Your AI Detective 🕵️*`,
                 labels: ['ai-discovery', 'needs-approval']
             });
         }
@@ -149,8 +225,25 @@ async function main() {
         if (osintResults?.suggestedApis?.length > 0) {
             for (const api of osintResults.suggestedApis) {
                 await files.createGitHubIssue({
-                    title: `New API Suggested: ${api.name}`,
-                    body: `**I found a free service that would help investigations:**\n\n**Service:** ${api.name}\n**What it does:** ${api.description}\n**Free tier:** ${api.freeTier}\n**Signup:** ${api.signupUrl}\n\n**To add:**\n1. Sign up at the link above\n2. Add secret: \`${api.secretName}\`\n\nReply "approved" and I'll start using it.`,
+                    title: `💡 Found a useful tool: ${api.name}`,
+                    body: `Hey Andrew! 👋
+
+I came across a free service that could help with investigations:
+
+## ${api.name}
+
+**What it does:** ${api.description}
+**Free tier:** ${api.freeTier}
+**Signup:** ${api.signupUrl}
+
+**To add it:**
+1. Sign up at the link above (free, no credit card)
+2. Add the API key to GitHub Secrets: \`${api.secretName}\`
+
+Reply "approved" and I'll start using it on the next scan!
+
+---
+*Your AI Detective 🕵️*`,
                     labels: ['ai-request', 'api-key']
                 });
             }
@@ -164,8 +257,21 @@ async function main() {
         console.error('Fatal error:', error);
         
         await files.createGitHubIssue({
-            title: `AI Updater Error: ${error.message?.substring(0, 50)}`,
-            body: `**The AI updater encountered an error:**\n\n\`\`\`\n${error.stack || error.message}\n\`\`\`\n\nTime: ${new Date().toISOString()}`,
+            title: `🔧 Oops - Something broke`,
+            body: `Hey Andrew,
+
+I ran into an error during my scan. Here's what happened:
+
+\`\`\`
+${error.stack || error.message}
+\`\`\`
+
+**Time:** ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })} CST
+
+This might fix itself on the next run, but wanted to let you know!
+
+---
+*Your AI Detective 🕵️*`,
             labels: ['ai-alert']
         });
         
