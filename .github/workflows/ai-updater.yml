@@ -14,14 +14,14 @@
 # - GROQ_API_KEY (FREE: https://console.groq.com/keys)
 #
 # RECOMMENDED SECRET:
-# - SAM_API_KEY (FREE: https://sam.gov - Entity registration + Exclusions/Ban list)
+# - SAM_API_KEY (FREE: https://sam.gov - Federal exclusions/ban list)
 #
 # OPTIONAL SECRETS (all FREE, add when ready):
-# - INTELX_API_KEY (dark web: https://intelx.io/signup)
-# - CENSYS_API_ID + CENSYS_API_SECRET (infrastructure: https://search.censys.io/register)
-# - SECURITYTRAILS_API_KEY (DNS history: https://securitytrails.com/app/signup)
 # - VIRUSTOTAL_API_KEY (reputation: https://www.virustotal.com/gui/join-us)
 # - HUNTER_API_KEY (emails: https://hunter.io/users/sign_up)
+# - SECURITYTRAILS_API_KEY (DNS history: https://securitytrails.com/app/signup)
+# - CENSYS_API_KEY (infrastructure: https://search.censys.io/register)
+# - INTELX_API_KEY (dark web: https://intelx.io/signup)
 # - NUMVERIFY_API_KEY (phones: https://numverify.com/product)
 #
 # LABELS TO CREATE IN YOUR REPO:
@@ -73,16 +73,16 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          # SAM.gov API (Entity Registration + Federal Exclusions/Ban List)
+          # SAM.gov Federal Exclusions (Ban List)
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
           # Optional OSINT APIs
-          INTELX_API_KEY: ${{ secrets.INTELX_API_KEY }}
-          CENSYS_API_ID: ${{ secrets.CENSYS_API_ID }}
-          CENSYS_API_SECRET: ${{ secrets.CENSYS_API_SECRET }}
-          CENSYS_API_KEY: ${{ secrets.CENSYS_API_KEY }}
-          SECURITYTRAILS_API_KEY: ${{ secrets.SECURITYTRAILS_API_KEY }}
           VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
           HUNTER_API_KEY: ${{ secrets.HUNTER_API_KEY }}
+          SECURITYTRAILS_API_KEY: ${{ secrets.SECURITYTRAILS_API_KEY }}
+          CENSYS_API_KEY: ${{ secrets.CENSYS_API_KEY }}
+          CENSYS_API_ID: ${{ secrets.CENSYS_API_ID }}
+          CENSYS_API_SECRET: ${{ secrets.CENSYS_API_SECRET }}
+          INTELX_API_KEY: ${{ secrets.INTELX_API_KEY }}
           NUMVERIFY_API_KEY: ${{ secrets.NUMVERIFY_API_KEY }}
         run: node scripts/ai-core.js
       
