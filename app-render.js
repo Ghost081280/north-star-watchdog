@@ -324,29 +324,48 @@ function renderResults() {
     const totals = Object.fromEntries(
         Object.entries(currentResults).map(([k, v]) => [k, v.length])
     );
-    const total = Object.values(totals).reduce((a, b) => a + b, 0);
     
-    // Render summary bar - State, Federal, Nonprofits
+    // Sources = database links (state + exclusions are just links)
+    const sourceCount = totals.state + totals.exclusions;
+    
+    // Actual results from APIs
+    const flaggedCount = totals.local || 0;
+    const grantsCount = totals.grants || 0;
+    const contractsCount = totals.contracts || 0;
+    const nonprofitsCount = totals.nonprofits || 0;
+    const campaignsCount = totals.campaigns || 0;
+    const actualResults = flaggedCount + grantsCount + contractsCount + nonprofitsCount + campaignsCount;
+    
+    // Render summary bar - Show sources and actual results
     document.getElementById('results-summary').innerHTML = `
         <div class="summary-card">
-            <span class="count">${total}</span>
-            <span class="label">Total Results</span>
+            <span class="count">${sourceCount}</span>
+            <span class="label">Databases</span>
         </div>
-        <div class="summary-card">
-            <span class="count">${totals.state + totals.local}</span>
-            <span class="label">State</span>
+        <div class="summary-card ${flaggedCount > 0 ? 'has-results' : ''}">
+            <span class="count">${flaggedCount}</span>
+            <span class="label">Flagged</span>
         </div>
-        <div class="summary-card">
-            <span class="count">${totals.grants + totals.contracts + totals.exclusions}</span>
+        <div class="summary-card ${grantsCount + contractsCount > 0 ? 'has-results' : ''}">
+            <span class="count">${grantsCount + contractsCount}</span>
             <span class="label">Federal</span>
         </div>
-        <div class="summary-card">
-            <span class="count">${totals.nonprofits}</span>
+        <div class="summary-card ${nonprofitsCount > 0 ? 'has-results' : ''}">
+            <span class="count">${nonprofitsCount}</span>
             <span class="label">Nonprofits</span>
+        </div>
+        <div class="summary-card ${campaignsCount > 0 ? 'has-results' : ''}">
+            <span class="count">${campaignsCount}</span>
+            <span class="label">Campaigns</span>
         </div>
     `;
     
-    if (total === 0) { 
+    // Show total actual results found
+    const total = sourceCount + actualResults;
+    
+    if (actualResults === 0 && sourceCount > 0) { 
+        content.innerHTML = '<p class="no-results">No direct matches found in APIs. Search the databases below or click "Deep Research + AI" for more.</p>'; 
+    } else if (total === 0) {
         content.innerHTML = '<p class="no-results">No database results found. Click "Deep Research + AI" to search news and web sources.</p>'; 
     } else {
         let html = '';
