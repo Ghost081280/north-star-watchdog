@@ -268,6 +268,24 @@ Based on the news, provide a JSON response with these sections:
   "briefing": "Good evening! 🌙 Holy smokes - HHS just froze ALL child care payments to Minnesota. A judge also ordered $5.2M restitution in the Feeding Our Future case. The robots never sleep. 🤖"
 }
 
+CRITICAL BRIEFING INSTRUCTIONS:
+The current time in Central Time (CST) is: ${(() => { const now = new Date(); const cst = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' })); const hour = cst.getHours(); return `${hour > 12 ? hour - 12 : hour}:${String(cst.getMinutes()).padStart(2, '0')} ${hour >= 12 ? 'PM' : 'AM'} (Hour ${hour})`; })()}
+
+Based on the hour (${(() => { const now = new Date(); const cst = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' })); return cst.getHours(); })()}):
+- Hours 0-4 (midnight-4am): Start with "Good evening! 🌙" or "While you were sleeping..."
+- Hours 5-11 (5am-11am): Start with "Good morning! ☀️"
+- Hours 12-16 (noon-4pm): Start with "Good afternoon! 👋"  
+- Hours 17-23 (5pm-11pm): Start with "Good evening! 🌙"
+
+YOUR BRIEFING MUST:
+1. Start with the CORRECT greeting based on the hour above
+2. Include a sassy phrase like "Holy smokes -" or "You're NOT gonna believe this -"
+3. Summarize 1-2 key developments from the news
+4. End with "The robots never sleep. 🤖"
+
+EXAMPLE FOR LATE NIGHT (hour 0-4):
+"Good evening! 🌙 While you were sleeping - HHS froze ALL child care payments to Minnesota. The robots never sleep. 🤖"
+
 IMPORTANT RULES:
 - Only include REAL updates from the news articles
 - Set isNew=true only if this is genuinely NEW (not in our current lists)
@@ -276,12 +294,6 @@ IMPORTANT RULES:
 - trending should have 3-5 items, newest/hottest first
 - storyIdeas should have 2-4 actionable investigation angles
 - Update stats only if news CONFIRMS new numbers
-- briefing: CRITICAL - Follow this EXACT format:
-  * Start with time-appropriate greeting: "Good morning!" (before noon CST), "Good afternoon!" (noon-5pm), "Good evening!" (after 5pm) - current time is ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago', hour: 'numeric', hour12: true })} CST
-  * Add an emoji after greeting (☀️ for morning, 👋 for afternoon, 🌙 for evening)
-  * Then say something sassy like "Holy smokes -" or "You're NOT gonna believe this -" or "While you were sleeping -"
-  * Summarize 1-2 key developments
-  * End with "The robots never sleep. 🤖"
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - Return ONLY valid JSON, no markdown, no other text`;
