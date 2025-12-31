@@ -40,12 +40,13 @@ async function performSearch(query) {
         nonprofits: [], 
         campaigns: [], 
         local: [],
-        state: [],      // NEW: Minnesota state databases
-        exclusions: []  // NEW: Federal exclusion databases
+        news: [],       // NEW: News articles from news.json
+        state: [],      // Minnesota state databases
+        exclusions: []  // Federal exclusion databases
     };
     webResearchResults = [];
     
-    // Search local tracked data first
+    // Search local tracked data first (includes news now)
     searchLocalData(query);
     
     // Add Minnesota state database search links
@@ -75,7 +76,8 @@ function searchLocalData(query) {
     
     // Search investigations
     DATA.investigations?.cases?.forEach(c => {
-        if (c.name.toLowerCase().includes(q)) {
+        if (c.name.toLowerCase().includes(q) || 
+            (c.latestUpdate && c.latestUpdate.toLowerCase().includes(q))) {
             currentResults.local.push({ 
                 name: c.name, 
                 amount: c.amount, 
@@ -89,7 +91,9 @@ function searchLocalData(query) {
     
     // Search key figures
     DATA.figures?.people?.forEach(p => {
-        if (p.name.toLowerCase().includes(q)) {
+        if (p.name.toLowerCase().includes(q) ||
+            (p.role && p.role.toLowerCase().includes(q)) ||
+            (p.latestUpdate && p.latestUpdate.toLowerCase().includes(q))) {
             currentResults.local.push({ 
                 name: p.name, 
                 description: `${p.role} - ${p.latestUpdate}`, 
@@ -100,10 +104,69 @@ function searchLocalData(query) {
             });
         }
     });
+    
+    // NEW: Search news articles
+    DATA.news?.articles?.forEach(a => {
+        if ((a.title && a.title.toLowerCase().includes(q)) ||
+            (a.source && a.source.toLowerCase().includes(q))) {
+            currentResults.news.push({
+                name: a.title,
+                description: `From ${a.source} - ${a.date || 'Recent'}`,
+                source: 'News',
+                url: a.link || '#',
+                date: a.date
+            });
+        }
+    });
+    
+    // Also check breaking news
+    if (DATA.news?.breaking) {
+        const b = DATA.news.breaking;
+        if ((b.title && b.title.toLowerCase().includes(q)) ||
+            (b.importance && b.importance.toLowerCase().includes(q))) {
+            // Add to front of news results
+            currentResults.news.unshift({
+                name: '🔴 BREAKING: ' + b.title,
+                description: b.importance || `From ${b.source}`,
+                source: b.source || 'Breaking News',
+                url: b.link || '#',
+                isBreaking: true
+            });
+        }
+    }
+    
+    // Search trending topics
+    DATA.trending?.topics?.forEach(t => {
+        if ((t.name && t.name.toLowerCase().includes(q)) ||
+            (t.description && t.description.toLowerCase().includes(q))) {
+            currentResults.local.push({
+                name: t.name,
+                description: t.description,
+                source: 'Trending Topic',
+                url: `https://news.google.com/search?q=${encodeURIComponent(t.name + ' Minnesota')}`,
+                isNew: t.isNew
+            });
+        }
+    });
+    
+    // Search red flags
+    DATA.redFlags?.flags?.forEach(f => {
+        if ((f.description && f.description.toLowerCase().includes(q)) ||
+            (f.entities && f.entities.some(e => e.toLowerCase().includes(q)))) {
+            currentResults.local.push({
+                name: `🚩 ${f.type || 'Red Flag'}`,
+                description: f.description,
+                source: 'AI Detective',
+                url: f.sourceUrl || '#',
+                priority: f.priority,
+                flagged: true
+            });
+        }
+    });
 }
 
 // ============================================
-// MINNESOTA STATE DATABASES (NEW)
+// MINNESOTA STATE DATABASES
 // ============================================
 
 function searchStateDatabases(query) {
@@ -149,7 +212,7 @@ function searchStateDatabases(query) {
 }
 
 // ============================================
-// FEDERAL EXCLUSION DATABASES (NEW)
+// FEDERAL EXCLUSION DATABASES
 // ============================================
 
 function searchFederalExclusions(query) {
