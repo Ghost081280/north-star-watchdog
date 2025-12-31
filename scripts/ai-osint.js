@@ -517,6 +517,9 @@ async function lookupWhois(domain) {
 async function enrichFindings(aiAnalysis, detectiveFindings) {
     console.log('  Running OSINT enrichment...');
     
+    // Track which sources we actually query
+    const sourcesUsed = [];
+    
     const results = {
         government: [],
         domains: [],
@@ -524,7 +527,8 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
         emails: [],
         infrastructure: [],
         reputation: [],
-        suggestedApis: []
+        suggestedApis: [],
+        sourcesUsed: [] // Track actual sources queried
     };
     
     // Get entities to investigate
@@ -536,32 +540,42 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     // ============================================
     console.log('  Checking government databases...');
     
+    // Always add Google News since we always scan it
+    sourcesUsed.push('Google News');
+    
     for (const term of searchTerms.slice(0, 3)) {
         // SAM.gov - Federal registrations
         const sam = await searchSAM(term);
-        if (sam.available && sam.found > 0) {
-            results.government.push({
-                source: 'SAM.gov',
-                query: term,
-                found: sam.found,
-                entities: sam.entities
-            });
+        if (sam.available) {
+            if (!sourcesUsed.includes('SAM.gov')) sourcesUsed.push('SAM.gov');
+            if (sam.found > 0) {
+                results.government.push({
+                    source: 'SAM.gov',
+                    query: term,
+                    found: sam.found,
+                    entities: sam.entities
+                });
+            }
         }
         
         // OFAC - Sanctions check
         const ofac = await searchOFAC(term);
-        if (ofac.available && ofac.found > 0) {
-            results.government.push({
-                source: 'OFAC Sanctions',
-                query: term,
-                found: ofac.found,
-                matches: ofac.matches
-            });
+        if (ofac.available) {
+            if (!sourcesUsed.includes('OFAC Sanctions')) sourcesUsed.push('OFAC Sanctions');
+            if (ofac.found > 0) {
+                results.government.push({
+                    source: 'OFAC Sanctions',
+                    query: term,
+                    found: ofac.found,
+                    matches: ofac.matches
+                });
+            }
         }
         
         // OIG - Exclusions check
         const oig = await searchOIG(term);
         if (oig.available) {
+            if (!sourcesUsed.includes('OIG Exclusions')) sourcesUsed.push('OIG Exclusions');
             results.government.push({
                 source: 'OIG Exclusions',
                 query: term,
@@ -576,6 +590,7 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     // DOJ Press
     const doj = await searchDOJPress('Minnesota fraud');
     if (doj.available) {
+        sourcesUsed.push('DOJ Press');
         results.government.push({
             source: 'DOJ Press',
             searchUrl: doj.searchUrl
@@ -585,6 +600,7 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     // FBI Press  
     const fbi = await searchFBIPress('Minnesota fraud');
     if (fbi.available) {
+        sourcesUsed.push('FBI Press');
         results.government.push({
             source: 'FBI Press',
             searchUrl: fbi.searchUrl
@@ -592,6 +608,7 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     }
     
     console.log(`  Government checks complete: ${results.government.length} results`);
+    console.log(`  Sources used: ${sourcesUsed.join(', ')}`);
     
     // ============================================
     // OSINT API CHECKS (require keys)
@@ -621,30 +638,38 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
         // WHOIS (always free)
         const whois = await lookupWhois(domain);
         if (whois.registrar) {
+            if (!sourcesUsed.includes('WHOIS')) sourcesUsed.push('WHOIS');
             results.domains.push(whois);
         }
         
         // VirusTotal reputation
         const vt = await checkReputation(domain);
         if (vt.available && vt.malicious !== undefined) {
+            if (!sourcesUsed.includes('VirusTotal')) sourcesUsed.push('VirusTotal');
             results.reputation.push(vt);
         }
         
         // DNS history
         const dns = await getDnsHistory(domain);
         if (dns.available && dns.dns) {
+            if (!sourcesUsed.includes('SecurityTrails')) sourcesUsed.push('SecurityTrails');
             results.infrastructure.push(dns);
         }
         
         // Email discovery
         const emails = await findEmails(domain);
         if (emails.available && emails.emails?.length > 0) {
+            if (!sourcesUsed.includes('Hunter.io')) sourcesUsed.push('Hunter.io');
             results.emails.push(emails);
         }
         
         // Small delay between domains
         await new Promise(r => setTimeout(r, 500));
     }
+    
+    // Store the sources we actually used
+    results.sourcesUsed = sourcesUsed;
+    results.sourceCount = sourcesUsed.length;
     
     // Suggest missing APIs that would help
     if (!APIS.INTELX.key) {
