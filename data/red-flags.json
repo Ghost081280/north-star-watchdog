@@ -1,6 +1,48 @@
 {
   "flags": [
     {
+      "type": "Explosive Growth",
+      "description": "Rapid expansion of child care programs in Minnesota",
+      "entities": [
+        "Feeding Our Future",
+        "CCAP"
+      ],
+      "sourceUrl": "https://www.usatoday.com/",
+      "priority": "high",
+      "confidence": 80,
+      "detectedAt": "2025-12-31T17:24:02.672Z",
+      "source": "ai-analysis",
+      "sourcesUsed": [
+        "Google News",
+        "GROQ AI",
+        "ProPublica Nonprofits",
+        "FEC Campaign Finance",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 6
+    },
+    {
+      "type": "coverage_spike",
+      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "priority": "medium",
+      "confidence": 70,
+      "detectedAt": "2025-12-31T17:24:02.672Z",
+      "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "GROQ AI",
+        "ProPublica Nonprofits",
+        "FEC Campaign Finance",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 6
+    },
+    {
       "type": "pattern_type",
       "description": "Similarities between Feeding Our Future and CCAP daycare fraud schemes",
       "entities": [
@@ -12,24 +54,6 @@
       "confidence": 80,
       "detectedAt": "2025-12-31T17:03:47.215Z",
       "source": "ai-analysis",
-      "sourcesUsed": [
-        "ProPublica Nonprofits",
-        "FEC Campaign Finance",
-        "OIG Exclusions",
-        "FBI Press"
-      ],
-      "sourceCount": 4
-    },
-    {
-      "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "priority": "medium",
-      "confidence": 70,
-      "detectedAt": "2025-12-31T17:03:47.215Z",
-      "source": "ai-detective",
       "sourcesUsed": [
         "ProPublica Nonprofits",
         "FEC Campaign Finance",
@@ -389,7 +413,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T17:03:47.215Z",
+  "lastUpdated": "2025-12-31T17:24:02.672Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
@@ -405,10 +429,12 @@
   ],
   "note": "Red flags automatically detected by AI from Minnesota news analysis. Updates hourly.",
   "sourcesUsed": [
+    "Google News",
+    "GROQ AI",
     "ProPublica Nonprofits",
     "FEC Campaign Finance",
     "OIG Exclusions",
     "FBI Press"
   ],
-  "sourceCount": 4
+  "sourceCount": 6
 }
