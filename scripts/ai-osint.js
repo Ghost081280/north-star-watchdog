@@ -426,13 +426,13 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
         });
     }
     
-    if (!APIS.CENSYS.id) {
+    if (!APIS.CENSYS.id && !APIS.CENSYS.key) {
         results.suggestedApis.push({
             name: 'Censys',
             description: 'Scan server infrastructure, open ports, SSL certificates',
             freeTier: '250 queries/month',
             signupUrl: 'https://search.censys.io/register',
-            secretName: 'CENSYS_API_ID and CENSYS_API_SECRET'
+            secretName: 'CENSYS_API_KEY'
         });
     }
     
