@@ -509,9 +509,9 @@ function renderDetective() {
     
     // Add red flags from data
     redFlags.forEach((flag, idx) => {
-        // Use the sources from the actual flag if available, otherwise use global
-        const flagSources = flag.sourcesUsed || globalSourcesUsed;
-        const flagSourceCount = flag.sourceCount || globalSourceCount;
+        // Use the apisUsed from the actual flag if available, otherwise use global sourcesUsed
+        const flagSources = flag.apisUsed || flag.sourcesUsed || globalSourcesUsed;
+        const flagSourceCount = flag.sourceCount || flagSources.length;
         
         findings.push({
             type: 'red-flag',
