@@ -5,13 +5,16 @@
 # 1. Scrapes Google News RSS
 # 2. Sends to Groq AI for analysis
 # 3. Runs pattern detection (AI Detective)
-# 4. Enriches with OSINT data (6 free APIs)
+# 4. Enriches with OSINT data (10+ free APIs)
 # 5. Updates ALL site sections
 # 6. Creates GitHub Issues to communicate with you
 # 7. Reads your replies and responds! (two-way chat)
 # 
 # REQUIRED SECRET:
 # - GROQ_API_KEY (FREE: https://console.groq.com/keys)
+#
+# RECOMMENDED SECRET:
+# - SAM_API_KEY (FREE: https://sam.gov - Entity registration + Exclusions/Ban list)
 #
 # OPTIONAL SECRETS (all FREE, add when ready):
 # - INTELX_API_KEY (dark web: https://intelx.io/signup)
@@ -70,6 +73,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          # SAM.gov API (Entity Registration + Federal Exclusions/Ban List)
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
           # Optional OSINT APIs
           INTELX_API_KEY: ${{ secrets.INTELX_API_KEY }}
           CENSYS_API_ID: ${{ secrets.CENSYS_API_ID }}
@@ -131,6 +136,7 @@ jobs:
           # API status
           echo "### APIs Used This Run" >> $GITHUB_STEP_SUMMARY
           echo "- GROQ: Active" >> $GITHUB_STEP_SUMMARY
+          echo "- SAM.gov: ${SAM_API_KEY:+Active}${SAM_API_KEY:-Not configured}" >> $GITHUB_STEP_SUMMARY
           if [ -n "$INTELX_API_KEY" ]; then echo "- IntelligenceX: Active"; fi >> $GITHUB_STEP_SUMMARY
           if [ -n "$CENSYS_API_ID" ] || [ -n "$CENSYS_API_KEY" ]; then echo "- Censys: Active"; fi >> $GITHUB_STEP_SUMMARY
           if [ -n "$VIRUSTOTAL_API_KEY" ]; then echo "- VirusTotal: Active"; fi >> $GITHUB_STEP_SUMMARY
