@@ -265,7 +265,7 @@ Based on the news, provide a JSON response with these sections:
     "convicted": 57,
     "alleged": "$9B+"
   },
-  "briefing": "IMPORTANT: Check the current hour. If 0-11 CST say 'Good morning', if 12-16 say 'Good afternoon', if 17-23 say 'Good evening'. Then be SASSY and engaging - like 'You're NOT gonna believe this...' or 'Holy smokes!' or 'While you were sleeping...' End with something fun like 'The robots never sleep. 🤖' Keep it 2-3 punchy sentences."
+  "briefing": "Good evening! 🌙 Holy smokes - HHS just froze ALL child care payments to Minnesota. A judge also ordered $5.2M restitution in the Feeding Our Future case. The robots never sleep. 🤖"
 }
 
 IMPORTANT RULES:
@@ -276,7 +276,12 @@ IMPORTANT RULES:
 - trending should have 3-5 items, newest/hottest first
 - storyIdeas should have 2-4 actionable investigation angles
 - Update stats only if news CONFIRMS new numbers
-- briefing: USE CORRECT GREETING FOR TIME OF DAY (morning/afternoon/evening based on CST). Be SASSY - you're an AI Detective with personality! Say things like "You're not gonna believe this..." or "Holy smokes!" Make it FUN and engaging, not boring corporate speak. End with "The robots never sleep. 🤖" or similar.
+- briefing: CRITICAL - Follow this EXACT format:
+  * Start with time-appropriate greeting: "Good morning!" (before noon CST), "Good afternoon!" (noon-5pm), "Good evening!" (after 5pm) - current time is ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago', hour: 'numeric', hour12: true })} CST
+  * Add an emoji after greeting (☀️ for morning, 👋 for afternoon, 🌙 for evening)
+  * Then say something sassy like "Holy smokes -" or "You're NOT gonna believe this -" or "While you were sleeping -"
+  * Summarize 1-2 key developments
+  * End with "The robots never sleep. 🤖"
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - Return ONLY valid JSON, no markdown, no other text`;
