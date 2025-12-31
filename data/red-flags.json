@@ -1,21 +1,21 @@
 {
   "flags": [
     {
-      "type": "funding patterns",
-      "description": "Suspiciously rapid growth in child care funding requests",
+      "type": "pattern_type",
+      "description": "Similarities between Feeding Our Future and CCAP daycare fraud schemes",
       "entities": [
         "Feeding Our Future",
-        "Minnesota child care providers"
+        "CCAP"
       ],
       "sourceUrl": "https://www.usatoday.com/",
       "priority": "high",
       "confidence": 80,
-      "detectedAt": "2025-12-31T16:36:06.290Z",
+      "detectedAt": "2025-12-31T17:03:47.215Z",
       "source": "ai-analysis",
       "sourcesUsed": [
-        "Google News",
+        "ProPublica Nonprofits",
+        "FEC Campaign Finance",
         "OIG Exclusions",
-        "DOJ Press",
         "FBI Press"
       ],
       "sourceCount": 4
@@ -28,8 +28,28 @@
       ],
       "priority": "medium",
       "confidence": 70,
-      "detectedAt": "2025-12-31T16:36:06.290Z",
+      "detectedAt": "2025-12-31T17:03:47.215Z",
       "source": "ai-detective",
+      "sourcesUsed": [
+        "ProPublica Nonprofits",
+        "FEC Campaign Finance",
+        "OIG Exclusions",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
+      "type": "funding patterns",
+      "description": "Suspiciously rapid growth in child care funding requests",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota child care providers"
+      ],
+      "sourceUrl": "https://www.usatoday.com/",
+      "priority": "high",
+      "confidence": 80,
+      "detectedAt": "2025-12-31T16:36:06.290Z",
+      "source": "ai-analysis",
       "sourcesUsed": [
         "Google News",
         "OIG Exclusions",
@@ -369,7 +389,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T16:36:06.290Z",
+  "lastUpdated": "2025-12-31T17:03:47.215Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
@@ -385,9 +405,9 @@
   ],
   "note": "Red flags automatically detected by AI from Minnesota news analysis. Updates hourly.",
   "sourcesUsed": [
-    "Google News",
+    "ProPublica Nonprofits",
+    "FEC Campaign Finance",
     "OIG Exclusions",
-    "DOJ Press",
     "FBI Press"
   ],
   "sourceCount": 4
