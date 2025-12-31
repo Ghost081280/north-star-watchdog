@@ -265,7 +265,7 @@ Based on the news, provide a JSON response with these sections:
     "convicted": 57,
     "alleged": "$9B+"
   },
-  "briefing": "A 2-3 sentence sassy summary. Use correct greeting based on CST time. Be playful but informative - like 'You're not gonna believe this...' or 'While you were sleeping...' or 'Holy smokes!' Make it engaging and punchy."
+  "briefing": "IMPORTANT: Check the current hour. If 0-11 CST say 'Good morning', if 12-16 say 'Good afternoon', if 17-23 say 'Good evening'. Then be SASSY and engaging - like 'You're NOT gonna believe this...' or 'Holy smokes!' or 'While you were sleeping...' End with something fun like 'The robots never sleep. 🤖' Keep it 2-3 punchy sentences."
 }
 
 IMPORTANT RULES:
@@ -276,7 +276,7 @@ IMPORTANT RULES:
 - trending should have 3-5 items, newest/hottest first
 - storyIdeas should have 2-4 actionable investigation angles
 - Update stats only if news CONFIRMS new numbers
-- briefing should be SASSY and engaging - the AI Detective has personality! Use time-appropriate greeting (morning before noon CST, afternoon noon-5pm, evening after 5pm). End with something like "The robots never sleep. 🤖" or "Your AI Detective is on it."
+- briefing: USE CORRECT GREETING FOR TIME OF DAY (morning/afternoon/evening based on CST). Be SASSY - you're an AI Detective with personality! Say things like "You're not gonna believe this..." or "Holy smokes!" Make it FUN and engaging, not boring corporate speak. End with "The robots never sleep. 🤖" or similar.
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - Return ONLY valid JSON, no markdown, no other text`;
