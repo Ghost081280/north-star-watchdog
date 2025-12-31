@@ -1,16 +1,16 @@
 {
   "flags": [
     {
-      "type": "funding freeze",
-      "description": "HHS freezes all childcare funding to Minnesota due to fraud concerns",
+      "type": "funding patterns",
+      "description": "Suspiciously rapid growth in child care funding requests",
       "entities": [
-        "US Department of Health and Human Services",
-        "Minnesota child care programs"
+        "Feeding Our Future",
+        "Minnesota child care providers"
       ],
-      "sourceUrl": "https://www.bloomberg.com/news/articles/2025-12-31/us-freezes-childcare-payments-to-minnesota-over-fraud-claims",
+      "sourceUrl": "https://www.usatoday.com/",
       "priority": "high",
-      "confidence": 95,
-      "detectedAt": "2025-12-31T16:18:42.255Z",
+      "confidence": 80,
+      "detectedAt": "2025-12-31T16:36:06.290Z",
       "source": "ai-analysis",
       "sourcesUsed": [
         "Google News",
@@ -22,14 +22,34 @@
     },
     {
       "type": "coverage_spike",
-      "description": "\"Feeding Our Future\" mentioned in 8 articles - unusual activity",
+      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
       "entities": [
         "Feeding Our Future"
       ],
-      "priority": "high",
+      "priority": "medium",
       "confidence": 70,
-      "detectedAt": "2025-12-31T16:18:42.255Z",
+      "detectedAt": "2025-12-31T16:36:06.290Z",
       "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "OIG Exclusions",
+        "DOJ Press",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
+      "type": "funding freeze",
+      "description": "HHS freezes all childcare funding to Minnesota due to fraud concerns",
+      "entities": [
+        "US Department of Health and Human Services",
+        "Minnesota child care programs"
+      ],
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2025-12-31/us-freezes-childcare-payments-to-minnesota-over-fraud-claims",
+      "priority": "high",
+      "confidence": 95,
+      "detectedAt": "2025-12-31T16:18:42.255Z",
+      "source": "ai-analysis",
       "sourcesUsed": [
         "Google News",
         "OIG Exclusions",
@@ -349,7 +369,7 @@
       "source": "ai-detective"
     }
   ],
-  "lastUpdated": "2025-12-31T16:18:42.255Z",
+  "lastUpdated": "2025-12-31T16:36:06.290Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
