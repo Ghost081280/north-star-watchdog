@@ -1,6 +1,8 @@
 /**
  * NORTH STAR WATCHDOG - AI ANALYZER
  * Handles all GROQ AI analysis and intelligence extraction
+ * 
+ * FIX: Added confidence score (0-100) request for each red flag
  */
 
 const https = require('https');
@@ -151,7 +153,8 @@ Based on the news, provide a JSON response with these sections:
       "description": "What was detected",
       "entities": ["entity names"],
       "sourceUrl": "URL",
-      "priority": "high|medium|low"
+      "priority": "high|medium|low",
+      "confidence": 75
     }
   ],
   "storyIdeas": [
@@ -168,7 +171,7 @@ Based on the news, provide a JSON response with these sections:
     "convicted": 57,
     "alleged": "$9B+"
   },
-  "briefing": "A 2-3 sentence summary of TODAY's key developments. Start with 'Good morning/afternoon.' Be direct about what's happening NOW.",
+  "briefing": "A 2-3 sentence summary of TODAY's key developments. DO NOT start with any greeting like 'Good morning' or 'Good afternoon' - just start directly with the news content.",
   "entitiesForOsint": ["domain.com", "Organization Name", "Person Name"]
 }
 
@@ -180,11 +183,25 @@ IMPORTANT RULES:
 - trending should have 3-5 items, newest/hottest first
 - storyIdeas should have 2-4 actionable investigation angles
 - Update stats only if news CONFIRMS new numbers
-- briefing should be what a visitor needs to know RIGHT NOW
+- briefing should be what a visitor needs to know RIGHT NOW - NO GREETING
 - newSearchTerms: names, orgs, or terms mentioned that we should monitor
 - redFlags: patterns you detect (same address, explosive growth, connections)
 - entitiesForOsint: domains, org names, or people names worth deep investigation
 - Return ONLY valid JSON, no markdown, no other text
+
+CONFIDENCE SCORING FOR RED FLAGS (REQUIRED):
+Each redFlag MUST include a "confidence" field from 0-100 based on evidence strength:
+- 90-100: Multiple official sources (DOJ, FBI, court records), documented evidence
+- 75-89: Single official source OR multiple credible news reports confirming
+- 60-74: Pattern matches known fraud but from single news source
+- 45-59: Suspicious but unconfirmed, needs verification
+- Below 45: Speculative, flag for monitoring only
+
+Example confidence assignments:
+- "DOJ announced charges against X" → confidence: 95
+- "Star Tribune reports X under investigation" → confidence: 78
+- "Pattern similar to FOF scheme detected" → confidence: 65
+- "Unverified tip about suspicious activity" → confidence: 40
 
 CRITICAL VERIFICATION RULES FOR KEY FIGURES:
 - NEVER add journalists, YouTubers, whistleblowers, or investigators to figureUpdates
@@ -210,6 +227,15 @@ VERIFICATION CHECKLIST before adding a figure:
         const jsonMatch = response.match(/\{[\s\S]*\}/);
         if (jsonMatch) {
             const parsed = JSON.parse(jsonMatch[0]);
+            
+            // Ensure all red flags have confidence scores
+            if (parsed.redFlags) {
+                parsed.redFlags = parsed.redFlags.map(flag => ({
+                    ...flag,
+                    confidence: flag.confidence || 70 // Default to 70 if AI didn't provide
+                }));
+            }
+            
             console.log('  AI analysis complete');
             return parsed;
         }
