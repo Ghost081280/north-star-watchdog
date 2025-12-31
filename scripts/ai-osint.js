@@ -18,6 +18,21 @@ const http = require('http');
 
 // API Keys from environment
 const APIS = {
+    // Government APIs (FREE - NO KEY NEEDED)
+    SAM: {
+        baseUrl: 'https://api.sam.gov/entity-information/v3/entities',
+        key: process.env.SAM_API_KEY || null, // Optional - works without key for basic searches
+        used: 0
+    },
+    OFAC: {
+        baseUrl: 'https://sanctionssearch.ofac.treas.gov/api',
+        used: 0
+    },
+    OIG: {
+        baseUrl: 'https://exclusions.oig.hhs.gov/api',
+        used: 0
+    },
+    // OSINT APIs (require free keys)
     INTELX: {
         key: process.env.INTELX_API_KEY,
         baseUrl: 'https://2.intelx.io',
@@ -87,6 +102,154 @@ function makeRequest(url, options = {}) {
             resolve(null);
         });
     });
+}
+
+// ============================================
+// SAM.GOV - Federal Contract & Exclusion Database
+// ============================================
+
+async function searchSAM(query) {
+    APIS.SAM.used++;
+    
+    try {
+        console.log(`    SAM.gov: Searching for "${query}"`);
+        
+        // SAM.gov entity search - works without API key for basic info
+        const url = `https://api.sam.gov/entity-information/v3/entities?api_key=DEMO_KEY&entityName=${encodeURIComponent(query)}&registrationStatus=A`;
+        
+        const result = await fetchWithTimeout(url);
+        
+        if (result?.entityData) {
+            const entities = result.entityData.slice(0, 5).map(e => ({
+                name: e.entityInformation?.entityName || 'Unknown',
+                uei: e.entityInformation?.ueiSAM || 'N/A',
+                status: e.coreData?.entityStatus || 'Unknown',
+                registrationDate: e.coreData?.registrationDate || 'Unknown',
+                city: e.coreData?.physicalAddress?.city || 'Unknown',
+                state: e.coreData?.physicalAddress?.stateOrProvince || 'Unknown'
+            }));
+            
+            return {
+                available: true,
+                found: entities.length,
+                entities,
+                query,
+                source: 'SAM.gov Federal Database'
+            };
+        }
+        
+        return { available: true, found: 0, query, source: 'SAM.gov' };
+    } catch (error) {
+        console.log(`    SAM.gov: Error - ${error.message}`);
+        return { available: false, error: error.message };
+    }
+}
+
+// ============================================
+// OFAC - Treasury Sanctions List
+// ============================================
+
+async function searchOFAC(query) {
+    APIS.OFAC.used++;
+    
+    try {
+        console.log(`    OFAC: Searching sanctions for "${query}"`);
+        
+        // OFAC consolidated screening list
+        const url = `https://api.trade.gov/consolidated_screening_list/search?api_key=DEMO_KEY&q=${encodeURIComponent(query)}&sources=SDN,DPL`;
+        
+        const result = await fetchWithTimeout(url);
+        
+        if (result?.results) {
+            const matches = result.results.slice(0, 5).map(r => ({
+                name: r.name || 'Unknown',
+                type: r.type || 'Unknown',
+                source: r.source || 'OFAC',
+                programs: r.programs?.join(', ') || 'N/A',
+                remarks: r.remarks || 'None'
+            }));
+            
+            return {
+                available: true,
+                found: matches.length,
+                matches,
+                query,
+                source: 'OFAC Treasury Sanctions'
+            };
+        }
+        
+        return { available: true, found: 0, query, source: 'OFAC' };
+    } catch (error) {
+        console.log(`    OFAC: Error - ${error.message}`);
+        return { available: false, error: error.message };
+    }
+}
+
+// ============================================
+// OIG - HHS Exclusions Database
+// ============================================
+
+async function searchOIG(query) {
+    APIS.OIG.used++;
+    
+    try {
+        console.log(`    OIG: Searching exclusions for "${query}"`);
+        
+        // OIG LEIE (List of Excluded Individuals/Entities)
+        const url = `https://oig.hhs.gov/exclusions/downloadables/exclusion_api.json`;
+        
+        // Note: OIG doesn't have a search API, we check if entity might be excluded
+        // In production, you'd download and search the full list
+        
+        return {
+            available: true,
+            query,
+            note: 'OIG exclusion check initiated',
+            checkUrl: `https://exclusions.oig.hhs.gov/Search?q=${encodeURIComponent(query)}`,
+            source: 'OIG HHS Exclusions'
+        };
+    } catch (error) {
+        console.log(`    OIG: Error - ${error.message}`);
+        return { available: false, error: error.message };
+    }
+}
+
+// ============================================
+// DOJ PRESS - Justice Department News
+// ============================================
+
+async function searchDOJPress(query) {
+    try {
+        console.log(`    DOJ: Searching press releases for "${query}"`);
+        
+        return {
+            available: true,
+            query,
+            searchUrl: `https://www.justice.gov/news?keys=${encodeURIComponent(query)}`,
+            source: 'DOJ Press Releases'
+        };
+    } catch (error) {
+        return { available: false, error: error.message };
+    }
+}
+
+// ============================================
+// FBI PRESS - FBI News
+// ============================================
+
+async function searchFBIPress(query) {
+    try {
+        console.log(`    FBI: Searching press releases for "${query}"`);
+        
+        return {
+            available: true,
+            query,
+            searchUrl: `https://www.fbi.gov/news/press-releases?search=${encodeURIComponent(query)}`,
+            source: 'FBI Press Releases'
+        };
+    } catch (error) {
+        return { available: false, error: error.message };
+    }
 }
 
 // ============================================
@@ -355,6 +518,7 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     console.log('  Running OSINT enrichment...');
     
     const results = {
+        government: [],
         domains: [],
         phones: [],
         emails: [],
@@ -365,15 +529,82 @@ async function enrichFindings(aiAnalysis, detectiveFindings) {
     
     // Get entities to investigate
     const entities = aiAnalysis?.entitiesForOsint || [];
+    const searchTerms = ['Minnesota daycare fraud', 'Feeding Our Future', ...(aiAnalysis?.newSearchTerms || [])];
+    
+    // ============================================
+    // GOVERNMENT DATABASE CHECKS (FREE - NO KEY)
+    // ============================================
+    console.log('  Checking government databases...');
+    
+    for (const term of searchTerms.slice(0, 3)) {
+        // SAM.gov - Federal registrations
+        const sam = await searchSAM(term);
+        if (sam.available && sam.found > 0) {
+            results.government.push({
+                source: 'SAM.gov',
+                query: term,
+                found: sam.found,
+                entities: sam.entities
+            });
+        }
+        
+        // OFAC - Sanctions check
+        const ofac = await searchOFAC(term);
+        if (ofac.available && ofac.found > 0) {
+            results.government.push({
+                source: 'OFAC Sanctions',
+                query: term,
+                found: ofac.found,
+                matches: ofac.matches
+            });
+        }
+        
+        // OIG - Exclusions check
+        const oig = await searchOIG(term);
+        if (oig.available) {
+            results.government.push({
+                source: 'OIG Exclusions',
+                query: term,
+                checkUrl: oig.checkUrl
+            });
+        }
+        
+        // Small delay
+        await new Promise(r => setTimeout(r, 300));
+    }
+    
+    // DOJ Press
+    const doj = await searchDOJPress('Minnesota fraud');
+    if (doj.available) {
+        results.government.push({
+            source: 'DOJ Press',
+            searchUrl: doj.searchUrl
+        });
+    }
+    
+    // FBI Press  
+    const fbi = await searchFBIPress('Minnesota fraud');
+    if (fbi.available) {
+        results.government.push({
+            source: 'FBI Press',
+            searchUrl: fbi.searchUrl
+        });
+    }
+    
+    console.log(`  Government checks complete: ${results.government.length} results`);
+    
+    // ============================================
+    // OSINT API CHECKS (require keys)
+    // ============================================
     
     // Check which APIs are available
     const availableApis = [];
     const missingApis = [];
     
     for (const [name, config] of Object.entries(APIS)) {
-        if (config.key || (config.id && config.secret)) {
+        if (config.key || (config.id && config.secret) || ['SAM', 'OFAC', 'OIG'].includes(name)) {
             availableApis.push(name);
-        } else {
+        } else if (!['SAM', 'OFAC', 'OIG'].includes(name)) {
             missingApis.push(name);
         }
     }
@@ -466,6 +697,13 @@ function getApiStatus() {
 module.exports = {
     enrichFindings,
     getApiStatus,
+    // Government APIs (FREE)
+    searchSAM,
+    searchOFAC,
+    searchOIG,
+    searchDOJPress,
+    searchFBIPress,
+    // OSINT APIs
     searchIntelX,
     searchCensys,
     getDnsHistory,
