@@ -1,6 +1,6 @@
 # ⭐ North Star Watchdog
 
-**AI-Powered Minnesota Fraud Investigation Service**
+**AI-Powered Minnesota Fraud Investigation Tracker**
 
 🔗 **Live Site:** [ghost081280.github.io/north-star-watchdog](https://ghost081280.github.io/north-star-watchdog)
 
@@ -8,106 +8,144 @@
 
 ## 🤖 The AI Has Taken Over
 
-This isn't your typical static website. North Star Watchdog is powered by an **autonomous AI Detective** that runs 24/7, scanning news and public databases to uncover fraud patterns in real-time.
+This isn't a typical news site. North Star Watchdog is powered by an **autonomous AI system** that runs 24/7, scanning news sources and public databases to track Minnesota's ongoing fraud investigations.
 
 **Every hour, the AI:**
 - 🔍 Scans Google News for breaking fraud stories
-- 📊 Queries free government APIs (ProPublica, FEC, OIG, USASpending)
-- 🏢 Checks business registrations (OpenCorporates)
-- 🚨 Detects suspicious patterns and red flags
+- 📊 Queries 6 free government APIs for public records
+- 🧠 Learns new search terms and entities automatically
+- 🚨 Detects patterns and connections across sources
 - 📝 Updates the site automatically via GitHub Actions
 - 💬 Reports high-confidence findings through GitHub Issues
 
-**The humans just watch.** The AI connects the dots.
+**No human editors. No manual updates.** The AI connects the dots.
 
 ---
 
 ## 🎯 What It Tracks
 
-North Star Watchdog focuses on Minnesota's massive fraud scandal - now estimated at **$250+ million** in the Feeding Our Future case alone:
+Minnesota is facing what investigators call the **largest pandemic fraud scandal in U.S. history** — an estimated **$9+ billion** in alleged fraud across multiple state programs.
 
-| Investigation | Amount | Status |
-|--------------|--------|--------|
-| Feeding Our Future | $250M+ | 70+ charged, 28+ convicted |
+### Active Investigations
 
-*Stats update automatically when the AI finds new charges or convictions in the news.*
+| Program | Alleged Fraud | Status |
+|---------|---------------|--------|
+| **Feeding Our Future** | $250M+ | 70+ charged, 28+ convicted |
+| **CCAP Daycare Fraud** | $1B+ | Federal payment freeze in effect |
+| **Housing Stabilization Services** | $302M | Program terminated |
+
+### What We Monitor
+
+- **Breaking News** — Real-time coverage from local and national sources
+- **Court Proceedings** — Trials, sentencings, plea deals, and forfeitures
+- **Key Figures** — Defendants, their roles, and case outcomes
+- **Connected Patterns** — Shell companies, shared addresses, funding flows
+- **Policy Response** — Legislative hearings, oversight actions, program changes
+
+*All stats update automatically when the AI finds new developments.*
 
 ---
 
-## 🔍 AI Detective Features
+## 🔍 AI Detective
 
-The AI Detective section shows **real-time pattern detection** with:
+The AI Detective section provides **automated pattern analysis** across all sources:
 
-- **Confidence Scores** - Visual gauge showing AI certainty (not legal proof)
-- **Red Flags** - Suspicious patterns detected in news and public records
-- **Entity Connections** - Links between people, businesses, and organizations
-- **Source Transparency** - Shows exactly which APIs returned data
+- **Confidence Gauges** — Visual indicator of AI certainty (not legal proof)
+- **Red Flags** — Suspicious patterns detected in news and records
+- **Entity Connections** — Links between people, organizations, and programs
+- **Source Attribution** — Shows exactly which APIs contributed to each finding
 
-### 🚨 See It In Action
+### 🚨 Watch the AI Work
 
-The AI Detective reports findings in real-time through GitHub Issues. Watch the robot work:
+High-confidence findings are automatically reported as GitHub Issues:
 
 👉 **[View AI Discoveries](https://github.com/Ghost081280/north-star-watchdog/issues?q=label%3Aai-detected)**
 
-*The robots are watching.* 👀
+---
+
+## 🧠 Self-Learning System
+
+The AI doesn't just run queries — it **learns and expands** its coverage over time:
+
+1. **Hour 1:** Scans news with initial search queries
+2. **Discovery:** AI finds new names, organizations, or programs
+3. **Learning:** New entities added to tracking database
+4. **Hour 2+:** Expanded searches catch more connections
+
+The more it runs, the more comprehensive the coverage becomes.
 
 ---
 
 ## 📡 Data Sources
 
-**News Scanning:**
-- Google News RSS (real-time, hourly)
+**News:**
+- Google News RSS (hourly scans)
 
-**Government APIs (Free):**
-- ProPublica Nonprofits (Form 990s, financials)
-- FEC Campaign Finance (contributions, committees)
-- OIG Exclusions (healthcare ban list)
-- USASpending.gov (federal contracts)
+**Government APIs (Free, No Keys Required):**
+- ProPublica Nonprofits — Form 990 filings, financials
+- FEC Campaign Finance — Political contributions
+- OIG Exclusions — Healthcare provider ban list
+- USASpending.gov — Federal contracts and grants
 
 **Business Records:**
-- OpenCorporates (company registrations)
+- OpenCorporates — Company registrations
 
 **AI Analysis:**
-- GROQ (Llama 3.1 70B) - extracts entities, patterns, red flags
+- GROQ (Llama 3.1 70B) — Entity extraction, pattern detection
 
 ---
 
-## ⚙️ How It Actually Works
+## ⚙️ How It Works
 
 ```
 Every Hour:
-┌─────────────────┐
-│  Google News    │ ──▶ Scrape Minnesota fraud stories
-└────────┬────────┘
+
+  📰 Google News RSS
+         │
          ▼
-┌─────────────────┐
-│    GROQ AI      │ ──▶ Extract names, amounts, red flags
-└────────┬────────┘
+  🧠 AI Analysis (GROQ)
+     Extract: names, amounts, entities, patterns
+         │
          ▼
-┌─────────────────┐
-│  Free APIs      │ ──▶ ProPublica, FEC, OIG, OpenCorporates
-└────────┬────────┘
+  🔌 OSINT Enrichment
+     Query: ProPublica, FEC, OIG, OpenCorporates, USASpending
+         │
          ▼
-┌─────────────────┐
-│  Update Site    │ ──▶ All data/*.json files refreshed
-└────────┬────────┘
+  📊 Update Data Files
+     Refresh: stats, figures, investigations, red flags
+         │
          ▼
-┌─────────────────┐
-│ GitHub Issues   │ ──▶ High-confidence flags reported
-└─────────────────┘
+  🧠 Self-Learning
+     Add new search queries and entities for next scan
+         │
+         ▼
+  📢 Report Findings
+     Create GitHub Issues for high-confidence detections
 ```
 
 ---
 
-## ⚠️ Disclaimer
+## 🔧 System Diagnostic
 
-This service is for **informational purposes only**. 
+Check if everything is working:
 
-The AI Detective section is **100% autonomous** - findings are machine-generated pattern analysis, not editorial conclusions or legal accusations. Confidence scores indicate AI certainty, not legal proof.
+👉 **[Run Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic.html)**
 
-**All individuals are presumed innocent until proven guilty.**
+The diagnostic page tests all data files, API integrations, and rendering.
 
-**Always verify information independently.**
+---
+
+## ⚠️ Important Disclaimer
+
+This service is for **informational purposes only**.
+
+- The AI Detective generates **automated pattern analysis**, not editorial conclusions
+- Confidence scores indicate **AI certainty**, not legal proof
+- Findings are **machine-generated** and may contain errors
+- **All individuals are presumed innocent until proven guilty**
+- **Always verify information through official sources**
+
+This site does not make accusations — it tracks publicly available information about ongoing investigations.
 
 ---
 
@@ -119,10 +157,11 @@ U.S. Army Veteran | Serial Entrepreneur | AI Developer
 
 ---
 
-## 📬 Contact
+## 📬 Contact & Contribute
 
-- Twitter/X: [@Ghost081280](https://twitter.com/Ghost081280)
-- GitHub Issues: [Report bugs or suggestions](https://github.com/Ghost081280/north-star-watchdog/issues)
+- **Twitter/X:** [@Ghost081280](https://twitter.com/Ghost081280)
+- **Report Issues:** [GitHub Issues](https://github.com/Ghost081280/north-star-watchdog/issues)
+- **View Source:** [GitHub Repository](https://github.com/Ghost081280/north-star-watchdog)
 
 ---
 
