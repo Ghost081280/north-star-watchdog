@@ -2,6 +2,60 @@
   "flags": [
     {
       "type": "coverage_spike",
+      "description": "\"Feeding Our Future\" mentioned in 7 articles - unusual activity",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "priority": "medium",
+      "detectedAt": "2025-12-31T07:31:46.488Z",
+      "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "OIG Exclusions",
+        "DOJ Press",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
+      "type": "fraud pattern",
+      "description": "Multiple child care providers in Minnesota accused of fraud",
+      "entities": [
+        "Feeding Our Future",
+        "Quality Learning Center"
+      ],
+      "priority": "high",
+      "detectedAt": "2025-12-31T07:31:46.488Z",
+      "source": "ai-detective",
+      "sourcesUsed": [
+        "Google News",
+        "OIG Exclusions",
+        "DOJ Press",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
+      "type": "fraud pattern",
+      "description": "Multiple child care providers in Minnesota accused of fraud",
+      "entities": [
+        "Feeding Our Future",
+        "Quality Learning Center"
+      ],
+      "sourceUrl": "https://news.yahoo.com/hhs-freezes-all-child-care-140000172.html",
+      "priority": "high",
+      "detectedAt": "2025-12-31T07:31:46.488Z",
+      "source": "ai-analysis",
+      "sourcesUsed": [
+        "Google News",
+        "OIG Exclusions",
+        "DOJ Press",
+        "FBI Press"
+      ],
+      "sourceCount": 4
+    },
+    {
+      "type": "coverage_spike",
       "description": "\"Feeding Our Future\" mentioned in 8 articles - unusual activity",
       "entities": [
         "Feeding Our Future"
@@ -439,7 +493,7 @@
       "source": "ai-analysis"
     }
   ],
-  "lastUpdated": "2025-12-31T06:47:06.940Z",
+  "lastUpdated": "2025-12-31T07:31:46.488Z",
   "flagTypes": [
     "license_revoked_still_billing",
     "excluded_provider_still_paid",
