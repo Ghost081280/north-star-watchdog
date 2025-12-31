@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Watchdog | Minnesota Fraud Investigation Platform</title>
-    <meta name="description" content="Track Minnesota's $9B+ fraud scandal. Search government databases, get deep research with news and court records, analyze with AI.">
+    <meta name="description" content="Track Minnesota fraud cases. AI-powered news analysis, nonprofit data from ProPublica, campaign finance from FEC, and healthcare exclusions from OIG.">
     <meta property="og:title" content="North Star Watchdog | Minnesota Fraud Tracker">
     <meta name="twitter:creator" content="@Ghost081280">
     
@@ -61,17 +61,17 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                Search databases
+                Scan news hourly
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                Get deep research
+                AI analysis
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                AI analyzes for you
+                Free OSINT APIs
             </div>
             <h2 class="hero-title">Minnesota's <span class="highlight">$9 Billion+</span> Fraud Scandal</h2>
             <p class="hero-source-note">
                 <a href="https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/" target="_blank" rel="noopener" class="source-badge">Source: U.S. Attorney Joe Thompson, Dec 2025</a>
             </p>
-            <p class="hero-subtitle">We search <strong>government databases</strong>, compile <strong>news, videos, and court records</strong>, and <strong>analyze everything with AI</strong> - then you can continue with your favorite AI for deeper investigation.</p>
+            <p class="hero-subtitle">We scan <strong>Google News</strong> hourly, analyze with <strong>AI</strong>, and enrich with <strong>free public APIs</strong> - then you can export and continue investigating with any AI tool.</p>
             <div class="hero-stats">
                 <div class="stat"><span class="stat-value" id="stat-charged">93+</span><span class="stat-label">Charged</span></div>
                 <div class="stat"><span class="stat-value" id="stat-convicted">57+</span><span class="stat-label">Convicted</span></div>
@@ -167,11 +167,11 @@
                 <div class="news-results" id="news-results"></div>
             </div>
             
-            <!-- Court, Government & OSINT Records -->
+            <!-- Public Records -->
             <div class="research-category">
                 <h4>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M12 3l9 7H3l9-7z"/><path d="M5 10v11M19 10v11M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"/></svg>
-                    Court, Government and OSINT
+                    Public Records (ProPublica, FEC, OIG)
                 </h4>
                 <div class="research-links" id="court-links"></div>
             </div>
@@ -228,7 +228,7 @@
             
             <div class="detective-disclaimer">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                <span><strong>AI-Generated Analysis:</strong> This section is 100% autonomous - our AI Detective scans news, databases, OSINT sources, and government records to identify patterns. These are machine-generated findings, not editorial conclusions. Confidence scores indicate AI certainty, not legal proof. Always verify independently.</span>
+                <span><strong>AI-Generated Analysis:</strong> Our AI scans Google News hourly and extracts patterns. Findings are enriched with ProPublica, FEC, OIG, and OpenCorporates data. Confidence scores indicate AI certainty based on source quality, not legal proof. Always verify independently.</span>
             </div>
             
             <div class="detective-grid" id="detective-grid">
@@ -327,15 +327,15 @@
                         <ul>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                                Search 20+ government databases
+                                Scrapes Google News hourly
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                                Get news, videos, court records & OSINT
+                                AI extracts figures, cases & red flags
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
-                                AI Detective analyzes patterns hourly
+                                Enriches with free OSINT APIs
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
@@ -347,14 +347,12 @@
                     <div class="footer-col">
                         <h4>Data Sources</h4>
                         <ul>
-                            <li><a href="https://usaspending.gov" target="_blank" rel="noopener">USASpending.gov</a></li>
+                            <li><a href="https://news.google.com" target="_blank" rel="noopener">Google News RSS</a></li>
                             <li><a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofits</a></li>
                             <li><a href="https://www.fec.gov" target="_blank" rel="noopener">FEC Campaign Finance</a></li>
-                            <li><a href="https://www.justice.gov/usao-mn" target="_blank" rel="noopener">DOJ Minnesota</a></li>
                             <li><a href="https://exclusions.oig.hhs.gov" target="_blank" rel="noopener">OIG Exclusions</a></li>
-                            <li><a href="https://sam.gov" target="_blank" rel="noopener">SAM.gov Exclusions</a></li>
-                            <li><a href="https://www.courtlistener.com" target="_blank" rel="noopener">Court Listener RECAP</a></li>
-                            <li><a href="https://www.opensecrets.org" target="_blank" rel="noopener">OpenSecrets</a></li>
+                            <li><a href="https://opencorporates.com" target="_blank" rel="noopener">OpenCorporates</a></li>
+                            <li><a href="https://usaspending.gov" target="_blank" rel="noopener">USASpending.gov</a></li>
                         </ul>
                     </div>
                     
