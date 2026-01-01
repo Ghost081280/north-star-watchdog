@@ -1,8 +1,19 @@
 # North Star Watchdog - AI Updater
 # Runs hourly to scan news and update the tracking database
 #
-# REQUIRED SECRET:
+# ═══════════════════════════════════════════════════════════════
+# AGENT CODENAME: POLARIS
+# MISSION: Uncover fraud in Minnesota. Self-heal. Learn. Report.
+# ═══════════════════════════════════════════════════════════════
+#
+# REQUIRED SECRETS:
 # - GROQ_API_KEY (FREE: https://console.groq.com/keys)
+#
+# OPTIONAL SECRETS (for X/Twitter integration):
+# - X_API_KEY
+# - X_API_SECRET
+# - X_ACCESS_TOKEN
+# - X_ACCESS_SECRET
 #
 # FREE APIs USED (no keys needed):
 # - Google News RSS
@@ -12,10 +23,14 @@
 # - OpenCorporates
 # - USASpending.gov
 #
-# SELF-LEARNING:
-# - AI discovers new entities and adds them to learning.json
-# - New search queries are created automatically
-# - Each scan builds on previous findings
+# CAPABILITIES:
+# - Hourly news scanning (28+ search queries)
+# - AI analysis with auto model fallback
+# - OSINT enrichment from 6 free APIs
+# - Self-healing (auto-fixes issues)
+# - Self-learning (discovers new entities)
+# - X/Twitter posting & monitoring
+# - GitHub Issues for critical findings
 #
 
 name: AI Updater
@@ -51,9 +66,15 @@ jobs:
       
       - name: Run AI Updater
         env:
+          # Required
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          # X/Twitter Integration (optional)
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
         run: node scripts/ai-core.js
       
       - name: Commit and push changes
@@ -61,5 +82,5 @@ jobs:
           git config --local user.email "ai-bot@north-star-watchdog.local"
           git config --local user.name "North Star AI Bot"
           git add -A
-          git diff --staged --quiet || git commit -m "🤖 Hourly AI update - $(date +'%Y-%m-%d %H:%M') CST"
+          git diff --staged --quiet || git commit -m "🤖 Hourly AI update - $(date +'%Y-%m-%d %H:%M') UTC"
           git push
