@@ -3,20 +3,17 @@
 [![AI Updater](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml)
 [![GitHub Pages](https://img.shields.io/badge/Live%20Site-Online-brightgreen)](https://ghost081280.github.io/north-star-watchdog/)
 [![System Health](https://img.shields.io/badge/Health-100%25-brightgreen)](https://ghost081280.github.io/north-star-watchdog/diagnostic)
-[![Diagnostic](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic)
-[![Data Sources](https://img.shields.io/badge/APIs-6%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
+[![Data Sources](https://img.shields.io/badge/APIs-12%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
 [![Follow @NorthStarAgent](https://img.shields.io/badge/X-@NorthStarAgent-black)](https://x.com/NorthStarAgent)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Made with AI](https://img.shields.io/badge/Powered%20by-GROQ%20AI-purple)](https://groq.com)
-[![Updates](https://img.shields.io/badge/Updates-Hourly-red)](https://github.com/Ghost081280/north-star-watchdog/actions)
 
-<!-- LAST_SCAN -->Last AI scan: 2026-01-01T22:12:26.749Z<!-- /LAST_SCAN -->
+<!-- LAST_SCAN -->Last AI scan: 2026-01-01T21:18:31.775Z<!-- /LAST_SCAN -->
 
 **Autonomous AI-Powered Minnesota Fraud Investigation Tracker**
 
 🔗 **Live Site:** [ghost081280.github.io/north-star-watchdog](https://ghost081280.github.io/north-star-watchdog)
 
-🐦 **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent) — @ me with any entity to scan!
+🐦 **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent)
 
 🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic)
 
@@ -24,12 +21,13 @@
 
 ## 🤖 The AI Has Taken Over
 
-This isn't a typical news site. North Star Watchdog is powered by **Agent Polaris** — a fully autonomous AI system that runs 24/7, scanning news sources, social media, and public databases to track Minnesota's ongoing fraud investigations.
+North Star Watchdog is powered by **Agent Polaris** — a fully autonomous AI system that runs 24/7, scanning news sources, social media, and public databases to track Minnesota's ongoing fraud investigations.
 
 **Every hour, the AI:**
 - 🔍 Scans Google News for breaking fraud stories
 - 🐦 Monitors X/Twitter for real-time developments
-- 📊 Queries 6 government & business APIs for public records
+- 📊 Queries **12 government & business APIs** for public records
+- 🗳️ **Cross-references CCAP payments with political donations**
 - 🧠 Learns new search terms and entities automatically
 - 🚨 Detects patterns and connections across sources
 - 🔧 **Self-heals** — automatically fixes issues it detects
@@ -40,23 +38,26 @@ This isn't a typical news site. North Star Watchdog is powered by **Agent Polari
 
 ---
 
+## 🗳️ Political Donation Cross-Reference
+
+North Star Watchdog includes Minnesota-specific data sources for CCAP fraud detection:
+
+- **MN Campaign Finance Board** — Search state political donations
+- **MN Transparency Portal** — Find state vendor/CCAP payments
+- **MN DHS Licensing** — Verify childcare provider licenses
+- **ParentAware** — Check CCAP registration status
+
+**Cross-reference CCAP providers with political donations to detect fraud patterns.**
+
+---
+
 ## 🐦 Talk to the AI
 
 **[@NorthStarAgent](https://x.com/NorthStarAgent)** is live on X/Twitter!
 
-**@ mention with any entity** and the AI will scan:
-- ProPublica Nonprofits
-- FEC Campaign Finance
-- OIG Healthcare Exclusions
-- OpenCorporates
-- USASpending
+**@ mention with any entity** and the AI will scan all 12 data sources.
 
 Example: `@NorthStarAgent Quality Learning Center`
-
-The AI posts:
-- 📊 **Daily briefings** (8am CST)
-- 🚨 **Critical findings** (95%+ confidence)
-- 🔍 **Scan results** in reply to mentions
 
 ---
 
@@ -74,14 +75,56 @@ Minnesota is facing what investigators call the **largest pandemic fraud scandal
 | **Medicaid Fraud** | $4B+ (estimated) | Under investigation | HHS |
 | **Assisted Living Fraud** | $49M+ | Federal indictments | DOJ |
 
-### What We Monitor
+---
 
-- **Breaking News** — Real-time coverage from news and social media
-- **Court Proceedings** — Trials, sentencings, plea deals, forfeitures
-- **Key Figures** — Defendants, officials, their roles and case outcomes
-- **Suspect Entities** — Daycares, nonprofits, shell companies under investigation
-- **Government Response** — DCYF, DHS, HHS actions and oversight
-- **Congressional Oversight** — House hearings, legislative response
+## 📡 Data Sources (12 APIs)
+
+### Federal Sources
+| Source | Data |
+|--------|------|
+| **ProPublica Nonprofits** | Form 990 filings, financials, PDF downloads |
+| **FEC Campaign Finance** | Federal political contributions |
+| **OIG Exclusions** | Healthcare provider ban list |
+| **USASpending.gov** | Federal contracts and grants |
+| **SEC EDGAR** | Corporate filings (10-K, 10-Q, 8-K) |
+| **OSHA** | Workplace safety violations |
+| **FDA** | Drug enforcement actions |
+| **HUD** | Housing and Urban Development awards |
+
+### Minnesota Sources
+| Source | Data |
+|--------|------|
+| **MN Campaign Finance Board** | State political donations |
+| **MN DHS Licensing** | Licensed childcare providers |
+| **MN Transparency Portal** | State vendor payments |
+| **ParentAware** | CCAP-registered providers |
+
+### Business Records
+| Source | Data |
+|--------|------|
+| **OpenCorporates** | Company registrations |
+
+---
+
+## 🔍 CCAP Fraud Detection
+
+The AI detects CCAP fraud patterns:
+
+### Red Flags Detected
+- Childcare providers making large political donations
+- Providers with generic "learning center" names
+- High CCAP billing with no visible activity
+- Multiple locations with same ownership
+- Recently opened with rapid billing growth
+
+### Investigation Package
+For any entity, the AI generates:
+1. **MN Campaign Finance** search links
+2. **MN DHS Licensing** lookup
+3. **MN Transparency** payment search
+4. **Federal source** cross-references
+5. **News & social media** coverage
+6. **Investigation checklist**
 
 ---
 
@@ -89,107 +132,9 @@ Minnesota is facing what investigators call the **largest pandemic fraud scandal
 
 Agent Polaris doesn't just collect data — it **monitors and repairs itself**:
 
-### Auto-Detection
-- Blanket source attribution (removes invalid flags)
-- Journalists accidentally added to Key Figures (removes them)
-- Figures without allegations (removes them)
-- Stats below verified baseline (resets them)
-- Corrupted JSON files (rebuilds them)
-
-### Auto-Repair
-When issues are detected, the AI:
-1. Attempts automatic repair
-2. Logs the fix to the diagnostic report
-3. Reports unfixable issues via GitHub Issues
-
-### Health Monitoring
 - Full diagnostic every 6 hours
 - Post-scan diagnostic after every hourly scan
 - README health badge auto-updates
-
----
-
-## 🔍 AI Detective
-
-The AI Detective section provides **automated pattern analysis** across all sources:
-
-- **Confidence Gauges** — Visual indicator of AI certainty (not legal proof)
-- **Red Flags** — Suspicious patterns detected in news and records
-- **Entity Connections** — Links between people, organizations, and programs
-- **Source Attribution** — Shows exactly which APIs contributed to each finding
-
-### 🚨 Watch the AI Work
-
-High-confidence findings (90%+) are automatically reported as GitHub Issues:
-
-👉 **[View Major Findings](https://github.com/Ghost081280/north-star-watchdog/issues?q=label%3Apolaris-intel)**
-
----
-
-## 🧠 Self-Learning System
-
-The AI doesn't just run queries — it **learns and expands** its coverage over time:
-
-1. **Hour 1:** Scans news with initial search queries
-2. **Discovery:** AI finds new names, organizations, or programs
-3. **Learning:** New entities added to tracking database
-4. **Hour 2+:** Expanded searches catch more connections
-
-The more it runs, the more comprehensive the coverage becomes.
-
----
-
-## 📡 Data Sources
-
-**News & Social:**
-- Google News RSS (hourly scans)
-- X/Twitter (breaking news monitoring)
-
-**Government APIs (Free, No Keys Required):**
-- ProPublica Nonprofits — Form 990 filings, financials
-- FEC Campaign Finance — Political contributions
-- OIG Exclusions — Healthcare provider ban list
-- USASpending.gov — Federal contracts and grants
-
-**Business Records:**
-- OpenCorporates — Company registrations
-
-**AI Analysis:**
-- GROQ (Llama 3.3 70B) — Entity extraction, pattern detection
-
----
-
-## ⚙️ How It Works
-
-```
-Every Hour (Agent Polaris):
-
-  📰 Google News RSS + 🐦 X/Twitter
-         │
-         ▼
-  🧠 AI Analysis (GROQ)
-     Extract: names, amounts, entities, patterns
-         │
-         ▼
-  🔌 OSINT Enrichment
-     Query: ProPublica, FEC, OIG, OpenCorporates, USASpending
-         │
-         ▼
-  📊 Update Data Files
-     Refresh: stats, figures, investigations, red flags
-         │
-         ▼
-  🔧 Self-Diagnostic & Repair
-     Detect issues, auto-fix, report unfixable
-         │
-         ▼
-  🐦 X/Twitter Integration
-     Post briefings, critical alerts, respond to mentions
-         │
-         ▼
-  📢 Report Findings
-     Create GitHub Issues for high-confidence detections
-```
 
 ---
 
@@ -197,46 +142,29 @@ Every Hour (Agent Polaris):
 
 ```
 scripts/
-├── ai-core.js        # Main orchestrator (10-step workflow)
-├── ai-scraper.js     # News scraping (Google News RSS)
+├── ai-core.js        # Main orchestrator
+├── ai-scraper.js     # News scraping
 ├── ai-analyzer.js    # GROQ AI analysis
-├── ai-osint.js       # OSINT API enrichment
+├── ai-osint.js       # OSINT API enrichment (12 sources)
+├── ai-minnesota.js   # Minnesota-specific sources
 ├── ai-files.js       # Data file management
-├── ai-diagnostic.js  # Health monitoring & detection
+├── ai-diagnostic.js  # Health monitoring
 ├── ai-repair.js      # Self-repair functions
 └── ai-twitter.js     # X/Twitter integration
 
+js/
+└── investigation-package.js  # Frontend investigation UI
+
 data/
 ├── news.json         # Latest articles
-├── figures.json      # Key figures (defendants only)
+├── figures.json      # Key figures
 ├── investigations.json # Active cases
 ├── red-flags.json    # AI-detected patterns
 ├── stats.json        # Dashboard statistics
 ├── trending.json     # Trending topics
 ├── story-ideas.json  # AI-generated story angles
-└── learning.json     # AI memory (entities, queries, APIs)
-
-diagnostic/
-└── index.html        # 100+ automated tests
+└── learning.json     # AI memory
 ```
-
----
-
-## 🔧 System Diagnostic
-
-The diagnostic tool runs **100+ automated tests** to verify system health:
-
-- ✅ Data file integrity
-- ✅ Backend-frontend data flow
-- ✅ API source attribution
-- ✅ Stats baseline validation
-- ✅ AI briefing quality
-- ✅ Timestamp freshness
-- ✅ Self-repair module status
-- ✅ X/Twitter connection
-- ✅ Cross-reference integrity
-
-👉 **[Run Full Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic)**
 
 ---
 
@@ -249,9 +177,6 @@ This service is for **informational purposes only**.
 - Findings are **machine-generated** and may contain errors
 - **All individuals are presumed innocent until proven guilty**
 - **Always verify information through official sources**
-- **Journalists are tracked for attribution, not as investigation subjects**
-
-This site does not make accusations — it tracks publicly available information about ongoing investigations.
 
 ---
 
@@ -268,7 +193,6 @@ U.S. Army Veteran | Serial Entrepreneur | AI Developer
 - **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent)
 - **Creator on X:** [@Ghost081280](https://twitter.com/Ghost081280)
 - **Report Issues:** [GitHub Issues](https://github.com/Ghost081280/north-star-watchdog/issues)
-- **View Source:** [GitHub Repository](https://github.com/Ghost081280/north-star-watchdog)
 
 ---
 
