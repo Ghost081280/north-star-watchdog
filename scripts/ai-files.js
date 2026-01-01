@@ -5,6 +5,10 @@
  * Creates GitHub Issues for high-confidence red flags.
  * 
  * NO HARDCODED DATA - everything comes from the scan.
+ * 
+ * FIX: Now uses per-entity source tracking from OSINT enrichment
+ * so each red flag shows only the APIs that actually returned data
+ * for its specific entities.
  */
 
 const fs = require('fs');
@@ -13,7 +17,7 @@ const https = require('https');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
-// ALL API SOURCES - used for display even if no data returned
+// ALL API SOURCES - for reference
 const ALL_API_SOURCES = [
     'Google News',
     'ProPublica Nonprofits',
@@ -101,12 +105,38 @@ function deduplicateItems(items, hashFn) {
 }
 
 /**
+ * Get sources for a red flag based on its entities
+ * FIX: Uses the per-entity source tracking from OSINT
+ */
+function getSourcesForRedFlag(redFlag, entitySources) {
+    const sources = new Set(['Google News']); // Always include Google News as base
+    
+    const entities = redFlag.entities || [];
+    
+    for (const entity of entities) {
+        const key = entity.toLowerCase();
+        const entitySourceList = entitySources[key];
+        
+        if (entitySourceList && Array.isArray(entitySourceList)) {
+            for (const source of entitySourceList) {
+                sources.add(source);
+            }
+        }
+    }
+    
+    return Array.from(sources);
+}
+
+/**
  * Update all data files
  */
 async function updateAllDataFiles({ news, analysis, osint }) {
     ensureDataDir();
     
     const now = new Date().toISOString();
+    
+    // Get the per-entity source tracking from OSINT
+    const entitySources = osint?.entitySources || {};
     
     // ============================================
     // 1. news.json
@@ -281,21 +311,31 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 5. red-flags.json - ALWAYS show all 6 API sources
+    // 5. red-flags.json - FIX: Use per-entity source tracking
     // ============================================
     const existingFlags = readJson('red-flags.json', { flags: [] });
     
-    // ALWAYS use all 6 sources - we check all of them every scan
-    // Even if a source returns no data for a specific entity, we still checked it
+    // Process new flags with ACCURATE source attribution
     const newFlags = (analysis.redFlags || []).map(rf => {
+        // FIX: Get sources based on which APIs actually had data for this flag's entities
+        const flagSources = getSourcesForRedFlag(rf, entitySources);
+        
         return {
             ...rf,
             id: `rf-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-            // ALWAYS show all 6 sources - we check all of them
-            apisUsed: ALL_API_SOURCES,
+            // FIX: Use actual sources, not blanket ALL sources
+            apisUsed: flagSources,
+            sourceCount: flagSources.length,
             detectedAt: now,
             isNew: true
         };
+    });
+    
+    // Log source attribution for debugging
+    console.log('  📊 Red flag source attribution:');
+    newFlags.forEach(rf => {
+        const entities = (rf.entities || []).join(', ') || 'no entities';
+        console.log(`    - ${rf.type}: ${rf.apisUsed.length} sources (${rf.apisUsed.join(', ')}) for [${entities}]`);
     });
     
     // Dedupe by type + first 100 chars of description
@@ -304,11 +344,14 @@ async function updateAllDataFiles({ news, analysis, osint }) {
         f => `${f.type}-${(f.description || '').substring(0, 100)}`
     ).slice(0, 50);
     
+    // Calculate overall sources used across all flags
+    const overallSourcesUsed = [...new Set(allFlags.flatMap(f => f.apisUsed || []))];
+    
     writeJson('red-flags.json', {
         flags: allFlags,
-        // Always show all 6 sources
-        sourcesUsed: ALL_API_SOURCES,
-        sourcesChecked: ALL_API_SOURCES,
+        // These are the sources that returned data for at least one entity
+        sourcesUsed: osint?.sourcesUsed || overallSourcesUsed,
+        sourcesChecked: osint?.sourcesChecked || ALL_API_SOURCES,
         lastUpdated: now
     });
     
@@ -470,7 +513,7 @@ ${flag.sourceUrl ? `- [View Original Source](${flag.sourceUrl})` : ''}
 
 ### 🔗 Verified Against
 
-${(flag.apisUsed || ALL_API_SOURCES).map(api => `✓ ${api}`).join('\n')}
+${(flag.apisUsed || ['Google News']).map(api => `✓ ${api}`).join('\n')}
 
 ---
 
