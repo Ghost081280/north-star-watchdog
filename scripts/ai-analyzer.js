@@ -299,7 +299,7 @@ CRITICAL DISTINCTION - READ CAREFULLY:
     "charged": 70,
     "convicted": 28,
     "alleged": "$9B+",
-    "activeCases": 3
+    "activeCases": 5
   },
   "briefing": "Your comprehensive field report to Command. 3-4 paragraphs covering ALL findings from this hourly scan. Start with 'Field Report from Agent Polaris:' then cover: (1) Key developments found this hour, (2) Patterns and connections across entities, (3) What concerns you most, (4) What you're tracking next. Cite specific sources. This briefing should cover EVERYTHING found in this scan - figures, investigations, red flags, trends. Be thorough.",
   "newEntities": ["Any NEW people or organizations mentioned that should be tracked"],
@@ -307,12 +307,22 @@ CRITICAL DISTINCTION - READ CAREFULLY:
   "apiSuggestions": ["Any FREE APIs or data sources mentioned in articles that could help the investigation"]
 }
 
+VERIFIED BASELINE STATS (do not report lower numbers):
+- Charged: 70+ (FOF case alone)
+- Convicted: 28+ (FOF case)
+- Alleged: $9B+ (U.S. Attorney Joe Thompson estimate, Dec 2025 - includes Medicaid, childcare, FOF)
+- Active Cases: 5 (FOF federal, CCAP, HSS, Medicaid fraud, Congressional oversight)
+- Source: https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/
+
+Only report HIGHER numbers if you find verified sources. Never go below baseline.
+
 CRITICAL:
 - FIGURES = ONLY people ACCUSED of fraud with specific allegations. NO journalists ever.
 - Nick Shirley is a JOURNALIST - NEVER add him
 - Officials CAN be added ONLY if they are personally accused of fraud (not just overseeing investigations)
 - Every figure MUST have allegations array with at least one specific charge - if no allegations, don't add them
 - ASK YOURSELF: "Is this person accused of committing fraud?" If NO, don't add.
+- STATS: Never report alleged amount lower than $9B+ - that's the verified U.S. Attorney estimate
 - confidence: 90+ = official/confirmed, 75-89 = credible reports, 60-74 = allegations, <60 = unconfirmed
 - The "insight" field in redFlags is YOUR analysis - hunches, patterns, next steps. Sign as "— Polaris"
 - The "briefing" MUST comprehensively cover ALL findings from this scan
