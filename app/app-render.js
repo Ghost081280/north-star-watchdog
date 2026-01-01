@@ -591,9 +591,11 @@ function renderDetective() {
         return true;
     });
     
-    // Show message if no sources available
-    const noSourcesWarning = globalSourcesUsed.length === 0 ? 
-        '<p class="no-sources-warning">⚠️ No OSINT sources available for this scan. Some APIs may need configuration.</p>' : '';
+    // Log to console for debugging, but don't show warning to users
+    if (globalSourcesUsed.length === 0) {
+        console.warn('AI Detective: No OSINT sources returned data this scan');
+    }
+    const noSourcesWarning = ''; // Never show technical warnings to users
     
     // Default findings if no red flags loaded
     if (findings.length === 0) {
