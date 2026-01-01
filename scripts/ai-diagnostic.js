@@ -699,8 +699,22 @@ async function preFlightCheck() {
     
     const analyzerPath = path.join(SCRIPTS_DIR, 'ai-analyzer.js');
     const content = fs.readFileSync(analyzerPath, 'utf8');
-    const modelMatch = content.match(/model:\s*['"]([^'"]+)['"]/);
-    const currentModel = modelMatch ? modelMatch[1] : 'unknown';
+    
+    // Try to find model - check both formats
+    // New format: GROQ_MODELS array
+    // Old format: model: 'model-name'
+    let currentModel = 'llama-3.3-70b-versatile'; // Default
+    
+    const arrayMatch = content.match(/GROQ_MODELS\s*=\s*\[\s*['"]([^'"]+)['"]/);
+    const inlineMatch = content.match(/model:\s*['"]([^'"]+)['"]/);
+    
+    if (arrayMatch) {
+        currentModel = arrayMatch[1];
+    } else if (inlineMatch) {
+        currentModel = inlineMatch[1];
+    }
+    
+    console.log(`  Testing model: ${currentModel}`);
     
     const result = await testGroqModel(apiKey, currentModel);
     
@@ -713,10 +727,7 @@ async function preFlightCheck() {
             const test = await testGroqModel(apiKey, model);
             if (test.success) {
                 console.log(`  🔧 Found working model: ${model}`);
-                const fix = fixGroqModel(model);
-                if (fix.success) {
-                    return { ok: true, fixed: true, model };
-                }
+                return { ok: true, fixed: false, model };
             }
             if (test.rateLimited) {
                 console.log(`  ⚠️ ${model} also rate limited...`);
@@ -734,10 +745,7 @@ async function preFlightCheck() {
             const test = await testGroqModel(apiKey, model);
             if (test.success) {
                 console.log(`  🔧 Found working model: ${model}`);
-                const fix = fixGroqModel(model);
-                if (fix.success) {
-                    return { ok: true, fixed: true, model };
-                }
+                return { ok: true, fixed: false, model };
             }
         }
         
