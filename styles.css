@@ -3277,3 +3277,125 @@ a.figure-status:hover {
     color: #a78bfa;
     font-weight: 600;
 }
+/* ============================================
+   NORTH STAR WATCHDOG - REMAINING STYLES
+   Add these to the bottom of your styles.css
+   ============================================ */
+
+/* Detective Capabilities */
+.detective-capabilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0 24px 0;
+}
+
+.capability {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 16px;
+    font-size: 12px;
+    color: #d4af37;
+}
+
+.capability svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+}
+
+/* Footer Agent Links */
+.footer-agent-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.agent-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.agent-link-btn:hover {
+    border-color: #d4af37;
+    color: #d4af37;
+}
+
+.agent-link-btn.diagnostic-link {
+    border-color: #4a9eff;
+    color: #4a9eff;
+}
+
+.agent-link-btn.diagnostic-link:hover {
+    background: rgba(74, 158, 255, 0.1);
+}
+
+/* Detective Footer Links */
+.detective-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #222;
+}
+
+.detective-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #888;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.detective-link:hover {
+    color: #d4af37;
+}
+
+.detective-timestamp {
+    margin-left: auto;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detective-capabilities {
+        justify-content: center;
+    }
+    
+    .detective-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detective-timestamp {
+        margin-left: 0;
+    }
+    
+    .footer-agent-links {
+        flex-direction: column;
+    }
+    
+    .agent-link-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
