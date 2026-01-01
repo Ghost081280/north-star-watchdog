@@ -2,8 +2,8 @@
 
 [![AI Updater](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml)
 [![GitHub Pages](https://img.shields.io/badge/Live%20Site-Online-brightgreen)](https://ghost081280.github.io/north-star-watchdog/)
-[![System Health](https://img.shields.io/badge/Health-84%25-brightgreen)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
-[![Diagnostic](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
+[![System Health](https://img.shields.io/badge/Health-84%25-brightgreen)](https://ghost081280.github.io/north-star-watchdog/diagnostic)
+[![Diagnostic](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic)
 [![Data Sources](https://img.shields.io/badge/APIs-6%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
 [![Follow @NorthStarAgent](https://img.shields.io/badge/X-@NorthStarAgent-black)](https://x.com/NorthStarAgent)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -18,7 +18,7 @@
 
 🐦 **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent) — @ me with any entity to scan!
 
-🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic/](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
+🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic)
 
 ---
 
@@ -236,7 +236,7 @@ The diagnostic tool runs **100+ automated tests** to verify system health:
 - ✅ X/Twitter connection
 - ✅ Cross-reference integrity
 
-👉 **[Run Full Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic/)**
+👉 **[Run Full Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic)**
 
 ---
 
