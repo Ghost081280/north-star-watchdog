@@ -350,7 +350,11 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     writeJson('red-flags.json', {
         flags: allFlags,
         // These are the sources that returned data for at least one entity
-        sourcesUsed: osint?.sourcesUsed || overallSourcesUsed,
+        // FIX: Always include Google News since that's where the data originated
+        // OSINT APIs may fail due to network restrictions in GitHub Actions
+        sourcesUsed: osint?.sourcesUsed?.length > 0 
+            ? osint.sourcesUsed 
+            : (overallSourcesUsed.length > 0 ? overallSourcesUsed : ['Google News']),
         sourcesChecked: osint?.sourcesChecked || ALL_API_SOURCES,
         lastUpdated: now
     });
