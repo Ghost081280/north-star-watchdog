@@ -142,7 +142,48 @@
             <div class="spinner"></div>
             <p>Searching 12 databases...</p>
         </div>
-        <div class="deep-research" id="deep-research" style="display: none;"></div>
+        <div class="deep-research" id="deep-research" style="display: none;">
+            <div class="deep-research-header">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    Deep Research Results
+                </h3>
+            </div>
+            
+            <!-- Video & Social Links -->
+            <div class="research-section">
+                <h4>Video & Social Media</h4>
+                <div class="research-links" id="video-links"></div>
+            </div>
+            
+            <!-- Court & Government Links -->
+            <div class="research-section">
+                <h4>Court Records, Government & OSINT</h4>
+                <div class="research-links" id="court-links"></div>
+            </div>
+            
+            <!-- News Results -->
+            <div class="research-section">
+                <h4>Recent News</h4>
+                <div class="news-results" id="news-results"></div>
+            </div>
+            
+            <!-- AI Analysis Section -->
+            <div class="research-section ai-section">
+                <h4>AI Analysis</h4>
+                <div class="ai-prompt-box">
+                    <p class="ai-prompt-label">Copy this prompt to continue research in any AI:</p>
+                    <textarea id="ai-prompt" class="ai-prompt" readonly></textarea>
+                    <div class="ai-actions">
+                        <button id="copy-prompt-btn" class="btn-copy-prompt" onclick="copyPrompt()">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            Copy Prompt
+                        </button>
+                        <div class="ai-links" id="ai-links"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="results-content" id="results-content"></div>
     </section>
 
