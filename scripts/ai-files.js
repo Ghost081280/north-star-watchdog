@@ -576,4 +576,171 @@ function updateReadmeWithNewSource(sourceName, sourceUrl, sourceDescription) {
     }
 }
 
-module.exports = { updateAllDataFiles, createGitHubIssues, updateLearning, updateReadmeWithNewSource };
+// ============================================
+// FILE MAINTENANCE & CLEANUP
+// Polaris keeps the repo clean and fast
+// ============================================
+
+const MAX_FILE_SIZE_KB = 500; // Max size before cleanup
+const MAX_NEWS_ARTICLES = 100;
+const MAX_RED_FLAGS = 50;
+const MAX_FIGURES = 50;
+
+/**
+ * Check file sizes and clean up if needed
+ */
+function maintainFiles() {
+    console.log('  🧹 POLARIS: Checking file sizes...');
+    
+    const files = ['news.json', 'red-flags.json', 'figures.json', 'investigations.json'];
+    let cleaned = 0;
+    
+    for (const filename of files) {
+        const filepath = path.join(DATA_DIR, filename);
+        
+        try {
+            if (!fs.existsSync(filepath)) continue;
+            
+            const stats = fs.statSync(filepath);
+            const sizeKB = stats.size / 1024;
+            
+            if (sizeKB > MAX_FILE_SIZE_KB) {
+                console.log(`  ⚠ ${filename} is ${sizeKB.toFixed(1)}KB - cleaning up...`);
+                cleanupFile(filename);
+                cleaned++;
+            }
+        } catch (e) {
+            console.log(`  ⚠ Could not check ${filename}: ${e.message}`);
+        }
+    }
+    
+    if (cleaned > 0) {
+        console.log(`  ✓ Cleaned ${cleaned} files`);
+    } else {
+        console.log(`  ✓ All files within size limits`);
+    }
+    
+    return cleaned;
+}
+
+/**
+ * Clean up a specific file by removing old entries
+ */
+function cleanupFile(filename) {
+    const filepath = path.join(DATA_DIR, filename);
+    
+    try {
+        const data = JSON.parse(fs.readFileSync(filepath, 'utf8'));
+        let modified = false;
+        
+        // News: Keep only recent articles
+        if (filename === 'news.json' && data.articles?.length > MAX_NEWS_ARTICLES) {
+            const archived = data.articles.length - MAX_NEWS_ARTICLES;
+            data.articles = data.articles.slice(0, MAX_NEWS_ARTICLES);
+            console.log(`    Archived ${archived} old articles`);
+            modified = true;
+        }
+        
+        // Red flags: Keep only recent, remove old non-significant ones
+        if (filename === 'red-flags.json' && data.flags?.length > MAX_RED_FLAGS) {
+            // Keep high confidence and new ones, archive the rest
+            data.flags = data.flags
+                .sort((a, b) => (b.confidence || 0) - (a.confidence || 0))
+                .slice(0, MAX_RED_FLAGS);
+            console.log(`    Trimmed to ${MAX_RED_FLAGS} highest-confidence flags`);
+            modified = true;
+        }
+        
+        // Figures: Keep most relevant
+        if (filename === 'figures.json' && data.people?.length > MAX_FIGURES) {
+            data.people = data.people.slice(0, MAX_FIGURES);
+            console.log(`    Trimmed to ${MAX_FIGURES} figures`);
+            modified = true;
+        }
+        
+        if (modified) {
+            data.lastCleaned = new Date().toISOString();
+            fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
+            console.log(`    ✓ ${filename} cleaned`);
+        }
+        
+    } catch (e) {
+        console.log(`    ⚠ Cleanup failed for ${filename}: ${e.message}`);
+    }
+}
+
+/**
+ * Archive old data to a separate file (for historical reference)
+ */
+function archiveOldData(filename, data, reason) {
+    const archiveDir = path.join(DATA_DIR, 'archive');
+    
+    // Create archive directory if it doesn't exist
+    if (!fs.existsSync(archiveDir)) {
+        fs.mkdirSync(archiveDir, { recursive: true });
+    }
+    
+    const timestamp = new Date().toISOString().split('T')[0];
+    const archiveFile = path.join(archiveDir, `${filename.replace('.json', '')}-${timestamp}.json`);
+    
+    try {
+        const archive = {
+            archivedAt: new Date().toISOString(),
+            reason,
+            data
+        };
+        
+        fs.writeFileSync(archiveFile, JSON.stringify(archive, null, 2));
+        console.log(`    📦 Archived to ${archiveFile}`);
+        return true;
+    } catch (e) {
+        console.log(`    ⚠ Archive failed: ${e.message}`);
+        return false;
+    }
+}
+
+/**
+ * Get repo health status
+ */
+function getRepoHealth() {
+    const health = {
+        totalSizeKB: 0,
+        files: {},
+        issues: []
+    };
+    
+    const dataFiles = fs.readdirSync(DATA_DIR).filter(f => f.endsWith('.json'));
+    
+    for (const filename of dataFiles) {
+        const filepath = path.join(DATA_DIR, filename);
+        const stats = fs.statSync(filepath);
+        const sizeKB = stats.size / 1024;
+        
+        health.files[filename] = {
+            sizeKB: sizeKB.toFixed(1),
+            ok: sizeKB < MAX_FILE_SIZE_KB
+        };
+        
+        health.totalSizeKB += sizeKB;
+        
+        if (sizeKB > MAX_FILE_SIZE_KB) {
+            health.issues.push(`${filename} is ${sizeKB.toFixed(1)}KB (max: ${MAX_FILE_SIZE_KB}KB)`);
+        }
+    }
+    
+    health.totalSizeKB = health.totalSizeKB.toFixed(1);
+    health.healthy = health.issues.length === 0;
+    
+    return health;
+}
+
+module.exports = { 
+    updateAllDataFiles, 
+    createGitHubIssues, 
+    updateLearning, 
+    updateReadmeWithNewSource,
+    maintainFiles,
+    cleanupFile,
+    archiveOldData,
+    getRepoHealth
+};
