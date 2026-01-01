@@ -18,7 +18,7 @@
 
 🐦 **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent) — @ me with any entity to scan!
 
-🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic/](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
+🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic/](https://ghost081280.github.io/north-star-watchdog/diagnostic)
 
 ---
 
