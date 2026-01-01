@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal_freeze",
+      "description": "The Trump administration has frozen child care payments to Minnesota due to alleged fraud",
+      "insight": "I see a pattern of potential fraud in Minnesota's child care program, with allegations of fake claims and misuse of funds. Further investigation is needed to determine the extent of the fraud and hold those responsible accountable.",
+      "entities": [
+        "Minnesota DHS",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1767249056059-fzefd3xo7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-01T06:30:56.056Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
       "description": "Federal funding freeze for child care programs due to alleged fraud in Minnesota.",
       "insight": "I notice that the federal funding freeze has been expanded to all 50 states, which suggests that the alleged fraud in Minnesota may be more widespread than initially thought. I would recommend investigating the financial transactions of child care providers in Minnesota to identify any suspicious activity.",
       "entities": [
@@ -76,7 +96,10 @@
       "isNew": false
     }
   ],
-  "sourcesUsed": [],
+  "sourcesUsed": [
+    "ProPublica Nonprofits",
+    "FEC"
+  ],
   "sourcesChecked": [
     "ProPublica Nonprofits",
     "FEC",
@@ -84,5 +107,5 @@
     "OpenCorporates",
     "USASpending"
   ],
-  "lastUpdated": "2026-01-01T05:25:45.135Z"
+  "lastUpdated": "2026-01-01T06:30:56.056Z"
 }
