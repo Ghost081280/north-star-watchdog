@@ -36,6 +36,7 @@ const { analyzeWithGroq } = require('./ai-analyzer');
 const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
 const { preFlightCheck, postScanDiagnostic, reportCriticalFailure, runFullDiagnostic } = require('./ai-diagnostic');
+const { isConfigured: isXConfigured, testConnection: testXConnection, postRedFlag, scanForBreakingNews, processMentions, postBriefing } = require('./ai-twitter');
 
 // ============================================
 // CONFIGURATION
@@ -247,7 +248,69 @@ async function main() {
         console.log(`✓ Diagnostic complete: ${postScan.repaired} fixes, ${postScan.healthScore}% health`);
         
         // ============================================
-        // STEP 9: Update README timestamp
+        // STEP 9: X/Twitter Integration (Rate Limited: ~3 posts/day)
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 9: X/TWITTER INTEGRATION');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        if (isXConfigured()) {
+            const xConnection = await testXConnection();
+            if (xConnection.success) {
+                console.log(`✓ Connected to X as @${xConnection.username}`);
+                
+                // RATE LIMIT STRATEGY: 100 posts/month = ~3/day
+                // - 1 daily briefing (at 14:00 UTC / 8am CST)
+                // - 1-2 critical alerts (95%+ confidence only)
+                
+                const now = new Date();
+                const hour = now.getUTCHours();
+                
+                // Daily briefing at 14:00 UTC (8am CST)
+                const isDailyBriefingTime = (hour === 14);
+                
+                // Only post CRITICAL findings (95%+) outside briefing time
+                const criticalFlags = (aiAnalysis.redFlags || []).filter(rf => 
+                    rf.confidence >= 95 && rf.isNew === true
+                );
+                
+                if (isDailyBriefingTime) {
+                    console.log('  📅 Daily briefing time - posting summary...');
+                    try {
+                        const statsPath = path.join(__dirname, '..', 'data', 'stats.json');
+                        const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
+                        await postBriefing(stats, stats.briefing);
+                    } catch (e) {
+                        console.log(`  ⚠ Could not post briefing: ${e.message}`);
+                    }
+                } else if (criticalFlags.length > 0) {
+                    console.log(`  🚨 Critical finding (${criticalFlags[0].confidence}%) - posting alert...`);
+                    await postRedFlag(criticalFlags[0]); // Only 1 critical per run
+                } else {
+                    console.log('  ⏳ No posts this hour (saving quota: ~3/day max)');
+                }
+                
+                // Reading is free/higher limit - always scan for news
+                const xNews = await scanForBreakingNews();
+                console.log(`✓ Scanned X: ${xNews.tweets?.length || 0} relevant tweets found`);
+                
+                // Check mentions every 6 hours only (to save quota for replies)
+                if (hour % 6 === 0) {
+                    const mentions = await processMentions(enrichFindings);
+                    console.log(`✓ Processed ${mentions.processed} mention(s)`);
+                } else {
+                    console.log('  ⏳ Mentions check skipped (runs every 6 hours)');
+                }
+                
+            } else {
+                console.log(`⚠ X connection failed: ${xConnection.error}`);
+            }
+        } else {
+            console.log('⚠ X not configured - skipping social media integration');
+        }
+        
+        // ============================================
+        // STEP 10: Update README timestamp
         // ============================================
         updateReadmeTimestamp();
         
