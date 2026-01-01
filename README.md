@@ -1,6 +1,6 @@
 # ⭐ North Star Watchdog
 
-[![AI Scan](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-scan.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-scan.yml)
+[![AI Updater](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml)
 [![GitHub Pages](https://img.shields.io/badge/Live%20Site-Online-brightgreen)](https://ghost081280.github.io/north-star-watchdog/)
 [![System Health](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
 [![Data Sources](https://img.shields.io/badge/APIs-6%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
