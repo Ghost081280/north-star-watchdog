@@ -12,7 +12,7 @@ This isn't a typical news site. North Star Watchdog is powered by an **autonomou
 
 **Every hour, the AI:**
 - 🔍 Scans Google News for breaking fraud stories
-- 📊 Queries 6 free government APIs for public records
+- 📊 Queries 6 government & business APIs for public records
 - 🧠 Learns new search terms and entities automatically
 - 🚨 Detects patterns and connections across sources
 - 📝 Updates the site automatically via GitHub Actions
@@ -28,19 +28,33 @@ Minnesota is facing what investigators call the **largest pandemic fraud scandal
 
 ### Active Investigations
 
-| Program | Alleged Fraud | Status |
-|---------|---------------|--------|
-| **Feeding Our Future** | $250M+ | 70+ charged, 28+ convicted |
-| **CCAP Daycare Fraud** | $1B+ | Federal payment freeze in effect |
-| **Housing Stabilization Services** | $302M | Program terminated |
+| Program | Alleged Fraud | Status | Agency |
+|---------|---------------|--------|--------|
+| **Feeding Our Future** | $250M+ | 70+ charged, 28+ convicted | DOJ |
+| **CCAP Daycare Fraud** | $1B+ | Federal payment freeze | HHS, DCYF |
+| **Housing Stabilization Services** | $302M | Program terminated | DHS |
 
 ### What We Monitor
 
 - **Breaking News** — Real-time coverage from local and national sources
-- **Court Proceedings** — Trials, sentencings, plea deals, and forfeitures
-- **Key Figures** — Defendants, their roles, and case outcomes
-- **Connected Patterns** — Shell companies, shared addresses, funding flows
-- **Policy Response** — Legislative hearings, oversight actions, program changes
+- **Court Proceedings** — Trials, sentencings, plea deals, forfeitures
+- **Key Figures** — Defendants, officials, their roles and case outcomes
+- **Suspect Entities** — Daycares, nonprofits, shell companies under investigation
+- **Government Response** — DCYF, DHS, HHS actions and oversight
+- **Congressional Oversight** — House hearings, legislative response
+
+### Key Entities Being Tracked
+
+**Government Agencies:**
+- Minnesota DCYF (Dept of Children, Youth and Families)
+- Minnesota DHS (Dept of Human Services)
+- HHS (Federal)
+- DOJ (Federal prosecution)
+
+**Suspect Organizations:**
+- Quality Learing Center ($4M, recently closed)
+- Mako Childcare (closed years ago, still in system)
+- Feeding Our Future sites
 
 *All stats update automatically when the AI finds new developments.*
 
@@ -72,6 +86,20 @@ The AI doesn't just run queries — it **learns and expands** its coverage over 
 3. **Learning:** New entities added to tracking database
 4. **Hour 2+:** Expanded searches catch more connections
 
+### Current Tracking
+
+**17 Search Queries** including:
+- Minnesota DCYF fraud
+- Tikki Brown DCYF
+- Quality Learing Center daycare
+- CCAP daycare fraud Minnesota
+
+**10 Tracked Entities** including:
+- Minnesota DCYF
+- Tikki Brown
+- Quality Learing Center
+- Mako Childcare
+
 The more it runs, the more comprehensive the coverage becomes.
 
 ---
@@ -92,6 +120,12 @@ The more it runs, the more comprehensive the coverage becomes.
 
 **AI Analysis:**
 - GROQ (Llama 3.1 70B) — Entity extraction, pattern detection
+
+### Future Integrations (Planned)
+- DuckDuckGo — Entity enrichment
+- Reddit — Community discussions (r/minnesota, r/twincities)
+- Court Listener — Federal court filings
+- Open States — Minnesota legislature tracking
 
 ---
 
@@ -125,6 +159,20 @@ Every Hour:
 
 ---
 
+## 📋 Data Categories
+
+The system distinguishes between different types of tracked entities:
+
+| Category | Examples | Purpose |
+|----------|----------|---------|
+| **Defendants** | Aimee Bock, Abdiaziz Farah | Track charges, convictions, sentencing |
+| **Officials** | Tikki Brown (DCYF Commissioner) | Track statements, oversight actions |
+| **Suspect Entities** | Quality Learing Center, Mako Childcare | Track payments, closures, investigations |
+| **Government Agencies** | DCYF, DHS, HHS, DOJ | Track policy responses, enforcement |
+| **Journalists** | Nick Shirley | Attribution only — NOT investigation subjects |
+
+---
+
 ## 🔧 System Diagnostic
 
 Check if everything is working:
@@ -144,6 +192,7 @@ This service is for **informational purposes only**.
 - Findings are **machine-generated** and may contain errors
 - **All individuals are presumed innocent until proven guilty**
 - **Always verify information through official sources**
+- **Journalists are tracked for attribution, not as investigation subjects**
 
 This site does not make accusations — it tracks publicly available information about ongoing investigations.
 
