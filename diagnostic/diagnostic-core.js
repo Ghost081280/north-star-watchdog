@@ -28,7 +28,14 @@ const DiagnosticCore = {
         'FEC',
         'OIG Exclusions',
         'OpenCorporates',
-        'USASpending'
+        'USASpending',
+        'SEC EDGAR',
+        'OSHA',
+        'FDA',
+        'HUD',
+        'MN Campaign Finance',
+        'MN DHS Licensing',
+        'MN Transparency'
     ],
     
     VERIFIED_BASELINE: {
