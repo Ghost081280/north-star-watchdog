@@ -291,9 +291,10 @@ async function updateAllDataFiles({ news, analysis, osint }) {
 }
 
 /**
- * Create GitHub Issues for high-confidence red flags
+ * Create GitHub Issues - ONLY for significant discoveries
+ * Polaris reports to Command only when something important happens
  */
-async function createGitHubIssues(redFlags) {
+async function createGitHubIssues(redFlags, analysis) {
     const token = process.env.GITHUB_TOKEN;
     const repo = process.env.GITHUB_REPOSITORY;
     
@@ -302,90 +303,115 @@ async function createGitHubIssues(redFlags) {
         return 0;
     }
     
-    // Only create issues for high-confidence flags
-    const highConfidence = (redFlags || []).filter(rf => 
-        rf.confidence >= 75 && rf.isNew !== false
+    // SIGNIFICANT = 90%+ confidence AND new discovery
+    // We don't spam issues - only the big stuff
+    const significant = (redFlags || []).filter(rf => 
+        rf.confidence >= 90 && rf.isNew === true
     );
     
-    if (!highConfidence.length) {
-        console.log('  No high-confidence new flags to create issues for');
+    if (!significant.length) {
+        console.log('  No significant new discoveries to report to Command');
         return 0;
     }
     
     let created = 0;
     
-    for (const flag of highConfidence.slice(0, 3)) { // Max 3 issues per run
-        try {
-            const title = `🚩 ${flag.type}: ${(flag.entities || []).join(', ') || 'Unknown Entity'}`;
-            const body = `## Red Flag Detected
+    // Max 1 issue per run - quality over quantity
+    const flag = significant[0];
+    
+    try {
+        const title = `🚨 POLARIS INTEL: ${flag.type.replace(/_/g, ' ').toUpperCase()} - ${(flag.entities || []).slice(0, 2).join(', ') || 'New Pattern'}`;
+        
+        const body = `## 🕵️ Field Report from Agent Polaris
 
-**Type:** ${flag.type}
-**Confidence:** ${flag.confidence}%
-**Source:** ${flag.source || 'AI Analysis'}
+**Commander,**
 
-### Description
-${flag.description}
-
-### Entities Involved
-${(flag.entities || []).map(e => `- ${e}`).join('\n') || 'No specific entities identified'}
-
-### Source Article
-${flag.sourceArticle || 'Not specified'}
-${flag.sourceUrl ? `\n[View Source](${flag.sourceUrl})` : ''}
+I've identified a significant development that requires your attention.
 
 ---
-*Detected by North Star Watchdog AI on ${new Date().toISOString()}*
-*This is an automated detection - please verify before taking action*`;
 
-            const [owner, repoName] = repo.split('/');
-            
-            const postData = JSON.stringify({
-                title,
-                body,
-                labels: ['ai-detected', flag.confidence >= 90 ? 'high-priority' : 'needs-verification']
-            });
-            
-            await new Promise((resolve, reject) => {
-                const req = https.request({
-                    hostname: 'api.github.com',
-                    path: `/repos/${owner}/${repoName}/issues`,
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `token ${token}`,
-                        'User-Agent': 'NorthStarWatchdog',
-                        'Content-Type': 'application/json',
-                        'Content-Length': Buffer.byteLength(postData)
+### 📍 Intelligence Summary
+
+**Classification:** ${flag.type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+**Confidence Level:** ${flag.confidence}%
+**Source:** ${flag.source || 'Multi-source analysis'}
+
+### 📋 Findings
+
+${flag.description}
+
+### 🔍 My Analysis
+
+${flag.insight || 'Cross-referencing with existing intelligence. Patterns emerging.'}
+
+### 🏷️ Entities of Interest
+
+${(flag.entities || []).map(e => `- **${e}**`).join('\n') || 'No specific entities identified yet'}
+
+### 📰 Source Documentation
+
+${flag.sourceArticle ? `- Article: "${flag.sourceArticle}"` : ''}
+${flag.sourceUrl ? `- [View Original Source](${flag.sourceUrl})` : ''}
+
+---
+
+### 🔗 Verified Against
+
+${(flag.apisUsed || ['Google News']).map(api => `✓ ${api}`).join('\n')}
+
+---
+
+**Recommendation:** Review and verify through official channels before any public reporting.
+
+*— Agent Polaris*
+*North Star Watchdog AI*
+*${new Date().toISOString()}*`;
+
+        const [owner, repoName] = repo.split('/');
+        
+        const postData = JSON.stringify({
+            title,
+            body,
+            labels: ['polaris-intel', 'significant', 'verified']
+        });
+        
+        await new Promise((resolve, reject) => {
+            const req = https.request({
+                hostname: 'api.github.com',
+                path: `/repos/${owner}/${repoName}/issues`,
+                method: 'POST',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'User-Agent': 'NorthStarWatchdog-Polaris',
+                    'Content-Type': 'application/json',
+                    'Content-Length': Buffer.byteLength(postData)
+                }
+            }, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                    if (res.statusCode === 201) {
+                        created++;
+                        console.log(`  📡 POLARIS: Intel report sent to Command`);
+                        resolve();
+                    } else {
+                        console.log(`  ⚠ Failed to send report: ${res.statusCode}`);
+                        resolve();
                     }
-                }, (res) => {
-                    let data = '';
-                    res.on('data', chunk => data += chunk);
-                    res.on('end', () => {
-                        if (res.statusCode === 201) {
-                            created++;
-                            console.log(`  ✓ Created issue: ${title.substring(0, 50)}...`);
-                            resolve();
-                        } else {
-                            console.log(`  ⚠ Failed to create issue: ${res.statusCode}`);
-                            resolve();
-                        }
-                    });
                 });
-                
-                req.on('error', (e) => {
-                    console.log(`  ⚠ Issue creation error: ${e.message}`);
-                    resolve();
-                });
-                
-                req.write(postData);
-                req.end();
             });
             
-            // Rate limit
-            await new Promise(r => setTimeout(r, 1000));
+            req.on('error', (e) => {
+                console.log(`  ⚠ Comms error: ${e.message}`);
+                resolve();
+            });
             
-        } catch (error) {
-            console.log(`  ⚠ Issue creation failed: ${error.message}`);
-        }
+            req.write(postData);
+            req.end();
+        });
+        
+    } catch (error) {
+        console.log(`  ⚠ Report failed: ${error.message}`);
     }
     
     return created;
