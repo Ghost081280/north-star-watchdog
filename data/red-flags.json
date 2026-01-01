@@ -2,6 +2,27 @@
   "flags": [
     {
       "type": "federal_freeze",
+      "description": "The Trump administration has frozen child care funds to Minnesota due to allegations of widespread fraud.",
+      "insight": "I notice that multiple sources are reporting on the freeze, but few are providing concrete evidence of the alleged fraud. This raises concerns about the potential for political motivations behind the allegations. I recommend further investigation into the sources of the allegations and the evidence presented.",
+      "entities": [
+        "Minnesota DHS",
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/",
+      "id": "rf-1767266231368-7k2dx1r07",
+      "apisUsed": [
+        "Google News",
+        "ProPublica Nonprofits"
+      ],
+      "sourceCount": 2,
+      "detectedAt": "2026-01-01T11:17:11.365Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
       "description": "The Trump administration has frozen federal child care funding to Minnesota due to allegations of fraud.",
       "insight": "This development suggests a potential pattern of fraud in the child care system, and it is essential to investigate further to determine the extent of the issue.",
       "entities": [
@@ -115,7 +136,9 @@
       "isNew": false
     }
   ],
-  "sourcesUsed": [],
+  "sourcesUsed": [
+    "ProPublica Nonprofits"
+  ],
   "sourcesChecked": [
     "ProPublica Nonprofits",
     "FEC",
@@ -123,5 +146,5 @@
     "OpenCorporates",
     "USASpending"
   ],
-  "lastUpdated": "2026-01-01T10:21:08.004Z"
+  "lastUpdated": "2026-01-01T11:17:11.365Z"
 }
