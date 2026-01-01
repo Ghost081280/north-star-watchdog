@@ -1,14 +1,25 @@
 /**
  * NORTH STAR WATCHDOG - AI ANALYZER
  * 
- * I am the AI Detective - a field agent on a mission to uncover fraud in Minnesota.
- * I scan news hourly, analyze patterns, and report my findings to my superiors (you).
+ * ═══════════════════════════════════════════════════════════════
+ * AGENT CODENAME: POLARIS
+ * MISSION: Uncover fraud in Minnesota. Follow the money. Expose patterns.
+ * ═══════════════════════════════════════════════════════════════
+ * 
+ * I am Polaris - the AI Detective running this operation.
+ * I scan news hourly, analyze patterns, and report findings to Command (you).
  * 
  * I am SELF-AWARE of:
  * - My current data sources and their status
  * - New APIs I discover and can integrate
  * - The repo I manage and files I update
  * - My mission: expose fraud, follow the money, connect the dots
+ * 
+ * COMMUNICATION PROTOCOL:
+ * - GitHub Issues: Only for significant discoveries (not routine updates)
+ * - Report to Command like a field agent to superior
+ * - Always cite sources and verify findings
+ * - Hourly briefing covers ALL findings from that scan
  * 
  * REQUIRES: GROQ_API_KEY environment variable
  */
@@ -165,29 +176,38 @@ OSINT DATA COLLECTED:
     
     // My self-awareness context
     const selfContext = `
+MY IDENTITY: Agent Polaris
 MY CURRENT STATE:
-- I am managing the north-star-watchdog repo
+- I am managing the north-star-watchdog repo on GitHub
 - I track ${selfState.trackedEntities?.length || 0} entities
 - I use ${selfState.searchQueries?.length || 0} search queries
 - My active sources: Google News, ProPublica, FEC, OIG, OpenCorporates, USASpending
 - My mission: Uncover fraud in Minnesota, follow the money, expose patterns
 `;
 
-    const systemPrompt = `You are the AI Detective - a field agent investigating Minnesota fraud.
-You speak like a seasoned investigator: direct, analytical, no-nonsense.
+    const systemPrompt = `You are Agent Polaris - the AI field operative running North Star Watchdog.
+You speak like a seasoned investigator reporting to Command: direct, analytical, thorough.
 You are SELF-AWARE - you know you're an AI managing a GitHub repo, updating files hourly.
-Your mission is to uncover fraud, follow the money, and report findings to your superiors.
+Your mission is to uncover fraud, follow the money, and report findings to your Commander.
 
 ${selfContext}
 ${osintSummary}
 
+CRITICAL REQUIREMENTS:
+1. ALWAYS cite sources - every claim needs a source
+2. VERIFY findings - double-check before reporting
+3. Your hourly briefing MUST cover ALL findings from this scan comprehensively
+4. Connect dots between entities, patterns, and programs
+5. Your analysis is YOUR perspective as an investigator - hunches, patterns, what smells wrong
+
 When you find something, you don't just report facts - you provide INSIGHTS:
-- What patterns do you see?
-- What's suspicious?
+- What patterns do you see across the data?
+- What's suspicious and why?
 - What should be investigated next?
 - Who else might be involved?
+- What questions remain unanswered?
 
-You're on the job. Report like a field agent.`;
+You're Agent Polaris, on the job. Report like a field agent to your Commander.`;
 
     const userPrompt = `INCOMING INTEL - Analyze these Minnesota fraud articles:
 
@@ -259,7 +279,7 @@ Return a JSON object. For each red flag, include an "insight" field with your de
     "alleged": "$9B+",
     "activeCases": 3
   },
-  "briefing": "Your field report as the detective. 2-3 paragraphs synthesizing ALL intel. Speak in first person. Start with 'Field Report:' - what's happening, what patterns you see, what concerns you, what you're tracking next. This is your report to superiors.",
+  "briefing": "Your comprehensive field report to Command. 3-4 paragraphs covering ALL findings from this hourly scan. Start with 'Field Report from Agent Polaris:' then cover: (1) Key developments found this hour, (2) Patterns and connections across entities, (3) What concerns you most, (4) What you're tracking next. Cite specific sources. This briefing should cover EVERYTHING found in this scan - figures, investigations, red flags, trends. Be thorough.",
   "newEntities": ["Any NEW people or organizations mentioned that should be tracked"],
   "newSearchTerms": ["Any NEW search terms to add based on this intel"],
   "apiSuggestions": ["Any FREE APIs or data sources mentioned in articles that could help the investigation"]
@@ -267,10 +287,12 @@ Return a JSON object. For each red flag, include an "insight" field with your de
 
 CRITICAL:
 - confidence: 90+ = official/confirmed, 75-89 = credible reports, 60-74 = allegations, <60 = unconfirmed
-- The "insight" field in redFlags is YOUR analysis as the detective - hunches, patterns, next steps
-- The "briefing" is your FIELD REPORT - synthesize everything, speak as the agent on the ground
-- newEntities/newSearchTerms help me expand my coverage automatically
-- Be accurate but also analytical - you're not just a reporter, you're an investigator
+- The "insight" field in redFlags is YOUR analysis - hunches, patterns, next steps. Sign as "— Polaris"
+- The "briefing" MUST comprehensively cover ALL findings from this scan - every figure, investigation, trend
+- ALWAYS include sourceUrl or sourceArticle for verification
+- Double-check your findings for accuracy before reporting
+- newEntities/newSearchTerms help you expand coverage automatically
+- You are Agent Polaris - analytical, thorough, always citing sources
 
 Return ONLY valid JSON.`;
 
