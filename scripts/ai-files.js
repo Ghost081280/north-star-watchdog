@@ -252,27 +252,54 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 7. stats.json - PRESERVE good values, never overwrite with $0
+    // 7. stats.json - VERIFIED STATS ONLY
+    // These numbers are sourced and verified - AI cannot override with lower/unverified numbers
     // ============================================
     const existingStats = readJson('stats.json', {});
     const newStats = analysis.stats || {};
     
-    // Only update stats if AI provided them and they're higher
-    // CRITICAL: Never overwrite alleged with $0 or empty
-    const newAlleged = newStats.alleged;
-    const existingAlleged = existingStats.alleged;
+    // VERIFIED BASELINE STATS (from official sources)
+    // $9B+ source: U.S. Attorney Joe Thompson, CBS News Dec 2025
+    // https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/
+    const VERIFIED_BASELINE = {
+        charged: 70,      // FOF defendants
+        convicted: 28,    // FOF convictions
+        alleged: '$9B+',  // U.S. Attorney Thompson estimate (Medicaid + childcare + FOF)
+        activeCases: 5,   // FOF, CCAP, HSS, Medicaid, Congressional
+        source: 'U.S. Attorney Joe Thompson, Dec 2025',
+        sourceUrl: 'https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/'
+    };
     
-    // Keep existing alleged if new one is $0, empty, or not provided
-    let finalAlleged = existingAlleged || '$9B+';
-    if (newAlleged && newAlleged !== '$0' && newAlleged !== '' && newAlleged !== '$0+') {
-        finalAlleged = newAlleged;
+    // Parse alleged amount to compare (extract number)
+    function parseAmount(str) {
+        if (!str) return 0;
+        const match = str.match(/\$?([\d.]+)\s*(billion|million|B|M)?/i);
+        if (!match) return 0;
+        let num = parseFloat(match[1]);
+        const unit = (match[2] || '').toLowerCase();
+        if (unit === 'billion' || unit === 'b') num *= 1000000000;
+        if (unit === 'million' || unit === 'm') num *= 1000000;
+        return num;
     }
     
+    // Only accept new alleged if it's HIGHER than verified baseline
+    const newAllegedNum = parseAmount(newStats.alleged);
+    const baselineAllegedNum = parseAmount(VERIFIED_BASELINE.alleged);
+    
+    let finalAlleged = VERIFIED_BASELINE.alleged;
+    if (newAllegedNum > baselineAllegedNum) {
+        finalAlleged = newStats.alleged;
+        console.log(`  📊 New higher alleged amount accepted: ${newStats.alleged}`);
+    }
+    
+    // Stats can only go UP, never down (more charged/convicted is progress)
     const stats = {
-        charged: Math.max(existingStats.charged || 70, newStats.charged || 0),
-        convicted: Math.max(existingStats.convicted || 28, newStats.convicted || 0),
+        charged: Math.max(VERIFIED_BASELINE.charged, existingStats.charged || 0, newStats.charged || 0),
+        convicted: Math.max(VERIFIED_BASELINE.convicted, existingStats.convicted || 0, newStats.convicted || 0),
         alleged: finalAlleged,
-        activeCases: Math.max(existingStats.activeCases || 3, newStats.activeCases || 0)
+        activeCases: Math.max(VERIFIED_BASELINE.activeCases, existingStats.activeCases || 0, newStats.activeCases || 0),
+        source: VERIFIED_BASELINE.source,
+        sourceUrl: VERIFIED_BASELINE.sourceUrl
     };
     
     // Fix briefing greeting
