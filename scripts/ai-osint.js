@@ -12,6 +12,9 @@
  * - DOJ/FBI Press (web scrape)
  * 
  * All these APIs are genuinely free and work without authentication.
+ * 
+ * FIX: Now tracks which sources returned data for EACH entity
+ * so red flags can accurately show which APIs were actually used.
  */
 
 const https = require('https');
@@ -65,8 +68,6 @@ function makeRequest(url, options = {}) {
 // ============================================
 
 async function searchNonprofits(query) {
-    console.log(`    ProPublica: Searching "${query}"...`);
-    
     const url = `https://projects.propublica.org/nonprofits/api/v2/search.json?q=${encodeURIComponent(query)}`;
     const result = await makeRequest(url);
     
@@ -81,10 +82,6 @@ async function searchNonprofits(query) {
             nteeCode: o.ntee_code
         }));
         
-        if (orgs.length > 0) {
-            console.log(`      Found ${orgs.length} nonprofits`);
-        }
-        
         return { source: 'ProPublica Nonprofits', found: orgs.length, organizations: orgs };
     }
     
@@ -97,8 +94,6 @@ async function searchNonprofits(query) {
 // ============================================
 
 async function searchFEC(query) {
-    console.log(`    FEC: Searching "${query}"...`);
-    
     // FEC has a public demo key
     const apiKey = 'DEMO_KEY';
     const url = `https://api.open.fec.gov/v1/candidates/search/?q=${encodeURIComponent(query)}&api_key=${apiKey}`;
@@ -114,10 +109,6 @@ async function searchFEC(query) {
             candidateId: c.candidate_id
         }));
         
-        if (candidates.length > 0) {
-            console.log(`      Found ${candidates.length} candidates`);
-        }
-        
         return { source: 'FEC', found: candidates.length, candidates };
     }
     
@@ -125,8 +116,6 @@ async function searchFEC(query) {
 }
 
 async function searchFECContributions(name) {
-    console.log(`    FEC Contributions: Searching "${name}"...`);
-    
     const apiKey = 'DEMO_KEY';
     const url = `https://api.open.fec.gov/v1/schedules/schedule_a/?contributor_name=${encodeURIComponent(name)}&api_key=${apiKey}&per_page=20`;
     const result = await makeRequest(url);
@@ -142,14 +131,10 @@ async function searchFECContributions(name) {
         
         const total = contributions.reduce((sum, c) => sum + (c.amount || 0), 0);
         
-        if (contributions.length > 0) {
-            console.log(`      Found ${contributions.length} contributions totaling $${total.toLocaleString()}`);
-        }
-        
-        return { source: 'FEC Contributions', found: contributions.length, contributions, totalAmount: total };
+        return { source: 'FEC', found: contributions.length, contributions, totalAmount: total };
     }
     
-    return { source: 'FEC Contributions', found: 0 };
+    return { source: 'FEC', found: 0 };
 }
 
 // ============================================
@@ -158,8 +143,6 @@ async function searchFECContributions(name) {
 // ============================================
 
 async function searchOIGExclusions(name) {
-    console.log(`    OIG Exclusions: Checking "${name}"...`);
-    
     // OIG has a public search
     const url = `https://exclusions.oig.hhs.gov/api/exclusions?name=${encodeURIComponent(name)}`;
     const result = await makeRequest(url);
@@ -172,10 +155,6 @@ async function searchOIGExclusions(name) {
             state: e.state,
             specialty: e.specialty
         }));
-        
-        if (exclusions.length > 0) {
-            console.log(`      🚨 FOUND ${exclusions.length} EXCLUDED from federal healthcare!`);
-        }
         
         return { 
             source: 'OIG Exclusions', 
@@ -194,8 +173,6 @@ async function searchOIGExclusions(name) {
 // ============================================
 
 async function searchCompanies(query) {
-    console.log(`    OpenCorporates: Searching "${query}"...`);
-    
     const url = `https://api.opencorporates.com/v0.4/companies/search?q=${encodeURIComponent(query)}&jurisdiction_code=us_mn`;
     const result = await makeRequest(url);
     
@@ -210,10 +187,6 @@ async function searchCompanies(query) {
             registeredAddress: c.company?.registered_address_in_full
         }));
         
-        if (companies.length > 0) {
-            console.log(`      Found ${companies.length} companies`);
-        }
-        
         return { source: 'OpenCorporates', found: companies.length, companies };
     }
     
@@ -226,10 +199,6 @@ async function searchCompanies(query) {
 // ============================================
 
 async function searchUSASpending(query) {
-    console.log(`    USASpending: Searching "${query}"...`);
-    
-    const url = `https://api.usaspending.gov/api/v2/search/spending_by_award/?filters={"keywords":["${query}"],"award_type_codes":["02","03","04","05"]}&limit=10`;
-    
     // USASpending requires POST
     return new Promise((resolve) => {
         const postData = JSON.stringify({
@@ -263,10 +232,6 @@ async function searchUSASpending(query) {
                         date: a.Award_Date
                     }));
                     
-                    if (awards.length > 0) {
-                        console.log(`      Found ${awards.length} federal awards`);
-                    }
-                    
                     API_STATS.successes++;
                     resolve({ source: 'USASpending', found: awards.length, awards });
                 } catch {
@@ -295,6 +260,7 @@ async function searchUSASpending(query) {
 
 // ============================================
 // MAIN ENRICHMENT FUNCTION
+// FIX: Now tracks which sources had data for EACH entity
 // ============================================
 
 async function enrichFindings(aiAnalysis) {
@@ -307,7 +273,9 @@ async function enrichFindings(aiAnalysis) {
         companies: [],
         spending: [],
         sourcesUsed: [],
-        sourcesChecked: []
+        sourcesChecked: [],
+        // NEW: Per-entity source tracking
+        entitySources: {}  // { "Entity Name": ["ProPublica", "FEC", ...] }
     };
     
     // Extract entities from AI analysis
@@ -326,16 +294,29 @@ async function enrichFindings(aiAnalysis) {
     
     console.log(`  Entities to search: ${allEntities.length}`);
     
+    // Initialize entity source tracking - ALL entities start with Google News
+    // because that's where the AI found them initially
+    for (const entity of allEntities) {
+        results.entitySources[entity.toLowerCase()] = ['Google News'];
+    }
+    
     // 1. ProPublica Nonprofits
     console.log('\n  [1/5] ProPublica Nonprofits...');
     results.sourcesChecked.push('ProPublica Nonprofits');
     
     for (const entity of allEntities.slice(0, 5)) {
+        console.log(`    ProPublica: Searching "${entity}"...`);
         const data = await searchNonprofits(entity);
         if (data.found > 0) {
+            console.log(`      Found ${data.found} nonprofits`);
             results.nonprofits.push(data);
             if (!results.sourcesUsed.includes('ProPublica Nonprofits')) {
                 results.sourcesUsed.push('ProPublica Nonprofits');
+            }
+            // Track this source for this entity
+            const key = entity.toLowerCase();
+            if (!results.entitySources[key].includes('ProPublica Nonprofits')) {
+                results.entitySources[key].push('ProPublica Nonprofits');
             }
         }
         await new Promise(r => setTimeout(r, 300));
@@ -346,11 +327,18 @@ async function enrichFindings(aiAnalysis) {
     results.sourcesChecked.push('FEC');
     
     for (const person of persons.slice(0, 5)) {
+        console.log(`    FEC Contributions: Searching "${person}"...`);
         const data = await searchFECContributions(person);
         if (data.found > 0) {
+            console.log(`      Found ${data.found} contributions totaling $${data.totalAmount?.toLocaleString() || 0}`);
             results.campaigns.push(data);
             if (!results.sourcesUsed.includes('FEC')) {
                 results.sourcesUsed.push('FEC');
+            }
+            // Track this source for this entity
+            const key = person.toLowerCase();
+            if (results.entitySources[key] && !results.entitySources[key].includes('FEC')) {
+                results.entitySources[key].push('FEC');
             }
         }
         await new Promise(r => setTimeout(r, 300));
@@ -361,11 +349,18 @@ async function enrichFindings(aiAnalysis) {
     results.sourcesChecked.push('OIG Exclusions');
     
     for (const entity of allEntities.slice(0, 8)) {
+        console.log(`    OIG Exclusions: Checking "${entity}"...`);
         const data = await searchOIGExclusions(entity);
         if (data.found > 0) {
+            console.log(`      🚨 FOUND ${data.found} EXCLUDED from federal healthcare!`);
             results.exclusions.push(data);
             if (!results.sourcesUsed.includes('OIG Exclusions')) {
                 results.sourcesUsed.push('OIG Exclusions');
+            }
+            // Track this source for this entity
+            const key = entity.toLowerCase();
+            if (results.entitySources[key] && !results.entitySources[key].includes('OIG Exclusions')) {
+                results.entitySources[key].push('OIG Exclusions');
             }
         }
         await new Promise(r => setTimeout(r, 300));
@@ -376,11 +371,18 @@ async function enrichFindings(aiAnalysis) {
     results.sourcesChecked.push('OpenCorporates');
     
     for (const org of orgs.slice(0, 5)) {
+        console.log(`    OpenCorporates: Searching "${org}"...`);
         const data = await searchCompanies(org);
         if (data.found > 0) {
+            console.log(`      Found ${data.found} companies`);
             results.companies.push(data);
             if (!results.sourcesUsed.includes('OpenCorporates')) {
                 results.sourcesUsed.push('OpenCorporates');
+            }
+            // Track this source for this entity
+            const key = org.toLowerCase();
+            if (results.entitySources[key] && !results.entitySources[key].includes('OpenCorporates')) {
+                results.entitySources[key].push('OpenCorporates');
             }
         }
         await new Promise(r => setTimeout(r, 300));
@@ -391,11 +393,18 @@ async function enrichFindings(aiAnalysis) {
     results.sourcesChecked.push('USASpending');
     
     for (const org of orgs.slice(0, 3)) {
+        console.log(`    USASpending: Searching "${org}"...`);
         const data = await searchUSASpending(org);
         if (data.found > 0) {
+            console.log(`      Found ${data.found} federal awards`);
             results.spending.push(data);
             if (!results.sourcesUsed.includes('USASpending')) {
                 results.sourcesUsed.push('USASpending');
+            }
+            // Track this source for this entity
+            const key = org.toLowerCase();
+            if (results.entitySources[key] && !results.entitySources[key].includes('USASpending')) {
+                results.entitySources[key].push('USASpending');
             }
         }
         await new Promise(r => setTimeout(r, 500));
@@ -408,6 +417,14 @@ async function enrichFindings(aiAnalysis) {
     console.log(`  Sources with data: ${results.sourcesUsed.length}`);
     console.log(`  Sources: ${results.sourcesUsed.join(', ') || 'None returned data'}`);
     console.log(`  API calls: ${API_STATS.calls} (${API_STATS.successes} ok, ${API_STATS.failures} failed)`);
+    
+    // Log per-entity sources
+    console.log('  Per-entity sources:');
+    for (const [entity, sources] of Object.entries(results.entitySources)) {
+        if (sources.length > 1) {
+            console.log(`    - ${entity}: ${sources.join(', ')}`);
+        }
+    }
     console.log('  ══════════════════════════════════════\n');
     
     return results;
