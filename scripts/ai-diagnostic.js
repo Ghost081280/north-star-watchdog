@@ -1,21 +1,20 @@
 /**
- * NORTH STAR WATCHDOG - SELF-DIAGNOSTIC & REPAIR MODULE
+ * NORTH STAR WATCHDOG - SELF-DIAGNOSTIC MODULE
  * 
  * ═══════════════════════════════════════════════════════════════
  * AGENT CODENAME: POLARIS
- * MODULE: Self-Awareness & Auto-Repair
+ * MODULE: Self-Awareness & Health Monitoring
  * ═══════════════════════════════════════════════════════════════
  * 
- * I monitor my own health and fix issues before they become problems.
- * When I can't fix something, I report to Command via GitHub Issues.
+ * I monitor my own health and detect issues.
+ * Repairs are handled by ai-repair.js
  * 
  * CAPABILITIES:
- * - Test GROQ API and auto-switch models if deprecated
+ * - Test GROQ API and detect model deprecation
  * - Test all OSINT APIs
- * - Verify data file integrity and fix corruption
- * - Detect and fix common issues (blanket sources, missing fields, etc.)
+ * - Verify data file integrity
+ * - Detect common issues
  * - Report unfixable issues via GitHub Issues
- * - Discover new APIs from GROQ cookbook
  * - Update README with health status
  */
 
@@ -23,9 +22,11 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+// Import repair module
+const { repairIssue, repairAll } = require('./ai-repair');
+
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const SCRIPTS_DIR = __dirname;
-const DIAGNOSTIC_DIR = path.join(__dirname, '..', 'diagnostic');
 
 // Known working GROQ models (in order of preference)
 const GROQ_MODELS = [
@@ -50,10 +51,9 @@ const REQUIRED_DATA_FILES = [
 // Validation rules
 const BLOCKED_JOURNALISTS = ['nick shirley', 'rich mchugh', 'mario nawfal'];
 const VALID_STATUSES = ['charged', 'convicted', 'sentenced', 'indicted'];
-const ALL_API_SOURCES = ['Google News', 'ProPublica Nonprofits', 'FEC', 'OIG Exclusions', 'OpenCorporates', 'USASpending'];
 
 // ============================================
-// GROQ API TESTING & AUTO-FIX
+// GROQ API TESTING
 // ============================================
 
 async function testGroqModel(apiKey, model) {
@@ -167,7 +167,7 @@ async function testOsintApis() {
 }
 
 // ============================================
-// DATA FILE VALIDATION & REPAIR
+// DATA FILE VALIDATION
 // ============================================
 
 function readJsonSafe(filename) {
@@ -180,11 +180,6 @@ function readJsonSafe(filename) {
     } catch (e) {
         return { exists: true, valid: false, error: e.message };
     }
-}
-
-function writeJson(filename, data) {
-    const filepath = path.join(DATA_DIR, filename);
-    fs.writeFileSync(filepath, JSON.stringify(data, null, 2));
 }
 
 function verifyDataFiles() {
@@ -217,7 +212,7 @@ function detectIssues() {
                 component: 'red-flags.json',
                 description: `${blanketFlags.length} flags have blanket source attribution (all 6 sources)`,
                 fixable: true,
-                fix: 'Remove flags with blanket sources, let new scan regenerate them'
+                fix: 'Remove flags with blanket sources'
             });
         }
     }
@@ -238,10 +233,8 @@ function detectIssues() {
                 fix: 'Remove journalists from figures list'
             });
         }
-    }
-    
-    // 3. Check for figures without allegations
-    if (figures.valid && figures.data.people) {
+        
+        // 3. Check for figures without allegations
         const noAllegations = figures.data.people.filter(p => 
             !p.allegations || p.allegations.length === 0
         );
@@ -255,10 +248,8 @@ function detectIssues() {
                 fix: 'Remove figures without allegations'
             });
         }
-    }
-    
-    // 4. Check for invalid statuses
-    if (figures.valid && figures.data.people) {
+        
+        // 4. Check for invalid statuses
         const invalidStatus = figures.data.people.filter(p => 
             p.status && !VALID_STATUSES.includes(p.status.toLowerCase())
         );
@@ -297,7 +288,7 @@ function detectIssues() {
     if (trending.valid && (!trending.data.topics || trending.data.topics.length === 0)) {
         issues.push({
             id: 'empty-trending',
-            severity: 'warning',
+            severity: 'info',
             component: 'trending.json',
             description: 'Trending topics is empty',
             fixable: false,
@@ -309,7 +300,7 @@ function detectIssues() {
     if (storyIdeas.valid && (!storyIdeas.data.ideas || storyIdeas.data.ideas.length === 0)) {
         issues.push({
             id: 'empty-story-ideas',
-            severity: 'warning',
+            severity: 'info',
             component: 'story-ideas.json',
             description: 'Story ideas is empty',
             fixable: false,
@@ -361,160 +352,26 @@ function detectIssues() {
         }
     }
     
+    // 9. Check for corrupted JSON files
+    for (const file of REQUIRED_DATA_FILES) {
+        const result = readJsonSafe(file);
+        if (result.exists && !result.valid) {
+            issues.push({
+                id: `corrupted-${file}`,
+                severity: 'critical',
+                component: file,
+                description: `${file} contains invalid JSON: ${result.error}`,
+                fixable: true,
+                fix: 'Reset to default structure'
+            });
+        }
+    }
+    
     return issues;
 }
 
 // ============================================
-// AUTO-REPAIR FUNCTIONS
-// ============================================
-
-function repairIssue(issue) {
-    console.log(`  🔧 Attempting to fix: ${issue.id}`);
-    
-    switch (issue.id) {
-        case 'blanket-sources':
-            return repairBlanketSources();
-        case 'journalists-in-figures':
-            return repairJournalistsInFigures();
-        case 'figures-no-allegations':
-            return repairFiguresNoAllegations();
-        case 'invalid-status':
-            return repairInvalidStatus();
-        case 'investigations-no-source':
-            return repairInvestigationsNoSource();
-        case 'stats-below-baseline':
-        case 'stats-alleged-wrong':
-            return repairStatsBaseline();
-        default:
-            return { success: false, message: 'No auto-fix available' };
-    }
-}
-
-function repairBlanketSources() {
-    try {
-        const data = readJsonSafe('red-flags.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        // Remove flags with all 6 sources (blanket attribution)
-        const originalCount = data.data.flags.length;
-        data.data.flags = data.data.flags.filter(f => 
-            !f.apisUsed || f.apisUsed.length < 6
-        );
-        const removed = originalCount - data.data.flags.length;
-        
-        data.data.lastRepaired = new Date().toISOString();
-        writeJson('red-flags.json', data.data);
-        
-        return { success: true, message: `Removed ${removed} flags with blanket sources` };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-function repairJournalistsInFigures() {
-    try {
-        const data = readJsonSafe('figures.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        const originalCount = data.data.people.length;
-        data.data.people = data.data.people.filter(p => 
-            !BLOCKED_JOURNALISTS.some(j => (p.name || '').toLowerCase().includes(j))
-        );
-        const removed = originalCount - data.data.people.length;
-        
-        data.data.lastRepaired = new Date().toISOString();
-        writeJson('figures.json', data.data);
-        
-        return { success: true, message: `Removed ${removed} journalists` };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-function repairFiguresNoAllegations() {
-    try {
-        const data = readJsonSafe('figures.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        const originalCount = data.data.people.length;
-        data.data.people = data.data.people.filter(p => 
-            p.allegations && p.allegations.length > 0
-        );
-        const removed = originalCount - data.data.people.length;
-        
-        data.data.lastRepaired = new Date().toISOString();
-        writeJson('figures.json', data.data);
-        
-        return { success: true, message: `Removed ${removed} figures without allegations` };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-function repairInvalidStatus() {
-    try {
-        const data = readJsonSafe('figures.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        const originalCount = data.data.people.length;
-        data.data.people = data.data.people.filter(p => 
-            p.status && VALID_STATUSES.includes(p.status.toLowerCase())
-        );
-        const removed = originalCount - data.data.people.length;
-        
-        data.data.lastRepaired = new Date().toISOString();
-        writeJson('figures.json', data.data);
-        
-        return { success: true, message: `Removed ${removed} figures with invalid status` };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-function repairInvestigationsNoSource() {
-    try {
-        const data = readJsonSafe('investigations.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        const originalCount = data.data.cases.length;
-        data.data.cases = data.data.cases.filter(c => 
-            c.sourceUrl && c.sourceUrl.startsWith('http')
-        );
-        const removed = originalCount - data.data.cases.length;
-        
-        data.data.lastRepaired = new Date().toISOString();
-        writeJson('investigations.json', data.data);
-        
-        return { success: true, message: `Removed ${removed} investigations without sources` };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-function repairStatsBaseline() {
-    try {
-        const data = readJsonSafe('stats.json');
-        if (!data.valid) return { success: false, message: 'Could not read file' };
-        
-        // Reset to verified baseline
-        data.data.charged = Math.max(70, data.data.charged || 0);
-        data.data.convicted = Math.max(28, data.data.convicted || 0);
-        data.data.alleged = '$9B+';
-        data.data.activeCases = Math.max(5, data.data.activeCases || 0);
-        data.data.source = 'U.S. Attorney Joe Thompson, Dec 2025';
-        data.data.sourceUrl = 'https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/';
-        data.data.lastRepaired = new Date().toISOString();
-        
-        writeJson('stats.json', data.data);
-        
-        return { success: true, message: 'Reset stats to verified baseline' };
-    } catch (e) {
-        return { success: false, message: e.message };
-    }
-}
-
-// ============================================
-// GITHUB ISSUE REPORTING
+// GITHUB REPORTING
 // ============================================
 
 async function reportCriticalFailure(title, details) {
@@ -662,29 +519,23 @@ function updateReadmeHealth(healthScore, lastDiagnostic) {
     try {
         let readme = fs.readFileSync(readmePath, 'utf8');
         
-        // Update or add health badge
-        const healthBadge = `[![System Health](https://img.shields.io/badge/Health-${healthScore}%25-${healthScore >= 80 ? 'brightgreen' : healthScore >= 60 ? 'yellow' : 'red'})](https://ghost081280.github.io/north-star-watchdog/diagnostic/)`;
+        // Determine badge color
+        const color = healthScore >= 80 ? 'brightgreen' : healthScore >= 60 ? 'yellow' : 'red';
         
-        // Update or add last diagnostic badge
-        const lastRun = new Date(lastDiagnostic).toISOString().split('T')[0];
-        const diagnosticBadge = `[![Last Diagnostic](https://img.shields.io/badge/Last%20Check-${lastRun}-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)`;
+        // Update health badge
+        const healthBadgeRegex = /\[!\[System Health\]\(https:\/\/img\.shields\.io\/badge\/Health-\d+%25-\w+\)\]/g;
+        const newHealthBadge = `[![System Health](https://img.shields.io/badge/Health-${healthScore}%25-${color})]`;
         
-        // Check if badges exist and update them
-        if (readme.includes('![System Health]')) {
-            readme = readme.replace(/\[!\[System Health\][^\]]*\]\([^)]*\)/g, healthBadge);
+        if (readme.match(healthBadgeRegex)) {
+            readme = readme.replace(healthBadgeRegex, newHealthBadge);
+            fs.writeFileSync(readmePath, readme);
+            console.log(`  📝 README updated: Health ${healthScore}%`);
+            return true;
         }
-        
-        if (readme.includes('![Last Diagnostic]')) {
-            readme = readme.replace(/\[!\[Last Diagnostic\][^\]]*\]\([^)]*\)/g, diagnosticBadge);
-        }
-        
-        fs.writeFileSync(readmePath, readme);
-        console.log(`  📝 README updated: Health ${healthScore}%`);
-        return true;
     } catch (e) {
         console.log(`  ⚠ Could not update README: ${e.message}`);
-        return false;
     }
+    return false;
 }
 
 // ============================================
@@ -713,7 +564,7 @@ async function runFullDiagnostic() {
         console.log(`    ✓ GROQ: ${results.groq.model} working`);
         results.tests.passed++;
         
-        // Check if model needs updating in analyzer
+        // Check if model needs updating
         const analyzerPath = path.join(SCRIPTS_DIR, 'ai-analyzer.js');
         const content = fs.readFileSync(analyzerPath, 'utf8');
         if (!content.includes(results.groq.model)) {
@@ -748,7 +599,7 @@ async function runFullDiagnostic() {
         if (status.valid) {
             results.tests.passed++;
         } else if (status.exists) {
-            console.log(`    ❌ ${file}: Invalid JSON - ${status.error}`);
+            console.log(`    ❌ ${file}: Invalid JSON`);
             results.tests.failed++;
         } else {
             console.log(`    ⚠ ${file}: Missing`);
@@ -765,24 +616,22 @@ async function runFullDiagnostic() {
     for (const issue of issues) {
         if (issue.severity === 'critical') results.tests.critical++;
         else if (issue.severity === 'error') results.tests.failed++;
-        else results.tests.warnings++;
+        else if (issue.severity === 'warning') results.tests.warnings++;
     }
     
     // 5. Auto-repair fixable issues
     console.log('\n  [5/5] Auto-repairing fixable issues...');
-    const fixableIssues = issues.filter(i => i.fixable);
+    const repairResults = repairAll(issues);
+    results.repairs = [...results.repairs, ...repairResults.repairs];
     
-    for (const issue of fixableIssues) {
-        const repair = repairIssue(issue);
+    // Adjust counts for successful repairs
+    results.tests.passed += repairResults.succeeded;
+    
+    for (const repair of repairResults.repairs) {
         if (repair.success) {
-            console.log(`    ✓ Fixed: ${issue.id} - ${repair.message}`);
-            results.repairs.push({ issue: issue.id, action: repair.message });
-            // Reduce the test failure count since we fixed it
-            if (issue.severity === 'error') results.tests.failed--;
-            else if (issue.severity === 'warning') results.tests.warnings--;
-            results.tests.passed++;
+            console.log(`    ✓ Fixed: ${repair.issue}`);
         } else {
-            console.log(`    ❌ Could not fix: ${issue.id} - ${repair.message}`);
+            console.log(`    ❌ Could not fix: ${repair.issue}`);
         }
     }
     
@@ -792,7 +641,7 @@ async function runFullDiagnostic() {
         ? Math.round((results.tests.passed / totalTests) * 100)
         : 0;
     
-    // Report unfixable critical issues to GitHub
+    // Report unfixable critical issues
     const unfixableCritical = results.issues.filter(i => 
         (i.severity === 'critical' || i.severity === 'error') && !i.fixable
     );
@@ -804,11 +653,14 @@ async function runFullDiagnostic() {
         await reportCriticalFailure('Unfixable Issues Detected', details);
     }
     
+    // Update README
+    updateReadmeHealth(results.healthScore, results.timestamp);
+    
     // Summary
     console.log('\n  ══════════════════════════════════════════════════════');
     console.log(`  DIAGNOSTIC COMPLETE - Health: ${results.healthScore}%`);
     console.log(`  Passed: ${results.tests.passed} | Warnings: ${results.tests.warnings} | Failed: ${results.tests.failed} | Critical: ${results.tests.critical}`);
-    console.log(`  Repairs made: ${results.repairs.length}`);
+    console.log(`  Repairs made: ${results.repairs.filter(r => r.success).length}`);
     console.log('  ══════════════════════════════════════════════════════\n');
     
     return results;
@@ -818,13 +670,11 @@ async function preFlightCheck() {
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) return { ok: false, error: 'No API key' };
     
-    // Read current model from analyzer
     const analyzerPath = path.join(SCRIPTS_DIR, 'ai-analyzer.js');
     const content = fs.readFileSync(analyzerPath, 'utf8');
     const modelMatch = content.match(/model:\s*['"]([^'"]+)['"]/);
     const currentModel = modelMatch ? modelMatch[1] : 'unknown';
     
-    // Test current model
     const result = await testGroqModel(apiKey, currentModel);
     
     if (!result.success && result.error?.includes('decommissioned')) {
@@ -847,37 +697,29 @@ async function preFlightCheck() {
     return { ok: result.success, model: currentModel };
 }
 
-// ============================================
-// POST-SCAN DIAGNOSTIC (called after each scan)
-// ============================================
-
 async function postScanDiagnostic() {
     console.log('\n  🔬 POLARIS: Running post-scan diagnostic...');
     
     const issues = detectIssues();
-    const fixable = issues.filter(i => i.fixable);
+    const repairResults = repairAll(issues);
     
-    let repaired = 0;
-    for (const issue of fixable) {
-        const result = repairIssue(issue);
-        if (result.success) {
-            console.log(`    ✓ Auto-fixed: ${issue.id}`);
-            repaired++;
-        }
-    }
-    
-    // Calculate quick health score
+    // Calculate health score
     const dataFiles = verifyDataFiles();
     const validFiles = Object.values(dataFiles).filter(f => f.valid).length;
     const totalFiles = Object.keys(dataFiles).length;
     const healthScore = Math.round((validFiles / totalFiles) * 100);
     
-    // Update README if health changed significantly
+    // Update README
     updateReadmeHealth(healthScore, new Date().toISOString());
     
-    console.log(`  ✓ Post-scan diagnostic: ${repaired} issues fixed, health ${healthScore}%`);
+    console.log(`  ✓ Post-scan diagnostic: ${repairResults.succeeded} issues fixed, health ${healthScore}%`);
     
-    return { repaired, healthScore, issues: issues.length };
+    return { 
+        repaired: repairResults.succeeded, 
+        healthScore, 
+        issues: issues.length,
+        repairs: repairResults.repairs
+    };
 }
 
 module.exports = { 
@@ -885,9 +727,8 @@ module.exports = {
     preFlightCheck, 
     postScanDiagnostic,
     testGroqApi, 
+    detectIssues,
     reportCriticalFailure,
     requestNewApi,
-    detectIssues,
-    repairIssue,
     updateReadmeHealth
 };
