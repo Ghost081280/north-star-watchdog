@@ -2,18 +2,21 @@
 
 [![AI Updater](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-updater.yml)
 [![GitHub Pages](https://img.shields.io/badge/Live%20Site-Online-brightgreen)](https://ghost081280.github.io/north-star-watchdog/)
-[![System Health](https://img.shields.io/badge/Health-100%25-brightgreen)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
+[![System Health](https://img.shields.io/badge/Health-84%25-brightgreen)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
 [![Diagnostic](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
 [![Data Sources](https://img.shields.io/badge/APIs-6%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
+[![Follow @NorthStarAgent](https://img.shields.io/badge/X-@NorthStarAgent-black)](https://x.com/NorthStarAgent)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Made with AI](https://img.shields.io/badge/Powered%20by-GROQ%20AI-purple)](https://groq.com)
 [![Updates](https://img.shields.io/badge/Updates-Hourly-red)](https://github.com/Ghost081280/north-star-watchdog/actions)
 
-<!-- LAST_SCAN -->Last AI scan: 2026-01-01T17:48:51.114Z<!-- /LAST_SCAN -->
+<!-- LAST_SCAN -->Last AI scan: Never<!-- /LAST_SCAN -->
 
-**AI-Powered Minnesota Fraud Investigation Tracker**
+**Autonomous AI-Powered Minnesota Fraud Investigation Tracker**
 
 🔗 **Live Site:** [ghost081280.github.io/north-star-watchdog](https://ghost081280.github.io/north-star-watchdog)
+
+🐦 **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent) — @ me with any entity to scan!
 
 🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic/](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
 
@@ -21,17 +24,39 @@
 
 ## 🤖 The AI Has Taken Over
 
-This isn't a typical news site. North Star Watchdog is powered by an **autonomous AI system** that runs 24/7, scanning news sources and public databases to track Minnesota's ongoing fraud investigations.
+This isn't a typical news site. North Star Watchdog is powered by **Agent Polaris** — a fully autonomous AI system that runs 24/7, scanning news sources, social media, and public databases to track Minnesota's ongoing fraud investigations.
 
 **Every hour, the AI:**
 - 🔍 Scans Google News for breaking fraud stories
+- 🐦 Monitors X/Twitter for real-time developments
 - 📊 Queries 6 government & business APIs for public records
 - 🧠 Learns new search terms and entities automatically
 - 🚨 Detects patterns and connections across sources
+- 🔧 **Self-heals** — automatically fixes issues it detects
 - 📝 Updates the site automatically via GitHub Actions
-- 💬 Reports high-confidence findings through GitHub Issues
+- 💬 Posts findings to [@NorthStarAgent](https://x.com/NorthStarAgent)
 
 **No human editors. No manual updates.** The AI connects the dots.
+
+---
+
+## 🐦 Talk to the AI
+
+**[@NorthStarAgent](https://x.com/NorthStarAgent)** is live on X/Twitter!
+
+**@ mention with any entity** and the AI will scan:
+- ProPublica Nonprofits
+- FEC Campaign Finance
+- OIG Healthcare Exclusions
+- OpenCorporates
+- USASpending
+
+Example: `@NorthStarAgent Quality Learning Center`
+
+The AI posts:
+- 📊 **Daily briefings** (8am CST)
+- 🚨 **Critical findings** (95%+ confidence)
+- 🔍 **Scan results** in reply to mentions
 
 ---
 
@@ -46,30 +71,41 @@ Minnesota is facing what investigators call the **largest pandemic fraud scandal
 | **Feeding Our Future** | $250M+ | 70+ charged, 28+ convicted | DOJ |
 | **CCAP Daycare Fraud** | $1B+ | Federal payment freeze | HHS, DCYF |
 | **Housing Stabilization Services** | $302M | Program terminated | DHS |
+| **Medicaid Fraud** | $4B+ (estimated) | Under investigation | HHS |
+| **Assisted Living Fraud** | $49M+ | Federal indictments | DOJ |
 
 ### What We Monitor
 
-- **Breaking News** — Real-time coverage from local and national sources
+- **Breaking News** — Real-time coverage from news and social media
 - **Court Proceedings** — Trials, sentencings, plea deals, forfeitures
 - **Key Figures** — Defendants, officials, their roles and case outcomes
 - **Suspect Entities** — Daycares, nonprofits, shell companies under investigation
 - **Government Response** — DCYF, DHS, HHS actions and oversight
 - **Congressional Oversight** — House hearings, legislative response
 
-### Key Entities Being Tracked
+---
 
-**Government Agencies:**
-- Minnesota DCYF (Dept of Children, Youth and Families)
-- Minnesota DHS (Dept of Human Services)
-- HHS (Federal)
-- DOJ (Federal prosecution)
+## 🔧 Self-Healing System
 
-**Suspect Organizations:**
-- Quality Learing Center ($4M, recently closed)
-- Mako Childcare (closed years ago, still in system)
-- Feeding Our Future sites
+Agent Polaris doesn't just collect data — it **monitors and repairs itself**:
 
-*All stats update automatically when the AI finds new developments.*
+### Auto-Detection
+- Blanket source attribution (removes invalid flags)
+- Journalists accidentally added to Key Figures (removes them)
+- Figures without allegations (removes them)
+- Stats below verified baseline (resets them)
+- Corrupted JSON files (rebuilds them)
+
+### Auto-Repair
+When issues are detected, the AI:
+1. Attempts automatic repair
+2. Logs the fix to the diagnostic report
+3. Reports unfixable issues via GitHub Issues
+
+### Health Monitoring
+- Full diagnostic every 6 hours
+- Post-scan diagnostic after every hourly scan
+- README health badge auto-updates
 
 ---
 
@@ -99,28 +135,15 @@ The AI doesn't just run queries — it **learns and expands** its coverage over 
 3. **Learning:** New entities added to tracking database
 4. **Hour 2+:** Expanded searches catch more connections
 
-### Current Tracking
-
-**17 Search Queries** including:
-- Minnesota DCYF fraud
-- Tikki Brown DCYF
-- Quality Learing Center daycare
-- CCAP daycare fraud Minnesota
-
-**10 Tracked Entities** including:
-- Minnesota DCYF
-- Tikki Brown
-- Quality Learing Center
-- Mako Childcare
-
 The more it runs, the more comprehensive the coverage becomes.
 
 ---
 
 ## 📡 Data Sources
 
-**News:**
+**News & Social:**
 - Google News RSS (hourly scans)
+- X/Twitter (breaking news monitoring)
 
 **Government APIs (Free, No Keys Required):**
 - ProPublica Nonprofits — Form 990 filings, financials
@@ -134,20 +157,14 @@ The more it runs, the more comprehensive the coverage becomes.
 **AI Analysis:**
 - GROQ (Llama 3.3 70B) — Entity extraction, pattern detection
 
-### Future Integrations (Planned)
-- DuckDuckGo — Entity enrichment
-- Reddit — Community discussions (r/minnesota, r/twincities)
-- Court Listener — Federal court filings
-- Open States — Minnesota legislature tracking
-
 ---
 
 ## ⚙️ How It Works
 
 ```
-Every Hour:
+Every Hour (Agent Polaris):
 
-  📰 Google News RSS
+  📰 Google News RSS + 🐦 X/Twitter
          │
          ▼
   🧠 AI Analysis (GROQ)
@@ -162,8 +179,12 @@ Every Hour:
      Refresh: stats, figures, investigations, red flags
          │
          ▼
-  🧠 Self-Learning
-     Add new search queries and entities for next scan
+  🔧 Self-Diagnostic & Repair
+     Detect issues, auto-fix, report unfixable
+         │
+         ▼
+  🐦 X/Twitter Integration
+     Post briefings, critical alerts, respond to mentions
          │
          ▼
   📢 Report Findings
@@ -172,17 +193,32 @@ Every Hour:
 
 ---
 
-## 📋 Data Categories
+## 📁 System Architecture
 
-The system distinguishes between different types of tracked entities:
+```
+scripts/
+├── ai-core.js        # Main orchestrator (10-step workflow)
+├── ai-scraper.js     # News scraping (Google News RSS)
+├── ai-analyzer.js    # GROQ AI analysis
+├── ai-osint.js       # OSINT API enrichment
+├── ai-files.js       # Data file management
+├── ai-diagnostic.js  # Health monitoring & detection
+├── ai-repair.js      # Self-repair functions
+└── ai-twitter.js     # X/Twitter integration
 
-| Category | Examples | Purpose |
-|----------|----------|---------|
-| **Defendants** | Aimee Bock, Abdiaziz Farah | Track charges, convictions, sentencing |
-| **Officials** | Tikki Brown (DCYF Commissioner) | Track statements, oversight actions |
-| **Suspect Entities** | Quality Learing Center, Mako Childcare | Track payments, closures, investigations |
-| **Government Agencies** | DCYF, DHS, HHS, DOJ | Track policy responses, enforcement |
-| **Journalists** | Nick Shirley | Attribution only — NOT investigation subjects |
+data/
+├── news.json         # Latest articles
+├── figures.json      # Key figures (defendants only)
+├── investigations.json # Active cases
+├── red-flags.json    # AI-detected patterns
+├── stats.json        # Dashboard statistics
+├── trending.json     # Trending topics
+├── story-ideas.json  # AI-generated story angles
+└── learning.json     # AI memory (entities, queries, APIs)
+
+diagnostic/
+└── index.html        # 100+ automated tests
+```
 
 ---
 
@@ -196,12 +232,11 @@ The diagnostic tool runs **100+ automated tests** to verify system health:
 - ✅ Stats baseline validation
 - ✅ AI briefing quality
 - ✅ Timestamp freshness
-- ✅ Link verification
+- ✅ Self-repair module status
+- ✅ X/Twitter connection
 - ✅ Cross-reference integrity
 
 👉 **[Run Full Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic/)**
-
-The diagnostic generates AI-readable reports for automated troubleshooting.
 
 ---
 
@@ -230,7 +265,8 @@ U.S. Army Veteran | Serial Entrepreneur | AI Developer
 
 ## 📬 Contact & Contribute
 
-- **Twitter/X:** [@Ghost081280](https://twitter.com/Ghost081280)
+- **AI on X:** [@NorthStarAgent](https://x.com/NorthStarAgent)
+- **Creator on X:** [@Ghost081280](https://twitter.com/Ghost081280)
 - **Report Issues:** [GitHub Issues](https://github.com/Ghost081280/north-star-watchdog/issues)
 - **View Source:** [GitHub Repository](https://github.com/Ghost081280/north-star-watchdog)
 
