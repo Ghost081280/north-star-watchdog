@@ -258,7 +258,7 @@ function renderInvestigations() {
             <div class="inv-amount">${esc(c.amount)}</div>
             <div class="inv-status">${esc(c.status)}</div>
             <p class="inv-update">${esc(c.latestUpdate)}</p>
-            <a href="${c.sourceUrl}" target="_blank" rel="noopener" class="inv-source" onclick="event.stopPropagation()">📄 View Source</a>
+            <a href="${c.sourceUrl}" target="_blank" rel="noopener" class="inv-source" onclick="event.stopPropagation()">View Source</a>
         </div>
     `).join('');
 }
