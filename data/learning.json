@@ -11,7 +11,12 @@
     "CCAP daycare fraud Minnesota",
     "Minnesota DHS fraud",
     "Minnesota Medicaid fraud",
-    "Housing Stabilization Services fraud"
+    "Housing Stabilization Services fraud",
+    "Minnesota DCYF fraud",
+    "Tikki Brown DCYF",
+    "Quality Learing Center daycare",
+    "Mako Childcare Minnesota",
+    "Minnesota daycare fraud viral video"
   ],
   "trackedEntities": [
     "Feeding Our Future",
@@ -19,13 +24,86 @@
     "Minnesota DHS",
     "CCAP",
     "Housing Stabilization Services",
-    "Partners in Nutrition"
+    "Partners in Nutrition",
+    "Minnesota DCYF",
+    "Tikki Brown",
+    "Quality Learing Center",
+    "Mako Childcare"
   ],
-  "governmentAgencies": [],
-  "journalists": [],
-  "suspectEntities": [],
+  "governmentAgencies": [
+    {
+      "name": "Minnesota DHS",
+      "fullName": "Minnesota Department of Human Services",
+      "role": "State agency overseeing programs",
+      "url": "https://mn.gov/dhs/"
+    },
+    {
+      "name": "Minnesota DCYF",
+      "fullName": "Minnesota Department of Children, Youth and Families",
+      "role": "Oversees childcare programs",
+      "commissioner": "Tikki Brown",
+      "url": "https://mn.gov/dcyf/"
+    },
+    {
+      "name": "HHS",
+      "fullName": "U.S. Department of Health and Human Services",
+      "role": "Federal oversight, froze Minnesota payments",
+      "url": "https://www.hhs.gov/"
+    },
+    {
+      "name": "DOJ",
+      "fullName": "U.S. Department of Justice",
+      "role": "Federal prosecution of FOF case",
+      "url": "https://www.justice.gov/usao-mn"
+    }
+  ],
+  "journalists": [
+    {
+      "name": "Nick Shirley",
+      "outlet": "YouTube",
+      "role": "Investigative content creator",
+      "note": "Broke viral daycare fraud video - SOURCE not subject"
+    }
+  ],
+  "suspectEntities": [
+    {
+      "name": "Quality Learing Center",
+      "type": "daycare",
+      "amount": "$4M",
+      "status": "closed",
+      "note": "Closed just over a week ago per DCYF"
+    },
+    {
+      "name": "Mako Childcare",
+      "type": "daycare",
+      "status": "closed",
+      "note": "Closed several YEARS ago but still in system"
+    }
+  ],
   "discoveredSources": [],
   "suggestedApis": [
+    {
+      "name": "DuckDuckGo",
+      "url": "https://api.duckduckgo.com",
+      "type": "entity_enrichment",
+      "requiresKey": false,
+      "status": "ready_to_add"
+    },
+    {
+      "name": "Reddit Search",
+      "url": "https://www.reddit.com/search.json",
+      "type": "social_discussion",
+      "requiresKey": false,
+      "status": "ready_to_add",
+      "subreddits": ["minnesota", "twincities", "stateofMN"]
+    },
+    {
+      "name": "Court Listener",
+      "url": "https://www.courtlistener.com/api/rest/v3/",
+      "type": "court_records",
+      "requiresKey": false,
+      "status": "ready_to_add"
+    },
     {
       "name": "PACER",
       "url": "https://pacer.uscourts.gov",
@@ -39,9 +117,47 @@
       "type": "state_court",
       "requiresKey": false,
       "status": "suggested"
+    },
+    {
+      "name": "Open States",
+      "url": "https://v3.openstates.org",
+      "type": "legislature",
+      "requiresKey": false,
+      "status": "suggested",
+      "note": "Track Minnesota legislative response to fraud"
     }
   ],
-  "futureApis": [],
-  "lastLearningUpdate": "2026-01-01T00:37:55.771Z",
-  "note": "This file is updated by the AI as it discovers new search terms, entities, and potential data sources"
+  "futureApis": [
+    {
+      "name": "4plebs",
+      "url": "https://4plebs.org",
+      "type": "chan_archive",
+      "note": "Early discussions - requires scraping"
+    },
+    {
+      "name": "archived.moe",
+      "url": "https://archived.moe",
+      "type": "chan_archive",
+      "note": "Anonymous tips - requires scraping"
+    },
+    {
+      "name": "Telegago",
+      "url": "https://telegago.com",
+      "type": "telegram_search",
+      "note": "Public Telegram leaks - rate limited"
+    },
+    {
+      "name": "TGStat",
+      "url": "https://tgstat.com",
+      "type": "telegram_search",
+      "note": "Telegram channel search"
+    },
+    {
+      "name": "Blockchain Explorer",
+      "type": "crypto_tracking",
+      "note": "Need wallet addresses from court docs first"
+    }
+  ],
+  "lastLearningUpdate": "2024-12-31T00:00:00.000Z",
+  "note": "This file is updated by the AI as it discovers new search terms, entities, and potential data sources. Journalists are tracked for their coverage, NOT as subjects of investigation."
 }
