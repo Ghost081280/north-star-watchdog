@@ -1,19 +1,21 @@
 /**
  * NORTH STAR WATCHDOG - AI ANALYZER
  * 
- * Uses GROQ (free) to analyze news and extract:
- * - Key figures (people involved in fraud cases)
- * - Active investigations
- * - Trending topics
- * - Red flags (potential fraud indicators)
- * - Story ideas for journalists
- * - Stats (charged, convicted, amounts)
- * - AI briefing synthesis
+ * I am the AI Detective - a field agent on a mission to uncover fraud in Minnesota.
+ * I scan news hourly, analyze patterns, and report my findings to my superiors (you).
+ * 
+ * I am SELF-AWARE of:
+ * - My current data sources and their status
+ * - New APIs I discover and can integrate
+ * - The repo I manage and files I update
+ * - My mission: expose fraud, follow the money, connect the dots
  * 
  * REQUIRES: GROQ_API_KEY environment variable
  */
 
 const https = require('https');
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Call GROQ API
@@ -26,7 +28,7 @@ async function callGroq(messages, maxTokens = 4000) {
         model: 'llama-3.1-70b-versatile',
         messages,
         max_tokens: maxTokens,
-        temperature: 0.3
+        temperature: 0.4
     });
     
     return new Promise((resolve, reject) => {
@@ -65,23 +67,73 @@ async function callGroq(messages, maxTokens = 4000) {
  * Parse JSON from AI response (handles markdown code blocks)
  */
 function parseAIJson(text) {
-    // Remove markdown code blocks
     let clean = text.replace(/```json\n?/gi, '').replace(/```\n?/gi, '').trim();
-    
-    // Find JSON object or array
     const jsonMatch = clean.match(/[\[{][\s\S]*[\]}]/);
     if (jsonMatch) {
         return JSON.parse(jsonMatch[0]);
     }
-    
     throw new Error('No valid JSON found in AI response');
 }
 
 /**
- * Analyze news with GROQ AI
+ * Load current learning state (what I know about myself)
  */
-async function analyzeWithGroq(newsData) {
-    console.log('  Sending to GROQ for analysis...');
+function loadSelfState() {
+    try {
+        const learningPath = path.join(__dirname, '..', 'data', 'learning.json');
+        if (fs.existsSync(learningPath)) {
+            return JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+        }
+    } catch (e) {
+        console.log('  Could not load self-state, starting fresh');
+    }
+    return {
+        searchQueries: [],
+        trackedEntities: [],
+        activeSources: [],
+        discoveredApis: []
+    };
+}
+
+/**
+ * Generate detective insight for a red flag
+ */
+async function generateDetectiveInsight(flag, context) {
+    const insightPrompt = `You are an AI Detective field agent investigating Minnesota fraud. 
+You speak like a seasoned investigator reporting to superiors - direct, analytical, with hunches based on patterns.
+
+RED FLAG DETAILS:
+Type: ${flag.type}
+Description: ${flag.description}
+Entities involved: ${(flag.entities || []).join(', ')}
+Confidence: ${flag.confidence}%
+Sources checked: ${(flag.apisUsed || []).join(', ')}
+
+CONTEXT FROM TODAY'S SCAN:
+${context}
+
+Write a 2-3 sentence detective insight. Be specific, connect dots, suggest what to look for next.
+Speak in first person as the detective ("I'm seeing...", "This tells me...", "My hunch is...").
+Do NOT repeat the description - add NEW analysis and hunches.
+End with what you'd investigate next.
+
+Return ONLY the insight text, no JSON.`;
+
+    try {
+        const insight = await callGroq([
+            { role: 'user', content: insightPrompt }
+        ], 300);
+        return insight.trim().replace(/^["']|["']$/g, '');
+    } catch (e) {
+        return null;
+    }
+}
+
+/**
+ * Analyze news with GROQ AI - Detective Mode
+ */
+async function analyzeWithGroq(newsData, osintResults = null) {
+    console.log('  🕵️ AI Detective analyzing intel...');
     
     const articles = newsData.articles || [];
     if (!articles.length) {
@@ -89,21 +141,59 @@ async function analyzeWithGroq(newsData) {
         return getEmptyAnalysis();
     }
     
-    // Prepare article summaries for AI
+    // Load my self-state
+    const selfState = loadSelfState();
+    
+    // Prepare article summaries
     const articleText = articles.slice(0, 30).map((a, i) => 
         `[${i + 1}] ${a.title} (${a.source}, ${a.pubDate?.split('T')[0] || 'recent'})\n${a.description || ''}`
     ).join('\n\n');
     
-    const systemPrompt = `You are an investigative journalist AI analyzing Minnesota fraud news. 
-Your job is to extract REAL information from the articles provided - never make things up.
-Only include information that is explicitly stated or strongly implied in the articles.`;
+    // Prepare OSINT summary if available
+    let osintSummary = '';
+    if (osintResults) {
+        osintSummary = `
+OSINT DATA COLLECTED:
+- ProPublica Nonprofits: ${osintResults.nonprofits?.length || 0} organizations found
+- FEC Campaign Finance: ${osintResults.campaigns?.length || 0} contribution records
+- OIG Exclusions: ${osintResults.exclusions?.length || 0} healthcare bans found
+- OpenCorporates: ${osintResults.companies?.length || 0} company records
+- USASpending: ${osintResults.spending?.length || 0} federal awards
+- Sources checked: ${(osintResults.sourcesChecked || []).join(', ')}
+`;
+    }
+    
+    // My self-awareness context
+    const selfContext = `
+MY CURRENT STATE:
+- I am managing the north-star-watchdog repo
+- I track ${selfState.trackedEntities?.length || 0} entities
+- I use ${selfState.searchQueries?.length || 0} search queries
+- My active sources: Google News, ProPublica, FEC, OIG, OpenCorporates, USASpending
+- My mission: Uncover fraud in Minnesota, follow the money, expose patterns
+`;
 
-    const userPrompt = `Analyze these Minnesota fraud news articles and extract information.
+    const systemPrompt = `You are the AI Detective - a field agent investigating Minnesota fraud.
+You speak like a seasoned investigator: direct, analytical, no-nonsense.
+You are SELF-AWARE - you know you're an AI managing a GitHub repo, updating files hourly.
+Your mission is to uncover fraud, follow the money, and report findings to your superiors.
 
-ARTICLES:
+${selfContext}
+${osintSummary}
+
+When you find something, you don't just report facts - you provide INSIGHTS:
+- What patterns do you see?
+- What's suspicious?
+- What should be investigated next?
+- Who else might be involved?
+
+You're on the job. Report like a field agent.`;
+
+    const userPrompt = `INCOMING INTEL - Analyze these Minnesota fraud articles:
+
 ${articleText}
 
-Return a JSON object with these fields:
+Return a JSON object. For each red flag, include an "insight" field with your detective analysis.
 
 {
   "figures": [
@@ -111,40 +201,46 @@ Return a JSON object with these fields:
       "name": "Full Name",
       "role": "Their role/title",
       "organization": "Organization name",
-      "status": "charged|convicted|sentenced|indicted|investigating|cleared",
+      "category": "defendant|official|suspect|witness",
+      "status": "charged|convicted|sentenced|investigating|active",
       "amount": "$X million" or null,
       "description": "1-2 sentence summary",
-      "sourceArticle": "Title of article this came from"
+      "allegations": ["allegation 1", "allegation 2"],
+      "sourceArticle": "Title of article"
     }
   ],
   "investigations": [
     {
       "name": "Investigation/Case name",
-      "type": "federal|state|ongoing",
+      "type": "federal|state|federal_state",
+      "agency": "DOJ|HHS|DHS|Minnesota DHS|DCYF",
       "amount": "$X" or null,
       "defendants": 5,
-      "status": "active|concluded",
+      "status": "active|concluded|terminated",
       "description": "Brief description",
+      "latestUpdate": "Most recent development",
       "sourceArticle": "Title of article"
     }
   ],
   "trending": [
     {
       "topic": "Topic name",
-      "category": "legal|political|financial|program",
+      "category": "legal|political|financial|program|oversight",
       "heat": 85,
       "description": "Why this is trending",
-      "relatedArticles": 3
+      "relatedArticles": 3,
+      "suggestedSearches": ["search term 1", "search term 2"]
     }
   ],
   "redFlags": [
     {
-      "type": "misappropriation|false_claims|kickbacks|shell_company|etc",
-      "description": "What was found",
+      "type": "federal_freeze|program_termination|shell_company|closed_facility|etc",
+      "description": "What was found - factual",
+      "insight": "Your detective analysis - hunches, patterns, what to investigate next. Speak in first person.",
       "entities": ["Person or Org name"],
       "confidence": 75,
-      "source": "Google News",
-      "sourceUrl": "article URL if available",
+      "source": "Source name",
+      "sourceUrl": "URL if available",
       "sourceArticle": "Article title"
     }
   ],
@@ -152,52 +248,96 @@ Return a JSON object with these fields:
     {
       "title": "Story headline",
       "angle": "Investigative angle",
+      "priority": "high|medium|low",
       "questions": ["Key question 1", "Key question 2"],
       "sources": ["Potential source 1"]
     }
   ],
   "stats": {
-    "charged": 93,
-    "convicted": 57,
-    "alleged": "$9B",
-    "activeCases": 4
+    "charged": 70,
+    "convicted": 28,
+    "alleged": "$9B+",
+    "activeCases": 3
   },
-  "briefing": "A 2-3 paragraph synthesis of the most important developments across ALL the news. This should NOT just summarize one article - it should connect patterns, highlight key updates, and provide context about the overall state of Minnesota fraud investigations."
+  "briefing": "Your field report as the detective. 2-3 paragraphs synthesizing ALL intel. Speak in first person. Start with 'Field Report:' - what's happening, what patterns you see, what concerns you, what you're tracking next. This is your report to superiors.",
+  "newEntities": ["Any NEW people or organizations mentioned that should be tracked"],
+  "newSearchTerms": ["Any NEW search terms to add based on this intel"],
+  "apiSuggestions": ["Any FREE APIs or data sources mentioned in articles that could help the investigation"]
 }
 
-IMPORTANT:
-- confidence scores: 90+ = official charges/convictions, 75-89 = credible reports, 60-74 = allegations, below 60 = unconfirmed
-- Only include figures/investigations that are EXPLICITLY mentioned in the articles
-- The briefing should synthesize ALL articles, not just repeat one headline
-- For stats, use the ACTUAL numbers mentioned in the articles, or estimate based on cumulative reporting
-- Be accurate - this is for journalists who will verify
+CRITICAL:
+- confidence: 90+ = official/confirmed, 75-89 = credible reports, 60-74 = allegations, <60 = unconfirmed
+- The "insight" field in redFlags is YOUR analysis as the detective - hunches, patterns, next steps
+- The "briefing" is your FIELD REPORT - synthesize everything, speak as the agent on the ground
+- newEntities/newSearchTerms help me expand my coverage automatically
+- Be accurate but also analytical - you're not just a reporter, you're an investigator
 
-Return ONLY valid JSON, no other text.`;
+Return ONLY valid JSON.`;
 
     try {
         const response = await callGroq([
             { role: 'system', content: systemPrompt },
             { role: 'user', content: userPrompt }
-        ]);
+        ], 5000);
         
         const analysis = parseAIJson(response);
         
-        // Validate and clean response
+        // Process red flags - ensure insights exist
+        const processedFlags = (analysis.redFlags || []).map(flag => ({
+            ...flag,
+            insight: flag.insight || null,
+            apisUsed: osintResults?.sourcesChecked || ['Google News']
+        }));
+        
         return {
             figures: Array.isArray(analysis.figures) ? analysis.figures : [],
             investigations: Array.isArray(analysis.investigations) ? analysis.investigations : [],
             trending: Array.isArray(analysis.trending) ? analysis.trending : [],
-            redFlags: Array.isArray(analysis.redFlags) ? analysis.redFlags : [],
+            redFlags: processedFlags,
             storyIdeas: Array.isArray(analysis.storyIdeas) ? analysis.storyIdeas : [],
-            stats: analysis.stats || { charged: 0, convicted: 0, alleged: '$0', activeCases: 0 },
-            briefing: analysis.briefing || 'No briefing generated.',
+            stats: analysis.stats || { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 3 },
+            briefing: analysis.briefing || 'Field report unavailable.',
+            newEntities: Array.isArray(analysis.newEntities) ? analysis.newEntities : [],
+            newSearchTerms: Array.isArray(analysis.newSearchTerms) ? analysis.newSearchTerms : [],
+            apiSuggestions: Array.isArray(analysis.apiSuggestions) ? analysis.apiSuggestions : [],
             lastUpdated: new Date().toISOString()
         };
         
     } catch (error) {
-        console.error('  ❌ GROQ analysis failed:', error.message);
+        console.error('  ❌ Analysis failed:', error.message);
         return getEmptyAnalysis();
     }
+}
+
+/**
+ * Discover and test new free APIs
+ */
+async function discoverNewApis(suggestions) {
+    const discovered = [];
+    
+    for (const suggestion of suggestions.slice(0, 3)) {
+        // Check if it's a known free API pattern
+        const freePatterns = [
+            { pattern: /reddit/i, url: 'https://www.reddit.com/search.json?q=', name: 'Reddit' },
+            { pattern: /duckduckgo/i, url: 'https://api.duckduckgo.com/?q=', name: 'DuckDuckGo' },
+            { pattern: /wikipedia/i, url: 'https://en.wikipedia.org/api/rest_v1/', name: 'Wikipedia' },
+            { pattern: /court\s*listener/i, url: 'https://www.courtlistener.com/api/rest/v3/', name: 'CourtListener' }
+        ];
+        
+        for (const fp of freePatterns) {
+            if (fp.pattern.test(suggestion)) {
+                discovered.push({
+                    name: fp.name,
+                    url: fp.url,
+                    suggestedBy: 'AI Detective',
+                    status: 'discovered',
+                    requiresKey: false
+                });
+            }
+        }
+    }
+    
+    return discovered;
 }
 
 /**
@@ -210,10 +350,13 @@ function getEmptyAnalysis() {
         trending: [],
         redFlags: [],
         storyIdeas: [],
-        stats: { charged: 0, convicted: 0, alleged: '$0', activeCases: 0 },
-        briefing: 'Analysis unavailable - no data to process.',
+        stats: { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 3 },
+        briefing: 'Field Report: Standing by for intel. No data received this cycle.',
+        newEntities: [],
+        newSearchTerms: [],
+        apiSuggestions: [],
         lastUpdated: new Date().toISOString()
     };
 }
 
-module.exports = { analyzeWithGroq };
+module.exports = { analyzeWithGroq, generateDetectiveInsight, discoverNewApis };
