@@ -10,39 +10,26 @@
 async function doDeepResearch() {
     var deepResearch = document.getElementById('deep-research');
     if (!deepResearch) {
-        console.error('Deep research element not found');
+        return;
+    }
+    
+    // Make sure we have a query
+    if (!currentQuery) {
+        deepResearch.innerHTML = '<p class="error">No search query found. Please search first.</p>';
+        deepResearch.style.display = 'block';
         return;
     }
     
     // Show the deep research section
     deepResearch.style.display = 'block';
     
-    // Make sure we have a query
-    if (!currentQuery) {
-        deepResearch.innerHTML = '<p class="error">No search query found. Please search first.</p>';
-        return;
-    }
-    
-    // Scroll to deep research section
+    // Use scrollIntoView for reliable scrolling
     setTimeout(function() {
-        var headerHeight = 0;
-        var header = document.querySelector('.header');
-        if (header) headerHeight = header.offsetHeight;
-        
-        var searchHeight = 0;
-        var searchSection = document.querySelector('.search-section');
-        if (searchSection) searchHeight = searchSection.offsetHeight;
-        
-        var offset = headerHeight + searchHeight + 20;
-        var rect = deepResearch.getBoundingClientRect();
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var targetPosition = rect.top + scrollTop - offset;
-        
-        window.scrollTo({ 
-            top: targetPosition, 
-            behavior: 'smooth' 
+        deepResearch.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start'
         });
-    }, 150);
+    }, 100);
     
     var q = encodeURIComponent(currentQuery + ' Minnesota fraud');
     
