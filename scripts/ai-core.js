@@ -23,7 +23,7 @@ const path = require('path');
 const { scrapeGoogleNews } = require('./ai-scraper');
 const { analyzeWithGroq } = require('./ai-analyzer');
 const { enrichFindings } = require('./ai-osint');
-const { updateAllDataFiles, createGitHubIssues, updateLearning } = require('./ai-files');
+const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
 const { preFlightCheck, reportCriticalFailure } = require('./ai-diagnostic');
 
 // ============================================
@@ -138,6 +138,16 @@ async function main() {
         
         updateLearning(aiAnalysis);
         console.log('✓ Learning file updated with new entities and search queries');
+        
+        // ============================================
+        // STEP 7: File Maintenance (keep repo clean)
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 7: FILE MAINTENANCE');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        maintainFiles();
+        console.log('✓ Repo maintenance complete');
         
         // ============================================
         // DONE
