@@ -518,12 +518,11 @@ function renderDetective() {
             typeLabel: 'Red Flag',
             title: flag.type?.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'Suspicious Pattern',
             description: flag.description,
+            insight: flag.insight || null, // Detective's insight
             entities: flag.entities || [],
-            // FIX: Use AI-provided confidence score, fallback to priority-based only if not available
             confidence: flag.confidence || (flag.priority === 'high' ? 85 : flag.priority === 'medium' ? 65 : 45),
             apisUsed: flagSources,
             totalSources: flagSourceCount,
-            // Add normalized key for better deduplication
             _key: normalizeForDedup(flag.type, flag.description)
         });
     });
@@ -541,7 +540,7 @@ function renderDetective() {
     const noSourcesWarning = globalSourcesUsed.length === 0 ? 
         '<p class="no-sources-warning">⚠️ No OSINT sources available for this scan. Some APIs may need configuration.</p>' : '';
     
-    // Default findings if no red flags loaded (show what sources WOULD be used)
+    // Default findings if no red flags loaded
     if (findings.length === 0) {
         grid.innerHTML = noSourcesWarning + '<p class="no-results">AI Detective is analyzing patterns. Check back soon.</p>';
         return;
@@ -550,7 +549,7 @@ function renderDetective() {
     // LIMIT to 6 cards max
     findings = findings.slice(0, 6);
     
-    // Render findings
+    // Render findings with detective insight boxes
     grid.innerHTML = noSourcesWarning + findings.map((f, idx) => {
         const cardClass = f.type;
         const gaugeColor = f.confidence >= 80 ? '#ef4444' : f.confidence >= 60 ? '#f59e0b' : '#22c55e';
@@ -566,6 +565,21 @@ function renderDetective() {
         const sourcesDisplay = apis.length > 0 ? 
             apis.map(api => `<span class="api-tag">${api}</span>`).join('') :
             '<span class="api-tag api-tag-none">No sources available</span>';
+        
+        // Detective insight box (purple) - only show if insight exists
+        const insightBox = f.insight ? `
+            <div class="detective-insight-box">
+                <div class="detective-insight-header">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <span>Detective's Insight</span>
+                </div>
+                <p class="detective-insight-text">"${esc(f.insight)}"</p>
+                <span class="detective-insight-sig">— AI Detective</span>
+            </div>
+        ` : '';
         
         return `
             <div class="detective-card ${cardClass}">
@@ -597,6 +611,7 @@ function renderDetective() {
                     ${f.entities.map(e => `<span class="entity-tag" data-search="${escAttr(e)}" onclick="doSearch(this.dataset.search)">${esc(e)}</span>`).join('')}
                 </div>
                 ` : ''}
+                ${insightBox}
                 <div class="detective-card-sources">
                     <div class="sources-header">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
