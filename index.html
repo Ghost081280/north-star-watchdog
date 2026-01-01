@@ -7,6 +7,7 @@
     <meta name="description" content="Track Minnesota fraud cases. AI-powered news analysis, nonprofit data from ProPublica, campaign finance from FEC, and healthcare exclusions from OIG.">
     <meta property="og:title" content="North Star Watchdog | Minnesota Fraud Tracker">
     <meta name="twitter:creator" content="@Ghost081280">
+    <meta name="twitter:site" content="@NorthStarAgent">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -48,6 +49,10 @@
                 </div>
             </a>
             <div class="header-actions">
+                <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" class="btn-agent">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    @NorthStarAgent
+                </a>
                 <button class="btn-briefing" onclick="openBriefing()">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
                     AI Briefing
@@ -61,17 +66,17 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                Scan news hourly
+                Hourly scans
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                AI analysis
+                Self-healing AI
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                Free OSINT APIs
+                6 OSINT APIs
             </div>
             <h2 class="hero-title">Minnesota's <span class="highlight">$9 Billion+</span> Fraud Scandal</h2>
             <p class="hero-source-note">
                 <a href="https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/" target="_blank" rel="noopener" class="source-badge">Source: U.S. Attorney Joe Thompson, Dec 2025</a>
             </p>
-            <p class="hero-subtitle">We scan <strong>Google News</strong> hourly, analyze with <strong>AI</strong>, and enrich with <strong>free public APIs</strong> - then you can export and continue investigating with any AI tool.</p>
+            <p class="hero-subtitle">Agent Polaris scans news & social media hourly, cross-references 6 OSINT databases, self-heals issues, and posts findings to <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" style="color: #d4af37;">@NorthStarAgent</a></p>
             <div class="hero-stats">
                 <div class="stat"><span class="stat-value" id="stat-charged">93+</span><span class="stat-label">Charged</span></div>
                 <div class="stat"><span class="stat-value" id="stat-convicted">57+</span><span class="stat-label">Convicted</span></div>
@@ -202,6 +207,23 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Talk to the AI Banner -->
+        <section class="agent-banner">
+            <div class="agent-banner-content">
+                <div class="agent-banner-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <div class="agent-banner-text">
+                    <h3>Talk to Agent Polaris on X</h3>
+                    <p>@ mention <strong>@NorthStarAgent</strong> with any entity name and the AI will scan all 6 databases and reply with findings.</p>
+                </div>
+                <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" class="agent-banner-btn">
+                    Follow @NorthStarAgent
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+
         <!-- Live News -->
         <section class="section" id="news-section">
             <div class="section-header">
@@ -221,24 +243,51 @@
                 <h2>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
                     AI Detective
-                    <span class="auto-badge detective-badge">🤖 Autonomous</span>
+                    <span class="auto-badge detective-badge">🤖 Self-Healing</span>
                 </h2>
-                <p class="section-sub">Patterns and connections discovered by our AI - beyond the headlines</p>
+                <p class="section-sub">Patterns and connections discovered by Agent Polaris</p>
             </div>
             
             <div class="detective-disclaimer">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                <span><strong>AI-Generated Analysis:</strong> Our AI scans Google News hourly and extracts patterns. Findings are enriched with ProPublica, FEC, OIG, and OpenCorporates data. Confidence scores indicate AI certainty based on source quality, not legal proof. Always verify independently.</span>
+                <span><strong>Agent Polaris:</strong> I scan Google News + X hourly, extract patterns, enrich with 6 OSINT APIs (ProPublica, FEC, OIG, OpenCorporates, USASpending), and self-repair any issues I detect. Confidence scores indicate my certainty based on source quality, not legal proof.</span>
+            </div>
+            
+            <div class="detective-capabilities">
+                <div class="capability">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <span>Hourly Scans</span>
+                </div>
+                <div class="capability">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    <span>Self-Healing</span>
+                </div>
+                <div class="capability">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
+                    <span>Self-Learning</span>
+                </div>
+                <div class="capability">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <span>Posts to X</span>
+                </div>
+                <div class="capability">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    <span>6 OSINT APIs</span>
+                </div>
             </div>
             
             <div class="detective-grid" id="detective-grid">
-                <p class="loading-text">AI Detective analyzing patterns...</p>
+                <p class="loading-text">Agent Polaris analyzing patterns...</p>
             </div>
             
             <div class="detective-footer">
+                <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" class="detective-link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    Follow @NorthStarAgent for Alerts
+                </a>
                 <a href="https://github.com/Ghost081280/north-star-watchdog/issues?q=label%3Apolaris-intel" target="_blank" rel="noopener" class="detective-link">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    View Major Findings on GitHub
+                    View Findings on GitHub
                 </a>
                 <span class="detective-timestamp">Last scan: <span id="detective-time">--</span></span>
             </div>
@@ -313,33 +362,43 @@
                     <p class="footer-tagline">100% FREE - No API keys - No login required</p>
                     
                     <div class="footer-ai-notice">
-                        <p class="ai-disclaimer-inline"><strong>AI-Managed:</strong> This entire site is curated and updated hourly by AI. Content, trending topics, key figures, and analysis are all AI-generated.</p>
-                        <a href="https://x.com/intent/tweet?text=@Ghost081280%20Please%20add%20coverage%20for%20my%20state:%20" target="_blank" rel="noopener" class="suggest-state-btn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            Suggest a State
-                        </a>
+                        <p class="ai-disclaimer-inline"><strong>Agent Polaris:</strong> I'm fully autonomous. I scan news, query APIs, self-heal issues, learn new entities, and post to X — all without human intervention.</p>
+                        <div class="footer-agent-links">
+                            <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" class="agent-link-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                @NorthStarAgent
+                            </a>
+                            <a href="diagnostic/" class="agent-link-btn diagnostic-link">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                                Run Diagnostic
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-col">
-                        <h4>How It Works</h4>
+                        <h4>Agent Polaris Capabilities</h4>
                         <ul>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-                                Scrapes Google News hourly
+                                Scans Google News + X hourly
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                                AI extracts figures, cases & red flags
+                                Extracts figures, cases & red flags
+                            </li>
+                            <li>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                                Self-heals detected issues
                             </li>
                             <li>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4c0 1.1-.9 2-2 2h-4a2 2 0 01-2-2 4 4 0 014-4z"/><circle cx="12" cy="20" r="2"/></svg>
-                                Enriches with free OSINT APIs
+                                Learns new entities automatically
                             </li>
                             <li>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                                Export research to continue in any AI
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                Posts findings to @NorthStarAgent
                             </li>
                         </ul>
                     </div>
@@ -348,6 +407,7 @@
                         <h4>Data Sources</h4>
                         <ul>
                             <li><a href="https://news.google.com" target="_blank" rel="noopener">Google News RSS</a></li>
+                            <li><a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener">X/Twitter Monitoring</a></li>
                             <li><a href="https://projects.propublica.org/nonprofits/" target="_blank" rel="noopener">ProPublica Nonprofits</a></li>
                             <li><a href="https://www.fec.gov" target="_blank" rel="noopener">FEC Campaign Finance</a></li>
                             <li><a href="https://exclusions.oig.hhs.gov" target="_blank" rel="noopener">OIG Exclusions</a></li>
@@ -359,9 +419,13 @@
                     <div class="footer-col">
                         <h4>Connect</h4>
                         <div class="footer-social">
+                            <a href="https://x.com/NorthStarAgent" target="_blank" rel="noopener" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                @NorthStarAgent (AI)
+                            </a>
                             <a href="https://x.com/Ghost081280" target="_blank" rel="noopener" class="social-link">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                                @Ghost081280
+                                @Ghost081280 (Creator)
                             </a>
                             <a href="https://github.com/Ghost081280/north-star-watchdog" target="_blank" rel="noopener" class="social-link">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
