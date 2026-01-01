@@ -263,8 +263,30 @@ function renderFigures() {
         return; 
     }
     
+    // FILTER: Must have allegations to appear - this ensures only fraud suspects show
+    // Officials with fraud allegations CAN appear, officials without allegations cannot
+    const validStatuses = ['charged', 'convicted', 'sentenced', 'investigating', 'indicted'];
+    
+    // Known journalists to always filter out
+    const journalists = ['nick shirley'];
+    
+    const fraudSuspects = DATA.figures.people.filter(p => {
+        // Filter out known journalists
+        if (journalists.includes(p.name?.toLowerCase())) return false;
+        // Must have allegations - this is the key filter
+        if (!p.allegations || p.allegations.length === 0) return false;
+        // Must have a valid fraud-related status
+        if (p.status && !validStatuses.includes(p.status)) return false;
+        return true;
+    });
+    
+    if (!fraudSuspects.length) {
+        grid.innerHTML = '<p class="empty">No fraud suspects currently tracked.</p>';
+        return;
+    }
+    
     // Sort NEW items first
-    const sorted = [...DATA.figures.people].sort((a, b) => 
+    const sorted = [...fraudSuspects].sort((a, b) => 
         (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0)
     );
     
@@ -276,15 +298,11 @@ function renderFigures() {
                     <h3>${esc(p.name)}</h3>
                     <span class="figure-role">${esc(p.role)}</span>
                 </div>
-                ${p.sourceUrl 
-                    ? `<a href="${p.sourceUrl}" target="_blank" rel="noopener" class="figure-status status-${p.status}">${formatStatus(p.status)}</a>`
-                    : `<span class="figure-status status-${p.status}">${formatStatus(p.status)}</span>`
-                }
+                <span class="figure-status status-${p.status}">${formatStatus(p.status)}</span>
             </div>
             <ul class="figure-allegations">
                 ${(p.allegations || []).map(a => `<li>${esc(a)}</li>`).join('')}
             </ul>
-            <p class="figure-update">${esc(p.latestUpdate)}</p>
             <button class="btn-search-figure" data-search="${escAttr(p.name)}" onclick="doSearch(this.dataset.search)">
                 Search "${esc(p.name)}"
             </button>
