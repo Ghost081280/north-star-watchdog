@@ -459,10 +459,10 @@ async function createGitHubIssues(redFlags, analysis) {
         return 0;
     }
     
-    // SIGNIFICANT = 90%+ confidence AND new discovery
-    // We don't spam issues - only the big stuff
+    // SIGNIFICANT = 95%+ confidence AND new discovery
+    // Only the most verified, highest-confidence findings get posted
     const significant = (redFlags || []).filter(rf => 
-        rf.confidence >= 90 && rf.isNew === true
+        rf.confidence >= 95 && rf.isNew === true
     );
     
     if (!significant.length) {
