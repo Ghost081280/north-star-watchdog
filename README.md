@@ -138,36 +138,6 @@ Agent Polaris doesn't just collect data — it **monitors and repairs itself**:
 
 ---
 
-## 📁 System Architecture
-
-```
-scripts/
-├── ai-core.js        # Main orchestrator
-├── ai-scraper.js     # News scraping
-├── ai-analyzer.js    # GROQ AI analysis
-├── ai-osint.js       # OSINT API enrichment (12 sources)
-├── ai-minnesota.js   # Minnesota-specific sources
-├── ai-files.js       # Data file management
-├── ai-diagnostic.js  # Health monitoring
-├── ai-repair.js      # Self-repair functions
-└── ai-twitter.js     # X/Twitter integration
-
-js/
-└── investigation-package.js  # Frontend investigation UI
-
-data/
-├── news.json         # Latest articles
-├── figures.json      # Key figures
-├── investigations.json # Active cases
-├── red-flags.json    # AI-detected patterns
-├── stats.json        # Dashboard statistics
-├── trending.json     # Trending topics
-├── story-ideas.json  # AI-generated story angles
-└── learning.json     # AI memory
-```
-
----
-
 ## ⚠️ Important Disclaimer
 
 This service is for **informational purposes only**.
