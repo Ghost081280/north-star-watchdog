@@ -77,7 +77,8 @@ function formatStatus(s) {
         charged: 'Charged',
         sentenced: 'Sentenced',
         indicted: 'Indicted',
-        cleared: 'Cleared'
+        cleared: 'Cleared',
+        active: 'Active Official'
     }[s] || s; 
 }
 
