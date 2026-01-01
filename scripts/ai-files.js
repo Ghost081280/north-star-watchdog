@@ -393,6 +393,7 @@ ${flag.sourceUrl ? `\n[View Source](${flag.sourceUrl})` : ''}
 
 /**
  * Update learning.json with new search queries and entities discovered by AI
+ * The AI Detective is SELF-AWARE and suggests new things to track
  */
 function updateLearning(analysis) {
     const learningPath = path.join(DATA_DIR, 'learning.json');
@@ -400,14 +401,20 @@ function updateLearning(analysis) {
     let learning = {
         searchQueries: [],
         trackedEntities: [],
+        governmentAgencies: [],
+        journalists: [],
+        suspectEntities: [],
         discoveredSources: [],
-        suggestedApis: []
+        suggestedApis: [],
+        futureApis: [],
+        lastLearningUpdate: null,
+        note: "This file is updated by the AI Detective as it discovers new entities and data sources."
     };
     
     // Load existing learning file
     try {
         if (fs.existsSync(learningPath)) {
-            learning = JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+            learning = { ...learning, ...JSON.parse(fs.readFileSync(learningPath, 'utf8')) };
         }
     } catch (e) {
         console.log(`  ⚠ Could not load learning.json: ${e.message}`);
@@ -431,6 +438,9 @@ function updateLearning(analysis) {
         if (inv.name && !learning.trackedEntities.includes(inv.name)) {
             newEntities.push(inv.name);
         }
+        if (inv.agency && !learning.trackedEntities.includes(inv.agency)) {
+            newEntities.push(inv.agency);
+        }
     }
     
     // From red flags
@@ -442,29 +452,71 @@ function updateLearning(analysis) {
         }
     }
     
+    // NEW: From AI's explicit newEntities suggestions
+    for (const entity of (analysis.newEntities || [])) {
+        if (!learning.trackedEntities.includes(entity)) {
+            newEntities.push(entity);
+        }
+    }
+    
     // Add new entities to tracked list
     if (newEntities.length > 0) {
         learning.trackedEntities = [...new Set([...learning.trackedEntities, ...newEntities])];
-        console.log(`  ✓ Added ${newEntities.length} new entities to track`);
+        console.log(`  🔍 AI Detective discovered ${newEntities.length} new entities`);
         
         // Create new search queries for new entities
         for (const entity of newEntities) {
-            const query = `${entity} fraud`;
+            const query = `${entity} fraud Minnesota`;
             if (!learning.searchQueries.includes(query)) {
                 learning.searchQueries.push(query);
             }
         }
     }
     
-    // Limit search queries to prevent bloat
-    learning.searchQueries = learning.searchQueries.slice(0, 30);
-    learning.trackedEntities = learning.trackedEntities.slice(0, 100);
+    // NEW: Add AI's suggested search terms
+    for (const term of (analysis.newSearchTerms || [])) {
+        if (!learning.searchQueries.includes(term)) {
+            learning.searchQueries.push(term);
+            console.log(`  🔍 AI Detective added search term: ${term}`);
+        }
+    }
+    
+    // NEW: Process API suggestions from AI
+    const knownFreeApis = {
+        'reddit': { name: 'Reddit', url: 'https://www.reddit.com/search.json', requiresKey: false },
+        'duckduckgo': { name: 'DuckDuckGo', url: 'https://api.duckduckgo.com/', requiresKey: false },
+        'wikipedia': { name: 'Wikipedia', url: 'https://en.wikipedia.org/api/rest_v1/', requiresKey: false },
+        'courtlistener': { name: 'CourtListener', url: 'https://www.courtlistener.com/api/rest/v3/', requiresKey: false },
+        'openstates': { name: 'Open States', url: 'https://v3.openstates.org/', requiresKey: false }
+    };
+    
+    for (const suggestion of (analysis.apiSuggestions || [])) {
+        const suggestionLower = suggestion.toLowerCase();
+        for (const [key, api] of Object.entries(knownFreeApis)) {
+            if (suggestionLower.includes(key)) {
+                // Check if not already in suggestedApis
+                if (!learning.suggestedApis.some(a => a.name === api.name)) {
+                    learning.suggestedApis.push({
+                        ...api,
+                        status: 'discovered',
+                        discoveredAt: new Date().toISOString(),
+                        suggestedBy: 'AI Detective'
+                    });
+                    console.log(`  🔌 AI Detective discovered potential API: ${api.name}`);
+                }
+            }
+        }
+    }
+    
+    // Limit to prevent bloat
+    learning.searchQueries = [...new Set(learning.searchQueries)].slice(0, 50);
+    learning.trackedEntities = [...new Set(learning.trackedEntities)].slice(0, 150);
     
     learning.lastLearningUpdate = new Date().toISOString();
     
     // Save updated learning file
     writeJson('learning.json', learning);
-    console.log(`  ✓ Learning file updated (${learning.searchQueries.length} queries, ${learning.trackedEntities.length} entities)`);
+    console.log(`  ✓ Learning updated: ${learning.searchQueries.length} queries, ${learning.trackedEntities.length} entities, ${learning.suggestedApis.length} APIs discovered`);
 }
 
 module.exports = { updateAllDataFiles, createGitHubIssues, updateLearning };
