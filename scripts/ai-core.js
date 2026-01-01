@@ -4,6 +4,7 @@
  * Main orchestrator for hourly scans
  * 
  * WHAT THIS ACTUALLY DOES:
+ * 0. Pre-flight check - test systems, auto-fix if needed
  * 1. Scrapes Google News RSS for Minnesota fraud stories
  * 2. Sends news to GROQ AI for analysis
  * 3. AI extracts: figures, investigations, trending topics, red flags, story ideas
@@ -23,6 +24,7 @@ const { scrapeGoogleNews } = require('./ai-scraper');
 const { analyzeWithGroq } = require('./ai-analyzer');
 const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning } = require('./ai-files');
+const { preFlightCheck, reportCriticalFailure } = require('./ai-diagnostic');
 
 // ============================================
 // MAIN WORKFLOW
@@ -31,6 +33,7 @@ const { updateAllDataFiles, createGitHubIssues, updateLearning } = require('./ai
 async function main() {
     console.log('\n╔════════════════════════════════════════════════════════════╗');
     console.log('║     NORTH STAR WATCHDOG - AI HOURLY SCAN                   ║');
+    console.log('║     Agent Polaris Reporting                                ║');
     console.log('║     ' + new Date().toISOString() + '                    ║');
     console.log('╚════════════════════════════════════════════════════════════╝\n');
     
@@ -38,9 +41,29 @@ async function main() {
     
     try {
         // ============================================
-        // STEP 1: Scrape news
+        // STEP 0: Pre-flight check (self-diagnostic)
         // ============================================
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 0: PRE-FLIGHT CHECK');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        const preflight = await preFlightCheck();
+        if (!preflight.ok) {
+            console.log(`  ❌ Pre-flight failed: ${preflight.error}`);
+            await reportCriticalFailure('Pre-flight Check Failed', `The AI system failed pre-flight checks.\n\nError: ${preflight.error}\n\nThis needs manual intervention.`);
+            throw new Error(`Pre-flight failed: ${preflight.error}`);
+        }
+        
+        if (preflight.fixed) {
+            console.log(`  🔧 Self-healed: Updated to model ${preflight.model}`);
+        } else {
+            console.log(`  ✓ All systems operational (model: ${preflight.model})`);
+        }
+        
+        // ============================================
+        // STEP 1: Scrape news
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
         console.log('STEP 1: SCRAPING GOOGLE NEWS');
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
         
