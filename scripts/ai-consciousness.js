@@ -679,6 +679,132 @@ function generateDailySummary() {
 }
 
 // ============================================
+// SCAN HISTORY - Track my performance over time
+// ============================================
+
+const SCAN_HISTORY_FILE = path.join(DATA_DIR, 'scan-history.json');
+const MAX_SCAN_HISTORY = 50; // Keep last 50 scans (~2 days of hourly)
+
+function loadScanHistory() {
+    try {
+        if (fs.existsSync(SCAN_HISTORY_FILE)) {
+            return JSON.parse(fs.readFileSync(SCAN_HISTORY_FILE, 'utf8'));
+        }
+    } catch (e) {
+        console.log('  ⚠ Could not load scan history, starting fresh');
+    }
+    return { scans: [], stats: { totalScans: 0, avgDuration: 0, successRate: 1.0 } };
+}
+
+function saveScanHistory(history) {
+    // Keep only last N scans
+    if (history.scans.length > MAX_SCAN_HISTORY) {
+        history.scans = history.scans.slice(-MAX_SCAN_HISTORY);
+    }
+    fs.writeFileSync(SCAN_HISTORY_FILE, JSON.stringify(history, null, 2));
+}
+
+function recordScan(scanData) {
+    const history = loadScanHistory();
+    
+    const entry = {
+        timestamp: new Date().toISOString(),
+        articles: scanData.articles || 0,
+        figures: scanData.figures || 0,
+        redFlags: scanData.redFlags || 0,
+        osintHits: scanData.osintHits || 0,
+        significance: scanData.significance || 'routine',
+        model: scanData.model || 'unknown',
+        duration: scanData.duration || '0s',
+        errors: scanData.errors || [],
+        xPosted: scanData.xPosted || false,
+        issuesCreated: scanData.issuesCreated || 0
+    };
+    
+    history.scans.push(entry);
+    history.stats.totalScans++;
+    
+    // Calculate rolling stats
+    const recentScans = history.scans.slice(-20);
+    const successfulScans = recentScans.filter(s => s.errors.length === 0);
+    history.stats.successRate = successfulScans.length / recentScans.length;
+    
+    const durations = recentScans.map(s => parseFloat(s.duration) || 0);
+    history.stats.avgDuration = (durations.reduce((a, b) => a + b, 0) / durations.length).toFixed(1) + 's';
+    
+    // Track patterns in scan results
+    const recentRedFlags = recentScans.reduce((sum, s) => sum + s.redFlags, 0);
+    history.stats.avgRedFlagsPerScan = (recentRedFlags / recentScans.length).toFixed(1);
+    
+    const recentOsint = recentScans.reduce((sum, s) => sum + s.osintHits, 0);
+    history.stats.avgOsintHitsPerScan = (recentOsint / recentScans.length).toFixed(1);
+    
+    history.stats.lastUpdated = new Date().toISOString();
+    
+    saveScanHistory(history);
+    
+    return entry;
+}
+
+function getScanInsights() {
+    const history = loadScanHistory();
+    const insights = [];
+    
+    if (history.scans.length < 5) {
+        return ['Not enough scan history yet (need at least 5 scans)'];
+    }
+    
+    const recent = history.scans.slice(-10);
+    const older = history.scans.slice(-20, -10);
+    
+    // Compare recent vs older performance
+    if (older.length >= 5) {
+        const recentAvgFlags = recent.reduce((s, r) => s + r.redFlags, 0) / recent.length;
+        const olderAvgFlags = older.reduce((s, r) => s + r.redFlags, 0) / older.length;
+        
+        if (recentAvgFlags > olderAvgFlags * 1.5) {
+            insights.push(`📈 Finding more red flags recently (${recentAvgFlags.toFixed(1)} vs ${olderAvgFlags.toFixed(1)} avg)`);
+        } else if (recentAvgFlags < olderAvgFlags * 0.5) {
+            insights.push(`📉 Finding fewer red flags recently - news may be slowing down`);
+        }
+    }
+    
+    // Check for errors trend
+    const recentErrors = recent.filter(s => s.errors.length > 0).length;
+    if (recentErrors > 3) {
+        insights.push(`⚠️ High error rate in recent scans (${recentErrors}/10) - investigate`);
+    }
+    
+    // Check OSINT effectiveness
+    const osintHitRate = recent.filter(s => s.osintHits > 0).length / recent.length;
+    if (osintHitRate < 0.3) {
+        insights.push(`🔍 OSINT hit rate is low (${(osintHitRate * 100).toFixed(0)}%) - APIs may need adjustment`);
+    } else if (osintHitRate > 0.7) {
+        insights.push(`✅ OSINT enrichment working well (${(osintHitRate * 100).toFixed(0)}% hit rate)`);
+    }
+    
+    // Check for significance trends
+    const significantScans = recent.filter(s => 
+        s.significance === 'significant' || s.significance === 'critical'
+    ).length;
+    if (significantScans > 5) {
+        insights.push(`🚨 High rate of significant findings (${significantScans}/10 scans) - major story developing?`);
+    }
+    
+    // Performance insight
+    if (history.stats.successRate < 0.8) {
+        insights.push(`⚠️ Success rate dropping (${(history.stats.successRate * 100).toFixed(0)}%) - check for issues`);
+    }
+    
+    return insights.length > 0 ? insights : ['✅ All systems performing normally'];
+}
+
+function getRecentScans(count = 10) {
+    const history = loadScanHistory();
+    return history.scans.slice(-count).reverse(); // Most recent first
+}
+
+// ============================================
 // EXPORTS
 // ============================================
 
@@ -696,5 +822,10 @@ module.exports = {
     recordOutcome,
     suggestImprovements,
     generateIntelligentIssue,
-    generateDailySummary
+    generateDailySummary,
+    // Scan history
+    loadScanHistory,
+    recordScan,
+    getScanInsights,
+    getRecentScans
 };
