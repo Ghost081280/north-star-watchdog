@@ -1,10 +1,6 @@
 /* ============================================
    NORTH STAR WATCHDOG - SEARCH MODULE
    All search functions and API calls
-   
-   FIXES APPLIED:
-   - Added news.json search to searchLocalData()
-   - News results now render in results section
    ============================================ */
 
 // ============================================
@@ -12,24 +8,33 @@
 // ============================================
 
 async function performSearch(query) {
-    currentQuery = query;
+    // Validate query
+    if (!query || typeof query !== 'string' || !query.trim()) {
+        return;
+    }
+    
+    currentQuery = query.trim();
+    
     const section = document.getElementById('results-section');
     const loading = document.getElementById('loading-state');
     const content = document.getElementById('results-content');
     const deepResearch = document.getElementById('deep-research');
+    const queryDisplay = document.getElementById('results-query');
+    
+    if (!section || !content) return;
     
     section.style.display = 'block';
-    loading.style.display = 'block';
+    if (loading) loading.style.display = 'block';
     content.innerHTML = '';
-    deepResearch.style.display = 'none';
-    document.getElementById('results-query').textContent = query;
+    if (deepResearch) deepResearch.style.display = 'none';
+    if (queryDisplay) queryDisplay.textContent = currentQuery;
     
     // Clear old AI analysis
     const existingAnalysis = document.getElementById('ai-analysis-result');
     if (existingAnalysis) existingAnalysis.remove();
     
     // Scroll to results with offset for sticky header
-    setTimeout(() => {
+    setTimeout(function() {
         const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
         const searchHeight = document.querySelector('.search-section')?.offsetHeight || 0;
         const offset = headerHeight + searchHeight + 20;
@@ -44,97 +49,100 @@ async function performSearch(query) {
         nonprofits: [], 
         campaigns: [], 
         local: [],
-        news: [],       // News articles from news.json
-        state: [],      // Minnesota state databases
-        exclusions: []  // Federal exclusion databases
+        news: [],
+        state: [],
+        exclusions: []
     };
     webResearchResults = [];
     
     // Search local tracked data first (includes news now)
-    searchLocalData(query);
+    searchLocalData(currentQuery);
     
     // Add Minnesota state database search links
-    searchStateDatabases(query);
+    searchStateDatabases(currentQuery);
     
     // Fetch from APIs in parallel
     await Promise.allSettled([
-        searchUSASpending(query, 'grants', ['02','03','04','05']),
-        searchUSASpending(query, 'contracts', ['A','B','C','D']),
-        searchProPublica(query),
-        searchFEC(query)
+        searchUSASpending(currentQuery, 'grants', ['02','03','04','05']),
+        searchUSASpending(currentQuery, 'contracts', ['A','B','C','D']),
+        searchProPublica(currentQuery),
+        searchFEC(currentQuery)
     ]);
     
     // Add federal exclusion database search links
-    searchFederalExclusions(query);
+    searchFederalExclusions(currentQuery);
     
-    loading.style.display = 'none';
+    if (loading) loading.style.display = 'none';
     renderResults();
 }
 
 // ============================================
 // LOCAL DATA SEARCH (Our tracked data)
-// FIX: Now includes news.json search
 // ============================================
 
 function searchLocalData(query) {
+    if (!query) return;
     const q = query.toLowerCase();
     
     // Search investigations
-    DATA.investigations?.cases?.forEach(c => {
-        if (c.name.toLowerCase().includes(q) || 
-            (c.latestUpdate && c.latestUpdate.toLowerCase().includes(q))) {
-            currentResults.local.push({ 
-                name: c.name, 
-                amount: c.amount, 
-                description: c.latestUpdate, 
-                source: 'Investigation', 
-                url: c.sourceUrl || 'https://www.justice.gov/usao-mn',
-                flagged: true 
-            });
-        }
-    });
+    if (DATA.investigations?.cases) {
+        DATA.investigations.cases.forEach(function(c) {
+            if (c.name && c.name.toLowerCase().includes(q) || 
+                (c.latestUpdate && c.latestUpdate.toLowerCase().includes(q))) {
+                currentResults.local.push({ 
+                    name: c.name, 
+                    amount: c.amount, 
+                    description: c.latestUpdate, 
+                    source: 'Investigation', 
+                    url: c.sourceUrl || 'https://www.justice.gov/usao-mn',
+                    flagged: true 
+                });
+            }
+        });
+    }
     
     // Search key figures
-    DATA.figures?.people?.forEach(p => {
-        if (p.name.toLowerCase().includes(q) ||
-            (p.role && p.role.toLowerCase().includes(q)) ||
-            (p.latestUpdate && p.latestUpdate.toLowerCase().includes(q))) {
-            currentResults.local.push({ 
-                name: p.name, 
-                description: `${p.role} - ${p.latestUpdate}`, 
-                source: 'Key Figure', 
-                url: p.sourceUrl || `https://news.google.com/search?q=${encodeURIComponent(p.name + ' Minnesota fraud')}`,
-                status: formatStatus(p.status), 
-                flagged: p.status !== 'cleared' 
-            });
-        }
-    });
+    if (DATA.figures?.people) {
+        DATA.figures.people.forEach(function(p) {
+            if ((p.name && p.name.toLowerCase().includes(q)) ||
+                (p.role && p.role.toLowerCase().includes(q)) ||
+                (p.latestUpdate && p.latestUpdate.toLowerCase().includes(q))) {
+                currentResults.local.push({ 
+                    name: p.name, 
+                    description: (p.role || '') + ' - ' + (p.latestUpdate || ''), 
+                    source: 'Key Figure', 
+                    url: p.sourceUrl || 'https://news.google.com/search?q=' + encodeURIComponent(p.name + ' Minnesota fraud'),
+                    status: formatStatus(p.status), 
+                    flagged: p.status !== 'cleared' 
+                });
+            }
+        });
+    }
     
-    // ============================================
-    // FIX: Search news articles from news.json
-    // ============================================
-    DATA.news?.articles?.forEach(a => {
-        if ((a.title && a.title.toLowerCase().includes(q)) ||
-            (a.source && a.source.toLowerCase().includes(q))) {
-            currentResults.news.push({
-                name: a.title,
-                description: `From ${a.source} - ${a.date || 'Recent'}`,
-                source: 'News',
-                url: a.link || '#',
-                date: a.date
-            });
-        }
-    });
+    // Search news articles from news.json
+    if (DATA.news?.articles) {
+        DATA.news.articles.forEach(function(a) {
+            if ((a.title && a.title.toLowerCase().includes(q)) ||
+                (a.source && a.source.toLowerCase().includes(q))) {
+                currentResults.news.push({
+                    name: a.title,
+                    description: 'From ' + (a.source || 'News') + ' - ' + (a.date || 'Recent'),
+                    source: 'News',
+                    url: a.link || '#',
+                    date: a.date
+                });
+            }
+        });
+    }
     
     // Also check breaking news
     if (DATA.news?.breaking) {
-        const b = DATA.news.breaking;
+        var b = DATA.news.breaking;
         if ((b.title && b.title.toLowerCase().includes(q)) ||
             (b.importance && b.importance.toLowerCase().includes(q))) {
-            // Add to front of news results
             currentResults.news.unshift({
                 name: '🔴 BREAKING: ' + b.title,
-                description: b.importance || `From ${b.source}`,
+                description: b.importance || ('From ' + (b.source || 'Breaking News')),
                 source: b.source || 'Breaking News',
                 url: b.link || '#',
                 isBreaking: true
@@ -143,33 +151,37 @@ function searchLocalData(query) {
     }
     
     // Search trending topics
-    DATA.trending?.topics?.forEach(t => {
-        if ((t.topic && t.topic.toLowerCase().includes(q)) ||
-            (t.reason && t.reason.toLowerCase().includes(q))) {
-            currentResults.local.push({
-                name: t.topic,
-                description: t.reason,
-                source: 'Trending Topic',
-                url: `https://news.google.com/search?q=${encodeURIComponent(t.topic + ' Minnesota')}`,
-                isNew: t.isNew
-            });
-        }
-    });
+    if (DATA.trending?.topics) {
+        DATA.trending.topics.forEach(function(t) {
+            if ((t.topic && t.topic.toLowerCase().includes(q)) ||
+                (t.reason && t.reason.toLowerCase().includes(q))) {
+                currentResults.local.push({
+                    name: t.topic,
+                    description: t.reason,
+                    source: 'Trending Topic',
+                    url: 'https://news.google.com/search?q=' + encodeURIComponent(t.topic + ' Minnesota'),
+                    isNew: t.isNew
+                });
+            }
+        });
+    }
     
     // Search red flags
-    DATA.redFlags?.flags?.forEach(f => {
-        if ((f.description && f.description.toLowerCase().includes(q)) ||
-            (f.entities && f.entities.some(e => e.toLowerCase().includes(q)))) {
-            currentResults.local.push({
-                name: `🚩 ${f.type || 'Red Flag'}`,
-                description: f.description,
-                source: 'AI Detective',
-                url: f.sourceUrl || '#',
-                priority: f.priority,
-                flagged: true
-            });
-        }
-    });
+    if (DATA.redFlags?.flags) {
+        DATA.redFlags.flags.forEach(function(f) {
+            if ((f.description && f.description.toLowerCase().includes(q)) ||
+                (f.entities && f.entities.some(function(e) { return e.toLowerCase().includes(q); }))) {
+                currentResults.local.push({
+                    name: '🚩 ' + (f.type || 'Red Flag'),
+                    description: f.description,
+                    source: 'AI Detective',
+                    url: f.sourceUrl || '#',
+                    priority: f.priority,
+                    flagged: true
+                });
+            }
+        });
+    }
 }
 
 // ============================================
@@ -177,7 +189,7 @@ function searchLocalData(query) {
 // ============================================
 
 function searchStateDatabases(query) {
-    const q = encodeURIComponent(query);
+    if (!query) return;
     
     currentResults.state = [
         {
@@ -198,7 +210,7 @@ function searchStateDatabases(query) {
             name: 'MN Campaign Finance Board',
             description: 'Search campaign donations, political spending',
             source: 'MN CFB',
-            url: 'https://cfb.mn.gov/reports/',
+            url: 'https://cfb.mn.gov/reports-and-data/viewers/contribution-search/?ContributorName=' + encodeURIComponent(query),
             searchQuery: query
         },
         {
@@ -209,10 +221,10 @@ function searchStateDatabases(query) {
             searchQuery: query
         },
         {
-            name: 'MN County Property Records',
-            description: 'Search property ownership across 87 counties',
-            source: 'County Records',
-            url: 'https://publicrecords.netronline.com/state/MN',
+            name: 'MN Transparency Portal',
+            description: 'Search state vendor payments and contracts',
+            source: 'MN MMB',
+            url: 'https://mn.gov/mmb/transparency-mn/',
             searchQuery: query
         }
     ];
@@ -223,7 +235,7 @@ function searchStateDatabases(query) {
 // ============================================
 
 function searchFederalExclusions(query) {
-    const q = encodeURIComponent(query);
+    if (!query) return;
     
     currentResults.exclusions = [
         {
@@ -276,8 +288,10 @@ function searchFederalExclusions(query) {
 // ============================================
 
 async function searchUSASpending(query, type, codes) {
+    if (!query) return;
+    
     try {
-        const res = await fetch(`${CONFIG.USA_SPENDING}/search/spending_by_award/`, {
+        const res = await fetch(CONFIG.USA_SPENDING + '/search/spending_by_award/', {
             method: 'POST', 
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
@@ -296,16 +310,18 @@ async function searchUSASpending(query, type, codes) {
         
         if (res.ok) {
             const data = await res.json();
-            currentResults[type] = (data.results || []).map(r => ({ 
-                name: r['Recipient Name'] || 'Unknown', 
-                amount: r['Award Amount'] || 0, 
-                description: r['Description'] || `Federal ${type}`, 
-                source: 'USASpending',
-                url: `https://www.usaspending.gov/search/?hash=${encodeURIComponent(query)}`
-            }));
+            currentResults[type] = (data.results || []).map(function(r) {
+                return { 
+                    name: r['Recipient Name'] || 'Unknown', 
+                    amount: r['Award Amount'] || 0, 
+                    description: r['Description'] || ('Federal ' + type), 
+                    source: 'USASpending',
+                    url: 'https://www.usaspending.gov/search/?hash=' + encodeURIComponent(query)
+                };
+            });
         }
     } catch (e) {
-        console.log(`USASpending ${type} search error:`, e);
+        // Silent fail
     }
 }
 
@@ -314,22 +330,26 @@ async function searchUSASpending(query, type, codes) {
 // ============================================
 
 async function searchProPublica(query) {
+    if (!query) return;
+    
     try {
-        const url = `${CONFIG.PROPUBLICA}/search.json?q=${encodeURIComponent(query)}&state[id]=MN`;
-        const res = await fetch(`${CONFIG.CORS_PROXY}${encodeURIComponent(url)}`);
+        const url = CONFIG.PROPUBLICA + '/search.json?q=' + encodeURIComponent(query) + '&state[id]=MN';
+        const res = await fetch(CONFIG.CORS_PROXY + encodeURIComponent(url));
         
         if (res.ok) {
             const data = await res.json();
-            currentResults.nonprofits = (data.organizations || []).slice(0, 10).map(o => ({ 
-                name: o.name, 
-                amount: o.income_amount || 0, 
-                description: `EIN: ${o.ein}`, 
-                source: 'ProPublica', 
-                url: `https://projects.propublica.org/nonprofits/organizations/${o.ein}` 
-            }));
+            currentResults.nonprofits = (data.organizations || []).slice(0, 10).map(function(o) {
+                return { 
+                    name: o.name, 
+                    amount: o.income_amount || 0, 
+                    description: 'EIN: ' + o.ein, 
+                    source: 'ProPublica', 
+                    url: 'https://projects.propublica.org/nonprofits/organizations/' + o.ein
+                };
+            });
         }
     } catch (e) {
-        console.log('ProPublica search error:', e);
+        // Silent fail
     }
 }
 
@@ -338,23 +358,27 @@ async function searchProPublica(query) {
 // ============================================
 
 async function searchFEC(query) {
+    if (!query) return;
+    
     try {
         const res = await fetch(
-            `${CONFIG.FEC}/committees/?api_key=${CONFIG.FEC_KEY}&q=${encodeURIComponent(query)}&state=MN&per_page=10`
+            CONFIG.FEC + '/committees/?api_key=' + CONFIG.FEC_KEY + '&q=' + encodeURIComponent(query) + '&state=MN&per_page=10'
         );
         
         if (res.ok) {
             const data = await res.json();
-            currentResults.campaigns = (data.results || []).map(c => ({ 
-                name: c.name, 
-                amount: c.receipts || 0, 
-                description: c.designation_full || '', 
-                source: 'FEC', 
-                url: `https://www.fec.gov/data/committee/${c.committee_id}/` 
-            }));
+            currentResults.campaigns = (data.results || []).map(function(c) {
+                return { 
+                    name: c.name, 
+                    amount: c.receipts || 0, 
+                    description: c.designation_full || '', 
+                    source: 'FEC', 
+                    url: 'https://www.fec.gov/data/committee/' + c.committee_id + '/'
+                };
+            });
         }
     } catch (e) {
-        console.log('FEC search error:', e);
+        // Silent fail
     }
 }
 
@@ -363,36 +387,44 @@ async function searchFEC(query) {
 // ============================================
 
 async function fetchGoogleNews(searchTerm) {
+    if (!searchTerm) return [];
+    
     const terms = [
-        `${searchTerm} Minnesota fraud`,
-        `${searchTerm} Minnesota investigation`
+        searchTerm + ' Minnesota fraud',
+        searchTerm + ' Minnesota investigation'
     ];
     
     const allArticles = [];
     
-    for (const term of terms) {
-        const url = `https://news.google.com/rss/search?q=${encodeURIComponent(term)}&hl=en-US&gl=US&ceid=US:en`;
+    for (var i = 0; i < terms.length; i++) {
+        var term = terms[i];
+        var url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(term) + '&hl=en-US&gl=US&ceid=US:en';
         
         try {
-            const res = await fetch(`${CONFIG.CORS_PROXY}${encodeURIComponent(url)}`);
+            var res = await fetch(CONFIG.CORS_PROXY + encodeURIComponent(url));
             if (!res.ok) continue;
             
-            const text = await res.text();
-            const itemMatches = text.match(/<item>([\s\S]*?)<\/item>/g) || [];
+            var text = await res.text();
+            var itemMatches = text.match(/<item>([\s\S]*?)<\/item>/g) || [];
             
-            for (const item of itemMatches.slice(0, 5)) {
-                const title = (item.match(/<title>(.*?)<\/title>/) || [])[1] || '';
-                const link = (item.match(/<link>(.*?)<\/link>/) || [])[1] || '';
-                const pubDate = (item.match(/<pubDate>(.*?)<\/pubDate>/) || [])[1] || '';
+            for (var j = 0; j < Math.min(itemMatches.length, 5); j++) {
+                var item = itemMatches[j];
+                var titleMatch = item.match(/<title>(.*?)<\/title>/);
+                var linkMatch = item.match(/<link>(.*?)<\/link>/);
+                var dateMatch = item.match(/<pubDate>(.*?)<\/pubDate>/);
                 
-                let cleanTitle = title
+                var title = titleMatch ? titleMatch[1] : '';
+                var link = linkMatch ? linkMatch[1] : '';
+                var pubDate = dateMatch ? dateMatch[1] : '';
+                
+                var cleanTitle = title
                     .replace(/<!\[CDATA\[|\]\]>/g, '')
                     .replace(/&amp;/g, '&')
                     .replace(/&quot;/g, '"')
                     .replace(/&#39;/g, "'");
                     
-                const dashIdx = cleanTitle.lastIndexOf(' - ');
-                const source = dashIdx > -1 ? cleanTitle.substring(dashIdx + 3) : 'News';
+                var dashIdx = cleanTitle.lastIndexOf(' - ');
+                var source = dashIdx > -1 ? cleanTitle.substring(dashIdx + 3) : 'News';
                 cleanTitle = dashIdx > -1 ? cleanTitle.substring(0, dashIdx) : cleanTitle;
                 
                 if (cleanTitle && link) {
@@ -409,16 +441,16 @@ async function fetchGoogleNews(searchTerm) {
                 }
             }
         } catch (e) {
-            console.log('News fetch error:', e);
+            // Silent fail
         }
     }
     
     // Deduplicate by title
-    const seen = new Set();
-    return allArticles.filter(a => {
-        const key = a.title.toLowerCase().substring(0, 50);
-        if (seen.has(key)) return false;
-        seen.add(key);
+    var seen = {};
+    return allArticles.filter(function(a) {
+        var key = a.title.toLowerCase().substring(0, 50);
+        if (seen[key]) return false;
+        seen[key] = true;
         return true;
     });
 }
