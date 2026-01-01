@@ -20,27 +20,8 @@
     "Trump administration child care",
     "federal funding freeze Minnesota",
     "HHS Minnesota audit",
-    "Minnesota Child Care Fraud Investigation fraud Minnesota",
-    "US Federal Government fraud Minnesota",
-    "Minnesota child care providers fraud Minnesota",
-    "Minnesota fraud investigation",
-    "Nick Shirley fraud Minnesota",
-    "LDS fraud Minnesota",
-    "Trump administration fraud Minnesota",
-    "child care fraud",
-    "federal funding",
-    "Minnesota DHS",
-    "Minnesota Officials fraud Minnesota",
-    "Minnesota State Government fraud Minnesota",
-    "federal funding freeze",
-    "HHS investigation",
-    "Not applicable fraud Minnesota",
-    "None fraud Minnesota",
-    "Minnesota Department of Human Services fraud Minnesota",
-    "Minnesota child care program funding",
-    "Tim Walz fraud Minnesota",
-    "State of Minnesota fraud Minnesota",
-    "Minnesota Daycare Fraud Investigation fraud Minnesota",
+    "Minnesota assisted living fraud",
+    "Gandi Mohamed fraud Minnesota",
     "Minnesota daycare fraud"
   ],
   "trackedEntities": [
@@ -57,20 +38,8 @@
     "Haji's Kitchen",
     "HHS",
     "DOJ",
-    "Minnesota Child Care Fraud Investigation",
-    "US Federal Government",
-    "Minnesota child care providers",
-    "Nick Shirley",
-    "LDS",
-    "Trump administration",
-    "Minnesota Officials",
-    "Minnesota State Government",
-    "Not applicable",
-    "None",
-    "Minnesota Department of Human Services",
-    "Tim Walz",
-    "State of Minnesota",
-    "Minnesota Daycare Fraud Investigation"
+    "Gandi Mohamed",
+    "Minnesota assisted living"
   ],
   "governmentAgencies": [
     {
@@ -104,8 +73,19 @@
       "name": "Nick Shirley",
       "outlet": "YouTube",
       "role": "Investigative content creator",
-      "handle": "@Ghost081280",
-      "note": "Broke viral daycare fraud video exposing closed facilities still in payment system - SOURCE not subject. Do NOT add to Key Figures."
+      "note": "Broke viral daycare fraud video - SOURCE not subject"
+    },
+    {
+      "name": "Rich McHugh",
+      "outlet": "NewsNation",
+      "role": "Investigative reporter",
+      "note": "Covering assisted living fraud - SOURCE not subject"
+    },
+    {
+      "name": "Mario Nawfal",
+      "outlet": "X/Twitter",
+      "role": "News aggregator",
+      "note": "Amplifies fraud coverage - SOURCE not subject"
     }
   ],
   "suspectEntities": [
@@ -113,51 +93,26 @@
       "name": "Quality Learing Center",
       "type": "daycare",
       "amount": "$4M",
-      "status": "closed",
-      "note": "Closed just over a week ago per DCYF"
+      "status": "closed"
     },
     {
       "name": "Mako Childcare",
       "type": "daycare",
       "status": "closed",
-      "note": "Closed several YEARS ago but still in system"
-    }
-  ],
-  "discoveredSources": [],
-  "suggestedApis": [],
-  "futureApis": [],
-  "lastLearningUpdate": "2026-01-01T16:25:13.747Z",
-  "note": "This file is updated by the AI Detective as it discovers new search terms, entities, and data sources. IMPORTANT: Journalists, government officials, and politicians should NEVER be added to Key Figures unless they are actually charged with crimes.",
-  "governmentOfficials": [
-    {
-      "name": "Tikki Brown",
-      "role": "Commissioner",
-      "agency": "Minnesota DCYF",
-      "note": "Track for oversight actions and statements - NOT a subject of investigation"
+      "note": "Closed years ago but still in system"
     },
     {
-      "name": "Tim Walz",
-      "role": "Governor",
-      "agency": "State of Minnesota",
-      "note": "Track for oversight role and response - NOT a subject of investigation"
-    },
-    {
-      "name": "James Comer",
-      "role": "Representative",
-      "agency": "House Oversight Committee",
-      "note": "Leading congressional oversight hearings"
-    }
-  ],
-  "politicians": [
-    {
-      "name": "Ilhan Omar",
-      "role": "Representative",
-      "party": "D-MN",
-      "note": "Mentioned in political context related to fraud coverage - NOT a subject of investigation. Track only if directly involved in oversight."
+      "name": "Gandi Mohamed facilities",
+      "type": "assisted living",
+      "amount": "$49M since 2016",
+      "status": "indicted",
+      "note": "Properties through LLC, wife operates services"
     }
   ],
   "excludeFromKeyFigures": [
     "Nick Shirley",
+    "Rich McHugh",
+    "Mario Nawfal",
     "Tikki Brown",
     "Tim Walz",
     "Ilhan Omar",
@@ -168,22 +123,67 @@
     "requireAllegations": true,
     "excludeJournalists": true,
     "excludeOfficials": true,
-    "excludePlaceholders": [
-      "Unknown",
-      "TBD",
-      "N/A"
+    "validStatuses": ["charged", "convicted", "indicted", "sentenced"]
+  },
+  "apiResources": {
+    "groqCookbook": {
+      "url": "https://github.com/groq/groq-api-cookbook",
+      "description": "GROQ API examples and best practices",
+      "lastChecked": null,
+      "usefulExamples": []
+    },
+    "currentApis": [
+      {
+        "name": "Google News RSS",
+        "type": "news",
+        "requiresKey": false,
+        "status": "active"
+      },
+      {
+        "name": "ProPublica Nonprofits",
+        "type": "nonprofit",
+        "requiresKey": false,
+        "status": "active",
+        "url": "https://projects.propublica.org/nonprofits/api"
+      },
+      {
+        "name": "FEC Campaign Finance",
+        "type": "political",
+        "requiresKey": false,
+        "status": "active",
+        "url": "https://api.open.fec.gov"
+      },
+      {
+        "name": "OIG Exclusions",
+        "type": "healthcare",
+        "requiresKey": false,
+        "status": "active",
+        "url": "https://exclusions.oig.hhs.gov"
+      },
+      {
+        "name": "OpenCorporates",
+        "type": "corporate",
+        "requiresKey": false,
+        "status": "active",
+        "url": "https://api.opencorporates.com"
+      },
+      {
+        "name": "USASpending",
+        "type": "federal",
+        "requiresKey": false,
+        "status": "active",
+        "url": "https://api.usaspending.gov"
+      }
     ],
-    "validStatuses": [
-      "charged",
-      "convicted",
-      "indicted",
-      "investigating"
-    ],
-    "invalidStatusesForKeyFigures": [
-      "active",
-      "source",
-      "journalist",
-      "official"
-    ]
-  }
+    "discoveredApis": [],
+    "requestedApis": []
+  },
+  "selfDiagnostic": {
+    "lastFullDiagnostic": null,
+    "lastHealthScore": null,
+    "lastRepairs": [],
+    "knownIssues": []
+  },
+  "lastLearningUpdate": "2026-01-01T00:00:00.000Z",
+  "note": "This file is the AI's memory. It tracks entities, APIs, and self-diagnostic state."
 }
