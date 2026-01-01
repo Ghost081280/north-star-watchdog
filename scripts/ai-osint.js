@@ -806,6 +806,9 @@ async function crossReferenceCCAPProvider(providerName, options = {}) {
 // EXPORTS
 // ============================================================================
 
+// Alias for backwards compatibility
+const enrichFindings = enrichEntity;
+
 module.exports = {
     OSINT_APIS,
     
@@ -823,6 +826,7 @@ module.exports = {
     searchOpenCorporates,
     
     enrichEntity,
+    enrichFindings,  // Alias for ai-core.js compatibility
     generateInvestigationPackage,
     crossReferenceCCAPProvider,
     
