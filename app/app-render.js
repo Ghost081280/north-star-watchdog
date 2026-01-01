@@ -229,12 +229,25 @@ function renderInvestigations() {
         return; 
     }
     
-    // Update stat count
+    // FILTER: Only show investigations with valid source URLs
+    // This ensures we can prove every investigation we display
+    const validCases = DATA.investigations.cases.filter(c => {
+        // Must have a sourceUrl that starts with http
+        const sourceUrl = c.sourceUrl || '';
+        return sourceUrl && sourceUrl.startsWith('http');
+    });
+    
+    if (!validCases.length) {
+        grid.innerHTML = '<p class="empty">No verified investigations currently tracked.</p>';
+        return;
+    }
+    
+    // Update stat count with only valid cases
     const statEl = document.getElementById('stat-investigations');
-    if (statEl) statEl.textContent = DATA.investigations.cases.length;
+    if (statEl) statEl.textContent = validCases.length;
     
     // Sort NEW items first
-    const sorted = [...DATA.investigations.cases].sort((a, b) => 
+    const sorted = [...validCases].sort((a, b) => 
         (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0)
     );
     
@@ -245,7 +258,7 @@ function renderInvestigations() {
             <div class="inv-amount">${esc(c.amount)}</div>
             <div class="inv-status">${esc(c.status)}</div>
             <p class="inv-update">${esc(c.latestUpdate)}</p>
-            ${c.sourceUrl ? `<a href="${c.sourceUrl}" target="_blank" rel="noopener" class="inv-source" onclick="event.stopPropagation()">View Source</a>` : ''}
+            <a href="${c.sourceUrl}" target="_blank" rel="noopener" class="inv-source" onclick="event.stopPropagation()">📄 View Source</a>
         </div>
     `).join('');
 }
@@ -263,20 +276,44 @@ function renderFigures() {
         return; 
     }
     
-    // FILTER: Must have allegations to appear - this ensures only fraud suspects show
-    // Officials with fraud allegations CAN appear, officials without allegations cannot
-    const validStatuses = ['charged', 'convicted', 'sentenced', 'investigating', 'indicted'];
+    // FILTER: Must be actually CHARGED with specific crimes
+    // This applies to EVERYONE - officials, business owners, anyone
+    // If Tim Walz gets indicted for wire fraud, he WILL appear. Until then, he won't.
     
-    // Known journalists to always filter out
+    // Valid statuses - must be actually charged/convicted (not just "investigating" or "active")
+    const chargedStatuses = ['charged', 'convicted', 'sentenced', 'indicted'];
+    
+    // Specific criminal allegations (generic "fraud" alone doesn't count)
+    const specificAllegations = ['wire fraud', 'money laundering', 'federal program fraud', 'false claims', 'conspiracy', 'tax fraud', 'embezzlement', 'mail fraud', 'bank fraud'];
+    
+    // Journalists are NEVER fraud suspects - they report on fraud
     const journalists = ['nick shirley'];
     
+    // Generic/vague entries to filter out
+    const genericNames = ['unknown', 'minnesota child care providers', 'various'];
+    
     const fraudSuspects = DATA.figures.people.filter(p => {
-        // Filter out known journalists
-        if (journalists.includes(p.name?.toLowerCase())) return false;
-        // Must have allegations - this is the key filter
+        const nameLower = (p.name || '').toLowerCase();
+        
+        // Filter out journalists
+        if (journalists.some(j => nameLower.includes(j))) return false;
+        
+        // Filter out generic entries
+        if (genericNames.some(g => nameLower.includes(g))) return false;
+        
+        // Must have allegations
         if (!p.allegations || p.allegations.length === 0) return false;
-        // Must have a valid fraud-related status
-        if (p.status && !validStatuses.includes(p.status)) return false;
+        
+        // Must have at least one SPECIFIC allegation
+        const hasSpecific = p.allegations.some(a => 
+            specificAllegations.some(s => a.toLowerCase().includes(s))
+        );
+        if (!hasSpecific) return false;
+        
+        // Must be actually charged (not just "investigating" or "active")
+        const status = (p.status || '').toLowerCase();
+        if (!chargedStatuses.includes(status)) return false;
+        
         return true;
     });
     
