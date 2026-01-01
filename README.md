@@ -1,8 +1,18 @@
 # ⭐ North Star Watchdog
 
+[![AI Scan](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-scan.yml/badge.svg)](https://github.com/Ghost081280/north-star-watchdog/actions/workflows/ai-scan.yml)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Site-Online-brightgreen)](https://ghost081280.github.io/north-star-watchdog/)
+[![System Health](https://img.shields.io/badge/Diagnostic-Run%20Tests-blue)](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
+[![Data Sources](https://img.shields.io/badge/APIs-6%20Sources-orange)](https://ghost081280.github.io/north-star-watchdog/#data-sources)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Made with AI](https://img.shields.io/badge/Powered%20by-GROQ%20AI-purple)](https://groq.com)
+[![Updates](https://img.shields.io/badge/Updates-Hourly-red)](https://github.com/Ghost081280/north-star-watchdog/actions)
+
 **AI-Powered Minnesota Fraud Investigation Tracker**
 
 🔗 **Live Site:** [ghost081280.github.io/north-star-watchdog](https://ghost081280.github.io/north-star-watchdog)
+
+🔧 **System Diagnostic:** [ghost081280.github.io/north-star-watchdog/diagnostic/](https://ghost081280.github.io/north-star-watchdog/diagnostic/)
 
 ---
 
@@ -71,9 +81,9 @@ The AI Detective section provides **automated pattern analysis** across all sour
 
 ### 🚨 Watch the AI Work
 
-High-confidence findings are automatically reported as GitHub Issues:
+High-confidence findings (90%+) are automatically reported as GitHub Issues:
 
-👉 **[View AI Discoveries](https://github.com/Ghost081280/north-star-watchdog/issues?q=label%3Aai-detected)**
+👉 **[View Major Findings](https://github.com/Ghost081280/north-star-watchdog/issues?q=label%3Apolaris-intel)**
 
 ---
 
@@ -119,7 +129,7 @@ The more it runs, the more comprehensive the coverage becomes.
 - OpenCorporates — Company registrations
 
 **AI Analysis:**
-- GROQ (Llama 3.1 70B) — Entity extraction, pattern detection
+- GROQ (Llama 3.3 70B) — Entity extraction, pattern detection
 
 ### Future Integrations (Planned)
 - DuckDuckGo — Entity enrichment
@@ -175,11 +185,20 @@ The system distinguishes between different types of tracked entities:
 
 ## 🔧 System Diagnostic
 
-Check if everything is working:
+The diagnostic tool runs **100+ automated tests** to verify system health:
 
-👉 **[Run Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic.html)**
+- ✅ Data file integrity
+- ✅ Backend-frontend data flow
+- ✅ API source attribution
+- ✅ Stats baseline validation
+- ✅ AI briefing quality
+- ✅ Timestamp freshness
+- ✅ Link verification
+- ✅ Cross-reference integrity
 
-The diagnostic page tests all data files, API integrations, and rendering.
+👉 **[Run Full Diagnostic](https://ghost081280.github.io/north-star-watchdog/diagnostic/)**
+
+The diagnostic generates AI-readable reports for automated troubleshooting.
 
 ---
 
