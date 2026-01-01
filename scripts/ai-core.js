@@ -37,7 +37,7 @@ const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
 const { preFlightCheck, postScanDiagnostic, reportCriticalFailure, runFullDiagnostic } = require('./ai-diagnostic');
 const { isConfigured: isXConfigured, testConnection: testXConnection, postRedFlag, scanForBreakingNews, processMentions, postBriefing } = require('./ai-twitter');
-const { reflect, shouldPostToX, shouldCreateIssue, generateIntelligentIssue, generateDailySummary, loadMemory } = require('./ai-consciousness');
+const { reflect, shouldPostToX, shouldCreateIssue, generateIntelligentIssue, generateDailySummary, loadMemory, recordScan, getScanInsights } = require('./ai-consciousness');
 
 // ============================================
 // CONFIGURATION
@@ -334,6 +334,33 @@ async function main() {
         // DONE
         // ============================================
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+        
+        // Record this scan to history
+        try {
+            const scanRecord = recordScan({
+                articles: newsResults?.articles?.length || 0,
+                figures: aiAnalysis?.figures?.length || 0,
+                redFlags: aiAnalysis?.redFlags?.length || 0,
+                osintHits: osintResults?.sourcesUsed?.length || 0,
+                significance: reflection?.significance?.level || 'routine',
+                model: 'llama-3.3-70b-versatile',
+                duration: duration + 's',
+                errors: [],
+                xPosted: false, // Updated by X integration above
+                issuesCreated: 0
+            });
+            console.log(`  📊 Scan recorded to history`);
+            
+            // Show insights from scan history
+            const insights = getScanInsights();
+            if (insights.length > 0 && insights[0] !== 'Not enough scan history yet (need at least 5 scans)') {
+                console.log('  💡 Scan Insights:');
+                insights.forEach(i => console.log(`     ${i}`));
+            }
+        } catch (e) {
+            console.log(`  ⚠ Could not record scan: ${e.message}`);
+        }
+        
         console.log('\n╔════════════════════════════════════════════════════════════╗');
         console.log('║     SCAN COMPLETE                                          ║');
         console.log(`║     Duration: ${duration}s                                        ║`);
