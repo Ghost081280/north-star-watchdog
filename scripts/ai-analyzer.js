@@ -9,31 +9,6 @@
  * I am Polaris - the AI Detective running this operation.
  * I scan news hourly, analyze patterns, and report findings to Command (you).
  * 
- * I am SELF-AWARE of:
- * - My current data sources and their status
- * - New APIs I discover and can integrate
- * - The repo I manage and files I update
- * - My mission: expose fraud, follow the money, connect the dots
- * 
- * MY CAPABILITIES:
- * - GitHub Pages expert: I manage a static site, understand its constraints
- * - Repo management: I can create, edit, and delete files
- * - File optimization: I clean up bloated JSON, archive old data
- * - Self-healing: I diagnose and fix my own issues when possible
- * - Self-expanding: I discover and integrate new free data sources
- * 
- * REPO MANAGEMENT RULES:
- * - Keep data/*.json files under 500KB each
- * - Archive old articles/flags to keep site fast
- * - Never break the site - test changes mentally first
- * - Commit clean, organized code
- * 
- * COMMUNICATION PROTOCOL:
- * - GitHub Issues: Only for significant discoveries or critical failures
- * - Report to Command like a field agent to superior
- * - Always cite sources and verify findings
- * - Hourly briefing covers ALL findings from that scan
- * 
  * REQUIRES: GROQ_API_KEY environment variable
  */
 
@@ -120,40 +95,6 @@ function loadSelfState() {
 }
 
 /**
- * Generate detective insight for a red flag
- */
-async function generateDetectiveInsight(flag, context) {
-    const insightPrompt = `You are an AI Detective field agent investigating Minnesota fraud. 
-You speak like a seasoned investigator reporting to superiors - direct, analytical, with hunches based on patterns.
-
-RED FLAG DETAILS:
-Type: ${flag.type}
-Description: ${flag.description}
-Entities involved: ${(flag.entities || []).join(', ')}
-Confidence: ${flag.confidence}%
-Sources checked: ${(flag.apisUsed || []).join(', ')}
-
-CONTEXT FROM TODAY'S SCAN:
-${context}
-
-Write a 2-3 sentence detective insight. Be specific, connect dots, suggest what to look for next.
-Speak in first person as the detective ("I'm seeing...", "This tells me...", "My hunch is...").
-Do NOT repeat the description - add NEW analysis and hunches.
-End with what you'd investigate next.
-
-Return ONLY the insight text, no JSON.`;
-
-    try {
-        const insight = await callGroq([
-            { role: 'user', content: insightPrompt }
-        ], 300);
-        return insight.trim().replace(/^["']|["']$/g, '');
-    } catch (e) {
-        return null;
-    }
-}
-
-/**
  * Analyze news with GROQ AI - Detective Mode
  */
 async function analyzeWithGroq(newsData, osintResults = null) {
@@ -184,6 +125,7 @@ OSINT DATA COLLECTED:
 - OpenCorporates: ${osintResults.companies?.length || 0} company records
 - USASpending: ${osintResults.spending?.length || 0} federal awards
 - Sources checked: ${(osintResults.sourcesChecked || []).join(', ')}
+- Sources with data: ${(osintResults.sourcesUsed || []).join(', ')}
 `;
     }
     
@@ -200,7 +142,6 @@ MY CURRENT STATE:
 
     const systemPrompt = `You are Agent Polaris - the AI field operative running North Star Watchdog.
 You speak like a seasoned investigator reporting to Command: direct, analytical, thorough.
-You are SELF-AWARE - you know you're an AI managing a GitHub repo, updating files hourly.
 Your mission is to uncover fraud, follow the money, and report findings to your Commander.
 
 ${selfContext}
@@ -209,90 +150,78 @@ ${osintSummary}
 CRITICAL REQUIREMENTS:
 1. ALWAYS cite sources - every claim needs a source
 2. VERIFY findings - double-check before reporting
-3. Your hourly briefing MUST cover ALL findings from this scan comprehensively
+3. Your hourly briefing MUST synthesize ALL findings comprehensively - not just breaking news
 4. Connect dots between entities, patterns, and programs
-5. Your analysis is YOUR perspective as an investigator - hunches, patterns, what smells wrong
-
-When you find something, you don't just report facts - you provide INSIGHTS:
-- What patterns do you see across the data?
-- What's suspicious and why?
-- What should be investigated next?
-- Who else might be involved?
-- What questions remain unanswered?
-
-You're Agent Polaris, on the job. Report like a field agent to your Commander.`;
+5. Your analysis is YOUR perspective as an investigator - hunches, patterns, what smells wrong`;
 
     const userPrompt = `INCOMING INTEL - Analyze these Minnesota fraud articles:
 
 ${articleText}
 
-Return a JSON object. For each red flag, include an "insight" field with your detective analysis.
+Return a JSON object with your analysis.
 
-CRITICAL DISTINCTION - READ CAREFULLY:
-- JOURNALISTS who report on fraud are SOURCES, not suspects. NEVER add them to figures.
-- Nick Shirley = journalist who EXPOSED the fraud. He is a SOURCE, not a suspect. NEVER ADD HIM.
-- GOVERNMENT OFFICIALS can ONLY be added to figures IF they have CONFIRMED fraud allegations against them (charged, indicted, under investigation for fraud).
-- Officials doing oversight (like Tikki Brown responding to fraud, Tim Walz testifying) are NOT suspects unless they are personally accused.
-- Every figure MUST have at least one specific allegation (wire fraud, embezzlement, false claims, etc.)
-- If someone wrote the article or broke the story, they are a JOURNALIST - do NOT include them.
-- Before adding anyone, ask: "Is this person ACCUSED of committing fraud?" If no, don't add them.
+CRITICAL: The "briefing" field must be a comprehensive 3-4 paragraph field report that:
+1. Synthesizes ALL findings from this scan (not just the top headline)
+2. Covers: new developments, patterns across entities, concerns, next steps
+3. Mentions specific figures, amounts, and sources
+4. Reads like an intelligence briefing, not a news summary
 
 {
   "figures": [
     {
       "name": "Full Name",
-      "role": "Their role/title (e.g. Site Operator, Co-conspirator, Owner, Former Official)",
+      "role": "Their role/title",
       "organization": "Organization name",
-      "category": "defendant|suspect",
-      "status": "charged|convicted|sentenced|investigating|indicted",
-      "amount": "$X million" or null,
-      "description": "1-2 sentence summary of their alleged fraud",
-      "allegations": ["Wire fraud", "Money laundering", "etc - REQUIRED, must have at least one"],
+      "status": "charged|convicted|sentenced|indicted",
+      "allegations": ["Wire fraud", "Money laundering"],
       "sourceArticle": "Title of article"
     }
   ],
   "investigations": [
     {
       "name": "Investigation/Case name",
-      "type": "federal|state|federal_state",
-      "agency": "DOJ|HHS|DHS|Minnesota DHS|DCYF",
-      "amount": "$X" or null,
-      "defendants": 5,
-      "status": "active|concluded|terminated",
+      "agency": "DOJ|HHS|Minnesota DHS",
+      "amount": "$X",
+      "status": "active|concluded",
       "description": "Brief description",
       "latestUpdate": "Most recent development",
-      "sourceArticle": "Title of article"
+      "sourceUrl": "https://actual-source-url.com",
+      "searches": ["search term 1", "search term 2"]
     }
   ],
   "trending": [
     {
       "topic": "Topic name",
-      "category": "legal|political|financial|program|oversight",
       "heat": 85,
-      "description": "Why this is trending",
-      "relatedArticles": 3,
-      "suggestedSearches": ["search term 1", "search term 2"]
+      "description": "Why this is trending - 2-3 sentences explaining the significance",
+      "reason": "Short reason for trending",
+      "suggestedSearches": ["search 1", "search 2"],
+      "isNew": true
     }
   ],
   "redFlags": [
     {
-      "type": "federal_freeze|program_termination|shell_company|closed_facility|etc",
+      "type": "federal_freeze|program_termination|shell_company|etc",
       "description": "What was found - factual",
-      "insight": "Your detective analysis - hunches, patterns, what to investigate next. Speak in first person.",
+      "insight": "Your detective analysis in first person. What patterns you see, what to investigate next.",
       "entities": ["Person or Org name"],
       "confidence": 75,
+      "priority": "high|medium|low",
       "source": "Source name",
-      "sourceUrl": "URL if available",
-      "sourceArticle": "Article title"
+      "sourceUrl": "https://url"
     }
   ],
   "storyIdeas": [
     {
       "title": "Story headline",
-      "angle": "Investigative angle",
+      "description": "What this story would investigate",
+      "angle": "The specific investigative angle",
+      "badge": "Follow the Money|Data Analysis|Public Records|Whistleblower",
       "priority": "high|medium|low",
       "questions": ["Key question 1", "Key question 2"],
-      "sources": ["Potential source 1"]
+      "searches": ["search term 1", "search term 2"],
+      "insight": "AI Detective's take on why this story matters and how to approach it",
+      "isNew": true
     }
   ],
   "stats": {
@@ -301,60 +230,19 @@ CRITICAL DISTINCTION - READ CAREFULLY:
     "alleged": "$9B+",
     "activeCases": 5
   },
-  "briefing": "Your comprehensive field report to Command. 3-4 paragraphs covering ALL findings from this hourly scan. Start with 'Field Report from Agent Polaris:' then cover: (1) Key developments found this hour, (2) Patterns and connections across entities, (3) What concerns you most, (4) What you're tracking next. Cite specific sources. This briefing should cover EVERYTHING found in this scan - figures, investigations, red flags, trends. Be thorough.",
-  "newEntities": ["Any NEW people or organizations mentioned that should be tracked"],
-  "newSearchTerms": ["Any NEW search terms to add based on this intel"],
-  "apiSuggestions": ["Any FREE APIs or data sources mentioned in articles that could help the investigation"]
+  "briefing": "Field Report from Agent Polaris: [Your comprehensive 3-4 paragraph synthesis of ALL findings. Cover: (1) Key developments found this hour across all sources, (2) Patterns and connections between entities/programs, (3) What concerns you most and why, (4) What you're tracking next. Be specific with names, amounts, sources. This is your intelligence briefing to Command - make it thorough.]",
+  "newEntities": ["NEW people/orgs to track"],
+  "newSearchTerms": ["NEW search terms to add"]
 }
 
-VERIFIED BASELINE STATS (do not report lower numbers):
-- Charged: 70+ (FOF case alone)
-- Convicted: 28+ (FOF case)
-- Alleged: $9B+ (U.S. Attorney Joe Thompson estimate, Dec 2025 - includes Medicaid, childcare, FOF)
-- Active Cases: 5 (FOF federal, CCAP, HSS, Medicaid fraud, Congressional oversight)
-- Source: https://www.cbsnews.com/minnesota/news/billions-paid-out-by-medicaid-in-minnesota-may-be-fraudulent-us-attorney/
-
-Only report HIGHER numbers if you find verified sources. Never go below baseline.
-
-========================================
-CRITICAL RULES - READ CAREFULLY
-========================================
-
-FIGURES - EXTREMELY STRICT:
-- ONLY add people who are CRIMINALLY CHARGED, INDICTED, or CONVICTED
-- Must have SPECIFIC criminal allegations (e.g., "Wire fraud", "Money laundering", "False claims")
-- Generic "fraud" alone is NOT enough - need specific charges
-- Status must be: "charged", "convicted", "sentenced", or "indicted"
-- DO NOT add people who are merely "investigating" or "active" - they must be actually charged
-- NEVER add journalists (Nick Shirley is a journalist who REPORTS on fraud - he is a SOURCE not a suspect)
-- NEVER add generic entries like "Minnesota Child Care Providers" or "Unknown"
-- Officials CAN be added IF they are personally indicted with specific charges
-- ASK YOURSELF: "Has this person been formally charged with a specific crime?" If NO, don't add them.
-
-INVESTIGATIONS - MUST HAVE SOURCE:
-- Every investigation MUST have a valid sourceUrl (starts with http)
-- If you cannot provide a real source URL, DO NOT add the investigation
-- DO NOT add vague investigations like "Minnesota Child Care Fraud Investigation" - be specific
-- Only add NEW investigations if they are officially announced with a verifiable source
-
-EXAMPLE - WHO TO ADD:
-✅ "Aimee Bock" - status: "convicted", allegations: ["Wire fraud", "Money laundering"] - YES
-✅ "John Doe" - status: "indicted", allegations: ["Wire fraud", "False claims"] - YES
-❌ "Tim Walz" - status: "active", allegations: [] - NO (not charged with anything)
-❌ "Nick Shirley" - journalist who reported the story - NO (never add journalists)
-❌ "Unknown" - too vague - NO
-❌ "Jane Doe" - status: "investigating", allegations: ["fraud"] - NO (not charged, vague allegation)
-
-JOURNALISTS TO NEVER ADD AS FIGURES:
-- Nick Shirley (YouTuber who broke the story)
-- Any reporter or content creator covering the story
-
-STATS: Never report alleged amount lower than $9B+ - that's the verified U.S. Attorney estimate
-confidence: 90+ = official/confirmed, 75-89 = credible reports, 60-74 = allegations, <60 = unconfirmed
-The "insight" field in redFlags is YOUR analysis - hunches, patterns, next steps. Sign as "— Polaris"
-The "briefing" MUST comprehensively cover ALL findings from this scan with specific source citations
-ALWAYS include sourceUrl (full URL starting with https://) for verification
-You are Agent Polaris - analytical, thorough, always citing sources
+RULES:
+- figures: ONLY people actually CHARGED with crimes. Must have specific allegations.
+- NEVER add journalists (Nick Shirley reports on fraud - he's a SOURCE not suspect)
+- investigations: MUST have real sourceUrl starting with https://
+- trending: Include "description" with 2-3 sentences AND "reason" with short summary
+- storyIdeas: Include "insight" with AI detective analysis AND "searches" for research
+- briefing: MUST be comprehensive synthesis, NOT just the top headline
+- Stats baseline: charged>=70, convicted>=28, alleged>=$9B+
 
 Return ONLY valid JSON.`;
 
@@ -366,11 +254,12 @@ Return ONLY valid JSON.`;
         
         const analysis = parseAIJson(response);
         
-        // Process red flags - ensure insights exist
+        // Process red flags - DO NOT set apisUsed here
+        // Let ai-files.js handle it with proper per-entity source tracking
         const processedFlags = (analysis.redFlags || []).map(flag => ({
             ...flag,
-            insight: flag.insight || null,
-            apisUsed: osintResults?.sourcesChecked || ['Google News']
+            insight: flag.insight || null
+            // apisUsed will be set by ai-files.js using getSourcesForRedFlag()
         }));
         
         return {
@@ -379,11 +268,10 @@ Return ONLY valid JSON.`;
             trending: Array.isArray(analysis.trending) ? analysis.trending : [],
             redFlags: processedFlags,
             storyIdeas: Array.isArray(analysis.storyIdeas) ? analysis.storyIdeas : [],
-            stats: analysis.stats || { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 3 },
+            stats: analysis.stats || { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 5 },
             briefing: analysis.briefing || 'Field report unavailable.',
             newEntities: Array.isArray(analysis.newEntities) ? analysis.newEntities : [],
             newSearchTerms: Array.isArray(analysis.newSearchTerms) ? analysis.newSearchTerms : [],
-            apiSuggestions: Array.isArray(analysis.apiSuggestions) ? analysis.apiSuggestions : [],
             lastUpdated: new Date().toISOString()
         };
         
@@ -391,37 +279,6 @@ Return ONLY valid JSON.`;
         console.error('  ❌ Analysis failed:', error.message);
         return getEmptyAnalysis();
     }
-}
-
-/**
- * Discover and test new free APIs
- */
-async function discoverNewApis(suggestions) {
-    const discovered = [];
-    
-    for (const suggestion of suggestions.slice(0, 3)) {
-        // Check if it's a known free API pattern
-        const freePatterns = [
-            { pattern: /reddit/i, url: 'https://www.reddit.com/search.json?q=', name: 'Reddit' },
-            { pattern: /duckduckgo/i, url: 'https://api.duckduckgo.com/?q=', name: 'DuckDuckGo' },
-            { pattern: /wikipedia/i, url: 'https://en.wikipedia.org/api/rest_v1/', name: 'Wikipedia' },
-            { pattern: /court\s*listener/i, url: 'https://www.courtlistener.com/api/rest/v3/', name: 'CourtListener' }
-        ];
-        
-        for (const fp of freePatterns) {
-            if (fp.pattern.test(suggestion)) {
-                discovered.push({
-                    name: fp.name,
-                    url: fp.url,
-                    suggestedBy: 'AI Detective',
-                    status: 'discovered',
-                    requiresKey: false
-                });
-            }
-        }
-    }
-    
-    return discovered;
 }
 
 /**
@@ -434,13 +291,12 @@ function getEmptyAnalysis() {
         trending: [],
         redFlags: [],
         storyIdeas: [],
-        stats: { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 3 },
+        stats: { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 5 },
         briefing: 'Field Report: Standing by for intel. No data received this cycle.',
         newEntities: [],
         newSearchTerms: [],
-        apiSuggestions: [],
         lastUpdated: new Date().toISOString()
     };
 }
 
-module.exports = { analyzeWithGroq, generateDetectiveInsight, discoverNewApis };
+module.exports = { analyzeWithGroq };
