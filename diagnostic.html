@@ -171,7 +171,8 @@
 <body>
     <div class="header">
         <h1>⭐ NORTH STAR WATCHDOG</h1>
-        <div>SYSTEM DIAGNOSTIC v2.0</div>
+        <div>SYSTEM DIAGNOSTIC v3.0</div>
+        <div style="color:#d4af37;font-size:11px;margin-top:5px;">Agent Polaris Self-Check</div>
         <div class="timestamp" id="run-time">Not yet run</div>
     </div>
     
@@ -583,35 +584,64 @@ function testStats() {
         return;
     }
     
+    // VERIFIED BASELINE (from U.S. Attorney Joe Thompson, Dec 2025)
+    const BASELINE = { charged: 70, convicted: 28, alleged: '$9B+', activeCases: 5 };
+    
     // Test charged
     const hasCharged = typeof stats.charged === 'number' && stats.charged > 0;
     addTest('stats-tests', 'Charged count exists and > 0', hasCharged, `Value: ${stats.charged}`);
     if (!hasCharged) allPassed = false;
+    
+    // Test charged meets baseline
+    const chargedBaseline = stats.charged >= BASELINE.charged;
+    addTest('stats-tests', `Charged meets baseline (>=${BASELINE.charged})`, chargedBaseline, `Value: ${stats.charged}`);
+    if (!chargedBaseline) allPassed = false;
     
     // Test convicted
     const hasConvicted = typeof stats.convicted === 'number' && stats.convicted > 0;
     addTest('stats-tests', 'Convicted count exists and > 0', hasConvicted, `Value: ${stats.convicted}`);
     if (!hasConvicted) allPassed = false;
     
+    // Test convicted meets baseline
+    const convictedBaseline = stats.convicted >= BASELINE.convicted;
+    addTest('stats-tests', `Convicted meets baseline (>=${BASELINE.convicted})`, convictedBaseline, `Value: ${stats.convicted}`);
+    if (!convictedBaseline) allPassed = false;
+    
     // Test alleged
     const hasAlleged = stats.alleged && stats.alleged !== '$0';
     addTest('stats-tests', 'Alleged amount exists and not $0', hasAlleged, `Value: ${stats.alleged}`);
     if (!hasAlleged) allPassed = false;
     
-    // Test alleged matches title ($9B)
-    const matchesTitle = stats.alleged && stats.alleged.includes('9') && stats.alleged.includes('B');
-    addTest('stats-tests', 'Alleged matches homepage title ($9B+)', matchesTitle, `Value: ${stats.alleged}`);
-    if (!matchesTitle) allPassed = false;
+    // Test alleged matches verified baseline ($9B+)
+    const matchesBaseline = stats.alleged && stats.alleged.includes('9') && stats.alleged.toUpperCase().includes('B');
+    addTest('stats-tests', 'Alleged matches verified baseline ($9B+)', matchesBaseline, `Value: ${stats.alleged}`);
+    if (!matchesBaseline) {
+        allPassed = false;
+        log('CRITICAL: Alleged amount below verified $9B+ baseline!', 'fail');
+    }
     
     // Test active cases
     const hasActiveCases = typeof stats.activeCases === 'number' && stats.activeCases > 0;
     addTest('stats-tests', 'Active cases count exists and > 0', hasActiveCases, `Value: ${stats.activeCases}`);
     if (!hasActiveCases) allPassed = false;
     
+    // Test active cases meets baseline
+    const activeCasesBaseline = stats.activeCases >= BASELINE.activeCases;
+    addTest('stats-tests', `Active cases meets baseline (>=${BASELINE.activeCases})`, activeCasesBaseline, `Value: ${stats.activeCases}`);
+    if (!activeCasesBaseline) allPassed = false;
+    
     // Test convicted <= charged
     const validRatio = stats.convicted <= stats.charged;
     addTest('stats-tests', 'Convicted <= Charged (logical)', validRatio, `${stats.convicted} <= ${stats.charged}`);
     if (!validRatio) allPassed = false;
+    
+    // Test has verified source
+    const hasSource = stats.source && stats.source.length > 0;
+    addTest('stats-tests', 'Has verified source citation', hasSource, `Source: ${stats.source || 'MISSING'}`);
+    
+    // Test has source URL
+    const hasSourceUrl = stats.sourceUrl && stats.sourceUrl.startsWith('http');
+    addTest('stats-tests', 'Has source URL for verification', hasSourceUrl, hasSourceUrl ? '✓' : 'MISSING');
     
     setStatus('status-stats', allPassed ? 'pass' : 'fail');
 }
@@ -760,21 +790,49 @@ function testFigures() {
     addTest('figures-tests', 'All figures have name, role, status', allValid, `${validFigures}/${people.length} valid`);
     if (!allValid) allPassed = false;
     
-    // Test figures have allegations
+    // NEW: Test ALL figures have allegations (required for fraud suspects)
     const withAllegations = people.filter(p => p.allegations && p.allegations.length > 0).length;
-    addTest('figures-tests', 'Figures have allegations listed', withAllegations > 0, `${withAllegations}/${people.length} with allegations`);
+    const allHaveAllegations = withAllegations === people.length;
+    addTest('figures-tests', 'ALL figures have allegations (required)', allHaveAllegations, `${withAllegations}/${people.length} with allegations`);
+    if (!allHaveAllegations) {
+        allPassed = false;
+        log('RULE VIOLATION: Figures without allegations should not be in Key Figures', 'warn');
+    }
+    
+    // NEW: Test no journalists in figures
+    const journalists = ['nick shirley'];
+    const hasJournalists = people.filter(p => journalists.includes(p.name?.toLowerCase())).length;
+    const noJournalists = hasJournalists === 0;
+    addTest('figures-tests', 'No journalists in figures (Nick Shirley check)', noJournalists, hasJournalists > 0 ? 'FOUND JOURNALIST!' : 'Clean');
+    if (!noJournalists) {
+        allPassed = false;
+        log('CRITICAL: Journalist found in Key Figures - this is a bug!', 'fail');
+    }
+    
+    // NEW: Test no officials without fraud allegations
+    const validStatuses = ['charged', 'convicted', 'sentenced', 'investigating', 'indicted'];
+    const invalidStatus = people.filter(p => p.status && !validStatuses.includes(p.status)).length;
+    const allValidStatuses = invalidStatus === 0;
+    addTest('figures-tests', 'All figures have fraud-related status', allValidStatuses, `${invalidStatus} with invalid status`);
+    if (!allValidStatuses) {
+        allPassed = false;
+        log('RULE VIOLATION: Figure with non-fraud status found', 'warn');
+    }
     
     // Populate table
     const tbody = document.getElementById('figures-tbody');
     tbody.innerHTML = '';
     for (const p of people) {
+        const hasAllegations = p.allegations && p.allegations.length > 0;
+        const isValidStatus = validStatuses.includes(p.status);
+        const rowClass = (!hasAllegations || !isValidStatus) ? 'style="background:#2a1a1a;"' : '';
         tbody.innerHTML += `
-            <tr>
-                <td>${escapeHtml(p.name)}</td>
+            <tr ${rowClass}>
+                <td>${escapeHtml(p.name)}${!hasAllegations ? ' ⚠️' : ''}</td>
                 <td>${escapeHtml(p.role)}</td>
                 <td>${escapeHtml(p.organization || 'N/A')}</td>
                 <td><span class="status status-${p.status === 'convicted' ? 'fail' : 'warn'}">${escapeHtml(p.status)}</span></td>
-                <td>${p.allegations ? p.allegations.map(a => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(a)}</span>`).join('') : 'N/A'}</td>
+                <td>${hasAllegations ? p.allegations.map(a => `<span style="background:#333;padding:2px 5px;margin:2px;display:inline-block;font-size:10px;">${escapeHtml(a)}</span>`).join('') : '<span style="color:#ea868f;">MISSING - INVALID</span>'}</td>
             </tr>
         `;
     }
