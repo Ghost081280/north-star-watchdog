@@ -258,29 +258,49 @@ async function searchTweets(query, maxResults = 10) {
 // ============================================
 
 /**
- * Post a red flag finding
+ * Post a red flag finding with AI insight and disclaimer
  */
 async function postRedFlag(redFlag) {
     const emoji = getTypeEmoji(redFlag.type);
     const confidence = redFlag.confidence || 0;
     const entities = (redFlag.entities || []).slice(0, 2).join(', ');
     
+    // Build tweet with insight
     let tweet = `${emoji} INTEL ALERT\n\n`;
-    tweet += `${redFlag.description?.substring(0, 180) || 'New pattern detected'}\n\n`;
-    tweet += `📊 Confidence: ${confidence}%\n`;
-    if (entities) tweet += `🏷️ ${entities}\n`;
-    tweet += `\n🔗 ghost081280.github.io/north-star-watchdog`;
     
-    // Ensure under 280 chars
+    // Add description (shortened)
+    const desc = redFlag.description?.substring(0, 120) || 'New pattern detected';
+    tweet += `${desc}\n\n`;
+    
+    // Add AI's insight/analysis if available
+    if (redFlag.insight) {
+        const insight = redFlag.insight.substring(0, 80);
+        tweet += `🤖 My analysis: ${insight}\n\n`;
+    }
+    
+    // Add confidence and entities
+    tweet += `📊 ${confidence}% confidence`;
+    if (entities) tweet += ` | 🏷️ ${entities}`;
+    tweet += `\n\n`;
+    
+    // Add disclaimer and link
+    tweet += `⚠️ AI-generated analysis\n`;
+    tweet += `🔗 ghost081280.github.io/north-star-watchdog`;
+    
+    // Ensure under 280 chars - trim description if needed
     if (tweet.length > 280) {
-        tweet = tweet.substring(0, 277) + '...';
+        // Rebuild with shorter description
+        tweet = `${emoji} INTEL ALERT\n\n`;
+        tweet += `${redFlag.description?.substring(0, 80) || 'Pattern detected'}...\n\n`;
+        tweet += `📊 ${confidence}% | ⚠️ AI-generated\n`;
+        tweet += `🔗 ghost081280.github.io/north-star-watchdog`;
     }
     
     return await postTweet(tweet);
 }
 
 /**
- * Post daily briefing
+ * Post daily briefing with disclaimer
  */
 async function postBriefing(stats, briefing) {
     const tweets = [];
@@ -293,36 +313,50 @@ async function postBriefing(stats, briefing) {
 ✅ Convicted: ${stats.convicted || '28+'}
 📁 Active Cases: ${stats.activeCases || '5'}
 
-Thread 🧵👇`);
+⚠️ AI-generated from public sources
+🧵👇`);
     
     // Tweet 2: Briefing summary (truncated)
     if (briefing && briefing.length > 50) {
-        let briefingText = briefing.substring(0, 250);
-        if (briefing.length > 250) briefingText += '...';
-        tweets.push(`🕵️ Agent Polaris Reports:\n\n${briefingText}`);
+        let briefingText = briefing.substring(0, 200);
+        if (briefing.length > 200) briefingText += '...';
+        tweets.push(`🤖 Agent Polaris Reports:\n\n${briefingText}\n\n⚠️ Analysis is AI-generated`);
     }
     
     // Tweet 3: CTA
-    tweets.push(`🔍 Want me to scan an entity?\n\n@ me with any name, organization, or daycare and I'll check:\n• ProPublica Nonprofits\n• FEC Campaign Finance\n• OIG Healthcare Exclusions\n• OpenCorporates\n• USASpending\n\n🔗 ghost081280.github.io/north-star-watchdog`);
+    tweets.push(`🔍 Want me to scan an entity?
+
+@ me with any name, org, or daycare and I'll check:
+• ProPublica Nonprofits
+• FEC Campaign Finance  
+• OIG Healthcare Exclusions
+• OpenCorporates
+• USASpending
+
+⚠️ All findings are AI-generated
+🔗 ghost081280.github.io/north-star-watchdog`);
     
     return await postThread(tweets);
 }
 
 /**
- * Post scan results in reply to a mention
+ * Post scan results in reply to a mention with disclaimer
  */
 async function postScanResults(tweetId, entityName, results) {
-    let reply = `🔍 Scan results for "${entityName}":\n\n`;
+    let reply = `🔍 Scan: "${entityName}"\n\n`;
     
     if (results.found && results.found > 0) {
-        if (results.nonprofits) reply += `📋 ProPublica: ${results.nonprofits} records\n`;
-        if (results.fec) reply += `💰 FEC: ${results.fec} contributions\n`;
-        if (results.oig) reply += `🏥 OIG: ${results.oig} exclusions\n`;
-        if (results.companies) reply += `🏢 Corps: ${results.companies} companies\n`;
-        if (results.spending) reply += `💵 USASpending: ${results.spending} awards\n`;
-        reply += `\n🔗 Full details at ghost081280.github.io/north-star-watchdog`;
+        if (results.nonprofits) reply += `📋 ProPublica: ${results.nonprofits}\n`;
+        if (results.fec) reply += `💰 FEC: ${results.fec}\n`;
+        if (results.oig) reply += `🏥 OIG: ${results.oig}\n`;
+        if (results.companies) reply += `🏢 Corps: ${results.companies}\n`;
+        if (results.spending) reply += `💵 USASpending: ${results.spending}\n`;
+        reply += `\n⚠️ AI-generated from public data\n`;
+        reply += `🔗 ghost081280.github.io/north-star-watchdog`;
     } else {
-        reply += `No records found in public databases.\n\nThis doesn't mean they're clean - just not in our current data sources.`;
+        reply += `No records found in public databases.\n\n`;
+        reply += `This doesn't mean clean - just not in current sources.\n\n`;
+        reply += `⚠️ AI-generated`;
     }
     
     // Truncate if needed
