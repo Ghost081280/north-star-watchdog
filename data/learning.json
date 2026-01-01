@@ -13,40 +13,13 @@
     "Minnesota Medicaid fraud",
     "Housing Stabilization Services fraud",
     "Minnesota DCYF fraud",
-    "Tikki Brown DCYF",
-    "Quality Learing Center daycare",
-    "Mako Childcare Minnesota",
     "Minnesota daycare fraud viral video",
-    "Nick Shirley fraud Minnesota",
-    "Day care centers in Minnesota fraud Minnesota",
-    "Tim Walz fraud Minnesota",
-    "State of Minnesota fraud Minnesota",
-    "Ilhan Omar fraud Minnesota",
-    "US Congress fraud Minnesota",
-    "Minnesota Child Care Fraud Investigation fraud Minnesota",
-    "DOJ fraud Minnesota",
-    "Trump administration fraud Minnesota",
-    "Minnesota child care system fraud Minnesota",
-    "Minnesota child care fraud",
-    "Trump administration freezes child care funds",
-    "Minnesota Department of Human Services fraud Minnesota",
-    "DOJ, Minnesota DHS fraud Minnesota",
-    "National Guard fraud Minnesota",
     "child care fraud Minnesota",
     "federal investigation",
-    "Minnesota Child Care Providers fraud Minnesota",
-    "Various Child Care Centers fraud Minnesota",
-    "Minnesota Child Care Funding Investigation fraud Minnesota",
-    "Minnesota child care providers fraud Minnesota",
     "child care funding freeze",
-    "Trump administration",
-    "Unknown fraud Minnesota",
-    "Minnesota Day Care Centers fraud Minnesota",
-    "Trump Administration fraud Minnesota",
-    "Nonprofit fraud Minnesota",
-    "federal funding freeze",
-    "Minnesota day care centers",
-    "nonprofit"
+    "Trump administration child care",
+    "federal funding freeze Minnesota",
+    "HHS Minnesota audit"
   ],
   "trackedEntities": [
     "Feeding Our Future",
@@ -56,30 +29,12 @@
     "Housing Stabilization Services",
     "Partners in Nutrition",
     "Minnesota DCYF",
-    "Tikki Brown",
     "Quality Learing Center",
     "Mako Childcare",
-    "Nick Shirley",
-    "Day care centers in Minnesota",
-    "Tim Walz",
-    "State of Minnesota",
-    "Ilhan Omar",
-    "US Congress",
-    "Minnesota Child Care Fraud Investigation",
-    "DOJ",
-    "Trump administration",
-    "Minnesota child care system",
-    "Minnesota Department of Human Services",
-    "DOJ, Minnesota DHS",
-    "National Guard",
-    "Minnesota Child Care Providers",
-    "Various Child Care Centers",
-    "Minnesota Child Care Funding Investigation",
-    "Minnesota child care providers",
-    "Unknown",
-    "Minnesota Day Care Centers",
-    "Trump Administration",
-    "Nonprofit"
+    "Empire Cuisine & Market",
+    "Haji's Kitchen",
+    "HHS",
+    "DOJ"
   ],
   "governmentAgencies": [
     {
@@ -108,12 +63,41 @@
       "url": "https://www.justice.gov/usao-mn"
     }
   ],
+  "governmentOfficials": [
+    {
+      "name": "Tikki Brown",
+      "role": "Commissioner",
+      "agency": "Minnesota DCYF",
+      "note": "Track for oversight actions and statements - NOT a subject of investigation"
+    },
+    {
+      "name": "Tim Walz",
+      "role": "Governor",
+      "agency": "State of Minnesota",
+      "note": "Track for oversight role and response - NOT a subject of investigation"
+    },
+    {
+      "name": "James Comer",
+      "role": "Representative",
+      "agency": "House Oversight Committee",
+      "note": "Leading congressional oversight hearings"
+    }
+  ],
   "journalists": [
     {
       "name": "Nick Shirley",
       "outlet": "YouTube",
       "role": "Investigative content creator",
-      "note": "Broke viral daycare fraud video - SOURCE not subject"
+      "handle": "@Ghost081280",
+      "note": "Broke viral daycare fraud video exposing closed facilities still in payment system - SOURCE not subject. Do NOT add to Key Figures."
+    }
+  ],
+  "politicians": [
+    {
+      "name": "Ilhan Omar",
+      "role": "Representative",
+      "party": "D-MN",
+      "note": "Mentioned in political context related to fraud coverage - NOT a subject of investigation. Track only if directly involved in oversight."
     }
   ],
   "suspectEntities": [
@@ -131,9 +115,25 @@
       "note": "Closed several YEARS ago but still in system"
     }
   ],
+  "excludeFromKeyFigures": [
+    "Nick Shirley",
+    "Tikki Brown",
+    "Tim Walz",
+    "Ilhan Omar",
+    "James Comer",
+    "Unknown"
+  ],
+  "entityValidationRules": {
+    "requireAllegations": true,
+    "excludeJournalists": true,
+    "excludeOfficials": true,
+    "excludePlaceholders": ["Unknown", "TBD", "N/A"],
+    "validStatuses": ["charged", "convicted", "indicted", "investigating"],
+    "invalidStatusesForKeyFigures": ["active", "source", "journalist", "official"]
+  },
   "discoveredSources": [],
   "suggestedApis": [],
   "futureApis": [],
-  "lastLearningUpdate": "2026-01-01T01:57:36.557Z",
-  "note": "This file is updated by the AI Detective as it discovers new search terms, entities, and data sources. The AI adds sources to the README only after they are integrated and working."
+  "lastLearningUpdate": "2026-01-01T02:00:00.000Z",
+  "note": "This file is updated by the AI Detective as it discovers new search terms, entities, and data sources. IMPORTANT: Journalists, government officials, and politicians should NEVER be added to Key Figures unless they are actually charged with crimes."
 }
