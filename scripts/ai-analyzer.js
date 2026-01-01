@@ -36,7 +36,7 @@ async function callGroq(messages, maxTokens = 4000) {
     if (!apiKey) throw new Error('GROQ_API_KEY not set');
     
     const body = JSON.stringify({
-        model: 'llama-3.1-70b-versatile',
+        model: 'llama-3.3-70b-versatile',
         messages,
         max_tokens: maxTokens,
         temperature: 0.4
