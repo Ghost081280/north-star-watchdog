@@ -805,6 +805,93 @@ function getRecentScans(count = 10) {
 }
 
 // ============================================
+// SELF-AWARENESS INTEGRATION
+// ============================================
+
+const SELF_AWARENESS_FILE = path.join(DATA_DIR, 'self-awareness.json');
+
+/**
+ * Load self-awareness data to understand my own codebase
+ */
+function loadSelfAwareness() {
+    try {
+        if (fs.existsSync(SELF_AWARENESS_FILE)) {
+            return JSON.parse(fs.readFileSync(SELF_AWARENESS_FILE, 'utf8'));
+        }
+    } catch (e) {
+        console.log('  ⚠ Self-awareness data not available');
+    }
+    return null;
+}
+
+/**
+ * Enhanced reflection that considers self-awareness
+ */
+function deepReflect(scanResults, news, osintResults) {
+    const awareness = loadSelfAwareness();
+    const basicReflection = reflect(scanResults, news, osintResults);
+    
+    if (!awareness) {
+        basicReflection.selfAwareness = {
+            status: 'not_initialized',
+            suggestion: 'Run ai-self-awareness.js to enable deeper reflection'
+        };
+        return basicReflection;
+    }
+    
+    // Enhance reflection with self-awareness
+    basicReflection.selfAwareness = {
+        status: 'active',
+        capabilities: awareness.capabilities?.length || 0,
+        limitations: awareness.limitations?.length || 0,
+        health: awareness.health?.score || 0,
+        lastSelfScan: awareness.timestamp
+    };
+    
+    // Add improvement suggestions based on limitations
+    if (awareness.limitations?.length > 0) {
+        basicReflection.selfImprovements = awareness.limitations.map(lim => ({
+            area: lim.area,
+            suggestion: lim.suggestion || `Address: ${lim.issue}`
+        }));
+    }
+    
+    // Consider capabilities when assessing what to do next
+    if (awareness.capabilities) {
+        const activeCapabilities = awareness.capabilities.map(c => c.name);
+        basicReflection.activeCapabilities = activeCapabilities;
+    }
+    
+    return basicReflection;
+}
+
+/**
+ * Get insights about my own performance and capabilities
+ */
+function getSelfInsights() {
+    const awareness = loadSelfAwareness();
+    const memory = loadMemory();
+    
+    return {
+        identity: awareness?.identity || memory.identity,
+        capabilities: awareness?.capabilities || [],
+        limitations: awareness?.limitations || [],
+        improvements: awareness?.improvements || [],
+        health: awareness?.health || { score: 0, status: 'unknown' },
+        performance: {
+            totalScans: memory.stats?.totalScans || 0,
+            articlesProcessed: memory.stats?.articlesProcessed || 0,
+            redFlagsFound: memory.stats?.redFlagsFound || 0,
+            accuracy: memory.stats?.accuratePredictions > 0 
+                ? (memory.stats.accuratePredictions / (memory.stats.accuratePredictions + memory.stats.falsePositives))
+                : 0
+        },
+        currentFocus: memory.currentFocus || [],
+        openQuestions: memory.openQuestions || []
+    };
+}
+
+// ============================================
 // EXPORTS
 // ============================================
 
@@ -812,6 +899,7 @@ module.exports = {
     loadMemory,
     saveMemory,
     reflect,
+    deepReflect,
     assessSignificance,
     generateQuestions,
     detectPatterns,
@@ -827,5 +915,8 @@ module.exports = {
     loadScanHistory,
     recordScan,
     getScanInsights,
-    getRecentScans
+    getRecentScans,
+    // Self-awareness
+    loadSelfAwareness,
+    getSelfInsights
 };
