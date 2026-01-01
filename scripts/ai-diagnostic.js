@@ -31,9 +31,10 @@ const SCRIPTS_DIR = __dirname;
 // Known working GROQ models (in order of preference)
 const GROQ_MODELS = [
     'llama-3.3-70b-versatile',
-    'llama-3.1-70b-specdec', 
-    'llama3-70b-8192',
-    'mixtral-8x7b-32768'
+    'llama-3.1-70b-versatile', 
+    'llama-3.1-8b-instant',
+    'mixtral-8x7b-32768',
+    'gemma2-9b-it'
 ];
 
 // Expected data files
@@ -81,18 +82,27 @@ async function testGroqModel(apiKey, model) {
                 try {
                     const json = JSON.parse(data);
                     if (json.error) {
-                        resolve({ success: false, error: json.error.message, model });
+                        const errorMsg = json.error.message || '';
+                        const isRateLimit = errorMsg.includes('Rate limit') || 
+                                           errorMsg.includes('rate_limit') || 
+                                           res.statusCode === 429;
+                        resolve({ 
+                            success: false, 
+                            error: errorMsg, 
+                            model,
+                            rateLimited: isRateLimit
+                        });
                     } else {
-                        resolve({ success: true, model });
+                        resolve({ success: true, model, rateLimited: false });
                     }
                 } catch (e) {
-                    resolve({ success: false, error: 'Parse error', model });
+                    resolve({ success: false, error: 'Parse error', model, rateLimited: false });
                 }
             });
         });
         
-        req.on('error', (e) => resolve({ success: false, error: e.message, model }));
-        req.on('timeout', () => { req.destroy(); resolve({ success: false, error: 'Timeout', model }); });
+        req.on('error', (e) => resolve({ success: false, error: e.message, model, rateLimited: false }));
+        req.on('timeout', () => { req.destroy(); resolve({ success: false, error: 'Timeout', model, rateLimited: false }); });
         req.write(body);
         req.end();
     });
@@ -104,11 +114,28 @@ async function testGroqApi() {
         return { success: false, error: 'GROQ_API_KEY not set', fixable: false };
     }
     
+    let rateLimitedModels = [];
+    
     for (const model of GROQ_MODELS) {
         const result = await testGroqModel(apiKey, model);
         if (result.success) {
             return { success: true, model, message: `Model ${model} is working` };
         }
+        
+        if (result.rateLimited) {
+            rateLimitedModels.push(model);
+            console.log(`  ⚠️ ${model} rate limited, trying next...`);
+            continue; // Try next model
+        }
+    }
+    
+    if (rateLimitedModels.length === GROQ_MODELS.length) {
+        return { 
+            success: false, 
+            error: 'All GROQ models are rate limited. Try again later.', 
+            fixable: false,
+            rateLimited: true
+        };
     }
     
     return { success: false, error: 'All GROQ models failed', fixable: false };
