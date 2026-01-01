@@ -806,8 +806,229 @@ async function crossReferenceCCAPProvider(providerName, options = {}) {
 // EXPORTS
 // ============================================================================
 
-// Alias for backwards compatibility
-const enrichFindings = enrichEntity;
+/**
+ * Main enrichment function called by ai-core.js
+ * Accepts the full analysis object and enriches all entities found
+ * @param {Object} analysis - The AI analysis object containing figures, redFlags, etc.
+ * @returns {Object} - Enrichment results with sourcesChecked and sourcesUsed
+ */
+async function enrichFindings(analysis) {
+    console.log('\n[OSINT] Starting enrichment...');
+    
+    const results = {
+        sourcesChecked: [],
+        sourcesUsed: [],
+        enrichedEntities: [],
+        timestamp: new Date().toISOString()
+    };
+    
+    // Extract entity names from analysis
+    const entities = new Set();
+    
+    // From figures
+    if (analysis?.figures && Array.isArray(analysis.figures)) {
+        analysis.figures.forEach(f => {
+            if (f?.name && typeof f.name === 'string') {
+                entities.add(f.name);
+            }
+        });
+    }
+    
+    // From red flags
+    if (analysis?.redFlags && Array.isArray(analysis.redFlags)) {
+        analysis.redFlags.forEach(rf => {
+            if (rf?.entities && Array.isArray(rf.entities)) {
+                rf.entities.forEach(e => {
+                    if (typeof e === 'string') entities.add(e);
+                });
+            }
+            if (rf?.entity && typeof rf.entity === 'string') {
+                entities.add(rf.entity);
+            }
+        });
+    }
+    
+    // From investigations
+    if (analysis?.investigations && Array.isArray(analysis.investigations)) {
+        analysis.investigations.forEach(inv => {
+            if (inv?.name && typeof inv.name === 'string') {
+                entities.add(inv.name);
+            }
+        });
+    }
+    
+    console.log(`[OSINT] Found ${entities.size} unique entities to enrich`);
+    
+    // If no entities, still check sources but with a default query
+    const entitiesToCheck = entities.size > 0 ? Array.from(entities).slice(0, 5) : ['Minnesota childcare fraud'];
+    
+    // Track which sources we check
+    const allSources = [
+        'Google News',
+        'ProPublica Nonprofits', 
+        'FEC', 
+        'OIG Exclusions', 
+        'OpenCorporates', 
+        'USASpending',
+        'SEC EDGAR',
+        'OSHA',
+        'FDA',
+        'HUD',
+        'MN Campaign Finance',
+        'MN DHS Licensing',
+        'MN Transparency'
+    ];
+    
+    for (const entityName of entitiesToCheck) {
+        console.log(`\n[OSINT] ========== Enriching: ${entityName} ==========`);
+        
+        try {
+            // ProPublica
+            const ppResult = await searchProPublica(entityName);
+            if (!results.sourcesChecked.includes('ProPublica Nonprofits')) {
+                results.sourcesChecked.push('ProPublica Nonprofits');
+            }
+            if (ppResult.found && !results.sourcesUsed.includes('ProPublica Nonprofits')) {
+                results.sourcesUsed.push('ProPublica Nonprofits');
+            }
+            
+            // FEC
+            const fecResult = await searchFEC(entityName);
+            if (!results.sourcesChecked.includes('FEC')) {
+                results.sourcesChecked.push('FEC');
+            }
+            if (fecResult.found && !results.sourcesUsed.includes('FEC')) {
+                results.sourcesUsed.push('FEC');
+            }
+            
+            // OIG
+            const oigResult = await searchOIG(entityName);
+            if (!results.sourcesChecked.includes('OIG Exclusions')) {
+                results.sourcesChecked.push('OIG Exclusions');
+            }
+            if (oigResult.found && !results.sourcesUsed.includes('OIG Exclusions')) {
+                results.sourcesUsed.push('OIG Exclusions');
+            }
+            
+            // USASpending
+            const usaResult = await searchUSASpending(entityName);
+            if (!results.sourcesChecked.includes('USASpending')) {
+                results.sourcesChecked.push('USASpending');
+            }
+            if (usaResult.found && !results.sourcesUsed.includes('USASpending')) {
+                results.sourcesUsed.push('USASpending');
+            }
+            
+            // OpenCorporates
+            const ocResult = await searchOpenCorporates(entityName);
+            if (!results.sourcesChecked.includes('OpenCorporates')) {
+                results.sourcesChecked.push('OpenCorporates');
+            }
+            if (ocResult.found && !results.sourcesUsed.includes('OpenCorporates')) {
+                results.sourcesUsed.push('OpenCorporates');
+            }
+            
+            // SEC
+            const secResult = await searchSEC(entityName);
+            if (!results.sourcesChecked.includes('SEC EDGAR')) {
+                results.sourcesChecked.push('SEC EDGAR');
+            }
+            if (secResult.found && !results.sourcesUsed.includes('SEC EDGAR')) {
+                results.sourcesUsed.push('SEC EDGAR');
+            }
+            
+            // OSHA
+            const oshaResult = await searchOSHA(entityName);
+            if (!results.sourcesChecked.includes('OSHA')) {
+                results.sourcesChecked.push('OSHA');
+            }
+            if (oshaResult.found && !results.sourcesUsed.includes('OSHA')) {
+                results.sourcesUsed.push('OSHA');
+            }
+            
+            // FDA
+            const fdaResult = await searchFDA(entityName);
+            if (!results.sourcesChecked.includes('FDA')) {
+                results.sourcesChecked.push('FDA');
+            }
+            if (fdaResult.found && !results.sourcesUsed.includes('FDA')) {
+                results.sourcesUsed.push('FDA');
+            }
+            
+            // HUD
+            const hudResult = await searchHUD(entityName);
+            if (!results.sourcesChecked.includes('HUD')) {
+                results.sourcesChecked.push('HUD');
+            }
+            if (hudResult.found && !results.sourcesUsed.includes('HUD')) {
+                results.sourcesUsed.push('HUD');
+            }
+            
+            // Minnesota Campaign Finance
+            const mnCfbResult = await searchMNCampaignFinance(entityName);
+            if (!results.sourcesChecked.includes('MN Campaign Finance')) {
+                results.sourcesChecked.push('MN Campaign Finance');
+            }
+            if (mnCfbResult.found && !results.sourcesUsed.includes('MN Campaign Finance')) {
+                results.sourcesUsed.push('MN Campaign Finance');
+            }
+            
+            // Minnesota DHS Licensing
+            const mnDhsResult = await searchMNDHSLicensing(entityName);
+            if (!results.sourcesChecked.includes('MN DHS Licensing')) {
+                results.sourcesChecked.push('MN DHS Licensing');
+            }
+            if (mnDhsResult.found && !results.sourcesUsed.includes('MN DHS Licensing')) {
+                results.sourcesUsed.push('MN DHS Licensing');
+            }
+            
+            // Minnesota Transparency
+            const mnTransResult = await searchMNTransparency(entityName);
+            if (!results.sourcesChecked.includes('MN Transparency')) {
+                results.sourcesChecked.push('MN Transparency');
+            }
+            if (mnTransResult.found && !results.sourcesUsed.includes('MN Transparency')) {
+                results.sourcesUsed.push('MN Transparency');
+            }
+            
+            results.enrichedEntities.push({
+                name: entityName,
+                sources: {
+                    proPublica: ppResult,
+                    fec: fecResult,
+                    oig: oigResult,
+                    usaSpending: usaResult,
+                    openCorporates: ocResult,
+                    sec: secResult,
+                    osha: oshaResult,
+                    fda: fdaResult,
+                    hud: hudResult,
+                    mnCampaignFinance: mnCfbResult,
+                    mnDhsLicensing: mnDhsResult,
+                    mnTransparency: mnTransResult
+                }
+            });
+            
+            // Small delay between entities
+            await new Promise(r => setTimeout(r, 500));
+            
+        } catch (error) {
+            console.error(`[OSINT] Error enriching ${entityName}: ${error.message}`);
+        }
+    }
+    
+    // Add Google News as always checked/used since scraper runs first
+    if (!results.sourcesChecked.includes('Google News')) {
+        results.sourcesChecked.unshift('Google News');
+    }
+    if (!results.sourcesUsed.includes('Google News')) {
+        results.sourcesUsed.unshift('Google News');
+    }
+    
+    console.log(`\n[OSINT] Enrichment complete: ${results.sourcesUsed.length}/${results.sourcesChecked.length} sources returned data`);
+    
+    return results;
+}
 
 module.exports = {
     OSINT_APIS,
@@ -826,7 +1047,7 @@ module.exports = {
     searchOpenCorporates,
     
     enrichEntity,
-    enrichFindings,  // Alias for ai-core.js compatibility
+    enrichFindings,
     generateInvestigationPackage,
     crossReferenceCCAPProvider,
     
