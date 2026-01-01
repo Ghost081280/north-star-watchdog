@@ -1,18 +1,92 @@
 {
   "ideas": [
     {
-      "title": "Investigating the Connections Between the Federal Funding Freeze and Alleged Fraud in Minnesota Day Care Centers",
+      "title": "Follow the Money: Where Did $250M in Feeding Our Future Funds Actually Go?",
       "angle": "Investigative",
       "priority": "high",
+      "summary": "Aimee Bock was ordered to forfeit $5.2M, but the scheme allegedly stole $250M+. Where's the rest? Track property records, shell companies, and overseas transfers.",
       "questions": [
-        "What are the connections between the federal funding freeze and the alleged fraud in Minnesota day care centers?",
-        "How will the funding freeze affect the investigation into the alleged fraud?"
+        "What properties were purchased by FOF defendants during the fraud period?",
+        "Are there connections between FOF sites and other state programs?",
+        "Which shell companies were used to move money?"
       ],
       "sources": [
-        "Trump Administration officials",
-        "Minnesota Day Care Center operators"
+        "DOJ court filings",
+        "OpenCorporates",
+        "County property records",
+        "USASpending federal payments data"
+      ],
+      "dataNeeded": [
+        "Property transfers 2020-2023 by defendant names",
+        "Corporate registrations linked to defendants",
+        "Bank records from court filings"
+      ]
+    },
+    {
+      "title": "Ghost Providers: How Many Closed Daycares Are Still Getting Paid?",
+      "angle": "Data Investigation",
+      "priority": "high",
+      "summary": "Nick Shirley's viral video showed Mako Childcare closed for years but still in the payment system. How widespread is this? FOIA the full provider list and cross-reference with business closures.",
+      "questions": [
+        "How many licensed daycare providers have closed but remain in payment systems?",
+        "What's the total amount paid to closed facilities?",
+        "Why didn't DCYF catch this during regular audits?"
+      ],
+      "sources": [
+        "Minnesota DCYF provider lists (FOIA)",
+        "Secretary of State business filings",
+        "Google Maps/Street View for site verification"
+      ],
+      "dataNeeded": [
+        "Complete list of CCAP-enrolled providers",
+        "Business dissolution records",
+        "Payment amounts by provider"
+      ]
+    },
+    {
+      "title": "Collateral Damage: Legitimate Providers Caught in Fraud Fallout",
+      "angle": "Human Interest / Impact",
+      "priority": "medium",
+      "summary": "Somali-owned daycares report vandalism and threats after viral video. Legitimate providers face funding freeze. Who suffers when fraud investigations go public?",
+      "questions": [
+        "How many legitimate providers are affected by the funding freeze?",
+        "What's the timeline for audits and fund restoration?",
+        "Are hate incidents being tracked and prosecuted?"
+      ],
+      "sources": [
+        "Child care provider associations",
+        "Somali community organizations",
+        "Local police reports",
+        "Minnesota DHS/DCYF statements"
+      ],
+      "dataNeeded": [
+        "Number of providers affected by freeze",
+        "Reported hate incidents",
+        "Provider closure data post-freeze"
+      ]
+    },
+    {
+      "title": "Pattern Recognition: Do Other State Programs Have the Same Vulnerabilities?",
+      "angle": "Investigative",
+      "priority": "medium",
+      "summary": "FOF exploited pandemic-era loosened controls. Housing Stabilization Services had similar issues ($302M). What other programs had rapid expansion with minimal oversight?",
+      "questions": [
+        "Which Minnesota programs saw 10x+ growth during pandemic?",
+        "What oversight mechanisms were waived or reduced?",
+        "Are there providers operating across multiple vulnerable programs?"
+      ],
+      "sources": [
+        "Minnesota Legislative Auditor reports",
+        "ProPublica Nonprofits 990 data",
+        "USASpending grant data",
+        "OIG exclusion lists"
+      ],
+      "dataNeeded": [
+        "Program-by-program spending growth 2019-2023",
+        "Provider crossover between programs",
+        "Audit findings by program"
       ]
     }
   ],
-  "lastUpdated": "2026-01-01T01:57:36.552Z"
+  "lastUpdated": "2026-01-01T02:00:00.000Z"
 }
