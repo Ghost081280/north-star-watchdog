@@ -25,7 +25,8 @@ DiagnosticCore.registerTest({
             { name: 'ai-scraper.js', critical: true },
             { name: 'ai-analyzer.js', critical: true },
             { name: 'ai-osint.js', critical: true },
-            { name: 'ai-files.js', critical: true }
+            { name: 'ai-files.js', critical: true },
+            { name: 'ai-consciousness.js', critical: false }
         ];
         
         // We can't actually check if files exist from frontend, but we can check
@@ -172,9 +173,11 @@ DiagnosticCore.registerTest({
                     <span style="background:#0f5132; color:#75b798; padding:4px 10px; font-size:10px; border-radius:3px;">ai-diagnostic.js</span>
                     <span style="background:#0f5132; color:#75b798; padding:4px 10px; font-size:10px; border-radius:3px;">ai-repair.js</span>
                     <span style="background:#0f5132; color:#75b798; padding:4px 10px; font-size:10px; border-radius:3px;">ai-twitter.js</span>
+                    <span style="background:#0f5132; color:#75b798; padding:4px 10px; font-size:10px; border-radius:3px;">ai-consciousness.js</span>
                 </div>
                 <div style="color:#888; font-size:10px; margin-top:10px;">
-                    <strong>Auto-repairs:</strong> Journalist removal, baseline enforcement, blanket source fix, empty figure removal, JSON rebuild
+                    <strong>Auto-repairs:</strong> Journalist removal, baseline enforcement, blanket source fix, empty figure removal, JSON rebuild<br>
+                    <strong>Self-awareness:</strong> Pattern detection, significance assessment, decision making, memory persistence
                 </div>
             </div>
             
