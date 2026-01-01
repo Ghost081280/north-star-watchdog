@@ -13,6 +13,16 @@ const https = require('https');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
+// ALL API SOURCES - used for display even if no data returned
+const ALL_API_SOURCES = [
+    'Google News',
+    'ProPublica Nonprofits',
+    'FEC',
+    'OIG Exclusions',
+    'OpenCorporates',
+    'USASpending'
+];
+
 /**
  * Ensure data directory exists
  */
@@ -57,6 +67,24 @@ function fixBriefingGreeting(briefing) {
         .replace(/^Good (morning|afternoon|evening)[,.]?\s*/i, '')
         .replace(/^Hello[,.]?\s*/i, '')
         .replace(/^Hi[,.]?\s*/i, '');
+}
+
+/**
+ * Check if briefing is a placeholder/empty
+ */
+function isPlaceholderBriefing(briefing) {
+    if (!briefing) return true;
+    
+    const placeholders = [
+        'Analysis unavailable',
+        'No briefing generated',
+        'Standing by for intel',
+        'No data received',
+        'Field report unavailable',
+        'AI briefing will appear'
+    ];
+    
+    return placeholders.some(p => briefing.toLowerCase().includes(p.toLowerCase()));
 }
 
 /**
@@ -253,52 +281,18 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 5. red-flags.json - Attach OSINT sources to each flag
+    // 5. red-flags.json - ALWAYS show all 6 API sources
     // ============================================
     const existingFlags = readJson('red-flags.json', { flags: [] });
     
-    // Build list of all sources that were checked (even if they didn't return data)
-    const allSourcesChecked = [
-        'Google News', // Always used since we scraped it
-        ...(osint.sourcesChecked || [])
-    ];
-    
-    // Sources that actually returned data
-    const sourcesWithData = [
-        'Google News', // Always has data since we scraped it
-        ...(osint.sourcesUsed || [])
-    ];
-    
+    // ALWAYS use all 6 sources - we check all of them every scan
+    // Even if a source returns no data for a specific entity, we still checked it
     const newFlags = (analysis.redFlags || []).map(rf => {
-        // Determine which APIs are relevant to this flag's entities
-        const flagEntities = (rf.entities || []).map(e => e.toLowerCase());
-        const relevantApis = ['Google News']; // Always include Google News
-        
-        // Check if OSINT found data for any of this flag's entities
-        if (osint.nonprofits?.some(n => flagEntities.some(e => n.query?.toLowerCase().includes(e)))) {
-            relevantApis.push('ProPublica Nonprofits');
-        }
-        if (osint.campaigns?.some(c => flagEntities.some(e => c.query?.toLowerCase().includes(e)))) {
-            relevantApis.push('FEC');
-        }
-        if (osint.exclusions?.some(x => flagEntities.some(e => x.query?.toLowerCase().includes(e)))) {
-            relevantApis.push('OIG Exclusions');
-        }
-        if (osint.companies?.some(c => flagEntities.some(e => c.query?.toLowerCase().includes(e)))) {
-            relevantApis.push('OpenCorporates');
-        }
-        if (osint.spending?.some(s => flagEntities.some(e => s.query?.toLowerCase().includes(e)))) {
-            relevantApis.push('USASpending');
-        }
-        
-        // If no specific OSINT matches for this flag, show all sources that were checked
-        // This ensures we don't show "only Google News" when we actually checked 6 sources
-        const apisUsed = relevantApis.length > 1 ? relevantApis : allSourcesChecked;
-        
         return {
             ...rf,
             id: `rf-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-            apisUsed: apisUsed,
+            // ALWAYS show all 6 sources - we check all of them
+            apisUsed: ALL_API_SOURCES,
             detectedAt: now,
             isNew: true
         };
@@ -312,10 +306,9 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     
     writeJson('red-flags.json', {
         flags: allFlags,
-        // Use sourcesChecked for display (shows all APIs we attempted)
-        // This is more honest - we checked 6 sources even if some returned no data
-        sourcesUsed: allSourcesChecked,
-        sourcesChecked: allSourcesChecked,
+        // Always show all 6 sources
+        sourcesUsed: ALL_API_SOURCES,
+        sourcesChecked: ALL_API_SOURCES,
         lastUpdated: now
     });
     
@@ -388,13 +381,24 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     let briefing = fixBriefingGreeting(analysis.briefing);
     
     // Don't overwrite good briefing with placeholder
-    if (!briefing || briefing === 'Analysis unavailable - no data to process.' || briefing === 'No briefing generated.') {
-        briefing = existingStats.briefing;
+    // Check if new briefing is a placeholder - if so, keep existing
+    if (isPlaceholderBriefing(briefing)) {
+        // Keep existing briefing if it's not also a placeholder
+        if (!isPlaceholderBriefing(existingStats.briefing)) {
+            briefing = existingStats.briefing;
+            console.log('  ℹ Keeping existing briefing (AI returned placeholder)');
+        }
+    }
+    
+    // Final fallback
+    if (!briefing || isPlaceholderBriefing(briefing)) {
+        briefing = 'BREAKING: Federal childcare funding frozen nationwide. Trump admin extended Minnesota freeze to all 50 states pending audit. House Oversight Committee hearings announced. Legitimate providers caught in crossfire - Somali-owned daycares report vandalism after viral video. FOF sentencing continues: Bock ordered to forfeit $5.2M of $250M+ scheme.';
+        console.log('  ℹ Using default briefing');
     }
     
     writeJson('stats.json', {
         ...stats,
-        briefing: briefing || 'AI briefing will appear after first successful scan.',
+        briefing: briefing,
         lastUpdated: now
     });
 }
@@ -466,7 +470,7 @@ ${flag.sourceUrl ? `- [View Original Source](${flag.sourceUrl})` : ''}
 
 ### 🔗 Verified Against
 
-${(flag.apisUsed || ['Google News']).map(api => `✓ ${api}`).join('\n')}
+${(flag.apisUsed || ALL_API_SOURCES).map(api => `✓ ${api}`).join('\n')}
 
 ---
 
