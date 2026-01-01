@@ -99,10 +99,64 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     });
     
     // ============================================
-    // 2. figures.json
+    // 2. figures.json - STRICT VALIDATION
     // ============================================
-    const existingFigures = readJson('figures.json', { people: [] });
-    const newFigures = (analysis.figures || []).map(f => ({
+    const existingFigures = readJson('figures.json', { people: [], officials: [], organizations: [] });
+    
+    // BLOCKED NAMES - journalists are NEVER fraud suspects (they report on fraud)
+    const BLOCKED_JOURNALISTS = ['nick shirley'];
+    
+    // Generic/vague entries to block
+    const BLOCKED_GENERIC = ['unknown', 'minnesota child care providers', 'various', 'multiple'];
+    
+    // Valid statuses for fraud suspects - must be actually charged/convicted
+    const VALID_FRAUD_STATUSES = ['charged', 'convicted', 'sentenced', 'indicted'];
+    
+    // Valid specific allegations (generic "fraud" alone is not enough)
+    const VALID_ALLEGATIONS = ['wire fraud', 'money laundering', 'federal program fraud', 'false claims', 'conspiracy', 'tax fraud', 'embezzlement', 'mail fraud', 'bank fraud'];
+    
+    // Filter and validate new figures
+    const validatedFigures = (analysis.figures || []).filter(f => {
+        const nameLower = (f.name || '').toLowerCase();
+        
+        // Block journalists - they report on fraud, they don't commit it
+        if (BLOCKED_JOURNALISTS.some(j => nameLower.includes(j))) {
+            console.log(`  ⚠️ BLOCKED journalist: ${f.name}`);
+            return false;
+        }
+        
+        // Block generic entries
+        if (BLOCKED_GENERIC.some(g => nameLower.includes(g))) {
+            console.log(`  ⚠️ BLOCKED generic entry: ${f.name}`);
+            return false;
+        }
+        
+        // Must have real allegations (not empty)
+        const allegations = f.allegations || [];
+        if (allegations.length === 0) {
+            console.log(`  ⚠️ BLOCKED no allegations: ${f.name}`);
+            return false;
+        }
+        
+        // Must have at least one SPECIFIC allegation (not just generic "fraud")
+        const hasSpecificAllegation = allegations.some(a => 
+            VALID_ALLEGATIONS.some(v => a.toLowerCase().includes(v))
+        );
+        if (!hasSpecificAllegation) {
+            console.log(`  ⚠️ BLOCKED no specific charges (only "${allegations.join(', ')}"): ${f.name}`);
+            return false;
+        }
+        
+        // Must have valid fraud-related status (actually charged, not just "investigating" or "active")
+        const status = (f.status || '').toLowerCase();
+        if (!VALID_FRAUD_STATUSES.includes(status)) {
+            console.log(`  ⚠️ BLOCKED not actually charged (status: "${f.status}"): ${f.name}`);
+            return false;
+        }
+        
+        console.log(`  ✓ Valid figure: ${f.name} (${f.status}, ${allegations.join(', ')})`);
+        return true;
+    }).map(f => ({
         ...f,
         lastUpdated: now,
         isNew: !existingFigures.people?.some(p => 
@@ -110,12 +164,12 @@ async function updateAllDataFiles({ news, analysis, osint }) {
         )
     }));
     
-    // Merge - update existing, add new
+    // Merge - update existing, add new (but only validated ones)
     const figureMap = new Map();
     for (const f of existingFigures.people || []) {
         if (f.name) figureMap.set(f.name.toLowerCase(), f);
     }
-    for (const f of newFigures) {
+    for (const f of validatedFigures) {
         if (f.name) figureMap.set(f.name.toLowerCase(), { 
             ...figureMap.get(f.name.toLowerCase()), 
             ...f 
@@ -124,14 +178,41 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     
     writeJson('figures.json', {
         people: Array.from(figureMap.values()).slice(0, 50),
+        officials: existingFigures.officials || [],
+        organizations: existingFigures.organizations || [],
         lastUpdated: now
     });
     
     // ============================================
-    // 3. investigations.json
+    // 3. investigations.json - MUST HAVE SOURCE
     // ============================================
-    const existingInv = readJson('investigations.json', { cases: [] });
-    const newInv = (analysis.investigations || []).map(i => ({
+    const existingInv = readJson('investigations.json', { cases: [], oversight: [] });
+    
+    // Validate new investigations - MUST have a source URL
+    const validatedInv = (analysis.investigations || []).filter(i => {
+        // Must have a name
+        if (!i.name) {
+            console.log(`  ⚠️ BLOCKED investigation with no name`);
+            return false;
+        }
+        
+        // Must have a real source URL (not null, not "None", starts with http)
+        const sourceUrl = i.sourceUrl || '';
+        if (!sourceUrl || sourceUrl === 'None' || !sourceUrl.startsWith('http')) {
+            console.log(`  ⚠️ BLOCKED investigation without source: ${i.name}`);
+            return false;
+        }
+        
+        // Block vague names
+        const nameLower = i.name.toLowerCase();
+        if (nameLower.includes('unknown') || nameLower === 'minnesota child care fraud investigation') {
+            console.log(`  ⚠️ BLOCKED vague investigation name: ${i.name}`);
+            return false;
+        }
+        
+        console.log(`  ✓ Valid investigation: ${i.name}`);
+        return true;
+    }).map(i => ({
         ...i,
         lastUpdated: now,
         isNew: !existingInv.cases?.some(c => 
@@ -144,7 +225,7 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     for (const i of existingInv.cases || []) {
         if (i.name) invMap.set(i.name.toLowerCase(), i);
     }
-    for (const i of newInv) {
+    for (const i of validatedInv) {
         if (i.name) invMap.set(i.name.toLowerCase(), {
             ...invMap.get(i.name.toLowerCase()),
             ...i
@@ -153,6 +234,7 @@ async function updateAllDataFiles({ news, analysis, osint }) {
     
     writeJson('investigations.json', {
         cases: Array.from(invMap.values()).slice(0, 30),
+        oversight: existingInv.oversight || [],
         lastUpdated: now
     });
     
