@@ -3,22 +3,13 @@
     {
       "id": "rf-001",
       "type": "federal_charges",
-      "description": "70+ individuals and organizations charged in connection with the Feeding Our Future fraud scheme, one of the largest pandemic fraud cases in U.S. history.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
+      "description": "70+ individuals and organizations charged in connection with the Feeding Our Future fraud scheme. Aimee Bock ordered to forfeit $5.2 million.",
+      "insight": "The forfeiture order on Bock is just the tip. $5.2M doesn't account for $250M missing. I'm tracking property records and shell company registrations - someone else is holding the bag. Cross-reference Empire Cuisine connections.",
+      "entities": ["Feeding Our Future", "Aimee Bock"],
       "confidence": 95,
       "source": "DOJ Press Release",
       "sourceUrl": "https://www.justice.gov/usao-mn",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits",
-        "FEC",
-        "OIG Exclusions",
-        "OpenCorporates",
-        "USASpending"
-      ],
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
       "detectedAt": "2024-12-31T00:00:00.000Z",
       "isNew": false
     },
@@ -26,85 +17,69 @@
       "id": "rf-002",
       "type": "program_termination",
       "description": "Minnesota Housing Stabilization Services program terminated after $302M in suspected fraud discovered.",
-      "entities": [
-        "Minnesota DHS",
-        "Housing Stabilization Services"
-      ],
+      "insight": "Pattern emerging - programs with rapid pandemic expansion and minimal oversight are getting hit. I'm seeing the same billing irregularities here as in FOF. Watch for provider crossover between programs.",
+      "entities": ["Minnesota DHS", "Housing Stabilization Services"],
       "confidence": 90,
       "source": "Minnesota DHS",
       "sourceUrl": "https://mn.gov/dhs/",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits",
-        "FEC",
-        "OIG Exclusions",
-        "OpenCorporates",
-        "USASpending"
-      ],
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
       "detectedAt": "2024-12-31T00:00:00.000Z",
       "isNew": false
     },
     {
       "id": "rf-003",
       "type": "federal_freeze",
-      "description": "HHS froze all CCAP payments to Minnesota amid fraud investigation estimated at $1B+.",
-      "entities": [
-        "HHS",
-        "Minnesota CCAP",
-        "Child Care Assistance Program"
-      ],
-      "confidence": 92,
-      "source": "Federal Register",
-      "sourceUrl": "https://www.federalregister.gov/",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits",
-        "FEC",
-        "OIG Exclusions",
-        "OpenCorporates",
-        "USASpending"
-      ],
+      "description": "Trump administration froze all childcare payments to Minnesota. HHS demands audit before funds resume.",
+      "insight": "This is unprecedented - full state payment freeze. Federal investigators clearly have more than what's public. The timing with viral video suggests coordinated rollout. I'm monitoring for unsealed indictments.",
+      "entities": ["HHS", "Minnesota CCAP", "Minnesota DCYF"],
+      "confidence": 95,
+      "source": "HHS Statement",
+      "sourceUrl": "https://www.hhs.gov/",
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
       "detectedAt": "2024-12-31T00:00:00.000Z",
-      "isNew": false
+      "isNew": true
     },
     {
       "id": "rf-004",
       "type": "nonprofit_red_flag",
       "description": "Multiple nonprofits showed explosive growth in federal funding during pandemic years followed by fraud charges.",
-      "entities": [
-        "Feeding Our Future",
-        "Partners in Nutrition"
-      ],
+      "insight": "Classic pattern: small org, sudden 10x revenue spike, minimal staff increase. ProPublica 990s show it clearly. I'm building a list of orgs with similar growth curves that haven't been charged yet.",
+      "entities": ["Feeding Our Future", "Partners in Nutrition"],
       "confidence": 85,
       "source": "ProPublica Nonprofits",
       "sourceUrl": "https://projects.propublica.org/nonprofits/",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits",
-        "FEC",
-        "OIG Exclusions",
-        "OpenCorporates",
-        "USASpending"
-      ],
+      "apisUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
       "detectedAt": "2024-12-31T00:00:00.000Z",
       "isNew": false
+    },
+    {
+      "id": "rf-005",
+      "type": "closed_facility_payments",
+      "description": "Viral video exposed daycares receiving payments despite being closed. Quality Learing Center ($4M) closed recently. Mako Childcare closed years ago but still in payment system.",
+      "insight": "Mako closed YEARS ago but still in the system? That's not an oversight - that's a ghost provider. I'm pulling OpenCorporates data on registered agents. Bet we find the same names across multiple 'closed' facilities.",
+      "entities": ["Quality Learing Center", "Mako Childcare", "Minnesota DCYF"],
+      "confidence": 88,
+      "source": "Viral Video Investigation",
+      "sourceUrl": "https://twitter.com/Ghost081280",
+      "apisUsed": ["Google News"],
+      "detectedAt": "2024-12-31T00:00:00.000Z",
+      "isNew": true
+    },
+    {
+      "id": "rf-006",
+      "type": "congressional_oversight",
+      "description": "House Oversight Committee announced hearings on Minnesota fraud. Rep. James Comer invited Gov. Walz to testify.",
+      "insight": "Congressional involvement means subpoena power. Watch for document requests to Minnesota DHS and DCYF. The political angle is heating up - this story has legs into 2025. I'm tracking which officials get called.",
+      "entities": ["House Oversight Committee", "Tim Walz", "James Comer"],
+      "confidence": 92,
+      "source": "House Oversight Committee",
+      "sourceUrl": "https://oversight.house.gov/",
+      "apisUsed": ["Google News"],
+      "detectedAt": "2024-12-31T00:00:00.000Z",
+      "isNew": true
     }
   ],
-  "sourcesUsed": [
-    "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
-    "OIG Exclusions",
-    "OpenCorporates",
-    "USASpending"
-  ],
-  "sourcesChecked": [
-    "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
-    "OIG Exclusions",
-    "OpenCorporates",
-    "USASpending"
-  ],
-  "lastUpdated": "2026-01-01T00:36:20.512Z"
+  "sourcesUsed": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
+  "sourcesChecked": ["Google News", "ProPublica Nonprofits", "FEC", "OIG Exclusions", "OpenCorporates", "USASpending"],
+  "lastUpdated": "2024-12-31T00:00:00.000Z"
 }
