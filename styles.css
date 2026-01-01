@@ -3224,3 +3224,56 @@ a.figure-status:hover {
         font-size: 9px;
     }
 }
+/* ============================================
+   DETECTIVE INSIGHT BOX (Purple AI Analysis)
+   ============================================ */
+
+.detective-insight-box {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 12px 0;
+}
+
+.detective-insight-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #a78bfa;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.detective-insight-header svg {
+    stroke: #a78bfa;
+}
+
+.detective-insight-text {
+    color: #e9d5ff;
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0 0 8px 0;
+}
+
+.detective-insight-sig {
+    display: block;
+    text-align: right;
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Field Report in AI Briefing */
+.briefing-modal-body {
+    white-space: pre-wrap;
+}
+
+.field-report-label {
+    color: #a78bfa;
+    font-weight: 600;
+}
