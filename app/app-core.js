@@ -40,7 +40,6 @@ let webResearchResults = [];
 // UTILITY FUNCTIONS
 // ============================================
 
-// HTML escape for content
 function esc(s) { 
     if (!s) return ''; 
     const d = document.createElement('div'); 
@@ -48,10 +47,9 @@ function esc(s) {
     return d.innerHTML; 
 }
 
-// Attribute escape for data attributes (CRITICAL FOR APOSTROPHE BUG FIX)
 function escAttr(s) {
     if (!s) return '';
-    return s
+    return String(s)
         .replace(/&/g, '&amp;')
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;')
@@ -59,7 +57,6 @@ function escAttr(s) {
         .replace(/>/g, '&gt;');
 }
 
-// Format currency
 function fmt(n) { 
     if (typeof n !== 'number') return n;
     return new Intl.NumberFormat('en-US', { 
@@ -69,7 +66,6 @@ function fmt(n) {
     }).format(n); 
 }
 
-// Format status label
 function formatStatus(s) { 
     return { 
         investigating: 'Under Investigation', 
@@ -91,7 +87,7 @@ async function loadData(filename, key = null) {
         const res = await fetch(`data/${filename}.json?t=${Date.now()}`);
         if (res.ok) DATA[key || filename] = await res.json();
     } catch (e) { 
-        console.log(`Could not load ${filename}.json`); 
+        // Silent fail
     }
 }
 
@@ -100,8 +96,6 @@ async function loadData(filename, key = null) {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('%c North Star Watchdog', 'color:#d4af37;font-size:20px;font-weight:bold');
-    
     // Load all data files
     await Promise.all([
         loadData('news'), 
@@ -142,13 +136,17 @@ function setupEventListeners() {
     const exportBtn = document.getElementById('export-btn');
     const closeBtn = document.getElementById('close-results-btn');
     
-    if (searchBtn) {
-        searchBtn.addEventListener('click', () => doSearch(searchInput.value));
+    if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', function() {
+            doSearch(searchInput.value);
+        });
     }
     
     if (searchInput) {
-        searchInput.addEventListener('keypress', e => { 
-            if (e.key === 'Enter') doSearch(e.target.value); 
+        searchInput.addEventListener('keypress', function(e) { 
+            if (e.key === 'Enter') {
+                doSearch(this.value);
+            }
         });
     }
     
@@ -165,19 +163,16 @@ function setupBackToTop() {
     const btn = document.getElementById('back-to-top');
     if (!btn) return;
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-            btn.classList.add('visible');
-        } else {
-            btn.classList.remove('visible');
-        }
+    window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 500);
     });
 }
 
 function checkUrlParams() {
     const q = new URLSearchParams(location.search).get('q');
     if (q) { 
-        document.getElementById('search-input').value = q; 
+        const input = document.getElementById('search-input');
+        if (input) input.value = q;
         doSearch(q); 
     }
 }
@@ -187,8 +182,10 @@ function checkUrlParams() {
 // ============================================
 
 function closeResults() {
-    document.getElementById('results-section').style.display = 'none';
-    document.getElementById('deep-research').style.display = 'none';
+    const section = document.getElementById('results-section');
+    const deepResearch = document.getElementById('deep-research');
+    if (section) section.style.display = 'none';
+    if (deepResearch) deepResearch.style.display = 'none';
 }
 
 function updateLastUpdated() {
@@ -220,12 +217,11 @@ function closeBriefing() {
     }
 }
 
-// Close modal on escape key or click outside
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeBriefing();
 });
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', function(e) {
     if (e.target.classList.contains('briefing-modal')) closeBriefing();
 });
 
@@ -234,7 +230,6 @@ document.addEventListener('click', (e) => {
 // ============================================
 
 function showStatSource(label, value, source, url) {
-    // Remove existing modal if any
     const existing = document.getElementById('stat-modal');
     if (existing) existing.remove();
     
@@ -252,8 +247,7 @@ function showStatSource(label, value, source, url) {
     `;
     document.body.appendChild(modal);
     
-    // Close on backdrop click
-    modal.onclick = (e) => { 
+    modal.onclick = function(e) { 
         if (e.target === modal) modal.remove(); 
     };
 }
@@ -265,8 +259,7 @@ function showStatSource(label, value, source, url) {
 function exportCSV() {
     const all = Object.values(currentResults).flat();
     
-    // Add web research results
-    webResearchResults.forEach(a => {
+    webResearchResults.forEach(function(a) {
         all.push({ 
             name: a.title, 
             source: a.source, 
@@ -283,9 +276,9 @@ function exportCSV() {
     
     const csv = [
         'Name,Source,Amount,Description,Date/Status', 
-        ...all.map(r => 
-            `"${(r.name||'').replace(/"/g, '""')}","${r.source||''}","${r.amount||''}","${(r.description||'').replace(/"/g, '""')}","${r.status||r.date||''}"`
-        )
+        ...all.map(function(r) {
+            return `"${(r.name||'').replace(/"/g, '""')}","${r.source||''}","${r.amount||''}","${(r.description||'').replace(/"/g, '""')}","${r.status||r.date||''}"`;
+        })
     ].join('\n');
     
     const link = document.createElement('a');
@@ -299,7 +292,26 @@ function exportCSV() {
 // ============================================
 
 function doSearch(query) {
-    if (!query?.trim()) return;
-    document.getElementById('search-input').value = query;
-    performSearch(query.trim());
+    // Handle various input types
+    var searchTerm = '';
+    
+    if (typeof query === 'string') {
+        searchTerm = query.trim();
+    } else if (query && typeof query === 'object') {
+        // If somehow an event or element was passed
+        searchTerm = '';
+    }
+    
+    if (!searchTerm) return;
+    
+    // Update input field
+    var searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = searchTerm;
+    }
+    
+    // Call performSearch from app-search.js
+    if (typeof performSearch === 'function') {
+        performSearch(searchTerm);
+    }
 }
