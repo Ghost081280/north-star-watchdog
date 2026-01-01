@@ -51,13 +51,21 @@ function makeRequest(url, options = {}) {
         
         req.on('error', (e) => {
             API_STATS.failures++;
-            resolve({ success: false, error: e.message });
+            // Check for common network restriction errors
+            const isNetworkBlock = e.message.includes('ENOTFOUND') || 
+                                   e.message.includes('ECONNREFUSED') ||
+                                   e.message.includes('getaddrinfo') ||
+                                   e.message.includes('ETIMEDOUT');
+            if (isNetworkBlock) {
+                console.log(`      ⚠ Network blocked: ${e.message.split(' ')[0]}`);
+            }
+            resolve({ success: false, error: e.message, networkBlocked: isNetworkBlock });
         });
         
         req.on('timeout', () => {
             API_STATS.failures++;
             req.destroy();
-            resolve({ success: false, error: 'Timeout' });
+            resolve({ success: false, error: 'Timeout', networkBlocked: false });
         });
     });
 }
@@ -418,8 +426,18 @@ async function enrichFindings(aiAnalysis) {
     console.log(`  Sources: ${results.sourcesUsed.join(', ') || 'None returned data'}`);
     console.log(`  API calls: ${API_STATS.calls} (${API_STATS.successes} ok, ${API_STATS.failures} failed)`);
     
+    // Check if network blocking is likely the issue
+    if (API_STATS.failures > API_STATS.successes && results.sourcesUsed.length === 0) {
+        console.log('\n  ⚠️  NETWORK RESTRICTION DETECTED');
+        console.log('  GitHub Actions may be blocking external API calls.');
+        console.log('  Required domains: projects.propublica.org, api.open.fec.gov,');
+        console.log('  exclusions.oig.hhs.gov, api.opencorporates.com, api.usaspending.gov');
+        console.log('  Add these to GitHub Actions network allowlist if possible.');
+        results.networkBlocked = true;
+    }
+    
     // Log per-entity sources
-    console.log('  Per-entity sources:');
+    console.log('\n  Per-entity sources:');
     for (const [entity, sources] of Object.entries(results.entitySources)) {
         if (sources.length > 1) {
             console.log(`    - ${entity}: ${sources.join(', ')}`);
