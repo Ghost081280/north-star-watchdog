@@ -37,6 +37,7 @@ const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
 const { preFlightCheck, postScanDiagnostic, reportCriticalFailure, runFullDiagnostic } = require('./ai-diagnostic');
 const { isConfigured: isXConfigured, testConnection: testXConnection, postRedFlag, scanForBreakingNews, processMentions, postBriefing } = require('./ai-twitter');
+const { reflect, shouldPostToX, shouldCreateIssue, generateIntelligentIssue, generateDailySummary, loadMemory } = require('./ai-consciousness');
 
 // ============================================
 // CONFIGURATION
@@ -192,6 +193,21 @@ async function main() {
         console.log('✓ OSINT enrichment complete');
         console.log(`  - Sources checked: ${osintResults.sourcesChecked?.length || 0}`);
         console.log(`  - Sources with data: ${osintResults.sourcesUsed?.length || 0}`);
+        
+        // ============================================
+        // STEP 3.5: REFLECTION (Self-Awareness)
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 3.5: POLARIS REFLECTION');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        let reflection = null;
+        try {
+            reflection = await reflect(newsResults, aiAnalysis, osintResults);
+            console.log(`✓ Reflection complete: ${reflection.significance.level}`);
+        } catch (e) {
+            console.log(`  ⚠ Reflection failed: ${e.message}`);
+        }
         
         // ============================================
         // STEP 4: Update data files
