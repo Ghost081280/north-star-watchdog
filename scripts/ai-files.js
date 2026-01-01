@@ -519,4 +519,35 @@ function updateLearning(analysis) {
     console.log(`  ✓ Learning updated: ${learning.searchQueries.length} queries, ${learning.trackedEntities.length} entities, ${learning.suggestedApis.length} APIs discovered`);
 }
 
-module.exports = { updateAllDataFiles, createGitHubIssues, updateLearning };
+/**
+ * Update README.md when a new API source is integrated
+ * Called by ai-osint.js when a new source goes live
+ */
+function updateReadmeWithNewSource(sourceName, sourceUrl, sourceDescription) {
+    const readmePath = path.join(__dirname, '..', 'README.md');
+    
+    try {
+        let readme = fs.readFileSync(readmePath, 'utf8');
+        
+        // Find the Data Sources section and add new source
+        const marker = '**AI Analysis:**';
+        const newSourceLine = `- ${sourceName} — ${sourceDescription}\n`;
+        
+        // Check if source already listed
+        if (readme.includes(sourceName)) {
+            console.log(`  ℹ ${sourceName} already in README`);
+            return;
+        }
+        
+        // Insert before AI Analysis line
+        if (readme.includes(marker)) {
+            readme = readme.replace(marker, `${newSourceLine}\n${marker}`);
+            fs.writeFileSync(readmePath, readme);
+            console.log(`  📝 README updated: Added ${sourceName} to Data Sources`);
+        }
+    } catch (e) {
+        console.log(`  ⚠ Could not update README: ${e.message}`);
+    }
+}
+
+module.exports = { updateAllDataFiles, createGitHubIssues, updateLearning, updateReadmeWithNewSource };
