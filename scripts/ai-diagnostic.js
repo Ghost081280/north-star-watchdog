@@ -704,6 +704,29 @@ async function preFlightCheck() {
     
     const result = await testGroqModel(apiKey, currentModel);
     
+    // If rate limited, try other models
+    if (!result.success && result.rateLimited) {
+        console.log(`  ⚠ Model ${currentModel} rate limited - trying alternatives...`);
+        
+        for (const model of GROQ_MODELS) {
+            if (model === currentModel) continue;
+            const test = await testGroqModel(apiKey, model);
+            if (test.success) {
+                console.log(`  🔧 Found working model: ${model}`);
+                const fix = fixGroqModel(model);
+                if (fix.success) {
+                    return { ok: true, fixed: true, model };
+                }
+            }
+            if (test.rateLimited) {
+                console.log(`  ⚠️ ${model} also rate limited...`);
+            }
+        }
+        
+        return { ok: false, error: 'All models rate limited. Try again later.' };
+    }
+    
+    // If decommissioned, try other models
     if (!result.success && result.error?.includes('decommissioned')) {
         console.log(`  ⚠ Model ${currentModel} is decommissioned - finding replacement...`);
         
@@ -721,7 +744,12 @@ async function preFlightCheck() {
         return { ok: false, error: 'No working models found' };
     }
     
-    return { ok: result.success, model: currentModel };
+    // Return with error message if failed
+    if (!result.success) {
+        return { ok: false, error: result.error || 'Model test failed' };
+    }
+    
+    return { ok: true, model: currentModel };
 }
 
 async function postScanDiagnostic() {
