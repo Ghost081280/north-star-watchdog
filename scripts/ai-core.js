@@ -3,6 +3,11 @@
  * NORTH STAR WATCHDOG - AI CORE
  * Main orchestrator for hourly scans
  * 
+ * ═══════════════════════════════════════════════════════════════
+ * AGENT CODENAME: POLARIS
+ * MISSION: Uncover fraud in Minnesota. Follow the money. Self-heal.
+ * ═══════════════════════════════════════════════════════════════
+ * 
  * WHAT THIS ACTUALLY DOES:
  * 0. Pre-flight check - test systems, auto-fix if needed
  * 1. Scrapes Google News RSS for Minnesota fraud stories
@@ -11,9 +16,15 @@
  * 4. Calls FREE OSINT APIs to enrich findings
  * 5. Updates all data/*.json files with real data
  * 6. Creates GitHub Issues for high-confidence red flags
+ * 7. Self-learning: discovers new entities and search terms
+ * 8. POST-SCAN DIAGNOSTIC: Auto-detects and fixes issues
+ * 9. README UPDATE: Updates health status and timestamps
  * 
  * REQUIRED: GROQ_API_KEY (free at console.groq.com)
  * OPTIONAL: None - all other APIs are free and keyless
+ * 
+ * RESOURCES:
+ * - GROQ API Cookbook: https://github.com/groq/groq-api-cookbook
  */
 
 const fs = require('fs');
@@ -24,7 +35,68 @@ const { scrapeGoogleNews } = require('./ai-scraper');
 const { analyzeWithGroq } = require('./ai-analyzer');
 const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
-const { preFlightCheck, reportCriticalFailure } = require('./ai-diagnostic');
+const { preFlightCheck, postScanDiagnostic, reportCriticalFailure, runFullDiagnostic } = require('./ai-diagnostic');
+
+// ============================================
+// CONFIGURATION
+// ============================================
+
+const CONFIG = {
+    // Run full diagnostic every N hours (default: every 6 hours)
+    fullDiagnosticInterval: 6,
+    // GROQ Cookbook for learning new techniques
+    groqCookbook: 'https://github.com/groq/groq-api-cookbook',
+    // Maximum scan duration before timeout (5 minutes)
+    maxScanDuration: 5 * 60 * 1000
+};
+
+// ============================================
+// HELPER FUNCTIONS
+// ============================================
+
+function shouldRunFullDiagnostic() {
+    const learningPath = path.join(__dirname, '..', 'data', 'learning.json');
+    try {
+        const learning = JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+        const lastFull = learning.lastFullDiagnostic;
+        if (!lastFull) return true;
+        
+        const hoursSince = (Date.now() - new Date(lastFull).getTime()) / (1000 * 60 * 60);
+        return hoursSince >= CONFIG.fullDiagnosticInterval;
+    } catch {
+        return true;
+    }
+}
+
+function recordFullDiagnostic() {
+    const learningPath = path.join(__dirname, '..', 'data', 'learning.json');
+    try {
+        const learning = JSON.parse(fs.readFileSync(learningPath, 'utf8'));
+        learning.lastFullDiagnostic = new Date().toISOString();
+        fs.writeFileSync(learningPath, JSON.stringify(learning, null, 2));
+    } catch (e) {
+        console.log(`  ⚠ Could not record diagnostic time: ${e.message}`);
+    }
+}
+
+function updateReadmeTimestamp() {
+    const readmePath = path.join(__dirname, '..', 'README.md');
+    try {
+        let readme = fs.readFileSync(readmePath, 'utf8');
+        const now = new Date().toISOString();
+        
+        // Update last scan timestamp if marker exists
+        if (readme.includes('<!-- LAST_SCAN -->')) {
+            readme = readme.replace(
+                /<!-- LAST_SCAN -->.*<!-- \/LAST_SCAN -->/,
+                `<!-- LAST_SCAN -->Last AI scan: ${now}<!-- /LAST_SCAN -->`
+            );
+            fs.writeFileSync(readmePath, readme);
+        }
+    } catch (e) {
+        // Silent fail - README update is not critical
+    }
+}
 
 // ============================================
 // MAIN WORKFLOW
@@ -58,6 +130,21 @@ async function main() {
             console.log(`  🔧 Self-healed: Updated to model ${preflight.model}`);
         } else {
             console.log(`  ✓ All systems operational (model: ${preflight.model})`);
+        }
+        
+        // ============================================
+        // STEP 0.5: Full diagnostic (if due)
+        // ============================================
+        if (shouldRunFullDiagnostic()) {
+            console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            console.log('STEP 0.5: FULL SYSTEM DIAGNOSTIC');
+            console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+            
+            const diagnostic = await runFullDiagnostic();
+            console.log(`  Health Score: ${diagnostic.healthScore}%`);
+            console.log(`  Repairs Made: ${diagnostic.repairs.length}`);
+            
+            recordFullDiagnostic();
         }
         
         // ============================================
@@ -150,20 +237,77 @@ async function main() {
         console.log('✓ Repo maintenance complete');
         
         // ============================================
+        // STEP 8: Post-Scan Diagnostic & Self-Repair
+        // ============================================
+        console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('STEP 8: POST-SCAN DIAGNOSTIC');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        
+        const postScan = await postScanDiagnostic();
+        console.log(`✓ Diagnostic complete: ${postScan.repaired} fixes, ${postScan.healthScore}% health`);
+        
+        // ============================================
+        // STEP 9: Update README timestamp
+        // ============================================
+        updateReadmeTimestamp();
+        
+        // ============================================
         // DONE
         // ============================================
         const duration = ((Date.now() - startTime) / 1000).toFixed(1);
         console.log('\n╔════════════════════════════════════════════════════════════╗');
         console.log('║     SCAN COMPLETE                                          ║');
         console.log(`║     Duration: ${duration}s                                        ║`);
+        console.log(`║     Health: ${postScan.healthScore}%                                           ║`);
         console.log('╚════════════════════════════════════════════════════════════╝\n');
         
     } catch (error) {
         console.error('\n❌ SCAN FAILED:', error.message);
         console.error(error.stack);
+        
+        // Try to report the failure
+        try {
+            await reportCriticalFailure('Scan Failed', `The hourly scan failed with error:\n\n\`\`\`\n${error.message}\n${error.stack}\n\`\`\``);
+        } catch (e) {
+            console.error('Could not report failure to GitHub');
+        }
+        
         process.exit(1);
     }
 }
 
-// Run
-main();
+// ============================================
+// CLI COMMANDS
+// ============================================
+
+const args = process.argv.slice(2);
+
+if (args.includes('--diagnostic') || args.includes('-d')) {
+    // Run full diagnostic only
+    console.log('Running full diagnostic...');
+    runFullDiagnostic().then(results => {
+        console.log('\nDiagnostic Results:');
+        console.log(JSON.stringify(results, null, 2));
+        process.exit(results.tests.critical > 0 ? 1 : 0);
+    });
+} else if (args.includes('--help') || args.includes('-h')) {
+    console.log(`
+North Star Watchdog - AI Core
+
+Usage:
+  node ai-core.js              Run full hourly scan
+  node ai-core.js --diagnostic Run diagnostic only
+  node ai-core.js --help       Show this help
+
+Environment:
+  GROQ_API_KEY     Required - Get free at console.groq.com
+  GITHUB_TOKEN     Optional - For creating issues
+  GITHUB_REPOSITORY Optional - owner/repo format
+
+Resources:
+  GROQ Cookbook: ${CONFIG.groqCookbook}
+`);
+} else {
+    // Run main scan
+    main();
+}
