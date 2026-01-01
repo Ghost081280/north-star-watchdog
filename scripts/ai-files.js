@@ -105,6 +105,74 @@ function deduplicateItems(items, hashFn) {
 }
 
 /**
+ * Smart deduplication for red flags - catches similar stories
+ * Uses keyword matching to identify duplicates even with different wording
+ */
+function deduplicateRedFlags(flags) {
+    const result = [];
+    const seenTopics = new Map(); // Map of topic keywords -> best flag
+    
+    // Keywords that indicate the same story
+    const topicKeywords = {
+        'federal_freeze': ['federal', 'freeze', 'frozen', 'halt', 'halted', 'child care', 'childcare', 'funding'],
+        'childcare_fraud': ['childcare', 'child care', 'daycare', 'fraud', 'minnesota'],
+        'fof_case': ['feeding our future', 'fof', 'aimee bock', 'bock'],
+        'medicaid_fraud': ['medicaid', 'healthcare', 'medical', 'fraud'],
+        'hss_fraud': ['housing stabilization', 'hss', 'housing fraud']
+    };
+    
+    for (const flag of flags) {
+        const desc = (flag.description || '').toLowerCase();
+        const type = (flag.type || '').toLowerCase();
+        
+        // Determine which topic this flag belongs to
+        let matchedTopic = null;
+        let matchScore = 0;
+        
+        for (const [topic, keywords] of Object.entries(topicKeywords)) {
+            const score = keywords.filter(kw => desc.includes(kw) || type.includes(kw)).length;
+            if (score > matchScore) {
+                matchScore = score;
+                matchedTopic = topic;
+            }
+        }
+        
+        // If we matched a topic with 2+ keywords, check for duplicates
+        if (matchedTopic && matchScore >= 2) {
+            const existing = seenTopics.get(matchedTopic);
+            
+            if (existing) {
+                // Keep the one with more sources or higher confidence
+                const existingScore = (existing.apisUsed?.length || 1) + (existing.confidence || 0) / 100;
+                const newScore = (flag.apisUsed?.length || 1) + (flag.confidence || 0) / 100;
+                
+                if (newScore > existingScore) {
+                    // Replace with better flag
+                    const idx = result.indexOf(existing);
+                    if (idx >= 0) result.splice(idx, 1);
+                    result.push(flag);
+                    seenTopics.set(matchedTopic, flag);
+                }
+                // Otherwise skip this duplicate
+            } else {
+                // First flag for this topic
+                result.push(flag);
+                seenTopics.set(matchedTopic, flag);
+            }
+        } else {
+            // No topic match - use regular deduplication by type + description start
+            const hash = `${type}-${desc.substring(0, 50)}`;
+            if (!seenTopics.has(hash)) {
+                result.push(flag);
+                seenTopics.set(hash, flag);
+            }
+        }
+    }
+    
+    return result;
+}
+
+/**
  * Get sources for a red flag based on its entities
  * FIX: Uses the per-entity source tracking from OSINT
  */
@@ -338,11 +406,11 @@ async function updateAllDataFiles({ news, analysis, osint }) {
         console.log(`    - ${rf.type}: ${rf.apisUsed.length} sources (${rf.apisUsed.join(', ')}) for [${entities}]`);
     });
     
-    // Dedupe by type + first 100 chars of description
-    const allFlags = deduplicateItems(
-        [...newFlags, ...(existingFlags.flags || []).map(f => ({ ...f, isNew: false }))],
-        f => `${f.type}-${(f.description || '').substring(0, 100)}`
-    ).slice(0, 50);
+    // Smart deduplication - catches similar stories about the same topic
+    const combinedFlags = [...newFlags, ...(existingFlags.flags || []).map(f => ({ ...f, isNew: false }))];
+    const allFlags = deduplicateRedFlags(combinedFlags).slice(0, 50);
+    
+    console.log(`  📊 Deduplication: ${combinedFlags.length} → ${allFlags.length} unique flags`);
     
     // Calculate overall sources used across all flags
     const overallSourcesUsed = [...new Set(allFlags.flatMap(f => f.apisUsed || []))];
