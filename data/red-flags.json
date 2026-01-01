@@ -1,6 +1,28 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "HHS has frozen some child care funds nationwide amid the Minnesota fraud investigation",
+      "insight": "This freeze may indicate a larger issue with the daycare program and potential misuse of federal funds. Further investigation is needed to determine the extent of the fraud and those involved.",
+      "entities": [
+        "Tim Walz",
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "HHS",
+      "sourceUrl": "https://www.wfla.com/news/hhs-freezes-some-child-care-funds-nationwide-amid-minnesota-fraud-investigation/",
+      "id": "rf-1767284713745-6mdxf0zex",
+      "apisUsed": [
+        "Google News",
+        "ProPublica Nonprofits",
+        "FEC"
+      ],
+      "sourceCount": 3,
+      "detectedAt": "2026-01-01T16:25:13.742Z",
+      "isNew": true
+    },
+    {
       "type": "Federal funding freeze",
       "description": "The Trump administration has frozen federal child care funds to Minnesota due to alleged fraud.",
       "insight": "This freeze may indicate a larger issue with the child care program in Minnesota, and potentially other states. Further investigation is needed to determine the extent of the fraud and how to prevent it in the future.",
@@ -155,7 +177,10 @@
       "isNew": false
     }
   ],
-  "sourcesUsed": [],
+  "sourcesUsed": [
+    "ProPublica Nonprofits",
+    "FEC"
+  ],
   "sourcesChecked": [
     "ProPublica Nonprofits",
     "FEC",
@@ -163,5 +188,5 @@
     "OpenCorporates",
     "USASpending"
   ],
-  "lastUpdated": "2026-01-01T15:19:49.048Z"
+  "lastUpdated": "2026-01-01T16:25:13.742Z"
 }
