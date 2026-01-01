@@ -17,14 +17,30 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Call GROQ API
+ * GROQ Models - ordered by preference
+ * Will auto-fallback if rate limited
  */
-async function callGroq(messages, maxTokens = 4000) {
+const GROQ_MODELS = [
+    'llama-3.3-70b-versatile',
+    'llama-3.1-70b-versatile', 
+    'llama-3.1-8b-instant',
+    'mixtral-8x7b-32768',
+    'gemma2-9b-it'
+];
+
+let currentModelIndex = 0;
+
+/**
+ * Call GROQ API with automatic model fallback
+ */
+async function callGroq(messages, maxTokens = 4000, retryCount = 0) {
     const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) throw new Error('GROQ_API_KEY not set');
     
+    const model = GROQ_MODELS[currentModelIndex];
+    
     const body = JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model,
         messages,
         max_tokens: maxTokens,
         temperature: 0.4
@@ -44,11 +60,43 @@ async function callGroq(messages, maxTokens = 4000) {
         }, (res) => {
             let data = '';
             res.on('data', chunk => data += chunk);
-            res.on('end', () => {
+            res.on('end', async () => {
                 try {
                     const json = JSON.parse(data);
-                    if (json.error) reject(new Error(json.error.message));
-                    else resolve(json.choices?.[0]?.message?.content || '');
+                    
+                    // Check for rate limit error
+                    if (json.error) {
+                        const errorMsg = json.error.message || '';
+                        
+                        // Rate limit hit - try next model
+                        if (errorMsg.includes('Rate limit') || errorMsg.includes('rate_limit') || res.statusCode === 429) {
+                            console.log(`  ⚠️ Rate limit hit on ${model}`);
+                            
+                            // Try next model if available
+                            if (currentModelIndex < GROQ_MODELS.length - 1) {
+                                currentModelIndex++;
+                                console.log(`  🔄 Switching to fallback model: ${GROQ_MODELS[currentModelIndex]}`);
+                                
+                                // Retry with new model
+                                try {
+                                    const result = await callGroq(messages, maxTokens, retryCount + 1);
+                                    resolve(result);
+                                    return;
+                                } catch (e) {
+                                    reject(e);
+                                    return;
+                                }
+                            } else {
+                                reject(new Error(`All models rate limited. Try again later.`));
+                                return;
+                            }
+                        }
+                        
+                        reject(new Error(errorMsg));
+                        return;
+                    }
+                    
+                    resolve(json.choices?.[0]?.message?.content || '');
                 } catch (e) {
                     reject(new Error('Failed to parse GROQ response'));
                 }
@@ -60,6 +108,13 @@ async function callGroq(messages, maxTokens = 4000) {
         req.write(body);
         req.end();
     });
+}
+
+/**
+ * Get current model being used
+ */
+function getCurrentModel() {
+    return GROQ_MODELS[currentModelIndex];
 }
 
 /**
