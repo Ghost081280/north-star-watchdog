@@ -22,11 +22,11 @@ const path = require('path');
  * Updated: Jan 2026 - removed decommissioned models
  */
 const GROQ_MODELS = [
-    { name: 'llama-3.3-70b-versatile', contextLimit: 32000, articleLimit: 30 },
-    { name: 'llama3-70b-8192', contextLimit: 8192, articleLimit: 15 },
-    { name: 'mixtral-8x7b-32768', contextLimit: 32768, articleLimit: 30 },
-    { name: 'llama-3.1-8b-instant', contextLimit: 8192, articleLimit: 10 },
-    { name: 'gemma2-9b-it', contextLimit: 8192, articleLimit: 10 }
+    { name: 'llama-3.3-70b-versatile', contextLimit: 32000, articleLimit: 25 },
+    { name: 'llama-3.1-70b-versatile', contextLimit: 32000, articleLimit: 25 },
+    { name: 'mixtral-8x7b-32768', contextLimit: 32768, articleLimit: 25 },
+    { name: 'llama-3.1-8b-instant', contextLimit: 8192, articleLimit: 8 },
+    { name: 'gemma2-9b-it', contextLimit: 8192, articleLimit: 8 }
 ];
 
 let currentModelIndex = 0;
