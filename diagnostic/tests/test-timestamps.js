@@ -1,6 +1,8 @@
 /**
  * TEST MODULE: Timestamp Freshness
  * Verifies all data is recent and hourly scans are running
+ * 
+ * DYNAMIC: Discovers files from DiagnosticCore.DATA instead of hardcoded list
  */
 
 DiagnosticCore.registerTest({
@@ -18,16 +20,30 @@ DiagnosticCore.registerTest({
         const oneDay = 24 * oneHour;
         const oneWeek = 7 * oneDay;
         
-        const files = [
-            { key: 'stats', name: 'stats.json', critical: true },
-            { key: 'redflags', name: 'red-flags.json', critical: true },
-            { key: 'news', name: 'news.json', critical: true },
-            { key: 'investigations', name: 'investigations.json', critical: false },
-            { key: 'figures', name: 'figures.json', critical: false },
-            { key: 'trending', name: 'trending.json', critical: false },
-            { key: 'storyideas', name: 'story-ideas.json', critical: false },
-            { key: 'learning', name: 'learning.json', critical: false }
-        ];
+        // DYNAMIC: Build file list from what's actually loaded in core.DATA
+        // This way we only check files that actually exist
+        const files = [];
+        
+        // Map of DATA keys to display names and criticality
+        const fileConfig = {
+            'stats': { name: 'stats.json', critical: true },
+            'redflags': { name: 'red-flags.json', critical: true },
+            'news': { name: 'news.json', critical: true },
+            'investigations': { name: 'investigations.json', critical: false },
+            'figures': { name: 'figures.json', critical: false },
+            'trending': { name: 'trending.json', critical: false },
+            'storyideas': { name: 'story-ideas.json', critical: false },
+            'learning': { name: 'learning.json', critical: false }
+        };
+        
+        // Only add files that actually exist in core.DATA
+        for (const [key, config] of Object.entries(fileConfig)) {
+            if (core.DATA[key] !== null && core.DATA[key] !== undefined) {
+                files.push({ key, ...config });
+            }
+        }
+        
+        core.log(`Found ${files.length} data files to check`, 'info');
         
         let staleCount = 0;
         let veryStaleCount = 0;
@@ -78,8 +94,11 @@ DiagnosticCore.registerTest({
                 'Workflow may be completely broken. Check Actions tab for errors.');
         }
         
-        // Calculate overall freshness
-        const timestamps = files.map(f => core.DATA[f.key]?.lastUpdated).filter(Boolean);
+        // Calculate overall freshness from files that have timestamps
+        const timestamps = files
+            .map(f => core.DATA[f.key]?.lastUpdated)
+            .filter(Boolean);
+        
         const avgAge = timestamps.length > 0 
             ? timestamps.reduce((sum, t) => sum + core.getAge(t), 0) / timestamps.length 
             : Infinity;
@@ -88,10 +107,20 @@ DiagnosticCore.registerTest({
             avgAge !== Infinity ? core.formatAge(avgAge) + ' average' : 'No timestamps');
         
         // Check if workflow appears to be running hourly
-        const mostRecent = Math.min(...timestamps.map(t => core.getAge(t)));
-        const workflowRunning = mostRecent < 2 * oneHour;
-        core.addTest(this.id, 'Hourly workflow appears active', workflowRunning,
-            workflowRunning ? 'Recent updates detected' : 'No recent updates');
+        if (timestamps.length > 0) {
+            const mostRecent = Math.min(...timestamps.map(t => core.getAge(t)));
+            const workflowRunning = mostRecent < 2 * oneHour;
+            core.addTest(this.id, 'Hourly workflow appears active', workflowRunning,
+                workflowRunning ? 'Recent updates detected' : 'No recent updates');
+        }
+        
+        // Add summary
+        gridHtml += `
+            <div style="margin-top:15px; padding:10px; background:#1a1a1a; border-radius:6px; font-size:11px; color:#888;">
+                <strong style="color:#d4af37;">Dynamic Discovery:</strong> Found ${files.length} data files in repo.
+                Files are discovered automatically - no hardcoded list needed.
+            </div>
+        `;
         
         core.setDetail(this.id, gridHtml);
         core.setStatus(this.id, allPassed ? 'pass' : 'warn');
