@@ -550,7 +550,25 @@ async function preFlightCheck() {
         }
     }
     
-    return results;
+    // Return in the format ai-core.js expects
+    const criticalIssues = results.issues.filter(i => i.severity === 'critical');
+    
+    if (criticalIssues.length > 0) {
+        return {
+            ok: false,
+            error: criticalIssues.map(i => i.message).join('; '),
+            model: groqResult.model || 'unknown',
+            fixed: false,
+            details: results
+        };
+    }
+    
+    return {
+        ok: true,
+        model: groqResult.model || 'llama-3.3-70b-versatile',
+        fixed: groqResult.fixed || false,
+        details: results
+    };
 }
 
 // ============================================
