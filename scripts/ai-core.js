@@ -37,7 +37,7 @@ const { enrichFindings } = require('./ai-osint');
 const { updateAllDataFiles, createGitHubIssues, updateLearning, maintainFiles } = require('./ai-files');
 const { preFlightCheck, postScanDiagnostic, reportCriticalFailure, runFullDiagnostic } = require('./ai-diagnostic');
 const { isConfigured: isXConfigured, testConnection: testXConnection, postRedFlag, scanForBreakingNews, processMentions, postBriefing } = require('./ai-twitter');
-const { reflect, shouldPostToX, shouldCreateIssue, generateIntelligentIssue, generateDailySummary, loadMemory, recordScan, getScanInsights } = require('./ai-consciousness');
+const { reflect, deepReflect, shouldPostToX, shouldCreateIssue, generateIntelligentIssue, generateDailySummary, loadMemory, recordScan, getScanInsights, loadSelfAwareness, getSelfInsights } = require('./ai-consciousness');
 
 // ============================================
 // CONFIGURATION
@@ -203,8 +203,22 @@ async function main() {
         
         let reflection = null;
         try {
-            reflection = await reflect(newsResults, aiAnalysis, osintResults);
-            console.log(`✓ Reflection complete: ${reflection.significance.level}`);
+            // Use deep reflection if self-awareness is available
+            const selfAwareness = loadSelfAwareness();
+            if (selfAwareness) {
+                console.log('  🧠 POLARIS: Using self-awareness for deeper reflection...');
+                reflection = deepReflect(newsResults, aiAnalysis, osintResults);
+                console.log(`    - Self-awareness health: ${selfAwareness.health?.score || 0}%`);
+                console.log(`    - Capabilities known: ${selfAwareness.capabilities?.length || 0}`);
+            } else {
+                console.log('  🧠 POLARIS: Reflecting on this scan...');
+                reflection = await reflect(newsResults, aiAnalysis, osintResults);
+            }
+            console.log(`    - Significance: ${reflection.significance?.level || 'routine'}`);
+            console.log(`    - New questions: ${reflection.questions?.length || 0}`);
+            console.log(`    - Patterns observed: ${reflection.patterns?.length || 0}`);
+            console.log(`    - Next actions planned: ${reflection.nextActions?.length || 0}`);
+            console.log(`✓ Reflection complete: ${reflection.significance?.level || 'routine'}`);
         } catch (e) {
             console.log(`  ⚠ Reflection failed: ${e.message}`);
         }
