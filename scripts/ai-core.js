@@ -244,7 +244,17 @@ async function main() {
         console.log('STEP 5: GITHUB ISSUES');
         console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
         
-        const issuesCreated = await createGitHubIssues(aiAnalysis.redFlags || []);
+        // Read the PROCESSED red flags from file (has isNew set correctly)
+        const redFlagsPath = path.join(__dirname, '..', 'data', 'red-flags.json');
+        let processedRedFlags = [];
+        try {
+            const redFlagsData = JSON.parse(fs.readFileSync(redFlagsPath, 'utf8'));
+            processedRedFlags = redFlagsData.flags || [];
+        } catch (e) {
+            console.log(`  ⚠ Could not read red-flags.json: ${e.message}`);
+        }
+        
+        const issuesCreated = await createGitHubIssues(processedRedFlags);
         console.log(`✓ Created ${issuesCreated} new GitHub issues`);
         
         // ============================================
@@ -299,9 +309,9 @@ async function main() {
                 // Daily briefing at 14:00 UTC (8am CST)
                 const isDailyBriefingTime = (hour === 14);
                 
-                // Only post CRITICAL findings (95%+) outside briefing time
+                // Only post HIGH confidence findings (90%+) outside briefing time
                 const criticalFlags = (aiAnalysis.redFlags || []).filter(rf => 
-                    rf.confidence >= 95 && rf.isNew === true
+                    rf.confidence >= 90 && rf.isNew === true
                 );
                 
                 if (isDailyBriefingTime) {
