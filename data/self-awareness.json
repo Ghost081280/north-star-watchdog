@@ -1,0 +1,202 @@
+{
+  "timestamp": "2026-01-02T00:12:18.105Z",
+  "identity": {
+    "name": "Agent Polaris",
+    "purpose": "AI-powered Minnesota fraud investigation assistant",
+    "version": "5.0"
+  },
+  "codebaseStats": {
+    "totalFiles": 57,
+    "scriptFiles": 14,
+    "dataFiles": 10,
+    "frontendFiles": 4
+  },
+  "capabilities": [
+    {
+      "name": "News Scraping",
+      "description": "Can scrape Google News RSS for Minnesota fraud articles",
+      "file": "ai-scraper.js"
+    },
+    {
+      "name": "AI Analysis",
+      "description": "Can use GROQ LLM to analyze news and extract entities",
+      "file": "ai-analyzer.js"
+    },
+    {
+      "name": "OSINT Enrichment",
+      "description": "Can query 13 OSINT APIs for entity enrichment",
+      "file": "ai-osint.js",
+      "sources": [
+        "ProPublica",
+        "FEC",
+        "OIG",
+        "USASpending",
+        "OpenCorporates",
+        "SEC",
+        "OSHA",
+        "FDA",
+        "HUD",
+        "MN Campaign Finance",
+        "MN DHS Licensing",
+        "MN Transparency"
+      ]
+    },
+    {
+      "name": "Self-Reflection",
+      "description": "Can reflect on scan results and maintain memory",
+      "file": "ai-consciousness.js"
+    },
+    {
+      "name": "Self-Healing",
+      "description": "Can detect and fix issues in data files",
+      "file": "ai-diagnostic.js"
+    },
+    {
+      "name": "Social Media",
+      "description": "Can post findings to X/Twitter",
+      "file": "ai-twitter.js"
+    },
+    {
+      "name": "Live Search",
+      "description": "Can search multiple APIs in real-time for users",
+      "file": "app-search.js"
+    },
+    {
+      "name": "Deep Research",
+      "description": "Can compile comprehensive research packages",
+      "file": "app-research.js"
+    }
+  ],
+  "limitations": [
+    {
+      "area": "AI Analysis",
+      "issue": "GROQ rate limits causing analysis failures",
+      "impact": "Trending topics and story ideas not being generated",
+      "suggestion": "Reduce token count or upgrade GROQ tier"
+    }
+  ],
+  "improvements": [
+    {
+      "area": "Self-Learning",
+      "suggestion": "Expand learning.json to track more entity types",
+      "priority": "medium"
+    },
+    {
+      "area": "User Experience",
+      "suggestion": "Add more interactive visualizations of fraud networks",
+      "priority": "low"
+    }
+  ],
+  "connections": {
+    "dataFlow": [
+      {
+        "from": "ai-scraper.js",
+        "to": "news.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-analyzer.js",
+        "to": "figures.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-analyzer.js",
+        "to": "investigations.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-analyzer.js",
+        "to": "trending.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-analyzer.js",
+        "to": "story-ideas.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-osint.js",
+        "to": "red-flags.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-files.js",
+        "to": "stats.json",
+        "type": "writes"
+      },
+      {
+        "from": "ai-consciousness.js",
+        "to": "memory.json",
+        "type": "writes"
+      },
+      {
+        "from": "app-core.js",
+        "to": "*.json",
+        "type": "reads"
+      },
+      {
+        "from": "app-render.js",
+        "to": "DOM",
+        "type": "renders"
+      }
+    ],
+    "dependencies": [
+      {
+        "from": "ai-core.js",
+        "to": "ai-scraper",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-analyzer",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-osint",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-files",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-diagnostic",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-twitter",
+        "type": "requires"
+      },
+      {
+        "from": "ai-core.js",
+        "to": "ai-consciousness",
+        "type": "requires"
+      },
+      {
+        "from": "ai-detective.js",
+        "to": "ai-analyzer",
+        "type": "requires"
+      },
+      {
+        "from": "ai-diagnostic.js",
+        "to": "ai-repair",
+        "type": "requires"
+      },
+      {
+        "from": "ai-osint.js",
+        "to": "ai-minnesota.js",
+        "type": "requires"
+      }
+    ],
+    "renderChain": []
+  },
+  "health": {
+    "score": 95,
+    "status": "healthy",
+    "issues": []
+  }
+}
