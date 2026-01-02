@@ -22,11 +22,19 @@
 # - OIG Exclusions
 # - OpenCorporates
 # - USASpending.gov
+# - SEC EDGAR
+# - OSHA
+# - FDA
+# - HUD
+# - MN Campaign Finance Board
+# - MN DHS Licensing
+# - MN Transparency Portal
 #
 # CAPABILITIES:
-# - Hourly news scanning (28+ search queries)
+# - Hourly news scanning (33+ search queries)
 # - AI analysis with auto model fallback
-# - OSINT enrichment from 6 free APIs
+# - OSINT enrichment from 13 free APIs
+# - Self-awareness (understands own codebase)
 # - Self-healing (auto-fixes issues)
 # - Self-learning (discovers new entities)
 # - X/Twitter posting & monitoring
@@ -58,11 +66,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      
+      - name: Initialize Self-Awareness (daily)
+        run: |
+          # Run self-awareness scan once per day (at midnight UTC) or if missing
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" = "00" ] || [ ! -f "data/self-awareness.json" ]; then
+            echo "🧠 Running self-awareness scan..."
+            node scripts/ai-self-awareness.js || echo "Self-awareness scan skipped"
+          else
+            echo "⏭️ Self-awareness scan runs at midnight UTC"
+          fi
       
       - name: Run AI Updater
         env:
@@ -83,4 +103,5 @@ jobs:
           git config --local user.name "North Star AI Bot"
           git add -A
           git diff --staged --quiet || git commit -m "🤖 Hourly AI update - $(date +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase || true
           git push
