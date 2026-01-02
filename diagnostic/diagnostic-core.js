@@ -1,8 +1,9 @@
 /**
  * NORTH STAR WATCHDOG - DIAGNOSTIC CORE ENGINE
- * v5.0 - Manages all diagnostic modules and test execution
+ * v5.1 - Dynamic File Discovery
  * 
  * This is the brain of the diagnostic system. It:
+ * - Dynamically discovers data files (no hardcoded list!)
  * - Loads and manages all test modules
  * - Tracks results across all tests
  * - Generates reports for humans and AI
@@ -18,6 +19,7 @@ const DiagnosticCore = {
     ISSUES: [],
     LOG: [],
     TESTS: [],
+    DISCOVERED_FILES: [], // Track what files we found
     
     // ============================================
     // CONSTANTS
@@ -52,13 +54,27 @@ const DiagnosticCore = {
     VALID_STATUSES: ['charged', 'convicted', 'sentenced', 'indicted'],
     VALID_ALLEGATIONS: ['wire fraud', 'money laundering', 'federal program fraud', 'false claims', 'conspiracy', 'tax fraud', 'embezzlement', 'mail fraud', 'bank fraud'],
     
-    DATA_FILES: ['stats', 'investigations', 'figures', 'trending', 'story-ideas', 'red-flags', 'news', 'learning'],
+    // DYNAMIC: These are the files we'll TRY to load
+    // If they don't exist, that's fine - we just won't include them
+    POSSIBLE_DATA_FILES: [
+        'stats', 
+        'investigations', 
+        'figures', 
+        'trending', 
+        'story-ideas', 
+        'red-flags', 
+        'news', 
+        'learning',
+        'memory',
+        'scan-history',
+        'self-awareness'
+    ],
     
     // ============================================
     // INITIALIZATION
     // ============================================
     init() {
-        this.log('Diagnostic v5.0 initialized. Click RUN FULL DIAGNOSTIC to begin.', 'info');
+        this.log('Diagnostic v5.1 initialized (Dynamic File Discovery)', 'info');
         this.setupRawDataButtons();
     },
     
@@ -89,14 +105,27 @@ const DiagnosticCore = {
     },
     
     setupRawDataButtons() {
+        // Will be populated dynamically after loading
         const container = document.getElementById('raw-data-buttons');
-        this.DATA_FILES.forEach(file => {
+        container.innerHTML = '<span style="color:#666; font-size:11px;">Loading files...</span>';
+    },
+    
+    updateRawDataButtons() {
+        const container = document.getElementById('raw-data-buttons');
+        container.innerHTML = '';
+        
+        // Only show buttons for files that actually exist
+        this.DISCOVERED_FILES.forEach(file => {
             const btn = document.createElement('button');
             btn.className = 'btn btn-small';
             btn.textContent = file + '.json';
             btn.onclick = () => this.showRawData(file);
             container.appendChild(btn);
         });
+        
+        if (this.DISCOVERED_FILES.length === 0) {
+            container.innerHTML = '<span style="color:#ea868f; font-size:11px;">No data files found</span>';
+        }
     },
     
     // ============================================
@@ -110,8 +139,11 @@ const DiagnosticCore = {
         
         this.log('Starting comprehensive diagnostic...', 'info');
         
-        // Load all data first
+        // Load all data first (with dynamic discovery)
         await this.loadAllData();
+        
+        // Update raw data buttons now that we know what files exist
+        this.updateRawDataButtons();
         
         // Run all registered tests
         const totalTests = this.TESTS.length;
@@ -146,6 +178,7 @@ const DiagnosticCore = {
         this.log('Running quick check...', 'info');
         
         await this.loadAllData();
+        this.updateRawDataButtons();
         
         // Run only critical tests
         const quickTests = this.TESTS.filter(t => t.critical === true);
@@ -166,6 +199,7 @@ const DiagnosticCore = {
         this.RESULTS = { pass: 0, fail: 0, warn: 0, critical: 0, total: 0 };
         this.ISSUES = [];
         this.LOG = [];
+        this.DISCOVERED_FILES = [];
         document.getElementById('log-output').innerHTML = '';
         document.querySelectorAll('[id^="tests-"]').forEach(el => el.innerHTML = '');
         document.querySelectorAll('[id^="detail-"]').forEach(el => el.innerHTML = '');
@@ -176,26 +210,35 @@ const DiagnosticCore = {
     },
     
     // ============================================
-    // DATA LOADING
+    // DATA LOADING - DYNAMIC DISCOVERY
     // ============================================
     async loadAllData() {
-        this.log('Loading data files...', 'info');
+        this.log('Discovering and loading data files...', 'info');
         
-        for (const file of this.DATA_FILES) {
+        // Try to load each possible file
+        for (const file of this.POSSIBLE_DATA_FILES) {
             const key = file.replace(/-/g, '');
-            this.DATA[key] = await this.loadJson(file);
+            const data = await this.loadJson(file);
+            
+            if (data !== null) {
+                this.DATA[key] = data;
+                this.DISCOVERED_FILES.push(file);
+            }
         }
         
-        this.log(`Loaded ${Object.keys(this.DATA).length} data files`, 'pass');
+        this.log(`Discovered ${this.DISCOVERED_FILES.length} data files: ${this.DISCOVERED_FILES.join(', ')}`, 'pass');
     },
     
     async loadJson(filename) {
         try {
             const res = await fetch(`../data/${filename}.json?t=${Date.now()}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            if (!res.ok) {
+                // File doesn't exist - that's OK, just return null
+                return null;
+            }
             return await res.json();
         } catch (e) {
-            this.log(`Failed to load ${filename}.json: ${e.message}`, 'fail');
+            // Failed to parse or fetch - return null
             return null;
         }
     },
@@ -351,7 +394,11 @@ const DiagnosticCore = {
         let report = `NORTH STAR WATCHDOG - DIAGNOSTIC REPORT FOR AI
 ================================================
 Generated: ${timestamp}
-Version: 5.0
+Version: 5.1 (Dynamic File Discovery)
+
+DISCOVERED FILES
+----------------
+${this.DISCOVERED_FILES.map(f => `- ${f}.json`).join('\n')}
 
 SUMMARY
 -------
@@ -387,38 +434,67 @@ Fix: ${issue.fix}
         report += `
 DATA SNAPSHOTS
 ==============
-
---- stats.json ---
-${JSON.stringify(this.DATA.stats, null, 2)}
-
---- red-flags.json (summary) ---
-Flags count: ${this.DATA.redflags?.flags?.length || 0}
-Sources used: ${JSON.stringify(this.DATA.redflags?.sourcesUsed || [])}
-Sources checked: ${JSON.stringify(this.DATA.redflags?.sourcesChecked || [])}
-
---- figures.json (summary) ---
-People count: ${this.DATA.figures?.people?.length || 0}
-Names: ${(this.DATA.figures?.people || []).map(p => p.name).join(', ')}
-
---- investigations.json (summary) ---
-Cases count: ${this.DATA.investigations?.cases?.length || 0}
-Names: ${(this.DATA.investigations?.cases || []).map(c => c.name).join(', ')}
-
---- trending.json (summary) ---
-Topics count: ${this.DATA.trending?.topics?.length || 0}
-
---- story-ideas.json (summary) ---
-Ideas count: ${this.DATA.storyideas?.ideas?.length || 0}
-
---- news.json (summary) ---
-Articles count: ${this.DATA.news?.articles?.length || 0}
-Has breaking: ${!!this.DATA.news?.breaking}
-
---- learning.json (summary) ---
-Search queries: ${this.DATA.learning?.searchQueries?.length || 0}
-Tracked entities: ${this.DATA.learning?.trackedEntities?.length || 0}
-
 `;
+        // Dynamically add snapshots for discovered files
+        for (const file of this.DISCOVERED_FILES) {
+            const key = file.replace(/-/g, '');
+            const data = this.DATA[key];
+            
+            if (file === 'stats') {
+                report += `
+--- stats.json ---
+${JSON.stringify(data, null, 2)}
+`;
+            } else if (file === 'red-flags') {
+                report += `
+--- red-flags.json (summary) ---
+Flags count: ${data?.flags?.length || 0}
+Sources used: ${JSON.stringify(data?.sourcesUsed || [])}
+Sources checked: ${JSON.stringify(data?.sourcesChecked || [])}
+`;
+            } else if (file === 'figures') {
+                report += `
+--- figures.json (summary) ---
+People count: ${data?.people?.length || 0}
+Names: ${(data?.people || []).map(p => p.name).join(', ')}
+`;
+            } else if (file === 'investigations') {
+                report += `
+--- investigations.json (summary) ---
+Cases count: ${data?.cases?.length || 0}
+Names: ${(data?.cases || []).map(c => c.name).join(', ')}
+`;
+            } else if (file === 'trending') {
+                report += `
+--- trending.json (summary) ---
+Topics count: ${data?.topics?.length || 0}
+`;
+            } else if (file === 'story-ideas') {
+                report += `
+--- story-ideas.json (summary) ---
+Ideas count: ${data?.ideas?.length || 0}
+`;
+            } else if (file === 'news') {
+                report += `
+--- news.json (summary) ---
+Articles count: ${data?.articles?.length || 0}
+Has breaking: ${!!data?.breaking}
+`;
+            } else if (file === 'learning') {
+                report += `
+--- learning.json (summary) ---
+Search queries: ${data?.searchQueries?.length || 0}
+Tracked entities: ${data?.trackedEntities?.length || 0}
+`;
+            } else if (file === 'self-awareness') {
+                report += `
+--- self-awareness.json (summary) ---
+Health: ${data?.health?.score || 0}%
+Capabilities: ${data?.capabilities?.length || 0}
+Limitations: ${data?.limitations?.length || 0}
+`;
+            }
+        }
 
         report += `
 AI INSTRUCTIONS
