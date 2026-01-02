@@ -215,6 +215,11 @@
       "date": "2026-01-02T15:20:49.713Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-02T16:24:12.074Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -228,8 +233,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Nationwide childcare funding freeze allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the $250 million allegedly go in Minnesota Child Care Assistance Program Fraud Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Scandal?",
     "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Not available connected to?",
@@ -247,7 +250,9 @@
     "Where did the $400M allegedly go in SBA Loan Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $18B allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $18B allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Feeding Our Future ringleader connected to?",
+    "Where did the $18 Billion allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -257,9 +262,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 41,
-    "articlesProcessed": 2050,
-    "redFlagsFound": 23,
+    "totalScans": 42,
+    "articlesProcessed": 2100,
+    "redFlagsFound": 24,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -272,9 +277,17 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not Applicable connected to?",
         "Where did the Nationwide childcare funding freeze allegedly go in Minnesota Childcare Fraud Investigation?",
-        "Where did the $250 million allegedly go in Minnesota Child Care Assistance Program Fraud Investigation?"
+        "Where did the $250 million allegedly go in Minnesota Child Care Assistance Program Fraud Investigation?",
+        "Where did the $250 million allegedly go in Feeding Our Future Scandal?"
+      ]
+    },
+    {
+      "type": "verify_pattern",
+      "priority": "low",
+      "description": "Verify 1 uncertain patterns",
+      "patterns": [
+        "childcare_fraud"
       ]
     }
   ],
@@ -283,6 +296,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-02T15:20:49.713Z",
-  "lastUpdated": "2026-01-02T15:20:49.714Z"
+  "lastReflection": "2026-01-02T16:24:12.074Z",
+  "lastUpdated": "2026-01-02T16:24:12.074Z"
 }
