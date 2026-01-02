@@ -235,6 +235,11 @@
       "date": "2026-01-02T19:13:52.658Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-02T20:22:03.087Z",
+      "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -248,10 +253,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Unknown?",
-    "Where did the $1M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Day Care Fraud Investigation?",
-    "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
     "Where did the $400M allegedly go in SBA Pandemic Loan Fraud Investigation?",
@@ -267,7 +268,11 @@
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Saint Paul Physical Therapist connected to?",
     "Where did the $102K allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the nearly 7,000 loans allegedly go in Trump Administration Loan Freeze?"
+    "Where did the nearly 7,000 loans allegedly go in Trump Administration Loan Freeze?",
+    "What other organizations is No specific individual charged connected to?",
+    "What specific allegations exist against No specific individual charged?",
+    "Where did the $400m allegedly go in Minnesota childcare fraud investigation?",
+    "Where did the $400m allegedly go in Small Business Administration loan fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -277,9 +282,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 45,
-    "articlesProcessed": 2250,
-    "redFlagsFound": 28,
+    "totalScans": 46,
+    "articlesProcessed": 2300,
+    "redFlagsFound": 30,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -288,13 +293,44 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 2 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Funding for childcare in all 50 US states has been suspended due to allegations of widespread fraud in Minnesota daycare centers",
+          "insight": "Significant financial implications and potential widespread fraud",
+          "entities": [
+            "Minnesota daycare centers"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "facebook.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR0tfNnJBS3pyZVVZaTZoZDFtdUNQaHl4Z3FSR0NobE1YV0xyQi13TUIwRlE4ZGczaWM3NlNWZGdwekh1bkxnTmxCNG1RNDE1bUtNTE9SWEFVbGprRmtWU05EeHp4eFdvLTM2Z0hLZnpZa0xGNzFSN3EtdmV6QkRiMGoxaGQ3blJn"
+        },
+        {
+          "type": "federal_freeze",
+          "description": "Small Business Administration suspends loans to thousands of Minnesota borrowers over $400m scam",
+          "insight": "Significant financial implications and potential widespread fraud",
+          "entities": [
+            "Minnesota borrowers"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Bring Me The News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlJNOE9Ed0h3SURmazNKZXVMeUQzNnJDX2tJeVNSSTNlWms4YnFQVVNlcHF3dWRuQU11QVBfOTRuZDBUZ2ktZl9OVkRxRUtjbWRjUkdULWlQQ0d0YmdLQ3M3d0RTMWVfaGxPVXJPX1RmWDFDZzRKLUNkVms2eXpMTklHMThWU3FES2Y4dDBaRjFjOGgyaUl1OWRySlVfNXdocjVXSjV6d1lMaWFLeHR0NWFxdlpKajJXMFNmdG5kbw"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $6.9B allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $400M allegedly go in Minnesota Daycare Fraud Investigation?"
+        "What specific allegations exist against Unknown?",
+        "Where did the $1M+ allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the $100M+ allegedly go in Minnesota Day Care Fraud Investigation?"
       ]
     },
     {
@@ -311,6 +347,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-02T19:13:52.658Z",
-  "lastUpdated": "2026-01-02T19:13:52.659Z"
+  "lastReflection": "2026-01-02T20:22:03.087Z",
+  "lastUpdated": "2026-01-02T20:22:03.088Z"
 }
