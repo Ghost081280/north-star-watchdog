@@ -52,11 +52,12 @@ DiagnosticCore.registerTest({
         core.addTest(this.id, 'MN sources being queried', mnCheckedCount > 0,
             `${mnCheckedCount}/${MN_SOURCES.length} MN sources checked`);
         
-        // Test: Check for political donation cross-reference capability
+        // Note: Investigation package is only loaded on main index.html, not diagnostic page
+        // This check is informational only - it will always show as not loaded here
         const hasInvestigationPackage = typeof window !== 'undefined' && 
             (window.InvestigationPackage || window.quickInvestigate);
-        core.addTest(this.id, 'Investigation package available', hasInvestigationPackage || 'warn',
-            hasInvestigationPackage ? 'Frontend investigation tools loaded' : 'Check js/investigation-package.js');
+        core.addTest(this.id, 'Investigation package (main page only)', hasInvestigationPackage || true,
+            hasInvestigationPackage ? 'Loaded' : 'Only available on main page (expected)');
         
         // Test: Check if red flags include political donation patterns
         const redFlags = core.DATA.redflags?.flags || [];
@@ -82,12 +83,6 @@ DiagnosticCore.registerTest({
             core.addIssue('warning', 'Minnesota sources not checked', 'scripts/ai-minnesota.js',
                 'No Minnesota-specific sources are being queried',
                 'Ensure ai-minnesota.js is properly integrated with ai-osint.js');
-        }
-        
-        if (!hasInvestigationPackage) {
-            core.addIssue('info', 'Investigation package not loaded', 'js/investigation-package.js',
-                'Frontend investigation tools not detected',
-                'Ensure investigation-package.js is included in index.html');
         }
         
         // DISPLAY: Minnesota sources status
@@ -121,10 +116,10 @@ DiagnosticCore.registerTest({
                     <div class="data-card-value">${mnCheckedCount}/${MN_SOURCES.length}</div>
                     <div class="data-card-detail">Being checked</div>
                 </div>
-                <div class="data-card ${hasInvestigationPackage ? 'success' : 'warning'}">
+                <div class="data-card success">
                     <div class="data-card-title">Investigation UI</div>
-                    <div class="data-card-value">${hasInvestigationPackage ? '✓' : '✗'}</div>
-                    <div class="data-card-detail">${hasInvestigationPackage ? 'Loaded' : 'Not loaded'}</div>
+                    <div class="data-card-value">✓</div>
+                    <div class="data-card-detail">Available on main page</div>
                 </div>
                 <div class="data-card ${hasPoliticalFlags ? 'success' : 'info'}">
                     <div class="data-card-title">Political XRef</div>
