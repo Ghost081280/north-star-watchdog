@@ -150,6 +150,11 @@
       "date": "2026-01-02T01:38:12.752Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-02T03:29:59.901Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [],
@@ -173,9 +178,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 28,
-    "articlesProcessed": 1400,
-    "redFlagsFound": 7,
+    "totalScans": 29,
+    "articlesProcessed": 1450,
+    "redFlagsFound": 8,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -183,26 +188,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "Federal funding freeze for childcare programs in all 50 states due to alleged fraud in Minnesota",
-          "insight": "The rapid expansion of a federal funding freeze suggests a significant concern about the integrity of childcare assistance programs nationwide. This could indicate a larger issue with program oversight and potential vulnerabilities to fraud.",
-          "entities": [
-            "Minnesota Department of Health and Human Services",
-            "US Department of Health and Human Services"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Federal funding freeze to Daycares now expanded to all 50 states - KLKN-TV",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOU1lPV2QwYlhBUDFxSUVKR3RFUlQtc0hIZTlmcnBLSy0xdzV1NzZRTnVYZ2pwbzZmSUxYdUVYN3VXNlVFT2R6MTktWXBwamxPWm1uY1pfQVlZUzN5a3prUU9fYnZfRXhWSmZFZktjVDROMXduT0NHc083a3c5bXlnZ2tEV0drNFNSVVNqSVd1VFZvdw"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -219,6 +204,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-02T01:38:12.752Z",
-  "lastUpdated": "2026-01-02T01:38:12.753Z"
+  "lastReflection": "2026-01-02T03:29:59.901Z",
+  "lastUpdated": "2026-01-02T03:29:59.901Z"
 }
