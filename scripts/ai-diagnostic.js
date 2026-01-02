@@ -395,6 +395,59 @@ function detectIssues() {
         }
     }
     
+    // 10. Check for self-awareness initialization
+    const selfAwareness = readJsonSafe('self-awareness.json');
+    if (!selfAwareness.exists) {
+        issues.push({
+            id: 'self-awareness-missing',
+            severity: 'warning',
+            component: 'scripts/ai-self-awareness.js',
+            description: 'Agent Polaris has not scanned its own codebase yet',
+            fixable: true,
+            fix: 'Run: node scripts/ai-self-awareness.js to initialize self-awareness'
+        });
+    } else if (selfAwareness.valid) {
+        // Check if self-awareness is stale (older than 7 days)
+        const timestamp = new Date(selfAwareness.data.timestamp);
+        const ageHours = (Date.now() - timestamp.getTime()) / (1000 * 60 * 60);
+        if (ageHours > 168) { // 7 days
+            issues.push({
+                id: 'self-awareness-stale',
+                severity: 'info',
+                component: 'scripts/ai-self-awareness.js',
+                description: `Self-awareness report is ${Math.floor(ageHours / 24)} days old`,
+                fixable: true,
+                fix: 'Run: node scripts/ai-self-awareness.js to refresh self-awareness'
+            });
+        }
+        
+        // Check self-awareness health
+        if (selfAwareness.data.health && selfAwareness.data.health.score < 80) {
+            issues.push({
+                id: 'self-awareness-unhealthy',
+                severity: 'warning',
+                component: 'Codebase',
+                description: `Self-awareness health is ${selfAwareness.data.health.score}%: ${selfAwareness.data.health.issues?.join(', ') || 'Unknown issues'}`,
+                fixable: false,
+                fix: 'Review self-awareness.json for specific issues'
+            });
+        }
+        
+        // Report any limitations found
+        if (selfAwareness.data.limitations && selfAwareness.data.limitations.length > 0) {
+            for (const limit of selfAwareness.data.limitations) {
+                issues.push({
+                    id: `limitation-${limit.area.toLowerCase().replace(/\s+/g, '-')}`,
+                    severity: 'info',
+                    component: limit.area,
+                    description: `${limit.issue}: ${limit.impact}`,
+                    fixable: false,
+                    fix: limit.suggestion
+                });
+            }
+        }
+    }
+    
     return issues;
 }
 
@@ -582,8 +635,24 @@ async function runFullDiagnostic() {
         repairs: [],
         groq: null,
         osint: null,
-        dataFiles: null
+        dataFiles: null,
+        selfAwareness: null
     };
+    
+    // 0. Check Self-Awareness
+    console.log('  [0/5] Checking self-awareness...');
+    const selfAwareness = readJsonSafe('self-awareness.json');
+    if (selfAwareness.exists && selfAwareness.valid) {
+        results.selfAwareness = selfAwareness.data;
+        console.log(`    ✓ Self-aware: ${selfAwareness.data.capabilities?.length || 0} capabilities, ${selfAwareness.data.health?.score || 0}% health`);
+        results.tests.passed++;
+    } else if (!selfAwareness.exists) {
+        console.log('    ⚠ Self-awareness not initialized');
+        results.tests.warnings++;
+    } else {
+        console.log('    ❌ Self-awareness data corrupted');
+        results.tests.failed++;
+    }
     
     // 1. Test GROQ API
     console.log('  [1/5] Testing GROQ API...');
