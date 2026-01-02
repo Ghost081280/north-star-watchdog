@@ -120,6 +120,11 @@
       "date": "2026-01-02T00:21:56.209Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-02T00:29:07.976Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [],
@@ -128,7 +133,8 @@
     "Which entities have federal funding relationships?",
     "Are there patterns in nonprofit formation dates?",
     "What other organizations is Not Applicable connected to?",
-    "Where did the Nationwide childcare funding freeze allegedly go in Minnesota Childcare Fraud Investigation?"
+    "Where did the Nationwide childcare funding freeze allegedly go in Minnesota Childcare Fraud Investigation?",
+    "Where did the $250 million allegedly go in Minnesota Child Care Assistance Program Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -138,21 +144,42 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 22,
-    "articlesProcessed": 1100,
-    "redFlagsFound": 1,
+    "totalScans": 23,
+    "articlesProcessed": 1150,
+    "redFlagsFound": 2,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
     "issuesVerified": 0,
     "tweetsPosted": 0
   },
-  "currentFocus": [],
+  "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The federal government has frozen child care payments nationwide amid an expanding fraud investigation in Minnesota.",
+          "insight": "The freeze suggests that the alleged fraud in Minnesota's child care assistance program may be more widespread than initially thought, and that the federal government is taking steps to prevent further abuse.",
+          "entities": [
+            "Minnesota Department of Human Services",
+            "HHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "New York Post",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPLWdSNjJSYnU2cC1vSkNFMnQzYmFySkpIMHBUR00wX29uMlpvSWhySHFOdkpHdnkwcEp1QTVqQkdSSjFyd1F6WWRKYjhoazBjNWFZWm15bXRXZDBWb2tJYkRJa3FWM1lyTlFWNUJpZ0NweTFlZWYySTNUVmxyQkNxTDdxVU1NbE5BazRoZ1loZVJmaFYtc3drT2RYU3VzdU52Zkh1Q0RYdVdGU0RqS2RUaklPTVBjalhXZi03bER4bFFQSTVkbmhGdHM2WHZFbHNrcXFWdDdhUHptNzZTcDdBY2pHMGNFSjZKdjN4X0ozU2o"
+        }
+      ]
+    }
+  ],
   "improvementGoals": [
     "Improve entity extraction accuracy",
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-02T00:21:56.209Z",
-  "lastUpdated": "2026-01-02T00:21:56.210Z"
+  "lastReflection": "2026-01-02T00:29:07.976Z",
+  "lastUpdated": "2026-01-02T00:29:07.977Z"
 }
