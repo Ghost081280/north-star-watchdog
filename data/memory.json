@@ -240,6 +240,11 @@
       "date": "2026-01-02T20:22:03.087Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-01-02T21:15:42.402Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -253,9 +258,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Not specified?",
-    "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
-    "Where did the $400M allegedly go in SBA Pandemic Loan Fraud Investigation?",
     "Where did the $400M allegedly go in SBA Loan Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -272,7 +274,10 @@
     "What other organizations is No specific individual charged connected to?",
     "What specific allegations exist against No specific individual charged?",
     "Where did the $400m allegedly go in Minnesota childcare fraud investigation?",
-    "Where did the $400m allegedly go in Small Business Administration loan fraud?"
+    "Where did the $400m allegedly go in Small Business Administration loan fraud?",
+    "What other organizations is Carlos Gimenez connected to?",
+    "Where did the $400m allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the $100m allegedly go in COVID-era Lending Programs Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -282,9 +287,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 46,
-    "articlesProcessed": 2300,
-    "redFlagsFound": 30,
+    "totalScans": 47,
+    "articlesProcessed": 2350,
+    "redFlagsFound": 31,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -293,44 +298,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 2 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "Funding for childcare in all 50 US states has been suspended due to allegations of widespread fraud in Minnesota daycare centers",
-          "insight": "Significant financial implications and potential widespread fraud",
-          "entities": [
-            "Minnesota daycare centers"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "facebook.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQR0tfNnJBS3pyZVVZaTZoZDFtdUNQaHl4Z3FSR0NobE1YV0xyQi13TUIwRlE4ZGczaWM3NlNWZGdwekh1bkxnTmxCNG1RNDE1bUtNTE9SWEFVbGprRmtWU05EeHp4eFdvLTM2Z0hLZnpZa0xGNzFSN3EtdmV6QkRiMGoxaGQ3blJn"
-        },
-        {
-          "type": "federal_freeze",
-          "description": "Small Business Administration suspends loans to thousands of Minnesota borrowers over $400m scam",
-          "insight": "Significant financial implications and potential widespread fraud",
-          "entities": [
-            "Minnesota borrowers"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Bring Me The News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlJNOE9Ed0h3SURmazNKZXVMeUQzNnJDX2tJeVNSSTNlWms4YnFQVVNlcHF3dWRuQU11QVBfOTRuZDBUZ2ktZl9OVkRxRUtjbWRjUkdULWlQQ0d0YmdLQ3M3d0RTMWVfaGxPVXJPX1RmWDFDZzRKLUNkVms2eXpMTklHMThWU3FES2Y4dDBaRjFjOGgyaUl1OWRySlVfNXdocjVXSjV6d1lMaWFLeHR0NWFxdlpKajJXMFNmdG5kbw"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Unknown?",
-        "Where did the $1M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Day Care Fraud Investigation?"
+        "What specific allegations exist against Not specified?",
+        "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
+        "Where did the $400M allegedly go in SBA Pandemic Loan Fraud Investigation?"
       ]
     },
     {
@@ -347,6 +321,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-02T20:22:03.087Z",
-  "lastUpdated": "2026-01-02T20:22:03.088Z"
+  "lastReflection": "2026-01-02T21:15:42.402Z",
+  "lastUpdated": "2026-01-02T21:15:42.403Z"
 }
