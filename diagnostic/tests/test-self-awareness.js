@@ -14,9 +14,10 @@ DiagnosticCore.registerTest({
         core.log('Testing AI self-awareness systems...', 'info');
         
         // Try to load self-awareness report
+        // Path is relative to diagnostic/ folder, so go up one level to data/
         let awarenessData = null;
         try {
-            const response = await fetch('data/self-awareness.json');
+            const response = await fetch('../data/self-awareness.json?t=' + Date.now());
             if (response.ok) {
                 awarenessData = await response.json();
             }
