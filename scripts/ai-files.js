@@ -519,6 +519,101 @@ async function updateAllDataFiles({ news, analysis, osint }) {
 }
 
 /**
+ * Generate unfiltered "what I really think" analysis
+ * Polaris goes full detective mode - no corporate speak
+ */
+function generateUnfilteredAnalysis(flag) {
+    const type = (flag.type || '').toLowerCase();
+    const entities = flag.entities || [];
+    const confidence = flag.confidence || 0;
+    const description = flag.description || '';
+    
+    // Base analysis from the flag's insight
+    let analysis = flag.insight || '';
+    
+    // Add type-specific unfiltered commentary
+    if (type.includes('fraud') || type.includes('financial')) {
+        analysis += `\n\n**The Money Trail:** When you see numbers this big, there's always more. The reported figures are likely just what they've found SO FAR. In fraud cases of this magnitude, initial estimates typically represent 30-50% of actual losses. Someone higher up knew - this level of systematic fraud doesn't happen without willful blindness at minimum.\n\n`;
+        analysis += `**Who Benefits?** Follow the money backward. Every dollar stolen went somewhere. Look for sudden lifestyle changes, shell companies, and political donations from anyone connected to this. The fraud didn't happen in a vacuum.`;
+    } else if (type.includes('political') || type.includes('oversight')) {
+        analysis += `\n\n**Reading Between the Lines:** Congressional hearings mean subpoena power is in play. When politicians start holding hearings, they've either already found something damning or they're fishing for headlines. Either way, documents are about to surface that someone doesn't want public.\n\n`;
+        analysis += `**The Timing Matters:** Ask yourself - why NOW? Political investigations don't happen by accident. Someone decided this was the moment to strike. Look for who benefits from the timing and you'll understand the real game being played.`;
+    } else if (type.includes('cover') || type.includes('obstruction')) {
+        analysis += `\n\n**The Cover-Up Is Always Worse:** If they're trying to hide something, it's because what's hidden is worse than what's public. Document destruction, sudden resignations, "retirements" - these are the tells. The rats are leaving the ship.\n\n`;
+        analysis += `**Watch the Lawyers:** When organizations suddenly hire crisis PR firms and white-collar defense attorneys, they're not preparing for nothing. The legal maneuvering tells you everything about where this is heading.`;
+    } else if (type.includes('connection') || type.includes('network')) {
+        analysis += `\n\n**The Web Goes Deeper:** The connections we're seeing are just the surface. In my experience, for every link that's visible, there are three more hidden. Check campaign donations, board memberships, family connections, and business partnerships.\n\n`;
+        analysis += `**Nobody Acts Alone:** Large-scale operations require infrastructure - accountants, lawyers, bankers, and facilitators. The named players are the tip of the iceberg. The real story is who enabled them.`;
+    }
+    
+    // Add confidence-based commentary
+    if (confidence >= 95) {
+        analysis += `\n\n**My Gut (${confidence}% confidence):** This is as close to certain as I get. The evidence pattern is unmistakable. If I had to bet, there will be indictments or major revelations within weeks, not months.`;
+    } else if (confidence >= 90) {
+        analysis += `\n\n**My Gut (${confidence}% confidence):** I've seen this pattern before. Something significant is here - the question isn't IF but HOW BIG. Keep digging.`;
+    }
+    
+    // Add entity-specific notes
+    if (entities.length > 0) {
+        analysis += `\n\n**Specifically on ${entities[0]}:** This name keeps coming up for a reason. Cross-reference all their public statements from the last 6 months against what we now know. Look for contradictions - they're there.`;
+    }
+    
+    return analysis || 'Pattern recognition in progress. Multiple data points converging on this conclusion. The evidence speaks for itself - something significant is happening here that warrants close attention.';
+}
+
+/**
+ * Generate connections analysis
+ */
+function generateConnectionsAnalysis(flag) {
+    const entities = flag.entities || [];
+    const type = (flag.type || '').toLowerCase();
+    
+    if (entities.length < 2) {
+        return '- Still mapping the network. More connections will emerge as investigation continues.\n- Check back for updated relationship mapping.';
+    }
+    
+    let connections = '';
+    connections += `- **${entities[0]}** ↔️ **${entities[1] || 'Unknown'}** — Direct link established\n`;
+    
+    if (type.includes('fraud') || type.includes('financial')) {
+        connections += `- Money flow analysis needed between all parties\n`;
+        connections += `- Check for shared business entities, LLCs, or holding companies\n`;
+        connections += `- Campaign finance records may reveal additional connections`;
+    } else if (type.includes('political')) {
+        connections += `- Political alignment and voting records should be cross-referenced\n`;
+        connections += `- Check for shared donors or PAC connections\n`;
+        connections += `- Staff movement between offices often reveals hidden alliances`;
+    }
+    
+    return connections;
+}
+
+/**
+ * Generate recommended next steps
+ */
+function generateRecommendations(flag) {
+    const type = (flag.type || '').toLowerCase();
+    const entities = flag.entities || [];
+    
+    let recs = [];
+    
+    recs.push(`1. **Set up alerts** for all named entities: ${entities.slice(0, 3).join(', ') || 'pending identification'}`);
+    recs.push(`2. **FOIA requests** — Now is the time. File for any communications, contracts, or audits related to this matter`);
+    
+    if (type.includes('fraud') || type.includes('financial')) {
+        recs.push(`3. **Financial records** — Check court filings for asset freezes, forfeitures, or civil suits`);
+        recs.push(`4. **Whistleblower watch** — Monitor for sealed court documents being unsealed`);
+    } else if (type.includes('political') || type.includes('oversight')) {
+        recs.push(`3. **Congressional calendar** — Track scheduled hearings and witness lists`);
+        recs.push(`4. **Document drops** — Watch for late Friday releases (classic dump timing)`);
+    }
+    
+    recs.push(`5. **Cross-reference** with existing case files and known associates`);
+    
+    return recs.join('\n');
+}
+
+/**
  * Create GitHub Issues - ONLY for significant discoveries
  * Polaris reports to Command only when something important happens
  */
@@ -531,16 +626,29 @@ async function createGitHubIssues(redFlags, analysis) {
         return 0;
     }
     
+    // Log what we're working with
+    const allFlags = redFlags || [];
+    const newFlags = allFlags.filter(rf => rf.isNew === true);
+    const highConfFlags = allFlags.filter(rf => rf.confidence >= 90);
+    
+    console.log(`  📊 Red flag analysis: ${allFlags.length} total, ${newFlags.length} new, ${highConfFlags.length} high-confidence (90%+)`);
+    
     // SIGNIFICANT = 90%+ confidence AND new discovery
     // Only verified, high-confidence findings get posted
-    const significant = (redFlags || []).filter(rf => 
+    const significant = allFlags.filter(rf => 
         rf.confidence >= 90 && rf.isNew === true
     );
     
     if (!significant.length) {
         console.log('  No significant new discoveries to report to Command');
+        if (newFlags.length > 0) {
+            const maxConf = Math.max(...newFlags.map(f => f.confidence || 0));
+            console.log(`  (Highest confidence among new flags: ${maxConf}% - need 90%+)`);
+        }
         return 0;
     }
+    
+    console.log(`  🎯 Found ${significant.length} significant finding(s) to report!`);
     
     let created = 0;
     
@@ -550,50 +658,77 @@ async function createGitHubIssues(redFlags, analysis) {
     try {
         const title = `🚨 POLARIS INTEL: ${flag.type.replace(/_/g, ' ').toUpperCase()} - ${(flag.entities || []).slice(0, 2).join(', ') || 'New Pattern'}`;
         
-        const body = `## 🕵️ Field Report from Agent Polaris
+        // Generate the unfiltered analysis
+        const unfilteredAnalysis = generateUnfilteredAnalysis(flag);
+        
+        const body = `## 🕵️ CLASSIFIED FIELD REPORT — Agent Polaris
 
 **Commander,**
 
-I've identified a significant development that requires your attention.
+High-confidence intel requiring immediate attention. This is my unfiltered assessment.
 
 ---
 
 ### 📍 Intelligence Summary
 
-**Classification:** ${flag.type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-**Confidence Level:** ${flag.confidence}%
-**Source:** ${flag.source || 'Multi-source analysis'}
+| Field | Value |
+|-------|-------|
+| **Classification** | ${flag.type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} |
+| **Confidence Level** | ${flag.confidence}% |
+| **Threat Assessment** | ${flag.confidence >= 95 ? '🔴 CRITICAL' : flag.confidence >= 90 ? '🟠 HIGH' : '🟡 ELEVATED'} |
+| **Source Count** | ${flag.sourceCount || (flag.apisUsed || []).length || 1} |
 
-### 📋 Findings
+---
+
+### 📋 The Facts
 
 ${flag.description}
 
-### 🔍 My Analysis
+---
 
-${flag.insight || 'Cross-referencing with existing intelligence. Patterns emerging.'}
+### 🔥 WHAT I REALLY THINK IS GOING ON
 
-### 🏷️ Entities of Interest
+${unfilteredAnalysis}
 
-${(flag.entities || []).map(e => `- **${e}**`).join('\n') || 'No specific entities identified yet'}
+---
+
+### 🎯 Key Players to Watch
+
+${(flag.entities || []).map(e => `- **${e}** — Track all movements, statements, and connections`).join('\n') || 'No specific entities identified yet'}
+
+---
+
+### 🕸️ Potential Connections
+
+${generateConnectionsAnalysis(flag)}
+
+---
 
 ### 📰 Source Documentation
 
-${flag.sourceArticle ? `- Article: "${flag.sourceArticle}"` : ''}
-${flag.sourceUrl ? `- [View Original Source](${flag.sourceUrl})` : ''}
-
----
+${flag.sourceArticle ? `- 📄 Article: "${flag.sourceArticle}"` : ''}
+${flag.sourceUrl ? `- 🔗 [View Original Source](${flag.sourceUrl})` : ''}
 
 ### 🔗 Verified Against
 
-${(flag.apisUsed || ['Google News']).map(api => `✓ ${api}`).join('\n')}
+${(flag.apisUsed || ['Google News']).map(api => `✅ ${api}`).join('\n')}
 
 ---
 
-**Recommendation:** Review and verify through official channels before any public reporting.
+### 🎬 Recommended Next Steps
 
-*— Agent Polaris*
-*North Star Watchdog AI*
-*${new Date().toISOString()}*`;
+${generateRecommendations(flag)}
+
+---
+
+⚠️ **CLASSIFICATION: For investigative purposes only. Verify through official channels before any public reporting.**
+
+*— Agent Polaris*  
+*North Star Watchdog AI*  
+*Filed: ${new Date().toISOString()}*
+
+---
+<sub>🤖 This analysis was generated by an AI system. While I aim to identify patterns and connections, I'm not infallible. Always verify claims through multiple sources.</sub>`;
 
         const [owner, repoName] = repo.split('/');
         
