@@ -1,19 +1,6 @@
 {
   "scans": [
     {
-      "timestamp": "2026-01-01T19:50:43.685Z",
-      "articles": 50,
-      "figures": 0,
-      "redFlags": 0,
-      "osintHits": 0,
-      "significance": "routine",
-      "model": "llama-3.3-70b-versatile",
-      "duration": "15.1s",
-      "errors": [],
-      "xPosted": false,
-      "issuesCreated": 0
-    },
-    {
       "timestamp": "2026-01-01T19:54:34.206Z",
       "articles": 50,
       "figures": 0,
@@ -649,14 +636,27 @@
       "errors": [],
       "xPosted": false,
       "issuesCreated": 0
+    },
+    {
+      "timestamp": "2026-01-03T05:20:35.546Z",
+      "articles": 50,
+      "figures": 0,
+      "redFlags": 1,
+      "osintHits": 10,
+      "significance": "routine",
+      "model": "llama-3.3-70b-versatile",
+      "duration": "61.0s",
+      "errors": [],
+      "xPosted": false,
+      "issuesCreated": 0
     }
   ],
   "stats": {
-    "totalScans": 52,
+    "totalScans": 53,
     "avgDuration": "65.5s",
     "successRate": 1,
     "avgRedFlagsPerScan": "1.2",
-    "avgOsintHitsPerScan": "11.1",
-    "lastUpdated": "2026-01-03T04:32:00.576Z"
+    "avgOsintHitsPerScan": "11.0",
+    "lastUpdated": "2026-01-03T05:20:35.546Z"
   }
 }
