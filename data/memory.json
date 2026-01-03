@@ -280,20 +280,24 @@
       "date": "2026-01-03T06:29:27.034Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-03T07:19:04.551Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
     {
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
-      "confidence": 0.5,
-      "count": 1,
+      "confidence": 0.55,
+      "count": 2,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-02T15:20:49.714Z"
+      "lastSeen": "2026-01-03T07:19:04.552Z"
     }
   ],
   "openQuestions": [
-    "Where did the $16M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Saint Paul Physical Therapist connected to?",
     "Where did the $102K allegedly go in Minnesota Daycare Fraud Investigation?",
@@ -312,7 +316,8 @@
     "What other organizations is Not available connected to?",
     "Where did the Not specified allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the Not Specified allegedly go in Child Care Fraud Probe?"
+    "Where did the Not Specified allegedly go in Child Care Fraud Probe?",
+    "Where did the $1B+ allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -322,9 +327,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 54,
-    "articlesProcessed": 2700,
-    "redFlagsFound": 37,
+    "totalScans": 55,
+    "articlesProcessed": 2750,
+    "redFlagsFound": 39,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -333,13 +338,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The Trump administration has frozen federal child care funds amid Minnesota fraud allegations.",
+          "insight": "This freeze indicates a significant concern at the federal level about the integrity of child care programs in Minnesota, potentially indicating a larger issue.",
+          "entities": [
+            "Minnesota Department of Human Services",
+            "US Department of Health and Human Services"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "ABC News",
+          "sourceUrl": "https://abcnews.go.com/news/minnesota-must-provide-documents-us-government-child-care-fraud-probe-next-week"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Ilhan Omar?",
         "Where did the $16M allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
+        "What other organizations is Saint Paul Physical Therapist connected to?"
       ]
     },
     {
@@ -356,6 +381,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-03T06:29:27.034Z",
-  "lastUpdated": "2026-01-03T06:29:27.035Z"
+  "lastReflection": "2026-01-03T07:19:04.551Z",
+  "lastUpdated": "2026-01-03T07:19:04.552Z"
 }
