@@ -425,6 +425,11 @@
       "date": "2026-01-04T13:29:22.940Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-04T14:23:46.707Z",
+      "summary": "Routine scan - no significant findings",
+      "confidence": 0
     }
   ],
   "patterns": [
@@ -467,7 +472,7 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 83,
+    "totalScans": 84,
     "articlesProcessed": 4150,
     "redFlagsFound": 70,
     "accuratePredictions": 0,
@@ -478,33 +483,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud scheme",
-          "description": "Allegations of a $2 billion fraud scheme in Minnesota's child care programs.",
-          "insight": "The scale of the alleged fraud suggests a complex and potentially long-standing issue within Minnesota's child care system. It also implies significant financial losses and potential harm to those in need of child care services.",
-          "entities": [
-            "Minnesota",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Various news reports",
-          "sourceUrl": "https://www.aol.com/epicenter-fraud-minnesotas-empty-stomachs-fake-autism-therapy-scandal-could-top-2-billion-2026-01-04"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota daycare fraud investigation?",
         "What other organizations is Nicolas Maduro connected to?",
-        "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Probe?"
+        "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Probe?",
+        "Where did the Not Disclosed allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     }
   ],
@@ -513,6 +498,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-04T13:29:22.940Z",
-  "lastUpdated": "2026-01-04T13:29:22.940Z"
+  "lastReflection": "2026-01-04T14:23:46.707Z",
+  "lastUpdated": "2026-01-04T14:23:46.707Z"
 }
