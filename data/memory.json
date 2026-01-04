@@ -385,21 +385,24 @@
       "date": "2026-01-04T05:24:53.545Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-04T06:30:06.500Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
     {
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
-      "confidence": 0.6000000000000001,
-      "count": 3,
+      "confidence": 0.6500000000000001,
+      "count": 4,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-03T10:20:17.384Z"
+      "lastSeen": "2026-01-04T06:30:06.500Z"
     }
   ],
   "openQuestions": [
-    "Where did the $1B allegedly go in Minnesota Child Care Fraud Probe?",
-    "What other organizations is No new figures charged this hour connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $2 billion allegedly go in Minnesota Child Care Fraud?",
     "What other organizations is Not specified in the intel connected to?",
@@ -417,7 +420,9 @@
     "What other organizations is Aimee Bock connected to?",
     "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $250 million allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the $2 billion allegedly go in Venezuela Strike Investigation?"
+    "Where did the $2 billion allegedly go in Venezuela Strike Investigation?",
+    "What specific allegations exist against Nicolás Maduro?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -427,9 +432,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 75,
-    "articlesProcessed": 3750,
-    "redFlagsFound": 59,
+    "totalScans": 76,
+    "articlesProcessed": 3800,
+    "redFlagsFound": 61,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -438,13 +443,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "Federal freeze on Minnesota child care funding",
+          "insight": "This suggests a significant concern about the oversight and potential fraud in Minnesota's child care programs.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Federal government",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZ3N6VXE4UFQ4TW1ZaWF3UjU3MkRyVFBYbUdnWkdmaV9nRW1aR1ROekpMQVFzckZIV0dfUTRPc3h6ZjR1djVYM1J4U3hab2M3Vl9sYUJIR212V1pKZ1JDdFdwNmczaFowRG4wWW1mRVdDbHIybjVqT2FCa2NLWFZ1dGhOUU1sdnVrX2h0a0I1a2J1aXExSnpabW1rbnNvWWl0ek9zWnFn"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
         "Where did the $1B allegedly go in Minnesota Child Care Fraud Probe?",
-        "What other organizations is No new figures charged this hour connected to?"
+        "What other organizations is No new figures charged this hour connected to?",
+        "What specific allegations exist against Not specified?"
       ]
     }
   ],
@@ -453,6 +477,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-04T05:24:53.545Z",
-  "lastUpdated": "2026-01-04T05:24:53.546Z"
+  "lastReflection": "2026-01-04T06:30:06.500Z",
+  "lastUpdated": "2026-01-04T06:30:06.500Z"
 }
