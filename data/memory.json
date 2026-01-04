@@ -420,20 +420,24 @@
       "date": "2026-01-04T12:38:00.578Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-04T13:29:22.940Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
     {
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
-      "confidence": 0.7500000000000002,
-      "count": 6,
+      "confidence": 0.8000000000000003,
+      "count": 7,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-04T09:19:15.658Z"
+      "lastSeen": "2026-01-04T13:29:22.940Z"
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota daycare fraud investigation?",
     "What other organizations is Nicolas Maduro connected to?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Probe?",
     "Where did the Not Disclosed allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -452,7 +456,8 @@
     "Where did the $250 million allegedly go in Feeding Our Future COVID Fraud Scheme?",
     "Where did the N/A allegedly go in Trump Administration’s Unauthorized Military Action in Venezuela?",
     "Where did the $250 million allegedly go in Feeding Our Future COVID fraud scheme?",
-    "Where did the $2 billion allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $2 billion allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $250 million allegedly go in SBA Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -462,9 +467,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 82,
-    "articlesProcessed": 4100,
-    "redFlagsFound": 68,
+    "totalScans": 83,
+    "articlesProcessed": 4150,
+    "redFlagsFound": 70,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -472,6 +477,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud scheme",
+          "description": "Allegations of a $2 billion fraud scheme in Minnesota's child care programs.",
+          "insight": "The scale of the alleged fraud suggests a complex and potentially long-standing issue within Minnesota's child care system. It also implies significant financial losses and potential harm to those in need of child care services.",
+          "entities": [
+            "Minnesota",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Various news reports",
+          "sourceUrl": "https://www.aol.com/epicenter-fraud-minnesotas-empty-stomachs-fake-autism-therapy-scandal-could-top-2-billion-2026-01-04"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -488,6 +513,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-04T12:38:00.578Z",
-  "lastUpdated": "2026-01-04T12:38:00.578Z"
+  "lastReflection": "2026-01-04T13:29:22.940Z",
+  "lastUpdated": "2026-01-04T13:29:22.940Z"
 }
