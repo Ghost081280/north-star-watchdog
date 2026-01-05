@@ -505,16 +505,21 @@
       "date": "2026-01-05T07:28:16.807Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-05T08:31:40.568Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
     {
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
-      "confidence": 0.8500000000000003,
-      "count": 8,
+      "confidence": 0.9000000000000004,
+      "count": 9,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-04T21:18:16.188Z"
+      "lastSeen": "2026-01-05T08:31:40.569Z"
     }
   ],
   "openQuestions": [
@@ -547,9 +552,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 99,
-    "articlesProcessed": 4900,
-    "redFlagsFound": 84,
+    "totalScans": 100,
+    "articlesProcessed": 4950,
+    "redFlagsFound": 86,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -562,9 +567,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2 billion allegedly go in Venezuela Strike Investigation?",
         "What specific allegations exist against Nicolás Maduro?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against Tim Walz?"
       ]
     }
   ],
@@ -573,6 +578,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-05T07:28:16.807Z",
-  "lastUpdated": "2026-01-05T07:28:16.809Z"
+  "lastReflection": "2026-01-05T08:31:40.568Z",
+  "lastUpdated": "2026-01-05T08:31:40.569Z"
 }
