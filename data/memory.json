@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T00:53:59.025Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T01:35:45.859Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-06T11:18:28.476Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-06T12:41:45.500Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -523,8 +523,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1B+ allegedly go in Minnesota Welfare Fraud Scandal?",
-    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is 98 individuals connected to?",
     "Where did the unknown allegedly go in Minnesota Fraud Scandal?",
     "Are any of these 2 figures connected to each other?",
@@ -542,7 +540,9 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the $10 Billion allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $10B+ allegedly go in Minnesota Welfare Fraud Scandal?",
-    "Where did the $10 billion allegedly go in Minnesota Welfare-Fraud Scandal?"
+    "Where did the $10 billion allegedly go in Minnesota Welfare-Fraud Scandal?",
+    "Where did the $100M+ allegedly go in Feeding Our Future Fraud Investigation?",
+    "Where did the TBD allegedly go in Texas Child Care Funding Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -552,9 +552,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 125,
-    "articlesProcessed": 6200,
-    "redFlagsFound": 115,
+    "totalScans": 126,
+    "articlesProcessed": 6250,
+    "redFlagsFound": 116,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -567,9 +567,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.2B allegedly go in Minnesota Child Care Fraud Scandal?",
         "Where did the $1B+ allegedly go in Minnesota Welfare Fraud Scandal?",
-        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
+        "What other organizations is 98 individuals connected to?"
       ]
     }
   ],
@@ -578,6 +578,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-06T11:18:28.476Z",
-  "lastUpdated": "2026-01-06T11:18:28.477Z"
+  "lastReflection": "2026-01-06T12:41:45.500Z",
+  "lastUpdated": "2026-01-06T12:41:45.501Z"
 }
