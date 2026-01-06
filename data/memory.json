@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T07:23:09.109Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T08:28:06.373Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,29 +505,32 @@
       "date": "2026-01-06T18:30:34.928Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-06T19:16:21.948Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
     {
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
-      "confidence": 0.9000000000000004,
-      "count": 9,
+      "confidence": 0.95,
+      "count": 10,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-05T08:31:40.569Z"
+      "lastSeen": "2026-01-06T19:16:21.949Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.5,
-      "count": 1,
+      "confidence": 0.55,
+      "count": 2,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-06T14:21:31.952Z"
+      "lastSeen": "2026-01-06T19:16:21.949Z"
     }
   ],
   "openQuestions": [
-    "Where did the $185M allegedly go in Minnesota Child Care Funding Investigation?",
-    "Where did the N/A allegedly go in Texas Child Care Funding Investigation?",
     "Where did the $10 Billion allegedly go in Minnesota Child Care Funding Investigation?",
     "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
     "Where did the $10B allegedly go in Trump Administration's Child Care Funding Freeze?",
@@ -550,7 +548,9 @@
     "Where did the $10 billion allegedly go in Minnesota Child Care Funding Fraud?",
     "What other organizations is Nicolas Maduro connected to?",
     "Where did the $10 Billion allegedly go in Child Care Funding Freeze Investigation?",
-    "Where did the $100 Million allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $100 Million allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $10B allegedly go in Minnesota Welfare Fraud Probe?",
+    "Where did the $10B allegedly go in Trump Administration's Freeze on Child Care Funding?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 132,
-    "articlesProcessed": 6550,
-    "redFlagsFound": 123,
+    "totalScans": 133,
+    "articlesProcessed": 6600,
+    "redFlagsFound": 125,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Texas Child Care Funding Fraud Investigation?",
-        "Where did the unknown allegedly go in Texas Child Care Service Program Investigation?",
-        "Where did the $10B+ allegedly go in Minnesota Child Care Center Fraud Investigation?"
+        "Where did the $185M allegedly go in Minnesota Child Care Funding Investigation?",
+        "Where did the N/A allegedly go in Texas Child Care Funding Investigation?",
+        "Where did the $10 Billion allegedly go in Minnesota Child Care Funding Investigation?"
       ]
     },
     {
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-06T18:30:34.928Z",
-  "lastUpdated": "2026-01-06T18:30:34.928Z"
+  "lastReflection": "2026-01-06T19:16:21.948Z",
+  "lastUpdated": "2026-01-06T19:16:21.949Z"
 }
