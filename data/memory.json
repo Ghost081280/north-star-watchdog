@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T05:24:28.162Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T06:31:21.442Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-06T16:27:20.496Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-06T17:22:53.149Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the billion-dollar allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $10B allegedly go in Texas Child Care Funding Fraud Investigation?",
     "Where did the unknown allegedly go in Texas Child Care Service Program Investigation?",
     "Where did the $10B+ allegedly go in Minnesota Child Care Center Fraud Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $1B+ allegedly go in Minnesota Child Care Funding Investigation?",
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $10B allegedly go in Minnesota Fraud Scandal?",
-    "Where did the $10B allegedly go in Childcare Funding Freeze?"
+    "Where did the $10B allegedly go in Childcare Funding Freeze?",
+    "Where did the $10 billion allegedly go in Minnesota Child Care Funding Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 130,
-    "articlesProcessed": 6450,
-    "redFlagsFound": 121,
+    "totalScans": 131,
+    "articlesProcessed": 6500,
+    "redFlagsFound": 122,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-06T16:27:20.496Z",
-  "lastUpdated": "2026-01-06T16:27:20.496Z"
+  "lastReflection": "2026-01-06T17:22:53.149Z",
+  "lastUpdated": "2026-01-06T17:22:53.150Z"
 }
