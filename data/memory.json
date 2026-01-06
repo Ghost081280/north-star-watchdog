@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-01T23:41:52.152Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-01T23:58:21.283Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-05T23:19:45.977Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-06T01:29:13.794Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -523,7 +523,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Danny Kapales connected to?",
     "Where did the $1.5 million allegedly go in Minnesota Childcare Fraud Investigation?",
     "What other organizations is Maduro connected to?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -542,7 +541,8 @@
     "Are any of these 2 figures connected to each other?",
     "Where did the $10B+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the billion-dollar allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $10B allegedly go in Texas Child Care Funding Fraud Investigation?"
+    "Where did the $10B allegedly go in Texas Child Care Funding Fraud Investigation?",
+    "Where did the unknown allegedly go in Texas Child Care Service Program Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -552,9 +552,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 115,
-    "articlesProcessed": 5700,
-    "redFlagsFound": 101,
+    "totalScans": 116,
+    "articlesProcessed": 5750,
+    "redFlagsFound": 102,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -567,9 +567,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.5 million allegedly go in Minnesota Child Care Fraud Investigation?",
         "What other organizations is Danny Kapales connected to?",
-        "Where did the $1.5 million allegedly go in Minnesota Childcare Fraud Investigation?"
+        "Where did the $1.5 million allegedly go in Minnesota Childcare Fraud Investigation?",
+        "What other organizations is Maduro connected to?"
       ]
     }
   ],
@@ -578,6 +578,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-05T23:19:45.977Z",
-  "lastUpdated": "2026-01-05T23:19:45.978Z"
+  "lastReflection": "2026-01-06T01:29:13.794Z",
+  "lastUpdated": "2026-01-06T01:29:13.795Z"
 }
