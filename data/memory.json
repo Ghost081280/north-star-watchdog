@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T00:20:17.640Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-02T00:21:56.209Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-06T06:32:45.755Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-01-06T07:25:17.948Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -523,8 +523,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $9 Billion allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $4M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud?",
@@ -542,7 +540,9 @@
     "Where did the $10B+ allegedly go in Minnesota Child Care Center Fraud Investigation?",
     "Where did the $185M allegedly go in Minnesota Child Care Funding Investigation?",
     "Where did the N/A allegedly go in Texas Child Care Funding Investigation?",
-    "Where did the $10 Billion allegedly go in Minnesota Child Care Funding Investigation?"
+    "Where did the $10 Billion allegedly go in Minnesota Child Care Funding Investigation?",
+    "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
+    "Where did the $10B allegedly go in Trump Administration's Child Care Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -552,9 +552,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 120,
-    "articlesProcessed": 5950,
-    "redFlagsFound": 108,
+    "totalScans": 121,
+    "articlesProcessed": 6000,
+    "redFlagsFound": 110,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -567,9 +567,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B allegedly go in COVID-era Loans Fraud Investigation?",
         "What other organizations is Tim Walz connected to?",
-        "Where did the $9 Billion allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $9 Billion allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $4M allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     }
   ],
@@ -578,6 +578,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-06T06:32:45.755Z",
-  "lastUpdated": "2026-01-06T06:32:45.755Z"
+  "lastReflection": "2026-01-06T07:25:17.948Z",
+  "lastUpdated": "2026-01-06T07:25:17.949Z"
 }
