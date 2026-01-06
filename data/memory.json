@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T09:23:48.393Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T10:20:50.740Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-06T20:22:48.770Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-06T21:20:23.101Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,25 +517,20 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 10,
+      "count": 11,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-06T19:16:21.949Z"
+      "lastSeen": "2026-01-06T21:20:23.101Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.55,
-      "count": 2,
+      "confidence": 0.6000000000000001,
+      "count": 3,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-06T19:16:21.949Z"
+      "lastSeen": "2026-01-06T21:20:23.101Z"
     }
   ],
   "openQuestions": [
-    "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
-    "Where did the $10B allegedly go in Trump Administration's Child Care Funding Freeze?",
-    "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?",
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $10 Billion allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $10B+ allegedly go in Minnesota Welfare Fraud Scandal?",
     "Where did the $10 billion allegedly go in Minnesota Welfare-Fraud Scandal?",
     "Where did the $100M+ allegedly go in Feeding Our Future Fraud Investigation?",
@@ -550,7 +545,12 @@
     "Where did the $100 Million allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $10B allegedly go in Minnesota Welfare Fraud Probe?",
     "Where did the $10B allegedly go in Trump Administration's Freeze on Child Care Funding?",
-    "Where did the $10B allegedly go in Trump Administration Child Care Funding Freeze?"
+    "Where did the $10B allegedly go in Trump Administration Child Care Funding Freeze?",
+    "What other organizations is Minnesota Man connected to?",
+    "What other organizations is Staffer connected to?",
+    "Where did the $10 billion allegedly go in Trump Administration's Freeze on Child Care Funding?",
+    "Where did the Unknown allegedly go in Minnesota Fraud Scandal?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 134,
-    "articlesProcessed": 6650,
-    "redFlagsFound": 127,
+    "totalScans": 135,
+    "articlesProcessed": 6700,
+    "redFlagsFound": 129,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10 Billion allegedly go in Minnesota Child Care Funding Investigation?",
         "Where did the $185M allegedly go in Minnesota Day Care Fraud Investigation?",
-        "Where did the $10B allegedly go in Trump Administration's Child Care Funding Freeze?"
+        "Where did the $10B allegedly go in Trump Administration's Child Care Funding Freeze?",
+        "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?"
       ]
     },
     {
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-06T20:22:48.770Z",
-  "lastUpdated": "2026-01-06T20:22:48.771Z"
+  "lastReflection": "2026-01-06T21:20:23.101Z",
+  "lastUpdated": "2026-01-06T21:20:23.101Z"
 }
