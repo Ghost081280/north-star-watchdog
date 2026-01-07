@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T19:13:52.658Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-02T20:22:03.087Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-01-07T08:29:10.237Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-07T09:27:44.684Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -524,15 +524,13 @@
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.7000000000000002,
-      "count": 5,
+      "confidence": 0.7500000000000002,
+      "count": 6,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-07T07:24:46.230Z"
+      "lastSeen": "2026-01-07T09:27:44.684Z"
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Minnesota Welfare Fraud Probe?",
-    "Where did the $10B allegedly go in Trump Administration's Freeze on Child Care Funding?",
     "Where did the $10B allegedly go in Trump Administration Child Care Funding Freeze?",
     "What other organizations is Minnesota Man connected to?",
     "What other organizations is Staffer connected to?",
@@ -550,7 +548,9 @@
     "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
     "Where did the $10B allegedly go in Trump administration child care funding freeze?",
     "Where did the $250M allegedly go in Minnesota fraud scheme?",
-    "Where did the $10 billion allegedly go in Trump administration freezes child care funds?"
+    "Where did the $10 billion allegedly go in Trump administration freezes child care funds?",
+    "Where did the $10B allegedly go in Minnesota welfare scandal?",
+    "Where did the $10B allegedly go in Trump administration freezes child care funds?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 144,
-    "articlesProcessed": 7150,
-    "redFlagsFound": 141,
+    "totalScans": 145,
+    "articlesProcessed": 7200,
+    "redFlagsFound": 143,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-07T08:29:10.237Z",
-  "lastUpdated": "2026-01-07T08:29:10.237Z"
+  "lastReflection": "2026-01-07T09:27:44.684Z",
+  "lastUpdated": "2026-01-07T09:27:44.684Z"
 }
