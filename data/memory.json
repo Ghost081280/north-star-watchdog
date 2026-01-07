@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T22:19:46.613Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T23:18:45.649Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-07T11:19:36.892Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-07T12:42:33.980Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Fraud Scandal?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $10 billion allegedly go in Minnesota Autism Care Fraud Investigation?",
     "What other organizations is Not Applicable connected to?",
     "Where did the $10B allegedly go in Federal Funding Freeze Investigation?",
@@ -550,7 +548,9 @@
     "What other organizations is Not specified connected to?",
     "Where did the $250M allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $10B allegedly go in Trump Administration Funding Freeze?",
-    "Where did the $10B+ allegedly go in Minnesota Childcare Fraud Scandal?"
+    "Where did the $10B+ allegedly go in Minnesota Childcare Fraud Scandal?",
+    "Where did the $9B allegedly go in Minnesota Welfare Fraud Scandal?",
+    "Where did the $10B allegedly go in Child Care Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 147,
-    "articlesProcessed": 7300,
-    "redFlagsFound": 145,
+    "totalScans": 148,
+    "articlesProcessed": 7350,
+    "redFlagsFound": 146,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10 billion allegedly go in Trump Administration's Freeze on Child Care Funding?",
         "Where did the Unknown allegedly go in Minnesota Fraud Scandal?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $10 billion allegedly go in Minnesota Autism Care Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-07T11:19:36.892Z",
-  "lastUpdated": "2026-01-07T11:19:36.893Z"
+  "lastReflection": "2026-01-07T12:42:33.980Z",
+  "lastUpdated": "2026-01-07T12:42:33.981Z"
 }
