@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T16:24:12.074Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-02T17:17:58.874Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-07T05:24:57.361Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-07T06:32:11.265Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -524,15 +524,13 @@
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.6000000000000001,
-      "count": 3,
+      "confidence": 0.6500000000000001,
+      "count": 4,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-06T21:20:23.101Z"
+      "lastSeen": "2026-01-07T06:32:11.266Z"
     }
   ],
   "openQuestions": [
-    "Where did the $10 billion allegedly go in Minnesota Child Care Funding Fraud?",
-    "What other organizations is Nicolas Maduro connected to?",
     "Where did the $10 Billion allegedly go in Child Care Funding Freeze Investigation?",
     "Where did the $100 Million allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $10B allegedly go in Minnesota Welfare Fraud Probe?",
@@ -550,7 +548,9 @@
     "Where did the $10B allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $250M allegedly go in Minnesota welfare fraud scandal?",
-    "Where did the $10B allegedly go in Trump administration's child care funding freeze?"
+    "Where did the $10B allegedly go in Trump administration's child care funding freeze?",
+    "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
+    "Where did the $10B allegedly go in Trump administration child care funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 141,
-    "articlesProcessed": 7000,
-    "redFlagsFound": 137,
+    "totalScans": 142,
+    "articlesProcessed": 7050,
+    "redFlagsFound": 139,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-07T05:24:57.361Z",
-  "lastUpdated": "2026-01-07T05:24:57.362Z"
+  "lastReflection": "2026-01-07T06:32:11.265Z",
+  "lastUpdated": "2026-01-07T06:32:11.266Z"
 }
