@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The Trump administration has also terminated funding for other social services programs, citing similar concerns.",
+      "insight": "This termination may have a significant impact on vulnerable populations and may lead to a decrease in essential services. Further investigation is necessary to determine the extent of the issue.",
+      "entities": [
+        "Trump administration",
+        "social services programs"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/07/us/politics/trump-administration-freezes-child-care-funding.html",
+      "id": "rf-1767770686234-pfztlu1l4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-07T07:24:46.231Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The Trump administration has terminated funding for certain social services programs, affecting local families.",
       "insight": "This move raises concerns about the impact on vulnerable populations and the potential for fraud in the social services system. Further investigation is needed to determine the reasoning behind the funding termination.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-07T06:32:11.267Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -250,8 +270,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -268,5 +287,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-07T06:32:11.267Z"
+  "lastUpdated": "2026-01-07T07:24:46.231Z"
 }
