@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-02T14:20:08.800Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-02T15:20:49.713Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-07T03:28:32.978Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-07T04:40:25.138Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Minnesota Fraud Scandal?",
-    "Where did the $10B allegedly go in Childcare Funding Freeze?",
     "Where did the $10 billion allegedly go in Minnesota Child Care Funding Fraud?",
     "What other organizations is Nicolas Maduro connected to?",
     "Where did the $10 Billion allegedly go in Child Care Funding Freeze Investigation?",
@@ -550,7 +548,9 @@
     "Where did the $10B allegedly go in Federal Funding Freeze Investigation?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $10B allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $250M allegedly go in Minnesota welfare fraud scandal?",
+    "Where did the $10B allegedly go in Trump administration's child care funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 139,
-    "articlesProcessed": 6900,
-    "redFlagsFound": 133,
+    "totalScans": 140,
+    "articlesProcessed": 6950,
+    "redFlagsFound": 135,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,13 +571,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large_scale_fraud",
+          "description": "$250M Minnesota welfare fraud scandal",
+          "insight": "This large-scale fraud suggests a significant issue with oversight and management of welfare programs in Minnesota",
+          "entities": [
+            "Minnesota",
+            "DOJ"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "New York Post",
+          "sourceUrl": "https://nypost.com/2026/01/07/ringleader-of-250m-minnesota-welfare-fraud-scandal-ordered-by-judge-to-forfeit-porsche-luxury-goods/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
         "Where did the $10B allegedly go in Minnesota Fraud Scandal?",
-        "Where did the $10B allegedly go in Childcare Funding Freeze?"
+        "Where did the $10B allegedly go in Childcare Funding Freeze?",
+        "Where did the $10 billion allegedly go in Minnesota Child Care Funding Fraud?"
       ]
     }
   ],
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-07T03:28:32.978Z",
-  "lastUpdated": "2026-01-07T03:28:32.978Z"
+  "lastReflection": "2026-01-07T04:40:25.138Z",
+  "lastUpdated": "2026-01-07T04:40:25.139Z"
 }
