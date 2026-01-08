@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T06:30:06.500Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-04T07:21:23.615Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-08T17:26:46.422Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-08T18:27:16.463Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 175,
-    "articlesProcessed": 8700,
-    "redFlagsFound": 185,
+    "totalScans": 176,
+    "articlesProcessed": 8750,
+    "redFlagsFound": 186,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?",
-        "Where did the $10B allegedly go in California Childcare Fraud Probe?",
-        "What other organizations is Tim Walz connected to?"
+        "Where did the N/A allegedly go in ICE Shooting Investigation?",
+        "Where did the $100M+ allegedly go in Minnesota welfare fraud scandal?",
+        "Where did the $X allegedly go in Minnesota welfare fraud scandal?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T17:26:46.422Z",
-  "lastUpdated": "2026-01-08T17:26:46.423Z"
+  "lastReflection": "2026-01-08T18:27:16.463Z",
+  "lastUpdated": "2026-01-08T18:27:16.464Z"
 }
