@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T11:16:16.935Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-04T12:38:00.578Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-08T22:20:52.578Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-08T23:18:08.281Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -560,8 +560,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 180,
-    "articlesProcessed": 8950,
+    "totalScans": 181,
+    "articlesProcessed": 9000,
     "redFlagsFound": 193,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota DHS investigation into falsified documentation?",
         "Where did the $0 allegedly go in Washington state child care subsidies audit?",
-        "What other organizations is No specific individuals charged connected to?"
+        "What other organizations is No specific individuals charged connected to?",
+        "Where did the Unknown allegedly go in Minnesota Welfare Fraud Scandal?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T22:20:52.578Z",
-  "lastUpdated": "2026-01-08T22:20:52.579Z"
+  "lastReflection": "2026-01-08T23:18:08.281Z",
+  "lastUpdated": "2026-01-08T23:18:08.281Z"
 }
