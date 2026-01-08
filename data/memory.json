@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T09:19:15.658Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-01-04T10:19:36.517Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-08T20:24:00.503Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-08T21:20:25.146Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 178,
-    "articlesProcessed": 8850,
-    "redFlagsFound": 190,
+    "totalScans": 179,
+    "articlesProcessed": 8900,
+    "redFlagsFound": 192,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Minnesota welfare fraud scandal?",
-        "Where did the $X allegedly go in falsified documentation in behavioral health grant program?",
-        "Where did the Not specified allegedly go in Minnesota DHS Investigation?"
+        "Where did the $0 allegedly go in Minnesota DHS investigation into falsified documentation?",
+        "Where did the $0 allegedly go in Washington state child care subsidies audit?",
+        "What other organizations is No specific individuals charged connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T20:24:00.503Z",
-  "lastUpdated": "2026-01-08T20:24:00.504Z"
+  "lastReflection": "2026-01-08T21:20:25.146Z",
+  "lastUpdated": "2026-01-08T21:20:25.146Z"
 }
