@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-03T18:27:13.503Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-03T19:14:44.450Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-08T07:24:18.166Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-08T08:29:37.259Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -524,15 +524,13 @@
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.8500000000000003,
-      "count": 8,
+      "confidence": 0.9000000000000004,
+      "count": 9,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-08T05:24:13.868Z"
+      "lastSeen": "2026-01-08T08:29:37.259Z"
     }
   ],
   "openQuestions": [
-    "Where did the $14M allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the $14M allegedly go in Idaho Childcare Funds Freeze?",
     "Where did the $10B allegedly go in Minnesota Fraud Scandal?",
     "What other organizations is Not applicable connected to?",
     "Where did the $10B allegedly go in Minnesota Childcare Fraud Investigation?",
@@ -550,7 +548,9 @@
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "Where did the $100M+ allegedly go in Minnesota welfare fraud scandal?",
     "Where did the $X allegedly go in Minnesota welfare fraud scandal?",
-    "Where did the $X allegedly go in falsified documentation in behavioral health grant program?"
+    "Where did the $X allegedly go in falsified documentation in behavioral health grant program?",
+    "Where did the Not specified allegedly go in Minnesota DHS Investigation?",
+    "Where did the Not specified allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 165,
-    "articlesProcessed": 8200,
-    "redFlagsFound": 170,
+    "totalScans": 166,
+    "articlesProcessed": 8250,
+    "redFlagsFound": 172,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B+ allegedly go in Minnesota Fraud Investigation?",
-        "What other organizations is Jon Ossoff connected to?",
-        "Where did the $14M allegedly go in Minnesota Childcare Fraud Investigation?"
+        "Where did the $14M allegedly go in Minnesota Childcare Fraud Investigation?",
+        "Where did the $14M allegedly go in Idaho Childcare Funds Freeze?",
+        "Where did the $10B allegedly go in Minnesota Fraud Scandal?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T07:24:18.166Z",
-  "lastUpdated": "2026-01-08T07:24:18.167Z"
+  "lastReflection": "2026-01-08T08:29:37.259Z",
+  "lastUpdated": "2026-01-08T08:29:37.259Z"
 }
