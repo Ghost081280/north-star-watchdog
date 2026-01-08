@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to fraud allegations",
+      "insight": "This could indicate a larger issue with corruption and abuse of power in Minnesota",
+      "entities": [
+        "Minnesota government",
+        "DHS"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "NTD News",
+      "sourceUrl": "https://www.ntdnews.com/breaking/dhs-probes-minnesota-fraud-leaving-no-stone-unturned/",
+      "id": "rf-1767899952737-g7tz4ydhk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-08T19:19:12.733Z",
+      "isNew": true
+    },
+    {
       "type": "federal takeover of local investigation",
       "description": "The FBI has taken over the investigation into the fatal shooting of a woman by an ICE officer in Minneapolis, excluding Minnesota authorities from the probe.",
       "insight": "This takeover raises concerns about the potential lack of transparency and accountability in the investigation. The exclusion of Minnesota authorities may hinder their ability to conduct a thorough and impartial investigation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-08T18:27:16.465Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "use_of_force",
@@ -405,7 +425,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -422,5 +443,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-08T18:27:16.465Z"
+  "lastUpdated": "2026-01-08T19:19:12.733Z"
 }
