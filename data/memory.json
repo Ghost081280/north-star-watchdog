@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T05:24:53.545Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-04T06:30:06.500Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-08T16:28:39.804Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-08T17:26:46.422Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?",
-    "Where did the $10B allegedly go in California Childcare Fraud Probe?",
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Scandal?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "Where did the $100M+ allegedly go in Minnesota welfare fraud scandal?",
     "Where did the $X allegedly go in Minnesota welfare fraud scandal?",
@@ -550,7 +546,11 @@
     "What other organizations is Aimee Brock connected to?",
     "Where did the $Unknown allegedly go in Minnesota Welfare Fraud Case?",
     "Where did the $Millions allegedly go in Capital View Properties Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?"
+    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the N/A allegedly go in Minnesota ICE Shooting Investigation?",
+    "Where did the N/A allegedly go in Minnesota Fraud Scandal?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 174,
-    "articlesProcessed": 8650,
-    "redFlagsFound": 183,
+    "totalScans": 175,
+    "articlesProcessed": 8700,
+    "redFlagsFound": 185,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B allegedly go in Minnesota Fraud Scandals?",
         "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?",
-        "Where did the $10B allegedly go in California Childcare Fraud Probe?"
+        "Where did the $10B allegedly go in California Childcare Fraud Probe?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T16:28:39.804Z",
-  "lastUpdated": "2026-01-08T16:28:39.805Z"
+  "lastReflection": "2026-01-08T17:26:46.422Z",
+  "lastUpdated": "2026-01-08T17:26:46.423Z"
 }
