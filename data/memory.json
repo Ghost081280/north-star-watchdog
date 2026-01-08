@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-03T12:37:09.720Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-03T13:28:26.344Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-07T23:20:09.696Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-08T01:29:58.852Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 11,
+      "count": 12,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-06T21:20:23.101Z"
+      "lastSeen": "2026-01-08T01:29:58.853Z"
     },
     {
       "type": "federal_funding",
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota welfare fraud ringleader connected to?",
-    "Where did the $10 billion allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the Millions allegedly go in Minnesota welfare fraud investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Feeding Our Future fraud ringleader connected to?",
     "Where did the $5.2 million allegedly go in Minnesota Fraud Case?",
@@ -550,7 +547,10 @@
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Not Applicable connected to?",
     "Where did the $10B+ allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the $1B+ allegedly go in Trump Administration's Childcare Funding Freeze?"
+    "Where did the $1B+ allegedly go in Trump Administration's Childcare Funding Freeze?",
+    "What other organizations is Trump connected to?",
+    "Where did the $10B allegedly go in Childcare Funding Freeze?",
+    "Where did the $1B allegedly go in Minnesota Fraud Scandals?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 159,
-    "articlesProcessed": 7900,
-    "redFlagsFound": 161,
+    "totalScans": 160,
+    "articlesProcessed": 7950,
+    "redFlagsFound": 163,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10 billion allegedly go in Minnesota welfare fraud investigation?",
-        "Where did the $10 billion allegedly go in Child care funding fraud investigation?",
-        "What other organizations is Somali UN Ambassador connected to?"
+        "What other organizations is Minnesota welfare fraud ringleader connected to?",
+        "Where did the $10 billion allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Millions allegedly go in Minnesota welfare fraud investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-07T23:20:09.696Z",
-  "lastUpdated": "2026-01-07T23:20:09.696Z"
+  "lastReflection": "2026-01-08T01:29:58.852Z",
+  "lastUpdated": "2026-01-08T01:29:58.853Z"
 }
