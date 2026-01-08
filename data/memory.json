@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T01:46:44.994Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-04T03:50:19.121Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-08T13:40:15.442Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-08T14:24:47.983Z",
+      "summary": "NOTABLE: 2 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1B+ allegedly go in Trump Administration's Childcare Funding Freeze?",
-    "What other organizations is Trump connected to?",
-    "Where did the $10B allegedly go in Childcare Funding Freeze?",
     "Where did the $1B allegedly go in Minnesota Fraud Scandals?",
     "Where did the $10B allegedly go in Minnesota Welfare Fraud Scandal?",
     "Where did the $10B allegedly go in California Childcare Fraud Probe?",
@@ -550,7 +547,10 @@
     "What other organizations is No specific individuals charged connected to?",
     "Where did the Unknown allegedly go in Minnesota Welfare Fraud Scandal?",
     "Where did the N/A allegedly go in ICE Fatal Shooting Investigation?",
-    "Where did the $10 billion allegedly go in Trump Administration Funding Freeze?"
+    "Where did the $10 billion allegedly go in Trump Administration Funding Freeze?",
+    "What other organizations is Aimee Brock connected to?",
+    "Where did the $Unknown allegedly go in Minnesota Welfare Fraud Case?",
+    "Where did the $Millions allegedly go in Capital View Properties Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 171,
-    "articlesProcessed": 8500,
-    "redFlagsFound": 180,
+    "totalScans": 172,
+    "articlesProcessed": 8550,
+    "redFlagsFound": 182,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not Applicable connected to?",
-        "Where did the $10B+ allegedly go in Minnesota Childcare Fraud Investigation?",
-        "Where did the $1B+ allegedly go in Trump Administration's Childcare Funding Freeze?"
+        "Where did the $1B+ allegedly go in Trump Administration's Childcare Funding Freeze?",
+        "What other organizations is Trump connected to?",
+        "Where did the $10B allegedly go in Childcare Funding Freeze?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T13:40:15.442Z",
-  "lastUpdated": "2026-01-08T13:40:15.443Z"
+  "lastReflection": "2026-01-08T14:24:47.983Z",
+  "lastUpdated": "2026-01-08T14:24:47.984Z"
 }
