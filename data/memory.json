@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-03T15:18:36.190Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-03T16:23:38.974Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-08T04:39:01.235Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-08T05:24:13.867Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -524,14 +524,13 @@
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
-      "confidence": 0.8000000000000003,
-      "count": 7,
+      "confidence": 0.8500000000000003,
+      "count": 8,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-07T15:24:12.134Z"
+      "lastSeen": "2026-01-08T05:24:13.868Z"
     }
   ],
   "openQuestions": [
-    "What other organizations is Aimee Bock connected to?",
     "Where did the $10B+ allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Jon Ossoff connected to?",
     "Where did the $14M allegedly go in Minnesota Childcare Fraud Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $10B allegedly go in California Childcare Fraud Probe?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Scandal?",
-    "Where did the N/A allegedly go in ICE Shooting Investigation?"
+    "Where did the N/A allegedly go in ICE Shooting Investigation?",
+    "Where did the $100M+ allegedly go in Minnesota welfare fraud scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 162,
-    "articlesProcessed": 8050,
-    "redFlagsFound": 166,
+    "totalScans": 163,
+    "articlesProcessed": 8100,
+    "redFlagsFound": 168,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $5.2 million allegedly go in Minnesota Fraud Case?",
-        "Where did the $5.2 million allegedly go in Feeding Our Future Investigation?",
-        "Where did the $10 billion allegedly go in Minnesota Fraud Investigation?"
+        "What other organizations is Aimee Bock connected to?",
+        "Where did the $10B+ allegedly go in Minnesota Fraud Investigation?",
+        "What other organizations is Jon Ossoff connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T04:39:01.235Z",
-  "lastUpdated": "2026-01-08T04:39:01.236Z"
+  "lastReflection": "2026-01-08T05:24:13.867Z",
+  "lastUpdated": "2026-01-08T05:24:13.868Z"
 }
