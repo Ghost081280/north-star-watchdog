@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T08:26:07.845Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-04T09:19:15.658Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-01-08T19:19:12.731Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-08T20:24:00.503Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Minnesota welfare fraud scandal?",
-    "Where did the $X allegedly go in falsified documentation in behavioral health grant program?",
-    "Where did the Not specified allegedly go in Minnesota DHS Investigation?",
-    "Where did the Not specified allegedly go in ICE Shooting Investigation?",
     "Where did the $0 allegedly go in Minnesota DHS investigation into falsified documentation?",
     "Where did the $0 allegedly go in Washington state child care subsidies audit?",
     "What other organizations is No specific individuals charged connected to?",
@@ -550,7 +546,11 @@
     "Where did the N/A allegedly go in Minnesota Fraud Scandal?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
-    "Where did the $0 allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
+    "What other organizations is JD Vance connected to?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the N/A allegedly go in ICE Shooting Investigation?",
+    "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 177,
-    "articlesProcessed": 8800,
-    "redFlagsFound": 188,
+    "totalScans": 178,
+    "articlesProcessed": 8850,
+    "redFlagsFound": 190,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in ICE Shooting Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota welfare fraud scandal?",
-        "Where did the $X allegedly go in Minnesota welfare fraud scandal?"
+        "Where did the $X allegedly go in Minnesota welfare fraud scandal?",
+        "Where did the $X allegedly go in falsified documentation in behavioral health grant program?",
+        "Where did the Not specified allegedly go in Minnesota DHS Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-08T19:19:12.731Z",
-  "lastUpdated": "2026-01-08T19:19:12.732Z"
+  "lastReflection": "2026-01-08T20:24:00.503Z",
+  "lastUpdated": "2026-01-08T20:24:00.504Z"
 }
