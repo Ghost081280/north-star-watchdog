@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T08:31:40.568Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T09:31:04.090Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T19:19:55.060Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-09T20:23:25.077Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Trump's new DOJ anti-fraud unit?",
-    "What other organizations is No specific individuals charged connected to?",
-    "Where did the $185M allegedly go in Minnesota Child Care Assistance Program Investigation?",
     "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $300 million allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Jonathan Ross connected to?",
@@ -550,7 +547,10 @@
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Renee Good?",
     "What other organizations is Jacob Frey connected to?",
-    "What specific allegations exist against Jacob Frey?"
+    "What specific allegations exist against Jacob Frey?",
+    "What other organizations is Renee Good connected to?",
+    "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
+    "Where did the $500 million allegedly go in Minnesota Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 199,
-    "articlesProcessed": 9900,
-    "redFlagsFound": 216,
+    "totalScans": 200,
+    "articlesProcessed": 9950,
+    "redFlagsFound": 217,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Trump Administration connected to?",
-        "Where did the $1B allegedly go in ICE Shooting Investigation?"
+        "Where did the $0 allegedly go in Trump's new DOJ anti-fraud unit?",
+        "What other organizations is No specific individuals charged connected to?",
+        "Where did the $185M allegedly go in Minnesota Child Care Assistance Program Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T19:19:55.060Z",
-  "lastUpdated": "2026-01-09T19:19:55.061Z"
+  "lastReflection": "2026-01-09T20:23:25.077Z",
+  "lastUpdated": "2026-01-09T20:23:25.077Z"
 }
