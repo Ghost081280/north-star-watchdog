@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "police_brutality",
+      "description": "The fatal shooting of a civilian by an ICE agent in Minneapolis has raised concerns about police brutality and the use of force by law enforcement agencies.",
+      "insight": "This incident suggests a potential pattern of excessive force by law enforcement agencies, particularly in communities of color. Further investigation is warranted to determine the circumstances surrounding the shooting and any potential wrongdoing.",
+      "entities": [
+        "FBI",
+        "Minnesota authorities"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "InForum",
+      "sourceUrl": "https://www.inforum.com/news/minnesota-collecting-evidence-in-ice-shooting-seeks-collaboration-with-fbi",
+      "id": "rf-1768000795167-4omjlx15c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-09T23:19:55.163Z",
+      "isNew": true
+    },
+    {
       "type": "ICE shooting investigation",
       "description": "The FBI is leading the investigation into the ICE shooting in Minnesota, with multiple sources reporting on the issue.",
       "insight": "I am concerned about the potential for violence and unrest in the wake of the ICE shooting. Further investigation is needed to determine the cause of the shooting and to prevent future incidents.",
@@ -555,7 +575,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -565,6 +584,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -582,5 +602,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-09T22:20:19.513Z"
+  "lastUpdated": "2026-01-09T23:19:55.163Z"
 }
