@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T20:21:45.115Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-04T21:18:16.187Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T09:27:22.826Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-09T10:22:08.097Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Minnesota ICE Shooting Investigation?",
-    "Where did the N/A allegedly go in Minnesota Fraud Scandal?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is JD Vance connected to?",
@@ -550,7 +547,10 @@
     "What other organizations is Scott Bessent connected to?",
     "Where did the Undisclosed allegedly go in Minnesota Fraud Investigation?",
     "Where did the $10 billion allegedly go in Trump Administration Funding Freeze Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Trump Administration connected to?",
+    "Where did the $1B allegedly go in ICE Shooting Investigation?",
+    "Where did the $1B allegedly go in Child Care Funding Freeze Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 189,
-    "articlesProcessed": 9400,
-    "redFlagsFound": 202,
+    "totalScans": 190,
+    "articlesProcessed": 9450,
+    "redFlagsFound": 203,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Keith Ellison connected to?",
         "Where did the N/A allegedly go in Minnesota ICE Shooting Investigation?",
-        "Where did the N/A allegedly go in Minnesota Fraud Scandal?"
+        "Where did the N/A allegedly go in Minnesota Fraud Scandal?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T09:27:22.826Z",
-  "lastUpdated": "2026-01-09T09:27:22.827Z"
+  "lastReflection": "2026-01-09T10:22:08.097Z",
+  "lastUpdated": "2026-01-09T10:22:08.098Z"
 }
