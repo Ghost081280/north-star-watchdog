@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T09:31:04.090Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T10:23:39.621Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T20:23:25.077Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-09T21:20:09.124Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $300 million allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Jonathan Ross connected to?",
     "Where did the N/A allegedly go in Minnesota ICE Shooting Investigation?",
@@ -550,7 +549,8 @@
     "What specific allegations exist against Jacob Frey?",
     "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
-    "Where did the $500 million allegedly go in Minnesota Fraud Probe?"
+    "Where did the $500 million allegedly go in Minnesota Fraud Probe?",
+    "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 200,
-    "articlesProcessed": 9950,
-    "redFlagsFound": 217,
+    "totalScans": 201,
+    "articlesProcessed": 10000,
+    "redFlagsFound": 219,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Trump's new DOJ anti-fraud unit?",
-        "What other organizations is No specific individuals charged connected to?",
-        "Where did the $185M allegedly go in Minnesota Child Care Assistance Program Investigation?"
+        "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $300 million allegedly go in Minnesota Child Care Fraud Investigation?",
+        "What other organizations is Jonathan Ross connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T20:23:25.077Z",
-  "lastUpdated": "2026-01-09T20:23:25.077Z"
+  "lastReflection": "2026-01-09T21:20:09.124Z",
+  "lastUpdated": "2026-01-09T21:20:09.124Z"
 }
