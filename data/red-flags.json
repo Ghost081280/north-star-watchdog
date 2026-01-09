@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The FBI has blocked Minnesota officials from investigating the fatal ICE shooting",
+      "insight": "This blockage may indicate a larger pattern of obstruction or cover-up. Further investigation is warranted to determine the extent of the issue and potential wrongdoing.",
+      "entities": [
+        "FBI",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Wall Street Journal",
+      "sourceUrl": "https://www.wsj.com/articles/fbi-blocks-minnesota-officials-from-investigation-of-fatal-ice-shooting-11579465402",
+      "id": "rf-1767950842831-029iilmke",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-09T09:27:22.828Z",
+      "isNew": true
+    },
+    {
       "type": "police_accountability",
       "description": "The fatal shooting of Renee Good by ICE officer Jonathan Ross has raised concerns about police accountability and use of force.",
       "insight": "This incident may be an isolated case, but it also may be part of a larger pattern of police misconduct or excessive force. Further investigation is needed to determine the circumstances surrounding the shooting and whether proper protocols were followed.",
@@ -480,10 +500,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -500,5 +523,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-09T08:29:07.230Z"
+  "lastUpdated": "2026-01-09T09:27:22.828Z"
 }
