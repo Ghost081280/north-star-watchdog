@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T01:46:51.890Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-05T03:54:48.273Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T13:37:46.530Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-09T14:23:35.147Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $10 Billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is No new figures charged this hour connected to?",
     "Where did the $10 billion allegedly go in Child Care Fraud Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $0 allegedly go in Trump's new DOJ anti-fraud unit?",
     "What other organizations is No specific individuals charged connected to?",
     "Where did the $185M allegedly go in Minnesota Child Care Assistance Program Investigation?",
-    "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $185M allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $300 million allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 193,
-    "articlesProcessed": 9600,
-    "redFlagsFound": 208,
+    "totalScans": 194,
+    "articlesProcessed": 9650,
+    "redFlagsFound": 209,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in ICE Shooting Investigation?",
         "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $10 Billion allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $10 Billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is No new figures charged this hour connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T13:37:46.530Z",
-  "lastUpdated": "2026-01-09T13:37:46.531Z"
+  "lastReflection": "2026-01-09T14:23:35.147Z",
+  "lastUpdated": "2026-01-09T14:23:35.148Z"
 }
