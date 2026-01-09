@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T05:35:27.453Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T06:37:10.626Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T16:26:33.766Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-09T17:22:42.410Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10 billion allegedly go in Minnesota v. Trump Administration?",
-    "What other organizations is Scott Bessent connected to?",
-    "Where did the Undisclosed allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $10 billion allegedly go in Trump Administration Funding Freeze Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Trump Administration connected to?",
     "Where did the $1B allegedly go in ICE Shooting Investigation?",
@@ -550,7 +546,11 @@
     "Where did the Billions allegedly go in Minnesota Child Care Funding Freeze?",
     "Where did the $0 allegedly go in Minnesota Medicaid Provider Enrollment Investigation?",
     "Where did the $0 allegedly go in DHS Immigration Fraud Investigation?",
-    "Where did the $0 allegedly go in USCIS Fraud Investigation in Minnesota?"
+    "Where did the $0 allegedly go in USCIS Fraud Investigation in Minnesota?",
+    "What other organizations is Not available connected to?",
+    "Where did the Not available allegedly go in Minnesota Public Education System Investigation?",
+    "Where did the Not available allegedly go in ICE Shooting Investigation?",
+    "Where did the Not available allegedly go in Operation PARRIS?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 196,
-    "articlesProcessed": 9750,
-    "redFlagsFound": 212,
+    "totalScans": 197,
+    "articlesProcessed": 9800,
+    "redFlagsFound": 214,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Senator Jon Husted connected to?",
-        "Where did the $10 billion allegedly go in Minnesota Child Care Reimbursement Program Investigation?",
-        "Where did the $10 billion allegedly go in Trump Administration Child Care Funding Freeze?"
+        "Where did the $10 billion allegedly go in Minnesota v. Trump Administration?",
+        "What other organizations is Scott Bessent connected to?",
+        "Where did the Undisclosed allegedly go in Minnesota Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T16:26:33.766Z",
-  "lastUpdated": "2026-01-09T16:26:33.766Z"
+  "lastReflection": "2026-01-09T17:22:42.410Z",
+  "lastUpdated": "2026-01-09T17:22:42.411Z"
 }
