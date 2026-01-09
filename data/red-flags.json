@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Minnesota Department of Human Services has paused provider enrollment for 13 Medicaid services.",
+      "insight": "This pause may indicate issues with program management or oversight.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox21Online",
+      "sourceUrl": "https://fox21online.com/minnesota-department-of-human-services-pausing-provider-enrollment-for-13-medicaid-services/",
+      "id": "rf-1767975993770-3t816y0sj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-09T16:26:33.768Z",
+      "isNew": true
+    },
+    {
       "type": "investigation blockage",
       "description": "The FBI has blocked Minnesota officials from investigating the fatal ICE shooting",
       "insight": "This could indicate a potential cover-up or obstruction of justice, and further investigation is needed to determine the reason for the blockage.",
@@ -516,17 +535,15 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -543,5 +560,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-09T15:22:38.805Z"
+  "lastUpdated": "2026-01-09T16:26:33.768Z"
 }
