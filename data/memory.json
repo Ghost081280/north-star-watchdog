@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T07:28:16.807Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T08:31:40.568Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T18:30:47.637Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-09T19:19:55.060Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -517,25 +517,20 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 12,
+      "count": 13,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-08T01:29:58.853Z"
+      "lastSeen": "2026-01-09T19:19:55.061Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 11,
+      "count": 12,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-08T10:24:24.007Z"
+      "lastSeen": "2026-01-09T19:19:55.061Z"
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Trump Administration connected to?",
-    "Where did the $1B allegedly go in ICE Shooting Investigation?",
-    "Where did the $1B allegedly go in Child Care Funding Freeze Investigation?",
-    "Where did the $0 allegedly go in Minneapolis ICE Shooting Investigation?",
     "Where did the $0 allegedly go in Trump's new DOJ anti-fraud unit?",
     "What other organizations is No specific individuals charged connected to?",
     "Where did the $185M allegedly go in Minnesota Child Care Assistance Program Investigation?",
@@ -550,7 +545,12 @@
     "What other organizations is Not available connected to?",
     "Where did the Not available allegedly go in Minnesota Public Education System Investigation?",
     "Where did the Not available allegedly go in ICE Shooting Investigation?",
-    "Where did the Not available allegedly go in Operation PARRIS?"
+    "Where did the Not available allegedly go in Operation PARRIS?",
+    "What other organizations is Tim Walz connected to?",
+    "What specific allegations exist against Tim Walz?",
+    "What specific allegations exist against Renee Good?",
+    "What other organizations is Jacob Frey connected to?",
+    "What specific allegations exist against Jacob Frey?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 198,
-    "articlesProcessed": 9850,
-    "redFlagsFound": 214,
+    "totalScans": 199,
+    "articlesProcessed": 9900,
+    "redFlagsFound": 216,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T18:30:47.637Z",
-  "lastUpdated": "2026-01-09T18:30:47.638Z"
+  "lastReflection": "2026-01-09T19:19:55.060Z",
+  "lastUpdated": "2026-01-09T19:19:55.061Z"
 }
