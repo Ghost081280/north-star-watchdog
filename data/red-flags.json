@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "police_shooting",
+      "description": "The fatal shooting of a woman by an ICE agent in Minnesota has raised concerns about police brutality and accountability.",
+      "insight": "This incident may be a sign of a larger issue with police training and accountability. Further investigation into the circumstances surrounding the shooting and the response by law enforcement is warranted.",
+      "entities": [
+        "ICE",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/minnesota-leaders-escalate-dispute-over-federal-handling-of-ice-shooting/2026/01/09/3a9c3f34-5f14-4f6c-9f6c-4f6f4f6f4f6c/story.html",
+      "id": "rf-1767933580188-k7t183cwm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-09T04:39:40.185Z",
+      "isNew": true
+    },
+    {
       "type": "investigation",
       "description": "The FBI has taken over the investigation into the fatal ICE shooting in Minneapolis. State officials have been denied access to evidence, raising concerns about the fairness of the probe.",
       "insight": "The FBI's takeover and denial of access to evidence for state officials raise concerns about potential federal overreach and the impact on state-federal relations.",
@@ -440,11 +460,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -461,5 +483,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-09T03:29:40.070Z"
+  "lastUpdated": "2026-01-09T04:39:40.185Z"
 }
