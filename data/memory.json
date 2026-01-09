@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-04T16:23:12.665Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-04T17:17:16.605Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-09T05:24:57.190Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-09T06:32:15.476Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $Unknown allegedly go in Minnesota Welfare Fraud Case?",
-    "Where did the $Millions allegedly go in Capital View Properties Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the N/A allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the N/A allegedly go in Minnesota Fraud Scandal?",
@@ -550,7 +547,10 @@
     "What other organizations is Senator Jon Husted connected to?",
     "Where did the $10 billion allegedly go in Minnesota Child Care Reimbursement Program Investigation?",
     "Where did the $10 billion allegedly go in Trump Administration Child Care Funding Freeze?",
-    "Where did the $10 billion allegedly go in Minnesota v. Trump Administration?"
+    "Where did the $10 billion allegedly go in Minnesota v. Trump Administration?",
+    "What other organizations is Scott Bessent connected to?",
+    "Where did the Undisclosed allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $10 billion allegedly go in Trump Administration Funding Freeze Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 185,
-    "articlesProcessed": 9200,
-    "redFlagsFound": 199,
+    "totalScans": 186,
+    "articlesProcessed": 9250,
+    "redFlagsFound": 200,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Brock connected to?",
         "Where did the $Unknown allegedly go in Minnesota Welfare Fraud Case?",
-        "Where did the $Millions allegedly go in Capital View Properties Investigation?"
+        "Where did the $Millions allegedly go in Capital View Properties Investigation?",
+        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-09T05:24:57.190Z",
-  "lastUpdated": "2026-01-09T05:24:57.191Z"
+  "lastReflection": "2026-01-09T06:32:15.476Z",
+  "lastUpdated": "2026-01-09T06:32:15.477Z"
 }
