@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T21:20:01.291Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T22:20:11.920Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-10T10:19:45.128Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-10T11:16:49.065Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $500 million allegedly go in Minnesota Fraud Probe?",
     "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $10B allegedly go in Minnesota DHS Investigation?",
     "Where did the $10B allegedly go in Trump Administration Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $130 million allegedly go in Minnesota Child Care Funding Investigation?",
     "Where did the $10 billion allegedly go in Trump Administration Social Safety Net Funding Freeze?",
     "Where did the $130 million allegedly go in USDA Investigation?",
-    "Where did the $10 billion allegedly go in Judge Blocks Trump Administration from Freezing Child Care Funds?"
+    "Where did the $10 billion allegedly go in Judge Blocks Trump Administration from Freezing Child Care Funds?",
+    "What other organizations is Robert P. Rubicco connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 212,
-    "articlesProcessed": 10550,
-    "redFlagsFound": 233,
+    "totalScans": 213,
+    "articlesProcessed": 10600,
+    "redFlagsFound": 234,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,13 +571,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The USDA suspended nearly $130 million in federal funds to Minnesota over fraud concerns, citing 'massive fraud'.",
+          "insight": "This indicates a significant issue with fraud in Minnesota, potentially involving multiple agencies and programs.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "USDA",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWFpfelBnWHdfOC1Bc2djalZ3V29MUEVXV2JUdEZrblptcmpySzl3NnpFeW5ZTzFIWlAyREVhV0VmYUZzWnNJQXg4d1BLRDJOMFExbzVMNHk2T0FhSFJLdUJPVVpESFl5UHJneUo3UkNpMElhNU9LX01rMnRaazFRMEdRXzRIT3I3cmx1YzNmOFpNU19WQzhRQ2RQc0FDT05PSktrMUJNc2U5TkZ5S21EUmZR"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
         "Where did the $500 million allegedly go in Minnesota Fraud Probe?",
-        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $10B allegedly go in Minnesota DHS Investigation?"
       ]
     }
   ],
@@ -586,6 +605,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-10T10:19:45.128Z",
-  "lastUpdated": "2026-01-10T10:19:45.129Z"
+  "lastReflection": "2026-01-10T11:16:49.065Z",
+  "lastUpdated": "2026-01-10T11:16:49.066Z"
 }
