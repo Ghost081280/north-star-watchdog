@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T19:20:16.224Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T20:24:29.047Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-10T08:25:31.283Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-10T09:19:32.151Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $500 million allegedly go in Minnesota Fraud Probe?",
     "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?",
@@ -550,7 +549,8 @@
     "Where did the $130 million allegedly go in USDA Investigation into Minnesota?",
     "Where did the $130 million allegedly go in USDA Investigation into Minnesota Fraud?",
     "Where did the $130 million allegedly go in Minnesota Child Care Funding Investigation?",
-    "Where did the $10 billion allegedly go in Trump Administration Social Safety Net Funding Freeze?"
+    "Where did the $10 billion allegedly go in Trump Administration Social Safety Net Funding Freeze?",
+    "Where did the $130 million allegedly go in USDA Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 210,
-    "articlesProcessed": 10450,
-    "redFlagsFound": 231,
+    "totalScans": 211,
+    "articlesProcessed": 10500,
+    "redFlagsFound": 232,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,13 +571,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "USDA suspends nearly $130 million in federal funds to Minnesota over fraud concerns",
+          "insight": "This suggests a significant level of fraud detected in Minnesota, warranting large-scale action by federal agencies.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "New York Post",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOR2wxTDZYdzU1QVdPcnoxUVdLb1JZVzVPRUlNOUhTMDVTSGtNQXlmU19lcWpFX0VSSmlLTkE4M01famJUNEtUNV9NWDZiVzQydXVuQ1RKcmVPaHpfNzY5MTlGOEtwT2x6SmVCbXlocXhSdjRPTFZKdXVKQUhDeFF1bDRmRm9vRnUycEU1cVh0NGt5aTNzZ2lhLWpxREpmbHNESm5jYnBrSk5CLVZZSHpTVXAzZ3hfWkw2Z05BNTFB"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jacob Frey connected to?",
-        "What specific allegations exist against Jacob Frey?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
+        "Where did the $500 million allegedly go in Minnesota Fraud Probe?"
       ]
     }
   ],
@@ -586,6 +605,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-10T08:25:31.283Z",
-  "lastUpdated": "2026-01-10T08:25:31.284Z"
+  "lastReflection": "2026-01-10T09:19:32.151Z",
+  "lastUpdated": "2026-01-10T09:19:32.152Z"
 }
