@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-05T18:31:10.669Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-05T19:20:16.224Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-10T07:19:06.264Z",
       "summary": "CRITICAL: 2 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-10T08:25:31.283Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,14 +525,12 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 13,
+      "count": 14,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-10T07:19:06.265Z"
+      "lastSeen": "2026-01-10T08:25:31.284Z"
     }
   ],
   "openQuestions": [
-    "What other organizations is Jacob Frey connected to?",
-    "What specific allegations exist against Jacob Frey?",
     "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $500 million allegedly go in Minnesota Fraud Probe?",
@@ -550,7 +548,9 @@
     "Where did the $130 million allegedly go in USDA Funding Freeze?",
     "Where did the $10 billion allegedly go in Trump Administration Child Care Funding Freeze?",
     "Where did the $130 million allegedly go in USDA Investigation into Minnesota?",
-    "Where did the $130 million allegedly go in USDA Investigation into Minnesota Fraud?"
+    "Where did the $130 million allegedly go in USDA Investigation into Minnesota Fraud?",
+    "Where did the $130 million allegedly go in Minnesota Child Care Funding Investigation?",
+    "Where did the $10 billion allegedly go in Trump Administration Social Safety Net Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 209,
-    "articlesProcessed": 10400,
-    "redFlagsFound": 229,
+    "totalScans": 210,
+    "articlesProcessed": 10450,
+    "redFlagsFound": 231,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Renee Good?",
         "What other organizations is Jacob Frey connected to?",
-        "What specific allegations exist against Jacob Frey?"
+        "What specific allegations exist against Jacob Frey?",
+        "What other organizations is Renee Good connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-10T07:19:06.264Z",
-  "lastUpdated": "2026-01-10T07:19:06.265Z"
+  "lastReflection": "2026-01-10T08:25:31.283Z",
+  "lastUpdated": "2026-01-10T08:25:31.284Z"
 }
