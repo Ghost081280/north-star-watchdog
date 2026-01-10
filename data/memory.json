@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-06T03:28:50.679Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-06T04:39:09.936Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-10T14:18:33.537Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-10T15:18:48.218Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -517,22 +517,20 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 13,
+      "count": 14,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-09T19:19:55.061Z"
+      "lastSeen": "2026-01-10T15:18:48.219Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 14,
+      "count": 15,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-10T08:25:31.284Z"
+      "lastSeen": "2026-01-10T15:18:48.219Z"
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Minnesota Child Care Funding Fraud Probe?",
-    "What other organizations is Lori Chavez-DeRemer connected to?",
     "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the undisclosed allegedly go in Pandemic-Related Fraud Investigation?",
     "What other organizations is Not applicable connected to?",
@@ -550,7 +548,9 @@
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $129 million allegedly go in USDA Funding Suspension?"
+    "Where did the $129 million allegedly go in USDA Funding Suspension?",
+    "What other organizations is Renee Good connected to?",
+    "Where did the None allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 216,
-    "articlesProcessed": 10750,
-    "redFlagsFound": 237,
+    "totalScans": 217,
+    "articlesProcessed": 10800,
+    "redFlagsFound": 239,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Minnesota DHS Investigation?",
-        "Where did the $10B allegedly go in Trump Administration Investigation?",
-        "Where did the $10B allegedly go in Minnesota Child Care Funding Fraud Probe?"
+        "Where did the $10B allegedly go in Minnesota Child Care Funding Fraud Probe?",
+        "What other organizations is Lori Chavez-DeRemer connected to?",
+        "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-10T14:18:33.537Z",
-  "lastUpdated": "2026-01-10T14:18:33.537Z"
+  "lastReflection": "2026-01-10T15:18:48.218Z",
+  "lastUpdated": "2026-01-10T15:18:48.219Z"
 }
