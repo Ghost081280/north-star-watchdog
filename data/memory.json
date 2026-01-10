@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-06T01:29:13.794Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-06T03:28:50.679Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-10T13:28:41.767Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-10T14:18:33.537Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Minnesota DHS Investigation?",
-    "Where did the $10B allegedly go in Trump Administration Investigation?",
     "Where did the $10B allegedly go in Minnesota Child Care Funding Fraud Probe?",
     "What other organizations is Lori Chavez-DeRemer connected to?",
     "Where did the $10 billion allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -550,7 +548,9 @@
     "Where did the $130 million allegedly go in USDA Investigation?",
     "Where did the $10 billion allegedly go in Judge Blocks Trump Administration from Freezing Child Care Funds?",
     "What other organizations is Robert P. Rubicco connected to?",
-    "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?"
+    "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $129 million allegedly go in USDA Funding Suspension?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 215,
-    "articlesProcessed": 10700,
-    "redFlagsFound": 235,
+    "totalScans": 216,
+    "articlesProcessed": 10750,
+    "redFlagsFound": 237,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?",
         "Where did the $10B allegedly go in Minnesota DHS Investigation?",
-        "Where did the $10B allegedly go in Trump Administration Investigation?"
+        "Where did the $10B allegedly go in Trump Administration Investigation?",
+        "Where did the $10B allegedly go in Minnesota Child Care Funding Fraud Probe?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-10T13:28:41.767Z",
-  "lastUpdated": "2026-01-10T13:28:41.768Z"
+  "lastReflection": "2026-01-10T14:18:33.537Z",
+  "lastUpdated": "2026-01-10T14:18:33.537Z"
 }
