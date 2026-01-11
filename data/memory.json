@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-06T19:16:21.948Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-06T20:22:48.770Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-11T08:25:23.073Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-11T09:19:53.048Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 15,
+      "count": 16,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-11T01:46:47.112Z"
+      "lastSeen": "2026-01-11T09:19:53.050Z"
     },
     {
       "type": "federal_funding",
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $129m allegedly go in Minnesota Fraud Investigation?",
     "Where did the $129M+ allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is No specific individuals charged connected to?",
     "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
@@ -550,7 +548,9 @@
     "Where did the $129m allegedly go in Minnesota Day Care Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "Where did the $129m allegedly go in Minnesota Benefits Fraud Investigation?",
-    "Where did the $10 Billion allegedly go in Childcare Funding Freeze Investigation?"
+    "Where did the $10 Billion allegedly go in Childcare Funding Freeze Investigation?",
+    "Where did the $129m allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the undetermined allegedly go in USDA Grants Pause?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 232,
-    "articlesProcessed": 11550,
-    "redFlagsFound": 255,
+    "totalScans": 233,
+    "articlesProcessed": 11600,
+    "redFlagsFound": 257,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T08:25:23.073Z",
-  "lastUpdated": "2026-01-11T08:25:23.073Z"
+  "lastReflection": "2026-01-11T09:19:53.048Z",
+  "lastUpdated": "2026-01-11T09:19:53.050Z"
 }
