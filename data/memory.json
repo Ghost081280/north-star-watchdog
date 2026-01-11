@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T04:40:25.138Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-01-07T05:24:57.361Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-11T15:19:23.649Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-11T16:23:08.672Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129m allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the Not Applicable allegedly go in ICE Shooting Investigation?",
-    "Where did the $10B allegedly go in Daycare Fraud Investigation?",
     "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?",
     "Where did the $129m allegedly go in Minnesota Childcare Subsidy Fraud?",
     "Where did the $129m allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -550,7 +547,10 @@
     "What specific allegations exist against Tim Walz?",
     "What other organizations is Minnesota AG connected to?",
     "What specific allegations exist against Minnesota AG?",
-    "Where did the $10B allegedly go in Minnesota Childcare Fraud?"
+    "Where did the $10B allegedly go in Minnesota Childcare Fraud?",
+    "What other organizations is Indian-origin judge connected to?",
+    "Where did the $1.9 million allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the $10B allegedly go in Federal Funding Freeze Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 239,
-    "articlesProcessed": 11900,
-    "redFlagsFound": 262,
+    "totalScans": 240,
+    "articlesProcessed": 11950,
+    "redFlagsFound": 264,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -576,17 +576,16 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal_freeze",
-          "description": "Federal funding freeze due to alleged childcare fraud in Minnesota",
-          "insight": "This freeze indicates a significant concern about fraud in childcare programs, potentially involving large sums of money.",
+          "type": "shell_company",
+          "description": "The Quality Learing Center has been accused of being a shell company that raked in $1.9 million in taxpayer funds",
+          "insight": "I believe that the Quality Learing Center may be just the tip of the iceberg. Further investigation is needed to determine the extent of the fraud and to identify other potential shell companies that may be operating in Minnesota.",
           "entities": [
-            "Minnesota DHS",
-            "HHS"
+            "Quality Learing Center"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "The New York Times",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN2wxSFFQMGVPN2VGTFl1U0VYWE11ZmZpQldaLXFVQlA4Rk0xYzBURjVSejJvQjEwZmZpUEF2UGNsSGVxbmw3NkQ0SVJmZGd5VTVadUljSWVTYWpoMi1jWGJuLTJLeHRWTmdpc3FZc2tLLV9tSE5CRTUwdUhIZTdOREpZRjdHVUFhTDU0Yg"
+          "source": "AOL",
+          "sourceUrl": "https://www.aol.com/article/news/2026/01/11/minnesotas-infamous-quality-learing-center-is-now-closed-records-show"
         }
       ]
     },
@@ -595,9 +594,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $129M allegedly go in Minnesota Fraud Investigation?",
-        "Where did the $129M allegedly go in Minnesota Day Care Fraud Investigation?",
-        "Where did the N/A allegedly go in ICE Fatal Shooting Investigation?"
+        "Where did the $129m allegedly go in Minnesota Childcare Fraud Investigation?",
+        "Where did the Not Applicable allegedly go in ICE Shooting Investigation?",
+        "Where did the $10B allegedly go in Daycare Fraud Investigation?"
       ]
     }
   ],
@@ -606,6 +605,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T15:19:23.649Z",
-  "lastUpdated": "2026-01-11T15:19:23.650Z"
+  "lastReflection": "2026-01-11T16:23:08.672Z",
+  "lastUpdated": "2026-01-11T16:23:08.672Z"
 }

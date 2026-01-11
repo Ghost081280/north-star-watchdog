@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "The Quality Learing Center has been accused of being a shell company that raked in $1.9 million in taxpayer funds",
+      "insight": "I believe that the Quality Learing Center may be just the tip of the iceberg. Further investigation is needed to determine the extent of the fraud and to identify other potential shell companies that may be operating in Minnesota.",
+      "entities": [
+        "Quality Learing Center"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL",
+      "sourceUrl": "https://www.aol.com/article/news/2026/01/11/minnesotas-infamous-quality-learing-center-is-now-closed-records-show",
+      "id": "rf-1768148588677-7isuvcqeo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-11T16:23:08.673Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Quality 'Learing' Center in Minnesota is now closed",
       "insight": "The closure suggests potential severe issues with the program, possibly related to fraud allegations.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-11T15:19:23.651Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "police_brutality",
@@ -594,8 +613,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -604,6 +621,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -621,5 +640,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-11T15:19:23.651Z"
+  "lastUpdated": "2026-01-11T16:23:08.673Z"
 }
