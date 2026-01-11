@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the shooting of Renee Good, an ICE agent in Minnesota.",
+      "insight": "This incident raises concerns about the use of force by ICE agents and potential systemic issues within the agency.",
+      "entities": [
+        "Renee Good",
+        "FBI",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/more-federal-officers-headed-to-minnesota-officials-point-fingers-over-ice-shooting/2026-01-11/",
+      "id": "rf-1768169952989-128p8a7kp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-11T22:19:12.986Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged fraud",
+      "description": "Individuals involved in Feeding Our Future allegedly bought mansions and Mercedes with $250M in stolen meal funds.",
+      "insight": "This alleged fraud raises concerns about oversight and accountability in meal fund distribution, potentially involving multiple entities and individuals.",
+      "entities": [
+        "Feeding Our Future",
+        "U.S. Department of Justice"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/see-it-feeding-our-future-fraudsters-bought-mansions-mercedes-250m-stolen-meal-funds-aol-com-2026-01-11",
+      "id": "rf-1768169952989-89tojfz1o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-11T22:19:12.986Z",
+      "isNew": true
+    },
+    {
       "type": "shell_company",
       "description": "The Quality Learing Center has been accused of being a shell company that raked in $1.9 million in taxpayer funds",
       "insight": "I believe that the Quality Learing Center may be just the tip of the iceberg. Further investigation is needed to determine the extent of the fraud and to identify other potential shell companies that may be operating in Minnesota.",
@@ -613,10 +654,13 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -637,5 +681,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-11T20:21:45.223Z"
+  "lastUpdated": "2026-01-11T22:19:12.986Z"
 }

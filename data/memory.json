@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T09:27:44.684Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-07T10:23:19.310Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-11T20:21:45.221Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-11T22:19:12.984Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -531,11 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129m allegedly go in Minnesota Day Care Fraud Investigation?",
-    "Where did the N/A allegedly go in ICE Shooting Investigation?",
-    "Where did the $129m allegedly go in Minnesota Benefits Fraud Investigation?",
-    "Where did the $10 Billion allegedly go in Childcare Funding Freeze Investigation?",
-    "Where did the $129m allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the undetermined allegedly go in USDA Grants Pause?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $10B allegedly go in Child Care Service Program Investigation?",
@@ -550,7 +545,12 @@
     "Where did the $10B allegedly go in Federal Funding Freeze Investigation?",
     "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
-    "Where did the $1.9 million allegedly go in Quality Learing Center fraud?"
+    "Where did the $1.9 million allegedly go in Quality Learing Center fraud?",
+    "What other organizations is Renee Good connected to?",
+    "What specific allegations exist against Renee Good?",
+    "What other organizations is Ilhan Omar connected to?",
+    "What specific allegations exist against Ilhan Omar?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 244,
-    "articlesProcessed": 12150,
-    "redFlagsFound": 266,
+    "totalScans": 245,
+    "articlesProcessed": 12200,
+    "redFlagsFound": 268,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -570,6 +570,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "alleged fraud",
+          "description": "Individuals involved in Feeding Our Future allegedly bought mansions and Mercedes with $250M in stolen meal funds.",
+          "insight": "This alleged fraud raises concerns about oversight and accountability in meal fund distribution, potentially involving multiple entities and individuals.",
+          "entities": [
+            "Feeding Our Future",
+            "U.S. Department of Justice"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://www.aol.com/see-it-feeding-our-future-fraudsters-bought-mansions-mercedes-250m-stolen-meal-funds-aol-com-2026-01-11"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T20:21:45.221Z",
-  "lastUpdated": "2026-01-11T20:21:45.222Z"
+  "lastReflection": "2026-01-11T22:19:12.984Z",
+  "lastUpdated": "2026-01-11T22:19:12.985Z"
 }
