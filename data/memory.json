@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T03:28:32.978Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-07T04:40:25.138Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-01-11T14:18:07.642Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-11T15:19:23.649Z",
+      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129M allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $129M allegedly go in Minnesota Day Care Fraud Investigation?",
-    "Where did the N/A allegedly go in ICE Fatal Shooting Investigation?",
-    "What other organizations is Not Applicable connected to?",
     "Where did the $129m allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the Not Applicable allegedly go in ICE Shooting Investigation?",
     "Where did the $10B allegedly go in Daycare Fraud Investigation?",
@@ -550,7 +546,11 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the $10B allegedly go in Child Care Service Program Investigation?",
     "Where did the $129m allegedly go in Minnesota Child Care Service Program Investigation?",
-    "What other organizations is Not available connected to?"
+    "What other organizations is Not available connected to?",
+    "What specific allegations exist against Tim Walz?",
+    "What other organizations is Minnesota AG connected to?",
+    "What specific allegations exist against Minnesota AG?",
+    "Where did the $10B allegedly go in Minnesota Childcare Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 238,
-    "articlesProcessed": 11850,
-    "redFlagsFound": 260,
+    "totalScans": 239,
+    "articlesProcessed": 11900,
+    "redFlagsFound": 262,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -570,6 +570,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "Federal funding freeze due to alleged childcare fraud in Minnesota",
+          "insight": "This freeze indicates a significant concern about fraud in childcare programs, potentially involving large sums of money.",
+          "entities": [
+            "Minnesota DHS",
+            "HHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The New York Times",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN2wxSFFQMGVPN2VGTFl1U0VYWE11ZmZpQldaLXFVQlA4Rk0xYzBURjVSejJvQjEwZmZpUEF2UGNsSGVxbmw3NkQ0SVJmZGd5VTVadUljSWVTYWpoMi1jWGJuLTJLeHRWTmdpc3FZc2tLLV9tSE5CRTUwdUhIZTdOREpZRjdHVUFhTDU0Yg"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T14:18:07.642Z",
-  "lastUpdated": "2026-01-11T14:18:07.642Z"
+  "lastReflection": "2026-01-11T15:19:23.649Z",
+  "lastUpdated": "2026-01-11T15:19:23.650Z"
 }
