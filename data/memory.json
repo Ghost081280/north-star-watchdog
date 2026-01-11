@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-06T16:27:20.496Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-06T17:22:53.149Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-11T05:24:37.478Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-11T06:30:12.908Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129 million allegedly go in USDA Funding Suspension?",
-    "What other organizations is Renee Good connected to?",
     "Where did the None allegedly go in ICE Shooting Investigation?",
     "Where did the $10B allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -550,7 +548,9 @@
     "Where did the $10B allegedly go in Daycare Fraud Investigation?",
     "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?",
     "Where did the $129m allegedly go in Minnesota Childcare Subsidy Fraud?",
-    "Where did the $129m allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $129m allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $129m allegedly go in Minnesota Day Care Fraud Investigation?",
+    "Where did the N/A allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 229,
-    "articlesProcessed": 11400,
-    "redFlagsFound": 252,
+    "totalScans": 230,
+    "articlesProcessed": 11450,
+    "redFlagsFound": 253,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
         "Where did the $129 million allegedly go in USDA Funding Suspension?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "Where did the None allegedly go in ICE Shooting Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T05:24:37.478Z",
-  "lastUpdated": "2026-01-11T05:24:37.479Z"
+  "lastReflection": "2026-01-11T06:30:12.908Z",
+  "lastUpdated": "2026-01-11T06:30:12.909Z"
 }
