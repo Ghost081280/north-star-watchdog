@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-06T14:21:31.950Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-06T15:22:09.461Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-11T03:49:33.594Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-11T04:46:29.935Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $129 million allegedly go in USDA Funding Suspension?",
     "What other organizations is Renee Good connected to?",
@@ -550,7 +549,8 @@
     "Where did the $129m allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the Not Applicable allegedly go in ICE Shooting Investigation?",
     "Where did the $10B allegedly go in Daycare Fraud Investigation?",
-    "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?"
+    "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?",
+    "Where did the $129m allegedly go in Minnesota Childcare Subsidy Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 227,
-    "articlesProcessed": 11300,
-    "redFlagsFound": 250,
+    "totalScans": 228,
+    "articlesProcessed": 11350,
+    "redFlagsFound": 251,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10 billion allegedly go in Judge Blocks Trump Administration from Freezing Child Care Funds?",
-        "What other organizations is Robert P. Rubicco connected to?",
-        "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?"
+        "Where did the $129 million allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $129 million allegedly go in USDA Funding Suspension?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T03:49:33.594Z",
-  "lastUpdated": "2026-01-11T03:49:33.595Z"
+  "lastReflection": "2026-01-11T04:46:29.935Z",
+  "lastUpdated": "2026-01-11T04:46:29.935Z"
 }
