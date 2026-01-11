@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T05:24:57.361Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-07T06:32:11.265Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-11T16:23:08.672Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-11T17:16:56.078Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?",
-    "Where did the $129m allegedly go in Minnesota Childcare Subsidy Fraud?",
-    "Where did the $129m allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $129m allegedly go in Minnesota Day Care Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "Where did the $129m allegedly go in Minnesota Benefits Fraud Investigation?",
@@ -550,7 +547,10 @@
     "Where did the $10B allegedly go in Minnesota Childcare Fraud?",
     "What other organizations is Indian-origin judge connected to?",
     "Where did the $1.9 million allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $10B allegedly go in Federal Funding Freeze Investigation?"
+    "Where did the $10B allegedly go in Federal Funding Freeze Investigation?",
+    "What other organizations is Not specified connected to?",
+    "What specific allegations exist against Not specified?",
+    "Where did the $1.9 million allegedly go in Quality Learing Center fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 240,
-    "articlesProcessed": 11950,
-    "redFlagsFound": 264,
+    "totalScans": 241,
+    "articlesProcessed": 12000,
+    "redFlagsFound": 266,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,32 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "shell_company",
-          "description": "The Quality Learing Center has been accused of being a shell company that raked in $1.9 million in taxpayer funds",
-          "insight": "I believe that the Quality Learing Center may be just the tip of the iceberg. Further investigation is needed to determine the extent of the fraud and to identify other potential shell companies that may be operating in Minnesota.",
-          "entities": [
-            "Quality Learing Center"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL",
-          "sourceUrl": "https://www.aol.com/article/news/2026/01/11/minnesotas-infamous-quality-learing-center-is-now-closed-records-show"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $129m allegedly go in Minnesota Childcare Fraud Investigation?",
-        "Where did the Not Applicable allegedly go in ICE Shooting Investigation?",
-        "Where did the $10B allegedly go in Daycare Fraud Investigation?"
+        "Where did the $129m allegedly go in Childcare Subsidy Fraud Investigation?",
+        "Where did the $129m allegedly go in Minnesota Childcare Subsidy Fraud?",
+        "Where did the $129m allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     }
   ],
@@ -605,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T16:23:08.672Z",
-  "lastUpdated": "2026-01-11T16:23:08.672Z"
+  "lastReflection": "2026-01-11T17:16:56.078Z",
+  "lastUpdated": "2026-01-11T17:16:56.079Z"
 }
