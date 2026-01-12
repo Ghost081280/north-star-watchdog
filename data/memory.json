@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T08:29:37.259Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-08T09:27:42.832Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-12T20:23:45.615Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-12T21:20:01.322Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 21,
+      "count": 22,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-12T20:23:45.616Z"
+      "lastSeen": "2026-01-12T21:20:01.323Z"
     }
   ],
   "openQuestions": [
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 265,
-    "articlesProcessed": 13150,
-    "redFlagsFound": 292,
+    "totalScans": 266,
+    "articlesProcessed": 13200,
+    "redFlagsFound": 294,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Federal Reserve Investigation?",
-        "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
-        "Where did the $0 allegedly go in Minnesota Corruption Investigation?"
+        "Where did the $0 allegedly go in DOJ Investigation into Fed Chair Jerome Powell?",
+        "Where did the $0 allegedly go in Minnesota Immigration Arrests and Renee Good Shooting?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T20:23:45.615Z",
-  "lastUpdated": "2026-01-12T20:23:45.616Z"
+  "lastReflection": "2026-01-12T21:20:01.322Z",
+  "lastUpdated": "2026-01-12T21:20:01.323Z"
 }
