@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T14:23:20.688Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-07T15:24:12.133Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-12T04:49:30.325Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-12T05:29:02.099Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Indian-origin judge connected to?",
-    "Where did the $1.9 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $10B allegedly go in Federal Funding Freeze Investigation?",
     "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
@@ -550,7 +548,9 @@
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
-    "Where did the $0 allegedly go in Minnesota Corruption Investigation?"
+    "Where did the $0 allegedly go in Minnesota Corruption Investigation?",
+    "Where did the $0 allegedly go in DOJ Investigation into Fed Chair Jerome Powell?",
+    "Where did the $0 allegedly go in Minnesota Immigration Arrests and Renee Good Shooting?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 249,
-    "articlesProcessed": 12400,
-    "redFlagsFound": 272,
+    "totalScans": 250,
+    "articlesProcessed": 12450,
+    "redFlagsFound": 274,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Minnesota AG?",
-        "Where did the $10B allegedly go in Minnesota Childcare Fraud?",
-        "What other organizations is Indian-origin judge connected to?"
+        "What other organizations is Indian-origin judge connected to?",
+        "Where did the $1.9 million allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the $10B allegedly go in Federal Funding Freeze Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T04:49:30.325Z",
-  "lastUpdated": "2026-01-12T04:49:30.325Z"
+  "lastReflection": "2026-01-12T05:29:02.099Z",
+  "lastUpdated": "2026-01-12T05:29:02.099Z"
 }
