@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T11:19:36.892Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-07T12:42:33.980Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-11T23:18:51.279Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-12T01:43:45.558Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $129m allegedly go in Minnesota Child Care Service Program Investigation?",
-    "What other organizations is Not available connected to?",
-    "What specific allegations exist against Tim Walz?",
     "What other organizations is Minnesota AG connected to?",
     "What specific allegations exist against Minnesota AG?",
     "Where did the $10B allegedly go in Minnesota Childcare Fraud?",
@@ -550,7 +547,10 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Unknown allegedly go in Renee Good Shooting Investigation?",
     "Where did the $250M allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Jerome Powell connected to?",
+    "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
+    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 246,
-    "articlesProcessed": 12250,
-    "redFlagsFound": 269,
+    "totalScans": 247,
+    "articlesProcessed": 12300,
+    "redFlagsFound": 270,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the undetermined allegedly go in USDA Grants Pause?",
-        "What other organizations is Tim Walz connected to?",
-        "Where did the $10B allegedly go in Child Care Service Program Investigation?"
+        "Where did the $129m allegedly go in Minnesota Child Care Service Program Investigation?",
+        "What other organizations is Not available connected to?",
+        "What specific allegations exist against Tim Walz?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-11T23:18:51.279Z",
-  "lastUpdated": "2026-01-11T23:18:51.280Z"
+  "lastReflection": "2026-01-12T01:43:45.558Z",
+  "lastUpdated": "2026-01-12T01:43:45.559Z"
 }
