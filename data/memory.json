@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T10:24:24.007Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-01-08T11:20:12.157Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-12T22:18:51.448Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-12T23:19:15.917Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -560,8 +560,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 267,
-    "articlesProcessed": 13250,
+    "totalScans": 268,
+    "articlesProcessed": 13300,
     "redFlagsFound": 295,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in DOJ Investigation into Fed Chair Jerome Powell?",
-        "Where did the $0 allegedly go in Minnesota Immigration Arrests and Renee Good Shooting?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?"
+        "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?",
+        "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
+        "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T22:18:51.448Z",
-  "lastUpdated": "2026-01-12T22:18:51.449Z"
+  "lastReflection": "2026-01-12T23:19:15.917Z",
+  "lastUpdated": "2026-01-12T23:19:15.918Z"
 }
