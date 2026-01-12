@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T21:19:34.660Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-07T22:20:13.071Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-12T11:25:19.164Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
+    },
+    {
+      "date": "2026-01-12T12:43:52.357Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Unknown allegedly go in Renee Good Shooting Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $0 (no specific amount mentioned) allegedly go in Investigation into Jerome Powell?",
     "Where did the $0 (no specific amount mentioned) allegedly go in Minnesota ICE killing investigation?",
-    "Where did the $16M allegedly go in Child care assistance program audit?"
+    "Where did the $16M allegedly go in Child care assistance program audit?",
+    "Where did the $10 billion allegedly go in Federal Reserve Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 256,
-    "articlesProcessed": 12700,
-    "redFlagsFound": 280,
+    "totalScans": 257,
+    "articlesProcessed": 12750,
+    "redFlagsFound": 281,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T11:25:19.164Z",
-  "lastUpdated": "2026-01-12T11:25:19.164Z"
+  "lastReflection": "2026-01-12T12:43:52.357Z",
+  "lastUpdated": "2026-01-12T12:43:52.358Z"
 }
