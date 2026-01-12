@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T18:31:07.833Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.65
-    },
-    {
       "date": "2026-01-07T19:20:03.836Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-01-12T08:30:40.121Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-12T09:31:21.863Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.9 million allegedly go in Quality Learing Center fraud?",
-    "What other organizations is Renee Good connected to?",
-    "What specific allegations exist against Renee Good?",
     "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
@@ -550,7 +547,10 @@
     "Where did the $0 allegedly go in Minnesota Immigration Arrests and Renee Good Shooting?",
     "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
-    "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?"
+    "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
+    "Where did the $0 (no specific amount mentioned) allegedly go in Investigation into Jerome Powell?",
+    "Where did the $0 (no specific amount mentioned) allegedly go in Minnesota ICE killing investigation?",
+    "Where did the $16M allegedly go in Child care assistance program audit?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 253,
-    "articlesProcessed": 12600,
-    "redFlagsFound": 278,
+    "totalScans": 254,
+    "articlesProcessed": 12650,
+    "redFlagsFound": 280,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -570,6 +570,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal investigation",
+          "description": "Federal investigation into Jerome Powell",
+          "insight": "The investigation into Jerome Powell raises concerns about the integrity and independence of the Federal Reserve. If Powell is found guilty, it could have significant implications for US monetary policy and financial stability.",
+          "entities": [
+            "Jerome Powell",
+            "Federal Reserve"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Multiple reputable news sources",
+          "sourceUrl": "https://www.wsj.com/articles/us-prosecutors-are-investigating-fed-chair-jerome-powell-11612165402"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T08:30:40.121Z",
-  "lastUpdated": "2026-01-12T08:30:40.122Z"
+  "lastReflection": "2026-01-12T09:31:21.863Z",
+  "lastUpdated": "2026-01-12T09:31:21.864Z"
 }
