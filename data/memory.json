@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T19:20:03.836Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-07T20:23:50.663Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-12T09:31:21.863Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-12T10:24:17.158Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -560,8 +560,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 254,
-    "articlesProcessed": 12650,
+    "totalScans": 255,
+    "articlesProcessed": 12700,
     "redFlagsFound": 280,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -571,33 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal investigation",
-          "description": "Federal investigation into Jerome Powell",
-          "insight": "The investigation into Jerome Powell raises concerns about the integrity and independence of the Federal Reserve. If Powell is found guilty, it could have significant implications for US monetary policy and financial stability.",
-          "entities": [
-            "Jerome Powell",
-            "Federal Reserve"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Multiple reputable news sources",
-          "sourceUrl": "https://www.wsj.com/articles/us-prosecutors-are-investigating-fed-chair-jerome-powell-11612165402"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.9 million allegedly go in Quality Learing Center fraud?",
-        "What other organizations is Renee Good connected to?",
-        "What specific allegations exist against Renee Good?"
+        "What other organizations is Ilhan Omar connected to?",
+        "What specific allegations exist against Ilhan Omar?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
       ]
     }
   ],
@@ -606,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T09:31:21.863Z",
-  "lastUpdated": "2026-01-12T09:31:21.864Z"
+  "lastReflection": "2026-01-12T10:24:17.158Z",
+  "lastUpdated": "2026-01-12T10:24:17.158Z"
 }
