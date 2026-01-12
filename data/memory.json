@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T05:24:13.867Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-08T06:32:45.190Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-12T17:22:56.812Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-12T18:31:39.558Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,14 +525,12 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 19,
+      "count": 20,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-12T13:41:44.610Z"
+      "lastSeen": "2026-01-12T18:31:39.559Z"
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
-    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
     "Where did the $0 allegedly go in Minnesota Corruption Investigation?",
@@ -550,7 +548,9 @@
     "Where did the Unknown allegedly go in Minnesota Welfare Fraud Rings?",
     "What other organizations is Trump Administration connected to?",
     "Where did the $B+ allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the Billions allegedly go in Minnesota Fraud Scandal?"
+    "Where did the Billions allegedly go in Minnesota Fraud Scandal?",
+    "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
+    "Where did the $3.7M allegedly go in HHS Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 262,
-    "articlesProcessed": 13000,
-    "redFlagsFound": 288,
+    "totalScans": 263,
+    "articlesProcessed": 13050,
+    "redFlagsFound": 290,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jerome Powell connected to?",
         "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
-        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the Unknown allegedly go in Federal Reserve Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T17:22:56.812Z",
-  "lastUpdated": "2026-01-12T17:22:56.813Z"
+  "lastReflection": "2026-01-12T18:31:39.558Z",
+  "lastUpdated": "2026-01-12T18:31:39.559Z"
 }
