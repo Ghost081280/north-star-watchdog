@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ's investigation into Federal Reserve Chair Jerome Powell has raised concerns about the independence of the Federal Reserve.",
+      "insight": "I see a pattern of investigations into high-ranking officials, which could indicate a larger issue with accountability and oversight. Further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC News",
+      "sourceUrl": "https://www.abcnews.com/politics/doj-launches-criminal-investigation-into-fed-chair-jerome-powell",
+      "id": "rf-1768249425622-3er57eymd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-12T20:23:45.618Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Trump administration has been accused of targeting Europe's content moderation laws.",
       "insight": "This could be a sign of a larger effort to undermine international regulations and laws, potentially benefiting certain corporations or individuals. Further investigation is needed to determine the motivations behind this action and its potential consequences.",
@@ -833,6 +853,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -840,7 +861,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -857,5 +880,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-12T19:20:30.085Z"
+  "lastUpdated": "2026-01-12T20:23:45.618Z"
 }
