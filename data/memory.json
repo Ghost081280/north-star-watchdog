@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-07T12:42:33.980Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-07T13:39:20.467Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-12T01:43:45.558Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-12T03:48:33.942Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota AG connected to?",
     "What specific allegations exist against Minnesota AG?",
     "Where did the $10B allegedly go in Minnesota Childcare Fraud?",
     "What other organizations is Indian-origin judge connected to?",
@@ -550,7 +549,8 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Jerome Powell connected to?",
     "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
-    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the Unknown allegedly go in Federal Reserve Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 247,
-    "articlesProcessed": 12300,
-    "redFlagsFound": 270,
+    "totalScans": 248,
+    "articlesProcessed": 12350,
+    "redFlagsFound": 271,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $129m allegedly go in Minnesota Child Care Service Program Investigation?",
-        "What other organizations is Not available connected to?",
-        "What specific allegations exist against Tim Walz?"
+        "What other organizations is Minnesota AG connected to?",
+        "What specific allegations exist against Minnesota AG?",
+        "Where did the $10B allegedly go in Minnesota Childcare Fraud?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T01:43:45.558Z",
-  "lastUpdated": "2026-01-12T01:43:45.559Z"
+  "lastReflection": "2026-01-12T03:48:33.942Z",
+  "lastUpdated": "2026-01-12T03:48:33.943Z"
 }
