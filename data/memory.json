@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T04:39:01.235Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-08T05:24:13.867Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-12T16:26:30.501Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-12T17:22:56.812Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Jerome Powell connected to?",
     "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
     "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Investigation?",
@@ -550,7 +549,8 @@
     "Where did the $10 billion allegedly go in Minnesota Fraud Scandal?",
     "Where did the Unknown allegedly go in Minnesota Welfare Fraud Rings?",
     "What other organizations is Trump Administration connected to?",
-    "Where did the $B+ allegedly go in Minnesota Welfare Fraud Investigation?"
+    "Where did the $B+ allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the Billions allegedly go in Minnesota Fraud Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 261,
-    "articlesProcessed": 12950,
-    "redFlagsFound": 286,
+    "totalScans": 262,
+    "articlesProcessed": 13000,
+    "redFlagsFound": 288,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,33 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "DOJ opens criminal probe into Fed chair Jerome Powell",
-          "insight": "This is a significant development that could have far-reaching implications for the economy and the Federal Reserve. I would closely monitor this investigation and look for connections to other entities or programs.",
-          "entities": [
-            "Federal Reserve",
-            "DOJ"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The New York Times",
-          "sourceUrl": "https://www.nytimes.com/2026/01/12/business/economy/federal-reserve-powell-investigation.html"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Welfare Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Jerome Powell connected to?"
+        "What other organizations is Jerome Powell connected to?",
+        "Where did the Unknown allegedly go in Federal Reserve Headquarters Renovation Investigation?",
+        "Where did the $10B allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     }
   ],
@@ -606,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-12T16:26:30.501Z",
-  "lastUpdated": "2026-01-12T16:26:30.501Z"
+  "lastReflection": "2026-01-12T17:22:56.812Z",
+  "lastUpdated": "2026-01-12T17:22:56.813Z"
 }
