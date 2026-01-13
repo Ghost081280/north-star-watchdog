@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Trump administration's decision to withhold $2 billion in Medicaid funds from Minnesota",
+      "insight": "Potential for widespread fraud in Medicaid program, concerns about program integrity",
+      "entities": [
+        "Minnesota",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://star Tribune.com/star-tribune/2026-01-13/state-appeals-federal-plan-to-withhold-2-billion-in-medicaid-funds",
+      "id": "rf-1768342882148-k1cabzkv4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-13T22:21:22.145Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "Potential termination of funding for sanctuary cities and states",
+      "insight": "Potential for widespread impact on social services and communities",
+      "entities": [
+        "sanctuary cities",
+        "states"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "National News Desk",
+      "sourceUrl": "https://nationalnewsdesk.com/national-news-desk/2026-01-13/'fraud-and-crime'-trump-to-halt-payments-to-sanctuary-cities-beginning-feb-1",
+      "id": "rf-1768342882148-t900k9t1i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-13T22:21:22.145Z",
+      "isNew": true
+    },
+    {
       "type": "mass_resignation",
       "description": "Mass resignation of Minnesota federal prosecutors over ICE shooting investigation",
       "insight": "This mass resignation may indicate a significant rift between federal prosecutors and the DOJ over the handling of the investigation.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-13T21:20:28.184Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "resignation of top prosecutors",
@@ -949,60 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-03T10:20:17.386Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The termination of funding for certain day care programs in Minnesota could indicate a larger issue with the state's oversight of these programs.",
-      "insight": "This could be indicative of a larger issue with Minnesota's day care programs and the need for increased oversight.",
-      "entities": [
-        "Minnesota DHS",
-        "HHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Blaze Media",
-      "sourceUrl": "https://blazemedia.com/news/tim-walzs-nightmare-continues-as-hhs-shuts-off-185m-to-minnesota-amid-allegedly-fake-somali-day-care-centers",
-      "id": "rf-1767360754787-ou5odfp14",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-02T13:32:34.784Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "New law aims to prevent fraud at state-supported day cares, creates real-time electronic attendance records.",
-      "insight": "The creation of real-time electronic attendance records indicates an effort to increase transparency and accountability in daycare programs, likely in response to fraud allegations.",
-      "entities": [
-        "Minnesota state government"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/new-law-aims-to-prevent-fraud-at-state-supported-day-cares-creates-real-time-electronic-attendance-records",
-      "id": "rf-1767352685389-dr7mst7co",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-02T11:18:05.386Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-13T21:20:28.184Z"
+  "lastUpdated": "2026-01-13T22:21:22.145Z"
 }
