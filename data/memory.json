@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T06:32:15.476Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-09T07:24:34.445Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-13T18:30:18.945Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-13T19:20:42.123Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -525,15 +525,12 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 25,
+      "count": 26,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-13T10:23:01.074Z"
+      "lastSeen": "2026-01-13T19:20:42.124Z"
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
-    "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
-    "Where did the $16M allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the Unknown allegedly go in DOJ Investigation of Federal Reserve Chair Jerome Powell?",
     "Where did the $129M allegedly go in Minnesota Food Stamp Funding Investigation?",
     "Where did the N/A allegedly go in Federal Reserve Investigation?",
@@ -550,7 +547,10 @@
     "Where did the Unknown allegedly go in Minnesota daycare fraud?",
     "Where did the $84 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $129 million allegedly go in Minnesota Fraud Probe?",
-    "Where did the None allegedly go in ICE Shooting Victim's Widow Investigation?"
+    "Where did the None allegedly go in ICE Shooting Victim's Widow Investigation?",
+    "What other organizations is Joe Thompson connected to?",
+    "What specific allegations exist against Joe Thompson?",
+    "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 285,
-    "articlesProcessed": 14150,
-    "redFlagsFound": 317,
+    "totalScans": 286,
+    "articlesProcessed": 14200,
+    "redFlagsFound": 319,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $129M allegedly go in Minnesota Food Stamp Funding Fraud Investigation?",
-        "Where did the $129M allegedly go in Minnesota Welfare Fraud Investigation?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?"
+        "Where did the Unknown allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
+        "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
+        "Where did the $16M allegedly go in Minnesota Welfare Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T18:30:18.945Z",
-  "lastUpdated": "2026-01-13T18:30:18.946Z"
+  "lastReflection": "2026-01-13T19:20:42.123Z",
+  "lastUpdated": "2026-01-13T19:20:42.124Z"
 }
