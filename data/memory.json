@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T21:20:25.146Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-08T22:20:52.578Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-13T11:19:47.606Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-13T12:43:36.622Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -560,8 +560,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 278,
-    "articlesProcessed": 13800,
+    "totalScans": 279,
+    "articlesProcessed": 13850,
     "redFlagsFound": 309,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
-        "Where did the $3.7M allegedly go in HHS Funding Freeze?",
-        "What other organizations is Jerome Powell connected to?"
+        "What other organizations is Jerome Powell connected to?",
+        "Where did the Undisclosed allegedly go in Federal Reserve Investigation?",
+        "Where did the Undisclosed allegedly go in Minnesota Childcare Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T11:19:47.606Z",
-  "lastUpdated": "2026-01-13T11:19:47.607Z"
+  "lastReflection": "2026-01-13T12:43:36.622Z",
+  "lastUpdated": "2026-01-13T12:43:36.622Z"
 }
