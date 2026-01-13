@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T18:27:16.463Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-08T19:19:12.731Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-13T08:29:46.293Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-13T09:27:42.440Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $B+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the Billions allegedly go in Minnesota Fraud Scandal?",
     "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the $3.7M allegedly go in HHS Funding Freeze?",
@@ -550,7 +549,8 @@
     "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
     "Where did the $16M allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the Unknown allegedly go in DOJ Investigation of Federal Reserve Chair Jerome Powell?",
-    "Where did the $129M allegedly go in Minnesota Food Stamp Funding Investigation?"
+    "Where did the $129M allegedly go in Minnesota Food Stamp Funding Investigation?",
+    "Where did the N/A allegedly go in Federal Reserve Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 275,
-    "articlesProcessed": 13650,
-    "redFlagsFound": 305,
+    "totalScans": 276,
+    "articlesProcessed": 13700,
+    "redFlagsFound": 306,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump Administration connected to?",
         "Where did the $B+ allegedly go in Minnesota Welfare Fraud Investigation?",
-        "Where did the Billions allegedly go in Minnesota Fraud Scandal?"
+        "Where did the Billions allegedly go in Minnesota Fraud Scandal?",
+        "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T08:29:46.293Z",
-  "lastUpdated": "2026-01-13T08:29:46.293Z"
+  "lastReflection": "2026-01-13T09:27:42.440Z",
+  "lastUpdated": "2026-01-13T09:27:42.441Z"
 }
