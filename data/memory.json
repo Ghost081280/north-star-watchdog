@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T08:29:07.228Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-09T09:27:22.826Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-13T20:24:07.964Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-13T21:20:28.183Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $16M+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $9B allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "What other organizations is Robert P. Rubicco connected to?",
@@ -550,7 +549,8 @@
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Renee Good's Widow?",
     "Where did the $250M allegedly go in Minnesota Fraud Case?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $2B allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 287,
-    "articlesProcessed": 14250,
-    "redFlagsFound": 320,
+    "totalScans": 288,
+    "articlesProcessed": 14300,
+    "redFlagsFound": 322,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in DOJ Investigation of Federal Reserve Chair Jerome Powell?",
-        "Where did the $129M allegedly go in Minnesota Food Stamp Funding Investigation?",
-        "Where did the N/A allegedly go in Federal Reserve Investigation?"
+        "Where did the $16M+ allegedly go in Minnesota Welfare Fraud Investigation?",
+        "Where did the $9B allegedly go in Minnesota Welfare Fraud Investigation?",
+        "Where did the N/A allegedly go in ICE Shooting Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T20:24:07.964Z",
-  "lastUpdated": "2026-01-13T20:24:07.965Z"
+  "lastReflection": "2026-01-13T21:20:28.183Z",
+  "lastUpdated": "2026-01-13T21:20:28.183Z"
 }

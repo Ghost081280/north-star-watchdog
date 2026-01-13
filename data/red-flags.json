@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "mass_resignation",
+      "description": "Mass resignation of Minnesota federal prosecutors over ICE shooting investigation",
+      "insight": "This mass resignation may indicate a significant rift between federal prosecutors and the DOJ over the handling of the investigation.",
+      "entities": [
+        "DOJ",
+        "Minnesota federal prosecutors"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-canada/prosecutors-minnesota-resign-over-concerns-about-ice-shooting-investigation-n1088461",
+      "id": "rf-1768339228187-ntv8ue0a9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-13T21:20:28.184Z",
+      "isNew": true
+    },
+    {
       "type": "resignation of top prosecutors",
       "description": "The resignation of 6 Minnesota prosecutors over the DOJ investigation into Renee Good's widow raises concerns about the integrity of the investigation and the potential for obstruction of justice.",
       "insight": "The sudden resignation of top prosecutors suggests that there may be more to the story than meets the eye. It is possible that the prosecutors were pressured to resign or that they were concerned about the direction of the investigation. Further investigation is needed to determine the reasons behind their resignation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-13T20:24:07.966Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -968,34 +988,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-02T11:18:05.386Z",
       "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "HHS has frozen some child care funds nationwide amid the Minnesota fraud investigation",
-      "insight": "This freeze may indicate a larger issue with the daycare program and potential misuse of federal funds. Further investigation is needed to determine the extent of the fraud and those involved.",
-      "entities": [
-        "Tim Walz",
-        "HHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "HHS",
-      "sourceUrl": "https://www.wfla.com/news/hhs-freezes-some-child-care-funds-nationwide-amid-minnesota-fraud-investigation/",
-      "id": "rf-1767284713745-6mdxf0zex",
-      "apisUsed": [
-        "Google News",
-        "ProPublica Nonprofits",
-        "FEC"
-      ],
-      "sourceCount": 3,
-      "detectedAt": "2026-01-01T16:25:13.742Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1004,7 +1000,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-13T20:24:07.966Z"
+  "lastUpdated": "2026-01-13T21:20:28.184Z"
 }
