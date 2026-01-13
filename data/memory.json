@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T20:24:00.503Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-01-08T21:20:25.146Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-13T10:23:01.073Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-13T11:19:47.606Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
-    "Where did the $3.7M allegedly go in HHS Funding Freeze?",
     "What other organizations is Jerome Powell connected to?",
     "Where did the Undisclosed allegedly go in Federal Reserve Investigation?",
     "Where did the Undisclosed allegedly go in Minnesota Childcare Fraud Investigation?",
@@ -550,7 +548,9 @@
     "Where did the Unknown allegedly go in DOJ Investigation of Federal Reserve Chair Jerome Powell?",
     "Where did the $129M allegedly go in Minnesota Food Stamp Funding Investigation?",
     "Where did the N/A allegedly go in Federal Reserve Investigation?",
-    "Where did the $16M+ allegedly go in Minnesota Welfare Fraud Investigation?"
+    "Where did the $16M+ allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the $9B allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the N/A allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 277,
-    "articlesProcessed": 13750,
-    "redFlagsFound": 308,
+    "totalScans": 278,
+    "articlesProcessed": 13800,
+    "redFlagsFound": 309,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,33 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "USDA suspends all federal funding to Minnesota amid fraud investigation",
-          "insight": "Large-scale fraud in Minnesota's welfare program has led to a federal funding freeze, indicating a significant control failure and potential for widespread abuse.",
-          "entities": [
-            "Minnesota",
-            "USDA"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL.com",
-          "sourceUrl": "https://aol.com/usda-immediately-suspends-all-federal-funding-to-minnesota-amid-fraud-investigation-2026-01-13"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Billions allegedly go in Minnesota Fraud Scandal?",
         "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
-        "Where did the $3.7M allegedly go in HHS Funding Freeze?"
+        "Where did the $3.7M allegedly go in HHS Funding Freeze?",
+        "What other organizations is Jerome Powell connected to?"
       ]
     }
   ],
@@ -606,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T10:23:01.073Z",
-  "lastUpdated": "2026-01-13T10:23:01.074Z"
+  "lastReflection": "2026-01-13T11:19:47.606Z",
+  "lastUpdated": "2026-01-13T11:19:47.607Z"
 }
