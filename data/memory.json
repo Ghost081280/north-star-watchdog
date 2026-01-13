@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-08T13:40:15.442Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-08T14:24:47.983Z",
       "summary": "NOTABLE: 2 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-13T03:27:23.193Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-13T04:39:30.505Z",
+      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,13 +525,12 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 22,
+      "count": 23,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-12T21:20:01.323Z"
+      "lastSeen": "2026-01-13T04:39:30.506Z"
     }
   ],
   "openQuestions": [
-    "Where did the $0 (no specific amount mentioned) allegedly go in Minnesota ICE killing investigation?",
     "Where did the $16M allegedly go in Child care assistance program audit?",
     "Where did the $10 billion allegedly go in Federal Reserve Investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
@@ -550,7 +549,8 @@
     "Where did the Unknown allegedly go in Federal Reserve Chair Investigation?",
     "Where did the $129M allegedly go in Minnesota Food Stamp Funding Freeze?",
     "Where did the Unknown allegedly go in DOJ investigation into Federal Reserve?",
-    "Where did the $129M allegedly go in Minnesota food stamp funding freeze?"
+    "Where did the $129M allegedly go in Minnesota food stamp funding freeze?",
+    "Where did the $129M allegedly go in Minnesota Food Stamp Funding Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 270,
-    "articlesProcessed": 13400,
-    "redFlagsFound": 297,
+    "totalScans": 271,
+    "articlesProcessed": 13450,
+    "redFlagsFound": 299,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,13 +571,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The Trump administration froze $129M in Minnesota food stamp funding amid a fraud scandal.",
+          "insight": "This freeze suggests a significant concern about fraud within Minnesota's food stamp program, potentially indicating a large-scale issue.",
+          "entities": [
+            "Minnesota",
+            "USDA"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://www.aol.com/article/news/2026/01/13/usda-immediately-suspends-all-federal-funding-to-minnesota-amid-fraud-investigation/24010686/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
-        "Where did the $0 (no specific amount mentioned) allegedly go in Investigation into Jerome Powell?",
-        "Where did the $0 (no specific amount mentioned) allegedly go in Minnesota ICE killing investigation?"
+        "Where did the $0 (no specific amount mentioned) allegedly go in Minnesota ICE killing investigation?",
+        "Where did the $16M allegedly go in Child care assistance program audit?",
+        "Where did the $10 billion allegedly go in Federal Reserve Investigation?"
       ]
     }
   ],
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-13T03:27:23.193Z",
-  "lastUpdated": "2026-01-13T03:27:23.194Z"
+  "lastReflection": "2026-01-13T04:39:30.505Z",
+  "lastUpdated": "2026-01-13T04:39:30.506Z"
 }

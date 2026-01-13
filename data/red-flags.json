@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation",
+      "description": "The DOJ is investigating Federal Reserve Chair Jerome Powell.",
+      "insight": "This investigation could have significant implications for the Federal Reserve's independence and potentially the broader economy.",
+      "entities": [
+        "Jerome Powell",
+        "DOJ"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/doj-investigation-fed-chair-powell-sparks-backlash-support-fed-independence-n1056826",
+      "id": "rf-1768279170510-okh0jdl5s",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-13T04:39:30.507Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ investigation into Fed Chair Powell raises concerns about the potential for abuse of power and the impact on the economy.",
       "insight": "I suspect that this investigation may be politically motivated, and I will continue to monitor the situation for any signs of wrongdoing.",
@@ -893,17 +913,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -920,5 +940,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-13T03:27:23.195Z"
+  "lastUpdated": "2026-01-13T04:39:30.507Z"
 }
