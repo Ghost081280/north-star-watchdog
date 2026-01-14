@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T10:19:45.128Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-10T11:16:49.065Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-14T22:21:32.901Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T23:17:44.412Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Minnesota child care scandal?",
     "Where did the Not specified allegedly go in Classified documents probe?",
     "What other organizations is Hannah Natanson connected to?",
     "What specific allegations exist against Hannah Natanson?",
@@ -550,7 +549,8 @@
     "Where did the Unknown allegedly go in FBI Investigation into Classified Document Leak?",
     "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?",
     "Where did the $3M allegedly go in Medicaid fraud investigation?",
-    "Where did the None allegedly go in ICE shooting investigation?"
+    "Where did the None allegedly go in ICE shooting investigation?",
+    "Where did the $2 Billion allegedly go in Trump administration funding cuts?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 311,
-    "articlesProcessed": 15450,
-    "redFlagsFound": 350,
+    "totalScans": 312,
+    "articlesProcessed": 15500,
+    "redFlagsFound": 352,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
-        "What other organizations is Senator Slotkin connected to?",
-        "Where did the Not specified allegedly go in Minnesota child care scandal?"
+        "Where did the Not specified allegedly go in Minnesota child care scandal?",
+        "Where did the Not specified allegedly go in Classified documents probe?",
+        "What other organizations is Hannah Natanson connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T22:21:32.901Z",
-  "lastUpdated": "2026-01-14T22:21:32.902Z"
+  "lastReflection": "2026-01-14T23:17:44.412Z",
+  "lastUpdated": "2026-01-14T23:17:44.413Z"
 }
