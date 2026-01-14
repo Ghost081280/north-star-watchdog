@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T01:27:06.716Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-10T03:23:42.755Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-14T14:24:43.968Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T15:25:03.826Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.2 million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Minneapolis duo connected to?",
     "What other organizations is 2 individuals connected to?",
     "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Renee Good's death investigation?",
@@ -550,7 +547,10 @@
     "Where did the Unknown allegedly go in Texas Child Care Services Probe?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $1B+ allegedly go in Federal Funding Freeze Investigation?",
-    "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?"
+    "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
+    "What other organizations is Senator Slotkin connected to?",
+    "Where did the Not specified allegedly go in Minnesota child care scandal?",
+    "Where did the Not specified allegedly go in Classified documents probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 303,
-    "articlesProcessed": 15050,
-    "redFlagsFound": 342,
+    "totalScans": 304,
+    "articlesProcessed": 15100,
+    "redFlagsFound": 343,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2B allegedly go in Medicaid Funding Pause?",
         "Where did the $3.2 million allegedly go in Medicaid Fraud Investigation?",
-        "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Minneapolis duo connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T14:24:43.968Z",
-  "lastUpdated": "2026-01-14T14:24:43.968Z"
+  "lastReflection": "2026-01-14T15:25:03.826Z",
+  "lastUpdated": "2026-01-14T15:25:03.827Z"
 }

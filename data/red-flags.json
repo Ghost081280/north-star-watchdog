@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Senator Slotkin is under investigation for illegal orders",
+      "insight": "This investigation may be connected to other federal investigations, such as the Minnesota child care scandal. Further research is needed to determine the extent of the investigation and potential connections to other entities.",
+      "entities": [
+        "Senator Slotkin"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WGHN, Michigan Advance, The Hill, The Detroit News",
+      "sourceUrl": "https://www.wghn.com/news/senator-slotkin-federal-investigation-after-illegal-orders-video/",
+      "id": "rf-1768404303831-8srnepkn2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T15:25:03.828Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Trump threatens to halt federal funding to sanctuary cities",
       "insight": "This development raises concerns over the use of funding freezes as a political tool, and the potential impact on vulnerable populations.",
@@ -971,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-06T14:21:31.953Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Governor Tim Walz's decision to drop his reelection bid amid criticism over his handling of the welfare fraud scandal.",
-      "insight": "The governor's decision suggests that the scandal has had significant political repercussions, potentially indicating a loss of public trust in his leadership.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/2026/01/06/opinion/tim-walz-drops-reelection-bid/story.html",
-      "id": "rf-1767694944371-18whwrbtk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-06T10:22:24.367Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,10 +1001,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T14:24:43.970Z"
+  "lastUpdated": "2026-01-14T15:25:03.828Z"
 }
