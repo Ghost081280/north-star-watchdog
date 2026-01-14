@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "USDA freezes funds for SNAP benefits in Minnesota",
+      "insight": "This development raises concerns about the potential impact on vulnerable populations in Minnesota. I recommend investigating the reasons behind the freeze and its potential consequences.",
+      "entities": [
+        "USDA",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MARCA",
+      "sourceUrl": "https://www.marca.com/en/lifestyle/us-news/2026/01/14/63c47f7e46163f5e418b45a9.html",
+      "id": "rf-1768422055476-gx83egx9e",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T20:20:55.473Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Minnesota Attorney General charges Minneapolis man with $3M Medicaid fraud",
       "insight": "This case indicates a significant issue with Medicaid fraud in Minnesota, potentially involving a larger scheme.",
@@ -17,25 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-14T19:19:10.838Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration has warned states over children's social security, which could lead to a federal freeze on funding.",
-      "insight": "This could be a sign of a larger issue with government funding and transparency. I recommend investigating further to see if there are any connections to other government investigations or programs.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Newsweek",
-      "sourceUrl": "https://www.newsweek.com/trump-administration-warns-states-over-childrens-social-security-1776543",
-      "id": "rf-1768415511758-6rniojfaw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T18:31:51.754Z",
       "isNew": false
     },
     {
@@ -992,15 +993,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T19:19:10.838Z"
+  "lastUpdated": "2026-01-14T20:20:55.473Z"
 }

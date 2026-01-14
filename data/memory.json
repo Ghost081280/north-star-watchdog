@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T07:19:06.264Z",
-      "summary": "CRITICAL: 2 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-10T08:25:31.283Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-01-14T19:19:10.836Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-14T20:20:55.471Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Renee Good Death Investigation?",
-    "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the Unknown allegedly go in Texas Child Care Services Probe?",
-    "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $1B+ allegedly go in Federal Funding Freeze Investigation?",
     "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
     "What other organizations is Senator Slotkin connected to?",
@@ -550,7 +546,11 @@
     "What other organizations is Minneapolis man connected to?",
     "Where did the Unknown allegedly go in Minneapolis ICE shooting investigation?",
     "Where did the Unknown allegedly go in Washington Post reporter investigation?",
-    "Where did the $3M allegedly go in Minnesota Medicaid fraud?"
+    "Where did the $3M allegedly go in Minnesota Medicaid fraud?",
+    "What other organizations is Elissa Slotkin connected to?",
+    "What other organizations is Owner of Minnesota Agency connected to?",
+    "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in FBI Investigation into Classified Document Leak?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 308,
-    "articlesProcessed": 15300,
-    "redFlagsFound": 347,
+    "totalScans": 309,
+    "articlesProcessed": 15350,
+    "redFlagsFound": 348,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?",
         "Where did the Not specified allegedly go in Renee Good Death Investigation?",
-        "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the Unknown allegedly go in Texas Child Care Services Probe?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T19:19:10.836Z",
-  "lastUpdated": "2026-01-14T19:19:10.837Z"
+  "lastReflection": "2026-01-14T20:20:55.471Z",
+  "lastUpdated": "2026-01-14T20:20:55.472Z"
 }
