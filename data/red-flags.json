@@ -2,23 +2,43 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "Federal payments to 'sanctuary cities' and states may be halted",
-      "insight": "This could have significant implications for child care programs and other services that rely on federal funding. I recommend investigating the potential impact on these programs and the families they serve.",
+      "description": "Trump threatens to halt federal funding to sanctuary cities",
+      "insight": "This development raises concerns over the use of funding freezes as a political tool, and the potential impact on vulnerable populations.",
       "entities": [
-        "Trump Administration",
+        "Trump",
         "Sanctuary cities"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Trump Administration",
-      "sourceUrl": "https://www.facebook.com/DonaldTrump/posts/10157325188640725",
-      "id": "rf-1768389651129-8rrxj95jn",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/",
+      "id": "rf-1768397995109-8wsbx30rv",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-14T11:20:51.126Z",
-      "isNew": false
+      "detectedAt": "2026-01-14T13:39:55.106Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "Minnesota freezes new provider enrollment in 13 Medicaid programs at risk of fraud",
+      "insight": "This development highlights the need for increased oversight and regulation of child care programs, and the potential consequences of funding freezes on vulnerable populations.",
+      "entities": [
+        "Minnesota DHS",
+        "Medicaid programs"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/",
+      "id": "rf-1768397995109-nuv49c1vr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T13:39:55.106Z",
+      "isNew": true
     },
     {
       "type": "program_termination",
@@ -971,30 +991,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-06T10:22:24.367Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of state funding for daycare centers under investigation",
-      "insight": "The investigation may lead to a freeze or termination of state funding for the daycare centers involved, which could have significant implications for the families and children served.",
-      "entities": [
-        "Minnesota Department of Human Services",
-        "Somali daycare centers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5KU2ZKWUQyQXdrV3BTQzJHTzRIX3loYTFveVJxOThkYTZmZ0k0OUk0NkpkQzBQbVFQTGtBN2pkakJKQTQ4VHBKMlByZklKeHltY20zY3M1ZHZRdGlweEl0QkRTWlBlWnJBSVJTb0wtcXBxZ1J5SDFuOXBoT3pBOXM",
-      "id": "rf-1767611942551-kykexljta",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-05T11:19:02.549Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1003,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T12:42:49.600Z"
+  "lastUpdated": "2026-01-14T13:39:55.106Z"
 }
