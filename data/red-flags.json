@@ -2,22 +2,42 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "The federal funding freeze has been temporarily lifted, but the uncertainty is still affecting many families.",
-      "insight": "I notice that the federal funding freeze is causing concerns among local governments and child care advocates. This could be a sign of a larger issue with the federal funding system.",
+      "description": "The Trump administration's threat to halt federal payments to 'sanctuary cities' and states may have significant implications for local governments and social services.",
+      "insight": "This could lead to a significant reduction in funding for vital services, potentially harming vulnerable populations. Investigating the impact on Minnesota and other affected states is crucial.",
       "entities": [
-        "Trump administration",
-        "local governments"
+        "Minnesota",
+        "Trump administration"
       ],
       "confidence": 80,
-      "priority": "medium",
-      "source": "WHEC.com",
-      "sourceUrl": "https://www.whec.com/news/trumps-funding-threat-leaves-local-government-uncertain-of-what-money-it-will-receive-next-month/6123411/",
-      "id": "rf-1768372343881-lzojajy9g",
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.cbsnews.com/news/trump-threatens-to-halt-federal-payments-to-sanctuary-cities-and-states/",
+      "id": "rf-1768375492562-g4otqktzy",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-14T06:32:23.878Z",
+      "detectedAt": "2026-01-14T07:24:52.559Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
+      "description": "A $3.2 million Medicaid fraud scheme involving a Minneapolis duo has been uncovered, highlighting the need for increased scrutiny of healthcare programs.",
+      "insight": "This case suggests a larger issue with Medicaid fraud in Minnesota, potentially involving multiple individuals and organizations. Further investigation is necessary to uncover the full extent of the scheme.",
+      "entities": [
+        "Minneapolis duo",
+        "Medicaid program"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/2-charged-in-32-million-medicaid-fraud-scheme/",
+      "id": "rf-1768375492562-vxhaxam0q",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T07:24:52.559Z",
       "isNew": true
     },
     {
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-14T06:32:23.878Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -970,25 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-04T07:21:23.617Z",
       "isNew": false
-    },
-    {
-      "type": "large_alleged_fraud_scheme",
-      "description": "$250 million feeding our future COVID fraud scheme",
-      "insight": "This indicates a significant alleged fraud scheme involving COVID relief funds.",
-      "entities": [
-        "Aimee Bock"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "x.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pc2V4UXRpdDBjbnA2OXZfSDhoRzNjRnRFZ1NrVU9LQmV4VmRjMTU5M2JyaHM1OGhja0d3TWVfY01fbTExMndmaElRRkwtYmp0Y1NUMEtIV0xNUGVoV1NOcW80OA",
-      "id": "rf-1767508206504-81am4awzc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-04T06:30:06.501Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,8 +1003,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T06:32:23.878Z"
+  "lastUpdated": "2026-01-14T07:24:52.559Z"
 }
