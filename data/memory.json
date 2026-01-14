@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T15:22:38.803Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-09T16:26:33.766Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-14T05:23:49.072Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T06:32:23.876Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $12K allegedly go in Minnesota Social Services Fraud Scandal?",
-    "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Renee Good connected to?",
-    "Where did the Unknown allegedly go in DOJ Powell probe?",
     "Where did the Unknown allegedly go in Minnesota daycare fraud?",
     "Where did the $84 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $129 million allegedly go in Minnesota Fraud Probe?",
@@ -550,7 +546,11 @@
     "Where did the $2B allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $2B allegedly go in Medicaid Funding Pause?",
     "Where did the $3.2 million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Minneapolis duo connected to?",
+    "What other organizations is 2 individuals connected to?",
+    "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the Unknown allegedly go in Renee Good's death investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 294,
-    "articlesProcessed": 14600,
-    "redFlagsFound": 329,
+    "totalScans": 295,
+    "articlesProcessed": 14650,
+    "redFlagsFound": 331,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,13 +571,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "The Trump administration has announced the termination of protected status for Somalis.",
+          "insight": "I notice that the Trump administration is terminating protected status for certain groups, which could lead to a humanitarian crisis.",
+          "entities": [
+            "Trump administration",
+            "Somali community"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "ABC News",
+          "sourceUrl": "https://abcnews.go.com/Politics/dhs-announces-termination-protected-status-somalis-group-targeted-trump/story?id=95235423"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
         "Where did the $12K allegedly go in Minnesota Social Services Fraud Scandal?",
-        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Renee Good connected to?"
       ]
     }
   ],
@@ -586,6 +606,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T05:23:49.072Z",
-  "lastUpdated": "2026-01-14T05:23:49.072Z"
+  "lastReflection": "2026-01-14T06:32:23.876Z",
+  "lastUpdated": "2026-01-14T06:32:23.876Z"
 }

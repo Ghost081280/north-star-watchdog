@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal funding freeze has been temporarily lifted, but the uncertainty is still affecting many families.",
+      "insight": "I notice that the federal funding freeze is causing concerns among local governments and child care advocates. This could be a sign of a larger issue with the federal funding system.",
+      "entities": [
+        "Trump administration",
+        "local governments"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "WHEC.com",
+      "sourceUrl": "https://www.whec.com/news/trumps-funding-threat-leaves-local-government-uncertain-of-what-money-it-will-receive-next-month/6123411/",
+      "id": "rf-1768372343881-lzojajy9g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T06:32:23.878Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "The Trump administration has announced the termination of protected status for Somalis.",
+      "insight": "I notice that the Trump administration is terminating protected status for certain groups, which could lead to a humanitarian crisis.",
+      "entities": [
+        "Trump administration",
+        "Somali community"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "ABC News",
+      "sourceUrl": "https://abcnews.go.com/Politics/dhs-announces-termination-protected-status-somalis-group-targeted-trump/story?id=95235423",
+      "id": "rf-1768372343881-r2ggd8dlo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T06:32:23.878Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The investigation into Renee Good's death has led to the resignation of federal prosecutors.",
       "insight": "This could indicate a larger issue with the DOJ's handling of investigations, potentially leading to further scrutiny.",
@@ -18,26 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-14T05:23:49.073Z",
-      "isNew": true
-    },
-    {
-      "type": "federal freeze",
-      "description": "Uncertainty over federal child care funding freeze in Minnesota.",
-      "insight": "This freeze may impact local food shelves and child care services, indicating potential vulnerabilities in social services funding.",
-      "entities": [
-        "Minnesota",
-        "US Department of Health and Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Local food shelves facing federal funding uncertainty",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUhJSVndrelNQdUVRZWdrd0E2T2pmYVU2X1ZRblZLMzJuZjR0M09XcGk1S3V3WnZOQUp4TWZjeEJrdHpBamRETU13NHhOa3pkU3V0TE42TE8tMi1LZkxRaW1BcjcwdlE3a3lyTE5KbWhTQzE5bW1hUU9zNkEzQmZPeEg1ajJEVmFxNDhxVlFSeDhvQllodWlialA5YjQwcDQ4NTZ1aDJDV3hpYno5RDlWdEFpTzdabjFod2RmaGZ1Y2lpZmdtcVVncUZvVlQ5N1RfU2VXWW5DbVc",
-      "id": "rf-1768365966714-3s4wpytke",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T04:46:06.711Z",
       "isNew": false
     },
     {
@@ -969,32 +989,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-04T06:30:06.501Z",
       "isNew": false
-    },
-    {
-      "type": "whistleblower allegations",
-      "description": "Minnesota government whistleblowers claim they were ‘electronically surveilled,’ had promotions denied - New York Post",
-      "insight": "This indicates potential retaliation against whistleblowers and could suggest a larger cover-up. I would investigate the allegations and the entities involved.",
-      "entities": [
-        "Minnesota government",
-        "whistleblowers"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUzgzNWVob0N6cS1VWnlFNXl5VGViS2doMDhOdjF0aU9tRnN2bHBEdGlZeHE4ck1jei1DWWp0WUtuOXIzUExjaFFyekJtVllaNFJDY0J6S0FxaHZQVzEtQ0ZkRG9VTW90VXRYTGhRRTl3WkRtS19uTkdJZnhPeExXY2VOaFNveDNDSTFWN3E5Z1VKQ2ZDU2ZtY2ZzQXRPTkFxSkNIRlI2eGxQeFF4Yy1EOEtDZU4wanpnTVl0Q25B",
-      "id": "rf-1767482330223-y8kyyscp9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-03T23:18:50.219Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,7 +1001,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T05:23:49.073Z"
+  "lastUpdated": "2026-01-14T06:32:23.878Z"
 }
