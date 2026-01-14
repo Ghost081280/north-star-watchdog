@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T18:30:47.637Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-09T19:19:55.060Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-01-14T08:29:03.527Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T09:28:39.777Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Joe Thompson connected to?",
-    "What specific allegations exist against Joe Thompson?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Renee Good's Widow?",
     "Where did the $250M allegedly go in Minnesota Fraud Case?",
@@ -550,7 +548,9 @@
     "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Elissa Slotkin connected to?",
     "What other organizations is Minnesota duo connected to?",
-    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud case?"
+    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud case?",
+    "Where did the $250M allegedly go in Minnesota Medicaid fraud case?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 297,
-    "articlesProcessed": 14750,
-    "redFlagsFound": 334,
+    "totalScans": 298,
+    "articlesProcessed": 14800,
+    "redFlagsFound": 336,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $84 million allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $129 million allegedly go in Minnesota Fraud Probe?",
-        "Where did the None allegedly go in ICE Shooting Victim's Widow Investigation?"
+        "What other organizations is Joe Thompson connected to?",
+        "What specific allegations exist against Joe Thompson?",
+        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T08:29:03.527Z",
-  "lastUpdated": "2026-01-14T08:29:03.528Z"
+  "lastReflection": "2026-01-14T09:28:39.777Z",
+  "lastUpdated": "2026-01-14T09:28:39.777Z"
 }

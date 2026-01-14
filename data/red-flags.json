@@ -2,22 +2,42 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "The Trump administration's threat to freeze federal funding to sanctuary cities and jurisdictions",
-      "insight": "This move could have significant implications for various programs, including child care and Medicaid. I suspect that this could lead to a surge in fraudulent activities, as individuals and organizations may try to exploit the situation.",
+      "description": "The Trump administration's threat to halt federal payments to 'sanctuary cities' and states could have significant implications for Minnesota's budget and social services.",
+      "insight": "This could lead to a significant reduction in funding for critical services, potentially exacerbating existing issues with fraud and abuse.",
       "entities": [
-        "Trump administration",
-        "sanctuary cities"
+        "Minnesota",
+        "Trump administration"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/news/post-nation/wp/2026/01/14/trump-administration-moves-to-halt-federal-payments-to-sanctuary-cities/",
-      "id": "rf-1768379343533-cucopmsmf",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.whec.com/news/trumps-funding-threat-leaves-local-government-uncertain-of-what-money-it-will-receive-next-month/261-9d4c-4e6c-8f5b-4e4c6c6d22b2",
+      "id": "rf-1768382919782-8k032mjhe",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-14T08:29:03.529Z",
+      "detectedAt": "2026-01-14T09:28:39.778Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "The termination of protected status for Somalis by DHS could have significant implications for Minnesota's Somali community.",
+      "insight": "This could lead to increased scrutiny of Minnesota's healthcare programs and potential vulnerabilities to fraud.",
+      "entities": [
+        "DHS",
+        "Minnesota Somali community"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "ABC News",
+      "sourceUrl": "https://abcnews.go.com/Politics/dhs-announces-termination-protected-status-somalis-group-targeted-trump/story?id=58032164",
+      "id": "rf-1768382919782-i9t8z2ahp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-14T09:28:39.778Z",
       "isNew": true
     },
     {
@@ -971,39 +991,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-05T11:19:02.549Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "Alleged use of shell companies in Feeding Our Future COVID fraud scheme",
-      "insight": "Potential for complex financial crimes and money laundering",
-      "entities": [
-        "Aimee Bock"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "x.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9pc2V4UXRpdDBjbnA2OXZfSDhoRzNjRnRFZ1NrVU9LQmV4VmRjMTU5M2JyaHM1OGhja0d3TWVfY01fbTExMndmaElRRkwtYmp0Y1NUMEtIV0xNUGVoV1NOcW80OA",
-      "id": "rf-1767511283621-2pg7y6rc4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-04T07:21:23.617Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-14T08:29:03.529Z"
+  "lastUpdated": "2026-01-14T09:28:39.778Z"
 }
