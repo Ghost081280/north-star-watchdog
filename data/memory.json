@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T03:23:42.755Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-10T04:33:25.670Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-14T15:25:03.826Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-01-14T16:29:41.345Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -531,10 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is 2 individuals connected to?",
-    "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the Unknown allegedly go in Renee Good's death investigation?",
-    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Elissa Slotkin connected to?",
     "What other organizations is Minnesota duo connected to?",
     "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud case?",
@@ -550,7 +546,11 @@
     "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
     "What other organizations is Senator Slotkin connected to?",
     "Where did the Not specified allegedly go in Minnesota child care scandal?",
-    "Where did the Not specified allegedly go in Classified documents probe?"
+    "Where did the Not specified allegedly go in Classified documents probe?",
+    "What other organizations is Hannah Natanson connected to?",
+    "What specific allegations exist against Hannah Natanson?",
+    "What specific allegations exist against Minnesota AG?",
+    "Where did the $3.2M allegedly go in $3.2M Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 304,
-    "articlesProcessed": 15100,
-    "redFlagsFound": 343,
+    "totalScans": 305,
+    "articlesProcessed": 15150,
+    "redFlagsFound": 344,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3.2 million allegedly go in Medicaid Fraud Investigation?",
-        "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Minneapolis duo connected to?"
+        "What other organizations is 2 individuals connected to?",
+        "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in Renee Good's death investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T15:25:03.826Z",
-  "lastUpdated": "2026-01-14T15:25:03.827Z"
+  "lastReflection": "2026-01-14T16:29:41.345Z",
+  "lastUpdated": "2026-01-14T16:29:41.346Z"
 }
