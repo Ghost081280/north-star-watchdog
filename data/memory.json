@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T20:23:25.077Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-09T21:20:09.124Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-14T10:24:13.462Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T11:20:51.123Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $2B allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Renee Good's Widow connected to?",
     "Where did the $2B allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the $2B allegedly go in Medicaid Funding Pause?",
@@ -550,7 +548,9 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Renee Good connected to?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?",
-    "Where did the Not specified allegedly go in Renee Good Death Investigation?"
+    "Where did the Not specified allegedly go in Renee Good Death Investigation?",
+    "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the Unknown allegedly go in Texas Child Care Services Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 299,
-    "articlesProcessed": 14850,
-    "redFlagsFound": 338,
+    "totalScans": 300,
+    "articlesProcessed": 14900,
+    "redFlagsFound": 339,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What specific allegations exist against Renee Good's Widow?",
-        "Where did the $250M allegedly go in Minnesota Fraud Case?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $2B allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Renee Good's Widow connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T10:24:13.462Z",
-  "lastUpdated": "2026-01-14T10:24:13.463Z"
+  "lastReflection": "2026-01-14T11:20:51.123Z",
+  "lastUpdated": "2026-01-14T11:20:51.124Z"
 }
