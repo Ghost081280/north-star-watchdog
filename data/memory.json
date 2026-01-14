@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-09T17:22:42.410Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-09T18:30:47.637Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-14T07:24:52.557Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-14T08:29:03.527Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $84 million allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $129 million allegedly go in Minnesota Fraud Probe?",
-    "Where did the None allegedly go in ICE Shooting Victim's Widow Investigation?",
     "What other organizations is Joe Thompson connected to?",
     "What specific allegations exist against Joe Thompson?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -550,7 +547,10 @@
     "What other organizations is 2 individuals connected to?",
     "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Renee Good's death investigation?",
-    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud investigation?",
+    "What other organizations is Elissa Slotkin connected to?",
+    "What other organizations is Minnesota duo connected to?",
+    "Where did the $3.2 million allegedly go in Minnesota Medicaid fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 296,
-    "articlesProcessed": 14700,
-    "redFlagsFound": 333,
+    "totalScans": 297,
+    "articlesProcessed": 14750,
+    "redFlagsFound": 334,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,33 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "A $3.2 million Medicaid fraud scheme involving a Minneapolis duo has been uncovered, highlighting the need for increased scrutiny of healthcare programs.",
-          "insight": "This case suggests a larger issue with Medicaid fraud in Minnesota, potentially involving multiple individuals and organizations. Further investigation is necessary to uncover the full extent of the scheme.",
-          "entities": [
-            "Minneapolis duo",
-            "Medicaid program"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "CBS News",
-          "sourceUrl": "https://www.cbsnews.com/news/2-charged-in-32-million-medicaid-fraud-scheme/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota daycare fraud?",
         "Where did the $84 million allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $129 million allegedly go in Minnesota Fraud Probe?"
+        "Where did the $129 million allegedly go in Minnesota Fraud Probe?",
+        "Where did the None allegedly go in ICE Shooting Victim's Widow Investigation?"
       ]
     }
   ],
@@ -606,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T07:24:52.557Z",
-  "lastUpdated": "2026-01-14T07:24:52.557Z"
+  "lastReflection": "2026-01-14T08:29:03.527Z",
+  "lastUpdated": "2026-01-14T08:29:03.528Z"
 }
