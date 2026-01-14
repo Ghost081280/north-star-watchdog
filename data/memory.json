@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T09:19:32.151Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-10T10:19:45.128Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-14T21:21:09.436Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-14T22:21:32.901Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
-    "What other organizations is Senator Slotkin connected to?",
     "Where did the Not specified allegedly go in Minnesota child care scandal?",
     "Where did the Not specified allegedly go in Classified documents probe?",
     "What other organizations is Hannah Natanson connected to?",
@@ -550,7 +548,9 @@
     "What other organizations is Owner of Minnesota Agency connected to?",
     "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI Investigation into Classified Document Leak?",
-    "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?"
+    "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?",
+    "Where did the $3M allegedly go in Medicaid fraud investigation?",
+    "Where did the None allegedly go in ICE shooting investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 310,
-    "articlesProcessed": 15400,
-    "redFlagsFound": 349,
+    "totalScans": 311,
+    "articlesProcessed": 15450,
+    "redFlagsFound": 350,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B+ allegedly go in Federal Funding Freeze Investigation?",
         "Where did the $10M+ allegedly go in Minnesota Child Care Scandal?",
-        "What other organizations is Senator Slotkin connected to?"
+        "What other organizations is Senator Slotkin connected to?",
+        "Where did the Not specified allegedly go in Minnesota child care scandal?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T21:21:09.436Z",
-  "lastUpdated": "2026-01-14T21:21:09.437Z"
+  "lastReflection": "2026-01-14T22:21:32.901Z",
+  "lastUpdated": "2026-01-14T22:21:32.902Z"
 }
