@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid scam",
+      "description": "A Minnesota health care owner has been charged with a years-long Medicaid scam, totaling $3M",
+      "insight": "This case highlights the need for increased oversight and monitoring of Medicaid programs to prevent similar scams in the future. I will continue to track this investigation and look for any connections to other entities or programs.",
+      "entities": [
+        "Minnesota health care owner"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/minnesota-health-care-owner-charged-medicaid-scam",
+      "id": "rf-1768498266775-r5pl1rg0q",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T17:31:06.771Z",
+      "isNew": true
+    },
+    {
       "type": "shell_company",
       "description": "Use of shell companies in Minnesota",
       "insight": "The use of shell companies may be indicative of money laundering or other financial crimes. Further investigation is needed to determine the extent of shell company usage and potential connections to fraudulent activities.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-15T16:34:14.137Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -970,25 +989,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-07T13:39:20.469Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota DHS employees backdated, created documentation in behavioral health grant program.",
-      "insight": "This could indicate a larger issue with program management and oversight, and further investigation is needed to determine the extent of the problem.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdGRvZExXVmNoMDRpNER4TmtjbmFOMDRXaUFYejdGTnZhbC1tRlk5bU5EaFpoajB2cFRDTEhKdUFxRXdfRVM5VG52ZFVZUUMtdkViQ0FRTWRGTHlRMUJkTnZpaU52MWZxTXBzeWdVajFHYnN0bllvYU1xLVFfQ191YVF3TU1zSjdUWldtZnk1OU9qOWo0d3dtbkR2UjRRcDhzV3hZRl94XzlLcVJzb0Jqb3R3LVRWaGFKX09mOVN6WWFaWElPSWpXamdxdE9wX1dUeTVhTGlVWU9sNll4UkkzbQ?oc=5",
-      "id": "rf-1767778064689-2bmqscul9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-07T09:27:44.686Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,8 +1001,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T16:34:14.137Z"
+  "lastUpdated": "2026-01-15T17:31:06.771Z"
 }
