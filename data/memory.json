@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T16:23:09.023Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-10T17:17:14.310Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T06:32:00.376Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-15T07:25:00.361Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 17,
+      "count": 18,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-13T14:25:01.654Z"
+      "lastSeen": "2026-01-15T07:25:00.362Z"
     },
     {
       "type": "federal_funding",
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Washington Post reporter investigation?",
-    "Where did the $3M allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is Elissa Slotkin connected to?",
     "What other organizations is Owner of Minnesota Agency connected to?",
     "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?",
@@ -550,7 +548,9 @@
     "Where did the $2B allegedly go in Minnesota Medicaid?",
     "What other organizations is Sen. Slotkin connected to?",
     "Where did the $2B allegedly go in Medicaid fraud investigation?",
-    "Where did the unknown allegedly go in Childcare fraud investigation?"
+    "Where did the unknown allegedly go in Childcare fraud investigation?",
+    "Where did the $2B allegedly go in Feeding Our Future?",
+    "Where did the $1.3B allegedly go in Minnesota Childcare Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 317,
-    "articlesProcessed": 15750,
-    "redFlagsFound": 358,
+    "totalScans": 318,
+    "articlesProcessed": 15800,
+    "redFlagsFound": 360,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Minneapolis man connected to?",
-        "Where did the Unknown allegedly go in Minneapolis ICE shooting investigation?"
+        "Where did the Unknown allegedly go in Washington Post reporter investigation?",
+        "Where did the $3M allegedly go in Minnesota Medicaid fraud?",
+        "What other organizations is Elissa Slotkin connected to?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T06:32:00.376Z",
-  "lastUpdated": "2026-01-15T06:32:00.377Z"
+  "lastReflection": "2026-01-15T07:25:00.361Z",
+  "lastUpdated": "2026-01-15T07:25:00.362Z"
 }

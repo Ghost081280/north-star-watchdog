@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration has frozen childcare payments to Minnesota, citing concerns over fraud",
+      "insight": "This freeze and related investigations suggest a significant issue with fraud in childcare programs, potentially involving large sums of money",
+      "entities": [
+        "Trump Administration",
+        "Minnesota State Government"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMDYzeEpWNkotQ0FBS0wxTHVtQ1AwOE9scVJudHg1UHhSNXdwbVl1ZnBPR1pJM2thS3Z6bW9YTUZWTVlWYnp2QTlZSDkyWjI5VWx1dnI2T3o2QmZDUGRqS1VlZ1RkUDlwSzhuZ0FpSVppTXJHRTdkU1J5c1hHV3ZHOG5LYnV3UXJlRmlZc1lHNWNHUEUtVGh3VFBMSE5ydmdBR2F1bnozOFhNUDNjQXc",
+      "id": "rf-1768461900367-m3geqixku",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T07:25:00.363Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into Minnesota's medical transportation program",
       "insight": "This could uncover potential fraud and abuse in the program",
@@ -37,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-15T03:30:00.745Z",
-      "isNew": false
-    },
-    {
-      "type": "federal funding cuts",
-      "description": "The Trump administration has cut $2 Billion in funding for substance abuse and mental health programs",
-      "insight": "This could have significant implications for states that rely on these programs. Further investigation is needed to determine the impact of these cuts and potential connections to other patterns of fraud or abuse.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VTXR6M0k4NDUzOFRWYjRmdUNoclpsVjJMWG9fbVpUS3pCWEg1NklBdnQ1amFpTWE1TUJnV1lfaW5pNTNMUERaNU9WNWYyRGJtUE1EVGpUdjZITDQxZlFTTDVaa04xVVpvZDF1QnhjLWhBWnll?oc=5",
-      "id": "rf-1768432664417-64lfx6nrm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T23:17:44.414Z",
       "isNew": false
     },
     {
@@ -995,13 +996,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T06:32:00.378Z"
+  "lastUpdated": "2026-01-15T07:25:00.363Z"
 }
