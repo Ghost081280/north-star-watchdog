@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T10:20:16.852Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T11:16:44.532Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T22:21:09.176Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T23:20:27.987Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
-    "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the millions allegedly go in Minnesota Daycare Scandal?",
     "Where did the $2B allegedly go in Minnesota Child Care Scandal?",
     "What other organizations is Hannah Natanson connected to?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against YouTuber?",
     "Where did the $3M allegedly go in Medicaid scam?",
     "Are any of these 3 figures connected to each other?",
-    "Where did the $3M allegedly go in Feeding Our Future fraud case?"
+    "Where did the $3M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $0 allegedly go in Feeding Our Future fraud case?",
+    "Where did the $0 allegedly go in Minnesota childcare fraud allegations?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 333,
-    "articlesProcessed": 16550,
-    "redFlagsFound": 382,
+    "totalScans": 334,
+    "articlesProcessed": 16600,
+    "redFlagsFound": 383,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2B allegedly go in Minnesota Medicaid Funding Freeze?",
         "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
-        "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?"
+        "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
+        "Where did the millions allegedly go in Minnesota Daycare Scandal?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T22:21:09.176Z",
-  "lastUpdated": "2026-01-15T22:21:09.177Z"
+  "lastReflection": "2026-01-15T23:20:27.987Z",
+  "lastUpdated": "2026-01-15T23:20:27.988Z"
 }
