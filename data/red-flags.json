@@ -1,24 +1,44 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The Trump administration has frozen childcare payments to Minnesota, citing concerns over fraud",
-      "insight": "This freeze and related investigations suggest a significant issue with fraud in childcare programs, potentially involving large sums of money",
+      "type": "program_termination",
+      "description": "Potential termination of Minnesota's food stamp program due to alleged fraud",
+      "insight": "This could have significant implications for low-income families in Minnesota.",
       "entities": [
-        "Trump Administration",
-        "Minnesota State Government"
+        "Minnesota",
+        "USDA"
       ],
-      "confidence": 85,
+      "confidence": 80,
       "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMDYzeEpWNkotQ0FBS0wxTHVtQ1AwOE9scVJudHg1UHhSNXdwbVl1ZnBPR1pJM2thS3Z6bW9YTUZWTVlWYnp2QTlZSDkyWjI5VWx1dnI2T3o2QmZDUGRqS1VlZ1RkUDlwSzhuZ0FpSVppTXJHRTdkU1J5c1hHV3ZHOG5LYnV3UXJlRmlZc1lHNWNHUEUtVGh3VFBMSE5ydmdBR2F1bnozOFhNUDNjQXc",
-      "id": "rf-1768461900367-m3geqixku",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/us/trump-threatens-funding-cuts-sanctuary-cities-chaos-intensifies-minneapolis-2026-01-15/",
+      "id": "rf-1768469249355-lqkpeblqz",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-15T07:25:00.363Z",
-      "isNew": false
+      "detectedAt": "2026-01-15T09:27:29.352Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Federal investigation into childcare funding fraud in Minnesota",
+      "insight": "This investigation could lead to significant recoveries and penalties.",
+      "entities": [
+        "Minnesota",
+        "FBI"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/story/57012942/feeding-our-future-defendants-look-to-move-trial",
+      "id": "rf-1768469249355-lxz3324tx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T09:27:29.352Z",
+      "isNew": true
     },
     {
       "type": "federal_investigation",
@@ -57,25 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-15T03:30:00.745Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Minnesota Attorney General charges Minneapolis man with $3M Medicaid fraud",
-      "insight": "This case indicates a significant issue with Medicaid fraud in Minnesota, potentially involving a larger scheme.",
-      "entities": [
-        "Minneapolis man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MPR News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUzRfNENiTEdnMHRROExSdjJTc1RYN1FkNXNuOVBZa0lPV184ZlZnQWlMVjYwZVlWRkJpU3JaVW1zNzVEUW00WkxKdGt3VTFTRzM4NXdCNG1mQjgzZVNqQVdrOWRyWFlUODNLU2lWbXQ3TFFkVlluYkNyVXc3Ry1pdlpFOFBtVmFfMFkyWkFmNjVvQ0RtUnRsUkhmMjU1d1RmTEN3N256Sk9kVHR6bS1OSHZFWW9DX09rSXVrajI3OHQ1TDZaY2c?oc=5",
-      "id": "rf-1768418350842-noj87cras",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T19:19:10.838Z",
       "isNew": false
     },
     {
@@ -992,6 +993,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,7 +1002,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T08:29:40.285Z"
+  "lastUpdated": "2026-01-15T09:27:29.352Z"
 }
