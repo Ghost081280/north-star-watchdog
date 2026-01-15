@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T06:30:12.908Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T07:20:24.660Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-15T18:35:18.153Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T19:23:44.061Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,7 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Not specified connected to?",
     "Where did the $3 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $2 billion allegedly go in CMS Move to Withhold $2B Medicaid Funding?",
     "What other organizations is Minnesota Medicaid provider connected to?",
@@ -550,7 +549,8 @@
     "What other organizations is Minnesota health care owner connected to?",
     "Where did the $3M allegedly go in Minnesota Medicaid scam investigation?",
     "Where did the unknown allegedly go in FBI investigation into college basketball games?",
-    "Where did the $16M allegedly go in Minnesota Investigation?"
+    "Where did the $16M allegedly go in Minnesota Investigation?",
+    "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 329,
-    "articlesProcessed": 16350,
-    "redFlagsFound": 376,
+    "totalScans": 330,
+    "articlesProcessed": 16400,
+    "redFlagsFound": 377,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What other organizations is Not specified connected to?",
-        "Where did the $3 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $3 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $2 billion allegedly go in CMS Move to Withhold $2B Medicaid Funding?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T18:35:18.153Z",
-  "lastUpdated": "2026-01-15T18:35:18.154Z"
+  "lastReflection": "2026-01-15T19:23:44.061Z",
+  "lastUpdated": "2026-01-15T19:23:44.062Z"
 }
