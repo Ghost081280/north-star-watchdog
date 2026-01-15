@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T01:46:47.111Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T03:49:33.594Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-15T14:24:35.361Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T15:24:27.273Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2B allegedly go in Minnesota Medicaid?",
-    "What other organizations is Sen. Slotkin connected to?",
-    "Where did the $2B allegedly go in Medicaid fraud investigation?",
     "Where did the unknown allegedly go in Childcare fraud investigation?",
     "Where did the $2B allegedly go in Feeding Our Future?",
     "Where did the $1.3B allegedly go in Minnesota Childcare Funding Freeze?",
@@ -550,7 +547,10 @@
     "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
     "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the millions allegedly go in Minnesota Daycare Scandal?",
-    "Where did the $2B allegedly go in Minnesota Child Care Scandal?"
+    "Where did the $2B allegedly go in Minnesota Child Care Scandal?",
+    "What other organizations is Hannah Natanson connected to?",
+    "Where did the $100M+ allegedly go in Minnesota Child Care Scandal?",
+    "Where did the Unknown allegedly go in Foxboro Public Schools Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 325,
-    "articlesProcessed": 16150,
-    "redFlagsFound": 371,
+    "totalScans": 326,
+    "articlesProcessed": 16200,
+    "redFlagsFound": 372,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2.2M allegedly go in Feeding Our Future?",
         "Where did the $2B allegedly go in Minnesota Medicaid?",
-        "What other organizations is Sen. Slotkin connected to?"
+        "What other organizations is Sen. Slotkin connected to?",
+        "Where did the $2B allegedly go in Medicaid fraud investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T14:24:35.361Z",
-  "lastUpdated": "2026-01-15T14:24:35.362Z"
+  "lastReflection": "2026-01-15T15:24:27.273Z",
+  "lastUpdated": "2026-01-15T15:24:27.274Z"
 }
