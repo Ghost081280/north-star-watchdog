@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T11:16:49.065Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-10T12:37:18.860Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-14T23:17:44.412Z",
       "summary": "CRITICAL: 1 large dollar amount findings, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
+    },
+    {
+      "date": "2026-01-15T01:28:08.345Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Classified documents probe?",
-    "What other organizations is Hannah Natanson connected to?",
-    "What specific allegations exist against Hannah Natanson?",
     "What specific allegations exist against Minnesota AG?",
     "Where did the $3.2M allegedly go in $3.2M Medicaid fraud?",
     "Where did the $3M allegedly go in Minnesota Medicaid fraud investigation?",
@@ -550,7 +547,10 @@
     "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?",
     "Where did the $3M allegedly go in Medicaid fraud investigation?",
     "Where did the None allegedly go in ICE shooting investigation?",
-    "Where did the $2 Billion allegedly go in Trump administration funding cuts?"
+    "Where did the $2 Billion allegedly go in Trump administration funding cuts?",
+    "What other organizations is Renee Good connected to?",
+    "Where did the $9B allegedly go in Feeding Our Future fraud?",
+    "Where did the None allegedly go in Minnesota ICE shooting?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 312,
-    "articlesProcessed": 15500,
-    "redFlagsFound": 352,
+    "totalScans": 313,
+    "articlesProcessed": 15550,
+    "redFlagsFound": 353,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Minnesota child care scandal?",
         "Where did the Not specified allegedly go in Classified documents probe?",
-        "What other organizations is Hannah Natanson connected to?"
+        "What other organizations is Hannah Natanson connected to?",
+        "What specific allegations exist against Hannah Natanson?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-14T23:17:44.412Z",
-  "lastUpdated": "2026-01-14T23:17:44.413Z"
+  "lastReflection": "2026-01-15T01:28:08.345Z",
+  "lastUpdated": "2026-01-15T01:28:08.346Z"
 }
