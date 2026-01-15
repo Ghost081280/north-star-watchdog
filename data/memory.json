@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T19:15:21.053Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-10T20:20:55.901Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T09:27:29.350Z",
       "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
+    },
+    {
+      "date": "2026-01-15T10:23:21.707Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -531,9 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in FBI Investigation into Classified Document Leak?",
-    "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?",
     "Where did the $3M allegedly go in Medicaid fraud investigation?",
     "Where did the None allegedly go in ICE shooting investigation?",
     "Where did the $2 Billion allegedly go in Trump administration funding cuts?",
@@ -550,7 +547,10 @@
     "Where did the $2B allegedly go in Feeding Our Future?",
     "Where did the $1.3B allegedly go in Minnesota Childcare Funding Freeze?",
     "What specific allegations exist against Donald Trump?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Not specified connected to?",
+    "Where did the $3 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $2 billion allegedly go in CMS Move to Withhold $2B Medicaid Funding?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 320,
-    "articlesProcessed": 15900,
-    "redFlagsFound": 362,
+    "totalScans": 321,
+    "articlesProcessed": 15950,
+    "redFlagsFound": 364,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -571,33 +571,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Federal investigation into childcare funding fraud in Minnesota",
-          "insight": "This investigation could lead to significant recoveries and penalties.",
-          "entities": [
-            "Minnesota",
-            "FBI"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FOX 9 Minneapolis-St. Paul",
-          "sourceUrl": "https://www.fox9.com/story/57012942/feeding-our-future-defendants-look-to-move-trial"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Elissa Slotkin connected to?",
-        "What other organizations is Owner of Minnesota Agency connected to?",
-        "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $3 Million allegedly go in Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in FBI Investigation into Classified Document Leak?",
+        "Where did the $1.9 billion allegedly go in Minnesota social welfare scandal?"
       ]
     }
   ],
@@ -606,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T09:27:29.350Z",
-  "lastUpdated": "2026-01-15T09:27:29.351Z"
+  "lastReflection": "2026-01-15T10:23:21.707Z",
+  "lastUpdated": "2026-01-15T10:23:21.708Z"
 }
