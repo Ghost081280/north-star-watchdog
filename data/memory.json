@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T12:37:18.860Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-10T13:28:41.767Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T01:28:08.345Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T03:30:00.743Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Minnesota AG?",
-    "Where did the $3.2M allegedly go in $3.2M Medicaid fraud?",
     "Where did the $3M allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $3.2M allegedly go in $3.2M fraud case?",
     "Are any of these 2 figures connected to each other?",
@@ -550,7 +548,9 @@
     "Where did the $2 Billion allegedly go in Trump administration funding cuts?",
     "What other organizations is Renee Good connected to?",
     "Where did the $9B allegedly go in Feeding Our Future fraud?",
-    "Where did the None allegedly go in Minnesota ICE shooting?"
+    "Where did the None allegedly go in Minnesota ICE shooting?",
+    "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the $2B allegedly go in Trump Administration Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 313,
-    "articlesProcessed": 15550,
-    "redFlagsFound": 353,
+    "totalScans": 314,
+    "articlesProcessed": 15600,
+    "redFlagsFound": 355,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Classified documents probe?",
-        "What other organizations is Hannah Natanson connected to?",
-        "What specific allegations exist against Hannah Natanson?"
+        "What specific allegations exist against Minnesota AG?",
+        "Where did the $3.2M allegedly go in $3.2M Medicaid fraud?",
+        "Where did the $3M allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T01:28:08.345Z",
-  "lastUpdated": "2026-01-15T01:28:08.346Z"
+  "lastReflection": "2026-01-15T03:30:00.743Z",
+  "lastUpdated": "2026-01-15T03:30:00.744Z"
 }
