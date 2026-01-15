@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into Minnesota's medical transportation program",
+      "insight": "This could uncover potential fraud and abuse in the program",
+      "entities": [
+        "Minnesota",
+        "medical transportation program"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOG0xQmZ4U2hSN0dmUDZtQS1MNXNPOWJsZDNHR1NRNVNCbzFkX1A4Vnk0c2hHXzE2LWh1alRoV1VuYjN4aFVLMWZWa3pRZVVnNVIycTc5bThubWpFeXRtSzVLUXVuNjlOclpZUUN3TmVYaXZzSTFUblVmTXhJNkVQdGJqVnJJcFFPaEp4QjNNdTRobi1QLUVwc3BELUkydw",
+      "id": "rf-1768454745130-ipyq78kv8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T05:25:45.127Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Trump administration has proposed terminating certain programs, including those related to childcare and healthcare.",
       "insight": "I am concerned about the potential impact of these terminations on vulnerable populations. Further investigation is needed to determine the extent of the terminations and their potential consequences.",
@@ -967,34 +987,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-07T07:24:46.231Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration has terminated funding for certain social services programs, affecting local families.",
-      "insight": "This move raises concerns about the impact on vulnerable populations and the potential for fraud in the social services system. Further investigation is needed to determine the reasoning behind the funding termination.",
-      "entities": [
-        "Trump administration",
-        "HHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "WLDS",
-      "sourceUrl": "https://www.wlds.com/news/local-families-relying-on-certain-social-services-programs-to-feel-federal-funding-freeze/",
-      "id": "rf-1767767531270-3b17nx8c5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-07T06:32:11.267Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1015,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T04:39:40.024Z"
+  "lastUpdated": "2026-01-15T05:25:45.127Z"
 }
