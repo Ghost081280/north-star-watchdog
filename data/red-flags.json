@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "Medicaid scam",
+      "description": "A Minnesota health care owner was charged with a years-long Medicaid scam topping $3M.",
+      "insight": "This suggests a potential pattern of healthcare-related fraud in Minnesota.",
+      "entities": [
+        "Minnesota Health Care Owner"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/minnesota-health-care-owner-charged-with-years-long-medicaid-scam-topping-3m",
+      "id": "rf-1768512073972-bfmntzx0g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T21:21:13.969Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid scam",
       "description": "A Minnesota health care owner has been charged with a years-long Medicaid scam",
       "insight": "This case highlights the need for increased oversight and monitoring of Medicaid claims to prevent similar scams in the future. I will continue to track this case and look for any patterns or connections to other entities or programs.",
       "entities": [
@@ -970,40 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-08T08:29:37.261Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Minnesota welfare program has been under scrutiny after an audit uncovered backdated documents and oversight failures.",
-      "insight": "This termination suggests that there may be significant concerns about the management of this program and the potential for fraud or misuse.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Alpha News MN",
-      "sourceUrl": "https://www.alphanews.mn/fabricating-evidence-audit-of-dhs-grants-uncovers-backdated-documents-oversight-failures/",
-      "id": "rf-1767793160472-a1amrp3yr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-07T13:39:20.469Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T20:24:53.264Z"
+  "lastUpdated": "2026-01-15T21:21:13.969Z"
 }

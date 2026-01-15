@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T08:25:23.073Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T09:19:53.048Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T20:24:53.263Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T21:21:13.967Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -528,13 +528,17 @@
       "count": 28,
       "firstSeen": "2026-01-06T14:21:31.952Z",
       "lastSeen": "2026-01-15T05:25:45.126Z"
+    },
+    {
+      "type": "healthcare_fraud",
+      "description": "2 findings related to healthcare fraud",
+      "confidence": 0.5,
+      "count": 1,
+      "firstSeen": "2026-01-15T21:21:13.968Z",
+      "lastSeen": "2026-01-15T21:21:13.968Z"
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Medicaid provider connected to?",
-    "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the Unknown allegedly go in Federal investigation into Foxboro Public Schools?",
-    "What other organizations is Not applicable connected to?",
     "Where did the $2B allegedly go in Minnesota Medicaid Funding Freeze?",
     "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
     "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
@@ -550,7 +554,11 @@
     "Where did the $16M allegedly go in Minnesota Investigation?",
     "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?",
     "Where did the $16M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $3M allegedly go in Minnesota Medicaid scam?"
+    "Where did the $3M allegedly go in Minnesota Medicaid scam?",
+    "What specific allegations exist against Renee Good's Widow?",
+    "What specific allegations exist against YouTuber?",
+    "Where did the $3M allegedly go in Medicaid scam?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 331,
-    "articlesProcessed": 16450,
-    "redFlagsFound": 379,
+    "totalScans": 332,
+    "articlesProcessed": 16500,
+    "redFlagsFound": 381,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $2 billion allegedly go in CMS Move to Withhold $2B Medicaid Funding?",
-        "What other organizations is Minnesota Medicaid provider connected to?"
+        "What other organizations is Minnesota Medicaid provider connected to?",
+        "Where did the $3 million allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in Federal investigation into Foxboro Public Schools?"
       ]
     }
   ],
@@ -586,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T20:24:53.263Z",
-  "lastUpdated": "2026-01-15T20:24:53.263Z"
+  "lastReflection": "2026-01-15T21:21:13.967Z",
+  "lastUpdated": "2026-01-15T21:21:13.968Z"
 }
