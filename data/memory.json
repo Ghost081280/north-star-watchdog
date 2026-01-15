@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T22:18:52.366Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-10T23:18:46.422Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T12:42:44.156Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-15T13:39:17.881Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -531,8 +531,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $2B allegedly go in Trump Administration Investigation?",
     "Where did the $2.2M allegedly go in Feeding Our Future?",
     "Where did the $2B allegedly go in Minnesota Medicaid?",
     "What other organizations is Sen. Slotkin connected to?",
@@ -550,7 +548,9 @@
     "Where did the Unknown allegedly go in Federal investigation into Foxboro Public Schools?",
     "What other organizations is Not applicable connected to?",
     "Where did the $2B allegedly go in Minnesota Medicaid Funding Freeze?",
-    "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?"
+    "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
+    "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
+    "Where did the millions allegedly go in Minnesota Daycare Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -560,9 +560,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 323,
-    "articlesProcessed": 16050,
-    "redFlagsFound": 367,
+    "totalScans": 324,
+    "articlesProcessed": 16100,
+    "redFlagsFound": 369,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Renee Good connected to?",
-        "Where did the $9B allegedly go in Feeding Our Future fraud?",
-        "Where did the None allegedly go in Minnesota ICE shooting?"
+        "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the $2B allegedly go in Trump Administration Investigation?",
+        "Where did the $2.2M allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T12:42:44.156Z",
-  "lastUpdated": "2026-01-15T12:42:44.157Z"
+  "lastReflection": "2026-01-15T13:39:17.881Z",
+  "lastUpdated": "2026-01-15T13:39:17.881Z"
 }
