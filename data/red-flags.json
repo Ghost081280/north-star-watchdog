@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "Use of shell companies in Minnesota",
+      "insight": "The use of shell companies may be indicative of money laundering or other financial crimes. Further investigation is needed to determine the extent of shell company usage and potential connections to fraudulent activities.",
+      "entities": [
+        "Minnesota companies",
+        "shell companies"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "NewsNation",
+      "sourceUrl": "https://www.newsnationnow.com/national/navy-intel-officer-tracked-millions-from-minnesota-day-cares-to-terror-groups/",
+      "id": "rf-1768494854141-xsi2u5rvo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-15T16:34:14.137Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Allegations of fraud in Minnesota's food stamp program",
       "insight": "This could indicate a significant concern over the management of food stamp funds in Minnesota, potentially related to fraud or mismanagement.",
@@ -969,26 +989,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-07T09:27:44.686Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration has also terminated funding for other social services programs, citing similar concerns.",
-      "insight": "This termination may have a significant impact on vulnerable populations and may lead to a decrease in essential services. Further investigation is necessary to determine the extent of the issue.",
-      "entities": [
-        "Trump administration",
-        "social services programs"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/07/us/politics/trump-administration-freezes-child-care-funding.html",
-      "id": "rf-1767770686234-pfztlu1l4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-07T07:24:46.231Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,9 +1001,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
     "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-15T15:24:27.275Z"
+  "lastUpdated": "2026-01-15T16:34:14.137Z"
 }
