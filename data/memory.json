@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-10T13:28:41.767Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-10T14:18:33.537Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T03:30:00.743Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-15T04:39:40.022Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -560,8 +560,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 314,
-    "articlesProcessed": 15600,
+    "totalScans": 315,
+    "articlesProcessed": 15650,
     "redFlagsFound": 355,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -575,9 +575,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Minnesota AG?",
-        "Where did the $3.2M allegedly go in $3.2M Medicaid fraud?",
-        "Where did the $3M allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the $3M allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the $3.2M allegedly go in $3.2M fraud case?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -586,6 +586,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T03:30:00.743Z",
-  "lastUpdated": "2026-01-15T03:30:00.744Z"
+  "lastReflection": "2026-01-15T04:39:40.022Z",
+  "lastUpdated": "2026-01-15T04:39:40.023Z"
 }
