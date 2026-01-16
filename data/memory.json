@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T20:21:45.221Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T22:19:12.984Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-01-16T10:22:34.824Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-16T11:19:10.244Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Feeding Our Future fraud case?",
-    "Where did the $0 allegedly go in Minnesota childcare fraud allegations?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $10M+ allegedly go in Ohio Daycare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the unknown allegedly go in DCYF Child Care Subsidies Investigation?",
     "What specific allegations exist against Tim Walz?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $0 allegedly go in Childcare Fraud in Ohio?"
+    "Where did the $0 allegedly go in Childcare Fraud in Ohio?",
+    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the $100K+ allegedly go in Ilhan Omar Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 343,
-    "articlesProcessed": 17050,
-    "redFlagsFound": 394,
+    "totalScans": 344,
+    "articlesProcessed": 17100,
+    "redFlagsFound": 395,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3M allegedly go in Medicaid scam?",
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $3M allegedly go in Feeding Our Future fraud case?"
+        "Where did the $0 allegedly go in Feeding Our Future fraud case?",
+        "Where did the $0 allegedly go in Minnesota childcare fraud allegations?",
+        "What other organizations is Tim Walz connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T10:22:34.824Z",
-  "lastUpdated": "2026-01-16T10:22:34.824Z"
+  "lastReflection": "2026-01-16T11:19:10.244Z",
+  "lastUpdated": "2026-01-16T11:19:10.245Z"
 }
