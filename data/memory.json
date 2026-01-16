@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T03:48:33.942Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-12T04:49:30.325Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-16T14:22:41.498Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-16T15:22:50.254Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100K allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?",
     "Where did the $0 allegedly go in Childcare Fraud Investigation?",
     "Where did the $100K allegedly go in FBI Investigation into Minneapolis Vehicle Vandalism?",
     "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Sheila Weinberg connected to?",
     "What other organizations is Minnesota Bureaucrat connected to?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $10M+ allegedly go in Ohio Child Care Fraud Investigation?"
+    "Where did the $10M+ allegedly go in Ohio Child Care Fraud Investigation?",
+    "What specific allegations exist against Not Found?",
+    "Where did the $ Millions allegedly go in Minnesota Welfare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 347,
-    "articlesProcessed": 17250,
-    "redFlagsFound": 398,
+    "totalScans": 348,
+    "articlesProcessed": 17300,
+    "redFlagsFound": 399,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Renee Good connected to?",
-        "Where did the $100K allegedly go in Minnesota childcare fraud investigation?",
-        "Where did the Unknown allegedly go in Federal game-fixing investigation?"
+        "Where did the $100K allegedly go in Minnesota Childcare Fraud Investigation?",
+        "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?",
+        "Where did the $0 allegedly go in Childcare Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T14:22:41.498Z",
-  "lastUpdated": "2026-01-16T14:22:41.498Z"
+  "lastReflection": "2026-01-16T15:22:50.254Z",
+  "lastUpdated": "2026-01-16T15:22:50.255Z"
 }
