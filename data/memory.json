@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T07:26:39.509Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-12T08:30:40.121Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-16T18:30:48.652Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-16T19:19:40.711Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in DCYF Child Care Subsidies Investigation?",
-    "What specific allegations exist against Tim Walz?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $0 allegedly go in Childcare Fraud in Ohio?",
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?",
     "What other organizations is Minneapolis man connected to?",
     "Where did the $3M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the None allegedly go in Federal Probe into Transgender Sports Policies?"
+    "Where did the None allegedly go in Federal Probe into Transgender Sports Policies?",
+    "Where did the $3.2 million allegedly go in Medicaid fraud investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 351,
-    "articlesProcessed": 17450,
-    "redFlagsFound": 401,
+    "totalScans": 352,
+    "articlesProcessed": 17500,
+    "redFlagsFound": 403,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
-        "Where did the $0 allegedly go in Minnesota Democratic Party Donation Investigation?",
-        "What other organizations is Ilhan Omar connected to?"
+        "Where did the unknown allegedly go in DCYF Child Care Subsidies Investigation?",
+        "What specific allegations exist against Tim Walz?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T18:30:48.652Z",
-  "lastUpdated": "2026-01-16T18:30:48.653Z"
+  "lastReflection": "2026-01-16T19:19:40.711Z",
+  "lastUpdated": "2026-01-16T19:19:40.712Z"
 }
