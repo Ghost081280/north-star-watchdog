@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T16:23:08.672Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-11T17:16:56.078Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-16T06:32:14.831Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-16T07:23:54.525Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?",
     "Where did the $16M allegedly go in Feeding Our Future fraud case?",
     "Where did the $3M allegedly go in Minnesota Medicaid scam?",
     "What specific allegations exist against Renee Good's Widow?",
@@ -558,7 +557,8 @@
     "Where did the $100K allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?",
     "Where did the $0 allegedly go in Childcare Fraud Investigation?",
-    "Where did the $100K allegedly go in FBI Investigation into Minneapolis Vehicle Vandalism?"
+    "Where did the $100K allegedly go in FBI Investigation into Minneapolis Vehicle Vandalism?",
+    "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 339,
-    "articlesProcessed": 16850,
-    "redFlagsFound": 388,
+    "totalScans": 340,
+    "articlesProcessed": 16900,
+    "redFlagsFound": 389,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T06:32:14.831Z",
-  "lastUpdated": "2026-01-16T06:32:14.831Z"
+  "lastReflection": "2026-01-16T07:23:54.525Z",
+  "lastUpdated": "2026-01-16T07:23:54.525Z"
 }
