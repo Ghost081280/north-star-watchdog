@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T14:18:07.642Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T15:19:23.649Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-01-16T04:39:13.930Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-16T05:24:06.734Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in FBI investigation into college basketball games?",
-    "Where did the $16M allegedly go in Minnesota Investigation?",
     "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?",
     "Where did the $16M allegedly go in Feeding Our Future fraud case?",
     "Where did the $3M allegedly go in Minnesota Medicaid scam?",
@@ -558,7 +556,9 @@
     "Where did the $100K allegedly go in Minnesota childcare fraud investigation?",
     "Where did the Unknown allegedly go in Federal game-fixing investigation?",
     "Where did the $100K allegedly go in Minnesota Childcare Fraud Investigation?",
-    "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?"
+    "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?",
+    "Where did the $0 allegedly go in Childcare Fraud Investigation?",
+    "Where did the $100K allegedly go in FBI Investigation into Minneapolis Vehicle Vandalism?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 337,
-    "articlesProcessed": 16750,
-    "redFlagsFound": 386,
+    "totalScans": 338,
+    "articlesProcessed": 16800,
+    "redFlagsFound": 387,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota health care owner connected to?",
-        "Where did the $3M allegedly go in Minnesota Medicaid scam investigation?",
-        "Where did the unknown allegedly go in FBI investigation into college basketball games?"
+        "Where did the unknown allegedly go in FBI investigation into college basketball games?",
+        "Where did the $16M allegedly go in Minnesota Investigation?",
+        "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T04:39:13.930Z",
-  "lastUpdated": "2026-01-16T04:39:13.930Z"
+  "lastReflection": "2026-01-16T05:24:06.734Z",
+  "lastUpdated": "2026-01-16T05:24:06.734Z"
 }
