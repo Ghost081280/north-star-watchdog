@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T11:16:44.532Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T12:38:21.392Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-15T23:20:27.987Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-16T01:39:47.985Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the millions allegedly go in Minnesota Daycare Scandal?",
-    "Where did the $2B allegedly go in Minnesota Child Care Scandal?",
-    "What other organizations is Hannah Natanson connected to?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Scandal?",
     "Where did the Unknown allegedly go in Foxboro Public Schools Investigation?",
     "Where did the $10M allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +555,10 @@
     "Are any of these 3 figures connected to each other?",
     "Where did the $3M allegedly go in Feeding Our Future fraud case?",
     "Where did the $0 allegedly go in Feeding Our Future fraud case?",
-    "Where did the $0 allegedly go in Minnesota childcare fraud allegations?"
+    "Where did the $0 allegedly go in Minnesota childcare fraud allegations?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $100M+ allegedly go in Minnesota Childcare Fraud Investigation?",
+    "Where did the $10M+ allegedly go in Ohio Daycare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 334,
-    "articlesProcessed": 16600,
-    "redFlagsFound": 383,
+    "totalScans": 335,
+    "articlesProcessed": 16650,
+    "redFlagsFound": 384,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not disclosed allegedly go in Federal Investigation into Foxboro Public Schools?",
-        "Where did the $2B allegedly go in Minnesota Medicaid Funding Investigation?",
-        "Where did the millions allegedly go in Minnesota Daycare Scandal?"
+        "Where did the millions allegedly go in Minnesota Daycare Scandal?",
+        "Where did the $2B allegedly go in Minnesota Child Care Scandal?",
+        "What other organizations is Hannah Natanson connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-15T23:20:27.987Z",
-  "lastUpdated": "2026-01-15T23:20:27.988Z"
+  "lastReflection": "2026-01-16T01:39:47.985Z",
+  "lastUpdated": "2026-01-16T01:39:47.987Z"
 }
