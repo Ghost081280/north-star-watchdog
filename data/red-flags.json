@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_fraud",
+      "description": "Ongoing concerns about fraud in state-funded childcare programs, highlighted by proposed legislation in Ohio and reports of improper payments.",
+      "insight": "This suggests a potential vulnerability in program administration and oversight, possibly indicating a larger issue with governance and financial management.",
+      "entities": [
+        "Minnesota",
+        "Ohio"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WVXU, Ohio House of Representatives",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaTlyd2xHV3I0dnNQWGs4M3BJV2MwbGphS3J2aEVUZG1oai1scGhTaWl6c3JTN2tsRkY3bzk5UkdXMzJHWlFhN0ZOaHphcThMSVJiVE5tUkp2MFJSdnhUaXJwUHF1a0I0azg5cF9ZRFdlNGR5SmpLRERfYk03VnRNeENDRmZrRkZscFZHdTZkTF9TUnVqTWdOcE84UFhxa3FFbHdnVmVRbkR1eVdZeHBweDU1NFlPZnItTk5IR2F6MA",
+      "id": "rf-1768545134835-3dvhxpkhc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-16T06:32:14.832Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI investigating vehicle vandalism in Minneapolis",
       "insight": "The FBI's investigation into vehicle vandalism in Minneapolis may be related to a larger pattern of crime in the area. Further research is needed to determine the extent of the issue and potential connections to other cases.",
@@ -75,26 +95,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-15T16:34:14.137Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Allegations of fraud in Minnesota's food stamp program",
-      "insight": "This could indicate a significant concern over the management of food stamp funds in Minnesota, potentially related to fraud or mismanagement.",
-      "entities": [
-        "Minnesota DHS",
-        "USDA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Anadolu Ajansı",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY2cyU2RsSmV0djM5NDRjTGVwc2VubHB1VTRBTnRtZmFCWTA1eFEyaXFsNVFUYmhhSHhkRWNNek1kVzBqV1huSFJiYU5CUE5aN0RoVFJFQUxVdXkzcVRRWlRGQWFWdkhJdXJRcFI4OHJHZmdLTVJha3FjSXR6eDBoeFQ3dS1wNjJ2TW9SLTBCeU5GZ2haVGpWTmIwenpjUVBBRWFEWXBJSQ?oc=5",
-      "id": "rf-1768484357885-e18b7r149",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-15T13:39:17.883Z",
       "isNew": false
     },
     {
@@ -993,6 +993,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1018,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-16T05:24:06.735Z"
+  "lastUpdated": "2026-01-16T06:32:14.832Z"
 }

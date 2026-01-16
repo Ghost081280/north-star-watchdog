@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T15:19:23.649Z",
-      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-01-11T16:23:08.672Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-16T05:24:06.734Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-16T06:32:14.831Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 338,
-    "articlesProcessed": 16800,
-    "redFlagsFound": 387,
+    "totalScans": 339,
+    "articlesProcessed": 16850,
+    "redFlagsFound": 388,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in FBI investigation into college basketball games?",
-        "Where did the $16M allegedly go in Minnesota Investigation?",
-        "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?"
+        "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?",
+        "Where did the $16M allegedly go in Feeding Our Future fraud case?",
+        "Where did the $3M allegedly go in Minnesota Medicaid scam?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T05:24:06.734Z",
-  "lastUpdated": "2026-01-16T05:24:06.734Z"
+  "lastReflection": "2026-01-16T06:32:14.831Z",
+  "lastUpdated": "2026-01-16T06:32:14.831Z"
 }
