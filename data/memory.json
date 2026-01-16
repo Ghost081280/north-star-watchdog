@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T17:16:56.078Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-11T18:27:37.664Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-16T07:23:54.525Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-16T08:28:59.085Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 28,
+      "count": 29,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-15T05:25:45.126Z"
+      "lastSeen": "2026-01-16T08:28:59.086Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $16M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $3M allegedly go in Minnesota Medicaid scam?",
     "What specific allegations exist against Renee Good's Widow?",
     "What specific allegations exist against YouTuber?",
     "Where did the $3M allegedly go in Medicaid scam?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Federal Game-Fixing Investigation?",
     "Where did the $0 allegedly go in Childcare Fraud Investigation?",
     "Where did the $100K allegedly go in FBI Investigation into Minneapolis Vehicle Vandalism?",
-    "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?"
+    "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?",
+    "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
+    "Where did the $0 allegedly go in Minnesota Democratic Party Donation Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 340,
-    "articlesProcessed": 16900,
-    "redFlagsFound": 389,
+    "totalScans": 341,
+    "articlesProcessed": 16950,
+    "redFlagsFound": 391,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in FBI investigation into fraudulent Burton mail?",
         "Where did the $16M allegedly go in Feeding Our Future fraud case?",
-        "Where did the $3M allegedly go in Minnesota Medicaid scam?"
+        "Where did the $3M allegedly go in Minnesota Medicaid scam?",
+        "What specific allegations exist against Renee Good's Widow?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T07:23:54.525Z",
-  "lastUpdated": "2026-01-16T07:23:54.525Z"
+  "lastReflection": "2026-01-16T08:28:59.085Z",
+  "lastUpdated": "2026-01-16T08:28:59.086Z"
 }
