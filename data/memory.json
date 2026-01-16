@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T10:24:17.158Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-12T11:25:19.164Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
@@ -510,6 +505,11 @@
       "date": "2026-01-16T21:20:35.810Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-16T22:20:11.472Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100K+ allegedly go in Ilhan Omar Investigation?",
-    "Where did the $100 million allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $100 million allegedly go in Federal Child Care Funding Freeze?",
     "What other organizations is Sheila Weinberg connected to?",
     "What other organizations is Minnesota Bureaucrat connected to?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is 2 individuals connected to?",
     "Where did the Unknown allegedly go in Minnesota childcare fraud investigation?",
-    "Where did the Unknown allegedly go in Trump administration's investigation into Medicaid fraud in Minnesota?"
+    "Where did the Unknown allegedly go in Trump administration's investigation into Medicaid fraud in Minnesota?",
+    "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $10B allegedly go in Federal Child Care Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 354,
-    "articlesProcessed": 17600,
-    "redFlagsFound": 406,
+    "totalScans": 355,
+    "articlesProcessed": 17650,
+    "redFlagsFound": 408,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "medicaid_fraud",
+          "description": "A $3.2 million Medicaid fraud scheme was uncovered in Minnesota, highlighting the ongoing issue of healthcare fraud.",
+          "insight": "The scheme indicates a need for increased oversight and enforcement in healthcare programs to prevent similar cases.",
+          "entities": [
+            "Minnesota DHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MNCRIME.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdkRCWlRfRThqMmVvTndPMFRSWXRha0xVaFg5T0RjbzJ4dFZfQzNhMTBRRUQxaDRpMGxiaVRFUk5HeWlTUnJfZ1FGVU5LR0d6dV9oVmZHSUpkRnE1RVk5OHFSaEVYcEdLUW15R3IzdzU0ajNaaUs4RmFXYzZ4Y3lmUC1n?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
-        "Where did the $0 allegedly go in Childcare Fraud in Ohio?",
-        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?"
+        "Where did the $100K+ allegedly go in Ilhan Omar Investigation?",
+        "Where did the $100 million allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $100 million allegedly go in Federal Child Care Funding Freeze?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T21:20:35.810Z",
-  "lastUpdated": "2026-01-16T21:20:35.811Z"
+  "lastReflection": "2026-01-16T22:20:11.472Z",
+  "lastUpdated": "2026-01-16T22:20:11.473Z"
 }

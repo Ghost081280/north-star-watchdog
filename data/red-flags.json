@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "medicaid_fraud",
+      "description": "A $3.2 million Medicaid fraud scheme was uncovered in Minnesota, highlighting the ongoing issue of healthcare fraud.",
+      "insight": "The scheme indicates a need for increased oversight and enforcement in healthcare programs to prevent similar cases.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MNCRIME.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdkRCWlRfRThqMmVvTndPMFRSWXRha0xVaFg5T0RjbzJ4dFZfQzNhMTBRRUQxaDRpMGxiaVRFUk5HeWlTUnJfZ1FGVU5LR0d6dV9oVmZHSUpkRnE1RVk5OHFSaEVYcEdLUW15R3IzdzU0ajNaaUs4RmFXYzZ4Y3lmUC1n?oc=5",
+      "id": "rf-1768602011478-w3cpaalip",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-16T22:20:11.474Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "CMS weaponizes fraud against Medicaid in Minnesota",
       "insight": "This suggests a deeper issue with Medicaid management and oversight in Minnesota.",
@@ -193,26 +212,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-14T09:28:39.778Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A $3.2 million Medicaid fraud scheme involving a Minneapolis duo has been uncovered, highlighting the need for increased scrutiny of healthcare programs.",
-      "insight": "This case suggests a larger issue with Medicaid fraud in Minnesota, potentially involving multiple individuals and organizations. Further investigation is necessary to uncover the full extent of the scheme.",
-      "entities": [
-        "Minneapolis duo",
-        "Medicaid program"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/2-charged-in-32-million-medicaid-fraud-scheme/",
-      "id": "rf-1768375492562-vxhaxam0q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T07:24:52.559Z",
       "isNew": false
     },
     {
@@ -1002,7 +1001,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-16T21:20:35.812Z"
+  "lastUpdated": "2026-01-16T22:20:11.474Z"
 }
