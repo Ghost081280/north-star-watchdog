@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-11T19:15:23.981Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-11T20:21:45.221Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-16T09:26:21.783Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-16T10:22:34.824Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 29,
+      "count": 30,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-16T08:28:59.086Z"
+      "lastSeen": "2026-01-16T10:22:34.824Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3M allegedly go in Medicaid scam?",
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $3M allegedly go in Feeding Our Future fraud case?",
     "Where did the $0 allegedly go in Feeding Our Future fraud case?",
     "Where did the $0 allegedly go in Minnesota childcare fraud allegations?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +555,10 @@
     "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota Democratic Party Donation Investigation?",
     "What other organizations is Ilhan Omar connected to?",
-    "Where did the unknown allegedly go in DCYF Child Care Subsidies Investigation?"
+    "Where did the unknown allegedly go in DCYF Child Care Subsidies Investigation?",
+    "What specific allegations exist against Tim Walz?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $0 allegedly go in Childcare Fraud in Ohio?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 342,
-    "articlesProcessed": 17000,
-    "redFlagsFound": 392,
+    "totalScans": 343,
+    "articlesProcessed": 17050,
+    "redFlagsFound": 394,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Renee Good's Widow?",
-        "What specific allegations exist against YouTuber?",
-        "Where did the $3M allegedly go in Medicaid scam?"
+        "Where did the $3M allegedly go in Medicaid scam?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $3M allegedly go in Feeding Our Future fraud case?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T09:26:21.783Z",
-  "lastUpdated": "2026-01-16T09:26:21.784Z"
+  "lastReflection": "2026-01-16T10:22:34.824Z",
+  "lastUpdated": "2026-01-16T10:22:34.824Z"
 }
