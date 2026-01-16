@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T11:25:19.164Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-01-12T12:43:52.357Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-01-16T22:20:11.472Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-16T23:19:49.790Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100 million allegedly go in Federal Child Care Funding Freeze?",
-    "What other organizations is Sheila Weinberg connected to?",
-    "What other organizations is Minnesota Bureaucrat connected to?",
-    "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $10M+ allegedly go in Ohio Child Care Fraud Investigation?",
     "What specific allegations exist against Not Found?",
     "Where did the $ Millions allegedly go in Minnesota Welfare Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in Minnesota childcare fraud investigation?",
     "Where did the Unknown allegedly go in Trump administration's investigation into Medicaid fraud in Minnesota?",
     "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $10B allegedly go in Federal Child Care Funding Freeze?"
+    "Where did the $10B allegedly go in Federal Child Care Funding Freeze?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Jacob Frey connected to?",
+    "Where did the Unknown allegedly go in Minnesota Governor and Mayor Investigation?",
+    "Where did the $10B allegedly go in Texas Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 355,
-    "articlesProcessed": 17650,
-    "redFlagsFound": 408,
+    "totalScans": 356,
+    "articlesProcessed": 17700,
+    "redFlagsFound": 409,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "medicaid_fraud",
-          "description": "A $3.2 million Medicaid fraud scheme was uncovered in Minnesota, highlighting the ongoing issue of healthcare fraud.",
-          "insight": "The scheme indicates a need for increased oversight and enforcement in healthcare programs to prevent similar cases.",
-          "entities": [
-            "Minnesota DHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MNCRIME.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdkRCWlRfRThqMmVvTndPMFRSWXRha0xVaFg5T0RjbzJ4dFZfQzNhMTBRRUQxaDRpMGxiaVRFUk5HeWlTUnJfZ1FGVU5LR0d6dV9oVmZHSUpkRnE1RVk5OHFSaEVYcEdLUW15R3IzdzU0ajNaaUs4RmFXYzZ4Y3lmUC1n?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100K+ allegedly go in Ilhan Omar Investigation?",
-        "Where did the $100 million allegedly go in Minnesota Child Care Fraud Investigation?",
-        "Where did the $100 million allegedly go in Federal Child Care Funding Freeze?"
+        "Where did the $100 million allegedly go in Federal Child Care Funding Freeze?",
+        "What other organizations is Sheila Weinberg connected to?",
+        "What other organizations is Minnesota Bureaucrat connected to?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-16T22:20:11.472Z",
-  "lastUpdated": "2026-01-16T22:20:11.473Z"
+  "lastReflection": "2026-01-16T23:19:49.790Z",
+  "lastUpdated": "2026-01-16T23:19:49.791Z"
 }
