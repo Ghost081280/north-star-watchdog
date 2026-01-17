@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ investigation into Governor Walz and Mayor Frey raises concerns about potential wrongdoing by public officials.",
+      "insight": "I see a pattern of potential obstruction of law enforcement by public officials, which could indicate a larger issue with corruption in the state. Further investigation is needed to determine the extent of the wrongdoing.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/01/17/justice-dept-launches-criminal-investigation-minnesota-governor/",
+      "id": "rf-1768666921003-uoy3qs24t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T16:22:01.000Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ investigation into Governor Walz and Mayor Frey for allegedly impeding immigration enforcement raises concerns about potential obstruction of justice and abuse of power.",
       "insight": "As an investigator, I see a pattern of potential corruption and abuse of power among high-ranking officials in Minnesota. This investigation warrants close monitoring to uncover any potential wrongdoing.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-17T15:19:00.816Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -971,26 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-11T15:19:23.651Z",
       "isNew": false
-    },
-    {
-      "type": "police_brutality",
-      "description": "The fatal shooting of a civilian by an ICE agent in Minneapolis has raised concerns about police brutality and the use of force by law enforcement agencies.",
-      "insight": "This incident suggests a potential pattern of excessive force by law enforcement agencies, particularly in communities of color. Further investigation is warranted to determine the circumstances surrounding the shooting and any potential wrongdoing.",
-      "entities": [
-        "FBI",
-        "Minnesota authorities"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "InForum",
-      "sourceUrl": "https://www.inforum.com/news/minnesota-collecting-evidence-in-ice-shooting-seeks-collaboration-with-fbi",
-      "id": "rf-1768000795167-4omjlx15c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-09T23:19:55.163Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,7 +1004,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T15:19:00.816Z"
+  "lastUpdated": "2026-01-17T16:22:01.000Z"
 }
