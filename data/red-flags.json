@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ's investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey suggests potential concerns about their actions and decisions.",
+      "insight": "As an investigator, I find it concerning that the DOJ is looking into allegations of obstruction of federal law enforcement, which could indicate a larger issue with accountability and transparency in Minnesota's government.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/justice-dept-launches-criminal-investigation-of-minnesota-governor/2026/01/17/9c3e4d7c-7f6b-4f6a-bc6b-4c4f6f6f6f6f/story.html",
+      "id": "rf-1768624309006-x6xo08x74",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T04:31:49.003Z",
+      "isNew": true
+    },
+    {
       "type": "obstruction of justice",
       "description": "The alleged obstruction of federal law enforcement by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey raises concerns about the integrity of public officials.",
       "insight": "As an investigator, I am concerned about the potential for a pattern of behavior among public officials to obstruct justice. Further investigation is needed to determine the extent of this issue.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-17T03:22:10.385Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Obstruction of federal law enforcement",
@@ -970,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-08T18:27:16.465Z",
       "isNew": false
-    },
-    {
-      "type": "use_of_force",
-      "description": "The fatal shooting of a woman in Minneapolis by an ICE officer has raised concerns about the use of force by immigration officers.",
-      "insight": "This incident appears to be a tragic example of the potential risks associated with ICE officers' use of force. I recommend investigating the circumstances surrounding the shooting and potential patterns of similar incidents.",
-      "entities": [
-        "ICE officer",
-        "Minneapolis woman"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/news/world/ice-shooting-minneapolis-woman",
-      "id": "rf-1767876160055-b85fehrt2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-08T12:42:40.052Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T03:22:10.385Z"
+  "lastUpdated": "2026-01-17T04:31:49.003Z"
 }

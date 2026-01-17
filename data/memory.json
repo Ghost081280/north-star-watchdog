@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T14:24:49.985Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-12T15:24:35.327Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-17T03:22:10.383Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-17T04:31:49.000Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ Millions allegedly go in Minnesota Welfare Fraud Investigation?",
     "What other organizations is Not specified connected to?",
     "Where did the Not specified allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Minnesota Governor and Mayor Investigation?",
     "Where did the $10B allegedly go in Texas Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
-    "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?"
+    "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?",
+    "Where did the $0 allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 358,
-    "articlesProcessed": 17800,
-    "redFlagsFound": 411,
+    "totalScans": 359,
+    "articlesProcessed": 17850,
+    "redFlagsFound": 412,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Not Found?",
         "Where did the $ Millions allegedly go in Minnesota Welfare Fraud Investigation?",
-        "What other organizations is Not specified connected to?"
+        "What other organizations is Not specified connected to?",
+        "Where did the Not specified allegedly go in Minnesota Welfare Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-17T03:22:10.383Z",
-  "lastUpdated": "2026-01-17T03:22:10.384Z"
+  "lastReflection": "2026-01-17T04:31:49.000Z",
+  "lastUpdated": "2026-01-17T04:31:49.001Z"
 }
