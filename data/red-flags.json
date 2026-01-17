@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ is investigating Minnesota officials, including the governor and mayor, for potential obstruction and fraud.",
+      "insight": "This suggests a high-level of corruption and potential wrongdoing within the state's government.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/us/justice-department-probing-minnesota-governor-walz-other-officials-source-says-2026-01-17",
+      "id": "rf-1768688338008-umavvd1ui",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T22:18:58.006Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "There are reports of program termination due to fraud allegations.",
       "insight": "This could indicate a larger issue with program management or oversight.",
@@ -317,26 +337,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-16T22:20:11.474Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "CMS weaponizes fraud against Medicaid in Minnesota",
-      "insight": "This suggests a deeper issue with Medicaid management and oversight in Minnesota.",
-      "entities": [
-        "CMS",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Georgetown University",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcFZNdm9ZUTNZLUtJUE4yWDRSUEN6UGxISG1CeDVWOHRTejNPSW5rZ1pQMkFWVXBua2Jja2lIamx0bl85V2JFcjIybUgxd3lmeEFJYUZLemFMZjZnTHlBUWVOcTNwcjBYLXFJYVRvaHU5b2E0NFpqRk1wMTUyYVU3Z1hyOTdlZVM5Q2poaHljSzhUUGs",
-      "id": "rf-1768591180716-qpnove0hx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-16T19:19:40.713Z",
       "isNew": false
     },
     {
@@ -997,6 +997,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1004,7 +1006,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T21:17:42.744Z"
+  "lastUpdated": "2026-01-17T22:18:58.006Z"
 }
