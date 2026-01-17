@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T21:20:01.322Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-12T22:18:51.448Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-17T10:19:45.861Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-17T11:16:49.064Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?",
     "What other organizations is Minneapolis man connected to?",
     "Where did the $3M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the None allegedly go in Federal Probe into Transgender Sports Policies?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?",
     "Where did the $0 allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?",
     "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
-    "Where did the $0 allegedly go in Investigation into Tim Walz and Jacob Frey?"
+    "Where did the $0 allegedly go in Investigation into Tim Walz and Jacob Frey?",
+    "Where did the $0 allegedly go in DOJ Investigation into Walz and Frey?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 365,
-    "articlesProcessed": 18150,
-    "redFlagsFound": 418,
+    "totalScans": 366,
+    "articlesProcessed": 18200,
+    "redFlagsFound": 419,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Minnesota Welfare Fraud Investigation?",
         "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?",
-        "What other organizations is Minneapolis man connected to?"
+        "What other organizations is Minneapolis man connected to?",
+        "Where did the $3M allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-17T10:19:45.861Z",
-  "lastUpdated": "2026-01-17T10:19:45.861Z"
+  "lastReflection": "2026-01-17T11:16:49.064Z",
+  "lastUpdated": "2026-01-17T11:16:49.064Z"
 }
