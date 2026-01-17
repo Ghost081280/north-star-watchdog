@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T07:24:34.375Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-13T08:29:46.293Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-17T18:27:23.345Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-17T19:15:31.815Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota childcare fraud investigation?",
-    "Where did the Unknown allegedly go in Trump administration's investigation into Medicaid fraud in Minnesota?",
     "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $10B allegedly go in Federal Child Care Funding Freeze?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in DOJ Investigation into Tim Walz and Jacob Frey?",
     "What other organizations is Renee Good's widow connected to?",
     "What other organizations is Rep. Ilhan Omar connected to?",
-    "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Leaders?"
+    "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Leaders?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 373,
-    "articlesProcessed": 18550,
-    "redFlagsFound": 428,
+    "totalScans": 374,
+    "articlesProcessed": 18600,
+    "redFlagsFound": 429,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3.2 million allegedly go in Medicaid fraud investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is 2 individuals connected to?"
+        "Where did the Unknown allegedly go in Minnesota childcare fraud investigation?",
+        "Where did the Unknown allegedly go in Trump administration's investigation into Medicaid fraud in Minnesota?",
+        "Where did the $3.2 million allegedly go in Minnesota Medicaid Fraud?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-17T18:27:23.345Z",
-  "lastUpdated": "2026-01-17T18:27:23.346Z"
+  "lastReflection": "2026-01-17T19:15:31.815Z",
+  "lastUpdated": "2026-01-17T19:15:31.816Z"
 }

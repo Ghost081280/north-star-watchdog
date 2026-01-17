@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The U.S. Department of Justice has launched an investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey.",
+      "insight": "This is a significant red flag, as it indicates a high level of concern about potential corruption and fraud within the state's leadership.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-minnesota-governor-investigation-idUSKBN1E814Z",
+      "id": "rf-1768677331820-7z4qy411x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T19:15:31.817Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ investigation into Governor Walz and Mayor Frey raises concerns about potential wrongdoing by public officials.",
       "insight": "I see a pattern of potential obstruction of law enforcement by public officials, which could indicate a larger issue with corruption in the state. Further investigation is needed to determine the extent of the wrongdoing.",
       "entities": [
@@ -972,40 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-11T16:23:08.673Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Quality 'Learing' Center in Minnesota is now closed",
-      "insight": "The closure suggests potential severe issues with the program, possibly related to fraud allegations.",
-      "entities": [
-        "Quality 'Learing' Center"
-      ],
-      "confidence": 85,
-      "priority": "medium",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n",
-      "id": "rf-1768144763654-x75b12e7r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-11T15:19:23.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T18:27:23.347Z"
+  "lastUpdated": "2026-01-17T19:15:31.817Z"
 }
