@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-12T16:26:30.501Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-01-12T17:22:56.812Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-17T05:20:08.296Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-17T06:29:11.665Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 360,
-    "articlesProcessed": 17900,
-    "redFlagsFound": 413,
+    "totalScans": 361,
+    "articlesProcessed": 17950,
+    "redFlagsFound": 414,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not specified connected to?",
         "Where did the Not specified allegedly go in Minnesota Welfare Fraud Investigation?",
-        "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?"
+        "Where did the Not specified allegedly go in Ohio Childcare Fraud Investigation?",
+        "What other organizations is Minneapolis man connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-17T05:20:08.296Z",
-  "lastUpdated": "2026-01-17T05:20:08.296Z"
+  "lastReflection": "2026-01-17T06:29:11.665Z",
+  "lastUpdated": "2026-01-17T06:29:11.666Z"
 }

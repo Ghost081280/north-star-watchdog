@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey raises concerns over potential obstruction of federal law enforcement.",
+      "insight": "As an investigator, I am concerned about the potential misuse of power by high-ranking officials and the impact on public trust.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/justice-dept-launches-criminal-investigation-of-minnesota-governor/2026/01/17/3a6f4f7e-6f5f-4f7a-b9f6-4f6f6f6f6f6f/story.html",
+      "id": "rf-1768631351671-85hrtagvi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T06:29:11.667Z",
+      "isNew": true
+    },
+    {
       "type": "obstruction of federal law enforcement",
       "description": "The DOJ investigation into Walz and Frey has raised concerns about the potential for public officials to obstruct federal law enforcement efforts.",
       "insight": "As an investigator, I am concerned about the potential for public officials to use their power to impede investigations and undermine the rule of law. Further investigation is needed to determine the extent of any wrongdoing.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-17T05:20:08.297Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -970,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-08T21:20:25.148Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of programs due to fraud allegations",
-      "insight": "This could indicate a larger issue with corruption and abuse of power in Minnesota",
-      "entities": [
-        "Minnesota government",
-        "DHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "NTD News",
-      "sourceUrl": "https://www.ntdnews.com/breaking/dhs-probes-minnesota-fraud-leaving-no-stone-unturned/",
-      "id": "rf-1767899952737-g7tz4ydhk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-08T19:19:12.733Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T05:20:08.297Z"
+  "lastUpdated": "2026-01-17T06:29:11.667Z"
 }
