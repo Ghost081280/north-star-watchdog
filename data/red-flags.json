@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey raises concerns about potential obstruction of federal law enforcement.",
+      "insight": "As an investigator, I am concerned about the potential for political interference and the impact on public trust in government.",
+      "entities": [
+        "Minnesota Governor Tim Walz",
+        "Minneapolis Mayor Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/01/17/justice-department-launches-criminal-investigation-minnesota-governor/",
+      "id": "rf-1768638316197-vynk6epg9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T08:25:16.194Z",
+      "isNew": true
+    },
+    {
       "type": "obstruction of justice",
       "description": "The DOJ investigation into the Minnesota governor and mayor has raised concerns about potential obstruction of justice.",
       "insight": "As an investigator, I am concerned that the governor and mayor may have attempted to impede law enforcement efforts, which could have serious consequences for public safety and trust in government.",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-17T07:18:53.823Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey raises concerns over potential obstruction of federal law enforcement.",
-      "insight": "As an investigator, I am concerned about the potential misuse of power by high-ranking officials and the impact on public trust.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/justice-dept-launches-criminal-investigation-of-minnesota-governor/2026/01/17/3a6f4f7e-6f5f-4f7a-b9f6-4f6f6f6f6f6f/story.html",
-      "id": "rf-1768631351671-85hrtagvi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T06:29:11.667Z",
       "isNew": false
     },
     {
@@ -994,8 +994,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1020,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T07:18:53.823Z"
+  "lastUpdated": "2026-01-17T08:25:16.194Z"
 }
