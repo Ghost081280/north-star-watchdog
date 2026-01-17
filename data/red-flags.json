@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "There are reports of program termination due to fraud allegations.",
+      "insight": "This could indicate a larger issue with program management or oversight.",
+      "entities": [
+        "Minnesota state government",
+        "program management entities"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/2026/01/17/justice-dept-enters-new-territory-with-probe-of-minnesota-officials/",
+      "id": "rf-1768681264758-aolgebsr1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-17T20:21:04.756Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The U.S. Department of Justice has launched an investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey.",
       "insight": "This is a significant red flag, as it indicates a high level of concern about potential corruption and fraud within the state's leadership.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-17T19:15:31.817Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -973,40 +993,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-11T22:19:12.986Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "The Quality Learing Center has been accused of being a shell company that raked in $1.9 million in taxpayer funds",
-      "insight": "I believe that the Quality Learing Center may be just the tip of the iceberg. Further investigation is needed to determine the extent of the fraud and to identify other potential shell companies that may be operating in Minnesota.",
-      "entities": [
-        "Quality Learing Center"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL",
-      "sourceUrl": "https://www.aol.com/article/news/2026/01/11/minnesotas-infamous-quality-learing-center-is-now-closed-records-show",
-      "id": "rf-1768148588677-7isuvcqeo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-11T16:23:08.673Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T19:15:31.817Z"
+  "lastUpdated": "2026-01-17T20:21:04.756Z"
 }
