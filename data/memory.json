@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T09:28:39.777Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-14T10:24:13.462Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-18T20:21:57.857Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-18T21:17:53.880Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $23 billion allegedly go in Minnesota Fraud Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?",
-    "Where did the Unknown allegedly go in Renee Good's Partner Investigation?",
     "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $85M allegedly go in Minnesota Fraud Investigation?",
     "Where did the unknown allegedly go in ICE Obstruction Investigation?",
     "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $4M allegedly go in Nick Shirley Daycare Fraud?"
+    "Where did the $4M allegedly go in Nick Shirley Daycare Fraud?",
+    "What other organizations is Becca Good connected to?",
+    "Where did the Unknown allegedly go in Minnesota Democrats Investigation?",
+    "Where did the $4M allegedly go in Daycare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 397,
-    "articlesProcessed": 19750,
-    "redFlagsFound": 461,
+    "totalScans": 398,
+    "articlesProcessed": 19800,
+    "redFlagsFound": 462,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Officials?",
         "Where did the $23 billion allegedly go in Minnesota Fraud Investigation?",
-        "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?"
+        "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?",
+        "Where did the Unknown allegedly go in Renee Good's Partner Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T20:21:57.857Z",
-  "lastUpdated": "2026-01-18T20:21:57.858Z"
+  "lastReflection": "2026-01-18T21:17:53.880Z",
+  "lastUpdated": "2026-01-18T21:17:53.881Z"
 }
