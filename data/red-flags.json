@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
+      "insight": "This could indicate a larger issue with immigration enforcement and oversight in Minnesota.",
+      "entities": [
+        "Minnesota officials",
+        "DOJ"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "US justice department investigating Minnesota Democrats over alleged ICE obstruction - BBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BaEZpMUlNTzVBVEQtdnRWZUVXM1BHanBVZnFaZG9lNENFd19xaUt4QzJFTjNfVVhDUGdub3dhNUFkWUN6MkR4cjZCZm5SSU9lcnQ4aVlKSHlxd9IBX0FVX3lxTFBteEN0TThDd3Q2ejVoUm5lb3J3YVN0Mk5qVTdfNVpDTjFTc3pkejhiZzdKQktOTkF2Y3VBcW5IaWhLYkJlLTB5Wmx0VGFkbUJGTXgza0NDdHo5NG1sakhR",
+      "id": "rf-1768767717862-wfb2ia4c9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T20:21:57.859Z",
+      "isNew": true
+    },
+    {
       "type": "alleged obstruction",
       "description": "US justice department investigating Minnesota Democrats over alleged ICE obstruction",
       "insight": "Potential obstruction by Minnesota officials could be linked to larger fraud schemes",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T19:15:28.766Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -968,41 +988,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-13T20:24:07.966Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Trump administration ends temporary protected status for Somali immigrants.",
-      "insight": "Potential impact on Somali immigrants in Minnesota and potential ties to fraud.",
-      "entities": [
-        "Trump Administration",
-        "Somali immigrants"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "freebeacon.com",
-      "sourceUrl": "https://www.freebeacon.com/politics/trump-administration-revokes-temporary-protected-status-for-somalis-including-hundreds-in-fraud-plagued-minnesota/",
-      "id": "rf-1768325178490-lrgz58qh4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-13T17:26:18.487Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T19:15:28.766Z"
+  "lastUpdated": "2026-01-18T20:21:57.859Z"
 }
