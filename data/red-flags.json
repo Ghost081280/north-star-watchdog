@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Trump Administration Deploys New Financial Strategy Against Minnesota - filmogaz.com",
+      "insight": "This new financial strategy may be related to the alleged fraud in Minnesota, and further investigation is needed to determine the connection.",
+      "entities": [
+        "Trump Administration",
+        "Minnesota"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "filmogaz.com",
+      "sourceUrl": "https://www.filmogaz.com/",
+      "id": "rf-1768760815549-yleg2muol",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T18:26:55.546Z",
+      "isNew": true
+    },
+    {
       "type": "investigation",
       "description": "US Justice Department investigating Minnesota officials",
       "insight": "This investigation could lead to further revelations of corruption and abuse of power in Minnesota. It is essential to monitor the investigation's progress and any subsequent actions taken.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T17:17:26.612Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -968,30 +988,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-13T15:23:59.489Z",
       "isNew": false
-    },
-    {
-      "type": "high-profile investigation",
-      "description": "DOJ investigation into Federal Reserve Chair Jerome Powell",
-      "insight": "The investigation into Powell raises concerns about the integrity of the Federal Reserve and potential political interference.",
-      "entities": [
-        "Jerome Powell",
-        "DOJ"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://nytimes.com/lawmakers-and-former-fed-leaders-denounce-powell-inquiry-2026-01-13",
-      "id": "rf-1768299781078-y39ri7qhj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-13T10:23:01.075Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,8 +1002,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T17:17:26.612Z"
+  "lastUpdated": "2026-01-18T18:26:55.546Z"
 }
