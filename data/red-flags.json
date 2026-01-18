@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "DOJ investigation into Minnesota officials",
+      "insight": "Potential for widespread corruption and fraud",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "BBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BaEZpMUlNTzVBVEQtdnRWZUVXM1BHanBVZnFaZG9lNENFd19xaUt4QzJFTjNfVVhDUGdub3dhNUFkWUN6MkR4cjZCZm5SSU9lcnQ4aVlKSHlxd9IBX0FVX3lxTFBteEN0TThDd3Q2ejVoUm5lb3J3YVN0Mk5qVTdfNVpDTjFTc3pkejhiZzdKQktOTkF2Y3VBcW5IaWhLYkJlLTB5Wmx0VGFkbUJGTXgza0NDdHo5NG1sakhR",
+      "id": "rf-1768707925786-91e9uumtm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T03:45:25.782Z",
+      "isNew": true
+    },
+    {
+      "type": "financial_improprieties",
+      "description": "Investigation into Rep. Ilhan Omar's finances",
+      "insight": "Potential for financial misconduct",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "WBFF",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQZkQ2UTBqU0RDZTQwR0cwdVg4V3RYMVppVmM0cFhCbWFOQTVZcEcyNGY2OXo3eU8wUDBqSkhJS2FaLTFiRmxzUlEzY2hjYy1UaFlxUmhmSEJxbVAxTWtQSzk3ajg5Z0FwS3l4YktLdnA5ZGh5NXhhWm14cE10SUlxb1V6eHhiSnk1WEo1eTZXbnJ2RFdQd0N6MHV0VTA2RmE5Y0IzamRIQjFFR0dFcWl2cThYTW1pZnpCOUZud25QUTg5N1dvdVBiWmtUbzJiRDQ2bEFBLTdIMWdUYmZQZDg1a003QWttdG9qTUpLVVRTODFuMFI2N0pPdHpnRGlQcThBWE5iX1JjUlVOSHMxSWlaWUVhQWZoNnE5MHdOWFBQd0JCZE0xR3dmRGphdmhDVmE0Q3NacVYyMVhwVWRmUkdWV25xTElkN3FqM1UzSGY5eUV3cnJLN1RZcGtzMEVIb3YtdnBMNlJkSko",
+      "id": "rf-1768707925786-yghbght2h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T03:45:25.782Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ's investigation into Minnesota Democrats and Rep. Ilhan Omar's finances raises concerns about potential corruption and obstruction of justice.",
       "insight": "I notice a pattern of potential corruption and obstruction of justice in Minnesota, with the DOJ investigating top Democrats and a member of Congress. This warrants further investigation and monitoring.",
@@ -19,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T01:45:47.982Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -953,51 +992,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T05:29:02.100Z",
       "isNew": false
-    },
-    {
-      "type": "Criminal Investigation",
-      "description": "Federal Reserve Chair Jerome Powell is under criminal investigation related to headquarters renovation",
-      "insight": "The investigation into Jerome Powell raises concerns about the potential for corruption and abuse of power within the Federal Reserve. Further investigation is needed to determine the extent of the scandal and whether other individuals or organizations are involved.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Wall Street Journal",
-      "sourceUrl": "https://www.wsj.com/articles/u-s-prosecutors-are-investigating-fed-chair-jerome-powell-11673974141",
-      "id": "rf-1768189713947-m6bgl9k46",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T03:48:33.944Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the shooting of Renee Good, an ICE agent in Minnesota.",
-      "insight": "This incident raises concerns about the use of force by ICE agents and potential systemic issues within the agency.",
-      "entities": [
-        "Renee Good",
-        "FBI",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/more-federal-officers-headed-to-minnesota-officials-point-fingers-over-ice-shooting/2026-01-11/",
-      "id": "rf-1768169952989-128p8a7kp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-11T22:19:12.986Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,8 +1006,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1025,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T01:45:47.982Z"
+  "lastUpdated": "2026-01-18T03:45:25.782Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T13:41:18.630Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-13T14:25:01.654Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-18T01:45:47.980Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-18T03:45:25.780Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
-    "Where did the $0 allegedly go in Investigation into Tim Walz and Jacob Frey?",
-    "Where did the $0 allegedly go in DOJ Investigation into Walz and Frey?",
     "Where did the unknown allegedly go in Minnesota Governor and Minneapolis Mayor Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
     "Where did the $0 allegedly go in DOJ Investigation into Tim Walz and Jacob Frey?",
@@ -558,7 +555,10 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Alejandro Rosales Castillo connected to?",
     "Where did the None allegedly go in Minnesota Democrats investigation?",
-    "Where did the None allegedly go in Rep. Ilhan Omar's finances investigation?"
+    "Where did the None allegedly go in Rep. Ilhan Omar's finances investigation?",
+    "What other organizations is Jacob Frey connected to?",
+    "Where did the $0 allegedly go in Minnesota Governor and Mayor Investigation?",
+    "Where did the $0 allegedly go in Ilhan Omar Financial Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 379,
-    "articlesProcessed": 18850,
-    "redFlagsFound": 435,
+    "totalScans": 380,
+    "articlesProcessed": 18900,
+    "redFlagsFound": 437,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
-        "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?",
-        "Where did the $0 allegedly go in DOJ Investigation into Minnesota Governor and Minneapolis Mayor?"
+        "Where did the unknown allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
+        "Where did the $0 allegedly go in Investigation into Tim Walz and Jacob Frey?",
+        "Where did the $0 allegedly go in DOJ Investigation into Walz and Frey?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T01:45:47.980Z",
-  "lastUpdated": "2026-01-18T01:45:47.981Z"
+  "lastReflection": "2026-01-18T03:45:25.780Z",
+  "lastUpdated": "2026-01-18T03:45:25.781Z"
 }
