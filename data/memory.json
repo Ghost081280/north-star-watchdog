@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T07:24:52.557Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-14T08:29:03.527Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-18T18:26:55.544Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-18T19:15:28.765Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Ilhan Omar Financial Investigation?",
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Officials?",
     "Where did the $23 billion allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?",
@@ -558,7 +557,8 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the $85M allegedly go in Minnesota Fraud Investigation?",
-    "Where did the unknown allegedly go in ICE Obstruction Investigation?"
+    "Where did the unknown allegedly go in ICE Obstruction Investigation?",
+    "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 395,
-    "articlesProcessed": 19650,
-    "redFlagsFound": 457,
+    "totalScans": 396,
+    "articlesProcessed": 19700,
+    "redFlagsFound": 459,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Rep. Ilhan Omar's finances investigation?",
-        "What other organizations is Jacob Frey connected to?",
-        "Where did the $0 allegedly go in Minnesota Governor and Mayor Investigation?"
+        "Where did the $0 allegedly go in Ilhan Omar Financial Investigation?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Officials?",
+        "Where did the $23 billion allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T18:26:55.544Z",
-  "lastUpdated": "2026-01-18T18:26:55.545Z"
+  "lastReflection": "2026-01-18T19:15:28.765Z",
+  "lastUpdated": "2026-01-18T19:15:28.765Z"
 }
