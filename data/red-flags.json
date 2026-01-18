@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating Minnesota Governor Tim Walz and Mayor Jacob Frey over alleged ICE obstruction",
+      "insight": "This investigation suggests a potential pattern of obstruction by high-ranking officials in Minnesota. Further investigation is needed to determine the extent of the alleged obstruction and any potential connections to other entities or programs.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcWsxYlVBX1ZDVnAwOE9KSkJtLTd5c21OY19aN2JNQUFmdE45OTMxMHl6SExhOTBkSTJ0YXdLWUhCVWsyWmIyZXJfWW45T1cxdU5NNG1KRjByQzBWcnhtTXVGYVByNEN1RkxMeC02eEZ3SzYzUVZLQ3dOUjh4T2dQdjd4VTNjY2p0Z3BBMWo0aWZreHBBbzFocFhQdHBmaTFORzZiaVBJSWJxUzFrSWVlUzZxRmRtY1A1Zm84",
+      "id": "rf-1768713772906-upyyyyh0i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T05:22:52.903Z",
+      "isNew": true
+    },
+    {
       "type": "Alleged ICE obstruction",
       "description": "The DOJ is investigating Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey for alleged ICE obstruction.",
       "insight": "This investigation raises concerns about the potential for corruption and wrongdoing by state officials. I will continue to monitor the situation and look for any connections to other fraudulent activities in the state.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T04:41:14.449Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -972,32 +992,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T07:26:39.511Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into high-ranking official",
-      "description": "The DOJ's investigation into Fed Chair Jerome Powell could indicate potential misuse of power or corruption at high levels.",
-      "insight": "This investigation could have significant implications for the Federal Reserve and the broader financial system, suggesting a need for close monitoring of developments.",
-      "entities": [
-        "Jerome Powell",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WSJ",
-      "sourceUrl": "https://www.wsj.com/articles/us-prosecutors-are-investigating-fed-chair-jerome-powell-wsj-11671887601",
-      "id": "rf-1768195742103-ahwafos8i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T05:29:02.100Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1005,7 +1003,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T04:41:14.449Z"
+  "lastUpdated": "2026-01-18T05:22:52.903Z"
 }
