@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T20:24:07.964Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-13T21:20:28.183Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-18T09:19:56.411Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-18T10:20:03.569Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 386,
-    "articlesProcessed": 19200,
-    "redFlagsFound": 444,
+    "totalScans": 387,
+    "articlesProcessed": 19250,
+    "redFlagsFound": 445,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
         "Are any of these 3 figures connected to each other?",
-        "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?"
+        "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
+        "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T09:19:56.411Z",
-  "lastUpdated": "2026-01-18T09:19:56.411Z"
+  "lastReflection": "2026-01-18T10:20:03.569Z",
+  "lastUpdated": "2026-01-18T10:20:03.570Z"
 }
