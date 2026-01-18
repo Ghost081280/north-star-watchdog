@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "potential shell company",
+      "description": "A company linked to a Minnesota child care provider has raised concerns about potential shell company activity, with reports indicating that the company may have been used to improperly claim millions of dollars in state funds.",
+      "insight": "I suspect that this company may be a shell company used to launder money or improperly claim state funds. Further investigation is needed to determine the extent of the activity and identify those responsible.",
+      "entities": [
+        "Minnesota child care provider"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS",
+      "sourceUrl": "https://www.startribune.com/minnesota-child-care-fraud-investigation/600020001/",
+      "id": "rf-1768745871828-187vx3dwh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T14:17:51.825Z",
+      "isNew": true
+    },
+    {
       "type": "alleged obstruction",
       "description": "Allegations of ICE obstruction by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey",
       "insight": "The allegations of ICE obstruction by high-ranking officials in Minnesota are a red flag for potential corruption and abuse of power.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T13:28:18.835Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged ICE obstruction",
@@ -76,25 +95,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T11:16:22.015Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The US Justice Department is investigating Minnesota Governor Walz and other officials over alleged fraud.",
-      "insight": "This investigation suggests a potential pattern of corruption and abuse of power among Minnesota officials.",
-      "entities": [
-        "Minnesota Governor Walz"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcWsxYlVBX1ZDVnAwOE9KSkJtLTd5c21OY19aN2JNQUFmdE45OTMxMHl6SExhOTBkSTJ0YXdLWUhCVWsyWmIyZXJfWW45T1cxdU5NNG1KRjByQzBWcnhtTXVGYVByNEN1RkxMeC02eEZ3SzYzUVZLQ3dOUjh4T2dQdjd4VTNjY2p0Z3BBMWo0aWZreHBBbzFocFhQdHBmaTFORzZiaVBJSWJxUzFrSWVlUzZxRmRtY1A1Zm84",
-      "id": "rf-1768731603574-wsazwz7gx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T10:20:03.571Z",
       "isNew": false
     },
     {
@@ -993,6 +993,7 @@
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1018,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T13:28:18.835Z"
+  "lastUpdated": "2026-01-18T14:17:51.825Z"
 }
