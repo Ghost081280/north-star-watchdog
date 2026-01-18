@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "DOJ investigating Minnesota Governor and Minneapolis Mayor",
+      "insight": "Potential for high-level corruption and abuse of power",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MS NOW",
+      "sourceUrl": "https://msnow.news/2026-01-18/holder-calls-doj-s-investigation-on-mn-governor-and-minneapolis-mayor-patently-unconstitutional/",
+      "id": "rf-1768734982019-o2y12aijl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T11:16:22.015Z",
+      "isNew": true
+    },
+    {
+      "type": "financial improprieties",
+      "description": "Allegations of financial improprieties by Rep. Ilhan Omar",
+      "insight": "Potential for financial misconduct by public official",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "KOMO",
+      "sourceUrl": "https://komo.com/2026-01-17/house-republicans-launch-investigation-into-rep-ilhan-omars-finances-report/",
+      "id": "rf-1768734982019-2bw1km9om",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T11:16:22.015Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The US Justice Department is investigating Minnesota Governor Walz and other officials over alleged fraud.",
       "insight": "This investigation suggests a potential pattern of corruption and abuse of power among Minnesota officials.",
       "entities": [
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T10:20:03.571Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Government Investigation",
@@ -950,45 +989,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T17:22:56.814Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "DOJ opens criminal probe into Fed chair Jerome Powell",
-      "insight": "This is a significant development that could have far-reaching implications for the economy and the Federal Reserve. I would closely monitor this investigation and look for connections to other entities or programs.",
-      "entities": [
-        "Federal Reserve",
-        "DOJ"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/12/business/economy/federal-reserve-powell-investigation.html",
-      "id": "rf-1768235190506-i9yyxr7f1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T16:26:30.503Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration has been accused of using fraud as a weapon against blue states, with potential implications for funding and programs.",
-      "insight": "This development suggests that there may be a political dimension to the fraud scandal, with potential implications for the management of federal funds and programs. Further investigation is needed to determine the extent to which political considerations are influencing the handling of fraud cases, and to identify any potential vulnerabilities in the system.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Politico",
-      "sourceUrl": "https://www.politico.com/",
-      "id": "rf-1768225304614-ruhiukrq0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T13:41:44.611Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,8 +1001,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T10:20:03.571Z"
+  "lastUpdated": "2026-01-18T11:16:22.015Z"
 }

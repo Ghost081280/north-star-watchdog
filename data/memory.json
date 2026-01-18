@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T21:20:28.183Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-13T22:21:22.143Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-18T10:20:03.569Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-18T11:16:22.013Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
     "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
     "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?",
     "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Renee Good's Partner Investigation?",
     "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Ilhan Omar?",
-    "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 387,
-    "articlesProcessed": 19250,
-    "redFlagsFound": 445,
+    "totalScans": 388,
+    "articlesProcessed": 19300,
+    "redFlagsFound": 447,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T10:20:03.569Z",
-  "lastUpdated": "2026-01-18T10:20:03.570Z"
+  "lastReflection": "2026-01-18T11:16:22.013Z",
+  "lastUpdated": "2026-01-18T11:16:22.014Z"
 }
