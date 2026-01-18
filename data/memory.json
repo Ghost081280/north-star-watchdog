@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T10:24:13.462Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-14T11:20:51.123Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-18T21:17:53.880Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-18T22:19:18.942Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
     "Are any of these 4 figures connected to each other?",
@@ -558,7 +557,8 @@
     "Where did the $4M allegedly go in Nick Shirley Daycare Fraud?",
     "What other organizations is Becca Good connected to?",
     "Where did the Unknown allegedly go in Minnesota Democrats Investigation?",
-    "Where did the $4M allegedly go in Daycare Fraud Investigation?"
+    "Where did the $4M allegedly go in Daycare Fraud Investigation?",
+    "Where did the $4M allegedly go in DOJ Investigation into Minnesota Officials?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 398,
-    "articlesProcessed": 19800,
-    "redFlagsFound": 462,
+    "totalScans": 399,
+    "articlesProcessed": 19850,
+    "redFlagsFound": 464,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $23 billion allegedly go in Minnesota Fraud Investigation?",
-        "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?",
-        "Where did the Unknown allegedly go in Renee Good's Partner Investigation?"
+        "What specific allegations exist against Renee Good?",
+        "What specific allegations exist against Ilhan Omar?",
+        "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T21:17:53.880Z",
-  "lastUpdated": "2026-01-18T21:17:53.881Z"
+  "lastReflection": "2026-01-18T22:19:18.942Z",
+  "lastUpdated": "2026-01-18T22:19:18.942Z"
 }

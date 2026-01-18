@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
+      "insight": "This could indicate potential corruption or obstruction at the state level.",
+      "entities": [
+        "Minnesota",
+        "DOJ"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "prismedia.ai",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOGFETWtBdDZmV25Cb1U5cjdEeDZtOUF0ZWdCc1NBd0lTOVNtV2ZIMmdjLTYxMkdUT0ZiY1J1Qmx4WWpNOWpFRFJ1eTVmcF9VWEF5bzZxX0ZnT05mSEFaWUZMVWFGUGQ2LXFiQWtFSmhkUEJzSVhuV3l4Rno4bF9mZXAzRVhPLTlVeDc3d2NmMmtxS1NtZE43UDRPRTFHWWtkVE1WenRoZzZRQUFGUFhJ",
+      "id": "rf-1768774758946-61ebzaq86",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T22:19:18.943Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
       "insight": "This could indicate a larger issue with immigration enforcement and oversight in Minnesota.",
@@ -968,30 +988,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-13T21:20:28.184Z",
       "isNew": false
-    },
-    {
-      "type": "resignation of top prosecutors",
-      "description": "The resignation of 6 Minnesota prosecutors over the DOJ investigation into Renee Good's widow raises concerns about the integrity of the investigation and the potential for obstruction of justice.",
-      "insight": "The sudden resignation of top prosecutors suggests that there may be more to the story than meets the eye. It is possible that the prosecutors were pressured to resign or that they were concerned about the direction of the investigation. Further investigation is needed to determine the reasons behind their resignation.",
-      "entities": [
-        "Joe Thompson",
-        "Renee Good's Widow"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Axios",
-      "sourceUrl": "https://www.axios.com/minnesota-fraud-prosecutor-resigns-ice-shooting-investigation",
-      "id": "rf-1768335847970-pif5cbzy6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-13T20:24:07.966Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1001,8 +1002,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T21:17:53.882Z"
+  "lastUpdated": "2026-01-18T22:19:18.943Z"
 }
