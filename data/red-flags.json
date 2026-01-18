@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Government Investigation",
+      "description": "US Justice Department investigating Minnesota Governor Walz and other officials",
+      "insight": "This investigation suggests a pattern of potential corruption and abuse of power in Minnesota state government. Further investigation is needed to determine the extent of the allegations.",
+      "entities": [
+        "Minnesota Governor Walz"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-minnesota-governor-investigation-idUSKBN2B30ZS",
+      "id": "rf-1768727996416-ztua308fm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T09:19:56.413Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal investigation into Minnesota Governor Walz and Mayor Frey",
       "insight": "This investigation raises concerns about potential corruption and abuse of power by high-ranking officials in Minnesota.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T08:25:32.246Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -971,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T13:41:44.611Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal investigation into Jerome Powell",
-      "insight": "The investigation into Jerome Powell raises concerns about the integrity and independence of the Federal Reserve. If Powell is found guilty, it could have significant implications for US monetary policy and financial stability.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Multiple reputable news sources",
-      "sourceUrl": "https://www.wsj.com/articles/us-prosecutors-are-investigating-fed-chair-jerome-powell-11612165402",
-      "id": "rf-1768210281868-4s72kt0d2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T09:31:21.865Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,8 +1002,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1022,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T08:25:32.246Z"
+  "lastUpdated": "2026-01-18T09:19:56.413Z"
 }

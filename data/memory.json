@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T19:20:42.123Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-13T20:24:07.964Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-18T08:25:32.244Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-18T09:19:56.411Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
     "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Minnesota Governor Walz Investigation?",
     "Where did the Unknown allegedly go in Renee Good's Partner Investigation?",
     "What specific allegations exist against Renee Good?",
-    "What specific allegations exist against Ilhan Omar?"
+    "What specific allegations exist against Ilhan Omar?",
+    "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 385,
-    "articlesProcessed": 19150,
-    "redFlagsFound": 443,
+    "totalScans": 386,
+    "articlesProcessed": 19200,
+    "redFlagsFound": 444,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Rep. Ilhan Omar connected to?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Leaders?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T08:25:32.244Z",
-  "lastUpdated": "2026-01-18T08:25:32.245Z"
+  "lastReflection": "2026-01-18T09:19:56.411Z",
+  "lastUpdated": "2026-01-18T09:19:56.411Z"
 }
