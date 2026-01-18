@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ's investigation into Minnesota Democrats and Rep. Ilhan Omar's finances raises concerns about potential corruption and obstruction of justice.",
+      "insight": "I notice a pattern of potential corruption and obstruction of justice in Minnesota, with the DOJ investigating top Democrats and a member of Congress. This warrants further investigation and monitoring.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey",
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-justice-minnesota-idUSKBN2A91YQ",
+      "id": "rf-1768700747985-hpuzocwi4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T01:45:47.982Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ is investigating Minnesota officials, including the governor and mayor, for potential obstruction and fraud.",
       "insight": "This suggests a high-level of corruption and potential wrongdoing within the state's government.",
@@ -973,32 +994,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-11T22:19:12.986Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Individuals involved in Feeding Our Future allegedly bought mansions and Mercedes with $250M in stolen meal funds.",
-      "insight": "This alleged fraud raises concerns about oversight and accountability in meal fund distribution, potentially involving multiple entities and individuals.",
-      "entities": [
-        "Feeding Our Future",
-        "U.S. Department of Justice"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/see-it-feeding-our-future-fraudsters-bought-mansions-mercedes-250m-stolen-meal-funds-aol-com-2026-01-11",
-      "id": "rf-1768169952989-89tojfz1o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-11T22:19:12.986Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,6 +1006,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1024,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-17T23:18:29.692Z"
+  "lastUpdated": "2026-01-18T01:45:47.982Z"
 }
