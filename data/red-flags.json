@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal investigation into Minnesota Governor Walz and Mayor Frey",
+      "insight": "This investigation raises concerns about potential corruption and abuse of power by high-ranking officials in Minnesota.",
+      "entities": [
+        "Minnesota Governor Walz",
+        "Mayor Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC7 Los Angeles",
+      "sourceUrl": "https://abc7losangeles.com/news/minneapolis-ice-shooting-live-updates-federal-probe-opened-into-mayor-frey-governor-walz",
+      "id": "rf-1768724732249-ug45e5tnu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T08:25:32.246Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The US Justice Department is investigating Minnesota Governor Walz and other officials over alleged ICE obstruction.",
       "insight": "This investigation could indicate a larger pattern of corruption in Minnesota. I will continue to monitor the situation and look for connections to other cases.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T07:19:27.773Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "financial irregularities",
@@ -971,26 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T09:31:21.865Z",
       "isNew": false
-    },
-    {
-      "type": "Potential corruption",
-      "description": "The investigation into Jerome Powell and the Federal Reserve has raised concerns about potential corruption and abuse of power.",
-      "insight": "As an investigator, I am concerned about the potential for corruption and the impact it could have on the US economy. Further investigation is needed to determine the extent of the corruption and to hold those responsible accountable.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Irish Times",
-      "sourceUrl": "https://www.irishtimes.com/news/world/us/us-prosecutors-launch-criminal-investigation-into-federal-reserve-s-jerome-powell-1.4944447",
-      "id": "rf-1768206640127-n6ttvd6xs",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T08:30:40.123Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,6 +1003,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T07:19:27.773Z"
+  "lastUpdated": "2026-01-18T08:25:32.246Z"
 }
