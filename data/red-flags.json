@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The US Justice Department is investigating Minnesota Governor Walz and other officials over alleged ICE obstruction.",
+      "insight": "This investigation could indicate a larger pattern of corruption in Minnesota. I will continue to monitor the situation and look for connections to other cases.",
+      "entities": [
+        "Minnesota Governor Walz"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-minnesota-investigation-idUSKBN2CZ2KQ",
+      "id": "rf-1768720767776-gggywswxa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T07:19:27.773Z",
+      "isNew": true
+    },
+    {
       "type": "financial irregularities",
       "description": "Allegations of financial irregularities and fraud in Minnesota.",
       "insight": "The allegations of financial irregularities and fraud in Minnesota, including child care fraud and financial investigations into high-ranking officials, suggest a larger issue with financial management and oversight in the state.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T06:29:37.952Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -972,26 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T08:30:40.123Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ investigation into Jerome Powell raises concerns over the independence of the Federal Reserve.",
-      "insight": "This investigation could have significant implications for the Fed and the US economy. It's essential to monitor developments closely.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WSJ",
-      "sourceUrl": "https://www.wsj.com/articles/us-prosecutors-are-investigating-fed-chair-jerome-powell-wsj-11671821202",
-      "id": "rf-1768202799514-u9wvqgqgo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T07:26:39.511Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,7 +1003,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T06:29:37.952Z"
+  "lastUpdated": "2026-01-18T07:19:27.773Z"
 }
