@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T16:30:22.974Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-13T17:26:18.484Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-18T05:22:52.901Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-18T06:29:37.950Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 382,
-    "articlesProcessed": 19000,
-    "redFlagsFound": 439,
+    "totalScans": 383,
+    "articlesProcessed": 19050,
+    "redFlagsFound": 440,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in DOJ Investigation into Minnesota Governor and Mayor?",
         "Where did the $0 allegedly go in DOJ Investigation into Tim Walz and Jacob Frey?",
-        "What other organizations is Renee Good's widow connected to?"
+        "What other organizations is Renee Good's widow connected to?",
+        "What other organizations is Rep. Ilhan Omar connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T05:22:52.901Z",
-  "lastUpdated": "2026-01-18T05:22:52.902Z"
+  "lastReflection": "2026-01-18T06:29:37.950Z",
+  "lastUpdated": "2026-01-18T06:29:37.951Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "financial irregularities",
+      "description": "Allegations of financial irregularities and fraud in Minnesota.",
+      "insight": "The allegations of financial irregularities and fraud in Minnesota, including child care fraud and financial investigations into high-ranking officials, suggest a larger issue with financial management and oversight in the state.",
+      "entities": [
+        "Minnesota Governor Walz",
+        "Rep. Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-minnesota-governor-investigation-idUSKBN1K40JX",
+      "id": "rf-1768717777955-ulp4sh75s",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T06:29:37.952Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating Minnesota Governor Tim Walz and Mayor Jacob Frey over alleged ICE obstruction",
       "insight": "This investigation suggests a potential pattern of obstruction by high-ranking officials in Minnesota. Further investigation is needed to determine the extent of the alleged obstruction and any potential connections to other entities or programs.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T05:22:52.903Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Alleged ICE obstruction",
@@ -98,26 +118,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T01:45:47.982Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ is investigating Minnesota officials, including the governor and mayor, for potential obstruction and fraud.",
-      "insight": "This suggests a high-level of corruption and potential wrongdoing within the state's government.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/us/justice-department-probing-minnesota-governor-walz-other-officials-source-says-2026-01-17",
-      "id": "rf-1768688338008-umavvd1ui",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T22:18:58.006Z",
       "isNew": false
     },
     {
@@ -1004,9 +1004,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T05:22:52.903Z"
+  "lastUpdated": "2026-01-18T06:29:37.952Z"
 }
