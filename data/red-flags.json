@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation",
+      "description": "US Justice Department investigating Minnesota officials",
+      "insight": "This investigation could lead to further revelations of corruption and abuse of power in Minnesota. It is essential to monitor the investigation's progress and any subsequent actions taken.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/justice-dept-enters-new-territory-with-probe-of-minnesota-officials/2026/01/18",
+      "id": "rf-1768756646616-nhuavua7e",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T17:17:26.612Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The US Justice Department is investigating Minnesota Democrats over alleged ICE obstruction",
       "insight": "This investigation could indicate a larger pattern of corruption or wrongdoing by Minnesota Democrats. Further investigation is needed to determine the extent of the allegations.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T16:23:16.382Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -968,32 +988,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-13T10:23:01.075Z",
       "isNew": false
-    },
-    {
-      "type": "investigation",
-      "description": "The DOJ is investigating Federal Reserve Chair Powell.",
-      "insight": "This investigation indicates potential concerns over Powell's actions or decisions as Chair, possibly related to ethics or legality.",
-      "entities": [
-        "Federal Reserve Chair Powell",
-        "DOJ"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNYlNCVmRkcmpYTnhSc09OazVuMGtuTW8yb3RhMkpLSmJUNmtpYWhJcnY5MXA2SUN2QXZ2VVJLbTBxcHJDaks0TTBrVFRGTTlSdDgyMExPOEFFTFNkWGtXTHJmd1hUVnZCOFBjLVZoYmd2VUc4N09sUmZmdklJMnhxVTNrVGJSQ19ZTFhxRVBSMGlIUQ",
-      "id": "rf-1768292986297-cykpp1i9a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-13T08:29:46.294Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,6 +1000,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T16:23:16.382Z"
+  "lastUpdated": "2026-01-18T17:17:26.612Z"
 }
