@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T23:19:40.288Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-14T01:48:32.418Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-18T12:37:38.174Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-18T13:28:18.833Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?",
-    "What other organizations is Tim Walz connected to?",
     "Where did the $10B allegedly go in Minnesota Day Care Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Alejandro Rosales Castillo connected to?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
     "Are any of these 4 figures connected to each other?",
     "Where did the Unknown allegedly go in Minnesota Democrats investigation?",
-    "Where did the Unknown allegedly go in Tim Walz investigation?"
+    "Where did the Unknown allegedly go in Tim Walz investigation?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 389,
-    "articlesProcessed": 19350,
-    "redFlagsFound": 448,
+    "totalScans": 390,
+    "articlesProcessed": 19400,
+    "redFlagsFound": 449,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
-        "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?",
-        "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?"
+        "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?",
+        "What other organizations is Tim Walz connected to?",
+        "Where did the $10B allegedly go in Minnesota Day Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T12:37:38.174Z",
-  "lastUpdated": "2026-01-18T12:37:38.175Z"
+  "lastReflection": "2026-01-18T13:28:18.833Z",
+  "lastUpdated": "2026-01-18T13:28:18.834Z"
 }

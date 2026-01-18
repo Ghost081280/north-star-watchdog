@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged obstruction",
+      "description": "Allegations of ICE obstruction by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey",
+      "insight": "The allegations of ICE obstruction by high-ranking officials in Minnesota are a red flag for potential corruption and abuse of power.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/world-us-canada-52674431",
+      "id": "rf-1768742898838-0xp478yit",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-18T13:28:18.835Z",
+      "isNew": true
+    },
+    {
       "type": "alleged ICE obstruction",
       "description": "The US Justice Department is investigating Minnesota Democrats over alleged ICE obstruction",
       "insight": "This investigation raises concerns about potential corruption and abuse of power. Further investigation is needed to determine the extent of the alleged obstruction and any potential connections to other cases.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T12:37:38.176Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -968,30 +988,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-12T21:20:01.325Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ's investigation into Federal Reserve Chair Jerome Powell has raised concerns about the independence of the Federal Reserve.",
-      "insight": "I see a pattern of investigations into high-ranking officials, which could indicate a larger issue with accountability and oversight. Further investigation is needed to determine the extent of the problem.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ABC News",
-      "sourceUrl": "https://www.abcnews.com/politics/doj-launches-criminal-investigation-into-fed-chair-jerome-powell",
-      "id": "rf-1768249425622-3er57eymd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-12T20:23:45.618Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,8 +1001,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-18T12:37:38.176Z"
+  "lastUpdated": "2026-01-18T13:28:18.835Z"
 }
