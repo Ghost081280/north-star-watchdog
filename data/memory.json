@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-13T22:21:22.143Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-13T23:19:40.288Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-18T11:16:22.013Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-01-18T12:37:38.174Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
-    "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?",
     "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $10B allegedly go in Minnesota Day Care Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "Where did the Unknown allegedly go in Minnesota Democrats investigation?",
+    "Where did the Unknown allegedly go in Tim Walz investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 388,
-    "articlesProcessed": 19300,
-    "redFlagsFound": 447,
+    "totalScans": 389,
+    "articlesProcessed": 19350,
+    "redFlagsFound": 448,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
         "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar's finances?",
-        "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?"
+        "Where did the $10B allegedly go in DOJ Investigation into Minnesota Officials?",
+        "Where did the $10B allegedly go in Illinois and Other States' $10B Funding Freeze?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T11:16:22.013Z",
-  "lastUpdated": "2026-01-18T11:16:22.014Z"
+  "lastReflection": "2026-01-18T12:37:38.174Z",
+  "lastUpdated": "2026-01-18T12:37:38.175Z"
 }
