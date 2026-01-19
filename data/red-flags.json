@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "DOJ opens investigation into Minnesota officials over immigration enforcement",
+      "insight": "This investigation could uncover deeper issues with immigration enforcement and potential fraud in Minnesota. Monitoring the investigation's progress is crucial.",
+      "entities": [
+        "DOJ",
+        "Minnesota officials"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "prismedia.ai",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOGFETWtBdDZmV25Cb1U5cjdEeDZtOUF0ZWdCc1NBd0lTOVNtV2ZIMmdjLTYxMkdUT0ZiY1J1Qmx4WWpNOWpFRFJ1eTVmcF9VWEF5bzZxX0ZnT05mSEFaWUZMVWFGUGQ2LXFiQWtFSmhkUEJzSVhuV3l4Rno4bF9mZXAzRVhPLTlVeDc3d2NmMmtxS1NtZE43UDRPRTFHWWtkVE1WenRoZzZRQUFGUFhJ?oc=5",
+      "id": "rf-1768807676426-enbx6obyd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T07:27:56.423Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of Transparency",
       "description": "The DOJ's decision not to investigate the shooting of Renee Good has raised concerns about transparency and accountability.",
       "insight": "This lack of transparency may indicate a larger pattern of covering up wrongdoing within the ICE and DOJ. Further investigation is needed to determine the extent of this issue.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-19T06:37:06.070Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -968,32 +988,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-14T06:32:23.878Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The investigation into Renee Good's death has led to the resignation of federal prosecutors.",
-      "insight": "This could indicate a larger issue with the DOJ's handling of investigations, potentially leading to further scrutiny.",
-      "entities": [
-        "DOJ",
-        "Renee Good"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://www.kare11.com/news/federal-prosecutors-resign-over-dojs-investigation-into-renee-goods-death",
-      "id": "rf-1768368229077-a7oh0zzha",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T05:23:49.073Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1000,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T06:37:06.070Z"
+  "lastUpdated": "2026-01-19T07:27:56.423Z"
 }
