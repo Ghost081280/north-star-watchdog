@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ is investigating a protest at a Minnesota church that targeted an ICE field director, and Don Lemon is under investigation for his role in the protest.",
+      "insight": "This investigation raises concerns about the use of federal power to target individuals and organizations, and the potential for abuse of authority. Further investigation is needed to determine the extent of the DOJ's involvement and the implications for free speech and assembly.",
+      "entities": [
+        "Don Lemon",
+        "ICE field director"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/01/19/politics/doj-investigates-minnesota-church-protest/index.html",
+      "id": "rf-1768864807991-ol7q52oyz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T23:20:07.988Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigations into Minnesota officials and protests at churches tied to ICE field directors",
       "insight": "This suggests a pattern of potential wrongdoing and abuse of power, requiring further investigation.",
@@ -971,41 +991,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-15T16:34:14.137Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into childcare funding fraud in Minnesota",
-      "insight": "This investigation could lead to significant recoveries and penalties.",
-      "entities": [
-        "Minnesota",
-        "FBI"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/story/57012942/feeding-our-future-defendants-look-to-move-trial",
-      "id": "rf-1768469249355-lxz3324tx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-15T09:27:29.352Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T22:20:49.127Z"
+  "lastUpdated": "2026-01-19T23:20:07.988Z"
 }
