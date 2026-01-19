@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T09:27:29.350Z",
-      "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.75
-    },
-    {
       "date": "2026-01-15T10:23:21.707Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-19T20:22:55.606Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-19T21:19:01.761Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Governor and Mayor Probe?",
-    "Where did the $85M allegedly go in Minnesota Officials Investigation?",
-    "What other organizations is Tim Walz connected to?",
     "Where did the $4M allegedly go in Minnesota Somali Aid Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "What other organizations is Ilhan Omar connected to?",
@@ -558,7 +555,10 @@
     "Where did the $19B allegedly go in Minnesota Benefits Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota Church Protest Investigation?",
     "Where did the Unknown allegedly go in Minnesota Benefits Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Don Lemon connected to?",
+    "Where did the $0 allegedly go in Minnesota Church Protest Investigation?",
+    "Where did the $X allegedly go in Treasury Targets Alleged Minnesota Benefits Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 419,
-    "articlesProcessed": 20850,
-    "redFlagsFound": 489,
+    "totalScans": 420,
+    "articlesProcessed": 20900,
+    "redFlagsFound": 491,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $4M allegedly go in Somali Aid Fraud?",
-        "What other organizations is Renee Good connected to?",
-        "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?"
+        "Where did the Unknown allegedly go in Minnesota Governor and Mayor Probe?",
+        "Where did the $85M allegedly go in Minnesota Officials Investigation?",
+        "What other organizations is Tim Walz connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-19T20:22:55.606Z",
-  "lastUpdated": "2026-01-19T20:22:55.607Z"
+  "lastReflection": "2026-01-19T21:19:01.761Z",
+  "lastUpdated": "2026-01-19T21:19:01.762Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigations into Minnesota officials and protests at churches tied to ICE field directors",
+      "insight": "This suggests a pattern of potential wrongdoing and abuse of power, requiring further investigation.",
+      "entities": [
+        "Minnesota Officials",
+        "ICE Field Directors"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObnVvTmR6NVU2RWM4RzV4eUo2LXVQYk5jem45RHNua05JX243ZWtQb0w0NVRRZ1ZLdGxOakpJS19tQ2ZtazZOdHFYUnpxWWxIUVFrcGZ3M1ctb1dnVjhQQVhRMmxFUF9EckdGb1VXbkFsaVpXMFhQT1pYOUN0dFRfSm12cUxvV0VLeFFqR3FZZkUtbkx0UWg1aXgzSGpPNTdf?oc=5",
+      "id": "rf-1768857541766-xmzszngse",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T21:19:01.763Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The US Department of the Treasury is investigating alleged benefits fraud in Minnesota, with a potential loss of $19B.",
       "insight": "This investigation may indicate a larger pattern of fraud and abuse in Minnesota, and it is essential to track the developments and connections between entities and programs.",
@@ -971,31 +991,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-15T09:27:29.352Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into Minnesota's medical transportation program",
-      "insight": "This could uncover potential fraud and abuse in the program",
-      "entities": [
-        "Minnesota",
-        "medical transportation program"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOG0xQmZ4U2hSN0dmUDZtQS1MNXNPOWJsZDNHR1NRNVNCbzFkX1A4Vnk0c2hHXzE2LWh1alRoV1VuYjN4aFVLMWZWa3pRZVVnNVIycTc5bThubWpFeXRtSzVLUXVuNjlOclpZUUN3TmVYaXZzSTFUblVmTXhJNkVQdGJqVnJJcFFPaEp4QjNNdTRobi1QLUVwc3BELUkydw",
-      "id": "rf-1768454745130-ipyq78kv8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-15T05:25:45.127Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1005,7 +1004,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T20:22:55.608Z"
+  "lastUpdated": "2026-01-19T21:19:01.763Z"
 }
