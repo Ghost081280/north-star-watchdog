@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T18:31:51.752Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-14T19:19:10.836Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-19T07:27:56.421Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-19T08:31:32.773Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Robert P. Rubicco connected to?",
     "Where did the $85M allegedly go in Minnesota Fraud Investigation?",
     "Where did the unknown allegedly go in ICE Obstruction Investigation?",
     "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Minnesota ICE Shooting Investigation?",
     "Where did the Unknown allegedly go in Minnesota Governor and Mayor Probe?",
-    "Where did the $85M allegedly go in Minnesota Officials Investigation?"
+    "Where did the $85M allegedly go in Minnesota Officials Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $4M allegedly go in Minnesota Somali Aid Fraud Investigation?",
+    "Where did the N/A allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 406,
-    "articlesProcessed": 20200,
-    "redFlagsFound": 473,
+    "totalScans": 407,
+    "articlesProcessed": 20250,
+    "redFlagsFound": 474,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Minnesota Democrats ICE Obstruction Investigation?",
         "Where did the unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Robert P. Rubicco connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-19T07:27:56.421Z",
-  "lastUpdated": "2026-01-19T07:27:56.422Z"
+  "lastReflection": "2026-01-19T08:31:32.773Z",
+  "lastUpdated": "2026-01-19T08:31:32.774Z"
 }
