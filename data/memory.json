@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T20:20:55.471Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-14T21:21:09.436Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-19T09:33:36.009Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-19T10:27:27.447Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 32,
+      "count": 33,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-19T05:31:35.972Z"
+      "lastSeen": "2026-01-19T10:27:27.448Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?",
-    "Where did the $4M allegedly go in Nick Shirley Daycare Fraud?",
     "What other organizations is Becca Good connected to?",
     "Where did the Unknown allegedly go in Minnesota Democrats Investigation?",
     "Where did the $4M allegedly go in Daycare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $4M allegedly go in Minnesota Somali Aid Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Shooting Investigation?",
     "What other organizations is Ilhan Omar connected to?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "Where did the $10B allegedly go in Minnesota Official Investigation?",
+    "Where did the $85M allegedly go in Nick Shirley Daycare Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 408,
-    "articlesProcessed": 20300,
-    "redFlagsFound": 476,
+    "totalScans": 409,
+    "articlesProcessed": 20350,
+    "redFlagsFound": 478,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $85M allegedly go in Minnesota Fraud Investigation?",
-        "Where did the unknown allegedly go in ICE Obstruction Investigation?",
-        "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?"
+        "Where did the $4M allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the $4M allegedly go in Nick Shirley Daycare Fraud?",
+        "What other organizations is Becca Good connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-19T09:33:36.009Z",
-  "lastUpdated": "2026-01-19T09:33:36.010Z"
+  "lastReflection": "2026-01-19T10:27:27.447Z",
+  "lastUpdated": "2026-01-19T10:27:27.448Z"
 }
