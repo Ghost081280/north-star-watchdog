@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "DHS joining the Minnesota fraud investigation indicates a significant escalation and potential for severe consequences.",
+      "insight": "The involvement of DHS suggests that the alleged $19B fraud may have substantial federal implications, possibly involving misuse of federal funds or programs.",
+      "entities": [
+        "Minnesota state officials",
+        "Federal agencies"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdFZVWWwwNFlqVE5FbWZhYnRGaEtuM21KdEZhQnhIeWFDb0U5NDg5ZUNOaUh5bVhPNWt2Ni1BM3RyOGFxZzVYZG45X01MZVNYOGNrdms0OGlQckRwRzB5aUdaVWNLRUdXWmdGblhMMWMtSjhOXy1GcFFJYlprMnExek9ZUWNyZw?oc=5",
+      "id": "rf-1768836323106-aa92705g9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T15:25:23.103Z",
+      "isNew": true
+    },
+    {
+      "type": "DOJ investigation",
+      "description": "The DOJ's decision not to investigate the ICE agent's fatal shooting of Renee Good contrasts with previous investigations, such as the George Floyd case.",
+      "insight": "This decision may indicate a discrepancy in how similar cases are handled by the DOJ, potentially leading to concerns about justice and equality.",
+      "entities": [
+        "DOJ",
+        "ICE agent"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "The Guardian",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNXZOQ1FqSkx3N0pUM1lsRHc4TWNvMDZmc3IzbGxfZWZJRndZRk1kTTlVbHBBMkpkV0lTdjZOUU9WU1pXeEhnZ1JLUkt3Wk1paVNxV1hlWTJRdTZBMnRpODFkQ2U4VU93aktHSVQ0Yk5mYklpbXh1MDktTmVIRU9QZWEzbkFDVGRVc0toV2ZxWVpYNjlhY08xM3Y0cjQzSjNocTBKOGpKMTN1dw?oc=5",
+      "id": "rf-1768836323106-rq09njm9a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T15:25:23.103Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Department of Justice has opened investigations into Minnesota officials and the Minneapolis ICE shooting.",
       "insight": "The ongoing investigations suggest a potential pattern of corruption and misconduct in Minnesota.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-19T14:26:57.753Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged misconduct",
@@ -38,26 +78,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-19T14:26:57.753Z",
-      "isNew": true
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "A federal investigation into potential fraud in Minnesota, with the DHS joining the investigation.",
-      "insight": "I suspect that there may be a larger scheme involved, given the involvement of multiple agencies. Further investigation is needed to determine the extent of the fraud.",
-      "entities": [
-        "Becca Good",
-        "Minnesota state officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/sources-federal-investigation-focusing-becca-good-n1276544",
-      "id": "rf-1768830268117-0xo4q77gy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T13:44:28.113Z",
       "isNew": false
     },
     {
@@ -970,30 +990,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-15T03:30:00.745Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "Senator Slotkin is under investigation for illegal orders",
-      "insight": "This investigation may be connected to other federal investigations, such as the Minnesota child care scandal. Further research is needed to determine the extent of the investigation and potential connections to other entities.",
-      "entities": [
-        "Senator Slotkin"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WGHN, Michigan Advance, The Hill, The Detroit News",
-      "sourceUrl": "https://www.wghn.com/news/senator-slotkin-federal-investigation-after-illegal-orders-video/",
-      "id": "rf-1768404303831-8srnepkn2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T15:25:03.828Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,6 +1002,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T14:26:57.753Z"
+  "lastUpdated": "2026-01-19T15:25:23.103Z"
 }
