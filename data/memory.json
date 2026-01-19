@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-14T12:42:49.598Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-14T13:39:55.104Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-01-18T23:19:03.400Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-19T01:44:08.735Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 4 figures connected to each other?",
-    "Where did the Unknown allegedly go in Minnesota Democrats investigation?",
     "Where did the Unknown allegedly go in Tim Walz investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $4M allegedly go in Daycare Fraud Investigation?",
     "Where did the $4M allegedly go in DOJ Investigation into Minnesota Officials?",
     "Where did the Unknown allegedly go in Minnesota Democrats ICE obstruction investigation?",
-    "Where did the $10B allegedly go in Trump Administration funding freeze investigation?"
+    "Where did the $10B allegedly go in Trump Administration funding freeze investigation?",
+    "Where did the $10B allegedly go in Minnesota Fraud Investigation?",
+    "Where did the Unknown allegedly go in Immigration Enforcement Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 400,
-    "articlesProcessed": 19900,
-    "redFlagsFound": 466,
+    "totalScans": 401,
+    "articlesProcessed": 19950,
+    "redFlagsFound": 467,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Ilhan Omar?",
-        "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-        "Are any of these 4 figures connected to each other?"
+        "Are any of these 4 figures connected to each other?",
+        "Where did the Unknown allegedly go in Minnesota Democrats investigation?",
+        "Where did the Unknown allegedly go in Tim Walz investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-18T23:19:03.400Z",
-  "lastUpdated": "2026-01-18T23:19:03.400Z"
+  "lastReflection": "2026-01-19T01:44:08.735Z",
+  "lastUpdated": "2026-01-19T01:44:08.736Z"
 }
