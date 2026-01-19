@@ -1,23 +1,42 @@
 {
   "flags": [
     {
-      "type": "federal investigation",
-      "description": "DOJ investigation into alleged fraud in Minnesota",
-      "insight": "The investigation into alleged fraud in Minnesota is a significant development, and the fact that DHS has joined the investigation suggests that the situation is being taken seriously. I will continue to monitor the situation and look for any connections to other entities or programs.",
+      "type": "alleged benefits fraud",
+      "description": "$19B in alleged benefits fraud in Minnesota",
+      "insight": "This is a significant red flag, indicating potential large-scale fraud in Minnesota's benefits programs. Further investigation is needed to determine the extent of the fraud and identify those responsible.",
       "entities": [
-        "Ilhan Omar",
-        "Minnesota"
+        "Minnesota state government"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1768840074579-w8apcxf9m",
+      "source": "JD Supra",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOeVNua0tlcjN4R2xlRFVjcTM3VnlqSUFtaDJfRGpDRmg2bDlNVEE5S0RoTm5ibFMzRFhrV1lsc0FwOF9VRUV6bU1NZ3RYZFZMalhNajBuTTBWb0xxWlFUODI1S1hpbU95RW5rcEJiVUVZWjgtTksyN2FLWkM4azF6TDc1dw",
+      "id": "rf-1768843399656-33ytuz1j5",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-19T16:27:54.575Z",
+      "detectedAt": "2026-01-19T17:23:19.653Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
+      "description": "DOJ investigation into Minnesota church protest",
+      "insight": "This indicates a potential connection between the protest and a larger investigation into civil rights or law enforcement issues in Minnesota.",
+      "entities": [
+        "DOJ",
+        "Minnesota church"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "Baptist Press",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTTJQTldWOXRsM3lRSEVYZW1lT2lLRmQ3YzNMdkhLQlNwUTJoZ09iUEw4RnI0cURPQjZsS0NnWV82TWdVQnNWblpNN09QRWczUXFmYTFmMy10YWNBS0hESkdldGYtOUVoSDhjWTJSOWJDQkFJVmNpRDlHRHV6ZmlnSEdtVk02ajhXMGIwT3NORFNWVEVuLUxQLWZ2c0lsd2l4ckRsazN5V2pfYm42VUdKN3R3",
+      "id": "rf-1768843399656-v1v8q6pfn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T17:23:19.653Z",
       "isNew": true
     },
     {
@@ -971,40 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-15T05:25:45.127Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration has proposed terminating certain programs, including those related to childcare and healthcare.",
-      "insight": "I am concerned about the potential impact of these terminations on vulnerable populations. Further investigation is needed to determine the extent of the terminations and their potential consequences.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/15/us/politics/trump-administration-program-terminations.html",
-      "id": "rf-1768447800748-7hovf0bxq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-15T03:30:00.745Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T16:27:54.575Z"
+  "lastUpdated": "2026-01-19T17:23:19.653Z"
 }
