@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "A $4M daycare in Minnesota was found to have no kids, indicating potential fraud.",
+      "insight": "This suggests a possible shell company or misspent funds, requiring further investigation into the daycare's finances and connections to government officials.",
+      "entities": [
+        "Nick Shirley",
+        "Minnesota state government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/nick-shirley-daycare-fraud-claims-spark-debate-after-reporter-deena-winter-says-she-saw-children-inside-minnesota-center",
+      "id": "rf-1768815216015-k524pg863",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T09:33:36.011Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "DOJ opens investigation into Minnesota officials over immigration enforcement",
       "insight": "This investigation could uncover deeper issues with immigration enforcement and potential fraud in Minnesota. Monitoring the investigation's progress is crucial.",
       "entities": [
@@ -218,25 +238,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-18T15:19:06.735Z",
-      "isNew": false
-    },
-    {
-      "type": "potential shell company",
-      "description": "A company linked to a Minnesota child care provider has raised concerns about potential shell company activity, with reports indicating that the company may have been used to improperly claim millions of dollars in state funds.",
-      "insight": "I suspect that this company may be a shell company used to launder money or improperly claim state funds. Further investigation is needed to determine the extent of the activity and identify those responsible.",
-      "entities": [
-        "Minnesota child care provider"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota DHS",
-      "sourceUrl": "https://www.startribune.com/minnesota-child-care-fraud-investigation/600020001/",
-      "id": "rf-1768745871828-187vx3dwh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T14:17:51.825Z",
       "isNew": false
     },
     {
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T08:31:32.775Z"
+  "lastUpdated": "2026-01-19T09:33:36.011Z"
 }
