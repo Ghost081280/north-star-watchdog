@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of funding for low-income families in Onondaga County",
+      "insight": "This could be a sign of larger issues with funding and oversight.",
+      "entities": [
+        "Onondaga County",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Central Current",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSE9QVTdSMXg4MTJKdzVUSVdkSHR3MlFxNTBuMlE0V1ZPZmtDd0d2eU5hRXdubUhkOEJzZDRfM0JDa3M2aWFGNlBVbUphMU82M05xNEZEQXVRemhETU5yNFRZVHRJeTF0M0dZS204b3BEOFpqcTA3dzhPX3BwSE5VblVBTGx1Qjc1MnBlVHphdWpndUh1NFRWS2syVndzTENqQ3FhcEVXTWhUY1k?oc=5",
+      "id": "rf-1768800695976-8wosew3ty",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T05:31:35.973Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
       "insight": "This could indicate potential corruption or obstruction at the state level.",
@@ -968,26 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-13T22:21:22.145Z",
       "isNew": false
-    },
-    {
-      "type": "mass_resignation",
-      "description": "Mass resignation of Minnesota federal prosecutors over ICE shooting investigation",
-      "insight": "This mass resignation may indicate a significant rift between federal prosecutors and the DOJ over the handling of the investigation.",
-      "entities": [
-        "DOJ",
-        "Minnesota federal prosecutors"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-canada/prosecutors-minnesota-resign-over-concerns-about-ice-shooting-investigation-n1088461",
-      "id": "rf-1768339228187-ntv8ue0a9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-13T21:20:28.184Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,7 +999,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T04:51:26.778Z"
+  "lastUpdated": "2026-01-19T05:31:35.973Z"
 }
