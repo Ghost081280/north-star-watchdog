@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T01:28:08.345Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-15T03:30:00.743Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-19T13:44:28.111Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-19T14:26:57.751Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $4M allegedly go in Daycare Fraud Investigation?",
-    "Where did the $4M allegedly go in DOJ Investigation into Minnesota Officials?",
-    "Where did the Unknown allegedly go in Minnesota Democrats ICE obstruction investigation?",
     "Where did the $10B allegedly go in Trump Administration funding freeze investigation?",
     "Where did the $10B allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Immigration Enforcement Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $10B allegedly go in Minnesota Official Investigation?",
     "Where did the $85M allegedly go in Nick Shirley Daycare Fraud?",
     "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
-    "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?"
+    "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?",
+    "Where did the $0 allegedly go in Minnesota Officials Investigation?",
+    "Where did the $0 allegedly go in Minneapolis ICE Shooting Investigation?",
+    "Where did the $0 allegedly go in Becca Good Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 412,
-    "articlesProcessed": 20500,
-    "redFlagsFound": 479,
+    "totalScans": 413,
+    "articlesProcessed": 20550,
+    "redFlagsFound": 481,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Becca Good connected to?",
-        "Where did the Unknown allegedly go in Minnesota Democrats Investigation?",
-        "Where did the $4M allegedly go in Daycare Fraud Investigation?"
+        "Where did the $4M allegedly go in Daycare Fraud Investigation?",
+        "Where did the $4M allegedly go in DOJ Investigation into Minnesota Officials?",
+        "Where did the Unknown allegedly go in Minnesota Democrats ICE obstruction investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-19T13:44:28.111Z",
-  "lastUpdated": "2026-01-19T13:44:28.112Z"
+  "lastReflection": "2026-01-19T14:26:57.751Z",
+  "lastUpdated": "2026-01-19T14:26:57.752Z"
 }

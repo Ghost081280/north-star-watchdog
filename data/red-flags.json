@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Department of Justice has opened investigations into Minnesota officials and the Minneapolis ICE shooting.",
+      "insight": "The ongoing investigations suggest a potential pattern of corruption and misconduct in Minnesota.",
+      "entities": [
+        "Minnesota officials",
+        "ICE agent"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObnVvTmR6NVU2RWM4RzV4eUo2LXVQYk5jem45RHNua05JX243ZWtQb0w0NVRRZ1ZLdGxOakpJS19tQ2ZtazZOdHFYUnpxWWxIUVFrcGZ3M1ctb1dnVjhQQVhRMmxFUF9EckdGb1VXbkFsaVpXMFhQT1pYOUN0dFRfSm12cUxvV0VLeFFqR3FZZkUtbkx0UWg1aXgzSGpPNTdf?oc=5",
+      "id": "rf-1768832817756-es2rlrcv6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T14:26:57.753Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged misconduct",
+      "description": "There are allegations of misconduct by Minnesota officials and ICE agents.",
+      "insight": "The allegations suggest a potential pattern of misconduct and corruption in Minnesota.",
+      "entities": [
+        "Minnesota officials",
+        "ICE agent"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdFZVWWwwNFlqVE5FbWZhYnRGaEtuM21KdEZhQnhIeWFDb0U5NDg5ZUNOaUh5bVhPNWt2Ni1BM3RyOGFxZzVYZG45X01LZVNYOGNrdms0OGlQckRwRzB5aUdaVWNLRUdXWmdGblhMMWMtSjhOXy1GcFFJYlprMnExek9ZUWNyZw?oc=5",
+      "id": "rf-1768832817756-2xo36oe1z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-19T14:26:57.753Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "A federal investigation into potential fraud in Minnesota, with the DHS joining the investigation.",
       "insight": "I suspect that there may be a larger scheme involved, given the involvement of multiple agencies. Further investigation is needed to determine the extent of the fraud.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-19T13:44:28.113Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -949,60 +989,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-14T15:25:03.828Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The termination of protected status for Somalis by DHS could have significant implications for Minnesota's Somali community.",
-      "insight": "This could lead to increased scrutiny of Minnesota's healthcare programs and potential vulnerabilities to fraud.",
-      "entities": [
-        "DHS",
-        "Minnesota Somali community"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "ABC News",
-      "sourceUrl": "https://abcnews.go.com/Politics/dhs-announces-termination-protected-status-somalis-group-targeted-trump/story?id=58032164",
-      "id": "rf-1768382919782-i9t8z2ahp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T09:28:39.778Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration has announced the termination of protected status for Somalis.",
-      "insight": "I notice that the Trump administration is terminating protected status for certain groups, which could lead to a humanitarian crisis.",
-      "entities": [
-        "Trump administration",
-        "Somali community"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "ABC News",
-      "sourceUrl": "https://abcnews.go.com/Politics/dhs-announces-termination-protected-status-somalis-group-targeted-trump/story?id=95235423",
-      "id": "rf-1768372343881-r2ggd8dlo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-14T06:32:23.878Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-19T13:44:28.113Z"
+  "lastUpdated": "2026-01-19T14:26:57.753Z"
 }
