@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T03:29:05.029Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-16T04:39:13.930Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-20T14:29:58.318Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-20T15:30:19.956Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
     "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?",
     "Where did the $0 allegedly go in FBI probe into Minneapolis shooting?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Aimee Bock connected to?",
     "Where did the $Billions allegedly go in Minnesota fraud investigation?",
     "Where did the $11K allegedly go in Caregiver theft investigation?",
-    "What specific allegations exist against Aimee Bock?"
+    "What specific allegations exist against Aimee Bock?",
+    "Where did the $250M allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 435,
-    "articlesProcessed": 21650,
-    "redFlagsFound": 510,
+    "totalScans": 436,
+    "articlesProcessed": 21700,
+    "redFlagsFound": 511,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Anti-ICE activity investigation?",
         "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
-        "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?"
+        "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?",
+        "Where did the $0 allegedly go in FBI probe into Minneapolis shooting?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T14:29:58.318Z",
-  "lastUpdated": "2026-01-20T14:29:58.318Z"
+  "lastReflection": "2026-01-20T15:30:19.956Z",
+  "lastUpdated": "2026-01-20T15:30:19.957Z"
 }
