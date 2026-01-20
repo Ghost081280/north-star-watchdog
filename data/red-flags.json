@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "data breach",
+      "description": "Minnesota Department of Human Services data breach impacting 300K individuals",
+      "insight": "This breach raises concerns about data security and potential identity theft. Further investigation is needed to determine the cause and extent of the breach.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://redlakenationnews.com/minnesota-department-of-human-services-data-breach-impacts-300k/",
+      "id": "rf-1768886904793-6phu0bby2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T05:28:24.790Z",
+      "isNew": true
+    },
+    {
+      "type": "investigation into anti-ICE activity",
+      "description": "The DOJ has opened an investigation into anti-ICE activity in Minnesota",
+      "insight": "This investigation suggests that anti-ICE activity may be escalating and potentially leading to further conflict.",
+      "entities": [
+        "DOJ",
+        "Minnesota"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Fox Business",
+      "sourceUrl": "https://foxbusiness.com/not-surprising-doj-has-opened-an-investigation-into-anti-ice-activity-in-minnesota-gregg-jarrett",
+      "id": "rf-1768886904793-u3fqrzumk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T05:28:24.790Z",
+      "isNew": true
+    },
+    {
+      "type": "data breach",
       "description": "The Minnesota Department of Human Services experienced a data breach impacting 300K individuals.",
       "insight": "This data breach raises concerns about the security of sensitive information and potential misuse by unauthorized parties.",
       "entities": [
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T04:43:44.884Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "civil rights allegations",
@@ -39,7 +78,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T04:43:44.884Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "excessive force",
@@ -956,45 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T03:22:10.385Z",
       "isNew": false
-    },
-    {
-      "type": "Obstruction of federal law enforcement",
-      "description": "The investigation into Governor Walz and Mayor Frey has raised concerns about potential obstruction of federal law enforcement efforts.",
-      "insight": "As an investigator, I am concerned about the potential for state and local officials to impede federal law enforcement efforts. This could have significant implications for public safety and national security. Further investigation is needed to determine the extent of any obstruction and to identify potential patterns of behavior.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Boston Globe",
-      "sourceUrl": "https://www.bostonglobe.com/2026/01/17/nation/justice-department-investigating-whether-minnesotas-walz-frey-impeded-immigration-enforcement/",
-      "id": "rf-1768613187999-298k8gl5e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T01:26:27.996Z",
-      "isNew": false
-    },
-    {
-      "type": "medicaid_fraud",
-      "description": "A $3.2 million Medicaid fraud scheme was uncovered in Minnesota, highlighting the ongoing issue of healthcare fraud.",
-      "insight": "The scheme indicates a need for increased oversight and enforcement in healthcare programs to prevent similar cases.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MNCRIME.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdkRCWlRfRThqMmVvTndPMFRSWXRha0xVaFg5T0RjbzJ4dFZfQzNhMTBRRUQxaDRpMGxiaVRFUk5HeWlTUnJfZ1FGVU5LR0d6dV9oVmZHSUpkRnE1RVk5OHFSaEVYcEdLUW15R3IzdzU0ajNaaUs4RmFXYzZ4Y3lmUC1n?oc=5",
-      "id": "rf-1768602011478-w3cpaalip",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-16T22:20:11.474Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,13 +1003,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T04:43:44.884Z"
+  "lastUpdated": "2026-01-20T05:28:24.790Z"
 }
