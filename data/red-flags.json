@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "data breach",
+      "description": "The Minnesota Department of Human Services experienced a data breach impacting 300K individuals.",
+      "insight": "This data breach raises concerns about the security of sensitive information and potential misuse by unauthorized parties.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQlo4Z0ZoWWxralE3QURLMGZIaXNlRVhoR0ZuZmpUOWdtelE0dnBpSWRLTW5EMUEza3plX3RFVWtnczNUM2VsNm5hVllDREZNaFZpR0J2RDA3c2RPSjBKZUl5aFdUdS1oVjhMV3BjdlZTRFhkZ2RUTnp4Uzl6Nzl5Z3ZGVUlQMWdLS3g5TmhVRWdOa1UyUFZHbGpBNWZUa1BqTnZ6ZHdCWVhmMDQ3YVBseG43bjBmNXdHdUkzc2hPQ0RCcTRGWm1COFg1SQ",
+      "priorityLevel": "high",
+      "id": "rf-1768884224887-ttxuky337",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T04:43:44.884Z",
+      "isNew": true
+    },
+    {
+      "type": "civil rights allegations",
+      "description": "The FBI is investigating an ICE officer who shot and killed Renee Good.",
+      "insight": "This investigation raises concerns about potential civil rights violations and the use of excessive force by law enforcement agencies.",
+      "entities": [
+        "FBI",
+        "ICE"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQWjhmNmZ5dnhtSGtPM0VzVDY4dEZleTBsMGpjbEUzY0RfMHJoRWpGWnNvWEVSdUZ0RW5MWUEtd1dXYWpDaTRQX2FRM3NkTGxtMWtZWlg0NjZpWmQ1QmFrcUZXNHZmOFVjNDRMazJKWnFvYXJrQXc5UEs5SjVXYTJBVm5ic3JUdHFCTDM1dDVoa0puMm8ydVFwYkFhNzlVMUNibHNKQVBPSXlhYXM3eUdiY2s7cXFBY3hoa1ZGeHBvS1RzdzdORHB1dVRTSTlaZWdlNXM1MHFrSC0wMHlMMWxrUl9DRU5uc3BCdXdsSDFXeElacHZjcGVLdkJQbXZDUjEwMHVRTHdCeEhqdDNYR29sM3ExczFGam4xeFYwYVJDcVl5ZFJGbkhMa0dDemRIX0VEQ1ZxTlFvajQ",
+      "priorityLevel": "high",
+      "id": "rf-1768884224887-89f620uv4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T04:43:44.884Z",
+      "isNew": true
+    },
+    {
       "type": "excessive force",
       "description": "Allegations of excessive force by an ICE officer in the death of Renee Good",
       "insight": "This incident raises concerns about the use of force by ICE officers and the need for increased accountability. Further investigation is needed to determine the circumstances surrounding Good's death.",
@@ -18,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T03:43:08.288Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Cover-up",
@@ -954,50 +995,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-16T22:20:11.474Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI investigating vehicle vandalism in Minneapolis",
-      "insight": "The FBI's investigation into vehicle vandalism in Minneapolis may be related to a larger pattern of crime in the area. Further research is needed to determine the extent of the issue and potential connections to other cases.",
-      "entities": [
-        "Minneapolis"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Valley News Live",
-      "sourceUrl": "https://www.valleynewslive.com/2026/01/16/fbi-offers-100k-reward-after-minneapolis-vehicle-vandalism/",
-      "id": "rf-1768538353934-u5mfzekz9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-16T04:39:13.931Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid scam",
-      "description": "A Minnesota health care owner was charged with a years-long Medicaid scam topping $3M.",
-      "insight": "This suggests a potential pattern of healthcare-related fraud in Minnesota.",
-      "entities": [
-        "Minnesota Health Care Owner"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/us/minnesota-health-care-owner-charged-with-years-long-medicaid-scam-topping-3m",
-      "id": "rf-1768512073972-bfmntzx0g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-15T21:21:13.969Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,7 +1007,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T03:43:08.288Z"
+  "lastUpdated": "2026-01-20T04:43:44.884Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T14:24:35.361Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-15T15:24:27.273Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-20T03:43:08.286Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-20T04:43:44.883Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
-    "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?",
     "Where did the $0 allegedly go in Minnesota Officials Investigation?",
     "Where did the $0 allegedly go in Minneapolis ICE Shooting Investigation?",
     "Where did the $0 allegedly go in Becca Good Investigation?",
@@ -558,7 +556,9 @@
     "Where did the 300K affected allegedly go in Minnesota DHS Data Breach Investigation?",
     "Where did the Unknown allegedly go in ICE Protest Investigation?",
     "Where did the Unknown allegedly go in Minnesota ICE facility investigation?",
-    "Where did the Unknown allegedly go in Anti-ICE activity investigation?"
+    "Where did the Unknown allegedly go in Anti-ICE activity investigation?",
+    "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
+    "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 424,
-    "articlesProcessed": 21100,
-    "redFlagsFound": 496,
+    "totalScans": 425,
+    "articlesProcessed": 21150,
+    "redFlagsFound": 498,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Minnesota Official Investigation?",
-        "Where did the $85M allegedly go in Nick Shirley Daycare Fraud?",
-        "Where did the Unknown allegedly go in Minnesota Fraud Investigation?"
+        "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
+        "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?",
+        "Where did the $0 allegedly go in Minnesota Officials Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T03:43:08.286Z",
-  "lastUpdated": "2026-01-20T03:43:08.287Z"
+  "lastReflection": "2026-01-20T04:43:44.883Z",
+  "lastUpdated": "2026-01-20T04:43:44.883Z"
 }
