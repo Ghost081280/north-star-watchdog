@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ and House Committee are conducting investigations into Minnesota leaders and programs.",
+      "insight": "These investigations suggest a pattern of potential corruption and abuse of power in Minnesota's government.",
+      "entities": [
+        "Minnesota Governor Walz",
+        "Minnesota Mayor Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://www.apnews.com/article/us-news/politics/minnesota-governor-walz-subpoenaed-immigration-probe-4a5f4f5f4",
+      "id": "rf-1768951289296-842d0woj2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T23:21:29.293Z",
+      "isNew": true
+    },
+    {
+      "type": "potential corruption",
+      "description": "The investigations into Minnesota leaders and programs suggest potential corruption and abuse of power.",
+      "insight": "The investigations suggest a pattern of potential corruption and abuse of power in Minnesota's government, which could have significant implications for the state's politics and policies.",
+      "entities": [
+        "Minnesota Governor Walz",
+        "Minnesota Mayor Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://www.apnews.com/article/us-news/politics/minnesota-governor-walz-subpoenaed-immigration-probe-4a5f4f5f",
+      "id": "rf-1768951289296-yzn7fuo93",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T23:21:29.293Z",
+      "isNew": true
+    },
+    {
       "type": "Potential shell company",
       "description": "Unusual financial transactions involving a company with ties to Minnesota officials",
       "insight": "I suspect that this company may be a shell company used to launder money or facilitate fraudulent activities. Further investigation is needed to determine the extent of the company's involvement.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T22:22:15.810Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal subpoenas",
@@ -950,52 +990,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T20:21:04.756Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The U.S. Department of Justice has launched an investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey.",
-      "insight": "This is a significant red flag, as it indicates a high level of concern about potential corruption and fraud within the state's leadership.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-minnesota-governor-investigation-idUSKBN1E814Z",
-      "id": "rf-1768677331820-7z4qy411x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T19:15:31.817Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ investigation into Governor Walz and Mayor Frey raises concerns about potential wrongdoing by public officials.",
-      "insight": "I see a pattern of potential obstruction of law enforcement by public officials, which could indicate a larger issue with corruption in the state. Further investigation is needed to determine the extent of the wrongdoing.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/01/17/justice-dept-launches-criminal-investigation-minnesota-governor/",
-      "id": "rf-1768666921003-uoy3qs24t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T16:22:01.000Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1021,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T22:22:15.810Z"
+  "lastUpdated": "2026-01-20T23:21:29.293Z"
 }
