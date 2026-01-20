@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "Data Breach",
+      "description": "The Minnesota Department of Human Services has reported a data breach impacting 300,000 people.",
+      "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will be tracking this case to see how the department responds to the breach and what steps are taken to prevent similar incidents in the future.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQlo4Z0ZoWWxralE3QURLMGZIaXNlRVhoR0ZuZmpUOWdtelE0dnBpSWRLTW5EMUEza3plX3RFVWtnczNUM2VsNm5hVllDREZNaFZpR0J2RDA3c2RPSjBKZUl5aFdUdS1oVjhMV3BjdlZTRFhkZ2RUTnp4Uzl6Nzl5Z3ZGVUlQMWdLS3g5TmhVRWdOa1UyUFZHbGpBNWZUa1BqTnZ6ZHdCWVhmMDQ3YVBseG43bjBmNXdHdUkzc2hPQ0RCcTRGWm1COFg1SQ",
+      "id": "rf-1768913165644-qd3w5rbia",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T12:46:05.640Z",
+      "isNew": true
+    },
+    {
+      "type": "Data Breach",
       "description": "Data breach at the Minnesota Department of Human Services impacting 300K individuals",
       "insight": "This data breach raises concerns about the security of sensitive information and the potential for identity theft or other malicious activities. Further investigation is needed to determine the cause and extent of the breach.",
       "entities": [
@@ -971,34 +990,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T13:28:28.650Z",
       "isNew": false
-    },
-    {
-      "type": "obstruction of federal law enforcement",
-      "description": "The alleged obstruction of federal law enforcement by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey has raised concerns about the integrity of the state's leadership.",
-      "insight": "As an investigator, I am concerned about the potential for a cover-up or interference with federal investigations. Further research is needed to determine the extent of the alleged obstruction and its implications for the state's governance.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/01/17/justice-dept-launches-criminal-investigation-into-minnesota-governor/",
-      "id": "rf-1768653434085-d4q3bpha1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T12:37:14.081Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T11:22:44.819Z"
+  "lastUpdated": "2026-01-20T12:46:05.640Z"
 }
