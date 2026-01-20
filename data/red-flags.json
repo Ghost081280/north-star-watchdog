@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential shell company",
+      "description": "Unusual financial transactions involving a company with ties to Minnesota officials",
+      "insight": "I suspect that this company may be a shell company used to launder money or facilitate fraudulent activities. Further investigation is needed to determine the extent of the company's involvement.",
+      "entities": [
+        "Tim Walz",
+        "Jacob Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Financial records",
+      "sourceUrl": "https://www.sec.gov/edgar/searchedgar/companysearch.html",
+      "id": "rf-1768947735813-8ojjqefqd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T22:22:15.810Z",
+      "isNew": true
+    },
+    {
       "type": "federal subpoenas",
       "description": "The DOJ has served subpoenas to several high-ranking Minnesota officials, including Governor Walz and Mayor Frey.",
       "insight": "This could indicate a significant investigation into potential wrongdoing by these officials.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T21:20:04.508Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -970,30 +990,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T16:22:01.000Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ investigation into Governor Walz and Mayor Frey for allegedly impeding immigration enforcement raises concerns about potential obstruction of justice and abuse of power.",
-      "insight": "As an investigator, I see a pattern of potential corruption and abuse of power among high-ranking officials in Minnesota. This investigation warrants close monitoring to uncover any potential wrongdoing.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/doj-investigation-minnesota-governor-tim-walz-mayor-jacob-frey/",
-      "id": "rf-1768663140820-3z430vqwo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T15:19:00.816Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1003,7 +1004,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T21:20:04.508Z"
+  "lastUpdated": "2026-01-20T22:22:15.810Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T09:26:21.783Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-16T10:22:34.824Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-20T21:20:04.506Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-20T22:22:15.807Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI investigation into anti-ICE protesters?",
-    "Where did the $0 allegedly go in Minnesota Department of Human Services Data Breach?",
-    "Where did the $0 allegedly go in FBI Probe into ICE Agent?",
-    "What other organizations is Caregiver connected to?",
-    "Where did the Billions allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the 300K impacted allegedly go in Minnesota Department of Human Services Data Breach Investigation?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $Billions allegedly go in Minnesota fraud investigation?",
@@ -558,7 +553,12 @@
     "Where did the N/A allegedly go in Minnesota Fraud Investigation?",
     "Where did the N/A allegedly go in DOJ Investigation?",
     "Where did the $0 allegedly go in Minnesota Immigration Obstruction Investigation?",
-    "Where did the $0 allegedly go in Minnesota Campaign Funding Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Campaign Funding Fraud Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Jacob Frey connected to?",
+    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the N/A allegedly go in Immigration Obstruction Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 441,
-    "articlesProcessed": 21950,
-    "redFlagsFound": 515,
+    "totalScans": 442,
+    "articlesProcessed": 22000,
+    "redFlagsFound": 516,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ unknown allegedly go in FBI probe into ICE officer who shot and killed Renee Good?",
-        "Where did the $0 allegedly go in Minnesota Department of Human Services data breach investigation?",
-        "Where did the $0 allegedly go in FBI investigation into anti-ICE protesters?"
+        "Where did the $0 allegedly go in FBI investigation into anti-ICE protesters?",
+        "Where did the $0 allegedly go in Minnesota Department of Human Services Data Breach?",
+        "Where did the $0 allegedly go in FBI Probe into ICE Agent?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T21:20:04.506Z",
-  "lastUpdated": "2026-01-20T21:20:04.507Z"
+  "lastReflection": "2026-01-20T22:22:15.807Z",
+  "lastUpdated": "2026-01-20T22:22:15.808Z"
 }
