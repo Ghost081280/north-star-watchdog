@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "data breach",
+      "description": "A data breach impacting 300K individuals at the Minnesota Department of Human Services",
+      "insight": "This breach raises concerns about the security of sensitive information and potential misuse",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://redlakenationnews.com/minnesota-department-of-human-services-data-breach-impacts-300k/",
+      "id": "rf-1768894025243-pu7f4ucik",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T07:27:05.240Z",
+      "isNew": true
+    },
+    {
+      "type": "corruption allegations",
+      "description": "Corruption allegations against a Detroit judge and potential links to Minnesota",
+      "insight": "These allegations suggest a larger issue with corruption that may need to be investigated further",
+      "entities": [
+        "Detroit judge"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Detroit News",
+      "sourceUrl": "https://thedetroitnews.com/indictment-looms-in-fbi-corruption-probe-targeting-detroit-judge/",
+      "id": "rf-1768894025243-0ss787dhm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T07:27:05.240Z",
+      "isNew": true
+    },
+    {
       "type": "Potential enabling of fraud",
       "description": "Allegations of enabling welfare fraud by Governor Tim Walz",
       "insight": "I suspect a pattern of neglect or corruption within the Minnesota state government, allowing welfare fraud to occur. Further investigation into the allegations against Governor Tim Walz is necessary.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T06:34:31.585Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "data breach",
@@ -955,61 +993,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T08:25:16.194Z",
       "isNew": false
-    },
-    {
-      "type": "obstruction of federal law enforcement",
-      "description": "The DOJ investigation into Walz and Frey has raised concerns about the potential for public officials to obstruct federal law enforcement efforts.",
-      "insight": "As an investigator, I am concerned about the potential for public officials to use their power to impede investigations and undermine the rule of law. Further investigation is needed to determine the extent of any wrongdoing.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/news/politics/wp/2026/01/17/justice-dept-launches-criminal-investigation-of-minnesota-governor/",
-      "id": "rf-1768627208301-vc3704ji0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T05:20:08.297Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ's investigation into Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey suggests potential concerns about their actions and decisions.",
-      "insight": "As an investigator, I find it concerning that the DOJ is looking into allegations of obstruction of federal law enforcement, which could indicate a larger issue with accountability and transparency in Minnesota's government.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/justice-dept-launches-criminal-investigation-of-minnesota-governor/2026/01/17/9c3e4d7c-7f6b-4f6a-bc6b-4c4f6f6f6f6f/story.html",
-      "id": "rf-1768624309006-x6xo08x74",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T04:31:49.003Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T06:34:31.585Z"
+  "lastUpdated": "2026-01-20T07:27:05.240Z"
 }
