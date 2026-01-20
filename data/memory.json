@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T18:35:18.153Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-15T19:23:44.061Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-20T07:27:05.238Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-20T08:30:40.899Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $19B allegedly go in Minnesota Benefits Fraud Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Church Protest Investigation?",
     "Where did the Unknown allegedly go in Minnesota Benefits Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Don Lemon connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the 300K impacted allegedly go in Minnesota Department of Human Services data breach?",
     "Where did the Unknown allegedly go in FBI probe into ICE officer?",
-    "Where did the $0 allegedly go in FBI corruption probe targeting Detroit judge?"
+    "Where did the $0 allegedly go in FBI corruption probe targeting Detroit judge?",
+    "Where did the $ unknown allegedly go in Minnesota Department of Human Services data breach?",
+    "Where did the $ unknown allegedly go in FBI probe into ICE officer who shot and killed Renee Good?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 428,
-    "articlesProcessed": 21300,
-    "redFlagsFound": 503,
+    "totalScans": 429,
+    "articlesProcessed": 21350,
+    "redFlagsFound": 504,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in ICE Field Director Protest Investigation?",
         "Where did the $19B allegedly go in Minnesota Benefits Fraud Investigation?",
-        "Where did the Unknown allegedly go in Minnesota Church Protest Investigation?"
+        "Where did the Unknown allegedly go in Minnesota Church Protest Investigation?",
+        "Where did the Unknown allegedly go in Minnesota Benefits Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T07:27:05.238Z",
-  "lastUpdated": "2026-01-20T07:27:05.239Z"
+  "lastReflection": "2026-01-20T08:30:40.899Z",
+  "lastUpdated": "2026-01-20T08:30:40.900Z"
 }
