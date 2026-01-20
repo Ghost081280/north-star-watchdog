@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T16:34:14.135Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-15T17:31:06.770Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-20T05:28:24.788Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-20T06:34:31.583Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minneapolis ICE Shooting Investigation?",
-    "Where did the $0 allegedly go in Becca Good Investigation?",
-    "Where did the $19B allegedly go in Minnesota Fraud Investigation?",
     "Where did the unknown allegedly go in ICE Field Director Protest Investigation?",
     "Where did the $19B allegedly go in Minnesota Benefits Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota Church Protest Investigation?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Anti-ICE activity investigation?",
     "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
     "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?",
-    "Where did the $0 allegedly go in FBI probe into Minneapolis shooting?"
+    "Where did the $0 allegedly go in FBI probe into Minneapolis shooting?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the 300K impacted allegedly go in Minnesota Department of Human Services data breach?",
+    "Where did the Unknown allegedly go in FBI probe into ICE officer?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 426,
-    "articlesProcessed": 21200,
-    "redFlagsFound": 500,
+    "totalScans": 427,
+    "articlesProcessed": 21250,
+    "redFlagsFound": 501,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Officials Investigation?",
         "Where did the $0 allegedly go in Minneapolis ICE Shooting Investigation?",
-        "Where did the $0 allegedly go in Becca Good Investigation?"
+        "Where did the $0 allegedly go in Becca Good Investigation?",
+        "Where did the $19B allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T05:28:24.788Z",
-  "lastUpdated": "2026-01-20T05:28:24.789Z"
+  "lastReflection": "2026-01-20T06:34:31.583Z",
+  "lastUpdated": "2026-01-20T06:34:31.584Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential enabling of fraud",
+      "description": "Allegations of enabling welfare fraud by Governor Tim Walz",
+      "insight": "I suspect a pattern of neglect or corruption within the Minnesota state government, allowing welfare fraud to occur. Further investigation into the allegations against Governor Tim Walz is necessary.",
+      "entities": [
+        "Tim Walz",
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NewsNation",
+      "sourceUrl": "https://www.newsnationnow.com/us-news/minnesota/tim-walz-enabling-fraud-minnesota/",
+      "id": "rf-1768890871588-v59k2i4fd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T06:34:31.585Z",
+      "isNew": true
+    },
+    {
       "type": "data breach",
       "description": "Minnesota Department of Human Services data breach impacting 300K individuals",
       "insight": "This breach raises concerns about data security and potential identity theft. Further investigation is needed to determine the cause and extent of the breach.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T05:28:24.790Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation into anti-ICE activity",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T05:28:24.790Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "data breach",
@@ -975,30 +995,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T04:31:49.003Z",
       "isNew": false
-    },
-    {
-      "type": "obstruction of justice",
-      "description": "The alleged obstruction of federal law enforcement by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey raises concerns about the integrity of public officials.",
-      "insight": "As an investigator, I am concerned about the potential for a pattern of behavior among public officials to obstruct justice. Further investigation is needed to determine the extent of this issue.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NPR",
-      "sourceUrl": "https://www.npr.org/2026/01/17/1163824116/justice-department-opens-investigation-into-minnesota-governor-and-minneapolis-mayor",
-      "id": "rf-1768620130389-cl1tgdzky",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T03:22:10.385Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,8 +1009,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1026,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T05:28:24.790Z"
+  "lastUpdated": "2026-01-20T06:34:31.585Z"
 }
