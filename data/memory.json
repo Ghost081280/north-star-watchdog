@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-15T23:20:27.987Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-16T01:39:47.985Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-20T12:46:05.638Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-20T13:45:58.492Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the 300K affected allegedly go in Minnesota DHS Data Breach Investigation?",
-    "Where did the Unknown allegedly go in ICE Protest Investigation?",
-    "Where did the Unknown allegedly go in Minnesota ICE facility investigation?",
     "Where did the Unknown allegedly go in Anti-ICE activity investigation?",
     "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
     "Where did the $0 allegedly go in FBI investigation into ICE officer who shot and killed Renee Good?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in FBI Probe into ICE Agent?",
     "What other organizations is Caregiver connected to?",
     "Where did the Billions allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the 300K impacted allegedly go in Minnesota Department of Human Services Data Breach Investigation?"
+    "Where did the 300K impacted allegedly go in Minnesota Department of Human Services Data Breach Investigation?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $Billions allegedly go in Minnesota fraud investigation?",
+    "Where did the $11K allegedly go in Caregiver theft investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 433,
-    "articlesProcessed": 21550,
-    "redFlagsFound": 508,
+    "totalScans": 434,
+    "articlesProcessed": 21600,
+    "redFlagsFound": 509,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Treasury Targets Alleged Minnesota Benefits Fraud?",
-        "Where did the $10B allegedly go in Minnesota benefits fraud investigation?",
-        "What other organizations is Renee Good connected to?"
+        "Where did the 300K affected allegedly go in Minnesota DHS Data Breach Investigation?",
+        "Where did the Unknown allegedly go in ICE Protest Investigation?",
+        "Where did the Unknown allegedly go in Minnesota ICE facility investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-20T12:46:05.638Z",
-  "lastUpdated": "2026-01-20T12:46:05.639Z"
+  "lastReflection": "2026-01-20T13:45:58.492Z",
+  "lastUpdated": "2026-01-20T13:45:58.493Z"
 }

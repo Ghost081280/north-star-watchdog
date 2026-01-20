@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Billions in Minnesota state funding on the line in fraud dispute",
+      "insight": "This seems like a high-stakes situation with a lot of money at risk. I would investigate further to see if there are any connections between the entities involved and if there are any patterns of fraud.",
+      "entities": [
+        "Minnesota state government",
+        "entities receiving funding"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/01/20/billions-in-minnesota-state-funding-on-the-line-in-fraud-dispute",
+      "id": "rf-1768916758498-ajzot6ot9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T13:45:58.494Z",
+      "isNew": true
+    },
+    {
       "type": "Data Breach",
       "description": "The Minnesota Department of Human Services has reported a data breach impacting 300,000 people.",
       "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will be tracking this case to see how the department responds to the breach and what steps are taken to prevent similar incidents in the future.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T12:46:05.640Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Data Breach",
@@ -313,26 +333,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-19T21:19:01.763Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The US Department of the Treasury is investigating alleged benefits fraud in Minnesota, with a potential loss of $19B.",
-      "insight": "This investigation may indicate a larger pattern of fraud and abuse in Minnesota, and it is essential to track the developments and connections between entities and programs.",
-      "entities": [
-        "Ilhan Omar",
-        "US Department of the Treasury"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "US Department of the Treasury",
-      "sourceUrl": "https://www.treasury.gov/",
-      "id": "rf-1768847462203-r234uwe3a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T18:31:02.199Z",
       "isNew": false
     },
     {
@@ -994,17 +994,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T12:46:05.640Z"
+  "lastUpdated": "2026-01-20T13:45:58.494Z"
 }
