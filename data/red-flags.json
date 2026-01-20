@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal subpoenas",
+      "description": "The DOJ has served subpoenas to several high-ranking Minnesota officials, including Governor Walz and Mayor Frey.",
+      "insight": "This could indicate a significant investigation into potential wrongdoing by these officials.",
+      "entities": [
+        "Governor Walz",
+        "Mayor Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.cbsnews.com/news/doj-subpoenas-walz-ellison-frey-minnesota-officials-probe-alleging-immigration-obstruction-sources-say/",
+      "id": "rf-1768944004512-lbh89174p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-20T21:20:04.508Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The federal government has frozen child care aid, which could affect thousands of children.",
       "insight": "This freeze could have a significant impact on children and families who rely on child care services. It may also indicate a larger issue with the administration of child care funds.",
@@ -970,30 +990,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-17T15:19:00.816Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Department of Justice has launched an investigation into the Minnesota governor and Minneapolis mayor for allegedly obstructing federal law enforcement.",
-      "insight": "This investigation raises concerns about the potential for corruption and abuse of power at the state and local level. As an investigator, I would look into the specific allegations and evidence gathered by the DOJ to determine the extent of the obstruction.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/01/17/justice-dept-launches-criminal-investigation-minnesota-governor/",
-      "id": "rf-1768659495168-es4c4ufd1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T14:18:15.165Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,7 +1002,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T20:12:12.273Z"
+  "lastUpdated": "2026-01-20T21:20:04.508Z"
 }
