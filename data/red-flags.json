@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Obstruction of Justice",
+      "description": "The DOJ's investigation into Minnesota officials has raised concerns about potential obstruction of justice.",
+      "insight": "As an investigator, I am concerned about the potential for obstruction of justice in this case. The fact that several top Democrats in Minnesota have been subpoenaed suggests that there may be a larger issue at play.",
+      "entities": [
+        "Governor Walz",
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/justice-department-subpoenas-top-minnesota-democrats-in-federal-investigation/",
+      "id": "rf-1768959753663-9574wtdpo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T01:42:33.659Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ and House Committee are conducting investigations into Minnesota leaders and programs.",
       "insight": "These investigations suggest a pattern of potential corruption and abuse of power in Minnesota's government.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T23:21:29.293Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential corruption",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T23:21:29.293Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential shell company",
@@ -970,30 +990,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T01:45:47.982Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "There are reports of program termination due to fraud allegations.",
-      "insight": "This could indicate a larger issue with program management or oversight.",
-      "entities": [
-        "Minnesota state government",
-        "program management entities"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/2026/01/17/justice-dept-enters-new-territory-with-probe-of-minnesota-officials/",
-      "id": "rf-1768681264758-aolgebsr1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-17T20:21:04.756Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,8 +1002,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-20T23:21:29.293Z"
+  "lastUpdated": "2026-01-21T01:42:33.659Z"
 }
