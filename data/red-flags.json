@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration has frozen $1B in child care funding, which has raised concerns about the potential for fraud and abuse.",
+      "insight": "I suspect that the freeze in funding may be related to the alleged child care fraud in Minnesota. Further investigation is needed to determine the extent of the fraud and the individuals involved.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Sen. Durbin visits Rockford YWCA, criticizes Trump administration over child care funding freeze - wifr.com",
+      "sourceUrl": "https://www.wifr.com/content/news/sen-durbin-visits-rockford-ywca-criticizes-trump-administration-over-child-care-funding-freeze-574444341.html",
+      "id": "rf-1769030861101-ejh7viydl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T21:27:41.096Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Federal operation underway in Highland Park relating to 'criminal investigation'",
       "insight": "Possible connection to immigration obstruction probe",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T20:29:53.980Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government has frozen funding for several daycare programs in Minnesota due to suspected fraud",
-      "insight": "I suspect that there may be a larger pattern of fraud involving daycare programs across the country, and that the federal government may need to take further action to prevent similar cases in the future. I recommend investigating the financial records of daycare programs and looking for any suspicious transactions or patterns of abuse.",
-      "entities": [
-        "Aimee Bock",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/",
-      "id": "rf-1769023586150-hnegm8irg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T19:26:26.148Z",
       "isNew": false
     },
     {
@@ -1004,8 +1004,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T20:29:53.980Z"
+  "lastUpdated": "2026-01-21T21:27:41.096Z"
 }
