@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "DOJ investigation",
+      "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement operations.",
+      "insight": "This investigation raises concerns about the potential for corruption and abuse of power among Minnesota officials.",
+      "entities": [
+        "Gov. Walz",
+        "Mayor Frey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.cbsnews.com/news/doj-subpoenas-walz-frey-her-and-others-in-probe-alleging-immigration-obstruction/",
+      "id": "rf-1768977284353-2tmr0bhed",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T06:34:44.350Z",
+      "isNew": true
+    },
+    {
+      "type": "Financial irregularities",
+      "description": "Wealthfront Corporation is under investigation for a $208 million net outflow.",
+      "insight": "This investigation raises concerns about potential financial mismanagement and regulatory compliance issues.",
+      "entities": [
+        "Wealthfront Corporation"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Intellectia AI",
+      "sourceUrl": "https://intellectia.ai/wealthfront-corporation-under-investigation-for-208-million-net-outflows/",
+      "id": "rf-1768977284353-8opy8t1hb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T06:34:44.350Z",
+      "isNew": true
+    },
+    {
       "type": "potential obstruction",
       "description": "Minnesota officials, including Governor Walz, have been subpoenaed in an investigation into obstruction of immigration enforcement.",
       "insight": "This could indicate a larger pattern of non-cooperation with federal authorities.",
@@ -18,26 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T05:28:19.064Z",
-      "isNew": true
-    },
-    {
-      "type": "financial irregularities",
-      "description": "Wealthfront Corporation is under investigation for $208 million in net outflows.",
-      "insight": "This could indicate potential mismanagement or malfeasance within the company.",
-      "entities": [
-        "Wealthfront Corporation"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Intellectia AI",
-      "sourceUrl": "https://intellectia.ai/news/wealthfront-corporation-under-investigation-for-208-million-net-outflows/",
-      "id": "rf-1768973299067-et9xg5gsz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T05:28:19.064Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "obstruction of justice",
@@ -969,41 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T07:19:27.773Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Minnesota Governor Tim Walz and Mayor Jacob Frey over alleged ICE obstruction",
-      "insight": "This investigation suggests a potential pattern of obstruction by high-ranking officials in Minnesota. Further investigation is needed to determine the extent of the alleged obstruction and any potential connections to other entities or programs.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcWsxYlVBX1ZDVnAwOE9KSkJtLTd5c21OY19aN2JNQUFmdE45OTMxMHl6SExhOTBkSTJ0YXdLWUhCVWsyWmIyZXJfWW45T1cxdU5NNG1KRjByQzBWcnhtTXVGYVByNEN1RkxMeC02eEZ3SzYzUVZLQ3dOUjh4T2dQdjd4VTNjY2p0Z3BBMWo0aWZreHBBbzFocFhQdHBmaTFORzZiaVBJSWJxUzFrSWVlUzZxRmRtY1A1Zm84",
-      "id": "rf-1768713772906-upyyyyh0i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T05:22:52.903Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T05:28:19.064Z"
+  "lastUpdated": "2026-01-21T06:34:44.350Z"
 }

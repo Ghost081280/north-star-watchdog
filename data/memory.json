@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T15:22:50.254Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-16T16:27:36.511Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-21T05:28:19.062Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-21T06:34:44.348Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Minnesota Fraud Investigation?",
-    "Where did the N/A allegedly go in DOJ Investigation?",
-    "Where did the $0 allegedly go in Minnesota Immigration Obstruction Investigation?",
-    "Where did the $0 allegedly go in Minnesota Campaign Funding Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Jacob Frey connected to?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the unknown allegedly go in Immigration Enforcement Obstruction Investigation?",
     "Where did the unknown allegedly go in Daycare Fraud Investigation?",
     "What specific allegations exist against Keith Ellison?",
-    "Where did the $208 million allegedly go in Wealthfront Corporation Investigation?"
+    "Where did the $208 million allegedly go in Wealthfront Corporation Investigation?",
+    "What other organizations is Not specified in the intel provided connected to?",
+    "What specific allegations exist against Not specified in the intel provided?",
+    "Where did the $Not specified allegedly go in Minnesota Immigration Enforcement Obstruction Investigation?",
+    "Where did the $Not specified allegedly go in Minnesota Fraud Schemes?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 447,
-    "articlesProcessed": 22250,
-    "redFlagsFound": 524,
+    "totalScans": 448,
+    "articlesProcessed": 22300,
+    "redFlagsFound": 526,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Don Lemon connected to?",
-        "What other organizations is Nonprofit Leader connected to?",
-        "Where did the N/A allegedly go in Minnesota Fraud Investigation?"
+        "Where did the N/A allegedly go in Minnesota Fraud Investigation?",
+        "Where did the N/A allegedly go in DOJ Investigation?",
+        "Where did the $0 allegedly go in Minnesota Immigration Obstruction Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-21T05:28:19.062Z",
-  "lastUpdated": "2026-01-21T05:28:19.063Z"
+  "lastReflection": "2026-01-21T06:34:44.348Z",
+  "lastUpdated": "2026-01-21T06:34:44.348Z"
 }
