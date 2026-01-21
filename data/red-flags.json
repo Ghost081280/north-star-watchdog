@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Federal operation underway in Highland Park relating to 'criminal investigation'",
+      "insight": "Possible connection to immigration obstruction probe",
+      "entities": [
+        "DOJ",
+        "ICE"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "lakemchenryscanner.com",
+      "sourceUrl": "https://lakemchenryscanner.com/2026/01/21/federal-operation-underway-in-highland-park-relating-to-criminal-investigation-blocks-from-high-school/",
+      "id": "rf-1769027393983-0tdz3f9wi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T20:29:53.980Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The federal government has frozen funding for several daycare programs in Minnesota due to suspected fraud",
       "insight": "I suspect that there may be a larger pattern of fraud involving daycare programs across the country, and that the federal government may need to take further action to prevent similar cases in the future. I recommend investigating the financial records of daycare programs and looking for any suspicious transactions or patterns of abuse.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T19:26:26.148Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -971,25 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T11:16:22.015Z",
       "isNew": false
-    },
-    {
-      "type": "Government Investigation",
-      "description": "US Justice Department investigating Minnesota Governor Walz and other officials",
-      "insight": "This investigation suggests a pattern of potential corruption and abuse of power in Minnesota state government. Further investigation is needed to determine the extent of the allegations.",
-      "entities": [
-        "Minnesota Governor Walz"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-minnesota-governor-investigation-idUSKBN2B30ZS",
-      "id": "rf-1768727996416-ztua308fm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T09:19:56.413Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T19:26:26.148Z"
+  "lastUpdated": "2026-01-21T20:29:53.980Z"
 }
