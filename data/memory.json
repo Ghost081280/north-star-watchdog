@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T16:27:36.511Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-16T17:23:30.785Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-21T06:34:44.348Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-01-21T07:27:33.955Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "What other organizations is Jacob Frey connected to?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the N/A allegedly go in Immigration Obstruction Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Not specified in the intel provided connected to?",
     "What specific allegations exist against Not specified in the intel provided?",
     "Where did the $Not specified allegedly go in Minnesota Immigration Enforcement Obstruction Investigation?",
-    "Where did the $Not specified allegedly go in Minnesota Fraud Schemes?"
+    "Where did the $Not specified allegedly go in Minnesota Fraud Schemes?",
+    "What other organizations is Rep. Tom Emmer connected to?",
+    "Where did the Unknown allegedly go in Minnesota Immigration Enforcement Obstruction Investigation?",
+    "Where did the Unknown allegedly go in Texas Childcare Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 448,
-    "articlesProcessed": 22300,
-    "redFlagsFound": 526,
+    "totalScans": 449,
+    "articlesProcessed": 22350,
+    "redFlagsFound": 527,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Minnesota Fraud Investigation?",
-        "Where did the N/A allegedly go in DOJ Investigation?",
-        "Where did the $0 allegedly go in Minnesota Immigration Obstruction Investigation?"
+        "What other organizations is Tim Walz connected to?",
+        "What other organizations is Jacob Frey connected to?",
+        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-21T06:34:44.348Z",
-  "lastUpdated": "2026-01-21T06:34:44.348Z"
+  "lastReflection": "2026-01-21T07:27:33.955Z",
+  "lastUpdated": "2026-01-21T07:27:33.957Z"
 }

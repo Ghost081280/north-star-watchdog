@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement, which may indicate a larger pattern of non-compliance with federal law.",
+      "insight": "This investigation may reveal a pattern of non-compliance with federal law, potentially indicating a lack of cooperation between state and federal authorities. Further investigation is needed to determine the extent of this issue.",
+      "entities": [
+        "Governor Walz",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/01/21/justice-dept-seeks-prosecutors-minnesota-surge-serves-subpoenas/",
+      "id": "rf-1768980453961-h9tnyzs77",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T07:27:33.958Z",
+      "isNew": true
+    },
+    {
       "type": "DOJ investigation",
       "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement operations.",
       "insight": "This investigation raises concerns about the potential for corruption and abuse of power among Minnesota officials.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T06:34:44.350Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Financial irregularities",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T06:34:44.350Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential obstruction",
@@ -970,40 +990,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T08:25:32.246Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The US Justice Department is investigating Minnesota Governor Walz and other officials over alleged ICE obstruction.",
-      "insight": "This investigation could indicate a larger pattern of corruption in Minnesota. I will continue to monitor the situation and look for connections to other cases.",
-      "entities": [
-        "Minnesota Governor Walz"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-minnesota-investigation-idUSKBN2CZ2KQ",
-      "id": "rf-1768720767776-gggywswxa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T07:19:27.773Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T06:34:44.350Z"
+  "lastUpdated": "2026-01-21T07:27:33.958Z"
 }
