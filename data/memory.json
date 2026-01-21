@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T22:20:11.472Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-16T23:19:49.790Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-01-21T12:46:18.077Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-21T13:44:24.516Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $Not specified allegedly go in Minnesota Fraud Schemes?",
     "What other organizations is Rep. Tom Emmer connected to?",
     "Where did the Unknown allegedly go in Minnesota Immigration Enforcement Obstruction Investigation?",
     "Where did the Unknown allegedly go in Texas Childcare Fraud Probe?",
@@ -558,7 +557,8 @@
     "What other organizations is Andrew Callaghan connected to?",
     "Where did the Unknown allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the Unknown allegedly go in Immigration Enforcement Obstruction Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 454,
-    "articlesProcessed": 22600,
-    "redFlagsFound": 532,
+    "totalScans": 455,
+    "articlesProcessed": 22650,
+    "redFlagsFound": 533,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $208 million allegedly go in Wealthfront Corporation Investigation?",
-        "What other organizations is Not specified in the intel provided connected to?",
-        "What specific allegations exist against Not specified in the intel provided?"
+        "Where did the $Not specified allegedly go in Minnesota Fraud Schemes?",
+        "What other organizations is Rep. Tom Emmer connected to?",
+        "Where did the Unknown allegedly go in Minnesota Immigration Enforcement Obstruction Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-21T12:46:18.077Z",
-  "lastUpdated": "2026-01-21T12:46:18.078Z"
+  "lastReflection": "2026-01-21T13:44:24.516Z",
+  "lastUpdated": "2026-01-21T13:44:24.517Z"
 }
