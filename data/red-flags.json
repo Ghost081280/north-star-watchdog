@@ -1,23 +1,42 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The Trump administration has frozen $1B in child care funding, which has raised concerns about the potential for fraud and abuse.",
-      "insight": "I suspect that the freeze in funding may be related to the alleged child care fraud in Minnesota. Further investigation is needed to determine the extent of the fraud and the individuals involved.",
+      "type": "federal freeze",
+      "description": "The Trump administration's attempt to freeze $1 billion in federal funding for childcare in Illinois",
+      "insight": "This could indicate a broader pattern of politically motivated funding freezes. Investigate other instances of funding freezes or terminations.",
       "entities": [
         "Trump administration",
-        "Minnesota"
+        "Illinois"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Sen. Durbin visits Rockford YWCA, criticizes Trump administration over child care funding freeze - wifr.com",
-      "sourceUrl": "https://www.wifr.com/content/news/sen-durbin-visits-rockford-ywca-criticizes-trump-administration-over-child-care-funding-freeze-574444341.html",
-      "id": "rf-1769030861101-ejh7viydl",
+      "source": "rrstar.com",
+      "sourceUrl": "https://rrstar.com/politics/durbin-1b-in-illinois-trump-childcare-cuts-meant-to-punish-illinois",
+      "id": "rf-1769034221468-ts0o9ojtr",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-21T21:27:41.096Z",
+      "detectedAt": "2026-01-21T22:23:41.465Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "The Minnesota human services department breach impacting over 300K individuals",
+      "insight": "This breach could be a sign of systemic issues within the department. Investigate potential connections to other breaches or fraud cases.",
+      "entities": [
+        "Minnesota human services department"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "SC Media",
+      "sourceUrl": "https://www.scmagazine.com/minnesota-human-services-department-breach-impacts-over-300k-individuals",
+      "id": "rf-1769034221468-1laliczkw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T22:23:41.465Z",
       "isNew": true
     },
     {
@@ -972,25 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T11:16:22.015Z",
       "isNew": false
-    },
-    {
-      "type": "financial improprieties",
-      "description": "Allegations of financial improprieties by Rep. Ilhan Omar",
-      "insight": "Potential for financial misconduct by public official",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "KOMO",
-      "sourceUrl": "https://komo.com/2026-01-17/house-republicans-launch-investigation-into-rep-ilhan-omars-finances-report/",
-      "id": "rf-1768734982019-2bw1km9om",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T11:16:22.015Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,11 +1000,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T21:27:41.096Z"
+  "lastUpdated": "2026-01-21T22:23:41.465Z"
 }
