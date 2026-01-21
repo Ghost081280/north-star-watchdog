@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential obstruction of justice",
+      "description": "The investigation into potential obstruction of immigration enforcement in Minnesota has raised concerns about potential obstruction of justice",
+      "insight": "As an investigator, I am concerned about the potential for obstruction of justice in this case. The fact that grand jury subpoenas have been served to Governor Tim Walz and other officials suggests that there may be evidence of wrongdoing. I would recommend further investigation into this matter to determine the extent of any potential obstruction.",
+      "entities": [
+        "Tim Walz",
+        "Keith Ellison"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-immigration-minnesota-idUSKBN2A41ZT",
+      "id": "rf-1768966989938-oesov304t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T03:43:09.935Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Obstruction of Justice",
       "description": "The DOJ's investigation into Minnesota officials has raised concerns about potential obstruction of justice.",
       "insight": "As an investigator, I am concerned about the potential for obstruction of justice in this case. The fact that several top Democrats in Minnesota have been subpoenaed suggests that there may be a larger issue at play.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T01:42:33.659Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -969,31 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T03:45:25.782Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ's investigation into Minnesota Democrats and Rep. Ilhan Omar's finances raises concerns about potential corruption and obstruction of justice.",
-      "insight": "I notice a pattern of potential corruption and obstruction of justice in Minnesota, with the DOJ investigating top Democrats and a member of Congress. This warrants further investigation and monitoring.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey",
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-justice-minnesota-idUSKBN2A91YQ",
-      "id": "rf-1768700747985-hpuzocwi4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T01:45:47.982Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1002,7 +1002,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T01:42:33.659Z"
+  "lastUpdated": "2026-01-21T03:43:09.935Z"
 }

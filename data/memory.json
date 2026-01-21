@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T12:41:35.611Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-16T13:37:12.651Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-21T01:42:33.657Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-21T03:43:09.932Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Aimee Bock?",
-    "Where did the $250M allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $10B allegedly go in Minnesota Fraud Investigation?",
     "Where did the N/A allegedly go in Colonial Parkway Case?",
     "What other organizations is Jonathan Ross connected to?",
     "What other organizations is Don Lemon connected to?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Officials?",
-    "Where did the Unknown allegedly go in Congressional Investigation into Minnesota Fraud?"
+    "Where did the Unknown allegedly go in Congressional Investigation into Minnesota Fraud?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the Unknown allegedly go in Immigration Enforcement Obstruction Investigation?",
+    "Where did the Unknown allegedly go in Daycare Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 444,
-    "articlesProcessed": 22100,
-    "redFlagsFound": 519,
+    "totalScans": 445,
+    "articlesProcessed": 22150,
+    "redFlagsFound": 520,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $Billions allegedly go in Minnesota fraud investigation?",
-        "Where did the $11K allegedly go in Caregiver theft investigation?"
+        "What specific allegations exist against Aimee Bock?",
+        "Where did the $250M allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $10B allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-21T01:42:33.657Z",
-  "lastUpdated": "2026-01-21T01:42:33.658Z"
+  "lastReflection": "2026-01-21T03:43:09.932Z",
+  "lastUpdated": "2026-01-21T03:43:09.933Z"
 }
