@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-16T14:22:41.498Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-16T15:22:50.254Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-21T04:42:59.651Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-21T05:28:19.062Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Don Lemon connected to?",
-    "What other organizations is Nonprofit Leader connected to?",
     "Where did the N/A allegedly go in Minnesota Fraud Investigation?",
     "Where did the N/A allegedly go in DOJ Investigation?",
     "Where did the $0 allegedly go in Minnesota Immigration Obstruction Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Immigration Enforcement Obstruction Investigation?",
     "Where did the Unknown allegedly go in Daycare Fraud Probe?",
     "Where did the unknown allegedly go in Immigration Enforcement Obstruction Investigation?",
-    "Where did the unknown allegedly go in Daycare Fraud Investigation?"
+    "Where did the unknown allegedly go in Daycare Fraud Investigation?",
+    "What specific allegations exist against Keith Ellison?",
+    "Where did the $208 million allegedly go in Wealthfront Corporation Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 446,
-    "articlesProcessed": 22200,
-    "redFlagsFound": 522,
+    "totalScans": 447,
+    "articlesProcessed": 22250,
+    "redFlagsFound": 524,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Colonial Parkway Case?",
-        "What other organizations is Jonathan Ross connected to?",
-        "What other organizations is Don Lemon connected to?"
+        "What other organizations is Don Lemon connected to?",
+        "What other organizations is Nonprofit Leader connected to?",
+        "Where did the N/A allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-21T04:42:59.651Z",
-  "lastUpdated": "2026-01-21T04:42:59.652Z"
+  "lastReflection": "2026-01-21T05:28:19.062Z",
+  "lastUpdated": "2026-01-21T05:28:19.063Z"
 }
