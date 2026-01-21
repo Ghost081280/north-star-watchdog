@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Federal funds freeze for Minnesota childcare programs",
+      "insight": "Potential for widespread fraud in childcare programs",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/investigates/special-report/usa-care-fraud",
+      "id": "rf-1768984220843-if6wo6jf8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-21T08:30:20.840Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement, which may indicate a larger pattern of non-compliance with federal law.",
       "insight": "This investigation may reveal a pattern of non-compliance with federal law, potentially indicating a lack of cooperation between state and federal authorities. Further investigation is needed to determine the extent of this issue.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T07:27:33.958Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "DOJ investigation",
@@ -217,26 +236,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-20T21:20:04.508Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The federal government has frozen child care aid, which could affect thousands of children.",
-      "insight": "This freeze could have a significant impact on children and families who rely on child care services. It may also indicate a larger issue with the administration of child care funds.",
-      "entities": [
-        "Minnesota",
-        "federal government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Democrat and Chronicle",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNeGhfUHFJdUx0a0xjOXJTQUZZOTFBVXJQX0VOX3Zkc2Ezb29BLUhKNWtid0tqNzdwS3V0d0tMNTdUQzhzeUhIcVZBRV9IMDc5MGNfM1Z4aTFlbFFGenJaeldkUnBnbFgwa3l1UGJ4aXpnYU9CTV9hVkxoeHVqeEIwbkxBVk5ZWEprRkZKbUlZdUtlbFMzbVJhQjJOSFRYcDlNdVNJaHVmb1lTano1QV84dUtnNjY1Y21nSmJla2dVNjNYWGsxU3RWR25uTVJiQWRkeVBDbE1Ya3plTElXQlgzMEFR",
-      "id": "rf-1768934122510-4jwz4qqfh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T18:35:22.507Z",
       "isNew": false
     },
     {
@@ -994,6 +993,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-21T07:27:33.958Z"
+  "lastUpdated": "2026-01-21T08:30:20.840Z"
 }
