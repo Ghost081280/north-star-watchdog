@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T01:45:47.980Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-18T03:45:25.780Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-01-22T15:30:27.912Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-22T16:34:46.696Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 37,
+      "count": 38,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-22T13:45:44.034Z"
+      "lastSeen": "2026-01-22T16:34:46.697Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 478,
-    "articlesProcessed": 23800,
-    "redFlagsFound": 561,
+    "totalScans": 479,
+    "articlesProcessed": 23850,
+    "redFlagsFound": 563,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Yasiel Puig connected to?",
-        "Where did the Unknown allegedly go in Somali Fraud Scandal?",
-        "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $1 billion allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the Over 300K impacted allegedly go in Minnesota Human Services Department Breach?",
+        "Where did the $1 billion allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-22T15:30:27.912Z",
-  "lastUpdated": "2026-01-22T15:30:27.913Z"
+  "lastReflection": "2026-01-22T16:34:46.696Z",
+  "lastUpdated": "2026-01-22T16:34:46.697Z"
 }

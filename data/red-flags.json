@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "USDA pauses grants to Minnesota amid Somali fraud crackdown",
+      "insight": "This could indicate a larger issue with fraud in Minnesota programs",
+      "entities": [
+        "USDA",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/usda-pauses-grants-minnesota-22",
+      "id": "rf-1769099686701-26axonc3v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-22T16:34:46.698Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The federal government has frozen child care funding, causing concerns among states and low-income families. This freeze may exacerbate existing issues in the child care sector.",
       "insight": "The freeze on child care funding raises red flags about the prioritization of social welfare programs. It may indicate a broader effort to reallocate funds or shift priorities within the federal budget.",
@@ -77,26 +97,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-21T17:54:15.339Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota's Medicaid program is under investigation for alleged fraud",
-      "insight": "The investigation's findings could lead to program termination or significant reforms",
-      "entities": [
-        "Minnesota DHS",
-        "FEC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota fraud cases in the spotlight in Congress again",
-      "sourceUrl": "https://foxbaltimore.com/2026/01/21/minnesota-fraud-cases-in-the-spotlight-in-congress-again/",
-      "id": "rf-1769009514829-glr7yj72v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T15:31:54.825Z",
       "isNew": false
     },
     {
@@ -995,7 +995,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1005,6 +1004,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-22T15:30:27.914Z"
+  "lastUpdated": "2026-01-22T16:34:46.698Z"
 }
