@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-17T19:15:31.815Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-17T20:21:04.754Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-22T09:31:48.276Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-22T10:26:20.628Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 20,
+      "count": 21,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-22T07:26:33.817Z"
+      "lastSeen": "2026-01-22T10:26:20.629Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 35,
+      "count": 36,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-22T07:26:33.817Z"
+      "lastSeen": "2026-01-22T10:26:20.629Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 473,
-    "articlesProcessed": 23550,
-    "redFlagsFound": 554,
+    "totalScans": 474,
+    "articlesProcessed": 23600,
+    "redFlagsFound": 556,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota fraud ringleader connected to?",
-        "Where did the $1 Billion allegedly go in Minnesota Education Fraud Investigation?",
-        "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $250M allegedly go in Minnesota Welfare Fraud Scandal?",
+        "What other organizations is Aimee Bock connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-22T09:31:48.276Z",
-  "lastUpdated": "2026-01-22T09:31:48.277Z"
+  "lastReflection": "2026-01-22T10:26:20.628Z",
+  "lastUpdated": "2026-01-22T10:26:20.629Z"
 }
