@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-17T13:28:28.648Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-01-17T14:18:15.163Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-01-22T03:46:51.885Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-01-22T04:46:55.665Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 18,
+      "count": 19,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-15T07:25:00.362Z"
+      "lastSeen": "2026-01-22T04:46:55.666Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 33,
+      "count": 34,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-19T10:27:27.448Z"
+      "lastSeen": "2026-01-22T04:46:55.666Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 467,
-    "articlesProcessed": 23250,
-    "redFlagsFound": 546,
+    "totalScans": 468,
+    "articlesProcessed": 23300,
+    "redFlagsFound": 548,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
         "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
+        "Where did the $10M+ allegedly go in Minnesota Medicaid Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-22T03:46:51.885Z",
-  "lastUpdated": "2026-01-22T03:46:51.886Z"
+  "lastReflection": "2026-01-22T04:46:55.665Z",
+  "lastUpdated": "2026-01-22T04:46:55.666Z"
 }
