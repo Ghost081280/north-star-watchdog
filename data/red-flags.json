@@ -1,24 +1,23 @@
 {
   "flags": [
     {
-      "type": "program_termination",
-      "description": "The potential freeze of Minnesota SNAP funds due to alleged fraud.",
-      "insight": "The freeze of SNAP funds could have significant implications for low-income families in Minnesota, and further investigation is needed to determine the extent of the alleged fraud.",
+      "type": "Potential Medicaid fraud",
+      "description": "CMS has directed the state of Minnesota to limit provider enrollment in Medicaid due to concerns about Medicaid fraud.",
+      "insight": "This directive suggests that there may be a significant problem with Medicaid fraud in Minnesota. Further investigation is needed to determine the extent of the problem and identify potential perpetrators.",
       "entities": [
-        "Minnesota",
-        "SNAP"
+        "Minnesota Medicaid"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "grandrapidsmn.com",
-      "sourceUrl": "https://www.grandrapidsmn.com/news/local/federal-judge-blocks-plan-to-freeze-minnesota-snap-funds-for-now",
-      "id": "rf-1769106681850-euzzu8700",
+      "source": "The National Law Review",
+      "sourceUrl": "https://www.nationallawreview.com/article/medicaid-moratoria-cms-directs-state-to-limit-provider-enrollment-in-minnesota",
+      "id": "rf-1769120500963-uqp8tcraj",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-22T18:31:21.847Z",
-      "isNew": false
+      "detectedAt": "2026-01-22T22:21:40.960Z",
+      "isNew": true
     },
     {
       "type": "federal_investigation",
@@ -995,6 +994,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1002,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-22T21:22:17.908Z"
+  "lastUpdated": "2026-01-22T22:21:40.960Z"
 }
