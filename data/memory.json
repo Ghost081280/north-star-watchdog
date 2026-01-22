@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-17T16:22:00.998Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-01-17T17:17:01.688Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-22T06:33:05.420Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-22T07:26:33.816Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 19,
+      "count": 20,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-22T04:46:55.666Z"
+      "lastSeen": "2026-01-22T07:26:33.817Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 34,
+      "count": 35,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-22T04:46:55.666Z"
+      "lastSeen": "2026-01-22T07:26:33.817Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 470,
-    "articlesProcessed": 23400,
-    "redFlagsFound": 550,
+    "totalScans": 471,
+    "articlesProcessed": 23450,
+    "redFlagsFound": 552,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
-        "Where did the $10M+ allegedly go in Minnesota Medicaid Investigation?"
+        "Where did the $10M+ allegedly go in Minnesota Medicaid Investigation?",
+        "What other organizations is Trump connected to?",
+        "What other organizations is Minnesota fraud ringleader connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-22T06:33:05.420Z",
-  "lastUpdated": "2026-01-22T06:33:05.421Z"
+  "lastReflection": "2026-01-22T07:26:33.816Z",
+  "lastUpdated": "2026-01-22T07:26:33.817Z"
 }
