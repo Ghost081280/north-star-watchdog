@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the death of Indianapolis Colts owner Jim Irsay.",
+      "insight": "This investigation could have significant implications for the NFL and potentially lead to further actions against individuals or organizations connected to Irsay.",
+      "entities": [
+        "Indianapolis Colts",
+        "Jim Irsay"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/sports/nfl/fbi-investigating-death-indianapolis-colts-owner-jim-irsay",
+      "id": "rf-1769146023511-vkvzfod30",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T05:27:03.508Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The FBI is investigating the death of former Indianapolis Colts owner Jim Irsay, and the Colts have confirmed the investigation.",
       "insight": "This investigation raises concerns about the circumstances surrounding Irsay's death and the potential involvement of others. Further investigation is needed to determine the facts of the case.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-23T04:42:03.030Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -38,26 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-23T03:42:25.626Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the death of Indianapolis Colts owner Jim Irsay, who was found to have taken ketamine and other drugs.",
-      "insight": "This investigation raises concerns about the potential for foul play or other illicit activities, and highlights the need for further scrutiny of high-profile individuals and their activities.",
-      "entities": [
-        "Jim Irsay",
-        "Indianapolis Colts"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/sports/2026/01/23/fbi-investigating-death-of-indianapolis-colts-owner-jim-irsay/",
-      "id": "rf-1769131789331-pdfrkeu2g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-23T01:29:49.327Z",
       "isNew": false
     },
     {
@@ -995,6 +995,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1004,7 +1005,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T04:42:03.030Z"
+  "lastUpdated": "2026-01-23T05:27:03.508Z"
 }
