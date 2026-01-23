@@ -1,22 +1,41 @@
 {
   "flags": [
     {
-      "type": "Medicaid fraud",
-      "description": "Minnesota Medicaid programs ‘infected’ by $9 billion fraud",
-      "insight": "This is a significant red flag, as it suggests that the Medicaid program in Minnesota has been compromised by fraudulent activity. Further investigation is needed to determine the extent of the fraud and to identify those responsible.",
+      "type": "federal freeze",
+      "description": "Minnesota Medicaid programs infected by $9 billion fraud",
+      "insight": "This appears to be a large-scale fraud scheme involving Medicaid programs in Minnesota. Further investigation into the entities involved and the extent of the fraud is warranted.",
       "entities": [
-        "Minnesota DHS"
+        "Minnesota"
       ],
-      "confidence": 80,
+      "confidence": 90,
       "priority": "high",
       "source": "Sky News Australia",
-      "sourceUrl": "https://www.skynews.com.au/",
-      "id": "rf-1769153101110-58ayda1zz",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ3BXS29vZlZpSEF6WkRla0N4NHJRRmhvdU1aTzdOOXRuY1RNdm44RktQOW5Ib25mcEVMREVMeWVWYUVSM3kxWWFxZzQ0dmlrUmRQbXJScXprcHp6X1pweDRkTjRzVTJKenUyd1k5a3VneXo0WFlwSlN4cUZ0dlgzTVJqaWlGaVJQc0cyOHZOamR5ZjdNZDRBQ1VfRWdHeE5URWxvN2R2c2ZodVpqS0J5bEVCclZpRGJQb21hY0doWnljalJXTVJ1ZQ",
+      "id": "rf-1769156950429-6a9uvm55s",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-23T07:25:01.106Z",
+      "detectedAt": "2026-01-23T08:29:10.425Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Minnesota autism clinic owner gets funding cut off amid daycare fraud scandal",
+      "insight": "This suggests that there may be a connection between the autism clinic and the daycare fraud scandal. Further investigation into the clinic's operations and potential ties to other entities is needed.",
+      "entities": [
+        "Minnesota autism clinic"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Fox Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55aEJPQ3FVMTJyRVpmd2p6VndtOTBnZ0NDTVNUVW1tMTIxa3F6b0h2cklGYWU1OE1UbWRlYnR6eXlHYWRIemFyejY5cW4tRkhPeDV1c1huZDJNUVU",
+      "id": "rf-1769156950429-yfdy5fuq7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T08:29:10.425Z",
       "isNew": true
     },
     {
@@ -97,26 +116,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-22T18:31:21.847Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government has frozen child care funding, causing concerns among states and low-income families. This freeze may exacerbate existing issues in the child care sector.",
-      "insight": "The freeze on child care funding raises red flags about the prioritization of social welfare programs. It may indicate a broader effort to reallocate funds or shift priorities within the federal budget.",
-      "entities": [
-        "Minnesota",
-        "Federal Government"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.cbsnews.com/news/overwhelmed-colorado-families-fear-loss-of-child-care-aid-amid-federal-funding-freeze/",
-      "id": "rf-1769077580633-io4v1x79g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-22T10:26:20.630Z",
       "isNew": false
     },
     {
@@ -1004,6 +1003,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T07:25:01.106Z"
+  "lastUpdated": "2026-01-23T08:29:10.425Z"
 }
