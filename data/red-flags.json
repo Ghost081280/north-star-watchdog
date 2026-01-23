@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Minnesota Medicaid programs ‘infected’ by $9 billion fraud",
+      "insight": "This is a significant red flag, as it suggests that the Medicaid program in Minnesota has been compromised by fraudulent activity. Further investigation is needed to determine the extent of the fraud and to identify those responsible.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Sky News Australia",
+      "sourceUrl": "https://www.skynews.com.au/",
+      "id": "rf-1769153101110-58ayda1zz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T07:25:01.106Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the death of Indianapolis Colts owner Jim Irsay.",
       "insight": "This investigation could have significant implications for the NFL and potentially lead to further actions against individuals or organizations connected to Irsay.",
@@ -58,25 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-23T03:42:25.626Z",
-      "isNew": false
-    },
-    {
-      "type": "Potential Medicaid fraud",
-      "description": "CMS has directed the state of Minnesota to limit provider enrollment in Medicaid due to concerns about Medicaid fraud.",
-      "insight": "This directive suggests that there may be a significant problem with Medicaid fraud in Minnesota. Further investigation is needed to determine the extent of the problem and identify potential perpetrators.",
-      "entities": [
-        "Minnesota Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The National Law Review",
-      "sourceUrl": "https://www.nationallawreview.com/article/medicaid-moratoria-cms-directs-state-to-limit-provider-enrollment-in-minnesota",
-      "id": "rf-1769120500963-uqp8tcraj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-22T22:21:40.960Z",
       "isNew": false
     },
     {
@@ -995,6 +995,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1003,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T06:38:40.511Z"
+  "lastUpdated": "2026-01-23T07:25:01.106Z"
 }
