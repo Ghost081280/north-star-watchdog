@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-19T04:51:26.776Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-19T05:31:35.971Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T17:25:50.418Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-01-23T18:32:00.004Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "What other organizations is Renee Good connected to?",
-    "What other organizations is CEO of Ponzi scheme connected to?",
-    "Where did the Unknown allegedly go in FBI investigation into Jim Irsay's death?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is John Hinderaker connected to?",
     "What specific allegations exist against John Hinderaker?",
@@ -558,7 +554,11 @@
     "What other organizations is Ryan Wedding connected to?",
     "Where did the $ millions allegedly go in Minnesota Medicaid fraud scandal?",
     "Where did the None allegedly go in FBI investigation into Jim Irsay's death?",
-    "Where did the $7 billion allegedly go in California fraud?"
+    "Where did the $7 billion allegedly go in California fraud?",
+    "What other organizations is Trump Administration Officials connected to?",
+    "What other organizations is Owner of St. Cloud Autism Center connected to?",
+    "Where did the $7B allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $7B allegedly go in California Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 502,
-    "articlesProcessed": 24950,
-    "redFlagsFound": 593,
+    "totalScans": 503,
+    "articlesProcessed": 25000,
+    "redFlagsFound": 594,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9 billion allegedly go in Minnesota Medicaid fraud?",
         "Are any of these 3 figures connected to each other?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "What other organizations is CEO of Ponzi scheme connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T17:25:50.418Z",
-  "lastUpdated": "2026-01-23T17:25:50.419Z"
+  "lastReflection": "2026-01-23T18:32:00.004Z",
+  "lastUpdated": "2026-01-23T18:32:00.004Z"
 }
