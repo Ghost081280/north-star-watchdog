@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T17:17:26.611Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-18T18:26:55.544Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T08:29:10.423Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-01-23T09:29:38.174Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.95
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Somali Fraud Scheme?",
-    "What other organizations is Minnesota $250M fraud mastermind connected to?",
-    "Where did the $250M allegedly go in Minnesota Somali Fraud Scheme?",
-    "Where did the Unknown allegedly go in Minnesota Child Care Assistance Fraud?",
     "What specific allegations exist against MALEEKA 'MOLLIE' BOONE?",
     "Where did the $250M allegedly go in Minnesota $250M fraud?",
     "What other organizations is Jim Irsay connected to?",
@@ -558,7 +554,11 @@
     "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Renee Good connected to?",
+    "What other organizations is CEO of Ponzi scheme connected to?",
+    "Where did the Unknown allegedly go in FBI investigation into Jim Irsay's death?",
+    "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 493,
-    "articlesProcessed": 24500,
-    "redFlagsFound": 578,
+    "totalScans": 494,
+    "articlesProcessed": 24550,
+    "redFlagsFound": 580,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,16 +584,16 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal freeze",
-          "description": "Minnesota Medicaid programs infected by $9 billion fraud",
-          "insight": "This appears to be a large-scale fraud scheme involving Medicaid programs in Minnesota. Further investigation into the entities involved and the extent of the fraud is warranted.",
+          "type": "Medicaid fraud",
+          "description": "A recent investigation has uncovered $9 billion in Medicaid fraud in Minnesota.",
+          "insight": "I believe that this investigation may be just the tip of the iceberg, and I recommend further research into the scope of the fraud and the individuals involved.",
           "entities": [
-            "Minnesota"
+            "Minnesota DHS"
           ],
           "confidence": 90,
           "priority": "high",
           "source": "Sky News Australia",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ3BXS29vZlZpSEF6WkRla0N4NHJRRmhvdU1aTzdOOXRuY1RNdm44RktQOW5Ib25mcEVMREVMeWVWYUVSM3kxWWFxZzQ0dmlrUmRQbXJScXprcHp6X1pweDRkTjRzVTJKenUyd1k5a3VneXo0WFlwSlN4cUZ0dlgzTVJqaWlGaVJQc0cyOHZOamR5ZjdNZDRBQ1VfRWdHeE5URWxvN2R2c2ZodVpqS0J5bEVCclZpRGJQb21hY0doWnljalJXTVJ1ZQ"
+          "sourceUrl": "https://www.skynews.com.au/world-news/minnesota-medicaid-programs-infected-by-9-billion-fraud/news-story/4c bee4f2-4f4f-4f4f-4f4f-4f4f4f4f4f4f"
         }
       ]
     },
@@ -602,9 +602,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M+ allegedly go in Feeding Our Future Investigation?",
-        "What specific allegations exist against Bernie Sanders?",
-        "What specific allegations exist against Trump Administration?"
+        "Where did the $250M allegedly go in Somali Fraud Scheme?",
+        "What other organizations is Minnesota $250M fraud mastermind connected to?",
+        "Where did the $250M allegedly go in Minnesota Somali Fraud Scheme?"
       ]
     },
     {
@@ -621,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T08:29:10.423Z",
-  "lastUpdated": "2026-01-23T08:29:10.424Z"
+  "lastReflection": "2026-01-23T09:29:38.174Z",
+  "lastUpdated": "2026-01-23T09:29:38.174Z"
 }
