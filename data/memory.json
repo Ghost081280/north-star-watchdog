@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T18:26:55.544Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-18T19:15:28.765Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T09:29:38.174Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.95
+    },
+    {
+      "date": "2026-01-23T10:23:59.435Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against MALEEKA 'MOLLIE' BOONE?",
-    "Where did the $250M allegedly go in Minnesota $250M fraud?",
     "What other organizations is Jim Irsay connected to?",
     "What other organizations is Amy Klobuchar connected to?",
     "What other organizations is Maleeka 'Mollie' Boone connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Renee Good connected to?",
     "What other organizations is CEO of Ponzi scheme connected to?",
     "Where did the Unknown allegedly go in FBI investigation into Jim Irsay's death?",
-    "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
+    "What other organizations is John Hinderaker connected to?",
+    "What specific allegations exist against John Hinderaker?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 494,
-    "articlesProcessed": 24550,
-    "redFlagsFound": 580,
+    "totalScans": 495,
+    "articlesProcessed": 24600,
+    "redFlagsFound": 582,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "A recent investigation has uncovered $9 billion in Medicaid fraud in Minnesota.",
-          "insight": "I believe that this investigation may be just the tip of the iceberg, and I recommend further research into the scope of the fraud and the individuals involved.",
-          "entities": [
-            "Minnesota DHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Sky News Australia",
-          "sourceUrl": "https://www.skynews.com.au/world-news/minnesota-medicaid-programs-infected-by-9-billion-fraud/news-story/4c bee4f2-4f4f-4f4f-4f4f-4f4f4f4f4f4f"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Somali Fraud Scheme?",
-        "What other organizations is Minnesota $250M fraud mastermind connected to?",
-        "Where did the $250M allegedly go in Minnesota Somali Fraud Scheme?"
+        "What specific allegations exist against MALEEKA 'MOLLIE' BOONE?",
+        "Where did the $250M allegedly go in Minnesota $250M fraud?",
+        "What other organizations is Jim Irsay connected to?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T09:29:38.174Z",
-  "lastUpdated": "2026-01-23T09:29:38.174Z"
+  "lastReflection": "2026-01-23T10:23:59.435Z",
+  "lastUpdated": "2026-01-23T10:23:59.436Z"
 }
