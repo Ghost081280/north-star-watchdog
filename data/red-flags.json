@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Suspicious death",
+      "description": "The death of former Colts owner Jim Irsay is under federal investigation, raising concerns about potential foul play.",
+      "insight": "I suspect that there may be more to Irsay's death than initially meets the eye. Further investigation is needed to determine the circumstances surrounding his death.",
+      "entities": [
+        "Jim Irsay",
+        "Colts"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "fox59.com",
+      "sourceUrl": "https://fox59.com/2026/01/23/colts-confirm-fbis-investigation-into-death-of-former-owner-jim-irsay/",
+      "id": "rf-1769185739302-2cgufr9g2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T16:28:59.299Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Rady Children's Hospital ends gender-affirming care under federal investigation",
       "insight": "This could indicate a broader pattern of program terminations under investigation, potentially linked to funding or regulatory issues.",
@@ -969,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T17:17:26.612Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The US Justice Department is investigating Minnesota Democrats over alleged ICE obstruction",
-      "insight": "This investigation could indicate a larger pattern of corruption or wrongdoing by Minnesota Democrats. Further investigation is needed to determine the extent of the allegations.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "BBC",
-      "sourceUrl": "https://www.bbc.com/news/world-us-canada-61234567",
-      "id": "rf-1768753396386-ybv5pr1ox",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T16:23:16.382Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,7 +1002,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T15:25:03.164Z"
+  "lastUpdated": "2026-01-23T16:28:59.299Z"
 }

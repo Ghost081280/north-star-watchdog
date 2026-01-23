@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-19T01:44:08.735Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-19T03:49:47.603Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T15:25:03.162Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-01-23T16:28:59.297Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Autism Clinic Funding Cut?",
-    "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What specific allegations exist against Ilhan Omar?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Renee Good connected to?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "What specific allegations exist against Jim Irsay?",
     "Where did the $X allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $X allegedly go in Signal Mountain Home Investigation?"
+    "Where did the $X allegedly go in Signal Mountain Home Investigation?",
+    "What other organizations is Ryan Wedding connected to?",
+    "Where did the $ millions allegedly go in Minnesota Medicaid fraud scandal?",
+    "Where did the None allegedly go in FBI investigation into Jim Irsay's death?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 500,
-    "articlesProcessed": 24850,
-    "redFlagsFound": 590,
+    "totalScans": 501,
+    "articlesProcessed": 24900,
+    "redFlagsFound": 591,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Minnesota autism clinic funding scandal?",
-        "Where did the Unknown allegedly go in FBI Investigation into Jim Irsay's Death?",
-        "Where did the Unknown allegedly go in Minnesota Autism Clinic Funding Cut Off?"
+        "Where did the Unknown allegedly go in Minnesota Autism Clinic Funding Cut?",
+        "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What specific allegations exist against Ilhan Omar?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T15:25:03.162Z",
-  "lastUpdated": "2026-01-23T15:25:03.163Z"
+  "lastReflection": "2026-01-23T16:28:59.297Z",
+  "lastUpdated": "2026-01-23T16:28:59.298Z"
 }
