@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-19T08:31:32.773Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-19T09:33:36.009Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T21:20:41.793Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-23T22:18:00.024Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI Investigation into Jim Irsay's Death?",
-    "What other organizations is Jim Irsay connected to?",
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "What specific allegations exist against Jim Irsay?",
     "Where did the $X allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $ unknown allegedly go in Star Autism Center Fraud Investigation?",
     "What other organizations is Brandon Bosley connected to?",
     "Where did the $ millions allegedly go in Minnesota Child Care Program Investigation?",
-    "Where did the Unknown allegedly go in Star Autism Center Investigation?"
+    "Where did the Unknown allegedly go in Star Autism Center Investigation?",
+    "Where did the $1M allegedly go in Feeding Our Future scheme?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 506,
-    "articlesProcessed": 25150,
-    "redFlagsFound": 597,
+    "totalScans": 507,
+    "articlesProcessed": 25200,
+    "redFlagsFound": 599,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota autism clinic funding cut off?",
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $0 allegedly go in FBI Investigation into Jim Irsay's Death?",
+        "What other organizations is Jim Irsay connected to?",
+        "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T21:20:41.793Z",
-  "lastUpdated": "2026-01-23T21:20:41.794Z"
+  "lastReflection": "2026-01-23T22:18:00.024Z",
+  "lastUpdated": "2026-01-23T22:18:00.025Z"
 }
