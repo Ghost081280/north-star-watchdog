@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T22:19:18.942Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-01-18T23:19:03.400Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-01-23T13:42:41.331Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-23T14:24:47.755Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 498,
-    "articlesProcessed": 24750,
-    "redFlagsFound": 586,
+    "totalScans": 499,
+    "articlesProcessed": 24800,
+    "redFlagsFound": 588,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota Medicaid moratoria?",
-        "Where did the N/A allegedly go in FBI investigation into Jim Irsay's death?",
-        "Where did the N/A allegedly go in Minnesota autism clinic funding scandal?"
+        "Where did the N/A allegedly go in Minnesota autism clinic funding scandal?",
+        "Where did the Unknown allegedly go in FBI Investigation into Jim Irsay's Death?",
+        "Where did the Unknown allegedly go in Minnesota Autism Clinic Funding Cut Off?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T13:42:41.331Z",
-  "lastUpdated": "2026-01-23T13:42:41.332Z"
+  "lastReflection": "2026-01-23T14:24:47.755Z",
+  "lastUpdated": "2026-01-23T14:24:47.755Z"
 }
