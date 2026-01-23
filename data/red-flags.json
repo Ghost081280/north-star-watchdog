@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Rady Children's Hospital ends gender-affirming care under federal investigation",
+      "insight": "This could indicate a broader pattern of program terminations under investigation, potentially linked to funding or regulatory issues.",
+      "entities": [
+        "Rady Children's Hospital"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "nbcsandiego.com",
+      "sourceUrl": "https://nbcsandiego.com/rady-childrens-hospital-under-federal-investigation-ends-gender-affirming-care-nbcsandiego-com-2026-01-22",
+      "id": "rf-1769172238690-2r6kq61q3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T12:43:58.688Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A recent investigation has uncovered $9 billion in Medicaid fraud in Minnesota.",
       "insight": "I believe that this investigation may be just the tip of the iceberg, and I recommend further research into the scope of the fraud and the individuals involved.",
@@ -970,40 +989,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T16:23:16.382Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The US Department of Justice is investigating Minnesota Governor Tim Walz and other officials.",
-      "insight": "This investigation could potentially uncover significant fraud or corruption in Minnesota.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota officials"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcWsxYlVBX1ZDVnAwOE9KSkJtLTd5c21OY19aN2JNQUFmdE45OTMxMHl6SExhOTBkSTJ0YXdLWUhCVWsyWmIyZXJfWW45T1cxdU5NNG1KRjByQzBWcnhtTXVGYVByNEN1RkxMeC02eEZ3SzYzUVZLQ3dOUjh4T2dQdjd4VTNjY2p0Z3BBMWo0aWZreHBBbzFocFhQdHBmaTFORzZiaVBJSWJxUzFrSWVlUzZxRmRtY1A1Zm84",
-      "id": "rf-1768749546738-1ecw80rb2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T15:19:06.735Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T11:20:46.815Z"
+  "lastUpdated": "2026-01-23T12:43:58.688Z"
 }
