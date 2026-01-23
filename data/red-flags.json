@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI is investigating the death of former Indianapolis Colts owner Jim Irsay, and the Colts have confirmed the investigation.",
+      "insight": "This investigation raises concerns about the circumstances surrounding Irsay's death and the potential involvement of others. Further investigation is needed to determine the facts of the case.",
+      "entities": [
+        "Jim Irsay",
+        "Indianapolis Colts"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1769143323033-it4rigcbi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T04:42:03.030Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI has launched an investigation into the death of former Indianapolis Colts owner Jim Irsay, raising questions about the circumstances surrounding his death.",
       "insight": "As an investigator, I am concerned about the potential for foul play or other illicit activity in this case. Further investigation is needed to determine the cause of Irsay's death and to identify any potential suspects or motives.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-23T03:42:25.626Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -971,30 +991,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T15:19:06.735Z",
       "isNew": false
-    },
-    {
-      "type": "alleged_obstruction",
-      "description": "The FBI is investigating Minnesota Democrats over alleged ICE obstruction.",
-      "insight": "This investigation could potentially uncover significant obstruction of justice in Minnesota.",
-      "entities": [
-        "Minnesota Democrats",
-        "ICE"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "BBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BaEZpMUlNTzVBVEQtdnRWZUVXM1BHanBVZnFaZG9lNENFd19xaUt4QzJFTjNfVVhDUGdub3dhNUFkWUN6MkR4cjZCZm5SSU9lcnQ4aVlKSHlxd9IBX0FVX3lxTFBteEN0TThDd3Q2ejVoUm5lb3J3YVN0Mk5qVTdfNVpDTjFTc3pkejhiZzdKQktOTkF2Y3VBcW5IaWhLYkJlLTB5Wmx0VGFkbUJGTXgza0NDdHo5NG1sakhR",
-      "id": "rf-1768749546738-vp808wen5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T15:19:06.735Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T03:42:25.626Z"
+  "lastUpdated": "2026-01-23T04:42:03.030Z"
 }
