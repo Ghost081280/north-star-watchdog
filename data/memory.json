@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T11:16:22.013Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-01-18T12:37:38.174Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-23T01:29:49.325Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-23T03:42:25.624Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1B+ allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the Unknown allegedly go in ICE Detainee Death Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $1B+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $250M+ allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Jim Irsay death investigation?",
     "Where did the Unknown allegedly go in Minnesota Medicaid moratoria?",
     "Where did the N/A allegedly go in FBI investigation into Jim Irsay's death?",
-    "Where did the N/A allegedly go in Minnesota autism clinic funding scandal?"
+    "Where did the N/A allegedly go in Minnesota autism clinic funding scandal?",
+    "Where did the Unknown allegedly go in FBI Investigation into Jim Irsay's Death?",
+    "Where did the Unknown allegedly go in Minnesota Autism Clinic Funding Cut Off?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 487,
-    "articlesProcessed": 24250,
-    "redFlagsFound": 571,
+    "totalScans": 488,
+    "articlesProcessed": 24300,
+    "redFlagsFound": 572,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $5.6M allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Woman behind Minnesota fraud scheme connected to?",
-        "Where did the $1B+ allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $1B+ allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the Unknown allegedly go in ICE Detainee Death Investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T01:29:49.325Z",
-  "lastUpdated": "2026-01-23T01:29:49.326Z"
+  "lastReflection": "2026-01-23T03:42:25.624Z",
+  "lastUpdated": "2026-01-23T03:42:25.625Z"
 }

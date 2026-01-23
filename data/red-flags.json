@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI has launched an investigation into the death of former Indianapolis Colts owner Jim Irsay, raising questions about the circumstances surrounding his death.",
+      "insight": "As an investigator, I am concerned about the potential for foul play or other illicit activity in this case. Further investigation is needed to determine the cause of Irsay's death and to identify any potential suspects or motives.",
+      "entities": [
+        "Jim Irsay",
+        "Indianapolis Colts"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/01/22/fbi-investigating-former-colts-owners-death/11085157002/",
+      "id": "rf-1769139745629-h3gghcbpv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-23T03:42:25.626Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating the death of Indianapolis Colts owner Jim Irsay, who was found to have taken ketamine and other drugs.",
       "insight": "This investigation raises concerns about the potential for foul play or other illicit activities, and highlights the need for further scrutiny of high-profile individuals and their activities.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-23T01:29:49.327Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Medicaid fraud",
@@ -971,31 +991,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T15:19:06.735Z",
       "isNew": false
-    },
-    {
-      "type": "alleged obstruction",
-      "description": "Allegations of ICE obstruction by Minnesota Governor Tim Walz and Minneapolis Mayor Jacob Frey",
-      "insight": "The allegations of ICE obstruction by high-ranking officials in Minnesota are a red flag for potential corruption and abuse of power.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "BBC",
-      "sourceUrl": "https://www.bbc.com/news/world-us-canada-52674431",
-      "id": "rf-1768742898838-0xp478yit",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T13:28:18.835Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1022,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-23T01:29:49.327Z"
+  "lastUpdated": "2026-01-23T03:42:25.626Z"
 }
