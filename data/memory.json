@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-18T19:15:28.765Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-18T20:21:57.857Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-01-23T10:23:59.435Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-01-23T11:20:46.813Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Jim Irsay connected to?",
-    "What other organizations is Amy Klobuchar connected to?",
     "What other organizations is Maleeka 'Mollie' Boone connected to?",
     "Where did the Unknown allegedly go in Jim Irsay death investigation?",
     "Where did the Unknown allegedly go in Minnesota Medicaid moratoria?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in FBI investigation into Jim Irsay's death?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is John Hinderaker connected to?",
-    "What specific allegations exist against John Hinderaker?"
+    "What specific allegations exist against John Hinderaker?",
+    "Where did the Unknown allegedly go in Minnesota autism clinic funding cut off?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 495,
-    "articlesProcessed": 24600,
-    "redFlagsFound": 582,
+    "totalScans": 496,
+    "articlesProcessed": 24650,
+    "redFlagsFound": 583,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against MALEEKA 'MOLLIE' BOONE?",
-        "Where did the $250M allegedly go in Minnesota $250M fraud?",
-        "What other organizations is Jim Irsay connected to?"
+        "What other organizations is Jim Irsay connected to?",
+        "What other organizations is Amy Klobuchar connected to?",
+        "What other organizations is Maleeka 'Mollie' Boone connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-23T10:23:59.435Z",
-  "lastUpdated": "2026-01-23T10:23:59.436Z"
+  "lastReflection": "2026-01-23T11:20:46.813Z",
+  "lastUpdated": "2026-01-23T11:20:46.814Z"
 }
