@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "FBI agent resigns after trying to investigate the shooting of Renee Good",
+      "insight": "This resignation raises concerns about the integrity of the investigation and potential interference from federal authorities. Further investigation is needed to determine the circumstances surrounding the resignation.",
+      "entities": [
+        "FBI",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-agent-resigns-after-trying-to-investigate-ice-officer-who-shot-renee-good/",
+      "id": "rf-1769243143664-nmyvj55ug",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-24T08:25:43.661Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "St. Cloud's Star Autism Center closes amid fraud scandal",
       "insight": "This closure suggests potential wrongdoing and warrants further investigation into the center's activities and possible connections to other entities or individuals",
@@ -967,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-18T22:19:18.943Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
-      "insight": "This could indicate a larger issue with immigration enforcement and oversight in Minnesota.",
-      "entities": [
-        "Minnesota officials",
-        "DOJ"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "US justice department investigating Minnesota Democrats over alleged ICE obstruction - BBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BaEZpMUlNTzVBVEQtdnRWZUVXM1BHanBVZnFaZG9lNENFd19xaUt4QzJFTjNfVVhDUGdub3dhNUFkWUN6MkR4cjZCZm5SSU9lcnQ4aVlKSHlxd9IBX0FVX3lxTFBteEN0TThDd3Q2ejVoUm5lb3J3YVN0Mk5qVTdfNVpDTjFTc3pkejhiZzdKQktOTkF2Y3VBcW5IaWhLYkJlLTB5Wmx0VGFkbUJGTXgza0NDdHo5NG1sakhR",
-      "id": "rf-1768767717862-wfb2ia4c9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T20:21:57.859Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,11 +997,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-24T07:19:31.295Z"
+  "lastUpdated": "2026-01-24T08:25:43.661Z"
 }
