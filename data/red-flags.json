@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The termination of child care programs may indicate a larger issue.",
+      "insight": "Potential pattern of mismanagement or fraud in child care programs.",
+      "entities": [
+        "Minnesota DHS",
+        "child care programs"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "Star Tribune",
+      "sourceUrl": "https://startribune.com/2026-01-24/ramstad-readers-join-my-appeal-to-focus-on-state-services-but-fraud-dominates-their-emotions",
+      "id": "rf-1769275048107-j80rzrg6q",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-24T17:17:28.104Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI investigation into the death of Jim Irsay, former owner of the Indianapolis Colts",
       "insight": "This suggests potential wrongdoing or suspicious circumstances surrounding Irsay's death.",
@@ -968,34 +988,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-19T06:37:06.070Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of funding for low-income families in Onondaga County",
-      "insight": "This could be a sign of larger issues with funding and oversight.",
-      "entities": [
-        "Onondaga County",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Central Current",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSE9QVTdSMXg4MTJKdzVUSVdkSHR3MlFxNTBuMlE0V1ZPZmtDd0d2eU5hRXdubUhkOEJzZDRfM0JDa3M2aWFGNlBVbUphMU82M05xNEZEQXVRemhETU5yNFRZVHRJeTF0M0dZS204b3BEOFpqcTA3dzhPX3BwSE5VblVBTGx1Qjc1MnBlVHphdWpndUh1NFRWS2syVndzTENqQ3FhcEVXTWhUY1k?oc=5",
-      "id": "rf-1768800695976-8wosew3ty",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T05:31:35.973Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1016,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-24T16:23:11.674Z"
+  "lastUpdated": "2026-01-24T17:17:28.104Z"
 }
