@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-19T15:25:23.101Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-19T16:27:54.573Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-24T06:30:12.228Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-24T07:19:31.293Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Owner of St. Cloud Autism Center connected to?",
-    "Where did the $7B allegedly go in Minnesota Fraud Investigation?",
     "Where did the $7B allegedly go in California Fraud Investigation?",
     "Where did the $millions allegedly go in Minnesota Child Care Subsidies Investigation?",
     "Where did the $ millions allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $0 allegedly go in Renee Good Shooting Investigation?",
     "What other organizations is Keith Ellison connected to?",
-    "Where did the N/A allegedly go in Renee Good investigation?"
+    "Where did the N/A allegedly go in Renee Good investigation?",
+    "What specific allegations exist against Keith Ellison?",
+    "Where did the $1M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 513,
-    "articlesProcessed": 25500,
-    "redFlagsFound": 605,
+    "totalScans": 514,
+    "articlesProcessed": 25550,
+    "redFlagsFound": 606,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $7 billion allegedly go in California fraud?",
-        "What other organizations is Trump Administration Officials connected to?",
-        "What other organizations is Owner of St. Cloud Autism Center connected to?"
+        "What other organizations is Owner of St. Cloud Autism Center connected to?",
+        "Where did the $7B allegedly go in Minnesota Fraud Investigation?",
+        "Where did the $7B allegedly go in California Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-24T06:30:12.228Z",
-  "lastUpdated": "2026-01-24T06:30:12.229Z"
+  "lastReflection": "2026-01-24T07:19:31.293Z",
+  "lastUpdated": "2026-01-24T07:19:31.293Z"
 }
