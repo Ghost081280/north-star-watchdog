@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI investigation into the death of Jim Irsay, former owner of the Indianapolis Colts",
+      "insight": "This suggests potential wrongdoing or suspicious circumstances surrounding Irsay's death.",
+      "entities": [
+        "Jim Irsay",
+        "Indianapolis Colts",
+        "FBI"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "nbcchicago.com",
+      "sourceUrl": "https://www.nbcchicago.com/news/local/colts-confirm-fbi-has-opened-investigation-into-death-of-former-owner-jim-irsay/3491439/",
+      "id": "rf-1769258300321-pwozpank7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-24T12:38:20.318Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "FBI agent resigns after trying to investigate the shooting of Renee Good",
       "insight": "This resignation raises concerns about the integrity of the investigation and potential interference from federal authorities. Further investigation is needed to determine the circumstances surrounding the resignation.",
@@ -967,41 +988,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-19T05:31:35.973Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ is investigating Minnesota officials over alleged immigration enforcement obstruction.",
-      "insight": "This could indicate potential corruption or obstruction at the state level.",
-      "entities": [
-        "Minnesota",
-        "DOJ"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "prismedia.ai",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOGFETWtBdDZmV25Cb1U5cjdEeDZtOUF0ZWdCc1NBd0lTOVNtV2ZIMmdjLTYxMkdUT0ZiY1J1Qmx4WWpNOWpFRFJ1eTVmcF9VWEF5bzZxX0ZnT05mSEFaWUZMVWFGUGQ2LXFiQWtFSmhkUEJzSVhuV3l4Rno4bF9mZXAzRVhPLTlVeDc3d2NmMmtxS1NtZE43UDRPRTFHWWtkVE1WenRoZzZRQUFGUFhJ",
-      "id": "rf-1768774758946-61ebzaq86",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-18T22:19:18.943Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-24T11:17:17.983Z"
+  "lastUpdated": "2026-01-24T12:38:20.318Z"
 }
