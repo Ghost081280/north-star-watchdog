@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-20T07:27:05.238Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-20T08:30:40.899Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-24T20:21:18.430Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-24T21:17:51.483Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 527,
-    "articlesProcessed": 26200,
-    "redFlagsFound": 619,
+    "totalScans": 528,
+    "articlesProcessed": 26250,
+    "redFlagsFound": 621,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Keith Ellison connected to?",
-        "Where did the N/A allegedly go in Renee Good investigation?",
-        "What specific allegations exist against Keith Ellison?"
+        "What specific allegations exist against Keith Ellison?",
+        "Where did the $1M allegedly go in Feeding Our Future?",
+        "Where did the None allegedly go in Renee Good Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-24T20:21:18.430Z",
-  "lastUpdated": "2026-01-24T20:21:18.430Z"
+  "lastReflection": "2026-01-24T21:17:51.483Z",
+  "lastUpdated": "2026-01-24T21:17:51.484Z"
 }
