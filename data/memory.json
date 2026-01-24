@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-19T12:46:09.598Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-19T13:44:28.111Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-24T03:26:15.847Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-24T04:34:57.945Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 21,
+      "count": 22,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-22T10:26:20.629Z"
+      "lastSeen": "2026-01-24T04:34:57.946Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 38,
+      "count": 39,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-22T16:34:46.697Z"
+      "lastSeen": "2026-01-24T04:34:57.946Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 510,
-    "articlesProcessed": 25350,
-    "redFlagsFound": 602,
+    "totalScans": 511,
+    "articlesProcessed": 25400,
+    "redFlagsFound": 604,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ millions allegedly go in Minnesota Medicaid fraud scandal?",
-        "Where did the None allegedly go in FBI investigation into Jim Irsay's death?",
-        "Where did the $7 billion allegedly go in California fraud?"
+        "Where did the $7 billion allegedly go in California fraud?",
+        "What other organizations is Trump Administration Officials connected to?",
+        "What other organizations is Owner of St. Cloud Autism Center connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-24T03:26:15.847Z",
-  "lastUpdated": "2026-01-24T03:26:15.848Z"
+  "lastReflection": "2026-01-24T04:34:57.945Z",
+  "lastUpdated": "2026-01-24T04:34:57.946Z"
 }
