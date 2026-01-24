@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Excessive increase in net worth",
+      "description": "Ilhan Omar's net worth increased by 3,500% in a short period, raising concerns about potential corruption or fraud.",
+      "insight": "This significant increase in net worth warrants further investigation to determine the source of the funds and whether any laws were broken.",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/politics/ilhan-omar-investigation-net-worth",
+      "id": "rf-1769279327435-en26norer",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-24T18:28:47.432Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The termination of child care programs may indicate a larger issue.",
       "insight": "Potential pattern of mismanagement or fraud in child care programs.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-24T17:17:28.104Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -968,41 +987,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-19T07:27:56.423Z",
       "isNew": false
-    },
-    {
-      "type": "Lack of Transparency",
-      "description": "The DOJ's decision not to investigate the shooting of Renee Good has raised concerns about transparency and accountability.",
-      "insight": "This lack of transparency may indicate a larger pattern of covering up wrongdoing within the ICE and DOJ. Further investigation is needed to determine the extent of this issue.",
-      "entities": [
-        "DOJ",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/ice-shooting-minneapolis-renee-good/",
-      "id": "rf-1768804626073-n4lkmgb3g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T06:37:06.070Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-24T17:17:28.104Z"
+  "lastUpdated": "2026-01-24T18:28:47.432Z"
 }
