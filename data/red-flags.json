@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The Trump administration's connection of the Minneapolis shooting to 'massive Monetary Fraud' in the state",
+      "insight": "This appears to be an attempt to deflect attention from the shooting and shift focus to unrelated allegations of fraud. Further investigation is needed to determine if there is any basis for these claims.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 60,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/hill-report/485311-trump-connects-minneapolis-shooting-with-fraud-in-state",
+      "id": "rf-1769296750540-0i4sb3xdt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-24T23:19:10.537Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "A federal investigation into Frank Carone, a Brooklyn power broker, has been launched. The details of the investigation are unknown.",
       "insight": "This investigation may be connected to larger patterns of corruption and fraud in the state. Further research is needed to determine the extent of Carone's involvement and potential connections to other entities.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-24T22:19:19.294Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential police misconduct",
@@ -966,41 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-19T17:23:19.653Z",
       "isNew": false
-    },
-    {
-      "type": "DOJ investigation",
-      "description": "The DOJ's decision not to investigate the ICE agent's fatal shooting of Renee Good contrasts with previous investigations, such as the George Floyd case.",
-      "insight": "This decision may indicate a discrepancy in how similar cases are handled by the DOJ, potentially leading to concerns about justice and equality.",
-      "entities": [
-        "DOJ",
-        "ICE agent"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The Guardian",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNXZOQ1FqSkx3N0pUM1lsRHc4TWNvMDZmc3IzbGxfZWZJRndZRk1kTTlVbHBBMkpkV0lTdjZOUU9WU1pXeEhnZ1JLUkt3Wk1paVNxV1hlWTJRdTZBMnRpODFkQ2U4VU93aktHSVQ0Yk5mYklpbXh1MDktTmVIRU9QZWEzbkFDVGRVc0toV2ZxWVpYNjlhY08xM3Y0cjQzSjNocTBKOGpKMTN1dw?oc=5",
-      "id": "rf-1768836323106-rq09njm9a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T15:25:23.103Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-24T22:19:19.294Z"
+  "lastUpdated": "2026-01-24T23:19:10.537Z"
 }
