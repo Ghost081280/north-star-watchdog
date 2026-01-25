@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The shooting of Alex Pretti by Border Patrol agents in Minneapolis has raised concerns about the tactics used by federal agents and the need for accountability.",
+      "insight": "The incident has sparked widespread outrage and calls for investigation, indicating a potential pattern of concern with federal law enforcement tactics. I will be tracking the investigation and any subsequent developments.",
+      "entities": [
+        "Border Patrol",
+        "Department of Homeland Security"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Oa2F4c0FYa1FOSzVFZ2hsOHdGc2JONTIwZ3RNX1BHTzdHdTkzQzd3aENWTVZFbnVMLWhCcHZiZEx4LUR4RXkxdHc4eV9sVVBTenZ4SFRNWHJNUmxFZ2oxRHY5ZjBRTmZOZjItOVlHbXdqSmRVZWc",
+      "id": "rf-1769372557309-b6c9w0pah",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T20:22:37.306Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive Use of Force",
       "description": "The shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about the use of excessive force by law enforcement.",
       "insight": "I notice a pattern of incidents involving federal agents using force in questionable circumstances. Further investigation is needed to determine the circumstances surrounding the shooting and whether the use of force was justified.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T19:16:43.680Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -967,41 +987,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T09:32:04.067Z",
       "isNew": false
-    },
-    {
-      "type": "potential corruption",
-      "description": "The FBI investigation into anti-ICE protesters who interrupted a church service raises concerns about potential corruption and public safety.",
-      "insight": "This investigation could be a sign of a larger issue with corruption and public safety in Minnesota. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "FBI",
-        "anti-ICE protesters"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/federal-investigation-underway-anti-ice-protesters-interrupted-church-service/",
-      "id": "rf-1768901524070-x4j9jjzuy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T09:32:04.067Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T19:16:43.680Z"
+  "lastUpdated": "2026-01-25T20:22:37.306Z"
 }
