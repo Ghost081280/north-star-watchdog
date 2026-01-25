@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-20T18:35:22.505Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-20T20:12:12.271Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-25T09:20:53.041Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-25T10:20:52.917Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is US-based Nigerian woman connected to?",
     "Where did the unknown allegedly go in Minnesota childcare investigation?",
     "What specific allegations exist against Renee Good?",
     "What other organizations is FBI Agent (unnamed) connected to?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Federal Investigation into Frank Carone?",
     "Where did the None allegedly go in Minneapolis Shooting Investigation?",
     "Where did the None allegedly go in Federal Freeze of Public Health Funds?",
-    "Where did the $0 allegedly go in Federal Agent's Killing of Minneapolis Resident?"
+    "Where did the $0 allegedly go in Federal Agent's Killing of Minneapolis Resident?",
+    "What other organizations is Alex Pretti connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 538,
-    "articlesProcessed": 26750,
-    "redFlagsFound": 632,
+    "totalScans": 539,
+    "articlesProcessed": 26800,
+    "redFlagsFound": 633,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
         "What other organizations is US-based Nigerian woman connected to?",
-        "Where did the unknown allegedly go in Minnesota childcare investigation?"
+        "Where did the unknown allegedly go in Minnesota childcare investigation?",
+        "What specific allegations exist against Renee Good?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-25T09:20:53.041Z",
-  "lastUpdated": "2026-01-25T09:20:53.042Z"
+  "lastReflection": "2026-01-25T10:20:52.917Z",
+  "lastUpdated": "2026-01-25T10:20:52.917Z"
 }
