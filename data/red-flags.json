@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of force and handling of evidence. A federal judge has blocked the Trump administration from 'destroying or altering' evidence related to the incident.",
+      "insight": "This red flag indicates a potential pattern of excessive force by federal agents and a need for transparency in their actions.",
+      "entities": [
+        "Alex Pretti",
+        "Federal Agents"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/opinion/crime/510111-federal-judge-blocks-trump-admin-from-destroying-or-altering-evidence-after-fatal-minneapolis-shooting",
+      "id": "rf-1769358258529-ayqkmzlxe",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T16:24:18.527Z",
+      "isNew": true
+    },
+    {
       "type": "visa scam",
       "description": "A second secretary of the Federal Board of Revenue (FBR) has been implicated in a visa scam, highlighting concerns about corruption within government agencies.",
       "insight": "This incident suggests a potential pattern of corruption within government agencies, particularly in the issuance of visas.",
@@ -965,31 +985,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T07:27:05.240Z",
       "isNew": false
-    },
-    {
-      "type": "Potential enabling of fraud",
-      "description": "Allegations of enabling welfare fraud by Governor Tim Walz",
-      "insight": "I suspect a pattern of neglect or corruption within the Minnesota state government, allowing welfare fraud to occur. Further investigation into the allegations against Governor Tim Walz is necessary.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NewsNation",
-      "sourceUrl": "https://www.newsnationnow.com/us-news/minnesota/tim-walz-enabling-fraud-minnesota/",
-      "id": "rf-1768890871588-v59k2i4fd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T06:34:31.585Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -999,6 +998,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T15:19:50.981Z"
+  "lastUpdated": "2026-01-25T16:24:18.527Z"
 }
