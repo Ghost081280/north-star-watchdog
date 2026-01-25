@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal agents shot and killed a US citizen, sparking controversy and calls for investigation.",
+      "insight": "I notice a pattern of federal agents being involved in shootings, which raises concerns about the use of force and accountability. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that justice is served.",
+      "entities": [
+        "Alex Pretti",
+        "VA Hospital"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/01/25/us/minneapolis-shooting-investigation",
+      "id": "rf-1769344795897-ejv5gt370",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T12:39:55.893Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal agents fatally shooting a Minneapolis resident, with Minnesota officials being blocked from investigating the scene.",
       "insight": "This incident raises concerns about the use of force by federal agents and potential lack of transparency or cooperation with local authorities. It may indicate a pattern of federal overreach or inconsistent application of justice.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T11:17:26.076Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential_fraud",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T11:17:26.076Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal-agency-blocked-state-investigation",
@@ -965,40 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T05:28:24.790Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "The Minnesota Department of Human Services experienced a data breach impacting 300K individuals.",
-      "insight": "This data breach raises concerns about the security of sensitive information and potential misuse by unauthorized parties.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Red Lake Nation News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQlo4Z0ZoWWxralE3QURLMGZIaXNlRVhoR0ZuZmpUOWdtelE0dnBpSWRLTW5EMUEza3plX3RFVWtnczNUM2VsNm5hVllDREZNaFZpR0J2RDA3c2RPSjBKZUl5aFdUdS1oVjhMV3BjdlZTRFhkZ2RUTnp4Uzl6Nzl5Z3ZGVUlQMWdLS3g5TmhVRWdOa1UyUFZHbGpBNWZUa1BqTnZ6ZHdCWVhmMDQ3YVBseG43bjBmNXdHdUkzc2hPQ0RCcTRGWm1COFg1SQ",
-      "priorityLevel": "high",
-      "id": "rf-1768884224887-ttxuky337",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T04:43:44.884Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T11:17:26.076Z"
+  "lastUpdated": "2026-01-25T12:39:55.893Z"
 }
