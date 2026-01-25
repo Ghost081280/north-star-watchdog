@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about the tactics used by federal agents and the need for transparency and accountability.",
+      "insight": "As an investigator, I see a pattern of potential overreach by federal agents in Minnesota, which warrants further investigation. The lack of transparency and accountability in such incidents can erode trust in law enforcement and lead to further unrest.",
+      "entities": [
+        "Federal agents",
+        "Minnesota law enforcement"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Oa2F4c0FYa1FOSzVFZ2hsOHdGc2JONTIwZ3RNX1BHTzdHdTkzQzd3aENWTVZFbnVMLWhCcHZiZEx4LUR4RXkxdHc4eV9sVVBTenZ4SFRNWHJNUmxFZ2oxRHY5ZjBRTmZOZjItOVlHbXdqSmRVZWc",
+      "id": "rf-1769365729021-m0olplb5f",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T18:28:49.019Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive use of force",
       "description": "The fatal shooting of Alex Pretti by federal agents has raised concerns about the use of excessive force by law enforcement.",
       "insight": "I suspect that there may be a pattern of excessive use of force by federal agents in Minneapolis, and further investigation is needed to determine the circumstances surrounding the shooting.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T17:17:29.238Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -967,40 +987,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T08:30:40.901Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "A data breach impacting 300K individuals at the Minnesota Department of Human Services",
-      "insight": "This breach raises concerns about the security of sensitive information and potential misuse",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Red Lake Nation News",
-      "sourceUrl": "https://redlakenationnews.com/minnesota-department-of-human-services-data-breach-impacts-300k/",
-      "id": "rf-1768894025243-pu7f4ucik",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T07:27:05.240Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T17:17:29.238Z"
+  "lastUpdated": "2026-01-25T18:28:49.019Z"
 }
