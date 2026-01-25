@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Excessive use of force",
+      "description": "The fatal shooting of Alex Pretti by federal agents has raised concerns about the use of excessive force by law enforcement.",
+      "insight": "I suspect that there may be a pattern of excessive use of force by federal agents in Minneapolis, and further investigation is needed to determine the circumstances surrounding the shooting.",
+      "entities": [
+        "Federal agents",
+        "Minneapolis Police Department"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/minneapolis-shooting-live-updates-man-shot-killed-federal-officers-officials-say-n1436436",
+      "id": "rf-1769361449242-gsskjjq0g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T17:17:29.238Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of force and handling of evidence. A federal judge has blocked the Trump administration from 'destroying or altering' evidence related to the incident.",
       "insight": "This red flag indicates a potential pattern of excessive force by federal agents and a need for transparency in their actions.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T16:24:18.527Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "visa scam",
@@ -966,25 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T07:27:05.240Z",
       "isNew": false
-    },
-    {
-      "type": "corruption allegations",
-      "description": "Corruption allegations against a Detroit judge and potential links to Minnesota",
-      "insight": "These allegations suggest a larger issue with corruption that may need to be investigated further",
-      "entities": [
-        "Detroit judge"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Detroit News",
-      "sourceUrl": "https://thedetroitnews.com/indictment-looms-in-fbi-corruption-probe-targeting-detroit-judge/",
-      "id": "rf-1768894025243-0ss787dhm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T07:27:05.240Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T16:24:18.527Z"
+  "lastUpdated": "2026-01-25T17:17:29.238Z"
 }
