@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-20T14:29:58.318Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-20T15:30:19.956Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-25T05:27:55.776Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-25T06:30:13.462Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 534,
-    "articlesProcessed": 26550,
-    "redFlagsFound": 626,
+    "totalScans": 535,
+    "articlesProcessed": 26600,
+    "redFlagsFound": 628,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jim Irsay connected to?",
         "What specific allegations exist against Jim Irsay?",
-        "What other organizations is Gavin Newsom connected to?"
+        "What other organizations is Gavin Newsom connected to?",
+        "Are any of these 3 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-25T05:27:55.776Z",
-  "lastUpdated": "2026-01-25T05:27:55.776Z"
+  "lastReflection": "2026-01-25T06:30:13.462Z",
+  "lastUpdated": "2026-01-25T06:30:13.463Z"
 }

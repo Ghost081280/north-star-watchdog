@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal shooting",
+      "description": "Federal agents shot and killed a man in Minneapolis, raising concerns about excessive force and potential patterns of behavior.",
+      "insight": "This incident raises concerns about federal law enforcement actions and potential patterns of excessive force. The fact that Minnesota officials were blocked from investigating the scene adds to the concern.",
+      "entities": [
+        "Federal Agents",
+        "Minnesota Officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/minneapolis-shooting-live-updates-man-shot-killed-federal-officers-officials-say-n1256821",
+      "id": "rf-1769322613466-ug2cxmb2d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T06:30:13.464Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The Trump administration's connection of the Minneapolis shooting to 'massive Monetary Fraud' in the state",
       "insight": "This appears to be an attempt to deflect attention from the shooting and shift focus to unrelated allegations of fraud. Further investigation is needed to determine if there is any basis for these claims.",
@@ -966,41 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-19T21:19:01.763Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "DOJ investigation into Minnesota church protest",
-      "insight": "This indicates a potential connection between the protest and a larger investigation into civil rights or law enforcement issues in Minnesota.",
-      "entities": [
-        "DOJ",
-        "Minnesota church"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "Baptist Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTTJQTldWOXRsM3lRSEVYZW1lT2lLRmQ3YzNMdkhLQlNwUTJoZ09iUEw4RnI0cURPQjZsS0NnWV82TWdVQnNWblpNN09QRWczUXFmYTFmMy10YWNBS0hESkdldGYtOUVoSDhjWTJSOWJDQkFJVmNpRDlHRHV6ZmlnSEdtVk02ajhXMGIwT3NORFNWVEVuLUxQLWZ2c0lsd2l4ckRsazN5V2pfYm42VUdKN3R3",
-      "id": "rf-1768843399656-v1v8q6pfn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T17:23:19.653Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T05:27:55.778Z"
+  "lastUpdated": "2026-01-25T06:30:13.464Z"
 }
