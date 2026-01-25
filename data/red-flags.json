@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The termination of a program or funding can have significant impacts on the individuals or communities that rely on it.",
+      "insight": "The termination of programs or funding can be a red flag for potential corruption or misuse of funds, and should be investigated further.",
+      "entities": [
+        "Program administrators",
+        "Government officials"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "",
+      "sourceUrl": "",
+      "id": "rf-1769347926694-61wg1trd4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T13:32:06.691Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal agents shot and killed a US citizen, sparking controversy and calls for investigation.",
       "insight": "I notice a pattern of federal agents being involved in shootings, which raises concerns about the use of force and accountability. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that justice is served.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T12:39:55.893Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -965,41 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T05:28:24.790Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into anti-ICE activity",
-      "description": "The DOJ has opened an investigation into anti-ICE activity in Minnesota",
-      "insight": "This investigation suggests that anti-ICE activity may be escalating and potentially leading to further conflict.",
-      "entities": [
-        "DOJ",
-        "Minnesota"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Fox Business",
-      "sourceUrl": "https://foxbusiness.com/not-surprising-doj-has-opened-an-investigation-into-anti-ice-activity-in-minnesota-gregg-jarrett",
-      "id": "rf-1768886904793-u3fqrzumk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T05:28:24.790Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T12:39:55.893Z"
+  "lastUpdated": "2026-01-25T13:32:06.691Z"
 }
