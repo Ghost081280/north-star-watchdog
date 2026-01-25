@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation blockage",
+      "description": "Minnesota officials say they've been blocked from investigating the scene of the Minneapolis shooting",
+      "insight": "This blockage raises concerns about the transparency and accountability of federal investigations. It may indicate a larger pattern of obstruction or cover-up.",
+      "entities": [
+        "Federal Bureau of Investigation",
+        "Minnesota state officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/homenews/state-watch/543123-minnesota-officials-say-theyve-been-blocked-from-investigating-scene-of",
+      "id": "rf-1769329591855-nwos0rj3u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T08:26:31.852Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal agents have been involved in several shootings in Minnesota, raising concerns about accountability and transparency.",
       "insight": "The involvement of federal agents in multiple shootings in a short period suggests a need for closer scrutiny of their actions and potential systemic issues within law enforcement agencies.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T07:21:21.312Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal shooting",
@@ -966,41 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T01:29:36.291Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The DOJ is investigating a protest at a Minnesota church that targeted an ICE field director, and Don Lemon is under investigation for his role in the protest.",
-      "insight": "This investigation raises concerns about the use of federal power to target individuals and organizations, and the potential for abuse of authority. Further investigation is needed to determine the extent of the DOJ's involvement and the implications for free speech and assembly.",
-      "entities": [
-        "Don Lemon",
-        "ICE field director"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/01/19/politics/doj-investigates-minnesota-church-protest/index.html",
-      "id": "rf-1768864807991-ol7q52oyz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-19T23:20:07.988Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T07:21:21.312Z"
+  "lastUpdated": "2026-01-25T08:26:31.852Z"
 }
