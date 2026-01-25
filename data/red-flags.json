@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal-agency-blocked-state-investigation",
+      "description": "Federal officials have blocked Minnesota officials from investigating the scene of the shooting",
+      "insight": "This could indicate a cover-up or lack of transparency",
+      "entities": [
+        "Federal Agents",
+        "Minnesota Officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://www.hill.com/opinion/state-affairs/516111-minnesota-official-says-feds-blocked-state-bureau-from-investigating-scene-of-latest-shooting",
+      "id": "rf-1769332853047-jg7ypqh30",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T09:20:53.044Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation blockage",
       "description": "Minnesota officials say they've been blocked from investigating the scene of the Minneapolis shooting",
       "insight": "This blockage raises concerns about the transparency and accountability of federal investigations. It may indicate a larger pattern of obstruction or cover-up.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-25T08:26:31.852Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -966,41 +986,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T03:43:08.288Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-up",
-      "description": "The FBI's investigation into Renee Good's killing initially focused on the ICE agent involved, but then shifted to her and those around her, raising concerns about a potential cover-up.",
-      "insight": "I suspect that the FBI's investigation may be compromised, and it's essential to investigate further to ensure accountability and transparency.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/01/19/politics/fbi-probe-renee-good-ice/index.html",
-      "id": "rf-1768872576294-7m5lxxqm4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T01:29:36.291Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T08:26:31.852Z"
+  "lastUpdated": "2026-01-25T09:20:53.044Z"
 }
