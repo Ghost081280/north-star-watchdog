@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal agents fatally shooting a Minneapolis resident, with Minnesota officials being blocked from investigating the scene.",
+      "insight": "This incident raises concerns about the use of force by federal agents and potential lack of transparency or cooperation with local authorities. It may indicate a pattern of federal overreach or inconsistent application of justice.",
+      "entities": [
+        "Federal Agency (e.g., ICE or Border Patrol)",
+        "Minnesota Officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUDR2YzlDa3NHRkE5YVU2YzN2TzhaVTJ5Y0l0VEhiSldrYnZDMlhLbzhjMHJEN2J6Q2pBNk5iUnhLaDZBcEM0NkhMeGs3dlhDSmVZV0lndlRaaWVOLUY2VjhKVmpVRVBaOFJzVHNmT0N6RDJDVkVSdzRzWmZENGplQTI0c3l5aW9jQ2pKbUZDWUhtQURJYVBLVlVZV3JrbG9OblNr?oc=5",
+      "id": "rf-1769339846079-nv35e31up",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T11:17:26.076Z",
+      "isNew": true
+    },
+    {
+      "type": "potential_fraud",
+      "description": "The Trump administration's freezing and reversal of public health funds for states may indicate potential mismanagement or fraud in the allocation of funds.",
+      "insight": "This controversy may indicate a need for closer scrutiny of how public health funds are allocated and managed. Potential fraud or mismanagement could have significant impacts on public health services.",
+      "entities": [
+        "Trump Administration",
+        "Public Health Departments"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "The Washington Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNzFlbDUwTTMwMUtJZW5HclNqZEx1OWVwa24za2ZRRGdCSEFJekdkTVhYWU1VZ2F6M0FOQzM1NjBUWjZndUFKUnNvYjcxWFQ1OGhHb2pfejZuSHJYaF9Cd0V3QnE0MzBZa3Z5YWhnU01tZFhPYkxsR1VKdmU1V1RWc3RsTFVnUGZ5?oc=5",
+      "id": "rf-1769339846079-xxzw8gtvb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-25T11:17:26.076Z",
+      "isNew": true
+    },
+    {
       "type": "federal-agency-blocked-state-investigation",
       "description": "Federal officials have blocked Minnesota officials from investigating the scene of the shooting",
       "insight": "This could indicate a cover-up or lack of transparency",
@@ -945,61 +985,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T04:43:44.884Z",
       "isNew": false
-    },
-    {
-      "type": "civil rights allegations",
-      "description": "The FBI is investigating an ICE officer who shot and killed Renee Good.",
-      "insight": "This investigation raises concerns about potential civil rights violations and the use of excessive force by law enforcement agencies.",
-      "entities": [
-        "FBI",
-        "ICE"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQWjhmNmZ5dnhtSGtPM0VzVDY4dEZleTBsMGpjbEUzY0RfMHJoRWpGWnNvWEVSdUZ0RW5MWUEtd1dXYWpDaTRQX2FRM3NkTGxtMWtZWlg0NjZpWmQ1QmFrcUZXNHZmOFVjNDRMazJKWnFvYXJrQXc5UEs5SjVXYTJBVm5ic3JUdHFCTDM1dDVoa0puMm8ydVFwYkFhNzlVMUNibHNKQVBPSXlhYXM3eUdiY2s7cXFBY3hoa1ZGeHBvS1RzdzdORHB1dVRTSTlaZWdlNXM1MHFrSC0wMHlMMWxrUl9DRU5uc3BCdXdsSDFXeElacHZjcGVLdkJQbXZDUjEwMHVRTHdCeEhqdDNYR29sM3ExczFGam4xeFYwYVJDcVl5ZFJGbkhMa0dDemRIX0VEQ1ZxTlFvajQ",
-      "priorityLevel": "high",
-      "id": "rf-1768884224887-89f620uv4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T04:43:44.884Z",
-      "isNew": false
-    },
-    {
-      "type": "excessive force",
-      "description": "Allegations of excessive force by an ICE officer in the death of Renee Good",
-      "insight": "This incident raises concerns about the use of force by ICE officers and the need for increased accountability. Further investigation is needed to determine the circumstances surrounding Good's death.",
-      "entities": [
-        "ICE",
-        "Renee Good"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/01/20/politics/fbi-probe-renee-good-killing-ice-agent/index.html",
-      "id": "rf-1768880588291-10edohczf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T03:43:08.288Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1017,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-25T10:20:52.918Z"
+  "lastUpdated": "2026-01-25T11:17:26.076Z"
 }
