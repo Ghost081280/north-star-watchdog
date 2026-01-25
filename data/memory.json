@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-21T08:30:20.838Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-01-21T09:31:52.148Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-25T20:22:37.304Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-25T21:18:44.057Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 39,
+      "count": 40,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-24T04:34:57.946Z"
+      "lastSeen": "2026-01-25T21:18:44.057Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota daycare fraud scandal?",
     "Where did the None allegedly go in ICE shooting investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Frank Carone connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the N/A allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the N/A allegedly go in Minnesota Official Investigation?",
-    "Where did the None allegedly go in Alex Pretti Shooting Investigation?"
+    "Where did the None allegedly go in Alex Pretti Shooting Investigation?",
+    "Where did the Unknown allegedly go in Frank Carone Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 549,
-    "articlesProcessed": 27300,
-    "redFlagsFound": 646,
+    "totalScans": 550,
+    "articlesProcessed": 27350,
+    "redFlagsFound": 648,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-25T20:22:37.304Z",
-  "lastUpdated": "2026-01-25T20:22:37.305Z"
+  "lastReflection": "2026-01-25T21:18:44.057Z",
+  "lastUpdated": "2026-01-25T21:18:44.057Z"
 }
