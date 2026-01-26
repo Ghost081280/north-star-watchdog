@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The fatal shooting of Alex Pretti and the subsequent immigration crackdown in Minnesota have raised concerns about the use of force by federal agents and the potential for abuse of power.",
+      "insight": "I am concerned about the lack of transparency and accountability in the investigation into Alex Pretti's shooting. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that those responsible are held accountable.",
+      "entities": [
+        "Alex Pretti",
+        "Tom Homan"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/alex-pretti-shooting-minnesota-trump-tom-homan/",
+      "id": "rf-1769441306203-dw7903m2k",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T15:28:26.200Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "There are calls for a fuller investigation into the Minneapolis killing of Alex Pretti, which could potentially lead to changes in ICE policies or procedures.",
       "insight": "This could be a sign of a larger issue with the use of force by immigration authorities. I would investigate further to see if there are any connections to fraud or mismanagement.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T14:27:46.453Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell_company",
@@ -974,41 +994,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T22:23:41.465Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Federal operation underway in Highland Park relating to 'criminal investigation'",
-      "insight": "Possible connection to immigration obstruction probe",
-      "entities": [
-        "DOJ",
-        "ICE"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "lakemchenryscanner.com",
-      "sourceUrl": "https://lakemchenryscanner.com/2026/01/21/federal-operation-underway-in-highland-park-relating-to-criminal-investigation-blocks-from-high-school/",
-      "id": "rf-1769027393983-0tdz3f9wi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T20:29:53.980Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T14:27:46.453Z"
+  "lastUpdated": "2026-01-26T15:28:26.200Z"
 }
