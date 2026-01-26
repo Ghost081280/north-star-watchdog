@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "There are calls for a fuller investigation into the Minneapolis killing of Alex Pretti, which could potentially lead to changes in ICE policies or procedures.",
+      "insight": "This could be a sign of a larger issue with the use of force by immigration authorities. I would investigate further to see if there are any connections to fraud or mismanagement.",
+      "entities": [
+        "ICE",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-live-updates.html",
+      "id": "rf-1769437666456-39zt2mx11",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T14:27:46.453Z",
+      "isNew": true
+    },
+    {
       "type": "shell_company",
       "description": "A single Minnesota building was linked to $380 million in Medicaid billing, raising questions about the legitimacy of the company and its activities.",
       "insight": "This appears to be a potential case of Medicaid fraud, with a large amount of money being billed through a single building. I would investigate further to see if there are any connections to other entities or individuals.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T13:43:25.293Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Cover-up",
@@ -974,26 +994,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T20:29:53.980Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Minnesota officials, including Gov. Tim Walz, in an ICE obstruction investigation",
-      "insight": "This could indicate a larger pattern of corruption and obstruction of justice",
-      "entities": [
-        "Gov. Tim Walz",
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Christian Post",
-      "sourceUrl": "https://www.christianpost.com/2026/01/21/doj-subpoenas-gov-tim-walz-minnesota-officials-in-ice-obstruction-investigation/",
-      "id": "rf-1769018055342-k4jecbal5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T17:54:15.339Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T13:43:25.293Z"
+  "lastUpdated": "2026-01-26T14:27:46.453Z"
 }
