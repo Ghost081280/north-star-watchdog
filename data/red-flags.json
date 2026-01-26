@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential cover-up",
+      "description": "Witness accounts of the Minneapolis shooting are at odds with official statements, raising concerns about a potential cover-up.",
+      "insight": "I suspect that there may be a deliberate attempt to mislead the public about the circumstances surrounding the shooting. Further investigation is needed to uncover the truth.",
+      "entities": [
+        "Trump administration",
+        "Minneapolis police department"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-shooting-witness-accounts-at-odds-with-official-statements/",
+      "id": "rf-1769448529952-6m2owpkva",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T17:28:49.948Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The fatal shooting of Alex Pretti and the subsequent immigration crackdown in Minnesota have raised concerns about the use of force by federal agents and the potential for abuse of power.",
       "insight": "I am concerned about the lack of transparency and accountability in the investigation into Alex Pretti's shooting. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that those responsible are held accountable.",
@@ -975,29 +995,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-22T18:31:21.847Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Minnesota human services department breach impacting over 300K individuals",
-      "insight": "This breach could be a sign of systemic issues within the department. Investigate potential connections to other breaches or fraud cases.",
-      "entities": [
-        "Minnesota human services department"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "SC Media",
-      "sourceUrl": "https://www.scmagazine.com/minnesota-human-services-department-breach-impacts-over-300k-individuals",
-      "id": "rf-1769034221468-1laliczkw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T22:23:41.465Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1023,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T16:32:47.458Z"
+  "lastUpdated": "2026-01-26T17:28:49.948Z"
 }
