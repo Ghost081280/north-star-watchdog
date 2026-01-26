@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "A single Minnesota building was linked to $380 million in Medicaid billing, raising questions about the legitimacy of the company and its activities.",
+      "insight": "This appears to be a potential case of Medicaid fraud, with a large amount of money being billed through a single building. I would investigate further to see if there are any connections to other entities or individuals.",
+      "entities": [
+        "Minnesota building",
+        "Medicaid billing"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "International Business Times UK",
+      "sourceUrl": "https://www.ibtimes.com/uk/single-minnesota-building-was-linked-380-million-medicaid-billing-how-was-allowed-happen",
+      "id": "rf-1769435005296-cjn3aybh6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T13:43:25.293Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Cover-up",
       "description": "The DOJ and FBI are on the sidelines in the Minneapolis shooting investigation, raising concerns about a potential cover-up.",
       "insight": "The lack of involvement by the DOJ and FBI in the investigation raises red flags about the potential for a cover-up. Further investigation is needed to determine the circumstances surrounding the shooting and the response by federal authorities.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T12:44:35.211Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Conflict of Interest",
@@ -974,26 +994,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T17:54:15.339Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement, which may indicate a larger pattern of non-compliance with federal law.",
-      "insight": "This investigation may reveal a pattern of non-compliance with federal law, potentially indicating a lack of cooperation between state and federal authorities. Further investigation is needed to determine the extent of this issue.",
-      "entities": [
-        "Governor Walz",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/01/21/justice-dept-seeks-prosecutors-minnesota-surge-serves-subpoenas/",
-      "id": "rf-1768980453961-h9tnyzs77",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T07:27:33.958Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,11 +1004,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T12:44:35.211Z"
+  "lastUpdated": "2026-01-26T13:43:25.293Z"
 }

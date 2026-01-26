@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-21T22:23:41.462Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-01-21T23:24:28.265Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-26T12:44:35.209Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-26T13:43:25.292Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 563,
-    "articlesProcessed": 28000,
-    "redFlagsFound": 660,
+    "totalScans": 564,
+    "articlesProcessed": 28050,
+    "redFlagsFound": 662,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the multi-billion dollars allegedly go in Minnesota daycare fraud scandal?",
-        "Where did the Below national average allegedly go in Minnesota Medicaid Improper Payments?",
-        "Where did the Unknown allegedly go in ICE Shooting Investigation?"
+        "Where did the Unknown allegedly go in ICE Shooting Investigation?",
+        "Where did the Unknown allegedly go in Minneapolis Shooting Investigation?",
+        "Where did the Unknown allegedly go in Medicaid Improper Payments Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-26T12:44:35.209Z",
-  "lastUpdated": "2026-01-26T12:44:35.210Z"
+  "lastReflection": "2026-01-26T13:43:25.292Z",
+  "lastUpdated": "2026-01-26T13:43:25.292Z"
 }
