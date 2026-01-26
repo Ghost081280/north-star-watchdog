@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Conflicting Statements",
+      "description": "The Trump Administration has made conflicting statements about the death of Alex Pretti, raising concerns about the transparency and accountability of the investigation.",
+      "insight": "I notice a pattern of conflicting statements from the Trump Administration, which may indicate an attempt to obscure the truth or downplay the severity of the incident. Further investigation is needed to uncover the facts and ensure accountability.",
+      "entities": [
+        "Trump Administration",
+        "Border Patrol"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/politics/trump-administration-conflicting-statements-alex-pretti.html",
+      "id": "rf-1769403363936-4sigk9ehs",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T04:56:03.932Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Cover-up",
       "description": "The Trump administration's conflicting statements on the shooting and the resignation of an FBI agent who tried to investigate the incident have raised concerns about a potential cover-up.",
       "insight": "I suspect that there may be an attempt to obscure the truth about the shooting, and further investigation is needed to uncover the facts. The resignation of the FBI agent who tried to investigate the incident is particularly concerning, as it suggests that there may be pressure to suppress the truth.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T03:56:39.187Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -971,26 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T23:21:29.293Z",
       "isNew": false
-    },
-    {
-      "type": "potential corruption",
-      "description": "The investigations into Minnesota leaders and programs suggest potential corruption and abuse of power.",
-      "insight": "The investigations suggest a pattern of potential corruption and abuse of power in Minnesota's government, which could have significant implications for the state's politics and policies.",
-      "entities": [
-        "Minnesota Governor Walz",
-        "Minnesota Mayor Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://www.apnews.com/article/us-news/politics/minnesota-governor-walz-subpoenaed-immigration-probe-4a5f4f5f",
-      "id": "rf-1768951289296-yzn7fuo93",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T23:21:29.293Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T03:56:39.187Z"
+  "lastUpdated": "2026-01-26T04:56:03.932Z"
 }
