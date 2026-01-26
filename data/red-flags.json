@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating Rep. Ilhan Omar's wealth, which could potentially lead to charges or controversy.",
+      "insight": "This investigation has the potential to uncover financial improprieties or corruption, but it also raises concerns about political bias and the legitimacy of the inquiry.",
+      "entities": [
+        "Ilhan Omar",
+        "DOJ"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://www.washingtonexaminer.com/...",
+      "id": "rf-1769452466417-3nwsmfuh1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T18:34:26.415Z",
+      "isNew": true
+    },
+    {
+      "type": "shooting investigation",
+      "description": "The shooting of Alex Pretti by Border Patrol agents is under investigation, with concerns about the use of force and potential racial bias.",
+      "insight": "This investigation has the potential to uncover systemic issues with law enforcement and the use of force, and could lead to changes in policy or procedure.",
+      "entities": [
+        "Alex Pretti",
+        "Border Patrol"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/...",
+      "id": "rf-1769452466417-fwzmtkpjv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T18:34:26.415Z",
+      "isNew": true
+    },
+    {
       "type": "potential cover-up",
       "description": "Witness accounts of the Minneapolis shooting are at odds with official statements, raising concerns about a potential cover-up.",
       "insight": "I suspect that there may be a deliberate attempt to mislead the public about the circumstances surrounding the shooting. Further investigation is needed to uncover the truth.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T17:28:49.948Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -955,46 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-23T04:42:03.030Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has launched an investigation into the death of former Indianapolis Colts owner Jim Irsay, raising questions about the circumstances surrounding his death.",
-      "insight": "As an investigator, I am concerned about the potential for foul play or other illicit activity in this case. Further investigation is needed to determine the cause of Irsay's death and to identify any potential suspects or motives.",
-      "entities": [
-        "Jim Irsay",
-        "Indianapolis Colts"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/01/22/fbi-investigating-former-colts-owners-death/11085157002/",
-      "id": "rf-1769139745629-h3gghcbpv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-23T03:42:25.626Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The federal investigation into new England schools over trans athletes.",
-      "insight": "The investigation into new England schools could have significant implications for the rights of trans athletes and the policies of schools in the region.",
-      "entities": [
-        "New England schools",
-        "trans athletes"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "baywindows.com",
-      "sourceUrl": "https://www.baywindows.com/news/national/federal-investigation-targets-new-england-schools-over-trans-athletes",
-      "id": "rf-1769106681850-a6qrf1aqt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-22T18:31:21.847Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1008,6 +1008,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1025,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T17:28:49.948Z"
+  "lastUpdated": "2026-01-26T18:34:26.415Z"
 }
