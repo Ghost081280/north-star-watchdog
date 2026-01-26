@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal-state conflict",
+      "description": "The Minnesota state government and federal agencies are at odds over the investigation into the Alex Pretti shooting, with the state pushing for a thorough probe and the feds resisting.",
+      "insight": "This conflict may indicate a larger issue with federal-state cooperation on law enforcement and oversight.",
+      "entities": [
+        "Minnesota Governor's office",
+        "Border Patrol",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news articles",
+      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-live-updates-border-patrol-shooting-protests-mn-gov-walz-epstein-files/",
+      "id": "rf-1769412435654-510v7d9t7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T07:27:15.651Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive use of force",
       "description": "The fatal shooting of Alex Pretti by a Border Patrol agent raises concerns about the use of excessive force by federal agents",
       "insight": "I notice a pattern of excessive use of force by federal agents, particularly in cases involving minorities and immigrants. This incident warrants further investigation to determine whether the agent's actions were justified and to identify any systemic issues within the agency.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T06:35:35.245Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -971,41 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T04:42:59.653Z",
       "isNew": false
-    },
-    {
-      "type": "Potential obstruction of justice",
-      "description": "The investigation into potential obstruction of immigration enforcement in Minnesota has raised concerns about potential obstruction of justice",
-      "insight": "As an investigator, I am concerned about the potential for obstruction of justice in this case. The fact that grand jury subpoenas have been served to Governor Tim Walz and other officials suggests that there may be evidence of wrongdoing. I would recommend further investigation into this matter to determine the extent of any potential obstruction.",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-immigration-minnesota-idUSKBN2A41ZT",
-      "id": "rf-1768966989938-oesov304t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T03:43:09.935Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T06:35:35.245Z"
+  "lastUpdated": "2026-01-26T07:27:15.651Z"
 }
