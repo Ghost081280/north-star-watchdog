@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "Potential Cover-up",
+      "description": "The DOJ and FBI are on the sidelines in the Minneapolis shooting investigation, raising concerns about a potential cover-up.",
+      "insight": "The lack of involvement by the DOJ and FBI in the investigation raises red flags about the potential for a cover-up. Further investigation is needed to determine the circumstances surrounding the shooting and the response by federal authorities.",
+      "entities": [
+        "DOJ",
+        "FBI",
+        "Federal Agents"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/doj-fbi-on-sidelines-in-minnesota-shooting-probe-state-vows-investigation/",
+      "id": "rf-1769431475214-gy3t2yqwx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T12:44:35.211Z",
+      "isNew": true
+    },
+    {
       "type": "Conflict of Interest",
       "description": "The Trump Administration's handling of the Alex Pretti shooting has raised concerns about a potential conflict of interest. The administration's response to the incident has been criticized, with many questioning the rush to judgment and the handling of the case.",
       "insight": "The Trump Administration's response to the Alex Pretti shooting raises concerns about a potential conflict of interest. The administration's rush to judgment and handling of the case may indicate a larger issue.",
@@ -973,30 +994,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T07:27:33.958Z",
       "isNew": false
-    },
-    {
-      "type": "DOJ investigation",
-      "description": "The DOJ is investigating Minnesota officials for potential obstruction of immigration enforcement operations.",
-      "insight": "This investigation raises concerns about the potential for corruption and abuse of power among Minnesota officials.",
-      "entities": [
-        "Gov. Walz",
-        "Mayor Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.cbsnews.com/news/doj-subpoenas-walz-frey-her-and-others-in-probe-alleging-immigration-obstruction/",
-      "id": "rf-1768977284353-2tmr0bhed",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T06:34:44.350Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1004,7 +1007,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T11:20:10.758Z"
+  "lastUpdated": "2026-01-26T12:44:35.211Z"
 }
