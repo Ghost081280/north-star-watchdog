@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Conflict of Interest",
+      "description": "The Trump Administration's handling of the Alex Pretti shooting has raised concerns about a potential conflict of interest. The administration's response to the incident has been criticized, with many questioning the rush to judgment and the handling of the case.",
+      "insight": "The Trump Administration's response to the Alex Pretti shooting raises concerns about a potential conflict of interest. The administration's rush to judgment and handling of the case may indicate a larger issue.",
+      "entities": [
+        "Trump Administration",
+        "Border Patrol"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/politics/minneapolis-shooting-investigation.html",
+      "id": "rf-1769423114823-3zvo4xshc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T10:25:14.820Z",
+      "isNew": true
+    },
+    {
       "type": "federal_involvement",
       "description": "The involvement of federal agents in the shooting and the subsequent investigation",
       "insight": "The involvement of federal agents in the shooting and the investigation raises concerns about potential federal overreach and the need for transparency and accountability.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T09:33:26.918Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Lack of Transparency",
@@ -973,31 +993,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T06:34:44.350Z",
       "isNew": false
-    },
-    {
-      "type": "Financial irregularities",
-      "description": "Wealthfront Corporation is under investigation for a $208 million net outflow.",
-      "insight": "This investigation raises concerns about potential financial mismanagement and regulatory compliance issues.",
-      "entities": [
-        "Wealthfront Corporation"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Intellectia AI",
-      "sourceUrl": "https://intellectia.ai/wealthfront-corporation-under-investigation-for-208-million-net-outflows/",
-      "id": "rf-1768977284353-8opy8t1hb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T06:34:44.350Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,7 +1005,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T09:33:26.918Z"
+  "lastUpdated": "2026-01-26T10:25:14.820Z"
 }
