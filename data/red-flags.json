@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The shooting of Alex Pretti by a Border Patrol agent is under investigation by the Department of Homeland Security's Office of Inspector General.",
+      "insight": "The investigation into the shooting of Alex Pretti raises concerns about the use of force by federal agents and potential patterns of misconduct. I will be tracking the investigation and looking for any connections to other cases or entities.",
+      "entities": [
+        "Border Patrol",
+        "Department of Homeland Security"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-live-updates.html",
+      "id": "rf-1769405565664-qy3930axx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T05:32:45.662Z",
+      "isNew": true
+    },
+    {
       "type": "Conflicting Statements",
       "description": "The Trump Administration has made conflicting statements about the death of Alex Pretti, raising concerns about the transparency and accountability of the investigation.",
       "insight": "I notice a pattern of conflicting statements from the Trump Administration, which may indicate an attempt to obscure the truth or downplay the severity of the incident. Further investigation is needed to uncover the facts and ensure accountability.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T04:56:03.932Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Cover-up",
@@ -971,41 +991,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T01:42:33.659Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ and House Committee are conducting investigations into Minnesota leaders and programs.",
-      "insight": "These investigations suggest a pattern of potential corruption and abuse of power in Minnesota's government.",
-      "entities": [
-        "Minnesota Governor Walz",
-        "Minnesota Mayor Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://www.apnews.com/article/us-news/politics/minnesota-governor-walz-subpoenaed-immigration-probe-4a5f4f5f4",
-      "id": "rf-1768951289296-842d0woj2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T23:21:29.293Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T04:56:03.932Z"
+  "lastUpdated": "2026-01-26T05:32:45.662Z"
 }
