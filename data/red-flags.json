@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Cover-up",
+      "description": "The Trump administration's conflicting statements on the shooting and the resignation of an FBI agent who tried to investigate the incident have raised concerns about a potential cover-up.",
+      "insight": "I suspect that there may be an attempt to obscure the truth about the shooting, and further investigation is needed to uncover the facts. The resignation of the FBI agent who tried to investigate the incident is particularly concerning, as it suggests that there may be pressure to suppress the truth.",
+      "entities": [
+        "Trump Administration",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-shooting-investigation.html",
+      "id": "rf-1769399799190-wiyh9kajn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T03:56:39.187Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The federal government has been criticized for its handling of the Minneapolis shooting investigation, with some calling for a more transparent and independent probe.",
       "insight": "The federal government's response to the shooting has raised concerns about accountability and transparency, potentially indicating a larger issue with their investigative processes.",
@@ -971,30 +991,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-20T23:21:29.293Z",
       "isNew": false
-    },
-    {
-      "type": "Potential shell company",
-      "description": "Unusual financial transactions involving a company with ties to Minnesota officials",
-      "insight": "I suspect that this company may be a shell company used to launder money or facilitate fraudulent activities. Further investigation is needed to determine the extent of the company's involvement.",
-      "entities": [
-        "Tim Walz",
-        "Jacob Frey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Financial records",
-      "sourceUrl": "https://www.sec.gov/edgar/searchedgar/companysearch.html",
-      "id": "rf-1768947735813-8ojjqefqd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-20T22:22:15.810Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1003,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T01:48:01.614Z"
+  "lastUpdated": "2026-01-26T03:56:39.187Z"
 }
