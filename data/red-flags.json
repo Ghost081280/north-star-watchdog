@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_involvement",
+      "description": "The involvement of federal agents in the shooting and the subsequent investigation",
+      "insight": "The involvement of federal agents in the shooting and the investigation raises concerns about potential federal overreach and the need for transparency and accountability.",
+      "entities": [
+        "Border Patrol",
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.washingtonpost.com/news/live/2026/01/26/minneapolis-live-updates-border-patrol-sidesteps-questions-about-fatal-shooting-police-chief-criticizes-agents/",
+      "id": "rf-1769420006921-82gr1djks",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T09:33:26.918Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of Transparency",
       "description": "The federal government's handling of the investigation into the fatal shooting of Alex Pretti has raised concerns about transparency and accountability.",
       "insight": "I notice a pattern of lack of transparency in the federal government's handling of investigations, particularly in cases involving law enforcement. This raises concerns about accountability and the potential for cover-ups.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T08:31:11.483Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal-state conflict",
@@ -972,41 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T06:34:44.350Z",
       "isNew": false
-    },
-    {
-      "type": "potential obstruction",
-      "description": "Minnesota officials, including Governor Walz, have been subpoenaed in an investigation into obstruction of immigration enforcement.",
-      "insight": "This could indicate a larger pattern of non-cooperation with federal authorities.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/us/minnesota-leaders-subpoenaed-us-criminal-probe-over-opposition-immigration-crackdown-2026-01-21/",
-      "id": "rf-1768973299067-nohstru4u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T05:28:19.064Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T08:31:11.483Z"
+  "lastUpdated": "2026-01-26T09:33:26.918Z"
 }
