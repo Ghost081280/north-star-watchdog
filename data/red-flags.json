@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Excessive use of force",
+      "description": "The fatal shooting of Alex Pretti by a Border Patrol agent raises concerns about the use of excessive force by federal agents",
+      "insight": "I notice a pattern of excessive use of force by federal agents, particularly in cases involving minorities and immigrants. This incident warrants further investigation to determine whether the agent's actions were justified and to identify any systemic issues within the agency.",
+      "entities": [
+        "Border Patrol",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/ice-homeland-security-investigations-branch-leading-probe-into-fatal-shooting-of-alex-pretti/",
+      "id": "rf-1769409335249-ja69pmpib",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T06:35:35.245Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The shooting of Alex Pretti by a Border Patrol agent is under investigation by the Department of Homeland Security's Office of Inspector General.",
       "insight": "The investigation into the shooting of Alex Pretti raises concerns about the use of force by federal agents and potential patterns of misconduct. I will be tracking the investigation and looking for any connections to other cases or entities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T05:32:45.662Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Conflicting Statements",
@@ -971,41 +991,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T03:43:09.935Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Obstruction of Justice",
-      "description": "The DOJ's investigation into Minnesota officials has raised concerns about potential obstruction of justice.",
-      "insight": "As an investigator, I am concerned about the potential for obstruction of justice in this case. The fact that several top Democrats in Minnesota have been subpoenaed suggests that there may be a larger issue at play.",
-      "entities": [
-        "Governor Walz",
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/justice-department-subpoenas-top-minnesota-democrats-in-federal-investigation/",
-      "id": "rf-1768959753663-9574wtdpo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T01:42:33.659Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T05:32:45.662Z"
+  "lastUpdated": "2026-01-26T06:35:35.245Z"
 }
