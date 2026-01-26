@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of Transparency",
+      "description": "The federal government's handling of the investigation into the fatal shooting of Alex Pretti has raised concerns about transparency and accountability.",
+      "insight": "I notice a pattern of lack of transparency in the federal government's handling of investigations, particularly in cases involving law enforcement. This raises concerns about accountability and the potential for cover-ups.",
+      "entities": [
+        "DHS",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/01/26/minneapolis-shooting-border-patrol/",
+      "id": "rf-1769416271486-zr2603g6s",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T08:31:11.483Z",
+      "isNew": true
+    },
+    {
       "type": "federal-state conflict",
       "description": "The Minnesota state government and federal agencies are at odds over the investigation into the Alex Pretti shooting, with the state pushing for a thorough probe and the feds resisting.",
       "insight": "This conflict may indicate a larger issue with federal-state cooperation on law enforcement and oversight.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T07:27:15.651Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Excessive use of force",
@@ -972,41 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-21T05:28:19.064Z",
       "isNew": false
-    },
-    {
-      "type": "obstruction of justice",
-      "description": "Minnesota officials have been accused of obstructing immigration enforcement, leading to an investigation and subpoenas.",
-      "insight": "This pattern of behavior raises concerns about the willingness of state officials to cooperate with federal authorities. Further investigation is needed to determine the extent of the obstruction and potential consequences.",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Justice Department",
-      "sourceUrl": "https://www.wowo.com/news/justice-department-subpoenas-walz-and-others-in-immigration-enforcement-obstruction-investigation",
-      "id": "rf-1768970579657-vi3ec2txf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-21T04:42:59.653Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T07:27:15.651Z"
+  "lastUpdated": "2026-01-26T08:31:11.483Z"
 }
