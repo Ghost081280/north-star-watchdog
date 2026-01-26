@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential cover-up",
+      "description": "The White House has claimed that ICE protests are a 'cover-up for Minneapolis fraud', which may indicate an attempt to deflect attention from the Trump administration's handling of the situation.",
+      "insight": "This statement raises concerns about the Trump administration's transparency and potential attempts to manipulate public opinion. Further investigation is needed to determine the validity of these claims.",
+      "entities": [
+        "White House",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Independent",
+      "sourceUrl": "https://www.independent.co.uk/news/world/americas/us-politics/white-house-ice-protests-minneapolis-fraud-a8843516.html",
+      "id": "rf-1769466073843-f9cv31eoa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-26T22:21:13.839Z",
+      "isNew": true
+    },
+    {
       "type": "data breach",
       "description": "A data breach impacting 300K individuals in Minnesota",
       "insight": "This could potentially lead to identity theft and other issues for those impacted",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T21:23:10.515Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T21:23:10.515Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -974,39 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-23T12:43:58.688Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A recent investigation has uncovered $9 billion in Medicaid fraud in Minnesota.",
-      "insight": "I believe that this investigation may be just the tip of the iceberg, and I recommend further research into the scope of the fraud and the individuals involved.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Sky News Australia",
-      "sourceUrl": "https://www.skynews.com.au/world-news/minnesota-medicaid-programs-infected-by-9-billion-fraud/news-story/4c bee4f2-4f4f-4f4f-4f4f-4f4f4f4f4f4f",
-      "id": "rf-1769160578179-0c7rvwz04",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-23T09:29:38.176Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T21:23:10.515Z"
+  "lastUpdated": "2026-01-26T22:21:13.839Z"
 }
