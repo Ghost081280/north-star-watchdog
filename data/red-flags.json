@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The federal investigation into the Minneapolis shooting has raised concerns about the Trump administration's handling of the incident.",
+      "insight": "I suspect that there may be a cover-up or a lack of transparency in the investigation. Further research is needed to uncover the truth.",
+      "entities": [
+        "Trump administration",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1769517914774-ad6sb18i9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T12:45:14.770Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Zipps Sports Grills searched as part of federal investigation",
       "insight": "This could indicate a larger issue with the company's practices or potential wrongdoing by government officials",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T11:22:43.437Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged violations",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T11:22:43.437Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Lack of Transparency",
@@ -974,30 +994,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T07:21:21.312Z",
       "isNew": false
-    },
-    {
-      "type": "federal shooting",
-      "description": "Federal agents shot and killed a man in Minneapolis, raising concerns about excessive force and potential patterns of behavior.",
-      "insight": "This incident raises concerns about federal law enforcement actions and potential patterns of excessive force. The fact that Minnesota officials were blocked from investigating the scene adds to the concern.",
-      "entities": [
-        "Federal Agents",
-        "Minnesota Officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/minneapolis-shooting-live-updates-man-shot-killed-federal-officers-officials-say-n1256821",
-      "id": "rf-1769322613466-ug2cxmb2d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T06:30:13.464Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,7 +1007,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T11:22:43.437Z"
+  "lastUpdated": "2026-01-27T12:45:14.770Z"
 }
