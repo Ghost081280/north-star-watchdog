@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-22T19:24:17.861Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-22T20:26:15.156Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-27T08:32:04.767Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-27T09:31:30.155Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 40,
+      "count": 41,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-25T21:18:44.057Z"
+      "lastSeen": "2026-01-27T09:31:30.155Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 581,
-    "articlesProcessed": 28900,
-    "redFlagsFound": 684,
+    "totalScans": 582,
+    "articlesProcessed": 28950,
+    "redFlagsFound": 686,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
-        "Where did the unknown allegedly go in Minnesota immigration crackdown?",
-        "Where did the unknown allegedly go in Ilhan Omar investigation?"
+        "Where did the unknown allegedly go in Ilhan Omar investigation?",
+        "Where did the $100M+ allegedly go in Minnesota DHS Welfare Fraud Investigation?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Ilhan Omar?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T08:32:04.767Z",
-  "lastUpdated": "2026-01-27T08:32:04.767Z"
+  "lastReflection": "2026-01-27T09:31:30.155Z",
+  "lastUpdated": "2026-01-27T09:31:30.155Z"
 }

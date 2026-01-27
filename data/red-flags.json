@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The federal investigation into Zipps Sports Grills raises concerns about potential wrongdoing by the company.",
+      "insight": "This investigation could potentially uncover financial or operational irregularities at Zipps Sports Grills. Monitoring its developments is crucial.",
+      "entities": [
+        "Zipps Sports Grills"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The State Press",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2tydGVKcGQ2aVFCM3l2cGp6TjZXdWVDeUxSQ0tBT1FDbC15YTNKNUFvTEtGakxfSGN6TTlfYURRZ0dSTDhHckx2ZnRuaUVSY0U4Z21Cb2drN284a2ZNM09aa0pKX08xV1VMajFmeDhCdkJSeUFQMjAtcHNPTWZJTjNZdG5rYWhDSWZ3a20tdw?oc=5",
+      "id": "rf-1769506290160-spbonsko3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T09:31:30.157Z",
+      "isNew": true
+    },
+    {
+      "type": "shooting_incident",
+      "description": "The shooting of Alex Pretti by federal agents has raised concerns about law enforcement practices and policies.",
+      "insight": "This incident could indicate potential issues with training, policies, or procedures within law enforcement agencies. Further investigation into the circumstances surrounding the shooting is necessary.",
+      "entities": [
+        "Alex Pretti"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdFlKWWdiY2RiZnd0b2E2eEVtVkc1Vjh5eW13cldEOVFFMlB3MTZtbEtjVkJkclhPMWF1ZkRCXzBXSVppTUNFd3hNd0F1Y1VsZDJhdW04LWl1dnBJUkh6MndCNE16dHFiV0wtcGxOQTBBRVY1MUxmQlNNZU9Jd3dpdGpfZUlaakpDT2NMbkpxa3NiOWM5?oc=5",
+      "id": "rf-1769506290160-wl63cc3x6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T09:31:30.157Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of transparency",
       "description": "The Trump administration's initial response to the Alex Pretti shooting has been criticized for lacking transparency and accountability.",
       "insight": "The administration's response raises concerns about a potential cover-up and the need for further investigation.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T08:32:04.768Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential obstruction of justice",
@@ -38,7 +76,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T08:32:04.768Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program scrutiny",
@@ -958,51 +996,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-24T21:17:51.485Z",
       "isNew": false
-    },
-    {
-      "type": "potential whistleblower suppression",
-      "description": "An FBI agent resigned after trying to investigate an ICE officer who shot Renee Good. The agent claimed to have been pressured to drop the investigation.",
-      "insight": "This incident could indicate a pattern of suppressing whistleblowers or investigations into misconduct. Further investigation is needed to determine the circumstances surrounding the agent's resignation and whether proper protocols were followed.",
-      "entities": [
-        "FBI",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "kstp.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNWdYOXIyR2t0WTl2bU1xWUxYbVVPUm5kOGNCb3gtZGtuZXZRdjFaMWNZSjVxLV9DbHViQlVUM2x4TUQxN0FDeDFVeGItVklvXzluVHEyVXRsTDVMRDljdGxIWDltZHZMaHNEMFVWNU5xT1NieVhRVW5acGJw",
-      "id": "rf-1769289471488-w1vtqqqzb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T21:17:51.485Z",
-      "isNew": false
-    },
-    {
-      "type": "Excessive increase in net worth",
-      "description": "Ilhan Omar's net worth increased by 3,500% in a short period, raising concerns about potential corruption or fraud.",
-      "insight": "This significant increase in net worth warrants further investigation to determine the source of the funds and whether any laws were broken.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/politics/ilhan-omar-investigation-net-worth",
-      "id": "rf-1769279327435-en26norer",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T18:28:47.432Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1011,6 +1008,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1028,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T08:32:04.768Z"
+  "lastUpdated": "2026-01-27T09:31:30.157Z"
 }
