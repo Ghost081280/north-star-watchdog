@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Excessive use of force",
+      "description": "The fatal shooting of Alex Pretti by federal agents has raised concerns about excessive use of force",
+      "insight": "I notice a pattern of questionable use of force by federal agents in Minnesota, which warrants further investigation. The fact that DHS has body-cam footage related to the shooting suggests that there may be more to the story than initially reported.",
+      "entities": [
+        "Federal agents",
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1769478337226-gkci0qf96",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T01:45:37.222Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The White House claims that ICE protests are a 'cover-up for Minneapolis fraud', suggesting a potential connection between the protests and underlying financial irregularities.",
       "insight": "This could indicate a larger pattern of corruption or mismanagement of funds in Minneapolis, potentially involving city officials or contractors.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-26T23:21:18.871Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential cover-up",
@@ -542,26 +562,6 @@
       "isNew": false
     },
     {
-      "type": "Excessive use of force",
-      "description": "The fatal shooting of Alex Pretti by federal agents has raised concerns about the use of excessive force by law enforcement.",
-      "insight": "I suspect that there may be a pattern of excessive use of force by federal agents in Minneapolis, and further investigation is needed to determine the circumstances surrounding the shooting.",
-      "entities": [
-        "Federal agents",
-        "Minneapolis Police Department"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/minneapolis-shooting-live-updates-man-shot-killed-federal-officers-officials-say-n1436436",
-      "id": "rf-1769361449242-gsskjjq0g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T17:17:29.238Z",
-      "isNew": false
-    },
-    {
       "type": "federal investigation",
       "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of force and handling of evidence. A federal judge has blocked the Trump administration from 'destroying or altering' evidence related to the incident.",
       "insight": "This red flag indicates a potential pattern of excessive force by federal agents and a need for transparency in their actions.",
@@ -1000,7 +1000,7 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,7 +1009,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1027,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-26T23:21:18.871Z"
+  "lastUpdated": "2026-01-27T01:45:37.222Z"
 }
