@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Trump administration's decision to terminate certain programs has raised concerns about the impact on rural families.",
+      "insight": "This could be a sign of a larger issue with the administration's approach to social services. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
+      "entities": [
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "U.S. Senate Dems Probe Effect of Trump Administration Child Care Cutbacks on Rural Families",
+      "sourceUrl": "https://www.successfulfarming.com/U-S-Senate-Dems-Probe-Effect-of-Trump-Administration-Child-Care-Cutbacks-on-Rural-Families-a12245.html",
+      "id": "rf-1769531367334-8odl2nwj0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T16:29:27.330Z",
+      "isNew": true
+    },
+    {
       "type": "government investigation",
       "description": "The US Senate is investigating the effect of Trump administration child care cutbacks on rural families.",
       "insight": "This investigation could potentially uncover fraud or mismanagement of funds. The Trump administration's policies have been controversial, and this investigation could shed light on their impact.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T15:30:27.932Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "company investigation",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T15:30:27.932Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -974,40 +993,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T12:39:55.893Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal agents fatally shooting a Minneapolis resident, with Minnesota officials being blocked from investigating the scene.",
-      "insight": "This incident raises concerns about the use of force by federal agents and potential lack of transparency or cooperation with local authorities. It may indicate a pattern of federal overreach or inconsistent application of justice.",
-      "entities": [
-        "Federal Agency (e.g., ICE or Border Patrol)",
-        "Minnesota Officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUDR2YzlDa3NHRkE5YVU2YzN2TzhaVTJ5Y0l0VEhiSldrYnZDMlhLbzhjMHJEN2J6Q2pBNk5iUnhLaDZBcEM0NkhMeGs3dlhDSmVZV0lndlRaaWVOLUY2VjhKVmpVRVBaOFJzVHNmT0N6RDJDVkVSdzRzWmZENGplQTI0c3l5aW9jQ2pKbUZDWUhtQURJYVBLVlVZV3JrbG9OblNr?oc=5",
-      "id": "rf-1769339846079-nv35e31up",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T11:17:26.076Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T15:30:27.932Z"
+  "lastUpdated": "2026-01-27T16:29:27.330Z"
 }
