@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T05:27:03.506Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-23T06:38:40.509Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
@@ -510,6 +505,11 @@
       "date": "2026-01-27T16:29:27.329Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-27T17:27:30.109Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Minnesota trans athletes probe?",
-    "What other organizations is Alex Pretti connected to?",
-    "Where did the Unknown allegedly go in Minneapolis Shooting Investigation?",
     "Where did the Unknown allegedly go in ICE Operation in Minnesota?",
     "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the Unknown allegedly go in Minnesota Voter Rolls Investigation?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?",
     "Where did the Unknown allegedly go in Wealthfront Corp. Investigation?",
     "Where did the $0 allegedly go in Wealthfront Corp. Investigation?",
-    "Where did the $0 allegedly go in FBI Investigation into Minnesota Anti-ICE Signal Group Chats?"
+    "Where did the $0 allegedly go in FBI Investigation into Minnesota Anti-ICE Signal Group Chats?",
+    "What other organizations is Todd Lyons connected to?",
+    "Where did the unknown allegedly go in Minnesota Shooting Investigation?",
+    "Where did the unknown allegedly go in Wealthfront Corp. Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 589,
-    "articlesProcessed": 29300,
-    "redFlagsFound": 698,
+    "totalScans": 590,
+    "articlesProcessed": 29350,
+    "redFlagsFound": 699,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not applicable connected to?",
-        "Where did the Not specified allegedly go in Minnesota ICE operation investigation?",
-        "Where did the Not specified allegedly go in Minnesota trans athletes probe?"
+        "Where did the Not specified allegedly go in Minnesota trans athletes probe?",
+        "What other organizations is Alex Pretti connected to?",
+        "Where did the Unknown allegedly go in Minneapolis Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T16:29:27.329Z",
-  "lastUpdated": "2026-01-27T16:29:27.329Z"
+  "lastReflection": "2026-01-27T17:27:30.109Z",
+  "lastUpdated": "2026-01-27T17:27:30.110Z"
 }

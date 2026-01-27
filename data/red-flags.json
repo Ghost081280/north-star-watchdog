@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "possible misconduct",
+      "description": "The ICE director has been ordered to appear in court, raising concerns about possible misconduct and the agency's actions.",
+      "insight": "This development suggests a potential pattern of misconduct within ICE, which warrants further investigation. I recommend tracking the court proceedings and monitoring for any additional allegations or evidence of wrongdoing.",
+      "entities": [
+        "Todd Lyons",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/us-64444444",
+      "id": "rf-1769534850115-m50ukqezw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T17:27:30.111Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Trump administration's decision to terminate certain programs has raised concerns about the impact on rural families.",
       "insight": "This could be a sign of a larger issue with the administration's approach to social services. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T16:29:27.330Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "government investigation",
@@ -973,39 +993,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T13:32:06.691Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal agents shot and killed a US citizen, sparking controversy and calls for investigation.",
-      "insight": "I notice a pattern of federal agents being involved in shootings, which raises concerns about the use of force and accountability. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that justice is served.",
-      "entities": [
-        "Alex Pretti",
-        "VA Hospital"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/01/25/us/minneapolis-shooting-investigation",
-      "id": "rf-1769344795897-ejv5gt370",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T12:39:55.893Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T16:29:27.330Z"
+  "lastUpdated": "2026-01-27T17:27:30.111Z"
 }
