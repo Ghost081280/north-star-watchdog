@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program scrutiny",
+      "description": "The US Department of Homeland Security's response to the Alex Pretti shooting has raised concerns and sparked criticism from various quarters, including lawmakers and the public.",
+      "insight": "The agency's initial response and subsequent backtracking suggest potential mishandling or lack of transparency. Further investigation into the agency's protocols and possible misconduct is warranted.",
+      "entities": [
+        "DHS",
+        "Border Patrol"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/27/us/politics/trump-minnesota-alex-pretti-shooting.html",
+      "id": "rf-1769495623284-isgiqi1p1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T06:33:43.281Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The Justice Dept. is surging prosecutors to Minnesota amid fraud allegations, which may indicate a larger issue with corruption or misconduct.",
       "insight": "I suspect that there may be a larger issue with corruption or misconduct in Minneapolis, and the Justice Dept.'s decision to surge prosecutors to the state may be a sign of a more extensive investigation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T05:26:16.364Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -978,30 +998,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-24T12:38:20.318Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "FBI agent resigns after trying to investigate the shooting of Renee Good",
-      "insight": "This resignation raises concerns about the integrity of the investigation and potential interference from federal authorities. Further investigation is needed to determine the circumstances surrounding the resignation.",
-      "entities": [
-        "FBI",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-agent-resigns-after-trying-to-investigate-ice-officer-who-shot-renee-good/",
-      "id": "rf-1769243143664-nmyvj55ug",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T08:25:43.661Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1011,7 +1012,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1029,5 +1029,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T05:26:16.364Z"
+  "lastUpdated": "2026-01-27T06:33:43.281Z"
 }
