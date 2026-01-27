@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T03:42:25.624Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-23T04:42:03.028Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-27T14:29:21.804Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-27T15:30:27.930Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 587,
-    "articlesProcessed": 29200,
-    "redFlagsFound": 695,
+    "totalScans": 588,
+    "articlesProcessed": 29250,
+    "redFlagsFound": 697,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
-        "Where did the $0 allegedly go in DOJ investigation into Ilhan Omar?",
-        "What other organizations is Not applicable connected to?"
+        "What other organizations is Not applicable connected to?",
+        "Where did the Not specified allegedly go in Minnesota ICE operation investigation?",
+        "Where did the Not specified allegedly go in Minnesota trans athletes probe?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T14:29:21.804Z",
-  "lastUpdated": "2026-01-27T14:29:21.804Z"
+  "lastReflection": "2026-01-27T15:30:27.930Z",
+  "lastUpdated": "2026-01-27T15:30:27.931Z"
 }
