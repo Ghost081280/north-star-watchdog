@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration's freeze on funding for various projects, including the Hudson River tunnel project, has raised concerns about the impact on critical infrastructure.",
+      "insight": "The freeze on funding may be a tactic to strong-arm lawmakers into supporting certain policies. I will investigate further to determine the extent of the freeze and its implications.",
+      "entities": [
+        "Trump administration",
+        "Hudson River tunnel project"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/27/us/politics/trump-administration-funding-freeze.html",
+      "id": "rf-1769539051041-q3k8s5gj8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T18:37:31.038Z",
+      "isNew": true
+    },
+    {
       "type": "possible misconduct",
       "description": "The ICE director has been ordered to appear in court, raising concerns about possible misconduct and the agency's actions.",
       "insight": "This development suggests a potential pattern of misconduct within ICE, which warrants further investigation. I recommend tracking the court proceedings and monitoring for any additional allegations or evidence of wrongdoing.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T17:27:30.111Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -973,41 +993,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T14:18:39.567Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The termination of a program or funding can have significant impacts on the individuals or communities that rely on it.",
-      "insight": "The termination of programs or funding can be a red flag for potential corruption or misuse of funds, and should be investigated further.",
-      "entities": [
-        "Program administrators",
-        "Government officials"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "",
-      "sourceUrl": "",
-      "id": "rf-1769347926694-61wg1trd4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T13:32:06.691Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T17:27:30.111Z"
+  "lastUpdated": "2026-01-27T18:37:31.038Z"
 }
