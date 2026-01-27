@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "Lack of Transparency",
+      "description": "The Trump administration's initial response to the Minneapolis shooting has been widely criticized for lacking transparency and accountability.",
+      "insight": "I am concerned about the lack of transparency and accountability in the Trump administration's response to the Minneapolis shooting. Further investigation is needed to determine the extent of the administration's knowledge and involvement.",
+      "entities": [
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com",
+      "id": "rf-1769509609496-v3zckpaoi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T10:26:49.493Z",
+      "isNew": true
+    },
+    {
+      "type": "Potential Cover-Up",
+      "description": "There are concerns about a potential cover-up in the Minneapolis shooting investigation, with some officials blaming the victim and others calling for greater oversight.",
+      "insight": "I am concerned about the potential for a cover-up in the Minneapolis shooting investigation. Further investigation is needed to determine the extent of the administration's involvement and to ensure that justice is served.",
+      "entities": [
+        "Trump Administration",
+        "Minneapolis Police Department"
+      ],
+      "confidence": 70,
+      "priority": "Medium",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com",
+      "id": "rf-1769509609496-pv6a6xydc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T10:26:49.493Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The federal investigation into Zipps Sports Grills raises concerns about potential wrongdoing by the company.",
       "insight": "This investigation could potentially uncover financial or operational irregularities at Zipps Sports Grills. Monitoring its developments is crucial.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T09:31:30.157Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shooting_incident",
@@ -36,26 +75,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T09:31:30.157Z",
-      "isNew": true
-    },
-    {
-      "type": "Lack of transparency",
-      "description": "The Trump administration's initial response to the Alex Pretti shooting has been criticized for lacking transparency and accountability.",
-      "insight": "The administration's response raises concerns about a potential cover-up and the need for further investigation.",
-      "entities": [
-        "Trump administration",
-        "Border Patrol"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/",
-      "id": "rf-1769502724771-0czzuj3sa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T08:32:04.768Z",
       "isNew": false
     },
     {
@@ -976,30 +995,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-24T22:19:19.294Z",
       "isNew": false
-    },
-    {
-      "type": "potential police misconduct",
-      "description": "The shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about police brutality and the use of force.",
-      "insight": "This incident could indicate a pattern of aggressive policing or potential misconduct within law enforcement agencies. Further investigation is needed to determine the circumstances surrounding the shooting and whether proper protocols were followed.",
-      "entities": [
-        "Minneapolis Police Department",
-        "Federal Agents"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1OaGpLeV9RS3F6ekFOU0oyaHUtSTZINUd3NmRIcXNJQTRzWnlhajJjRnJtWEtyMWhYWVB4VUhCcGFjYU1FZUtRT19wTlY1S21FUDFpUk1qRGFXQjgzU3kyNVk1UU9hOGlv",
-      "id": "rf-1769289471488-waicxh65u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T21:17:51.485Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1008,7 +1008,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1026,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T09:31:30.157Z"
+  "lastUpdated": "2026-01-27T10:26:49.493Z"
 }
