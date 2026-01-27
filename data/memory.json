@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-22T13:45:44.033Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-22T15:30:27.912Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-27T03:47:33.740Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-01-27T04:46:10.583Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Frank Carone connected to?",
-    "Where did the Unknown allegedly go in Childcare Funding Investigation?",
     "Where did the Unknown allegedly go in Minnesota Immigration Crackdown?",
     "Where did the Unknown allegedly go in Child Care Subsidy Program Audit?",
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minneapolis Shooting Investigation?",
     "Where did the Unknown allegedly go in ICE Operation in Minnesota?",
     "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Voter Rolls Investigation?"
+    "Where did the Unknown allegedly go in Minnesota Voter Rolls Investigation?",
+    "Where did the $0 allegedly go in Investigation into Alex Pretti's death?",
+    "Where did the $0 allegedly go in Investigation into Zipps chain?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 576,
-    "articlesProcessed": 28650,
-    "redFlagsFound": 679,
+    "totalScans": 577,
+    "articlesProcessed": 28700,
+    "redFlagsFound": 680,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Fatal Shooting of Alex Pretti?",
-        "Where did the $0 allegedly go in Minnesota Shooting Investigation?",
-        "What other organizations is Frank Carone connected to?"
+        "What other organizations is Frank Carone connected to?",
+        "Where did the Unknown allegedly go in Childcare Funding Investigation?",
+        "Where did the Unknown allegedly go in Minnesota Immigration Crackdown?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T03:47:33.740Z",
-  "lastUpdated": "2026-01-27T03:47:33.741Z"
+  "lastReflection": "2026-01-27T04:46:10.583Z",
+  "lastUpdated": "2026-01-27T04:46:10.583Z"
 }
