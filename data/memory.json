@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T10:23:59.435Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-23T11:20:46.813Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-01-27T21:17:32.498Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-27T22:22:19.457Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
-    "Where did the $0 allegedly go in Zipps Sports Grills Investigation?",
     "What other organizations is Bovino connected to?",
     "What specific allegations exist against Bovino?",
     "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?",
@@ -558,7 +556,9 @@
     "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?",
     "Where did the $12B allegedly go in Minnesota Fraud Case?",
     "Where did the $0 allegedly go in Minnesota Protester Shooting Investigation?",
-    "Where did the $12B allegedly go in Gateway Tunnel Funding Freeze?"
+    "Where did the $12B allegedly go in Gateway Tunnel Funding Freeze?",
+    "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Elected Officials?",
+    "Where did the Unknown allegedly go in Trump Administration's Child Care Funding Cuts?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 594,
-    "articlesProcessed": 29550,
-    "redFlagsFound": 705,
+    "totalScans": 595,
+    "articlesProcessed": 29600,
+    "redFlagsFound": 706,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into Zipps chain?",
-        "Where did the Unknown allegedly go in Zipps Sports Grills Investigation?",
-        "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?"
+        "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
+        "Where did the $0 allegedly go in Zipps Sports Grills Investigation?",
+        "What other organizations is Bovino connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T21:17:32.498Z",
-  "lastUpdated": "2026-01-27T21:17:32.499Z"
+  "lastReflection": "2026-01-27T22:22:19.457Z",
+  "lastUpdated": "2026-01-27T22:22:19.458Z"
 }
