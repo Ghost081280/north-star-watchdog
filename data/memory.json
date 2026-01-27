@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T09:29:38.174Z",
-      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.95
-    },
-    {
       "date": "2026-01-23T10:23:59.435Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-27T20:22:00.721Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-27T21:17:32.498Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 42,
+      "count": 43,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-27T19:26:35.200Z"
+      "lastSeen": "2026-01-27T21:17:32.499Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Investigation into Zipps chain?",
-    "Where did the Unknown allegedly go in Zipps Sports Grills Investigation?",
     "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the $0 allegedly go in Zipps Sports Grills Investigation?",
     "What other organizations is Bovino connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Alex Pretti connected to?",
     "Where did the Unknown allegedly go in Minnesota Shooting Investigation?",
     "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?",
-    "Where did the $12B allegedly go in Minnesota Fraud Case?"
+    "Where did the $12B allegedly go in Minnesota Fraud Case?",
+    "Where did the $0 allegedly go in Minnesota Protester Shooting Investigation?",
+    "Where did the $12B allegedly go in Gateway Tunnel Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 593,
-    "articlesProcessed": 29500,
-    "redFlagsFound": 703,
+    "totalScans": 594,
+    "articlesProcessed": 29550,
+    "redFlagsFound": 705,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into Alex Pretti's death?",
         "Where did the $0 allegedly go in Investigation into Zipps chain?",
-        "Where did the Unknown allegedly go in Zipps Sports Grills Investigation?"
+        "Where did the Unknown allegedly go in Zipps Sports Grills Investigation?",
+        "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T20:22:00.721Z",
-  "lastUpdated": "2026-01-27T20:22:00.722Z"
+  "lastReflection": "2026-01-27T21:17:32.498Z",
+  "lastUpdated": "2026-01-27T21:17:32.499Z"
 }
