@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Trump administration is under scrutiny for its response to the Minneapolis ICE shooting.",
+      "insight": "The administration's handling of the situation appears to be inadequate and potentially corrupt.",
+      "entities": [
+        "Trump administration",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.abcnews.go.com/ABCNews/live/updates-top-border-patrol-official-bovino-expected-to-leave-minneapolis-as-trump-sends-homan-to-the-state-cnn",
+      "id": "rf-1769521558518-ej1y70ksc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T13:45:58.515Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The federal investigation into the Minneapolis shooting has raised concerns about the Trump administration's handling of the incident.",
       "insight": "I suspect that there may be a cover-up or a lack of transparency in the investigation. Further research is needed to uncover the truth.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T12:45:14.770Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -974,41 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T08:26:31.852Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal agents have been involved in several shootings in Minnesota, raising concerns about accountability and transparency.",
-      "insight": "The involvement of federal agents in multiple shootings in a short period suggests a need for closer scrutiny of their actions and potential systemic issues within law enforcement agencies.",
-      "entities": [
-        "Federal Agents",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/minneapolis-shooting-live-updates-man-shot-killed-federal-officers-n1186111",
-      "id": "rf-1769325681314-smyxhoeou",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T07:21:21.312Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T12:45:14.770Z"
+  "lastUpdated": "2026-01-27T13:45:58.515Z"
 }

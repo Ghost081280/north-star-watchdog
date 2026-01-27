@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-22T23:20:34.660Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-23T01:29:49.325Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-27T12:45:14.769Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-27T13:45:58.513Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 585,
-    "articlesProcessed": 29100,
-    "redFlagsFound": 692,
+    "totalScans": 586,
+    "articlesProcessed": 29150,
+    "redFlagsFound": 694,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota DHS Welfare Fraud Investigation?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Ilhan Omar?",
-        "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?"
+        "Where did the $0 allegedly go in Minnesota Department of Human Services data breach?",
+        "Where did the $0 allegedly go in DOJ investigation into Ilhan Omar?",
+        "What other organizations is Not applicable connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T12:45:14.769Z",
-  "lastUpdated": "2026-01-27T12:45:14.769Z"
+  "lastReflection": "2026-01-27T13:45:58.513Z",
+  "lastUpdated": "2026-01-27T13:45:58.514Z"
 }
