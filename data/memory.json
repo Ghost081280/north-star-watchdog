@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T07:25:01.104Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-23T08:29:10.423Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-01-27T18:37:31.035Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-27T19:26:35.199Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 41,
+      "count": 42,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-27T09:31:30.155Z"
+      "lastSeen": "2026-01-27T19:26:35.200Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in ICE Operation in Minnesota?",
-    "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Voter Rolls Investigation?",
     "Where did the $0 allegedly go in Investigation into Alex Pretti's death?",
     "Where did the $0 allegedly go in Investigation into Zipps chain?",
     "Where did the Unknown allegedly go in Zipps Sports Grills Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in FBI Investigation into Minnesota Anti-ICE Signal Group Chats?",
     "What other organizations is Todd Lyons connected to?",
     "Where did the unknown allegedly go in Minnesota Shooting Investigation?",
-    "Where did the unknown allegedly go in Wealthfront Corp. Investigation?"
+    "Where did the unknown allegedly go in Wealthfront Corp. Investigation?",
+    "What other organizations is Alex Pretti connected to?",
+    "Where did the Unknown allegedly go in Minnesota Shooting Investigation?",
+    "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 591,
-    "articlesProcessed": 29400,
-    "redFlagsFound": 700,
+    "totalScans": 592,
+    "articlesProcessed": 29450,
+    "redFlagsFound": 702,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-27T18:37:31.035Z",
-  "lastUpdated": "2026-01-27T18:37:31.036Z"
+  "lastReflection": "2026-01-27T19:26:35.199Z",
+  "lastUpdated": "2026-01-27T19:26:35.200Z"
 }
