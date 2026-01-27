@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating Minnesota anti-ICE Signal group chats, which may indicate a larger issue with extremist groups.",
+      "insight": "I see a pattern of extremist groups and potential violence, which warrants further investigation. I recommend tracking the FBI's investigation and monitoring for any connections to other extremist groups.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/",
+      "id": "rf-1769524161809-ijhbgq4ea",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T14:29:21.805Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The Trump administration is under scrutiny for its response to the Minneapolis ICE shooting.",
       "insight": "The administration's handling of the situation appears to be inadequate and potentially corrupt.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T13:45:58.515Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -974,41 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T09:20:53.044Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation blockage",
-      "description": "Minnesota officials say they've been blocked from investigating the scene of the Minneapolis shooting",
-      "insight": "This blockage raises concerns about the transparency and accountability of federal investigations. It may indicate a larger pattern of obstruction or cover-up.",
-      "entities": [
-        "Federal Bureau of Investigation",
-        "Minnesota state officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://thehill.com/homenews/state-watch/543123-minnesota-officials-say-theyve-been-blocked-from-investigating-scene-of",
-      "id": "rf-1769329591855-nwos0rj3u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T08:26:31.852Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T13:45:58.515Z"
+  "lastUpdated": "2026-01-27T14:29:21.805Z"
 }
