@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DHS investigation into the Alex Pretti shooting has raised concerns about the use of force and the Trump administration's response to the incident.",
+      "insight": "I suspect that the investigation will reveal a pattern of excessive use of force by federal agents, and that the Trump administration's response to the incident will be heavily scrutinized.",
+      "entities": [
+        "DHS",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1769485653745-cbllrohjs",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T03:47:33.742Z",
+      "isNew": true
+    },
+    {
+      "type": "Voter Suppression",
+      "description": "The Trump administration's demand for Minnesota's voter rolls has raised concerns about voter suppression and election interference.",
+      "insight": "I suspect that the investigation will reveal a pattern of voter suppression and election interference by the Trump administration, and that the demand for voter rolls is a pretext for further suppression.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1769485653745-fsjhb3u3v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T03:47:33.742Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive use of force",
       "description": "The fatal shooting of Alex Pretti by federal agents has raised concerns about excessive use of force",
       "insight": "I notice a pattern of questionable use of force by federal agents in Minnesota, which warrants further investigation. The fact that DHS has body-cam footage related to the shooting suggests that there may be more to the story than initially reported.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-27T01:45:37.222Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -957,45 +997,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-23T19:23:59.211Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The St. Cloud autism center has its license suspended; the owner is charged with fraud.",
-      "insight": "This could indicate a larger issue with autism centers in Minnesota.",
-      "entities": [
-        "St. Cloud autism center"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "stcloudlive.com",
-      "sourceUrl": "https://stcloudlive.com/news/st-cloud-autism-center-has-license-suspended-owner-charged-with-fraud",
-      "id": "rf-1769189150424-hlk4roh7q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-23T17:25:50.420Z",
-      "isNew": false
-    },
-    {
-      "type": "Suspicious death",
-      "description": "The death of former Colts owner Jim Irsay is under federal investigation, raising concerns about potential foul play.",
-      "insight": "I suspect that there may be more to Irsay's death than initially meets the eye. Further investigation is needed to determine the circumstances surrounding his death.",
-      "entities": [
-        "Jim Irsay",
-        "Colts"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "fox59.com",
-      "sourceUrl": "https://fox59.com/2026/01/23/colts-confirm-fbis-investigation-into-death-of-former-owner-jim-irsay/",
-      "id": "rf-1769185739302-2cgufr9g2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-23T16:28:59.299Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1027,5 +1028,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T01:45:37.222Z"
+  "lastUpdated": "2026-01-27T03:47:33.742Z"
 }
