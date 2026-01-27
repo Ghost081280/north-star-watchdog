@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Lack of transparency",
+      "description": "The Trump administration's initial response to the Alex Pretti shooting has been criticized for lacking transparency and accountability.",
+      "insight": "The administration's response raises concerns about a potential cover-up and the need for further investigation.",
+      "entities": [
+        "Trump administration",
+        "Border Patrol"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1769502724771-0czzuj3sa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T08:32:04.768Z",
+      "isNew": true
+    },
+    {
+      "type": "Potential obstruction of justice",
+      "description": "The Trump administration's actions following the Alex Pretti shooting have raised concerns about potential obstruction of justice.",
+      "insight": "The administration's attempts to distance itself from the incident and limit the investigation may be seen as an attempt to obstruct justice.",
+      "entities": [
+        "Trump administration",
+        "DHS"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/",
+      "id": "rf-1769502724771-yc8tv3w36",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-27T08:32:04.768Z",
+      "isNew": true
+    },
+    {
       "type": "program scrutiny",
       "description": "The US Department of Homeland Security's response to the Alex Pretti shooting has raised concerns and sparked criticism from various quarters, including lawmakers and the public.",
       "insight": "The agency's initial response and subsequent backtracking suggest potential mishandling or lack of transparency. Further investigation into the agency's protocols and possible misconduct is warranted.",
@@ -957,51 +997,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-24T18:28:47.432Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The termination of child care programs may indicate a larger issue.",
-      "insight": "Potential pattern of mismanagement or fraud in child care programs.",
-      "entities": [
-        "Minnesota DHS",
-        "child care programs"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "Star Tribune",
-      "sourceUrl": "https://startribune.com/2026-01-24/ramstad-readers-join-my-appeal-to-focus-on-state-services-but-fraud-dominates-their-emotions",
-      "id": "rf-1769275048107-j80rzrg6q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T17:17:28.104Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigation into the death of Jim Irsay, former owner of the Indianapolis Colts",
-      "insight": "This suggests potential wrongdoing or suspicious circumstances surrounding Irsay's death.",
-      "entities": [
-        "Jim Irsay",
-        "Indianapolis Colts",
-        "FBI"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "nbcchicago.com",
-      "sourceUrl": "https://www.nbcchicago.com/news/local/colts-confirm-fbi-has-opened-investigation-into-death-of-former-owner-jim-irsay/3491439/",
-      "id": "rf-1769258300321-pwozpank7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-24T12:38:20.318Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,7 +1010,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1028,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-27T07:27:04.990Z"
+  "lastUpdated": "2026-01-27T08:32:04.768Z"
 }
