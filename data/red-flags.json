@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "data_breach",
+      "description": "Over 300,000 records exposed in Minnesota DHS data breach.",
+      "insight": "This data breach raises concerns about the security of sensitive information and potential vulnerabilities in Minnesota's DHS systems. Further investigation into the cause and extent of the breach is warranted.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Class Action Lawsuits",
+      "sourceUrl": "https://www.classactionlawsuits.com/minnesota-dhs-data-breach-exposes-over-300000-records/",
+      "id": "rf-1769628440685-a69n8lf6i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T19:27:20.682Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI investigation into alleged voter fraud in Fulton County, Georgia.",
+      "insight": "The FBI's execution of a search warrant at the Fulton County election facility suggests a serious investigation into alleged voter fraud. This may indicate a larger pattern of election-related irregularities.",
+      "entities": [
+        "Fulton County election facility",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-searching-fulton-county-elections-office-alleged-voter-fraud/",
+      "id": "rf-1769628440685-50manjmxg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T19:27:20.682Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating revenue diversion activities in the City of Florence",
       "insight": "This could indicate a larger issue with financial management in the city, potentially involving other municipalities or government entities. Further investigation is warranted to uncover the extent of the problem and any potential connections to other cases.",
@@ -952,46 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T05:32:45.662Z",
       "isNew": false
-    },
-    {
-      "type": "Conflicting Statements",
-      "description": "The Trump Administration has made conflicting statements about the death of Alex Pretti, raising concerns about the transparency and accountability of the investigation.",
-      "insight": "I notice a pattern of conflicting statements from the Trump Administration, which may indicate an attempt to obscure the truth or downplay the severity of the incident. Further investigation is needed to uncover the facts and ensure accountability.",
-      "entities": [
-        "Trump Administration",
-        "Border Patrol"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/politics/trump-administration-conflicting-statements-alex-pretti.html",
-      "id": "rf-1769403363936-4sigk9ehs",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T04:56:03.932Z",
-      "isNew": false
-    },
-    {
-      "type": "Potential Cover-up",
-      "description": "The Trump administration's conflicting statements on the shooting and the resignation of an FBI agent who tried to investigate the incident have raised concerns about a potential cover-up.",
-      "insight": "I suspect that there may be an attempt to obscure the truth about the shooting, and further investigation is needed to uncover the facts. The resignation of the FBI agent who tried to investigate the incident is particularly concerning, as it suggests that there may be pressure to suppress the truth.",
-      "entities": [
-        "Trump Administration",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-shooting-investigation.html",
-      "id": "rf-1769399799190-wiyh9kajn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T03:56:39.187Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,7 +1002,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T18:35:49.593Z"
+  "lastUpdated": "2026-01-28T19:27:20.682Z"
 }
