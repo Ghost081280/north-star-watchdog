@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible termination of immigration operations in Minnesota",
+      "insight": "This could indicate a shift in policy or a response to criticism. Further investigation is needed to understand the cause and impact of the termination.",
+      "entities": [
+        "Minnesota",
+        "US government"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Multiple news articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTEtsRzJDRTd4eG9RYnFRSkpvNVVEVDRyT0MyUmR6eUptRzFHRC05WmZxMUJsXzdULWtHSjNzU0dncUwtbWhpcW9tRUp1LTRRcDFPZklvclNyVUg3S0R2TW9lT1VEckxaejlteXhzM1JmSy1ZbjFRV25YOXBSTmtrYmw5ZzAwVWVXUDlEWEI4aXM3NUhjbGE2Zm1OYnowUWtZblBTU2tnVFJyMUtkTk53RGY1WUw?oc=5",
+      "id": "rf-1769589051055-v684b1jry",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T08:30:51.052Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of oversight",
       "description": "The investigation into Medicaid fraud in Minnesota has revealed a lack of oversight and accountability in the state's Medicaid program.",
       "insight": "This lack of oversight is a major concern, as it allows fraudulent activities to go undetected. Further investigation is needed to determine the extent of the fraud and to identify those responsible.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T07:25:40.155Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -974,40 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T21:18:44.059Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The shooting of Alex Pretti by Border Patrol agents in Minneapolis has raised concerns about the tactics used by federal agents and the need for accountability.",
-      "insight": "The incident has sparked widespread outrage and calls for investigation, indicating a potential pattern of concern with federal law enforcement tactics. I will be tracking the investigation and any subsequent developments.",
-      "entities": [
-        "Border Patrol",
-        "Department of Homeland Security"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Oa2F4c0FYa1FOSzVFZ2hsOHdGc2JONTIwZ3RNX1BHTzdHdTkzQzd3aENWTVZFbnVMLWhCcHZiZEx4LUR4RXkxdHc4eV9sVVBTenZ4SFRNWHJNUmxFZ2oxRHY5ZjBRTmZOZjItOVlHbXdqSmRVZWc",
-      "id": "rf-1769372557309-b6c9w0pah",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T20:22:37.306Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T07:25:40.155Z"
+  "lastUpdated": "2026-01-28T08:30:51.052Z"
 }
