@@ -1,23 +1,24 @@
 {
   "flags": [
     {
-      "type": "program_termination",
-      "description": "Minnesota's childcare assistance program frozen for two years",
-      "insight": "This could indicate a larger issue with program management or oversight",
+      "type": "federal_freeze",
+      "description": "Deutsche Bank offices searched in money laundering probe",
+      "insight": "This could indicate a larger issue with financial institution oversight",
       "entities": [
-        "Minnesota government"
+        "Deutsche Bank",
+        "Federal Authorities"
       ],
-      "confidence": 80,
+      "confidence": 85,
       "priority": "high",
-      "source": "boulderreportinglab.org",
-      "sourceUrl": "https://boulderreportinglab.org/boulders-county-childcare-assistance-has-been-frozen-for-two-years-new-federal-threats-could-worsen-it/",
-      "id": "rf-1769608075147-l4ticidu9",
+      "source": "Euronews.com",
+      "sourceUrl": "https://www.euronews.com/2026-01-28/deutsche-bank-offices-searched-in-money-laundering-probe",
+      "id": "rf-1769614286048-m3zn15xvx",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-28T13:47:55.144Z",
-      "isNew": false
+      "detectedAt": "2026-01-28T15:31:26.045Z",
+      "isNew": true
     },
     {
       "type": "Medicaid fraud",
@@ -999,6 +1000,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,7 +1008,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T14:29:12.898Z"
+  "lastUpdated": "2026-01-28T15:31:26.045Z"
 }
