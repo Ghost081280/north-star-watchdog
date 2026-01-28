@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the City of Florence's finances due to suspected revenue diversion activities.",
+      "insight": "This investigation may indicate a larger pattern of financial mismanagement or corruption in local government. Further investigation is needed to determine the extent of the issue and identify those responsible.",
+      "entities": [
+        "City of Florence"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fox19.com/news/fbi-investigating-the-city-of-florences-finances/",
+      "id": "rf-1769618164243-sewdn8gpn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T16:36:04.240Z",
+      "isNew": true
+    },
+    {
+      "type": "potential misconduct",
+      "description": "Rep. Ilhan Omar is being investigated for alleged fraud and misconduct.",
+      "insight": "This investigation may indicate a pattern of unethical behavior by the representative. Further investigation is needed to determine the extent of the issue and identify any potential co-conspirators.",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Bureau | Sam Cooper",
+      "sourceUrl": "https://www.thebureau.com/rep-omar-sprayed-at-town-hall-amid-fraud-investigations-and-minnesota-ice-clash",
+      "id": "rf-1769618164244-qzobfy36c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T16:36:04.240Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Deutsche Bank offices searched in money laundering probe",
       "insight": "This could indicate a larger issue with financial institution oversight",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T15:31:26.045Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -956,51 +994,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T22:19:42.690Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The federal investigation into Frank Carone, adviser to Eric Adams, has raised concerns about the use of federal power and the potential for abuse.",
-      "insight": "I suspect that this investigation may be part of a larger pattern of federal overreach and abuse of power. Further investigation is needed to determine the extent of the investigation and the potential implications for Eric Adams and the New York City government.",
-      "entities": [
-        "Frank Carone",
-        "Eric Adams"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "nbcnewyork.com",
-      "sourceUrl": "https://www.nbcnewyork.com/news/local/top-eric-adams-adviser-frank-carone-under-federal-investigation-sources-say/3413415/",
-      "id": "rf-1769375924062-00agcbcn3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T21:18:44.059Z",
-      "isNew": false
-    },
-    {
-      "type": "Lack of transparency",
-      "description": "The federal investigation into the Minneapolis shooting has been criticized for a lack of transparency and accountability.",
-      "insight": "I suspect that the lack of transparency in this investigation may be part of a larger pattern of federal agencies avoiding accountability for their actions. Further investigation is needed to determine the extent of the lack of transparency and the potential implications for the public's trust in federal agencies.",
-      "entities": [
-        "DHS",
-        "Minneapolis police"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/judge-grants-restraining-order-against-dhs-after-border-patrol-kills-alex-pretti-in-minneapolis/",
-      "id": "rf-1769375924062-lfeggrl1z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T21:18:44.059Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,7 +1007,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1027,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T15:31:26.045Z"
+  "lastUpdated": "2026-01-28T16:36:04.240Z"
 }
