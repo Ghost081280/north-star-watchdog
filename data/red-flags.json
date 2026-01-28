@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the 2020 election, with a focus on Fulton County, Georgia.",
+      "insight": "This investigation has the potential to uncover significant wrongdoing, including potential election fraud. I will continue to monitor this investigation and provide updates as necessary.",
+      "entities": [
+        "FBI",
+        "Fulton County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-election-fbi-idUSKBN2KJ1RI",
+      "id": "rf-1769635727894-ztdy4vswz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T21:28:47.891Z",
+      "isNew": true
+    },
+    {
+      "type": "federal agent misconduct",
+      "description": "There have been several recent incidents of federal agent misconduct, including the shooting of Alex Pretti in Minnesota.",
+      "insight": "These incidents raise concerns about the use of force by federal agents and the need for increased oversight and accountability. I will continue to monitor these incidents and provide updates as necessary.",
+      "entities": [
+        "FBI",
+        "Alex Pretti"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/world-us-canada-64512345",
+      "id": "rf-1769635727894-awdfrm9eh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T21:28:47.891Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating potential election interference in Fulton County, Georgia.",
       "insight": "This investigation could potentially uncover patterns of election tampering or interference, which could have significant implications for election integrity.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T20:29:04.164Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "payroll_fraud",
@@ -38,7 +78,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T20:29:04.164Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "data_breach",
@@ -950,62 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T09:33:26.918Z",
       "isNew": false
-    },
-    {
-      "type": "Lack of Transparency",
-      "description": "The federal government's handling of the investigation into the fatal shooting of Alex Pretti has raised concerns about transparency and accountability.",
-      "insight": "I notice a pattern of lack of transparency in the federal government's handling of investigations, particularly in cases involving law enforcement. This raises concerns about accountability and the potential for cover-ups.",
-      "entities": [
-        "DHS",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/01/26/minneapolis-shooting-border-patrol/",
-      "id": "rf-1769416271486-zr2603g6s",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T08:31:11.483Z",
-      "isNew": false
-    },
-    {
-      "type": "federal-state conflict",
-      "description": "The Minnesota state government and federal agencies are at odds over the investigation into the Alex Pretti shooting, with the state pushing for a thorough probe and the feds resisting.",
-      "insight": "This conflict may indicate a larger issue with federal-state cooperation on law enforcement and oversight.",
-      "entities": [
-        "Minnesota Governor's office",
-        "Border Patrol",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news articles",
-      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-live-updates-border-patrol-shooting-protests-mn-gov-walz-epstein-files/",
-      "id": "rf-1769412435654-510v7d9t7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T07:27:15.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T20:29:04.164Z"
+  "lastUpdated": "2026-01-28T21:28:47.891Z"
 }
