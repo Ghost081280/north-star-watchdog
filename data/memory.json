@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T13:42:41.331Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-23T14:24:47.755Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-01-28T01:42:07.879Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-28T03:44:30.508Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Bovino?",
     "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?",
     "Where did the Undisclosed allegedly go in Minneapolis Shooting Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $12B allegedly go in Gateway Tunnel Funding Freeze?",
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Elected Officials?",
     "Where did the Unknown allegedly go in Trump Administration's Child Care Funding Cuts?",
-    "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?"
+    "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
+    "Where did the $40 million allegedly go in ADM Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 597,
-    "articlesProcessed": 29700,
-    "redFlagsFound": 707,
+    "totalScans": 598,
+    "articlesProcessed": 29750,
+    "redFlagsFound": 708,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Bovino connected to?",
         "What specific allegations exist against Bovino?",
-        "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?"
+        "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?",
+        "Where did the Undisclosed allegedly go in Minneapolis Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-28T01:42:07.879Z",
-  "lastUpdated": "2026-01-28T01:42:07.880Z"
+  "lastReflection": "2026-01-28T03:44:30.508Z",
+  "lastUpdated": "2026-01-28T03:44:30.509Z"
 }
