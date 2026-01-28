@@ -2,6 +2,27 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations ongoing in Minnesota",
+      "insight": "Possible patterns of corruption or wrongdoing in Minnesota, potentially involving government agencies or officials",
+      "entities": [
+        "Minnesota state government",
+        "federal agencies"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05b3VjRU54c0M5c0JHR3VfblhmeGFxTk1rVUpoQmdCSTBUWXU4V3Q2VGw4aEFLckh5Vjc2Q3lfZWljZ2FVei1aVE9aT3JkczFmZlpzdVhkanNUWXJSODlQallxYjA2QdIBa0FVX3lxTFBzSkpweVYwMHpyVUNMWi11X2diZnRGdnJnNC11QXN3XzFBakM1bE54R2luS1VKQ2lUYThucmZpLVA0STdJR3dnQU1yOEFYM2EzQS1mbkFtNUh3MDBnWEdUUWdlYkV1ZlpJbDlB",
+      "priorityLevel": "high",
+      "id": "rf-1769578039303-jxrngc9ov",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T05:27:19.300Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Multiple federal investigations are underway, including ones into the Trump administration's immigration policies and the handling of protesters.",
       "insight": "These investigations have the potential to reveal significant wrongdoing and corruption. I will continue to monitor developments and track key figures and entities involved.",
       "entities": [
@@ -19,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T04:42:58.378Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -39,7 +60,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T04:42:58.378Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -974,40 +995,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T20:22:37.306Z",
       "isNew": false
-    },
-    {
-      "type": "Excessive Use of Force",
-      "description": "The shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about the use of excessive force by law enforcement.",
-      "insight": "I notice a pattern of incidents involving federal agents using force in questionable circumstances. Further investigation is needed to determine the circumstances surrounding the shooting and whether the use of force was justified.",
-      "entities": [
-        "Federal Agents",
-        "Minneapolis Police Department"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/25/us/minneapolis-shooting.html",
-      "id": "rf-1769368603683-x08wzkv24",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T19:16:43.680Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T04:42:58.378Z"
+  "lastUpdated": "2026-01-28T05:27:19.300Z"
 }
