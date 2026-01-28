@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T14:24:47.755Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-01-23T15:25:03.162Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-01-28T03:44:30.508Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-01-28T04:42:58.377Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?",
-    "Where did the Undisclosed allegedly go in Minneapolis Shooting Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Minneapolis ICE Shooting Investigation?",
     "Where did the Unknown allegedly go in Wealthfront Corp. Investigation?",
     "Where did the $0 allegedly go in Wealthfront Corp. Investigation?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Elected Officials?",
     "Where did the Unknown allegedly go in Trump Administration's Child Care Funding Cuts?",
     "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
-    "Where did the $40 million allegedly go in ADM Investigation?"
+    "Where did the $40 million allegedly go in ADM Investigation?",
+    "Where did the Unknown allegedly go in Homewood Suites investigation?",
+    "Where did the Unknown allegedly go in FBI investigation into Florence revenue?",
+    "Where did the $40 million allegedly go in ADM investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 598,
-    "articlesProcessed": 29750,
-    "redFlagsFound": 708,
+    "totalScans": 599,
+    "articlesProcessed": 29800,
+    "redFlagsFound": 710,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Bovino?",
         "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Scandal?",
-        "Where did the Undisclosed allegedly go in Minneapolis Shooting Investigation?"
+        "Where did the Undisclosed allegedly go in Minneapolis Shooting Investigation?",
+        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-28T03:44:30.508Z",
-  "lastUpdated": "2026-01-28T03:44:30.509Z"
+  "lastReflection": "2026-01-28T04:42:58.377Z",
+  "lastUpdated": "2026-01-28T04:42:58.377Z"
 }

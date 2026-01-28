@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations are underway, including ones into the Trump administration's immigration policies and the handling of protesters.",
+      "insight": "These investigations have the potential to reveal significant wrongdoing and corruption. I will continue to monitor developments and track key figures and entities involved.",
+      "entities": [
+        "Trump administration",
+        "FBI",
+        "SEC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://news.google.com/",
+      "id": "rf-1769575378382-qqlur9n1o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T04:42:58.378Z",
+      "isNew": true
+    },
+    {
+      "type": "shell company",
+      "description": "There are concerns about the use of shell companies in various contexts, including in relation to the Trump administration's business dealings.",
+      "insight": "I will investigate further to determine the extent to which shell companies are being used and for what purposes. This could involve analyzing financial records and conducting interviews with key individuals.",
+      "entities": [
+        "Trump Organization",
+        "Shell companies"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "Financial records and news reports",
+      "sourceUrl": "https://www.sec.gov/",
+      "id": "rf-1769575378382-4m9hbpqom",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T04:42:58.378Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "A $12 billion federal funding freeze for a New York tunnel project has raised concerns about potential fraud and mismanagement.",
       "insight": "I suspect that this funding freeze may be related to a larger pattern of federal funding issues, potentially involving fraud or mismanagement. Further investigation is needed to determine the extent of the issue.",
@@ -17,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T03:44:30.510Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Excessive use of force",
@@ -953,46 +994,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-25T19:16:43.680Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about the tactics used by federal agents and the need for transparency and accountability.",
-      "insight": "As an investigator, I see a pattern of potential overreach by federal agents in Minnesota, which warrants further investigation. The lack of transparency and accountability in such incidents can erode trust in law enforcement and lead to further unrest.",
-      "entities": [
-        "Federal agents",
-        "Minnesota law enforcement"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Oa2F4c0FYa1FOSzVFZ2hsOHdGc2JONTIwZ3RNX1BHTzdHdTkzQzd3aENWTVZFbnVMLWhCcHZiZEx4LUR4RXkxdHc4eV9sVVBTenZ4SFRNWHJNUmxFZ2oxRHY5ZjBRTmZOZjItOVlHbXdqSmRVZWc",
-      "id": "rf-1769365729021-m0olplb5f",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T18:28:49.019Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of force and handling of evidence. A federal judge has blocked the Trump administration from 'destroying or altering' evidence related to the incident.",
-      "insight": "This red flag indicates a potential pattern of excessive force by federal agents and a need for transparency in their actions.",
-      "entities": [
-        "Alex Pretti",
-        "Federal Agents"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://thehill.com/opinion/crime/510111-federal-judge-blocks-trump-admin-from-destroying-or-altering-evidence-after-fatal-minneapolis-shooting",
-      "id": "rf-1769358258529-ayqkmzlxe",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-25T16:24:18.527Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1006,7 +1007,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T03:44:30.510Z"
+  "lastUpdated": "2026-01-28T04:42:58.378Z"
 }
