@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "A federal funding freeze could impact the childcare assistance program in Boulder County, potentially worsening the situation.",
+      "insight": "I see a pattern of federal funding freezes affecting social programs, which could lead to increased fraud and abuse. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "Boulder County",
+        "Childcare Assistance Program"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Boulder Reporting Lab",
+      "sourceUrl": "https://www.boulderreportinglab.org/",
+      "id": "rf-1769592799114-gka66p9vb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T09:33:19.111Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible termination of immigration operations in Minnesota",
       "insight": "This could indicate a shift in policy or a response to criticism. Further investigation is needed to understand the cause and impact of the termination.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T08:30:51.052Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Lack of oversight",
@@ -99,25 +119,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T04:42:58.378Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "A $12 billion federal funding freeze for a New York tunnel project has raised concerns about potential fraud and mismanagement.",
-      "insight": "I suspect that this funding freeze may be related to a larger pattern of federal funding issues, potentially involving fraud or mismanagement. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "New York tunnel project"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "blackchronicle.com",
-      "sourceUrl": "https://www.blackchronicle.com/news/new-york-tunnel-project-could-halt-amid-12b-federal-funding-freeze",
-      "id": "rf-1769571870514-p5qlzmxp5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T03:44:30.510Z",
       "isNew": false
     },
     {
@@ -998,17 +999,17 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T08:30:51.052Z"
+  "lastUpdated": "2026-01-28T09:33:19.111Z"
 }
