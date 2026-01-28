@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-24T06:30:12.228Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-24T07:19:31.293Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-28T17:31:53.732Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-28T18:35:49.591Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 612,
-    "articlesProcessed": 30450,
+    "totalScans": 613,
+    "articlesProcessed": 30500,
     "redFlagsFound": 727,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "data breach",
-          "description": "A data breach at Minnesota DHS exposed over 300,000 records",
-          "insight": "This breach could lead to identity theft and other malicious activities. It is essential to investigate the cause of the breach and ensure that proper measures are taken to prevent future incidents.",
-          "entities": [
-            "Minnesota DHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Class Action Lawsuits",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVko5ajdmeVZabW5KVUZIRDI0UFphVXNvYVM2ODdYeFFEZU50eUE4YXFHVTc2cDlkb1VmcURsZ1BzSjVEa09QazRuTDBsWW5CU1NmWnlFNmwydUEwQXZHRlVLMFZfV1pweDhPMkN3c285WkVDZnlaam1IZ24zTldCQ1dCSEhjYnItNVptUXBOU2I5VWhBUW0yaFRxUWVXcXNwUjVndFFLZEFBV1NPQVc1bkhxbUt5UQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI investigation into Florence revenue?",
-        "Where did the $40 million allegedly go in ADM investigation?",
-        "Where did the $40 million allegedly go in SEC investigation into ADM?"
+        "Where did the $40 million allegedly go in SEC investigation into ADM?",
+        "Where did the $N/A allegedly go in Minnesota Medicaid fraud scandal?",
+        "Where did the $N/A allegedly go in FBI investigation into Florence revenue?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-28T17:31:53.732Z",
-  "lastUpdated": "2026-01-28T17:31:53.732Z"
+  "lastReflection": "2026-01-28T18:35:49.591Z",
+  "lastUpdated": "2026-01-28T18:35:49.592Z"
 }
