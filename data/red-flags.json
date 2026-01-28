@@ -1,23 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "A federal funding freeze could impact the childcare assistance program in Boulder County, potentially worsening the situation.",
-      "insight": "I see a pattern of federal funding freezes affecting social programs, which could lead to increased fraud and abuse. Further investigation is needed to determine the extent of the issue.",
+      "type": "federal funding freeze",
+      "description": "The Trump administration's freeze on childcare funding has significant implications for low-income families and the childcare industry.",
+      "insight": "This freeze may indicate a broader effort to re-evaluate and potentially re-allocate federal funds, which could have far-reaching consequences for various programs and services.",
       "entities": [
-        "Boulder County",
-        "Childcare Assistance Program"
+        "Trump administration",
+        "Minnesota"
       ],
       "confidence": 80,
-      "priority": "medium",
-      "source": "Boulder Reporting Lab",
-      "sourceUrl": "https://www.boulderreportinglab.org/",
-      "id": "rf-1769592799114-gka66p9vb",
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/Trump-Expands-Child-Care-Funding-Freeze-Beyond-Minnesota-2026-01-28/aid/145567378",
+      "id": "rf-1769596047511-eb5uagun4",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-28T09:33:19.111Z",
+      "detectedAt": "2026-01-28T10:27:27.508Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
+      "description": "A whistleblower described a 'lack of guardrails' in Minnesota's fraud prevention system.",
+      "insight": "This lack of oversight may have contributed to the large-scale Medicaid fraud scandal in Minnesota, and it is essential to investigate and address these issues to prevent future occurrences.",
+      "entities": [
+        "Minnesota",
+        "Medicaid"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "wccsradio.com",
+      "sourceUrl": "https://wccsradio.com/minnesota-fraud-whistleblower-says-lack-of-guardrails-was-pretty-shocking/",
+      "id": "rf-1769596047511-qpkgnskys",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T10:27:27.508Z",
       "isNew": true
     },
     {
@@ -38,25 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T08:30:51.052Z",
-      "isNew": false
-    },
-    {
-      "type": "Lack of oversight",
-      "description": "The investigation into Medicaid fraud in Minnesota has revealed a lack of oversight and accountability in the state's Medicaid program.",
-      "insight": "This lack of oversight is a major concern, as it allows fraudulent activities to go undetected. Further investigation is needed to determine the extent of the fraud and to identify those responsible.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guam Daily Post",
-      "sourceUrl": "https://www.guampdn.com/story/news/2026/01/28/minnesota-medicaid-fraud-scandal/7077613002/",
-      "id": "rf-1769585140159-d7depolad",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T07:25:40.155Z",
       "isNew": false
     },
     {
@@ -1003,13 +1004,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T09:33:19.111Z"
+  "lastUpdated": "2026-01-28T10:27:27.508Z"
 }

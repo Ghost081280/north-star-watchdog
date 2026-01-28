@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-23T20:24:42.407Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-23T21:20:41.793Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-28T09:33:19.110Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-28T10:27:27.506Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?",
-    "Where did the $12B allegedly go in Minnesota Fraud Case?",
     "Where did the $0 allegedly go in Minnesota Protester Shooting Investigation?",
     "Where did the $12B allegedly go in Gateway Tunnel Funding Freeze?",
     "Where did the Unknown allegedly go in DOJ Investigation into Minnesota Elected Officials?",
@@ -558,7 +556,9 @@
     "Where did the Undisclosed allegedly go in FBI Investigation into Florence Revenue?",
     "Where did the $0 allegedly go in Minnesota Medicaid fraud scandal?",
     "What other organizations is Rep. Tom Sexton connected to?",
-    "Where did the Unknown allegedly go in FBI Investigation into Florence Revenue?"
+    "Where did the Unknown allegedly go in FBI Investigation into Florence Revenue?",
+    "Where did the $0 allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $0 allegedly go in FBI investigation into Florence revenue?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 604,
-    "articlesProcessed": 30050,
-    "redFlagsFound": 716,
+    "totalScans": 605,
+    "articlesProcessed": 30100,
+    "redFlagsFound": 718,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Alex Pretti connected to?",
-        "Where did the Unknown allegedly go in Minnesota Shooting Investigation?",
-        "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?"
+        "Where did the $11.6B allegedly go in Hudson River Tunnel Project Investigation?",
+        "Where did the $12B allegedly go in Minnesota Fraud Case?",
+        "Where did the $0 allegedly go in Minnesota Protester Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-28T09:33:19.110Z",
-  "lastUpdated": "2026-01-28T09:33:19.110Z"
+  "lastReflection": "2026-01-28T10:27:27.506Z",
+  "lastUpdated": "2026-01-28T10:27:27.507Z"
 }
