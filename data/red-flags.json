@@ -1,24 +1,23 @@
 {
   "flags": [
     {
-      "type": "federal funding freeze",
-      "description": "The Trump administration's freeze on childcare funding has significant implications for low-income families and the childcare industry.",
-      "insight": "This freeze may indicate a broader effort to re-evaluate and potentially re-allocate federal funds, which could have far-reaching consequences for various programs and services.",
+      "type": "federal_freeze",
+      "description": "Boulder County's childcare assistance has been frozen for two years, with new federal threats potentially worsening the situation.",
+      "insight": "This could indicate a larger issue with federal funding and support for childcare programs. Further investigation is needed to determine the cause and potential consequences of this freeze.",
       "entities": [
-        "Trump administration",
-        "Minnesota"
+        "Boulder County"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/Trump-Expands-Child-Care-Funding-Freeze-Beyond-Minnesota-2026-01-28/aid/145567378",
-      "id": "rf-1769596047511-eb5uagun4",
+      "source": "Boulder Reporting Lab",
+      "sourceUrl": "https://www.boulderreportinglab.org/",
+      "id": "rf-1769604378969-h7p28pcad",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-01-28T10:27:27.508Z",
-      "isNew": false
+      "detectedAt": "2026-01-28T12:46:18.966Z",
+      "isNew": true
     },
     {
       "type": "Medicaid fraud",
@@ -1000,6 +999,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,7 +1007,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T11:22:41.753Z"
+  "lastUpdated": "2026-01-28T12:46:18.966Z"
 }
