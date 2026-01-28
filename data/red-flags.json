@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating potential election interference in Fulton County, Georgia.",
+      "insight": "This investigation could potentially uncover patterns of election tampering or interference, which could have significant implications for election integrity.",
+      "entities": [
+        "Fulton County",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwNBVV95cUxOTmN2YUw0V3lYSmpsUDA3bGNvcXBFV3NSN0t4M0RRbnhXamI3SlNFUDFsY0VMVGtKRGJrTzdhVVRrSWlkbkJ3UG9PWlB0czBCRXBKVm4xRENGRFFiZks3YjUya2lXT1EtR2w3S0VTeWhyLWJORGZRYlN5UzhTbWRsWnlOU3k?oc=5",
+      "id": "rf-1769632144167-xizlg4xm4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T20:29:04.164Z",
+      "isNew": true
+    },
+    {
+      "type": "payroll_fraud",
+      "description": "An ex-FBI task force agent faced a misconduct investigation and payroll fraud complaint.",
+      "insight": "This case highlights potential internal misconduct within law enforcement agencies, which could have implications for public trust and accountability.",
+      "entities": [
+        "ex-FBI task force agent",
+        "NOPD"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "nola.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcTlaWERVd3pOb0ZGR0hrYnljTXZFNTZYRUxuRkVFdUNkY3ZMamFMWDd4cC14bVVLUGMtcmtOX202aDFxZUxxbUFCWjl0VmNKWGtsV2pCUVZKSms3UklxUk1YNW9LaVlTSG52LVBjNFAtZE96Tl9RSTNLeTh0U3lscXp0RUdMSEk3U0gxR0FMYUZVQ1FwTnBucUZqVTRleVdxXzhwQ2NYMmVraTNGRkh5cEhBNzdBNDhPYWRqStIBwgFBVV95cUxOYllvbTk0QXBmSkZ6TTF5U2EzV2RIN1FPeHh2UWpOVzE5RzZCSUl3TUpvZlVRTjNFYVVmdm8tejlVai0yY21jaVpVSUI0RVd5SW1ncHFqVUpBU3lRQTdMOFU3bkxVcl9heUJ0QXQtQU9KeFJMUDkwbFAwYVJUQV9Kb0lNQU9pQzlITklCRkQxRVYyZ2VmWElLblhSYjNrdko3aTdqUmZPY3BYa1NKcFZ3RFBweHNCa2V4LU5xc1FTeWJydw?oc=5",
+      "id": "rf-1769632144167-41ptmybtv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-28T20:29:04.164Z",
+      "isNew": true
+    },
+    {
       "type": "data_breach",
       "description": "Over 300,000 records exposed in Minnesota DHS data breach.",
       "insight": "This data breach raises concerns about the security of sensitive information and potential vulnerabilities in Minnesota's DHS systems. Further investigation into the cause and extent of the breach is warranted.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T19:27:20.682Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -37,7 +77,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-28T19:27:20.682Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -951,61 +991,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T07:27:15.651Z",
       "isNew": false
-    },
-    {
-      "type": "Excessive use of force",
-      "description": "The fatal shooting of Alex Pretti by a Border Patrol agent raises concerns about the use of excessive force by federal agents",
-      "insight": "I notice a pattern of excessive use of force by federal agents, particularly in cases involving minorities and immigrants. This incident warrants further investigation to determine whether the agent's actions were justified and to identify any systemic issues within the agency.",
-      "entities": [
-        "Border Patrol",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/ice-homeland-security-investigations-branch-leading-probe-into-fatal-shooting-of-alex-pretti/",
-      "id": "rf-1769409335249-ja69pmpib",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T06:35:35.245Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The shooting of Alex Pretti by a Border Patrol agent is under investigation by the Department of Homeland Security's Office of Inspector General.",
-      "insight": "The investigation into the shooting of Alex Pretti raises concerns about the use of force by federal agents and potential patterns of misconduct. I will be tracking the investigation and looking for any connections to other cases or entities.",
-      "entities": [
-        "Border Patrol",
-        "Department of Homeland Security"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-live-updates.html",
-      "id": "rf-1769405565664-qy3930axx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T05:32:45.662Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-28T19:27:20.682Z"
+  "lastUpdated": "2026-01-28T20:29:04.164Z"
 }
