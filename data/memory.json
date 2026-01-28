@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-24T05:20:59.902Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-24T06:30:12.228Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-28T16:36:04.238Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-28T17:31:53.732Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI investigation into Florence revenue?",
-    "Where did the $40 million allegedly go in ADM investigation?",
     "Where did the $40 million allegedly go in SEC investigation into ADM?",
     "Where did the $N/A allegedly go in Minnesota Medicaid fraud scandal?",
     "Where did the $N/A allegedly go in FBI investigation into Florence revenue?",
@@ -558,7 +556,9 @@
     "Where did the $100M+ allegedly go in Minnesota Medicaid fraud scheme?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the Undisclosed allegedly go in Minnesota ICE Shooting Investigation?",
-    "Where did the Undisclosed allegedly go in City of Florence Revenue Diversion Investigation?"
+    "Where did the Undisclosed allegedly go in City of Florence Revenue Diversion Investigation?",
+    "Where did the $0 allegedly go in Minnesota DHS data breach?",
+    "Where did the $0 allegedly go in City of Florence revenue diversion?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 611,
-    "articlesProcessed": 30400,
-    "redFlagsFound": 725,
+    "totalScans": 612,
+    "articlesProcessed": 30450,
+    "redFlagsFound": 727,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "data breach",
+          "description": "A data breach at Minnesota DHS exposed over 300,000 records",
+          "insight": "This breach could lead to identity theft and other malicious activities. It is essential to investigate the cause of the breach and ensure that proper measures are taken to prevent future incidents.",
+          "entities": [
+            "Minnesota DHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Class Action Lawsuits",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVko5ajdmeVZabW5KVUZIRDI0UFphVXNvYVM2ODdYeFFEZU50eUE4YXFHVTc2cDlkb1VmcURsZ1BzSjVEa09QazRuTDBsWW5CU1NmWnlFNmwydUEwQXZHRlVLMFZfV1pweDhPMkN3c285WkVDZnlaam1IZ24zTldCQ1dCSEhjYnItNVptUXBOU2I5VWhBUW0yaFRxUWVXcXNwUjVndFFLZEFBV1NPQVc1bkhxbUt5UQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
-        "Where did the $40 million allegedly go in ADM Investigation?",
-        "Where did the Unknown allegedly go in Homewood Suites investigation?"
+        "Where did the Unknown allegedly go in FBI investigation into Florence revenue?",
+        "Where did the $40 million allegedly go in ADM investigation?",
+        "Where did the $40 million allegedly go in SEC investigation into ADM?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-28T16:36:04.238Z",
-  "lastUpdated": "2026-01-28T16:36:04.239Z"
+  "lastReflection": "2026-01-28T17:31:53.732Z",
+  "lastUpdated": "2026-01-28T17:31:53.732Z"
 }
