@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into 2020 election and ICE agent involved shooting",
+      "insight": "These investigations suggest a pattern of potential wrongdoing and abuse of power at the federal level. Further investigation is needed to determine the extent of these allegations.",
+      "entities": [
+        "FBI",
+        "ICE",
+        "Trump"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "BBC, CNN, NBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSDZndHoyTW4wbUlxU29teVlKZFRxdUVxVkU1QUJueWdYYjBDcGExUEdnb2xBYUg4eWNaVGtoUXUxa2pJbFd4Z0pxT094YUtBN3h5MUlrLU9xNDFBZzNsUVF2UXdOb2FsanlJYldROGNQYkhoSDlEZGlUUGpCeDNOZnd5QjRNMU9GRjVqZ0xSVENreTlUVk12d3Z3WXpHejZnUVZSTUtsbGdNcGNBWVE4Qm9qNVdrWVlZc3JWalNFcjFnWHN2eFM5R3BPckVISXdw",
+      "id": "rf-1769659660967-2mklkj9gm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T04:07:40.963Z",
+      "isNew": true
+    },
+    {
       "type": "election interference",
       "description": "The FBI's search of the Fulton County Election Hub and Operation Center is a significant development in the investigation into 2020 election law claims.",
       "insight": "This investigation has the potential to uncover evidence of election interference or irregularities.",
@@ -969,31 +990,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T13:43:25.293Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-up",
-      "description": "The DOJ and FBI are on the sidelines in the Minneapolis shooting investigation, raising concerns about a potential cover-up.",
-      "insight": "The lack of involvement by the DOJ and FBI in the investigation raises red flags about the potential for a cover-up. Further investigation is needed to determine the circumstances surrounding the shooting and the response by federal authorities.",
-      "entities": [
-        "DOJ",
-        "FBI",
-        "Federal Agents"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/doj-fbi-on-sidelines-in-minnesota-shooting-probe-state-vows-investigation/",
-      "id": "rf-1769431475214-gy3t2yqwx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T12:44:35.211Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,7 +1002,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T01:53:33.131Z"
+  "lastUpdated": "2026-01-29T04:07:40.963Z"
 }
