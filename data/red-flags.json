@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The city of Florence, Minnesota, has requested an FBI investigation into revenue diversion activities.",
+      "insight": "This could indicate potential financial mismanagement or fraud at the local level.",
+      "entities": [
+        "City of Florence",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "953wiki.com",
+      "sourceUrl": "https://953wiki.com/city-of-florence-requests-fbi-investigation-amid-revenue-diversion-activities",
+      "id": "rf-1769675858688-tih89k926",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T08:37:38.685Z",
+      "isNew": true
+    },
+    {
+      "type": "administrative leave",
+      "description": "Federal agents involved in the Alex Pretti shooting have been placed on administrative leave.",
+      "insight": "This suggests that there may be concerns about the actions of these agents and potentially an investigation into the shooting.",
+      "entities": [
+        "Alex Pretti",
+        "FBI"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/federal-agents-involved-in-alex-pretti-shooting-placed-on-administrative-leave-source-says/",
+      "id": "rf-1769675858688-8w2687tur",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T08:37:38.685Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive Use of Force",
       "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of excessive force by law enforcement.",
       "insight": "The incident highlights the need for greater accountability and transparency in law enforcement. Further investigation is needed to determine the circumstances surrounding the shooting.",
@@ -950,58 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T18:34:26.415Z",
       "isNew": false
-    },
-    {
-      "type": "shooting investigation",
-      "description": "The shooting of Alex Pretti by Border Patrol agents is under investigation, with concerns about the use of force and potential racial bias.",
-      "insight": "This investigation has the potential to uncover systemic issues with law enforcement and the use of force, and could lead to changes in policy or procedure.",
-      "entities": [
-        "Alex Pretti",
-        "Border Patrol"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/...",
-      "id": "rf-1769452466417-fwzmtkpjv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T18:34:26.415Z",
-      "isNew": false
-    },
-    {
-      "type": "potential cover-up",
-      "description": "Witness accounts of the Minneapolis shooting are at odds with official statements, raising concerns about a potential cover-up.",
-      "insight": "I suspect that there may be a deliberate attempt to mislead the public about the circumstances surrounding the shooting. Further investigation is needed to uncover the truth.",
-      "entities": [
-        "Trump administration",
-        "Minneapolis police department"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-shooting-witness-accounts-at-odds-with-official-statements/",
-      "id": "rf-1769448529952-6m2owpkva",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T17:28:49.948Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T07:39:30.458Z"
+  "lastUpdated": "2026-01-29T08:37:38.685Z"
 }
