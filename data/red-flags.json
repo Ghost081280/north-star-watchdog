@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The termination of certain programs, such as the Pretti investigation, could indicate a lack of accountability and oversight.",
+      "insight": "The termination of the Pretti investigation raises concerns about a potential cover-up. I recommend investigating the circumstances surrounding the termination and any potential connections to other entities or programs.",
+      "entities": [
+        "U.S. Department of Justice"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/2026/01/29/handling-of-pretti-investigation-has-some-prosecutors-on-verge-of-quitting/",
+      "id": "rf-1769715052165-abp6oewc5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T19:30:52.162Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "A program termination has been reported, with potential impacts on various services.",
       "insight": "I suspect that the program termination may be related to the 'runaway fraud' investigation, and I recommend further research into the connection between the two.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T18:42:55.947Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -970,40 +989,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T03:47:33.742Z",
       "isNew": false
-    },
-    {
-      "type": "Voter Suppression",
-      "description": "The Trump administration's demand for Minnesota's voter rolls has raised concerns about voter suppression and election interference.",
-      "insight": "I suspect that the investigation will reveal a pattern of voter suppression and election interference by the Trump administration, and that the demand for voter rolls is a pretext for further suppression.",
-      "entities": [
-        "Trump administration",
-        "Minnesota"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/",
-      "id": "rf-1769485653745-fsjhb3u3v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T03:47:33.742Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T18:42:55.947Z"
+  "lastUpdated": "2026-01-29T19:30:52.162Z"
 }
