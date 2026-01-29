@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Excessive Use of Force",
+      "description": "The shooting of Alex Pretti by federal agents has raised concerns about the use of excessive force by law enforcement.",
+      "insight": "The incident highlights the need for greater accountability and transparency in law enforcement. Further investigation is needed to determine the circumstances surrounding the shooting.",
+      "entities": [
+        "Federal Agents",
+        "Minneapolis Police Department"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "6abc.com",
+      "sourceUrl": "https://6abc.com/minneapolis-shooting-alex-pretti-federal-agents/11433211/",
+      "id": "rf-1769669075348-kn0zjkfai",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T06:44:35.344Z",
+      "isNew": true
+    },
+    {
+      "type": "Election Interference",
+      "description": "The FBI's investigation into 2020 election fraud has raised concerns about the integrity of the electoral process.",
+      "insight": "The investigation highlights the need for greater transparency and accountability in the electoral process. Further investigation is needed to determine the extent of any potential election interference.",
+      "entities": [
+        "FBI",
+        "Georgia Elections Office"
+      ],
+      "confidence": 70,
+      "priority": "Medium",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-georgia-elections-office-raid/",
+      "id": "rf-1769669075348-fkvgx36tk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T06:44:35.344Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI's search of the Fulton County election office and the investigation into the Alex Pretti shooting indicate potential issues with election integrity and law enforcement actions.",
       "insight": "These investigations suggest a need for closer scrutiny of election processes and law enforcement actions to ensure integrity and transparency.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T05:42:44.585Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -950,60 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T17:28:49.948Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The fatal shooting of Alex Pretti and the subsequent immigration crackdown in Minnesota have raised concerns about the use of force by federal agents and the potential for abuse of power.",
-      "insight": "I am concerned about the lack of transparency and accountability in the investigation into Alex Pretti's shooting. Further investigation is needed to determine the circumstances surrounding the shooting and to ensure that those responsible are held accountable.",
-      "entities": [
-        "Alex Pretti",
-        "Tom Homan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/alex-pretti-shooting-minnesota-trump-tom-homan/",
-      "id": "rf-1769441306203-dw7903m2k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T15:28:26.200Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "There are calls for a fuller investigation into the Minneapolis killing of Alex Pretti, which could potentially lead to changes in ICE policies or procedures.",
-      "insight": "This could be a sign of a larger issue with the use of force by immigration authorities. I would investigate further to see if there are any connections to fraud or mismanagement.",
-      "entities": [
-        "ICE",
-        "Minnesota"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/26/us/minneapolis-live-updates.html",
-      "id": "rf-1769437666456-39zt2mx11",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T14:27:46.453Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T05:42:44.585Z"
+  "lastUpdated": "2026-01-29T06:44:35.344Z"
 }
