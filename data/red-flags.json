@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI's search of the Fulton County election office and the investigation into the Alex Pretti shooting indicate potential issues with election integrity and law enforcement actions.",
+      "insight": "These investigations suggest a need for closer scrutiny of election processes and law enforcement actions to ensure integrity and transparency.",
+      "entities": [
+        "Fulton County election office",
+        "Border Patrol agents"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOd2sxZk42bzFiRi1hY2stR01hRGUwcnpzX3ZGOElEUDBFUXl3dVVVNXl4QXpybkRoUVlBSFNKV0RNYmtJY1VLWXJERWw1YThSZEVrSHhfR2ljdmFvLVpkSDd0dGhkMWJJcGprQkE1LU5qMEd5Y0ZRYS1SdjFYVFAyT01VLTdPVzRpWmJHT201Uzltbjd6VFR0MG51SDE3S3YycjlLRzdWSk03LXAtZHE1dmxZNUhKd01VbWdPUDYxeFhOYU9UanlKZlRHa2JrajBvdHlJSk11c2xxTzFoMlJmR3RCLTk0T1dkZnVaTlVnUW5FY1M1WEIwc1ZicFl1UGhXTkFTZ3NfbzU3S0Q1cUo1MFNCc2hXdmFOeXBTRXdCbTMyMXRvc214T0tMLW0xQ054Sm9HVTN0eVh0b3c4aUVHNUNqZw?",
+      "id": "rf-1769665364588-4x9xa8up8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T05:42:44.585Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI investigation into 2020 election and ICE agent involved shooting",
       "insight": "These investigations suggest a pattern of potential wrongdoing and abuse of power at the federal level. Further investigation is needed to determine the extent of these allegations.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T04:07:40.963Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election interference",
@@ -970,41 +990,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T14:27:46.453Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "A single Minnesota building was linked to $380 million in Medicaid billing, raising questions about the legitimacy of the company and its activities.",
-      "insight": "This appears to be a potential case of Medicaid fraud, with a large amount of money being billed through a single building. I would investigate further to see if there are any connections to other entities or individuals.",
-      "entities": [
-        "Minnesota building",
-        "Medicaid billing"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "International Business Times UK",
-      "sourceUrl": "https://www.ibtimes.com/uk/single-minnesota-building-was-linked-380-million-medicaid-billing-how-was-allowed-happen",
-      "id": "rf-1769435005296-cjn3aybh6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T13:43:25.293Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T04:07:40.963Z"
+  "lastUpdated": "2026-01-29T05:42:44.585Z"
 }
