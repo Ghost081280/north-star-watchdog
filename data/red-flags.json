@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "A program termination has been reported, with potential impacts on various services.",
+      "insight": "I suspect that the program termination may be related to the 'runaway fraud' investigation, and I recommend further research into the connection between the two.",
+      "entities": [
+        "Minnesota Governor Walz"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "kfgo.com",
+      "sourceUrl": "https://kfgo.com/",
+      "id": "rf-1769712175951-gl49cq9ey",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T18:42:55.947Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The infamous Quality 'Learning' Center in Minnesota has been closed, according to recent records.",
       "insight": "This closure suggests that authorities are taking action against fraudulent programs, but it also raises questions about the scope of the fraud and how it went undetected for so long. I would investigate further to determine the extent of the fraud and whether any officials were involved.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T17:37:19.030Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "government shutdown",
@@ -971,41 +990,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T03:47:33.742Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The White House claims that ICE protests are a 'cover-up for Minneapolis fraud', suggesting a potential connection between the protests and underlying financial irregularities.",
-      "insight": "This could indicate a larger pattern of corruption or mismanagement of funds in Minneapolis, potentially involving city officials or contractors.",
-      "entities": [
-        "Minneapolis officials",
-        "ICE"
-      ],
-      "confidence": 60,
-      "priority": "high",
-      "source": "The Independent",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYVFxZ1Vva2tndGlPZlJGcTB1MnVGckJpa25xX21sb3pBXzNDNlhHZENQQUQ5cm1LcERYVEpwSFJhcFY3OHNvc2s2d2FFS2haX0NmR0NielZCWERtcXJvRW11bDJhWHB2WFZLSEFQeUhpRFpRRWpNaWh6RTR5M3FZS04xUk9QOHhvd2o4cVRiamdPbkNKTUs4Q3Y0RFZMRmM?",
-      "sourceArticle": "White House claims ICE protests are ‘cover-up for Minneapolis fraud’",
-      "id": "rf-1769469678875-obku0yjwg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T23:21:18.871Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T17:37:19.030Z"
+  "lastUpdated": "2026-01-29T18:42:55.947Z"
 }
