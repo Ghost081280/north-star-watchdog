@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Excessive use of force",
+      "description": "The shooting of Alex Pretti by ICE agents has raised concerns about excessive use of force and the need for independent investigations.",
+      "insight": "The incident highlights the need for greater transparency and accountability in law enforcement agencies, particularly when it comes to the use of force.",
+      "entities": [
+        "ICE",
+        "Alex Pretti"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "Sen. Jon Ossoff",
+      "sourceUrl": "https://www.wjbf.com/news/sen-jon-ossoff-calls-for-independent-investigation-after-minnesota-man-killed-by-ice-agents/",
+      "id": "rf-1769679696617-kte2zyikr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T09:41:36.614Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The city of Florence, Minnesota, has requested an FBI investigation into revenue diversion activities.",
       "insight": "This could indicate potential financial mismanagement or fraud at the local level.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T08:37:38.685Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "administrative leave",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T08:37:38.685Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Excessive Use of Force",
@@ -970,41 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T19:23:24.036Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Rep. Ilhan Omar's wealth, which could potentially lead to charges or controversy.",
-      "insight": "This investigation has the potential to uncover financial improprieties or corruption, but it also raises concerns about political bias and the legitimacy of the inquiry.",
-      "entities": [
-        "Ilhan Omar",
-        "DOJ"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://www.washingtonexaminer.com/...",
-      "id": "rf-1769452466417-3nwsmfuh1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T18:34:26.415Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T08:37:38.685Z"
+  "lastUpdated": "2026-01-29T09:41:36.614Z"
 }
