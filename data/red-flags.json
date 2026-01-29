@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The infamous Quality 'Learning' Center in Minnesota has been closed, according to recent records.",
+      "insight": "This closure suggests that authorities are taking action against fraudulent programs, but it also raises questions about the scope of the fraud and how it went undetected for so long. I would investigate further to determine the extent of the fraud and whether any officials were involved.",
+      "entities": [
+        "Quality 'Learning' Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
+      "id": "rf-1769708239033-xn9ssn3kc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T17:37:19.030Z",
+      "isNew": true
+    },
+    {
       "type": "government shutdown",
       "description": "Government shutdown looming due to ICE funding dispute",
       "insight": "The potential shutdown highlights the need for a resolution to the ICE funding dispute. Further research is needed to determine the potential impact of a shutdown on Minnesota and the nation.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-29T16:42:28.608Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -973,41 +992,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T23:21:18.871Z",
       "isNew": false
-    },
-    {
-      "type": "Potential cover-up",
-      "description": "The White House has claimed that ICE protests are a 'cover-up for Minneapolis fraud', which may indicate an attempt to deflect attention from the Trump administration's handling of the situation.",
-      "insight": "This statement raises concerns about the Trump administration's transparency and potential attempts to manipulate public opinion. Further investigation is needed to determine the validity of these claims.",
-      "entities": [
-        "White House",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Independent",
-      "sourceUrl": "https://www.independent.co.uk/news/world/americas/us-politics/white-house-ice-protests-minneapolis-fraud-a8843516.html",
-      "id": "rf-1769466073843-f9cv31eoa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T22:21:13.839Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T16:42:28.608Z"
+  "lastUpdated": "2026-01-29T17:37:19.030Z"
 }
