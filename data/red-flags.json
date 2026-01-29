@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Cover-Up",
+      "description": "The Trump administration's response to the ICE shooting investigation has raised concerns about a potential cover-up. The administration has been accused of politicizing the investigation and downplaying the severity of the incident.",
+      "insight": "I suspect that there may be an attempt to conceal the truth about the shooting and the administration's involvement. Further investigation is needed to uncover the facts and ensure accountability.",
+      "entities": [
+        "Trump Administration",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "Attack of the Fanboy",
+      "sourceUrl": "https://www.attackofthefanboy.com/news/agents-involved-in-alex-pretti-fatal-shooting-are-put-on-leave/",
+      "id": "rf-1769695196212-zbs0dmwh3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T13:59:56.209Z",
+      "isNew": true
+    },
+    {
       "type": "Excessive use of force",
       "description": "The shooting of Alex Pretti by ICE agents has raised concerns about excessive use of force and the need for independent investigations.",
       "insight": "The incident highlights the need for greater transparency and accountability in law enforcement agencies, particularly when it comes to the use of force.",
@@ -971,30 +991,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T21:23:10.515Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The shooting of Alex Pretti by federal agents and the subsequent investigations have raised concerns about the use of force and potential wrongdoing. The investigation into Rep. Ilhan Omar's wealth has also sparked concerns about corruption.",
-      "insight": "These incidents suggest potential wrongdoing and corruption by government officials and law enforcement. Further investigation is warranted to uncover any potential fraud or abuse of power.",
-      "entities": [
-        "Federal agents",
-        "Rep. Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "id": "rf-1769455404039-rdgdmmocu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T19:23:24.036Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1004,7 +1004,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T12:54:56.422Z"
+  "lastUpdated": "2026-01-29T13:59:56.209Z"
 }

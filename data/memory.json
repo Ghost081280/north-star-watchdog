@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-24T21:17:51.483Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-24T22:19:19.291Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-29T12:54:56.419Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-01-29T13:59:56.207Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in City of Florence revenue diversion?",
-    "Where did the $0 allegedly go in Fulton County Election Facility Investigation?",
     "Where did the $0 allegedly go in Minnesota DHS Data Breach Investigation?",
     "Where did the None allegedly go in FBI investigation into 2020 election?",
     "Where did the None allegedly go in FBI investigation into Alex Pretti shooting?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Tom Homan?",
     "What other organizations is Sen. Klobuchar connected to?",
     "What specific allegations exist against Sen. Klobuchar?",
-    "What other organizations is Gov. Walz connected to?"
+    "What other organizations is Gov. Walz connected to?",
+    "Where did the Unknown allegedly go in ICE Shooting Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 627,
-    "articlesProcessed": 31200,
-    "redFlagsFound": 744,
+    "totalScans": 628,
+    "articlesProcessed": 31250,
+    "redFlagsFound": 745,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Medicaid fraud scheme?",
-        "What other organizations is Ilhan Omar connected to?",
-        "Where did the Undisclosed allegedly go in Minnesota ICE Shooting Investigation?"
+        "Where did the $0 allegedly go in City of Florence revenue diversion?",
+        "Where did the $0 allegedly go in Fulton County Election Facility Investigation?",
+        "Where did the $0 allegedly go in Minnesota DHS Data Breach Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-29T12:54:56.419Z",
-  "lastUpdated": "2026-01-29T12:54:56.421Z"
+  "lastReflection": "2026-01-29T13:59:56.207Z",
+  "lastUpdated": "2026-01-29T13:59:56.208Z"
 }
