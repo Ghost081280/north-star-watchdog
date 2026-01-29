@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "government shutdown",
+      "description": "Government shutdown looming due to ICE funding dispute",
+      "insight": "The potential shutdown highlights the need for a resolution to the ICE funding dispute. Further research is needed to determine the potential impact of a shutdown on Minnesota and the nation.",
+      "entities": [
+        "ICE",
+        "US Government"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "AZCentral",
+      "sourceUrl": "https://www.azcentral.com/story/news/politics/2026/01/29/what-happen-arizona-ice-funding-causes-government-shutdown/1092737002/",
+      "id": "rf-1769704948611-w8o1m7xss",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-29T16:42:28.608Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI searches Atlanta election office, chasing Trump 2020 vote fraud claims",
       "insight": "This indicates ongoing investigations into election fraud claims, which may be related to other cases of fraud in Minnesota.",
@@ -973,25 +993,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-26T22:21:13.839Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "A data breach impacting 300K individuals in Minnesota",
-      "insight": "This could potentially lead to identity theft and other issues for those impacted",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdTZFLXZ0aG1JMUExb0JSRlhrUUtxd1FUZnVXNG5iN2pvdWMzWE1ZMWF6bks5WE9lQ0tnUk0wekd3U2xueHpna2NzSk5GeTR5UjVuUmRNbjRpYmVNR1dySTZvekhPRE91ZFRuXzhvSGFFUEFkOGNMMXF2MWJTVjRhWWE2V0dVMmwtV081OWVoUTdOVTgzVkcySXJlMFFpMEV6dXQ3RmctbE9tcDlGQ19BVFFPek9TYlBQMm9SdkFDZHYwcGJIVFV1cXFB",
-      "id": "rf-1769462590518-76aixivp8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-26T21:23:10.515Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,6 +1005,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1021,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-29T15:34:27.599Z"
+  "lastUpdated": "2026-01-29T16:42:28.608Z"
 }
