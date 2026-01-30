@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Trump administration terminated various programs, potentially impacting Minnesota.",
+      "insight": "The termination of programs could have led to a lack of resources for Minnesota, potentially exacerbating the fraud issue.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "New York Magazine",
+      "sourceUrl": "https://www.nymagazine.com/2026/01/30/how-trump-team-botched-shooting-response-and-blame-game-played-out/",
+      "id": "rf-1769772443798-5cpapme90",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-30T11:27:23.795Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the former mayor-president's office, which has led to a corruption probe",
       "insight": "This investigation suggests a potential pattern of corruption in local government, which warrants further investigation. I recommend tracking the developments in this case and exploring potential connections to other entities or programs.",
@@ -967,41 +987,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T09:31:30.157Z",
       "isNew": false
-    },
-    {
-      "type": "Potential obstruction of justice",
-      "description": "The Trump administration's actions following the Alex Pretti shooting have raised concerns about potential obstruction of justice.",
-      "insight": "The administration's attempts to distance itself from the incident and limit the investigation may be seen as an attempt to obstruct justice.",
-      "entities": [
-        "Trump administration",
-        "DHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/",
-      "id": "rf-1769502724771-yc8tv3w36",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T08:32:04.768Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-30T10:33:16.693Z"
+  "lastUpdated": "2026-01-30T11:27:23.795Z"
 }
