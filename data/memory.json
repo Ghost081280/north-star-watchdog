@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-25T21:18:44.057Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-01-25T22:19:42.688Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T14:35:45.808Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-30T15:33:38.394Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI Investigation into CATS Corruption?",
-    "Where did the Unknown allegedly go in FBI Investigation into Former Mayor-President's Office?",
     "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?",
     "Where did the $millions allegedly go in Gateway Tunnel Project Funding?",
     "What other organizations is Not specified connected to?",
@@ -558,7 +556,9 @@
     "Where did the Not specified allegedly go in Minnesota Fraud Crackdown?",
     "Where did the Not specified allegedly go in CATS Corruption Arrests?",
     "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $10M+ allegedly go in NBA Betting Investigation?"
+    "Where did the $10M+ allegedly go in NBA Betting Investigation?",
+    "What specific allegations exist against Alex Pretti?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 649,
-    "articlesProcessed": 32300,
-    "redFlagsFound": 776,
+    "totalScans": 650,
+    "articlesProcessed": 32350,
+    "redFlagsFound": 777,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Alex Pretti connected to?",
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Crackdown?",
-        "Where did the Unknown allegedly go in FBI Investigation into CATS Corruption?"
+        "Where did the Unknown allegedly go in FBI Investigation into CATS Corruption?",
+        "Where did the Unknown allegedly go in FBI Investigation into Former Mayor-President's Office?",
+        "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T14:35:45.808Z",
-  "lastUpdated": "2026-01-30T14:35:45.809Z"
+  "lastReflection": "2026-01-30T15:33:38.394Z",
+  "lastUpdated": "2026-01-30T15:33:38.395Z"
 }
