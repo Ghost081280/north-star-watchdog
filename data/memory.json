@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T04:56:03.930Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-26T05:32:45.660Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-30T19:31:36.290Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-30T20:28:53.470Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 46,
+      "count": 47,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-30T14:35:45.809Z"
+      "lastSeen": "2026-01-30T20:28:53.471Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10 million allegedly go in Minnesota Care Worker Fraud Crackdown?",
-    "Where did the $Not specified allegedly go in Minnesota Fraud Crackdown?",
     "What other organizations is Kevin Warsh connected to?",
     "What specific allegations exist against Kevin Warsh?",
     "Where did the $0 allegedly go in FBI Investigation into Trump Administration?",
@@ -558,7 +556,9 @@
     "Where did the $9B allegedly go in Minnesota Welfare Fraud Investigation?",
     "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Alex Pretti Civil Rights Investigation?",
-    "Where did the $9B allegedly go in Minnesota Daycare Scandal?"
+    "Where did the $9B allegedly go in Minnesota Daycare Scandal?",
+    "Where did the $0 allegedly go in Alex Pretti shooting investigation?",
+    "Where did the $0 allegedly go in Minnesota fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 654,
-    "articlesProcessed": 32550,
-    "redFlagsFound": 783,
+    "totalScans": 655,
+    "articlesProcessed": 32600,
+    "redFlagsFound": 785,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $not specified allegedly go in CATS corruption probe?",
-        "What other organizations is Donald Trump connected to?",
-        "Where did the $100 million allegedly go in FBI Investigation into Trump's 2020 Election Grievances?"
+        "Where did the $10 million allegedly go in Minnesota Care Worker Fraud Crackdown?",
+        "Where did the $Not specified allegedly go in Minnesota Fraud Crackdown?",
+        "What other organizations is Kevin Warsh connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T19:31:36.290Z",
-  "lastUpdated": "2026-01-30T19:31:36.290Z"
+  "lastReflection": "2026-01-30T20:28:53.470Z",
+  "lastUpdated": "2026-01-30T20:28:53.471Z"
 }
