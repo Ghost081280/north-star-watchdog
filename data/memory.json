@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-25T14:18:39.565Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-25T15:19:50.979Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T07:39:31.021Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-30T08:36:59.638Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 642,
-    "articlesProcessed": 31950,
+    "totalScans": 643,
+    "articlesProcessed": 32000,
     "redFlagsFound": 767,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Amy Klobuchar?",
-        "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the unknown allegedly go in ICE Investigation in Minnesota?",
+        "Where did the $1B+ allegedly go in Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T07:39:31.021Z",
-  "lastUpdated": "2026-01-30T07:39:31.022Z"
+  "lastReflection": "2026-01-30T08:36:59.638Z",
+  "lastUpdated": "2026-01-30T08:36:59.639Z"
 }
