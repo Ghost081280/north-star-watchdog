@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal_investigation",
+      "description": "The DOJ has opened a federal civil rights investigation into the death of Alex Pretti.",
+      "insight": "This investigation suggests that there may be concerns about the use of force by ICE agents in Minnesota.",
+      "entities": [
+        "Alex Pretti",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hUlhFM1hYeW5OcDJkRVpNWUdFNldXV2Q5SVVXZEJnZFdHRkhROFFCNzdtZmMzTGx4b1RBUWV2aEtscUZjWFpMUzFveWMxZVNRTXp2anhWR0hianVpdDVVTUdFZGJha1Y5ZTY3RUdzLXVSYXlhRU9R0gF8QVVfeXFMTTcwNEUzT3EtR1FFVE5PZHpIR00zSDREel9wLW5mZmVYWnBPX0ZJNUM5WjhmWDkxSGZCQ2V5eTR6ci1BWmMzVC1hNE5NQlFxbl9fY3c0VVRpRXJsbXBXVEE0SlUxaVhLSGNNWlQ1aDVtcndqclp1MEE4N0FJNQ?",
+      "id": "rf-1769798409532-0cytoaxs0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-30T18:40:09.528Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
       "description": "The FBI has taken over the investigation into the shooting of Alex Pretti, with former President Trump weighing in on the incident.",
       "insight": "The involvement of high-profile figures and the FBI suggests a potentially complex and sensitive case. The incident may have civil rights implications.",
       "entities": [
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-30T17:33:39.410Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Corruption",
@@ -971,25 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T11:22:43.437Z",
       "isNew": false
-    },
-    {
-      "type": "alleged violations",
-      "description": "China's top general under investigation for alleged violations amid corruption crackdown",
-      "insight": "This could indicate a larger issue with corruption in China",
-      "entities": [
-        "China's top general"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Guardian",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWDRfd3pHSDlEdE15VU9FR0pJNy1xVlpVaC1jMlh4RGR5OTFZQWlkemZSQ1V5NVotMVBTY2h0U2RTVlkzU001b002cUtNbHYwdDNuZWtpNjlCWk5WX0Eyd2daOTZDWVg3U1NhWlM0dGtWdUF5dkpETVVLVWJBaE9ic2xKZTd4OWdFR1NWb0hyZWhJaTAzUVppQmZhdDg1MDA",
-      "id": "rf-1769512963440-jzxm1ipfi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T11:22:43.437Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,7 +1004,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-30T17:33:39.410Z"
+  "lastUpdated": "2026-01-30T18:40:09.528Z"
 }

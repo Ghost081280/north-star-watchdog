@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T01:48:01.612Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-26T03:56:39.184Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T17:33:39.409Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-30T18:40:09.527Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 652,
-    "articlesProcessed": 32450,
-    "redFlagsFound": 780,
+    "totalScans": 653,
+    "articlesProcessed": 32500,
+    "redFlagsFound": 782,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $billions allegedly go in Minnesota Medicaid fraud crackdown?",
         "Where did the $not specified allegedly go in CATS corruption probe?",
-        "What other organizations is Donald Trump connected to?"
+        "What other organizations is Donald Trump connected to?",
+        "Where did the $100 million allegedly go in FBI Investigation into Trump's 2020 Election Grievances?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T17:33:39.409Z",
-  "lastUpdated": "2026-01-30T17:33:39.409Z"
+  "lastReflection": "2026-01-30T18:40:09.527Z",
+  "lastUpdated": "2026-01-30T18:40:09.527Z"
 }
