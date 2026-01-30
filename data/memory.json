@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T07:27:15.649Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-26T08:31:11.481Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T22:24:11.772Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-30T23:24:22.694Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
-    "Where did the Not specified allegedly go in Minnesota Fraud Crackdown?",
     "Where did the Not specified allegedly go in CATS Corruption Arrests?",
     "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $10M+ allegedly go in NBA Betting Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Minnesota fraud investigation?",
     "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the Federal funding freeze allegedly go in Minnesota Daycare Scandal?",
-    "Where did the $0 allegedly go in Alex Pretti Killing Investigation?"
+    "Where did the $0 allegedly go in Alex Pretti Killing Investigation?",
+    "Where did the Unknown allegedly go in Alex Pretti Killing Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Child Care Program Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 657,
-    "articlesProcessed": 32700,
-    "redFlagsFound": 787,
+    "totalScans": 658,
+    "articlesProcessed": 32750,
+    "redFlagsFound": 788,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in FBI Investigation into Trump Administration?",
         "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
-        "Where did the Not specified allegedly go in Minnesota Fraud Crackdown?"
+        "Where did the Not specified allegedly go in Minnesota Fraud Crackdown?",
+        "Where did the Not specified allegedly go in CATS Corruption Arrests?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T22:24:11.772Z",
-  "lastUpdated": "2026-01-30T22:24:11.773Z"
+  "lastReflection": "2026-01-30T23:24:22.694Z",
+  "lastUpdated": "2026-01-30T23:24:22.695Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Cover-Up",
+      "description": "The Trump administration has announced that nothing will change in Minnesota immigration enforcement efforts, despite the ongoing investigation into the killing of Alex Pretti.",
+      "insight": "This could indicate a potential cover-up or lack of transparency in the investigation. Further research is needed to determine the implications of this announcement.",
+      "entities": [
+        "Trump Administration",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NTD News",
+      "sourceUrl": "https://www.ntd.com/trump-says-nothing-to-change-in-minnesota-immigration-enforcement-efforts_742111.html",
+      "id": "rf-1769815462699-w85akvc4u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-30T23:24:22.696Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ's civil rights investigation into the killing of Alex Pretti by federal agents raises concerns over police brutality and accountability.",
       "insight": "I need to investigate potential connections between this incident and any larger patterns of misconduct within law enforcement agencies.",
@@ -972,41 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T13:45:58.515Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The federal investigation into the Minneapolis shooting has raised concerns about the Trump administration's handling of the incident.",
-      "insight": "I suspect that there may be a cover-up or a lack of transparency in the investigation. Further research is needed to uncover the truth.",
-      "entities": [
-        "Trump administration",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/",
-      "id": "rf-1769517914774-ad6sb18i9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T12:45:14.770Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-30T22:24:11.774Z"
+  "lastUpdated": "2026-01-30T23:24:22.696Z"
 }
