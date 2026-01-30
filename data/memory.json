@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-25T22:19:42.688Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-25T23:19:48.352Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T15:33:38.394Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-01-30T16:38:33.394Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?",
-    "Where did the $millions allegedly go in Gateway Tunnel Project Funding?",
-    "What other organizations is Not specified connected to?",
-    "What specific allegations exist against Not specified?",
     "Where did the $billions allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the $not specified allegedly go in CATS corruption probe?",
     "What other organizations is Donald Trump connected to?",
@@ -558,7 +554,11 @@
     "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $10M+ allegedly go in NBA Betting Investigation?",
     "What specific allegations exist against Alex Pretti?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Alex Pretti connected to?",
+    "What other organizations is Don Lemon connected to?",
+    "Where did the None allegedly go in Minnesota Shooting Investigation?",
+    "Where did the None allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 650,
-    "articlesProcessed": 32350,
-    "redFlagsFound": 777,
+    "totalScans": 651,
+    "articlesProcessed": 32400,
+    "redFlagsFound": 778,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Investigation into CATS Corruption?",
-        "Where did the Unknown allegedly go in FBI Investigation into Former Mayor-President's Office?",
-        "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?"
+        "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?",
+        "Where did the $millions allegedly go in Gateway Tunnel Project Funding?",
+        "What other organizations is Not specified connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T15:33:38.394Z",
-  "lastUpdated": "2026-01-30T15:33:38.395Z"
+  "lastReflection": "2026-01-30T16:38:33.394Z",
+  "lastUpdated": "2026-01-30T16:38:33.395Z"
 }
