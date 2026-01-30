@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-25T13:32:06.689Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-25T14:18:39.565Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-30T06:46:10.472Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-30T07:39:31.021Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Amy Klobuchar?",
-    "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Minnesota Governor Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the unknown allegedly go in ICE Investigation in Minnesota?",
     "Where did the $1B+ allegedly go in Child Care Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in FBI Investigation into CATS Corruption?",
     "Where did the Unknown allegedly go in FBI Investigation into Former Mayor-President's Office?",
     "Where did the $billions allegedly go in Minnesota Medicaid Fraud Crackdown?",
-    "Where did the $millions allegedly go in Gateway Tunnel Project Funding?"
+    "Where did the $millions allegedly go in Gateway Tunnel Project Funding?",
+    "What other organizations is Not specified connected to?",
+    "What specific allegations exist against Not specified?",
+    "Where did the $billions allegedly go in Minnesota Medicaid fraud crackdown?",
+    "Where did the $not specified allegedly go in CATS corruption probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 641,
-    "articlesProcessed": 31900,
-    "redFlagsFound": 765,
+    "totalScans": 642,
+    "articlesProcessed": 31950,
+    "redFlagsFound": 767,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Tim Walz connected to?",
-        "What other organizations is Amy Klobuchar connected to?",
-        "What specific allegations exist against Amy Klobuchar?"
+        "What specific allegations exist against Amy Klobuchar?",
+        "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-30T06:46:10.472Z",
-  "lastUpdated": "2026-01-30T06:46:10.473Z"
+  "lastReflection": "2026-01-30T07:39:31.021Z",
+  "lastUpdated": "2026-01-30T07:39:31.022Z"
 }
