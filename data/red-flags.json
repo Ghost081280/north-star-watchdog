@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating allegations of revenue diversion in Florence.",
+      "insight": "This could indicate a significant financial crime.",
+      "entities": [
+        "FBI",
+        "Florence"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Cincinnati Enquirer",
+      "sourceUrl": "https://www.cincinnati.com/story/news/2026/01/31/fbi-investigation-florence-revenue-diversion/2026-01-31/",
+      "id": "rf-1769851655438-7sxa320jf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T09:27:35.435Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
       "insight": "This investigation raises concerns about potential civil rights violations and the need for further scrutiny of law enforcement actions.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T08:29:17.691Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -971,41 +991,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T16:29:27.330Z",
       "isNew": false
-    },
-    {
-      "type": "government investigation",
-      "description": "The US Senate is investigating the effect of Trump administration child care cutbacks on rural families.",
-      "insight": "This investigation could potentially uncover fraud or mismanagement of funds. The Trump administration's policies have been controversial, and this investigation could shed light on their impact.",
-      "entities": [
-        "US Senate",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Successful Farming",
-      "sourceUrl": "https://www.successfulfarming.com/U-S-Senate-Dems-Probe-Effect-of-Trump-Administration-Child-Care-Cutbacks-on-Rural-Families-a1021",
-      "id": "rf-1769527827934-zspur3g6d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T15:30:27.932Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T08:29:17.691Z"
+  "lastUpdated": "2026-01-31T09:27:35.435Z"
 }
