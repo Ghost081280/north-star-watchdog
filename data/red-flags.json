@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
+      "insight": "This investigation raises concerns about the use of force by law enforcement and the need for accountability. Further investigation is needed to determine the circumstances surrounding the killing.",
+      "entities": [
+        "Alex Pretti",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/article/justice-dept-opens-civil-rights-inquiry-into-killing-of-alex-pretti.html",
+      "id": "rf-1769854993747-c4w1u4jic",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T10:23:13.743Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating allegations of revenue diversion in Florence.",
       "insight": "This could indicate a significant financial crime.",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T09:27:35.435Z",
-      "isNew": true
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
-      "insight": "This investigation raises concerns about potential civil rights violations and the need for further scrutiny of law enforcement actions.",
-      "entities": [
-        "DOJ",
-        "Alex Pretti"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/31/us/doj-investigation-alex-pretti.html",
-      "id": "rf-1769848157695-v64t2n5tr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T08:29:17.691Z",
       "isNew": false
     },
     {
@@ -995,17 +995,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T09:27:35.435Z"
+  "lastUpdated": "2026-01-31T10:23:13.743Z"
 }
