@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
+      "insight": "This investigation raises concerns about potential civil rights violations and the need for further scrutiny of law enforcement actions.",
+      "entities": [
+        "DOJ",
+        "Alex Pretti"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/31/us/doj-investigation-alex-pretti.html",
+      "id": "rf-1769848157695-v64t2n5tr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T08:29:17.691Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal civil rights investigation into killing of Alex Pretti",
       "insight": "This investigation could lead to further actions against law enforcement or individuals involved in the killing.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T07:28:10.597Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -37,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T06:37:20.336Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti, and there are concerns about police brutality and racial injustice.",
-      "insight": "I see a pattern of escalating protests and federal investigations, which suggests a deeper issue with police brutality and racial injustice. I recommend investigating further to uncover any potential wrongdoing.",
-      "entities": [
-        "DOJ",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/30/us/justice-dept-opens-civil-rights-inquiry-into-killing-of-alex-pretti.html",
-      "id": "rf-1769824219787-7oif5m13b",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T01:50:19.784Z",
       "isNew": false
     },
     {
@@ -995,6 +995,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1004,7 +1005,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T07:28:10.597Z"
+  "lastUpdated": "2026-01-31T08:29:17.691Z"
 }

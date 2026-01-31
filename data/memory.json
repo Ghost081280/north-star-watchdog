@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T13:43:25.292Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-01-26T14:27:46.451Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-31T07:28:10.595Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-01-31T08:29:17.689Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Alex Pretti?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Alex Pretti connected to?",
     "What other organizations is Don Lemon connected to?",
     "Where did the None allegedly go in Minnesota Shooting Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minnesota Child Care Program Investigation?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the None allegedly go in Federal Civil Rights Investigation into Alex Pretti's Killing?",
-    "Where did the $0 allegedly go in Minnesota Child Care Program Investigation?"
+    "Where did the $0 allegedly go in Minnesota Child Care Program Investigation?",
+    "Where did the Unknown allegedly go in ICE Protest Investigation?",
+    "Where did the Unknown allegedly go in Waymo Robotaxi Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 663,
-    "articlesProcessed": 33000,
-    "redFlagsFound": 792,
+    "totalScans": 664,
+    "articlesProcessed": 33050,
+    "redFlagsFound": 793,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Federal civil rights investigation into killing of Alex Pretti",
-          "insight": "This investigation could lead to further actions against law enforcement or individuals involved in the killing.",
-          "entities": [
-            "DOJ"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Guardian",
-          "sourceUrl": "https://www.theguardian.com/us-news/2026/jan/30/us-doj-announces-federal-civil-rights-investigation-into-killing-of-alex-pretti-video"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10M+ allegedly go in NBA Betting Investigation?",
         "What specific allegations exist against Alex Pretti?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Alex Pretti connected to?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-31T07:28:10.595Z",
-  "lastUpdated": "2026-01-31T07:28:10.596Z"
+  "lastReflection": "2026-01-31T08:29:17.689Z",
+  "lastUpdated": "2026-01-31T08:29:17.690Z"
 }
