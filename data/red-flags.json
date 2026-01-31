@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti, and there are concerns about police brutality and racial injustice.",
+      "insight": "I see a pattern of escalating protests and federal investigations, which suggests a deeper issue with police brutality and racial injustice. I recommend investigating further to uncover any potential wrongdoing.",
+      "entities": [
+        "DOJ",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/01/30/us/justice-dept-opens-civil-rights-inquiry-into-killing-of-alex-pretti.html",
+      "id": "rf-1769824219787-7oif5m13b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T01:50:19.784Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Cover-Up",
       "description": "The Trump administration has announced that nothing will change in Minnesota immigration enforcement efforts, despite the ongoing investigation into the killing of Alex Pretti.",
       "insight": "This could indicate a potential cover-up or lack of transparency in the investigation. Further research is needed to determine the implications of this announcement.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-30T23:24:22.696Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -972,26 +992,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T14:29:21.805Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Trump administration is under scrutiny for its response to the Minneapolis ICE shooting.",
-      "insight": "The administration's handling of the situation appears to be inadequate and potentially corrupt.",
-      "entities": [
-        "Trump administration",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.abcnews.go.com/ABCNews/live/updates-top-border-patrol-official-bovino-expected-to-leave-minneapolis-as-trump-sends-homan-to-the-state-cnn",
-      "id": "rf-1769521558518-ej1y70ksc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T13:45:58.515Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1023,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-30T23:24:22.696Z"
+  "lastUpdated": "2026-01-31T01:50:19.784Z"
 }
