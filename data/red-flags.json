@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "Federal Investigation",
+      "description": "The Justice Department has opened a federal civil rights investigation into the killing of Alex Pretti, which may indicate a pattern of civil rights violations by law enforcement.",
+      "insight": "This investigation may be connected to other incidents involving law enforcement and civil rights violations. Further research is needed to determine the extent of these violations and the entities involved.",
+      "entities": [
+        "DOJ",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1769863405539-kvcg4pje8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T12:43:25.536Z",
+      "isNew": true
+    },
+    {
+      "type": "Federal Investigation",
       "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
       "insight": "This investigation raises concerns about the use of force by law enforcement and the need for accountability. Further investigation is needed to determine the circumstances surrounding the killing.",
       "entities": [
@@ -57,26 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T07:28:10.597Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The Justice Department has opened a federal civil rights probe into the killing of Alex Pretti",
-      "insight": "This investigation suggests that there may be a pattern of civil rights violations, and it is essential to track the developments in this case.",
-      "entities": [
-        "Alex Pretti",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/jan/31/us-doj-opens-federal-civil-rights-investigation-into-killing-of-alex-pretti",
-      "id": "rf-1769841440340-1spt64rvx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T06:37:20.336Z",
       "isNew": false
     },
     {
@@ -995,6 +995,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1003,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T11:19:37.350Z"
+  "lastUpdated": "2026-01-31T12:43:25.536Z"
 }
