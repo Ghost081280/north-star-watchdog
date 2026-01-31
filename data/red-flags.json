@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "civil rights concerns",
+      "description": "Investigation into the shooting of Alex Pretti by Border Patrol officers",
+      "insight": "This incident raises concerns about law enforcement practices and civil rights, requiring a thorough examination.",
+      "entities": [
+        "Alex Pretti",
+        "Border Patrol"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Jurist.org",
+      "sourceUrl": "https://jurist.org/news/2026/01/doj-opens-civil-rights-investigation-alex-pretti-killing/",
+      "id": "rf-1769901670066-1v2ba3yap",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T23:21:10.063Z",
+      "isNew": true
+    },
+    {
       "type": "government_investigation",
       "description": "State agency whistleblowers say fraud concerns were ignored for years",
       "insight": "Possible cover up or neglect of duty within state agencies",
@@ -966,27 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T08:30:51.052Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations ongoing in Minnesota",
-      "insight": "Possible patterns of corruption or wrongdoing in Minnesota, potentially involving government agencies or officials",
-      "entities": [
-        "Minnesota state government",
-        "federal agencies"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05b3VjRU54c0M5c0JHR3VfblhmeGFxTk1rVUpoQmdCSTBUWXU4V3Q2VGw4aEFLckh5Vjc2Q3lfZWljZ2FVei1aVE9aT3JkczFmZlpzdVhkanNUWXJSODlQallxYjA2QdIBa0FVX3lxTFBzSkpweVYwMHpyVUNMWi11X2diZnRGdnJnNC11QXN3XzFBakM1bE54R2luS1VKQ2lUYThucmZpLVA0STdJR3dnQU1yOEFYM2EzQS1mbkFtNUh3MDBnWEdUUWdlYkV1ZlpJbDlB",
-      "priorityLevel": "high",
-      "id": "rf-1769578039303-jxrngc9ov",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T05:27:19.300Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,10 +994,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T22:21:31.377Z"
+  "lastUpdated": "2026-01-31T23:21:10.063Z"
 }
