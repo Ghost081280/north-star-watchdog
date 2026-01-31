@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "FBI investigating Florence for revenue diversion",
+      "insight": "The FBI investigation into Florence for revenue diversion raises concerns about potential financial mismanagement and the need for oversight in municipal or organizational finances.",
+      "entities": [
+        "Florence",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Cincinnati Enquirer",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQWlScmV2eVQwc3pZUWxnR0M5VzdBQ011QjBYT0Z2X0hyY1VMcFFMa1lqcjBTTktvRW1pZUw4dk9SZDJwVTZBZlJWX0tPakdpN3Z5SWw0NERjYkdPaHU3ZjZieklNQWE0WW5MNW5tYUFSMGZxUGhBUTJJWE1qUGdYVFo1YWxhVjRMb1F0enhwMkhMTlVOdS02WWl0aEgtVm9PX08zWVBRUFVNUDVid2RwcDNNc1c?oc=5",
+      "id": "rf-1769876808148-dtiaumexk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T16:26:48.144Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti",
       "insight": "This investigation may indicate a pattern of misconduct by law enforcement agencies, and further investigation is needed to determine the extent of the issue.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T15:22:11.388Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged fraud",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T15:22:11.388Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -969,40 +989,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T04:42:58.378Z",
       "isNew": false
-    },
-    {
-      "type": "Excessive use of force",
-      "description": "The fatal shooting of Alex Pretti by federal agents in Minneapolis has raised concerns about the use of force by federal agents",
-      "insight": "I am concerned that the use of force by federal agents in this incident may be a pattern of behavior that needs to be investigated further. I would like to see more information about the training and protocols in place for federal agents to ensure that they are using force only when necessary and in a proportionate manner.",
-      "entities": [
-        "DHS",
-        "Federal Agents"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/news/nation/2026/01/28/trump-deescalate-minnesota-immigration-operations/5076052001/",
-      "id": "rf-1769564527884-brdd6ftqb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T01:42:07.881Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
+    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T15:22:11.388Z"
+  "lastUpdated": "2026-01-31T16:26:48.144Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T21:23:10.513Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-26T22:21:13.838Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-01-31T15:22:11.385Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-31T16:26:48.142Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Alex Pretti Killing Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Child Care Program Investigation?",
-    "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the None allegedly go in Federal Civil Rights Investigation into Alex Pretti's Killing?",
     "Where did the $0 allegedly go in Minnesota Child Care Program Investigation?",
     "Where did the Unknown allegedly go in ICE Protest Investigation?",
     "Where did the Unknown allegedly go in Waymo Robotaxi Investigation?",
@@ -558,7 +554,11 @@
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the Unspecified allegedly go in Alex Pretti Killing Investigation?",
     "Where did the Unspecified allegedly go in Minnesota Immigration Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What specific allegations exist against Don Lemon?",
+    "What specific allegations exist against Georgia Fort?",
+    "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 671,
-    "articlesProcessed": 33400,
-    "redFlagsFound": 801,
+    "totalScans": 672,
+    "articlesProcessed": 33450,
+    "redFlagsFound": 803,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Alex Pretti shooting investigation?",
-        "Where did the $0 allegedly go in Minnesota fraud investigation?",
-        "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?"
+        "Where did the Unknown allegedly go in Alex Pretti Killing Investigation?",
+        "Where did the Unknown allegedly go in Minnesota Child Care Program Investigation?",
+        "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-31T15:22:11.385Z",
-  "lastUpdated": "2026-01-31T15:22:11.386Z"
+  "lastReflection": "2026-01-31T16:26:48.142Z",
+  "lastUpdated": "2026-01-31T16:26:48.143Z"
 }
