@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-26T23:21:18.869Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-27T01:45:37.221Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-01-31T17:23:34.835Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-01-31T18:30:26.287Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Waymo Robotaxi Investigation?",
     "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into Florence 'Revenue Diversion'?",
     "Where did the $0 allegedly go in DOJ Civil Rights Investigation into Alex Pretti's Killing?",
@@ -558,7 +557,8 @@
     "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $19 billion allegedly go in Minnesota Immigration Protests?",
-    "Where did the unknown allegedly go in Florence Revenue Diversion?"
+    "Where did the unknown allegedly go in Florence Revenue Diversion?",
+    "Where did the $19 billion allegedly go in Minnesota fraud allegations?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 673,
-    "articlesProcessed": 33500,
-    "redFlagsFound": 804,
+    "totalScans": 674,
+    "articlesProcessed": 33550,
+    "redFlagsFound": 806,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Child Care Program Investigation?",
-        "Where did the Unknown allegedly go in ICE Protest Investigation?",
-        "Where did the Unknown allegedly go in Waymo Robotaxi Investigation?"
+        "Where did the Unknown allegedly go in Waymo Robotaxi Investigation?",
+        "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $0 allegedly go in FBI Investigation into Florence 'Revenue Diversion'?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-01-31T17:23:34.835Z",
-  "lastUpdated": "2026-01-31T17:23:34.836Z"
+  "lastReflection": "2026-01-31T18:30:26.287Z",
+  "lastUpdated": "2026-01-31T18:30:26.288Z"
 }
