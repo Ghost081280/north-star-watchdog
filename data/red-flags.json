@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Robert P. Rubicco charged with fraud",
+      "insight": "This case indicates potential fraud in Minnesota's daycare sector",
+      "entities": [
+        "Robert P. Rubicco"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Talk of the Sound",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOQXlIX0ptSzI0OE0tM2Q4ejlIaVhHYmdsZGthenhXNnBfQ2RFcjhCak04aURIMEpwTWhkZHJqSGlGLVFZcS1xaXB6YjExczc1NkljRlJwV3JaWWlKT1hsUm4yalZJeDgtYk4zV2FTdFd5S2ZubVZZVk9KSUpnaXlEQW1BWmw1bmRvOGk0cEpmXzQ3SVIwdEpILWxtMk9MRjVkMVo4dDhMcDJZYjJFdkpoaWFhaGxsY01uMjJtSjZ1ZzByT3VrQldWSjRxa1lvYW9DbGVkVEpHZ1VobkxMdUV4aVlYejNFSlRWM08tbnJhU25sXzFiSVFB",
+      "id": "rf-1769869419942-qeyitgdlr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T14:23:39.939Z",
+      "isNew": true
+    },
+    {
+      "type": "whistleblower reports",
+      "description": "State agency whistleblowers report fraud concerns were ignored",
+      "insight": "This indicates potential internal control issues within Minnesota state agencies",
+      "entities": [
+        "Minnesota State Agency"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/state-agency-whistleblowers-say-fraud-concerns-were-ignored-for-years/600153493/",
+      "id": "rf-1769869419942-6so4vd3sv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T14:23:39.939Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The Justice Department has opened a federal civil rights investigation into the killing of Alex Pretti, which may indicate a pattern of civil rights violations by law enforcement.",
       "insight": "This investigation may be connected to other incidents involving law enforcement and civil rights violations. Further research is needed to determine the extent of these violations and the entities involved.",
@@ -952,45 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T19:26:35.202Z",
       "isNew": false
-    },
-    {
-      "type": "possible misconduct",
-      "description": "The ICE director has been ordered to appear in court, raising concerns about possible misconduct and the agency's actions.",
-      "insight": "This development suggests a potential pattern of misconduct within ICE, which warrants further investigation. I recommend tracking the court proceedings and monitoring for any additional allegations or evidence of wrongdoing.",
-      "entities": [
-        "Todd Lyons",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "BBC",
-      "sourceUrl": "https://www.bbc.com/news/us-64444444",
-      "id": "rf-1769534850115-m50ukqezw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T17:27:30.111Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration's decision to terminate certain programs has raised concerns about the impact on rural families.",
-      "insight": "This could be a sign of a larger issue with the administration's approach to social services. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "U.S. Senate Dems Probe Effect of Trump Administration Child Care Cutbacks on Rural Families",
-      "sourceUrl": "https://www.successfulfarming.com/U-S-Senate-Dems-Probe-Effect-of-Trump-Administration-Child-Care-Cutbacks-on-Rural-Families-a12245.html",
-      "id": "rf-1769531367334-8odl2nwj0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T16:29:27.330Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,7 +1001,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T13:40:40.902Z"
+  "lastUpdated": "2026-01-31T14:23:39.939Z"
 }
