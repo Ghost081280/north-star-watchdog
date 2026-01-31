@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "government_investigation",
+      "description": "State agency whistleblowers say fraud concerns were ignored for years",
+      "insight": "Possible cover up or neglect of duty within state agencies",
+      "entities": [
+        "Minnesota State Agency"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "Star Tribune",
+      "sourceUrl": "https://startribune.com/2026/01/31/state-agency-whistleblowers-say-fraud-concerns-were-ignored-for-years/",
+      "id": "rf-1769891071782-zvbcajitj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T20:24:31.779Z",
+      "isNew": true
+    },
+    {
       "type": "government investigation",
       "description": "DOJ opens civil rights investigation into Alex Pretti's killing",
       "insight": "This investigation could lead to further developments and potentially uncover more widespread issues",
@@ -968,27 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T05:27:19.300Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are underway, including ones into the Trump administration's immigration policies and the handling of protesters.",
-      "insight": "These investigations have the potential to reveal significant wrongdoing and corruption. I will continue to monitor developments and track key figures and entities involved.",
-      "entities": [
-        "Trump administration",
-        "FBI",
-        "SEC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://news.google.com/",
-      "id": "rf-1769575378382-qqlur9n1o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T04:42:58.378Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,6 +999,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T19:20:16.166Z"
+  "lastUpdated": "2026-01-31T20:24:31.779Z"
 }
