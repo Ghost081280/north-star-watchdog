@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal civil rights investigation into killing of Alex Pretti",
+      "insight": "This investigation could lead to further actions against law enforcement or individuals involved in the killing.",
+      "entities": [
+        "DOJ"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/jan/30/us-doj-announces-federal-civil-rights-investigation-into-killing-of-alex-pretti-video",
+      "id": "rf-1769844490600-hu27gk6a2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-01-31T07:28:10.597Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The Justice Department has opened a federal civil rights probe into the killing of Alex Pretti",
       "insight": "This investigation suggests that there may be a pattern of civil rights violations, and it is essential to track the developments in this case.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-01-31T06:37:20.336Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -972,31 +991,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-27T15:30:27.932Z",
       "isNew": false
-    },
-    {
-      "type": "company investigation",
-      "description": "Wealthfront Corp. is under investigation by Block & Leviton.",
-      "insight": "This investigation could potentially uncover fraud or mismanagement of funds by Wealthfront Corp. The company's practices and financial dealings will likely be scrutinized.",
-      "entities": [
-        "Wealthfront Corp.",
-        "Block & Leviton"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "GlobeNewswire",
-      "sourceUrl": "https://www.globenewswire.com/en/news-release/2026/01/27/2314031/en/Wealthfront-Corp-Under-Investigation-By-Block-Leviton",
-      "id": "rf-1769527827934-0rnl2sfr2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-27T15:30:27.932Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,6 +1004,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1023,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-01-31T06:37:20.336Z"
+  "lastUpdated": "2026-01-31T07:28:10.597Z"
 }
