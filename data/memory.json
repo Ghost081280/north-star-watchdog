@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-27T18:37:31.035Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-27T19:26:35.199Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-01T14:25:02.445Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-01T15:23:39.719Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 690,
-    "articlesProcessed": 34350,
-    "redFlagsFound": 824,
+    "totalScans": 691,
+    "articlesProcessed": 34400,
+    "redFlagsFound": 826,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Don Lemon?",
-        "What specific allegations exist against Georgia Fort?",
-        "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?"
+        "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $19 billion allegedly go in Minnesota Immigration Protests?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-01T14:25:02.445Z",
-  "lastUpdated": "2026-02-01T14:25:02.445Z"
+  "lastReflection": "2026-02-01T15:23:39.719Z",
+  "lastUpdated": "2026-02-01T15:23:39.720Z"
 }
