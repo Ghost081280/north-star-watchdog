@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-27T17:27:30.109Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-01-27T18:37:31.035Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-01T13:42:29.539Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-01T14:25:02.445Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Don Lemon?",
-    "What specific allegations exist against Georgia Fort?",
     "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $19 billion allegedly go in Minnesota Immigration Protests?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Florence Revenue Diversion?",
     "What other organizations is Donald Trump connected to?",
     "Where did the Unknown allegedly go in Wealthfront Corporation Investigation?",
-    "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the $0 allegedly go in Wealthfront Corporation Investigation?",
+    "Where did the $0 allegedly go in Carvana Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 689,
-    "articlesProcessed": 34300,
-    "redFlagsFound": 822,
+    "totalScans": 690,
+    "articlesProcessed": 34350,
+    "redFlagsFound": 824,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What specific allegations exist against Don Lemon?",
-        "What specific allegations exist against Georgia Fort?"
+        "What specific allegations exist against Georgia Fort?",
+        "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-01T13:42:29.539Z",
-  "lastUpdated": "2026-02-01T13:42:29.541Z"
+  "lastReflection": "2026-02-01T14:25:02.445Z",
+  "lastUpdated": "2026-02-01T14:25:02.445Z"
 }
