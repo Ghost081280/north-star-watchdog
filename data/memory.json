@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-27T10:26:49.490Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-27T11:22:43.435Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-01T06:03:41.781Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-01T07:36:41.633Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the None allegedly go in Alex Pretti Killing Investigation?",
-    "Where did the None allegedly go in Minnesota Child Care Fraud Investigation?",
     "What other organizations is Don Lemon connected to?",
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the Unspecified allegedly go in Alex Pretti Killing Investigation?",
@@ -558,7 +556,9 @@
     "Where did the N/A allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the $19B allegedly go in Minnesota Fraud Investigation?",
     "Where did the $19B allegedly go in Minnesota Immigration Enforcement Investigation?",
-    "Where did the $19B allegedly go in Minnesota Immigration Enforcement?"
+    "Where did the $19B allegedly go in Minnesota Immigration Enforcement?",
+    "Where did the $19B allegedly go in Minnesota Child Care Funding Investigation?",
+    "Where did the Unknown allegedly go in FBI Investigation into Florence 'Revenue Diversion'?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 682,
-    "articlesProcessed": 33950,
-    "redFlagsFound": 815,
+    "totalScans": 683,
+    "articlesProcessed": 34000,
+    "redFlagsFound": 816,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Minnesota Child Care Program Fraud?",
         "Where did the None allegedly go in Alex Pretti Killing Investigation?",
-        "Where did the None allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the None allegedly go in Minnesota Child Care Fraud Investigation?",
+        "What other organizations is Don Lemon connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-01T06:03:41.781Z",
-  "lastUpdated": "2026-02-01T06:03:41.782Z"
+  "lastReflection": "2026-02-01T07:36:41.633Z",
+  "lastUpdated": "2026-02-01T07:36:41.633Z"
 }
