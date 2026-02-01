@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "securities_violations",
+      "description": "Wealthfront Corporation and Carvana under investigation",
+      "insight": "These investigations highlight potential issues with securities fraud and the need for greater oversight in the financial sector.",
+      "entities": [
+        "Wealthfront Corporation",
+        "Carvana"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Intellectia AI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdWpjMUpyNzRPYzlIcUFwUXluMUhQVTQtVHB4Sm4tcVF2a2VDaVoyMzdGal9TY0xmQ0EyZU1wbm9pRHl1Z3RCT3VtOFNtVTYwVEhWTzdzU3o0T2ZCbVE2MWxCbjV6bTR2b1lKUVk5MThMMDlDRGlscjdHOTh0ZkozVkpiRzlDZzM2eGFyVWlYTkNqVW1IS2hva2oxSzdxdkJ5ZjdzNXR3",
+      "id": "rf-1769966613697-zyx2tvjxv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-01T17:23:33.694Z",
+      "isNew": true
+    },
+    {
       "type": "civil rights concerns",
       "description": "Investigation into the shooting of Alex Pretti by Border Patrol officers",
       "insight": "This incident raises concerns about law enforcement practices and civil rights, requiring a thorough examination.",
@@ -966,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T10:27:27.508Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of immigration operations in Minnesota",
-      "insight": "This could indicate a shift in policy or a response to criticism. Further investigation is needed to understand the cause and impact of the termination.",
-      "entities": [
-        "Minnesota",
-        "US government"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Multiple news articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTEtsRzJDRTd4eG9RYnFRSkpvNVVEVDRyT0MyUmR6eUptRzFHRC05WmZxMUJsXzdULWtHSjNzU0dncUwtbWhpcW9tRUp1LTRRcDFPZklvclNyVUg3S0R2TW9lT1VEckxaejlteXhzM1JmSy1ZbjFRV25YOXBSTmtrYmw5ZzAwVWVXUDlEWEI4aXM3NUhjbGE2Zm1OYnowUWtZblBTU2tnVFJyMUtkTk53RGY1WUw?oc=5",
-      "id": "rf-1769589051055-v684b1jry",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T08:30:51.052Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,11 +994,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FDA",
     "ProPublica Nonprofits",
     "FEC"
   ],
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-01T16:28:18.607Z"
+  "lastUpdated": "2026-02-01T17:23:33.694Z"
 }
