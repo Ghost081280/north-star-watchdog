@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-27T13:45:58.513Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-27T14:29:21.804Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-01T09:29:34.412Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-01T10:24:42.787Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 23,
+      "count": 24,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-01-24T17:17:28.102Z"
+      "lastSeen": "2026-02-01T10:24:42.787Z"
     },
     {
       "type": "federal_funding",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 685,
-    "articlesProcessed": 34100,
-    "redFlagsFound": 818,
+    "totalScans": 686,
+    "articlesProcessed": 34150,
+    "redFlagsFound": 820,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Don Lemon connected to?",
-        "What other organizations is Robert P. Rubicco connected to?",
-        "Where did the Unspecified allegedly go in Alex Pretti Killing Investigation?"
+        "Where did the Unspecified allegedly go in Alex Pretti Killing Investigation?",
+        "Where did the Unspecified allegedly go in Minnesota Immigration Investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-01T09:29:34.412Z",
-  "lastUpdated": "2026-02-01T09:29:34.412Z"
+  "lastReflection": "2026-02-01T10:24:42.787Z",
+  "lastUpdated": "2026-02-01T10:24:42.787Z"
 }
