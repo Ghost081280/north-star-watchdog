@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-28T08:30:51.050Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-28T09:33:19.110Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-02T06:03:21.233Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-02T07:49:28.909Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Carvana Investigation?",
-    "What other organizations is Wealthfront Corporation connected to?",
-    "What other organizations is Carvana connected to?",
     "Where did the $19B allegedly go in Minnesota Child Care Funding Freeze Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota Child Care Funding Freeze?",
@@ -558,7 +555,10 @@
     "What other organizations is No new figures charged this hour connected to?",
     "What specific allegations exist against No new figures charged this hour?",
     "Where did the Unknown allegedly go in Epstein Investigation?",
-    "Where did the $19 billion allegedly go in Minnesota Welfare and Daycare Fraud?"
+    "Where did the $19 billion allegedly go in Minnesota Welfare and Daycare Fraud?",
+    "What other organizations is Not Applicable connected to?",
+    "What specific allegations exist against Not Applicable?",
+    "Where did the $19 billion allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 702,
-    "articlesProcessed": 34950,
-    "redFlagsFound": 838,
+    "totalScans": 703,
+    "articlesProcessed": 35000,
+    "redFlagsFound": 839,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Wealthfront Corporation Investigation?",
         "Where did the $0 allegedly go in Carvana Investigation?",
-        "What other organizations is Wealthfront Corporation connected to?"
+        "What other organizations is Wealthfront Corporation connected to?",
+        "What other organizations is Carvana connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-02T06:03:21.233Z",
-  "lastUpdated": "2026-02-02T06:03:21.234Z"
+  "lastReflection": "2026-02-02T07:49:28.909Z",
+  "lastUpdated": "2026-02-02T07:49:28.910Z"
 }
