@@ -2,6 +2,44 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Quality 'Learing' Center closure",
+      "insight": "Center closure may indicate pattern of similar terminations due to fraud allegations.",
+      "entities": [
+        "Quality Learning Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/minnesotas-infamous-quality-learning-center-now-closed-records-show-20260202/",
+      "id": "rf-1770028978675-vt9hqiej8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-02T10:42:58.672Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI investigating possible 'biological lab' in Las Vegas",
+      "insight": "Possible connection to investigations in California.",
+      "entities": [
+        "Las Vegas homeowner"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "ABC News",
+      "sourceUrl": "https://abcnews.go.com/ABCNews/fbi-investigating-possible-biological-lab-operating-inside-las-vegas-home-sources",
+      "id": "rf-1770028978675-aws01mjsw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-02T10:42:58.672Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Quality Learning Center in Minnesota has been shut down",
       "insight": "This could indicate a significant finding in the fraud investigation",
       "entities": [
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-02T09:46:20.045Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -37,7 +75,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-02T09:46:20.045Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "securities_violations",
@@ -947,59 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T17:31:53.734Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the City of Florence's finances due to suspected revenue diversion activities.",
-      "insight": "This investigation may indicate a larger pattern of financial mismanagement or corruption in local government. Further investigation is needed to determine the extent of the issue and identify those responsible.",
-      "entities": [
-        "City of Florence"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fox19.com/news/fbi-investigating-the-city-of-florences-finances/",
-      "id": "rf-1769618164243-sewdn8gpn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T16:36:04.240Z",
-      "isNew": false
-    },
-    {
-      "type": "potential misconduct",
-      "description": "Rep. Ilhan Omar is being investigated for alleged fraud and misconduct.",
-      "insight": "This investigation may indicate a pattern of unethical behavior by the representative. Further investigation is needed to determine the extent of the issue and identify any potential co-conspirators.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Bureau | Sam Cooper",
-      "sourceUrl": "https://www.thebureau.com/rep-omar-sprayed-at-town-hall-amid-fraud-investigations-and-minnesota-ice-clash",
-      "id": "rf-1769618164244-qzobfy36c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T16:36:04.240Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-02T09:46:20.045Z"
+  "lastUpdated": "2026-02-02T10:42:58.672Z"
 }
