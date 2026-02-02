@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-28T06:34:48.818Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-28T07:25:40.154Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-02T02:01:47.963Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-02T04:56:21.573Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 24,
+      "count": 25,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-02-01T10:24:42.787Z"
+      "lastSeen": "2026-02-02T04:56:21.574Z"
     },
     {
       "type": "federal_funding",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Donald Trump connected to?",
-    "Where did the Unknown allegedly go in Wealthfront Corporation Investigation?",
-    "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $0 allegedly go in Wealthfront Corporation Investigation?",
     "Where did the $0 allegedly go in Carvana Investigation?",
     "What other organizations is Wealthfront Corporation connected to?",
@@ -558,7 +555,10 @@
     "Where did the $19 billion allegedly go in Minnesota Daycare Fraud Investigation?",
     "What other organizations is Not applicable connected to?",
     "Where did the Not specified allegedly go in FBI Investigation into Illicit Biological Lab?",
-    "Where did the Not specified allegedly go in Minnesota Fraud Cases?"
+    "Where did the Not specified allegedly go in Minnesota Fraud Cases?",
+    "What other organizations is No new figures charged this hour connected to?",
+    "What specific allegations exist against No new figures charged this hour?",
+    "Where did the Unknown allegedly go in Epstein Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 700,
-    "articlesProcessed": 34850,
-    "redFlagsFound": 835,
+    "totalScans": 701,
+    "articlesProcessed": 34900,
+    "redFlagsFound": 837,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Investigation into Florence 'Revenue Diversion'?",
-        "What other organizations is Alex Pretti connected to?",
-        "Where did the Unknown allegedly go in Florence Revenue Diversion?"
+        "What other organizations is Donald Trump connected to?",
+        "Where did the Unknown allegedly go in Wealthfront Corporation Investigation?",
+        "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-02T02:01:47.963Z",
-  "lastUpdated": "2026-02-02T02:01:47.964Z"
+  "lastReflection": "2026-02-02T04:56:21.573Z",
+  "lastUpdated": "2026-02-02T04:56:21.574Z"
 }
