@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Quality Learning Center in Minnesota has been shut down",
+      "insight": "This could indicate a significant finding in the fraud investigation",
+      "entities": [
+        "Quality Learning Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n",
+      "id": "rf-1770025580048-52qg5xkp8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-02T09:46:20.045Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI investigating possible 'biological lab' operating inside Las Vegas home",
+      "insight": "This could be related to other investigations or a separate case",
+      "entities": [
+        "FBI",
+        "Las Vegas home"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "ABC News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYmZ5NzR0U0lmZFpFeUVQY3JoNWJpNkJHTXNHZ3J5U0N0QzdqVk9LcHhBSFQ4SnZvenNKNWN6dGlOZTVtcDY3aVFnWUFGNlZfTXNWeEhRb2JGWF9Yalp5WEpCTTYyR3BSaGFyejQxTnBaek5FT0VPVmJhODNpMEgtaEV4ajh2VDkzOG9LRWNxYmNHOHVmdXpOaFdwRFprUW1YalI5Ykd0VdIBrAFBVV95cUxQcnJUSWdjUFZQLWtuZDdZUk0zejVGUTJvcGRnbU51SmZ2UjhpREx2TFM5NTZlQ05hajRWTzJ4WXc0X0gtUVQ1UlgwV1VDTmI0RGhvak9tQng1MklOTjJqMkxwLXJJVGdhWFFQdmJhcTNuMDcyLTRZUkNvTGpEY3NDd2d5QnZmREdmMWdkb3FBMVFaOE02NU1QS0Y5VDhDOHNzRDFPZktrS0ljdTBy",
+      "id": "rf-1770025580048-7xjkvkdue",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-02T09:46:20.045Z",
+      "isNew": true
+    },
+    {
       "type": "securities_violations",
       "description": "Wealthfront Corporation and Carvana under investigation",
       "insight": "These investigations highlight potential issues with securities fraud and the need for greater oversight in the financial sector.",
@@ -946,61 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T16:36:04.240Z",
       "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Deutsche Bank offices searched in money laundering probe",
-      "insight": "This could indicate a larger issue with financial institution oversight",
-      "entities": [
-        "Deutsche Bank",
-        "Federal Authorities"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Euronews.com",
-      "sourceUrl": "https://www.euronews.com/2026-01-28/deutsche-bank-offices-searched-in-money-laundering-probe",
-      "id": "rf-1769614286048-m3zn15xvx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T15:31:26.045Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A whistleblower described a 'lack of guardrails' in Minnesota's fraud prevention system.",
-      "insight": "This lack of oversight may have contributed to the large-scale Medicaid fraud scandal in Minnesota, and it is essential to investigate and address these issues to prevent future occurrences.",
-      "entities": [
-        "Minnesota",
-        "Medicaid"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "wccsradio.com",
-      "sourceUrl": "https://wccsradio.com/minnesota-fraud-whistleblower-says-lack-of-guardrails-was-pretty-shocking/",
-      "id": "rf-1769596047511-qpkgnskys",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T10:27:27.508Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-02T08:41:20.804Z"
+  "lastUpdated": "2026-02-02T09:46:20.045Z"
 }
