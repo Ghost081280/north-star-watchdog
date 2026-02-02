@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Ghost Companies",
+      "description": "Allegations of ghost day care centers in California and Minnesota have raised concerns about the use of shell companies to facilitate fraud",
+      "insight": "I suspect that these ghost companies may be used to launder money and funnel funds to other fraudulent activities. Further investigation is needed to uncover the extent of this scheme.",
+      "entities": [
+        "Feeding Our Future",
+        "Islamic Charity"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI Investigation into Ghost Day Care Centers",
+      "sourceUrl": "https://www.aol.com/news/minnesota-fraud-buster-nick-shirley-lands-in-california-140000343.html",
+      "id": "rf-1770041003539-4oyq1dj60",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-02T14:03:23.536Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Freeze in childcare payments",
       "insight": "This could indicate a larger issue with program management or oversight, potentially leading to fraud.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-02T12:56:46.542Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-02T12:56:46.542Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -964,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T19:27:20.682Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating revenue diversion activities in the City of Florence",
-      "insight": "This could indicate a larger issue with financial management in the city, potentially involving other municipalities or government entities. Further investigation is warranted to uncover the extent of the problem and any potential connections to other cases.",
-      "entities": [
-        "City of Florence",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "eaglecountryonline.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM1VTZGdGdWpadURKOHphbXFsSlZXeDlxVG84MC1vUUYzSnBEOXlQQmZnYmZ1bWQwVGN6b285S0ZBd1g2dkx6UmRjZHV4XzJiQlBQc1hMem41VHRRdHBlQm9nTVZGT3BKdVhQRnkzdUR0dkNRbk1UbGgzM1RHQTdjYS1hR2F2ZnVZVzRkd0sxMnZ5aGxQa3pJSEh0T0ktVlNDbUZ3ZW0tU1gtVGsxc0hBYkx3MEhmWVNNdXhUM2dqd19VQWFqRkI2cQ",
-      "id": "rf-1769621513737-oi8r1daul",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T17:31:53.734Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-02T12:56:46.542Z"
+  "lastUpdated": "2026-02-02T14:03:23.536Z"
 }
