@@ -1,22 +1,42 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "A potential federal funding freeze threatens families and child care providers in Minnesota.",
-      "insight": "This could be a sign of a larger issue with the federal funding system, and may indicate a need for increased oversight and regulation.",
+      "type": "program_termination",
+      "description": "Potential delays or halts in the $12bn Hudson Tunnel project due to funding freeze",
+      "insight": "The funding freeze for the Hudson Tunnel project raises concerns about the project's viability and potential impact on infrastructure development.",
       "entities": [
-        "Minnesota DHS"
+        "Hudson Tunnel project"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "The Durango Herald",
-      "sourceUrl": "https://www.durangoherald.com/articles/potential-federal-funding-freeze-threatens-families-child-care-providers/",
-      "id": "rf-1770115131701-j2nosxkdl",
+      "source": "geplus.co.uk",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON04tUkxrU1B5WF8zLXFvX1lyWkxFeGNVM3lValY2UVlLdWoxd1dTVEFaNDlIYk5IbmN3SVpfUDdPRTQtZlFMaG1Yb2VBdEExTlZ3Ri1rMkNvYzhYZzhKc016SGNEZDItTkg2TFQtcFNFOGNWWU1oVmdpQ0JXMU1wemVOemhJNWRkWmtxT1BsZ0xGUk1VQlBDOEEzbnRMS3lLR2lTdHRR",
+      "id": "rf-1770118419797-yezdt6ftf",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-03T10:38:51.698Z",
+      "detectedAt": "2026-02-03T11:33:39.794Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI serves new search warrant on California ‘biological lab’ tied to Las Vegas raid",
+      "insight": "The FBI's actions suggest ongoing investigations into potential wrongdoing in biological labs, which could have implications for public health and safety.",
+      "entities": [
+        "FBI",
+        "California biological lab"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "KOLD",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUURyNFc0TGdTMHdxdFBJbXBPWENXQjRPX2hZSHRGbUZTaG9VRk5oaDdfTlhuSE9HQjhuZG51ODlMUlhrYmg4aGFyWWlzMm1ES29WdjJfclQ1VkUxR0FvMFJSMDdyeHFYS1h1M0J1MlFVQW4wRkJrQ1VvTk5VUlJITEVBUG5Bcm5tLVFhTnJjY3V6dHZfeVA2VVFvYlp4SktHSFY3SDJFaURrR1JaWG5NYUtWZHE",
+      "id": "rf-1770118419797-qawgsmxvk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T11:33:39.794Z",
       "isNew": true
     },
     {
@@ -964,32 +984,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T20:29:04.164Z",
       "isNew": false
-    },
-    {
-      "type": "payroll_fraud",
-      "description": "An ex-FBI task force agent faced a misconduct investigation and payroll fraud complaint.",
-      "insight": "This case highlights potential internal misconduct within law enforcement agencies, which could have implications for public trust and accountability.",
-      "entities": [
-        "ex-FBI task force agent",
-        "NOPD"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "nola.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcTlaWERVd3pOb0ZGR0hrYnljTXZFNTZYRUxuRkVFdUNkY3ZMamFMWDd4cC14bVVLUGMtcmtOX202aDFxZUxxbUFCWjl0VmNKWGtsV2pCUVZKSms3UklxUk1YNW9LaVlTSG52LVBjNFAtZE96Tl9RSTNLeTh0U3lscXp0RUdMSEk3U0gxR0FMYUZVQ1FwTnBucUZqVTRleVdxXzhwQ2NYMmVraTNGRkh5cEhBNzdBNDhPYWRqStIBwgFBVV95cUxOYllvbTk0QXBmSkZ6TTF5U2EzV2RIN1FPeHh2UWpOVzE5RzZCSUl3TUpvZlVRTjNFYVVmdm8tejlVai0yY21jaVpVSUI0RVd5SW1ncHFqVUpBU3lRQTdMOFU3bkxVcl9heUJ0QXQtQU9KeFJMUDkwbFAwYVJUQV9Kb0lNQU9pQzlITklCRkQxRVYyZ2VmWElLblhSYjNrdko3aTdqUmZPY3BYa1NKcFZ3RFBweHNCa2V4LU5xc1FTeWJydw?oc=5",
-      "id": "rf-1769632144167-41ptmybtv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T20:29:04.164Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,6 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T10:38:51.698Z"
+  "lastUpdated": "2026-02-03T11:33:39.794Z"
 }
