@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "The Minnesota Department of Human Services has found instances of Medicaid fraud among providers.",
+      "insight": "I suspect that there may be a larger pattern of fraud among Medicaid providers in Minnesota. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-to-visit-thousands-of-providers-in-fraud-fighting-push/600246503/",
+      "id": "rf-1770084021238-g41xzf852",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T02:00:21.235Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has been asking for Minnesota’s welfare data, which could be a sign of a larger investigation into Medicaid fraud.",
       "insight": "This could be a sign that the federal government is cracking down on Medicaid fraud, and Minnesota may be a key state in this effort.",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-02T23:27:50.494Z",
-      "isNew": true
-    },
-    {
-      "type": "Ghost Companies",
-      "description": "Allegations of ghost day care centers in California and Minnesota have raised concerns about the use of shell companies to facilitate fraud",
-      "insight": "I suspect that these ghost companies may be used to launder money and funnel funds to other fraudulent activities. Further investigation is needed to uncover the extent of this scheme.",
-      "entities": [
-        "Feeding Our Future",
-        "Islamic Charity"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI Investigation into Ghost Day Care Centers",
-      "sourceUrl": "https://www.aol.com/news/minnesota-fraud-buster-nick-shirley-lands-in-california-140000343.html",
-      "id": "rf-1770041003539-4oyq1dj60",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-02T14:03:23.536Z",
       "isNew": false
     },
     {
@@ -989,16 +988,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-02T23:27:50.494Z"
+  "lastUpdated": "2026-02-03T02:00:21.235Z"
 }
