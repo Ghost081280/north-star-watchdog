@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "A potential federal funding freeze threatens families and child care providers in Minnesota.",
+      "insight": "This could be a sign of a larger issue with the federal funding system, and may indicate a need for increased oversight and regulation.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Durango Herald",
+      "sourceUrl": "https://www.durangoherald.com/articles/potential-federal-funding-freeze-threatens-families-child-care-providers/",
+      "id": "rf-1770115131701-j2nosxkdl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T10:38:51.698Z",
+      "isNew": true
+    },
+    {
       "type": "potential_biological_lab",
       "description": "Possible biological lab discovered at a Las Vegas home.",
       "insight": "The discovery of a potential biological lab in a residential area raises concerns about public health and safety. Further investigation is needed to determine the nature and purpose of the lab.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T09:39:34.159Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -37,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T09:39:34.159Z",
-      "isNew": true
-    },
-    {
-      "type": "federal funding freeze",
-      "description": "A potential federal funding freeze threatens families and child care providers in Minnesota",
-      "insight": "I suspect that this funding freeze may be related to the Medicaid fraud investigations in Minnesota. Further research is needed to determine the connection between the two.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Durango Herald",
-      "sourceUrl": "https://www.durangoherald.com/articles/potential-federal-funding-freeze-threatens-families-child-care-providers/",
-      "id": "rf-1770107721402-3whcr8npt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T08:35:21.399Z",
       "isNew": false
     },
     {
@@ -994,11 +994,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T09:39:34.159Z"
+  "lastUpdated": "2026-02-03T10:38:51.698Z"
 }
