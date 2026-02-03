@@ -1,22 +1,23 @@
 {
   "flags": [
     {
-      "type": "Medicaid fraud",
-      "description": "The Minnesota Department of Human Services has found instances of Medicaid fraud among providers.",
-      "insight": "I suspect that there may be a larger pattern of fraud among Medicaid providers in Minnesota. Further investigation is needed to determine the extent of the issue.",
+      "type": "Medicaid Fraud",
+      "description": "Several investigations into Medicaid fraud in Minnesota have been launched, with millions of dollars in alleged fraud",
+      "insight": "I suspect that there may be a larger pattern of Medicaid fraud in Minnesota, and that the recent investigations and arrests may be just the tip of the iceberg. I recommend further investigation into the matter.",
       "entities": [
-        "Minnesota DHS"
+        "Minnesota DHS",
+        "US Government"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/minnesota-to-visit-thousands-of-providers-in-fraud-fighting-push/600246503/",
-      "id": "rf-1770084021238-g41xzf852",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/minnesota-medicaid-fraud-crackdown-underway",
+      "id": "rf-1770092531956-kaciov6ei",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-03T02:00:21.235Z",
+      "detectedAt": "2026-02-03T04:22:11.953Z",
       "isNew": true
     },
     {
@@ -988,17 +989,17 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T02:00:21.235Z"
+  "lastUpdated": "2026-02-03T04:22:11.953Z"
 }
