@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Sable Offshore is under federal and SEC investigation",
+      "insight": "This investigation may indicate a larger pattern of fraud or corruption, and further research is needed to determine the extent of the issue.",
+      "entities": [
+        "Sable Offshore"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Benzinga",
+      "sourceUrl": "https://www.benzinga.com/news/26/02/25614223/sable-offshore-under-federal-and-sec-investigation",
+      "id": "rf-1770157722290-oupbbju38",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T22:28:42.286Z",
+      "isNew": true
+    },
+    {
       "type": "investigation",
       "description": "Sable Offshore is under federal and SEC investigation.",
       "insight": "This indicates a significant regulatory action against Sable Offshore, suggesting potential financial or securities law violations.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T21:33:32.692Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -962,31 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T22:25:42.019Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the 2020 election, with a focus on Fulton County, Georgia.",
-      "insight": "This investigation has the potential to uncover significant wrongdoing, including potential election fraud. I will continue to monitor this investigation and provide updates as necessary.",
-      "entities": [
-        "FBI",
-        "Fulton County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-election-fbi-idUSKBN2KJ1RI",
-      "id": "rf-1769635727894-ztdy4vswz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T21:28:47.891Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1013,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T21:33:32.692Z"
+  "lastUpdated": "2026-02-03T22:28:42.286Z"
 }

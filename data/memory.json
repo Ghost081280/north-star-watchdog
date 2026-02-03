@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T18:42:55.945Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-29T19:30:52.160Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-03T21:33:32.690Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-03T22:28:42.285Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI investigation into Georgia election site?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?",
     "What other organizations is Donald Trump connected to?",
     "Where did the $1M allegedly go in Fulton County Election Investigation?",
     "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Federal Judicial Scientific Reference Manual Investigation?",
     "Where did the $0 allegedly go in Minnesota Medicaid Providers Fraud Investigation?",
     "Where did the $0 allegedly go in Renee Good Investigation?",
-    "Where did the $0 allegedly go in Sable Offshore Investigation?"
+    "Where did the $0 allegedly go in Sable Offshore Investigation?",
+    "What other organizations is Elon Musk connected to?",
+    "Where did the $1.2B allegedly go in Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Sable Offshore Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 732,
-    "articlesProcessed": 36450,
-    "redFlagsFound": 874,
+    "totalScans": 733,
+    "articlesProcessed": 36500,
+    "redFlagsFound": 875,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "investigation",
-          "description": "Sable Offshore is under federal and SEC investigation.",
-          "insight": "This indicates a significant regulatory action against Sable Offshore, suggesting potential financial or securities law violations.",
-          "entities": [
-            "Sable Offshore"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Benzinga",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRGlCNkRZWC00NEJHdUxpR1dveVI4ZlVhWDBtMVctY1FLdTRlVlhlRVZFdHpPMWt2TG9ocUlzUk5Jd3pPQkpXSmVlclpDcms0UzRnMXoyNEVqc1VqRkhLc0FMZkp3bHpUQ2hMeFhQV3RLT1dCREZZLXVETVRzZC1DZ0lxdkZIQU82ZjZwMDlhUjBBdklMUEt3REZLMUJPQzd6VGk3TEVpTUNaT2dDLXpZSi1fUHBCRWtWa0VR?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Search Warrant in Las Vegas?",
         "Where did the Unknown allegedly go in FBI investigation into Georgia election site?",
-        "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T21:33:32.690Z",
-  "lastUpdated": "2026-02-03T21:33:32.691Z"
+  "lastReflection": "2026-02-03T22:28:42.285Z",
+  "lastUpdated": "2026-02-03T22:28:42.286Z"
 }
