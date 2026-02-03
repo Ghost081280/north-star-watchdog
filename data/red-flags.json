@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The 'Minnesota Revalidate' program has been launched by DHS.",
+      "insight": "This could indicate a larger issue with program management and potential fraud.",
+      "entities": [
+        "Minnesota DHS",
+        "Minnesota Revalidate"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "My KLGR",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OUW5oSnpKSHJEMHdyRUxFeTRINzVOVVNOTnBvNGJsWTc4ZnphTFhYeG5MOEQ5cjBkbUtueXdzcjljZm9JbDMzZ3ZxaW5iSW1iMTF4d1lBZFRXWWpUdTdTMEh5MVk2U255QmhNZE5lYVNHMXpZLWFF?oc=5",
+      "id": "rf-1770150876183-w8nrl9bv6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T20:34:36.180Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Funding Freeze",
       "description": "The NY-NJ tunnel project is suing the US over a federal funding freeze.",
       "insight": "This funding freeze could be a sign of larger issues with federal funding and project management. I recommend investigating other projects that may be affected by similar funding freezes.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T19:44:21.856Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Whistleblower Allegations",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T19:44:21.856Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -963,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-28T21:28:47.891Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating potential election interference in Fulton County, Georgia.",
-      "insight": "This investigation could potentially uncover patterns of election tampering or interference, which could have significant implications for election integrity.",
-      "entities": [
-        "Fulton County",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwNBVV95cUxOTmN2YUw0V3lYSmpsUDA3bGNvcXBFV3NSN0t4M0RRbnhXamI3SlNFUDFsY0VMVGtKRGJrTzdhVVRrSWlkbkJ3UG9PWlB0czBCRXBKVm4xRENGRFFiZks3YjUya2lXT1EtR2w3S0VTeWhyLWJORGZRYlN5UzhTbWRsWnlOU3k?oc=5",
-      "id": "rf-1769632144167-xizlg4xm4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-28T20:29:04.164Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T19:44:21.856Z"
+  "lastUpdated": "2026-02-03T20:34:36.180Z"
 }

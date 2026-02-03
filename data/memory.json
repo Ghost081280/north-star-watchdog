@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T16:42:28.606Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-29T17:37:19.028Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-03T19:44:21.854Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-03T20:34:36.178Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in FBI Election Probe?",
     "Where did the Unknown allegedly go in FBI Search Warrant in Las Vegas?",
     "Where did the Unknown allegedly go in FBI investigation into Georgia election site?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +556,9 @@
     "Where did the $1B+ allegedly go in Gateway Tunnel Funding Freeze?",
     "What other organizations is Man connected to?",
     "Where did the $6,000,000 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
-    "Where did the Unknown allegedly go in Federal Judicial Scientific Reference Manual Investigation?"
+    "Where did the Unknown allegedly go in Federal Judicial Scientific Reference Manual Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Providers Fraud Investigation?",
+    "Where did the $0 allegedly go in Renee Good Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 730,
-    "articlesProcessed": 36350,
-    "redFlagsFound": 870,
+    "totalScans": 731,
+    "articlesProcessed": 36400,
+    "redFlagsFound": 872,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Tulsi Gabbard connected to?",
-        "Where did the $100M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $0 allegedly go in Renee Good Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in FBI Election Probe?",
+        "Where did the Unknown allegedly go in FBI Search Warrant in Las Vegas?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T19:44:21.854Z",
-  "lastUpdated": "2026-02-03T19:44:21.855Z"
+  "lastReflection": "2026-02-03T20:34:36.178Z",
+  "lastUpdated": "2026-02-03T20:34:36.179Z"
 }
