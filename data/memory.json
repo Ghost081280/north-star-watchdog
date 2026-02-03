@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T09:41:36.612Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-29T10:35:46.077Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-03T11:33:39.792Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-03T12:56:53.319Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.3 million allegedly go in Minnesota Fraud Probe?",
     "Where did the unknown allegedly go in Feeding Our Future Fraud Scandal?",
     "What other organizations is Alex Pretti connected to?",
     "Where did the $2 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?",
     "What other organizations is Donald Trump connected to?",
     "Where did the $1M allegedly go in Fulton County Election Investigation?",
-    "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?"
+    "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?",
+    "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 723,
-    "articlesProcessed": 36000,
-    "redFlagsFound": 860,
+    "totalScans": 724,
+    "articlesProcessed": 36050,
+    "redFlagsFound": 861,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "FBI serves new search warrant on California ‘biological lab’ tied to Las Vegas raid",
-          "insight": "The FBI's actions suggest ongoing investigations into potential wrongdoing in biological labs, which could have implications for public health and safety.",
-          "entities": [
-            "FBI",
-            "California biological lab"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "KOLD",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUURyNFc0TGdTMHdxdFBJbXBPWENXQjRPX2hZSHRGbUZTaG9VRk5oaDdfTlhuSE9HQjhuZG51ODlMUlhrYmg4aGFyWWlzMm1ES29WdjJfclQ1VkUxR0FvMFJSMDdyeHFYS1h1M0J1MlFVQW4wRkJrQ1VvTk5VUlJITEVBUG5Bcm5tLVFhTnJjY3V6dHZfeVA2VVFvYlp4SktHSFY3SDJFaURrR1JaWG5NYUtWZHE"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in FBI Houston Investigation?",
         "Where did the $3.3 million allegedly go in Minnesota Fraud Probe?",
-        "Where did the unknown allegedly go in Feeding Our Future Fraud Scandal?"
+        "Where did the unknown allegedly go in Feeding Our Future Fraud Scandal?",
+        "What other organizations is Alex Pretti connected to?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T11:33:39.792Z",
-  "lastUpdated": "2026-02-03T11:33:39.793Z"
+  "lastReflection": "2026-02-03T12:56:53.319Z",
+  "lastUpdated": "2026-02-03T12:56:53.319Z"
 }

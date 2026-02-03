@@ -1,22 +1,22 @@
 {
   "flags": [
     {
-      "type": "program_termination",
-      "description": "Potential delays or halts in the $12bn Hudson Tunnel project due to funding freeze",
-      "insight": "The funding freeze for the Hudson Tunnel project raises concerns about the project's viability and potential impact on infrastructure development.",
+      "type": "federal_freeze",
+      "description": "The Gateway Tunnel project has been sued by the US government over a funding freeze, raising concerns about the project's viability.",
+      "insight": "This could be a sign of a larger pattern of federal funding freezes, potentially impacting other projects and programs. Further investigation is needed to determine the scope of the issue.",
       "entities": [
-        "Hudson Tunnel project"
+        "Gateway Tunnel project"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "geplus.co.uk",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON04tUkxrU1B5WF8zLXFvX1lyWkxFeGNVM3lValY2UVlLdWoxd1dTVEFaNDlIYk5IbmN3SVpfUDdPRTQtZlFMaG1Yb2VBdEExTlZ3Ri1rMkNvYzhYZzhKc016SGNEZDItTkg2TFQtcFNFOGNWWU1oVmdpQ0JXMU1wemVOemhJNWRkWmtxT1BsZ0xGUk1VQlBDOEEzbnRMS3lLR2lTdHRR",
-      "id": "rf-1770118419797-yezdt6ftf",
+      "source": "Bloomberg",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-02-03/ny-nj-tunnel-project-says-it-s-suing-us-over-funding-freeze",
+      "id": "rf-1770123413324-vjsggsor1",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-03T11:33:39.794Z",
+      "detectedAt": "2026-02-03T12:56:53.320Z",
       "isNew": true
     },
     {
@@ -37,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T11:33:39.794Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential_biological_lab",
@@ -988,6 +988,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,8 +998,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T11:33:39.794Z"
+  "lastUpdated": "2026-02-03T12:56:53.320Z"
 }
