@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota is adding staff to review nearly 6,000 Medicaid providers for potential fraud.",
+      "insight": "This could indicate a large-scale effort to crack down on Medicaid fraud in Minnesota.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUGlSc0lpXzN2X3VPbTFXazZ0cF93WTRYMURlNW1YQlB1bFYtbGZveS1aN1BpVWxfWVM3T05UckE4eEJVRU40STNtV3FCdjdrZEdpVWdXa0JkeGpSSVhGTUlJRWhYZWRXeG9XTk5wRndmZXQtY0R6bzVITlN5YnhyNWFoQ21oMldRcDdiaVBRN1JjOHhINTVWZ2dHYzVSUUIweTE4Z2ZneDZUeWFIYVd2YQ?oc=5",
+      "id": "rf-1770144926499-5rr1s95eh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T18:55:26.496Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has blocked funding for the Gateway Tunnel project, raising concerns about the project's future.",
       "insight": "This could be a sign of a larger issue with the Trump administration's handling of infrastructure projects. Further investigation is needed to determine the reasons behind the funding block.",
@@ -18,25 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T17:52:51.892Z",
-      "isNew": true
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota Human Services is recruiting state employees to combat fraud through site checks, indicating concerns about the effectiveness of current fraud prevention measures.",
-      "insight": "This suggests that current measures may not be sufficient to prevent fraud, and additional steps are needed to ensure accountability.",
-      "entities": [
-        "Minnesota Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "knoxradio.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMkdaSU9JVXhMZ3prcTY4ZVRYVFlQbE5pWml2bzdLbTdDcFlPWGdTOHlZRTdaUGRMM3FNNUxRbG9NZVlpenNCQ29VQ041Rmk0WER4RVNQOC1XM19xQ1YyUjZZUmI0ZW9LZGVUbHdhTkM5RWNOVGE3aDBFZEV1OFRpQUdERzgyY0xpdDlaUEprZFBEVW5UbXZvYkVHTkIydDBYc3g3bm00TnBCTTBGR0Rza1o2UFlLZUszeXNnTG52VnVlZw?oc=5",
-      "id": "rf-1770127547798-mhr5bnx9w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T14:05:47.795Z",
       "isNew": false
     },
     {
@@ -988,7 +988,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,8 +996,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T17:52:51.892Z"
+  "lastUpdated": "2026-02-03T18:55:26.496Z"
 }
