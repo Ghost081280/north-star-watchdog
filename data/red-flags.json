@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal funding freeze",
+      "description": "The federal government has frozen funding for the Gateway tunnel project, citing concerns over the project's cost and management.",
+      "insight": "This funding freeze could have significant implications for the project's completion and the regional economy. I recommend investigating the reasons behind the funding freeze and the potential consequences for the project.",
+      "entities": [
+        "Gateway commission",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NJ.com",
+      "sourceUrl": "https://www.nj.com/news/2026/02/gateway-commission-sues-trump-administration-over-blocked-tunnel-funding.html",
+      "id": "rf-1770133729935-95wouz0vh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T15:48:49.931Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota Human Services is recruiting state employees to combat fraud through site checks, indicating concerns about the effectiveness of current fraud prevention measures.",
       "insight": "This suggests that current measures may not be sufficient to prevent fraud, and additional steps are needed to ensure accountability.",
@@ -17,25 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T14:05:47.795Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Gateway Tunnel project has been sued by the US government over a funding freeze, raising concerns about the project's viability.",
-      "insight": "This could be a sign of a larger pattern of federal funding freezes, potentially impacting other projects and programs. Further investigation is needed to determine the scope of the issue.",
-      "entities": [
-        "Gateway Tunnel project"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Bloomberg",
-      "sourceUrl": "https://www.bloomberg.com/news/articles/2026-02-03/ny-nj-tunnel-project-says-it-s-suing-us-over-funding-freeze",
-      "id": "rf-1770123413324-vjsggsor1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T12:56:53.320Z",
       "isNew": false
     },
     {
@@ -988,15 +989,16 @@
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T14:05:47.795Z"
+  "lastUpdated": "2026-02-03T15:48:49.931Z"
 }
