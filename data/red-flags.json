@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota Human Services is recruiting state employees to combat fraud through site checks, indicating concerns about the effectiveness of current fraud prevention measures.",
+      "insight": "This suggests that current measures may not be sufficient to prevent fraud, and additional steps are needed to ensure accountability.",
+      "entities": [
+        "Minnesota Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "knoxradio.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMkdaSU9JVXhMZ3prcTY4ZVRYVFlQbE5pWml2bzdLbTdDcFlPWGdTOHlZRTdaUGRMM3FNNUxRbG9NZVlpenNCQ29VQ041Rmk0WER4RVNQOC1XM19xQ1YyUjZZUmI0ZW9LZGVUbHdhTkM5RWNOVGE3aDBFZEV1OFRpQUdERzgyY0xpdDlaUEprZFBEVW5UbXZvYkVHTkIydDBYc3g3bm00TnBCTTBGR0Rza1o2UFlLZUszeXNnTG52VnVlZw?oc=5",
+      "id": "rf-1770127547798-mhr5bnx9w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-03T14:05:47.795Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Gateway Tunnel project has been sued by the US government over a funding freeze, raising concerns about the project's viability.",
       "insight": "This could be a sign of a larger pattern of federal funding freezes, potentially impacting other projects and programs. Further investigation is needed to determine the scope of the issue.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T12:56:53.320Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -76,26 +95,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-03T09:39:34.159Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid Fraud",
-      "description": "Several investigations into Medicaid fraud in Minnesota have been launched, with millions of dollars in alleged fraud",
-      "insight": "I suspect that there may be a larger pattern of Medicaid fraud in Minnesota, and that the recent investigations and arrests may be just the tip of the iceberg. I recommend further investigation into the matter.",
-      "entities": [
-        "Minnesota DHS",
-        "US Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/minnesota-medicaid-fraud-crackdown-underway",
-      "id": "rf-1770092531956-kaciov6ei",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T04:22:11.953Z",
       "isNew": false
     },
     {
@@ -989,16 +988,15 @@
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-03T12:56:53.320Z"
+  "lastUpdated": "2026-02-03T14:05:47.795Z"
 }
