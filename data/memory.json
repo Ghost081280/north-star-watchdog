@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T19:30:52.160Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-29T20:29:15.605Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-03T22:28:42.285Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-03T23:27:33.684Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 48,
+      "count": 49,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-01-31T07:28:10.596Z"
+      "lastSeen": "2026-02-03T23:27:33.685Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Donald Trump connected to?",
     "Where did the $1M allegedly go in Fulton County Election Investigation?",
     "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?",
     "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Sable Offshore Investigation?",
     "What other organizations is Elon Musk connected to?",
     "Where did the $1.2B allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Sable Offshore Investigation?"
+    "Where did the Unknown allegedly go in Sable Offshore Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 733,
-    "articlesProcessed": 36500,
-    "redFlagsFound": 875,
+    "totalScans": 734,
+    "articlesProcessed": 36550,
+    "redFlagsFound": 877,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "Sable Offshore Under Federal And SEC Investigation",
+          "insight": "The federal investigation into Sable Offshore, combined with SEC involvement, suggests potential serious financial irregularities. This situation warrants close monitoring for developments.",
+          "entities": [
+            "Sable Offshore",
+            "SEC"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Benzinga",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRGlCNkRZWC00NEJHdUxpR1dveVI4ZlVhWDBtMVctY1FLdTRlVlhlRVZFdHpPMWt2TG9ocUlzUk5Jd3pPQkpXSmVlclpDcms0UzRnMXoyNEVqc1VqRkhLc0FMZkp3bHpUQ2hMeFhQV3RLT1dCREZZLXVETVRzZC1DZ0lxdkZIQU82ZjZwMDlhUjBBdklMUEt3REZLMUJPQzd6VGk3TEVpTUNaT2dDLXpZSi1fUHBCRWtWa0VR?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI investigation into Georgia election site?",
-        "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?"
+        "What other organizations is Donald Trump connected to?",
+        "Where did the $1M allegedly go in Fulton County Election Investigation?",
+        "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T22:28:42.285Z",
-  "lastUpdated": "2026-02-03T22:28:42.286Z"
+  "lastReflection": "2026-02-03T23:27:33.684Z",
+  "lastUpdated": "2026-02-03T23:27:33.685Z"
 }
