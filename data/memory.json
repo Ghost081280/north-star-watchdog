@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T06:44:35.343Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-29T07:39:30.457Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-03T08:35:21.397Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-03T09:39:34.157Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $19 billion allegedly go in Minnesota Feeding Our Future Fraud Scandal?",
     "Where did the Unknown allegedly go in FBI Investigation into Ghost Day Care Centers?",
     "Where did the $19 billion allegedly go in Minnesota Fraud Probe?",
     "Where did the unknown allegedly go in FBI Houston Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in FBI Election Probe?",
     "Where did the Unknown allegedly go in FBI Search Warrant in Las Vegas?",
     "Where did the Unknown allegedly go in FBI investigation into Georgia election site?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $100M+ allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 720,
-    "articlesProcessed": 35850,
-    "redFlagsFound": 855,
+    "totalScans": 721,
+    "articlesProcessed": 35900,
+    "redFlagsFound": 857,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $50,000 allegedly go in Feeding Our Future Fraud Scandal?",
-        "What other organizations is Tom Homan connected to?",
-        "Where did the $19 billion allegedly go in Minnesota Feeding Our Future Fraud Scandal?"
+        "Where did the $19 billion allegedly go in Minnesota Feeding Our Future Fraud Scandal?",
+        "Where did the Unknown allegedly go in FBI Investigation into Ghost Day Care Centers?",
+        "Where did the $19 billion allegedly go in Minnesota Fraud Probe?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T08:35:21.397Z",
-  "lastUpdated": "2026-02-03T08:35:21.398Z"
+  "lastReflection": "2026-02-03T09:39:34.157Z",
+  "lastUpdated": "2026-02-03T09:39:34.158Z"
 }
