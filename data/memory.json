@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-29T20:29:15.605Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-29T21:25:57.470Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-03T23:27:33.684Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-04T01:55:13.066Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1M allegedly go in Fulton County Election Investigation?",
-    "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?",
-    "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the unknown allegedly go in Gateway Tunnel Funding Investigation?",
     "Where did the $2 Billion allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Elon Musk connected to?",
     "Where did the $1.2B allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Sable Offshore Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
+    "What other organizations is Renee Good connected to?",
+    "Where did the None allegedly go in Renee Good investigation?",
+    "Where did the None allegedly go in Medicare and Medicaid Fraud Schemes?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 734,
-    "articlesProcessed": 36550,
-    "redFlagsFound": 877,
+    "totalScans": 735,
+    "articlesProcessed": 36600,
+    "redFlagsFound": 878,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Sable Offshore Under Federal And SEC Investigation",
-          "insight": "The federal investigation into Sable Offshore, combined with SEC involvement, suggests potential serious financial irregularities. This situation warrants close monitoring for developments.",
-          "entities": [
-            "Sable Offshore",
-            "SEC"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Benzinga",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRGlCNkRZWC00NEJHdUxpR1dveVI4ZlVhWDBtMVctY1FLdTRlVlhlRVZFdHpPMWt2TG9ocUlzUk5Jd3pPQkpXSmVlclpDcms0UzRnMXoyNEVqc1VqRkhLc0FMZkp3bHpUQ2hMeFhQV3RLT1dCREZZLXVETVRzZC1DZ0lxdkZIQU82ZjZwMDlhUjBBdklMUEt3REZLMUJPQzd6VGk3TEVpTUNaT2dDLXpZSi1fUHBCRWtWa0VR?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Donald Trump connected to?",
         "Where did the $1M allegedly go in Fulton County Election Investigation?",
-        "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?"
+        "Where did the $12bn allegedly go in Hudson Tunnel Project Funding Freeze?",
+        "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-03T23:27:33.684Z",
-  "lastUpdated": "2026-02-03T23:27:33.685Z"
+  "lastReflection": "2026-02-04T01:55:13.066Z",
+  "lastUpdated": "2026-02-04T01:55:13.067Z"
 }
