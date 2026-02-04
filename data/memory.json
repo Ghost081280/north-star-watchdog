@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T10:33:16.690Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-30T11:27:23.793Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-04T12:56:17.175Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-04T14:03:35.284Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Sable Offshore Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
     "What other organizations is Renee Good connected to?",
     "Where did the None allegedly go in Renee Good investigation?",
     "Where did the None allegedly go in Medicare and Medicaid Fraud Schemes?",
@@ -558,7 +556,9 @@
     "What other organizations is Not applicable connected to?",
     "What specific allegations exist against Not applicable?",
     "Where did the $400 Million allegedly go in Minnesota daycare fraud probe?",
-    "Where did the $16B allegedly go in Hudson River tunnel funding freeze?"
+    "Where did the $16B allegedly go in Hudson River tunnel funding freeze?",
+    "Where did the $400 Million allegedly go in Minnesota Daycare Fraud Probe?",
+    "Where did the $16B allegedly go in Gateway Hudson Tunnel Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 744,
-    "articlesProcessed": 37050,
-    "redFlagsFound": 894,
+    "totalScans": 745,
+    "articlesProcessed": 37100,
+    "redFlagsFound": 896,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Renee Good Investigation?",
-        "Where did the $0 allegedly go in Sable Offshore Investigation?",
-        "What other organizations is Elon Musk connected to?"
+        "Where did the Unknown allegedly go in Sable Offshore Investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
+        "What other organizations is Renee Good connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T12:56:17.175Z",
-  "lastUpdated": "2026-02-04T12:56:17.176Z"
+  "lastReflection": "2026-02-04T14:03:35.284Z",
+  "lastUpdated": "2026-02-04T14:03:35.285Z"
 }
