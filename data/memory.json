@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T01:54:18.915Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-30T04:09:02.729Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-04T05:47:51.921Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-04T06:49:44.938Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 49,
+      "count": 50,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-03T23:27:33.685Z"
+      "lastSeen": "2026-02-04T06:49:44.939Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 737,
-    "articlesProcessed": 36700,
-    "redFlagsFound": 880,
+    "totalScans": 738,
+    "articlesProcessed": 36750,
+    "redFlagsFound": 882,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2 Billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Lisa Demuth connected to?",
-        "Where did the $1 Billion allegedly go in Gateway Tunnel Funding Investigation?"
+        "Where did the $1 Billion allegedly go in Gateway Tunnel Funding Investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Providers Investigation?",
+        "Where did the $1B+ allegedly go in Gateway Tunnel Funding Freeze?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T05:47:51.921Z",
-  "lastUpdated": "2026-02-04T05:47:51.922Z"
+  "lastReflection": "2026-02-04T06:49:44.938Z",
+  "lastUpdated": "2026-02-04T06:49:44.939Z"
 }
