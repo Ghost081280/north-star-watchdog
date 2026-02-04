@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T15:33:38.394Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-30T16:38:33.394Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-04T18:46:58.534Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-04T19:38:54.620Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Medicaid Service Providers?",
-    "Where did the $16B allegedly go in Hudson River Tunnel Funding Freeze?",
     "Where did the unknown allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $400M allegedly go in Minnesota Small Business Loans?",
     "Where did the $400 Million allegedly go in Minnesota Small Business Loan Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $16 Billion allegedly go in Gateway Tunnel Funding Freeze?",
     "What other organizations is James Uthmeier connected to?",
     "Where did the $16 billion allegedly go in Hudson Tunnel Project investigation?",
-    "Where did the Unknown allegedly go in Fulton County election documents investigation?"
+    "Where did the Unknown allegedly go in Fulton County election documents investigation?",
+    "Where did the $100M allegedly go in Minnesota Medicaid Provider Investigation?",
+    "Where did the $10B allegedly go in Hudson Tunnel Project Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 749,
-    "articlesProcessed": 37300,
-    "redFlagsFound": 903,
+    "totalScans": 750,
+    "articlesProcessed": 37350,
+    "redFlagsFound": 904,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The Trump administration's freeze of $16 billion in funding for the Hudson Tunnel Project",
-          "insight": "This freeze may indicate a larger issue with infrastructure funding or a political dispute. Further investigation into the reasons behind the freeze and its impact on the project is warranted.",
-          "entities": [
-            "Trump administration",
-            "Gateway Project"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "News reports",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdHN1RjQ1aWRET1l0Rmh2N3pKTWg2OW1LQUdTQVQ0bGtPM0dSSVA1QTYzVE9uWW9ic1p3WU5yMl9fMDFzZmF3dGU2VmZPVDVNcHpNdEhiY1hhYXdzOUc1a3ZFLVpkdGRtUTZZUHNCd2xreFlpZ0w4ZDhEaDlXRUxTb2FJdml5aU9BeW4wNGJ3a2piMElyVmpNeGp0eU16WmZWNXlPRm5jTERMTTGnZmJaanlBNnFxdU1aM3hLSW12SVYwX0xjNHfSAcsBQVVfeXFMUEhJd09yQnp1Y3E3ckxEMmNiTFEzTHFOSGJUTkxXZVBQOHljTUowTXQ2M09Rc1p5WmdMVFd1YUNfWGFlZEpwNkhTWnpsdGJlZmtrT0p4ejhUcDcxQjcxdkRmbVpSalZiVXQxZERfNGhJUWFxbkxNaVgyRzUzT2IxVm5qYl9mLU5GX0RHS3loeTJLQnVhWkRNUEdFT3gwdkRCdXA5VHZON2ktOFc2d2xMZnk4NEtpaG1aYUpaLWpWc3oxQ3ZQWHNMdmtMMmc"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T18:46:58.534Z",
-  "lastUpdated": "2026-02-04T18:46:58.534Z"
+  "lastReflection": "2026-02-04T19:38:54.620Z",
+  "lastUpdated": "2026-02-04T19:38:54.621Z"
 }
