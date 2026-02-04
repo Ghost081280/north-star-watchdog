@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "White House instructs DOT, CDC to cut $1.5B in grants for Dem states, citing 'waste and mismanagement'",
+      "insight": "Potential misuse of funds or political bias in grant allocation",
+      "entities": [
+        "White House",
+        "DOT",
+        "CDC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/02/04/white-house-instructs-dot-cdc-to-cut-1-5b-in-grants-for-dem-states/",
+      "id": "rf-1770240730755-hqbc9ictw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-04T21:32:10.752Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's freeze of $16 billion in funding for the Hudson Tunnel Project",
       "insight": "This freeze may indicate a larger issue with infrastructure funding or a political dispute. Further investigation into the reasons behind the freeze and its impact on the project is warranted.",
@@ -965,34 +986,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T09:41:36.614Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The city of Florence, Minnesota, has requested an FBI investigation into revenue diversion activities.",
-      "insight": "This could indicate potential financial mismanagement or fraud at the local level.",
-      "entities": [
-        "City of Florence",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "953wiki.com",
-      "sourceUrl": "https://953wiki.com/city-of-florence-requests-fbi-investigation-amid-revenue-diversion-activities",
-      "id": "rf-1769675858688-tih89k926",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T08:37:38.685Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1013,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-04T20:33:06.048Z"
+  "lastUpdated": "2026-02-04T21:32:10.752Z"
 }
