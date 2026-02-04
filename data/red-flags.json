@@ -1,9 +1,9 @@
 {
   "flags": [
     {
-      "type": "federal freeze",
-      "description": "The Trump administration's freeze on $16B funding for the Hudson River tunnels has sparked lawsuits from New York and New Jersey.",
-      "insight": "This freeze and subsequent lawsuits suggest potential political interference in infrastructure funding, possibly impacting development and federal relations.",
+      "type": "federal_freeze",
+      "description": "Hudson River tunnel funding freeze",
+      "insight": "This funding freeze may be a sign of a larger pattern of federal funding freezes, potentially impacting multiple projects and states",
       "entities": [
         "Trump administration",
         "New York",
@@ -11,14 +11,34 @@
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdlVvZzFDRDFfa1A0R3RhdnJHQ3B4NEtzUUQtbnlqUC1Gd3pDbXVvVVRqSENROGhMX2NJYXYxemdRVUMyel9MNUp3UmloamZ1VTBGTUtCN2trbUJMSlQwUG1oRHFZQXk5X1FzNVBIcW01ck00T0tjUVo5dkZFMnpsYmZhZDhlN1Q3X19qT3V4b0dDdEE0RW5rS05BaXFoemgxaFVlTEttNUZ5MHk3WGdZMGVrZ0ZjZXB6eWNvbjhjbEF3VnZBS195anJpdHRpdkdRd1FhOFhNY19TcV9ZblMwMzZOSVRlX2FSandqeXpn0gH0AUFVX3lxTE5fNjhSQmJtekVIbXhCMXVfcVp4YVYwYnBWZ19Kd2s0dHh5ODdpZ2VpaGhneDRxOWhPMUx2V3FDOTl6OWhNeGpXX1lHTmJLbTIwS2JqTnhzWEtqaW5KTkxzdVM0WU12RG11bzZfeXBXTnlhQW05eVBSOGowMzQ2aDllSjFTQ3dUN7lfSWcxRklocEthOVVoMTVRbjdMcWN3UGFranc4Wlc2cXJvZkJCOEhpTGFwSXhuZFVQQlBrOEVQOVhQZTlHYmQxMTluZnI4QU8tdVk0ZGxzNzVxbHhDekdQUlZNVUpwTGd0ektaNTd2TFVCSmk",
-      "id": "rf-1770204745997-7r3bjpp87",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/",
+      "id": "rf-1770209777180-a2bmsu5vd",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-04T11:32:25.994Z",
+      "detectedAt": "2026-02-04T12:56:17.177Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "Potential termination of federal social safety net programs",
+      "insight": "This could have significant implications for vulnerable populations and may be worth further investigation",
+      "entities": [
+        "Trump administration",
+        "Indiana governor"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Indiana Capital Chronicle",
+      "sourceUrl": "https://www.indianacapitalchronicle.com/",
+      "id": "rf-1770209777180-f4fu5kfuj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-04T12:56:17.177Z",
       "isNew": true
     },
     {
@@ -966,30 +986,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T06:44:35.344Z",
       "isNew": false
-    },
-    {
-      "type": "Election Interference",
-      "description": "The FBI's investigation into 2020 election fraud has raised concerns about the integrity of the electoral process.",
-      "insight": "The investigation highlights the need for greater transparency and accountability in the electoral process. Further investigation is needed to determine the extent of any potential election interference.",
-      "entities": [
-        "FBI",
-        "Georgia Elections Office"
-      ],
-      "confidence": 70,
-      "priority": "Medium",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-georgia-elections-office-raid/",
-      "id": "rf-1769669075348-fkvgx36tk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T06:44:35.344Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,9 +1000,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-04T11:32:25.994Z"
+  "lastUpdated": "2026-02-04T12:56:17.177Z"
 }

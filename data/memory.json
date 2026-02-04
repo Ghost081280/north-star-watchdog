@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T09:36:51.788Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-30T10:33:16.690Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-04T11:32:25.992Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-04T12:56:17.175Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 50,
+      "count": 51,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-04T06:49:44.939Z"
+      "lastSeen": "2026-02-04T12:56:17.176Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Renee Good Investigation?",
-    "Where did the $0 allegedly go in Sable Offshore Investigation?",
-    "What other organizations is Elon Musk connected to?",
-    "Where did the $1.2B allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Sable Offshore Investigation?",
     "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
     "What other organizations is Renee Good connected to?",
@@ -558,7 +554,11 @@
     "Where did the N/A allegedly go in Suspected Biolab in Las Vegas?",
     "Where did the $400M allegedly go in Minnesota Small Business Loan Fraud?",
     "Where did the $0 allegedly go in Fictor and BRB federal investigation?",
-    "Where did the $0 allegedly go in Cumberland County Sheriff's Office investigation?"
+    "Where did the $0 allegedly go in Cumberland County Sheriff's Office investigation?",
+    "What other organizations is Not applicable connected to?",
+    "What specific allegations exist against Not applicable?",
+    "Where did the $400 Million allegedly go in Minnesota daycare fraud probe?",
+    "Where did the $16B allegedly go in Hudson River tunnel funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 743,
-    "articlesProcessed": 37000,
-    "redFlagsFound": 892,
+    "totalScans": 744,
+    "articlesProcessed": 37050,
+    "redFlagsFound": 894,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Federal Judicial Scientific Reference Manual Investigation?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Providers Fraud Investigation?",
-        "Where did the $0 allegedly go in Renee Good Investigation?"
+        "Where did the $0 allegedly go in Renee Good Investigation?",
+        "Where did the $0 allegedly go in Sable Offshore Investigation?",
+        "What other organizations is Elon Musk connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T11:32:25.992Z",
-  "lastUpdated": "2026-02-04T11:32:25.992Z"
+  "lastReflection": "2026-02-04T12:56:17.175Z",
+  "lastUpdated": "2026-02-04T12:56:17.176Z"
 }
