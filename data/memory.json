@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T05:45:24.386Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-30T06:46:10.472Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-04T07:43:17.046Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
+    },
+    {
+      "date": "2026-02-04T08:39:18.881Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Medicaid Providers Investigation?",
     "Where did the $1B+ allegedly go in Gateway Tunnel Funding Freeze?",
     "What other organizations is Man connected to?",
     "Where did the $6,000,000 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Minnesota Medicaid Service Providers?",
     "Where did the $16B allegedly go in Hudson River Tunnel Funding Freeze?",
     "Where did the unknown allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $400M allegedly go in Minnesota Small Business Loans?"
+    "Where did the $400M allegedly go in Minnesota Small Business Loans?",
+    "Where did the $400 Million allegedly go in Minnesota Small Business Loan Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 739,
-    "articlesProcessed": 36800,
-    "redFlagsFound": 884,
+    "totalScans": 740,
+    "articlesProcessed": 36850,
+    "redFlagsFound": 886,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1 Billion allegedly go in Gateway Tunnel Funding Investigation?",
         "Where did the $0 allegedly go in Minnesota Medicaid Providers Investigation?",
-        "Where did the $1B+ allegedly go in Gateway Tunnel Funding Freeze?"
+        "Where did the $1B+ allegedly go in Gateway Tunnel Funding Freeze?",
+        "What other organizations is Man connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T07:43:17.046Z",
-  "lastUpdated": "2026-02-04T07:43:17.047Z"
+  "lastReflection": "2026-02-04T08:39:18.881Z",
+  "lastUpdated": "2026-02-04T08:39:18.882Z"
 }
