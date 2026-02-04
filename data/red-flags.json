@@ -2,23 +2,42 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "The Trump administration's funding freeze on the Hudson Tunnel Project and Gateway Project has raised concerns about the impact on local economies and infrastructure development.",
-      "insight": "I notice a pattern of funding freezes by the Trump administration, which may indicate a larger issue with the administration's handling of infrastructure projects. Further investigation is needed to determine the motivations behind these funding freezes.",
+      "description": "The Trump administration's freeze of $16 billion in funding for the Hudson Tunnel Project",
+      "insight": "This freeze may indicate a larger issue with infrastructure funding or a political dispute. Further investigation into the reasons behind the freeze and its impact on the project is warranted.",
       "entities": [
         "Trump administration",
-        "Hudson Tunnel Project",
         "Gateway Project"
       ],
-      "confidence": 80,
+      "confidence": 90,
       "priority": "high",
-      "source": "ABC7 New York",
-      "sourceUrl": "https://www.abc7ny.com/",
-      "id": "rf-1770227072748-uvuj08wcm",
+      "source": "News reports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdHN1RjQ1aWRET1l0Rmh2N3pKTWg2OW1LQUdTQVQ0bGtPM0dSSVA1QTYzVE9uWW9ic1p3WU5yMl9fMDFzZmF3dGU2VmZPVDVNcHpNdEhiY1hhYXdzOUc1a3ZFLVpkdGRtUTZZUHNCd2xreFlpZ0w4ZDhEaDlXRUxTb2FJdml5aU9BeW4wNGJ3a2piMElyVmpNeGp0eU16WmZWNXlPRm5jTERMTTGnZmJaanlBNnFxdU1aM3hLSW12SVYwX0xjNHfSAcsBQVVfeXFMUEhJd09yQnp1Y3E3ckxEMmNiTFEzTHFOSGJUTkxXZVBQOHljTUowTXQ2M09Rc1p5WmdMVFd1YUNfWGFlZEpwNkhTWnpsdGJlZmtrT0p4ejhUcDcxQjcxdkRmbVpSalZiVXQxZERfNGhJUWFxbkxNaVgyRzUzT2IxVm5qYl9mLU5GX0RHS3loeTJLQnVhWkRNUEdFT3gwdkRCdXA5VHZON2ktOFc2d2xMZnk4NEtpaG1aYUpaLWpWc3oxQ3ZQWHNMdmtMMmc",
+      "id": "rf-1770230818538-f5kxefe2y",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-04T17:44:32.744Z",
+      "detectedAt": "2026-02-04T18:46:58.535Z",
+      "isNew": true
+    },
+    {
+      "type": "election_records_seizure",
+      "description": "The FBI's seizure of 2020 election records from Fulton County",
+      "insight": "This seizure raises concerns about the integrity of the electoral process and potential biases in law enforcement. Further investigation into the reasons behind the seizure and its impact on the electoral process is necessary.",
+      "entities": [
+        "FBI",
+        "Fulton County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNnpIWmk0MDIycnkxVm1pQW1UeU5CQlI1T3JNNU0xNkw4LTVoQVoxZ29hZFBIVFhBc1p2WkctaXIwYVlmT0xHZGxlSmxJVlJHUEFJb2VnUHE1M3VfUXRCR1FaN1JaVzNEdHktYlZJNkhYX1FxZFdHSFZSamNETmItSno0NDA5TUVLb0V5R0swVUE0U0lPWUhF0gGcAUFVX3lxTE1qcmV2Y2xreFdnSlBkRnZoZHFvODd4c2JQd3lFWnk5VVl4RWwzMnZZekZaRlQxLUxHRTZteV9qMWw2enU4emtXRm1kZ3VSOS0yWkpIM01lc1MyXzlDLThkLVljNEIySFpZalM3YVE3OUlTV2hPSmtUTHdKbDBaSzZpNGRnTk5PSVlvMmk4cXBDaHBONkhXbnVITGMxQg",
+      "id": "rf-1770230818538-hjfk8q8yr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-04T18:46:58.535Z",
       "isNew": true
     },
     {
@@ -966,41 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T08:37:38.685Z",
       "isNew": false
-    },
-    {
-      "type": "administrative leave",
-      "description": "Federal agents involved in the Alex Pretti shooting have been placed on administrative leave.",
-      "insight": "This suggests that there may be concerns about the actions of these agents and potentially an investigation into the shooting.",
-      "entities": [
-        "Alex Pretti",
-        "FBI"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/federal-agents-involved-in-alex-pretti-shooting-placed-on-administrative-leave-source-says/",
-      "id": "rf-1769675858688-8w2687tur",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T08:37:38.685Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-04T17:44:32.744Z"
+  "lastUpdated": "2026-02-04T18:46:58.535Z"
 }
