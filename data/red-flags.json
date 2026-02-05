@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "discrimination",
+      "description": "Nike under federal investigation for alleged discrimination against white employees",
+      "insight": "This could indicate a larger issue with diversity and inclusion practices at Nike. Further investigation into Nike's HR practices is warranted.",
+      "entities": [
+        "Nike"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Benzinga",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcHZ6eWNZZWRxOGFMd2I5SENxX0ZlUVdTaWExTWdPdEdFeFVXcnVoRmpfWHVsczRGZHI5QVRWUUs0cl9kM1lzUUowMWhzWHl2Y0x6Mk1FU2lqdzl3eWNLS1BYQnZndjFMVUtBaWJ4YW5UZHBNbnRhNUFuNGx1M0FpYTRkdXVKbWhLTk53QWRHVlY4NTZIanczcVB1clhXSS1xUTV5NmdjNkplUWNqSWNKZU50WXFtZG9QREZZUjdKY1FQZw?oc=5",
+      "id": "rf-1770287961189-7q4njaj6h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T10:39:21.186Z",
+      "isNew": true
+    },
+    {
       "type": "Corporate discrimination",
       "description": "Allegations of discrimination against white employees at Nike have sparked a federal investigation.",
       "insight": "I believe that this case may be part of a larger trend of corporate discrimination. Companies must prioritize diversity and inclusion initiatives to prevent similar incidents.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-05T09:42:51.655Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_integrity",
@@ -963,31 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T18:42:55.947Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The infamous Quality 'Learning' Center in Minnesota has been closed, according to recent records.",
-      "insight": "This closure suggests that authorities are taking action against fraudulent programs, but it also raises questions about the scope of the fraud and how it went undetected for so long. I would investigate further to determine the extent of the fraud and whether any officials were involved.",
-      "entities": [
-        "Quality 'Learning' Center"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
-      "id": "rf-1769708239033-xn9ssn3kc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T17:37:19.030Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,6 +994,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T09:42:51.655Z"
+  "lastUpdated": "2026-02-05T10:39:21.186Z"
 }

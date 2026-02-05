@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T06:37:20.333Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-31T07:28:10.595Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-02-05T09:42:51.653Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-05T10:39:21.184Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Richtech Robotics Securities Investigation?",
     "What other organizations is Not Applicable connected to?",
     "Where did the Not Specified allegedly go in Minnesota Daycare Investigation?",
     "Where did the Not Specified allegedly go in Nike Discrimination Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Minnesota DHS Backdating Investigation?",
     "What other organizations is Gregg Hart connected to?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $115B allegedly go in Minnesota DHS Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 761,
-    "articlesProcessed": 37900,
-    "redFlagsFound": 916,
+    "totalScans": 762,
+    "articlesProcessed": 37950,
+    "redFlagsFound": 918,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Hudson Tunnel Project Investigation?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Provider Investigation?",
-        "Where did the $0 allegedly go in Nike Discrimination Investigation?"
+        "Where did the $0 allegedly go in Richtech Robotics Securities Investigation?",
+        "What other organizations is Not Applicable connected to?",
+        "Where did the Not Specified allegedly go in Minnesota Daycare Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T09:42:51.653Z",
-  "lastUpdated": "2026-02-05T09:42:51.654Z"
+  "lastReflection": "2026-02-05T10:39:21.184Z",
+  "lastUpdated": "2026-02-05T10:39:21.185Z"
 }
