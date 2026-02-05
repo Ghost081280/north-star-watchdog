@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Alleged Discrimination",
+      "description": "Nike is under federal investigation for alleged discrimination against white workers.",
+      "insight": "I suspect that this investigation may be related to a larger pattern of alleged discrimination in the corporate world. Further investigation is needed to determine the extent of this issue.",
+      "entities": [
+        "Nike"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news",
+      "id": "rf-1770270917203-p849xtzow",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T05:55:17.200Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "White House instructs DOT, CDC to cut $1.5B in grants for Dem states, citing 'waste and mismanagement'",
       "insight": "Potential misuse of funds or political bias in grant allocation",
@@ -966,26 +985,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T13:59:56.209Z",
       "isNew": false
-    },
-    {
-      "type": "Excessive use of force",
-      "description": "The shooting of Alex Pretti by ICE agents has raised concerns about excessive use of force and the need for independent investigations.",
-      "insight": "The incident highlights the need for greater transparency and accountability in law enforcement agencies, particularly when it comes to the use of force.",
-      "entities": [
-        "ICE",
-        "Alex Pretti"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "Sen. Jon Ossoff",
-      "sourceUrl": "https://www.wjbf.com/news/sen-jon-ossoff-calls-for-independent-investigation-after-minnesota-man-killed-by-ice-agents/",
-      "id": "rf-1769679696617-kte2zyikr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T09:41:36.614Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,8 +998,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T04:15:51.256Z"
+  "lastUpdated": "2026-02-05T05:55:17.200Z"
 }
