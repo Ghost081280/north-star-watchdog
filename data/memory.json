@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T16:26:48.142Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-01-31T17:23:34.835Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-05T20:32:45.636Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-05T21:27:49.571Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota DHS Backdating Investigation?",
-    "What other organizations is Gregg Hart connected to?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $115B allegedly go in Minnesota DHS Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into Former Raleigh Police Officer?",
     "Where did the $0 allegedly go in Minnesota Protest Investigations?",
-    "Where did the $5B allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $5B allegedly go in Minnesota Child Care Fraud Investigation?",
+    "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 771,
-    "articlesProcessed": 38400,
-    "redFlagsFound": 929,
+    "totalScans": 772,
+    "articlesProcessed": 38450,
+    "redFlagsFound": 930,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Nike Federal Investigation?",
         "Where did the $0 allegedly go in Minnesota DHS Backdating Investigation?",
-        "What other organizations is Gregg Hart connected to?"
+        "What other organizations is Gregg Hart connected to?",
+        "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T20:32:45.636Z",
-  "lastUpdated": "2026-02-05T20:32:45.637Z"
+  "lastReflection": "2026-02-05T21:27:49.571Z",
+  "lastUpdated": "2026-02-05T21:27:49.572Z"
 }
