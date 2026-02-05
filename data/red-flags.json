@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Corporate discrimination",
+      "description": "Allegations of discrimination against white employees at Nike have sparked a federal investigation.",
+      "insight": "I believe that this case may be part of a larger trend of corporate discrimination. Companies must prioritize diversity and inclusion initiatives to prevent similar incidents.",
+      "entities": [
+        "Nike"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/02/05/1114331111/nike-faces-federal-probe-over-allegations-of-discrimination-against-white-workers",
+      "id": "rf-1770284571659-9g7rjyuku",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T09:42:51.655Z",
+      "isNew": true
+    },
+    {
       "type": "program_integrity",
       "description": "Allegations of backdating paperwork in Minnesota DHS",
       "insight": "This suggests potential program integrity issues and possible fraud in Minnesota's childcare programs.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-05T08:40:58.873Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -963,30 +982,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T17:37:19.030Z",
       "isNew": false
-    },
-    {
-      "type": "government shutdown",
-      "description": "Government shutdown looming due to ICE funding dispute",
-      "insight": "The potential shutdown highlights the need for a resolution to the ICE funding dispute. Further research is needed to determine the potential impact of a shutdown on Minnesota and the nation.",
-      "entities": [
-        "ICE",
-        "US Government"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "AZCentral",
-      "sourceUrl": "https://www.azcentral.com/story/news/politics/2026/01/29/what-happen-arizona-ice-funding-causes-government-shutdown/1092737002/",
-      "id": "rf-1769704948611-w8o1m7xss",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T16:42:28.608Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T08:40:58.873Z"
+  "lastUpdated": "2026-02-05T09:42:51.655Z"
 }
