@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T01:50:19.782Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-31T04:04:55.016Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-05T06:57:33.978Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-05T07:52:06.723Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is James Uthmeier connected to?",
-    "Where did the $16 billion allegedly go in Hudson Tunnel Project investigation?",
     "Where did the Unknown allegedly go in Fulton County election documents investigation?",
     "Where did the $100M allegedly go in Minnesota Medicaid Provider Investigation?",
     "Where did the $10B allegedly go in Hudson Tunnel Project Investigation?",
@@ -558,7 +556,9 @@
     "Where did the None allegedly go in Nike Discrimination Investigation?",
     "Where did the None allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota DHS Fraud Investigation?",
-    "Where did the $0 allegedly go in Minnesota DHS Backdating Paperwork Investigation?"
+    "Where did the $0 allegedly go in Minnesota DHS Backdating Paperwork Investigation?",
+    "Where did the $100M allegedly go in Minnesota DHS Investigation?",
+    "Where did the N/A allegedly go in Nike Discrimination Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 758,
-    "articlesProcessed": 37750,
-    "redFlagsFound": 912,
+    "totalScans": 759,
+    "articlesProcessed": 37800,
+    "redFlagsFound": 913,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $16 Billion allegedly go in Gateway Tunnel Funding Freeze?",
         "What other organizations is James Uthmeier connected to?",
-        "Where did the $16 billion allegedly go in Hudson Tunnel Project investigation?"
+        "Where did the $16 billion allegedly go in Hudson Tunnel Project investigation?",
+        "Where did the Unknown allegedly go in Fulton County election documents investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T06:57:33.978Z",
-  "lastUpdated": "2026-02-05T06:57:33.978Z"
+  "lastReflection": "2026-02-05T07:52:06.723Z",
+  "lastUpdated": "2026-02-05T07:52:06.724Z"
 }
