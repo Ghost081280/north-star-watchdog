@@ -1,6 +1,30 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Minnesota DHS is investigating protests in the state, which could lead to program terminations.",
+      "insight": "The investigations into protests could lead to increased scrutiny of public officials and business practices.",
+      "entities": [
+        "Minnesota DHS",
+        "protesters"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORHdnb0lPMG1lTnJGTUhrdG9zc19nUS1jRGx2VElVaTBiaE1NaTQ5a0ZJMkE0TVFVRDdUVXg1ODRDVXVtcjAwckNVUVFsa0FDQ0N0Nlp2d1NIY0FCcnlXYlZqX28ySFBlQ0o3TWtReXBLREFZTUNGcE15UkZJalNpVkJ0bnh1MXlteDZKVEp5SG9DVENN",
+      "searches": [
+        "program termination",
+        "Minnesota DHS"
+      ],
+      "id": "rf-1770320235058-fo9sswzyy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T19:37:15.054Z",
+      "isNew": true
+    },
+    {
       "type": "possible discrimination",
       "description": "Nike under investigation for allegedly discriminating against white employees.",
       "insight": "This could indicate a larger issue with diversity and inclusion policies at Nike, potentially leading to further investigations and scrutiny.",
@@ -962,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T04:09:02.731Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has launched an investigation into the Minnesota shooting, with Texas Republicans calling for further investigation",
-      "insight": "I notice that the FBI has launched an investigation into the Minnesota shooting, which may be connected to the Medicaid fraud crackdown in the state. I would like to investigate further to see if there are any connections between the two cases.",
-      "entities": [
-        "FBI",
-        "Texas Republicans"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Texas Republicans express concerns, call for investigation into Minnesota shooting",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaEdzR21kanRsY3gydTJybGh5MTlHcS16SlYzUUJZTmhCLU4xQ05PcGgwM2FOeGRRWGZmNFFHSDRSSkQ2QVpHQ0s5RzNnVW9GUDNaV05YTXRUdWUwa2FycXUwbzNpRlY4T3FudzhFamJySjBNR1dDbUpibGVaTnk1UWFKclpvLTJvZHFpcHpWTC0xM1Jfb1NEbFF6ZGdES3U1WUc5ZUtRQTd6cGxrMWVBbzlXamNSaE5GcDNiS2daRHp4Skk?oc=5",
-      "id": "rf-1769738058920-77qi5cf0e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T01:54:18.917Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,7 +999,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T18:45:03.800Z"
+  "lastUpdated": "2026-02-05T19:37:15.054Z"
 }
