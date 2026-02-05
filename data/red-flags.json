@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Nike is under federal investigation for alleged discrimination against white employees",
+      "insight": "This investigation may indicate a larger pattern of corporate discrimination, and it's essential to monitor the situation and potential consequences for the company and its employees.",
+      "entities": [
+        "Nike"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/02/05/1152331111/nike-faces-federal-probe-over-allegations-of-discrimination-against-white-workers",
+      "id": "rf-1770300491372-wfwludz2u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T14:08:11.368Z",
+      "isNew": true
+    },
+    {
       "type": "discrimination",
       "description": "Nike under federal investigation for alleged discrimination against white employees",
       "insight": "This could indicate a larger issue with diversity and inclusion practices at Nike. Further investigation into Nike's HR practices is warranted.",
@@ -963,40 +982,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T19:30:52.162Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "A program termination has been reported, with potential impacts on various services.",
-      "insight": "I suspect that the program termination may be related to the 'runaway fraud' investigation, and I recommend further research into the connection between the two.",
-      "entities": [
-        "Minnesota Governor Walz"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "kfgo.com",
-      "sourceUrl": "https://kfgo.com/",
-      "id": "rf-1769712175951-gl49cq9ey",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T18:42:55.947Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T12:58:52.278Z"
+  "lastUpdated": "2026-02-05T14:08:11.368Z"
 }
