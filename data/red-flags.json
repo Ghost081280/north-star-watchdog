@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "alleged misconduct",
+      "description": "Allegations against a former Raleigh police officer accused of sex crimes",
+      "insight": "This case may indicate a pattern of misconduct within law enforcement agencies, requiring further investigation.",
+      "entities": [
+        "former Raleigh police officer"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeDE4eVNvTldYLWFnUjMyQ0llQmhoa0Y5QzJ1MTE5WElERUI1WHZyS2VVRlZ5VDZGT2hsbFlWSzBhcUkzN2p4ZDA4Z2tzbjVlXzhqSzRSY2FvZ0I4R3I4UjVWY1RhZnlzaHZPazI4MHplX0FZODFRdDdOeTU4MUpWNXBZeUpCMm05eUHSAYoBQVVfeXFMTlAtVk5BQy14cGI1RWJwTlR0dkF0SmVkdEhTYmYtZTJPYUFSZ1RzQk5ITWZrajY4OS1tQl9wdG0yQ2FoZ1JQUDJ2MVdDMDhiQzZLanVWMXVvTVQ0WnpYRDM3UlRaQXB4SmxwaWF4NVdQYXBZeldMUTBpUDh3NWdUbVgxWkVJcV9DWnZB?oc=5",
+      "id": "rf-1770323565641-7ukmh6oin",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T20:32:45.638Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Minnesota DHS is investigating protests in the state, which could lead to program terminations.",
       "insight": "The investigations into protests could lead to increased scrutiny of public officials and business practices.",
@@ -22,7 +41,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-05T19:37:15.054Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "possible discrimination",
@@ -967,25 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T05:45:24.388Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating corruption at the mayor-president's office, resulting in arrests",
-      "insight": "This investigation highlights the need for increased transparency and oversight in government offices. Further investigation is needed to determine the extent of the corruption and to identify any other individuals or entities involved.",
-      "entities": [
-        "Mayor-President's Office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Unfiltered with Kiran",
-      "sourceUrl": "https://unfilteredwithkiran.com/sources-fbi-subpoenas-at-mayor-presidents-office-led-to-cats-corruption-arrests/",
-      "id": "rf-1769746142735-hbliygybx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T04:09:02.731Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,12 +994,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T19:37:15.054Z"
+  "lastUpdated": "2026-02-05T20:32:45.638Z"
 }
