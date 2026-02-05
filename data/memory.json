@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-30T20:28:53.470Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-30T21:27:43.655Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-04T23:26:42.278Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-05T01:57:00.483Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Cumberland County Sheriff's Office investigation?",
-    "What other organizations is Not applicable connected to?",
-    "What specific allegations exist against Not applicable?",
     "Where did the $400 Million allegedly go in Minnesota daycare fraud probe?",
     "Where did the $16B allegedly go in Hudson River tunnel funding freeze?",
     "Where did the $400 Million allegedly go in Minnesota Daycare Fraud Probe?",
@@ -558,7 +555,10 @@
     "What other organizations is Not Applicable connected to?",
     "Where did the Not Specified allegedly go in Minnesota Daycare Investigation?",
     "Where did the Not Specified allegedly go in Nike Discrimination Investigation?",
-    "Where did the $0 allegedly go in Minnesota Daycare Investigation?"
+    "Where did the $0 allegedly go in Minnesota Daycare Investigation?",
+    "What other organizations is Nike Executives connected to?",
+    "Where did the $1.5B allegedly go in Minnesota Daycare Investigation?",
+    "Where did the Unknown allegedly go in Nike Discrimination Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 754,
-    "articlesProcessed": 37550,
-    "redFlagsFound": 908,
+    "totalScans": 755,
+    "articlesProcessed": 37600,
+    "redFlagsFound": 909,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Fictor and BRB federal investigation?",
         "Where did the $0 allegedly go in Cumberland County Sheriff's Office investigation?",
-        "What other organizations is Not applicable connected to?"
+        "What other organizations is Not applicable connected to?",
+        "What specific allegations exist against Not applicable?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-04T23:26:42.278Z",
-  "lastUpdated": "2026-02-04T23:26:42.279Z"
+  "lastReflection": "2026-02-05T01:57:00.483Z",
+  "lastUpdated": "2026-02-05T01:57:00.484Z"
 }
