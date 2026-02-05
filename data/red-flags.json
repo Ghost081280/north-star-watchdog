@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Several shell companies have been linked to the Trump administration, raising concerns about money laundering and other illicit activities.",
+      "insight": "This could be a sign of a larger effort to hide financial transactions and avoid detection.",
+      "entities": [
+        "Trump Administration",
+        "shell companies"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Newsweek",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSm1IVjVkZzV6bG9mYVBkUlVKVEV2WXRmUUMzLTUzWTJrd0hucktnZmVmZGV4dUhCLTJFemV4TXVPRDFjUDB2WUNEOWV5STdxRlBYZVowZDRyNjl2aTRiNWtVSGZ4a1ZqZGlnMjBRZDNXSFVQQWRiZlY4R0JQMnQ5ZTI2b0ZncE5mM0ZMTmdMQm9NYV9pRjdDcldmeXlseEJyQzdPVVFUVzFaWGNRN0E",
+      "id": "rf-1770333736803-kiy1h2xu5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T23:22:16.799Z",
+      "isNew": true
+    },
+    {
       "type": "alleged misconduct",
       "description": "Allegations against a former Raleigh police officer accused of sex crimes",
       "insight": "This case may indicate a pattern of misconduct within law enforcement agencies, requiring further investigation.",
@@ -967,29 +987,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T11:27:23.795Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the former mayor-president's office, which has led to a corruption probe",
-      "insight": "This investigation suggests a potential pattern of corruption in local government, which warrants further investigation. I recommend tracking the developments in this case and exploring potential connections to other entities or programs.",
-      "entities": [
-        "Former Mayor-President's Office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "unfilteredwithkiran.com",
-      "sourceUrl": "https://unfilteredwithkiran.com/sources-fbis-investigation-into-former-mayor-presidents-office-led-officials-to-cats-corruption-probe/",
-      "id": "rf-1769751924392-xul8ae30a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T05:45:24.388Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,8 +1001,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T22:26:02.812Z"
+  "lastUpdated": "2026-02-05T23:22:16.799Z"
 }
