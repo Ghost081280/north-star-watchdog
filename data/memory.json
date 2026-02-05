@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T12:43:25.534Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-31T13:40:40.900Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-05T16:45:43.238Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-05T17:46:59.748Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is David Hoch connected to?",
-    "Where did the None allegedly go in Nike Discrimination Investigation?",
     "Where did the None allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota DHS Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota DHS Backdating Paperwork Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Not Applicable allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $1B+ allegedly go in Minnesota Fraud Probe?",
     "Where did the N/A allegedly go in Nike Federal Investigation?",
-    "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?"
+    "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?",
+    "Where did the $0 allegedly go in Nike Discrimination Investigation?",
+    "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 767,
-    "articlesProcessed": 38200,
-    "redFlagsFound": 923,
+    "totalScans": 768,
+    "articlesProcessed": 38250,
+    "redFlagsFound": 925,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
         "What other organizations is David Hoch connected to?",
-        "Where did the None allegedly go in Nike Discrimination Investigation?"
+        "Where did the None allegedly go in Nike Discrimination Investigation?",
+        "Where did the None allegedly go in Minnesota Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T16:45:43.238Z",
-  "lastUpdated": "2026-02-05T16:45:43.239Z"
+  "lastReflection": "2026-02-05T17:46:59.748Z",
+  "lastUpdated": "2026-02-05T17:46:59.749Z"
 }
