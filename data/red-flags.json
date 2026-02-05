@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Department of Human Services is under scrutiny for alleged mismanagement and backdating paperwork",
+      "insight": "Patterns of potential fraud and mismanagement in state programs, particularly in the Department of Human Services. This warrants further investigation into the extent of the issue and potential connections to other state programs.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Times of India",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUVBUMzVmSlpObUs2ZWtaeEhxU2lzYjFtQlpFRU01V0phQmczNW9NdS1TekpVTG1Xamg3UDI3VzZ0Y1A2ZGZDaW1PTVdYWWU1OWVfWUplb1RmVHd0b2g4ZTBzeGRpSE1vQkE1bzdDNE9sRFVnVFV0STRPNnkwWnctQkVqOERVQ1lIZGtYbkptUXdpTUY0T25BQmxwTDlsbnN4RHFwRFZwaXZOMFN6Z3ZuUDVHeWxpNnZFSlhoQTNxMmpzeWptUmRVRGtRdnR4a1h2bnNwbW9hTEZjanlFZkVvRnZlZVZqZ3htVjNQbU9ZUTE2eTJrOTVuU09I",
+      "id": "rf-1770274653982-r2fqlcuuu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-05T06:57:33.979Z",
+      "isNew": true
+    },
+    {
       "type": "Alleged Discrimination",
       "description": "Nike is under federal investigation for alleged discrimination against white workers.",
       "insight": "I suspect that this investigation may be related to a larger pattern of alleged discrimination in the corporate world. Further investigation is needed to determine the extent of this issue.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-05T05:55:17.200Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -965,31 +984,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-29T14:48:16.789Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-Up",
-      "description": "The Trump administration's response to the ICE shooting investigation has raised concerns about a potential cover-up. The administration has been accused of politicizing the investigation and downplaying the severity of the incident.",
-      "insight": "I suspect that there may be an attempt to conceal the truth about the shooting and the administration's involvement. Further investigation is needed to uncover the facts and ensure accountability.",
-      "entities": [
-        "Trump Administration",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "Attack of the Fanboy",
-      "sourceUrl": "https://www.attackofthefanboy.com/news/agents-involved-in-alex-pretti-fatal-shooting-are-put-on-leave/",
-      "id": "rf-1769695196212-zbs0dmwh3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-29T13:59:56.209Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +996,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-05T05:55:17.200Z"
+  "lastUpdated": "2026-02-05T06:57:33.979Z"
 }
