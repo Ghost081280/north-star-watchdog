@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T08:29:17.689Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-01-31T09:27:35.434Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-05T11:34:37.882Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-05T12:58:52.277Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not Specified allegedly go in Minnesota Daycare Investigation?",
-    "Where did the Not Specified allegedly go in Nike Discrimination Investigation?",
-    "Where did the $0 allegedly go in Minnesota Daycare Investigation?",
     "What other organizations is Nike Executives connected to?",
     "Where did the $1.5B allegedly go in Minnesota Daycare Investigation?",
     "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $115B allegedly go in Minnesota DHS Fraud Investigation?",
-    "Where did the $1.5B allegedly go in Minnesota DHS Fraud Investigation?"
+    "Where did the $1.5B allegedly go in Minnesota DHS Fraud Investigation?",
+    "What other organizations is Not Applicable connected to?",
+    "Where did the Not Applicable allegedly go in Nike Federal Investigation?",
+    "Where did the Not Applicable allegedly go in Minnesota Childcare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 763,
-    "articlesProcessed": 38000,
-    "redFlagsFound": 919,
+    "totalScans": 764,
+    "articlesProcessed": 38050,
+    "redFlagsFound": 920,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not Applicable connected to?",
         "Where did the Not Specified allegedly go in Minnesota Daycare Investigation?",
-        "Where did the Not Specified allegedly go in Nike Discrimination Investigation?"
+        "Where did the Not Specified allegedly go in Nike Discrimination Investigation?",
+        "Where did the $0 allegedly go in Minnesota Daycare Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T11:34:37.882Z",
-  "lastUpdated": "2026-02-05T11:34:37.883Z"
+  "lastReflection": "2026-02-05T12:58:52.277Z",
+  "lastUpdated": "2026-02-05T12:58:52.277Z"
 }
