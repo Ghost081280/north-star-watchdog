@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Programs terminating due to lack of funding",
+      "insight": "This could indicate a larger issue with program sustainability and funding.",
+      "entities": [
+        "child care programs"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaUdUMEEyQ3I1MXo3TVR5VU5CM1lHaFNnMmJORURLSVIwY2lWOE9CSWFiNDJzX2dvOVc1VTFTd2h0N1hYY3BhYldOU3JlNE00eFhEOEJpS2xybHB4a2tFaWJ2R1lWWmdzYXA4eUtiZWxjaVhfVUJMSG94Y29GdXV1NkdkblFxcGNMcnhRTjd1bTNrZTJDUEhvRmNyZUJoa1ZvWEdXQkpWWVZiUGw2TTNKUFNQNTJ3U3hadjFTc1JiRUU2OFRSd3p6RXRseEZPTHB0QWtlVkVCQ0VmV1U",
+      "id": "rf-1770357192791-jo64a6faz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-06T05:53:12.788Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Several shell companies have been linked to the Trump administration, raising concerns about money laundering and other illicit activities.",
       "insight": "This could be a sign of a larger effort to hide financial transactions and avoid detection.",
@@ -967,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T13:56:19.004Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration terminated various programs, potentially impacting Minnesota.",
-      "insight": "The termination of programs could have led to a lack of resources for Minnesota, potentially exacerbating the fraud issue.",
-      "entities": [
-        "Trump administration",
-        "Minnesota"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "New York Magazine",
-      "sourceUrl": "https://www.nymagazine.com/2026/01/30/how-trump-team-botched-shooting-response-and-blame-game-played-out/",
-      "id": "rf-1769772443798-5cpapme90",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T11:27:23.795Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1018,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-06T04:14:39.970Z"
+  "lastUpdated": "2026-02-06T05:53:12.788Z"
 }
