@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T19:20:16.164Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-31T20:24:31.777Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-05T23:22:16.797Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-06T01:55:53.900Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.5B allegedly go in Minnesota DHS Fraud Investigation?",
-    "What other organizations is Not Applicable connected to?",
     "Where did the Not Applicable allegedly go in Nike Federal Investigation?",
     "Where did the Not Applicable allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $1B+ allegedly go in Minnesota Fraud Probe?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minnesota Fraud Probe?",
     "What other organizations is Donald Trump connected to?",
     "What other organizations is Tulsi Gabbard connected to?",
-    "Where did the $100M allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $100M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Alex Pretti connected to?",
+    "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 774,
-    "articlesProcessed": 38550,
-    "redFlagsFound": 933,
+    "totalScans": 775,
+    "articlesProcessed": 38600,
+    "redFlagsFound": 934,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $115B allegedly go in Minnesota DHS Fraud Investigation?"
+        "Where did the $1.5B allegedly go in Minnesota DHS Fraud Investigation?",
+        "What other organizations is Not Applicable connected to?",
+        "Where did the Not Applicable allegedly go in Nike Federal Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-05T23:22:16.797Z",
-  "lastUpdated": "2026-02-05T23:22:16.797Z"
+  "lastReflection": "2026-02-06T01:55:53.900Z",
+  "lastUpdated": "2026-02-06T01:55:53.901Z"
 }
