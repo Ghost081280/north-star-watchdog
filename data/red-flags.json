@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "data breach",
+      "description": "Gain Federal Credit Union experienced a data breach",
+      "insight": "This could lead to further investigation into data security practices",
+      "entities": [
+        "Gain Federal Credit Union"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Claim Depot",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeHd1MUVmVnRpa0N3WFNKQmZzektuaE5MMDhNSDN6aWZDUkx0U0JQc0s3Sktnbk1iWFp5QmJrYktaQmhIdjhDWERlUVZobFl1QkhwQVBxc3lrUEo3RVJQb1h3WndRQVVpM0FvZml6T3M0cXowZmhKWWVqWnYtMkFYNVloMzVyQUpZR3UyeQ?oc=5",
+      "id": "rf-1770399664742-8pt5qsu5u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-06T17:41:04.738Z",
+      "isNew": true
+    },
+    {
+      "type": "discrimination claims",
+      "description": "Nike faces federal scrutiny over discrimination claims",
+      "insight": "This could lead to further investigation into Nike's practices",
+      "entities": [
+        "Nike"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQODQxT2k4UmZ6LXBpTEg3aFN4WmxfbDhaY2ZwUzgwdkphbWsxcDZab1VJVUc4d1llaTF0TlJxMFpLTUlFQjR1aDltYjlCUlFjVHd5LVJ2Z2RvdXU0eElDYWdGRFpZQWRKOE4tTjA0ekFpUG9FRENDNUJNdFRTOTVGMWwtcU5PN05zbjJtalZrR3A3TDkwTkpVRmdNRQ?oc=5",
+      "id": "rf-1770399664742-n8wgj9vm2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-06T17:41:04.738Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Programs terminating due to lack of funding",
       "insight": "This could indicate a larger issue with program sustainability and funding.",
@@ -947,59 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T16:38:33.396Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The termination of the Gateway Tunnel Project has raised concerns about the potential for fraud and abuse in the use of federal funds.",
-      "insight": "I suspect that the project's termination may be related to allegations of fraud and corruption. Further investigation is needed to determine the extent of any potential wrongdoing.",
-      "entities": [
-        "Gateway Tunnel Project"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Construction Owners Club",
-      "sourceUrl": "https://constructionownersclub.com/gateway-tunnel-project-may-pause-as-federal-funding-remains-unreleased",
-      "id": "rf-1769783745814-r9g4ch0g9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T14:35:45.810Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Trump administration's actions have led to concerns about program terminations and their impact on Minnesota.",
-      "insight": "This may indicate a broader pattern of federal intervention in state programs, potentially impacting vulnerable populations.",
-      "entities": [
-        "Trump administration",
-        "Minnesota state government"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The New York Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOME02djMySVNIaWZVa3RiWThleTBULVZoNG1kZnA3MDBjZ09MWklmUURTQjFiZm5oQTVhT0hlM3BtTElLTWJBSGNCLXloVmYwZ285bWs2MXBoN0lZd3JZUk0xSHRsdGp1OUtuSExobVkzUTl1ZVF6aFd3emVUQnhQLU9xOWdmdng1czVqTTdDUXVHTUE",
-      "id": "rf-1769781379007-vcxmifs1u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T13:56:19.004Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-06T16:42:49.305Z"
+  "lastUpdated": "2026-02-06T17:41:04.738Z"
 }
