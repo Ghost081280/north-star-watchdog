@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-01T05:00:16.350Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-01T06:03:41.781Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-06T08:40:08.101Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-06T09:41:03.838Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
     "Where did the Unknown allegedly go in Minnesota Fraud Probe?",
     "What other organizations is Donald Trump connected to?",
     "What other organizations is Tulsi Gabbard connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Mayor Karen Bass connected to?",
     "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?",
     "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 780,
-    "articlesProcessed": 38850,
-    "redFlagsFound": 940,
+    "totalScans": 781,
+    "articlesProcessed": 38900,
+    "redFlagsFound": 941,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $4M allegedly go in Minnesota Fraud Investigation?",
-        "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
-        "Where did the $0 allegedly go in FBI Investigation into Former Raleigh Police Officer?"
+        "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
+        "Where did the Unknown allegedly go in Minnesota Fraud Probe?",
+        "What other organizations is Donald Trump connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-06T08:40:08.101Z",
-  "lastUpdated": "2026-02-06T08:40:08.101Z"
+  "lastReflection": "2026-02-06T09:41:03.838Z",
+  "lastUpdated": "2026-02-06T09:41:03.839Z"
 }
