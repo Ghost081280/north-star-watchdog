@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-01-31T22:21:31.376Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-01-31T23:21:10.061Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-02-06T05:53:12.786Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-06T06:53:33.247Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Nike Discrimination Investigation?",
-    "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?",
     "What other organizations is Tremale Cogdale connected to?",
     "Where did the $4M allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $1 billion allegedly go in Minnesota Welfare Scam?",
     "Where did the None allegedly go in Alex Pretti Shooting?",
     "What specific allegations exist against Stephen Miller?",
-    "Where did the $1B allegedly go in Minnesota Welfare Scam?"
+    "Where did the $1B allegedly go in Minnesota Welfare Scam?",
+    "Where did the $1 billion allegedly go in Minnesota Welfare Scam Investigation?",
+    "Where did the N/A allegedly go in Alex Pretti Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 777,
-    "articlesProcessed": 38700,
-    "redFlagsFound": 937,
+    "totalScans": 778,
+    "articlesProcessed": 38750,
+    "redFlagsFound": 938,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Nike Federal Investigation?",
-        "Where did the $100M allegedly go in Minnesota Daycare Fraud Investigation?",
-        "Where did the $0 allegedly go in Nike Discrimination Investigation?"
+        "Where did the $0 allegedly go in Nike Discrimination Investigation?",
+        "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?",
+        "What other organizations is Tremale Cogdale connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-06T05:53:12.786Z",
-  "lastUpdated": "2026-02-06T05:53:12.787Z"
+  "lastReflection": "2026-02-06T06:53:33.247Z",
+  "lastUpdated": "2026-02-06T06:53:33.248Z"
 }
