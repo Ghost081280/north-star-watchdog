@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program vulnerabilities",
+      "description": "Recurring vulnerabilities in the Minnesota Medicaid system, including billing issues and lack of safeguards",
+      "insight": "I suspect that these vulnerabilities may be exploited by individuals or organizations to commit fraud, and further investigation is needed to identify the root causes and potential perpetrators.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Outside audit report",
+      "sourceUrl": "https://www.minnpost.com/state-government/2023/02/outside-audit-finds-recurring-vulnerabilities-in-minnesota-medicaid-system/",
+      "id": "rf-1770429151774-r81i9fxgh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-07T01:52:31.771Z",
+      "isNew": true
+    },
+    {
       "type": "data breach",
       "description": "Gain Federal Credit Union experienced a data breach",
       "insight": "This could lead to further investigation into data security practices",
@@ -965,31 +984,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T17:33:39.410Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Corruption",
-      "description": "The FBI's investigation into the Minnesota shooting has raised concerns about potential corruption and insurrection.",
-      "insight": "I believe that the FBI's investigation may uncover a larger conspiracy involving government officials and extremist groups. Further investigation is needed to determine the extent of the corruption.",
-      "entities": [
-        "Alex Pretti",
-        "Minnesota government officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI investigation",
-      "sourceUrl": "https://www.kvue.com/article/news/national/fbi-takes-over-investigation-of-minnesota-shooting/507-8a6f45d2-4f4e-4f5f-8f4e-4f4e4f4e4f4e",
-      "id": "rf-1769791113399-ntfn3spmy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T16:38:33.396Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1015,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-06T23:24:04.736Z"
+  "lastUpdated": "2026-02-07T01:52:31.771Z"
 }
