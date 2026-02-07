@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T08:41:20.802Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-02T09:46:20.043Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-07T11:20:51.562Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T12:44:24.788Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 803,
-    "articlesProcessed": 40000,
+    "totalScans": 804,
+    "articlesProcessed": 40050,
     "redFlagsFound": 968,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Hims investigation?",
         "Where did the $1.7 billion allegedly go in Medicaid fraud prevention?",
-        "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in Hims Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T11:20:51.562Z",
-  "lastUpdated": "2026-02-07T11:20:51.563Z"
+  "lastReflection": "2026-02-07T12:44:24.788Z",
+  "lastUpdated": "2026-02-07T12:44:24.788Z"
 }
