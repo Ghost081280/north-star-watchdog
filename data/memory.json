@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T16:38:24.081Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-02T17:37:22.595Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-07T18:34:04.978Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-07T19:23:02.716Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 56,
+      "count": 57,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-07T14:24:48.429Z"
+      "lastSeen": "2026-02-07T19:23:02.717Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?",
-    "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?",
     "What other organizations is Donald Trump connected to?",
     "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Trump Administration connected to?",
@@ -558,7 +556,9 @@
     "Where did the $1.7B allegedly go in Minnesota Medicaid Policy Violations?",
     "What other organizations is Not Applicable connected to?",
     "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?",
-    "Where did the $1.7B allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $1.7B allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the None allegedly go in Renee Good Shooting Investigation?",
+    "Where did the None allegedly go in Alex Pretti Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 810,
-    "articlesProcessed": 40350,
-    "redFlagsFound": 978,
+    "totalScans": 811,
+    "articlesProcessed": 40400,
+    "redFlagsFound": 980,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.7B allegedly go in Medicaid Services Investigation?",
         "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?",
-        "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?"
+        "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?",
+        "What other organizations is Donald Trump connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T18:34:04.978Z",
-  "lastUpdated": "2026-02-07T18:34:04.978Z"
+  "lastReflection": "2026-02-07T19:23:02.716Z",
+  "lastUpdated": "2026-02-07T19:23:02.717Z"
 }
