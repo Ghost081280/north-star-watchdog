@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T15:37:25.134Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-02-02T16:38:24.081Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-07T17:25:21.841Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T18:34:04.978Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.7B allegedly go in Medicaid Services Investigation?",
     "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?",
     "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?",
     "What other organizations is Donald Trump connected to?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?",
     "Where did the $1.7B allegedly go in Minnesota Medicaid Policy Violations?",
     "What other organizations is Not Applicable connected to?",
-    "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?"
+    "Where did the $16B allegedly go in Gateway Tunnel Project Funding Freeze?",
+    "Where did the $1.7B allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 809,
-    "articlesProcessed": 40300,
-    "redFlagsFound": 976,
+    "totalScans": 810,
+    "articlesProcessed": 40350,
+    "redFlagsFound": 978,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.7B allegedly go in Minnesota Medicaid system investigation?",
-        "Where did the N/A allegedly go in Alex Pretti shooting investigation?",
-        "Where did the $1.7B allegedly go in Medicaid Services Investigation?"
+        "Where did the $1.7B allegedly go in Medicaid Services Investigation?",
+        "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?",
+        "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T17:25:21.841Z",
-  "lastUpdated": "2026-02-07T17:25:21.842Z"
+  "lastReflection": "2026-02-07T18:34:04.978Z",
+  "lastUpdated": "2026-02-07T18:34:04.978Z"
 }
