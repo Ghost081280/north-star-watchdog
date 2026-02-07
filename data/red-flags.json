@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Judge extends block on Trump admin’s bid to slash social services funds to 5 states",
+      "insight": "Potential for further investigations into program terminations",
+      "entities": [
+        "Trump Administration",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/policy/administration/473319-judge-extends-block-on-trump-admins-bid-to-slash-social-services-funds-to-5-states",
+      "id": "rf-1770503081858-5ip2nijke",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-07T22:24:41.855Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid policy violations",
       "description": "Poor policy language may have cost $1.7B across 14 Medicaid services in Minnesota.",
       "insight": "This suggests a potential pattern of negligence or incompetence in the management of Medicaid services in Minnesota, which could have significant financial and health implications for beneficiaries.",
@@ -963,31 +983,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T09:27:35.435Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal civil rights investigation into killing of Alex Pretti",
-      "insight": "This investigation could lead to further actions against law enforcement or individuals involved in the killing.",
-      "entities": [
-        "DOJ"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/jan/30/us-doj-announces-federal-civil-rights-investigation-into-killing-of-alex-pretti-video",
-      "id": "rf-1769844490600-hu27gk6a2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T07:28:10.597Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,7 +995,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-07T21:25:18.527Z"
+  "lastUpdated": "2026-02-07T22:24:41.855Z"
 }
