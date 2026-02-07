@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-03T02:00:21.233Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-03T04:22:11.951Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-02-07T22:24:41.853Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T23:28:53.467Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota Medicaid Investigation?",
-    "What other organizations is Renee Good connected to?",
     "What other organizations is Alex Pretti connected to?",
     "Where did the $9B allegedly go in Gateway Funding Freeze?",
     "Where did the Unknown allegedly go in Minnesota Autism Program?",
@@ -558,7 +556,9 @@
     "What other organizations is Not found connected to?",
     "What specific allegations exist against Not found?",
     "Where did the Not specified allegedly go in Optum Probe into Medicaid Programs?",
-    "Where did the $millions allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $millions allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Renee Good Shooting Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 814,
-    "articlesProcessed": 40550,
-    "redFlagsFound": 985,
+    "totalScans": 815,
+    "articlesProcessed": 40600,
+    "redFlagsFound": 986,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Gateway Funding Freeze Investigation?",
         "Where did the $100M allegedly go in Minnesota Medicaid Investigation?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "What other organizations is Alex Pretti connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T22:24:41.853Z",
-  "lastUpdated": "2026-02-07T22:24:41.854Z"
+  "lastReflection": "2026-02-07T23:28:53.467Z",
+  "lastUpdated": "2026-02-07T23:28:53.467Z"
 }
