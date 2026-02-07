@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T10:42:58.669Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-02T11:35:13.591Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-07T13:42:46.227Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T14:24:48.428Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 55,
+      "count": 56,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-07T13:42:46.228Z"
+      "lastSeen": "2026-02-07T14:24:48.429Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Hims Investigation?",
     "What other organizations is Yasiel Puig connected to?",
     "Where did the $1.7B allegedly go in Minnesota Medicaid system investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Minnesota Autism Program?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Alex Pretti shooting death investigation?",
-    "Where did the $1.7B allegedly go in Minnesota Medicaid Policy Violations Investigation?"
+    "Where did the $1.7B allegedly go in Minnesota Medicaid Policy Violations Investigation?",
+    "Where did the $1.7B allegedly go in Minnesota Medicaid policy violations investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 805,
-    "articlesProcessed": 40100,
-    "redFlagsFound": 970,
+    "totalScans": 806,
+    "articlesProcessed": 40150,
+    "redFlagsFound": 972,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.7 billion allegedly go in Medicaid fraud prevention?",
         "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in Hims Investigation?"
+        "Where did the Unknown allegedly go in Hims Investigation?",
+        "What other organizations is Yasiel Puig connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T13:42:46.227Z",
-  "lastUpdated": "2026-02-07T13:42:46.228Z"
+  "lastReflection": "2026-02-07T14:24:48.428Z",
+  "lastUpdated": "2026-02-07T14:24:48.429Z"
 }
