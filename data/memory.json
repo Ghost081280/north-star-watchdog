@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T17:37:22.595Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-02T18:44:54.386Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-07T19:23:02.716Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-07T20:25:45.337Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 57,
+      "count": 58,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-07T19:23:02.717Z"
+      "lastSeen": "2026-02-07T20:25:45.338Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 811,
-    "articlesProcessed": 40400,
-    "redFlagsFound": 980,
+    "totalScans": 812,
+    "articlesProcessed": 40450,
+    "redFlagsFound": 982,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?",
-        "Where did the $16B allegedly go in Gateway Tunnel Project funding freeze?",
-        "What other organizations is Donald Trump connected to?"
+        "What other organizations is Donald Trump connected to?",
+        "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Trump Administration connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T19:23:02.716Z",
-  "lastUpdated": "2026-02-07T19:23:02.717Z"
+  "lastReflection": "2026-02-07T20:25:45.337Z",
+  "lastUpdated": "2026-02-07T20:25:45.338Z"
 }
