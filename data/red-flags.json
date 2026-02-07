@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid policy violations",
+      "description": "Poor policy language may have cost $1.7B across 14 Medicaid services in Minnesota.",
+      "insight": "This suggests a potential pattern of inadequate policy language leading to significant financial losses. Further investigation is needed to determine the extent of this issue and whether similar problems exist in other states.",
+      "entities": [
+        "Minnesota Department of Human Services",
+        "Medicaid"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://www.mprnews.org/story/2026/02/07/report-says-millions-may-be-recoverable-from-minnesota-medicaid-policy-violations-billions-from-policy-tweaks",
+      "id": "rf-1770481731983-ooylgj4pb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-07T16:28:51.979Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid billing issues",
       "description": "An outside audit has revealed recurring vulnerabilities with Minnesota's Medicaid system, including widespread billing issues.",
       "insight": "This suggests potential fraud and abuse within Minnesota's Medicaid system. Further investigation into the extent of these billing issues and potential wrongdoing by healthcare providers or state officials is necessary.",
@@ -962,32 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T07:28:10.597Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-Up",
-      "description": "The Trump administration has announced that nothing will change in Minnesota immigration enforcement efforts, despite the ongoing investigation into the killing of Alex Pretti.",
-      "insight": "This could indicate a potential cover-up or lack of transparency in the investigation. Further research is needed to determine the implications of this announcement.",
-      "entities": [
-        "Trump Administration",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NTD News",
-      "sourceUrl": "https://www.ntd.com/trump-says-nothing-to-change-in-minnesota-immigration-enforcement-efforts_742111.html",
-      "id": "rf-1769815462699-w85akvc4u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T23:24:22.696Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-07T15:23:39.645Z"
+  "lastUpdated": "2026-02-07T16:28:51.979Z"
 }
