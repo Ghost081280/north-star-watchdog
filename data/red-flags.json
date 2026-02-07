@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid vulnerabilities",
+      "description": "Outside audit finds recurring vulnerabilities with Minnesota Medicaid system.",
+      "insight": "The vulnerabilities in the Minnesota Medicaid system highlight the need for increased oversight and security measures to prevent fraud.",
+      "entities": [
+        "Minnesota Department of Human Services",
+        "Medicaid"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/outside-audit-finds-recurring-vulnerabilities-with-minnesota-medicaid-system",
+      "id": "rf-1770442880086-znygs8arm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-07T05:41:20.082Z",
+      "isNew": true
+    },
+    {
       "type": "program vulnerabilities",
       "description": "Recurring vulnerabilities in the Minnesota Medicaid system, including billing issues and lack of safeguards",
       "insight": "I suspect that these vulnerabilities may be exploited by individuals or organizations to commit fraud, and further investigation is needed to identify the root causes and potential perpetrators.",
@@ -963,27 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T18:40:09.528Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI has taken over the investigation into the shooting of Alex Pretti, with former President Trump weighing in on the incident.",
-      "insight": "The involvement of high-profile figures and the FBI suggests a potentially complex and sensitive case. The incident may have civil rights implications.",
-      "entities": [
-        "Alex Pretti",
-        "FBI",
-        "Trump"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Wall Street Journal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwNBVV95cUxQVjVNVU1CcHpIdFJkazVFdUhVVnRkc3B2OFQ5TTQtM3VaLTExbWtoOVR6UnY3YklxdW1TVV9CajAtMU5SSTdQbnd5YS0yZUNZRENxeHBEVWZXX0dYNFhxVEpYZnVhOE80MElBRk0tdEhOanhWYS1maUpQd2xrY3F1S0pEbkt0dDhhTnFpNEpGb1lWaHlNRjdXcGlhLWZFYWl6R0VlTnlSbVJEWlJ5Y2t6T0txOGRhRS02S0c1bzRLMThwdmZpdEExbFF3bWRsS2xGUUpZc1JVOHpsY3RocmFtVXJxY1JOVXJZQm9ja0Y2NU5tTktHYXFrMF9ucVREdVFqTU9XbDY4SF9sSkY2LUdJVTdpd1MyWGtFbnlWNWE1TjdVaGptSERVVXZfakYyNXIxMk5pVjVwYXh0WWsxYlZYQTdRWURLT3ZFNEU2U0VWMUpXRVl1ZGxjVDh3cXp4RXRac2xRbXVJLUg5Z0JDVkJNRkxDblRaMkxMOGhGcTEyZmVyTUQyV1BKMjVCUjdxVzBHSEFzTmZTNA",
-      "id": "rf-1769794419414-xty8odv9c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T17:33:39.410Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,7 +995,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-07T04:08:03.599Z"
+  "lastUpdated": "2026-02-07T05:41:20.082Z"
 }
