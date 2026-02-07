@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The SBA has frozen over 100,000 California borrowers in a sweeping $9B pandemic fraud crackdown.",
+      "insight": "This action suggests that there may have been widespread fraud in the pandemic relief programs, and that the SBA is taking steps to address it. However, it also raises questions about the effectiveness of these programs and the potential for future abuse.",
+      "entities": [
+        "SBA",
+        "California borrowers"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "930 WFMD Free Talk",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdEF6aFhrZ0tJMDlCQjhGTUF2WlJTbXBmTlpGazk5dUhRV1RqNDJyNE9VYWFsX0pJZTc5Q3E0RlFiMUhUVTRxNF92V1pmRlMtUlRfRDgxV1RZRTJBZU5uY3ZBVjBnd1RFU2V2Z1RXdkg0ZG9FcU5KSkszaC1fZlg4YWlERWpRSE1Ud2I3LVZ6RV9XQ0o1TDUzSzNjcWd3NXlnZXBlazltdFVidGdJV1B1ODR0SGkydlFu",
+      "id": "rf-1770449460355-3l5u3cfll",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-07T07:31:00.352Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid vulnerabilities",
       "description": "Outside audit finds recurring vulnerabilities with Minnesota Medicaid system.",
       "insight": "The vulnerabilities in the Minnesota Medicaid system highlight the need for increased oversight and security measures to prevent fraud.",
@@ -963,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-30T20:28:53.472Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ has opened a federal civil rights investigation into the death of Alex Pretti.",
-      "insight": "This investigation suggests that there may be concerns about the use of force by ICE agents in Minnesota.",
-      "entities": [
-        "Alex Pretti",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hUlhFM1hYeW5OcDJkRVpNWUdFNldXV2Q5SVVXZEJnZFdHRkhROFFCNzdtZmMzTGx4b1RBUWV2aEtscUZjWFpMUzFveWMxZVNRTXp2anhWR0hianVpdDVVTUdFZGJha1Y5ZTY3RUdzLXVSYXlhRU9R0gF8QVVfeXFMTTcwNEUzT3EtR1FFVE5PZHpIR00zSDREel9wLW5mZmVYWnBPX0ZJNUM5WjhmWDkxSGZCQ2V5eTR6ci1BWmMzVC1hNE5NQlFxbl9fY3c0VVRpRXJsbXBXVEE0SlUxaVhLSGNNWlQ1aDVtcndqclp1MEE4N0FJNQ?",
-      "id": "rf-1769798409532-0cytoaxs0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-30T18:40:09.528Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-07T06:40:23.323Z"
+  "lastUpdated": "2026-02-07T07:31:00.352Z"
 }
