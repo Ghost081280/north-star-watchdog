@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-01T20:25:03.882Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-01T21:21:49.857Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-02-07T01:52:31.769Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T04:08:03.597Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the None allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the None allegedly go in Nike DEI Investigation?",
     "What other organizations is Lisa Demuth connected to?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Hims Investigation?",
     "What other organizations is Yasiel Puig connected to?",
     "Where did the $1.7B allegedly go in Minnesota Medicaid system investigation?",
-    "Where did the N/A allegedly go in Alex Pretti shooting investigation?"
+    "Where did the N/A allegedly go in Alex Pretti shooting investigation?",
+    "Where did the $1.7B allegedly go in Medicaid Services Investigation?",
+    "Where did the $10B allegedly go in Gateway Tunnel Project Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 795,
-    "articlesProcessed": 39600,
-    "redFlagsFound": 956,
+    "totalScans": 796,
+    "articlesProcessed": 39650,
+    "redFlagsFound": 957,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Mayor Karen Bass connected to?",
-        "Where did the $100M allegedly go in Minnesota Childcare Fraud Investigation?",
-        "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the None allegedly go in Alex Pretti Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T01:52:31.769Z",
-  "lastUpdated": "2026-02-07T01:52:31.770Z"
+  "lastReflection": "2026-02-07T04:08:03.597Z",
+  "lastUpdated": "2026-02-07T04:08:03.598Z"
 }
