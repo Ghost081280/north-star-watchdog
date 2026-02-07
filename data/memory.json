@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-02T07:49:28.909Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-02T08:41:20.802Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-07T10:24:53.943Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-07T11:20:51.562Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 53,
+      "count": 54,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-06T17:41:04.737Z"
+      "lastSeen": "2026-02-07T11:20:51.563Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Hims investigation?",
     "Where did the $1.7 billion allegedly go in Medicaid fraud prevention?",
     "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Hims Investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Alex Pretti connected to?",
     "Where did the $9B allegedly go in Gateway Funding Freeze?",
     "Where did the Unknown allegedly go in Minnesota Autism Program?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $0 allegedly go in Alex Pretti shooting death investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 802,
-    "articlesProcessed": 39950,
-    "redFlagsFound": 966,
+    "totalScans": 803,
+    "articlesProcessed": 40000,
+    "redFlagsFound": 968,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nike Discrimination Investigation?",
-        "Where did the Not specified allegedly go in Minnesota Medicaid anti-fraud system investigation?",
-        "Where did the Not specified allegedly go in Nike federal investigation?"
+        "Where did the $0 allegedly go in Hims investigation?",
+        "Where did the $1.7 billion allegedly go in Medicaid fraud prevention?",
+        "Where did the $1.7 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-07T10:24:53.943Z",
-  "lastUpdated": "2026-02-07T10:24:53.944Z"
+  "lastReflection": "2026-02-07T11:20:51.562Z",
+  "lastUpdated": "2026-02-07T11:20:51.563Z"
 }
