@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Trump administration's bid to slash social services funds to 5 states was blocked by a judge.",
+      "insight": "This block on funding cuts raises concerns over the administration's priorities and the potential impact on vulnerable populations.",
+      "entities": [
+        "Trump administration",
+        "5 states"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://www.thehill.com/policy/healthcare/573444-judge-blocks-trumps-10b-child-care-funding-freeze",
+      "id": "rf-1770554741797-doiljquxz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T12:45:41.794Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid vulnerability",
       "description": "Optum's probe found 14 Medicaid programs possibly vulnerable to fraud, highlighting the need for increased oversight and security measures.",
       "insight": "This suggests a systemic issue with Medicaid programs, potentially indicating a lack of effective controls or oversight. Investigating the root causes of these vulnerabilities and implementing corrective actions could help prevent future fraud.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-08T11:22:33.051Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -964,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T17:23:34.837Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI investigating Florence for revenue diversion",
-      "insight": "The FBI investigation into Florence for revenue diversion raises concerns about potential financial mismanagement and the need for oversight in municipal or organizational finances.",
-      "entities": [
-        "Florence",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Cincinnati Enquirer",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQWlScmV2eVQwc3pZUWxnR0M5VzdBQ011QjBYT0Z2X0hyY1VMcFFMa1lqcjBTTktvRW1pZUw4dk9SZDJwVTZBZlJWX0tPakdpN3Z5SWw0NERjYkdPaHU3ZjZieklNQWE0WW5MNW5tYUFSMGZxUGhBUTJJWE1qUGdYVFo1YWxhVjRMb1F0enhwMkhMTlVOdS02WWl0aEgtVm9PX08zWVBRUFVNUDVid2RwcDNNc1c?oc=5",
-      "id": "rf-1769876808148-dtiaumexk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T16:26:48.144Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T11:22:33.051Z"
+  "lastUpdated": "2026-02-08T12:45:41.794Z"
 }
