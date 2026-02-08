@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid vulnerability",
+      "description": "Optum's probe found 14 Medicaid programs possibly vulnerable to fraud, highlighting the need for increased oversight and security measures.",
+      "insight": "This suggests a systemic issue with Medicaid programs, potentially indicating a lack of effective controls or oversight. Investigating the root causes of these vulnerabilities and implementing corrective actions could help prevent future fraud.",
+      "entities": [
+        "Optum",
+        "Medicaid"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Bring Me The News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONXNBWV9fQmpJcUgydld5OHh5U1ZBOW9kbXlMM09YYVdDM3poNlRCbV9FWnlBendMaVVqYVdSTm9hMWk4SGRKZGRkTVpuTVkwZzVuYkJ4czdfdWV0b05lLTVLTGFiUnpiSklVVTU4dWZhWDN6N2FubjJpVVFBTHc3amR4b3ZXTGozdGZIWGNCakxhTmd2cGlXdGNORmtZbUloXzhRd1IxYnlDelZoQUdBUHNVMzhibjFGWDhFeQ?oc=5",
+      "id": "rf-1770549753054-f43u5a4sk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T11:22:33.051Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud and abuse",
       "insight": "The termination of programs could have significant impacts on vulnerable populations and may indicate a larger issue with program management.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-08T10:25:30.310Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -964,25 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T16:26:48.144Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Robert P. Rubicco is alleged to have committed fraud, with a default of $1,396,791.60",
-      "insight": "This alleged fraud may indicate a larger pattern of financial misconduct, and further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Robert P. Rubicco"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Talk of the Sound",
-      "sourceUrl": "https://www.talkofthesound.com/",
-      "id": "rf-1769872931391-lmzjuqz6e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T15:22:11.388Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,11 +994,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T10:25:30.310Z"
+  "lastUpdated": "2026-02-08T11:22:33.051Z"
 }
