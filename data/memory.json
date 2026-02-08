@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-03T20:34:36.178Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-03T21:33:32.690Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-02-08T19:24:24.687Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-08T20:26:16.297Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 25,
+      "count": 26,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-02-02T04:56:21.574Z"
+      "lastSeen": "2026-02-08T20:26:16.298Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 58,
+      "count": 59,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-07T20:25:45.338Z"
+      "lastSeen": "2026-02-08T20:26:16.298Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Renee Good Shooting Investigation?",
     "Where did the N/A allegedly go in Medicaid Program Fraud Investigation?",
     "What other organizations is Alex Pretti connected to?",
     "Where did the Unknown allegedly go in Medicaid Program Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Jeffrey Epstein Investigation?",
     "Where did the $0 allegedly go in Alex Pretti Investigation?",
     "Where did the $0 allegedly go in Minnesota DHS Whistleblower?",
-    "Where did the Unknown allegedly go in Epstein Sex Trafficking Investigation?"
+    "Where did the Unknown allegedly go in Epstein Sex Trafficking Investigation?",
+    "Where did the $100M+ allegedly go in Epstein Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 830,
-    "articlesProcessed": 41350,
-    "redFlagsFound": 1005,
+    "totalScans": 831,
+    "articlesProcessed": 41400,
+    "redFlagsFound": 1007,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump Administration Officials connected to?",
         "Where did the N/A allegedly go in Renee Good Shooting Investigation?",
-        "Where did the N/A allegedly go in Medicaid Program Fraud Investigation?"
+        "Where did the N/A allegedly go in Medicaid Program Fraud Investigation?",
+        "What other organizations is Alex Pretti connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-08T19:24:24.687Z",
-  "lastUpdated": "2026-02-08T19:24:24.688Z"
+  "lastReflection": "2026-02-08T20:26:16.297Z",
+  "lastUpdated": "2026-02-08T20:26:16.298Z"
 }
