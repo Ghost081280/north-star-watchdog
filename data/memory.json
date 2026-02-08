@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-03T05:50:04.597Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-03T06:49:41.562Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-02-08T02:26:04.772Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-08T05:02:44.030Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Autism Program?",
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $0 allegedly go in Alex Pretti shooting death investigation?",
     "Where did the $1.7B allegedly go in Minnesota Medicaid Policy Violations Investigation?",
     "Where did the $1.7B allegedly go in Minnesota Medicaid policy violations investigation?",
     "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Renee Good Shooting Investigation?",
     "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Renee Good connected to?",
-    "Where did the None allegedly go in Minnesota Department of Human Services Audit?"
+    "Where did the None allegedly go in Minnesota Department of Human Services Audit?",
+    "What other organizations is Trump Administration Officials connected to?",
+    "Where did the N/A allegedly go in Renee Good Shooting Investigation?",
+    "Where did the N/A allegedly go in Medicaid Program Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 816,
-    "articlesProcessed": 40650,
-    "redFlagsFound": 987,
+    "totalScans": 817,
+    "articlesProcessed": 40700,
+    "redFlagsFound": 988,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Alex Pretti connected to?",
-        "Where did the $9B allegedly go in Gateway Funding Freeze?",
-        "Where did the Unknown allegedly go in Minnesota Autism Program?"
+        "Where did the Unknown allegedly go in Minnesota Autism Program?",
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in Alex Pretti shooting death investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-08T02:26:04.772Z",
-  "lastUpdated": "2026-02-08T02:26:04.772Z"
+  "lastReflection": "2026-02-08T05:02:44.030Z",
+  "lastUpdated": "2026-02-08T05:02:44.030Z"
 }

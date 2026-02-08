@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "obstruction_of_justice",
+      "description": "Trump administration officials ordered prosecutors to stop investigating the Renee Good shooting",
+      "insight": "This raises concerns about the Trump administration's willingness to interfere with investigations and potentially obstruct justice. Further investigation is needed to determine the extent of their involvement.",
+      "entities": [
+        "Trump Administration Officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Newsweek",
+      "sourceUrl": "https://newsweek.com/fbi-investigation-into-renee-good-shooting-stalled-over-key-concern-1751219",
+      "id": "rf-1770526964035-2vn84rh74",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T05:02:44.032Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Judge extends block on Trump admin’s bid to slash social services funds to 5 states",
       "insight": "Potential for further investigations into program terminations",
@@ -963,41 +982,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T12:43:25.536Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating allegations of revenue diversion in Florence.",
-      "insight": "This could indicate a significant financial crime.",
-      "entities": [
-        "FBI",
-        "Florence"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Cincinnati Enquirer",
-      "sourceUrl": "https://www.cincinnati.com/story/news/2026/01/31/fbi-investigation-florence-revenue-diversion/2026-01-31/",
-      "id": "rf-1769851655438-7sxa320jf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T09:27:35.435Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T02:26:04.774Z"
+  "lastUpdated": "2026-02-08T05:02:44.032Z"
 }
