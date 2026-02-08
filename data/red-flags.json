@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Cover-Up",
+      "description": "The FBI's conclusion that Jeffrey Epstein was not running a sex trafficking ring has raised concerns about a potential cover-up.",
+      "insight": "I suspect that there may be more to the story than what is being reported. Further investigation is needed to uncover any potential wrongdoing.",
+      "entities": [
+        "FBI",
+        "Jeffrey Epstein"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/02/08/fbi-epstein-investigation/",
+      "id": "rf-1770593424715-8reu8qix7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T23:30:24.712Z",
+      "isNew": true
+    },
+    {
       "type": "smear campaign",
       "description": "A whistleblower has come forward with concerns about a 'smear campaign' after reporting fraud concerns to the state.",
       "insight": "This could indicate a larger problem with the state's handling of whistleblower reports and potential retaliation against those who come forward.",
@@ -964,29 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T23:21:10.063Z",
       "isNew": false
-    },
-    {
-      "type": "government_investigation",
-      "description": "State agency whistleblowers say fraud concerns were ignored for years",
-      "insight": "Possible cover up or neglect of duty within state agencies",
-      "entities": [
-        "Minnesota State Agency"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "Star Tribune",
-      "sourceUrl": "https://startribune.com/2026/01/31/state-agency-whistleblowers-say-fraud-concerns-were-ignored-for-years/",
-      "id": "rf-1769891071782-zvbcajitj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T20:24:31.779Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,7 +998,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1014,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T22:25:30.626Z"
+  "lastUpdated": "2026-02-08T23:30:24.712Z"
 }
