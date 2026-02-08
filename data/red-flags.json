@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Trump administration's bid to slash social services funds to 5 states, including Minnesota, has been blocked by a judge",
+      "insight": "This could indicate a potential red flag for Medicaid and social services programs in Minnesota, potentially leading to further investigation",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSTdmelF1WDVPSHc0Q0wtb2MtMHV2RTljODZlbW8tUks2MWEyaEl1ZXFDSUtHeEd1WjVkc1VwYzhjWFFWNkhwLTVTZTBpLTVhVmpna3lNU0dUdEpMb1kxbHROUW9xOGxzcVZ0cFNra2FRcy1fUnJxNDJkZ2dZOTByZVFSRWhEemtjcWFpazdYa3gyWUprYjI3ZGgwbEFTSlFEXzc1SlFfVkJyOF82Nl9hOXFIRFpGRWd6YkN1M0VQMUzSAcYBQVVfeXFMT3hta0hNWjlTQXR5UXVfMC1hZDdaNjhCWXlRRUFiOEpRUFdpSFJvZDJGdld5bElLVTRsMTgwUGRELUxyNnpFZjVUM1Q4SC1ucDRzSGNwR1hvaEdwLU9MSDlHMHp2elMtMF9PUTJxT1JSaWcyRHhwbnhDQUY1c1RVQjhULVI2UE5McGJvOG9NT2pfaUJpYWQwRjFLcUZKanRsT1RxMkxRdktiZUxHRkRBSjNZUW5ZdFhoOHB1M29PQWxwTnNtelpR?oc=5",
+      "id": "rf-1770558246094-dq1sy44qn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T13:44:06.090Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The Trump administration's bid to slash social services funds to 5 states was blocked by a judge.",
       "insight": "This block on funding cuts raises concerns over the administration's priorities and the potential impact on vulnerable populations.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-08T12:45:41.794Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid vulnerability",
@@ -964,32 +984,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T18:30:26.289Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has opened a federal civil rights investigation into the killing of Alex Pretti, a Minneapolis resident killed by Border Patrol officers.",
-      "insight": "This investigation raises concerns about the use of force by law enforcement and the treatment of immigrants. I will continue to monitor the situation and look for any patterns or connections to other cases.",
-      "entities": [
-        "Alex Pretti",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/01/31/us/politics/justice-dept-opens-civil-rights-inquiry-into-killing-of-alex-pretti.html",
-      "id": "rf-1769880214841-t712t2f9u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T17:23:34.837Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +996,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T12:45:41.794Z"
+  "lastUpdated": "2026-02-08T13:44:06.090Z"
 }
