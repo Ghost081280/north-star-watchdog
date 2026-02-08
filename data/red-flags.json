@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "smear campaign",
+      "description": "A whistleblower has come forward with concerns about a 'smear campaign' after reporting fraud concerns to the state.",
+      "insight": "This could indicate a larger problem with the state's handling of whistleblower reports and potential retaliation against those who come forward.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 8 TV",
+      "sourceUrl": "https://www.foxnews.com/politics/minnesota-dhs-whistleblower-smear-campaign",
+      "id": "rf-1770568163992-9o9dbkpxm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-08T16:29:23.988Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Trump administration's bid to slash social services funds to 5 states, including Minnesota, has been blocked by a judge",
       "insight": "This could indicate a potential red flag for Medicaid and social services programs in Minnesota, potentially leading to further investigation",
@@ -964,30 +983,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-01-31T20:24:31.779Z",
       "isNew": false
-    },
-    {
-      "type": "government investigation",
-      "description": "DOJ opens civil rights investigation into Alex Pretti's killing",
-      "insight": "This investigation could lead to further developments and potentially uncover more widespread issues",
-      "entities": [
-        "DOJ",
-        "Alex Pretti"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "New York Times",
-      "sourceUrl": "https://www.newyorktimes.com/2026/01/31/us/justice-dept-opens-civil-rights-inquiry-into-killing-of-alex-pretti.html",
-      "id": "rf-1769884226292-0zgugi8zy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-01-31T18:30:26.289Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +995,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-08T15:25:18.164Z"
+  "lastUpdated": "2026-02-08T16:29:23.988Z"
 }
