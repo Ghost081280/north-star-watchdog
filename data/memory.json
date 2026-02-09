@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-04T07:43:17.046Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.65
-    },
-    {
       "date": "2026-02-04T08:39:18.881Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-09T07:56:20.035Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-09T08:52:40.918Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Renee Good shooting investigation?",
-    "Where did the Unknown allegedly go in Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Minnesota DHS Whistleblower Investigation?",
     "Where did the Unknown allegedly go in Jeffrey Epstein Investigation?",
     "Where did the $0 allegedly go in Minnesota DHS Whistleblower Investigation?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Jeffrey Epstein connected to?",
     "Where did the Unknown allegedly go in FBI investigation of Jeffrey Epstein?",
-    "Where did the Unknown allegedly go in Minnesota DHS whistleblower investigation?"
+    "Where did the Unknown allegedly go in Minnesota DHS whistleblower investigation?",
+    "Where did the $0 allegedly go in Minnesota DHS fraud investigation?",
+    "Where did the $0 allegedly go in Epstein investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 838,
-    "articlesProcessed": 41750,
-    "redFlagsFound": 1015,
+    "totalScans": 839,
+    "articlesProcessed": 41800,
+    "redFlagsFound": 1016,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $10B allegedly go in Medicaid Fraud Investigation?",
-        "What other organizations is Nancy Guthrie connected to?"
+        "Where did the Unknown allegedly go in Renee Good shooting investigation?",
+        "Where did the Unknown allegedly go in Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in Minnesota DHS Whistleblower Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-09T07:56:20.035Z",
-  "lastUpdated": "2026-02-09T07:56:20.035Z"
+  "lastReflection": "2026-02-09T08:52:40.918Z",
+  "lastUpdated": "2026-02-09T08:52:40.919Z"
 }
