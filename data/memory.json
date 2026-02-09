@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-04T17:44:32.742Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-04T18:46:58.534Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-02-09T21:38:05.496Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-09T22:35:06.544Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Jeffrey Epstein connected to?",
     "Where did the Unknown allegedly go in FBI investigation of Jeffrey Epstein?",
     "Where did the Unknown allegedly go in Minnesota DHS whistleblower investigation?",
     "Where did the $0 allegedly go in Minnesota DHS fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the $325,000 allegedly go in Minnesota SNAP fraud investigation?",
     "Where did the $10B allegedly go in Gateway Tunnel Project investigation?",
     "Where did the Undisclosed allegedly go in Minnesota Medicaid investigation?",
-    "Where did the $3B allegedly go in Gateway Tunnel investigation?"
+    "Where did the $3B allegedly go in Gateway Tunnel investigation?",
+    "Where did the $325K allegedly go in Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 847,
-    "articlesProcessed": 42200,
-    "redFlagsFound": 1025,
+    "totalScans": 848,
+    "articlesProcessed": 42250,
+    "redFlagsFound": 1027,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in Epstein Sex Trafficking Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Jeffrey Epstein connected to?"
+        "What other organizations is Jeffrey Epstein connected to?",
+        "Where did the Unknown allegedly go in FBI investigation of Jeffrey Epstein?",
+        "Where did the Unknown allegedly go in Minnesota DHS whistleblower investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-09T21:38:05.496Z",
-  "lastUpdated": "2026-02-09T21:38:05.497Z"
+  "lastReflection": "2026-02-09T22:35:06.544Z",
+  "lastUpdated": "2026-02-09T22:35:06.545Z"
 }
