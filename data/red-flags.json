@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "A New Hope woman has been sentenced for a $325K SNAP assistance fraud scheme.",
+      "insight": "This case highlights the ongoing issue of food assistance fraud, which can have significant impacts on vulnerable populations. Further investigation into similar cases and potential connections to larger schemes is warranted.",
+      "entities": [
+        "New Hope woman"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "alphanews.org",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUXNUQkdYVVA2Yk1Kc2JpQk1jOC1RMGhURkIwdGFkSk5SZ0x5enlCS3JNUExjcUtFSHZ4QjFmaExEYzBNT1A4ZG9hX3N3eVFXYlh3TVNqcVNxTERweGtucXNTdDVmNnhCQXNWZlFuRldiRDBIQ1dXeXFfYk5xMXlydnJBZnVFMU4xLUdHag?",
+      "id": "rf-1770659573597-cvcfne51c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-09T17:52:53.594Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI's investigation into Jeffrey Epstein's sex trafficking allegations",
       "insight": "This investigation reveals potential corruption and misuse of power by high-profile figures.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-09T15:55:10.511Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -965,40 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-02T10:42:58.672Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigating possible 'biological lab' in Las Vegas",
-      "insight": "Possible connection to investigations in California.",
-      "entities": [
-        "Las Vegas homeowner"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "ABC News",
-      "sourceUrl": "https://abcnews.go.com/ABCNews/fbi-investigating-possible-biological-lab-operating-inside-las-vegas-home-sources",
-      "id": "rf-1770028978675-aws01mjsw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-02T10:42:58.672Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-09T15:55:10.511Z"
+  "lastUpdated": "2026-02-09T17:52:53.594Z"
 }

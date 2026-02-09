@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-04T14:03:35.284Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-04T15:42:10.631Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-09T15:55:10.509Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-09T17:52:53.592Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota DHS Whistleblower?",
-    "Where did the Unknown allegedly go in Epstein Sex Trafficking Investigation?",
-    "Where did the $100M+ allegedly go in Epstein Investigation?",
-    "Where did the Unknown allegedly go in Epstein Investigation?",
-    "Where did the $1.7B allegedly go in Minnesota DHS Investigation?",
     "Where did the $0 allegedly go in Epstein Investigation?",
     "Where did the Undisclosed allegedly go in Minnesota DHS Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +553,12 @@
     "Where did the Undisclosed allegedly go in FBI Investigation of Jeffrey Epstein?",
     "Where did the Undisclosed allegedly go in Fulton County Election Case?",
     "Where did the $0 allegedly go in Minnesota DHS Whistleblower Investigation?",
-    "Where did the $100M allegedly go in Minnesota DHS Investigation?"
+    "Where did the $100M allegedly go in Minnesota DHS Investigation?",
+    "What other organizations is Renee Good connected to?",
+    "What specific allegations exist against Renee Good?",
+    "What other organizations is Becca Good connected to?",
+    "What specific allegations exist against Becca Good?",
+    "Where did the $325K allegedly go in New Hope woman sentenced in $325K SNAP assistance fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 844,
-    "articlesProcessed": 42050,
-    "redFlagsFound": 1021,
+    "totalScans": 845,
+    "articlesProcessed": 42100,
+    "redFlagsFound": 1023,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud",
+          "description": "A New Hope woman has been sentenced for a $325K SNAP assistance fraud scheme.",
+          "insight": "This case highlights the ongoing issue of food assistance fraud, which can have significant impacts on vulnerable populations. Further investigation into similar cases and potential connections to larger schemes is warranted.",
+          "entities": [
+            "New Hope woman"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "alphanews.org",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUXNUQkdYVVA2Yk1Kc2JpQk1jOC1RMGhURkIwdGFkSk5SZ0x5enlCS3JNUExjcUtFSHZ4QjFmaExEYzBNT1A4ZG9hX3N3eVFXYlh3TVNqcVNxTERweGtucXNTdDVmNnhCQXNWZlFuRldiRDBIQ1dXeXFfYk5xMXlydnJBZnVFMU4xLUdHag?"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-09T15:55:10.509Z",
-  "lastUpdated": "2026-02-09T15:55:10.509Z"
+  "lastReflection": "2026-02-09T17:52:53.592Z",
+  "lastUpdated": "2026-02-09T17:52:53.593Z"
 }
