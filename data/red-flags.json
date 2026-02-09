@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI investigation of Jeffrey Epstein raised red flags about the handling of the case.",
+      "insight": "I notice that the FBI concluded that Epstein was not running a sex trafficking ring for powerful men, but many are questioning this conclusion. This raises concerns about the handling of the case and potential cover-ups.",
+      "entities": [
+        "Jeffrey Epstein",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC News",
+      "sourceUrl": "https://abcnews.go.com/US/epstein-files-show-fbi-investigation-possible-sex-trafficking/story?id=95912345",
+      "id": "rf-1770623780040-e80ng6667",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-09T07:56:20.036Z",
+      "isNew": true
+    },
+    {
       "type": "potential whistleblower retaliation",
       "description": "Whistleblower details 'smear campaign' after reporting fraud concerns",
       "insight": "The whistleblower's allegations of a 'smear campaign' raise concerns about potential retaliation against those who report wrongdoing. This could have a chilling effect on future whistleblowers and hinder efforts to uncover corruption.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-09T06:10:43.118Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Cover-Up",
@@ -963,30 +983,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-02T09:46:20.045Z",
       "isNew": false
-    },
-    {
-      "type": "securities_violations",
-      "description": "Wealthfront Corporation and Carvana under investigation",
-      "insight": "These investigations highlight potential issues with securities fraud and the need for greater oversight in the financial sector.",
-      "entities": [
-        "Wealthfront Corporation",
-        "Carvana"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Intellectia AI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdWpjMUpyNzRPYzlIcUFwUXluMUhQVTQtVHB4Sm4tcVF2a2VDaVoyMzdGal9TY0xmQ0EyZU1wbm9pRHl1Z3RCT3VtOFNtVTYwVEhWTzdzU3o0T2ZCbVE2MWxCbjV6bTR2b1lKUVk5MThMMDlDRGlscjdHOTh0ZkozVkpiRzlDZzM2eGFyVWlYTkNqVW1IS2hva2oxSzdxdkJ5ZjdzNXR3",
-      "id": "rf-1769966613697-zyx2tvjxv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-01T17:23:33.694Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,8 +996,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-09T06:10:43.118Z"
+  "lastUpdated": "2026-02-09T07:56:20.036Z"
 }
