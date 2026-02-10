@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-05T09:42:51.653Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-05T10:39:21.184Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-02-10T19:20:58.203Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-10T20:43:09.047Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Philadelphia men connected to?",
-    "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
     "Where did the $250M allegedly go in Minnesota Medicaid scheme investigation?",
     "Where did the $10B allegedly go in Trump administration child care funding freeze investigation?",
     "What other organizations is Minnesota Man connected to?",
@@ -558,7 +556,9 @@
     "Where did the $350M allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping Case?",
-    "Where did the Unknown allegedly go in Medicare and Medicaid Fraud?"
+    "Where did the Unknown allegedly go in Medicare and Medicaid Fraud?",
+    "What specific allegations exist against Jeffrey Epstein?",
+    "What specific allegations exist against Donald Trump?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 860,
-    "articlesProcessed": 42850,
-    "redFlagsFound": 1040,
+    "totalScans": 861,
+    "articlesProcessed": 42900,
+    "redFlagsFound": 1041,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ unknown allegedly go in Minnesota Medicaid scheme investigation?",
-        "Where did the $1 billion allegedly go in Gateway Tunnel funding freeze investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "What other organizations is Philadelphia men connected to?",
+        "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
+        "Where did the $250M allegedly go in Minnesota Medicaid scheme investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-10T19:20:58.203Z",
-  "lastUpdated": "2026-02-10T19:20:58.204Z"
+  "lastReflection": "2026-02-10T20:43:09.047Z",
+  "lastUpdated": "2026-02-10T20:43:09.048Z"
 }
