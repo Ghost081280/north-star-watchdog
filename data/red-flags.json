@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating possible election fraud in Georgia and other states, with a focus on Fulton County.",
+      "insight": "I notice that the FBI is taking a proactive approach to investigating election fraud, which suggests that they are taking the allegations seriously. I would recommend further investigation into the matter, including reviewing voting records and interviewing witnesses.",
+      "entities": [
+        "Fulton County",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.ajc.com/news/fbi-releases-photos-of-potential-subject-in-nancy-guthries-disappearance/6QJLH7K6YZBQ7LZLXJQFQ4F4E/",
+      "id": "rf-1770759692155-3mh2oizep",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-10T21:41:32.152Z",
+      "isNew": true
+    },
+    {
       "type": "large alleged fraud scheme",
       "description": "$350M tax refund fraud scheme",
       "insight": "This scheme suggests a large-scale organized effort to commit fraud, potentially involving multiple individuals and entities.",
@@ -963,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-03T20:34:36.180Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI serves new search warrant on California ‘biological lab’ tied to Las Vegas raid",
-      "insight": "The FBI's actions suggest ongoing investigations into potential wrongdoing in biological labs, which could have implications for public health and safety.",
-      "entities": [
-        "FBI",
-        "California biological lab"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KOLD",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUURyNFc0TGdTMHdxdFBJbXBPWENXQjRPX2hZSHRGbUZTaG9VRk5oaDdfTlhuSE9HQjhuZG51ODlMUlhrYmg4aGFyWWlzMm1ES29WdjJfclQ1VkUxR0FvMFJSMDdyeHFYS1h1M0J1MlFVQW4wRkJrQ1VvTk5VUlJITEVBUG5Bcm5tLVFhTnJjY3V6dHZfeVA2VVFvYlp4SktHSFY3SDJFaURrR1JaWG5NYUtWZHE",
-      "id": "rf-1770118419797-qawgsmxvk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T11:33:39.794Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-10T20:43:09.049Z"
+  "lastUpdated": "2026-02-10T21:41:32.152Z"
 }
