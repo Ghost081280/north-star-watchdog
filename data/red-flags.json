@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "possible election defects",
+      "description": "Possible defects in the 2020 election in Fulton County, Georgia.",
+      "insight": "This could be a sign of a larger issue with election integrity.",
+      "entities": [
+        "Fulton County",
+        "Georgia"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVNSa0tGa2E1ZkJPZ0swNVZlbmJEOS00VUJxak51T2FOaWNNZUxCTl9JY3N6c2xJZFBVMmJROFNmOEhvVkxkdnRrT29Nd3VOZjFUeU5aYUFyRF8wMkpqTjh4VmRUbl9nNVdYRGY1RGJZUkVfN1FSRE54UVNwQUtONWRuUVJNLW9RdklDSGx0ZW1Sa1FiM3JTYUUxX0NFYlZqY0E",
+      "id": "rf-1770763129039-4rtbxwexs",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-10T22:38:49.036Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating possible election fraud in Georgia and other states, with a focus on Fulton County.",
       "insight": "I notice that the FBI is taking a proactive approach to investigating election fraud, which suggests that they are taking the allegations seriously. I would recommend further investigation into the matter, including reviewing voting records and interviewing witnesses.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-10T21:41:32.152Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large alleged fraud scheme",
@@ -963,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-03T21:33:32.692Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The 'Minnesota Revalidate' program has been launched by DHS.",
-      "insight": "This could indicate a larger issue with program management and potential fraud.",
-      "entities": [
-        "Minnesota DHS",
-        "Minnesota Revalidate"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "My KLGR",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OUW5oSnpKSHJEMHdyRUxFeTRINzVOVVNOTnBvNGJsWTc4ZnphTFhYeG5MOEQ5cjBkbUtueXdzcjljZm9JbDMzZ3ZxaW5iSW1iMTF4d1lBZFRXWWpUdTdTMEh5MVk2U255QmhNZE5lYVNHMXpZLWFF?oc=5",
-      "id": "rf-1770150876183-w8nrl9bv6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T20:34:36.180Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-10T21:41:32.152Z"
+  "lastUpdated": "2026-02-10T22:38:49.036Z"
 }
