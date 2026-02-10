@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-05T01:57:00.483Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-05T04:15:51.254Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-10T10:00:24.914Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-10T11:04:30.145Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota woman connected to?",
-    "Where did the $325,000 allegedly go in Minnesota SNAP fraud investigation?",
-    "Where did the $10B allegedly go in Gateway Tunnel Project investigation?",
-    "Where did the Undisclosed allegedly go in Minnesota Medicaid investigation?",
     "Where did the $3B allegedly go in Gateway Tunnel investigation?",
     "Where did the $325K allegedly go in Medicaid fraud?",
     "What other organizations is Nancy Guthrie's potential kidnappers connected to?",
@@ -558,7 +554,11 @@
     "Where did the $350M allegedly go in Minnesota Tax Refund Fraud?",
     "Where did the millions allegedly go in Minnesota Housing Program Fraud?",
     "Where did the $ millions allegedly go in Minnesota Medicaid Scheme Investigation?",
-    "Where did the $350M allegedly go in Minnesota Tax Refund Fraud Investigation?"
+    "Where did the $350M allegedly go in Minnesota Tax Refund Fraud Investigation?",
+    "What specific allegations exist against Scott Jensen?",
+    "Where did the $350M allegedly go in Minnesota Medicaid Fraud Scheme?",
+    "Where did the $2M allegedly go in Stearns County Welfare Disbursements Fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 854,
-    "articlesProcessed": 42550,
-    "redFlagsFound": 1034,
+    "totalScans": 855,
+    "articlesProcessed": 42600,
+    "redFlagsFound": 1036,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "A $350M tax refund fraud scheme was uncovered in Minnesota.",
+          "insight": "This large-scale fraud scheme indicates a significant issue with tax refund processes in Minnesota.",
+          "entities": [
+            "Minnesota State Government"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MNCRIME.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMTR5QnpKbmRTWDRSdTd0QkkwYTRGN2pkSjJZU29CS2xFdUJSQl8xUno2anRuNnQta25wcmdBNlRVQ0hUV0JnVjhzc3ZzRHZsUTRaS1VXdGN0NUpvdi1hNldPNk5jRF8wOUgzYnhBV3FJVzU5TUxfNi1sVFZIWm9FZDVoNjVGOW9sam1mdw"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Becca Good?",
-        "Where did the $325K allegedly go in New Hope woman sentenced in $325K SNAP assistance fraud scheme?",
-        "What other organizations is Minnesota woman connected to?"
+        "What other organizations is Minnesota woman connected to?",
+        "Where did the $325,000 allegedly go in Minnesota SNAP fraud investigation?",
+        "Where did the $10B allegedly go in Gateway Tunnel Project investigation?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-10T10:00:24.914Z",
-  "lastUpdated": "2026-02-10T10:00:24.915Z"
+  "lastReflection": "2026-02-10T11:04:30.145Z",
+  "lastUpdated": "2026-02-10T11:04:30.145Z"
 }
