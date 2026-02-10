@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-05T12:58:52.277Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-05T14:08:11.366Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-10T22:38:49.034Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-10T23:37:29.797Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 863,
-    "articlesProcessed": 43000,
-    "redFlagsFound": 1045,
+    "totalScans": 864,
+    "articlesProcessed": 43050,
+    "redFlagsFound": 1047,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "Philadelphia men plead guilty to Medicaid fraud in Minnesota, using AI to fabricate records",
+          "insight": "The use of AI to fabricate records in Medicaid fraud cases highlights the evolving nature of healthcare fraud and the need for increased vigilance.",
+          "entities": [
+            "Philadelphia men"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "PHL17.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRUZnX2l6YVlfWklOMWhUbm9SQ2tnbTZvUUpwSWRFWFFvZGtnZTlOcmo3c1ZLQkdtQWdhSFdpZFFyVEpjWEhuU1BJNWtmVUxIa1ZYLWh0Si1vOERrOGlhZjlnUDlMY3BzRmNPb2VsdktfU0RVTFFwVnAzT1p4dmpuV19JbHVYVmpoWjNqdVlqU3B5QU51RVhvQVNjV29oZk12VjVCYWRUSUFEUS01eWZoeF8yRUhtRWY3eW81WQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ millions allegedly go in Minnesota Medicaid Scheme Investigation?",
-        "Where did the $350M allegedly go in Minnesota Tax Refund Fraud Investigation?",
-        "What specific allegations exist against Scott Jensen?"
+        "Where did the $2M allegedly go in Stearns County Welfare Disbursements Fraud?",
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Prior Lake Man connected to?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-10T22:38:49.034Z",
-  "lastUpdated": "2026-02-10T22:38:49.035Z"
+  "lastReflection": "2026-02-10T23:37:29.797Z",
+  "lastUpdated": "2026-02-10T23:37:29.798Z"
 }
