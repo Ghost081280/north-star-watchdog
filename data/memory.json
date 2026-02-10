@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-05T07:52:06.723Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-05T08:40:58.871Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-10T16:08:35.854Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-02-10T18:00:47.264Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 858,
-    "articlesProcessed": 42750,
+    "totalScans": 859,
+    "articlesProcessed": 42800,
     "redFlagsFound": 1039,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large alleged fraud scheme",
-          "description": "$350M tax refund fraud scheme",
-          "insight": "This scheme suggests a large-scale organized effort to commit fraud, potentially involving multiple individuals and entities.",
-          "entities": [
-            "Minnesota Man"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MNCRIME.com",
-          "sourceUrl": "https://mncrime.com/minnesota-man-charged-in-350m-tax-refund-fraud-scheme/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Fraud tourists connected to?",
         "Where did the $ unknown allegedly go in Minnesota Medicaid scheme investigation?",
-        "Where did the $1 billion allegedly go in Gateway Tunnel funding freeze investigation?"
+        "Where did the $1 billion allegedly go in Gateway Tunnel funding freeze investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-10T16:08:35.854Z",
-  "lastUpdated": "2026-02-10T16:08:35.855Z"
+  "lastReflection": "2026-02-10T18:00:47.264Z",
+  "lastUpdated": "2026-02-10T18:00:47.264Z"
 }
