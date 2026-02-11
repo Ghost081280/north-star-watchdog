@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "election investigation",
+      "description": "The FBI's investigation into Fulton County vote records relied on previously investigated 2020 election claims.",
+      "insight": "This raises concerns about the legitimacy of the investigation and potential politicization of law enforcement.",
+      "entities": [
+        "FBI",
+        "Fulton County"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Georgia Recorder",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOS3Z3UnJTVlBiM205SmxYZmRDRjFQWnBxNVE5TkpSdkFXakUwSzdjNW54Yk9PclZWaFNsdDd4cjJHRFZJOVRhNTB3dllsZ084R2VvVC1HajF4aV9JWms1VHpYRzNSQzNtNElVaExyVjJMclZFSk4zelpJUUFpWFo2YmUzTERydVRkb3QzNEc2X3VMMWpPcDZNY2M0SDI1djRYdnpkRFhZekVMT2xIYzJwRXpEUDQ5eFBsTVdrNQ",
+      "id": "rf-1770810240144-mtyu75ky7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-11T11:44:00.141Z",
+      "isNew": true
+    },
+    {
       "type": "FBI warrant controversy",
       "description": "The FBI used debunked claims to obtain a warrant for Fulton County vote records.",
       "insight": "The use of debunked claims for an FBI warrant raises concerns about the legitimacy and oversight of FBI investigations.",
@@ -960,30 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-04T08:39:18.883Z",
       "isNew": false
-    },
-    {
-      "type": "prosecutor_quit",
-      "description": "Multiple federal prosecutors in Minnesota have quit amid the DOJ's response to the Renee Good shooting",
-      "insight": "This development may indicate a larger issue with the DOJ's handling of cases or office politics. Further investigation into the reasons behind the resignations and potential impacts on ongoing cases is warranted.",
-      "entities": [
-        "Minnesota federal prosecutors",
-        "DOJ"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The Independent",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSVFuQjFtRG51Q0MzUVdWX2hZRXdDNmF0OWZZOGxpQnh2NVlDTk81ZUZlc2tQZTViNkp1TkJ4RFNIdnZfN0ZzaHhKeVl6N2NBM3BFVmpndDJ3Z3dPWUFwckowUHcwU2xDUWFNNEV3TFpOMWs4LXJCQmstZk1OYXM5R3IzLWF3dlA0TWRoUERZWm5DTlNrSGotMkpETGwyX2dkSmlPS3V0VF9qeEY5MTFzYlRGd1E4SkNjTHp3X3pRN1VfTnR1",
-      "searches": [
-        "Minnesota federal prosecutors quitting",
-        "Renee Good shooting"
-      ],
-      "id": "rf-1770187784944-4g2qd75lp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-04T06:49:44.940Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,7 +991,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-11T10:50:12.926Z"
+  "lastUpdated": "2026-02-11T11:44:00.141Z"
 }
