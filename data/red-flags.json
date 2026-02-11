@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "potential violation of sanctuary city ban",
+      "description": "Montana city under investigation for potential violation of sanctuary city ban.",
+      "insight": "This could indicate a larger issue with compliance and potential fraud in the state.",
+      "entities": [
+        "Montana city"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "U.S. News & World Report",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMUU3R19jMDlzM2xTVFllekh4LWpXY2dyUlJYZHU4dGZKMkhWUTVybDlsSGpaUlpQMUtjLVF0Rl9nLUNYalhCb2VRcnpTZl9WYkpKNFFFSzgxQ1R4Q3dOSC1oSHhNS0h4cUJiUnVQM2FiMzFPMC1RdWZ4N2drZmEzMVJ4UHJqeUYtQ1BjYWV5UTViT05maEkxYUhBcVA2X2M1N0lfN1d6NFVxeDJJenB3Vl9BY29STldpQngweHBDOUpFb3E1R0hYdg?oc=5",
+      "id": "rf-1770852651286-yd8270vuv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-11T23:30:51.283Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Several cases of Medicaid fraud have been announced in the past week, including a $3.5 million scheme involving a Philly pastor and a pair of 'fraud tourists'",
       "insight": "I notice that Medicaid fraud is a growing concern, with several high-profile cases announced in the past week. The use of AI to fake records in Medicaid housing scams is a new and emerging trend. I recommend further investigation into this area.",
@@ -960,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-04T10:37:13.700Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination or tightening of Small Business loan programs",
-      "insight": "Potential impact on small businesses and loan fraud prevention. Possible pattern of abuse in loan programs.",
-      "entities": [
-        "Trump administration",
-        "Small Business Administration"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Todayville",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUzJRdWtwMGtCd3N6cXVMV2ttbkZwRXM3T2ZTeDA2Ujcxbk5jWWhPQlNQdzU2OUdlSmt3b05ick90ZnJlRTM4bF92RFM2N3MzcndQWXkxLWtpWnVic045X1BkWHJrWTl0d2N3U19TNFJZa0NHQTdZeFk0bEdKWmpvM0tzR2RwMVlkdGVWanVDZ0JsVjI5M0pXdmFRWERrVTA2dU5lQndodkthUThyRzJqX2JMamYtdGdBNnNRODVyeEQwandzUkE",
-      "id": "rf-1770194358886-9ray4wtde",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-04T08:39:18.883Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-11T22:28:24.962Z"
+  "lastUpdated": "2026-02-11T23:30:51.283Z"
 }
