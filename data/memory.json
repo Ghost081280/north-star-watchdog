@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-05T15:40:06.765Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-05T16:45:43.238Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-11T02:09:23.530Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-11T05:01:52.691Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Prior Lake Man connected to?",
-    "Where did the $350M allegedly go in Minnesota Medicaid scheme?",
-    "Where did the Unknown allegedly go in Central Louisiana drug cartel operations?",
     "Where did the $350M allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping Case?",
@@ -558,7 +555,10 @@
     "What other organizations is Mark Osler connected to?",
     "Where did the $N/A allegedly go in Minnesota Medicaid fraud case?",
     "Where did the Unknown allegedly go in Fulton County 2020 election probe?",
-    "Where did the Unknown allegedly go in Minnesota immigration crackdown?"
+    "Where did the Unknown allegedly go in Minnesota immigration crackdown?",
+    "What other organizations is Two Men connected to?",
+    "Where did the $3.5 million allegedly go in Minnesota Medicaid Fraud Scheme?",
+    "Where did the Unknown allegedly go in FBI Investigation into Nancy Guthrie's Abduction?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 865,
-    "articlesProcessed": 43100,
-    "redFlagsFound": 1048,
+    "totalScans": 866,
+    "articlesProcessed": 43150,
+    "redFlagsFound": 1049,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2M allegedly go in Stearns County Welfare Disbursements Fraud?",
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Prior Lake Man connected to?"
+        "What other organizations is Prior Lake Man connected to?",
+        "Where did the $350M allegedly go in Minnesota Medicaid scheme?",
+        "Where did the Unknown allegedly go in Central Louisiana drug cartel operations?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-11T02:09:23.530Z",
-  "lastUpdated": "2026-02-11T02:09:23.531Z"
+  "lastReflection": "2026-02-11T05:01:52.691Z",
+  "lastUpdated": "2026-02-11T05:01:52.692Z"
 }
