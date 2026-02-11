@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "Medicaid fraud",
+      "description": "Several cases of Medicaid fraud have been announced in the past week, including a $3.5 million scheme involving a Philly pastor and a pair of 'fraud tourists'",
+      "insight": "I notice that Medicaid fraud is a growing concern, with several high-profile cases announced in the past week. The use of AI to fake records in Medicaid housing scams is a new and emerging trend. I recommend further investigation into this area.",
+      "entities": [
+        "Philly Pastor",
+        "Pair of ‘fraud tourists’"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://dailyvoice.com/news/chatgpt-used-in-3-5m-medicaid-fraud-by-philly-pastor-university-president-feds/862111/",
+      "id": "rf-1770830050412-uh1m4dk97",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-11T17:14:10.409Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
       "description": "A $3.5 million Medicaid fraud scheme was uncovered in Minnesota",
       "insight": "This large-scale Medicaid fraud scheme suggests a significant issue with healthcare fraud in Minnesota, potentially indicating a larger pattern of abuse.",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-11T16:00:44.259Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election investigation",
@@ -212,26 +232,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-10T02:13:39.323Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Walz administration gave potentially fraudulent Medicaid providers advance notice of site visits.",
-      "insight": "This could indicate potential issues with program management or oversight.",
-      "entities": [
-        "Walz administration"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "alphanews.org",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV0xiemU1b3RpeEpWVW85SDRsRUN2TUM2bmV4QWJycXR2QXhfU2tTUWlIWGxqdXM1Y1RxZTVOaWY5NERkNFMxRmJnc19PR1FCMmxkSkxORDJ5TGlxTFpXaHZiUHpyYVptMDFHUk1UaGlwYllTZ1l1NUZvZGJITWRmakZvb1RUa0NReTFzQWE5WExuTEpneEo2Sm1DUWI1SzJTSmx6aUtiejZjSURfVnV4eDR0N2U4VEN4V3JyTA",
-      "priorityLevel": "medium",
-      "id": "rf-1770676506550-is0fq7bie",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-09T22:35:06.546Z",
       "isNew": false
     },
     {
@@ -984,6 +984,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-11T16:00:44.259Z"
+  "lastUpdated": "2026-02-11T17:14:10.409Z"
 }
