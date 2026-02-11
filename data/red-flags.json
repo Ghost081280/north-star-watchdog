@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "A $3.5 million Medicaid fraud scheme was uncovered in Minnesota",
+      "insight": "This large-scale Medicaid fraud scheme suggests a significant issue with healthcare fraud in Minnesota, potentially indicating a larger pattern of abuse.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Alpha News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNVNDdzZMUlRIUWtQcERpQTg2UlR3cE13U2x3Sko5V01BMEpOelB0Y1hEWi1oZ0x2eTd1SDJqbTNhNHFRYVhOdGVjVFlTcFNhQ2VwM0UzM2hjZnFqREhYd2dzbzdTbldzaU0teWpmZmExZUV3Y1Zxd19MWGdpTFZQLWl1VzhJTGFEa19neG8zZXh5YVZ1all1TVk2bw",
+      "id": "rf-1770825644263-qqjjgxhom",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-11T16:00:44.259Z",
+      "isNew": true
+    },
+    {
       "type": "election investigation",
       "description": "The FBI's investigation into Fulton County vote records relied on previously investigated 2020 election claims.",
       "insight": "This raises concerns about the legitimacy of the investigation and potential politicization of law enforcement.",
@@ -72,25 +91,6 @@
       "source": "FBI",
       "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNczVHaUUzQi1TaFoySGk4R2NBTGZCQnNmOWg5ajJwREd2Q2NnbWxDMjZ4M0VKTVB0VUJoVmw5WUplZ0dmSXcwQm1pUUlnZmFianNfMkp3NjBkQU9raXJWUW1icWNkNzY0UWsxajVBSC0wQXllWWNMMVMzbFJrdExyN2hZTXg3c25ZdzVaaWJ6di1EaUI2Ukg5clo1bDhoeEUxeVA2dFRBTlVJeUNCNDZ4am1JY2hFdE9XRk9ZNHNJSFU5aGcxSXBHZmZHQ2pnbFE1SDNOX3Axb0dPdVkySHlieVJ1ejA2WDA",
       "id": "rf-1770766649802-dq63b99bc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T23:37:29.799Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Philadelphia men plead guilty to Medicaid fraud in Minnesota, using AI to fabricate records",
-      "insight": "The use of AI to fabricate records in Medicaid fraud cases highlights the evolving nature of healthcare fraud and the need for increased vigilance.",
-      "entities": [
-        "Philadelphia men"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "PHL17.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRUZnX2l6YVlfWklOMWhUbm9SQ2tnbTZvUUpwSWRFWFFvZGtnZTlOcmo3c1ZLQkdtQWdhSFdpZFFyVEpjWEhuU1BJNWtmVUxIa1ZYLWh0Si1vOERrOGlhZjlnUDlMY3BzRmNPb2VsdktfU0RVTFFwVnAzT1p4dmpuV19JbHVYVmpoWjNqdVlqU3B5QU51RVhvQVNjV29oZk12VjVCYWRUSUFEUS01eWZoeF8yRUhtRWY3eW81WQ",
-      "id": "rf-1770766649802-0t5pyau6n",
       "apisUsed": [
         "Google News"
       ],
@@ -984,17 +984,15 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-11T14:52:00.257Z"
+  "lastUpdated": "2026-02-11T16:00:44.259Z"
 }
