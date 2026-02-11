@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "FBI warrant controversy",
+      "description": "The FBI used debunked claims to obtain a warrant for Fulton County vote records.",
+      "insight": "The use of debunked claims for an FBI warrant raises concerns about the legitimacy and oversight of FBI investigations.",
+      "entities": [
+        "FBI",
+        "Fulton County election officials"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/02/11/fbi-fulton-county-vote-records-warrant-documents-show/",
+      "id": "rf-1770800266762-gvdhi4lk5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-11T08:57:46.758Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the abduction of Nancy Guthrie, and a person has been detained for questioning.",
       "insight": "This case highlights the need for increased cooperation between law enforcement agencies and the importance of following up on leads in a timely manner.",
@@ -964,41 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-04T06:49:44.940Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Sable Offshore Under Federal And SEC Investigation",
-      "insight": "The federal investigation into Sable Offshore, combined with SEC involvement, suggests potential serious financial irregularities. This situation warrants close monitoring for developments.",
-      "entities": [
-        "Sable Offshore",
-        "SEC"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Benzinga",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRGlCNkRZWC00NEJHdUxpR1dveVI4ZlVhWDBtMVctY1FLdTRlVlhlRVZFdHpPMWt2TG9ocUlzUk5Jd3pPQkpXSmVlclpDcms0UzRnMXoyNEVqc1VqRkhLc0FMZkp3bHpUQ2hMeFhQV3RLT1dCREZZLXVETVRzZC1DZ0lxdkZIQU82ZjZwMDlhUjBBdklMUEt3REZLMUJPQzd6VGk3TEVpTUNaT2dDLXpZSi1fUHBCRWtWa0VR?oc=5",
-      "id": "rf-1770161253690-n3ppulcww",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-03T23:27:33.686Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-11T07:58:42.313Z"
+  "lastUpdated": "2026-02-11T08:57:46.758Z"
 }
