@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-06T09:41:03.838Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-06T10:37:52.669Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-11T21:33:25.819Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-11T22:28:24.960Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 880,
-    "articlesProcessed": 43850,
+    "totalScans": 881,
+    "articlesProcessed": 43900,
     "redFlagsFound": 1064,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3.5 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
         "Where did the Unknown allegedly go in FBI Fentanyl Investigation?",
-        "What other organizations is Not specified in the provided articles connected to?"
+        "What other organizations is Not specified in the provided articles connected to?",
+        "What specific allegations exist against Not specified in the provided articles?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-11T21:33:25.819Z",
-  "lastUpdated": "2026-02-11T21:33:25.820Z"
+  "lastReflection": "2026-02-11T22:28:24.960Z",
+  "lastUpdated": "2026-02-11T22:28:24.961Z"
 }
