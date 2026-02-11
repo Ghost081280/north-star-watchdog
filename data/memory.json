@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-06T07:45:35.461Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-06T08:40:08.101Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-02-11T19:58:26.045Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-11T20:43:39.386Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is 2 Men connected to?",
     "Where did the $3.5 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI Fentanyl Investigation?",
     "What other organizations is Not specified in the provided articles connected to?",
@@ -558,7 +557,8 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Don Lemon's Attorney connected to?",
     "Where did the $10 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Kentucky Licensing Fraud Case?"
+    "Where did the Unknown allegedly go in Kentucky Licensing Fraud Case?",
+    "Where did the $10 billion allegedly go in Minnesota Medicaid Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 878,
-    "articlesProcessed": 43750,
-    "redFlagsFound": 1062,
+    "totalScans": 879,
+    "articlesProcessed": 43800,
+    "redFlagsFound": 1063,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.5 million allegedly go in FBI Investigation into Fulton County Ballots?",
-        "What other organizations is Individuals involved in the $3.5 Million Minnesota Medicaid Fraud Scheme connected to?",
-        "Where did the Not specified allegedly go in Fulton County vote records investigation?"
+        "What other organizations is 2 Men connected to?",
+        "Where did the $3.5 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in FBI Fentanyl Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-11T19:58:26.045Z",
-  "lastUpdated": "2026-02-11T19:58:26.045Z"
+  "lastReflection": "2026-02-11T20:43:39.386Z",
+  "lastUpdated": "2026-02-11T20:43:39.387Z"
 }
