@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-06T19:37:30.597Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-06T20:32:31.949Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-12T10:43:57.989Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-12T11:39:13.381Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Are any of these 3 figures connected to each other?",
-    "What other organizations is Don Lemon's Attorney connected to?",
     "Where did the $10 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Kentucky Licensing Fraud Case?",
     "Where did the $10 billion allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +555,10 @@
     "Where did the $600M allegedly go in Minnesota child care programs investigation?",
     "Where did the Unknown allegedly go in Nebraska Athletic Department investigation?",
     "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $0 allegedly go in Ohio Daycare Fraud Crackdown?"
+    "Where did the $0 allegedly go in Ohio Daycare Fraud Crackdown?",
+    "What other organizations is Sylvia Luke connected to?",
+    "Where did the $600M allegedly go in Minnesota Child Care Program Investigation?",
+    "Where did the $0 allegedly go in Kentucky Licensing Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 889,
-    "articlesProcessed": 44300,
-    "redFlagsFound": 1072,
+    "totalScans": 890,
+    "articlesProcessed": 44350,
+    "redFlagsFound": 1073,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Don Lemon connected to?",
-        "What specific allegations exist against Don Lemon?",
-        "Where did the $3.5M allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $3.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Don Lemon's Attorney connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-12T10:43:57.989Z",
-  "lastUpdated": "2026-02-12T10:43:57.990Z"
+  "lastReflection": "2026-02-12T11:39:13.381Z",
+  "lastUpdated": "2026-02-12T11:39:13.381Z"
 }
