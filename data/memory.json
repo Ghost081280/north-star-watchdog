@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T04:08:03.597Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-07T05:41:20.080Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-12T17:57:38.907Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-12T19:05:19.960Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $600M allegedly go in Minnesota Child Care Programs Investigation?",
-    "Where did the $600M allegedly go in Trump Administration Public Health Grants Investigation?",
-    "Where did the unknown allegedly go in Kentucky Licensing Fraud Investigation?",
     "Where did the $10M+ allegedly go in Minnesota Child Care Program Fraud?",
     "What other organizations is Sylvia Luke's donor connected to?",
     "Where did the $600M allegedly go in Minnesota child care programs investigation?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI Investigation into Jeffrey Epstein?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $1B allegedly go in Minnesota Child Care Assistance Program Fraud?"
+    "Where did the $1B allegedly go in Minnesota Child Care Assistance Program Fraud?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
+    "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 895,
-    "articlesProcessed": 44600,
-    "redFlagsFound": 1079,
+    "totalScans": 896,
+    "articlesProcessed": 44650,
+    "redFlagsFound": 1080,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $600M allegedly go in Minnesota Fraud Investigation?",
         "Where did the $600M allegedly go in Minnesota Child Care Programs Investigation?",
-        "Where did the $600M allegedly go in Trump Administration Public Health Grants Investigation?"
+        "Where did the $600M allegedly go in Trump Administration Public Health Grants Investigation?",
+        "Where did the unknown allegedly go in Kentucky Licensing Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-12T17:57:38.907Z",
-  "lastUpdated": "2026-02-12T17:57:38.908Z"
+  "lastReflection": "2026-02-12T19:05:19.960Z",
+  "lastUpdated": "2026-02-12T19:05:19.961Z"
 }
