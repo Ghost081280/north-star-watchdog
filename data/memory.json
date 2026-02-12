@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-06T16:42:49.303Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-06T17:41:04.736Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-12T07:51:40.252Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-12T08:43:52.585Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Philly Pastor connected to?",
     "What other organizations is Pair of ‘fraud tourists’ connected to?",
     "Where did the $3.5 million allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $600M allegedly go in Minnesota Fraud Investigation?",
     "Where did the $600M allegedly go in Minnesota Child Care Programs Investigation?",
     "Where did the $600M allegedly go in Trump Administration Public Health Grants Investigation?",
-    "Where did the unknown allegedly go in Kentucky Licensing Fraud Investigation?"
+    "Where did the unknown allegedly go in Kentucky Licensing Fraud Investigation?",
+    "Where did the $10M+ allegedly go in Minnesota Child Care Program Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 886,
-    "articlesProcessed": 44150,
-    "redFlagsFound": 1069,
+    "totalScans": 887,
+    "articlesProcessed": 44200,
+    "redFlagsFound": 1070,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What other organizations is Philly Pastor connected to?",
-        "What other organizations is Pair of ‘fraud tourists’ connected to?"
+        "What other organizations is Pair of ‘fraud tourists’ connected to?",
+        "Where did the $3.5 million allegedly go in Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-12T07:51:40.252Z",
-  "lastUpdated": "2026-02-12T07:51:40.253Z"
+  "lastReflection": "2026-02-12T08:43:52.585Z",
+  "lastUpdated": "2026-02-12T08:43:52.586Z"
 }
