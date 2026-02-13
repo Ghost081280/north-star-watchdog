@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating two ICE officers for allegedly lying about a shooting in Minneapolis.",
+      "insight": "This investigation raises concerns about the integrity of government agencies and the potential for misconduct. Further investigation is needed to determine the extent of the alleged misconduct and to hold those responsible accountable.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC7 News",
+      "sourceUrl": "https://www.abc7news.com/news/federal-government-opens-criminal-probe-into-whether-ice-officers-lied-about-shooting-of-venezuelan-man-in-minneapolis",
+      "id": "rf-1771015037674-m65oxwwul",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T20:37:17.670Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential shutdown of Department of Homeland Security (DHS) due to funding issues",
       "insight": "This could have significant impacts on various services and agencies under DHS, including law enforcement and cybersecurity efforts.",
@@ -959,29 +979,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T09:42:51.655Z",
       "isNew": false
-    },
-    {
-      "type": "program_integrity",
-      "description": "Allegations of backdating paperwork in Minnesota DHS",
-      "insight": "This suggests potential program integrity issues and possible fraud in Minnesota's childcare programs.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Times of India",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUVBUMzVmSlpObUs2ZWtaeEhxU2lzYjFtQlpFRU01V0phQmczNW9NdS1TekpVTG1Xamg3UDI3VzZ0Y1A2ZGZDaW1PTVdYWWU1OWVfWUplb1RmVHd0b2g4ZTBzeGRpSE1vQkE1bzdDNE9sRFVnVFV0STRPNnkwWnctQkVqOERVQ1lIZGtYbkptUXdpTUY0T25BQmxwTDlsbnN4RHFwRFZwaXZOMFN6Z3ZuUDVHeWxpNnZFSlhoQTNxMmpzeWptUmRVRGtRdnR4a1h2bnNwbW9hTEZjanlFZkVvRnZlZVZqZ3htVjNQbU9ZUTE2eTJrOTVuU9IB_gFBVV95cUxNZnQ0YkVRUzJONE13QURpd3dBMGxlTVE4WWdnM3doalVwYVBfNWpUamJBRlVIaDlLRDlCdnFTMlhDNzJIZUhRc3U2VTJtTXh4WE9GOXlUTWRDQl9kcFVEMzZkZENiQ1NyR0xOREFBa3ktVjJMQUxXVDJHWmw4YVhkWC01OU1ybURnQkcxc1pUT0J0dHd1cng2MlZHYWZsdFN2VHF2RlJBRmFzTDZYdEZhT2l4NXc3UExtZFlkU2dmMjlYY3NfSkswYjF2aVF2U3VzRFZFS01HYlNxbC03SVVSeldJanBHNktQQlpXWXNOcF9UWkEwUkp5V2tDRDk1Zw",
-      "id": "rf-1770280858876-0wkx3h2zm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T08:40:58.873Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T19:41:21.693Z"
+  "lastUpdated": "2026-02-13T20:37:17.670Z"
 }

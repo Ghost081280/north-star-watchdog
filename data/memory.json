@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T02:26:04.772Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T05:02:44.030Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T19:41:21.691Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-13T20:37:17.668Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
-    "Where did the $600 million allegedly go in Child Care Fraud Investigation?",
-    "What specific allegations exist against No specific individual?",
     "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program Fraud?",
     "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program fraud?",
     "Where did the N/A allegedly go in Nancy Guthrie investigation?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping?",
     "Where did the Unknown allegedly go in Childcare fraud investigation?",
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping investigation?",
-    "Where did the $7.8M allegedly go in Feeding Our Future case?"
+    "Where did the $7.8M allegedly go in Feeding Our Future case?",
+    "What other organizations is Salim Said connected to?",
+    "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
+    "Where did the N/A allegedly go in ICE officer investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 915,
-    "articlesProcessed": 45600,
-    "redFlagsFound": 1101,
+    "totalScans": 916,
+    "articlesProcessed": 45650,
+    "redFlagsFound": 1102,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T19:41:21.691Z",
-  "lastUpdated": "2026-02-13T19:41:21.692Z"
+  "lastReflection": "2026-02-13T20:37:17.668Z",
+  "lastUpdated": "2026-02-13T20:37:17.669Z"
 }
