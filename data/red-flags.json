@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Kidnapping case",
+      "description": "The sheriff is withholding key evidence in the Nancy Guthrie kidnapping case.",
+      "insight": "This suggests a need for increased cooperation between law enforcement agencies and a thorough investigation into the case.",
+      "entities": [
+        "FBI",
+        "Sheriff"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNTJIcmYtVW4zWXkzVHJkZnFMc3lKWGtlSXpxbWxEMk9UeS1uM1pXcHhKOGpOYjdUYTQyLWZiMW9GX3lFMXFqTzE5OE42cVVCNnllRTdIVU1zVlJId29yLUJZQ24tX2lneFVxdWpJdlowWjBBdE9ORXNVS21OX2FKM1hUX19OQWxqVTFYR3JuMA?oc=5",
+      "id": "rf-1770987391020-e0t7rfu0t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T12:56:31.016Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating the disappearance of Nancy Guthrie",
       "insight": "This suggests potential involvement of federal agencies in investigating crimes in Minnesota.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-13T11:31:17.852Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,42 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T05:55:17.200Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "White House instructs DOT, CDC to cut $1.5B in grants for Dem states, citing 'waste and mismanagement'",
-      "insight": "Potential misuse of funds or political bias in grant allocation",
-      "entities": [
-        "White House",
-        "DOT",
-        "CDC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/02/04/white-house-instructs-dot-cdc-to-cut-1-5b-in-grants-for-dem-states/",
-      "id": "rf-1770240730755-hqbc9ictw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-04T21:32:10.752Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T11:31:17.852Z"
+  "lastUpdated": "2026-02-13T12:56:31.016Z"
 }
