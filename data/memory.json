@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T20:25:45.337Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-07T21:25:18.525Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T15:41:08.145Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-13T16:43:54.352Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 911,
-    "articlesProcessed": 45400,
-    "redFlagsFound": 1097,
+    "totalScans": 912,
+    "articlesProcessed": 45450,
+    "redFlagsFound": 1099,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nancy Guthrie Abduction Case?",
-        "Where did the $600 Million allegedly go in Minnesota Child Care Fraud?",
-        "What other organizations is Edmond man connected to?"
+        "Where did the Not specified allegedly go in Nancy Guthrie investigation?",
+        "Where did the Not specified allegedly go in Minnesota ICE Drawdown investigation?",
+        "Where did the $0 allegedly go in Nancy Guthrie Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T15:41:08.145Z",
-  "lastUpdated": "2026-02-13T15:41:08.146Z"
+  "lastReflection": "2026-02-13T16:43:54.352Z",
+  "lastUpdated": "2026-02-13T16:43:54.352Z"
 }
