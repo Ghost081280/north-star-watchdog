@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T15:23:39.643Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-07T16:28:51.977Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T09:42:30.401Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-13T10:38:20.538Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Waterford man connected to?",
-    "Where did the $1B allegedly go in Feeding Our Future investigation?",
     "What other organizations is Josh Hawley connected to?",
     "Where did the $3.8M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $100K allegedly go in Clermont County childcare center fraud?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against No specific individual?",
     "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program Fraud?",
     "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program fraud?",
-    "Where did the N/A allegedly go in Nancy Guthrie investigation?"
+    "Where did the N/A allegedly go in Nancy Guthrie investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What specific allegations exist against Tim Walz?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 906,
-    "articlesProcessed": 45150,
-    "redFlagsFound": 1090,
+    "totalScans": 907,
+    "articlesProcessed": 45200,
+    "redFlagsFound": 1091,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B allegedly go in Feeding Our Future fraud investigation?",
-        "What other organizations is Milford woman connected to?",
-        "What other organizations is Waterford man connected to?"
+        "What other organizations is Waterford man connected to?",
+        "Where did the $1B allegedly go in Feeding Our Future investigation?",
+        "What other organizations is Josh Hawley connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T09:42:30.401Z",
-  "lastUpdated": "2026-02-13T09:42:30.402Z"
+  "lastReflection": "2026-02-13T10:38:20.538Z",
+  "lastUpdated": "2026-02-13T10:38:20.539Z"
 }
