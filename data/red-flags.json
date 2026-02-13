@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "A federal judge blocked the Trump administration from rescinding health grants to Democratic-led states.",
+      "insight": "This could indicate a larger issue with program funding and oversight.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/02/13/Politics/Federal-Judge-Blocks-Trump-Plan-to-Cut-600-Million-in-Health-Funds.html",
+      "id": "rf-1770972051573-5b0bpsb6l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T08:40:51.569Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Arizona sheriff's office is accused of blocking FBI access to evidence in the Nancy Guthrie investigation",
       "insight": "This could indicate a potential issue with the sheriff's office's handling of evidence, and further investigation is needed to determine the cause and impact",
@@ -958,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-04T18:46:58.535Z",
       "isNew": false
-    },
-    {
-      "type": "election_records_seizure",
-      "description": "The FBI's seizure of 2020 election records from Fulton County",
-      "insight": "This seizure raises concerns about the integrity of the electoral process and potential biases in law enforcement. Further investigation into the reasons behind the seizure and its impact on the electoral process is necessary.",
-      "entities": [
-        "FBI",
-        "Fulton County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News reports",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNnpIWmk0MDIycnkxVm1pQW1UeU5CQlI1T3JNNU0xNkw4LTVoQVoxZ29hZFBIVFhBc1p2WkctaXIwYVlmT0xHZGxlSmxJVlJHUEFJb2VnUHE1M3VfUXRCR1FaN1JaVzNEdHktYlZJNkhYX1FxZFdHSFZSamNETmItSno0NDA5TUVLb0V5R0swVUE0U0lPWUhF0gGcAUFVX3lxTE1qcmV2Y2xreFdnSlBkRnZoZHFvODd4c2JQd3lFWnk5VVl4RWwzMnZZekZaRlQxLUxHRTZteV9qMWw2enU4emtXRm1kZ3VSOS0yWkpIM01lc1MyXzlDLThkLVljNEIySFpZalM3YVE3OUlTV2hPSmtUTHdKbDBaSzZpNGRnTk5PSVlvMmk4cXBDaHBONkhXbnVITGMxQg",
-      "id": "rf-1770230818538-hjfk8q8yr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-04T18:46:58.535Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,10 +986,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T07:06:07.404Z"
+  "lastUpdated": "2026-02-13T08:40:51.569Z"
 }
