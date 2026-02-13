@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Agents Under Investigation",
+      "description": "Multiple federal agents are under investigation for making false statements and lying under oath",
+      "insight": "This pattern of behavior raises concerns about the integrity of federal law enforcement agencies and the potential for abuse of power. Further investigation is needed to determine the extent of the problem and to hold those responsible accountable.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/ice-head-todd-lyons-says-federal-agents-at-north-minneapolis-shooting-in-january-lied-under-oath/",
+      "id": "rf-1771021929571-f8z13zgcd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T22:32:09.568Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating two ICE officers for allegedly lying about a shooting in Minneapolis.",
       "insight": "This investigation raises concerns about the integrity of government agencies and the potential for misconduct. Further investigation is needed to determine the extent of the alleged misconduct and to hold those responsible accountable.",
@@ -960,29 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T10:39:21.186Z",
       "isNew": false
-    },
-    {
-      "type": "Corporate discrimination",
-      "description": "Allegations of discrimination against white employees at Nike have sparked a federal investigation.",
-      "insight": "I believe that this case may be part of a larger trend of corporate discrimination. Companies must prioritize diversity and inclusion initiatives to prevent similar incidents.",
-      "entities": [
-        "Nike"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "NPR",
-      "sourceUrl": "https://www.npr.org/2026/02/05/1114331111/nike-faces-federal-probe-over-allegations-of-discrimination-against-white-workers",
-      "id": "rf-1770284571659-9g7rjyuku",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T09:42:51.655Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +994,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1010,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T21:34:24.945Z"
+  "lastUpdated": "2026-02-13T22:32:09.568Z"
 }
