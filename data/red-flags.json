@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government had previously frozen funding for the Gateway rail tunnel project, citing concerns about the project's viability.",
+      "insight": "The sudden release of funding suggests that there may have been political pressure to revive the project. Further investigation is needed to determine the reasons behind the funding freeze and release.",
+      "entities": [
+        "Gateway rail tunnel",
+        "federal government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New Jersey Monitor",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NcnJ4Q1BWdVdub1Zqc2VtSlpKbWhYZUQ3ZGJPc1lYV1ZBbWQwOGJLNmRkb3lmMXE5b0J5ai1NX0dlRVZYTFg0dktMakozQ3Y0RUxzdHFQbUljWGhNeG9ld0hweHNPQUhDczlnbnpLLXJDRy1vNkZiTA",
+      "id": "rf-1771025383922-ik7mt48tg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T23:29:43.919Z",
+      "isNew": true
+    },
+    {
+      "type": "law_enforcement_conduct",
+      "description": "Two federal agents have been accused of making false statements about a shooting incident in Minneapolis.",
+      "insight": "This incident raises concerns about the conduct of law enforcement officers and the potential for misconduct. Further investigation is needed to determine the extent of the misconduct and any potential cover-ups.",
+      "entities": [
+        "ICE agents",
+        "Minneapolis shooting"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmxmQ21NYlFQYXN2VUdSZGd0bzNMRVJXSFFqTGJZVXV5OW44YUxNa2x4UlU1V0dQVlU3Rk9oSDFVa2pKT0VJdXdxZ3FQOXpJT3V4SXFFX1l2Nlh5YWtsV3haWmNhZzNOVzN1QTI2d2MtLWlvYWVyQ0hXc3VNV0piOGxLUEtxQ1dzNW85N1NKSVFEUklyOW1MOVBMSURvbUlBaV8xcDhDcmtoRWo1c3hRUEZB",
+      "id": "rf-1771025383922-26du04iv8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T23:29:43.919Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Agents Under Investigation",
       "description": "Multiple federal agents are under investigation for making false statements and lying under oath",
       "insight": "This pattern of behavior raises concerns about the integrity of federal law enforcement agencies and the potential for abuse of power. Further investigation is needed to determine the extent of the problem and to hold those responsible accountable.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-13T22:32:09.568Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -57,26 +97,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-13T18:45:19.510Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI is investigating the kidnapping of Nancy Guthrie, and lawmakers are probing nationwide child care fraud.",
-      "insight": "I notice a pattern of federal investigations into crimes that affect vulnerable populations, such as children and working families. I recommend further investigation into the childcare fraud cases to identify potential connections and patterns.",
-      "entities": [
-        "Nancy Guthrie",
-        "Waterford man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/nancy-guthrie-live-updates-fbi-doubles-reward-details-revealed-man-video-rcna69993",
-      "id": "rf-1771004391769-i4logykkh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-13T17:39:51.766Z",
       "isNew": false
     },
     {
@@ -961,40 +981,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T14:08:11.368Z",
       "isNew": false
-    },
-    {
-      "type": "discrimination",
-      "description": "Nike under federal investigation for alleged discrimination against white employees",
-      "insight": "This could indicate a larger issue with diversity and inclusion practices at Nike. Further investigation into Nike's HR practices is warranted.",
-      "entities": [
-        "Nike"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Benzinga",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcHZ6eWNZZWRxOGFMd2I5SENxX0ZlUVdTaWExTWdPdEdFeFVXcnVoRmpfWHVsczRGZHI5QVRWUUs0cl9kM1lzUUowMWhzWHl2Y0x6Mk1FU2lqdzl3eWNLS1BYQnZndjFMVUtBaWJ4YW5UZHBNbnRhNUFuNGx1M0FpYTRkdXVKbWhLTk53QWRHVlY4NTZIanczcVB1clhXSS1xUTV5NmdjNkplUWNqSWNKZU50WXFtZG9QREZZUjdKY1FQZw?oc=5",
-      "id": "rf-1770287961189-7q4njaj6h",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T10:39:21.186Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T22:32:09.568Z"
+  "lastUpdated": "2026-02-13T23:29:43.919Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T08:32:04.162Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-08T09:29:37.134Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T22:32:09.566Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-13T23:29:43.916Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 61,
+      "count": 62,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-12T17:57:38.908Z"
+      "lastSeen": "2026-02-13T23:29:43.917Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Nancy Guthrie connected to?",
     "What other organizations is Milford woman connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is ICE Agents connected to?",
     "What other organizations is Strafford, Mo., man connected to?",
     "Where did the Unknown allegedly go in North Minneapolis Shooting Investigation?",
-    "Where did the $220 million allegedly go in Cattle Fraud Scheme Investigation?"
+    "Where did the $220 million allegedly go in Cattle Fraud Scheme Investigation?",
+    "Where did the $0 allegedly go in FBI Investigation into Nancy Guthrie?",
+    "Where did the $0 allegedly go in Investigation into ICE Agents' False Testimony?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 918,
-    "articlesProcessed": 45750,
-    "redFlagsFound": 1104,
+    "totalScans": 919,
+    "articlesProcessed": 45800,
+    "redFlagsFound": 1106,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "law_enforcement_conduct",
+          "description": "Two federal agents have been accused of making false statements about a shooting incident in Minneapolis.",
+          "insight": "This incident raises concerns about the conduct of law enforcement officers and the potential for misconduct. Further investigation is needed to determine the extent of the misconduct and any potential cover-ups.",
+          "entities": [
+            "ICE agents",
+            "Minneapolis shooting"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "USA Today",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmxmQ21NYlFQYXN2VUdSZGd0bzNMRVJXSFFqTGJZVXV5OW44YUxNa2x4UlU1V0dQVlU3Rk9oSDFVa2pKT0VJdXdxZ3FQOXpJT3V4SXFFX1l2Nlh5YWtsV3haWmNhZzNOVzN1QTI2d2MtLWlvYWVyQ0hXc3VNV0piOGxLUEtxQ1dzNW85N1NKSVFEUklyOW1MOVBMSURvbUlBaV8xcDhDcmtoRWo1c3hRUEZB"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Nancy Guthrie investigation?",
-        "What other organizations is Tim Walz connected to?",
-        "What specific allegations exist against Tim Walz?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Nancy Guthrie connected to?",
+        "What other organizations is Milford woman connected to?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T22:32:09.566Z",
-  "lastUpdated": "2026-02-13T22:32:09.567Z"
+  "lastReflection": "2026-02-13T23:29:43.916Z",
+  "lastUpdated": "2026-02-13T23:29:43.917Z"
 }
