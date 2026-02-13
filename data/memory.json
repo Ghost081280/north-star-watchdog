@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T16:28:51.977Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-07T17:25:21.841Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T10:38:20.538Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-13T11:31:17.850Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Josh Hawley connected to?",
-    "Where did the $3.8M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $100K allegedly go in Clermont County childcare center fraud?",
     "What other organizations is Minnesota AG Ellison connected to?",
     "Where did the $150K allegedly go in Minnesota childcare fraud investigation?",
@@ -558,7 +556,9 @@
     "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program fraud?",
     "Where did the N/A allegedly go in Nancy Guthrie investigation?",
     "What other organizations is Tim Walz connected to?",
-    "What specific allegations exist against Tim Walz?"
+    "What specific allegations exist against Tim Walz?",
+    "What specific allegations exist against Donald Trump?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 907,
-    "articlesProcessed": 45200,
-    "redFlagsFound": 1091,
+    "totalScans": 908,
+    "articlesProcessed": 45250,
+    "redFlagsFound": 1093,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "The FBI is investigating the disappearance of Nancy Guthrie",
+          "insight": "This suggests potential involvement of federal agencies in investigating crimes in Minnesota.",
+          "entities": [
+            "FBI",
+            "Nancy Guthrie"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "NBC News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZWZ2Rnh4VVJfMmxWSG0xVC1SWVptWUZYZ0p3UkxuQ1E5dHh3MVprMXl2VXVtWUVKNExhVEVmRFlIWEJvS09yNTVXelZwVWJwRHg3bVFRMHlDUFcybkhwRFV0WTFEelUwVjJEQWY2MEpsT0p4RmZNVXdpVXRERkdYRXhaY0tZRnpCMm9jSzBETEtCa0ozWkdsZ05jOVlMUDRFbXF3OU5tbktFR2Q5Z1YyeWhXUQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Waterford man connected to?",
-        "Where did the $1B allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Josh Hawley connected to?"
+        "What other organizations is Josh Hawley connected to?",
+        "Where did the $3.8M allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $100K allegedly go in Clermont County childcare center fraud?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T10:38:20.538Z",
-  "lastUpdated": "2026-02-13T10:38:20.539Z"
+  "lastReflection": "2026-02-13T11:31:17.850Z",
+  "lastUpdated": "2026-02-13T11:31:17.851Z"
 }
