@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T05:02:44.030Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T07:37:42.980Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T20:37:17.668Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-13T21:34:24.943Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program Fraud?",
-    "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program fraud?",
     "Where did the N/A allegedly go in Nancy Guthrie investigation?",
     "What other organizations is Tim Walz connected to?",
     "What specific allegations exist against Tim Walz?",
@@ -558,7 +556,9 @@
     "Where did the $7.8M allegedly go in Feeding Our Future case?",
     "What other organizations is Salim Said connected to?",
     "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
-    "Where did the N/A allegedly go in ICE officer investigation?"
+    "Where did the N/A allegedly go in ICE officer investigation?",
+    "What other organizations is ICE officers connected to?",
+    "Where did the $220 million allegedly go in $220 million cattle fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 916,
-    "articlesProcessed": 45650,
-    "redFlagsFound": 1102,
+    "totalScans": 917,
+    "articlesProcessed": 45700,
+    "redFlagsFound": 1103,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
-        "Where did the $600 million allegedly go in Child Care Fraud Investigation?",
-        "What specific allegations exist against No specific individual?"
+        "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program Fraud?",
+        "Where did the $3.5M allegedly go in Minnesota Housing Stabilization Program fraud?",
+        "Where did the N/A allegedly go in Nancy Guthrie investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T20:37:17.668Z",
-  "lastUpdated": "2026-02-13T20:37:17.669Z"
+  "lastReflection": "2026-02-13T21:34:24.943Z",
+  "lastUpdated": "2026-02-13T21:34:24.944Z"
 }
