@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential shutdown of Department of Homeland Security (DHS) due to funding issues",
+      "insight": "This could have significant impacts on various services and agencies under DHS, including law enforcement and cybersecurity efforts.",
+      "entities": [
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNm5wXzVoV3hSTkRDaVhMUkVSd3RKSmtISVFMQVpfR1ZNM2JQNEgyOEg5TXpwWllXSHozQ1laNkUzdm0xVEtzTllPM0tmRE85UEVsdU1KODE3b0pRZHpRRF95cHlERGs2T0RHWlQ1VVE2UDdTWk1ob3htVl9hcjRpdDFHS25lenJqTWhNT2N6ZFZvV1UyVXhja0FDSGs3RWfSAaQBQVVfeXFMTVpCa3p1SWZYWVJ6VUEtREg3cUtJT3dSekx6SXkzb2w5TjRhN3BWbUFNXzNnc24zZHBUeDZqV3VXQXlsazNVTU44c1J0NE1KaXprN3M2TDQxTHdBeEU2R3lEVkZCbzFPeDNuVzhZMDB5bURvZHdxb1ZmR2REa05QMzBOQld1TUNjMkd6V3FySHRyWVpBQWdKMzdkRmMxNnYyd2NycVo",
+      "id": "rf-1771008319513-2golt7pv1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T18:45:19.510Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI is investigating the kidnapping of Nancy Guthrie, and lawmakers are probing nationwide child care fraud.",
       "insight": "I notice a pattern of federal investigations into crimes that affect vulnerable populations, such as children and working families. I recommend further investigation into the childcare fraud cases to identify potential connections and patterns.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-13T17:39:51.766Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Kidnapping case",
@@ -959,39 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T08:40:58.873Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota's Department of Human Services is under scrutiny for alleged mismanagement and backdating paperwork",
-      "insight": "Patterns of potential fraud and mismanagement in state programs, particularly in the Department of Human Services. This warrants further investigation into the extent of the issue and potential connections to other state programs.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Times of India",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUVBUMzVmSlpObUs2ZWtaeEhxU2lzYjFtQlpFRU01V0phQmczNW9NdS1TekpVTG1Xamg3UDI3VzZ0Y1A2ZGZDaW1PTVdYWWU1OWVfWUplb1RmVHd0b2g4ZTBzeGRpSE1vQkE1bzdDNE9sRFVnVFV0STRPNnkwWnctQkVqOERVQ1lIZGtYbkptUXdpTUY0T25BQmxwTDlsbnN4RHFwRFZwaXZOMFN6Z3ZuUDVHeWxpNnZFSlhoQTNxMmpzeWptUmRVRGtRdnR4a1h2bnNwbW9hTEZjanlFZkVvRnZlZVZqZ3htVjNQbU9ZUTE2eTJrOTVuU09I",
-      "id": "rf-1770274653982-r2fqlcuuu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T06:57:33.979Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T17:39:51.766Z"
+  "lastUpdated": "2026-02-13T18:45:19.510Z"
 }

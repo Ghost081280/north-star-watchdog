@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T22:24:41.853Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-07T23:28:53.467Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T17:39:51.764Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-13T18:45:19.508Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Minnesota ICE Drawdown investigation?",
     "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
     "Where did the $600 million allegedly go in Child Care Fraud Investigation?",
     "What specific allegations exist against No specific individual?",
@@ -558,7 +557,8 @@
     "What other organizations is Waterford man connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping?",
     "Where did the Unknown allegedly go in Childcare fraud investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie kidnapping investigation?"
+    "Where did the Unknown allegedly go in Nancy Guthrie kidnapping investigation?",
+    "Where did the $7.8M allegedly go in Feeding Our Future case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 913,
-    "articlesProcessed": 45500,
-    "redFlagsFound": 1100,
+    "totalScans": 914,
+    "articlesProcessed": 45550,
+    "redFlagsFound": 1101,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Nancy Guthrie investigation?",
         "Where did the Not specified allegedly go in Minnesota ICE Drawdown investigation?",
-        "Where did the $0 allegedly go in Nancy Guthrie Investigation?"
+        "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
+        "Where did the $600 million allegedly go in Child Care Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T17:39:51.764Z",
-  "lastUpdated": "2026-02-13T17:39:51.765Z"
+  "lastReflection": "2026-02-13T18:45:19.508Z",
+  "lastUpdated": "2026-02-13T18:45:19.509Z"
 }
