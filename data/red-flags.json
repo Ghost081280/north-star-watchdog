@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Arizona sheriff's office is accused of blocking FBI access to evidence in the Nancy Guthrie investigation",
+      "insight": "This could indicate a potential issue with the sheriff's office's handling of evidence, and further investigation is needed to determine the cause and impact",
+      "entities": [
+        "Arizona sheriff's office",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WKZO",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMmV6SkRpTkZzYnE0WTN0MjVZdUxOU1B4OHo0bk5Mcl8wZVVkczRkdElCalZGUTQ1WkY1T081bVRFMjlLZ0NWbWdWb3ZPQ0ZRVWxMSEZRenBLdm4zRlNUTDNXel8xNEFlOG5hMGNQUmpUdFE4ZzRVNklnQi1NZXB2Zi1NTlc3R0xReG1xTjBQZ1I1VlRpX1V3eS1ScUNYa0RHY2ZDVzU5QTNLSF9XXzMtb3hPZHg3M05jQ21CVk9sQQ",
+      "id": "rf-1770962336548-0sra3ukxy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-13T05:58:56.545Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The 'Feeding Our Future' program has been terminated amid allegations of fraud",
       "insight": "This termination suggests that there may be significant evidence of wrongdoing, and further investigation is warranted to uncover the extent of the fraud and identify those responsible.",
@@ -958,31 +978,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-04T18:46:58.535Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "700 immigration agents to be withdrawn from Minnesota",
-      "insight": "Withdrawal of immigration agents may impact state's immigration enforcement and potentially create a security gap.",
-      "entities": [
-        "Trump administration",
-        "Minnesota"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "WSAU",
-      "sourceUrl": "https://wsaunews.com/trump-to-draw-down-700-immigration-agents-in-minnesota",
-      "id": "rf-1770223500953-2vulvgxfd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-04T16:45:00.950Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-13T04:52:26.745Z"
+  "lastUpdated": "2026-02-13T05:58:56.545Z"
 }

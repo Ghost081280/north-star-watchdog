@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-07T11:20:51.562Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-07T12:44:24.788Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-13T04:52:26.743Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-13T05:58:56.543Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping Case?",
     "What specific allegations exist against Josh Hawley?",
     "What specific allegations exist against Minnesota AG?",
     "Where did the $1B allegedly go in Feeding Our Future fraud investigation?",
@@ -558,7 +556,9 @@
     "Where did the $600 Million allegedly go in Minnesota Child Care Fraud?",
     "What other organizations is Edmond man connected to?",
     "Where did the Not specified allegedly go in Nancy Guthrie investigation?",
-    "Where did the Not specified allegedly go in Minnesota ICE Drawdown investigation?"
+    "Where did the Not specified allegedly go in Minnesota ICE Drawdown investigation?",
+    "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
+    "Where did the $600 million allegedly go in Child Care Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 902,
-    "articlesProcessed": 44950,
-    "redFlagsFound": 1086,
+    "totalScans": 903,
+    "articlesProcessed": 45000,
+    "redFlagsFound": 1088,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $1B allegedly go in Minnesota Child Care Assistance Program Fraud?",
-        "What other organizations is Keith Ellison connected to?"
+        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
+        "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping Case?",
+        "What specific allegations exist against Josh Hawley?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T04:52:26.743Z",
-  "lastUpdated": "2026-02-13T04:52:26.744Z"
+  "lastReflection": "2026-02-13T05:58:56.543Z",
+  "lastUpdated": "2026-02-13T05:58:56.544Z"
 }
