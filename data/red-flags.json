@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "Untruthful statements by government officials",
+      "description": "Two ICE officers are under investigation for making untruthful statements about a shooting in north Minneapolis.",
+      "insight": "This case raises concerns about the integrity of law enforcement officials and their accountability.",
+      "entities": [
+        "ICE officers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/ice-officers-suspended-after-making-untruthful-statements-about-shooting/2026-02-14-6d5d5c7c-1f4d-45d7-85dc-2f5c4a5a6f6c_story.html",
+      "id": "rf-1771054385978-eog29gtxp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T07:33:05.975Z",
+      "isNew": true
+    },
+    {
+      "type": "Bribery probe",
+      "description": "Hawaii attorney general is vowing full accountability in a local bribery probe.",
+      "insight": "This investigation may uncover more widespread corruption in Hawaii.",
+      "entities": [
+        "Hawaii attorney general"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "Courthouse News",
+      "sourceUrl": "https://www.courthousenews.com/hawaii-attorney-general-vows-full-accountability-in-local-bribery-probe/",
+      "id": "rf-1771054385978-0ctq62lva",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T07:33:05.975Z",
+      "isNew": true
+    },
+    {
       "type": "government shutdown",
       "description": "The partial US government shutdown throws Congress into turmoil.",
       "insight": "This shutdown could have significant impacts on various government agencies and services.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T06:42:40.563Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud investigation",
@@ -37,7 +75,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T06:42:40.563Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "untruthful statements",
@@ -939,59 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-06T17:41:04.738Z",
       "isNew": false
-    },
-    {
-      "type": "discrimination claims",
-      "description": "Nike faces federal scrutiny over discrimination claims",
-      "insight": "This could lead to further investigation into Nike's practices",
-      "entities": [
-        "Nike"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQODQxT2k4UmZ6LXBpTEg3aFN4WmxfbDhaY2ZwUzgwdkphbWsxcDZab1VJVUc4d1llaTF0TlJxMFpLTUlFQjR1aDltYjlCUlFjVHd5LVJ2Z2RvdXU0eElDYWdGRFpZQWRKOE4tTjA0ekFpUG9FRENDNUJNdFRTOTVGMWwtcU5PN05zbjJtalZrR3A3TDkwTkpVRmdNRQ?oc=5",
-      "id": "rf-1770399664742-n8wgj9vm2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-06T17:41:04.738Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Programs terminating due to lack of funding",
-      "insight": "This could indicate a larger issue with program sustainability and funding.",
-      "entities": [
-        "child care programs"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaUdUMEEyQ3I1MXo3TVR5VU5CM1lHaFNnMmJORURLSVIwY2lWOE9CSWFiNDJzX2dvOVc1VTFTd2h0N1hYY3BhYldOU3JlNE00eFhEOEJpS2xybHB4a2tFaWJ2R1lWWmdzYXA4eUtiZWxjaVhfVUJMSG94Y29GdXV1NkdkblFxcGNMcnhRTjd1bTNrZTJDUEhvRmNyZUJoa1ZvWEdXQkpWWVZiUGw2TTNKUFNQNTJ3U3hadjFTc1JiRUU2OFRSd3p6RXRseEZPTHB0QWtlVkVCQ0VmV1U",
-      "id": "rf-1770357192791-jo64a6faz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-06T05:53:12.788Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T06:42:40.563Z"
+  "lastUpdated": "2026-02-14T07:33:05.975Z"
 }

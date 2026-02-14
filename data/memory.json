@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T13:44:06.088Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T14:26:41.459Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-14T06:42:40.561Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-14T07:33:05.973Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Salim Said connected to?",
-    "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
-    "Where did the N/A allegedly go in ICE officer investigation?",
-    "What other organizations is ICE officers connected to?",
     "Where did the $220 million allegedly go in $220 million cattle fraud scheme?",
     "What other organizations is ICE Agents connected to?",
     "What other organizations is Strafford, Mo., man connected to?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
     "Where did the Unknown allegedly go in ICE shooting investigation?",
     "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against No specific individuals charged?"
+    "What specific allegations exist against No specific individuals charged?",
+    "What other organizations is Not specified connected to?",
+    "What specific allegations exist against Not specified?",
+    "Where did the $2.8M allegedly go in Feeding Our Future?",
+    "Where did the $10B allegedly go in Gateway Tunnel?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 923,
-    "articlesProcessed": 46000,
-    "redFlagsFound": 1111,
+    "totalScans": 924,
+    "articlesProcessed": 46050,
+    "redFlagsFound": 1113,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $7.8M allegedly go in Feeding Our Future case?",
         "What other organizations is Salim Said connected to?",
-        "Where did the $7.8M allegedly go in Feeding Our Future investigation?"
+        "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
+        "Where did the N/A allegedly go in ICE officer investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-14T06:42:40.561Z",
-  "lastUpdated": "2026-02-14T06:42:40.561Z"
+  "lastReflection": "2026-02-14T07:33:05.973Z",
+  "lastUpdated": "2026-02-14T07:33:05.974Z"
 }
