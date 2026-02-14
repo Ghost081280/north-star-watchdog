@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "government shutdown",
+      "description": "The partial US government shutdown throws Congress into turmoil.",
+      "insight": "This shutdown could have significant impacts on various government agencies and services.",
+      "entities": [
+        "Congress",
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "South China Morning Post",
+      "sourceUrl": "https://www.scmp.com/rss/world/views/2155331/partial-us-government-shutdown-throws-congress-turmoil-again",
+      "id": "rf-1771051360566-wwmjg8l5m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T06:42:40.563Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud investigation",
+      "description": "Oklahoma marijuana business under investigation for fraud following massive fire.",
+      "insight": "This investigation could uncover potential fraud and misconduct in the marijuana industry.",
+      "entities": [
+        "Oklahoma marijuana business"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Moore County News-Press",
+      "sourceUrl": "https://www.moorecountymewspress.com/rankin/o-oklahoma-marijuana-business-under-investigation-for-fraud-following-massive-fire",
+      "id": "rf-1771051360566-c67cpl61d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T06:42:40.563Z",
+      "isNew": true
+    },
+    {
       "type": "untruthful statements",
       "description": "Two ICE officers are under investigation for making untruthful statements about a shooting.",
       "insight": "This raises concerns about the integrity of the investigation and the potential for a cover-up. Further investigation is needed to determine the extent of the untruthful statements and the motivations behind them.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T05:43:05.841Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -938,59 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-06T05:53:12.788Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Several shell companies have been linked to the Trump administration, raising concerns about money laundering and other illicit activities.",
-      "insight": "This could be a sign of a larger effort to hide financial transactions and avoid detection.",
-      "entities": [
-        "Trump Administration",
-        "shell companies"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Newsweek",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSm1IVjVkZzV6bG9mYVBkUlVKVEV2WXRmUUMzLTUzWTJrd0hucktnZmVmZGV4dUhCLTJFemV4TXVPRDFjUDB2WUNEOWV5STdxRlBYZVowZDRyNjl2aTRiNWtVSGZ4a1ZqZGlnMjBRZDNXSFVQQWRiZlY4R0JQMnQ5ZTI2b0ZncE5mM0ZMTmdMQm9NYV9pRjdDcldmeXlseEJyQzdPVVFUVzFaWGNRN0E",
-      "id": "rf-1770333736803-kiy1h2xu5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T23:22:16.799Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged misconduct",
-      "description": "Allegations against a former Raleigh police officer accused of sex crimes",
-      "insight": "This case may indicate a pattern of misconduct within law enforcement agencies, requiring further investigation.",
-      "entities": [
-        "former Raleigh police officer"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeDE4eVNvTldYLWFnUjMyQ0llQmhoa0Y5QzJ1MTE5WElERUI1WHZyS2VVRlZ5VDZGT2hsbFlWSzBhcUkzN2p4ZDA4Z2tzbjVlXzhqSzRSY2FvZ0I4R3I4UjVWY1RhZnlzaHZPazI4MHplX0FZODFRdDdOeTU4MUpWNXBZeUpCMm05eUHSAYoBQVVfeXFMTlAtVk5BQy14cGI1RWJwTlR0dkF0SmVkdEhTYmYtZTJPYUFSZ1RzQk5ITWZrajY4OS1tQl9wdG0yQ2FoZ1JQUDJ2MVdDMDhiQzZLanVWMXVvTVQ0WnpYRDM3UlRaQXB4SmxwaWF4NVdQYXBZeldMUTBpUDh3NWdUbVgxWkVJcV9DWnZB?oc=5",
-      "id": "rf-1770323565641-7ukmh6oin",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T20:32:45.638Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T05:43:05.841Z"
+  "lastUpdated": "2026-02-14T06:42:40.563Z"
 }
