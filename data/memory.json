@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T10:25:30.307Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-08T11:22:33.049Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-14T01:54:43.098Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-14T04:09:53.345Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
-    "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?",
     "What other organizations is Waterford man connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping?",
     "Where did the Unknown allegedly go in Childcare fraud investigation?",
@@ -558,7 +555,10 @@
     "Where did the $220 million allegedly go in Cattle Fraud Scheme Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into Nancy Guthrie?",
     "Where did the $0 allegedly go in Investigation into ICE Agents' False Testimony?",
-    "Where did the $100,000 allegedly go in Nancy Guthrie Investigation?"
+    "Where did the $100,000 allegedly go in Nancy Guthrie Investigation?",
+    "What other organizations is Feeding Our Future defendant connected to?",
+    "Where did the Undisclosed allegedly go in Feeding Our Future investigation?",
+    "Where did the Undisclosed allegedly go in ICE investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 920,
-    "articlesProcessed": 45850,
-    "redFlagsFound": 1107,
+    "totalScans": 921,
+    "articlesProcessed": 45900,
+    "redFlagsFound": 1108,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Milford woman connected to?",
         "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
-        "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-14T01:54:43.098Z",
-  "lastUpdated": "2026-02-14T01:54:43.099Z"
+  "lastReflection": "2026-02-14T04:09:53.345Z",
+  "lastUpdated": "2026-02-14T04:09:53.346Z"
 }

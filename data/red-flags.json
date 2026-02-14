@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Federal investigation into Feeding Our Future for alleged wire fraud and money laundering",
+      "insight": "The investigation into Feeding Our Future raises concerns about the potential for widespread fraud and corruption in government programs. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/federal-government-plans-to-seize-luxury-items-from-convicted-feeding-our-future-defendant/600000013/",
+      "id": "rf-1771042193350-9v3jiwdja",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T04:09:53.347Z",
+      "isNew": true
+    },
+    {
       "type": "Untruthful statements",
       "description": "ICE agents are under investigation for making untruthful statements about a shooting in Minneapolis.",
       "insight": "This raises concerns about the integrity of federal agents and the potential for cover-ups. Further investigation is needed to determine the extent of the issue.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T01:54:43.100Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -963,40 +982,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T19:37:15.054Z",
       "isNew": false
-    },
-    {
-      "type": "possible discrimination",
-      "description": "Nike under investigation for allegedly discriminating against white employees.",
-      "insight": "This could indicate a larger issue with diversity and inclusion policies at Nike, potentially leading to further investigations and scrutiny.",
-      "entities": [
-        "Nike"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple News Sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNejlWTS1iaVB0MFZQbXFfdkZYajV6NXVQN1F0VVdZMmk1OG5xV2JvYkY2RXY5Q3Qyd0JuMV9ubWZaMTIyRUplYndhLTFnRFZPSThuVjZZQXlRWktfRGxBTmdaUFRtRUNyV2lOalp5RlpBZXIyMGJhbXV3S1JQdldyLVN5aW9fMTUxWTgtY2JremRxZTVQMkM1ZzNYRTlGb0lkR1J3",
-      "id": "rf-1770313619754-1im7vj4sw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T17:46:59.750Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T01:54:43.100Z"
+  "lastUpdated": "2026-02-14T04:09:53.347Z"
 }
