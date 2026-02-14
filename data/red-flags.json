@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "untruthful statements",
+      "description": "ICE officers made untruthful statements about a shooting, which is a red flag for potential corruption or cover-up.",
+      "insight": "This incident raises concerns about the integrity of ICE and the need for further investigation into the shooting and the officers' actions.",
+      "entities": [
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/news/nation/2026/02/14/ice-officers-suspended-after-making-untruthful-statements-about-shooting/",
+      "id": "rf-1771064732327-ngke0lcxo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T10:25:32.323Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating various cases, including the Feeding Our Future and Nancy Guthrie cases.",
       "insight": "These investigations indicate potential wrongdoing by government officials and private individuals.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T09:29:41.263Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-07T07:31:00.352Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid vulnerabilities",
-      "description": "Outside audit finds recurring vulnerabilities with Minnesota Medicaid system.",
-      "insight": "The vulnerabilities in the Minnesota Medicaid system highlight the need for increased oversight and security measures to prevent fraud.",
-      "entities": [
-        "Minnesota Department of Human Services",
-        "Medicaid"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/outside-audit-finds-recurring-vulnerabilities-with-minnesota-medicaid-system",
-      "id": "rf-1770442880086-znygs8arm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-07T05:41:20.082Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T09:29:41.263Z"
+  "lastUpdated": "2026-02-14T10:25:32.323Z"
 }
