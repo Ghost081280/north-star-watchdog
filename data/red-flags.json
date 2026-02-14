@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "Large-scale fraud scheme involving Feeding Our Future",
+      "insight": "The Feeding Our Future case indicates a large-scale fraud scheme that may be connected to other similar cases. Further investigation is needed to uncover the full extent of the scheme and identify other potential defendants.",
+      "entities": [
+        "Salim Said",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Federal prosecutors",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9uNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc?oc=5",
+      "id": "rf-1771096998179-x1xxj2v0v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T19:23:18.175Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing, including the Feeding Our Future case and the Nancy Guthrie investigation.",
       "insight": "These investigations indicate a potential for widespread fraud and corruption.",
@@ -959,29 +979,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-08T08:32:04.164Z",
       "isNew": false
-    },
-    {
-      "type": "obstruction_of_justice",
-      "description": "Trump administration officials ordered prosecutors to stop investigating the Renee Good shooting",
-      "insight": "This raises concerns about the Trump administration's willingness to interfere with investigations and potentially obstruct justice. Further investigation is needed to determine the extent of their involvement.",
-      "entities": [
-        "Trump Administration Officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Newsweek",
-      "sourceUrl": "https://newsweek.com/fbi-investigation-into-renee-good-shooting-stalled-over-key-concern-1751219",
-      "id": "rf-1770526964035-2vn84rh74",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-08T05:02:44.032Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T18:32:56.260Z"
+  "lastUpdated": "2026-02-14T19:23:18.175Z"
 }
