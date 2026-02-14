@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T09:29:37.134Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T10:25:30.307Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-13T23:29:43.916Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-14T01:54:43.098Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Milford woman connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in North Minneapolis Shooting Investigation?",
     "Where did the $220 million allegedly go in Cattle Fraud Scheme Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into Nancy Guthrie?",
-    "Where did the $0 allegedly go in Investigation into ICE Agents' False Testimony?"
+    "Where did the $0 allegedly go in Investigation into ICE Agents' False Testimony?",
+    "Where did the $100,000 allegedly go in Nancy Guthrie Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 919,
-    "articlesProcessed": 45800,
-    "redFlagsFound": 1106,
+    "totalScans": 920,
+    "articlesProcessed": 45850,
+    "redFlagsFound": 1107,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "law_enforcement_conduct",
-          "description": "Two federal agents have been accused of making false statements about a shooting incident in Minneapolis.",
-          "insight": "This incident raises concerns about the conduct of law enforcement officers and the potential for misconduct. Further investigation is needed to determine the extent of the misconduct and any potential cover-ups.",
-          "entities": [
-            "ICE agents",
-            "Minneapolis shooting"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "USA Today",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmxmQ21NYlFQYXN2VUdSZGd0bzNMRVJXSFFqTGJZVXV5OW44YUxNa2x4UlU1V0dQVlU3Rk9oSDFVa2pKT0VJdXdxZ3FQOXpJT3V4SXFFX1l2Nlh5YWtsV3haWmNhZzNOVzN1QTI2d2MtLWlvYWVyQ0hXc3VNV0piOGxLUEtxQ1dzNW85N1NKSVFEUklyOW1MOVBMSURvbUlBaV8xcDhDcmtoRWo1c3hRUEZB"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Nancy Guthrie connected to?",
-        "What other organizations is Milford woman connected to?"
+        "What other organizations is Milford woman connected to?",
+        "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
+        "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-13T23:29:43.916Z",
-  "lastUpdated": "2026-02-13T23:29:43.917Z"
+  "lastReflection": "2026-02-14T01:54:43.098Z",
+  "lastUpdated": "2026-02-14T01:54:43.099Z"
 }
