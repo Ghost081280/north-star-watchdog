@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T21:25:49.340Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-08T22:25:30.625Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-14T14:26:01.545Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-14T15:23:52.484Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 931,
-    "articlesProcessed": 46400,
+    "totalScans": 932,
+    "articlesProcessed": 46450,
     "redFlagsFound": 1119,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into ICE Agents' False Testimony?",
         "Where did the $100,000 allegedly go in Nancy Guthrie Investigation?",
-        "What other organizations is Feeding Our Future defendant connected to?"
+        "What other organizations is Feeding Our Future defendant connected to?",
+        "Where did the Undisclosed allegedly go in Feeding Our Future investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-14T14:26:01.545Z",
-  "lastUpdated": "2026-02-14T14:26:01.546Z"
+  "lastReflection": "2026-02-14T15:23:52.484Z",
+  "lastUpdated": "2026-02-14T15:23:52.485Z"
 }
