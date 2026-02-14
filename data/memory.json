@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T14:26:41.459Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T15:25:18.163Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-14T07:33:05.973Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-14T08:30:40.741Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $220 million allegedly go in $220 million cattle fraud scheme?",
-    "What other organizations is ICE Agents connected to?",
     "What other organizations is Strafford, Mo., man connected to?",
     "Where did the Unknown allegedly go in North Minneapolis Shooting Investigation?",
     "Where did the $220 million allegedly go in Cattle Fraud Scheme Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $2.8M allegedly go in Feeding Our Future?",
-    "Where did the $10B allegedly go in Gateway Tunnel?"
+    "Where did the $10B allegedly go in Gateway Tunnel?",
+    "Where did the $100,000 allegedly go in Nancy Guthrie investigation?",
+    "Where did the None allegedly go in ICE officers investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 924,
-    "articlesProcessed": 46050,
-    "redFlagsFound": 1113,
+    "totalScans": 925,
+    "articlesProcessed": 46100,
+    "redFlagsFound": 1114,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Salim Said connected to?",
-        "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
-        "Where did the N/A allegedly go in ICE officer investigation?"
+        "Where did the $220 million allegedly go in $220 million cattle fraud scheme?",
+        "What other organizations is ICE Agents connected to?",
+        "What other organizations is Strafford, Mo., man connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-14T07:33:05.973Z",
-  "lastUpdated": "2026-02-14T07:33:05.974Z"
+  "lastReflection": "2026-02-14T08:30:40.741Z",
+  "lastUpdated": "2026-02-14T08:30:40.741Z"
 }

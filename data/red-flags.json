@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a case involving DNA from someone other than Nancy Guthrie, which was collected from her property.",
+      "insight": "This new development raises concerns about the handling of evidence in the case and potential misconduct by law enforcement. Further investigation is needed to determine the significance of this finding.",
+      "entities": [
+        "Nancy Guthrie",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC 6 South Florida",
+      "sourceUrl": "https://www.nbcmiami.com/news/local/fbi-releases-new-details-about-suspect-in-nancy-guthrie-investigation/",
+      "id": "rf-1771057840746-753dbqqr5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T08:30:40.742Z",
+      "isNew": true
+    },
+    {
       "type": "Untruthful statements by government officials",
       "description": "Two ICE officers are under investigation for making untruthful statements about a shooting in north Minneapolis.",
       "insight": "This case raises concerns about the integrity of law enforcement officials and their accountability.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T07:33:05.975Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Bribery probe",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T07:33:05.975Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "government shutdown",
@@ -958,39 +978,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-07T01:52:31.771Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "Gain Federal Credit Union experienced a data breach",
-      "insight": "This could lead to further investigation into data security practices",
-      "entities": [
-        "Gain Federal Credit Union"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Claim Depot",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeHd1MUVmVnRpa0N3WFNKQmZzektuaE5MMDhNSDN6aWZDUkx0U0JQc0s3Sktnbk1iWFp5QmJrYktaQmhIdjhDWERlUVZobFl1QkhwQVBxc3lrUEo3RVJQb1h3WndRQVVpM0FvZml6T3M0cXowZmhKWWVqWnYtMkFYNVloMzVyQUpZR3UyeQ?oc=5",
-      "id": "rf-1770399664742-8pt5qsu5u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-06T17:41:04.738Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
+    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T07:33:05.975Z"
+  "lastUpdated": "2026-02-14T08:30:40.742Z"
 }
