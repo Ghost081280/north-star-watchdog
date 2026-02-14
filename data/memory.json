@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-08T11:22:33.049Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-08T12:45:41.792Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-14T04:09:53.345Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-14T05:43:05.838Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Waterford man connected to?",
-    "Where did the Unknown allegedly go in Nancy Guthrie kidnapping?",
-    "Where did the Unknown allegedly go in Childcare fraud investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie kidnapping investigation?",
     "Where did the $7.8M allegedly go in Feeding Our Future case?",
     "What other organizations is Salim Said connected to?",
     "Where did the $7.8M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +554,11 @@
     "Where did the $100,000 allegedly go in Nancy Guthrie Investigation?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the Undisclosed allegedly go in Feeding Our Future investigation?",
-    "Where did the Undisclosed allegedly go in ICE investigation?"
+    "Where did the Undisclosed allegedly go in ICE investigation?",
+    "What other organizations is Nancy Guthrie connected to?",
+    "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
+    "Where did the Unknown allegedly go in ICE shooting investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 921,
-    "articlesProcessed": 45900,
-    "redFlagsFound": 1108,
+    "totalScans": 922,
+    "articlesProcessed": 45950,
+    "redFlagsFound": 1109,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nancy Guthrie kidnapping case?",
-        "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the Unknown allegedly go in Nancy Guthrie Kidnapping?"
+        "What other organizations is Waterford man connected to?",
+        "Where did the Unknown allegedly go in Nancy Guthrie kidnapping?",
+        "Where did the Unknown allegedly go in Childcare fraud investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-14T04:09:53.345Z",
-  "lastUpdated": "2026-02-14T04:09:53.346Z"
+  "lastReflection": "2026-02-14T05:43:05.838Z",
+  "lastUpdated": "2026-02-14T05:43:05.839Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "untruthful statements",
+      "description": "Two ICE officers are under investigation for making untruthful statements about a shooting.",
+      "insight": "This raises concerns about the integrity of the investigation and the potential for a cover-up. Further investigation is needed to determine the extent of the untruthful statements and the motivations behind them.",
+      "entities": [
+        "ICE officers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/news/nation/wp/2026/02/14/ice-officers-suspended-after-making-untruthful-statements-about-shooting/",
+      "id": "rf-1771047785844-38rau5pqp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T05:43:05.841Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "Federal investigation into Feeding Our Future for alleged wire fraud and money laundering",
       "insight": "The investigation into Feeding Our Future raises concerns about the potential for widespread fraud and corruption in government programs. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T04:09:53.347Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Untruthful statements",
@@ -958,44 +977,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-05T20:32:45.638Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Minnesota DHS is investigating protests in the state, which could lead to program terminations.",
-      "insight": "The investigations into protests could lead to increased scrutiny of public officials and business practices.",
-      "entities": [
-        "Minnesota DHS",
-        "protesters"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORHdnb0lPMG1lTnJGTUhrdG9zc19nUS1jRGx2VElVaTBiaE1NaTQ5a0ZJMkE0TVFVRDdUVXg1ODRDVXVtcjAwckNVUVFsa0FDQ0N0Nlp2d1NIY0FCcnlXYlZqX28ySFBlQ0o3TWtReXBLREFZTUNGcE15UkZJalNpVkJ0bnh1MXlteDZKVEp5SG9DVENN",
-      "searches": [
-        "program termination",
-        "Minnesota DHS"
-      ],
-      "id": "rf-1770320235058-fo9sswzyy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-05T19:37:15.054Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T04:09:53.347Z"
+  "lastUpdated": "2026-02-14T05:43:05.841Z"
 }
