@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating various cases, including the Feeding Our Future and Nancy Guthrie cases.",
+      "insight": "These investigations indicate potential wrongdoing by government officials and private individuals.",
+      "entities": [
+        "FBI",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTEUyd1dLMTlJUWEzMGFTbEo1SkVRWHFRZmVVbzZHUVZ6OTZ4cFpTQk51UXJPeXNKTTBfbUpQSkxqcENiV2ZhWHBuWmF2NThfM3cybnJtRWFMOUhJTDBHLU5wVGNLMWZqVVgwXzRuemxPSFY3eWU3RUt0dnpFZW9XS1MwN1c4LThVNVFoSFNPVTh0YUtSSmFFWC1NUHJGSjk3bkMtMXRGSjlUbWNwSjBHbG0zdnlIVWVzQWdpd3JGYmdHWTcxa2c",
+      "id": "rf-1771061381267-dsu4ktec6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T09:29:41.263Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating a case involving DNA from someone other than Nancy Guthrie, which was collected from her property.",
       "insight": "This new development raises concerns about the handling of evidence in the case and potential misconduct by law enforcement. Further investigation is needed to determine the significance of this finding.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T08:30:40.742Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Untruthful statements by government officials",
@@ -959,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-07T05:41:20.082Z",
       "isNew": false
-    },
-    {
-      "type": "program vulnerabilities",
-      "description": "Recurring vulnerabilities in the Minnesota Medicaid system, including billing issues and lack of safeguards",
-      "insight": "I suspect that these vulnerabilities may be exploited by individuals or organizations to commit fraud, and further investigation is needed to identify the root causes and potential perpetrators.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Outside audit report",
-      "sourceUrl": "https://www.minnpost.com/state-government/2023/02/outside-audit-finds-recurring-vulnerabilities-in-minnesota-medicaid-system/",
-      "id": "rf-1770429151774-r81i9fxgh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-07T01:52:31.771Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,9 +991,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FEC",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T08:30:40.742Z"
+  "lastUpdated": "2026-02-14T09:29:41.263Z"
 }
