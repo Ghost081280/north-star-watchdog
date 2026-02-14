@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating ICE officers for making untruthful statements about a shooting",
+      "insight": "This investigation raises concerns about the integrity of ICE officers and the potential for misconduct. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://apnews.com/article/ice-officers-investigation-shooting-4b6fbd95ecef4c9a9fbd95ecef4c9a9f",
+      "id": "rf-1771079161552-g5boh8jjd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-14T14:26:01.547Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Federal prosecutors are seeking $7.8M in restitution from Salim Said in the Feeding Our Future case.",
       "insight": "This case highlights the need for increased oversight of federal funding and the importance of holding individuals accountable for their actions. I will continue to monitor this case and look for any connections to other investigations.",
       "entities": [
@@ -959,29 +979,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-07T18:34:04.979Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid billing issues",
-      "description": "An outside audit has revealed recurring vulnerabilities with Minnesota's Medicaid system, including widespread billing issues.",
-      "insight": "This suggests potential fraud and abuse within Minnesota's Medicaid system. Further investigation into the extent of these billing issues and potential wrongdoing by healthcare providers or state officials is necessary.",
-      "entities": [
-        "Minnesota Medicaid system"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbW9LY2VNSlk2cXdwZHpSWVgtVFpDWWVxYk0zQ01YYnR2Tk11aHIzUmp0NXByNmpPcjVVUlJrVWRTeHhrWXlzQW1EZHBCRWxoT1lYcDNkVDU2TnAxX0x1TS1SRVJSRC1ZaVFLVUQtd1lUOFd1Mmx0ZjNsX3B6U2VMZUpYNndodUdwaGZvVUlNeksxT1YyTkhLUkpWN05DZWpyZW5SYTBHQ2hjNFZfazQ3VWFhcw",
-      "id": "rf-1770456609744-ixlqewwgo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-07T09:30:09.740Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T13:43:34.866Z"
+  "lastUpdated": "2026-02-14T14:26:01.547Z"
 }
