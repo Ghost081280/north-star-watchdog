@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-09T20:03:19.582Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-09T21:38:05.496Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-15T07:37:53.227Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-15T08:31:25.154Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 945,
-    "articlesProcessed": 47100,
-    "redFlagsFound": 1129,
+    "totalScans": 946,
+    "articlesProcessed": 47150,
+    "redFlagsFound": 1131,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal investigation",
-          "description": "Multiple federal investigations are ongoing, including the Feeding Our Future case and the Epstein Case.",
-          "insight": "These investigations indicate a high level of fraud and corruption across various sectors.",
+          "type": "alleged fraud",
+          "description": "Federal prosecutors are seeking $7.8M in restitution from Salim Said in the Feeding Our Future case.",
+          "insight": "This indicates a significant alleged fraud case related to Feeding Our Future.",
           "entities": [
             "Salim Said",
-            "Thorbjorn Jagland"
+            "Feeding Our Future"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "Multiple sources",
-          "sourceUrl": "https://www.google.com/news/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9uNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc?oc=5"
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9nNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc"
         }
       ]
     },
@@ -622,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T07:37:53.227Z",
-  "lastUpdated": "2026-02-15T07:37:53.228Z"
+  "lastReflection": "2026-02-15T08:31:25.154Z",
+  "lastUpdated": "2026-02-15T08:31:25.155Z"
 }
