@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-09T23:36:25.356Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-10T02:13:39.321Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-15T10:25:21.911Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-15T11:21:40.144Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 948,
-    "articlesProcessed": 47250,
-    "redFlagsFound": 1134,
+    "totalScans": 949,
+    "articlesProcessed": 47300,
+    "redFlagsFound": 1135,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "financial restitution",
-          "description": "Federal prosecutors are seeking $7.8M in restitution from Salim Said in the Feeding Our Future case.",
-          "insight": "The significant amount of restitution sought in the Feeding Our Future case indicates a substantial alleged fraud scheme.",
-          "entities": [
-            "Salim Said",
-            "Federal prosecutors"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "5 EYEWITNESS NEWS",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9nNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future defendant connected to?",
-        "Where did the Undisclosed allegedly go in Feeding Our Future investigation?",
-        "Where did the Undisclosed allegedly go in ICE investigation?"
+        "Where did the Undisclosed allegedly go in ICE investigation?",
+        "What other organizations is Nancy Guthrie connected to?",
+        "Where did the Unknown allegedly go in Nancy Guthrie investigation?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T10:25:21.911Z",
-  "lastUpdated": "2026-02-15T10:25:21.911Z"
+  "lastReflection": "2026-02-15T11:21:40.144Z",
+  "lastUpdated": "2026-02-15T11:21:40.145Z"
 }
