@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Department of Homeland Security shutdown could affect ICE and Coast Guard operations",
+      "insight": "I suspect that the shutdown may lead to increased vulnerability in border security and immigration enforcement, which could be exploited by malicious actors. Further investigation is needed to determine the extent of the shutdown's impact.",
+      "entities": [
+        "Department of Homeland Security",
+        "ICE",
+        "Coast Guard"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/02/14/homeland-security-shutdown.html",
+      "id": "rf-1771197927189-7oxvp8jnv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T23:25:27.185Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation is underway into a proposed Muslim-centric development in North Texas, backed by Greg Abbott",
       "insight": "This investigation may be connected to larger patterns of fraud and corruption, particularly in the context of government contracts and development projects. Further research is needed to determine the scope and implications of this investigation.",
@@ -18,25 +39,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T20:25:04.242Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "$30 Million released after funding freeze for Gateway Hudson Tunnel",
-      "insight": "Funding issues and freezes could indicate larger financial management problems. Need to track and verify uses of funds.",
-      "entities": [
-        "Gateway Hudson Tunnel Project"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Gothamist",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZWdSZUp3NjlaZ0pyVzZUQjhscF8wQ20yMUJCS2ZoelJIanc4LVc1TGwzR3Z3ejVTWklHME9rZWdWLWxXWjFIR1Z0UC14VUdPYVZwaXN1SWhwZWNxc1hWQzNMSGZvenJRTmxnOXJCWUhiUW1pcFRiMlRxMDQtYmZlNWlwSF9PX0NRVW05VzFhenplZEgyT3BLTlJvRC1sSmhRLWpENXZGOGZPd09S",
-      "id": "rf-1771183465211-7dzw8g2zg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T19:24:25.208Z",
       "isNew": false
     },
     {
@@ -991,8 +993,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T22:22:31.997Z"
+  "lastUpdated": "2026-02-15T23:25:27.185Z"
 }
