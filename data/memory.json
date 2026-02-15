@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-10T10:00:24.914Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-10T11:04:30.145Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-02-15T16:28:34.381Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-15T17:25:07.083Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 62,
+      "count": 63,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-13T23:29:43.917Z"
+      "lastSeen": "2026-02-15T17:25:07.083Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in ICE shooting investigation?",
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against No specific individuals charged?",
     "What other organizations is Not specified connected to?",
@@ -558,7 +557,8 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Thorbjorn Jagland connected to?",
     "Where did the $30M allegedly go in Gateway Hudson Tunnel Investigation?",
-    "Where did the Unknown allegedly go in ICE Investigation?"
+    "Where did the Unknown allegedly go in ICE Investigation?",
+    "Where did the $200M allegedly go in Gateway Hudson Tunnel Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 953,
-    "articlesProcessed": 47500,
-    "redFlagsFound": 1138,
+    "totalScans": 954,
+    "articlesProcessed": 47550,
+    "redFlagsFound": 1140,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in ICE investigation?",
-        "What other organizations is Nancy Guthrie connected to?",
-        "Where did the Unknown allegedly go in Nancy Guthrie investigation?"
+        "Where did the Unknown allegedly go in ICE shooting investigation?",
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against No specific individuals charged?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T16:28:34.381Z",
-  "lastUpdated": "2026-02-15T16:28:34.382Z"
+  "lastReflection": "2026-02-15T17:25:07.083Z",
+  "lastUpdated": "2026-02-15T17:25:07.083Z"
 }

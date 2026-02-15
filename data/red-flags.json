@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The shutdown of parts of DHS and ICE due to lack of funding",
+      "insight": "This shutdown may indicate a larger issue with government funding and budgeting.",
+      "entities": [
+        "DHS",
+        "ICE"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/02/14/us/politics/department-of-homeland-security-shutdown.html",
+      "id": "rf-1771176307088-jwxdchr1c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T17:25:07.085Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Funding Freeze",
       "description": "The Gateway Hudson Tunnel project initially faced a funding freeze, which has since been lifted. However, over $200M in funding is still disputed.",
       "insight": "I suspect that the initial funding freeze may have been a red flag for potential corruption or mismanagement. Further investigation is needed to determine the reasons behind the freeze and the current dispute over funding.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T16:28:34.384Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "possible perjury",
@@ -957,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-10T11:04:30.146Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Termination of child care subsidies in Illinois",
-      "insight": "This termination raises concerns about the impact on low-income families and the child care system as a whole. Further investigation is needed to determine the reasons behind the termination and the potential consequences.",
-      "entities": [
-        "Illinois child care subsidies"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Judge blocks Trump’s $10B child care funding freeze that targeted blue states, including Illinois",
-      "sourceUrl": "https://www.effinghamdailynews.com/news/judge-blocks-trump-s-10b-child-care-funding-freeze-that-targeted-blue-states-including-illinois/article_3f95c24e-64b4-11ec-9f4c-4f4e4e4e4e4e.html",
-      "id": "rf-1770689619326-nzif548d5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T02:13:39.323Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,6 +989,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T16:28:34.384Z"
+  "lastUpdated": "2026-02-15T17:25:07.085Z"
 }
