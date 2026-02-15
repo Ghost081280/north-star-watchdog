@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-10T13:10:13.462Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-10T14:57:47.805Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-15T18:34:52.618Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-15T19:24:25.206Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Not specified?",
-    "Where did the $2.8M allegedly go in Feeding Our Future?",
-    "Where did the $10B allegedly go in Gateway Tunnel?",
     "Where did the $100,000 allegedly go in Nancy Guthrie investigation?",
     "Where did the None allegedly go in ICE officers investigation?",
     "What other organizations is Salim Said connected to?",
@@ -558,7 +555,10 @@
     "Where did the $200M allegedly go in Gateway Hudson Tunnel Investigation?",
     "What other organizations is ICE officers connected to?",
     "Where did the $30M allegedly go in Gateway Hudson Tunnel investigation?",
-    "Where did the Not disclosed allegedly go in Nancy Guthrie investigation?"
+    "Where did the Not disclosed allegedly go in Nancy Guthrie investigation?",
+    "What other organizations is Feeding Our Future Accomplice connected to?",
+    "Where did the $7.8 Million allegedly go in Feeding Our Future Investigation?",
+    "Where did the $200 Million allegedly go in Gateway Hudson Tunnel Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 955,
-    "articlesProcessed": 47600,
-    "redFlagsFound": 1141,
+    "totalScans": 956,
+    "articlesProcessed": 47650,
+    "redFlagsFound": 1143,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What specific allegations exist against No specific individuals charged?",
-        "What other organizations is Not specified connected to?"
+        "What specific allegations exist against Not specified?",
+        "Where did the $2.8M allegedly go in Feeding Our Future?",
+        "Where did the $10B allegedly go in Gateway Tunnel?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T18:34:52.618Z",
-  "lastUpdated": "2026-02-15T18:34:52.618Z"
+  "lastReflection": "2026-02-15T19:24:25.206Z",
+  "lastUpdated": "2026-02-15T19:24:25.207Z"
 }
