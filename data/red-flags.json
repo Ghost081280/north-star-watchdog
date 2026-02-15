@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation is underway into a proposed Muslim-centric development in North Texas, backed by Greg Abbott",
+      "insight": "This investigation may be connected to larger patterns of fraud and corruption, particularly in the context of government contracts and development projects. Further research is needed to determine the scope and implications of this investigation.",
+      "entities": [
+        "Greg Abbott",
+        "North Texas development"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WFAA",
+      "sourceUrl": "https://www.wfaa.com/news/local/greg-abbott-backing-federal-investigation-into-proposed-muslim-centric-development-in-north-texas",
+      "id": "rf-1771187104245-ujez2k9ga",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T20:25:04.242Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "$30 Million released after funding freeze for Gateway Hudson Tunnel",
       "insight": "Funding issues and freezes could indicate larger financial management problems. Need to track and verify uses of funds.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T19:24:25.208Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -958,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-10T16:08:35.856Z",
       "isNew": false
-    },
-    {
-      "type": "welfare disbursement fraud",
-      "description": "$2M saved by stopping suspect welfare disbursements in Stearns County.",
-      "insight": "This incident indicates potential vulnerabilities in welfare disbursement processes.",
-      "entities": [
-        "Stearns County Sheriff's Office"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "KNSI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNLTFva3ZvYlpSRDBobVo3cTVueG1vT1RTOXVxeklzeTNLRkNSS0xxQlluR1pZeGF6ZUR4Z0NqR0d6SEdOclpNQ3lXOXpyZjFQUy1hdVVkM04yUUVQQ3lwOWpiMk83dWxBbUJVUVBwZ2h6SDJvamFpdTFETU9aWnU4V0VGN0w4V1NpNDY0WVhCU1RPanhQSjR2ZzVqci1Hb1pSS0NSRXdIZ2xrSGtVRTJQdWFGZXRuLVZBbGJMQUJrXzd0VkdzcjBZU1g5OXpDUElmRlE",
-      "id": "rf-1770721470150-b276dzsyn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T11:04:30.146Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,7 +990,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T19:24:25.208Z"
+  "lastUpdated": "2026-02-15T20:25:04.242Z"
 }

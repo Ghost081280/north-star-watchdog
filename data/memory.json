@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-10T14:57:47.805Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-10T16:08:35.854Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-02-15T19:24:25.206Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-15T20:25:04.240Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 956,
-    "articlesProcessed": 47650,
-    "redFlagsFound": 1143,
+    "totalScans": 957,
+    "articlesProcessed": 47700,
+    "redFlagsFound": 1144,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Not specified?",
-        "Where did the $2.8M allegedly go in Feeding Our Future?",
-        "Where did the $10B allegedly go in Gateway Tunnel?"
+        "Where did the $100,000 allegedly go in Nancy Guthrie investigation?",
+        "Where did the None allegedly go in ICE officers investigation?",
+        "What other organizations is Salim Said connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T19:24:25.206Z",
-  "lastUpdated": "2026-02-15T19:24:25.207Z"
+  "lastReflection": "2026-02-15T20:25:04.240Z",
+  "lastUpdated": "2026-02-15T20:25:04.241Z"
 }
