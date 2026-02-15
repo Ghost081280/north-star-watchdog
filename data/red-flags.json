@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal funding freeze",
+      "description": "The Gateway Hudson Tunnel project was subject to a funding freeze, which has now been lifted. This raises concerns about the stability of federal funding for infrastructure projects.",
+      "insight": "I notice that the funding freeze was lifted after a period of uncertainty, which could indicate a lack of transparency in the decision-making process. Further investigation is needed to understand the reasons behind the freeze and the implications for similar projects.",
+      "entities": [
+        "Federal government",
+        "Gateway Hudson Tunnel project"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1771180492623-dowwbv7al",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T18:34:52.620Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The shutdown of parts of DHS and ICE due to lack of funding",
       "insight": "This shutdown may indicate a larger issue with government funding and budgeting.",
@@ -18,25 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T17:25:07.085Z",
-      "isNew": true
-    },
-    {
-      "type": "Federal Funding Freeze",
-      "description": "The Gateway Hudson Tunnel project initially faced a funding freeze, which has since been lifted. However, over $200M in funding is still disputed.",
-      "insight": "I suspect that the initial funding freeze may have been a red flag for potential corruption or mismanagement. Further investigation is needed to determine the reasons behind the freeze and the current dispute over funding.",
-      "entities": [
-        "Gateway Hudson Tunnel"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Gothamist",
-      "sourceUrl": "https://gothamist.com/2026/02/15/gateway-hudson-tunnel-funding",
-      "id": "rf-1771172914387-dr1dqp59g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T16:28:34.384Z",
       "isNew": false
     },
     {
@@ -985,13 +986,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T17:25:07.085Z"
+  "lastUpdated": "2026-02-15T18:34:52.620Z"
 }
