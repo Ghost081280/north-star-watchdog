@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen funding for the Gateway Tunnel project, which could impact the investigation into the Feeding Our Future case.",
+      "insight": "I suspect that the government shutdown and funding freeze could be related to the investigation into the Feeding Our Future case. Further research is needed to determine the connection between the two.",
+      "entities": [
+        "Feeding Our Future",
+        "Gateway Tunnel"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/02/14/nyregion/gateway-tunnel-funding.html",
+      "id": "rf-1771147839498-sgep459j4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T09:30:39.494Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating IU scholarship programs.",
       "insight": "This could indicate potential fraud or corruption in the scholarship programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T08:31:25.156Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged fraud",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T08:31:25.156Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -447,26 +467,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-14T01:54:43.100Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government had previously frozen funding for the Gateway rail tunnel project, citing concerns about the project's viability.",
-      "insight": "The sudden release of funding suggests that there may have been political pressure to revive the project. Further investigation is needed to determine the reasons behind the funding freeze and release.",
-      "entities": [
-        "Gateway rail tunnel",
-        "federal government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New Jersey Monitor",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NcnJ4Q1BWdVdub1Zqc2VtSlpKbWhYZUQ3ZGJPc1lYV1ZBbWQwOGJLNmRkb3lmMXE5b0J5ai1NX0dlRVZYTFg0dktMakozQ3Y0RUxzdHFQbUljWGhNeG9ld0hweHNPQUhDczlnbnpLLXJDRy1vNkZiTA",
-      "id": "rf-1771025383922-ik7mt48tg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-13T23:29:43.919Z",
       "isNew": false
     },
     {
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T08:31:25.156Z"
+  "lastUpdated": "2026-02-15T09:30:39.494Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-09T21:38:05.496Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-09T22:35:06.544Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-15T08:31:25.154Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-15T09:30:39.492Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 946,
-    "articlesProcessed": 47150,
-    "redFlagsFound": 1131,
+    "totalScans": 947,
+    "articlesProcessed": 47200,
+    "redFlagsFound": 1132,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "alleged fraud",
-          "description": "Federal prosecutors are seeking $7.8M in restitution from Salim Said in the Feeding Our Future case.",
-          "insight": "This indicates a significant alleged fraud case related to Feeding Our Future.",
-          "entities": [
-            "Salim Said",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "5 EYEWITNESS NEWS",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9nNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-15T08:31:25.154Z",
-  "lastUpdated": "2026-02-15T08:31:25.155Z"
+  "lastReflection": "2026-02-15T09:30:39.492Z",
+  "lastUpdated": "2026-02-15T09:30:39.493Z"
 }
