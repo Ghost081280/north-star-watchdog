@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "ICE officers are under investigation for possible perjury regarding the shooting of a Venezuelan man in Minneapolis.",
+      "insight": "This incident raises concerns about the use of force by ICE officers and the potential for cover-ups. Further investigation is needed to determine the facts of the case and to hold those responsible accountable.",
+      "entities": [
+        "ICE",
+        "Minneapolis"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Le Monde.fr",
+      "sourceUrl": "https://www.lemonde.fr/en/international/article/2026/02/14/ice-officers-on-leave-while-feds-probe-into-possible-perjury-about-the-shooting-of-a-venezuelan-man-in-minneapolis_7491237.html",
+      "id": "rf-1771121088924-5u9i9op32",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T02:04:48.920Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating IU scholarship programs",
       "insight": "This could indicate a larger issue with educational institutions and potential fraud.",
@@ -958,30 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-08T13:44:06.090Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration's bid to slash social services funds to 5 states was blocked by a judge.",
-      "insight": "This block on funding cuts raises concerns over the administration's priorities and the potential impact on vulnerable populations.",
-      "entities": [
-        "Trump administration",
-        "5 states"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://www.thehill.com/policy/healthcare/573444-judge-blocks-trumps-10b-child-care-funding-freeze",
-      "id": "rf-1770554741797-doiljquxz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-08T12:45:41.794Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-14T23:22:43.770Z"
+  "lastUpdated": "2026-02-15T02:04:48.920Z"
 }
