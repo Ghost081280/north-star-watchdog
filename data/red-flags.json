@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Lobbyist under federal investigation for 'paper bag' case",
+      "insight": "This case may be related to other instances of corruption or misuse of funds, potentially involving government agencies or contractors.",
+      "entities": [
+        "Lobbyist"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "West Hawaii Today",
+      "sourceUrl": "https://www.westhawaiitoday.com/2026/02/14/lobbyist-at-center-of-paper-bag-case-under-federal-investigation",
+      "id": "rf-1771134943897-gjvvlrdqr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T05:55:43.894Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "ICE officers are under investigation for possible perjury regarding the shooting of a Venezuelan man in Minneapolis.",
       "insight": "This incident raises concerns about the use of force by ICE officers and the potential for cover-ups. Further investigation is needed to determine the facts of the case and to hold those responsible accountable.",
@@ -958,30 +977,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-08T16:29:23.988Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Trump administration's bid to slash social services funds to 5 states, including Minnesota, has been blocked by a judge",
-      "insight": "This could indicate a potential red flag for Medicaid and social services programs in Minnesota, potentially leading to further investigation",
-      "entities": [
-        "Trump administration",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSTdmelF1WDVPSHc0Q0wtb2MtMHV2RTljODZlbW8tUks2MWEyaEl1ZXFDSUtHeEd1WjVkc1VwYzhjWFFWNkhwLTVTZTBpLTVhVmpna3lNU0dUdEpMb1kxbHROUW9xOGxzcVZ0cFNra2FRcy1fUnJxNDJkZ2dZOTByZVFSRWhEemtjcWFpazdYa3gyWUprYjI3ZGgwbEFTSlFEXzc1SlFfVkJyOF82Nl9hOXFIRFpGRWd6YkN1M0VQMUzSAcYBQVVfeXFMT3hta0hNWjlTQXR5UXVfMC1hZDdaNjhCWXlRRUFiOEpRUFdpSFJvZDJGdld5bElLVTRsMTgwUGRELUxyNnpFZjVUM1Q4SC1ucDRzSGNwR1hvaEdwLU9MSDlHMHp2elMtMF9PUTJxT1JSaWcyRHhwbnhDQUY1c1RVQjhULVI2UE5McGJvOG9NT2pfaUJpYWQwRjFLcUZKanRsT1RxMkxRdktiZUxHRkRBSjNZUW5ZdFhoOHB1M29PQWxwTnNtelpR?oc=5",
-      "id": "rf-1770558246094-dq1sy44qn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-08T13:44:06.090Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +990,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T04:53:04.383Z"
+  "lastUpdated": "2026-02-15T05:55:43.894Z"
 }
