@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Funding Freeze",
+      "description": "The Gateway Hudson Tunnel project initially faced a funding freeze, which has since been lifted. However, over $200M in funding is still disputed.",
+      "insight": "I suspect that the initial funding freeze may have been a red flag for potential corruption or mismanagement. Further investigation is needed to determine the reasons behind the freeze and the current dispute over funding.",
+      "entities": [
+        "Gateway Hudson Tunnel"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Gothamist",
+      "sourceUrl": "https://gothamist.com/2026/02/15/gateway-hudson-tunnel-funding",
+      "id": "rf-1771172914387-dr1dqp59g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-15T16:28:34.384Z",
+      "isNew": true
+    },
+    {
       "type": "possible perjury",
       "description": "ICE officers are under investigation for possible perjury about the shooting of a Venezuelan man in Minneapolis",
       "insight": "This investigation raises concerns about the integrity of ICE officers and the potential for cover-ups. Further investigation is needed to determine the extent of the issue.",
@@ -76,26 +95,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-15T10:25:21.913Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government has frozen funding for the Gateway Tunnel project, which could impact the investigation into the Feeding Our Future case.",
-      "insight": "I suspect that the government shutdown and funding freeze could be related to the investigation into the Feeding Our Future case. Further research is needed to determine the connection between the two.",
-      "entities": [
-        "Feeding Our Future",
-        "Gateway Tunnel"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/02/14/nyregion/gateway-tunnel-funding.html",
-      "id": "rf-1771147839498-sgep459j4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T09:30:39.494Z",
       "isNew": false
     },
     {
@@ -988,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-15T15:24:26.086Z"
+  "lastUpdated": "2026-02-15T16:28:34.384Z"
 }
