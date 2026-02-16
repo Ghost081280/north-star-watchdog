@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Agency Obstruction",
+      "description": "The FBI's refusal to share evidence with Minnesota investigators raises concerns about obstruction of justice and lack of transparency",
+      "insight": "As an investigator, I am concerned that the FBI's refusal to share evidence may be a deliberate attempt to conceal information about the shooting. This could indicate a larger pattern of obstruction by federal agencies, which warrants further investigation.",
+      "entities": [
+        "FBI",
+        "Minnesota investigators"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The Independent",
+      "sourceUrl": "https://www.independent.co.uk/news/world/americas/alex-pretti-fbi-investigation-minnesota-b2284447.html",
+      "id": "rf-1771284494583-05qogbp9i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T23:28:14.580Z",
+      "isNew": true
+    },
+    {
       "type": "federal_agency_refusal_to_cooperate",
       "description": "The FBI's refusal to share evidence with Minnesota investigators in the Alex Pretti shooting case.",
       "insight": "This refusal to cooperate raises concerns about the FBI's motives and potential obstruction of justice. It is essential to investigate the reasons behind this decision and ensure that Minnesota investigators have access to all relevant evidence.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T22:27:25.307Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -962,31 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-11T23:30:51.283Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Several cases of Medicaid fraud have been announced in the past week, including a $3.5 million scheme involving a Philly pastor and a pair of 'fraud tourists'",
-      "insight": "I notice that Medicaid fraud is a growing concern, with several high-profile cases announced in the past week. The use of AI to fake records in Medicaid housing scams is a new and emerging trend. I recommend further investigation into this area.",
-      "entities": [
-        "Philly Pastor",
-        "Pair of ‘fraud tourists’"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://dailyvoice.com/news/chatgpt-used-in-3-5m-medicaid-fraud-by-philly-pastor-university-president-feds/862111/",
-      "id": "rf-1770830050412-uh1m4dk97",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-11T17:14:10.409Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -996,6 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T22:27:25.307Z"
+  "lastUpdated": "2026-02-16T23:28:14.580Z"
 }
