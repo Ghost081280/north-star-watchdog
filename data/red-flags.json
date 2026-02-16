@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_agency_obstruction",
+      "description": "The FBI's refusal to share evidence with Minnesota investigators in the Alex Pretti shooting case raises concerns about potential obstruction of justice.",
+      "insight": "The FBI's actions may indicate a lack of transparency and cooperation, potentially hindering the investigation.",
+      "entities": [
+        "FBI",
+        "Minnesota BCA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-formally-refuses-to-share-evidence-in-alex-pretti-killing-investigation-minnesota-bca-says/",
+      "id": "rf-1771267262365-ka53cnlk5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T18:41:02.362Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "FBI's formal refusal to share evidence with Minnesota investigators in the Alex Pretti shooting case",
       "insight": "This development raises concerns about the FBI's handling of the case and potential lack of transparency. As an investigator, I would look into the reasons behind the FBI's refusal to share evidence and whether it is hindering the investigation. Sources, including CBS News and KNSI, have reported on the issue, and I would recommend further research into the matter.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T17:37:36.180Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -961,30 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-11T08:57:46.758Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the abduction of Nancy Guthrie, and a person has been detained for questioning.",
-      "insight": "This case highlights the need for increased cooperation between law enforcement agencies and the importance of following up on leads in a timely manner.",
-      "entities": [
-        "Nancy Guthrie",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/person-detained-questioning-nancy-guthrie-investigation-rcna69521",
-      "id": "rf-1770793188640-vkrzj4wwk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-11T06:59:48.636Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -994,7 +995,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T17:37:36.180Z"
+  "lastUpdated": "2026-02-16T18:41:02.362Z"
 }
