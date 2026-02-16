@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "ICE negotiations have faltered, leading to a shutdown of DHS.",
+      "insight": "This could indicate a larger issue with federal agencies and their ability to negotiate and cooperate.",
+      "entities": [
+        "ICE",
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1771216376276-z1imxdr4h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T04:32:56.273Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating the disappearance of Nancy Guthrie, with DNA evidence found on a glove near her home.",
       "insight": "I suspect that the investigation into Nancy Guthrie's disappearance may be connected to other cases of child care fraud. Further research is needed to determine the extent of the connection.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T02:00:54.991Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -962,25 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-10T21:41:32.152Z",
       "isNew": false
-    },
-    {
-      "type": "large alleged fraud scheme",
-      "description": "$350M tax refund fraud scheme",
-      "insight": "This scheme suggests a large-scale organized effort to commit fraud, potentially involving multiple individuals and entities.",
-      "entities": [
-        "Minnesota Man"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MNCRIME.com",
-      "sourceUrl": "https://mncrime.com/minnesota-man-charged-in-350m-tax-refund-fraud-scheme/",
-      "id": "rf-1770739715860-c67klk36l",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T16:08:35.856Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T02:00:54.991Z"
+  "lastUpdated": "2026-02-16T04:32:56.273Z"
 }
