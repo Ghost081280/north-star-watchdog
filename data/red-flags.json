@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Potential federal freeze on Medicaid payments due to suspected fraud",
+      "insight": "This could indicate a larger issue with Medicaid payments in Minnesota, potentially involving multiple entities and programs.",
+      "entities": [
+        "Minnesota State",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOEY2MnlUUkJzYjVWa0hpeUV2WTVTbDBlR1ZMVHd6RzNHSkIwMW0tV3JiLXhIMmdOVmExb2lYbWJ5cnZHbjh3MHZMLTdXSUNqZ0U4Uldra2Fib3JWemx1ZGpHYkJWYzI4b2tDbXBfalF4a3N2TkFVWXZaVnVZLUU3T3B4ZHUwWksydkVqMnZWTlpmaEtnV2ZxZEwzWXZENkVmRlJfMTU4Vm1BWTFvbmY4a3hpVDF0N3ZnVXZVTQ?",
+      "id": "rf-1771250935117-8q3ai91yq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T14:08:55.114Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI investigation into Nancy Guthrie's disappearance",
       "insight": "The FBI's investigation into Guthrie's disappearance has uncovered a potential suspect, and the recovery of DNA from a glove found near her home is a significant development. Further investigation is needed to determine the circumstances surrounding her disappearance.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T12:59:51.521Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large restitution sought",
@@ -97,27 +117,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T04:32:56.273Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Department of Homeland Security shutdown could affect ICE and Coast Guard operations",
-      "insight": "I suspect that the shutdown may lead to increased vulnerability in border security and immigration enforcement, which could be exploited by malicious actors. Further investigation is needed to determine the extent of the shutdown's impact.",
-      "entities": [
-        "Department of Homeland Security",
-        "ICE",
-        "Coast Guard"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/02/14/homeland-security-shutdown.html",
-      "id": "rf-1771197927189-7oxvp8jnv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T23:25:27.185Z",
       "isNew": false
     },
     {
@@ -985,6 +984,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -994,8 +994,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T12:59:51.521Z"
+  "lastUpdated": "2026-02-16T14:08:55.114Z"
 }
