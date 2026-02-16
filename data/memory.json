@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-11T06:59:48.634Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-11T07:58:42.311Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-02-16T09:53:16.402Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-16T10:48:42.328Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 966,
-    "articlesProcessed": 48150,
-    "redFlagsFound": 1153,
+    "totalScans": 967,
+    "articlesProcessed": 48200,
+    "redFlagsFound": 1154,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in ICE Investigation?",
         "Where did the $200M allegedly go in Gateway Hudson Tunnel Investigation?",
-        "What other organizations is ICE officers connected to?"
+        "What other organizations is ICE officers connected to?",
+        "Where did the $30M allegedly go in Gateway Hudson Tunnel investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-16T09:53:16.402Z",
-  "lastUpdated": "2026-02-16T09:53:16.402Z"
+  "lastReflection": "2026-02-16T10:48:42.328Z",
+  "lastUpdated": "2026-02-16T10:48:42.328Z"
 }
