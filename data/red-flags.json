@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The FBI's refusal to share evidence with Minnesota officials raises concerns about the potential for a federal freeze on cooperation.",
+      "insight": "The lack of cooperation between federal and state agencies may hinder the investigation and potentially allow fraudulent activities to go unchecked.",
+      "entities": [
+        "FBI",
+        "BCA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WDIO.com",
+      "sourceUrl": "https://wdio.com/fbi-declines-to-share-alex-pretti-evidence-with-minnesota-officials-bca-says/",
+      "id": "rf-1771260085804-uwma2nui4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T16:41:25.799Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "FBI investigation into the death of Nancy Guthrie",
       "insight": "The FBI's confirmation of DNA recovered from a glove found near Nancy Guthrie's home suggests that the investigation is ongoing and that the agency is actively pursuing leads.",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T15:39:38.781Z",
-      "isNew": true
-    },
-    {
-      "type": "federal freeze",
-      "description": "Potential federal freeze on Medicaid payments due to suspected fraud",
-      "insight": "This could indicate a larger issue with Medicaid payments in Minnesota, potentially involving multiple entities and programs.",
-      "entities": [
-        "Minnesota State",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOEY2MnlUUkJzYjVWa0hpeUV2WTVTbDBlR1ZMVHd6RzNHSkIwMW0tV3JiLXhIMmdOVmExb2lYbWJ5cnZHbjh3MHZMLTdXSUNqZ0U4Uldra2Fib3JWemx1ZGpHYkJWYzI4b2tDbXBfalF4a3N2TkFVWXZaVnVZLUU3T3B4ZHUwWksydkVqMnZWTlpmaEtnV2ZxZEwzWXZENkVmRlJfMTU4Vm1BWTFvbmY4a3hpVDF0N3ZnVXZVTQ?",
-      "id": "rf-1771250935117-8q3ai91yq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T14:08:55.114Z",
       "isNew": false
     },
     {
@@ -985,17 +985,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T15:39:38.781Z"
+  "lastUpdated": "2026-02-16T16:41:25.799Z"
 }
