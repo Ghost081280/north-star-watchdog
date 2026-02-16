@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The FBI's refusal to share evidence with Minnesota authorities in the Alex Pretti shooting investigation.",
+      "insight": "This refusal raises concerns about potential obstruction of justice and lack of transparency between federal and state agencies. It is essential to investigate the reasons behind this refusal and its implications on the case.",
+      "entities": [
+        "FBI",
+        "Minnesota BCA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONzR0dmpzX3BPV2xuRDU1QXRUeFBOOXVpaHVfa09uVUx4VEVRQWtTQUdCZi1FMTdZM3VkVGpJdTF3VndGdHpVbDVuTHFQVzI5Z2NveGxoTXY2OFlCOVFpYmVLdW1DTFdpUmVLUlJVeEwyZmJvQlBmVXBIQmRVYkNBZWxSVy03YXR5YkFMM2RBMzZmU3U4ZDI0Vkw5RldpWlJMdmx0Vy01NkptUGUtU1lIcW1ucFNuNG1uUFF4YWZLb3g",
+      "id": "rf-1771277254385-aexr6yqdu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T21:27:34.382Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Agency Obstruction",
       "description": "The FBI's refusal to share evidence in the Alex Pretti shooting investigation raises concerns about obstruction of justice and lack of transparency.",
       "insight": "This pattern of behavior by the FBI suggests a potential cover-up or attempt to conceal information from state and local authorities. Further investigation is needed to determine the reasons behind the FBI's refusal to cooperate.",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T20:28:58.007Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "FBI's refusal to share evidence in the Alex Pretti shooting investigation",
-      "insight": "This refusal raises concerns about the FBI's priorities and potential interference with state investigations. It may indicate a larger issue with federal-state cooperation.",
-      "entities": [
-        "FBI",
-        "Minnesota BCA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObmc2dkNTcm42cXJmT09hRUpxVU1mYmhiUDBqVm1TUEVxZUNhcWdQRDNWX01YSjdxS0ROR3ktcjZMWTA5Ums1dnpvcXhad2VncWZuUzc3Q3poRmxoeTRrc3RfVmJxQzhidUo4b1A4dEZ5Ukd2Q2pKQldwN3JPdDV4by14UzN6TWN5YUVVeF9BZV9CaUNBeXM1S1JMUm1iV1YtTmdZ",
-      "id": "rf-1771270312755-lzqd1ki6c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T19:31:52.752Z",
       "isNew": false
     },
     {
@@ -985,6 +985,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -994,7 +995,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T20:28:58.007Z"
+  "lastUpdated": "2026-02-16T21:27:34.382Z"
 }
