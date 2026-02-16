@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Agency Obstruction",
+      "description": "The FBI's refusal to share evidence in the Alex Pretti shooting investigation raises concerns about obstruction of justice and lack of transparency.",
+      "insight": "This pattern of behavior by the FBI suggests a potential cover-up or attempt to conceal information from state and local authorities. Further investigation is needed to determine the reasons behind the FBI's refusal to cooperate.",
+      "entities": [
+        "FBI",
+        "Minnesota authorities"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/feb/16/fbi-wont-share-alex-pretti-shooting-evidence-minnesota-authorities-say",
+      "id": "rf-1771273738010-xlezjgqn1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T20:28:58.007Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "FBI's refusal to share evidence in the Alex Pretti shooting investigation",
       "insight": "This refusal raises concerns about the FBI's priorities and potential interference with state investigations. It may indicate a larger issue with federal-state cooperation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T19:31:52.752Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T19:31:52.752Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_agency_obstruction",
@@ -961,31 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-11T16:00:44.259Z",
       "isNew": false
-    },
-    {
-      "type": "election investigation",
-      "description": "The FBI's investigation into Fulton County vote records relied on previously investigated 2020 election claims.",
-      "insight": "This raises concerns about the legitimacy of the investigation and potential politicization of law enforcement.",
-      "entities": [
-        "FBI",
-        "Fulton County"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Georgia Recorder",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOS3Z3UnJTVlBiM205SmxYZmRDRjFQWnBxNVE5TkpSdkFXakUwSzdjNW54Yk9PclZWaFNsdDd4cjJHRFZJOVRhNTB3dllsZ084R2VvVC1HajF4aV9JWms1VHpYRzNSQzNtNElVaExyVjJMclZFSk4zelpJUUFpWFo2YmUzTERydVRkb3QzNEc2X3VMMWpPcDZNY2M0SDI1djRYdnpkRFhZekVMT2xIYzJwRXpEUDQ5eFBsTVdrNQ",
-      "id": "rf-1770810240144-mtyu75ky7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-11T11:44:00.141Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -995,6 +994,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T19:31:52.752Z"
+  "lastUpdated": "2026-02-16T20:28:58.007Z"
 }
