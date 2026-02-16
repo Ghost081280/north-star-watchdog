@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "FBI investigation into the death of Nancy Guthrie",
+      "insight": "The FBI's confirmation of DNA recovered from a glove found near Nancy Guthrie's home suggests that the investigation is ongoing and that the agency is actively pursuing leads.",
+      "entities": [
+        "Nancy Guthrie",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Detroit News",
+      "sourceUrl": "https://www.detroitnews.com/story/news/local/michigan/2026/02/15/fbi-confirms-dna-recovered-from-glove-found-near-nancy-guthries-home/11098711007/",
+      "id": "rf-1771256378784-s30cguq2y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T15:39:38.781Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Potential federal freeze on Medicaid payments due to suspected fraud",
       "insight": "This could indicate a larger issue with Medicaid payments in Minnesota, potentially involving multiple entities and programs.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T14:08:55.114Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -961,30 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-11T06:59:48.636Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI search warrant unsealed, reveals focus of Fulton County 2020 election probe",
-      "insight": "The FBI's investigation into possible 2020 election 'defects' in Fulton County, Georgia, raises concerns about election integrity and potential irregularities.",
-      "entities": [
-        "Fulton County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNczVHaUUzQi1TaFoySGk4R2NBTGZCQnNmOWg5ajJwREd2Q2NnbWxDMjZ4M0VKTVB0VUJoVmw5WUplZ0dmSXcwQm1pUUlnZmFianNfMkp3NjBkQU9raXJWUW1icWNkNzY0UWsxajVBSC0wQXllWWNMMVMzbFJrdExyN2hZTXg3c25ZdzVaaWJ6di1EaUI2Ukg5clo1bDhoeEUxeVA2dFRBTlVJeUNCNDZ4am1JY2hFdE9XRk9ZNHNJSFU5aGcxSXBHZmZHQ2pnbFE1SDNOX3Axb0dPdVkySHlieVJ1ejA2WDA",
-      "id": "rf-1770766649802-dq63b99bc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T23:37:29.799Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -994,7 +994,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T14:08:55.114Z"
+  "lastUpdated": "2026-02-16T15:39:38.781Z"
 }
