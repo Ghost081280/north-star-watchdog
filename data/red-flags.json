@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into Nancy Guthrie's disappearance",
+      "insight": "The FBI's investigation into Guthrie's disappearance has uncovered a potential suspect, and the recovery of DNA from a glove found near her home is a significant development. Further investigation is needed to determine the circumstances surrounding her disappearance.",
+      "entities": [
+        "Nancy Guthrie",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/02/15/115799999/fbi-dna-from-glove-near-guthrie-home-appears-to-match-glove-worn-by-suspect",
+      "id": "rf-1771246791524-b2mdx4cvn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-16T12:59:51.521Z",
+      "isNew": true
+    },
+    {
       "type": "large restitution sought",
       "description": "$7.8 million restitution sought from Feeding Our Future accomplice",
       "insight": "The large amount of restitution sought indicates a significant case of fraud and potential for further investigation.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-16T11:39:56.712Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -961,41 +981,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-10T23:37:29.799Z",
       "isNew": false
-    },
-    {
-      "type": "possible election defects",
-      "description": "Possible defects in the 2020 election in Fulton County, Georgia.",
-      "insight": "This could be a sign of a larger issue with election integrity.",
-      "entities": [
-        "Fulton County",
-        "Georgia"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWVNSa0tGa2E1ZkJPZ0swNVZlbmJEOS00VUJxak51T2FOaWNNZUxCTl9JY3N6c2xJZFBVMmJROFNmOEhvVkxkdnRrT29Nd3VOZjFUeU5aYUFyRF8wMkpqTjh4VmRUbl9nNVdYRGY1RGJZUkVfN1FSRE54UVNwQUtONWRuUVJNLW9RdklDSGx0ZW1Sa1FiM3JTYUUxX0NFYlZqY0E",
-      "id": "rf-1770763129039-4rtbxwexs",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-10T22:38:49.036Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-16T11:39:56.712Z"
+  "lastUpdated": "2026-02-16T12:59:51.521Z"
 }
