@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T21:31:59.898Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-12T22:31:33.785Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-02-17T21:34:57.581Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-17T22:29:52.411Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $0 allegedly go in Ralliant Corporation Investigation?",
-    "What other organizations is R. Kelly connected to?",
     "What other organizations is Minnesota Man connected to?",
     "Where did the None allegedly go in R. Kelly Investigation?",
     "What other organizations is Individual involved in Alex Pretti shooting connected to?",
@@ -558,7 +555,10 @@
     "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $18 billion allegedly go in Minnesota welfare fraud?",
     "Where did the $18 billion allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie Investigation?"
+    "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
+    "What other organizations is Jeffrey Epstein connected to?",
+    "Where did the $744K allegedly go in Minnesota welfare fraud investigation?",
+    "Where did the Unspecified allegedly go in Zynex Inc?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 997,
-    "articlesProcessed": 49700,
-    "redFlagsFound": 1194,
+    "totalScans": 998,
+    "articlesProcessed": 49750,
+    "redFlagsFound": 1195,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $350 Million allegedly go in $350 Million Tax Refund Fraud Scheme?",
         "Are any of these 3 figures connected to each other?",
-        "Where did the $0 allegedly go in Ralliant Corporation Investigation?"
+        "Where did the $0 allegedly go in Ralliant Corporation Investigation?",
+        "What other organizations is R. Kelly connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T21:34:57.581Z",
-  "lastUpdated": "2026-02-17T21:34:57.582Z"
+  "lastReflection": "2026-02-17T22:29:52.411Z",
+  "lastUpdated": "2026-02-17T22:29:52.413Z"
 }
