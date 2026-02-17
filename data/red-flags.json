@@ -1,23 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "FBI's refusal to share evidence with Minnesota investigators",
-      "insight": "This could indicate a larger issue with cooperation between federal and state authorities, potentially hindering investigations.",
+      "type": "Federal Freeze",
+      "description": "The FBI's refusal to share evidence with Minnesota investigators in the Alex Pretti shooting case has raised concerns about transparency and accountability. This red flag is significant because it highlights the potential for federal authorities to withhold information from state authorities, which can hinder investigations and undermine trust.",
+      "insight": "The FBI's decision to withhold evidence from Minnesota investigators is a concerning trend that requires further investigation. It is essential to examine the reasons behind this decision and ensure that it does not compromise the integrity of the investigation.",
       "entities": [
         "FBI",
-        "BCA"
+        "Minnesota investigators"
       ],
-      "confidence": 80,
+      "confidence": 85,
       "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://www.usatoday.com/science/fbi-wont-share-evidence-related-to-alex-pretti-shooting-state-says/",
-      "id": "rf-1771314828329-j8fe7ylxo",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/news/nation/2026/02/16/fbi-wont-share-evidence-related-alex-pretti-shooting-state-says/1365217002/",
+      "id": "rf-1771317799323-hwwplwmx6",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-17T07:53:48.325Z",
+      "detectedAt": "2026-02-17T08:43:19.319Z",
+      "isNew": true
+    },
+    {
+      "type": "Shell Company",
+      "description": "The alleged $350 million tax refund fraud scheme in Minnesota involved the use of shell companies to claim refunds. This red flag is significant because it highlights the need for increased vigilance and cooperation between authorities to prevent and investigate these schemes.",
+      "insight": "The use of shell companies in the alleged tax refund fraud scheme is a common tactic used by scammers. It is essential to investigate the entities involved and track the flow of money to uncover the extent of the scheme.",
+      "entities": [
+        "Minnesota man",
+        "shell companies"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Limitless Media News",
+      "sourceUrl": "https://www.limitlessmedianews.com/minnesota-man-indicted-in-alleged-350-million-tax-refund-fraud-scheme/",
+      "id": "rf-1771317799323-n8houlbzm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-17T08:43:19.319Z",
       "isNew": true
     },
     {
@@ -963,30 +983,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-12T22:31:33.788Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Sanctuary City Violation",
-      "description": "A Montana city is under investigation for potential violation of a sanctuary city ban.",
-      "insight": "This case raises concerns about the potential for cities to disregard federal laws and create safe havens for undocumented immigrants. Further investigation is needed to determine the extent of the violation and the impact on public safety.",
-      "entities": [
-        "Montana city"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Washington Times",
-      "sourceUrl": "https://www.washingtontimes.com/news/2026/feb/11/montana-city-under-investigation-potential-violation/",
-      "id": "rf-1770861771327-n3s0qa3c3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-12T02:02:51.324Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -996,6 +996,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-17T07:53:48.325Z"
+  "lastUpdated": "2026-02-17T08:43:19.319Z"
 }
