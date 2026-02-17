@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T09:48:19.979Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-12T10:43:57.989Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-17T10:44:08.937Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-17T11:38:51.520Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 987,
-    "articlesProcessed": 49200,
-    "redFlagsFound": 1181,
+    "totalScans": 988,
+    "articlesProcessed": 49250,
+    "redFlagsFound": 1182,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "The alleged $350 million tax refund fraud scheme",
-          "insight": "This could indicate a significant financial loss for taxpayers and a large-scale fraud operation",
-          "entities": [
-            "Minnesota man",
-            "tax refund fraud scheme"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Limitless Media News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HVklOYnFPTEk2b0ZETVd2UDl4MVozZG1tZmc5VkoyZ0QxVU9SdTJGN2MzRWFwNkpfTmVnV1JFZk1FZWFKTmJuckdDcUFzQ1hpTDhRVFVDU1dIcHRlM3NhaUozOUhBZEhaODlDbHJYWThLbGpLc2hlRTdpdw?"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Warren connected to?",
         "What specific allegations exist against Warren?",
-        "Where did the None allegedly go in Minnesota Medicaid fraud crackdown?"
+        "Where did the None allegedly go in Minnesota Medicaid fraud crackdown?",
+        "Where did the None allegedly go in Nancy Guthrie Investigation?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T10:44:08.937Z",
-  "lastUpdated": "2026-02-17T10:44:08.938Z"
+  "lastReflection": "2026-02-17T11:38:51.520Z",
+  "lastUpdated": "2026-02-17T11:38:51.521Z"
 }
