@@ -1,24 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The FBI's refusal to share evidence with Minnesota officials raises concerns about a potential cover-up or lack of transparency.",
-      "insight": "As an investigator, I am concerned that the FBI's actions may be hindering the investigation and potentially hiding important information. I would like to investigate further to determine the reasons behind the FBI's refusal to share evidence.",
+      "type": "federal freeze",
+      "description": "FBI's refusal to share evidence with Minnesota officials",
+      "insight": "The FBI's denial of evidence access to Minnesota officials in the Alex Pretti shooting investigation raises concerns about the cooperation between federal and state agencies. This could indicate a larger issue with interagency collaboration or a specific concern with the Minnesota investigation.",
       "entities": [
         "FBI",
-        "Minnesota officials"
+        "BCA"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "BBC News",
-      "sourceUrl": "https://www.bbc.com/news/2026-02-17",
-      "id": "rf-1771302245443-34bo13oqj",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3VYVU1Gd3dyeEVleWtBc20tV0NTeXEzb0wyekc5emVOanFSYjJ1OHpOZm82RzhQTzlocXl5OWhfOXR5dmd4a2paMmtuaVlHZ1pCdW9za21XSGk5Qk5haVFNZUczY0lYZFZXem9KRkFrdKp1RHJJVlVCMHZocWJtZkN5Q2RDc0NaUHNEREJhc3owRlM4eUVzWmZFREMxb0RFRzFLMmRwLVZKNG0xajQwcl9TZW1UMFBrNmphZVZjaTZud2NkYWc",
+      "id": "rf-1771311539289-ge7wik8ea",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-17T04:24:05.439Z",
-      "isNew": false
+      "detectedAt": "2026-02-17T06:58:59.285Z",
+      "isNew": true
+    },
+    {
+      "type": "large-scale fraud",
+      "description": "$350 million tax refund fraud scheme",
+      "insight": "The indictment of a Minnesota man in an alleged $350 million tax refund fraud scheme highlights the need for vigilance in tax-related crimes. This large-scale scheme suggests a sophisticated operation that may involve multiple individuals and entities.",
+      "entities": [
+        "Minnesota Man"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Limitless Media News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HVklOYnFPTEk2b0ZETVd2UDl4MVozZG1tZmc5VkoyZ0QxVU9SdTJGN2MzRWFwNkpfTmVnV1JFZk1FZWFKTmJuckdDcUFzQ1hpTDhRVFVDU1dIcHRlM3NhaUozOUhBZEhaODlDbHJYWThLbGpLc2hlRTdpdw",
+      "id": "rf-1771311539289-xwx5mr9pv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-17T06:58:59.285Z",
+      "isNew": true
     },
     {
       "type": "Federal Agency Obstruction",
@@ -963,29 +982,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-12T02:02:51.324Z",
       "isNew": false
-    },
-    {
-      "type": "potential violation of sanctuary city ban",
-      "description": "Montana city under investigation for potential violation of sanctuary city ban.",
-      "insight": "This could indicate a larger issue with compliance and potential fraud in the state.",
-      "entities": [
-        "Montana city"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "U.S. News & World Report",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMUU3R19jMDlzM2xTVFllekh4LWpXY2dyUlJYZHU4dGZKMkhWUTVybDlsSGpaUlpQMUtjLVF0Rl9nLUNYalhCb2VRcnpTZl9WYkpKNFFFSzgxQ1R4Q3dOSC1oSHhNS0h4cUJiUnVQM2FiMzFPMC1RdWZ4N2drZmEzMVJ4UHJqeUYtQ1BjYWV5UTViT05maEkxYUhBcVA2X2M1N0lfN1d6NFVxeDJJenB3Vl9BY29STldpQngweHBDOUpFb3E1R0hYdg?oc=5",
-      "id": "rf-1770852651286-yd8270vuv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-11T23:30:51.283Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-17T05:56:25.075Z"
+  "lastUpdated": "2026-02-17T06:58:59.285Z"
 }
