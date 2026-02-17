@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T07:51:40.252Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-12T08:43:52.585Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-17T08:43:19.317Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-17T09:46:30.121Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $7.8 Million allegedly go in Feeding Our Future?",
-    "What other organizations is Tillis connected to?",
-    "What specific allegations exist against Tillis?",
     "What other organizations is Warren connected to?",
     "What specific allegations exist against Warren?",
     "Where did the None allegedly go in Minnesota Medicaid fraud crackdown?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Ralliant Corporation Investigation?",
     "What other organizations is R. Kelly connected to?",
     "What other organizations is Minnesota Man connected to?",
-    "Where did the None allegedly go in R. Kelly Investigation?"
+    "Where did the None allegedly go in R. Kelly Investigation?",
+    "What other organizations is Individual involved in Alex Pretti shooting connected to?",
+    "What other organizations is Individual involved in $350 Million Tax Refund Fraud Scheme connected to?",
+    "Where did the $0 allegedly go in Alex Pretti shooting investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 985,
-    "articlesProcessed": 49100,
-    "redFlagsFound": 1177,
+    "totalScans": 986,
+    "articlesProcessed": 49150,
+    "redFlagsFound": 1179,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "The alleged $350 million tax refund fraud scheme",
+          "insight": "This highlights the need for increased vigilance in tax-related crimes and potentially points to a larger issue with tax refund fraud.",
+          "entities": [
+            "Minnesota man",
+            "Tax authorities"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Limitless Media News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HVklOYnFPTEk2b0ZETVd2UDl4MVozZG1tZmc5VkoyZ0QxVU9SdTJGN2MzRWFwNkpfTmVnV1JFZk1FZWFKTmJuckdDcUFzQ1hpTDhRVFVDU1dIcHRlM3NhaUozOUhBZEhaODlDbHJYWThLbGpLc2hlRTdpdw?"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
-        "What specific allegations exist against Nancy Guthrie?",
-        "Where did the None allegedly go in Nancy Guthrie disappearance?"
+        "Where did the $7.8 Million allegedly go in Feeding Our Future?",
+        "What other organizations is Tillis connected to?",
+        "What specific allegations exist against Tillis?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T08:43:19.317Z",
-  "lastUpdated": "2026-02-17T08:43:19.318Z"
+  "lastReflection": "2026-02-17T09:46:30.121Z",
+  "lastUpdated": "2026-02-17T09:46:30.122Z"
 }
