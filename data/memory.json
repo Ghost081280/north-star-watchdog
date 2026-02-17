@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T15:53:54.468Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-12T16:57:25.045Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-17T16:56:45.155Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-17T17:55:58.339Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Alex Pretti connected to?",
-    "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the None allegedly go in Alex Pretti Shooting Investigation?",
     "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
     "What specific allegations exist against Alex Pretti?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Medicaid Services Fraud Investigation?",
     "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Tony Clark connected to?",
-    "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?"
+    "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?",
+    "Where did the $100 billion allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the Not specified allegedly go in FBI investigation into Alex Pretti shooting?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 992,
-    "articlesProcessed": 49450,
-    "redFlagsFound": 1187,
+    "totalScans": 993,
+    "articlesProcessed": 49500,
+    "redFlagsFound": 1188,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Nancy Guthrie Investigation?",
-        "Where did the None allegedly go in Minnesota Medicaid Fraud Crackdown?",
-        "What other organizations is Alex Pretti connected to?"
+        "What other organizations is Alex Pretti connected to?",
+        "Where did the Unknown allegedly go in Alex Pretti Shooting Investigation?",
+        "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T16:56:45.155Z",
-  "lastUpdated": "2026-02-17T16:56:45.156Z"
+  "lastReflection": "2026-02-17T17:55:58.339Z",
+  "lastUpdated": "2026-02-17T17:55:58.339Z"
 }
