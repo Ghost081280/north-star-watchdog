@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T04:56:32.959Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-12T06:04:26.957Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-17T06:58:59.283Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-17T07:53:48.323Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
     "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
     "What specific allegations exist against Nancy Guthrie?",
     "Where did the None allegedly go in Nancy Guthrie disappearance?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Alex Pretti Shooting Investigation?",
     "What specific allegations exist against Alex Pretti?",
     "Where did the $350 Million allegedly go in $350 Million Tax Refund Fraud Scheme?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $0 allegedly go in Ralliant Corporation Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 983,
-    "articlesProcessed": 49000,
-    "redFlagsFound": 1174,
+    "totalScans": 984,
+    "articlesProcessed": 49050,
+    "redFlagsFound": 1175,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "$350 million tax refund fraud scheme",
-          "insight": "The indictment of a Minnesota man in an alleged $350 million tax refund fraud scheme highlights the need for vigilance in tax-related crimes. This large-scale scheme suggests a sophisticated operation that may involve multiple individuals and entities.",
-          "entities": [
-            "Minnesota Man"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Limitless Media News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HVklOYnFPTEk2b0ZETVd2UDl4MVozZG1tZmc5VkoyZ0QxVU9SdTJGN2MzRWFwNkpfTmVnV1JFZk1FZWFKTmJuckdDcUFzQ1hpTDhRVFVDU1dIcHRlM3NhaUozOUhBZEhaODlDbHJYWThLbGpLc2hlRTdpdw"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Nancy Guthrie investigation?",
-        "Where did the Unknown allegedly go in Nancy Guthrie Disappearance?",
-        "Where did the $7.8 Million allegedly go in Feeding Our Future Accomplice?"
+        "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
+        "Where did the $0 allegedly go in Minnesota Child Care Fraud Investigation?",
+        "What specific allegations exist against Nancy Guthrie?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T06:58:59.283Z",
-  "lastUpdated": "2026-02-17T06:58:59.284Z"
+  "lastReflection": "2026-02-17T07:53:48.323Z",
+  "lastUpdated": "2026-02-17T07:53:48.324Z"
 }
