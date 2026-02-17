@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Tony Clark, the chief of the MLB Players Association, is resigning amid a federal investigation",
+      "insight": "This development may indicate a larger pattern of corruption or wrongdoing in the MLB Players Association, and warrants further investigation",
+      "entities": [
+        "Tony Clark",
+        "MLB Players Association"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Front Office Sports",
+      "sourceUrl": "https://www.frontofficesports.com/tony-clark-quitting-as-mlbpa-chief-amid-federal-investigation/",
+      "id": "rf-1771347405161-jyrdi98oi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-17T16:56:45.157Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Dr. Oz estimates $100 billion in Medicaid fraud in Minnesota",
       "insight": "The large estimated amount of Medicaid fraud in Minnesota suggests a significant issue in the state's healthcare system that requires further investigation.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-17T15:52:17.941Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "lack of cooperation",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-17T15:52:17.941Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -963,40 +983,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-13T20:37:17.670Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential shutdown of Department of Homeland Security (DHS) due to funding issues",
-      "insight": "This could have significant impacts on various services and agencies under DHS, including law enforcement and cybersecurity efforts.",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNm5wXzVoV3hSTkRDaVhMUkVSd3RKSmtISVFMQVpfR1ZNM2JQNEgyOEg5TXpwWllXSHozQ1laNkUzdm0xVEtzTllPM0tmRE85UEVsdU1KODE3b0pRZHpRRF95cHlERGs2T0RHWlQ1VVE2UDdTWk1ob3htVl9hcjRpdDFHS25lenJqTWhNT2N6ZFZvV1UyVXhja0FDSGs3RWfSAaQBQVVfeXFMTVpCa3p1SWZYWVJ6VUEtREg3cUtJT3dSekx6SXkzb2w5TjRhN3BWbUFNXzNnc24zZHBUeDZqV3VXQXlsazNVTU44c1J0NE1KaXprN3M2TDQxTHdBeEU2R3lEVkZCbzFPeDNuVzhZMDB5bURvZHdxb1ZmR2REa05QMzBOQld1TUNjMkd6V3FySHRyWVpBQWdKMzdkRmMxNnYyd2NycVo",
-      "id": "rf-1771008319513-2golt7pv1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-13T18:45:19.510Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-17T15:52:17.941Z"
+  "lastUpdated": "2026-02-17T16:56:45.157Z"
 }
