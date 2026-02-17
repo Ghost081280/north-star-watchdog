@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-12T08:43:52.585Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-12T09:48:19.979Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-17T09:46:30.121Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-17T10:44:08.937Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Warren connected to?",
     "What specific allegations exist against Warren?",
     "Where did the None allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the None allegedly go in Nancy Guthrie Investigation?",
@@ -558,7 +557,8 @@
     "Where did the None allegedly go in R. Kelly Investigation?",
     "What other organizations is Individual involved in Alex Pretti shooting connected to?",
     "What other organizations is Individual involved in $350 Million Tax Refund Fraud Scheme connected to?",
-    "Where did the $0 allegedly go in Alex Pretti shooting investigation?"
+    "Where did the $0 allegedly go in Alex Pretti shooting investigation?",
+    "Where did the $350 million allegedly go in $350 million tax refund fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 986,
-    "articlesProcessed": 49150,
-    "redFlagsFound": 1179,
+    "totalScans": 987,
+    "articlesProcessed": 49200,
+    "redFlagsFound": 1181,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,10 +586,10 @@
         {
           "type": "large-scale fraud",
           "description": "The alleged $350 million tax refund fraud scheme",
-          "insight": "This highlights the need for increased vigilance in tax-related crimes and potentially points to a larger issue with tax refund fraud.",
+          "insight": "This could indicate a significant financial loss for taxpayers and a large-scale fraud operation",
           "entities": [
             "Minnesota man",
-            "Tax authorities"
+            "tax refund fraud scheme"
           ],
           "confidence": 90,
           "priority": "high",
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $7.8 Million allegedly go in Feeding Our Future?",
-        "What other organizations is Tillis connected to?",
-        "What specific allegations exist against Tillis?"
+        "What other organizations is Warren connected to?",
+        "What specific allegations exist against Warren?",
+        "Where did the None allegedly go in Minnesota Medicaid fraud crackdown?"
       ]
     },
     {
@@ -622,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-17T09:46:30.121Z",
-  "lastUpdated": "2026-02-17T09:46:30.122Z"
+  "lastReflection": "2026-02-17T10:44:08.937Z",
+  "lastUpdated": "2026-02-17T10:44:08.938Z"
 }
