@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Tony Clark, the Executive Director of the Major League Baseball Players Association, is resigning amid a federal investigation",
+      "insight": "This resignation may be connected to a larger pattern of corruption in professional sports. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "Tony Clark",
+        "Major League Baseball Players Association"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/sports/mlb/2026/02/17/tony-clark-resigning-mlbpa-executive-director/6827213002/",
+      "id": "rf-1771364097587-g73lmp8mm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-17T21:34:57.583Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI's alleged lack of cooperation in the Alex Pretti shooting investigation",
       "insight": "This could indicate a larger issue with FBI transparency or cooperation with local law enforcement, potentially hindering investigations.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-17T20:36:37.926Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large_scale_fraud",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-17T20:36:37.926Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -964,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T04:09:53.347Z",
       "isNew": false
-    },
-    {
-      "type": "Untruthful statements",
-      "description": "ICE agents are under investigation for making untruthful statements about a shooting in Minneapolis.",
-      "insight": "This raises concerns about the integrity of federal agents and the potential for cover-ups. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "BBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Gcy1uaTRJMW9sTGdiTVdSdEZmNW9WLXV1Wl9LLVJ4QmJaTUtMMDJNSVdscGZEVzNKZzNqSFhETFk2dUtRZWwxejE0b1EwRE5rTkM3VThkVWJfUQ",
-      "id": "rf-1771034083103-ibhlsmwv2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T01:54:43.100Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,11 +994,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-17T20:36:37.926Z"
+  "lastUpdated": "2026-02-17T21:34:57.583Z"
 }
