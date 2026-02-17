@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of cooperation",
+      "description": "The FBI is blocking Minnesota law enforcement from accessing case files related to the Alex Pretti shooting investigation.",
+      "insight": "This lack of cooperation is concerning and may indicate a larger issue with the investigation. I recommend further investigation into the FBI's actions and potential connections to other cases.",
+      "entities": [
+        "FBI",
+        "Minnesota law enforcement"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/fbi-blocks-minnesota-law-enforcement-alex-pretti-evidence",
+      "id": "rf-1771354599902-dzw3xiuhk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-17T18:56:39.898Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Minnesota Republicans focus on fraud despite ICE surge",
       "insight": "The focus on fraud in Minnesota may be related to larger issues of governance and public trust. Further investigation into the state's Medicaid program and other areas of potential fraud is warranted.",
@@ -23,7 +43,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-17T17:55:58.341Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -969,41 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-13T22:32:09.568Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating two ICE officers for allegedly lying about a shooting in Minneapolis.",
-      "insight": "This investigation raises concerns about the integrity of government agencies and the potential for misconduct. Further investigation is needed to determine the extent of the alleged misconduct and to hold those responsible accountable.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ABC7 News",
-      "sourceUrl": "https://www.abc7news.com/news/federal-government-opens-criminal-probe-into-whether-ice-officers-lied-about-shooting-of-venezuelan-man-in-minneapolis",
-      "id": "rf-1771015037674-m65oxwwul",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-13T20:37:17.670Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-17T17:55:58.341Z"
+  "lastUpdated": "2026-02-17T18:56:39.898Z"
 }
