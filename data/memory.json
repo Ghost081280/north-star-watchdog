@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T05:58:56.543Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-02-13T07:06:07.402Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-18T06:00:12.819Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-18T07:13:13.830Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1002,
-    "articlesProcessed": 49950,
+    "totalScans": 1003,
+    "articlesProcessed": 50000,
     "redFlagsFound": 1200,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "data breach",
-          "description": "A data breach has occurred at TriZetto Provider Solutions, affecting over 700,000 patient records.",
-          "insight": "I have detected a significant data breach that may have serious consequences for the affected individuals. Further investigation is needed to determine the cause and scope of the breach.",
-          "entities": [
-            "TriZetto Provider Solutions"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Schubert Jonckheer & Kolbe",
-          "sourceUrl": "https://www.schubertjonckheer.com/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Tony Clark connected to?",
-        "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?",
+        "Where did the $100 billion allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Not specified allegedly go in FBI investigation into Alex Pretti shooting?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-18T06:00:12.819Z",
-  "lastUpdated": "2026-02-18T06:00:12.820Z"
+  "lastReflection": "2026-02-18T07:13:13.830Z",
+  "lastUpdated": "2026-02-18T07:13:13.830Z"
 }
