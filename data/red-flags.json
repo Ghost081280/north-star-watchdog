@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The owner of a Phoenix motel was sentenced to probation and must forfeit $744K following an FBI investigation",
+      "insight": "This case highlights the importance of monitoring federal investigations and their outcomes. It also raises questions about the potential for similar cases in the future.",
+      "entities": [
+        "Owner of Phoenix motel"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "12News",
+      "sourceUrl": "https://www.12news.com/article/news/local/valley/owner-of-phoenix-motel-sentenced-to-probation-must-forfeit-744k-following-fbi-investigation/75-5c64a55a-4f5f-4f5f-8f5f-5f5f5f5f5f",
+      "id": "rf-1771404161399-6y0o3ksi2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T08:42:41.395Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "Allegations of fraud have been made against several entities and individuals, including Tony Clark and the owner of a Phoenix motel.",
       "insight": "I have detected a pattern of alleged fraud across multiple entities and individuals. This suggests a possible larger issue that warrants further investigation.",
@@ -966,33 +985,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T08:30:40.742Z",
       "isNew": false
-    },
-    {
-      "type": "Untruthful statements by government officials",
-      "description": "Two ICE officers are under investigation for making untruthful statements about a shooting in north Minneapolis.",
-      "insight": "This case raises concerns about the integrity of law enforcement officials and their accountability.",
-      "entities": [
-        "ICE officers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/ice-officers-suspended-after-making-untruthful-statements-about-shooting/2026-02-14-6d5d5c7c-1f4d-45d7-85dc-2f5c4a5a6f6c_story.html",
-      "id": "rf-1771054385978-eog29gtxp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T07:33:05.975Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1013,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-18T07:13:13.832Z"
+  "lastUpdated": "2026-02-18T08:42:41.395Z"
 }
