@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI is investigating an ICE arrest that resulted in skull fractures, and TriZetto Provider Solutions is under investigation for a data breach affecting over 700,000 patient records",
+      "insight": "These investigations suggest a pattern of abuse of power and negligence within ICE and other federal agencies. Further investigation is needed to determine the extent of these abuses and to hold those responsible accountable.",
+      "entities": [
+        "ICE",
+        "TriZetto Provider Solutions"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://www.mprnews.org/",
+      "id": "rf-1771411374774-qs2t4bwxa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T10:42:54.770Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The owner of a Phoenix motel was sentenced to probation and must forfeit $744K following an FBI investigation",
       "insight": "This case highlights the importance of monitoring federal investigations and their outcomes. It also raises questions about the potential for similar cases in the future.",
@@ -965,34 +985,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T09:29:41.263Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a case involving DNA from someone other than Nancy Guthrie, which was collected from her property.",
-      "insight": "This new development raises concerns about the handling of evidence in the case and potential misconduct by law enforcement. Further investigation is needed to determine the significance of this finding.",
-      "entities": [
-        "Nancy Guthrie",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC 6 South Florida",
-      "sourceUrl": "https://www.nbcmiami.com/news/local/fbi-releases-new-details-about-suspect-in-nancy-guthrie-investigation/",
-      "id": "rf-1771057840746-753dbqqr5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T08:30:40.742Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1013,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-18T09:45:26.036Z"
+  "lastUpdated": "2026-02-18T10:42:54.770Z"
 }
