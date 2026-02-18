@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "Allegations of fraud have been made against several entities and individuals, including Tony Clark and the owner of a Phoenix motel.",
+      "insight": "I have detected a pattern of alleged fraud across multiple entities and individuals. This suggests a possible larger issue that warrants further investigation.",
+      "entities": [
+        "Tony Clark",
+        "Owner of Phoenix motel"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times, 12News",
+      "sourceUrl": "https://www.nytimes.com/, https://www.12news.com/",
+      "id": "rf-1771394412824-a920h4or5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T06:00:12.821Z",
+      "isNew": true
+    },
+    {
+      "type": "data breach",
+      "description": "A data breach has occurred at TriZetto Provider Solutions, affecting over 700,000 patient records.",
+      "insight": "I have detected a significant data breach that may have serious consequences for the affected individuals. Further investigation is needed to determine the cause and scope of the breach.",
+      "entities": [
+        "TriZetto Provider Solutions"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.schubertjonckheer.com/",
+      "id": "rf-1771394412824-2h5vujlg9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T06:00:12.821Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The FBI is investigating a data breach of TriZetto Provider Solutions, affecting over 700,000 patient records",
       "insight": "This investigation raises concerns about the security of patient records and the potential for identity theft. Further investigation is needed to determine the extent of the breach and the measures being taken to prevent similar incidents in the future.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-18T04:52:06.777Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -946,45 +985,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T07:33:05.975Z",
       "isNew": false
-    },
-    {
-      "type": "Bribery probe",
-      "description": "Hawaii attorney general is vowing full accountability in a local bribery probe.",
-      "insight": "This investigation may uncover more widespread corruption in Hawaii.",
-      "entities": [
-        "Hawaii attorney general"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "Courthouse News",
-      "sourceUrl": "https://www.courthousenews.com/hawaii-attorney-general-vows-full-accountability-in-local-bribery-probe/",
-      "id": "rf-1771054385978-0ctq62lva",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T07:33:05.975Z",
-      "isNew": false
-    },
-    {
-      "type": "government shutdown",
-      "description": "The partial US government shutdown throws Congress into turmoil.",
-      "insight": "This shutdown could have significant impacts on various government agencies and services.",
-      "entities": [
-        "Congress",
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "South China Morning Post",
-      "sourceUrl": "https://www.scmp.com/rss/world/views/2155331/partial-us-government-shutdown-throws-congress-turmoil-again",
-      "id": "rf-1771051360566-wwmjg8l5m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T06:42:40.563Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-18T04:52:06.777Z"
+  "lastUpdated": "2026-02-18T06:00:12.821Z"
 }

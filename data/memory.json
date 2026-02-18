@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T04:52:26.743Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-02-13T05:58:56.543Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-02-18T04:52:06.775Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-18T06:00:12.819Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Tony Clark connected to?",
     "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?",
     "Where did the $100 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Not specified allegedly go in FBI investigation into Alex Pretti shooting?",
@@ -558,7 +556,9 @@
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Arrest Investigation?",
     "Where did the Unknown allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the Over 700,000 patient records allegedly go in TriZetto Provider Solutions Data Breach Investigation?"
+    "Where did the Over 700,000 patient records allegedly go in TriZetto Provider Solutions Data Breach Investigation?",
+    "Where did the unknown allegedly go in ICE arrest investigation?",
+    "Where did the over 700,000 patient records allegedly go in TriZetto Provider Solutions investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1001,
-    "articlesProcessed": 49900,
-    "redFlagsFound": 1198,
+    "totalScans": 1002,
+    "articlesProcessed": 49950,
+    "redFlagsFound": 1200,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "data breach",
+          "description": "A data breach has occurred at TriZetto Provider Solutions, affecting over 700,000 patient records.",
+          "insight": "I have detected a significant data breach that may have serious consequences for the affected individuals. Further investigation is needed to determine the cause and scope of the breach.",
+          "entities": [
+            "TriZetto Provider Solutions"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Schubert Jonckheer & Kolbe",
+          "sourceUrl": "https://www.schubertjonckheer.com/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $350 million allegedly go in $350 million tax refund fraud scheme?",
-        "Where did the Unknown allegedly go in Medicaid Services Fraud Investigation?",
-        "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Tony Clark connected to?",
+        "Where did the $100 billion allegedly go in Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-18T04:52:06.775Z",
-  "lastUpdated": "2026-02-18T04:52:06.776Z"
+  "lastReflection": "2026-02-18T06:00:12.819Z",
+  "lastUpdated": "2026-02-18T06:00:12.820Z"
 }
