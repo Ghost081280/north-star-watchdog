@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T14:02:36.230Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-13T15:41:08.145Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-02-18T14:14:51.957Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-02-18T15:51:52.768Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $744K allegedly go in Minnesota welfare fraud investigation?",
-    "Where did the Unspecified allegedly go in Zynex Inc?",
-    "What other organizations is Owner of Phoenix motel connected to?",
     "Where did the unknown allegedly go in Minnesota welfare fraud investigation?",
     "Where did the unknown allegedly go in Federal investigation into business practices of Zynex Inc?",
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the Undisclosed allegedly go in Minnesota Social Services Fraud Investigation?",
     "Where did the Undisclosed allegedly go in ICE Arrest Investigation?",
     "Where did the $2 Billion allegedly go in Universities Hid $2 Billion in Foreign Funding?",
-    "Where did the Not disclosed allegedly go in Minnesota Social Services Fraud?"
+    "Where did the Not disclosed allegedly go in Minnesota Social Services Fraud?",
+    "Where did the $0 allegedly go in Minnesota Social Services Fraud Investigation?",
+    "Where did the $0 allegedly go in MiLEAP Child Care Program Investigation?",
+    "Where did the $0 allegedly go in TriZetto Provider Solutions Data Breach Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1009,
-    "articlesProcessed": 50300,
-    "redFlagsFound": 1205,
+    "totalScans": 1010,
+    "articlesProcessed": 50350,
+    "redFlagsFound": 1207,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
-        "What other organizations is Jeffrey Epstein connected to?",
-        "Where did the $744K allegedly go in Minnesota welfare fraud investigation?"
+        "Where did the $744K allegedly go in Minnesota welfare fraud investigation?",
+        "Where did the Unspecified allegedly go in Zynex Inc?",
+        "What other organizations is Owner of Phoenix motel connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-18T14:14:51.957Z",
-  "lastUpdated": "2026-02-18T14:14:51.958Z"
+  "lastReflection": "2026-02-18T15:51:52.768Z",
+  "lastUpdated": "2026-02-18T15:51:52.768Z"
 }

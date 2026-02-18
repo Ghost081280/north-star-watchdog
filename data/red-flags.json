@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "data_breach",
+      "description": "TriZetto Provider Solutions experienced a data breach of over 700,000 patient records.",
+      "insight": "The breach highlights the vulnerability of sensitive information and the need for robust data protection measures.",
+      "entities": [
+        "TriZetto Provider Solutions"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.schubertjonckheer.com/trizetto-provider-solutions-under-investigation-for-data-breach-of-over-700000-patient-records/",
+      "id": "rf-1771429912774-n6zdp4l2f",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T15:51:52.770Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing, including the probe into TriZetto Provider Solutions and ICE arrest",
       "insight": "These investigations suggest a pattern of potential wrongdoing across various sectors, including healthcare and law enforcement.",
@@ -965,41 +984,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T10:25:32.323Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating various cases, including the Feeding Our Future and Nancy Guthrie cases.",
-      "insight": "These investigations indicate potential wrongdoing by government officials and private individuals.",
-      "entities": [
-        "FBI",
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTEUyd1dLMTlJUWEzMGFTbEo1SkVRWHFRZmVVbzZHUVZ6OTZ4cFpTQk51UXJPeXNKTTBfbUpQSkxqcENiV2ZhWHBuWmF2NThfM3cybnJtRWFMOUhJTDBHLU5wVGNLMWZqVVgwXzRuemxPSFY3eWU3RUt0dnpFZW9XS1MwN1c4LThVNVFoSFNPVTh0YUtSSmFFWC1NUHJGSjk3bkMtMXRGSjlUbWNwSjBHbG0zdnlIVWVzQWdpd3JGYmdHWTcxa2c",
-      "id": "rf-1771061381267-dsu4ktec6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T09:29:41.263Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-18T14:14:51.960Z"
+  "lastUpdated": "2026-02-18T15:51:52.770Z"
 }
