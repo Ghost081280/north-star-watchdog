@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T17:39:51.764Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-13T18:45:19.508Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-18T18:53:08.497Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-02-18T19:47:46.441Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in Federal investigation into business practices of Zynex Inc?",
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the N/A allegedly go in ICE Arrest Investigation?",
     "Where did the Unknown allegedly go in Minnesota Welfare Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Minnesota Social Services Fraud Investigation?",
     "Where did the $0 allegedly go in MiLEAP Child Care Program Investigation?",
     "Where did the $0 allegedly go in TriZetto Provider Solutions Data Breach Investigation?",
-    "Where did the Undisclosed allegedly go in California Unemployment Fraud Investigation?"
+    "Where did the Undisclosed allegedly go in California Unemployment Fraud Investigation?",
+    "Where did the $127 million allegedly go in Gateway Tunnel funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1012,
-    "articlesProcessed": 50450,
-    "redFlagsFound": 1209,
+    "totalScans": 1013,
+    "articlesProcessed": 50500,
+    "redFlagsFound": 1211,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Minnesota welfare fraud investigation?",
         "Where did the unknown allegedly go in Federal investigation into business practices of Zynex Inc?",
-        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
+        "Where did the N/A allegedly go in ICE Arrest Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-18T18:53:08.497Z",
-  "lastUpdated": "2026-02-18T18:53:08.498Z"
+  "lastReflection": "2026-02-18T19:47:46.441Z",
+  "lastUpdated": "2026-02-18T19:47:46.442Z"
 }
