@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Inappropriate Relationship",
+      "description": "Tony Clark, the former director of the MLBPA, resigned amid an investigation into an inappropriate relationship.",
+      "insight": "This raises concerns about the lack of accountability and oversight in organizations, and the potential for abuse of power. Further investigation is needed to determine the extent of the issue and to ensure that those responsible are held accountable.",
+      "entities": [
+        "Tony Clark",
+        "MLBPA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Complex",
+      "sourceUrl": "https://www.complex.com/sports/tony-clark-resigns-mlb-players-union-director",
+      "id": "rf-1771434128469-5pyko2z67",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-18T17:02:08.466Z",
+      "isNew": true
+    },
+    {
       "type": "data_breach",
       "description": "TriZetto Provider Solutions experienced a data breach of over 700,000 patient records.",
       "insight": "The breach highlights the vulnerability of sensitive information and the need for robust data protection measures.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-18T15:51:52.770Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -965,39 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T12:44:00.801Z",
       "isNew": false
-    },
-    {
-      "type": "untruthful statements",
-      "description": "ICE officers made untruthful statements about a shooting, which is a red flag for potential corruption or cover-up.",
-      "insight": "This incident raises concerns about the integrity of ICE and the need for further investigation into the shooting and the officers' actions.",
-      "entities": [
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/news/nation/2026/02/14/ice-officers-suspended-after-making-untruthful-statements-about-shooting/",
-      "id": "rf-1771064732327-ngke0lcxo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T10:25:32.323Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-18T15:51:52.770Z"
+  "lastUpdated": "2026-02-18T17:02:08.466Z"
 }
