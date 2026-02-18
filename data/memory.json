@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T10:38:20.538Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-13T11:31:17.850Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-02-18T10:42:54.768Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-18T11:37:48.198Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $18 billion allegedly go in Minnesota welfare fraud?",
     "Where did the $18 billion allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
@@ -558,7 +556,9 @@
     "Where did the over 700,000 patient records allegedly go in TriZetto Provider Solutions investigation?",
     "What other organizations is Tony Clark connected to?",
     "Where did the Over 700,000 patient records allegedly go in TriZetto Provider Solutions Data Breach?",
-    "Where did the $N/A allegedly go in TriZetto Provider Solutions Data Breach?"
+    "Where did the $N/A allegedly go in TriZetto Provider Solutions Data Breach?",
+    "Where did the $0 allegedly go in TriZetto Provider Solutions data breach investigation?",
+    "Where did the $0 allegedly go in ICE arrest investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1006,
-    "articlesProcessed": 50150,
-    "redFlagsFound": 1202,
+    "totalScans": 1007,
+    "articlesProcessed": 50200,
+    "redFlagsFound": 1203,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in FBI investigation into Alex Pretti shooting?",
         "Are any of these 2 figures connected to each other?",
-        "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $100 billion allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $18 billion allegedly go in Minnesota welfare fraud?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-18T10:42:54.768Z",
-  "lastUpdated": "2026-02-18T10:42:54.769Z"
+  "lastReflection": "2026-02-18T11:37:48.198Z",
+  "lastUpdated": "2026-02-18T11:37:48.198Z"
 }
