@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-14T07:33:05.973Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-14T08:30:40.741Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-19T09:44:08.583Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-19T10:41:56.436Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is 79th person connected to?",
-    "Where did the $100 billion allegedly go in Feeding Our Future fraud scheme?",
     "Where did the Unknown allegedly go in Minnesota Medicaid audit?",
     "What other organizations is Minnesota prison guard connected to?",
     "What other organizations is 79th person charged connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Jordan connected to?",
     "Where did the billions allegedly go in Minnesota social services fraud?",
     "What other organizations is Not specified connected to?",
-    "Where did the $ billions allegedly go in Social services fraud scandal?"
+    "Where did the $ billions allegedly go in Social services fraud scandal?",
+    "What specific allegations exist against No specific individual?",
+    "Where did the $billions allegedly go in Social services fraud scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1023,
-    "articlesProcessed": 51000,
-    "redFlagsFound": 1223,
+    "totalScans": 1024,
+    "articlesProcessed": 51050,
+    "redFlagsFound": 1224,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "Multiple articles reported on a massive social services fraud scandal in Minnesota, with allegations of billions of dollars in welfare fraud.",
+          "insight": "This appears to be a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to determine the extent of the fraud and identify all parties involved.",
+          "entities": [
+            "Minnesota officials",
+            "social services organizations"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Black Chronicle",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV0ZxbWFFWF9rWkZfU3JXdTFMNlkyZTBVNFdjMTkzT1pjS2hjdVJFT2RXSnR1eGVqTGF5aVR2M2lPanJHYWY0MnNCSkM4Vi1IbzA1c1FaMm9EUno5azlIYkQ0QXl0ZlJQYlQ3bkZyWkJ0Nk8wa1hfcW5PaVlVYVA1NFFsbE1WNGF1R3VnQWpZSWZYbk5CY0owSWM0dDZiSVBja0dsbnJlbm9CMjQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $127 million allegedly go in Gateway Tunnel Funding?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is 79th person connected to?"
+        "What other organizations is 79th person connected to?",
+        "Where did the $100 billion allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the Unknown allegedly go in Minnesota Medicaid audit?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-19T09:44:08.583Z",
-  "lastUpdated": "2026-02-19T09:44:08.584Z"
+  "lastReflection": "2026-02-19T10:41:56.436Z",
+  "lastUpdated": "2026-02-19T10:41:56.437Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large-scale fraud",
+      "description": "Multiple articles reported on a massive social services fraud scandal in Minnesota, with allegations of billions of dollars in welfare fraud.",
+      "insight": "This appears to be a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to determine the extent of the fraud and identify all parties involved.",
+      "entities": [
+        "Minnesota officials",
+        "social services organizations"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Black Chronicle",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOV0ZxbWFFWF9rWkZfU3JXdTFMNlkyZTBVNFdjMTkzT1pjS2hjdVJFT2RXSnR1eGVqTGF5aVR2M2lPanJHYWY0MnNCSkM4Vi1IbzA1c1FaMm9EUno5azlIYkQ0QXl0ZlJQYlQ3bkZyWkJ0Nk8wa1hfcW5PaVlVYVA1NFFsbE1WNGF1R3VnQWpZSWZYbk5CY0owSWM0dDZiSVBja0dsbnJlbm9CMjQ",
+      "id": "rf-1771497716443-0ekk1maz7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-19T10:41:56.439Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the Feeding Our Future fraud scheme, which has resulted in the charging of 79 people.",
       "insight": "This investigation highlights the need for increased oversight and accountability in government programs. Further research is needed to determine the extent of the fraud and to identify potential vulnerabilities in the system.",
@@ -266,26 +286,6 @@
       "source": "Multiple news sources",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZkJUVlpZMnRUYVdGTTVDN21IWHFEMDVhYVplcmZWaGh3bGZSeFZpY2M0WjZWdTNGRm1vZkZQY0dkTUxpeFZDa0I3RU1FSkRNNE8zVldCd3BXREw3NmZZV012S2gtVDZka2laSThCcWhjcjFNOWdqelFoQmh0clZuTGRtT3dfLVN1RUpsX3FpRzNjdWNsU212anhmbEFkVXFKNTd1SzYwVTExamlLWnhFVy15b0x6dFlrWGRJWGFWd0TSAcYBQVVfeXFMUDNpNlVnaDNuWXJHSjlZbTFvMURWRUZWTXhsb2xiazl3YXp5bXBwT2lYbjdIU3JHZDlhamZLUVVRU3pWOVVyWnRVMGZSMWQxSExQVVpfalo1V3RUUWJRejFJS3lWbzhrUkRhbDljdTdibzZiV2xFRVMwN3I0WmZrWDgxVHhQLXNZVGxxX1RoYTNXRTJrSjJFM2xHSlZYYTdYb1M1dTN6Yk16dDV4ZjJpRExVdjhydEdKdnV5SFVKOTVDVDk3dVVB",
       "id": "rf-1771360597930-4ldgut8hj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T20:36:37.926Z",
-      "isNew": false
-    },
-    {
-      "type": "large_scale_fraud",
-      "description": "Minnesota's alleged $18 billion welfare fraud",
-      "insight": "This could indicate a significant issue with Minnesota's welfare system and potentially a large-scale fraud scheme.",
-      "entities": [
-        "Minnesota",
-        "welfare system"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZFJlYXlQMHFUdFozdDdYcXBhMGRRQlQxYXVWWGh4OHYzS2syNm1abnJYY19OU3BpS1BrelVFd3lQeG54WjItTkFUakhCcE1sMWhPQl9QM2ZYMTIzYUZBOUsxVUZhNm5YRE5xbVhfVGRIVjJiNlV5ME9qSUFpTzFNSXhGUkNadUU2NWRUbUdiYkl0UThMSzN3VTg2d29oRzQ3VUY2MjNQU1l3cFlm",
-      "id": "rf-1771360597930-s00to2gp8",
       "apisUsed": [
         "Google News"
       ],
@@ -987,15 +987,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-19T09:44:08.585Z"
+  "lastUpdated": "2026-02-19T10:41:56.439Z"
 }
