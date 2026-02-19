@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A former Minnesota prison guard was detained by ICE for allegedly claiming US citizenship to join the military",
+      "insight": "This case raises concerns about the vulnerability of the US military to fraud and deception. Further investigation is needed to determine the extent of the fraud and to identify any potential security risks.",
+      "entities": [
+        "Former Minnesota prison guard"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/former-minnesota-prison-guard-detained-by-ice-accused-of-multiple-acts-of-immigration-fraud/600246343/",
+      "id": "rf-1771512315351-l5ovg4zd4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-19T14:45:15.348Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "Multiple articles reported on a massive social services fraud scandal in Minnesota, with allegations of billions of dollars in welfare fraud.",
       "insight": "This appears to be a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to determine the extent of the fraud and identify all parties involved.",
@@ -964,38 +983,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T19:23:18.175Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "ICE officers are under investigation for making untruthful statements about a shooting",
-      "insight": "This investigation raises concerns about the integrity of ICE officers and the potential for misconduct. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/news/nation/2026/02/14/ice-probes-2-officers-accused-of-lying-under-oath-about-shooting/1131234002/",
-      "id": "rf-1771086467225-0evbkfp2k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T16:27:47.222Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-19T13:02:01.453Z"
+  "lastUpdated": "2026-02-19T14:45:15.348Z"
 }
