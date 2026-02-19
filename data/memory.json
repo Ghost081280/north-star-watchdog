@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-14T19:23:18.172Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-02-14T20:24:54.087Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-19T22:30:28.416Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-19T23:28:51.905Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 63,
+      "count": 64,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-15T17:25:07.083Z"
+      "lastSeen": "2026-02-19T23:28:51.905Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the Unknown allegedly go in Minnesota social services fraud?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $18 billion allegedly go in Minnesota social services fraud?",
     "What other organizations is Stephen Colbert connected to?",
     "What other organizations is Bruno Bajrami connected to?",
@@ -558,7 +555,10 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Andrew connected to?",
     "Where did the Unknown allegedly go in Epstein Investigation?",
-    "Where did the Unknown allegedly go in Child Care Fraud Investigation?"
+    "Where did the Unknown allegedly go in Child Care Fraud Investigation?",
+    "What other organizations is Jody Greene connected to?",
+    "What other organizations is Sabrina Heinz connected to?",
+    "What other organizations is Nancy Guthrie connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1035,
-    "articlesProcessed": 51600,
-    "redFlagsFound": 1237,
+    "totalScans": 1036,
+    "articlesProcessed": 51650,
+    "redFlagsFound": 1239,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ billions allegedly go in Social services fraud scandal?",
-        "What specific allegations exist against No specific individual?",
-        "Where did the $billions allegedly go in Social services fraud scandal?"
+        "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the Unknown allegedly go in Minnesota social services fraud?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-19T22:30:28.416Z",
-  "lastUpdated": "2026-02-19T22:30:28.417Z"
+  "lastReflection": "2026-02-19T23:28:51.905Z",
+  "lastUpdated": "2026-02-19T23:28:51.905Z"
 }
