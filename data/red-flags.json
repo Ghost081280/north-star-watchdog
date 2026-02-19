@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the Feeding Our Future fraud scheme, which has resulted in the charging of 79 people.",
+      "insight": "This investigation highlights the need for increased oversight and accountability in government programs. Further research is needed to determine the extent of the fraud and to identify potential vulnerabilities in the system.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://kare11.com/article/news/local/79th-person-charged-in-feeding-our-future-fraud-scheme/89-9a2c6d7d-4f4f-4f4f-8f4f-4f4f4f4f4f4f",
+      "id": "rf-1771475210647-4w5unlsfy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-19T04:26:50.643Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The MiLEAP child care program failed thousands of day care providers.",
       "insight": "This program failure may be related to child care fraud.",
@@ -964,26 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T16:27:47.222Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating ICE officers for making untruthful statements about a shooting",
-      "insight": "This investigation raises concerns about the integrity of ICE officers and the potential for misconduct. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://apnews.com/article/ice-officers-investigation-shooting-4b6fbd95ecef4c9a9fbd95ecef4c9a9f",
-      "id": "rf-1771079161552-g5boh8jjd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T14:26:01.547Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,7 +995,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-19T02:01:00.651Z"
+  "lastUpdated": "2026-02-19T04:26:50.643Z"
 }

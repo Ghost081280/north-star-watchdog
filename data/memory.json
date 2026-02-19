@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-13T23:29:43.916Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-02-14T01:54:43.098Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-19T02:01:00.649Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-19T04:26:50.641Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2 Billion allegedly go in Universities Hid $2 Billion in Foreign Funding?",
-    "Where did the Not disclosed allegedly go in Minnesota Social Services Fraud?",
-    "Where did the $0 allegedly go in Minnesota Social Services Fraud Investigation?",
-    "Where did the $0 allegedly go in MiLEAP Child Care Program Investigation?",
     "Where did the $0 allegedly go in TriZetto Provider Solutions Data Breach Investigation?",
     "Where did the Undisclosed allegedly go in California Unemployment Fraud Investigation?",
     "Where did the $127 million allegedly go in Gateway Tunnel funding investigation?",
@@ -558,7 +554,11 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is 79th person connected to?",
     "Where did the $100 billion allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the Unknown allegedly go in Minnesota Medicaid audit?"
+    "Where did the Unknown allegedly go in Minnesota Medicaid audit?",
+    "What other organizations is Minnesota prison guard connected to?",
+    "What other organizations is 79th person charged connected to?",
+    "Where did the billions allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the billions allegedly go in Minnesota welfare fraud scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1018,
-    "articlesProcessed": 50750,
-    "redFlagsFound": 1217,
+    "totalScans": 1019,
+    "articlesProcessed": 50800,
+    "redFlagsFound": 1218,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in ICE arrest investigation?",
-        "Where did the Undisclosed allegedly go in Minnesota Social Services Fraud Investigation?",
-        "Where did the Undisclosed allegedly go in ICE Arrest Investigation?"
+        "Where did the $2 Billion allegedly go in Universities Hid $2 Billion in Foreign Funding?",
+        "Where did the Not disclosed allegedly go in Minnesota Social Services Fraud?",
+        "Where did the $0 allegedly go in Minnesota Social Services Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-19T02:01:00.649Z",
-  "lastUpdated": "2026-02-19T02:01:00.650Z"
+  "lastReflection": "2026-02-19T04:26:50.641Z",
+  "lastUpdated": "2026-02-19T04:26:50.642Z"
 }
