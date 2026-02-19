@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-14T13:43:34.864Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-14T14:26:01.545Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-19T16:51:35.654Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-19T17:49:46.602Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Wes Moore connected to?",
-    "What specific allegations exist against Wes Moore?",
-    "Where did the $1 million allegedly go in Feeding Our Future fraud scheme?",
     "What other organizations is Indian-origin man connected to?",
     "What other organizations is Former Minnesota prison guard connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +555,10 @@
     "Where did the $18 billion allegedly go in Minnesota social services fraud?",
     "What other organizations is Stephen Colbert connected to?",
     "What other organizations is Bruno Bajrami connected to?",
-    "Where did the $18 billion allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $18 billion allegedly go in Feeding Our Future fraud scheme?",
+    "What other organizations is Minneapolis day care operator connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the Unknown allegedly go in Concierge Apartments investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1029,
-    "articlesProcessed": 51300,
-    "redFlagsFound": 1230,
+    "totalScans": 1030,
+    "articlesProcessed": 51350,
+    "redFlagsFound": 1232,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "Legislators advance bill to formally strip fraud-riddled program from state law",
-          "insight": "This suggests a large-scale fraud scheme was uncovered, and the state is taking steps to rectify it.",
-          "entities": [
-            "Minnesota state government"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Alpha News",
-          "sourceUrl": "https://alphanews.com/legislators-advance-bill-to-formally-strip-fraud-riddled-program-from-state-law"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Renee Good?",
         "What other organizations is Wes Moore connected to?",
-        "What specific allegations exist against Wes Moore?"
+        "What specific allegations exist against Wes Moore?",
+        "Where did the $1 million allegedly go in Feeding Our Future fraud scheme?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-19T16:51:35.654Z",
-  "lastUpdated": "2026-02-19T16:51:35.655Z"
+  "lastReflection": "2026-02-19T17:49:46.602Z",
+  "lastUpdated": "2026-02-19T17:49:46.603Z"
 }
