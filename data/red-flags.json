@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Legislators advance bill to formally strip fraud-riddled program from state law",
+      "insight": "This suggests a large-scale fraud scheme was uncovered, and the state is taking steps to rectify it.",
+      "entities": [
+        "Minnesota state government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Alpha News",
+      "sourceUrl": "https://alphanews.com/legislators-advance-bill-to-formally-strip-fraud-riddled-program-from-state-law",
+      "id": "rf-1771519895659-2ym9msekd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-19T16:51:35.656Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI Boston says more extremists targeting kids on platforms including Roblox, Minecraft, Call of Duty",
+      "insight": "This indicates a growing concern for online safety and potential fraud schemes targeting children.",
+      "entities": [
+        "FBI Boston"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/fbi-boston-says-more-extremists-targeting-kids-on-platforms-including-roblox-minecraft-call-of-duty/",
+      "id": "rf-1771519895659-5ky3jessh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-19T16:51:35.656Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation into Bruno Bajrami has been confirmed, with allegations of federal exposure.",
       "insight": "This investigation may be connected to other cases of federal exposure, and it's essential to track the developments in this case to identify potential patterns and connections.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-19T15:46:36.277Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -943,45 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-14T22:21:55.713Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "A lobbyist at the center of the 'paper bag' case is under federal investigation.",
-      "insight": "This investigation may be connected to other cases of corruption and bribery, and it's essential to monitor the developments and connections between entities.",
-      "entities": [
-        "Lobbyist"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Hawaii Tribune-Herald",
-      "sourceUrl": "https://www.hawaiitribune-herald.com/news/local-news/lobbyist-at-center-of-paper-bag-case-under-federal-investigation/",
-      "id": "rf-1771104175686-agqqwikiq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T21:22:55.682Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Feeding Our Future for fraud",
-      "insight": "This investigation suggests a potential large-scale fraud scheme involving government funds. Further investigation into the individuals and organizations involved is warranted.",
-      "entities": [
-        "Salim Said",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSTRMekNLYy1qelVGSEdfbDdEdnRZVmVyMnpEWmdNZGxwazRnN0JPal95ODBMYk9nNVdvZjJIMlljbko0NEFJNG1kMERTZXdWWHRILVo3cEVXSHJWMjJENUIwakVEVUtfWm5TN3RBREtfWDMyYkt2djlRSzF3Wl9tb3lCMVVyMUtBRkVKNk81cmlVVTMyTzNzaHNCVnJBRF9zenNwZ1pLY2ZOY1VNdDZ1a1ItMjVBdmN5eXlyU0RTREJnOWhCRGc",
-      "id": "rf-1771100694094-9jr6dwj7u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-14T20:24:54.089Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,7 +993,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-19T15:46:36.277Z"
+  "lastUpdated": "2026-02-19T16:51:35.656Z"
 }
