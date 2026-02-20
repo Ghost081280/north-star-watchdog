@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Ongoing federal investigations into various entities, including law enforcement agencies and educational institutions.",
+      "insight": "These investigations suggest a broad range of potential misconduct and a need for increased oversight.",
+      "entities": [
+        "Federal Bureau of Investigation",
+        "US Department of Education"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": null,
+      "id": "rf-1771576743933-7heh970hi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T08:39:03.929Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "The Feeding Our Future investigation has resulted in 79 charges, indicating a large-scale fraud scheme.",
       "insight": "This investigation suggests a pattern of fraud in the non-profit sector, particularly in organizations receiving federal funding. Further investigation is needed to determine the extent of the fraud and to identify potential perpetrators.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T07:47:36.585Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scandal",
@@ -961,30 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T06:06:02.879Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "ICE negotiations have faltered, leading to a shutdown of DHS.",
-      "insight": "This could indicate a larger issue with federal agencies and their ability to negotiate and cooperate.",
-      "entities": [
-        "ICE",
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1771216376276-z1imxdr4h",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T04:32:56.273Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T07:47:36.585Z"
+  "lastUpdated": "2026-02-20T08:39:03.929Z"
 }
