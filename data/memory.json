@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-14T23:22:43.768Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-15T02:04:48.919Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-20T05:52:46.854Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-20T06:54:42.509Z",
+      "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Amherst detective connected to?",
     "Where did the $90M+ allegedly go in Feeding Our Future fraud?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Andrew connected to?",
@@ -558,7 +557,8 @@
     "Where did the Undisclosed allegedly go in Minnesota DHS Investigation?",
     "What other organizations is Unspecified connected to?",
     "Where did the unspecified allegedly go in Feeding Our Future?",
-    "Where did the unspecified allegedly go in Alzheimer’s Drug Company?"
+    "Where did the unspecified allegedly go in Alzheimer’s Drug Company?",
+    "What specific allegations exist against Jeffrey Epstein?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1039,
-    "articlesProcessed": 51800,
-    "redFlagsFound": 1242,
+    "totalScans": 1040,
+    "articlesProcessed": 51850,
+    "redFlagsFound": 1244,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud scandal",
+          "description": "Feeding Our Future fraud scandal with 79 people charged",
+          "insight": "The Feeding Our Future scandal indicates a large-scale fraud operation, potentially involving multiple entities and government programs.",
+          "entities": [
+            "Feeding Our Future",
+            "Minnesota DHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "FOX 9 Minneapolis-St. Paul",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE04VHI0MjF6RlRYZm1EdUJoanZ2U0t0Y3BDNnFVNFpzWUJxWVRpUDdkUExfQW9XeTZxajdvdUhGM3c2ZkQ5bjR5ZjNLX3htOExFUUpkR0JSbmRDd1Z1bHpfZ1dWcjU1dzlONkhvaWYyNm4xQdIBd0FVX3lxTE5ZbTFKU1NpblNjUnI3MmVENjN3RXI2dDYzeC1hRU5yTmU2LUVPRkdPckpuejFUbnlxMVAyV1FHYy0yeW5mVXVuZlR1Z3o4ZVVnM1JuclBoaUpKcThvNTR6dGg3YUpwQzdyZWdWN1F6Q3ZiYzhHZV8w"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Epstein investigation?",
-        "What other organizations is Former Optum employee connected to?",
-        "What specific allegations exist against Bruno Bajrami?"
+        "What other organizations is Amherst detective connected to?",
+        "Where did the $90M+ allegedly go in Feeding Our Future fraud?",
+        "Are any of these 3 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-20T05:52:46.854Z",
-  "lastUpdated": "2026-02-20T05:52:46.854Z"
+  "lastReflection": "2026-02-20T06:54:42.509Z",
+  "lastUpdated": "2026-02-20T06:54:42.510Z"
 }

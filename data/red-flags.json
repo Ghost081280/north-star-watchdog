@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "fraud scandal",
+      "description": "Feeding Our Future fraud scandal with 79 people charged",
+      "insight": "The Feeding Our Future scandal indicates a large-scale fraud operation, potentially involving multiple entities and government programs.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE04VHI0MjF6RlRYZm1EdUJoanZ2U0t0Y3BDNnFVNFpzWUJxWVRpUDdkUExfQW9XeTZxajdvdUhGM3c2ZkQ5bjR5ZjNLX3htOExFUUpkR0JSbmRDd1Z1bHpfZ1dWcjU1dzlONkhvaWYyNm4xQdIBd0FVX3lxTE5ZbTFKU1NpblNjUnI3MmVENjN3RXI2dDYzeC1hRU5yTmU2LUVPRkdPckpuejFUbnlxMVAyV1FHYy0yeW5mVXVuZlR1Z3o4ZVVnM1JuclBoaUpKcThvNTR6dGg3YUpwQzdyZWdWN1F6Q3ZiYzhHZV8w",
+      "id": "rf-1771570482515-u54qwh0qm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T06:54:42.511Z",
+      "isNew": true
+    },
+    {
+      "type": "possible FERPA violation",
+      "description": "Tufts University under federal investigation for possible FERPA violation",
+      "insight": "The investigation into Tufts University may indicate a potential breach of student data or educational records.",
+      "entities": [
+        "Tufts University"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "The Tufts Daily",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOa2RvSUc1NVRsMGlGVWRXRXRTR0FHWjJJLVlkQlhxalplQWt5ZS1OT3VZbTd2SjlxODB3VUFQeE9VNUpSLWE3VERjemRXYjRkTjRZSHlHcm1WUDlnS1F3T2c3Yk04TnpwRmxwYjRLME5PMjlCbVlEMGtLWW80VXVhOVFMcFZsdEdTdGViNzNUUFpoMVEwSFZZOXFWNm5BV0F4aFhLOFhaM0F4U2pBSFNvODJvOGRpZnlLQy1NdXU2TG9lV2Fta2o4ZWNheURfNHUyZ0tlb2lnOVpuMXZFb0kwYV90NHhlT0Nz",
+      "id": "rf-1771570482515-uu3qguyn5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T06:54:42.511Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are currently underway, indicating potential widespread misconduct and fraud.",
       "insight": "The sheer number of federal investigations suggests a pattern of potential wrongdoing that warrants further investigation. I recommend tracking these cases and searching for connections between entities and individuals.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T05:52:46.856Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -943,50 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-15T20:25:04.242Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The shutdown of parts of DHS and ICE due to lack of funding",
-      "insight": "This shutdown may indicate a larger issue with government funding and budgeting.",
-      "entities": [
-        "DHS",
-        "ICE"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/02/14/us/politics/department-of-homeland-security-shutdown.html",
-      "id": "rf-1771176307088-jwxdchr1c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T17:25:07.085Z",
-      "isNew": false
-    },
-    {
-      "type": "possible perjury",
-      "description": "ICE officers are under investigation for possible perjury about the shooting of a Venezuelan man in Minneapolis",
-      "insight": "This investigation raises concerns about the integrity of ICE officers and the potential for cover-ups. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "ICE"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Le Monde.fr",
-      "sourceUrl": "https://www.lemonde.fr/en/international/article/2026/02/14/ice-officers-on-leave-while-feds-probe-into-possible-perjury-about-the-shooting-of-a-venezuelan-man-in-minneapolis_6123146.html",
-      "id": "rf-1771163053332-cfttfkxfa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T13:44:13.329Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -996,6 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T05:52:46.856Z"
+  "lastUpdated": "2026-02-20T06:54:42.511Z"
 }
