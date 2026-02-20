@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-15T18:34:52.618Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-15T19:24:25.206Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-02-20T20:29:40.749Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-20T21:23:58.643Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Melissa Hortman?",
-    "Where did the $16 million allegedly go in Feeding Our Future?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is 79th person charged connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +556,9 @@
     "Where did the $79 allegedly go in Feeding Our Future fraud scheme?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $3K+ allegedly go in Child Care Assistance Programs?",
-    "Where did the None allegedly go in Federal Prison Investigation?"
+    "Where did the None allegedly go in Federal Prison Investigation?",
+    "Where did the Unknown allegedly go in FBI Investigation into Bruno Bajrami?",
+    "Where did the Unknown allegedly go in Federal Investigation into Ironwood man?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1054,
-    "articlesProcessed": 52550,
-    "redFlagsFound": 1260,
+    "totalScans": 1055,
+    "articlesProcessed": 52600,
+    "redFlagsFound": 1261,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Diana DiZoglio connected to?",
-        "What other organizations is Melissa Hortman connected to?",
-        "What specific allegations exist against Melissa Hortman?"
+        "What specific allegations exist against Melissa Hortman?",
+        "Where did the $16 million allegedly go in Feeding Our Future?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-20T20:29:40.749Z",
-  "lastUpdated": "2026-02-20T20:29:40.750Z"
+  "lastReflection": "2026-02-20T21:23:58.643Z",
+  "lastUpdated": "2026-02-20T21:23:58.643Z"
 }

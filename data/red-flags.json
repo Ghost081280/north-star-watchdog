@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Multiple federal investigations are ongoing, including into Bruno Bajrami and an Ironwood man who threatened to kill ICE agents.",
+      "insight": "These investigations may indicate a larger pattern of fraudulent or threatening activity, and further investigation is needed to determine the scope and extent of these issues.",
+      "entities": [
+        "Bruno Bajrami",
+        "Ironwood man"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "USA Herald, FBI",
+      "sourceUrl": "https://www.usaherald.com/usa-herald-first-to-confirm-fbi-investigation-into-bruno-bajrami-as-federal-scrutiny-deepens/",
+      "id": "rf-1771622638648-fodzrs3bz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T21:23:58.645Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating Bruno Bajrami, and 79 people have been charged in the Feeding Our Future fraud scheme.",
       "insight": "These investigations suggest a pattern of fraudulent activity, and I recommend further research into the individuals and organizations involved.",
@@ -465,26 +485,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-18T15:51:52.770Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing, including the probe into TriZetto Provider Solutions and ICE arrest",
-      "insight": "These investigations suggest a pattern of potential wrongdoing across various sectors, including healthcare and law enforcement.",
-      "entities": [
-        "TriZetto Provider Solutions",
-        "ICE"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://schubertjonckheer.com/trizetto-provider-solutions-under-investigation-for-data-breach-of-over-700000-patient-records/ https://www.mprnews.org/story/2026/02/18/fbi-st-paul-police-probing-ice-arrest-resulted-skull-fractures",
-      "id": "rf-1771414668204-bzv5ttzbv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T11:37:48.200Z",
       "isNew": false
     },
     {
@@ -985,8 +985,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,7 +992,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T20:29:40.751Z"
+  "lastUpdated": "2026-02-20T21:23:58.645Z"
 }
