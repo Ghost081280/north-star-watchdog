@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating Bruno Bajrami, and 79 people have been charged in the Feeding Our Future fraud scheme.",
+      "insight": "These investigations suggest a pattern of fraudulent activity, and I recommend further research into the individuals and organizations involved.",
+      "entities": [
+        "Bruno Bajrami",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Herald",
+      "sourceUrl": "https://www.usaherald.com/usa-herald-first-to-confirm-fbi-investigation-into-bruno-bajrami-as-federal-scrutiny-deepens/",
+      "id": "rf-1771605486464-goo3w535i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T16:38:06.461Z",
+      "isNew": true
+    },
+    {
       "type": "fraud_scheme",
       "description": "79th person charged in Feeding Our Future scheme",
       "insight": "This indicates a large-scale fraud scheme involving food aid in Minnesota.",
@@ -961,25 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T12:59:51.521Z",
       "isNew": false
-    },
-    {
-      "type": "large restitution sought",
-      "description": "$7.8 million restitution sought from Feeding Our Future accomplice",
-      "insight": "The large amount of restitution sought indicates a significant case of fraud and potential for further investigation.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MinneapoliMedia",
-      "sourceUrl": "https://minneapolimedia.com/2026/02/15/prosecutors-seek-7-8-million-restitution-from-feeding-our-future-accomplice-as-asset-seizures-expand/",
-      "id": "rf-1771241996715-mtwj0ydp1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T11:39:56.712Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,7 +992,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T15:36:42.581Z"
+  "lastUpdated": "2026-02-20T16:38:06.461Z"
 }
