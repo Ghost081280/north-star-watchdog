@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Multiple federal investigations are currently underway, which could indicate a larger pattern of fraud or misconduct.",
+      "insight": "I suspect that these investigations may be connected to a larger scheme or pattern of behavior. Further research is needed to determine the extent of the issue.",
+      "entities": [
+        "Feeding Our Future",
+        "Child sex-change procedures"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal investigations",
+      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-79th-person-charged",
+      "id": "rf-1771580376377-em16n9c8x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T09:39:36.373Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Ongoing federal investigations into various entities, including law enforcement agencies and educational institutions.",
       "insight": "These investigations suggest a broad range of potential misconduct and a need for increased oversight.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T08:39:03.929Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud",
@@ -76,26 +96,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T06:54:42.511Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are currently underway, indicating potential widespread misconduct and fraud.",
-      "insight": "The sheer number of federal investigations suggests a pattern of potential wrongdoing that warrants further investigation. I recommend tracking these cases and searching for connections between entities and individuals.",
-      "entities": [
-        "Feeding Our Future",
-        "Alzheimer’s Drug Company"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-79th-person-charged",
-      "id": "rf-1771566766859-fr5nhbiqh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T05:52:46.856Z",
       "isNew": false
     },
     {
@@ -985,17 +985,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T08:39:03.929Z"
+  "lastUpdated": "2026-02-20T09:39:36.373Z"
 }

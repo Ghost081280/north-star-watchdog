@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-15T05:55:43.892Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-15T06:50:35.825Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-20T08:39:03.927Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-20T09:39:36.372Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Child Care Fraud Investigation?",
-    "What other organizations is Jody Greene connected to?",
-    "What other organizations is Sabrina Heinz connected to?",
     "What other organizations is Nancy Guthrie connected to?",
     "What other organizations is Minneapolis day care owner connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is 79th person connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future investigation?",
     "Where did the Unknown allegedly go in Portland Public Schools investigation?",
-    "Where did the $100M+ allegedly go in Feeding Our Future?"
+    "Where did the $100M+ allegedly go in Feeding Our Future?",
+    "What other organizations is Andrew connected to?",
+    "Where did the Unknown allegedly go in Feeding Our Future?",
+    "Where did the Unknown allegedly go in Child sex-change procedures?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1042,
-    "articlesProcessed": 51950,
-    "redFlagsFound": 1247,
+    "totalScans": 1043,
+    "articlesProcessed": 52000,
+    "redFlagsFound": 1248,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Ongoing federal investigations into various entities, including law enforcement agencies and educational institutions.",
-          "insight": "These investigations suggest a broad range of potential misconduct and a need for increased oversight.",
-          "entities": [
-            "Federal Bureau of Investigation",
-            "US Department of Education"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Multiple sources",
-          "sourceUrl": null
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Epstein Investigation?",
         "Where did the Unknown allegedly go in Child Care Fraud Investigation?",
-        "What other organizations is Jody Greene connected to?"
+        "What other organizations is Jody Greene connected to?",
+        "What other organizations is Sabrina Heinz connected to?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-20T08:39:03.927Z",
-  "lastUpdated": "2026-02-20T08:39:03.928Z"
+  "lastReflection": "2026-02-20T09:39:36.372Z",
+  "lastUpdated": "2026-02-20T09:39:36.372Z"
 }
