@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-15T08:31:25.154Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-02-15T09:30:39.492Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-20T11:31:45.323Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-20T12:55:44.806Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 66,
+      "count": 67,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-20T10:36:21.176Z"
+      "lastSeen": "2026-02-20T12:55:44.806Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Former ComEd exec connected to?",
-    "Where did the Undisclosed allegedly go in Federal Investigation into Alzheimer’s Drug Company?",
-    "Where did the Undisclosed allegedly go in Minnesota DHS Investigation?",
-    "What other organizations is Unspecified connected to?",
-    "Where did the unspecified allegedly go in Feeding Our Future?",
     "Where did the unspecified allegedly go in Alzheimer’s Drug Company?",
     "What specific allegations exist against Jeffrey Epstein?",
     "What other organizations is 79th person connected to?",
@@ -558,7 +553,12 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Feeding Our Future connected to?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
-    "Where did the Unknown allegedly go in Alzheimer’s Drug Company Investigation?"
+    "Where did the Unknown allegedly go in Alzheimer’s Drug Company Investigation?",
+    "What other organizations is Diana DiZoglio connected to?",
+    "What other organizations is Melissa Hortman connected to?",
+    "What specific allegations exist against Melissa Hortman?",
+    "Where did the $16 million allegedly go in Feeding Our Future?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1045,
-    "articlesProcessed": 52100,
-    "redFlagsFound": 1251,
+    "totalScans": 1046,
+    "articlesProcessed": 52150,
+    "redFlagsFound": 1253,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100 million allegedly go in Child care fraud investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Prince Andrew connected to?"
+        "What other organizations is Former ComEd exec connected to?",
+        "Where did the Undisclosed allegedly go in Federal Investigation into Alzheimer’s Drug Company?",
+        "Where did the Undisclosed allegedly go in Minnesota DHS Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-20T11:31:45.323Z",
-  "lastUpdated": "2026-02-20T11:31:45.324Z"
+  "lastReflection": "2026-02-20T12:55:44.806Z",
+  "lastUpdated": "2026-02-20T12:55:44.806Z"
 }
