@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-15T06:50:35.825Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-15T07:37:53.227Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-02-20T09:39:36.372Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-20T10:36:21.176Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 65,
+      "count": 66,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-20T08:39:03.928Z"
+      "lastSeen": "2026-02-20T10:36:21.176Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Nancy Guthrie connected to?",
-    "What other organizations is Minneapolis day care owner connected to?",
-    "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?",
     "Where did the $100 million allegedly go in Child care fraud investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Prince Andrew connected to?",
@@ -558,7 +555,10 @@
     "Where did the $100M+ allegedly go in Feeding Our Future?",
     "What other organizations is Andrew connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future?",
-    "Where did the Unknown allegedly go in Child sex-change procedures?"
+    "Where did the Unknown allegedly go in Child sex-change procedures?",
+    "What other organizations is Jeffrey Epstein connected to?",
+    "What other organizations is ComEd exec connected to?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1043,
-    "articlesProcessed": 52000,
-    "redFlagsFound": 1248,
+    "totalScans": 1044,
+    "articlesProcessed": 52050,
+    "redFlagsFound": 1250,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Child Care Fraud Investigation?",
-        "What other organizations is Jody Greene connected to?",
-        "What other organizations is Sabrina Heinz connected to?"
+        "What other organizations is Nancy Guthrie connected to?",
+        "What other organizations is Minneapolis day care owner connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-20T09:39:36.372Z",
-  "lastUpdated": "2026-02-20T09:39:36.372Z"
+  "lastReflection": "2026-02-20T10:36:21.176Z",
+  "lastUpdated": "2026-02-20T10:36:21.176Z"
 }
