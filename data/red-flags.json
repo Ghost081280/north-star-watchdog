@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "The Feeding Our Future investigation has resulted in 79 charges, indicating a large-scale fraud scheme.",
+      "insight": "This investigation suggests a pattern of fraud in the non-profit sector, particularly in organizations receiving federal funding. Further investigation is needed to determine the extent of the fraud and to identify potential perpetrators.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-79th-person-charged",
+      "id": "rf-1771573656589-uc10sprmu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-20T07:47:36.585Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scandal",
       "description": "Feeding Our Future fraud scandal with 79 people charged",
       "insight": "The Feeding Our Future scandal indicates a large-scale fraud operation, potentially involving multiple entities and government programs.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T06:54:42.511Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "possible FERPA violation",
@@ -37,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-20T06:54:42.511Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -962,41 +981,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T04:32:56.273Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation is underway into a proposed Muslim-centric development in North Texas, backed by Greg Abbott",
-      "insight": "This investigation may be connected to larger patterns of fraud and corruption, particularly in the context of government contracts and development projects. Further research is needed to determine the scope and implications of this investigation.",
-      "entities": [
-        "Greg Abbott",
-        "North Texas development"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WFAA",
-      "sourceUrl": "https://www.wfaa.com/news/local/greg-abbott-backing-federal-investigation-into-proposed-muslim-centric-development-in-north-texas",
-      "id": "rf-1771187104245-ujez2k9ga",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-15T20:25:04.242Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-20T06:54:42.511Z"
+  "lastUpdated": "2026-02-20T07:47:36.585Z"
 }
