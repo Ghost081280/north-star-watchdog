@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-14T20:24:54.087Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-14T21:22:55.680Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-19T23:28:51.905Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-20T01:56:52.125Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $18 billion allegedly go in Minnesota social services fraud?",
-    "What other organizations is Stephen Colbert connected to?",
-    "What other organizations is Bruno Bajrami connected to?",
-    "Where did the $18 billion allegedly go in Feeding Our Future fraud scheme?",
     "What other organizations is Minneapolis day care operator connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Unknown allegedly go in Concierge Apartments investigation?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in Child Care Fraud Investigation?",
     "What other organizations is Jody Greene connected to?",
     "What other organizations is Sabrina Heinz connected to?",
-    "What other organizations is Nancy Guthrie connected to?"
+    "What other organizations is Nancy Guthrie connected to?",
+    "What other organizations is Minneapolis day care owner connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?",
+    "Where did the $100 million allegedly go in Child care fraud investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1036,
-    "articlesProcessed": 51650,
-    "redFlagsFound": 1239,
+    "totalScans": 1037,
+    "articlesProcessed": 51700,
+    "redFlagsFound": 1240,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
-        "Where did the Unknown allegedly go in Minnesota social services fraud?",
-        "Are any of these 2 figures connected to each other?"
+        "Where did the $18 billion allegedly go in Minnesota social services fraud?",
+        "What other organizations is Stephen Colbert connected to?",
+        "What other organizations is Bruno Bajrami connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-19T23:28:51.905Z",
-  "lastUpdated": "2026-02-19T23:28:51.905Z"
+  "lastReflection": "2026-02-20T01:56:52.125Z",
+  "lastUpdated": "2026-02-20T01:56:52.126Z"
 }
