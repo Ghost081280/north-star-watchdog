@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T08:44:37.712Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T09:53:16.402Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-21T09:28:45.103Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-21T10:24:29.265Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in BRPD Officer Investigation?",
-    "Where did the $3000 allegedly go in Minnesota Daycare Fraud?",
     "What other organizations is Waterford Daycare Boss connected to?",
     "Where did the Unknown allegedly go in Federal Investigation into AppLovin Marketing Platform?",
     "Where did the $X allegedly go in Minnesota Daycare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Jeffrey Epstein connected to?",
     "What other organizations is State senator's chief of staff connected to?",
     "Where did the Unknown allegedly go in Epstein investigation?",
-    "Where did the Unknown allegedly go in ICE shooting investigation?"
+    "Where did the Unknown allegedly go in ICE shooting investigation?",
+    "What other organizations is Jason Derleth connected to?",
+    "What specific allegations exist against Jason Derleth?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1064,
-    "articlesProcessed": 53050,
-    "redFlagsFound": 1272,
+    "totalScans": 1065,
+    "articlesProcessed": 53100,
+    "redFlagsFound": 1273,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Federal Prison Investigation?",
-        "Where did the Unknown allegedly go in FBI Investigation into Bruno Bajrami?",
-        "Where did the Unknown allegedly go in Federal Investigation into Ironwood man?"
+        "Where did the $0 allegedly go in BRPD Officer Investigation?",
+        "Where did the $3000 allegedly go in Minnesota Daycare Fraud?",
+        "What other organizations is Waterford Daycare Boss connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T09:28:45.103Z",
-  "lastUpdated": "2026-02-21T09:28:45.104Z"
+  "lastReflection": "2026-02-21T10:24:29.265Z",
+  "lastUpdated": "2026-02-21T10:24:29.266Z"
 }
