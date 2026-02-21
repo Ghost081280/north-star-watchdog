@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T18:41:02.360Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T19:31:52.750Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-21T18:33:06.405Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-21T19:23:07.525Z",
+      "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $0 allegedly go in FBI investigation into AppLovin Marketing Platform?",
-    "Where did the $0 allegedly go in Investigation into Minnesota day care fraud?",
-    "What other organizations is Jeffrey Epstein connected to?",
     "What other organizations is State senator's chief of staff connected to?",
     "Where did the Unknown allegedly go in Epstein investigation?",
     "Where did the Unknown allegedly go in ICE shooting investigation?",
@@ -558,7 +554,11 @@
     "Where did the $100M allegedly go in Child care fraud investigation?",
     "Where did the $1M allegedly go in Inflated commissions investigation?",
     "What other organizations is Tim Walz connected to?",
-    "What specific allegations exist against Tim Walz?"
+    "What specific allegations exist against Tim Walz?",
+    "What other organizations is Labor Secretary connected to?",
+    "What other organizations is Chief of Staff connected to?",
+    "Where did the $100M allegedly go in Child Care Fraud Investigation?",
+    "Where did the $0 allegedly go in ICE Shooting Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1073,
-    "articlesProcessed": 53500,
-    "redFlagsFound": 1282,
+    "totalScans": 1074,
+    "articlesProcessed": 53550,
+    "redFlagsFound": 1284,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "arrest",
+          "description": "The Chief of Staff to a State Senator has been arrested on federal child sex trafficking charges",
+          "insight": "This arrest could lead to further investigations into the State Senator's office and potentially impact the senator's career",
+          "entities": [
+            "Chief of Staff",
+            "State Senator"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Alaska's News Source",
+          "sourceUrl": "https://www.alaskasnewssource.com/content/news/State-senator-responds-after-chief-of-staff-arrested-on-federal-child-sex-trafficking-charges-505434121.html"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Chief of Staff connected to?",
-        "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in FBI investigation into AppLovin Marketing Platform?",
+        "Where did the $0 allegedly go in Investigation into Minnesota day care fraud?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T18:33:06.405Z",
-  "lastUpdated": "2026-02-21T18:33:06.406Z"
+  "lastReflection": "2026-02-21T19:23:07.525Z",
+  "lastUpdated": "2026-02-21T19:23:07.526Z"
 }

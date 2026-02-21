@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Labor Secretary is under investigation for sexual assault",
+      "insight": "This investigation could lead to further revelations about the Labor Secretary's activities and potentially impact the administration's policies",
+      "entities": [
+        "Labor Secretary"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Politico",
+      "sourceUrl": "https://www.politico.com/news/2026/02/21/labor-secretary-investigation-1403394",
+      "id": "rf-1771701787530-qv9bu0wgy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T19:23:07.527Z",
+      "isNew": true
+    },
+    {
+      "type": "arrest",
+      "description": "The Chief of Staff to a State Senator has been arrested on federal child sex trafficking charges",
+      "insight": "This arrest could lead to further investigations into the State Senator's office and potentially impact the senator's career",
+      "entities": [
+        "Chief of Staff",
+        "State Senator"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Alaska's News Source",
+      "sourceUrl": "https://www.alaskasnewssource.com/content/news/State-senator-responds-after-chief-of-staff-arrested-on-federal-child-sex-trafficking-charges-505434121.html",
+      "id": "rf-1771701787530-ijsqmbtml",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T19:23:07.527Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Colorado families face uncertainty amid federal child care funding cuts",
       "insight": "This could indicate a larger issue with child care funding and potential fraud.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-21T18:33:06.407Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -938,52 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-17T15:52:17.941Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI's refusal to share evidence in the Alex Pretti shooting investigation raises concerns about potential obstruction or lack of transparency.",
-      "insight": "This could indicate a larger issue with cooperation between federal and state authorities, potentially hindering the investigation.",
-      "entities": [
-        "FBI",
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZjhJYk1zZmtYd1daSW9UU1lnRTFJNDRvNGtvWUFDclh6TGVCQWFLTmlsTG1uWVJwQ2Y2aDNDSXNxN1dpTnBpVWNzWkNhVkN1SWVGNGFHRnRqMDRITEZ6WWhNQUJRclp6YUlPdUVidEgtbXFQVDV5Z3BPTXFoRU1pMWtZUEZtNUxvQmNBOTU1V0N3R3Y2MVZaN3FCbXF4TmJuT1HSAacBQVVfeXFMT1FVVGZRUWVTdnpRUFBMU2N2Y2ZtZ2VORTZ1c0wtUjdJNVBmZ1JsQUhqaFNLcVNyRmNaMFF2UlQxV1pEbUh3RVpxS3c4VVpsNlI1V3lxbzlIYVVnX2xtWTVZekJ4b1prMG1CMHh5RFh3MGdCZG13TUVFdFBEc1ZJRWk0c3RGY0J1Y0ZVeklLNzJKQ01tYldNRUtxbmY5TENFb0cwbHJTLUE?",
-      "id": "rf-1771333221399-3qf60rf89",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T13:00:21.396Z",
-      "isNew": false
-    },
-    {
-      "type": "Lack of cooperation between agencies",
-      "description": "The FBI's refusal to share evidence with Minnesota officials in the Alex Pretti shooting investigation raises concerns about the handling of the case.",
-      "insight": "I suspect that there may be a larger issue at play here, potentially involving a cover-up or a lack of transparency. Further investigation is needed to determine the reasons behind the FBI's actions.",
-      "entities": [
-        "FBI",
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI won’t share evidence related to Alex Pretti shooting, Minnesota says",
-      "sourceUrl": "https://www.google.com/rss/articles/CBMixgFBVV95cUxOOURpRGNWVmJCV182TWRsc2xlM2VDRzltS2tTTi1nZFNJSTVmMzVoTXc5QVpSVnUtOWJoWEpDYzFmWk1YYjFJM19TWHRScmFvSWJqUmo5SnZrb3p1RTVZTjV3SGVDZFowM0FTbkZjdW1jU3NPU2h2SXlOMnpLRjM0WkF6SC1POWRQWUNpQkliQjF0dUQ4YjBiQ3hHWmVKSkc1TTVCZTZVcUU4aVBOdngtX3ZtNFplSFZ5RnBYZmtISFNNWGtRUFl6RlUxdGFFQQ",
-      "id": "rf-1771328331525-azy6pgui1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T11:38:51.522Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +988,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T18:33:06.407Z"
+  "lastUpdated": "2026-02-21T19:23:07.527Z"
 }
