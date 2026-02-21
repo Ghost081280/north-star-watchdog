@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T21:27:34.380Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T22:27:25.305Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-21T21:21:56.175Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-21T22:22:09.418Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 28,
+      "count": 29,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-02-12T17:57:38.908Z"
+      "lastSeen": "2026-02-21T22:22:09.419Z"
     },
     {
       "type": "federal_funding",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in ICE shooting investigation?",
-    "What other organizations is Jason Derleth connected to?",
     "What specific allegations exist against Jason Derleth?",
     "What other organizations is Carr connected to?",
     "What other organizations is Chief of staff connected to?",
@@ -558,7 +556,9 @@
     "Where did the $100M allegedly go in Child Care Fraud Investigation?",
     "Where did the $0 allegedly go in ICE Shooting Investigation?",
     "What other organizations is Minnesota Human Services Commissioner connected to?",
-    "Where did the $100M allegedly go in Medicaid Fraud Investigation?"
+    "Where did the $100M allegedly go in Medicaid Fraud Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $0 allegedly go in HHS Child Care Payments Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1076,
-    "articlesProcessed": 53650,
-    "redFlagsFound": 1285,
+    "totalScans": 1077,
+    "articlesProcessed": 53700,
+    "redFlagsFound": 1287,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is State senator's chief of staff connected to?",
-        "Where did the Unknown allegedly go in Epstein investigation?",
-        "Where did the Unknown allegedly go in ICE shooting investigation?"
+        "Where did the Unknown allegedly go in ICE shooting investigation?",
+        "What other organizations is Jason Derleth connected to?",
+        "What specific allegations exist against Jason Derleth?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T21:21:56.175Z",
-  "lastUpdated": "2026-02-21T21:21:56.176Z"
+  "lastReflection": "2026-02-21T22:22:09.418Z",
+  "lastUpdated": "2026-02-21T22:22:09.419Z"
 }
