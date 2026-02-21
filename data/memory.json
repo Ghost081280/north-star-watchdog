@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T19:31:52.750Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T20:28:58.005Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-21T19:23:07.525Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-02-21T20:23:15.395Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1074,
-    "articlesProcessed": 53550,
+    "totalScans": 1075,
+    "articlesProcessed": 53600,
     "redFlagsFound": 1284,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "arrest",
-          "description": "The Chief of Staff to a State Senator has been arrested on federal child sex trafficking charges",
-          "insight": "This arrest could lead to further investigations into the State Senator's office and potentially impact the senator's career",
-          "entities": [
-            "Chief of Staff",
-            "State Senator"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Alaska's News Source",
-          "sourceUrl": "https://www.alaskasnewssource.com/content/news/State-senator-responds-after-chief-of-staff-arrested-on-federal-child-sex-trafficking-charges-505434121.html"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $0 allegedly go in FBI investigation into AppLovin Marketing Platform?",
-        "Where did the $0 allegedly go in Investigation into Minnesota day care fraud?"
+        "What other organizations is State senator's chief of staff connected to?",
+        "Where did the Unknown allegedly go in Epstein investigation?",
+        "Where did the Unknown allegedly go in ICE shooting investigation?"
       ]
     },
     {
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T19:23:07.525Z",
-  "lastUpdated": "2026-02-21T19:23:07.526Z"
+  "lastReflection": "2026-02-21T20:23:15.395Z",
+  "lastUpdated": "2026-02-21T20:23:15.396Z"
 }
