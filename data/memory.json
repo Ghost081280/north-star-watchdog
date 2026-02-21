@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T22:27:25.305Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T23:28:14.578Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-21T22:22:09.418Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-21T23:22:31.550Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 68,
+      "count": 69,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-21T11:21:45.095Z"
+      "lastSeen": "2026-02-21T23:22:31.551Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1077,
-    "articlesProcessed": 53700,
-    "redFlagsFound": 1287,
+    "totalScans": 1078,
+    "articlesProcessed": 53750,
+    "redFlagsFound": 1289,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in ICE shooting investigation?",
-        "What other organizations is Jason Derleth connected to?",
-        "What specific allegations exist against Jason Derleth?"
+        "What specific allegations exist against Jason Derleth?",
+        "What other organizations is Carr connected to?",
+        "What other organizations is Chief of staff connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T22:22:09.418Z",
-  "lastUpdated": "2026-02-21T22:22:09.419Z"
+  "lastReflection": "2026-02-21T23:22:31.550Z",
+  "lastUpdated": "2026-02-21T23:22:31.551Z"
 }
