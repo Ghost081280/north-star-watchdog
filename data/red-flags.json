@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "HHS has frozen all child care payments to Minnesota due to allegations of fraud",
+      "insight": "This freeze suggests a significant problem with child care fraud in Minnesota, and I will investigate further to determine the extent of the issue and identify potential perpetrators.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-human-services-commissioner-what-we-ve-done-and-will-do-to-fight-medicaid-fraud/600246343/",
+      "id": "rf-1771708916181-6h17mvokt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T21:21:56.177Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Labor Secretary is under investigation for sexual assault",
       "insight": "This investigation could lead to further revelations about the Labor Secretary's activities and potentially impact the administration's policies",
@@ -37,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-21T19:23:07.527Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Colorado families face uncertainty amid federal child care funding cuts",
-      "insight": "This could indicate a larger issue with child care funding and potential fraud.",
-      "entities": [
-        "Colorado families"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KOAA News 5",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUFZFZ0JLaS1fYTJmT21CZlJ2MU8tM05jQVljU2JWY3l5Uk5JTGZZNlQwd0dYQnozX1ZJeng1cGs0UXdBd3Znck9lVjhtWFFPdXo0YUx1RzY1OU8zeHhWak1QMkYxbE91c0pzNGZuOFZLbG01cEJ4cjNESkx6VWcybVU3OEFWV2k4b2ZHLUgyYkl1QVR0RlJVSjQ0TUN5QlYtX2lqcFpUREpoM1Q0?oc=5",
-      "id": "rf-1771698786411-2hkxjyqd5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-21T18:33:06.407Z",
       "isNew": false
     },
     {
@@ -988,7 +988,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T20:23:15.397Z"
+  "lastUpdated": "2026-02-21T21:21:56.177Z"
 }
