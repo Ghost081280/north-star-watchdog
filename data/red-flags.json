@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Several federal investigations are ongoing, including into ICE shootings and child sex trafficking.",
+      "insight": "These investigations highlight the need for increased oversight and accountability within federal agencies.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://www.alaskasnewssource.com/content/news/state-senator-responds-after-chief-of-staff-arrested-on-federal-child-sex-trafficking-charges-574434051.html",
+      "id": "rf-1771666125109-ah05kxi16",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T09:28:45.105Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "Multiple federal investigations are ongoing, including the AppLovin Marketing Platform investigation and the investigation into the fatal shooting of a US citizen by an ICE agent.",
       "insight": "These investigations may indicate a pattern of misconduct or wrongdoing, and further research is needed to determine the extent of the issues.",
@@ -959,41 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T22:27:25.307Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Agency Obstruction",
-      "description": "The FBI's refusal to share evidence in the Alex Pretti shooting investigation raises concerns about obstruction of justice and lack of transparency.",
-      "insight": "This pattern of behavior by the FBI suggests a potential cover-up or attempt to conceal information from state and local authorities. Further investigation is needed to determine the reasons behind the FBI's refusal to cooperate.",
-      "entities": [
-        "FBI",
-        "Minnesota authorities"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/feb/16/fbi-wont-share-alex-pretti-shooting-evidence-minnesota-authorities-say",
-      "id": "rf-1771273738010-xlezjgqn1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T20:28:58.007Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T08:29:08.892Z"
+  "lastUpdated": "2026-02-21T09:28:45.105Z"
 }
