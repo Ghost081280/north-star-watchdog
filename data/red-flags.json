@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Colorado families face uncertainty amid federal child care funding cuts",
+      "insight": "This could indicate a larger issue with child care funding and potential fraud.",
+      "entities": [
+        "Colorado families"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KOAA News 5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUFZFZ0JLaS1fYTJmT21CZlJ2MU8tM05jQVljU2JWY3l5Uk5JTGZZNlQwd0dYQnozX1ZJeng1cGs0UXdBd3Znck9lVjhtWFFPdXo0YUx1RzY1OU8zeHhWak1QMkYxbE91c0pzNGZuOFZLbG01cEJ4cjNESkx6VWcybVU3OEFWV2k4b2ZHLUgyYkl1QVR0RlJVSjQ0TUN5QlYtX2lqcFpUREpoM1Q0?oc=5",
+      "id": "rf-1771698786411-2hkxjyqd5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T18:33:06.407Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "Federal investigation into inflated commissions in Greater Vancouver",
       "insight": "This investigation may indicate a larger pattern of corruption in the real estate industry. Further research is needed to determine the extent of the issue.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-21T17:25:13.120Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -959,30 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-17T11:38:51.522Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "The alleged $350 million tax refund fraud scheme",
-      "insight": "This could indicate a significant financial loss for taxpayers and a large-scale fraud operation",
-      "entities": [
-        "Minnesota man",
-        "tax refund fraud scheme"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Limitless Media News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HVklOYnFPTEk2b0ZETVd2UDl4MVozZG1tZmc5VkoyZ0QxVU9SdTJGN2MzRWFwNkpfTmVnV1JFZk1FZWFKTmJuckdDcUFzQ1hpTDhRVFVDU1dIcHRlM3NhaUozOUhBZEhaODlDbHJYWThLbGpLc2hlRTdpdw?",
-      "id": "rf-1771325048942-w8n5s2l4t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T10:44:08.939Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,8 +991,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T17:25:13.120Z"
+  "lastUpdated": "2026-02-21T18:33:06.407Z"
 }
