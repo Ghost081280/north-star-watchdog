@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-16T02:00:54.989Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-16T04:32:56.271Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-21T05:41:13.030Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-21T06:39:55.995Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Nancy Guthrie connected to?",
-    "What other organizations is R. Kelly connected to?",
     "Where did the Unknown allegedly go in Child care fraud investigation?",
     "What other organizations is Prince Andrew connected to?",
     "Where did the $79 allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +556,9 @@
     "What other organizations is Silverio Villegas-Gonzalez connected to?",
     "Where did the Unknown allegedly go in FBI Investigation into 764 Group?",
     "Where did the $100M allegedly go in Day care fraud scandal?",
-    "Where did the Unknown allegedly go in AppLovin Marketing Platform Investigation?"
+    "Where did the Unknown allegedly go in AppLovin Marketing Platform Investigation?",
+    "Where did the $N/A allegedly go in FBI Investigation into AppLovin Marketing Platform?",
+    "Where did the $N/A allegedly go in Minnesota Daycare Fraud Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1060,
-    "articlesProcessed": 52850,
-    "redFlagsFound": 1266,
+    "totalScans": 1061,
+    "articlesProcessed": 52900,
+    "redFlagsFound": 1268,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
-        "Where did the Unknown allegedly go in Hawala money transfer system?",
-        "What other organizations is Nancy Guthrie connected to?"
+        "What other organizations is Nancy Guthrie connected to?",
+        "What other organizations is R. Kelly connected to?",
+        "Where did the Unknown allegedly go in Child care fraud investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T05:41:13.030Z",
-  "lastUpdated": "2026-02-21T05:41:13.031Z"
+  "lastReflection": "2026-02-21T06:39:55.995Z",
+  "lastUpdated": "2026-02-21T06:39:55.996Z"
 }

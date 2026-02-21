@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Child care assistance programs are being terminated or cut, leaving providers and families uncertain",
+      "insight": "This could indicate a larger issue with program management or funding, potentially leading to fraud or abuse",
+      "entities": [
+        "Minnesota DHS",
+        "federal government"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "KOAA News 5",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUFZFZ0JLaS1fYTJmT21CZlJ2MU8tM05jQVljU2JWY3l5Uk5JTGZZNlQwd0dYQnozX1ZJeng1cGs0UXdBd3Znck9lVjhtWFFPdXo0YUx1RzY1OU8zeHhWak1QMkYxbE91c0pzNGZuOFZLbG01cEJ4cjNESkx6VWcybVU3OEFWV2k4b2ZHLUgyYkl1QVR0RlJVSjQ0TUN5QlYtX2lqcFpUREpoM1Q0?oc=5",
+      "id": "rf-1771655996000-eci4bhbkd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T06:39:55.997Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Excessive Use of Force",
       "description": "The fatal shooting of Silverio Villegas-Gonzalez by an ICE agent has raised concerns about excessive use of force.",
       "insight": "This incident highlights the need for increased transparency and accountability within federal agencies, particularly when it comes to the use of force.",
@@ -959,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T20:28:58.007Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Government shutdown resulting in unpaid workers",
-      "insight": "The shutdown may have significant impacts on critical government programs and services, potentially creating vulnerabilities for fraud and abuse.",
-      "entities": [
-        "TSA",
-        "DHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUHpfYVRpck1MNWtueTFrQ2ZoZXdKVnlLYk1LaWtiejRtVzQtM2czNkZER0RPUDYwd3BhNFJ5UVFXTEk0UUEzbFVzaUQ1MmJDWjVWdTl4cU1wTGZuVG52TGJrQmVyUG9WUGJLZGM5UHpMVGEwaTZGc0hLYXNsYjYyd3dSTUtFSWxPYXU1djNrTmVJNk5sTEFR",
-      "id": "rf-1771270312755-a8s4i5ifj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T19:31:52.752Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,11 +987,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T05:41:13.032Z"
+  "lastUpdated": "2026-02-21T06:39:55.997Z"
 }
