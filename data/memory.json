@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-15T22:22:31.994Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-15T23:25:27.183Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-21T01:52:10.824Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-21T04:06:21.336Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $? allegedly go in Redbank Village?",
-    "What other organizations is Bruno Bajrami connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
     "Where did the Unknown allegedly go in Hawala money transfer system?",
     "What other organizations is Nancy Guthrie connected to?",
@@ -558,7 +556,9 @@
     "Where did the $3000 allegedly go in Minnesota Daycare Fraud?",
     "What other organizations is Waterford Daycare Boss connected to?",
     "Where did the Unknown allegedly go in Federal Investigation into AppLovin Marketing Platform?",
-    "Where did the $X allegedly go in Minnesota Daycare Fraud Investigation?"
+    "Where did the $X allegedly go in Minnesota Daycare Fraud Investigation?",
+    "What other organizations is Silverio Villegas-Gonzalez connected to?",
+    "Where did the Unknown allegedly go in FBI Investigation into 764 Group?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1058,
-    "articlesProcessed": 52750,
-    "redFlagsFound": 1264,
+    "totalScans": 1059,
+    "articlesProcessed": 52800,
+    "redFlagsFound": 1265,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $16B allegedly go in Alzheimer’s Drug Company investigation?",
-        "What other organizations is Tim Walz connected to?",
-        "Where did the $? allegedly go in Feeding Our Future?"
+        "Where did the $? allegedly go in Redbank Village?",
+        "What other organizations is Bruno Bajrami connected to?",
+        "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-21T01:52:10.824Z",
-  "lastUpdated": "2026-02-21T01:52:10.825Z"
+  "lastReflection": "2026-02-21T04:06:21.336Z",
+  "lastUpdated": "2026-02-21T04:06:21.337Z"
 }

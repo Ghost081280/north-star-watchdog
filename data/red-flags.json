@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Excessive Use of Force",
+      "description": "The fatal shooting of Silverio Villegas-Gonzalez by an ICE agent has raised concerns about excessive use of force.",
+      "insight": "This incident highlights the need for increased transparency and accountability within federal agencies, particularly when it comes to the use of force.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC7 Chicago",
+      "sourceUrl": "https://abc7chicago.com/chicago-ice-protest-locals-seek-fbi-investigation-into-ice-shooting/12944445/",
+      "id": "rf-1771646781341-sul7hvf02",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-21T04:06:21.338Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The federal investigation into AppLovin Marketing Platform is ongoing.",
       "insight": "This investigation could have significant implications for the marketing industry and may lead to further action against other companies.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-21T01:52:10.826Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation",
@@ -959,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-16T19:31:52.752Z",
       "isNew": false
-    },
-    {
-      "type": "federal_agency_obstruction",
-      "description": "The FBI's refusal to share evidence with Minnesota investigators in the Alex Pretti shooting case raises concerns about potential obstruction of justice.",
-      "insight": "The FBI's actions may indicate a lack of transparency and cooperation, potentially hindering the investigation.",
-      "entities": [
-        "FBI",
-        "Minnesota BCA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-formally-refuses-to-share-evidence-in-alex-pretti-killing-investigation-minnesota-bca-says/",
-      "id": "rf-1771267262365-ka53cnlk5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-16T18:41:02.362Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,11 +987,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-21T01:52:10.826Z"
+  "lastUpdated": "2026-02-21T04:06:21.338Z"
 }
