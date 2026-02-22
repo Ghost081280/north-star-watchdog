@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "Multiple news articles reporting on suspicious activities and investigations into high-profile incidents, including the death of Rondale Moore and arson at an ICE warehouse.",
+      "insight": "These incidents suggest potential patterns of fraud or criminal activity that warrant further investigation. The Rondale Moore death investigation and the ICE warehouse arson are two separate incidents that may or may not be related but both merit scrutiny.",
+      "entities": [
+        "Rondale Moore",
+        "ICE"
+      ],
+      "confidence": 60,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYzZnS1pzOUJEcGdDRUJKOHZaOVlyemctTllEWjJWMGg3YmJPSlU1THdfX21WMmJ4bjFNdkRIeGxfa1dULVoxb3RKb0xmX3RDM2Vtdno2S0JpRmUtYTlxbkJjVnJEZjNHSnVvR0VrSWhHRGFoMkpPY0tZd1VmcktkLVdOcw",
+      "id": "rf-1771795380830-jgjxcey2u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T21:23:00.827Z",
+      "isNew": true
+    },
+    {
       "type": "suspicious death",
       "description": "The death of Rondale Moore has raised concerns about the circumstances surrounding his passing.",
       "insight": "I am concerned about the lack of information regarding the cause of death. Further investigation is needed to determine if foul play was involved.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-22T20:25:39.345Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "arson attack",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-22T20:25:39.345Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "suspicious death",
@@ -952,25 +972,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T06:00:12.821Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The FBI is investigating a data breach of TriZetto Provider Solutions, affecting over 700,000 patient records",
-      "insight": "This investigation raises concerns about the security of patient records and the potential for identity theft. Further investigation is needed to determine the extent of the breach and the measures being taken to prevent similar incidents in the future.",
-      "entities": [
-        "TriZetto Provider Solutions"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.schubertjonckheer.com/trizetto-provider-solutions-under-investigation-for-data-breach-of-over-700000-patient-records/",
-      "id": "rf-1771390326781-haaqhm82t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T04:52:06.777Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-22T20:25:39.345Z"
+  "lastUpdated": "2026-02-22T21:23:00.827Z"
 }
