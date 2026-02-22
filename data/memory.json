@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T06:58:59.283Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-17T07:53:48.323Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-22T06:45:05.609Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T07:35:07.770Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1082,
-    "articlesProcessed": 53950,
+    "totalScans": 1083,
+    "articlesProcessed": 54000,
     "redFlagsFound": 1293,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in ICE Shooting Investigation?",
-        "Where did the None allegedly go in AppLovin Marketing Platform Investigation?",
-        "Where did the $100M allegedly go in Child care fraud investigation?"
+        "Where did the $100M allegedly go in Child care fraud investigation?",
+        "Where did the $1M allegedly go in Inflated commissions investigation?",
+        "What other organizations is Tim Walz connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T06:45:05.609Z",
-  "lastUpdated": "2026-02-22T06:45:05.610Z"
+  "lastReflection": "2026-02-22T07:35:07.770Z",
+  "lastUpdated": "2026-02-22T07:35:07.771Z"
 }
