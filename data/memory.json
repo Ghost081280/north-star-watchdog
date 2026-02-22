@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T09:46:30.121Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-17T10:44:08.937Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-02-22T09:29:48.602Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T10:23:07.635Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1085,
-    "articlesProcessed": 54100,
-    "redFlagsFound": 1295,
+    "totalScans": 1086,
+    "articlesProcessed": 54150,
+    "redFlagsFound": 1297,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Tim Walz connected to?",
         "What specific allegations exist against Tim Walz?",
-        "What other organizations is Labor Secretary connected to?"
+        "What other organizations is Labor Secretary connected to?",
+        "What other organizations is Chief of Staff connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T09:29:48.602Z",
-  "lastUpdated": "2026-02-22T09:29:48.603Z"
+  "lastReflection": "2026-02-22T10:23:07.635Z",
+  "lastUpdated": "2026-02-22T10:23:07.636Z"
 }
