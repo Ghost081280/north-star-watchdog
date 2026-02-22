@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T05:56:25.073Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-17T06:58:59.283Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-02-22T05:51:06.597Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T06:45:05.609Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the None allegedly go in ICE Shooting Investigation?",
-    "Where did the None allegedly go in AppLovin Marketing Platform Investigation?",
     "Where did the $100M allegedly go in Child care fraud investigation?",
     "Where did the $1M allegedly go in Inflated commissions investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Alaska Senate staffer connected to?",
     "Where did the Unknown allegedly go in ICE facility investigation?",
     "Where did the Unknown allegedly go in Medicaid payment errors investigation?",
-    "Where did the Unknown allegedly go in Medicaid fraud investigation?"
+    "Where did the Unknown allegedly go in Medicaid fraud investigation?",
+    "Where did the unknown allegedly go in ICE facility investigation?",
+    "Where did the unknown allegedly go in Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1081,
-    "articlesProcessed": 53900,
-    "redFlagsFound": 1292,
+    "totalScans": 1082,
+    "articlesProcessed": 53950,
+    "redFlagsFound": 1293,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Silverio Villegas-Gonzalez connected to?",
         "Where did the None allegedly go in ICE Shooting Investigation?",
-        "Where did the None allegedly go in AppLovin Marketing Platform Investigation?"
+        "Where did the None allegedly go in AppLovin Marketing Platform Investigation?",
+        "Where did the $100M allegedly go in Child care fraud investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T05:51:06.597Z",
-  "lastUpdated": "2026-02-22T05:51:06.598Z"
+  "lastReflection": "2026-02-22T06:45:05.609Z",
+  "lastUpdated": "2026-02-22T06:45:05.610Z"
 }
