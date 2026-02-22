@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T10:44:08.937Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-17T11:38:51.520Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-22T10:23:07.635Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T11:20:33.008Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tim Walz?",
-    "What other organizations is Labor Secretary connected to?",
     "What other organizations is Chief of Staff connected to?",
     "Where did the $100M allegedly go in Child Care Fraud Investigation?",
     "Where did the $0 allegedly go in ICE Shooting Investigation?",
@@ -558,7 +556,9 @@
     "Where did the unknown allegedly go in Medicaid fraud investigation?",
     "Where did the unknown allegedly go in Minnesota welfare fraud investigation?",
     "Where did the unknown allegedly go in ICE warehouse facility investigation?",
-    "Where did the $0 allegedly go in Minnesota Welfare Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the undisclosed allegedly go in Minnesota welfare fraud investigation?",
+    "Where did the undisclosed allegedly go in ICE warehouse facility investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1086,
-    "articlesProcessed": 54150,
-    "redFlagsFound": 1297,
+    "totalScans": 1087,
+    "articlesProcessed": 54200,
+    "redFlagsFound": 1298,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T10:23:07.635Z",
-  "lastUpdated": "2026-02-22T10:23:07.636Z"
+  "lastReflection": "2026-02-22T11:20:33.008Z",
+  "lastUpdated": "2026-02-22T11:20:33.009Z"
 }
