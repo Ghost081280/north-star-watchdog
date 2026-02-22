@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "suspicious death",
+      "description": "The sudden death of Rondale Moore has raised concerns about the safety and well-being of athletes",
+      "insight": "I suspect that there may be more to Moore's death than initially meets the eye. I recommend further investigation into the circumstances surrounding his death.",
+      "entities": [
+        "Rondale Moore",
+        "Minnesota Vikings"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AL.com",
+      "sourceUrl": "https://www.al.com/sports/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
+      "id": "rf-1771798969675-c4r3zda71",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T22:22:49.671Z",
+      "isNew": true
+    },
+    {
+      "type": "arson attack",
+      "description": "The arson attack on an ICE warehouse in Arizona has raised concerns about the safety and security of federal facilities",
+      "insight": "I suspect that the arson attack may be linked to a larger pattern of violence against federal facilities. I recommend further investigation into the incident and potential connections to other similar attacks.",
+      "entities": [
+        "ICE",
+        "FBI"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/fbi-investigates-criminal-damage-to-federal-ice-warehouse-facility-in-arizona",
+      "id": "rf-1771798969675-dflq17ak3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T22:22:49.671Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Multiple news articles reporting on suspicious activities and investigations into high-profile incidents, including the death of Rondale Moore and arson at an ICE warehouse.",
       "insight": "These incidents suggest potential patterns of fraud or criminal activity that warrant further investigation. The Rondale Moore death investigation and the ICE warehouse arson are two separate incidents that may or may not be related but both merit scrutiny.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-22T21:23:00.827Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "suspicious death",
@@ -32,25 +72,6 @@
       "source": "AL.com",
       "sourceUrl": "https://www.al.com/news/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
       "id": "rf-1771791939348-sqae6m247",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T20:25:39.345Z",
-      "isNew": false
-    },
-    {
-      "type": "arson attack",
-      "description": "The arson attack on an ICE warehouse in Arizona has raised concerns about the safety of federal facilities.",
-      "insight": "I am concerned about the potential for further violence against federal facilities. The FBI investigation should prioritize identifying the perpetrator and determining their motives.",
-      "entities": [
-        "ICE"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/us/fbi-investigates-criminal-damage-federal-ice-warehouse-facility-arizona",
-      "id": "rf-1771791939348-sdsl6m3cx",
       "apisUsed": [
         "Google News"
       ],
@@ -953,25 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T06:00:12.821Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "A data breach has occurred at TriZetto Provider Solutions, affecting over 700,000 patient records.",
-      "insight": "I have detected a significant data breach that may have serious consequences for the affected individuals. Further investigation is needed to determine the cause and scope of the breach.",
-      "entities": [
-        "TriZetto Provider Solutions"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.schubertjonckheer.com/",
-      "id": "rf-1771394412824-2h5vujlg9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T06:00:12.821Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-22T21:23:00.827Z"
+  "lastUpdated": "2026-02-22T22:22:49.671Z"
 }
