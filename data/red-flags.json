@@ -2,6 +2,44 @@
   "flags": [
     {
       "type": "suspicious death",
+      "description": "The death of Rondale Moore has raised concerns about the circumstances surrounding his passing.",
+      "insight": "I am concerned about the lack of information regarding the cause of death. Further investigation is needed to determine if foul play was involved.",
+      "entities": [
+        "Rondale Moore"
+      ],
+      "confidence": 60,
+      "priority": "high",
+      "source": "AL.com",
+      "sourceUrl": "https://www.al.com/news/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
+      "id": "rf-1771791939348-sqae6m247",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T20:25:39.345Z",
+      "isNew": true
+    },
+    {
+      "type": "arson attack",
+      "description": "The arson attack on an ICE warehouse in Arizona has raised concerns about the safety of federal facilities.",
+      "insight": "I am concerned about the potential for further violence against federal facilities. The FBI investigation should prioritize identifying the perpetrator and determining their motives.",
+      "entities": [
+        "ICE"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/fbi-investigates-criminal-damage-federal-ice-warehouse-facility-arizona",
+      "id": "rf-1771791939348-sdsl6m3cx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T20:25:39.345Z",
+      "isNew": true
+    },
+    {
+      "type": "suspicious death",
       "description": "The death of Rondale Moore, a Vikings WR, is under investigation. The circumstances surrounding his death are unclear, and the investigation is ongoing.",
       "insight": "I am concerned about the lack of information surrounding the death of Rondale Moore. The investigation is ongoing, and I will continue to monitor the situation for any updates.",
       "entities": [
@@ -933,57 +971,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T04:52:06.777Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Zynex Inc resolved a federal investigation into its business practices, but the details of the investigation are unclear.",
-      "insight": "I notice that Zynex Inc was able to resolve the investigation, but the details of the investigation are not publicly available. This could indicate a lack of transparency, and I would recommend further investigation into the company's business practices.",
-      "entities": [
-        "Zynex Inc"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "marketscreener.com",
-      "sourceUrl": "https://www.marketscreener.com/news/latest/Zynex-Inc-Resolves-Federal-Investigation-Into-Business-Practices-42653134/",
-      "id": "rf-1771370881372-p0o2jm58x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T23:28:01.368Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing into various entities and individuals, including Zynex Inc and Tony Clark.",
-      "insight": "These investigations indicate potential widespread fraud and abuse across different sectors, warranting close monitoring and analysis.",
-      "entities": [
-        "Zynex Inc",
-        "Tony Clark"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdkFjeGx6cDFNU3BaeXlrZVYzNjlNVi1Zb0xabkZJb242cWRfVDlvT0x1cVpRZ3dCVHJSd0F5TkxNOVlIVUlsdTdRR0JYQXd4aXhYZEw4S1JxajhwZjh1NXlQSFlfTjhRSjZTeWFrVWRNaXlYb2M4bXNfY3RMd056TUhZSFNiZXpsWktLSW9lSTY4WkI5d0pGMWthQjRVS2FLTklIWGlhQkhyX29obEtMSm1rRGd4T3ly",
-      "id": "rf-1771367392418-pucuwp3z3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T22:29:52.414Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-22T19:24:07.645Z"
+  "lastUpdated": "2026-02-22T20:25:39.345Z"
 }
