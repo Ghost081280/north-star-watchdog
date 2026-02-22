@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T23:28:01.366Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-02-18T02:02:24.686Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-02-22T22:22:49.669Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-22T23:24:38.428Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1098,
-    "articlesProcessed": 54750,
-    "redFlagsFound": 1311,
+    "totalScans": 1099,
+    "articlesProcessed": 54800,
+    "redFlagsFound": 1312,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Alaska Senate staffer connected to?",
-        "Where did the Unknown allegedly go in ICE facility investigation?",
-        "Where did the Unknown allegedly go in Medicaid payment errors investigation?"
+        "Where did the Unknown allegedly go in Medicaid payment errors investigation?",
+        "Where did the Unknown allegedly go in Medicaid fraud investigation?",
+        "Where did the unknown allegedly go in ICE facility investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T22:22:49.669Z",
-  "lastUpdated": "2026-02-22T22:22:49.670Z"
+  "lastReflection": "2026-02-22T23:24:38.428Z",
+  "lastUpdated": "2026-02-22T23:24:38.428Z"
 }
