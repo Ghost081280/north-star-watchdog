@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T08:43:19.317Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-17T09:46:30.121Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-02-22T08:30:00.293Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T09:29:48.602Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
     "What specific allegations exist against Tim Walz?",
     "What other organizations is Labor Secretary connected to?",
     "What other organizations is Chief of Staff connected to?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in ICE facility investigation?",
     "Where did the unknown allegedly go in Medicaid fraud investigation?",
     "Where did the unknown allegedly go in Minnesota welfare fraud investigation?",
-    "Where did the unknown allegedly go in ICE warehouse facility investigation?"
+    "Where did the unknown allegedly go in ICE warehouse facility investigation?",
+    "Where did the $0 allegedly go in Minnesota Welfare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1084,
-    "articlesProcessed": 54050,
-    "redFlagsFound": 1294,
+    "totalScans": 1085,
+    "articlesProcessed": 54100,
+    "redFlagsFound": 1295,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Child care fraud investigation?",
-        "Where did the $1M allegedly go in Inflated commissions investigation?",
-        "What other organizations is Tim Walz connected to?"
+        "What other organizations is Tim Walz connected to?",
+        "What specific allegations exist against Tim Walz?",
+        "What other organizations is Labor Secretary connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T08:30:00.293Z",
-  "lastUpdated": "2026-02-22T08:30:00.294Z"
+  "lastReflection": "2026-02-22T09:29:48.602Z",
+  "lastUpdated": "2026-02-22T09:29:48.603Z"
 }
