@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-17T11:38:51.520Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-17T13:00:21.394Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-22T11:20:33.008Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-22T12:45:46.343Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Chief of Staff connected to?",
-    "Where did the $100M allegedly go in Child Care Fraud Investigation?",
-    "Where did the $0 allegedly go in ICE Shooting Investigation?",
     "What other organizations is Minnesota Human Services Commissioner connected to?",
     "Where did the $100M allegedly go in Medicaid Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the unknown allegedly go in ICE warehouse facility investigation?",
     "Where did the $0 allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the undisclosed allegedly go in Minnesota welfare fraud investigation?",
-    "Where did the undisclosed allegedly go in ICE warehouse facility investigation?"
+    "Where did the undisclosed allegedly go in ICE warehouse facility investigation?",
+    "What other organizations is No new figures charged connected to?",
+    "Where did the $N/A allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $N/A allegedly go in Trump Administration Investigations?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1087,
-    "articlesProcessed": 54200,
-    "redFlagsFound": 1298,
+    "totalScans": 1088,
+    "articlesProcessed": 54250,
+    "redFlagsFound": 1300,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Trump administration investigations",
+          "description": "The Trump administration is facing various investigations and updates, including tariff rates and Supreme Court rulings.",
+          "insight": "I notice that the Trump administration is facing various investigations and updates, which have significant implications for the administration and the country. I would like to investigate further to determine the extent of these investigations and their potential impact.",
+          "entities": [
+            "Trump administration"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "CNN",
+          "sourceUrl": "https://www.cnn.com/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Tim Walz?",
-        "What other organizations is Labor Secretary connected to?",
-        "What other organizations is Chief of Staff connected to?"
+        "What other organizations is Chief of Staff connected to?",
+        "Where did the $100M allegedly go in Child Care Fraud Investigation?",
+        "Where did the $0 allegedly go in ICE Shooting Investigation?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-22T11:20:33.008Z",
-  "lastUpdated": "2026-02-22T11:20:33.009Z"
+  "lastReflection": "2026-02-22T12:45:46.343Z",
+  "lastUpdated": "2026-02-22T12:45:46.343Z"
 }
