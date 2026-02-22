@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating an incident at Mar-a-Lago, and there are allegations of Medicaid payment errors in Minnesota",
+      "insight": "I suspect that these investigations may be related to a larger pattern of potential wrongdoing by the Trump administration. Further investigation is needed to determine the extent of any potential wrongdoing.",
+      "entities": [
+        "Trump administration",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaFBZSXhmcHlIdXFJUEpZRnEycU9wSm9VNS1tdXoxU1F1aGxob2pfS19meXBNdmtnaF9VenEwa0ROUmlRbGJfVkxIQzM4N2I5eW42T1lTeEF1azdOY2s5TTRfWW15Z2h4VzFsTXpmd25qZ29PQkRrd3BwNXJmOG1yLTJkMDEyZndXSVVocC1XM0FiWkRvdk12ZlhWelRXWU4wdldieGN5emxsS0dKdmRTVnBjN1Rqb3JJRWtJ",
+      "id": "rf-1771773826162-m2r8mjka1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T15:23:46.159Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid payment errors",
       "description": "Minnesota's Medicaid payment errors are below the national average.",
       "insight": "This suggests that while Minnesota is managing Medicaid funds relatively well compared to other states, there is still room for improvement and potential for fraud.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-22T14:25:18.481Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid payment errors",
@@ -952,30 +972,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-17T21:34:57.583Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI's alleged lack of cooperation in the Alex Pretti shooting investigation",
-      "insight": "This could indicate a larger issue with FBI transparency or cooperation with local law enforcement, potentially hindering investigations.",
-      "entities": [
-        "FBI",
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZkJUVlpZMnRUYVdGTTVDN21IWHFEMDVhYVplcmZWaGh3bGZSeFZpY2M0WjZWdTNGRm1vZkZQY0dkTUxpeFZDa0I3RU1FSkRNNE8zVldCd3BXREw3NmZZV012S2gtVDZka2laSThCcWhjcjFNOWdqelFoQmh0clZuTGRtT3dfLVN1RUpsX3FpRzNjdWNsU212anhmbEFkVXFKNTd1SzYwVTExamlLWnhFVy15b0x6dFlrWGRJWGFWd0TSAcYBQVVfeXFMUDNpNlVnaDNuWXJHSjlZbTFvMURWRUZWTXhsb2xiazl3YXp5bXBwT2lYbjdIU3JHZDlhamZLUVVRU3pWOVVyWnRVMGZSMWQxSExQVVpfalo1V3RUUWJRejFJS3lWbzhrUkRhbDljdTdibzZiV2xFRVMwN3I0WmZrWDgxVHhQLXNZVGxxX1RoYTNXRTJrSjJFM2xHSlZYYTdYb1M1dTN6Yk16dDV4ZjJpRExVdjhydEdKdnV5SFVKOTVDVDk3dVVB",
-      "id": "rf-1771360597930-4ldgut8hj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T20:36:37.926Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -985,7 +986,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1003,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-22T14:25:18.481Z"
+  "lastUpdated": "2026-02-22T15:23:46.159Z"
 }
