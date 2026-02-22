@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "suspicious death",
+      "description": "The death of Rondale Moore, a Vikings WR, is under investigation. The circumstances surrounding his death are unclear, and the investigation is ongoing.",
+      "insight": "I am concerned about the lack of information surrounding the death of Rondale Moore. The investigation is ongoing, and I will continue to monitor the situation for any updates.",
+      "entities": [
+        "Rondale Moore",
+        "Minnesota Vikings"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AL.com",
+      "sourceUrl": "https://www.al.com/news/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
+      "id": "rf-1771781096994-4w9l18cpk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-22T17:24:56.991Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating an incident at Mar-a-Lago, and there are allegations of Medicaid payment errors in Minnesota",
       "insight": "I suspect that these investigations may be related to a larger pattern of potential wrongdoing by the Trump administration. Further investigation is needed to determine the extent of any potential wrongdoing.",
@@ -952,32 +972,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-17T22:29:52.414Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "Tony Clark, the Executive Director of the Major League Baseball Players Association, is resigning amid a federal investigation",
-      "insight": "This resignation may be connected to a larger pattern of corruption in professional sports. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Tony Clark",
-        "Major League Baseball Players Association"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/sports/mlb/2026/02/17/tony-clark-resigning-mlbpa-executive-director/6827213002/",
-      "id": "rf-1771364097587-g73lmp8mm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-17T21:34:57.583Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,7 +985,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-22T16:28:30.569Z"
+  "lastUpdated": "2026-02-22T17:24:56.991Z"
 }
