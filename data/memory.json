@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-18T10:42:54.768Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-02-18T11:37:48.198Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-02-23T09:54:09.106Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-02-23T10:49:54.392Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $N/A allegedly go in Trump Administration Investigations?",
-    "What other organizations is Rondale Moore connected to?",
     "What specific allegations exist against Rondale Moore?",
     "Where did the N/A allegedly go in Mar-a-Lago Investigation?",
     "Where did the N/A allegedly go in Minnesota Medicaid Payment Errors?",
@@ -558,7 +556,9 @@
     "Where did the $9B+ allegedly go in Minnesota Daycare Fraud?",
     "Where did the $0 allegedly go in Mar-a-Lago Security Breach Investigation?",
     "Where did the $0 allegedly go in Rondale Moore Death Investigation?",
-    "Where did the $1.2M allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $1.2M allegedly go in Minnesota Child Care Fraud Investigation?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Where did the N/A allegedly go in Minnesota Aid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1105,
-    "articlesProcessed": 55100,
-    "redFlagsFound": 1320,
+    "totalScans": 1106,
+    "articlesProcessed": 55150,
+    "redFlagsFound": 1321,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "security breach",
-          "description": "Armed man breached secure perimeter of Mar-a-Lago",
-          "insight": "This incident raises concerns about the security of high-profile locations",
-          "entities": [
-            "Mar-a-Lago"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "NBC 6 South Florida",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOalo5NE8wejhETWlPN01oekNiZW9zMGRkNkxZYVZhWG92RXVtcUtQaFloODFSMmFEMlRUQUw2bG1UM2kyRW4yeWNmN1RDUEtqTGx1ZnpHRjFaYTVZRWZOa2ZiUzZjODJ5bzMyaEItM29DNy1uZHB4TkJPWVNtdHV1Q1UzeVBSZmFsUzRlRGF6QTNZVndVbGdFeE1KdDc1RTdmUVpqaVA4R3TSAbABQVVfeXFMTUdHOWp3LUdMa3JyUVpQTDB5dUhTa1A5cjY1alJTWENrZmx0b2loQkZmajJsZXhnMDhQbHh3NHgybWp6Qm1jWDRwOE1KREpzSEgxUUpVcGZkc0RzMHlWS3pPT1RhOWRXaUJ3dzZhMW42ZEU5WGwzdzRiVnNWYlVoREJhUUI4ZFdhLUlZckJkUFZtbVZaZDlDUmpvOEZRa3VhRWMwVEhzelQ1MDc5MlhwdlE?"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $N/A allegedly go in Minnesota Medicaid Fraud Investigation?",
         "Where did the $N/A allegedly go in Trump Administration Investigations?",
-        "What other organizations is Rondale Moore connected to?"
+        "What other organizations is Rondale Moore connected to?",
+        "What specific allegations exist against Rondale Moore?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-23T09:54:09.106Z",
-  "lastUpdated": "2026-02-23T09:54:09.106Z"
+  "lastReflection": "2026-02-23T10:49:54.392Z",
+  "lastUpdated": "2026-02-23T10:49:54.393Z"
 }
