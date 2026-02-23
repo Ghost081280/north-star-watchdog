@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal funding freeze stalls growth for Western Pennsylvania small businesses",
+      "insight": "This federal funding freeze may be a sign of a larger issue with the federal budget and its impact on small businesses. I recommend investigating further to see if there are any connections to other federal programs or agencies.",
+      "entities": [
+        "Western Pennsylvania small businesses"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Pittsburgh Post-Gazette",
+      "sourceUrl": "https://www.post-gazette.com/business/2026/02/23/federal-funding-freeze-stalls-growth-for-western-pennsylvania-small-businesses/",
+      "id": "rf-1771851683663-pv6s69wam",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T13:01:23.659Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Housing company accused of billing Medicaid $1.2M for help it never provided",
       "insight": "This case suggests a potential large-scale fraud scheme involving Medicaid billing",
@@ -269,25 +288,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-22T10:23:07.637Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The HHS has frozen all child care payments to Minnesota after viral fraud allegations.",
-      "insight": "This could indicate a larger issue with Medicaid fraud in Minnesota, and potentially other states. Further investigation is needed to determine the extent of the fraud and those involved.",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL",
-      "sourceUrl": "https://www.aol.com/news/hhs-freezes-child-care-payments-minnesota-viral-fraud-allegations-144521111.html",
-      "id": "rf-1771742705615-i5cuutbxa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T06:45:05.611Z",
       "isNew": false
     },
     {
@@ -977,6 +977,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,7 +985,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T11:38:59.338Z"
+  "lastUpdated": "2026-02-23T13:01:23.659Z"
 }
