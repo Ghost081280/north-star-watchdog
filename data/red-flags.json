@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "potential_fraud",
+      "description": "The U.S. tax system has been called the biggest fraud by one MinnPost article.",
+      "insight": "The U.S. tax system may be vulnerable to large-scale fraud, which could have significant financial implications.",
+      "entities": [
+        "U.S. government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MinnPost",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcVJ4MTZlX3dzamRjY2hMXy1NRkpQbTRFbFZWbGpxTXEtRnV0eVVBVldlY1l1ZkhYaU1hM3UtMUtOcE8zS1FscTNtWC1XUUVjYlg0WUh3TFVud0FmMTRWUVRGLXBqOXVVOGRHcU5WTktGc1FST0FvalF5OEV3RjZwNnd2eG9kcXBqTGtITW43MWpyeGk5RFdLZw",
+      "id": "rf-1771855947792-wh7oyxual",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T14:12:27.788Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "A federal investigation is underway after a shooting at Mar-a-Lago, and the FBI is involved.",
+      "insight": "The investigation could uncover potential fraud or wrongdoing related to the shooting or Mar-a-Lago.",
+      "entities": [
+        "FBI",
+        "Mar-a-Lago"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWGFMLWhsNDZlYnRwcTVrMEJNaW8wZkFSQ3dtM19RR1dIMG1kNzhFVEE5WnY2dVBNLVdiRWljVE81NzVvWXhFaTgyczdIWUFwWThsd21acnhhNTZWTnhmUEtOODZkNnkwSTNBVXF4WmowQm92WWNQN1FVUFQyVGdpSTBTVjVCZ2JQTk1NbEIzT2FHU2Zw",
+      "id": "rf-1771855947792-sbfgcjdo3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T14:12:27.788Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal funding freeze stalls growth for Western Pennsylvania small businesses",
       "insight": "This federal funding freeze may be a sign of a larger issue with the federal budget and its impact on small businesses. I recommend investigating further to see if there are any connections to other federal programs or agencies.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-23T13:01:23.659Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential fraud",
@@ -934,59 +973,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T04:26:50.643Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The MiLEAP child care program failed thousands of day care providers.",
-      "insight": "This program failure may be related to child care fraud.",
-      "entities": [
-        "MiLEAP"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Michigan Capitol Confidential",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTE8wNWwwMHlpMnJKU3g2c0h6V2NaSTNiTXZkMTNaSHlxMWxYcWozZThaZGJDODhYSEhTTEIzbTdlcEJ4aXk4ckRYNDZkRVJKQ3d3ZE9WeE5IRVhPVHpTNlg2V1hBOTQ2bE1pOFdLQ2N5Mml1QzYwQVBmR1owelVRVDdLcGtjQ3NZOHE2YmZSalpIN3dQNUEwTnlZRkNhUUFrOWc0RVFPUS1zNDFhTWJqbXhTWm8",
-      "id": "rf-1771444066446-xmdccd9da",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T19:47:46.443Z",
-      "isNew": false
-    },
-    {
-      "type": "Inappropriate Relationship",
-      "description": "Tony Clark, the former director of the MLBPA, resigned amid an investigation into an inappropriate relationship.",
-      "insight": "This raises concerns about the lack of accountability and oversight in organizations, and the potential for abuse of power. Further investigation is needed to determine the extent of the issue and to ensure that those responsible are held accountable.",
-      "entities": [
-        "Tony Clark",
-        "MLBPA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Complex",
-      "sourceUrl": "https://www.complex.com/sports/tony-clark-resigns-mlb-players-union-director",
-      "id": "rf-1771434128469-5pyko2z67",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T17:02:08.466Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T13:01:23.659Z"
+  "lastUpdated": "2026-02-23T14:12:27.788Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-18T14:14:51.957Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-02-18T15:51:52.768Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-23T13:01:23.657Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-23T14:12:27.786Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1108,
-    "articlesProcessed": 55250,
-    "redFlagsFound": 1322,
+    "totalScans": 1109,
+    "articlesProcessed": 55300,
+    "redFlagsFound": 1324,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "A federal investigation is underway after a shooting at Mar-a-Lago, and the FBI is involved.",
+          "insight": "The investigation could uncover potential fraud or wrongdoing related to the shooting or Mar-a-Lago.",
+          "entities": [
+            "FBI",
+            "Mar-a-Lago"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The New York Times",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWGFMLWhsNDZlYnRwcTVrMEJNaW8wZkFSQ3dtM19RR1dIMG1kNzhFVEE5WnY2dVBNLVdiRWljVE81NzVvWXhFaTgyczdIWUFwWThsd21acnhhNTZWTnhmUEtOODZkNnkwSTNBVXF4WmowQm92WWNQN1FVUFQyVGdpSTBTVjVCZ2JQTk1NbEIzT2FHU2Zw"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Rondale Moore?",
-        "Where did the N/A allegedly go in Mar-a-Lago Investigation?",
-        "Where did the N/A allegedly go in Minnesota Medicaid Payment Errors?"
+        "Where did the N/A allegedly go in Minnesota Medicaid Payment Errors?",
+        "Where did the None allegedly go in Mar-a-Lago Investigation?",
+        "Where did the None allegedly go in Minnesota Vikings WR Rondale Moore Death Investigation?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-23T13:01:23.657Z",
-  "lastUpdated": "2026-02-23T13:01:23.658Z"
+  "lastReflection": "2026-02-23T14:12:27.786Z",
+  "lastUpdated": "2026-02-23T14:12:27.787Z"
 }
