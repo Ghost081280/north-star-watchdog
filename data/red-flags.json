@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "security breach",
+      "description": "The Mar-a-Lago security breach has raised concerns about the security of the facility and the potential risks to the President and other high-profile individuals.",
+      "insight": "As an investigator, I am concerned about the potential risks to national security and the safety of high-profile individuals. Further investigation is needed to determine the cause of the breach and to prevent similar incidents in the future.",
+      "entities": [
+        "Mar-a-Lago",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/02/22/us/politics/mar-a-lago-security-breach.html",
+      "id": "rf-1771826771776-xoxj2qhia",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T06:06:11.773Z",
+      "isNew": true
+    },
+    {
       "type": "suspicious death",
       "description": "The sudden death of Rondale Moore has raised concerns about the safety and well-being of athletes",
       "insight": "I suspect that there may be more to Moore's death than initially meets the eye. I recommend further investigation into the circumstances surrounding his death.",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T08:42:41.395Z",
       "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "Allegations of fraud have been made against several entities and individuals, including Tony Clark and the owner of a Phoenix motel.",
-      "insight": "I have detected a pattern of alleged fraud across multiple entities and individuals. This suggests a possible larger issue that warrants further investigation.",
-      "entities": [
-        "Tony Clark",
-        "Owner of Phoenix motel"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times, 12News",
-      "sourceUrl": "https://www.nytimes.com/, https://www.12news.com/",
-      "id": "rf-1771394412824-a920h4or5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T06:00:12.821Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,11 +983,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T04:56:55.667Z"
+  "lastUpdated": "2026-02-23T06:06:11.773Z"
 }
