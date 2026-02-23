@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-18T15:51:52.768Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-18T17:02:08.464Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-02-23T14:12:27.786Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-23T15:43:56.225Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Minnesota Medicaid Payment Errors?",
     "Where did the None allegedly go in Mar-a-Lago Investigation?",
     "Where did the None allegedly go in Minnesota Vikings WR Rondale Moore Death Investigation?",
     "Where did the None allegedly go in Rondale Moore Death Investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Ilhan Omar connected to?",
     "Where did the N/A allegedly go in Minnesota Aid Fraud Investigation?",
     "What specific allegations exist against Kash Patel?",
-    "Where did the unknown allegedly go in Mar-a-Lago investigation?"
+    "Where did the unknown allegedly go in Mar-a-Lago investigation?",
+    "Where did the unknown allegedly go in Minnesota aid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1109,
-    "articlesProcessed": 55300,
-    "redFlagsFound": 1324,
+    "totalScans": 1110,
+    "articlesProcessed": 55350,
+    "redFlagsFound": 1325,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "A federal investigation is underway after a shooting at Mar-a-Lago, and the FBI is involved.",
-          "insight": "The investigation could uncover potential fraud or wrongdoing related to the shooting or Mar-a-Lago.",
-          "entities": [
-            "FBI",
-            "Mar-a-Lago"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The New York Times",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWGFMLWhsNDZlYnRwcTVrMEJNaW8wZkFSQ3dtM19RR1dIMG1kNzhFVEE5WnY2dVBNLVdiRWljVE81NzVvWXhFaTgyczdIWUFwWThsd21acnhhNTZWTnhmUEtOODZkNnkwSTNBVXF4WmowQm92WWNQN1FVUFQyVGdpSTBTVjVCZ2JQTk1NbEIzT2FHU2Zw"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-23T14:12:27.786Z",
-  "lastUpdated": "2026-02-23T14:12:27.787Z"
+  "lastReflection": "2026-02-23T15:43:56.225Z",
+  "lastUpdated": "2026-02-23T15:43:56.225Z"
 }
