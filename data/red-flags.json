@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "Housing company accused of billing Medicaid $1.2M for help it never provided",
+      "insight": "This case suggests a potential large-scale fraud scheme involving Medicaid billing",
+      "entities": [
+        "Housing company"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPM185azRWUlFISUppVnZmcTl4U2owc0NOeThuMnR5TUpRM1JIUVd1TFBUSk5GQWZBMXNmMU4ydDVkOWtXYkdtcWVQZHlDcUpfMDNzMWh0cFNVM1hjVWU4enlGS3Nrb241aV9uWnpGcDZBUVNWUUdzMFBKRkdFOGtqeHJ2eVM?",
+      "id": "rf-1771840449110-w3hejssy0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T09:54:09.107Z",
+      "isNew": true
+    },
+    {
+      "type": "security breach",
+      "description": "Armed man breached secure perimeter of Mar-a-Lago",
+      "insight": "This incident raises concerns about the security of high-profile locations",
+      "entities": [
+        "Mar-a-Lago"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "NBC 6 South Florida",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOalo5NE8wejhETWlPN01oekNiZW9zMGRkNkxZYVZhWG92RXVtcUtQaFloODFSMmFEMlRUQUw2bG1UM2kyRW4yeWNmN1RDUEtqTGx1ZnpHRjFaYTVZRWZOa2ZiUzZjODJ5bzMyaEItM29DNy1uZHB4TkJPWVNtdHV1Q1UzeVBSZmFsUzRlRGF6QTNZVndVbGdFeE1KdDc1RTdmUVpqaVA4R3TSAbABQVVfeXFMTUdHOWp3LUdMa3JyUVpQTDB5dUhTa1A5cjY1alJTWENrZmx0b2loQkZmajJsZXhnMDhQbHh3NHgybWp6Qm1jWDRwOE1KREpzSEgxUUpVcGZkc0RzMHlWS3pPT1RhOWRXaUJ3dzZhMW42ZEU5WGwzdzRiVnNWYlVoREJhUUI4ZFdhLUlZckJkUFZtbVZaZDlDUmpvOEZRa3VhRWMwVEhzelQ1MDc5MlhwdlE?",
+      "id": "rf-1771840449110-576leu3lg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T09:54:09.107Z",
+      "isNew": true
+    },
+    {
       "type": "security breach",
       "description": "The Mar-a-Lago security breach raises concerns about the safety and security of high-profile individuals and locations.",
       "insight": "The breach highlights potential vulnerabilities in security protocols and the need for increased vigilance and measures to prevent similar incidents in the future.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-23T08:48:44.063Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "security breach",
@@ -935,49 +973,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T17:02:08.466Z",
       "isNew": false
-    },
-    {
-      "type": "data_breach",
-      "description": "TriZetto Provider Solutions experienced a data breach of over 700,000 patient records.",
-      "insight": "The breach highlights the vulnerability of sensitive information and the need for robust data protection measures.",
-      "entities": [
-        "TriZetto Provider Solutions"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.schubertjonckheer.com/trizetto-provider-solutions-under-investigation-for-data-breach-of-over-700000-patient-records/",
-      "id": "rf-1771429912774-n6zdp4l2f",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T15:51:52.770Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The FBI is investigating an ICE arrest that resulted in skull fractures, and TriZetto Provider Solutions is under investigation for a data breach affecting over 700,000 patient records",
-      "insight": "These investigations suggest a pattern of abuse of power and negligence within ICE and other federal agencies. Further investigation is needed to determine the extent of these abuses and to hold those responsible accountable.",
-      "entities": [
-        "ICE",
-        "TriZetto Provider Solutions"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MPR News",
-      "sourceUrl": "https://www.mprnews.org/",
-      "id": "rf-1771411374774-qs2t4bwxa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T10:42:54.770Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,9 +987,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T08:48:44.063Z"
+  "lastUpdated": "2026-02-23T09:54:09.107Z"
 }
