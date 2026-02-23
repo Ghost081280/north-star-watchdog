@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "FEMA has frozen recovery funding for the Eaton fire, which may be related to the government shutdown.",
+      "insight": "This freeze may indicate a larger issue with federal funding and disaster relief. I will investigate further to see if there are any connections to other cases or entities.",
+      "entities": [
+        "FEMA",
+        "Eaton fire"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "FEMA Said It Has Frozen Eaton Fire Recovery Funding as Government Shutdown Enters Second Week",
+      "sourceUrl": "https://www.facebook.com/1017343456/posts/1017343456/",
+      "id": "rf-1771874313582-zn1d8vqy0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T19:18:33.579Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Yale School of Management ends diversity-focused PhD Project ties after federal investigation",
       "insight": "This could indicate a larger issue with diversity programs in educational institutions, potentially leading to further investigations and terminations.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-23T18:00:57.437Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential_fraud",
@@ -56,25 +76,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-23T14:12:27.788Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal funding freeze stalls growth for Western Pennsylvania small businesses",
-      "insight": "This federal funding freeze may be a sign of a larger issue with the federal budget and its impact on small businesses. I recommend investigating further to see if there are any connections to other federal programs or agencies.",
-      "entities": [
-        "Western Pennsylvania small businesses"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Pittsburgh Post-Gazette",
-      "sourceUrl": "https://www.post-gazette.com/business/2026/02/23/federal-funding-freeze-stalls-growth-for-western-pennsylvania-small-businesses/",
-      "id": "rf-1771851683663-pv6s69wam",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-23T13:01:23.659Z",
       "isNew": false
     },
     {
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T18:00:57.437Z"
+  "lastUpdated": "2026-02-23T19:18:33.579Z"
 }
