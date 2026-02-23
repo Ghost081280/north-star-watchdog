@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-18T08:42:41.393Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-18T09:45:26.035Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-23T07:54:24.536Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-23T08:48:44.061Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in ICE warehouse facility investigation?",
-    "What other organizations is No new figures charged connected to?",
     "Where did the $N/A allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $N/A allegedly go in Trump Administration Investigations?",
     "What other organizations is Rondale Moore connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Kash Patel connected to?",
     "Where did the unknown allegedly go in Mar-a-Lago security breach?",
     "Where did the unknown allegedly go in Minnesota daycare scandal?",
-    "Where did the $9B+ allegedly go in Minnesota Daycare Fraud?"
+    "Where did the $9B+ allegedly go in Minnesota Daycare Fraud?",
+    "Where did the $0 allegedly go in Mar-a-Lago Security Breach Investigation?",
+    "Where did the $0 allegedly go in Rondale Moore Death Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1103,
-    "articlesProcessed": 55000,
-    "redFlagsFound": 1317,
+    "totalScans": 1104,
+    "articlesProcessed": 55050,
+    "redFlagsFound": 1318,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the undisclosed allegedly go in Minnesota welfare fraud investigation?",
         "Where did the undisclosed allegedly go in ICE warehouse facility investigation?",
-        "What other organizations is No new figures charged connected to?"
+        "What other organizations is No new figures charged connected to?",
+        "Where did the $N/A allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-23T07:54:24.536Z",
-  "lastUpdated": "2026-02-23T07:54:24.537Z"
+  "lastReflection": "2026-02-23T08:48:44.061Z",
+  "lastUpdated": "2026-02-23T08:48:44.061Z"
 }

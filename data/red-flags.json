@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "security breach",
+      "description": "The Mar-a-Lago security breach raises concerns about the safety and security of high-profile individuals and locations.",
+      "insight": "The breach highlights potential vulnerabilities in security protocols and the need for increased vigilance and measures to prevent similar incidents in the future.",
+      "entities": [
+        "Mar-a-Lago",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI investigation",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPeDJfNnI1MmlJLWF4MF83Y1U2QUtlUXlUdWotX29Uc3ZNMDBPUU4wdXJCTUhjT0I0a3BKc2psRk5VbTl4bDhfcU0zTmNsRFZKVHhjMlVnQkh6alZBNlhzWlN0cUNzeHNsR3hxaHU5VzQ0cU9rd0NFNFFQRGxaTV9PdDdyR1FsN7JSMHNjQ2NSWHFCcG1YMUxReU9QSk9CZHU5MERZeXplYXFVNVU4Z3hZQWY5aUJRU3Y4TFRPMUlWNzVYeFg4dm91cUdHcTd1TkJFQVhfX1oyRVJJbEROY0pWSTNvQ2VnQy1RV1pzRzNRSzd3aFFMbTUxOGdBXzFycC130gGGAkFVX3lxTFBGbmtROERiM2paaHRIMWpsaWVsRjdoRzFPZ0ttZG14YXRDVVJJNzk1d3IyMnRDd0l6bUNVNWEzdEFVTFNhYXk4Z2VyNzcwTG95dHZlYV81cHp2cTJOcmV0RXEwV3pVbFZYRlVfQUhybEFMR3NNLUMtSm00bnB6SWZBTUpVRlU3NUdJM25weEswek0zODhXUmdNRW9RTUZpWExSUlFWQ0FRT1BoU3A4ckR4SHR5TXZ2Zzg4SzYxYWxvRnlWb0NRX21WZmM2YVhoS29PZC1UNTBqbEFiSXg1bUx1eURIUGJhQmxab3dFMDFaNGRHRDlvbzBKT0s3X2VaSkpDOGZuMnc",
+      "id": "rf-1771836524066-ai856p3cy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-23T08:48:44.063Z",
+      "isNew": true
+    },
+    {
+      "type": "security breach",
       "description": "The Mar-a-Lago security breach has raised concerns about the security measures in place at the resort.",
       "insight": "I am concerned about the potential vulnerabilities in the security systems at Mar-a-Lago, and I believe further investigation is needed to determine the cause of the breach and to prevent similar incidents in the future.",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-23T07:54:24.538Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "suspicious death",
@@ -954,30 +974,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-18T10:42:54.770Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The owner of a Phoenix motel was sentenced to probation and must forfeit $744K following an FBI investigation",
-      "insight": "This case highlights the importance of monitoring federal investigations and their outcomes. It also raises questions about the potential for similar cases in the future.",
-      "entities": [
-        "Owner of Phoenix motel"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "12News",
-      "sourceUrl": "https://www.12news.com/article/news/local/valley/owner-of-phoenix-motel-sentenced-to-probation-must-forfeit-744k-following-fbi-investigation/75-5c64a55a-4f5f-4f5f-8f5f-5f5f5f5f5f",
-      "id": "rf-1771404161399-6y0o3ksi2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-18T08:42:41.395Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,7 +986,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-23T07:54:24.538Z"
+  "lastUpdated": "2026-02-23T08:48:44.063Z"
 }
