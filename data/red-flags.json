@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Misuse of government resources",
+      "description": "Kash Patel's use of FBI aircraft for personal travel raises concerns about the misuse of government resources.",
+      "insight": "This could be a pattern of behavior that warrants further investigation. I recommend tracking Patel's travel records and expenses to identify any other potential misuse of government resources.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/02/24/politics/kash-patel-fbi-jet-investigation",
+      "id": "rf-1771975826453-w1bp2sikq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T23:30:26.449Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Reports indicate that Minnesota agencies have ignored fraud warnings for decades, leading to a significant risk of federal funding being frozen.",
       "insight": "The fact that Minnesota agencies have ignored fraud warnings for so long raises serious concerns about the state's ability to manage federal funds effectively. Further investigation is needed to determine the extent of the fraud and the impact on federal funding.",
@@ -954,25 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T17:49:46.604Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Legislators advance bill to formally strip fraud-riddled program from state law",
-      "insight": "This suggests a large-scale fraud scheme was uncovered, and the state is taking steps to rectify it.",
-      "entities": [
-        "Minnesota state government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Alpha News",
-      "sourceUrl": "https://alphanews.com/legislators-advance-bill-to-formally-strip-fraud-riddled-program-from-state-law",
-      "id": "rf-1771519895659-2ym9msekd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T16:51:35.656Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,8 +987,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T22:32:39.142Z"
+  "lastUpdated": "2026-02-24T23:30:26.449Z"
 }
