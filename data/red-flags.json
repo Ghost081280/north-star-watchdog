@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Quality Learning Center, a Minnesota-based organization, has been terminated",
+      "insight": "This termination may indicate a larger issue with oversight and accountability in Minnesota's human services programs",
+      "entities": [
+        "Quality Learning Center",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
+      "id": "rf-1771930018208-6gac5tg43",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T10:46:58.204Z",
+      "isNew": true
+    },
+    {
       "type": "inadequate accountability",
       "description": "The Minnesota human services system has been plagued by inadequate accountability for decades, leading to widespread fraud.",
       "insight": "I suspect that the lack of accountability is a result of a combination of factors, including inadequate oversight and a lack of transparency. Further investigation is needed to determine the root causes of the problem.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T09:51:39.606Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -953,30 +973,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T16:51:35.656Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation into Bruno Bajrami has been confirmed, with allegations of federal exposure.",
-      "insight": "This investigation may be connected to other cases of federal exposure, and it's essential to track the developments in this case to identify potential patterns and connections.",
-      "entities": [
-        "Bruno Bajrami"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Herald",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbnFsTk1QdDZYRFNxaTBNTUZvbnh3WW51SnBEeDZFemR4bXN5UWhzZVhBcDJ4LUtoOFU0a3JxM3J3N3ZWaERCY2JiZkZmLUJtcFBlWmYzZHBiVEhwcXFWTHZ3dWdoNjZQRnBiWUs0bk16N2J4aHRKM1dGdExTajNOVUpZTEwwTkhLVFR4N2ZMLXNPOW9vU3luV3E1ZWkxTjN1LTVnWkt2M1IybHBwM2cwZg?oc=5",
-      "id": "rf-1771515996281-ty44tahey",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T15:46:36.277Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T09:51:39.606Z"
+  "lastUpdated": "2026-02-24T10:46:58.204Z"
 }
