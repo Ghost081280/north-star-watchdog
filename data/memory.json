@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-19T18:49:27.931Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-19T19:38:28.915Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-24T19:00:02.642Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-24T19:52:12.195Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1130,
-    "articlesProcessed": 56350,
-    "redFlagsFound": 1344,
+    "totalScans": 1131,
+    "articlesProcessed": 56400,
+    "redFlagsFound": 1346,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "extensive_fraud",
+          "description": "Minnesota is reported to have extensive and well-documented fraud issues, with ongoing efforts to address these problems.",
+          "insight": "The extent of fraud in Minnesota indicates a significant problem that requires comprehensive solutions.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "KNSI",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV095TUk3MkFkLUoyV3J4Qy1nM1U0aVltMnBfdG1IeGpVNmNZT1l2NFhfMlB3bUVFU1pidkJIZ1JBbTNpUDI2WkNQVjB6Rkx2X0QwcHFaSVUzMlNkRG5YUXl1dHQ4dE9CVkNHOWVxUFpuTzFYLXVXUTBCZmJaaDRSRHRQX1B1VXd5dHBCSzJqbnpPLVFDdGJ2YzFsZ2dEdE0yV2RvWVJBV0lvTFFOMGVZ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Shireen Gandhi?",
         "What specific allegations exist against Jeff Landry?",
-        "Where did the $5.2M allegedly go in Minnesota Welfare Fraud Case?"
+        "Where did the $5.2M allegedly go in Minnesota Welfare Fraud Case?",
+        "Are any of these 2 figures connected to each other?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-24T19:00:02.642Z",
-  "lastUpdated": "2026-02-24T19:00:02.643Z"
+  "lastReflection": "2026-02-24T19:52:12.195Z",
+  "lastUpdated": "2026-02-24T19:52:12.196Z"
 }

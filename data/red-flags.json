@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "extensive_fraud",
+      "description": "Minnesota is reported to have extensive and well-documented fraud issues, with ongoing efforts to address these problems.",
+      "insight": "The extent of fraud in Minnesota indicates a significant problem that requires comprehensive solutions.",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "KNSI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV095TUk3MkFkLUoyV3J4Qy1nM1U0aVltMnBfdG1IeGpVNmNZT1l2NFhfMlB3bUVFU1pidkJIZ1JBbTNpUDI2WkNQVjB6Rkx2X0QwcHFaSVUzMlNkRG5YUXl1dHQ4dE9CVkNHOWVxUFpuTzFYLXVXUTBCZmJaaDRSRHRQX1B1VXd5dHBCSzJqbnpPLVFDdGJ2YzFsZ2dEdE0yV2RvWVJBV0lvTFFOMGVZ",
+      "id": "rf-1771962732200-th3xgr0po",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T19:52:12.197Z",
+      "isNew": true
+    },
+    {
       "type": "Neglect and Abuse of Power",
       "description": "Allegations of neglect and abuse of power by Minnesota state agencies, including the DHS",
       "insight": "I see a pattern of neglect and abuse of power by state agencies, which has led to widespread fraud and deception. Further investigation is needed to uncover the full extent of the problem",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T19:00:02.645Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -36,26 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T17:05:28.827Z",
-      "isNew": false
-    },
-    {
-      "type": "program_integrity",
-      "description": "Minnesota's vulnerability to fraud has been highlighted by recent investigations and allegations",
-      "insight": "Patterns of inadequate oversight and lack of effective fraud prevention measures",
-      "entities": [
-        "Minnesota DHS",
-        "Gov. Walz's office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://minnesotareformer.com/report-groundwork-for-fraud-in-minnesota-human-services-goes-back-50-years-2026-02-24",
-      "id": "rf-1771948601358-m1eyw6tub",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-24T15:56:41.356Z",
       "isNew": false
     },
     {
@@ -978,7 +977,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,6 +985,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1004,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T19:00:02.645Z"
+  "lastUpdated": "2026-02-24T19:52:12.197Z"
 }
