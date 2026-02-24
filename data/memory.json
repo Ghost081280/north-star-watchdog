@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-19T11:37:32.767Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-19T13:02:01.451Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-24T10:46:58.202Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-24T11:39:52.521Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Minnesota Aid Fraud Investigation?",
     "What specific allegations exist against Kash Patel?",
     "Where did the unknown allegedly go in Mar-a-Lago investigation?",
     "Where did the unknown allegedly go in Minnesota aid fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the $1.5M allegedly go in Minnesota Human Services Fraud Investigation?",
     "Where did the $1.5M allegedly go in Fresno Arts Council Embezzlement Investigation?",
     "Where did the $1.5M allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $1.5M allegedly go in Quality Learning Center fraud investigation?"
+    "Where did the $1.5M allegedly go in Quality Learning Center fraud investigation?",
+    "Where did the $100M+ allegedly go in Minnesota Human Services Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1124,
-    "articlesProcessed": 56050,
-    "redFlagsFound": 1338,
+    "totalScans": 1125,
+    "articlesProcessed": 56100,
+    "redFlagsFound": 1339,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
         "Where did the N/A allegedly go in Minnesota Aid Fraud Investigation?",
-        "What specific allegations exist against Kash Patel?"
+        "What specific allegations exist against Kash Patel?",
+        "Where did the unknown allegedly go in Mar-a-Lago investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-24T10:46:58.202Z",
-  "lastUpdated": "2026-02-24T10:46:58.203Z"
+  "lastReflection": "2026-02-24T11:39:52.521Z",
+  "lastUpdated": "2026-02-24T11:39:52.522Z"
 }
