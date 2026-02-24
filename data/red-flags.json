@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Reports indicate that Minnesota agencies have ignored fraud warnings for decades, leading to a significant risk of federal funding being frozen.",
+      "insight": "The fact that Minnesota agencies have ignored fraud warnings for so long raises serious concerns about the state's ability to manage federal funds effectively. Further investigation is needed to determine the extent of the fraud and the impact on federal funding.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New State Report Finds Minnesota Agencies Ignored Fraud Warnings for Decades",
+      "sourceUrl": "https://www.knsi.com/news/minnesota-news/new-state-report-finds-minnesota-agencies-ignored-fraud-warnings-for-decades/",
+      "id": "rf-1771965207501-swgqkreki",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T20:33:27.498Z",
+      "isNew": true
+    },
+    {
       "type": "extensive_fraud",
       "description": "Minnesota is reported to have extensive and well-documented fraud issues, with ongoing efforts to address these problems.",
       "insight": "The extent of fraud in Minnesota indicates a significant problem that requires comprehensive solutions.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T19:52:12.197Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Neglect and Abuse of Power",
@@ -36,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T19:00:02.645Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal funds have been frozen due to allegations of fraud and abuse in Minnesota",
-      "insight": "I suspect that the fraud in Minnesota is more widespread than initially reported, and that there may be connections to other states or programs. Further investigation is needed to determine the full extent of the fraud.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Official says fraud in Minnesota is 'well-documented' and 'extensive'",
-      "sourceUrl": "https://www.stcloudtimes.com/story/news/local/2026/02/24/official-says-fraud-in-minnesota-is-well-documented-and-extensive/1123456/",
-      "id": "rf-1771952728831-xqf7hfbrh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-24T17:05:28.827Z",
       "isNew": false
     },
     {
@@ -977,6 +977,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -985,8 +986,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1004,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T19:52:12.197Z"
+  "lastUpdated": "2026-02-24T20:33:27.498Z"
 }
