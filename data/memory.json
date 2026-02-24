@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-19T20:31:21.615Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-19T21:31:14.222Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-24T20:33:27.496Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-24T21:33:39.423Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1132,
-    "articlesProcessed": 56450,
-    "redFlagsFound": 1347,
+    "totalScans": 1133,
+    "articlesProcessed": 56500,
+    "redFlagsFound": 1348,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Jeff Landry?",
-        "Where did the $5.2M allegedly go in Minnesota Welfare Fraud Case?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in Minnesota DHS fraud investigation?",
+        "Where did the $ millions allegedly go in Minnesota DHS Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-24T20:33:27.496Z",
-  "lastUpdated": "2026-02-24T20:33:27.497Z"
+  "lastReflection": "2026-02-24T21:33:39.423Z",
+  "lastUpdated": "2026-02-24T21:33:39.423Z"
 }
