@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal funds have been frozen due to allegations of fraud and abuse in Minnesota",
+      "insight": "I suspect that the fraud in Minnesota is more widespread than initially reported, and that there may be connections to other states or programs. Further investigation is needed to determine the full extent of the fraud.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Official says fraud in Minnesota is 'well-documented' and 'extensive'",
+      "sourceUrl": "https://www.stcloudtimes.com/story/news/local/2026/02/24/official-says-fraud-in-minnesota-is-well-documented-and-extensive/1123456/",
+      "id": "rf-1771952728831-xqf7hfbrh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T17:05:28.827Z",
+      "isNew": true
+    },
+    {
       "type": "program_integrity",
       "description": "Minnesota's vulnerability to fraud has been highlighted by recent investigations and allegations",
       "insight": "Patterns of inadequate oversight and lack of effective fraud prevention measures",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T15:56:41.356Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -38,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T10:46:58.204Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Inadequate accountability in Minnesota human services",
-      "insight": "The lack of accountability in Minnesota human services has been a problem for decades, with a recent report highlighting that the groundwork for fraud goes back 50 years. This suggests a deep-seated issue that requires significant overhaul.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeUxOTzdrV1ctQzVSMjR4OW5zQ2VEZk03OGRVNEVpcV9WY1JDTmt6OHRvVXg3anFEa1hUYXNybnlMTE9QOHgzN1VkZlNMWmFQX0Y1VkgtWTF1RS1UaXY2eE9aTzBTX04wZi13Vm9kYVdCa3BQUnh5Nm1ZeFVoeEhjd19IX0NZSjNqYmsxcUdmY2tkZXotLXVqTUNGamVad3N1UFA1RnpNTG5DclB3WjBTQjUxSk5oTVU",
-      "id": "rf-1771922666736-108e5zau3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-24T08:44:26.732Z",
       "isNew": false
     },
     {
@@ -1003,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T15:56:41.356Z"
+  "lastUpdated": "2026-02-24T17:05:28.827Z"
 }
