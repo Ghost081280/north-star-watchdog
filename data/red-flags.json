@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Neglect and Abuse of Power",
+      "description": "Allegations of neglect and abuse of power by Minnesota state agencies, including the DHS",
+      "insight": "I see a pattern of neglect and abuse of power by state agencies, which has led to widespread fraud and deception. Further investigation is needed to uncover the full extent of the problem",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/",
+      "id": "rf-1771959602648-db3v6frfp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-24T19:00:02.645Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal funds have been frozen due to allegations of fraud and abuse in Minnesota",
       "insight": "I suspect that the fraud in Minnesota is more widespread than initially reported, and that there may be connections to other states or programs. Further investigation is needed to determine the full extent of the fraud.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T17:05:28.827Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_integrity",
@@ -955,29 +974,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T16:51:35.656Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI Boston says more extremists targeting kids on platforms including Roblox, Minecraft, Call of Duty",
-      "insight": "This indicates a growing concern for online safety and potential fraud schemes targeting children.",
-      "entities": [
-        "FBI Boston"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/fbi-boston-says-more-extremists-targeting-kids-on-platforms-including-roblox-minecraft-call-of-duty/",
-      "id": "rf-1771519895659-5ky3jessh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T16:51:35.656Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-24T17:05:28.827Z"
+  "lastUpdated": "2026-02-24T19:00:02.645Z"
 }
