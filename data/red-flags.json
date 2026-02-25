@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Excessive use of government resources",
+      "description": "FBI Director Kash Patel is under investigation for excessive use of FBI aircraft, potentially delaying a mass shooting investigation.",
+      "insight": "This raises concerns about the potential misuse of government resources and the need for increased oversight.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-director-kash-patel-under-investigation/",
+      "id": "rf-1772039848998-zdypbreqf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T17:17:28.995Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is conducting an investigation into drug trafficking in the Twin Cities, according to the Pioneer Press.",
       "insight": "This investigation could potentially uncover larger patterns of organized crime or fraud in Minnesota. Following the money and identifying key entities involved could be crucial.",
@@ -960,30 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-20T07:47:36.585Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scandal",
-      "description": "Feeding Our Future fraud scandal with 79 people charged",
-      "insight": "The Feeding Our Future scandal indicates a large-scale fraud operation, potentially involving multiple entities and government programs.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE04VHI0MjF6RlRYZm1EdUJoanZ2U0t0Y3BDNnFVNFpzWUJxWVRpUDdkUExfQW9XeTZxajdvdUhGM3c2ZkQ5bjR5ZjNLX3htOExFUUpkR0JSbmRDd1Z1bHpfZ1dWcjU1dzlONkhvaWYyNm4xQdIBd0FVX3lxTE5ZbTFKU1NpblNjUnI3MmVENjN3RXI2dDYzeC1hRU5yTmU2LUVPRkdPckpuejFUbnlxMVAyV1FHYy0yeW5mVXVuZlR1Z3o4ZVVnM1JuclBoaUpKcThvNTR6dGg3YUpwQzdyZWdWN1F6Q3ZiYzhHZV8w",
-      "id": "rf-1771570482515-u54qwh0qm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T06:54:42.511Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +994,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1011,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T16:01:42.067Z"
+  "lastUpdated": "2026-02-25T17:17:28.995Z"
 }
