@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Trump freezes child care funding nationwide, predicts California will surpass Minnesota for fraud",
+      "insight": "This move by the Trump administration raises concerns about the impact on vulnerable populations and the potential for political motivations behind the decision. Further investigation is needed to understand the reasoning behind this move and its potential consequences.",
+      "entities": [
+        "Trump Administration",
+        "California",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/article/trump-freezes-child-care-funding-nationwide/24512345/",
+      "id": "rf-1772016631880-biilopz7t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T10:50:31.877Z",
+      "isNew": true
+    },
+    {
       "type": "Withholding of documents",
       "description": "The DoJ is accused of withholding documents related to the Epstein case, including files on Trump's alleged abuse claim.",
       "insight": "This raises concerns about the integrity of the investigation and potential cover-ups. Further investigation is needed to determine the extent of the document withholding and its implications.",
@@ -139,25 +160,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-24T23:30:26.449Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Reports indicate that Minnesota agencies have ignored fraud warnings for decades, leading to a significant risk of federal funding being frozen.",
-      "insight": "The fact that Minnesota agencies have ignored fraud warnings for so long raises serious concerns about the state's ability to manage federal funds effectively. Further investigation is needed to determine the extent of the fraud and the impact on federal funding.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New State Report Finds Minnesota Agencies Ignored Fraud Warnings for Decades",
-      "sourceUrl": "https://www.knsi.com/news/minnesota-news/new-state-report-finds-minnesota-agencies-ignored-fraud-warnings-for-decades/",
-      "id": "rf-1771965207501-swgqkreki",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-24T20:33:27.498Z",
       "isNew": false
     },
     {
@@ -989,7 +991,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T09:53:40.792Z"
+  "lastUpdated": "2026-02-25T10:50:31.877Z"
 }
