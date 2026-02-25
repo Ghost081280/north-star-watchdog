@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI search warrants executed at LAUSD Superintendent's home, office, and Miami property",
+      "insight": "Potential for widespread fraud in education sector",
+      "entities": [
+        "LAUSD",
+        "Alberto Carvalho"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Herald",
+      "sourceUrl": "https://usaheald.com/fbi-executes-search-warrants-at-lausd-superintendent-alberto-carvalho-s-home-office-and-miami-property-in-ongoing-federal-investigation/",
+      "id": "rf-1772055249275-4hfu2wp7n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T21:34:09.270Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "JD Vance withholds Minnesota Medicaid funds",
+      "insight": "Potential for significant financial impact on Minnesota Medicaid program",
+      "entities": [
+        "JD Vance",
+        "Minnesota Medicaid"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://www.newyorkpost.com/2026/02/25/exclusive-jd-vance-makes-dramatic-move-withholding-minnesota-medicaid-funds-in-first-battle-of-his-war-on-fraud/",
+      "id": "rf-1772055249275-pos5n3aft",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T21:34:09.270Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI served search warrants at the Los Angeles Unified School District headquarters and Superintendent Alberto Carvalho's home.",
       "insight": "This could indicate a large-scale federal investigation into potential wrongdoing by LAUSD officials.",
@@ -941,50 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-20T12:55:44.808Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "Multiple federal investigations are currently underway, which could indicate a larger pattern of fraud or misconduct.",
-      "insight": "I suspect that these investigations may be connected to a larger scheme or pattern of behavior. Further research is needed to determine the extent of the issue.",
-      "entities": [
-        "Feeding Our Future",
-        "Child sex-change procedures"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal investigations",
-      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-79th-person-charged",
-      "id": "rf-1771580376377-em16n9c8x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T09:39:36.373Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Ongoing federal investigations into various entities, including law enforcement agencies and educational institutions.",
-      "insight": "These investigations suggest a broad range of potential misconduct and a need for increased oversight.",
-      "entities": [
-        "Federal Bureau of Investigation",
-        "US Department of Education"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": null,
-      "id": "rf-1771576743933-7heh970hi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T08:39:03.929Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +993,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T20:34:57.686Z"
+  "lastUpdated": "2026-02-25T21:34:09.270Z"
 }
