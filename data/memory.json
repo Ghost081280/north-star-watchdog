@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-20T15:36:42.580Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-20T16:38:06.459Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-02-25T19:05:14.640Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-02-25T20:34:57.684Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1148,
-    "articlesProcessed": 57250,
+    "totalScans": 1149,
+    "articlesProcessed": 57300,
     "redFlagsFound": 1365,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "The FBI served search warrants at the Los Angeles Unified School District headquarters and Superintendent Alberto Carvalho's home.",
-          "insight": "This could indicate a large-scale federal investigation into potential wrongdoing by LAUSD officials.",
-          "entities": [
-            "FBI",
-            "LAUSD"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Washington Post",
-          "sourceUrl": "https://www.washingtonpost.com/national/fbi-raids-los-angeles-school-district-headquarters-and-superintendents-home/2026/02/25/9f4d4c7e-8d2f-45e6-85a3-2e7e6d16f4a2_story.html"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -622,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-25T19:05:14.640Z",
-  "lastUpdated": "2026-02-25T19:05:14.641Z"
+  "lastReflection": "2026-02-25T20:34:57.684Z",
+  "lastUpdated": "2026-02-25T20:34:57.685Z"
 }
