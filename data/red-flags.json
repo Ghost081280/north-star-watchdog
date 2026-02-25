@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "campaign finance irregularities",
+      "description": "FBI questions treasurer for Republican campaigns over $100K discrepancy",
+      "insight": "Potential campaign finance violations warrant further investigation, possibly indicating larger patterns of fraud.",
+      "entities": [
+        "Republican campaigns",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "12News",
+      "sourceUrl": "https://www.12news.com/article/news/local/fbi-questions-treasurer-for-republican-campaigns-over-100k-discrepancy-sources-say/103-23150175",
+      "id": "rf-1772003587939-q8gg8z27v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T07:13:07.936Z",
+      "isNew": true
+    },
+    {
+      "type": "potential corruption",
+      "description": "Minnesota 'stunning' example of corruption according to Trump during State of the Union address",
+      "insight": "High-profile mentions of corruption can indicate patterns of malfeasance; this warrants a deeper look into Minnesota state governance and related entities.",
+      "entities": [
+        "Minnesota state government",
+        "Trump administration"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/trumps-state-of-the-union-minnesota-stunning-example-of-corruption",
+      "id": "rf-1772003587939-x2nzrgyzd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T07:13:07.936Z",
+      "isNew": true
+    },
+    {
       "type": "alleged withholding of documents",
       "description": "Allegations of withholding Epstein files on Trump abuse claim",
       "insight": "This raises concerns about transparency and accountability within the Trump administration. Further investigation is needed to determine the extent of the alleged withholding and its implications.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T05:59:57.226Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "withholding of information",
@@ -937,51 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T23:28:51.907Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Epstein's ties to U.S. Customs Officers",
-      "insight": "This investigation raises concerns about the potential for corruption and abuse of power. Further investigation is needed to determine the extent of Epstein's ties to U.S. Customs Officers.",
-      "entities": [
-        "Epstein",
-        "U.S. Customs Officers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/02/19/us/epstein-investigation.html",
-      "id": "rf-1771540228422-zqaowrref",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T22:30:28.418Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Clemson cuts ties with national program amid federal DEI-related investigation",
-      "insight": "This development raises concerns about the potential for abuse of power and corruption in the program. Further investigation is needed to determine the extent of the program's wrongdoing.",
-      "entities": [
-        "Clemson",
-        "National Program"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "SC Daily Gazette",
-      "sourceUrl": "https://www.scdailygazette.com/news/clemson-cuts-ties-with-national-program-amid-federal-dei-related-investigation",
-      "id": "rf-1771540228422-gzvst5f5q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T22:30:28.418Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,8 +989,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T05:59:57.226Z"
+  "lastUpdated": "2026-02-25T07:13:07.936Z"
 }
