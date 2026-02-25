@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-20T14:51:47.096Z",
-      "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-20T15:36:42.580Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-25T17:17:28.993Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-02-25T19:05:14.640Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1147,
-    "articlesProcessed": 57200,
-    "redFlagsFound": 1363,
+    "totalScans": 1148,
+    "articlesProcessed": 57250,
+    "redFlagsFound": 1365,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "The FBI served search warrants at the Los Angeles Unified School District headquarters and Superintendent Alberto Carvalho's home.",
+          "insight": "This could indicate a large-scale federal investigation into potential wrongdoing by LAUSD officials.",
+          "entities": [
+            "FBI",
+            "LAUSD"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Washington Post",
+          "sourceUrl": "https://www.washingtonpost.com/national/fbi-raids-los-angeles-school-district-headquarters-and-superintendents-home/2026/02/25/9f4d4c7e-8d2f-45e6-85a3-2e7e6d16f4a2_story.html"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Doug Harless connected to?",
-        "Where did the Unknown allegedly go in FBI Investigation into Kash Patel?",
-        "Where did the Unknown allegedly go in Feeding Our Future Scandal?"
+        "Where did the Unknown allegedly go in Feeding Our Future Scandal?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Bondi connected to?"
       ]
     },
     {
@@ -602,6 +622,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-25T17:17:28.993Z",
-  "lastUpdated": "2026-02-25T17:17:28.994Z"
+  "lastReflection": "2026-02-25T19:05:14.640Z",
+  "lastUpdated": "2026-02-25T19:05:14.641Z"
 }
