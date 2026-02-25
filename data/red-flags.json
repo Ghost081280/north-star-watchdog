@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration's pause in Medicaid funding to Minnesota is a significant red flag, as it suggests that the state's Medicaid program may be vulnerable to fraud and abuse.",
+      "insight": "As an investigator, I am concerned that the pause in funding may be a symptom of a larger problem with the state's Medicaid program. I would recommend further investigation into the allegations of fraud and abuse, as well as the state's efforts to prevent and detect such activity.",
+      "entities": [
+        "Minnesota Medicaid program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KARE 11",
+      "sourceUrl": "https://www.kare11.com/article/news/local/vp-vance-announces-temporary-halt-to-some-medicaid-funds-to-minnesota/89-eb9e7a9d-5f4d-۴c۹c-۸f۶c-۴f۶c۸f۶c",
+      "id": "rf-1772058756579-21u4rqlfy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T22:32:36.576Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI search warrants executed at LAUSD Superintendent's home, office, and Miami property",
       "insight": "Potential for widespread fraud in education sector",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T21:34:09.270Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T21:34:09.270Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -118,26 +137,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T14:47:14.658Z",
-      "isNew": false
-    },
-    {
-      "type": "federal funding freeze",
-      "description": "The Trump administration has attempted to freeze federal childcare funding for Illinois, which may have significant implications for families relying on the program.",
-      "insight": "This development may indicate a larger pattern of federal funding freezes or cuts, potentially affecting vulnerable populations.",
-      "entities": [
-        "Trump Administration",
-        "Illinois"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Northern Public Radio",
-      "sourceUrl": "https://www.northernpublicradio.org/",
-      "id": "rf-1772024490385-9ei1pfzrw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T13:01:30.381Z",
       "isNew": false
     },
     {
@@ -985,7 +984,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,8 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T21:34:09.270Z"
+  "lastUpdated": "2026-02-25T22:32:36.576Z"
 }
