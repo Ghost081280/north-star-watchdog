@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "Withholding of documents",
+      "description": "The DoJ is accused of withholding documents related to the Epstein case, including files on Trump's alleged abuse claim.",
+      "insight": "This raises concerns about the integrity of the investigation and potential cover-ups. Further investigation is needed to determine the extent of the document withholding and its implications.",
+      "entities": [
+        "DoJ",
+        "Epstein",
+        "Trump"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/feb/25/democrats-to-investigate-whether-doj-withheld-epstein-files-on-trump-abuse-claim",
+      "id": "rf-1772009179281-mdia7ytix",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-25T08:46:19.278Z",
+      "isNew": true
+    },
+    {
       "type": "campaign finance irregularities",
       "description": "FBI questions treasurer for Republican campaigns over $100K discrepancy",
       "insight": "Potential campaign finance violations warrant further investigation, possibly indicating larger patterns of fraud.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T07:13:07.936Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential corruption",
@@ -38,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-25T07:13:07.936Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged withholding of documents",
@@ -957,30 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-19T23:28:51.907Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Clemson cuts ties with national program amid federal DEI-related investigation",
-      "insight": "This could indicate potential issues with the program's activities or funding, warranting further investigation.",
-      "entities": [
-        "Clemson",
-        "national program"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Clemson cuts ties with national program amid federal DEI-related investigation - SC Daily Gazette",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlZwQ1ZLa1RwYlREQ3BZMTRTMkVRZEJsejlfcFp0VTZPSXdjTjVMQlhFOFNYM2JMWWhra2RLZU1rRThGNHhpa0xJdHZDdEFVdFVVQ0dOS3NTRU13OVlreVY4dkRqeGxjMURYRm9hQ3ZiOTcwVWJ1WmxMLWlvZ0hEX0JtdjM2REZUVTBtUVIzNlBMSWNqWVZZeThqa21Rc2xoSEw3c2NPYld6VmZTQTNCaVdpVQ",
-      "id": "rf-1771543731910-r910z35j1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-19T23:28:51.907Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,8 +992,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-25T07:13:07.936Z"
+  "lastUpdated": "2026-02-25T08:46:19.278Z"
 }
