@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-21T15:23:19.339Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-21T16:27:14.207Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-26T21:31:48.200Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-02-26T22:32:28.493Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.65
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $259M allegedly go in Minnesota Medicaid Funding Investigation?",
     "What other organizations is Minnesota man connected to?",
     "Where did the $259 million allegedly go in Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FBI investigation into suspicious chemicals?",
@@ -558,7 +557,8 @@
     "Where did the $259 million allegedly go in Minnesota Medicaid Funding Investigation?",
     "What other organizations is Executive director of suicide prevention nonprofit connected to?",
     "Where did the $259 million allegedly go in Medicaid funding investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie investigation?"
+    "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
+    "What other organizations is Executive Director of suicide prevention nonprofit connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1169,
-    "articlesProcessed": 58250,
-    "redFlagsFound": 1385,
+    "totalScans": 1170,
+    "articlesProcessed": 58300,
+    "redFlagsFound": 1386,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Medicaid Funding Investigation?",
-        "Where did the $0 (paused funding) allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is No new figures charged this hour connected to?"
+        "Where did the $259M allegedly go in Minnesota Medicaid Funding Investigation?",
+        "What other organizations is Minnesota man connected to?",
+        "Where did the $259 million allegedly go in Medicaid fraud investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-26T21:31:48.200Z",
-  "lastUpdated": "2026-02-26T21:31:48.201Z"
+  "lastReflection": "2026-02-26T22:32:28.493Z",
+  "lastUpdated": "2026-02-26T22:32:28.493Z"
 }
