@@ -2,22 +2,42 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "The Trump administration has withheld $259 million in Medicaid funds from Minnesota due to alleged fraud.",
-      "insight": "This development suggests a pattern of potential fraud in Minnesota's Medicaid program. Further investigation is needed to determine the extent of the fraud and those responsible.",
+      "description": "The Trump administration halted $259 million in Medicaid funds to Minnesota, citing fraud.",
+      "insight": "This action suggests a significant concern about fraud in Minnesota's Medicaid program.",
       "entities": [
-        "Minnesota state government",
-        "Trump administration"
+        "Minnesota",
+        "Trump Administration"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/white-house-to-pause-259m-in-minnesota-medicaid-dollars-in-fraud-crackdown/600246433/",
-      "id": "rf-1772085439933-0gdhx6eas",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/news/politics/wp-content/uploads/2026/02/26/trump-administration-to-withhold-259m-in-minnesota-medicaid-funds-citing-fraud-the-washington-post.pdf",
+      "id": "rf-1772089333578-52mvccifb",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-26T05:57:19.930Z",
+      "detectedAt": "2026-02-26T07:02:13.574Z",
+      "isNew": true
+    },
+    {
+      "type": "theft",
+      "description": "A Minnesota man is accused of bilking $220K from a family-run suicide prevention nonprofit.",
+      "insight": "This incident suggests potential mismanagement or fraud in nonprofit organizations.",
+      "entities": [
+        "Minnesota man",
+        "suicide prevention nonprofit"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/02/26/minnesota-man-accused-of-bilking-220k-from-family-run-suicide-prevention-nonprofit/",
+      "id": "rf-1772089333579-uecloclz2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-26T07:02:13.574Z",
       "isNew": true
     },
     {
@@ -962,31 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-20T14:51:47.099Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into Alzheimer's drug company",
-      "insight": "This investigation could have significant implications for the pharmaceutical industry and patients.",
-      "entities": [
-        "Alzheimer's drug company"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Fine Day 102.3",
-      "sourceUrl": "https://www.fineday1023.com/2026/02/20/federal-investigation-into-alzheimers-drug-company-concludes/",
-      "id": "rf-1771592144811-fi9plfz1m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T12:55:44.808Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-26T05:57:19.930Z"
+  "lastUpdated": "2026-02-26T07:02:13.574Z"
 }
