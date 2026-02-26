@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-20T23:27:42.537Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-21T01:52:10.824Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-02-26T07:02:13.572Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
+    },
+    {
+      "date": "2026-02-26T08:45:06.686Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against VP Vance?",
-    "Where did the $100K allegedly go in FBI Investigation into Republican Campaigns?",
     "What other organizations is Kash Patel connected to?",
     "Where did the unknown allegedly go in FBI Investigation into Drug Trafficking in Twin Cities?",
     "Where did the unknown allegedly go in Investigation into Minnesota's Somali Community?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in FBI investigation into suspicious chemicals?",
     "Where did the $259 million allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Executive Director (name not provided) connected to?",
-    "Where did the $259M allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $259M allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $259M allegedly go in Minnesota Medicaid Funds Freeze?",
+    "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1156,
-    "articlesProcessed": 57650,
-    "redFlagsFound": 1374,
+    "totalScans": 1157,
+    "articlesProcessed": 57700,
+    "redFlagsFound": 1375,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100K allegedly go in FBI investigation into Republican campaign treasurer?",
-        "What other organizations is VP Vance connected to?",
-        "What specific allegations exist against VP Vance?"
+        "What specific allegations exist against VP Vance?",
+        "Where did the $100K allegedly go in FBI Investigation into Republican Campaigns?",
+        "What other organizations is Kash Patel connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-26T07:02:13.572Z",
-  "lastUpdated": "2026-02-26T07:02:13.573Z"
+  "lastReflection": "2026-02-26T08:45:06.686Z",
+  "lastUpdated": "2026-02-26T08:45:06.687Z"
 }
