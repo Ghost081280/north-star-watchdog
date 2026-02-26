@@ -2,23 +2,43 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "The Trump administration has halted $259M in Medicaid funds to Minnesota due to potential fraud.",
-      "insight": "This suggests a significant concern about the integrity of Minnesota's Medicaid program. Further investigation into the specific allegations and entities involved is warranted.",
+      "description": "The Trump administration's freeze on Medicaid funds to Minnesota",
+      "insight": "This freeze suggests a potential issue with Minnesota's Medicaid program and may indicate a larger problem with healthcare funding.",
       "entities": [
         "Minnesota",
-        "Trump administration"
+        "Trump Administration"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Axios",
-      "sourceUrl": "https://www.axios.com/news/trump-admin-cites-fraud-freezing-minnesota-medicaid-funds",
-      "id": "rf-1772128622679-zjkluanqi",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ2NwcUxXOVVodHhtTDFsRjJ4TmQyb3pwZ0tlbEV0anpGeFphSGZCZVJucGVLcWxpV09WOThSWlVUamFScjdlSFlSQ3RPc0ZqYmtSRm5jYTdicnRneW4yZ2pUZTRlckJleDVCT2FEdEJVMUtDTHlKQ3J3dE9XWjNqNU9hOXRuRnZvLTVzODR1TGpERV9Lemp5eFdQNWY4ZG1DZW13UnNtZjFqaHV3cG9Qc0t3X0lmR2ptbFVLZUJUb3F2aXpiRGhUWWNVNmdpazRFOXNCcWI3c1HSAd4BQVVfeXFMT3V6S1I4RnljVzZRSFVHT0DaNEtQNFNuQnRGYVZyRElWR2ZzSldUaW9nREYtM25xTWtTWVNZSERRU2ZEN0lJb0VZSURyeVdRTFRUT2Y5UmhsclhLeno1WUt4S2dBbjU0bnJMNUlEZnhnaHMtZ3B3c3d0S2hXRXZERWlhbHdSLVluUEdKT2dVVmtWaGM5QVlqRnVabERId3JFUElfZGxWWGVINmtWTTI0Q05QTmI0M3RyNF9OZ19uRTU0ajZ3TGxDcTRkNVNHWXZBcnlWU0p3QVM3cXdtSmVB",
+      "id": "rf-1772138191387-p48m0srsw",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-02-26T17:57:02.676Z",
-      "isNew": false
+      "detectedAt": "2026-02-26T20:36:31.384Z",
+      "isNew": true
+    },
+    {
+      "type": "FBI investigation",
+      "description": "The FBI's search warrants at LAUSD headquarters and the superintendent's home",
+      "insight": "This investigation suggests potential wrongdoing by the superintendent and may indicate a larger issue with the LAUSD.",
+      "entities": [
+        "LAUSD",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPeE9kX0dRdUJNM2JRV19oRy1IUXZFWmhJNXJXRUt1VzZ4ZXZQalIwUWlLcnQ1WFlXMXdGQWlORExVblMxN19xS2ctWGlwQWd6OHl6bWE2WmFoeUpfNXZ4dVQtMWlNR2lTWU9Nc3J4bW9KQWY4ZXE5TGJXNnB5SV9aY0dzdm4xT2JveFRvbUxMLVNhQklTTk5JRV9PRlR2X1A3UTFCZlZWZzVIM29SU1VCQzJ0UzF5X0g5RWM3UndEZGxsa1VwUGtiQTJpMHA5NGdwOWNFYnNZajN3d2lfVDFvdGM3WG5JbjV4Y1E",
+      "id": "rf-1772138191387-jno5e4eht",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-26T20:36:31.384Z",
+      "isNew": true
     },
     {
       "type": "theft",
@@ -962,34 +982,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-20T16:38:06.461Z",
       "isNew": false
-    },
-    {
-      "type": "fraud_scheme",
-      "description": "79th person charged in Feeding Our Future scheme",
-      "insight": "This indicates a large-scale fraud scheme involving food aid in Minnesota.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota State Government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://5eyewitnessnews.com/news/local-news/79th-person-charged-in-feeding-our-future-fraud-scheme",
-      "id": "rf-1771599107102-9wrdbs5oo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T14:51:47.099Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-26T19:43:23.290Z"
+  "lastUpdated": "2026-02-26T20:36:31.384Z"
 }
