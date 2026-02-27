@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-21T18:33:06.405Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-21T19:23:07.525Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-02-27T01:54:45.822Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-02-27T04:13:11.733Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1172,
-    "articlesProcessed": 58400,
-    "redFlagsFound": 1388,
+    "totalScans": 1173,
+    "articlesProcessed": 58450,
+    "redFlagsFound": 1389,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $259M allegedly go in Minnesota Medicaid Fraud?",
         "Where did the $259M allegedly go in Minnesota Medicaid Funds Freeze?",
-        "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?"
+        "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?",
+        "What other organizations is Not Applicable connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-27T01:54:45.822Z",
-  "lastUpdated": "2026-02-27T01:54:45.823Z"
+  "lastReflection": "2026-02-27T04:13:11.733Z",
+  "lastUpdated": "2026-02-27T04:13:11.733Z"
 }
