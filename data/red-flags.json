@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "FBI investigation",
+      "description": "The FBI has raided the home and office of Los Angeles School Superintendent.",
+      "insight": "This investigation suggests potential wrongdoing or corruption within the Los Angeles school system. Further investigation into the allegations and potential connections to other cases is warranted.",
+      "entities": [
+        "Los Angeles School Superintendent",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Los Angeles Times",
+      "sourceUrl": "https://www.latimes.com/local/l-a-schools-board-discusses-superintendents-future-after-fbi-raid-20260227",
+      "id": "rf-1772181557526-hovq0bjw0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-27T08:39:17.523Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's decision to withhold $259 million in Medicaid funds from Minnesota due to allegations of fraud and misuse of public funds.",
       "insight": "This suggests a significant concern about the management of Medicaid funds in Minnesota and potentially other states. Further investigation into the extent of the fraud and the individuals or entities involved is warranted.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-27T07:44:52.913Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "FBI investigation",
@@ -962,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-20T22:24:20.189Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Bruno Bajrami, and 79 people have been charged in the Feeding Our Future fraud scheme.",
-      "insight": "These investigations suggest a pattern of fraudulent activity, and I recommend further research into the individuals and organizations involved.",
-      "entities": [
-        "Bruno Bajrami",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Herald",
-      "sourceUrl": "https://www.usaherald.com/usa-herald-first-to-confirm-fbi-investigation-into-bruno-bajrami-as-federal-scrutiny-deepens/",
-      "id": "rf-1771605486464-goo3w535i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-20T16:38:06.461Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-27T07:44:52.913Z"
+  "lastUpdated": "2026-02-27T08:39:17.523Z"
 }
