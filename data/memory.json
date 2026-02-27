@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-22T11:20:33.008Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-22T12:45:46.343Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-02-27T17:35:19.191Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-02-27T18:40:42.807Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $259 million allegedly go in Medicaid funding investigation?",
-    "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
-    "What other organizations is Executive Director of suicide prevention nonprofit connected to?",
-    "What specific allegations exist against Donald Trump?",
-    "What specific allegations exist against JD Vance?",
     "What specific allegations exist against Tim Walz?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +553,12 @@
     "Where did the unknown allegedly go in LAUSD Investigation?",
     "Where did the $259 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the unknown allegedly go in L.A. School Board Investigation?",
-    "Where did the $259M allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $259M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Michael A. Rulli connected to?",
+    "What specific allegations exist against Michael A. Rulli?",
+    "What other organizations is Mark Messmer connected to?",
+    "What specific allegations exist against Mark Messmer?",
+    "Where did the $259M allegedly go in Minnesota Medicaid Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1186,
-    "articlesProcessed": 59100,
-    "redFlagsFound": 1403,
+    "totalScans": 1187,
+    "articlesProcessed": 59150,
+    "redFlagsFound": 1404,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Executive director of suicide prevention nonprofit connected to?",
         "Where did the $259 million allegedly go in Medicaid funding investigation?",
-        "Where did the Unknown allegedly go in Nancy Guthrie investigation?"
+        "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
+        "What other organizations is Executive Director of suicide prevention nonprofit connected to?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-27T17:35:19.191Z",
-  "lastUpdated": "2026-02-27T17:35:19.192Z"
+  "lastReflection": "2026-02-27T18:40:42.807Z",
+  "lastUpdated": "2026-02-27T18:40:42.808Z"
 }
