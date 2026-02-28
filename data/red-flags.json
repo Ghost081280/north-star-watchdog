@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into LAUSD Superintendent Alberto Carvalho",
+      "insight": "The investigation into Carvalho raises concerns about potential corruption and mismanagement within the LAUSD. Further investigation is needed to determine the extent of any wrongdoing.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/la-superintendent-alberto-carvalho-fbi-investigation/",
+      "id": "rf-1772243142256-hng2gia6l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T01:45:42.252Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Trump administration's withholding of $259M in Medicaid funds from Minnesota",
       "insight": "Potential misuse of public funds and lack of transparency in program administration.",
@@ -964,30 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-21T06:39:55.997Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Excessive Use of Force",
-      "description": "The fatal shooting of Silverio Villegas-Gonzalez by an ICE agent has raised concerns about excessive use of force.",
-      "insight": "This incident highlights the need for increased transparency and accountability within federal agencies, particularly when it comes to the use of force.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ABC7 Chicago",
-      "sourceUrl": "https://abc7chicago.com/chicago-ice-protest-locals-seek-fbi-investigation-into-ice-shooting/12944445/",
-      "id": "rf-1771646781341-sul7hvf02",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-21T04:06:21.338Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,7 +998,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-27T23:23:15.095Z"
+  "lastUpdated": "2026-02-28T01:45:42.252Z"
 }

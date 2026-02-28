@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-22T17:24:56.989Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-22T18:33:31.020Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-27T23:23:15.093Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-02-28T01:45:42.250Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $259 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the unknown allegedly go in L.A. School Board Investigation?",
-    "Where did the $259M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Michael A. Rulli connected to?",
     "What specific allegations exist against Michael A. Rulli?",
     "What other organizations is Mark Messmer connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Janet Mills connected to?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Los Angeles schools investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Alberto Carvalho connected to?",
+    "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?",
+    "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1192,
-    "articlesProcessed": 59400,
-    "redFlagsFound": 1412,
+    "totalScans": 1193,
+    "articlesProcessed": 59450,
+    "redFlagsFound": 1413,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump connected to?",
-        "Where did the $259 million allegedly go in Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in FBI Investigation into Trump?"
+        "Where did the $259 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the unknown allegedly go in L.A. School Board Investigation?",
+        "Where did the $259M allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-27T23:23:15.093Z",
-  "lastUpdated": "2026-02-27T23:23:15.094Z"
+  "lastReflection": "2026-02-28T01:45:42.250Z",
+  "lastUpdated": "2026-02-28T01:45:42.251Z"
 }
