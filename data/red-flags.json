@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The LAUSD Superintendent has been placed on administrative leave during a federal investigation.",
+      "insight": "This move suggests that the investigation into the LAUSD Superintendent is serious and may involve significant allegations of wrongdoing. I will monitor the situation to determine the outcome of the investigation.",
+      "entities": [
+        "LAUSD",
+        "Alberto Carvalho"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Pride LA",
+      "sourceUrl": "https://www.thepridela.com/news/local/lausd-superintendent-alberto-carvalho-put-on-administrative-leave-during-federal-investigation",
+      "id": "rf-1772310246975-1ktlapvrd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T20:24:06.971Z",
+      "isNew": true
+    },
+    {
       "type": "financial_mismanagement",
       "description": "The treasurer of a suicide prevention nonprofit allegedly stole more than $200K.",
       "insight": "This could indicate a pattern of financial mismanagement or potential fraud within nonprofit organizations.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-28T19:20:08.573Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "administrative_leave",
@@ -970,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T17:24:56.991Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating an incident at Mar-a-Lago, and there are allegations of Medicaid payment errors in Minnesota",
-      "insight": "I suspect that these investigations may be related to a larger pattern of potential wrongdoing by the Trump administration. Further investigation is needed to determine the extent of any potential wrongdoing.",
-      "entities": [
-        "Trump administration",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaFBZSXhmcHlIdXFJUEpZRnEycU9wSm9VNS1tdXoxU1F1aGxob2pfS19meXBNdmtnaF9VenEwa0ROUmlRbGJfVkxIQzM4N2I5eW42T1lTeEF1azdOY2s5TTRfWW15Z2h4VzFsTXpmd25qZ29PQkRrd3BwNXJmOG1yLTJkMDEyZndXSVVocC1XM0FiWkRvdk12ZlhWelRXWU4wdldieGN5emxsS0dKdmRTVnBjN1Rqb3JJRWtJ",
-      "id": "rf-1771773826162-m2r8mjka1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T15:23:46.159Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-28T19:20:08.573Z"
+  "lastUpdated": "2026-02-28T20:24:06.971Z"
 }
