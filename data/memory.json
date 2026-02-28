@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-22T22:22:49.669Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-22T23:24:38.428Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-28T06:36:47.232Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-02-28T07:25:51.359Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI Investigation into Los Angeles School Superintendent?",
-    "Where did the $259M allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Savannah Guthrie's mother connected to?",
     "What other organizations is Representative Michael A. Rulli connected to?",
     "What other organizations is Representative Mark Messmer connected to?",
@@ -558,7 +556,9 @@
     "Where did the Undisclosed allegedly go in LAUSD Investigation?",
     "Where did the $9B+ allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI investigation into LAUSD Superintendent Alberto Carvalho?",
-    "Where did the $259.5 million allegedly go in Medicaid fraud investigation?"
+    "Where did the $259.5 million allegedly go in Medicaid fraud investigation?",
+    "What other organizations is Kash Patel connected to?",
+    "Where did the $0 allegedly go in FBI investigation into Alberto Carvalho?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1197,
-    "articlesProcessed": 59650,
-    "redFlagsFound": 1419,
+    "totalScans": 1198,
+    "articlesProcessed": 59700,
+    "redFlagsFound": 1421,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Theft",
-          "description": "Treasurer of suicide prevention nonprofit allegedly steals over $200K",
-          "insight": "The alleged theft by the treasurer of a suicide prevention nonprofit raises concerns about the potential for fraud and abuse in non-profit organizations. Further investigation is needed to determine the extent of the theft and to identify potential red flags.",
-          "entities": [
-            "Suicide prevention nonprofit"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Valley News Live",
-          "sourceUrl": "https://www.valleynewslive.com/2026/02/28/treasurer-of-suicide-prevention-nonprofit-allegedly-steals-more-than-200k/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Mark Messmer?",
-        "Where did the $259M allegedly go in Minnesota Medicaid Funding Freeze?",
-        "Where did the $0 allegedly go in FBI Investigation into Los Angeles School Superintendent?"
+        "Where did the $0 allegedly go in FBI Investigation into Los Angeles School Superintendent?",
+        "Where did the $259M allegedly go in Minnesota Medicaid Fraud?",
+        "What other organizations is Savannah Guthrie's mother connected to?"
       ]
     },
     {
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-28T06:36:47.232Z",
-  "lastUpdated": "2026-02-28T06:36:47.233Z"
+  "lastReflection": "2026-02-28T07:25:51.359Z",
+  "lastUpdated": "2026-02-28T07:25:51.360Z"
 }
