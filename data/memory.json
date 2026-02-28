@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-23T09:54:09.106Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-02-23T10:49:54.392Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-28T13:35:56.782Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-02-28T14:21:18.831Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Alberto Carvalho connected to?",
     "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in LAUSD Investigation?",
     "Where did the Unknown allegedly go in Medicaid Funding Investigation?",
     "Where did the $259.5 million allegedly go in Minnesota Medicaid funding investigation?",
-    "Where did the $259.5 million allegedly go in Medicaid Funding Freeze?"
+    "Where did the $259.5 million allegedly go in Medicaid Funding Freeze?",
+    "Where did the $259.5 million allegedly go in Medicaid funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1204,
-    "articlesProcessed": 60000,
-    "redFlagsFound": 1431,
+    "totalScans": 1205,
+    "articlesProcessed": 60050,
+    "redFlagsFound": 1433,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Los Angeles schools investigation?",
         "Are any of these 2 figures connected to each other?",
-        "What other organizations is Alberto Carvalho connected to?"
+        "What other organizations is Alberto Carvalho connected to?",
+        "Where did the Unknown allegedly go in LAUSD Superintendent Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-28T13:35:56.782Z",
-  "lastUpdated": "2026-02-28T13:35:56.782Z"
+  "lastReflection": "2026-02-28T14:21:18.831Z",
+  "lastUpdated": "2026-02-28T14:21:18.832Z"
 }

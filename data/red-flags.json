@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "FBI_investigation",
+      "description": "The FBI is investigating potential financial improprieties by Los Angeles schools superintendent Alberto Carvalho.",
+      "insight": "This investigation suggests potential corruption or mismanagement within the Los Angeles Unified School District, warranting further investigation into Carvalho's activities and potential connections to other entities or individuals.",
+      "entities": [
+        "Alberto Carvalho",
+        "Los Angeles Unified School District"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLVZlMDVERE95RjhVaFJOQThPYk9uMUNpVnN2ejVpZ1FzaFBESVNPZjJxN0t3UGJWeFg2TVg3R2lzS0hQU2tHM1kyUG43aUxKQ1YyMjFmc0lpbkg5aGR0TFlzdjJWcGpVa1J3VlFlektRMjFjRjNfR19RT2RNcTE3NURtenJqSE50NjQ1MGJoV1pIeTEyZVFKMUtOdVRBeVpnVzczUDQ2elM0UjRnZU9xMFkzS1ZzdFpzV2xTc05uZ3RNRW85VnNzNnpzaTU0UQ",
+      "id": "rf-1772288478836-d68r7cfcd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T14:21:18.833Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating Los Angeles school superintendent Alberto Carvalho.",
       "insight": "This investigation suggests that there may be potential fraud or misconduct by Carvalho, which could have serious implications for education services in Los Angeles. Further investigation is needed to determine the extent of any wrongdoing and to identify those responsible.",
@@ -968,23 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T12:45:46.344Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "No specific information on shell companies was found in the current scan.",
-      "insight": null,
-      "entities": [],
-      "confidence": 0,
-      "priority": "low",
-      "source": "",
-      "sourceUrl": "",
-      "id": "rf-1771755787640-tdb2w1zqx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T10:23:07.637Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -998,6 +1001,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-28T13:35:56.784Z"
+  "lastUpdated": "2026-02-28T14:21:18.833Z"
 }
