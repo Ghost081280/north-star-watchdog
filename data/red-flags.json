@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged theft",
+      "description": "The treasurer of a suicide prevention nonprofit allegedly stole over $200K.",
+      "insight": "This case suggests potential mismanagement or fraud within nonprofits, which may be underreported.",
+      "entities": [
+        "Suicide prevention nonprofit",
+        "Treasurer"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "Valley News Live",
+      "sourceUrl": "https://www.valleynewsLive.com/article/news/treasurer-of-suicide-prevention-nonprofit-allegedly-steals-more-than-200k/263-",
+      "id": "rf-1772267266144-pja0nr6bz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T08:27:46.141Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating Los Angeles school superintendent Alberto Carvalho",
       "insight": "This could indicate a larger pattern of corruption in the Los Angeles school district. Further investigation is needed to determine the extent of the corruption and whether it involves other officials.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-28T07:25:51.361Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "theft",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-28T07:25:51.361Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Theft",
@@ -963,26 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-21T17:25:13.120Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating the fatal shooting of Silverio Villegas-Gonzalez by an ICE agent",
-      "insight": "This incident raises concerns about the use of force by law enforcement agents and the need for greater accountability. Further investigation is needed to determine the circumstances surrounding the shooting and to identify any potential wrongdoing.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ABC7 Chicago",
-      "sourceUrl": "https://abc7chicago.com/ice-shooting-silverio-villegas-gonzalez-franklin-park/12918623/",
-      "id": "rf-1771683895983-khgu29ote",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-21T14:24:55.979Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,8 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-28T07:25:51.361Z"
+  "lastUpdated": "2026-02-28T08:27:46.141Z"
 }
