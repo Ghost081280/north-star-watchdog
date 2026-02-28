@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-23T14:12:27.786Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-02-23T15:43:56.225Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-02-28T17:19:44.856Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-02-28T18:31:41.285Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Undisclosed allegedly go in LAUSD Investigation?",
-    "Where did the $9B+ allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI investigation into LAUSD Superintendent Alberto Carvalho?",
     "Where did the $259.5 million allegedly go in Medicaid fraud investigation?",
     "What other organizations is Kash Patel connected to?",
@@ -558,7 +556,9 @@
     "Where did the $259.5 million allegedly go in Medicaid funding freeze in Minnesota?",
     "What other organizations is Alberto Carvalho connected to?",
     "Where did the $259.5 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $259.5 million allegedly go in Minnesota Medicaid Funding Fraud Investigation?"
+    "Where did the $259.5 million allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
+    "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in FBI Investigation into LAUSD Superintendent?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1208,
-    "articlesProcessed": 60200,
-    "redFlagsFound": 1438,
+    "totalScans": 1209,
+    "articlesProcessed": 60250,
+    "redFlagsFound": 1439,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Treasurer of suicide prevention nonprofit connected to?",
         "Where did the Undisclosed allegedly go in LAUSD Investigation?",
-        "Where did the $9B+ allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $9B+ allegedly go in Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in FBI investigation into LAUSD Superintendent Alberto Carvalho?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-02-28T17:19:44.856Z",
-  "lastUpdated": "2026-02-28T17:19:44.857Z"
+  "lastReflection": "2026-02-28T18:31:41.285Z",
+  "lastUpdated": "2026-02-28T18:31:41.286Z"
 }
