@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "FBI_investigation",
+      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, leading to his administrative leave.",
+      "insight": "This investigation suggests potential corruption or misconduct within the LAUSD, possibly involving Superintendent Carvalho. Further investigation into Carvalho's actions and LAUSD's governance is warranted.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "The Pride LA",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLVZlMDVERE95RjhVaFJOQThPYk9nMUNpVnN2ejVpZ1FzaFBESVNPZjJxN0t3UGJWeFg2TVg3R2lzS0hQU2tHM1kyUG43aUxKQ1YyMjFmc0lpbkg5aGR0TFlzdjJWcGpVa1J3VlFlektRMjFjRjNfR19RT2RNcTE3NURtenJqSE50NjQ1MGJoV1pIeTEyZVFKMUtOdVRBeVpnVzczUDQ2elM0UjRnZU9xMFkzS1ZzdFpzV2xTc05uZ3RNRW85VnNzNnpzaTU0UQ",
+      "id": "rf-1772292046411-g8ddo18j3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T15:20:46.408Z",
+      "isNew": true
+    },
+    {
+      "type": "FBI_investigation",
       "description": "The FBI is investigating potential financial improprieties by Los Angeles schools superintendent Alberto Carvalho.",
       "insight": "This investigation suggests potential corruption or mismanagement within the Los Angeles Unified School District, warranting further investigation into Carvalho's activities and potential connections to other entities or individuals.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-28T14:21:18.833Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -969,40 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T12:45:46.344Z",
       "isNew": false
-    },
-    {
-      "type": "Trump administration investigations",
-      "description": "The Trump administration is facing various investigations and updates, including tariff rates and Supreme Court rulings.",
-      "insight": "I notice that the Trump administration is facing various investigations and updates, which have significant implications for the administration and the country. I would like to investigate further to determine the extent of these investigations and their potential impact.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/",
-      "id": "rf-1771764346348-s897zr5u2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T12:45:46.344Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-28T14:21:18.833Z"
+  "lastUpdated": "2026-02-28T15:20:46.408Z"
 }
