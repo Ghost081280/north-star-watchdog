@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Misuse of funds",
+      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho for potential misuse of funds.",
+      "insight": "This investigation may reveal a pattern of corruption within the LAUSD administration. Further investigation is needed to determine the extent of the alleged misuse of funds and its impact on the school district.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/l-a-schools-superintendent-alberto-carvalho-placed-on-administrative-leave-amid-fbi-probe/",
+      "id": "rf-1772277525493-wiufwgocc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-02-28T11:18:45.490Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI investigation into Los Angeles school superintendent Alberto Carvalho",
       "insight": "This investigation raises concerns about potential fraud and corruption in the education sector, and may lead to further discoveries of financial mismanagement.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-02-28T10:22:02.105Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged theft",
@@ -964,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-21T19:23:07.527Z",
       "isNew": false
-    },
-    {
-      "type": "arrest",
-      "description": "The Chief of Staff to a State Senator has been arrested on federal child sex trafficking charges",
-      "insight": "This arrest could lead to further investigations into the State Senator's office and potentially impact the senator's career",
-      "entities": [
-        "Chief of Staff",
-        "State Senator"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Alaska's News Source",
-      "sourceUrl": "https://www.alaskasnewssource.com/content/news/State-senator-responds-after-chief-of-staff-arrested-on-federal-child-sex-trafficking-charges-505434121.html",
-      "id": "rf-1771701787530-ijsqmbtml",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-21T19:23:07.527Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,8 +997,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-02-28T10:22:02.105Z"
+  "lastUpdated": "2026-02-28T11:18:45.490Z"
 }
