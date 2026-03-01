@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential terrorism connection",
+      "description": "The FBI is investigating a mass shooting in Austin, Texas, and there are concerns about a potential terrorism connection.",
+      "insight": "This suggests a potential threat to public safety and I would investigate the shooter's background and potential connections to terrorist organizations.",
+      "entities": [
+        "FBI",
+        "Austin police department"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/article/news/2026/03/01/3-dead-in-austin-bar-shooting-fbi-investigating-terrorist-indicators/33123495/",
+      "id": "rf-1772407336309-2lvg6t1bk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-01T23:22:16.306Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The LAUSD Superintendent has been placed on administrative leave during a federal investigation.",
       "insight": "This move suggests that the investigation into the LAUSD Superintendent is serious and may involve significant allegations of wrongdoing. I will monitor the situation to determine the outcome of the investigation.",
@@ -970,41 +990,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T20:25:39.345Z",
       "isNew": false
-    },
-    {
-      "type": "suspicious death",
-      "description": "The death of Rondale Moore, a Vikings WR, is under investigation. The circumstances surrounding his death are unclear, and the investigation is ongoing.",
-      "insight": "I am concerned about the lack of information surrounding the death of Rondale Moore. The investigation is ongoing, and I will continue to monitor the situation for any updates.",
-      "entities": [
-        "Rondale Moore",
-        "Minnesota Vikings"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AL.com",
-      "sourceUrl": "https://www.al.com/news/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
-      "id": "rf-1771781096994-4w9l18cpk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T17:24:56.991Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-01T22:22:30.921Z"
+  "lastUpdated": "2026-03-01T23:22:16.306Z"
 }
