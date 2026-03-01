@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-24T11:39:52.521Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-24T13:02:11.522Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-01T12:44:18.935Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-01T13:38:40.023Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -532,10 +532,10 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.5,
-      "count": 1,
+      "confidence": 0.55,
+      "count": 2,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-01-15T21:21:13.968Z"
+      "lastSeen": "2026-03-01T13:38:40.024Z"
     }
   ],
   "openQuestions": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1224,
-    "articlesProcessed": 61000,
-    "redFlagsFound": 1451,
+    "totalScans": 1225,
+    "articlesProcessed": 61050,
+    "redFlagsFound": 1453,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $259.5 million allegedly go in Medicaid funding freeze in Minnesota?",
-        "What other organizations is Alberto Carvalho connected to?",
-        "Where did the $259.5 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $259.5 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $259.5 million allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
+        "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-01T12:44:18.935Z",
-  "lastUpdated": "2026-03-01T12:44:18.935Z"
+  "lastReflection": "2026-03-01T13:38:40.023Z",
+  "lastUpdated": "2026-03-01T13:38:40.024Z"
 }
