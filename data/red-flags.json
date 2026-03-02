@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of Medicaid programs due to fraud",
+      "insight": "The Minnesota DHS's sweeping inspection effort may lead to program terminations for non-compliant providers, indicating a significant crackdown on fraud.",
+      "entities": [
+        "Minnesota DHS",
+        "Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Community Reporter",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVFM5R3ctUndHU2N2bW9Za0VFVDdNd2xLSDZTMjJwNEFQWXhyOG5rV2tOc2ZwQXJMZVFraEtPN2xEV256RjhULWI4cXJiU3I4MEloQWV0M0wzQVBwWTllekc4V2hDNE1rbEZvQUdZT2VZSW5UMEJZNlRxNTR1WTRfWjN3M2lwcmowYS1yY3pKcldJU1NZM1ptNXB3",
+      "id": "rf-1772440952756-zltf2cjco",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T08:42:32.752Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI investigating potential terrorism connection in Austin bar shooting",
+      "insight": "The FBI's investigation into the Austin bar shooting for potential terrorism connections raises concerns over domestic terrorism threats.",
+      "entities": [
+        "FBI",
+        "Austin bar shooting suspect"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Channel 3000",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNTzd6cWdBek5reVBGOW5hYW1BS1pjQ1p1MHNkVnJPZzJyM3Q2eGtacnR2bFVpczlGVVE2OGdydEVOZTI5c3pBYVZXV2JGRDFlQ25mckc0MVBkRTVPcURma1FKU1RXZGVsR2lfdmdJMW5XcEdwVFJDYjFPcUV0S1VDdjV2QmZ1Yk9YN0d1N3Q3R09GMy1CR2x6VUhTQkxRcnhYTDRtRFRSR1RPYUl4WGZEbnhtelIzbFE4elY3WkEtTmdya0g4LVdYdXlSYlEwME5jYWpHeXloQVVBOE51VlV4TVdLWDBFSnJXZnozNW1EREJLUFZrUEI5TnYtc1hKdmo1cWc",
+      "id": "rf-1772440952756-of6tk8w1c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T08:42:32.752Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Terrorism Ties",
       "description": "The FBI is investigating potential terrorism ties in the Austin mass shooting",
       "insight": "This could indicate a larger threat to national security, and further investigation is needed to determine the extent of any potential terrorism ties",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-02T07:49:19.033Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -875,25 +915,6 @@
       "isNew": false
     },
     {
-      "type": "potential fraud",
-      "description": "Housing company accused of billing Medicaid $1.2M for help it never provided",
-      "insight": "This case suggests a potential large-scale fraud scheme involving Medicaid billing",
-      "entities": [
-        "Housing company"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPM185azRWUlFISUppVnZmcTl4U2owc0NOeThuMnR5TUpRM1JIUVd1TFBUSk5GQWZBMXNmMU4ydDVkOWtXYkdtcWVQZHlDcUpfMDNzMWh0cFNVM1hjVWU4enlGS3Nrb241aV9uWnpGcDZBUVNWUUdzMFBKRkdFOGtqeHJ2eVM?",
-      "id": "rf-1771840449110-w3hejssy0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-23T09:54:09.107Z",
-      "isNew": false
-    },
-    {
       "type": "security breach",
       "description": "Armed man breached secure perimeter of Mar-a-Lago",
       "insight": "This incident raises concerns about the security of high-profile locations",
@@ -970,31 +991,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T22:22:49.671Z",
       "isNew": false
-    },
-    {
-      "type": "arson attack",
-      "description": "The arson attack on an ICE warehouse in Arizona has raised concerns about the safety and security of federal facilities",
-      "insight": "I suspect that the arson attack may be linked to a larger pattern of violence against federal facilities. I recommend further investigation into the incident and potential connections to other similar attacks.",
-      "entities": [
-        "ICE",
-        "FBI"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/us/fbi-investigates-criminal-damage-to-federal-ice-warehouse-facility-in-arizona",
-      "id": "rf-1771798969675-dflq17ak3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T22:22:49.671Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,7 +1003,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-02T07:49:19.033Z"
+  "lastUpdated": "2026-03-02T08:42:32.752Z"
 }
