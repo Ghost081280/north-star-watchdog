@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-25T23:27:20.775Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-26T01:55:59.944Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-02T18:44:33.474Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-03-02T19:36:54.365Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1251,
-    "articlesProcessed": 62350,
-    "redFlagsFound": 1478,
+    "totalScans": 1252,
+    "articlesProcessed": 62400,
+    "redFlagsFound": 1480,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The federal government has frozen $259.5 million in Medicaid funds for Minnesota due to alleged fraud.",
+          "insight": "This freeze indicates a significant concern about fraud in Minnesota's Medicaid program. Further investigation is needed to uncover the extent of the fraud and identify those responsible.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Southern Minnesota News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUFdPaVBSR05ZWU5MZE9OWjZfaHJtTkNBMUZBMmlsU292WG1xang0LW43bVJoNFlLNDhBRi1NZXVvMmxLdm9KRWVDLTZnQ3JDNkNJM0ZFaC1WNHp1bXNwcmVBbWR5S1RSSm5wTlJzaUdnWW9ZSXVRWE5JZ0JfY0JkdXpUcUlxMHVELXRzaC1WWmNEWGV2bURWTVlTZDF1SndVQUVVX0VyWUY2WDRvWGt0U2FxZEFqZTBCTGtHZkFwd3ZDRWlid2c5RTFZZXd2R3hDRnJHcGlIcWh6VTBqLWtmbEZFZmttUQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Minnesota Medicaid Fraud Investigation?",
         "What other organizations is Nancy Guthrie connected to?",
-        "Where did the Unknown allegedly go in Jeffrey Epstein Investigation?"
+        "Where did the Unknown allegedly go in Jeffrey Epstein Investigation?",
+        "What other organizations is Jeffrey Epstein connected to?"
       ]
     },
     {
@@ -602,6 +621,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-02T18:44:33.474Z",
-  "lastUpdated": "2026-03-02T18:44:33.474Z"
+  "lastReflection": "2026-03-02T19:36:54.365Z",
+  "lastUpdated": "2026-03-02T19:36:54.366Z"
 }
