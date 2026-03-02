@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential terrorism connection",
+      "description": "Potential ties to terrorism being investigated in the Austin bar shooting.",
+      "insight": "This investigation suggests a possible link between the shooting and terrorism, which requires further scrutiny to determine the extent of the connection.",
+      "entities": [
+        "FBI",
+        "Austin bar shooting suspect"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/fbi-probing-whether-iran-attack-motivated-austin-shooter-who-killed-2/2024/03/02/",
+      "id": "rf-1772466088323-l1g6zrwxi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T15:41:28.320Z",
+      "isNew": true
+    },
+    {
       "type": "potential_terrorism",
       "description": "The FBI is investigating a mass shooting in Austin with potential ties to terrorism.",
       "insight": "The potential connection to terrorism in the Austin shooting investigation raises concerns about the motivations behind the attack and potential future threats.",
@@ -972,40 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-23T09:54:09.107Z",
       "isNew": false
-    },
-    {
-      "type": "security breach",
-      "description": "The Mar-a-Lago security breach raises concerns about the safety and security of high-profile individuals and locations.",
-      "insight": "The breach highlights potential vulnerabilities in security protocols and the need for increased vigilance and measures to prevent similar incidents in the future.",
-      "entities": [
-        "Mar-a-Lago",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI investigation",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPeDJfNnI1MmlJLWF4MF83Y1U2QUtlUXlUdWotX29Uc3ZNMDBPUU4wdXJCTUhjT0I0a3BKc2psRk5VbTl4bDhfcU0zTmNsRFZKVHhjMlVnQkh6alZBNlhzWlN0cUNzeHNsR3hxaHU5VzQ0cU9rd0NFNFFQRGxaTV9PdDdyR1FsN7JSMHNjQ2NSWHFCcG1YMUxReU9QSk9CZHU5MERZeXplYXFVNVU4Z3hZQWY5aUJRU3Y4TFRPMUlWNzVYeFg4dm91cUdHcTd1TkJFQVhfX1oyRVJJbEROY0pWSTNvQ2VnQy1RV1pzRzNRSzd3aFFMbTUxOGdBXzFycC130gGGAkFVX3lxTFBGbmtROERiM2paaHRIMWpsaWVsRjdoRzFPZ0ttZG14YXRDVVJJNzk1d3IyMnRDd0l6bUNVNWEzdEFVTFNhYXk4Z2VyNzcwTG95dHZlYV81cHp2cTJOcmV0RXEwV3pVbFZYRlVfQUhybEFMR3NNLUMtSm00bnB6SWZBTUpVRlU3NUdJM25weEswek0zODhXUmdNRW9RTUZpWExSUlFWQ0FRT1BoU3A4ckR4SHR5TXZ2Zzg4SzYxYWxvRnlWb0NRX21WZmM2YVhoS29PZC1UNTBqbEFiSXg1bUx1eURIUGJhQmxab3dFMDFaNGRHRDlvbzBKT0s3X2VaSkpDOGZuMnc",
-      "id": "rf-1771836524066-ai856p3cy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-23T08:48:44.063Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-02T14:54:32.806Z"
+  "lastUpdated": "2026-03-02T15:41:28.320Z"
 }
