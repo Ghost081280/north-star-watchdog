@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigating potential nexus to terrorism in deadly mass shooting in downtown Austin",
+      "insight": "I see a pattern of federal investigations into potential terrorism and fraud cases. Further investigation is needed to determine if there are any connections between these cases.",
+      "entities": [
+        "FBI",
+        "Austin"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.channel3000.com/news/fbi-investigating-potential-nexus-to-terrorism-in-deadly-mass-shooting-in-downtown-austin/",
+      "id": "rf-1772444823028-yxg4gvuja",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T09:47:03.024Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of Medicaid programs due to fraud",
       "insight": "The Minnesota DHS's sweeping inspection effort may lead to program terminations for non-compliant providers, indicating a significant crackdown on fraud.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-02T08:42:32.752Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-02T08:42:32.752Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Terrorism Ties",
@@ -971,30 +991,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-23T07:54:24.538Z",
       "isNew": false
-    },
-    {
-      "type": "suspicious death",
-      "description": "The sudden death of Rondale Moore has raised concerns about the safety and well-being of athletes",
-      "insight": "I suspect that there may be more to Moore's death than initially meets the eye. I recommend further investigation into the circumstances surrounding his death.",
-      "entities": [
-        "Rondale Moore",
-        "Minnesota Vikings"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AL.com",
-      "sourceUrl": "https://www.al.com/sports/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
-      "id": "rf-1771798969675-c4r3zda71",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T22:22:49.671Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1004,7 +1005,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-02T08:42:32.752Z"
+  "lastUpdated": "2026-03-02T09:47:03.024Z"
 }
