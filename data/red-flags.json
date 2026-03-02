@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential_terrorism",
+      "description": "The FBI is investigating a mass shooting in Austin with potential ties to terrorism.",
+      "insight": "The potential connection to terrorism in the Austin shooting investigation raises concerns about the motivations behind the attack and potential future threats.",
+      "entities": [
+        "FBI",
+        "Austin shooting suspect"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/fbi-probing-whether-iran-attack-motivated-austin-shooter-who-killed-2/2026/03/02/",
+      "id": "rf-1772460053354-4ob4nttye",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T14:00:53.351Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI investigating potential nexus to terrorism in deadly mass shooting in downtown Austin",
       "insight": "I see a pattern of federal investigations into potential terrorism and fraud cases. Further investigation is needed to determine if there are any connections between these cases.",
@@ -972,39 +992,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-23T08:48:44.063Z",
       "isNew": false
-    },
-    {
-      "type": "security breach",
-      "description": "The Mar-a-Lago security breach has raised concerns about the security measures in place at the resort.",
-      "insight": "I am concerned about the potential vulnerabilities in the security systems at Mar-a-Lago, and I believe further investigation is needed to determine the cause of the breach and to prevent similar incidents in the future.",
-      "entities": [
-        "Mar-a-Lago"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.republicworld.com/world-news/rest-of-the-world-news/dedicating-all-necessary-resources-in-the-investigation-fbi-director-kash-patel-pledges-full-probe-into-mar-a-lago-security-breach.html",
-      "id": "rf-1771833264541-url8dapy6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-23T07:54:24.538Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-02T12:55:45.314Z"
+  "lastUpdated": "2026-03-02T14:00:53.351Z"
 }
