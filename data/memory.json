@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-26T01:55:59.944Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-26T04:16:26.652Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-03-02T19:36:54.365Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-03-02T20:36:33.042Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Nancy Guthrie connected to?",
-    "Where did the Unknown allegedly go in Jeffrey Epstein Investigation?",
     "What other organizations is Jeffrey Epstein connected to?",
     "Where did the $100M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the None allegedly go in FBI Investigation into Austin Mass Shooting?",
@@ -558,7 +556,9 @@
     "Where did the $259.5 million allegedly go in Medicaid Fraud Investigation?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the $259.5 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Minnesota AG Ellison connected to?"
+    "What other organizations is Minnesota AG Ellison connected to?",
+    "What specific allegations exist against Paige Natassia Coffey?",
+    "Where did the $259.5 Million allegedly go in Minnesota Child Care Agency Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1252,
-    "articlesProcessed": 62400,
-    "redFlagsFound": 1480,
+    "totalScans": 1253,
+    "articlesProcessed": 62450,
+    "redFlagsFound": 1481,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,25 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The federal government has frozen $259.5 million in Medicaid funds for Minnesota due to alleged fraud.",
-          "insight": "This freeze indicates a significant concern about fraud in Minnesota's Medicaid program. Further investigation is needed to uncover the extent of the fraud and identify those responsible.",
-          "entities": [
-            "Minnesota"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Southern Minnesota News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUFdPaVBSR05ZWU5MZE9OWjZfaHJtTkNBMUZBMmlsU292WG1xang0LW43bVJoNFlLNDhBRi1NZXVvMmxLdm9KRWVDLTZnQ3JDNkNJM0ZFaC1WNHp1bXNwcmVBbWR5S1RSSm5wTlJzaUdnWW9ZSXVRWE5JZ0JfY0JkdXpUcUlxMHVELXRzaC1WWmNEWGV2bURWTVlTZDF1SndVQUVVX0VyWUY2WDRvWGt0U2FxZEFqZTBCTGtHZkFwd3ZDRWlid2c5RTFZZXd2R3hDRnJHcGlIcWh6VTBqLWtmbEZFZmttUQ"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -621,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-02T19:36:54.365Z",
-  "lastUpdated": "2026-03-02T19:36:54.366Z"
+  "lastReflection": "2026-03-02T20:36:33.042Z",
+  "lastUpdated": "2026-03-02T20:36:33.043Z"
 }
