@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating potential ties to terrorism in a mass shooting in Austin, Texas.",
+      "insight": "The FBI's involvement suggests that the shooting may be more complex than initially thought, and that there may be a larger investigation underway.",
+      "entities": [
+        "FBI",
+        "Austin mass shooting"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC13 Houston",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPbURfY0I5Rzk2RHJ6bnFsdVVIZjZkdlpYeGJhZGdwQlR3WjZEY1BUMHRQTGlsS3FiR1lUcjJhNVpuSWtWakdwNDBFa1dxdFozX0VVYmdmRUdCOWxfZ1dHOUFESWFqRkQ1TEFyRVV2WG5KYkJuNjc2QjQyYnR5ZGlhWlV0aVFiQlV4T2RWeEgyOHFrZkRicVk4MUlyRDhKUWlCYWFTZVRCd2lmODJTVFo3a1lEaU1pSmJUY0VlNUpRUk4wSG5KOUN1RS1R0gHPAUFVX3lxTE1VWl9WYmt5MHV0dWlXYkMyTjJWUTAyb2RmWjhqdGFhaG1KOFBteXVPdHN3bE9fdWVld2EyX0hmOTBqaDZOY29PMGFzTWd6MllKZDc2SU4xeHlIQjZDREdIVU11YldxOXpwa1ZKcS04NGxuVHR4VUg1RFpxVmotNFZuWDRwV1Z4a1hHa2JYRm43RWRMUS1pUDFSRXFraFVGaGJUZ1JpZnlpVWluQTdBQWYwS0hqcDNPWTZfUUJQMGo4TEc1eHRxeERaOU9VbVR5Zw",
+      "id": "rf-1772434572646-1218xae58",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-02T06:56:12.642Z",
+      "isNew": true
+    },
+    {
       "type": "potential terrorism connection",
       "description": "The FBI is investigating a mass shooting in Austin, Texas, and there are concerns about a potential terrorism connection.",
       "insight": "This suggests a potential threat to public safety and I would investigate the shooter's background and potential connections to terrorist organizations.",
@@ -971,25 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-22T21:23:00.827Z",
       "isNew": false
-    },
-    {
-      "type": "suspicious death",
-      "description": "The death of Rondale Moore has raised concerns about the circumstances surrounding his passing.",
-      "insight": "I am concerned about the lack of information regarding the cause of death. Further investigation is needed to determine if foul play was involved.",
-      "entities": [
-        "Rondale Moore"
-      ],
-      "confidence": 60,
-      "priority": "high",
-      "source": "AL.com",
-      "sourceUrl": "https://www.al.com/news/2026/02/minnesota-vikings-receiver-dead-at-25-investigation-underway.html",
-      "id": "rf-1771791939348-sqae6m247",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-22T20:25:39.345Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -998,10 +999,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-02T05:52:12.791Z"
+  "lastUpdated": "2026-03-02T06:56:12.642Z"
 }
