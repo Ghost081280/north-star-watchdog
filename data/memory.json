@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-26T05:57:19.928Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.65
-    },
-    {
       "date": "2026-02-26T07:02:13.572Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-03-02T21:31:40.304Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-03-02T22:28:54.936Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 70,
+      "count": 71,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-02-28T20:24:06.970Z"
+      "lastSeen": "2026-03-02T22:28:54.937Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the None allegedly go in FBI Investigation into Austin Mass Shooting?",
     "Where did the $0 allegedly go in Minnesota Department of Human Services fraud investigation?",
     "Where did the $0 allegedly go in Operation Sideswipe?",
     "Where did the N/A allegedly go in FBI Investigation into Austin Mass Shooting?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Paige Natassia Coffey?",
     "Where did the $259.5 Million allegedly go in Minnesota Child Care Agency Fraud Investigation?",
     "What other organizations is Nancy Mace connected to?",
-    "Where did the Unknown allegedly go in Texas Bar Shooting Investigation?"
+    "Where did the Unknown allegedly go in Texas Bar Shooting Investigation?",
+    "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1254,
-    "articlesProcessed": 62500,
-    "redFlagsFound": 1482,
+    "totalScans": 1255,
+    "articlesProcessed": 62550,
+    "redFlagsFound": 1484,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jeffrey Epstein connected to?",
-        "Where did the $100M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the None allegedly go in FBI Investigation into Austin Mass Shooting?"
+        "Where did the None allegedly go in FBI Investigation into Austin Mass Shooting?",
+        "Where did the $0 allegedly go in Minnesota Department of Human Services fraud investigation?",
+        "Where did the $0 allegedly go in Operation Sideswipe?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-02T21:31:40.304Z",
-  "lastUpdated": "2026-03-02T21:31:40.305Z"
+  "lastReflection": "2026-03-02T22:28:54.936Z",
+  "lastUpdated": "2026-03-02T22:28:54.937Z"
 }
