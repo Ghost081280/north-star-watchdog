@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Autism center fraud suspect pleads guilty to $6 million scheme",
+      "insight": "This case highlights the need for increased scrutiny of Medicaid providers and the potential for widespread fraud. Further investigation is needed to identify other potential cases of Medicaid fraud in Minnesota.",
+      "entities": [
+        "Autism center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://www.kare11.com/article/news/crime/autism-center-fraud-suspect-pleads-guilty/89-ebfbfbd7-8f7b-۴c۶-۸f۳-۴f۳f۵f۶f",
+      "id": "rf-1772530802010-7g1nssjpa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-03T09:40:02.006Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Minnesota lawmakers propose removing troubled Housing Stabilization Services from state statute.",
       "insight": "The proposal to remove Housing Stabilization Services from state statute suggests that the program may be vulnerable to fraud or abuse.",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-03T08:39:17.520Z",
-      "isNew": true
-    },
-    {
-      "type": "Withholding of funds",
-      "description": "The Trump administration's withholding of Medicaid funds has raised concerns about the impact on healthcare services in Minnesota.",
-      "insight": "I suspect that the withholding of Medicaid funds may be a tactic to exert pressure on state governments to adopt certain policies. Further investigation is needed to determine the motivations behind this action.",
-      "entities": [
-        "Trump administration",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-over-frozen-medicaid-payments/600246433/",
-      "id": "rf-1772520625299-wa6sp8jy8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T06:50:25.295Z",
       "isNew": false
     },
     {
@@ -1001,11 +1000,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-03T08:39:17.520Z"
+  "lastUpdated": "2026-03-03T09:40:02.006Z"
 }
