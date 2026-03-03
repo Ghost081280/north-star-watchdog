@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-26T20:36:31.382Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-26T21:31:48.200Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-03-03T13:59:51.411Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-03T14:54:42.437Z",
+      "summary": "NOTABLE: 2 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -532,15 +532,13 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.55,
-      "count": 2,
+      "confidence": 0.6000000000000001,
+      "count": 3,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-03-01T13:38:40.024Z"
+      "lastSeen": "2026-03-03T14:54:42.438Z"
     }
   ],
   "openQuestions": [
-    "What other organizations is Nancy Mace connected to?",
-    "Where did the Unknown allegedly go in Texas Bar Shooting Investigation?",
     "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?",
     "Where did the $259.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the unknown allegedly go in Minnesota Child Care Agency Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $3.7B allegedly go in Minnesota vs. Trump Administration Medicaid Funding?",
     "Where did the $3.7B allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is St. Cloud Autism Center Owner connected to?",
-    "Where did the $6 Million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $6 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $6 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $243 million allegedly go in Trump Administration's Medicaid Funding Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1267,
-    "articlesProcessed": 63150,
-    "redFlagsFound": 1497,
+    "totalScans": 1268,
+    "articlesProcessed": 63200,
+    "redFlagsFound": 1499,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Paige Natassia Coffey?",
-        "Where did the $259.5 Million allegedly go in Minnesota Child Care Agency Fraud Investigation?",
-        "What other organizations is Nancy Mace connected to?"
+        "What other organizations is Nancy Mace connected to?",
+        "Where did the Unknown allegedly go in Texas Bar Shooting Investigation?",
+        "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?"
       ]
     },
     {
@@ -602,6 +602,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-03T13:59:51.411Z",
-  "lastUpdated": "2026-03-03T13:59:51.412Z"
+  "lastReflection": "2026-03-03T14:54:42.437Z",
+  "lastUpdated": "2026-03-03T14:54:42.438Z"
 }
