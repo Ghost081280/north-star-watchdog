@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged misconduct",
+      "description": "Allegations of unlawful force by Greg Bovino and federal immigration officers",
+      "insight": "These allegations suggest a potential pattern of misconduct by law enforcement officials. Further investigation into the actions of Bovino and ICE officers is necessary to determine the extent of the issue.",
+      "entities": [
+        "Greg Bovino",
+        "ICE officers"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/03/03/Minnesota-investigation-Greg-Bovino-ICE-officers",
+      "id": "rf-1772573574487-9lw2w7w6j",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-03T21:32:54.484Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Minnesota DHS reveals new details investigations into NEMT providers",
       "insight": "The investigation into NEMT providers suggests potential fraud and abuse in the program. This could indicate a larger issue with oversight and management of these services.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-03T20:31:01.125Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid funds freeze",
@@ -976,40 +996,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-24T23:30:26.449Z",
       "isNew": false
-    },
-    {
-      "type": "extensive_fraud",
-      "description": "Minnesota is reported to have extensive and well-documented fraud issues, with ongoing efforts to address these problems.",
-      "insight": "The extent of fraud in Minnesota indicates a significant problem that requires comprehensive solutions.",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KNSI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV095TUk3MkFkLUoyV3J4Qy1nM1U0aVltMnBfdG1IeGpVNmNZT1l2NFhfMlB3bUVFU1pidkJIZ1JBbTNpUDI2WkNQVjB6Rkx2X0QwcHFaSVUzMlNkRG5YUXl1dHQ4dE9CVkNHOWVxUFpuTzFYLXVXUTBCZmJaaDRSRHRQX1B1VXd5dHBCSzJqbnpPLVFDdGJ2YzFsZ2dEdE0yV2RvWVJBV0lvTFFOMGVZ",
-      "id": "rf-1771962732200-th3xgr0po",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-24T19:52:12.197Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-03T20:31:01.125Z"
+  "lastUpdated": "2026-03-03T21:32:54.484Z"
 }
