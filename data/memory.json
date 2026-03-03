@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-26T23:28:38.793Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-27T01:54:45.822Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-03T16:44:49.067Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 2 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-03-03T17:42:46.200Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $6 million allegedly go in Autism center fraud investigation?",
-    "Where did the $6 million allegedly go in Minnesota Medicaid fraud investigation?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $6 million allegedly go in Minnesota Medicaid funding investigation?",
     "Where did the $0 allegedly go in Minnesota vs. Trump Administration?",
@@ -558,7 +556,9 @@
     "Where did the None allegedly go in Immigration Enforcement Abuse Allegations?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Owner of Minnesota autism center connected to?",
-    "Where did the Unspecified allegedly go in Greg Bovino investigation?"
+    "Where did the Unspecified allegedly go in Greg Bovino investigation?",
+    "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Immigration Enforcement Abuse Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1270,
-    "articlesProcessed": 63300,
-    "redFlagsFound": 1502,
+    "totalScans": 1271,
+    "articlesProcessed": 63350,
+    "redFlagsFound": 1503,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal freeze",
-          "description": "The Trump administration froze $243 million in Medicaid payments to Minnesota due to fraud concerns.",
-          "insight": "This freeze indicates a significant concern about fraud in Minnesota's Medicaid program, which could have serious implications for healthcare services in the state.",
-          "entities": [
-            "Minnesota",
-            "Trump administration"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The New York Times",
-          "sourceUrl": "https://www.nytimes.com/2026/03/03/news/minnesota-sues-federal-government-over-withheld-medicaid-funds"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Autism center owner connected to?",
-        "Where did the Unknown allegedly go in Minnesota investigation into federal immigration officers?",
-        "Where did the $6 million allegedly go in Autism center fraud investigation?"
+        "Where did the $6 million allegedly go in Autism center fraud investigation?",
+        "Where did the $6 million allegedly go in Minnesota Medicaid fraud investigation?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-03T16:44:49.067Z",
-  "lastUpdated": "2026-03-03T16:44:49.068Z"
+  "lastReflection": "2026-03-03T17:42:46.200Z",
+  "lastUpdated": "2026-03-03T17:42:46.201Z"
 }
