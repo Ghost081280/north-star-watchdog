@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-27T06:52:08.786Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-27T07:44:52.911Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-03-03T21:32:54.481Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-03T22:27:53.625Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.7B allegedly go in Minnesota vs. Trump Administration Medicaid Funding?",
-    "Where did the $3.7B allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is St. Cloud Autism Center Owner connected to?",
     "Where did the $6 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $6 million allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Renee Good connected to?",
     "Where did the $243 million allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Not specified allegedly go in Investigation into NEMT providers?",
-    "Where did the $243M allegedly go in Minnesota vs. Trump Administration?"
+    "Where did the $243M allegedly go in Minnesota vs. Trump Administration?",
+    "Where did the $243M allegedly go in Minnesota Medicaid Funding Investigation?",
+    "Where did the N/A allegedly go in NEMT Providers Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1274,
-    "articlesProcessed": 63500,
-    "redFlagsFound": 1509,
+    "totalScans": 1275,
+    "articlesProcessed": 63550,
+    "redFlagsFound": 1510,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Federal immigration officers investigation?",
         "Where did the $3.7B allegedly go in Minnesota vs. Trump Administration Medicaid Funding?",
-        "Where did the $3.7B allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the $3.7B allegedly go in Minnesota Medicaid fraud investigation?",
+        "What other organizations is St. Cloud Autism Center Owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-03T21:32:54.481Z",
-  "lastUpdated": "2026-03-03T21:32:54.483Z"
+  "lastReflection": "2026-03-03T22:27:53.625Z",
+  "lastUpdated": "2026-03-03T22:27:53.626Z"
 }
