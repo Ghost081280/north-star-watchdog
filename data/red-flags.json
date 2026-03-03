@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Withholding of funds",
+      "description": "The Trump administration's withholding of Medicaid funds has raised concerns about the impact on healthcare services in Minnesota.",
+      "insight": "I suspect that the withholding of Medicaid funds may be a tactic to exert pressure on state governments to adopt certain policies. Further investigation is needed to determine the motivations behind this action.",
+      "entities": [
+        "Trump administration",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-over-frozen-medicaid-payments/600246433/",
+      "id": "rf-1772520625299-wa6sp8jy8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-03T06:50:25.295Z",
+      "isNew": true
+    },
+    {
+      "type": "Misconduct by federal immigration officers",
+      "description": "An investigation into federal immigration officers has been launched in Minnesota, which could lead to charges.",
+      "insight": "I believe that this investigation may uncover a pattern of misconduct by federal immigration officers. It is essential to monitor this investigation and determine the extent of any wrongdoing.",
+      "entities": [
+        "Federal immigration officers",
+        "Minnesota prosecutors"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "KARE 11",
+      "sourceUrl": "https://www.kare11.com/article/news/local/minnesota-launches-investigation-into-federal-immigration-officers/89-612d9f6a-5f4a-45a8-8b9d-4f5ecefdb4a5",
+      "id": "rf-1772520625299-5w147j2tm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-03T06:50:25.295Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota lawmakers propose removing troubled Housing Stabilization Services from state statute",
       "insight": "This could indicate a potential red flag for program mismanagement or fraud.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-03T05:48:53.211Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential misconduct by federal officials",
@@ -116,26 +156,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-02T09:47:03.024Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of Medicaid programs due to fraud",
-      "insight": "The Minnesota DHS's sweeping inspection effort may lead to program terminations for non-compliant providers, indicating a significant crackdown on fraud.",
-      "entities": [
-        "Minnesota DHS",
-        "Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Community Reporter",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVFM5R3ctUndHU2N2bW9Za0VFVDdNd2xLSDZTMjJwNEFQWXhyOG5rV2tOc2ZwQXJMZVFraEtPN2xEV256RjhULWI4cXJiU3I4MEloQWV0M0wzQVBwWTllekc4V2hDNE1rbEZvQUdZT2VZSW5UMEJZNlRxNTR1WTRfWjN3M2lwcmowYS1yY3pKcldJU1NZM1ptNXB3",
-      "id": "rf-1772440952756-zltf2cjco",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-02T08:42:32.752Z",
       "isNew": false
     },
     {
@@ -972,25 +992,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-23T18:00:57.437Z",
       "isNew": false
-    },
-    {
-      "type": "potential_fraud",
-      "description": "The U.S. tax system has been called the biggest fraud by one MinnPost article.",
-      "insight": "The U.S. tax system may be vulnerable to large-scale fraud, which could have significant financial implications.",
-      "entities": [
-        "U.S. government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MinnPost",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcVJ4MTZlX3dzamRjY2hMXy1NRkpQbTRFbFZWbGpxTXEtRnV0eVVBVldlY1l1ZkhYaU1hM3UtMUtOcE8zS1FscTNtWC1XUUVjYlg0WUh3TFVud0FmMTRWUVRGLXBqOXVVOGRHcU5WTktGc1FST0FvalF5OEV3RjZwNnd2eG9kcXBqTGtITW43MWpyeGk5RFdLZw",
-      "id": "rf-1771855947792-wh7oyxual",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-23T14:12:27.788Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,7 +1004,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-03T05:48:53.211Z"
+  "lastUpdated": "2026-03-03T06:50:25.295Z"
 }
