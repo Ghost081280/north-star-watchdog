@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-26T21:31:48.200Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-02-26T22:32:28.493Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-03-03T14:54:42.437Z",
       "summary": "NOTABLE: 2 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-03-03T15:45:28.366Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?",
-    "Where did the $259.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the unknown allegedly go in Minnesota Child Care Agency Investigation?",
     "What other organizations is Autism center owner connected to?",
     "Where did the Unknown allegedly go in Minnesota investigation into federal immigration officers?",
     "Where did the $6 million allegedly go in Autism center fraud investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is St. Cloud Autism Center Owner connected to?",
     "Where did the $6 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $6 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $243 million allegedly go in Trump Administration's Medicaid Funding Freeze?"
+    "Where did the $243 million allegedly go in Trump Administration's Medicaid Funding Freeze?",
+    "What other organizations is Greg Bovino connected to?",
+    "Where did the None allegedly go in Immigration Enforcement Abuse Allegations?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1268,
-    "articlesProcessed": 63200,
-    "redFlagsFound": 1499,
+    "totalScans": 1269,
+    "articlesProcessed": 63250,
+    "redFlagsFound": 1500,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,17 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Nancy Mace connected to?",
-        "Where did the Unknown allegedly go in Texas Bar Shooting Investigation?",
-        "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?"
-      ]
-    },
-    {
-      "type": "verify_pattern",
-      "priority": "low",
-      "description": "Verify 1 uncertain patterns",
-      "patterns": [
-        "healthcare_fraud"
+        "Where did the $103,000 allegedly go in HIPAA Security Rule Investigation?",
+        "Where did the $259.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the unknown allegedly go in Minnesota Child Care Agency Investigation?"
       ]
     }
   ],
@@ -602,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-03T14:54:42.437Z",
-  "lastUpdated": "2026-03-03T14:54:42.438Z"
+  "lastReflection": "2026-03-03T15:45:28.366Z",
+  "lastUpdated": "2026-03-03T15:45:28.367Z"
 }
