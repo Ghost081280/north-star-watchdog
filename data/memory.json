@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-27T01:54:45.822Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-27T04:13:11.733Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-03T17:42:46.200Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-03T18:44:57.800Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $6 million allegedly go in Minnesota Medicaid funding investigation?",
-    "Where did the $0 allegedly go in Minnesota vs. Trump Administration?",
     "Where did the $0 allegedly go in Investigation into Federal Immigration Officers?",
     "Where did the $6M allegedly go in Autism Center Fraud?",
     "What other organizations is Autism center fraud suspect connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Owner of Minnesota autism center connected to?",
     "Where did the Unspecified allegedly go in Greg Bovino investigation?",
     "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Immigration Enforcement Abuse Investigation?"
+    "Where did the Unknown allegedly go in Immigration Enforcement Abuse Investigation?",
+    "What other organizations is Owner of Star Autism Center connected to?",
+    "Where did the $243 million allegedly go in Minnesota Medicaid funds investigation?",
+    "Where did the Not specified allegedly go in Greg Bovino investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1271,
-    "articlesProcessed": 63350,
-    "redFlagsFound": 1503,
+    "totalScans": 1272,
+    "articlesProcessed": 63400,
+    "redFlagsFound": 1505,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid funds freeze",
+          "description": "The Trump administration froze $243 million in Medicaid funds to Minnesota, prompting a lawsuit from the state.",
+          "insight": "This freeze and subsequent lawsuit indicate potential issues with Medicaid fund management and possible fraud.",
+          "entities": [
+            "Minnesota State Government",
+            "Trump administration"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Hill",
+          "sourceUrl": "https://thehill.com/policy/healthcare/424106-minnesota-sues-over-withheld-medicaid-funds"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $6 million allegedly go in Autism center fraud investigation?",
-        "Where did the $6 million allegedly go in Minnesota Medicaid fraud investigation?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $6 million allegedly go in Minnesota Medicaid funding investigation?",
+        "Where did the $0 allegedly go in Minnesota vs. Trump Administration?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-03T17:42:46.200Z",
-  "lastUpdated": "2026-03-03T17:42:46.201Z"
+  "lastReflection": "2026-03-03T18:44:57.800Z",
+  "lastUpdated": "2026-03-03T18:44:57.801Z"
 }
