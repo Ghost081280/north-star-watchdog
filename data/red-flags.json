@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
+      "insight": "The termination of the Feeding Our Future program raises concerns about the oversight and management of nonprofit organizations in Minnesota. Further investigation is needed to determine the extent of the fraud and how it was able to occur.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota AG's office",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://minnesota.reformer.com/2026/03/04/us-house-republicans-grill-walz-ellison-over-fraud-in-minnesota-social-services",
+      "id": "rf-1772656247467-uu0vm61a1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-04T20:30:47.463Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The House Oversight Committee is investigating fraud in Minnesota, including the Somali Autism Center",
       "insight": "I notice a pattern of fraud schemes targeting vulnerable populations, such as those with autism. Further investigation is needed to uncover the extent of these schemes and bring those responsible to justice.",
@@ -19,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-04T19:37:56.336Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Alleged cover-up",
@@ -977,26 +998,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-25T08:46:19.278Z",
       "isNew": false
-    },
-    {
-      "type": "campaign finance irregularities",
-      "description": "FBI questions treasurer for Republican campaigns over $100K discrepancy",
-      "insight": "Potential campaign finance violations warrant further investigation, possibly indicating larger patterns of fraud.",
-      "entities": [
-        "Republican campaigns",
-        "FBI"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "12News",
-      "sourceUrl": "https://www.12news.com/article/news/local/fbi-questions-treasurer-for-republican-campaigns-over-100k-discrepancy-sources-say/103-23150175",
-      "id": "rf-1772003587939-q8gg8z27v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T07:13:07.936Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1009,8 +1010,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1027,5 +1029,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-04T19:37:56.336Z"
+  "lastUpdated": "2026-03-04T20:30:47.463Z"
 }
