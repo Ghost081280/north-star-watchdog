@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Government Inaction",
+      "description": "Governor Tim Walz and Attorney General Keith Ellison have been accused of failing to stop Medicaid fraud in Minnesota, despite allegedly knowing about the issue for years",
+      "insight": "This suggests a potential pattern of inaction or negligence on the part of state officials, which could be contributing to the ongoing fraud. Further investigation is needed to determine the extent of their knowledge and involvement.",
+      "entities": [
+        "Tim Walz",
+        "Keith Ellison"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "House Oversight Committee investigation",
+      "sourceUrl": "https://www.cnn.com/2026/03/04/politics/minnesota-medicaid-fraud-investigation",
+      "id": "rf-1772628826773-qrfpq7oj8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-04T12:53:46.769Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota sues to block Trump administration’s holding back of Medicaid funds",
       "insight": "This action indicates a significant dispute over healthcare funding and could impact thousands of residents.",
@@ -976,30 +996,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-25T05:59:57.226Z",
       "isNew": false
-    },
-    {
-      "type": "withholding of information",
-      "description": "The DoJ is alleged to have withheld Epstein files on Trump, raising concerns about the integrity of government institutions.",
-      "insight": "This pattern of withholding information is concerning and warrants further investigation. It is possible that there are other instances of information being withheld, and it is essential to uncover these instances to ensure transparency and accountability.",
-      "entities": [
-        "DoJ",
-        "Trump"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/feb/25/democrats-to-investigate-whether-doj-withheld-epstein-files-on-trump",
-      "id": "rf-1771993621202-0ulvt5j2e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T04:27:01.199Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,7 +1009,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-04T11:29:20.079Z"
+  "lastUpdated": "2026-03-04T12:53:46.769Z"
 }
