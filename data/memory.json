@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-27T13:59:41.442Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-27T14:48:46.311Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-04T07:37:28.864Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-04T08:37:39.875Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unspecified allegedly go in Greg Bovino investigation?",
-    "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Immigration Enforcement Abuse Investigation?",
     "What other organizations is Owner of Star Autism Center connected to?",
     "Where did the $243 million allegedly go in Minnesota Medicaid funds investigation?",
@@ -558,7 +556,9 @@
     "Where did the Medicaid funds withheld by Trump administration allegedly go in Minnesota Medicaid Funding Investigation?",
     "What other organizations is Greg Bovino connected to?",
     "Where did the unspecified allegedly go in Minnesota Medicaid Funding Investigation?",
-    "Where did the unspecified allegedly go in Greg Bovino Investigation?"
+    "Where did the unspecified allegedly go in Greg Bovino Investigation?",
+    "Where did the $Not specified allegedly go in Minnesota Medicaid funds investigation?",
+    "Where did the $Not specified allegedly go in Greg Bovino investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1281,
-    "articlesProcessed": 63850,
-    "redFlagsFound": 1516,
+    "totalScans": 1282,
+    "articlesProcessed": 63900,
+    "redFlagsFound": 1518,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Minnesota sues to block Trump administration’s holding back of Medicaid funds",
+          "insight": "This action indicates a significant dispute over healthcare funding and could impact thousands of residents.",
+          "entities": [
+            "Minnesota",
+            "Trump administration"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Washington Times",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTDVLb0dXS0dIR05kX0dhekpITzNIdVhES1VJd1k3SndoMmV0Zk51RkN6b193RUZScG5HQVZEQWhmT0g5Qnh2WmFWTVpzQzFRTXMzcUxHcW9wd21JcXlscGNUUzc5QzQ1VXBrOWplaEh3aXdTeHZnYmFraFZJOGhBM1d0NVNEcmVfVWxFRjBXU25yN3lWdXk1WnpDTi01STlpblk1M240cmxyeGRFZExR?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Immigration Enforcement Abuse Allegations?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Owner of Minnesota autism center connected to?"
+        "Where did the Unspecified allegedly go in Greg Bovino investigation?",
+        "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in Immigration Enforcement Abuse Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T07:37:28.864Z",
-  "lastUpdated": "2026-03-04T07:37:28.865Z"
+  "lastReflection": "2026-03-04T08:37:39.875Z",
+  "lastUpdated": "2026-03-04T08:37:39.876Z"
 }
