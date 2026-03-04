@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T05:32:45.303Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-28T06:36:47.232Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-04T21:33:07.141Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-04T22:29:43.248Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $242 million allegedly go in Minnesota Medicaid Funds Investigation?",
     "Where did the unknown allegedly go in A-CAP Annuity Investigation?",
     "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $X allegedly go in A-CAP Annuity Provider Investigation?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Keith Ellison?",
     "What other organizations is Kash Patel connected to?",
     "What other organizations is Brother of Feeding Our Future defendants connected to?",
-    "Where did the $6M+ allegedly go in Feeding Our Future Investigation?"
+    "Where did the $6M+ allegedly go in Feeding Our Future Investigation?",
+    "What other organizations is Man who bribed Feeding Our Future juror connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1295,
-    "articlesProcessed": 64550,
-    "redFlagsFound": 1529,
+    "totalScans": 1296,
+    "articlesProcessed": 64600,
+    "redFlagsFound": 1530,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unspecified allegedly go in Greg Bovino Investigation?",
-        "Where did the $Not specified allegedly go in Minnesota Medicaid funds investigation?",
-        "Where did the $Not specified allegedly go in Greg Bovino investigation?"
+        "Where did the $242 million allegedly go in Minnesota Medicaid Funds Investigation?",
+        "Where did the unknown allegedly go in A-CAP Annuity Investigation?",
+        "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T21:33:07.141Z",
-  "lastUpdated": "2026-03-04T21:33:07.142Z"
+  "lastReflection": "2026-03-04T22:29:43.248Z",
+  "lastUpdated": "2026-03-04T22:29:43.249Z"
 }
