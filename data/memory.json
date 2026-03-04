@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-27T22:21:32.733Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-27T23:23:15.093Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-04T16:41:39.236Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-04T17:38:14.542Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $600m allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the unknown allegedly go in Minnesota ICE Takeover Investigation?",
     "Where did the $242 million allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the N/A allegedly go in Greg Bovino Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the Unknown allegedly go in Minnesota Fraud Probe?",
-    "Where did the $250 million allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $250 million allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $1B+ allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1290,
-    "articlesProcessed": 64300,
-    "redFlagsFound": 1524,
+    "totalScans": 1291,
+    "articlesProcessed": 64350,
+    "redFlagsFound": 1525,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in NEMT Providers Investigation?",
         "Where did the $600m allegedly go in Minnesota Medicaid Funding Investigation?",
-        "Where did the unknown allegedly go in Minnesota ICE Takeover Investigation?"
+        "Where did the unknown allegedly go in Minnesota ICE Takeover Investigation?",
+        "Where did the $242 million allegedly go in Minnesota Medicaid Funding Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T16:41:39.236Z",
-  "lastUpdated": "2026-03-04T16:41:39.238Z"
+  "lastReflection": "2026-03-04T17:38:14.542Z",
+  "lastUpdated": "2026-03-04T17:38:14.543Z"
 }
