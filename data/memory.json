@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-27T16:39:08.766Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-02-27T17:35:19.191Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-03-04T10:35:37.436Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-04T11:29:20.077Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1284,
-    "articlesProcessed": 64000,
+    "totalScans": 1285,
+    "articlesProcessed": 64050,
     "redFlagsFound": 1520,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $243 million allegedly go in Minnesota Medicaid funds investigation?",
-        "Where did the Not specified allegedly go in Greg Bovino investigation?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "Where did the $243 million allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Not specified allegedly go in Investigation into NEMT providers?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T10:35:37.436Z",
-  "lastUpdated": "2026-03-04T10:35:37.437Z"
+  "lastReflection": "2026-03-04T11:29:20.077Z",
+  "lastUpdated": "2026-03-04T11:29:20.078Z"
 }
