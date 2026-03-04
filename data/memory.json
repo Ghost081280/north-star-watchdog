@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T01:45:42.250Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-28T03:53:58.560Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-04T18:47:17.950Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-04T19:37:56.334Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $242 million allegedly go in Minnesota Medicaid Funding Investigation?",
-    "Where did the N/A allegedly go in Greg Bovino Investigation?",
     "Where did the Medicaid funds withheld by Trump administration allegedly go in Minnesota Medicaid Funding Investigation?",
     "What other organizations is Greg Bovino connected to?",
     "Where did the unspecified allegedly go in Minnesota Medicaid Funding Investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minnesota Fraud Probe?",
     "Where did the $250 million allegedly go in Minnesota Fraud Investigation?",
     "Where did the $1B+ allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $100M+ allegedly go in Feeding Our Future Fraud Investigation?"
+    "Where did the $100M+ allegedly go in Feeding Our Future Fraud Investigation?",
+    "What other organizations is Somali Autism Center CEO connected to?",
+    "Where did the $6 million allegedly go in Minnesota Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1292,
-    "articlesProcessed": 64400,
-    "redFlagsFound": 1526,
+    "totalScans": 1293,
+    "articlesProcessed": 64450,
+    "redFlagsFound": 1527,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Minnesota ICE Takeover Investigation?",
         "Where did the $242 million allegedly go in Minnesota Medicaid Funding Investigation?",
-        "Where did the N/A allegedly go in Greg Bovino Investigation?"
+        "Where did the N/A allegedly go in Greg Bovino Investigation?",
+        "Where did the Medicaid funds withheld by Trump administration allegedly go in Minnesota Medicaid Funding Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T18:47:17.950Z",
-  "lastUpdated": "2026-03-04T18:47:17.950Z"
+  "lastReflection": "2026-03-04T19:37:56.334Z",
+  "lastUpdated": "2026-03-04T19:37:56.335Z"
 }
