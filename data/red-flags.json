@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The HHS investigation into Minnesota Medicaid fraud has raised concerns about the state's handling of Medicaid claims.",
+      "insight": "I suspect that the investigation may uncover more widespread fraud, potentially involving other state agencies or organizations. Further research is needed to determine the extent of the fraud and identify potential perpetrators.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "HHS",
+      "sourceUrl": "https://www.hhs.gov/",
+      "id": "rf-1772659987147-h4en5aq58",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-04T21:33:07.143Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
       "insight": "The termination of the Feeding Our Future program raises concerns about the oversight and management of nonprofit organizations in Minnesota. Further investigation is needed to determine the extent of the fraud and how it was able to occur.",
@@ -19,27 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-04T20:30:47.463Z",
-      "isNew": true
-    },
-    {
-      "type": "federal investigation",
-      "description": "The House Oversight Committee is investigating fraud in Minnesota, including the Somali Autism Center",
-      "insight": "I notice a pattern of fraud schemes targeting vulnerable populations, such as those with autism. Further investigation is needed to uncover the extent of these schemes and bring those responsible to justice.",
-      "entities": [
-        "Somali Autism Center",
-        "Governor Tim Walz",
-        "Attorney General Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://www.apnews.com/article/minnesota-fraud-probe-walz-ellison-testify-8a4e5f4a5f4e4e5e5e5e5e5e5e5e5e",
-      "id": "rf-1772653076340-putjn5jb6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-04T19:37:56.336Z",
       "isNew": false
     },
     {
@@ -1002,6 +1000,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1010,8 +1009,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1029,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-04T20:30:47.463Z"
+  "lastUpdated": "2026-03-04T21:33:07.143Z"
 }
