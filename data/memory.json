@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T17:19:44.856Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-02-28T18:31:41.285Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-05T14:02:31.627Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-05T15:49:48.525Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "What other organizations is Keith Ellison connected to?",
-    "What other organizations is Feeding Our Future suspect connected to?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the unknown allegedly go in Feeding Our Future investigation?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $1 billion allegedly go in Medicaid funding investigation?",
     "What other organizations is Ami Horowitz connected to?",
     "Where did the $9B+ allegedly go in Feeding Our Future fraud case?",
-    "Where did the N/A allegedly go in Medicaid fraud crackdown?"
+    "Where did the N/A allegedly go in Medicaid fraud crackdown?",
+    "What other organizations is Feeding Our Future bribery suspect connected to?",
+    "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
+    "Where did the $23B allegedly go in Minnesota Medicaid investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1307,
-    "articlesProcessed": 65150,
-    "redFlagsFound": 1543,
+    "totalScans": 1308,
+    "articlesProcessed": 65200,
+    "redFlagsFound": 1545,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minneapolis Man connected to?",
-        "Where did the $9 billion allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the Not specified allegedly go in Medicaid fraud probe?"
+        "What other organizations is Tim Walz connected to?",
+        "What other organizations is Keith Ellison connected to?",
+        "What other organizations is Feeding Our Future suspect connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-05T14:02:31.627Z",
-  "lastUpdated": "2026-03-05T14:02:31.628Z"
+  "lastReflection": "2026-03-05T15:49:48.525Z",
+  "lastUpdated": "2026-03-05T15:49:48.526Z"
 }

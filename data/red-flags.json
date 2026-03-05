@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated due to the fraud scandal.",
+      "insight": "This termination may be a red flag for potential lack of oversight or misuse of funds. Further investigation is needed to determine the cause of the termination and the impact on the state's social services programs.",
+      "entities": [
+        "Feeding Our Future",
+        "State of Minnesota"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/feeding-our-future-jury-tampering-case-sentencing/",
+      "id": "rf-1772725788530-qadxmb9tt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-05T15:49:48.527Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "DHS report says non-emergent medical transport services dropped by more than half in 2025",
       "insight": "Potential pattern of program changes and impacts on services",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-05T14:02:31.630Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -975,26 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-25T17:17:28.995Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is conducting an investigation into drug trafficking in the Twin Cities, according to the Pioneer Press.",
-      "insight": "This investigation could potentially uncover larger patterns of organized crime or fraud in Minnesota. Following the money and identifying key entities involved could be crucial.",
-      "entities": [
-        "FBI",
-        "Twin Cities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPU2NTNTVvYU4tdEJXTWpkMm1tamVQWk9fanZ6Tm02LVVBYXBqUXpETHJjTld4WkdEczJOU09lRENwMUNVRWRJN0x5RW1vc0MwOHpCRnRMODVYMVpSLUdhWEVvRmJCb0dzcnVlZ21QX0FhQUxhaWNEaEEtT1VyZHd5TUZCbkcyRWx6cU05VWxmWFNoRnpWNV9ISGtn?0=5",
-      "id": "rf-1772030834661-yq8t4u95h",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T14:47:14.658Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1026,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-05T14:02:31.630Z"
+  "lastUpdated": "2026-03-05T15:49:48.527Z"
 }
