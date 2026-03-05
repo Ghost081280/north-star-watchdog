@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "DHS report says non-emergent medical transport services dropped by more than half in 2025",
+      "insight": "Potential pattern of program changes and impacts on services",
+      "entities": [
+        "DHS",
+        "Minnesota"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Black Chronicle",
+      "sourceUrl": "https://www.theblackchronicle.com/news/dhs-report-says-non-emergent-medical-transport-services-dropped-by-more-than-half-in-2025",
+      "id": "rf-1772719351633-cvvr0ufu4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-05T14:02:31.630Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Proposal for statewide Inspector General to fight fraud remains stalled at Minnesota State Capitol",
       "insight": "The lack of a statewide Inspector General may be enabling fraud in Minnesota's social services programs",
@@ -975,30 +995,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-25T14:47:14.658Z",
       "isNew": false
-    },
-    {
-      "type": "alleged perjury",
-      "description": "Democrats are demanding a special counsel investigation into perjury allegations against a political figure, as reported by The Hill.",
-      "insight": "Allegations of perjury by a public official could indicate broader issues with governance or accountability. Investigating these claims could reveal more about the extent of potential misconduct.",
-      "entities": [
-        "The Hill",
-        "Democrats"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Hill",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE00bVNySGFZVXpDd0tLc3ZfZXpCUmtBZGVzdHRJaWpNNldhOF96UzBla09HOUExRENVWWNXZ2Y1d0VfZWNDMXA5VTZLUXVCaHljWUd1UW1BZWw0aWgtV0dZTFp5X0NEQzk0NFRKZGJzSFNrS0hEZlJGNFBIdDTSAYIBQVVfeXFMTjgtSzBkZ3hyeE5ITEpiUlpzc1drT0hvNklkUl9VN3FGTGItdGJNMUlOb1lPQmViZDktVl9tZmtCVGJLd0dxV05KMHB6M3hEY3pGUGd0WVd0aDF0ODExZEpGX0NrQW9sTF9rUERzYVFvTnZmYWl4bHMzeGpBVk1sUmdLQQ?oc=5",
-      "id": "rf-1772030834661-sk3dq0ke0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T14:47:14.658Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,7 +1009,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1025,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-05T12:57:10.658Z"
+  "lastUpdated": "2026-03-05T14:02:31.630Z"
 }
