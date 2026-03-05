@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T07:25:51.359Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-02-28T08:27:46.139Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-04T23:29:34.660Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-05T01:57:20.890Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -532,15 +532,13 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.6500000000000001,
-      "count": 4,
+      "confidence": 0.7000000000000002,
+      "count": 5,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-03-03T16:44:49.068Z"
+      "lastSeen": "2026-03-05T01:57:20.891Z"
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $X allegedly go in A-CAP Annuity Provider Investigation?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Brother of Feeding Our Future defendants connected to?",
     "Where did the $6M+ allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Man who bribed Feeding Our Future juror connected to?",
-    "Where did the $100M+ allegedly go in Feeding Our Future fraud investigation?"
+    "Where did the $100M+ allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $250 million allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1297,
-    "articlesProcessed": 64650,
-    "redFlagsFound": 1531,
+    "totalScans": 1298,
+    "articlesProcessed": 64700,
+    "redFlagsFound": 1533,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in A-CAP Annuity Investigation?",
         "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $X allegedly go in A-CAP Annuity Provider Investigation?"
+        "Where did the $X allegedly go in A-CAP Annuity Provider Investigation?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-04T23:29:34.660Z",
-  "lastUpdated": "2026-03-04T23:29:34.661Z"
+  "lastReflection": "2026-03-05T01:57:20.890Z",
+  "lastUpdated": "2026-03-05T01:57:20.891Z"
 }
