@@ -1,24 +1,43 @@
 {
   "flags": [
     {
-      "type": "Silencing Whistleblowers",
-      "description": "Allegations of silencing whistleblowers in the Minnesota Medicaid fraud investigation",
-      "insight": "This raises concerns about the ability of whistleblowers to come forward and report fraud, and suggests that there may be a culture of intimidation or retaliation within the state government.",
+      "type": "federal investigation",
+      "description": "The US House Oversight Committee is investigating Medicaid fraud in Minnesota, and Governor Tim Walz and Attorney General Keith Ellison have testified.",
+      "insight": "The fact that the Governor and Attorney General have testified suggests that they may have known about the fraud and failed to act. This could indicate a larger problem with corruption in the state government.",
       "entities": [
         "Tim Walz",
         "Keith Ellison"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "House Oversight Report",
+      "source": "US House Oversight Committee",
       "sourceUrl": "https://www.house.gov/",
-      "id": "rf-1772675840896-58jxrg3bi",
+      "id": "rf-1772689611547-n1jyw8f0a",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-05T01:57:20.892Z",
-      "isNew": false
+      "detectedAt": "2026-03-05T05:46:51.543Z",
+      "isNew": true
+    },
+    {
+      "type": "bribery",
+      "description": "A suspect has been sentenced for bribery in connection with Feeding Our Future.",
+      "insight": "This suggests that there may be a larger problem with corruption and bribery in the state. Further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1772689611547-yxg0yhact",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-05T05:46:51.543Z",
+      "isNew": true
     },
     {
       "type": "program termination",
@@ -976,31 +995,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-25T14:47:14.658Z",
       "isNew": false
-    },
-    {
-      "type": "Withholding of documents",
-      "description": "The DoJ is accused of withholding documents related to the Epstein case, including files on Trump's alleged abuse claim.",
-      "insight": "This raises concerns about the integrity of the investigation and potential cover-ups. Further investigation is needed to determine the extent of the document withholding and its implications.",
-      "entities": [
-        "DoJ",
-        "Epstein",
-        "Trump"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/feb/25/democrats-to-investigate-whether-doj-withheld-epstein-files-on-trump-abuse-claim",
-      "id": "rf-1772009179281-mdia7ytix",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-25T08:46:19.278Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,8 +1009,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1027,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-05T04:13:44.820Z"
+  "lastUpdated": "2026-03-05T05:46:51.543Z"
 }
