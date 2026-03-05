@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T21:20:16.733Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-02-28T22:21:48.242Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-05T20:36:15.180Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-05T21:33:30.118Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1 billion allegedly go in Medicaid funding investigation?",
-    "What other organizations is Ami Horowitz connected to?",
-    "Where did the $9B+ allegedly go in Feeding Our Future fraud case?",
-    "Where did the N/A allegedly go in Medicaid fraud crackdown?",
     "What other organizations is Feeding Our Future bribery suspect connected to?",
     "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
     "Where did the $23B allegedly go in Minnesota Medicaid investigation?",
@@ -558,7 +554,11 @@
     "What specific allegations exist against Kristi Noem?",
     "What specific allegations exist against Tom Emmer?",
     "Where did the $9B allegedly go in Minnesota fraud scandal?",
-    "Are any of these 5 figures connected to each other?"
+    "Are any of these 5 figures connected to each other?",
+    "What other organizations is Kristi Noem connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+    "Where did the millions allegedly go in Minnesota Medicaid fraud investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1311,
-    "articlesProcessed": 65350,
-    "redFlagsFound": 1549,
+    "totalScans": 1312,
+    "articlesProcessed": 65400,
+    "redFlagsFound": 1550,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $100M+ allegedly go in Feeding Our Future fraud?",
-        "Where did the $X allegedly go in Medicaid fraud?"
+        "Where did the $1 billion allegedly go in Medicaid funding investigation?",
+        "What other organizations is Ami Horowitz connected to?",
+        "Where did the $9B+ allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-05T20:36:15.180Z",
-  "lastUpdated": "2026-03-05T20:36:15.181Z"
+  "lastReflection": "2026-03-05T21:33:30.118Z",
+  "lastUpdated": "2026-03-05T21:33:30.119Z"
 }
