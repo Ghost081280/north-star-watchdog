@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T15:20:46.406Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-02-28T16:24:59.025Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-05T11:33:17.387Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-05T12:57:10.656Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
-    "What other organizations is Feeding Our Future bribery suspect connected to?",
     "What other organizations is Minneapolis Man connected to?",
     "Where did the $9 billion allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Not specified allegedly go in Medicaid fraud probe?",
@@ -558,7 +555,10 @@
     "Where did the $100 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $100M+ allegedly go in Feeding Our Future fraud?",
-    "Where did the $X allegedly go in Medicaid fraud?"
+    "Where did the $X allegedly go in Medicaid fraud?",
+    "What other organizations is Feeding Our Future defendant connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $1 billion allegedly go in Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1305,
-    "articlesProcessed": 65050,
-    "redFlagsFound": 1540,
+    "totalScans": 1306,
+    "articlesProcessed": 65100,
+    "redFlagsFound": 1541,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Man who bribed Feeding Our Future juror connected to?",
-        "Where did the $100M+ allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $9 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
+        "What other organizations is Feeding Our Future bribery suspect connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-05T11:33:17.387Z",
-  "lastUpdated": "2026-03-05T11:33:17.388Z"
+  "lastReflection": "2026-03-05T12:57:10.656Z",
+  "lastUpdated": "2026-03-05T12:57:10.657Z"
 }
