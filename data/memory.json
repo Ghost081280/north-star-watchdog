@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-02-28T23:20:27.876Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-01T02:07:19.708Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-05T22:30:22.512Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-05T23:50:15.354Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
-    "Where did the $23B allegedly go in Minnesota Medicaid investigation?",
-    "What other organizations is Tom Emmer connected to?",
     "What other organizations is Keith Ellison connected to?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $9B allegedly go in Feeding Our Future investigation?",
@@ -558,7 +555,10 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
     "Where did the millions allegedly go in Minnesota Medicaid fraud investigation?",
     "Are any of these 2 figures connected to each other?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Markwayne Mullin connected to?",
+    "What specific allegations exist against Markwayne Mullin?",
+    "Where did the $46 million allegedly go in Minnesota fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1313,
-    "articlesProcessed": 65450,
-    "redFlagsFound": 1551,
+    "totalScans": 1314,
+    "articlesProcessed": 65500,
+    "redFlagsFound": 1552,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future bribery suspect connected to?",
         "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
-        "Where did the $23B allegedly go in Minnesota Medicaid investigation?"
+        "Where did the $23B allegedly go in Minnesota Medicaid investigation?",
+        "What other organizations is Tom Emmer connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-05T22:30:22.512Z",
-  "lastUpdated": "2026-03-05T22:30:22.513Z"
+  "lastReflection": "2026-03-05T23:50:15.354Z",
+  "lastUpdated": "2026-03-05T23:50:15.355Z"
 }
