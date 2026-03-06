@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Lindsey Halligan under investigation by Florida Bar",
+      "insight": "This investigation could lead to further scrutiny of Halligan's actions as a former U.S. Attorney, potentially uncovering more widespread fraud or corruption.",
+      "entities": [
+        "Lindsey Halligan"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1772775855100-l751z2q9p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T05:44:15.097Z",
+      "isNew": true
+    },
+    {
       "type": "Potential abuse of power",
       "description": "Lindsey Halligan's actions as a former U.S. attorney have raised concerns about potential abuse of power",
       "insight": "I suspect that Halligan's actions may be part of a larger pattern of abuse of power, and further investigation is needed to determine the extent of this issue.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T04:12:41.548Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "suspicious activity",
@@ -973,26 +992,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-26T20:36:31.384Z",
       "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "A Minnesota man is accused of bilking $220K from a family-run suicide prevention nonprofit.",
-      "insight": "This incident suggests potential mismanagement or fraud in nonprofit organizations.",
-      "entities": [
-        "Minnesota man",
-        "suicide prevention nonprofit"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/02/26/minnesota-man-accused-of-bilking-220k-from-family-run-suicide-prevention-nonprofit/",
-      "id": "rf-1772089333579-uecloclz2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-26T07:02:13.574Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1005,8 +1004,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1023,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T04:12:41.548Z"
+  "lastUpdated": "2026-03-06T05:44:15.097Z"
 }
