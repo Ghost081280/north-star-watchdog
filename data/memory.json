@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-01T02:07:19.708Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-01T04:52:50.583Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-05T23:50:15.354Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-06T01:58:05.762Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1314,
-    "articlesProcessed": 65500,
-    "redFlagsFound": 1552,
+    "totalScans": 1315,
+    "articlesProcessed": 65550,
+    "redFlagsFound": 1553,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
-        "Where did the $23B allegedly go in Minnesota Medicaid investigation?",
-        "What other organizations is Tom Emmer connected to?"
+        "What other organizations is Keith Ellison connected to?",
+        "What other organizations is Tim Walz connected to?",
+        "Where did the $9B allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-05T23:50:15.354Z",
-  "lastUpdated": "2026-03-05T23:50:15.355Z"
+  "lastReflection": "2026-03-06T01:58:05.762Z",
+  "lastUpdated": "2026-03-06T01:58:05.762Z"
 }
