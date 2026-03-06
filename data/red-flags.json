@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "potential Medicaid fraud",
+      "description": "Potential Medicaid fraud in Minnesota has led to a hold on Medicaid funding.",
+      "insight": "This could indicate a larger issue with Medicaid funding and potential fraud in Minnesota.",
+      "entities": [
+        "Minnesota DHS",
+        "Vice President Vance"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Scripps News",
+      "sourceUrl": "https://www.scrippsnews.com/news/2026/03/06/vice-president-vance-announces-hold-medicaid-funding-minnesota-due-fraud-concerns/",
+      "id": "rf-1772811379777-o5zl28lg8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T15:36:19.774Z",
+      "isNew": true
+    },
+    {
+      "type": "Epstein files release",
+      "description": "The release of Epstein files has shed light on potential connections between Epstein and high-profile individuals.",
+      "insight": "This could indicate a larger issue with corruption and potential crimes committed by high-profile individuals.",
+      "entities": [
+        "Jeffrey Epstein",
+        "Donald Trump"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/us/justice-department-releases-missing-fbi-interviews-epstein-files-2026-03-06/",
+      "id": "rf-1772811379777-1w5xko0xq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T15:36:19.774Z",
+      "isNew": true
+    },
+    {
       "type": "ethics investigation",
       "description": "Investigation into Lindsey Halligan's ethics violations",
       "insight": "As a former U.S. Attorney, Halligan's actions have raised concerns. This investigation could potentially lead to further scrutiny of her past actions and potentially impact her professional reputation.",
@@ -273,26 +313,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-05T14:02:31.630Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Proposal for statewide Inspector General to fight fraud remains stalled at Minnesota State Capitol",
-      "insight": "The lack of a statewide Inspector General may be enabling fraud in Minnesota's social services programs",
-      "entities": [
-        "Minnesota State Capitol",
-        "Governor Tim Walz"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://kare11.com/article/proposal-for-statewide-inspector-general-to-fight-fraud-remains-stalled-at-minnesota-state-capitol/20-6f6f6f6f",
-      "id": "rf-1772710397393-2fn4p95yj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T11:33:17.389Z",
       "isNew": false
     },
     {
@@ -971,25 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-28T07:25:51.361Z",
       "isNew": false
-    },
-    {
-      "type": "Theft",
-      "description": "Treasurer of suicide prevention nonprofit allegedly steals over $200K",
-      "insight": "The alleged theft by the treasurer of a suicide prevention nonprofit raises concerns about the potential for fraud and abuse in non-profit organizations. Further investigation is needed to determine the extent of the theft and to identify potential red flags.",
-      "entities": [
-        "Suicide prevention nonprofit"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Valley News Live",
-      "sourceUrl": "https://www.valleynewslive.com/2026/02/28/treasurer-of-suicide-prevention-nonprofit-allegedly-steals-more-than-200k/",
-      "id": "rf-1772260607237-21ogux2hl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-28T06:36:47.234Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,7 +1003,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T14:37:02.643Z"
+  "lastUpdated": "2026-03-06T15:36:19.774Z"
 }
