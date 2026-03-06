@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "ethics investigation",
+      "description": "Lindsey Halligan is under investigation by the Florida Bar for ethics violations",
+      "insight": "This investigation raises concerns about Halligan's actions as a former U.S. Attorney and her involvement in bringing criminal cases against President Trump's enemies. It may indicate a larger issue with ethics in the U.S. Attorney's office.",
+      "entities": [
+        "Lindsey Halligan",
+        "Florida Bar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/03/06/lindsey-halligan-florida-bar-investigation/",
+      "id": "rf-1772782688504-9xz2jv60o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T07:38:08.500Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Lindsey Halligan investigation has raised concerns about the use of ethics probes as a means of targeting political enemies",
       "insight": "I suspect that this investigation may be part of a larger pattern of using ethics probes to target individuals for political gain. Further investigation is needed to determine the extent of this practice.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T06:45:30.249Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -971,26 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-27T21:28:14.853Z",
       "isNew": false
-    },
-    {
-      "type": "FBI investigation",
-      "description": "The FBI has raided the home and office of Los Angeles School Superintendent.",
-      "insight": "This investigation suggests potential wrongdoing or corruption within the Los Angeles school system. Further investigation into the allegations and potential connections to other cases is warranted.",
-      "entities": [
-        "Los Angeles School Superintendent",
-        "FBI"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Los Angeles Times",
-      "sourceUrl": "https://www.latimes.com/local/l-a-schools-board-discusses-superintendents-future-after-fbi-raid-20260227",
-      "id": "rf-1772181557526-hovq0bjw0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-27T08:39:17.523Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,6 +1003,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T06:45:30.249Z"
+  "lastUpdated": "2026-03-06T07:38:08.500Z"
 }
