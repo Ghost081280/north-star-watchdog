@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "ethics probe",
+      "description": "Investigation into Lindsey Halligan's actions as former U.S. Attorney",
+      "insight": "This could indicate potential misconduct or ethics violations by Halligan during her tenure as U.S. Attorney.",
+      "entities": [
+        "Lindsey Halligan",
+        "Florida Bar"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Daily Beast",
+      "sourceUrl": "https://www.dailybeast.com/2026/03/06/trumps-beauty-queen-under-investigation-by-florida-bar",
+      "id": "rf-1772789832726-wsrhms4lb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T09:37:12.721Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating a former Carlyle police chief for wire fraud and theft",
       "insight": "This investigation raises concerns about the potential for corruption and abuse of power in law enforcement. Further investigation is needed to determine the extent of the alleged wrongdoing.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T08:36:22.723Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "ethics investigation",
@@ -970,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-28T01:45:42.252Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Trump administration's withholding of $259M in Medicaid funds from Minnesota",
-      "insight": "Potential misuse of public funds and lack of transparency in program administration.",
-      "entities": [
-        "Minnesota",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NewsOne",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUmsxRGptQk5kb0h1YU9nbUMtRGs1Y3F1eDJtaXM0MDlDbWc3Uno0WW9JU3V0Z0NOS0Rlb0IzWDhYRVpJM0N5WTRmZ2g0YU9iemN3MklXeGpMaThwbWViT3Q2ejQybThON3pETmRBU210WUFfYUVFc01mVWcwSy1QWWNoMVd2cHZnVUMwcUdOcEhYUQ",
-      "id": "rf-1772227694857-57q1kcdz8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-27T21:28:14.853Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,6 +1003,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T08:36:22.723Z"
+  "lastUpdated": "2026-03-06T09:37:12.721Z"
 }
