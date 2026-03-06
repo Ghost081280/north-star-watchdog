@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-01T12:44:18.935Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-01T13:38:40.023Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-06T11:28:00.207Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-06T12:52:54.019Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Lindsey Halligan?",
-    "What specific allegations exist against Kristi Noem?",
     "What specific allegations exist against Tom Emmer?",
     "Where did the $9B allegedly go in Minnesota fraud scandal?",
     "Are any of these 5 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the 900 pounds allegedly go in Minnesota meth case?",
     "Where did the $ millions allegedly go in Minnesota Medicaid funding investigation?",
     "Where did the unknown allegedly go in Lindsey Halligan investigation?",
-    "What other organizations is Lindsey Halligan connected to?"
+    "What other organizations is Lindsey Halligan connected to?",
+    "Where did the undisclosed allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $500,000 allegedly go in Ambulance firm investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1323,
-    "articlesProcessed": 65950,
-    "redFlagsFound": 1564,
+    "totalScans": 1324,
+    "articlesProcessed": 66000,
+    "redFlagsFound": 1565,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota DHS fraud investigation?",
         "What specific allegations exist against Lindsey Halligan?",
-        "What specific allegations exist against Kristi Noem?"
+        "What specific allegations exist against Kristi Noem?",
+        "What specific allegations exist against Tom Emmer?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-06T11:28:00.207Z",
-  "lastUpdated": "2026-03-06T11:28:00.207Z"
+  "lastReflection": "2026-03-06T12:52:54.019Z",
+  "lastUpdated": "2026-03-06T12:52:54.020Z"
 }
