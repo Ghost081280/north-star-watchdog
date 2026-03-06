@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The federal government has launched an investigation into Medicaid waste, fraud, and abuse in Minnesota.",
+      "insight": "I notice a pattern of investigations into Medicaid waste and fraud in multiple states, including Minnesota and Vermont. This suggests a potential nationwide issue that requires further scrutiny.",
+      "entities": [
+        "Minnesota DHS",
+        "Vermont"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MinneapoliMedia",
+      "sourceUrl": "https://www.minneapolimedia.com/news/walz-ellison-face-congressional-scrutiny-over-minnesota-fraud-investigations",
+      "id": "rf-1772822534706-12nz59lbe",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-06T18:42:14.702Z",
+      "isNew": true
+    },
+    {
       "type": "investigation",
       "description": "Lindsey Halligan under investigation for weaponization accusations",
       "insight": "This investigation could lead to further revelations about Halligan's actions as a prosecutor",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T17:34:21.487Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -37,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T16:39:37.256Z",
-      "isNew": false
-    },
-    {
-      "type": "potential Medicaid fraud",
-      "description": "Potential Medicaid fraud in Minnesota has led to a hold on Medicaid funding.",
-      "insight": "This could indicate a larger issue with Medicaid funding and potential fraud in Minnesota.",
-      "entities": [
-        "Minnesota DHS",
-        "Vice President Vance"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Scripps News",
-      "sourceUrl": "https://www.scrippsnews.com/news/2026/03/06/vice-president-vance-announces-hold-medicaid-funding-minnesota-due-fraud-concerns/",
-      "id": "rf-1772811379777-o5zl28lg8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T15:36:19.774Z",
       "isNew": false
     },
     {
@@ -1002,6 +1002,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T17:34:21.487Z"
+  "lastUpdated": "2026-03-06T18:42:14.702Z"
 }
