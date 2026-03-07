@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T12:55:45.312Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-02T14:00:53.349Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T11:19:11.936Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-07T12:42:56.355Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $X allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $X allegedly go in Vermont Medicaid Waste, Fraud, and Abuse?",
     "What other organizations is Minnesota non-profit leader connected to?",
     "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?",
@@ -558,7 +556,9 @@
     "Where did the unknown allegedly go in FBI surveillance network breach?",
     "Where did the unknown allegedly go in Medicaid fraud in Minnesota?",
     "Where did the 2,000 digital images gathered allegedly go in Austin mass shooting investigation?",
-    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the unknown allegedly go in FBI investigation into suspicious breach of its networks?",
+    "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1344,
-    "articlesProcessed": 67000,
-    "redFlagsFound": 1591,
+    "totalScans": 1345,
+    "articlesProcessed": 67050,
+    "redFlagsFound": 1592,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T11:19:11.936Z",
-  "lastUpdated": "2026-03-07T11:19:11.937Z"
+  "lastReflection": "2026-03-07T12:42:56.355Z",
+  "lastUpdated": "2026-03-07T12:42:56.356Z"
 }
