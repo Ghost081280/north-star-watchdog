@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T17:43:39.096Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-02T18:44:33.474Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T16:26:21.143Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-07T17:20:21.664Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in Medicaid waste, fraud and abuse in Vermont?",
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $250M allegedly go in Medicaid fraud investigation in Minnesota?",
     "Where did the Unknown allegedly go in FBI surveillance system hack investigation?",
     "What other organizations is Lindsey Halligan connected to?",
     "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?",
     "Where did the $0 allegedly go in FBI Surveillance Network Breach?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $1 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $1 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Former Carlyle police chief connected to?",
+    "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the Unknown allegedly go in FBI surveillance network breach investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1349,
-    "articlesProcessed": 67250,
-    "redFlagsFound": 1598,
+    "totalScans": 1350,
+    "articlesProcessed": 67300,
+    "redFlagsFound": 1600,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "Medicaid fraud is a significant problem in the US, with billions of dollars lost to fraudulent activities each year.",
+          "insight": "This issue highlights the need for increased oversight and enforcement to prevent Medicaid fraud and protect taxpayer dollars. Further investigation is needed to identify the scope of the problem and the entities involved.",
+          "entities": [
+            "Minnesota DHS",
+            "CMS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Georgetown University",
+          "sourceUrl": "https://www.georgetown.edu/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?",
         "Where did the unknown allegedly go in Medicaid waste, fraud and abuse in Vermont?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $250M allegedly go in Medicaid fraud investigation in Minnesota?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T16:26:21.143Z",
-  "lastUpdated": "2026-03-07T16:26:21.144Z"
+  "lastReflection": "2026-03-07T17:20:21.664Z",
+  "lastUpdated": "2026-03-07T17:20:21.665Z"
 }

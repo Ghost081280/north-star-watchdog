@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating a breach of its surveillance network, which may have been caused by a foreign entity.",
+      "insight": "This investigation raises concerns about the security of sensitive information and the potential for foreign interference in US affairs. Further investigation is needed to determine the scope of the breach and the entities involved.",
+      "entities": [
+        "FBI",
+        "China"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "id": "rf-1772904021670-oqnzkw5ns",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T17:20:21.666Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
+      "description": "Medicaid fraud is a significant problem in the US, with billions of dollars lost to fraudulent activities each year.",
+      "insight": "This issue highlights the need for increased oversight and enforcement to prevent Medicaid fraud and protect taxpayer dollars. Further investigation is needed to identify the scope of the problem and the entities involved.",
+      "entities": [
+        "Minnesota DHS",
+        "CMS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Georgetown University",
+      "sourceUrl": "https://www.georgetown.edu/",
+      "id": "rf-1772904021670-o20emymvg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T17:20:21.666Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "The use of shell companies in Minnesota's Medicaid program to commit fraud",
       "insight": "The use of shell companies to launder money and commit fraud is a major red flag in the Minnesota Medicaid program.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-07T16:26:21.145Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "FBI surveillance system breach",
@@ -154,26 +194,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-07T01:50:14.709Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation into Medicaid waste, fraud, and abuse in Vermont has been launched, with a focus on identifying and preventing future instances of fraud",
-      "insight": "The investigation in Vermont is likely to uncover similar instances of fraud in other states, and may lead to a wider crackdown on Medicaid fraud nationwide. I recommend monitoring the investigation and searching for similar cases in other states.",
-      "entities": [
-        "Vermont",
-        "Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News From The States",
-      "sourceUrl": "https://www.newsfromthestates.com/article/vermont-targeted-in-federal-investigation-of-medicaid-waste-fraud-and-abuse",
-      "id": "rf-1772839614850-qjlsbeo7z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T23:26:54.847Z",
       "isNew": false
     },
     {
@@ -966,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-02T06:56:12.642Z",
       "isNew": false
-    },
-    {
-      "type": "potential terrorism connection",
-      "description": "The FBI is investigating a mass shooting in Austin, Texas, and there are concerns about a potential terrorism connection.",
-      "insight": "This suggests a potential threat to public safety and I would investigate the shooter's background and potential connections to terrorist organizations.",
-      "entities": [
-        "FBI",
-        "Austin police department"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/article/news/2026/03/01/3-dead-in-austin-bar-shooting-fbi-investigating-terrorist-indicators/33123495/",
-      "id": "rf-1772407336309-2lvg6t1bk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-01T23:22:16.306Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,7 +999,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-07T16:26:21.145Z"
+  "lastUpdated": "2026-03-07T17:20:21.666Z"
 }
