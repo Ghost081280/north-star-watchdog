@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T19:36:54.365Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-03-02T20:36:33.042Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T18:32:04.275Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-07T19:21:02.258Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Lindsey Halligan connected to?",
-    "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in FBI Surveillance System Hack?",
     "What specific allegations exist against Lindsey Halligan?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Former Carlyle police chief connected to?",
     "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FBI surveillance network breach investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the unknown allegedly go in Medicaid fraud investigation in Minnesota?",
+    "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1351,
-    "articlesProcessed": 67350,
-    "redFlagsFound": 1601,
+    "totalScans": 1352,
+    "articlesProcessed": 67400,
+    "redFlagsFound": 1602,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI surveillance system hack investigation?",
         "What other organizations is Lindsey Halligan connected to?",
-        "Where did the Unknown allegedly go in Medicaid Fraud Investigation?"
+        "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in FBI Surveillance System Hack?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T18:32:04.275Z",
-  "lastUpdated": "2026-03-07T18:32:04.276Z"
+  "lastReflection": "2026-03-07T19:21:02.258Z",
+  "lastUpdated": "2026-03-07T19:21:02.258Z"
 }

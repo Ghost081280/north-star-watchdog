@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating Riviera Beach officials and a marina redevelopment project, which may indicate potential corruption or fraud.",
+      "insight": "I suspect that the FBI investigation may uncover more widespread corruption or fraud in the Riviera Beach area. Further research is needed to determine the extent of the alleged wrongdoing.",
+      "entities": [
+        "Riviera Beach officials"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "WPBF",
+      "sourceUrl": "https://www.wpbf.com/article/sources-fbi-subpoena-seeks-records-tied-to-riviera-beach-officials-marina-redevelopment-project/43145635",
+      "id": "rf-1772911262263-zl9ipahf4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T19:21:02.259Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "The Florida Bar initially claimed that Lindsey Halligan was under investigation, but later reversed the claim.",
       "insight": "This reversal raises questions about the Florida Bar's transparency and potential biases in their investigations.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-07T18:32:04.277Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -967,25 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-02T08:42:32.752Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Terrorism Ties",
-      "description": "The FBI is investigating potential terrorism ties in the Austin mass shooting",
-      "insight": "This could indicate a larger threat to national security, and further investigation is needed to determine the extent of any potential terrorism ties",
-      "entities": [
-        "Austin mass shooting suspect"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1772437759036-8r4a73bi3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-02T07:49:19.033Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -998,8 +998,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-07T18:32:04.277Z"
+  "lastUpdated": "2026-03-07T19:21:02.259Z"
 }
