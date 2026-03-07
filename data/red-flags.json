@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a suspicious breach of its surveillance network, with sources suspecting China's involvement.",
+      "insight": "This breach could have significant implications for national security, and I recommend further investigation into the matter.",
+      "entities": [
+        "FBI",
+        "China"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-fbi-cyber-idUSKBN2TR2R7",
+      "id": "rf-1772872166554-g8mram3fr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T08:29:26.551Z",
+      "isNew": true
+    },
+    {
       "type": "potential_fraud",
       "description": "Minnesota DHS is investigating potential Medicaid fraud",
       "insight": "This could indicate a larger issue with Medicaid fraud in Minnesota, requiring further investigation",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-07T07:27:51.401Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "firing of agents",
@@ -968,26 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-28T15:20:46.408Z",
       "isNew": false
-    },
-    {
-      "type": "FBI_investigation",
-      "description": "The FBI is investigating potential financial improprieties by Los Angeles schools superintendent Alberto Carvalho.",
-      "insight": "This investigation suggests potential corruption or mismanagement within the Los Angeles Unified School District, warranting further investigation into Carvalho's activities and potential connections to other entities or individuals.",
-      "entities": [
-        "Alberto Carvalho",
-        "Los Angeles Unified School District"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLVZlMDVERE95RjhVaFJOQThPYk9uMUNpVnN2ejVpZ1FzaFBESVNPZjJxN0t3UGJWeFg2TVg3R2lzS0hQU2tHM1kyUG43aUxKQ1YyMjFmc0lpbkg5aGR0TFlzdjJWcGpVa1J3VlFlektRMjFjRjNfR19RT2RNcTE3NURtenJqSE50NjQ1MGJoV1pIeTEyZVFKMUtOdVRBeVpnVzczUDQ2elM0UjRnZU9xMFkzS1ZzdFpzV2xTc05uZ3RNRW85VnNzNnpzaTU0UQ",
-      "id": "rf-1772288478836-d68r7cfcd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-28T14:21:18.833Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,6 +1000,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-07T07:27:51.401Z"
+  "lastUpdated": "2026-03-07T08:29:26.551Z"
 }
