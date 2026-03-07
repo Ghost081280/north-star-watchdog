@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating a suspect in connection to a federal narcotics investigation in the Portland area.",
+      "insight": "This investigation highlights the ongoing issue of narcotics trafficking in the United States and the need for continued vigilance and cooperation between law enforcement agencies.",
+      "entities": [
+        "City of Portland, Oregon"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "City of Portland, Oregon",
+      "sourceUrl": "https://www.portlandoregon.gov/news/2026/3/6/suspect-arrested-in-portland-area-in-connection-to-federal-narcotics-investigation",
+      "id": "rf-1772878923886-uuq6qpil7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T10:22:03.882Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating a suspicious breach of its surveillance network, with sources suspecting China's involvement.",
       "insight": "This breach could have significant implications for national security, and I recommend further investigation into the matter.",
       "entities": [
@@ -968,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-28T17:19:44.858Z",
       "isNew": false
-    },
-    {
-      "type": "FBI_investigation",
-      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, leading to his administrative leave.",
-      "insight": "This investigation suggests potential corruption or misconduct within the LAUSD, possibly involving Superintendent Carvalho. Further investigation into Carvalho's actions and LAUSD's governance is warranted.",
-      "entities": [
-        "Alberto Carvalho",
-        "LAUSD"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The Pride LA",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLVZlMDVERE95RjhVaFJOQThPYk9nMUNpVnN2ejVpZ1FzaFBESVNPZjJxN0t3UGJWeFg2TVg3R2lzS0hQU2tHM1kyUG43aUxKQ1YyMjFmc0lpbkg5aGR0TFlzdjJWcGpVa1J3VlFlektRMjFjRjNfR19RT2RNcTE3NURtenJqSE50NjQ1MGJoV1pIeTEyZVFKMUtOdVRBeVpnVzczUDQ2elM0UjRnZU9xMFkzS1ZzdFpzV2xTc05uZ3RNRW85VnNzNnpzaTU0UQ",
-      "id": "rf-1772292046411-g8ddo18j3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-28T15:20:46.408Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,8 +999,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-07T09:27:31.349Z"
+  "lastUpdated": "2026-03-07T10:22:03.882Z"
 }
