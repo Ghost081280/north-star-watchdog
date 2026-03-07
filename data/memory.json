@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T20:36:33.042Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-02T21:31:40.304Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T19:21:02.258Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-07T20:23:39.248Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI Surveillance System Hack?",
     "What specific allegations exist against Lindsey Halligan?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in FBI surveillance network breach investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the unknown allegedly go in Medicaid fraud investigation in Minnesota?",
-    "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?"
+    "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?",
+    "What other organizations is Lindsey Halligan connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1352,
-    "articlesProcessed": 67400,
-    "redFlagsFound": 1602,
+    "totalScans": 1353,
+    "articlesProcessed": 67450,
+    "redFlagsFound": 1603,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal investigation",
+          "description": "The FBI is investigating suspicious breach of its networks",
+          "insight": "This could indicate a significant cybersecurity threat",
+          "entities": [
+            "FBI"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "FBI investigates suspicious breach of its networks - upi.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWjczQUhzck1OWTk4YzQwdlNYdzhhZUNWNzRNNkc1aENla1lGR2ZmdzRRUkczbC14YTgyTnFuTUpGY2NYOGgxOWRHa19BMHpPekZuaGQ4TEVELXZjakVFMkZLZlkzMEhCVnNMc1lld3kzeUVCejhUNXktOXJkdE5pZDY2Z1lCRERfeFV2TE5YekdnRkw30gGaAUFVX3lxTE5mZFR0Mkw0Vi1GTDVueVVuV2hGQWFEZF9kRWNRYTVjSkZIRnJlZVhXZXZtaXZ0bVRoY1NwLXZUS0tLbUF4Wmo2Y1psQTNVSzVEaTc3Y0lJblZGdkxWUjBDSU1EelhsbVhRenNfcmp5Sms3NHFocHhOYlZwYmVUVFBHdjVmdVRWbFNxYTRZUG1UNGZXNXVOU0ZxeWc"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Lindsey Halligan connected to?",
-        "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in FBI Surveillance System Hack?"
+        "Where did the Unknown allegedly go in FBI Surveillance System Hack?",
+        "What specific allegations exist against Lindsey Halligan?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T19:21:02.258Z",
-  "lastUpdated": "2026-03-07T19:21:02.258Z"
+  "lastReflection": "2026-03-07T20:23:39.248Z",
+  "lastUpdated": "2026-03-07T20:23:39.249Z"
 }
