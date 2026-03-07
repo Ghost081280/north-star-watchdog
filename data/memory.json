@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T14:00:53.349Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-02T14:54:32.804Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T12:42:56.355Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-07T13:38:04.430Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1345,
-    "articlesProcessed": 67050,
-    "redFlagsFound": 1592,
+    "totalScans": 1346,
+    "articlesProcessed": 67100,
+    "redFlagsFound": 1594,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
-        "Where did the $X allegedly go in Minnesota Medicaid Fraud?",
-        "Where did the $X allegedly go in Vermont Medicaid Waste, Fraud, and Abuse?"
+        "Where did the $X allegedly go in Vermont Medicaid Waste, Fraud, and Abuse?",
+        "What other organizations is Minnesota non-profit leader connected to?",
+        "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T12:42:56.355Z",
-  "lastUpdated": "2026-03-07T12:42:56.356Z"
+  "lastReflection": "2026-03-07T13:38:04.430Z",
+  "lastUpdated": "2026-03-07T13:38:04.431Z"
 }
