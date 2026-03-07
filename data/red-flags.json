@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Trump administration has repealed gender and sexuality affirmation rules for foster homes",
+      "insight": "This move may have significant implications for the LGBTQ+ community and could be connected to other cases involving the administration's policies. Further investigation is needed to understand the motivations behind this decision.",
+      "entities": [
+        "Trump administration",
+        "LGBTQ+ community"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "EWTN News",
+      "sourceUrl": "https://www.ewtn.com/news/trump-administration-repeals-gender-sexuality-affirmation-rules-for-foster-homes",
+      "id": "rf-1772925681541-pjg5pcy7c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T23:21:21.538Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI has launched an investigation into the breach of its surveillance network, which may have been caused by Chinese hackers.",
       "insight": "This breach could have serious implications for national security, and it's essential to investigate further to determine the extent of the damage.",
@@ -965,26 +985,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-02T15:41:28.320Z",
       "isNew": false
-    },
-    {
-      "type": "potential_terrorism",
-      "description": "The FBI is investigating a mass shooting in Austin with potential ties to terrorism.",
-      "insight": "The potential connection to terrorism in the Austin shooting investigation raises concerns about the motivations behind the attack and potential future threats.",
-      "entities": [
-        "FBI",
-        "Austin shooting suspect"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/fbi-probing-whether-iran-attack-motivated-austin-shooter-who-killed-2/2026/03/02/",
-      "id": "rf-1772460053354-4ob4nttye",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-02T14:00:53.351Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,7 +996,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-07T22:22:10.186Z"
+  "lastUpdated": "2026-03-07T23:21:21.538Z"
 }
