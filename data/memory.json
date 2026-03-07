@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T22:28:54.936Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-03-02T23:25:02.710Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-07T21:20:11.484Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-07T22:22:10.184Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1354,
-    "articlesProcessed": 67500,
+    "totalScans": 1355,
+    "articlesProcessed": 67550,
     "redFlagsFound": 1605,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "The CMS has been cracking down on Medicaid fraud, but more needs to be done to prevent it.",
-          "insight": "Medicaid fraud is a growing concern, and it's essential to investigate further to determine the extent of the problem and prevent future occurrences.",
-          "entities": [
-            "CMS",
-            "Medicaid"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Georgetown University",
-          "sourceUrl": "https://www.georgetown.edu/news/cms-weaponizes-fraud-against-medicaid-in-minnesota"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Lindsey Halligan?",
         "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?"
+        "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?",
+        "Where did the undisclosed allegedly go in FBI investigation into Riviera Beach officials?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T21:20:11.484Z",
-  "lastUpdated": "2026-03-07T21:20:11.484Z"
+  "lastReflection": "2026-03-07T22:22:10.184Z",
+  "lastUpdated": "2026-03-07T22:22:10.185Z"
 }
