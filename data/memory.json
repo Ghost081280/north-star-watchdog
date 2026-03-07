@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T21:31:40.304Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-02T22:28:54.936Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-03-07T20:23:39.248Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-07T21:20:11.484Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Lindsey Halligan?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?",
     "Where did the undisclosed allegedly go in FBI investigation into Riviera Beach officials?",
@@ -558,7 +557,8 @@
     "Are any of these 2 figures connected to each other?",
     "Where did the unknown allegedly go in Medicaid fraud investigation in Minnesota?",
     "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?",
-    "What other organizations is Lindsey Halligan connected to?"
+    "What other organizations is Lindsey Halligan connected to?",
+    "Where did the $100M allegedly go in Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1353,
-    "articlesProcessed": 67450,
-    "redFlagsFound": 1603,
+    "totalScans": 1354,
+    "articlesProcessed": 67500,
+    "redFlagsFound": 1605,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,16 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal investigation",
-          "description": "The FBI is investigating suspicious breach of its networks",
-          "insight": "This could indicate a significant cybersecurity threat",
+          "type": "Medicaid fraud",
+          "description": "The CMS has been cracking down on Medicaid fraud, but more needs to be done to prevent it.",
+          "insight": "Medicaid fraud is a growing concern, and it's essential to investigate further to determine the extent of the problem and prevent future occurrences.",
           "entities": [
-            "FBI"
+            "CMS",
+            "Medicaid"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "FBI investigates suspicious breach of its networks - upi.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWjczQUhzck1OWTk4YzQwdlNYdzhhZUNWNzRNNkc1aENla1lGR2ZmdzRRUkczbC14YTgyTnFuTUpGY2NYOGgxOWRHa19BMHpPekZuaGQ4TEVELXZjakVFMkZLZlkzMEhCVnNMc1lld3kzeUVCejhUNXktOXJkdE5pZDY2Z1lCRERfeFV2TE5YekdnRkw30gGaAUFVX3lxTE5mZFR0Mkw0Vi1GTDVueVVuV2hGQWFEZF9kRWNRYTVjSkZIRnJlZVhXZXZtaXZ0bVRoY1NwLXZUS0tLbUF4Wmo2Y1psQTNVSzVEaTc3Y0lJblZGdkxWUjBDSU1EelhsbVhRenNfcmp5Sms3NHFocHhOYlZwYmVUVFBHdjVmdVRWbFNxYTRZUG1UNGZXNXVOU0ZxeWc"
+          "source": "Georgetown University",
+          "sourceUrl": "https://www.georgetown.edu/news/cms-weaponizes-fraud-against-medicaid-in-minnesota"
         }
       ]
     },
@@ -602,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Surveillance System Hack?",
         "What specific allegations exist against Lindsey Halligan?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?"
       ]
     }
   ],
@@ -613,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T20:23:39.248Z",
-  "lastUpdated": "2026-03-07T20:23:39.249Z"
+  "lastReflection": "2026-03-07T21:20:11.484Z",
+  "lastUpdated": "2026-03-07T21:20:11.484Z"
 }
