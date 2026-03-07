@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-02T11:31:11.831Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-02T12:55:45.312Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-03-07T10:22:03.880Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-07T11:19:11.936Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1343,
-    "articlesProcessed": 66950,
-    "redFlagsFound": 1590,
+    "totalScans": 1344,
+    "articlesProcessed": 67000,
+    "redFlagsFound": 1591,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in ExThera Medical Investigation?",
-        "Where did the $0 allegedly go in Lindsey Halligan Investigation?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $X allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $X allegedly go in Vermont Medicaid Waste, Fraud, and Abuse?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T10:22:03.880Z",
-  "lastUpdated": "2026-03-07T10:22:03.880Z"
+  "lastReflection": "2026-03-07T11:19:11.936Z",
+  "lastUpdated": "2026-03-07T11:19:11.937Z"
 }
