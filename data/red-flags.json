@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating a hack into its surveillance system, which could compromise national security",
+      "insight": "This hack could have significant implications for national security, and I will be monitoring the situation closely. I recommend investigating the source of the hack and any potential connections to other cyber attacks.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Politico",
+      "sourceUrl": "https://www.politico.com/news/2026/03/06/white-house-assisting-fbi-hack-probe-1401151",
+      "id": "rf-1772848214713-d34quh385",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-07T01:50:14.709Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "A federal investigation into Medicaid waste, fraud, and abuse in Vermont has been launched, with a focus on identifying and preventing future instances of fraud",
       "insight": "The investigation in Vermont is likely to uncover similar instances of fraud in other states, and may lead to a wider crackdown on Medicaid fraud nationwide. I recommend monitoring the investigation and searching for similar cases in other states.",
       "entities": [
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-06T23:26:54.847Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential misconduct by public officials",
@@ -969,26 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-02-28T12:42:08.209Z",
       "isNew": false
-    },
-    {
-      "type": "Misuse of funds",
-      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho for potential misuse of funds.",
-      "insight": "This investigation may reveal a pattern of corruption within the LAUSD administration. Further investigation is needed to determine the extent of the alleged misuse of funds and its impact on the school district.",
-      "entities": [
-        "Alberto Carvalho",
-        "LAUSD"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/l-a-schools-superintendent-alberto-carvalho-placed-on-administrative-leave-amid-fbi-probe/",
-      "id": "rf-1772277525493-wiufwgocc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-02-28T11:18:45.490Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,13 +996,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-06T23:26:54.847Z"
+  "lastUpdated": "2026-03-07T01:50:14.709Z"
 }
