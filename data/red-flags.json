@@ -1,22 +1,43 @@
 {
   "flags": [
     {
-      "type": "Potential obstruction of justice",
-      "description": "The Trump administration has been accused of hindering fraud investigations in Minnesota, which could be a sign of obstruction of justice.",
-      "insight": "I suspect that the Trump administration may be trying to cover up fraudulent activities, and further investigation is needed to determine the extent of their involvement.",
+      "type": "alleged fraud",
+      "description": "Minnesota leaders failed to refute fraud allegations according to Kentucky Rep. Comer",
+      "insight": "This could indicate a larger issue with fraud in Minnesota that needs to be addressed.",
       "entities": [
-        "Trump administration"
+        "Kentucky Rep. Comer",
+        "Minnesota leaders"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Fine Day 102.3",
-      "sourceUrl": "https://www.fineday1023.com/news/walz-claims-trump-immigration-actions-hindered-minnesota-fraud-investigations",
-      "id": "rf-1773001483730-s8q2co325",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPLTlDbXFGOGI5akNUbDFKMHZyUW1idURLU1hYeFZxQ1A3Y2FDN3JjQ0FLNjk4SDliQVM4Z0ZkWXVnYTlTZzE0MjYtMl9EV1ozR3FoOTdJR1lsNm92VTAxaklxV3VWdGRObktsODQ2THdwXzFvQjNFdU0yTmNEcW42Yg?oc=5",
+      "id": "rf-1773004935560-eyqr922jj",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-08T20:24:43.726Z",
+      "detectedAt": "2026-03-08T21:22:15.556Z",
+      "isNew": true
+    },
+    {
+      "type": "conviction tossed",
+      "description": "Judge tosses conviction of Somali who ripped off Minnesota taxpayers",
+      "insight": "This could indicate issues with previous convictions or investigations in Minnesota.",
+      "entities": [
+        "Somali Individual",
+        "Minnesota taxpayers"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd1V0NTlib0dWbU9UZDBiNzZBcjFJSk1XOE45QjZjV000UkkyWVozcEpmOUJuOUVnektYRmM0c1RkWUFqNHZmVGVYcjF4bDZfY0k2RlEyaUpoQmtuYnc0RVRkSUhKLVRUeW9LRWpFS3NNemxuQmtLcGtOZnVnQ0dtMlRMbjV0SUdO?oc=5",
+      "id": "rf-1773004935560-i1kfclsvh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T21:22:15.556Z",
       "isNew": true
     },
     {
@@ -961,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T18:44:57.802Z",
       "isNew": false
-    },
-    {
-      "type": "multiple investigations",
-      "description": "Multiple investigations are ongoing in Minnesota, including those related to Greg Bovino and the Star Autism Center.",
-      "insight": "The number of investigations and lawsuits suggests a potential pattern of fraud in Minnesota.",
-      "entities": [
-        "Greg Bovino",
-        "Star Autism Center"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Independent",
-      "sourceUrl": "https://theindependent.com/2026/03/03/greg-bovino-is-being-investigated-for-over-a-dozen-incidents-in-minnesota/",
-      "id": "rf-1772563497807-f7vn3j32x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T18:44:57.802Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T20:24:43.726Z"
+  "lastUpdated": "2026-03-08T21:22:15.556Z"
 }
