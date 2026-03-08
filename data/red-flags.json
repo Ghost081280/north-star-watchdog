@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Quality 'Learing' Center in Minnesota has been closed.",
+      "insight": "The closure of the Quality 'Learing' Center suggests potential mismanagement or fraud, warranting further investigation into Minnesota state programs.",
+      "entities": [
+        "Minnesota State Government"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?",
+      "id": "rf-1772973871319-f7on36xl4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T12:44:31.315Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The US government is investigating child care fraud in Minnesota, and the FBI is investigating the Riviera Beach marina redevelopment project.",
       "insight": "These investigations may indicate a pattern of fraud and corruption in government projects and programs. Further investigation is needed to determine the extent of the fraud and who is involved.",
@@ -20,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-08T11:20:19.108Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program closure",
@@ -39,25 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-08T10:24:07.877Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Quality 'Learing' Center in Minnesota has been closed.",
-      "insight": "This could indicate a potential fraud scheme was uncovered, leading to the program's termination.",
-      "entities": [
-        "Quality 'Learing' Center"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n",
-      "id": "rf-1772962094301-798kwpuns",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T09:28:14.296Z",
       "isNew": false
     },
     {
@@ -993,13 +993,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T11:20:19.108Z"
+  "lastUpdated": "2026-03-08T12:44:31.315Z"
 }
