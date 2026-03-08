@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Quality 'Learing' Center in Minnesota has been closed.",
+      "insight": "This could indicate a potential fraud scheme was uncovered, leading to the program's termination.",
+      "entities": [
+        "Quality 'Learing' Center"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n",
+      "id": "rf-1772962094301-798kwpuns",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T09:28:14.296Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "The US government is investigating Minnesota's child care programs for potential fraud.",
+      "insight": "This could indicate a large-scale fraud scheme involving multiple child care programs in Minnesota.",
+      "entities": [
+        "Minnesota",
+        "US government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUkRERmRTM1BqZ2thZXl2Zk5ETFZwM0NSNGp0LW9pWlgxUEVaZzE0T0N4NDdZZFBYOW1SN1NzRVo2cTlyQlFWc0RjX2E5WmRfWlBHdGpSemZGd2k5STU1bGJ6OExvN0x6Y3Y3SzVzU3U5TnFsSGpYRVFHaUhVQWhOWQ",
+      "id": "rf-1772962094301-5p7x7cgfy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T09:28:14.296Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI is investigating suspicious cyber activity on a system holding sensitive surveillance information.",
       "insight": "This could indicate a potential breach of national security, and I will be tracking this development closely.",
@@ -17,26 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-08T08:29:44.616Z",
-      "isNew": true
-    },
-    {
-      "type": "federal investigation",
-      "description": "The US government is investigating Minnesota for child care fraud.",
-      "insight": "This suggests a potential large-scale fraud scheme involving child care services in Minnesota, which could have significant financial and legal implications.",
-      "entities": [
-        "Minnesota",
-        "US government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUkRERmRTM1BqZ2thZXl2Zk5ETFZwM0NSNGp0LW9pWlgxUEVaZzE0T0N4NDdZZFBYOW1SN1NzRVo2cTlyQlFWc0RjX2E5WmRfWlBHdGpSemZGd2k5STU1bGJ6OExvN0x6Y3Y3SzVzU3U5TnFsSGpYRVFHaUhVQWhOWQ?oc=5",
-      "id": "rf-1772955035487-t59hj2dtu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T07:30:35.483Z",
       "isNew": false
     },
     {
@@ -965,25 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T06:50:25.295Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota lawmakers propose removing troubled Housing Stabilization Services from state statute",
-      "insight": "This could indicate a potential red flag for program mismanagement or fraud.",
-      "entities": [
-        "Minnesota lawmakers"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQNFZHOERqb25yQ0dZZkRIZUZJMXJlWlBaTWdTdjRYdzd4SmN1QTdINlZHbTNCcF84emwzSEc4TnVpUmZqd1ZTZHVMc3pDLXh5MzRQUkYteFhvQUE5dEtfb2pUaDhJUlNHNExFeUJQdlhiVG4wZjU0MG9rdVUtWHBwblF4MnFxdzFrVVhlcHVpQzFtSVNyUmNLdlJJelhhUFJMSk5YbzNpbElidWlMcTZaT0VyQko1NWJoVHBDQzY0dG1FVmEwNUw1amFqSENleXM0bTBQa1NicXRZcVdkelozRV9qbk1fZkducVJKdzBvR0NGMGJVdGRlaFNwcGxTRlB5bmd5M0tRQUVDUDhK",
-      "id": "rf-1772516933215-fo0md39z5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T05:48:53.211Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,8 +997,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T08:29:44.616Z"
+  "lastUpdated": "2026-03-08T09:28:14.296Z"
 }

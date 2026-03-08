@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-03T09:40:02.003Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-03-03T10:37:34.388Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-08T08:29:44.613Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-08T09:28:14.294Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1362,
-    "articlesProcessed": 67900,
-    "redFlagsFound": 1615,
+    "totalScans": 1363,
+    "articlesProcessed": 67950,
+    "redFlagsFound": 1617,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
         "Where did the unknown allegedly go in FBI investigation into suspicious breach of its networks?",
-        "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?"
+        "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?",
+        "Where did the $0 allegedly go in FBI Surveillance Network Breach?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-08T08:29:44.613Z",
-  "lastUpdated": "2026-03-08T08:29:44.614Z"
+  "lastReflection": "2026-03-08T09:28:14.294Z",
+  "lastUpdated": "2026-03-08T09:28:14.295Z"
 }
