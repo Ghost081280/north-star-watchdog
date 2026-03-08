@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-03T20:31:01.123Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-03-03T21:32:54.481Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-08T18:32:31.194Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-08T19:22:46.248Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "Where did the unknown allegedly go in Medicaid fraud investigation in Minnesota?",
     "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?",
     "What other organizations is Lindsey Halligan connected to?",
@@ -558,7 +557,8 @@
     "Where did the $X allegedly go in Minnesota Child Care Fraud Probe?",
     "Where did the $X allegedly go in Quality Learning Center?",
     "Where did the Unknown allegedly go in Minnesota child care fraud probe?",
-    "Where did the Unknown allegedly go in Trump administration's National Cybersecurity Strategy?"
+    "Where did the Unknown allegedly go in Trump administration's National Cybersecurity Strategy?",
+    "What other organizations is Former Carlyle police chief connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1372,
-    "articlesProcessed": 68400,
-    "redFlagsFound": 1627,
+    "totalScans": 1373,
+    "articlesProcessed": 68450,
+    "redFlagsFound": 1628,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the Unknown allegedly go in FBI surveillance network breach investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the unknown allegedly go in Medicaid fraud investigation in Minnesota?",
+        "Where did the unknown allegedly go in FBI investigation into Riviera Beach officials?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-08T18:32:31.194Z",
-  "lastUpdated": "2026-03-08T18:32:31.195Z"
+  "lastReflection": "2026-03-08T19:22:46.248Z",
+  "lastUpdated": "2026-03-08T19:22:46.249Z"
 }
