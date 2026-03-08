@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The infamous Quality Learning Center in Minnesota is now closed",
+      "insight": "The closure of this center may indicate a response to allegations of fraud or misconduct. Further investigation is needed to determine the reasons behind the closure and any potential wrongdoing.",
+      "entities": [
+        "Quality Learning Center",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
+      "id": "rf-1772987193546-u3lw6egpm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T16:26:33.543Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "A federal investigation has been launched into child care fraud in Minnesota",
       "insight": "This investigation suggests that there may be a larger issue with child care fraud in Minnesota. I would recommend further investigation into the matter.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-08T15:22:39.538Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -962,30 +982,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T16:44:49.069Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Minnesota lawmakers propose removing troubled Housing Stabilization Services from state statute.",
-      "insight": "The proposal to remove Housing Stabilization Services from state statute suggests that the program may be vulnerable to fraud or abuse.",
-      "entities": [
-        "Minnesota lawmakers",
-        "Housing Stabilization Services"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "kare11.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQNFZHOERqb25yQ0dZZkRIZUZJMXJlWlBaTWdTdjRYdzd4SmN1QTdINlZHbTNCcF84emwzSEc4TnVpUmZqd1ZTZHVMc3pDLXh5MzRQUkYteFhvQUE5dEtfb2pUaDhJUlNHNExFeUJQdlhiVG4wZjU0MG9rdVUtWHBwblF4MnFxdzFrVVhlcHVpQzFtSVNyUmNLdlJJelhhUFJMSk5YbzNpbElidWlMcTZaT0VyQko1NWJoVHBDQzY0dG1FVmEwNUw1amFqSENleXM0bTBQa1NicXRZcVdkelozRV9qbk1fZkducVJKdzBvR0NGMGJVdGRlaFNwcGxTRlB5bmd5M0tRQUVDUDhK",
-      "id": "rf-1772527157525-bhdt12ajz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T08:39:17.520Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1011,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T15:22:39.538Z"
+  "lastUpdated": "2026-03-08T16:26:33.543Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-03T16:44:49.067Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-03-03T17:42:46.200Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-08T15:22:39.536Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-08T16:26:33.541Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $1 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Former Carlyle police chief connected to?",
     "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FBI surveillance network breach investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +555,10 @@
     "Where did the Undisclosed allegedly go in Riviera Beach marina redevelopment project investigation?",
     "Where did the Undisclosed allegedly go in Trump administration's new National Cybersecurity Strategy?",
     "Where did the $ allegedly go in Minnesota Child Care Fraud Probe?",
-    "Where did the $ allegedly go in Baxter Drug Trafficking Arrest?"
+    "Where did the $ allegedly go in Baxter Drug Trafficking Arrest?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $X allegedly go in Minnesota Child Care Fraud Probe?",
+    "Where did the $X allegedly go in Quality Learning Center?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1369,
-    "articlesProcessed": 68250,
-    "redFlagsFound": 1623,
+    "totalScans": 1370,
+    "articlesProcessed": 68300,
+    "redFlagsFound": 1625,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?",
-        "Where did the $0 allegedly go in FBI Surveillance Network Breach?",
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $1 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Former Carlyle police chief connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-08T15:22:39.536Z",
-  "lastUpdated": "2026-03-08T15:22:39.537Z"
+  "lastReflection": "2026-03-08T16:26:33.541Z",
+  "lastUpdated": "2026-03-08T16:26:33.541Z"
 }
