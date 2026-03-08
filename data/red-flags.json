@@ -1,23 +1,42 @@
 {
   "flags": [
     {
-      "type": "Federal investigation",
-      "description": "Minnesota is facing multiple federal investigations, including a probe into child care fraud and a lawsuit over its handling of a transgender volleyball scandal.",
-      "insight": "I notice a pattern of federal investigations into Minnesota, which suggests a potential lack of oversight or accountability in the state. I recommend further investigation into the state's handling of federal funds and its compliance with federal regulations.",
+      "type": "federal investigation",
+      "description": "The FBI is investigating suspicious cyber activity on a system holding sensitive surveillance information",
+      "insight": "This could indicate a significant breach or potential insider threat within the FBI or a related agency. Further investigation into the nature of the cyber activity and entities involved is warranted.",
       "entities": [
-        "State of Minnesota",
-        "US government"
+        "FBI"
       ],
-      "confidence": 80,
+      "confidence": 75,
       "priority": "high",
-      "source": "AOL News",
-      "sourceUrl": "https://www.aol.com/news/minnesota-must-provide-documents-to-us-government-in-child-care-fraud-probe-by-next-week",
-      "id": "rf-1772943335032-lsfhp5uxs",
+      "source": "Federal News Network",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVExjc3Nick5DUTA2cDNvTTkwNW1RQS1nQ2J6ZFRSenlLT21tOFpHOE1EajJmcjNFaEVwUlpISlB4WGN1elNNVlVKb0RTRUpwZVZxOXJ1czNYOXIxek14bno0SVQ2YWhMLTE5SmFoRC1BZTVsUnRJMF82Zjh1czNJb09Ya3BVZ2VXZkxCZEd1bVRFcENoSEJHTnhCc2JMY3RXbkhJcV9xVUlETVJCUVVsQkFDNHh4QjF4by1WaDA2bEE4eVlqNUNhbHVNalVwWDkxZE9Sa0VNQVdDTC1UOTFCMUY2Y0E",
+      "id": "rf-1772948525082-ahccse6bl",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-08T04:15:35.028Z",
+      "detectedAt": "2026-03-08T05:42:05.078Z",
+      "isNew": true
+    },
+    {
+      "type": "child care fraud",
+      "description": "Minnesota must provide documents to US government in child care fraud probe by next week",
+      "insight": "This indicates a significant ongoing investigation into child care fraud in Minnesota, potentially involving state officials or large child care providers. Following the money and identifying key figures will be crucial.",
+      "entities": [
+        "Minnesota",
+        "US government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUkRERmRTM1BqZ2thZXl2Zk5ETFZwM0NSNGp0LW9pWlgxUEVaZzE0T0N4NDdZZFBYOW1SN1NzRVo2cTlyQlFWc0RjX2E5WmRfWlBHdGpSemZGd2k5STU1bGJ6OExvN0x6Y3Y3SzVzU3U5TnFsSGpYRVFHaUhVQWhOWQ",
+      "id": "rf-1772948525082-cofd342vz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T05:42:05.078Z",
       "isNew": true
     },
     {
@@ -965,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T04:21:53.431Z",
       "isNew": false
-    },
-    {
-      "type": "potential terrorism connection",
-      "description": "Potential ties to terrorism being investigated in the Austin bar shooting.",
-      "insight": "This investigation suggests a possible link between the shooting and terrorism, which requires further scrutiny to determine the extent of the connection.",
-      "entities": [
-        "FBI",
-        "Austin bar shooting suspect"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/fbi-probing-whether-iran-attack-motivated-austin-shooter-who-killed-2/2024/03/02/",
-      "id": "rf-1772466088323-l1g6zrwxi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-02T15:41:28.320Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1016,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T04:15:35.028Z"
+  "lastUpdated": "2026-03-08T05:42:05.078Z"
 }

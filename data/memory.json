@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-03T05:48:53.209Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-03T06:50:25.293Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-08T04:15:35.026Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-08T05:42:05.076Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1358,
-    "articlesProcessed": 67700,
-    "redFlagsFound": 1609,
+    "totalScans": 1359,
+    "articlesProcessed": 67750,
+    "redFlagsFound": 1611,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Medicaid fraud in Minnesota?",
-        "Where did the 2,000 digital images gathered allegedly go in Austin mass shooting investigation?",
-        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the unknown allegedly go in FBI investigation into suspicious breach of its networks?",
+        "Where did the unknown allegedly go in CMS investigation into Medicaid fraud in Minnesota?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-08T04:15:35.026Z",
-  "lastUpdated": "2026-03-08T04:15:35.026Z"
+  "lastReflection": "2026-03-08T05:42:05.076Z",
+  "lastUpdated": "2026-03-08T05:42:05.077Z"
 }
