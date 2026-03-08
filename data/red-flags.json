@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation has led to a drug trafficking arrest in Baxter.",
+      "insight": "This arrest may be part of a larger investigation into drug trafficking in the area. Further research is needed to determine the scope of the investigation.",
+      "entities": [
+        "Baxter"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Harlan Enterprise",
+      "sourceUrl": "https://www.harlanenterprise.com/news/federal-investigation-leads-to-a-drug-trafficking-arrest-in-baxter/",
+      "id": "rf-1772994751201-q22p4coum",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-08T18:32:31.196Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The infamous Quality Learning Center in Minnesota is now closed",
       "insight": "The closure of this center may indicate a response to allegations of fraud or misconduct. Further investigation is needed to determine the reasons behind the closure and any potential wrongdoing.",
@@ -962,31 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T18:44:57.802Z",
       "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The Trump administration froze $243 million in Medicaid payments to Minnesota due to fraud concerns.",
-      "insight": "This freeze indicates a significant concern about fraud in Minnesota's Medicaid program, which could have serious implications for healthcare services in the state.",
-      "entities": [
-        "Minnesota",
-        "Trump administration"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/03/03/news/minnesota-sues-federal-government-over-withheld-medicaid-funds",
-      "id": "rf-1772556289073-lgin33dql",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T16:44:49.069Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,6 +993,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-08T17:21:44.670Z"
+  "lastUpdated": "2026-03-08T18:32:31.196Z"
 }
