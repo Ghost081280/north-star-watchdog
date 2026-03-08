@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-03T02:00:17.830Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-03T04:21:53.429Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-07T23:21:21.535Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-08T01:58:36.779Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in FBI investigation into Riviera Beach officials?",
-    "Where did the unknown allegedly go in FBI surveillance network breach?",
     "Where did the unknown allegedly go in Medicaid fraud in Minnesota?",
     "Where did the 2,000 digital images gathered allegedly go in Austin mass shooting investigation?",
     "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Lindsey Halligan connected to?",
     "Where did the $100M allegedly go in Medicaid fraud investigation?",
     "What specific allegations exist against Lindsey Halligan?",
-    "Where did the unknown allegedly go in Federal investigation into Wisconsin school district?"
+    "Where did the unknown allegedly go in Federal investigation into Wisconsin school district?",
+    "Where did the Undisclosed allegedly go in Minnesota Child Care Fraud Probe?",
+    "Where did the Undisclosed allegedly go in FBI Surveillance Network Breach?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1356,
-    "articlesProcessed": 67600,
-    "redFlagsFound": 1607,
+    "totalScans": 1357,
+    "articlesProcessed": 67650,
+    "redFlagsFound": 1608,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the undisclosed allegedly go in Medicaid fraud in Minnesota?",
-        "Where did the undisclosed allegedly go in FBI investigation into Riviera Beach officials?"
+        "Where did the undisclosed allegedly go in FBI investigation into Riviera Beach officials?",
+        "Where did the unknown allegedly go in FBI surveillance network breach?",
+        "Where did the unknown allegedly go in Medicaid fraud in Minnesota?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-07T23:21:21.535Z",
-  "lastUpdated": "2026-03-07T23:21:21.536Z"
+  "lastReflection": "2026-03-08T01:58:36.779Z",
+  "lastUpdated": "2026-03-08T01:58:36.780Z"
 }
