@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI launches terrorism investigation after homemade explosive device ignited outside of NYC Mayor Mamdani's residence",
+      "insight": "This indicates a potential threat to public officials and could be related to larger security concerns.",
+      "entities": [
+        "FBI",
+        "NYC Mayor Mamdani"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdU9MVmJ1VENWQk5mSHI3TGdTd2dUbVRZRjVTbnlCZjVyTExKejRrZ0diMzluR1g2bUlGQUd1ODh1SUJVeEFyRmExNy12VHpVSUZBemFSN2RHQWdsUndkZGV3MU1ZSkhObXhPVVhpRVVwejlpbXVjRzZoYUFfVFZ5YUtUSy14ckNFVHJHdWxjMHZLV1hPSWZnVnFuZkQ5MFdpaExuWHJRSnduOXMzWFlteHg4RWphZ29x0gG-AUFVX3lxTE53bzZESDdCd0NhWjRxaGhwNm10REdJLUh5Y2oxVl92U0pyWDU2WTlpSFIzdENPdXBzcXZQSWNZbXA2TjdGZGNNYnEzeHdWS3BCVlI3NFNVRWtpUk5ONVBHZlRnSi01QkRLWUhGdTNCblZ4TmN6NDloVHlPQWtaTFB1cWRlMDFoSzE1QTFOZGlPNWxfZUM1RFY5aUl1RXNXZ240TmViMkFRT2dnUFlMaG9BMzIzMUY3dWk2RTlRRWc?oc=5",
+      "id": "rf-1773065398800-drt7nyjd8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T14:09:58.797Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The US government has launched an investigation into child care fraud in Minnesota, which has led to the sentencing of at least one defendant and the tossing of a conviction for another.",
       "insight": "I suspect that there may be a larger scheme at play, with multiple individuals and organizations involved in the child care fraud. Further investigation is needed to uncover the full extent of the scheme.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T13:00:13.289Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "terrorism investigation",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T13:00:13.289Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "bribery",
@@ -959,41 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-05T05:46:51.543Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
-      "insight": "The termination of the Feeding Our Future program raises concerns about the oversight and management of nonprofit organizations in Minnesota. Further investigation is needed to determine the extent of the fraud and how it was able to occur.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota AG's office",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://minnesota.reformer.com/2026/03/04/us-house-republicans-grill-walz-ellison-over-fraud-in-minnesota-social-services",
-      "id": "rf-1772656247467-uu0vm61a1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-04T20:30:47.463Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T13:00:13.289Z"
+  "lastUpdated": "2026-03-09T14:09:58.797Z"
 }
