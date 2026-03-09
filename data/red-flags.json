@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota lawmakers are looking into more fraud fixes and updating county technology to prevent fraud.",
+      "insight": "This suggests potential vulnerabilities in current systems and a need for increased oversight.",
+      "entities": [
+        "Minnesota lawmakers",
+        "county technology"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "InForum",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUmsyaVUzLUIwUnR5QUdwaXplVGx3blpBMVR1Zm1MdElEclJiR083c3RIM18zclVxVlVMenZiUEhfd05JNElKY2otZUJMT0JrV3dPX1V2UENBczNheEZ1dk1teVZRZ2NiYzducnBOMEI5MVN0S2FSZzdhdC1IMXgySWpjNHRiRGk4U3E3MDhxSV9nVXNvUjI0aHNmTGZjWUVFTjJNc2VaQ3VhSW0zN2hMYXBmUQ",
+      "id": "rf-1773098828518-kzyyugdrk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T23:27:08.514Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI subpoenas records related to Arizona Senate audit of Maricopa County 2020 election results.",
+      "insight": "This suggests potential issues with election integrity in Arizona and a need for increased oversight.",
+      "entities": [
+        "FBI",
+        "Arizona Senate"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0ZXa0hxVHBKRmhYak1Fc1hack1Nc2RJZ0F5TkpBTmhtbm1vNE1KMFI3YmMyTjNzYUNaRGNLZFNDOWRPSGE4S184NDZYNlBDYW42TTlUb25QeEVjRDNiaUtkdWVvZ1N3UFlfckxJV0R5ZmVNVWl4ZjhxQXIydEFzY3hyejF3cENxSzhnTW1sWDVvdlh4MzJ6NWRTbEhCZw?",
+      "id": "rf-1773098828518-rb9d0mkot",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T23:27:08.514Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI is investigating election fraud in Arizona and other states, with a focus on the 2020 presidential election.",
       "insight": "I notice that the FBI is taking a proactive approach to investigating election fraud, which could indicate a larger pattern of abuse. I recommend further investigation into the Arizona Senate audit and the NY Medicaid providers case to identify potential connections and patterns.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T22:27:26.715Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -133,26 +173,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T14:09:58.797Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The US government has launched an investigation into child care fraud in Minnesota, which has led to the sentencing of at least one defendant and the tossing of a conviction for another.",
-      "insight": "I suspect that there may be a larger scheme at play, with multiple individuals and organizations involved in the child care fraud. Further investigation is needed to uncover the full extent of the scheme.",
-      "entities": [
-        "US government",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL News",
-      "sourceUrl": "https://www.aol.com/news/minnesota-must-provide-documents-to-us-government-in-child-care-fraud-probe-by-next-week/",
-      "id": "rf-1773061213293-ylg3npswn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T13:00:13.289Z",
       "isNew": false
     },
     {
@@ -957,31 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T05:44:15.097Z",
       "isNew": false
-    },
-    {
-      "type": "Potential abuse of power",
-      "description": "Lindsey Halligan's actions as a former U.S. attorney have raised concerns about potential abuse of power",
-      "insight": "I suspect that Halligan's actions may be part of a larger pattern of abuse of power, and further investigation is needed to determine the extent of this issue.",
-      "entities": [
-        "Lindsey Halligan",
-        "Eastern District of Virginia"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1772770361551-70xcghe5k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T04:12:41.548Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T22:27:26.715Z"
+  "lastUpdated": "2026-03-09T23:27:08.514Z"
 }
