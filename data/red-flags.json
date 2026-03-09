@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "The Lake Odessa pharmacy responded to an FBI visit, calling the accusations 'false'.",
+      "insight": "This could indicate potential fraud or wrongdoing at the pharmacy.",
+      "entities": [
+        "Lake Odessa pharmacy"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "WZZM13.com",
+      "sourceUrl": "https://wzzm13.com/news/local/false-accusations-that-were-made-lake-odessa-pharmacy-responds-after-fbi-visit",
+      "id": "rf-1773082312746-lrz4ryjci",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T18:51:52.743Z",
+      "isNew": true
+    },
+    {
       "type": "Suspicious activity",
       "description": "Suspicious device found in NYC, prompting FBI terrorism investigation",
       "insight": "This incident raises concerns about the potential for terrorism in major cities. Further investigation is needed to determine the cause and scope of the incident.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T17:50:53.757Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -957,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-05T21:33:30.121Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigating 'suspicious' cyber activities on critical surveillance network",
-      "insight": "This could indicate a larger issue with cybersecurity or corruption.",
-      "entities": [
-        "FBI",
-        "US government agencies"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNURuUnZ4bk4xZXUwSXktakhWMElMbnVwdVNfYTlqR3k4MHNRS1d4OEVJMVhYQWVjcHNZRHhiUXJyU3Z1aUJnOXhZcjByTl9VZ2VnM2MwMkdLTC1wOGJ5QUkyWDRTck1wdkVDYnNlMGpZaTRSb0o0OVhSMVN4NEpPa3ZLWFhSSTZxQVN3NTVsVllmajdDd3gyNzZMVEp5N7R0VUE?oc=5",
-      "id": "rf-1772742975186-ms09aocso",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T20:36:15.182Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,6 +988,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T17:50:53.757Z"
+  "lastUpdated": "2026-03-09T18:51:52.743Z"
 }
