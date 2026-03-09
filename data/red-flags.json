@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Suspicious activity",
+      "description": "Suspicious device found in NYC, prompting FBI terrorism investigation",
+      "insight": "This incident raises concerns about the potential for terrorism in major cities. Further investigation is needed to determine the cause and scope of the incident.",
+      "entities": [
+        "NYC Mayor Mamdani"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-terrorism-investigation-nyc-mayor-mamdani/",
+      "id": "rf-1773078653761-aaw9dqdq5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T17:50:53.757Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Minnesota must provide documents to US government in child care fraud probe",
       "insight": "This could indicate a larger issue with Minnesota's child care program and potential fraud",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T16:58:46.863Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "FBI raid",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T16:58:46.863Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -958,26 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-05T20:36:15.182Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated due to the fraud scandal.",
-      "insight": "This termination may be a red flag for potential lack of oversight or misuse of funds. Further investigation is needed to determine the cause of the termination and the impact on the state's social services programs.",
-      "entities": [
-        "Feeding Our Future",
-        "State of Minnesota"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/feeding-our-future-jury-tampering-case-sentencing/",
-      "id": "rf-1772725788530-qadxmb9tt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T15:49:48.527Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,13 +985,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T16:58:46.863Z"
+  "lastUpdated": "2026-03-09T17:50:53.757Z"
 }

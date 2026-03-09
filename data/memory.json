@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-04T16:41:39.236Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-04T17:38:14.542Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-09T16:58:46.861Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-09T17:50:53.755Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
-    "Where did the $250M allegedly go in Minnesota welfare fraud scandal?",
-    "Where did the Unknown allegedly go in Child care fraud probe?",
     "What other organizations is Feeding Our Future Juror connected to?",
     "Where did the Undisclosed allegedly go in Minnesota Child Care Fraud Probe?",
     "Where did the Undisclosed allegedly go in FBI Pen Register and Trap and Trace System Breach?",
@@ -558,7 +555,10 @@
     "What other organizations is Somali individual connected to?",
     "Where did the Unknown allegedly go in FBI terrorism investigation?",
     "What specific allegations exist against Not Found?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Tim O'Malley connected to?",
+    "Where did the $100M allegedly go in Minnesota Child Care Fraud Probe?",
+    "Where did the Unknown allegedly go in FBI Terrorism Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1389,
-    "articlesProcessed": 69250,
-    "redFlagsFound": 1647,
+    "totalScans": 1390,
+    "articlesProcessed": 69300,
+    "redFlagsFound": 1648,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "FBI raid",
-          "description": "FBI raids homes of 2 Bucks County men accused of throwing explosive device in NYC protest",
-          "insight": "This could indicate a potential threat to public safety and national security",
-          "entities": [
-            "Two Bucks County men"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "6abc Philadelphia",
-          "sourceUrl": "https://6abc.com/fbi-raids-homes-of-2-bucks-county-men-accused-of-throwing-explosive-device-in-nyc-protest/13854214/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in Riviera Beach Officials Investigation?",
         "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
-        "Where did the $250M allegedly go in Minnesota welfare fraud scandal?"
+        "Where did the $250M allegedly go in Minnesota welfare fraud scandal?",
+        "Where did the Unknown allegedly go in Child care fraud probe?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-09T16:58:46.861Z",
-  "lastUpdated": "2026-03-09T16:58:46.862Z"
+  "lastReflection": "2026-03-09T17:50:53.755Z",
+  "lastUpdated": "2026-03-09T17:50:53.756Z"
 }
