@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to funding cuts",
+      "insight": "I see a pattern of potential program termination due to funding cuts, which could be related to the Minnesota fraud cases.",
+      "entities": [
+        "Minnesota DHS",
+        "Feeding Our Future"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Athol Daily News",
+      "sourceUrl": "https://www.atholdailynews.com/news/we-don-t-know-what-to-expect-frcog-reflects-on-funding-cuts-and-continued-uncertainty",
+      "id": "rf-1773039782299-fofk58wfa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T07:03:02.295Z",
+      "isNew": true
+    },
+    {
       "type": "Bribery Scheme",
       "description": "A bribery scheme was uncovered in the Feeding Our Future case, leading to the sentencing of a defendant.",
       "insight": "This bribery scheme may be indicative of a larger issue with corruption in the child care system. Further investigation is needed to determine the extent of the corruption and to identify any other individuals or organizations involved.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T05:57:06.475Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Welfare fraud",
@@ -960,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-04T06:44:33.653Z",
       "isNew": false
-    },
-    {
-      "type": "alleged misconduct",
-      "description": "Allegations of unlawful force by Greg Bovino and federal immigration officers",
-      "insight": "These allegations suggest a potential pattern of misconduct by law enforcement officials. Further investigation into the actions of Bovino and ICE officers is necessary to determine the extent of the issue.",
-      "entities": [
-        "Greg Bovino",
-        "ICE officers"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/03/03/Minnesota-investigation-Greg-Bovino-ICE-officers",
-      "id": "rf-1772573574487-9lw2w7w6j",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T21:32:54.484Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,12 +988,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T05:57:06.475Z"
+  "lastUpdated": "2026-03-09T07:03:02.295Z"
 }
