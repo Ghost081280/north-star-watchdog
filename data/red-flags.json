@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Minnesota must provide documents to US government in child care fraud probe",
+      "insight": "This could indicate a larger issue with Minnesota's child care program and potential fraud",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/minnesota-provide-documents-us-government-1680221777.html",
+      "id": "rf-1773075526866-n04vhxa63",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T16:58:46.863Z",
+      "isNew": true
+    },
+    {
+      "type": "FBI raid",
+      "description": "FBI raids homes of 2 Bucks County men accused of throwing explosive device in NYC protest",
+      "insight": "This could indicate a potential threat to public safety and national security",
+      "entities": [
+        "Two Bucks County men"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "6abc Philadelphia",
+      "sourceUrl": "https://6abc.com/fbi-raids-homes-of-2-bucks-county-men-accused-of-throwing-explosive-device-in-nyc-protest/13854214/",
+      "id": "rf-1773075526866-yz5eatpwj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T16:58:46.863Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI launches terrorism investigation after homemade explosive device ignited outside of NYC Mayor Mamdani's residence",
       "insight": "This indicates a potential threat to public officials and could be related to larger security concerns.",
@@ -940,45 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-05T15:49:48.527Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "DHS report says non-emergent medical transport services dropped by more than half in 2025",
-      "insight": "Potential pattern of program changes and impacts on services",
-      "entities": [
-        "DHS",
-        "Minnesota"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Black Chronicle",
-      "sourceUrl": "https://www.theblackchronicle.com/news/dhs-report-says-non-emergent-medical-transport-services-dropped-by-more-than-half-in-2025",
-      "id": "rf-1772719351633-cvvr0ufu4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T14:02:31.630Z",
-      "isNew": false
-    },
-    {
-      "type": "bribery",
-      "description": "A suspect has been sentenced for bribery in connection with Feeding Our Future.",
-      "insight": "This suggests that there may be a larger problem with corruption and bribery in the state. Further investigation is needed to determine the extent of the problem.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1772689611547-yxg0yhact",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T05:46:51.543Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T15:57:35.817Z"
+  "lastUpdated": "2026-03-09T16:58:46.863Z"
 }
