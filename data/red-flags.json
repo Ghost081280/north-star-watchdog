@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Bribery Scheme",
+      "description": "A bribery scheme was uncovered in the Feeding Our Future case, leading to the sentencing of a defendant.",
+      "insight": "This bribery scheme may be indicative of a larger issue with corruption in the child care system. Further investigation is needed to determine the extent of the corruption and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://www.redlakenationnews.com/first-defendant-sentenced-for-scheme-to-bribe-feeding-our-future-juror/",
+      "id": "rf-1773035826478-s5imj74qd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T05:57:06.475Z",
+      "isNew": true
+    },
+    {
       "type": "Welfare fraud",
       "description": "Ringleader of $250M Minnesota welfare fraud scandal moans that she’s ‘lost everything’",
       "insight": "This case highlights the need for increased oversight and accountability in government programs. I will investigate further to see if there are any connections between this case and other fraud investigations in Minnesota.",
@@ -961,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-03T21:32:54.484Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Minnesota DHS reveals new details investigations into NEMT providers",
-      "insight": "The investigation into NEMT providers suggests potential fraud and abuse in the program. This could indicate a larger issue with oversight and management of these services.",
-      "entities": [
-        "Minnesota DHS",
-        "NEMT providers"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWXJsVkRKMFZQNWh4c2FZc2l2MkFXWm1NSTVILWpmU0Vhand5cXlHVFVEMFhhWmdJeDFLMmRMdEM3aEhLVzdYUXJ1ZDU4VUxPV2xWSGMtdjJrRG5yRzROVWxQN0poNDBNb0xJTEpLUUZqMVdHa0FFajBaSXB4XzN4OGEwVTNQenI2Q2swYjZOMy14b1pNU1RKaVBvT3pmdzZKZnM3dnQxQnc?oc=5",
-      "id": "rf-1772569861129-q1proe57v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-03T20:31:01.125Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T04:24:22.521Z"
+  "lastUpdated": "2026-03-09T05:57:06.475Z"
 }
