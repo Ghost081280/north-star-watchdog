@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "bribery",
+      "description": "A Somali individual was convicted of ripping off Minnesota taxpayers, but the conviction was later tossed.",
+      "insight": "This case raises concerns about the vulnerability of Minnesota's taxpayer funds to fraudulent activities.",
+      "entities": [
+        "Abdirizak Yousuf",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/article/2026/03/08/judge-tosses-conviction-of-somali-who-ripped-off-minnesota-taxpayers/31111111",
+      "id": "rf-1773049804243-a4qjkpaa0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T09:50:04.239Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud investigation",
+      "description": "An investigation into Bright Horizons Family Solutions Inc. is ongoing.",
+      "insight": "This investigation may uncover potential fraudulent activities related to family solutions services.",
+      "entities": [
+        "Bright Horizons Family Solutions Inc."
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Business Wire",
+      "sourceUrl": "https://www.businesswire.com/news/home/20260309005618/en/bfam-investors-have-opportunity-to-join-bright-horizons-family-solutions-inc.-fraud-investigation-with-the-schall-law-firm",
+      "id": "rf-1773049804243-8klngwuxq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T09:50:04.239Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Cover-Up",
       "description": "Judge tosses conviction of Somali who ripped off Minnesota taxpayers, raising concerns about potential cover-up or inadequate investigation",
       "insight": "This development suggests that there may be more to the story than initially meets the eye. Further investigation is needed to determine the extent of the fraud and potential involvement of other individuals or organizations.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T08:42:21.713Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -940,51 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-04T14:40:20.010Z",
       "isNew": false
-    },
-    {
-      "type": "Potential cover-up",
-      "description": "Allegations that Governor Tim Walz and Attorney General Keith Ellison knew about the fraud for years but failed to act",
-      "insight": "This raises concerns about the potential for a cover-up and the need for further investigation into the actions of state officials",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "House report",
-      "sourceUrl": "https://www.kare11.com/article/news/investigations/house-report-accuses-minnesota-gov-walz-ag-ellison-of-failing-to-stop-fraud/89-ebf711a7- afc5-45a2-8f3f-55a441f7b4d5",
-      "id": "rf-1772632687842-yunenji7k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-04T13:58:07.838Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota sues to block Trump administration’s holding back of Medicaid funds",
-      "insight": "This action indicates a significant dispute over healthcare funding and could impact thousands of residents.",
-      "entities": [
-        "Minnesota",
-        "Trump administration"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Washington Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTDVLb0dXS0dIR05kX0dhekpITzNIdVhES1VJd1k3SndoMmV0Zk51RkN6b193RUZScG5HQVZEQWhmT0g5Qnh2WmFWTVpzQzFRTXMzcUxHcW9wd21JcXlscGNUUzc5QzQ1VXBrOWplaEh3aXdTeHZnYmFraFZJOGhBM1d0NVNEcmVfVWxFRjBXU25yN3lWdXk1WnpDTi01STlpblk1M240cmxyeGRFZExR?oc=5",
-      "id": "rf-1772613459882-ox88cxk56",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-04T08:37:39.877Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,6 +991,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T08:42:21.713Z"
+  "lastUpdated": "2026-03-09T09:50:04.239Z"
 }
