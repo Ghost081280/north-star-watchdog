@@ -1,23 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal_investigation",
-      "description": "Potential involvement of federal officials in Minnesota fraud investigations",
-      "insight": "This could indicate a larger pattern of corruption",
+      "type": "federal investigation",
+      "description": "The US government has launched an investigation into child care fraud in Minnesota, which has led to the sentencing of at least one defendant and the tossing of a conviction for another.",
+      "insight": "I suspect that there may be a larger scheme at play, with multiple individuals and organizations involved in the child care fraud. Further investigation is needed to uncover the full extent of the scheme.",
       "entities": [
-        "Walz",
-        "Ilhan Omar"
+        "US government",
+        "Minnesota"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/what-did-ilhan-omar-know-1b-2026-03-08",
-      "id": "rf-1773056053788-7jp5m4pxx",
+      "source": "AOL News",
+      "sourceUrl": "https://www.aol.com/news/minnesota-must-provide-documents-to-us-government-in-child-care-fraud-probe-by-next-week/",
+      "id": "rf-1773061213293-ylg3npswn",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-09T11:34:13.785Z",
+      "detectedAt": "2026-03-09T13:00:13.289Z",
+      "isNew": true
+    },
+    {
+      "type": "terrorism investigation",
+      "description": "The FBI has launched a terrorism investigation into a homemade explosive device ignited outside NYC Mayor Mamdani's residence.",
+      "insight": "I suspect that this incident may be linked to a larger terrorist organization or plot. Further investigation is needed to determine the motivations behind the attack and to identify any potential co-conspirators.",
+      "entities": [
+        "FBI",
+        "NYC Mayor Mamdani"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-launches-terrorism-investigation-after-homemade-explosive-device-ignited-outside-of-nyc-mayor-mamdanis-residence/",
+      "id": "rf-1773061213293-qzx5ojv16",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T13:00:13.289Z",
       "isNew": true
     },
     {
@@ -960,31 +980,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-04T20:30:47.463Z",
       "isNew": false
-    },
-    {
-      "type": "Alleged cover-up",
-      "description": "House Oversight Committee report accuses Walz and Ellison of covering up fraud",
-      "insight": "This allegation suggests a potential pattern of wrongdoing and obstruction of justice. Further investigation is needed to determine the validity of the claims.",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WSGW 790 AM & 100.5 FM",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONUlSTFp2Z2VIdmM1aFZDdDI1UlJQbTNWT2FvLWZvRnpFbTlBN0s5bVRXd2NVM1BzMGp3WmxZbnFRdVMxYkNUUXVKWGVIWlA5VlZva2tmUDk4T2RIcFlFNk9rTGtIZGZ1Y0RNZ0J2dDFoSmJMbmJpSy1YM3E3eGNreVZBZS14bkxJUmJKT3lXUDNTaEMwX2pyMA",
-      "id": "rf-1772635220014-rsgktcaut",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-04T14:40:20.010Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +992,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T11:34:13.785Z"
+  "lastUpdated": "2026-03-09T13:00:13.289Z"
 }
