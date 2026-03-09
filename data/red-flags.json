@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating election fraud in Arizona and other states, with a focus on the 2020 presidential election.",
+      "insight": "I notice that the FBI is taking a proactive approach to investigating election fraud, which could indicate a larger pattern of abuse. I recommend further investigation into the Arizona Senate audit and the NY Medicaid providers case to identify potential connections and patterns.",
+      "entities": [
+        "Arizona Senate",
+        "NY Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/03/09/politics/arizona-senate-audit-fbi-investigation/index.html",
+      "id": "rf-1773095246718-52sbv93pg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T22:27:26.715Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating the 2020 Maricopa County election results, and there are concerns about the integrity of the electoral process.",
       "insight": "I suspect that there may be a larger pattern of election fraud at play, and I would like to investigate further to see if there are any connections between this case and other similar cases.",
@@ -957,29 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T04:12:41.548Z",
       "isNew": false
-    },
-    {
-      "type": "suspicious activity",
-      "description": "FBI detected suspicious activity in its computer networks",
-      "insight": "This could indicate a potential security breach or hacking attempt. Further investigation is needed to determine the cause and extent of the activity.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC 5 Dallas-Fort Worth",
-      "sourceUrl": "https://www.nbcdfw.com/news/local/fbi-investigating-suspicious-activity-in-computer-networks/2974111/",
-      "id": "rf-1772762285767-0dp79midf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T01:58:05.764Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T21:31:47.843Z"
+  "lastUpdated": "2026-03-09T22:27:26.715Z"
 }
