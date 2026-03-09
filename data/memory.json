@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-04T14:40:20.008Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-04T15:39:21.354Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-09T14:09:58.795Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-09T15:57:35.815Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1387,
-    "articlesProcessed": 69150,
-    "redFlagsFound": 1644,
+    "totalScans": 1388,
+    "articlesProcessed": 69200,
+    "redFlagsFound": 1645,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in Child Care Fraud Probe?",
         "Where did the Undisclosed allegedly go in Riviera Beach Officials Investigation?",
-        "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?"
+        "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
+        "Where did the $250M allegedly go in Minnesota welfare fraud scandal?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-09T14:09:58.795Z",
-  "lastUpdated": "2026-03-09T14:09:58.796Z"
+  "lastReflection": "2026-03-09T15:57:35.815Z",
+  "lastUpdated": "2026-03-09T15:57:35.816Z"
 }
