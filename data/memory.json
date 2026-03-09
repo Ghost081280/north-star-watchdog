@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-04T08:37:39.875Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-04T09:39:16.500Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-03-09T07:03:02.293Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-09T08:42:21.711Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Minnesota Child Care Fraud Probe?",
-    "Where did the $X allegedly go in Quality Learning Center?",
     "Where did the Unknown allegedly go in Minnesota child care fraud probe?",
     "Where did the Unknown allegedly go in Trump administration's National Cybersecurity Strategy?",
     "What other organizations is Former Carlyle police chief connected to?",
@@ -558,7 +556,9 @@
     "Where did the Undisclosed allegedly go in FBI Pen Register and Trap and Trace System Breach?",
     "What other organizations is First Defendant connected to?",
     "Where did the $0 allegedly go in Feeding Our Future Investigation?",
-    "Where did the $0 allegedly go in Minnesota Taxpayer Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Taxpayer Fraud Investigation?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Where did the $1B allegedly go in Minnesota Welfare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1381,
-    "articlesProcessed": 68850,
-    "redFlagsFound": 1635,
+    "totalScans": 1382,
+    "articlesProcessed": 68900,
+    "redFlagsFound": 1636,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ allegedly go in Minnesota Child Care Fraud Probe?",
-        "Where did the $ allegedly go in Baxter Drug Trafficking Arrest?",
-        "What other organizations is Tim Walz connected to?"
+        "Where did the $X allegedly go in Minnesota Child Care Fraud Probe?",
+        "Where did the $X allegedly go in Quality Learning Center?",
+        "Where did the Unknown allegedly go in Minnesota child care fraud probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-09T07:03:02.293Z",
-  "lastUpdated": "2026-03-09T07:03:02.294Z"
+  "lastReflection": "2026-03-09T08:42:21.711Z",
+  "lastUpdated": "2026-03-09T08:42:21.712Z"
 }
