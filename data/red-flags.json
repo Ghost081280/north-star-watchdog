@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating the 2020 Maricopa County election results, and there are concerns about the integrity of the electoral process.",
+      "insight": "I suspect that there may be a larger pattern of election fraud at play, and I would like to investigate further to see if there are any connections between this case and other similar cases.",
+      "entities": [
+        "Maricopa County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/09/fbi-eyes-arizona-senate-audit-of-2020-maricopa-county-election-results-republican-says.html",
+      "id": "rf-1773085209388-9ergr7odm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-09T19:40:09.384Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "The Lake Odessa pharmacy responded to an FBI visit, calling the accusations 'false'.",
       "insight": "This could indicate potential fraud or wrongdoing at the pharmacy.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T18:51:52.743Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Suspicious activity",
@@ -957,25 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T01:58:05.764Z",
       "isNew": false
-    },
-    {
-      "type": "potential misuse of federal funds",
-      "description": "A non-profit in Minnesota is accused of misusing $250 million in federal funds meant for feeding underprivileged children.",
-      "insight": "This case highlights the need for increased oversight and accountability in the use of federal funds. I will continue to monitor this case and look for similar patterns of potential misuse.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI investigation",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1772746410125-o7pba945k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-05T21:33:30.121Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,6 +989,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T18:51:52.743Z"
+  "lastUpdated": "2026-03-09T19:40:09.384Z"
 }
