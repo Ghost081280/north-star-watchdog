@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-05T23:50:15.354Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-06T01:58:05.762Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-10T20:32:26.784Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-10T21:28:24.089Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Nancy Guthrie?",
-    "What other organizations is Trump connected to?",
-    "Where did the $100M allegedly go in Medicaid Funding Freeze Investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "Where did the $100M+ allegedly go in Feeding Our Future Fraud?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Jeffrey Epstein connected to?",
@@ -558,7 +554,11 @@
     "Where did the $1M allegedly go in Lewiston Health Provider Tax Fraud?",
     "What other organizations is Tate Reeves connected to?",
     "What specific allegations exist against Tate Reeves?",
-    "What specific allegations exist against Walz?"
+    "What specific allegations exist against Walz?",
+    "What other organizations is Donald Trump connected to?",
+    "Where did the Unknown allegedly go in Minnesota Human Services System Overhaul?",
+    "Where did the Unknown allegedly go in FBI Investigation into ISIS-inspired Terrorism?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1413,
-    "articlesProcessed": 70450,
-    "redFlagsFound": 1673,
+    "totalScans": 1414,
+    "articlesProcessed": 70500,
+    "redFlagsFound": 1674,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Keith Ellison connected to?",
-        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Scandal?",
-        "Are any of these 2 figures connected to each other?"
+        "What specific allegations exist against Nancy Guthrie?",
+        "What other organizations is Trump connected to?",
+        "Where did the $100M allegedly go in Medicaid Funding Freeze Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-10T20:32:26.784Z",
-  "lastUpdated": "2026-03-10T20:32:26.785Z"
+  "lastReflection": "2026-03-10T21:28:24.089Z",
+  "lastUpdated": "2026-03-10T21:28:24.090Z"
 }
