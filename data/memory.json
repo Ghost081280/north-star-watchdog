@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-05T19:51:31.289Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-05T20:36:15.180Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-10T17:00:33.075Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-10T17:54:57.804Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Feeding Our Future fraud?",
-    "What other organizations is Feeding Our Future officials connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Unknown allegedly go in Arizona voting investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in FBI Investigation into ISIS-inspired terrorism?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in FBI Investigation into NYC Terror Plot?"
+    "Where did the Unknown allegedly go in FBI Investigation into NYC Terror Plot?",
+    "Where did the $0 allegedly go in Minnesota Human Services Fraud Investigation?",
+    "Where did the $0 allegedly go in FBI Investigation into NYC 'ISIS-inspired Terrorists'?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1409,
-    "articlesProcessed": 70250,
-    "redFlagsFound": 1668,
+    "totalScans": 1410,
+    "articlesProcessed": 70300,
+    "redFlagsFound": 1670,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "FBI investigation into 'ISIS-inspired terrorists' who threw IEDs in NYC",
+          "insight": "As an investigator, I see a pattern of potential terrorism and violent crimes, which the FBI is actively investigating.",
+          "entities": [
+            "FBI",
+            "NYC"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "FBI's investigation",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ3RmZ1VkV2ViSnRmSU1HX1JfZjVLaTE2MThqOE5lRWlqemNmOUpEbXlheUo1NnBKanltLU03TklST3RDSUpPQUpHcXkyY0ZpcU5jajREVXJSeGt5d2tTQ0Z3a0JKUXVMYXc0bVNTT3VOYjVaSmRTdGxHVjlvU1NodzlRckdkT3AtakxJdmY0QU9jeDFBeFVZcNIBoAFBVV95cUxOTU0xd29ENDBqcnlGR1FlNkUteXhVRkRhclc1NWRaI0VQYzBJXzJVNHp1aUU5RTNKLVBhcnR1Y0MyckY0U1drVUVrRmJ0Z1AtOWhqWndHdFZzbmk5NWdoWklUVDRnMTFidWdYUzRwaEpNUG9Ra3JVZUtLR3ZkTTFvRl9VX1NoeFVzeTYtMlZlTS0tVmoyTjh0VFJIWWZTakp3"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future connected to?",
-        "Where did the Unknown allegedly go in FBI Election Integrity Investigation?",
-        "Where did the Unknown allegedly go in Minnesota DHS Payment Freeze?"
+        "Where did the $100M+ allegedly go in Feeding Our Future fraud?",
+        "What other organizations is Feeding Our Future officials connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-10T17:00:33.075Z",
-  "lastUpdated": "2026-03-10T17:00:33.076Z"
+  "lastReflection": "2026-03-10T17:54:57.804Z",
+  "lastUpdated": "2026-03-10T17:54:57.805Z"
 }

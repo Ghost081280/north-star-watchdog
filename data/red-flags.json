@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI investigation into 'ISIS-inspired terrorists' who threw IEDs in NYC",
+      "insight": "As an investigator, I see a pattern of potential terrorism and violent crimes, which the FBI is actively investigating.",
+      "entities": [
+        "FBI",
+        "NYC"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FBI's investigation",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ3RmZ1VkV2ViSnRmSU1HX1JfZjVLaTE2MThqOE5lRWlqemNmOUpEbXlheUo1NnBKanltLU03TklST3RDSUpPQUpHcXkyY0ZpcU5jajREVXJSeGt5d2tTQ0Z3a0JKUXVMYXc0bVNTT3VOYjVaSmRTdGxHVjlvU1NodzlRckdkT3AtakxJdmY0QU9jeDFBeFVZcNIBoAFBVV95cUxOTU0xd29ENDBqcnlGR1FlNkUteXhVRkRhclc1NWRaI0VQYzBJXzJVNHp1aUU5RTNKLVBhcnR1Y0MyckY0U1drVUVrRmJ0Z1AtOWhqWndHdFZzbmk5NWdoWklUVDRnMTFidWdYUzRwaEpNUG9Ra3JVZUtLR3ZkTTFvRl9VX1NoeFVzeTYtMlZlTS0tVmoyTjh0VFJIWWZTakp3",
+      "id": "rf-1773165297809-kei0drtob",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T17:54:57.806Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Potential Medicaid fraud in Minnesota",
       "insight": "I suspect that there may be a larger scheme involving Medicaid fraud in Minnesota, and I would like to investigate further. The fact that Governor Walz is announcing a plan to transform the state's human services system suggests that there may be a significant problem that needs to be addressed.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T17:00:33.078Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -958,40 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T15:36:19.774Z",
       "isNew": false
-    },
-    {
-      "type": "ethics investigation",
-      "description": "Investigation into Lindsey Halligan's ethics violations",
-      "insight": "As a former U.S. Attorney, Halligan's actions have raised concerns. This investigation could potentially lead to further scrutiny of her past actions and potentially impact her professional reputation.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar Association"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://washingtonexaminer.com/2026/03/06/lindsey-halligan-under-investigation-by-florida-bar-after-doj-controversy/",
-      "id": "rf-1772805319680-je8ijoyfs",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T13:55:19.677Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T17:00:33.078Z"
+  "lastUpdated": "2026-03-10T17:54:57.806Z"
 }
