@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-05T09:41:07.914Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-05T11:33:17.387Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-10T09:42:11.181Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-10T10:37:50.867Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tim O'Malley?",
-    "What other organizations is Terry Rozier connected to?",
-    "What specific allegations exist against Terry Rozier?",
-    "Where did the Unknown allegedly go in FBI Investigation into 2020 Maricopa County Election?",
     "Where did the Unknown allegedly go in Feeding Our Future Juror Bribery Scheme?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $0 allegedly go in FBI Election Investigation in Maricopa County?",
@@ -558,7 +554,11 @@
     "Where did the $100M+ allegedly go in Feeding Our Future fraud?",
     "What other organizations is Feeding Our Future officials connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the Unknown allegedly go in Arizona voting investigation?"
+    "Where did the Unknown allegedly go in Arizona voting investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Scandal?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1403,
-    "articlesProcessed": 69950,
-    "redFlagsFound": 1662,
+    "totalScans": 1404,
+    "articlesProcessed": 70000,
+    "redFlagsFound": 1663,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Tim O'Malley connected to?",
-        "Where did the $100M allegedly go in Minnesota Child Care Fraud Probe?",
-        "Where did the Unknown allegedly go in FBI Terrorism Investigation?"
+        "What specific allegations exist against Tim O'Malley?",
+        "What other organizations is Terry Rozier connected to?",
+        "What specific allegations exist against Terry Rozier?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-10T09:42:11.181Z",
-  "lastUpdated": "2026-03-10T09:42:11.182Z"
+  "lastReflection": "2026-03-10T10:37:50.867Z",
+  "lastUpdated": "2026-03-10T10:37:50.867Z"
 }

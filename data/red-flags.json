@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "DHS payment freeze nearing 100 days, affecting Minnesotans with disabilities",
+      "insight": "This prolonged freeze may indicate systemic issues or potential fraud within the payment system. Further investigation into the cause and potential impacts on vulnerable populations is warranted.",
+      "entities": [
+        "Minnesota DHS",
+        "Disability Services"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "DHS payment freeze",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/dhs-payment-freeze-nears-100-days-minnesotans-disabilities-fear-losing-homes",
+      "id": "rf-1773139070872-fqjwun75n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T10:37:50.868Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "DHS payment freeze nearing 100 days, affecting Minnesotans with disabilities",
       "insight": "This prolonged payment freeze may indicate a larger issue with the DHS payment system, potentially leading to further investigations into fraud or mismanagement.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T09:42:11.183Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "IT systems concerns",
@@ -959,30 +979,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T10:33:26.034Z",
       "isNew": false
-    },
-    {
-      "type": "ethics probe",
-      "description": "Investigation into Lindsey Halligan's actions as former U.S. Attorney",
-      "insight": "This could indicate potential misconduct or ethics violations by Halligan during her tenure as U.S. Attorney.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Daily Beast",
-      "sourceUrl": "https://www.dailybeast.com/2026/03/06/trumps-beauty-queen-under-investigation-by-florida-bar",
-      "id": "rf-1772789832726-wsrhms4lb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T09:37:12.721Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,8 +993,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T09:42:11.183Z"
+  "lastUpdated": "2026-03-10T10:37:50.868Z"
 }
