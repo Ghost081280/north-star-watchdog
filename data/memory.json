@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-04T23:29:34.660Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-05T01:57:20.890Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-09T23:27:08.512Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-10T01:52:31.579Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1B allegedly go in Minnesota Child Care Fraud Probe?",
-    "Where did the N/A allegedly go in FBI Terrorism Investigation?",
     "What other organizations is Walz connected to?",
     "Where did the $1B allegedly go in $1B Welfare Fraud Case?",
     "Where did the $0 allegedly go in Feeding Our Future Fraud?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Feeding Our Future Juror Bribery Scheme?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $0 allegedly go in FBI Election Investigation in Maricopa County?",
-    "Where did the $0 allegedly go in FBI Election Integrity Investigation?"
+    "Where did the $0 allegedly go in FBI Election Integrity Investigation?",
+    "Where did the Unknown allegedly go in Arizona Election Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Pandemic Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1396,
-    "articlesProcessed": 69600,
-    "redFlagsFound": 1654,
+    "totalScans": 1397,
+    "articlesProcessed": 69650,
+    "redFlagsFound": 1655,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "FBI subpoenas records related to Arizona Senate audit of Maricopa County 2020 election results.",
-          "insight": "This suggests potential issues with election integrity in Arizona and a need for increased oversight.",
-          "entities": [
-            "FBI",
-            "Arizona Senate"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "CNBC",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPa0ZXa0hxVHBKRmhYak1Fc1hack1Nc2RJZ0F5TkpBTmhtbm1vNE1KMFI3YmMyTjNzYUNaRGNLZFNDOWRPSGE4S184NDZYNlBDYW42TTlUb25QeEVjRDNiaUtkdWVvZ1N3UFlfckxJV0R5ZmVNVWl4ZjhxQXIydEFzY3hyejF3cENxSzhnTW1sWDVvdlh4MzJ6NWRTbEhCZw?"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B allegedly go in Minnesota Welfare Fraud Investigation?",
         "Where did the $1B allegedly go in Minnesota Child Care Fraud Probe?",
-        "Where did the N/A allegedly go in FBI Terrorism Investigation?"
+        "Where did the N/A allegedly go in FBI Terrorism Investigation?",
+        "What other organizations is Walz connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-09T23:27:08.512Z",
-  "lastUpdated": "2026-03-09T23:27:08.513Z"
+  "lastReflection": "2026-03-10T01:52:31.579Z",
+  "lastUpdated": "2026-03-10T01:52:31.579Z"
 }

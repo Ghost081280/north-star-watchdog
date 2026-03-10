@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Election Tampering",
+      "description": "The FBI's investigation into Arizona's election integrity has raised concerns about potential tampering with the electoral process.",
+      "insight": "As an investigator, I am concerned about the potential for widespread election tampering and the need for increased scrutiny of the electoral process. Further investigation is needed to determine the extent of any potential tampering.",
+      "entities": [
+        "Arizona Senate",
+        "Maricopa County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/03/09/politics/fbi-arizona-election-investigation/index.html",
+      "id": "rf-1773107551584-0k3lavfam",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T01:52:31.581Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota lawmakers are looking into more fraud fixes and updating county technology to prevent fraud.",
       "insight": "This suggests potential vulnerabilities in current systems and a need for increased oversight.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T23:27:08.514Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T23:27:08.514Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -958,29 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T06:45:30.249Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Lindsey Halligan under investigation by Florida Bar",
-      "insight": "This investigation could lead to further scrutiny of Halligan's actions as a former U.S. Attorney, potentially uncovering more widespread fraud or corruption.",
-      "entities": [
-        "Lindsey Halligan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1772775855100-l751z2q9p",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T05:44:15.097Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,9 +991,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-09T23:27:08.514Z"
+  "lastUpdated": "2026-03-10T01:52:31.581Z"
 }
