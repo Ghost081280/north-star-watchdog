@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "DHS payment freeze",
+      "insight": "The DHS payment freeze has left Minnesotans with disabilities fearing loss of homes.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes",
+      "id": "rf-1773142329668-xg0wcaprl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T11:32:09.665Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "DHS payment freeze nearing 100 days, affecting Minnesotans with disabilities",
       "insight": "This prolonged freeze may indicate systemic issues or potential fraud within the payment system. Further investigation into the cause and potential impacts on vulnerable populations is warranted.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T10:37:50.868Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -959,41 +978,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T11:28:00.209Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Lindsey Halligan, a former U.S. attorney, is under investigation by the Florida Bar for her actions as a prosecutor.",
-      "insight": "This investigation raises concerns about the integrity of the justice system and the potential for abuse of power. Further investigation is needed to determine the extent of Halligan's actions and whether they were justified.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/lindsey-halligan-under-investigation-by-the-florida-bar/",
-      "id": "rf-1772793206039-niimp8sws",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T10:33:26.034Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T10:37:50.868Z"
+  "lastUpdated": "2026-03-10T11:32:09.665Z"
 }
