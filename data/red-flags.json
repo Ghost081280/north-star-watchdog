@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Department of Human Services is facing scrutiny over a payment freeze affecting individuals with disabilities.",
+      "insight": "The freeze has been ongoing for nearly 100 days, causing concerns about the impact on vulnerable populations.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DHS payment freeze nears 100 days, Minnesotans with disabilities fear losing homes",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes",
+      "id": "rf-1773151357959-jy8jv78hi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T14:02:37.956Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's Medicaid funding freeze has raised concerns about access to healthcare and the impact on vulnerable populations.",
       "insight": "I see a pattern of questionable decisions by the Trump administration, particularly with regards to healthcare funding. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T12:57:26.886Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -958,31 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T13:55:19.677Z",
       "isNew": false
-    },
-    {
-      "type": "ethics_probe",
-      "description": "Lindsey Halligan faces investigation by Florida Bar",
-      "insight": "This raises concerns over Halligan's actions as a prosecutor and potential misconduct.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Politico",
-      "sourceUrl": "https://www.politico.com/news/2026/03/06/lindsey-halligan-florida-bar-investigation-1234567890",
-      "id": "rf-1772796480213-dkuar3nqv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T11:28:00.209Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -991,8 +989,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T12:57:26.886Z"
+  "lastUpdated": "2026-03-10T14:02:37.956Z"
 }
