@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-05T07:41:15.526Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-05T08:40:01.162Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-10T07:40:33.108Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-10T08:40:00.912Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Tim O'Malley connected to?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Probe?",
     "Where did the Unknown allegedly go in FBI Terrorism Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $100M+ allegedly go in Feeding Our Future?",
     "What other organizations is Feeding Our Future connected to?",
     "Where did the Unknown allegedly go in FBI Election Integrity Investigation?",
-    "Where did the Unknown allegedly go in Minnesota DHS Payment Freeze?"
+    "Where did the Unknown allegedly go in Minnesota DHS Payment Freeze?",
+    "Where did the $100M+ allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1401,
-    "articlesProcessed": 69850,
-    "redFlagsFound": 1659,
+    "totalScans": 1402,
+    "articlesProcessed": 69900,
+    "redFlagsFound": 1661,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Somali individual connected to?",
-        "Where did the Unknown allegedly go in FBI terrorism investigation?",
-        "What specific allegations exist against Not Found?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Tim O'Malley connected to?",
+        "Where did the $100M allegedly go in Minnesota Child Care Fraud Probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-10T07:40:33.108Z",
-  "lastUpdated": "2026-03-10T07:40:33.109Z"
+  "lastReflection": "2026-03-10T08:40:00.912Z",
+  "lastUpdated": "2026-03-10T08:40:00.913Z"
 }

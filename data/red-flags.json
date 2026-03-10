@@ -1,22 +1,43 @@
 {
   "flags": [
     {
-      "type": "Payment Freeze",
-      "description": "The Minnesota DHS has frozen payments due to concerns about fraud.",
-      "insight": "This payment freeze may be a sign of a larger issue with the Minnesota DHS's handling of disability payments. Further investigation is needed to determine the cause of the freeze and its impact on Minnesotans with disabilities.",
+      "type": "federal freeze",
+      "description": "DHS payment freeze nears 100 days, Minnesotans with disabilities fear losing homes",
+      "insight": "This indicates potential issues with government program administration and possible fraud vulnerabilities.",
       "entities": [
-        "Minnesota DHS"
+        "Minnesota DHS",
+        "Disability services"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "5 Eyewitness News",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes",
-      "id": "rf-1773128433115-tacrlcfsn",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ2J4VEo3MXRNeGNOeEs1ejhuOXhxaVVsd29idnVWd2dGcTB2c2M4Z1htZllUam8yV2YyQ1MzbFNKckZuSllETnVsSnpxelJxTjh3eFpVelhMbkNObzhaTnB5XzJMR1NWa2lsTUphRlBFZU03MWVwaTZpaDFBMGRFQlZJcEZoN213ZGJ2bWdVSzAzOURZN01kVGsxSXZmZldQdnVXZGdEM2RhLUh0clJDdmk1Y05OTDZLYkE",
+      "id": "rf-1773132000918-g7qdu73mi",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-10T07:40:33.110Z",
+      "detectedAt": "2026-03-10T08:40:00.914Z",
+      "isNew": true
+    },
+    {
+      "type": "IT systems concerns",
+      "description": "Waiting to load: The struggle to address IT systems that may contribute to social services fraud",
+      "insight": "Outdated or inadequate IT systems may be contributing to fraud in social services programs.",
+      "entities": [
+        "Minnesota social services",
+        "IT systems"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "MinnPost",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZV9SWXVXYW1hMGx6dXVHMDFka3hPamJyVmo0cE5UWmZiRGxLQTBCZURnN09zQU11LTQ5MkozUU90Y2w0WmRTWkp1SzN5MUJTU1diOG9iblR1bGJ1UUtwOEtId053eld2LTVacmJ4S29JRHNSekM5NHBqUm9HMlZVd1NGWjFmZkZ2dkdSR05ObUFQVF8ydmI4RlBPTTNlbUpBRmM0b0lucGlMNjVKSjJEeVo4WjB4SHItZUFBalVEMkFzQkVlWWxQWFgzQ3UzeHRQeEwwNjdJeFl6bVF2SmtB",
+      "id": "rf-1773132000918-a4mr8463r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T08:40:00.914Z",
       "isNew": true
     },
     {
@@ -959,39 +980,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T09:37:12.721Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating a former Carlyle police chief for wire fraud and theft",
-      "insight": "This investigation raises concerns about the potential for corruption and abuse of power in law enforcement. Further investigation is needed to determine the extent of the alleged wrongdoing.",
-      "entities": [
-        "Carlyle police chief"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Feds accuse former Carlyle police chief of wire fraud, theft - Capitol News Illinois",
-      "sourceUrl": "https://www.capitolnewsillinois.com/news/feds-accuse-former-carlyle-police-chief-of-wire-fraud-theft",
-      "id": "rf-1772786182727-ezwbu36bw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T08:36:22.723Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T07:40:33.110Z"
+  "lastUpdated": "2026-03-10T08:40:00.914Z"
 }
