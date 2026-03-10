@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Potential Medicaid fraud in Minnesota",
+      "insight": "I suspect that there may be a larger scheme involving Medicaid fraud in Minnesota, and I would like to investigate further. The fact that Governor Walz is announcing a plan to transform the state's human services system suggests that there may be a significant problem that needs to be addressed.",
+      "entities": [
+        "Minnesota DHS",
+        "Governor Walz"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WDIO",
+      "sourceUrl": "https://www.wdio.com/news/gov-walz-announces-plan-to-transform-minnesotas-human-services-system/6475212/",
+      "id": "rf-1773162033081-1vmx6sz9n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T17:00:33.078Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's 'war on fraud' has led to a freeze on Medicaid funding, potentially harming vulnerable populations.",
       "insight": "This could be a sign of a larger pattern of federal overreach and lack of concern for vulnerable populations. Further investigation is needed to determine the impact of this policy.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T15:58:58.541Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -155,26 +175,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T01:52:31.581Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota lawmakers are looking into more fraud fixes and updating county technology to prevent fraud.",
-      "insight": "This suggests potential vulnerabilities in current systems and a need for increased oversight.",
-      "entities": [
-        "Minnesota lawmakers",
-        "county technology"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "InForum",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUmsyaVUzLUIwUnR5QUdwaXplVGx3blpBMVR1Zm1MdElEclJiR083c3RIM18zclVxVlVMenZiUEhfd05JNElKY2otZUJMT0JrV3dPX1V2UENBczNheEZ1dk1teVZRZ2NiYzducnBOMEI5MVN0S2FSZzdhdC1IMXgySWpjNHRiRGk4U3E3MDhxSV9nVXNvUjI0aHNmTGZjWUVFTjJNc2VaQ3VhSW0zN2hMYXBmUQ",
-      "id": "rf-1773098828518-kzyyugdrk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T23:27:08.514Z",
       "isNew": false
     },
     {
@@ -987,12 +987,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T15:58:58.541Z"
+  "lastUpdated": "2026-03-10T17:00:33.078Z"
 }
