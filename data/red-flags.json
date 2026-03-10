@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration's 'war on fraud' has led to a freeze on Medicaid funding, potentially harming vulnerable populations.",
+      "insight": "This could be a sign of a larger pattern of federal overreach and lack of concern for vulnerable populations. Further investigation is needed to determine the impact of this policy.",
+      "entities": [
+        "Trump administration",
+        "Medicaid"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/opinion/cutting-off-the-oxygen-the-clinical-cost-of-trump-s-war-on-fraud/476573573/",
+      "id": "rf-1773158338545-0sj8utdfk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T15:58:58.541Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's Department of Human Services is facing scrutiny over a payment freeze affecting individuals with disabilities.",
       "insight": "The freeze has been ongoing for nearly 100 days, causing concerns about the impact on vulnerable populations.",
@@ -17,25 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T14:02:37.956Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration's Medicaid funding freeze has raised concerns about access to healthcare and the impact on vulnerable populations.",
-      "insight": "I see a pattern of questionable decisions by the Trump administration, particularly with regards to healthcare funding. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Law Commentary",
-      "sourceUrl": "https://www.lawcommentary.com/minnesota-sues-trump-administration-over-medicaid-funding-freeze/",
-      "id": "rf-1773147446889-j5c01ehqg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T12:57:26.886Z",
       "isNew": false
     },
     {
@@ -989,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T14:02:37.956Z"
+  "lastUpdated": "2026-03-10T15:58:58.541Z"
 }
