@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "DHS payment freeze nears 100 days, affecting Minnesotans with disabilities",
+      "insight": "This freeze may indicate a larger issue with the administration of funds or services for vulnerable populations, potentially leading to further investigation.",
+      "entities": [
+        "Minnesota DHS",
+        "Disability Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ2J4VEo3MXRNeGNOeEs1ejhuOXhxaVVsd29idnVWd2dGcTB2c2M4Z1htZllUam8yV2YyQ1MzbFNKckZuSllETnVsSnpxelJxTjh3eFpVelhMbkNObzhaTnB5XzJMR1NWa2lsTUphRlBFZU03MWVwaTZpaDFBMGRFQlZJcEZoN213ZGJ2bWdVSzAzOURZN01kVGsxSXZmZldQdnVXZGdEM2RhLUh0clJDdmk1Y05OTDZLYkE",
+      "id": "rf-1773125182252-aplfjot07",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T06:46:22.249Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "CMS Announces Wide-Ranging Fraud Crackdown",
+      "insight": "The Centers for Medicare & Medicaid Services (CMS) crackdown on fraud suggests a significant issue with program integrity, potentially involving large sums of money.",
+      "entities": [
+        "CMS",
+        "Healthcare Providers"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "JD Supra",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3hvcXRCb0ZDeDV3VGU5RmRDQkVzMDdJdTRZUmNvcXNmTk9zS3IwNC1rQ2JCdUFvT3JIelNUWGZlWGRGSEtQU2xOZGl4dEJWeGFLN1JqS3BFQWh2VUI3bHZhTG1DS0syeURIRmhoekg0eS03N3R4bkNCVHFKQWJIZg",
+      "id": "rf-1773125182252-7cbpkzrbq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T06:46:22.249Z",
+      "isNew": true
+    },
+    {
       "type": "Program termination",
       "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
       "insight": "I suspect that there may be more programs like Feeding Our Future that are vulnerable to fraud. Further investigation is needed to identify these programs and prevent future instances of fraud.",
@@ -154,25 +194,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-09T17:50:53.757Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Minnesota must provide documents to US government in child care fraud probe",
-      "insight": "This could indicate a larger issue with Minnesota's child care program and potential fraud",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/minnesota-provide-documents-us-government-1680221777.html",
-      "id": "rf-1773075526866-n04vhxa63",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T16:58:46.863Z",
       "isNew": false
     },
     {
@@ -958,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T08:36:22.723Z",
       "isNew": false
-    },
-    {
-      "type": "ethics investigation",
-      "description": "Lindsey Halligan is under investigation by the Florida Bar for ethics violations",
-      "insight": "This investigation raises concerns about Halligan's actions as a former U.S. Attorney and her involvement in bringing criminal cases against President Trump's enemies. It may indicate a larger issue with ethics in the U.S. Attorney's office.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/03/06/lindsey-halligan-florida-bar-investigation/",
-      "id": "rf-1772782688504-9xz2jv60o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T07:38:08.500Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,7 +990,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T05:44:09.100Z"
+  "lastUpdated": "2026-03-10T06:46:22.249Z"
 }
