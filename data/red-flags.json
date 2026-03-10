@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration's Medicaid funding freeze has raised concerns about access to healthcare and the impact on vulnerable populations.",
+      "insight": "I see a pattern of questionable decisions by the Trump administration, particularly with regards to healthcare funding. Further investigation is needed to determine the extent of the impact and potential wrongdoing.",
+      "entities": [
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Law Commentary",
+      "sourceUrl": "https://www.lawcommentary.com/minnesota-sues-trump-administration-over-medicaid-funding-freeze/",
+      "id": "rf-1773147446889-j5c01ehqg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T12:57:26.886Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "DHS payment freeze",
       "insight": "The DHS payment freeze has left Minnesotans with disabilities fearing loss of homes.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T11:32:09.665Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -37,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T10:37:50.868Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "DHS payment freeze nearing 100 days, affecting Minnesotans with disabilities",
-      "insight": "This prolonged payment freeze may indicate a larger issue with the DHS payment system, potentially leading to further investigations into fraud or mismanagement.",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.kstp.com/news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes/6435426/",
-      "id": "rf-1773135731188-sohml3i7v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T09:42:11.183Z",
       "isNew": false
     },
     {
@@ -982,16 +982,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T11:32:09.665Z"
+  "lastUpdated": "2026-03-10T12:57:26.886Z"
 }
