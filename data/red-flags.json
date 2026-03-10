@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Program termination",
+      "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
+      "insight": "I suspect that there may be more programs like Feeding Our Future that are vulnerable to fraud. Further investigation is needed to identify these programs and prevent future instances of fraud.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 Eyewitness News",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/prosecutor-departures-cited-in-motion-to-delay-feeding-our-future-fraud-trial/",
+      "id": "rf-1773115734035-ztrg8asjp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-10T04:08:54.031Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Election Tampering",
       "description": "The FBI's investigation into Arizona's election integrity has raised concerns about potential tampering with the electoral process.",
       "insight": "As an investigator, I am concerned about the potential for widespread election tampering and the need for increased scrutiny of the electoral process. Further investigation is needed to determine the extent of any potential tampering.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T01:52:31.581Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T07:38:08.500Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Lindsey Halligan investigation has raised concerns about the use of ethics probes as a means of targeting political enemies",
-      "insight": "I suspect that this investigation may be part of a larger pattern of using ethics probes to target individuals for political gain. Further investigation is needed to determine the extent of this practice.",
-      "entities": [
-        "Lindsey Halligan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1772779530252-c0nd4h0zm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T06:45:30.249Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,7 +991,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-10T01:52:31.581Z"
+  "lastUpdated": "2026-03-10T04:08:54.031Z"
 }

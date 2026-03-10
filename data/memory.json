@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-05T01:57:20.890Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-05T04:13:44.818Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-10T01:52:31.579Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-10T04:08:54.029Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Walz connected to?",
-    "Where did the $1B allegedly go in $1B Welfare Fraud Case?",
     "Where did the $0 allegedly go in Feeding Our Future Fraud?",
     "What other organizations is Somali individual connected to?",
     "Where did the Unknown allegedly go in FBI terrorism investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in FBI Election Investigation in Maricopa County?",
     "Where did the $0 allegedly go in FBI Election Integrity Investigation?",
     "Where did the Unknown allegedly go in Arizona Election Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Pandemic Fraud?"
+    "Where did the Unknown allegedly go in Minnesota Pandemic Fraud?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud trial?",
+    "Where did the N/A allegedly go in FBI election integrity investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1397,
-    "articlesProcessed": 69650,
-    "redFlagsFound": 1655,
+    "totalScans": 1398,
+    "articlesProcessed": 69700,
+    "redFlagsFound": 1656,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1B allegedly go in Minnesota Child Care Fraud Probe?",
-        "Where did the N/A allegedly go in FBI Terrorism Investigation?",
-        "What other organizations is Walz connected to?"
+        "What other organizations is Walz connected to?",
+        "Where did the $1B allegedly go in $1B Welfare Fraud Case?",
+        "Where did the $0 allegedly go in Feeding Our Future Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-10T01:52:31.579Z",
-  "lastUpdated": "2026-03-10T01:52:31.579Z"
+  "lastReflection": "2026-03-10T04:08:54.029Z",
+  "lastUpdated": "2026-03-10T04:08:54.030Z"
 }
