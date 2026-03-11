@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal agents have been spotted at a health care provider in Lewiston, accused of tax fraud",
+      "insight": "This could be a sign of a larger investigation into health care fraud in the state. I recommend tracking this case and looking for connections to other entities or individuals.",
+      "entities": [
+        "Lewiston health care provider"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WGME",
+      "sourceUrl": "https://www.wgme.com/news/federal-agents-raid-maine-health-provider-accused-of-tax-fraud/",
+      "id": "rf-1773258054106-7d4irly48",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T19:40:54.103Z",
+      "isNew": true
+    },
+    {
       "type": "breach of FBI servers",
       "description": "An international cybercriminal breached FBI servers holding Epstein files in 2023, which could have significant implications for ongoing investigations.",
       "insight": "The breach of FBI servers holding sensitive information like the Epstein files raises serious concerns about data security and the potential for compromised investigations. This incident warrants further investigation into the breach and its impact.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T18:52:50.561Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -961,30 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T14:23:09.315Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating suspicious cyber activity on a system holding sensitive surveillance information.",
-      "insight": "This investigation suggests that there may be a vulnerability in the FBI's systems, which could be a concern for national security.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal News Network",
-      "sourceUrl": "https://fedmalnewsnetwork.com/fbi-investigating-suspicious-cyber-activity-on-system-holding-sensitive-surveillance-information/",
-      "id": "rf-1772890684436-yzi247o27",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T13:38:04.432Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +993,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T18:52:50.561Z"
+  "lastUpdated": "2026-03-11T19:40:54.103Z"
 }
