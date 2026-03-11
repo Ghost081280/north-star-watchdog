@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Funding Freeze",
+      "description": "Trump's funding freeze has derailed transit and undermined growth and economic opportunity",
+      "insight": "This could be a sign of a larger issue with federal funding and its impact on local communities. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Streetsblog USA",
+      "sourceUrl": "https://usa.streetsblog.org/2026/03/11/trumps-funding-freeze-has-derailed-transit-undermining-growth-and-economic-opportunity-for-all-americans-report/",
+      "id": "rf-1773247877378-hsy2qis7u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T16:51:17.374Z",
+      "isNew": true
+    },
+    {
       "type": "Data Breach",
       "description": "Foreign hacker reportedly breached FBI servers holding Epstein files in 2023",
       "insight": "This data breach raises significant concerns about the security of sensitive information and the potential consequences of such a breach. Further investigation is needed to determine the extent of the breach and the potential impact on ongoing investigations.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T15:46:46.626Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Wrongdoing",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T15:46:46.626Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -197,26 +216,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-10T17:54:57.806Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration's 'war on fraud' has led to a freeze on Medicaid funding, potentially harming vulnerable populations.",
-      "insight": "This could be a sign of a larger pattern of federal overreach and lack of concern for vulnerable populations. Further investigation is needed to determine the impact of this policy.",
-      "entities": [
-        "Trump administration",
-        "Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/opinion/cutting-off-the-oxygen-the-clinical-cost-of-trump-s-war-on-fraud/476573573/",
-      "id": "rf-1773158338545-0sj8utdfk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T15:58:58.541Z",
       "isNew": false
     },
     {
@@ -989,13 +988,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T15:46:46.626Z"
+  "lastUpdated": "2026-03-11T16:51:17.374Z"
 }
