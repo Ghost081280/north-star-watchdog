@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal investigation into possible FERPA violation by LAUSD Superintendent Alberto Carvalho",
+      "insight": "I notice a pattern of federal investigations into education officials, which may indicate a larger issue with data privacy and security in the education sector.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC Los Angeles",
+      "sourceUrl": "https://www.nbclosangeles.com/news/local/lausd-superintendent-alberto-carvalho-breaks-silence-following-federal-probe/2923411/",
+      "id": "rf-1773208074687-85ha0fdj7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T05:47:54.683Z",
+      "isNew": true
+    },
+    {
       "type": "Potential fraud",
       "description": "Reports of potential fraud within the Minnesota Department of Human Services",
       "insight": "I've noticed a pattern of potential fraud within the department, which warrants further investigation. I recommend tracking the proposed changes to the department and monitoring for any suspicious activity.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T04:09:24.282Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -957,26 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T16:39:37.256Z",
       "isNew": false
-    },
-    {
-      "type": "Epstein files release",
-      "description": "The release of Epstein files has shed light on potential connections between Epstein and high-profile individuals.",
-      "insight": "This could indicate a larger issue with corruption and potential crimes committed by high-profile individuals.",
-      "entities": [
-        "Jeffrey Epstein",
-        "Donald Trump"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/us/justice-department-releases-missing-fbi-interviews-epstein-files-2026-03-06/",
-      "id": "rf-1772811379777-1w5xko0xq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T15:36:19.774Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,6 +990,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T04:09:24.282Z"
+  "lastUpdated": "2026-03-11T05:47:54.683Z"
 }

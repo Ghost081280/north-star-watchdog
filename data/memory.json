@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T07:38:08.499Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-06T08:36:22.721Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-11T04:09:24.279Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-11T05:47:54.681Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI Investigation into NYC Terror Plot?",
-    "Where did the $0 allegedly go in Minnesota Human Services Fraud Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into NYC 'ISIS-inspired Terrorists'?",
     "What other organizations is Andrea Bradley-Baskin connected to?",
     "Where did the $100M allegedly go in Minnesota Human Services System Overhaul?",
@@ -558,7 +556,9 @@
     "Where did the $100K allegedly go in Feeding Our Future trial?",
     "Where did the $X allegedly go in Medicaid and Medicaid agency investigation?",
     "Where did the Undisclosed allegedly go in Feeding Our Future trial?",
-    "Where did the Undisclosed allegedly go in Minnesota Department of Human Services investigation?"
+    "Where did the Undisclosed allegedly go in Minnesota Department of Human Services investigation?",
+    "Where did the $250 million allegedly go in Feeding Our Future trial?",
+    "Where did the $100 million allegedly go in Minnesota DHS investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1418,
-    "articlesProcessed": 70700,
-    "redFlagsFound": 1678,
+    "totalScans": 1419,
+    "articlesProcessed": 70750,
+    "redFlagsFound": 1679,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Nancy Guthrie connected to?",
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in FBI Investigation into NYC Terror Plot?"
+        "Where did the Unknown allegedly go in FBI Investigation into NYC Terror Plot?",
+        "Where did the $0 allegedly go in Minnesota Human Services Fraud Investigation?",
+        "Where did the $0 allegedly go in FBI Investigation into NYC 'ISIS-inspired Terrorists'?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T04:09:24.279Z",
-  "lastUpdated": "2026-03-11T04:09:24.280Z"
+  "lastReflection": "2026-03-11T05:47:54.681Z",
+  "lastUpdated": "2026-03-11T05:47:54.682Z"
 }
