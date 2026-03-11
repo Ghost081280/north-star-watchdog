@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T10:33:26.032Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-06T11:28:00.207Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-11T07:42:36.934Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-11T08:39:30.205Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota Human Services System Overhaul?",
-    "Where did the $1M allegedly go in Lewiston Health Provider Tax Fraud?",
     "What other organizations is Tate Reeves connected to?",
     "What specific allegations exist against Tate Reeves?",
     "What specific allegations exist against Walz?",
@@ -558,7 +556,9 @@
     "Where did the $250 million allegedly go in Feeding Our Future trial?",
     "Where did the $100 million allegedly go in Minnesota DHS investigation?",
     "Where did the $100M+ allegedly go in Minnesota Human Services Overhaul?",
-    "Where did the $100M+ allegedly go in Feeding Our Future Trial?"
+    "Where did the $100M+ allegedly go in Feeding Our Future Trial?",
+    "Where did the $0 allegedly go in Feeding Our Future trial?",
+    "Where did the $0 allegedly go in Minnesota Human Services Overhaul?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1421,
-    "articlesProcessed": 70850,
-    "redFlagsFound": 1681,
+    "totalScans": 1422,
+    "articlesProcessed": 70900,
+    "redFlagsFound": 1682,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in FBI Investigation into NYC 'ISIS-inspired Terrorists'?",
-        "What other organizations is Andrea Bradley-Baskin connected to?",
-        "Where did the $100M allegedly go in Minnesota Human Services System Overhaul?"
+        "Where did the $100M allegedly go in Minnesota Human Services System Overhaul?",
+        "Where did the $1M allegedly go in Lewiston Health Provider Tax Fraud?",
+        "What other organizations is Tate Reeves connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T07:42:36.934Z",
-  "lastUpdated": "2026-03-11T07:42:36.934Z"
+  "lastReflection": "2026-03-11T08:39:30.205Z",
+  "lastUpdated": "2026-03-11T08:39:30.206Z"
 }
