@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations are underway, including into LAUSD Superintendent Alberto Carvalho and a tax fraud case in Lewiston.",
+      "insight": "These investigations suggest a pattern of potential wrongdoing and warrant further scrutiny.",
+      "entities": [
+        "Alberto Carvalho",
+        "Lewiston"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdVNKd1JoajY3R1JOOE11TGcxQ1pMZWVNWUxlb0YydFVnM2NqWFpFZmVmbEJ2SjFQcUdlTi1UazZTR1QxQlZpd2xpdVZpZXZPVldJNWlhZlB0TjhEcHlOU25FVUhPWlJMcnlXTVpzVzhFTkVfRUxkTld4TU52NXczRkFCajBQYWUxYUJ1NGdPMVZtRmtZTDFaTGo5ZGNqUdIBpgFBVV95cUxQbnNjempvSDN2UU4tbVcwRmRxVzhKU0U3RE15U2ZBSnJiemp5Nk1yb0Rvd3BiN0hkRU85Z3VEdjlWMG1RcTdCNllqVFQ5WnZPXzJBeG1xSS0zZ1lLU0Q0MnNLRk1QQ1daUFJNX3EzRi14VWJ3amVnZUU3OXR1TUdUN0F2c0hBdzQyTDBzQXotVmR6TFp5eU5URWl5cWpOdHpBWUR6QjZ3",
+      "id": "rf-1773228739827-qb8ndhrvt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T11:32:19.823Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, and federal prosecutors are seeking to delay the Feeding Our Future trial due to 'staffing changes'. These developments raise concerns about potential fraud and corruption in high-level positions.",
       "insight": "I notice a pattern of federal investigations into high-level positions, which suggests a potential lack of oversight and accountability. I recommend further investigation into these cases to determine the extent of any wrongdoing.",
       "entities": [
@@ -969,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T22:27:39.293Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into government official",
-      "description": "Lindsey Halligan is under investigation by the Florida Bar",
-      "insight": "This investigation raises concerns over the potential misuse of power and the need for accountability in government.",
-      "entities": [
-        "Lindsey Halligan",
-        "Florida Bar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/03/06/lindsey-halligan-faces-investigation-by-florida-bar/",
-      "id": "rf-1772825617390-m0to952w1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T19:33:37.387Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,7 +1001,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T10:37:35.633Z"
+  "lastUpdated": "2026-03-11T11:32:19.823Z"
 }
