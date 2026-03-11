@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into LAUSD Superintendent Alberto Carvalho",
+      "insight": "The investigation into Carvalho's wrongdoing raises concerns about the potential for fraud and abuse in the LAUSD. Further investigation is needed to determine the extent of the allegations and whether they are connected to other cases.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC Los Angeles",
+      "sourceUrl": "https://www.nbclosangeles.com/news/local/lausd-superintendent-alberto-carvalho-breaks-silence-following-federal-probe/3001233/",
+      "id": "rf-1773214956939-x8oql4m4m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T07:42:36.936Z",
+      "isNew": true
+    },
+    {
       "type": "program_overhaul",
       "description": "Minnesota Governor proposes major overhaul of human services system amid fraud concerns",
       "insight": "The proposed overhaul suggests that there may be significant issues with the current system, potentially including fraud and inefficiencies.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T06:52:03.713Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -958,40 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T17:34:21.487Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Justice Department has released missing FBI interviews in Epstein files related to Trump, raising concerns about potential wrongdoing.",
-      "insight": "I suspect that the Epstein investigation may be connected to other high-profile cases, and further research is needed to uncover potential patterns and connections.",
-      "entities": [
-        "Trump",
-        "Epstein"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NPR",
-      "sourceUrl": "https://www.npr.org/",
-      "id": "rf-1772815177259-m6u69yqk2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T16:39:37.256Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T06:52:03.713Z"
+  "lastUpdated": "2026-03-11T07:42:36.936Z"
 }
