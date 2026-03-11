@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, and federal prosecutors are seeking to delay the Feeding Our Future trial due to 'staffing changes'. These developments raise concerns about potential fraud and corruption in high-level positions.",
+      "insight": "I notice a pattern of federal investigations into high-level positions, which suggests a potential lack of oversight and accountability. I recommend further investigation into these cases to determine the extent of any wrongdoing.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC Los Angeles",
+      "sourceUrl": "https://www.nbclosangeles.com/news/local/lausd-superintendent-alberto-carvalho-breaks-silence-following-federal-probe/3001233/",
+      "id": "rf-1773222049487-465ok7yhs",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T09:40:49.483Z",
+      "isNew": true
+    },
+    {
       "type": "program overhaul",
       "description": "Minnesota Governor Walz proposes major overhaul of human services system amid fraud concerns",
       "insight": "The proposed overhaul suggests that there may be significant issues with the current system, potentially including fraud and inefficiencies. Further investigation into the specific allegations and the extent of the problems is warranted.",
@@ -27,7 +48,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T08:39:30.207Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -968,29 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-06T19:33:37.387Z",
       "isNew": false
-    },
-    {
-      "type": "investigation",
-      "description": "Lindsey Halligan under investigation for weaponization accusations",
-      "insight": "This investigation could lead to further revelations about Halligan's actions as a prosecutor",
-      "entities": [
-        "Lindsey Halligan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Above the Law",
-      "sourceUrl": "https://www.abovethelaw.com/2026/03/lindsey-halligan-under-investigation-and-the-doj-is-big-mad-about-it/",
-      "id": "rf-1772818461490-i8k1xpk7b",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T17:34:21.487Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,6 +1002,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T08:39:30.207Z"
+  "lastUpdated": "2026-03-11T09:40:49.483Z"
 }
