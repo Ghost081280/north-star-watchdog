@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T18:42:14.701Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-06T19:33:37.385Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-11T16:51:17.372Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-11T17:48:25.904Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Medicaid and Medicaid agency investigation?",
-    "Where did the Undisclosed allegedly go in Feeding Our Future trial?",
-    "Where did the Undisclosed allegedly go in Minnesota Department of Human Services investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future trial?",
     "Where did the $100 million allegedly go in Minnesota DHS investigation?",
     "Where did the $100M+ allegedly go in Minnesota Human Services Overhaul?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in FBI Epstein Investigation?",
     "Where did the Unknown allegedly go in Minnesota Anti-Fraud Measures?",
     "Where did the Unknown allegedly go in Minnesota DHS Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What specific allegations exist against Tiffany Henyard?",
+    "What specific allegations exist against Alberto Carvalho?",
+    "Where did the $2.1 million allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1429,
-    "articlesProcessed": 71250,
-    "redFlagsFound": 1690,
+    "totalScans": 1430,
+    "articlesProcessed": 71300,
+    "redFlagsFound": 1692,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Alberto Carvalho connected to?",
-        "Where did the $100K allegedly go in Feeding Our Future trial?",
-        "Where did the $X allegedly go in Medicaid and Medicaid agency investigation?"
+        "Where did the $X allegedly go in Medicaid and Medicaid agency investigation?",
+        "Where did the Undisclosed allegedly go in Feeding Our Future trial?",
+        "Where did the Undisclosed allegedly go in Minnesota Department of Human Services investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T16:51:17.372Z",
-  "lastUpdated": "2026-03-11T16:51:17.373Z"
+  "lastReflection": "2026-03-11T17:48:25.904Z",
+  "lastUpdated": "2026-03-11T17:48:25.904Z"
 }

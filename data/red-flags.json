@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Federal agents raid Maine health provider accused of tax fraud",
+      "insight": "This indicates potential tax fraud in the healthcare sector.",
+      "entities": [
+        "Maine health provider"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Bangor Daily News",
+      "sourceUrl": "https://bangordailynews.com/2026/03/11/federal-agents-raid-maine-health-provider-accused-of-tax-fraud/",
+      "id": "rf-1773251305909-xek5h80yw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T17:48:25.906Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Funding Freeze",
       "description": "Trump's funding freeze has derailed transit and undermined growth and economic opportunity",
       "insight": "This could be a sign of a larger issue with federal funding and its impact on local communities. Further investigation is needed to determine the extent of the issue.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T16:51:17.374Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Data Breach",
@@ -961,29 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T13:38:04.432Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a suspicious breach of its networks, which could potentially compromise sensitive information.",
-      "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will continue to monitor this investigation and look for any potential connections to other cases.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "UPI",
-      "sourceUrl": "https://www.upi.com/Top_News/US/News/2026/03/07/FBI-investigates-suspicious-breach-of-its-networks/9641672071204/",
-      "id": "rf-1772887376362-oj9gs66ee",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T12:42:56.357Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,6 +993,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T16:51:17.374Z"
+  "lastUpdated": "2026-03-11T17:48:25.906Z"
 }
