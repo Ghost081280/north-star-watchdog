@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T23:26:54.846Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-07T01:50:14.707Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-11T21:31:47.510Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-11T22:25:50.176Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100K+ allegedly go in Feeding Our Future Trial?",
     "Where did the $0 allegedly go in FBI Investigation into Alberto Carvalho?",
     "Where did the $0 allegedly go in Walz's Plan to Overhaul MN Human Services?",
     "Where did the unknown allegedly go in FBI Investigation into LAUSD?",
@@ -558,7 +557,8 @@
     "Where did the $1-million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Minnesota Human Services Officials connected to?",
     "Where did the $370,000 allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $370,000 allegedly go in Louisville Comedy Club Sexual Harassment Investigation?"
+    "Where did the $370,000 allegedly go in Louisville Comedy Club Sexual Harassment Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1434,
-    "articlesProcessed": 71500,
-    "redFlagsFound": 1697,
+    "totalScans": 1435,
+    "articlesProcessed": 71550,
+    "redFlagsFound": 1698,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Feeding Our Future trial?",
-        "Where did the $0 allegedly go in Minnesota Human Services Overhaul?",
-        "Where did the $100M+ allegedly go in Minnesota Human Services Investigation?"
+        "Where did the $100K+ allegedly go in Feeding Our Future Trial?",
+        "Where did the $0 allegedly go in FBI Investigation into Alberto Carvalho?",
+        "Where did the $0 allegedly go in Walz's Plan to Overhaul MN Human Services?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T21:31:47.510Z",
-  "lastUpdated": "2026-03-11T21:31:47.510Z"
+  "lastReflection": "2026-03-11T22:25:50.176Z",
+  "lastUpdated": "2026-03-11T22:25:50.176Z"
 }
