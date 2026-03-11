@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T14:37:02.641Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-06T15:36:19.772Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-11T11:32:19.821Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-11T12:56:52.510Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Human Services System Overhaul?",
-    "Where did the Unknown allegedly go in FBI Investigation into ISIS-inspired Terrorism?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota DHS Fraud Investigation?",
     "Where did the $0 allegedly go in FBI Investigation into Cosmetic Surgery?",
@@ -558,7 +556,9 @@
     "Where did the $100M+ allegedly go in Minnesota Human Services Investigation?",
     "Where did the $100K+ allegedly go in Feeding Our Future Trial?",
     "Where did the $0 allegedly go in FBI Investigation into Alberto Carvalho?",
-    "Where did the $0 allegedly go in Walz's Plan to Overhaul MN Human Services?"
+    "Where did the $0 allegedly go in Walz's Plan to Overhaul MN Human Services?",
+    "Where did the unknown allegedly go in FBI Investigation into LAUSD?",
+    "Where did the unknown allegedly go in Minnesota Human Services Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1425,
-    "articlesProcessed": 71050,
-    "redFlagsFound": 1684,
+    "totalScans": 1426,
+    "articlesProcessed": 71100,
+    "redFlagsFound": 1685,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Walz?",
-        "What other organizations is Donald Trump connected to?",
-        "Where did the Unknown allegedly go in Minnesota Human Services System Overhaul?"
+        "Where did the Unknown allegedly go in Minnesota Human Services System Overhaul?",
+        "Where did the Unknown allegedly go in FBI Investigation into ISIS-inspired Terrorism?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T11:32:19.821Z",
-  "lastUpdated": "2026-03-11T11:32:19.822Z"
+  "lastReflection": "2026-03-11T12:56:52.510Z",
+  "lastUpdated": "2026-03-11T12:56:52.511Z"
 }
