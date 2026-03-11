@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-06T19:33:37.385Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-06T20:30:31.399Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-11T17:48:25.904Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-03-11T18:52:50.559Z",
+      "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future trial?",
     "Where did the $100 million allegedly go in Minnesota DHS investigation?",
     "Where did the $100M+ allegedly go in Minnesota Human Services Overhaul?",
     "Where did the $100M+ allegedly go in Feeding Our Future Trial?",
@@ -558,7 +557,8 @@
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Tiffany Henyard?",
     "What specific allegations exist against Alberto Carvalho?",
-    "Where did the $2.1 million allegedly go in Feeding Our Future fraud?"
+    "Where did the $2.1 million allegedly go in Feeding Our Future fraud?",
+    "Where did the $2.1 million allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1430,
-    "articlesProcessed": 71300,
-    "redFlagsFound": 1692,
+    "totalScans": 1431,
+    "articlesProcessed": 71350,
+    "redFlagsFound": 1694,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "breach of FBI servers",
+          "description": "An international cybercriminal breached FBI servers holding Epstein files in 2023, which could have significant implications for ongoing investigations.",
+          "insight": "The breach of FBI servers holding sensitive information like the Epstein files raises serious concerns about data security and the potential for compromised investigations. This incident warrants further investigation into the breach and its impact.",
+          "entities": [
+            "FBI",
+            "Epstein"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Guardian",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcmdQdjdmbnNkRG0tUmRWdVk3STRiMXNSOXJpTnlhdm96TEE2bC1KV3dsS2tqRk1xYV8tZEtvbHFmNENJdmlnUVVXVEktdWQ0ZDdtbXg3cjAtX1ZuOUpfbGhIOE90bEp1Z0xwODZPZW9hN0ZPTzFrZGQweFNLXzVPQjU0ZnNNWlk1?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Medicaid and Medicaid agency investigation?",
-        "Where did the Undisclosed allegedly go in Feeding Our Future trial?",
-        "Where did the Undisclosed allegedly go in Minnesota Department of Human Services investigation?"
+        "Where did the $250 million allegedly go in Feeding Our Future trial?",
+        "Where did the $100 million allegedly go in Minnesota DHS investigation?",
+        "Where did the $100M+ allegedly go in Minnesota Human Services Overhaul?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-11T17:48:25.904Z",
-  "lastUpdated": "2026-03-11T17:48:25.904Z"
+  "lastReflection": "2026-03-11T18:52:50.559Z",
+  "lastUpdated": "2026-03-11T18:52:50.560Z"
 }
