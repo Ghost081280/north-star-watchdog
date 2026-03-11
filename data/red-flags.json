@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating various cases, including the Epstein case and Trump's administration miscalculations.",
+      "insight": "These investigations may uncover larger patterns of corruption and fraud, requiring further analysis.",
+      "entities": [
+        "FBI",
+        "Epstein's associates",
+        "Trump's administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQd2ZsdXJHTFRjNjhqWG1MclFmZm1BTzBFd1A2NEVCVjNqYUJRNkhjV1JCemRza3VvZGE5X2x1dkpwME54SzgtOWY1OGl1aXhmZUE4MWpMOE1MTXcwbEV3WF95RUVrNEt2cnNvUlJ1X21rSEMyQkNzdk5TY01iWVAxWg",
+      "id": "rf-1773238039908-v36hog5eq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T14:07:19.905Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged_fraud",
+      "description": "An alleged $9B+ fraud has been reported, with multiple investigations underway.",
+      "insight": "This alleged fraud may be connected to other cases, requiring further investigation.",
+      "entities": [
+        "Individuals and organizations involved in the alleged fraud"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTktXRlhKdU4xc0VIdWl4TS0wUHU5R2F2NVVWLTRqWlNCWG9QVkdlSEktclN1UWxuMGlzSy1hNnRtejdSbFUxZXRyTlNWRkZiQ29JTXBHWUd0OWhMMTRyeGRfTjNDLVhkVWl5cEItellNUkZkcm1kQXlJVUVraEJOeU40ajlzSW5DcFdPMDJnUzRZX3lmZUEzZTQ5eDlzU2FuSHlF",
+      "id": "rf-1773238039908-zso0rcte4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-11T14:07:19.905Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, and the Minnesota Department of Human Services is being investigated for fraud",
       "insight": "I notice that there are multiple investigations into government officials and agencies, which suggests a pattern of potential wrongdoing. I recommend further investigation into these cases to determine the extent of the wrongdoing and to identify any connections between the cases.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T12:56:52.512Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -942,48 +982,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T05:04:42.353Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a hack into its surveillance system, which could compromise national security",
-      "insight": "This hack could have significant implications for national security, and I will be monitoring the situation closely. I recommend investigating the source of the hack and any potential connections to other cyber attacks.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Politico",
-      "sourceUrl": "https://www.politico.com/news/2026/03/06/white-house-assisting-fbi-hack-probe-1401151",
-      "id": "rf-1772848214713-d34quh385",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T01:50:14.709Z",
-      "isNew": false
-    },
-    {
-      "type": "potential misconduct by public officials",
-      "description": "Investigation into Lindsey Halligan, a former US attorney",
-      "insight": "This investigation suggests potential misconduct by a public official",
-      "entities": [
-        "Lindsey Halligan"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSFR6RFVvSzN3Nzd4ZkFDbHoyUzFzVWlyVkdPbHA3d2t5WDdRNFIya2c4NFhxbGNITGpJbGlSR1d3N21pSVdJaVZMTXk1RENtZ2xoaklIQ3JCZFR6bzhKaWxiQVRGRmdPdm8yM0NMNTJHNWRFRUpzYk4yR25xdlBzb0FyWThPdmtxeHdzU2NLSG12Mjhzcl9MTUt30gGfAUFVX3lxTFBnQUw1TW1GajBnOXVPSEIyUGRTM1l2TFpQRVRMNlBpQko0U3dFVUNCSDNObUxoVEhub2xqbXozOXB0NFAzclpxa0ltX1BhREpnWWp1MngxelJLRUFjZm1vU0xSTVNoX0pHTmZkVERLLTB2OWpjbHFUOVV1UFVaUW9NcEtCSlNlVVc3WTVnUWQzM25KZXhuQkNtM010RWtsUQ",
-      "id": "rf-1772836059296-79i13oeed",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-06T22:27:39.293Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-11T12:56:52.512Z"
+  "lastUpdated": "2026-03-11T14:07:19.905Z"
 }
