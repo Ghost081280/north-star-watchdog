@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal prosecutor staffing could delay the Feeding Our Future fraud trial",
+      "insight": "This delay could indicate a lack of resources or prioritization of the case, potentially allowing perpetrators to go unpunished. Further investigation is needed to determine the cause of the delay and its impact on the case.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
+      "id": "rf-1773311849828-f8wyntsj5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T10:37:29.823Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's potential elimination of Managed Care Organizations from the Medicaid system",
       "insight": "This could indicate a significant shift in how Medicaid services are delivered, potentially reducing fraud but also posing challenges for beneficiaries.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T09:41:12.503Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T09:41:12.503Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -960,41 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T23:21:21.538Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI has launched an investigation into the breach of its surveillance network, which may have been caused by Chinese hackers.",
-      "insight": "This breach could have serious implications for national security, and it's essential to investigate further to determine the extent of the damage.",
-      "entities": [
-        "FBI",
-        "China"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-china-fbi-idUSKBN2T62G7",
-      "id": "rf-1772918411490-tr8vyoedj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T21:20:11.486Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T09:41:12.503Z"
+  "lastUpdated": "2026-03-12T10:37:29.823Z"
 }
