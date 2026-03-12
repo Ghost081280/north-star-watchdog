@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Program termination",
+      "description": "The Feeding our Future program was terminated due to alleged fraud",
+      "insight": "I suspect that the program's termination may be related to a larger pattern of fraud in Minnesota's social services. Further investigation is needed to determine the extent of the fraud and identify those responsible.",
+      "entities": [
+        "Feeding our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/",
+      "id": "rf-1773344519263-6fvp50ix1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T19:41:59.259Z",
+      "isNew": true
+    },
+    {
       "type": "legislation introduced",
       "description": "Stauber introduces 'Stop Fraud by SOMALIA Act' to target childcare grant fraud",
       "insight": "This indicates a proactive approach to addressing fraud but also highlights the prevalence of such issues.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T18:55:00.934Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid reform",
@@ -37,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T18:55:00.934Z",
-      "isNew": true
-    },
-    {
-      "type": "program termination",
-      "description": "The Feeding our Future program was terminated due to alleged fraud",
-      "insight": "I suspect that there may be more programs like Feeding our Future that are vulnerable to fraud. I recommend investigating other programs in Minnesota to identify potential red flags.",
-      "entities": [
-        "Feeding our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Willmar Radio",
-      "sourceUrl": "https://www.willmarradio.com/news/local-news/defendant-in-feeding-our-future-trial-asks-for-a-delay",
-      "id": "rf-1773338227025-d9x6ejgw7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T17:57:07.022Z",
       "isNew": false
     },
     {
@@ -984,17 +985,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T18:55:00.934Z"
+  "lastUpdated": "2026-03-12T19:41:59.259Z"
 }
