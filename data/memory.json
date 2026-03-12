@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-07T23:21:21.535Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-08T01:58:36.779Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-12T22:25:04.126Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-12T23:26:44.678Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1455,
-    "articlesProcessed": 72550,
+    "totalScans": 1456,
+    "articlesProcessed": 72600,
     "redFlagsFound": 1720,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Defendant in Feeding our Future trial connected to?",
-        "Where did the $250 million allegedly go in Feeding our Future fraud trial?",
-        "Where did the $1.2 billion allegedly go in Minnesota Medicaid system overhaul?"
+        "Where did the $1.2 billion allegedly go in Minnesota Medicaid system overhaul?",
+        "What other organizations is Not specified connected to?",
+        "What specific allegations exist against Not specified?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-12T22:25:04.126Z",
-  "lastUpdated": "2026-03-12T22:25:04.127Z"
+  "lastReflection": "2026-03-12T23:26:44.678Z",
+  "lastUpdated": "2026-03-12T23:26:44.679Z"
 }
