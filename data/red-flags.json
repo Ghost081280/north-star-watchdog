@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "legislation introduced",
+      "description": "Stauber introduces 'Stop Fraud by SOMALIA Act' to target childcare grant fraud",
+      "insight": "This indicates a proactive approach to addressing fraud but also highlights the prevalence of such issues.",
+      "entities": [
+        "Stauber"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Northern News Now",
+      "sourceUrl": "https://northernnewsnow.com/2026/03/12/stauber-introduces-stop-fraud-by-somalia-act-to-target-childcare-grant-fraud/",
+      "id": "rf-1773341700938-412nhuef9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T18:55:00.934Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid reform",
+      "description": "Gov. Walz offers plan to reform state's Medicaid system following fraud",
+      "insight": "This suggests that fraud has been identified within the Medicaid system, prompting a reform plan.",
+      "entities": [
+        "Gov. Walz",
+        "Minnesota"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Voice of Alexandria",
+      "sourceUrl": "https://voiceofalexandria.com/2026/03/12/gov-walz-offers-plan-to-reform-states-medicaid-system-following-fraud/",
+      "id": "rf-1773341700938-6umabgskz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T18:55:00.934Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Feeding our Future program was terminated due to alleged fraud",
       "insight": "I suspect that there may be more programs like Feeding our Future that are vulnerable to fraud. I recommend investigating other programs in Minnesota to identify potential red flags.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T17:57:07.022Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -195,26 +234,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T06:53:52.891Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Allegations of millions of dollars in fraudulent Medicaid claims in Minnesota",
-      "insight": "I suspect that there may be a larger pattern of Medicaid fraud in Minnesota, and further investigation is needed to uncover the full extent of the issue. I recommend tracking the Feeding Our Future investigation and the proposed overhaul of the Minnesota Medicaid system.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
-      "id": "rf-1773294623501-8r1b3hd4s",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T05:50:23.496Z",
       "isNew": false
     },
     {
@@ -961,25 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T10:24:07.877Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI is investigating suspicious cyber activity on a system holding sensitive surveillance information.",
-      "insight": "This could indicate a potential breach of national security, and I will be tracking this development closely.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal News Network",
-      "sourceUrl": "https://www.federalnewsnetwork.com/cybersecurity/2026/03/fbi-investigating-suspicious-cyber-activity-on-system-holding-sensitive-surveillance-information/",
-      "id": "rf-1772958584620-omtw8igyh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T08:29:44.616Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,12 +989,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T17:57:07.022Z"
+  "lastUpdated": "2026-03-12T18:55:00.934Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-07T18:32:04.275Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-07T19:21:02.258Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-12T17:57:07.020Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-12T18:55:00.932Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $? allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $? allegedly go in Medicaid funding investigation?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
-    "Where did the $1.3 billion allegedly go in Minnesota Medicaid system overhaul?",
     "What other organizations is Not available connected to?",
     "Where did the Not specified allegedly go in Feeding Our Future fraud trial?",
     "Where did the Not specified allegedly go in Minnesota Medicaid system overhaul?",
@@ -558,7 +554,11 @@
     "What other organizations is Gov. Tim Walz connected to?",
     "Where did the $250 million allegedly go in Feeding our Future trial?",
     "Where did the $100 million allegedly go in Childcare grant fraud?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Nancy Guthrie connected to?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the Not specified allegedly go in Feeding our Future trial?",
+    "Where did the Not specified allegedly go in Minnesota Medicaid system fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1450,
-    "articlesProcessed": 72300,
-    "redFlagsFound": 1712,
+    "totalScans": 1451,
+    "articlesProcessed": 72350,
+    "redFlagsFound": 1714,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future connected to?",
-        "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the $100 million allegedly go in Minnesota human services fraud investigation?"
+        "Where did the $? allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $? allegedly go in Medicaid funding investigation?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-12T17:57:07.020Z",
-  "lastUpdated": "2026-03-12T17:57:07.021Z"
+  "lastReflection": "2026-03-12T18:55:00.932Z",
+  "lastUpdated": "2026-03-12T18:55:00.933Z"
 }
