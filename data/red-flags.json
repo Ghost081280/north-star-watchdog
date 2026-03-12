@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of Managed Care Organizations from Minnesota's Medicaid system",
+      "insight": "The Governor's plan to eliminate Managed Care Organizations from the Medicaid system indicates potential issues with the current structure and possible fraud.",
+      "entities": [
+        "Minnesota Department of Human Services",
+        "Governor Tim Walz"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHc3FhN1JnZTNJY2s0OGhKTXI2ekFHb0ZxdUNsQWx2OS1OV1BpSHczcGJRRTczVHJjaXRyZVdiOEwxQ2duOTAtNndIcF9fMEJEa09MNmxjaDNLNExLcmlFdWNtQnBCNy1Xenh6ZGdDZFA0am1zRFpMNjV1ZFFwUQ?oc=5",
+      "id": "rf-1773334882960-ljae7z0b2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T17:01:22.956Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "The Feeding Our Future trial involves allegations of fraud and could have significant financial implications.",
       "insight": "The ongoing Feeding Our Future trial and proposed Medicaid overhaul suggest a significant effort to address fraud in Minnesota.",
@@ -960,30 +980,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T08:29:44.616Z",
       "isNew": false
-    },
-    {
-      "type": "entity closure",
-      "description": "The Quality 'Learing' Center in Minnesota has been closed.",
-      "insight": "This could indicate a serious issue with the center's operations, potentially related to fraud or misconduct.",
-      "entities": [
-        "Quality 'Learing' Center",
-        "Minnesota"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
-      "id": "rf-1772955035487-y6zttl5sc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T07:30:35.483Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +993,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T15:58:10.142Z"
+  "lastUpdated": "2026-03-12T17:01:22.956Z"
 }
