@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Governor Walz proposes eliminating Managed Care Organizations from Medicaid system",
+      "insight": "This could indicate potential issues with the current system, possibly including fraud. Monitoring the situation for further developments is necessary.",
+      "entities": [
+        "Governor Walz",
+        "Minnesota Medicaid"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHc3FhN1JnZTNJY2s0OGhKTXI2ekFHb0ZxdUNsQWx2OS1OV1BpSHczcGJRRTczVHJjaXRyZVdiOEwxQ2duOTAtNndIcF9fMEJEa09MNmxjaDNLNExLcmlFdWNtQnBCNy1Xenh6ZGdDZFA0am1zRFpMNjV1ZFFwUQ",
+      "id": "rf-1773301521426-9nh22i06a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T07:45:21.423Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Potential mismanagement of Medicaid funding in Minnesota",
       "insight": "The allegations of mismanagement and potential fraud in Minnesota's Medicaid system raise concerns about the effectiveness of the state's oversight and control measures. Further investigation is needed to determine the extent of any wrongdoing and to identify potential vulnerabilities in the system.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T06:53:52.891Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -959,31 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T19:21:02.259Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "The Florida Bar initially claimed that Lindsey Halligan was under investigation, but later reversed the claim.",
-      "insight": "This reversal raises questions about the Florida Bar's transparency and potential biases in their investigations.",
-      "entities": [
-        "Florida Bar",
-        "Lindsey Halligan"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The Independent",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVjROQ0RsUGRPS3RtZE1RYUJjbThOb1g5NjdGX2hzS1VTT25LclFsUzh6RUJoQi14aEVOQ3l0MGEwbTcxY0t4Ym9rWkg2UTk0UVFZdEd0bG1yZ1R4M2piU2o2aU1WcXpzcklEVEhGejdJS0JpZTltSnRjUlBIUDk1aGJaZFc0OGxhWkFzZmFuMVViNFl0ckQyb3BYZVp4ckR5YUdyZ2o0QUV4ZUZLZGlUTTVwT0Z1RTA5bjEzMUtveUI2R24xRl9V?oc=5",
-      "id": "rf-1772908324280-v7zv4bqzg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T18:32:04.277Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -993,6 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T06:53:52.891Z"
+  "lastUpdated": "2026-03-12T07:45:21.423Z"
 }
