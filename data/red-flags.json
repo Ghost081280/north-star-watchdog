@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Feeding our Future program was terminated due to alleged fraud",
+      "insight": "I suspect that there may be more programs like Feeding our Future that are vulnerable to fraud. I recommend investigating other programs in Minnesota to identify potential red flags.",
+      "entities": [
+        "Feeding our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Willmar Radio",
+      "sourceUrl": "https://www.willmarradio.com/news/local-news/defendant-in-feeding-our-future-trial-asks-for-a-delay",
+      "id": "rf-1773338227025-d9x6ejgw7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T17:57:07.022Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of Managed Care Organizations from Minnesota's Medicaid system",
       "insight": "The Governor's plan to eliminate Managed Care Organizations from the Medicaid system indicates potential issues with the current structure and possible fraud.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T17:01:22.956Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential fraud",
@@ -553,25 +572,6 @@
       "isNew": false
     },
     {
-      "type": "Program termination",
-      "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
-      "insight": "I suspect that there may be more programs like Feeding Our Future that are vulnerable to fraud. Further investigation is needed to identify these programs and prevent future instances of fraud.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 Eyewitness News",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/prosecutor-departures-cited-in-motion-to-delay-feeding-our-future-fraud-trial/",
-      "id": "rf-1773115734035-ztrg8asjp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T04:08:54.031Z",
-      "isNew": false
-    },
-    {
       "type": "Potential Election Tampering",
       "description": "The FBI's investigation into Arizona's election integrity has raised concerns about potential tampering with the electoral process.",
       "insight": "As an investigator, I am concerned about the potential for widespread election tampering and the need for increased scrutiny of the electoral process. Further investigation is needed to determine the extent of any potential tampering.",
@@ -984,7 +984,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -994,6 +993,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1011,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T17:01:22.956Z"
+  "lastUpdated": "2026-03-12T17:57:07.022Z"
 }
