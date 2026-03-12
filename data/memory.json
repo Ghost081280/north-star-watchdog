@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-07T14:23:09.313Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-03-07T15:22:14.627Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-12T12:56:43.493Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-12T14:04:04.510Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $370,000 allegedly go in Louisville Comedy Club Sexual Harassment Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Ex-Dade schools chief connected to?",
-    "Where did the $370,000 allegedly go in Minnesota Medicaid system overhaul?",
     "Where did the $370,000 allegedly go in Louisville Comedy Club sexual harassment investigation?",
     "What other organizations is Feeding Our Future connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
@@ -558,7 +554,11 @@
     "Where did the Not specified allegedly go in Minnesota Medicaid system overhaul?",
     "What other organizations is Defendant in Feeding our Future trial connected to?",
     "Where did the $250 million allegedly go in Feeding our Future fraud trial?",
-    "Where did the $1.2 billion allegedly go in Minnesota Medicaid system overhaul?"
+    "Where did the $1.2 billion allegedly go in Minnesota Medicaid system overhaul?",
+    "What other organizations is Not specified connected to?",
+    "What specific allegations exist against Not specified?",
+    "Where did the $Not specified allegedly go in Feeding Our Future fraud trial?",
+    "Where did the $Not specified allegedly go in Medicaid system overhaul?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1446,
-    "articlesProcessed": 72100,
-    "redFlagsFound": 1709,
+    "totalScans": 1447,
+    "articlesProcessed": 72150,
+    "redFlagsFound": 1710,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1-million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Minnesota Human Services Officials connected to?",
-        "Where did the $370,000 allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $370,000 allegedly go in Louisville Comedy Club Sexual Harassment Investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Ex-Dade schools chief connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-12T12:56:43.493Z",
-  "lastUpdated": "2026-03-12T12:56:43.494Z"
+  "lastReflection": "2026-03-12T14:04:04.510Z",
+  "lastUpdated": "2026-03-12T14:04:04.511Z"
 }

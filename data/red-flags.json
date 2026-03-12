@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "The Feeding Our Future trial involves allegations of fraud and could have significant financial implications.",
+      "insight": "The ongoing Feeding Our Future trial and proposed Medicaid overhaul suggest a significant effort to address fraud in Minnesota.",
+      "entities": [
+        "Minnesota Governor's office",
+        "Federal prosecutor"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYlMyN19tc0hxSkdGbDAwdTdTZWw2cFhXUUxRdGhLaExlNTNvVmtWSWZyUFNrcVVTQmR4MTMyZXJvSkEyQlR6TkoyREdCTEI3TFR6Sm9WbjdRMmlWVjFsMzVPR29SdTM3VnRNWm9LbEpIQnNBb09ZTUo5eUdlWFhER001a0x1RTVuOGE1TDZRc0dmNGF0cHlMOXU5cGnSAaIBQVVfeXFMT2dISThXaFAxM1d4TTYyaXNxU2FCbGxhY1NLb0tYNGFtdUw2UkZPVWN1UVg5TUMtTEJCRHVXUlZRUHBROVQwMDZMRHRqdHRPZzcyWmxUV1FUdDRhOWUyQXh3T1hUbkJEQ3N3Z2I2djZ0SGhhbV8wcTdFajlwVjJsWkl1X0Y1YVhoTHFtTTk1eEw1MWJvaUotSVRqQkVwVDdQSFZ3?oc=5",
+      "id": "rf-1773324244516-0u1f0njn4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T14:04:04.513Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal prosecutor staffing issues may delay the Feeding our Future fraud trial.",
       "insight": "This development raises concerns about the efficiency of the justice system in addressing fraud cases.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T12:56:43.495Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -960,30 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T07:30:35.483Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Trump administration has repealed gender and sexuality affirmation rules for foster homes",
-      "insight": "This move may have significant implications for the LGBTQ+ community and could be connected to other cases involving the administration's policies. Further investigation is needed to understand the motivations behind this decision.",
-      "entities": [
-        "Trump administration",
-        "LGBTQ+ community"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "EWTN News",
-      "sourceUrl": "https://www.ewtn.com/news/trump-administration-repeals-gender-sexuality-affirmation-rules-for-foster-homes",
-      "id": "rf-1772925681541-pjg5pcy7c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T23:21:21.538Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,9 +993,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T12:56:43.495Z"
+  "lastUpdated": "2026-03-12T14:04:04.513Z"
 }
