@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Feeding Our Future's assets were frozen by the federal government due to allegations of wire fraud and money laundering",
+      "insight": "This red flag suggests that the organization's financial activities were suspicious and warranted further investigation. I recommend tracking the organization's financial transactions and connections to other entities to identify potential patterns of fraud.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
+      "id": "rf-1773289018739-qq6qveqrl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T04:16:58.736Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI has opened an investigation into the Louisville Comedy Club for sexual harassment.",
       "insight": "This investigation highlights the need for increased oversight and accountability in the entertainment industry. Further research is needed to determine the extent of the harassment and the effectiveness of the settlement.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T01:58:10.551Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -94,25 +113,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-11T17:48:25.906Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal Funding Freeze",
-      "description": "Trump's funding freeze has derailed transit and undermined growth and economic opportunity",
-      "insight": "This could be a sign of a larger issue with federal funding and its impact on local communities. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Streetsblog USA",
-      "sourceUrl": "https://usa.streetsblog.org/2026/03/11/trumps-funding-freeze-has-derailed-transit-undermining-growth-and-economic-opportunity-for-all-americans-report/",
-      "id": "rf-1773247877378-hsy2qis7u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T16:51:17.374Z",
       "isNew": false
     },
     {
@@ -982,15 +982,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T01:58:10.551Z"
+  "lastUpdated": "2026-03-12T04:16:58.736Z"
 }
