@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating Feeding Our Future for alleged wire fraud and money laundering.",
+      "insight": "This investigation highlights the need for increased scrutiny of non-profit organizations receiving federal funds. I will continue to monitor the case and look for potential connections to other entities.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
+      "id": "rf-1773304830420-zssficndm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T08:40:30.417Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Governor Walz proposes eliminating Managed Care Organizations from Medicaid system",
       "insight": "This could indicate potential issues with the current system, possibly including fraud. Monitoring the situation for further developments is necessary.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T07:45:21.423Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -960,40 +979,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T20:23:39.250Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Riviera Beach officials and a marina redevelopment project, which may indicate potential corruption or fraud.",
-      "insight": "I suspect that the FBI investigation may uncover more widespread corruption or fraud in the Riviera Beach area. Further research is needed to determine the extent of the alleged wrongdoing.",
-      "entities": [
-        "Riviera Beach officials"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "WPBF",
-      "sourceUrl": "https://www.wpbf.com/article/sources-fbi-subpoena-seeks-records-tied-to-riviera-beach-officials-marina-redevelopment-project/43145635",
-      "id": "rf-1772911262263-zl9ipahf4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T19:21:02.259Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T07:45:21.423Z"
+  "lastUpdated": "2026-03-12T08:40:30.417Z"
 }
