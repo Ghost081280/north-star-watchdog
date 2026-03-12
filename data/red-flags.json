@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal funding for Medicaid has been halted in Minnesota, raising concerns about the impact on healthcare services.",
+      "insight": "I suspect that the halt in funding may be related to the ongoing investigation into Medicaid funding in Minnesota. Further investigation is needed to determine the cause of the funding halt and its potential impact on healthcare services.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://www.mprnews.org/",
+      "id": "rf-1773354304132-ah48gg45l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T22:25:04.128Z",
+      "isNew": true
+    },
+    {
       "type": "whistleblower",
       "description": "Minnesota whistleblower says weak safeguards helped enable fraud",
       "insight": "The whistleblower's claims highlight potential vulnerabilities in Minnesota's systems that may have contributed to fraudulent activities.",
@@ -98,26 +117,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T14:04:04.513Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal prosecutor staffing issues may delay the Feeding our Future fraud trial.",
-      "insight": "This development raises concerns about the efficiency of the justice system in addressing fraud cases.",
-      "entities": [
-        "Feeding our Future",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
-      "id": "rf-1773320203499-pug049589",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T12:56:43.495Z",
       "isNew": false
     },
     {
@@ -986,6 +985,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,8 +995,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T21:31:21.665Z"
+  "lastUpdated": "2026-03-12T22:25:04.128Z"
 }
