@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential mismanagement of Medicaid funding in Minnesota",
+      "insight": "The allegations of mismanagement and potential fraud in Minnesota's Medicaid system raise concerns about the effectiveness of the state's oversight and control measures. Further investigation is needed to determine the extent of any wrongdoing and to identify potential vulnerabilities in the system.",
+      "entities": [
+        "Minnesota DHS",
+        "Governor Tim Walz"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota human services officials skip fraud hearing as Walz promises reform - WFIN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQXpTNm01a1NuSE5pTk0tWUY2OGFGOHVJekRxV0VqdTZMYmxYMms4am1ScVQxcHV6OENfRUJJdzkxd3NzSHB1M2VnYXBlQkdROGFNemtXRzhGMUlZZl90TU12c0ZnejktOXV6MnF4dzQ3dmZDWV81QWpkN0NhbTJ1Sl9PYzRpY3hlQkdpZWN1WXllbmhqRm5HeTlUbkFFZ095ZzZWMDNJbE1qMllfOVlJQzl0Q0s",
+      "id": "rf-1773298432895-r09nzvr9z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T06:53:52.891Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Allegations of millions of dollars in fraudulent Medicaid claims in Minnesota",
       "insight": "I suspect that there may be a larger pattern of Medicaid fraud in Minnesota, and further investigation is needed to uncover the full extent of the issue. I recommend tracking the Feeding Our Future investigation and the proposed overhaul of the Minnesota Medicaid system.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T05:50:23.496Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -959,40 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-07T18:32:04.277Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI is investigating a breach of its surveillance network, which may have been caused by a foreign entity.",
-      "insight": "This investigation raises concerns about the security of sensitive information and the potential for foreign interference in US affairs. Further investigation is needed to determine the scope of the breach and the entities involved.",
-      "entities": [
-        "FBI",
-        "China"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "id": "rf-1772904021670-oqnzkw5ns",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-07T17:20:21.666Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T05:50:23.496Z"
+  "lastUpdated": "2026-03-12T06:53:52.891Z"
 }

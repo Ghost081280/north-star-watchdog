@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-07T07:27:51.399Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-07T08:29:26.549Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-12T05:50:23.494Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-03-12T06:53:52.889Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota DHS Investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against Tiffany Henyard?",
     "What specific allegations exist against Alberto Carvalho?",
     "Where did the $2.1 million allegedly go in Feeding Our Future fraud?",
     "Where did the $2.1 million allegedly go in Feeding Our Future fraud investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Feeding Our Future connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $100 million allegedly go in Minnesota human services fraud investigation?",
-    "Where did the $1.5 billion allegedly go in Minnesota Medicaid investigation?"
+    "Where did the $1.5 billion allegedly go in Minnesota Medicaid investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $? allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $? allegedly go in Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1439,
-    "articlesProcessed": 71750,
-    "redFlagsFound": 1702,
+    "totalScans": 1440,
+    "articlesProcessed": 71800,
+    "redFlagsFound": 1703,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota Anti-Fraud Measures?",
         "Where did the Unknown allegedly go in Minnesota DHS Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against Tiffany Henyard?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-12T05:50:23.494Z",
-  "lastUpdated": "2026-03-12T05:50:23.495Z"
+  "lastReflection": "2026-03-12T06:53:52.889Z",
+  "lastUpdated": "2026-03-12T06:53:52.890Z"
 }
