@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Allegations of millions of dollars in fraudulent Medicaid claims in Minnesota",
+      "insight": "I suspect that there may be a larger pattern of Medicaid fraud in Minnesota, and further investigation is needed to uncover the full extent of the issue. I recommend tracking the Feeding Our Future investigation and the proposed overhaul of the Minnesota Medicaid system.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
+      "id": "rf-1773294623501-8r1b3hd4s",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-12T05:50:23.496Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Feeding Our Future's assets were frozen by the federal government due to allegations of wire fraud and money laundering",
       "insight": "This red flag suggests that the organization's financial activities were suspicious and warranted further investigation. I recommend tracking the organization's financial transactions and connections to other entities to identify potential patterns of fraud.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T04:16:58.736Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -36,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-12T01:58:10.551Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Minnesota human services officials skipping fraud hearings raises concerns about the state's handling of Medicaid fraud investigations.",
-      "insight": "I suspect that there may be a larger issue with Medicaid fraud in Minnesota, and that the state's officials may be trying to cover it up. Further investigation is needed to determine the extent of the problem.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WFIN",
-      "sourceUrl": "https://www.wfin.com/news/minnesota-human-services-officials-skip-fraud-hearing-as-walz-promises-reform",
-      "id": "rf-1773264707516-zf98tw1np",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T21:31:47.512Z",
       "isNew": false
     },
     {
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-12T04:16:58.736Z"
+  "lastUpdated": "2026-03-12T05:50:23.496Z"
 }
