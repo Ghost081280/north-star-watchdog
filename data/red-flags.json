@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "A Minnesota woman was accused of using $600K in Medicaid funds for personal expenses",
+      "insight": "This case highlights the need for increased oversight and monitoring of Medicaid funds to prevent such abuses. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Minnesota woman"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
+      "id": "rf-1773375135488-fgsjpr2vp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T04:12:15.483Z",
+      "isNew": true
+    },
+    {
+      "type": "COVID fraud scheme",
+      "description": "A non-profit leader was convicted of pilfering $250M meant for underserved children in COVID fraud scheme",
+      "insight": "This case highlights the need for increased vigilance and monitoring of COVID-related funds to prevent such abuses. Further investigation is needed to determine the extent of the scheme and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Non-profit leader"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/news/minnesota-non-profit-leader-convicted-of-pilfering-250m-meant-for-underserved-children-in-countrys-largest-covid-fraud-scheme-161341441.html",
+      "id": "rf-1773375135488-dvr3hpxmw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T04:12:15.483Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal withholding of Medicaid funds from Minnesota",
       "insight": "I notice a pattern of federal withholding of Medicaid funds from Minnesota, which may indicate a larger issue with the state's handling of federal funds. Further investigation is needed to determine the cause of this issue.",
@@ -17,26 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T01:56:08.897Z",
-      "isNew": true
-    },
-    {
-      "type": "whistleblower",
-      "description": "Minnesota whistleblower says weak safeguards helped enable fraud",
-      "insight": "The whistleblower's claims highlight potential vulnerabilities in Minnesota's systems that may have contributed to fraudulent activities.",
-      "entities": [
-        "Minnesota",
-        "whistleblower"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Baltimore Sun",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcTc5MkJoMWhlRmJtXzVhMURORlFoOVc1TDBfZjNHTmp4Q0ptZGtyNWt2clRHQ3N6Umd0MlhNNnEwbHdiX3MtNE1TZEI4RjlDSng2d0h0TG5uTi1rWXd4dUQ0ZlE3clFDeUJ4VTV5VTZsOFhCT0lPM3h0Q1phMVV3UEFaV0w",
-      "id": "rf-1773347612566-sr6bb94f0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T20:33:32.563Z",
       "isNew": false
     },
     {
@@ -962,29 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T12:44:31.315Z",
       "isNew": false
-    },
-    {
-      "type": "program closure",
-      "description": "Quality Learning Center closed",
-      "insight": "The closure of the Quality Learning Center suggests potential wrongdoing or financial mismanagement.",
-      "entities": [
-        "Quality Learning Center"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n",
-      "id": "rf-1772965447881-psadq4y5r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T10:24:07.877Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T01:56:08.897Z"
+  "lastUpdated": "2026-03-13T04:12:15.483Z"
 }

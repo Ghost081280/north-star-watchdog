@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-08T04:15:35.026Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-08T05:42:05.076Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-13T01:56:08.895Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-13T04:12:15.481Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $Not specified allegedly go in Feeding Our Future fraud trial?",
-    "Where did the $Not specified allegedly go in Medicaid system overhaul?",
-    "What specific allegations exist against Tim Walz?",
-    "What other organizations is Kash Patel connected to?",
     "What other organizations is Gov. Tim Walz connected to?",
     "Where did the $250 million allegedly go in Feeding our Future trial?",
     "Where did the $100 million allegedly go in Childcare grant fraud?",
@@ -558,7 +554,11 @@
     "Where did the $10M allegedly go in Childcare Fraud Investigation?",
     "What other organizations is Minnesota non-profit leader connected to?",
     "Where did the $250M allegedly go in Minnesota COVID fraud scheme?",
-    "Where did the Not specified allegedly go in Gateway tunnel funding?"
+    "Where did the Not specified allegedly go in Gateway tunnel funding?",
+    "What other organizations is Minnesota woman connected to?",
+    "What other organizations is Non-profit leader connected to?",
+    "Where did the $600K allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $250M allegedly go in COVID fraud scheme investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1457,
-    "articlesProcessed": 72650,
-    "redFlagsFound": 1721,
+    "totalScans": 1458,
+    "articlesProcessed": 72700,
+    "redFlagsFound": 1723,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "COVID fraud scheme",
+          "description": "A non-profit leader was convicted of pilfering $250M meant for underserved children in COVID fraud scheme",
+          "insight": "This case highlights the need for increased vigilance and monitoring of COVID-related funds to prevent such abuses. Further investigation is needed to determine the extent of the scheme and to identify any other individuals or organizations involved.",
+          "entities": [
+            "Non-profit leader"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://www.aol.com/news/minnesota-non-profit-leader-convicted-of-pilfering-250m-meant-for-underserved-children-in-countrys-largest-covid-fraud-scheme-161341441.html"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.2 billion allegedly go in Minnesota Medicaid system overhaul?",
-        "What other organizations is Not specified connected to?",
-        "What specific allegations exist against Not specified?"
+        "Where did the $Not specified allegedly go in Feeding Our Future fraud trial?",
+        "Where did the $Not specified allegedly go in Medicaid system overhaul?",
+        "What specific allegations exist against Tim Walz?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-13T01:56:08.895Z",
-  "lastUpdated": "2026-03-13T01:56:08.896Z"
+  "lastReflection": "2026-03-13T04:12:15.481Z",
+  "lastUpdated": "2026-03-13T04:12:15.482Z"
 }
