@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-08T07:30:35.481Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-08T08:29:44.613Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-13T06:51:52.979Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-03-13T07:44:22.800Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Feeding our Future trial?",
-    "Where did the Not specified allegedly go in Minnesota Medicaid system fraud?",
     "What other organizations is John Schoen connected to?",
     "Where did the $250M allegedly go in Feeding our Future trial?",
     "Where did the $100M allegedly go in Childcare grant fraud investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Figure Lending Corp data breach investigation?",
     "Where did the $0 allegedly go in Temple Israel incident investigation?",
     "Where did the $0 allegedly go in Eaton Fire response investigation?",
-    "Where did the $0 allegedly go in Stauber’s ‘Stop Fraud by SOMALIA Act’?"
+    "Where did the $0 allegedly go in Stauber’s ‘Stop Fraud by SOMALIA Act’?",
+    "Where did the $600,000 allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp Data Breach Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1460,
-    "articlesProcessed": 72800,
-    "redFlagsFound": 1726,
+    "totalScans": 1461,
+    "articlesProcessed": 72850,
+    "redFlagsFound": 1727,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "data breach",
-          "description": "Figure Lending Corp under investigation for data breach of nearly 1 million user records.",
-          "insight": "This data breach could lead to identity theft and financial fraud.",
-          "entities": [
-            "Figure Lending Corp"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Schubert Jonckheer & Kolbe",
-          "sourceUrl": "https://schubertjonckheer.com/figure-lending-corp-under-investigation-for-data-breach-of-nearly-1-million-user-records/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100 million allegedly go in Childcare grant fraud?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Nancy Guthrie connected to?"
+        "Where did the Not specified allegedly go in Feeding our Future trial?",
+        "Where did the Not specified allegedly go in Minnesota Medicaid system fraud?",
+        "What other organizations is John Schoen connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-13T06:51:52.979Z",
-  "lastUpdated": "2026-03-13T06:51:52.980Z"
+  "lastReflection": "2026-03-13T07:44:22.800Z",
+  "lastUpdated": "2026-03-13T07:44:22.800Z"
 }
