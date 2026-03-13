@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Quality 'Learing' Center in Minnesota is now closed, records show.",
+      "insight": "This could indicate a pattern of fraudulent activity or mismanagement of funds, warranting further investigation into the center's operations and potential connections to other entities.",
+      "entities": [
+        "Quality 'Learing' Center"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota’s infamous Quality ‘Learing’ Center is now closed, records show - AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
+      "id": "rf-1773416480170-yxki4y3mn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T15:41:20.167Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "A Minnesota non-profit organization was involved in a $250M COVID fraud scheme",
       "insight": "This suggests a large-scale fraud scheme involving a non-profit organization and Medicaid funds",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T14:54:42.267Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T14:54:42.267Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T08:42:21.713Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential program termination due to funding cuts",
-      "insight": "I see a pattern of potential program termination due to funding cuts, which could be related to the Minnesota fraud cases.",
-      "entities": [
-        "Minnesota DHS",
-        "Feeding Our Future"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Athol Daily News",
-      "sourceUrl": "https://www.atholdailynews.com/news/we-don-t-know-what-to-expect-frcog-reflects-on-funding-cuts-and-continued-uncertainty",
-      "id": "rf-1773039782299-fofk58wfa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T07:03:02.295Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +991,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T14:54:42.267Z"
+  "lastUpdated": "2026-03-13T15:41:20.167Z"
 }
