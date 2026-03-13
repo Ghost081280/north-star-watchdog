@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "A Minnesota woman is accused of using $600K in Medicaid funds for personal expenses",
+      "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections between this case and other cases of Medicaid fraud in Minnesota.",
+      "entities": [
+        "Minnesota woman",
+        "Medicaid program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
+      "id": "rf-1773410416272-p5j1rgz3a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T14:00:16.268Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "A recent article reported that a judge dismissed most of the Gateway tunnel funding freeze lawsuit, which may indicate a lack of oversight in government funding",
       "insight": "This could be a sign of a larger issue with government funding and oversight. I recommend investigating further to see if there are any connections to other entities or programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T12:55:26.802Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -74,25 +94,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T10:35:42.252Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A Minnesota woman has been accused of using $600,000 in Medicaid funds for personal expenses",
-      "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections to other entities or programs.",
-      "entities": [
-        "Minnesota woman"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
-      "id": "rf-1773394675754-8k2kmbt84",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T09:37:55.750Z",
       "isNew": false
     },
     {
@@ -982,6 +983,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,8 +992,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T12:55:26.802Z"
+  "lastUpdated": "2026-03-13T14:00:16.268Z"
 }
