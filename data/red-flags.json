@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "A Minnesota non-profit organization was involved in a $250M pilfering scheme",
+      "insight": "This case highlights a large-scale fraud scheme involving a non-profit organization meant to serve underserved children.",
+      "entities": [
+        "Minnesota non-profit organization"
+      ],
+      "confidence": 95,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU",
+      "id": "rf-1773398142256-qqegcycy8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T10:35:42.252Z",
+      "isNew": true
+    },
+    {
+      "type": "misuse_of_funds",
+      "description": "A Minnesota woman was accused of misusing $600K in Medicaid funds",
+      "insight": "This case highlights the misuse of Medicaid funds by an individual.",
+      "entities": [
+        "Minnesota woman"
+      ],
+      "confidence": 90,
+      "priority": "medium",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWUlvWkxsTUJyQWVkdmxlMjloYnJJX2l5VXVEdjRXOHI2bzU4OG1WWTJwU29oT1lRdi1IbmltMzFNZG1hRWlseWlIZm94WHR6eHVvS2hGZXp0WUpOOGRiNUc1akJaOUlxbXFubHoyR2wwYXJIcTM4SG1IMTVzY0duY1A0ZnJScWFyOWZzdnQwMlB6aVBEbk1nX2dn0gGfAUFVX3lxTFBqQ2RtQW0wYjZrNjR2aFBhaE9xaXN4QUVoODlQNmx6OTFQUHZvOU9Td2s5dV9BaG1EZnI2eGczRm10Q08zWUlpdldfcTk5RElORTBSaEdDU3d0cFNDcmJ1MTRFQ204b21ReVdMVEI1WTZ0M3VLNExaSzRmM0psU21sR1paZkVDamVIcF9LX2NOeUJqUEVGWnNTQjg2Z3hVOA",
+      "id": "rf-1773398142256-qszlhtevl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T10:35:42.252Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A Minnesota woman has been accused of using $600,000 in Medicaid funds for personal expenses",
       "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections to other entities or programs.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T09:37:55.750Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -941,50 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T22:22:01.456Z",
       "isNew": false
-    },
-    {
-      "type": "conviction tossed",
-      "description": "Judge tosses conviction of Somali who ripped off Minnesota taxpayers",
-      "insight": "This could indicate issues with previous convictions or investigations in Minnesota.",
-      "entities": [
-        "Somali Individual",
-        "Minnesota taxpayers"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd1V0NTlib0dWbU9UZDBiNzZBcjFJSk1XOE45QjZjV000UkkyWVozcEpmOUJuOUVnektYRmM0c1RkWUFqNHZmVGVYcjF4bDZfY0k2RlEyaUpoQmtuYnc0RVRkSUhKLVRUeW9LRWpFS3NNemxuQmtLcGtOZnVnQ0dtMlRMbjV0SUdO?oc=5",
-      "id": "rf-1773004935560-i1kfclsvh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T21:22:15.556Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation has led to a drug trafficking arrest in Baxter.",
-      "insight": "This arrest may be part of a larger investigation into drug trafficking in the area. Further research is needed to determine the scope of the investigation.",
-      "entities": [
-        "Baxter"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Harlan Enterprise",
-      "sourceUrl": "https://www.harlanenterprise.com/news/federal-investigation-leads-to-a-drug-trafficking-arrest-in-baxter/",
-      "id": "rf-1772994751201-q22p4coum",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T18:32:31.196Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T09:37:55.750Z"
+  "lastUpdated": "2026-03-13T10:35:42.252Z"
 }

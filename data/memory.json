@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-08T10:24:07.875Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-08T11:20:19.106Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-13T09:37:55.748Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-13T10:35:42.250Z",
+      "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota Medicaid Funding Investigation?",
-    "Where did the $10M allegedly go in Childcare Fraud Investigation?",
-    "What other organizations is Minnesota non-profit leader connected to?",
-    "Where did the $250M allegedly go in Minnesota COVID fraud scheme?",
-    "Where did the Not specified allegedly go in Gateway tunnel funding?",
     "What other organizations is Minnesota woman connected to?",
     "What other organizations is Non-profit leader connected to?",
     "Where did the $600K allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +553,12 @@
     "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp Data Breach Investigation?",
     "Where did the $1 million allegedly go in Figure Lending Corp data breach investigation?",
     "Where did the $600K allegedly go in Medicaid fraud investigation?",
-    "Where did the None allegedly go in FBI investigation into Temple Israel incident?"
+    "Where did the None allegedly go in FBI investigation into Temple Israel incident?",
+    "What other organizations is Minnesota Non-Profit Leader connected to?",
+    "What other organizations is Minnesota Woman connected to?",
+    "Where did the $250M allegedly go in Minnesota Non-Profit Organization Investigation?",
+    "Where did the Nearly 1 million user records breached allegedly go in Figure Lending Corp Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1463,
-    "articlesProcessed": 72950,
-    "redFlagsFound": 1730,
+    "totalScans": 1464,
+    "articlesProcessed": 73000,
+    "redFlagsFound": 1732,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,44 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 2 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "A Minnesota non-profit organization was involved in a $250M pilfering scheme",
+          "insight": "This case highlights a large-scale fraud scheme involving a non-profit organization meant to serve underserved children.",
+          "entities": [
+            "Minnesota non-profit organization"
+          ],
+          "confidence": 95,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU"
+        },
+        {
+          "type": "misuse_of_funds",
+          "description": "A Minnesota woman was accused of misusing $600K in Medicaid funds",
+          "insight": "This case highlights the misuse of Medicaid funds by an individual.",
+          "entities": [
+            "Minnesota woman"
+          ],
+          "confidence": 90,
+          "priority": "medium",
+          "source": "CBS News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWUlvWkxsTUJyQWVkdmxlMjloYnJJX2l5VXVEdjRXOHI2bzU4OG1WWTJwU29oT1lRdi1IbmltMzFNZG1hRWlseWlIZm94WHR6eHVvS2hGZXp0WUpOOGRiNUc1akJaOUlxbXFubHoyR2wwYXJIcTM4SG1IMTVzY0duY1A0ZnJScWFyOWZzdnQwMlB6aVBEbk1nX2dn0gGfAUFVX3lxTFBqQ2RtQW0wYjZrNjR2aFBhaE9xaXN4QUVoODlQNmx6OTFQUHZvOU9Td2s5dV9BaG1EZnI2eGczRm10Q08zWUlpdldfcTk5RElORTBSaEdDU3d0cFNDcmJ1MTRFQ204b21ReVdMVEI1WTZ0M3VLNExaSzRmM0psU21sR1paZkVDamVIcF9LX2NOeUJqUEVGWnNTQjg2Z3hVOA"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Childcare grant fraud investigation?",
         "Where did the $100M allegedly go in Minnesota Medicaid Funding Investigation?",
-        "Where did the $10M allegedly go in Childcare Fraud Investigation?"
+        "Where did the $10M allegedly go in Childcare Fraud Investigation?",
+        "What other organizations is Minnesota non-profit leader connected to?"
       ]
     }
   ],
@@ -594,6 +625,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-13T09:37:55.748Z",
-  "lastUpdated": "2026-03-13T09:37:55.748Z"
+  "lastReflection": "2026-03-13T10:35:42.250Z",
+  "lastUpdated": "2026-03-13T10:35:42.251Z"
 }
