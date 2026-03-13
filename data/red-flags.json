@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "A recent article reported that a judge dismissed most of the Gateway tunnel funding freeze lawsuit, which may indicate a lack of oversight in government funding",
+      "insight": "This could be a sign of a larger issue with government funding and oversight. I recommend investigating further to see if there are any connections to other entities or programs.",
+      "entities": [
+        "Gateway tunnel"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NJBIZ",
+      "sourceUrl": "https://njbiz.com/judge-dismisses-most-gateway-tunnel-funding-freeze-lawsuit/",
+      "id": "rf-1773406526805-gvjbb2p6y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T12:55:26.802Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Federal withholding of Medicaid funds from Minnesota",
       "insight": "This could indicate a larger issue with Medicaid management in Minnesota",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T11:30:20.143Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -132,25 +151,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T04:12:15.483Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal withholding of Medicaid funds from Minnesota",
-      "insight": "I notice a pattern of federal withholding of Medicaid funds from Minnesota, which may indicate a larger issue with the state's handling of federal funds. Further investigation is needed to determine the cause of this issue.",
-      "entities": [
-        "Minnesota state government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal court documents",
-      "sourceUrl": "https://www.kare11.com/article/news/local/minnesota-officials-trump-administration-spar-in-federal-court-over-medicaid-funding/89-24651441",
-      "id": "rf-1773366968900-gvrudheze",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T01:56:08.897Z",
       "isNew": false
     },
     {
@@ -982,7 +982,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T11:30:20.143Z"
+  "lastUpdated": "2026-03-13T12:55:26.802Z"
 }
