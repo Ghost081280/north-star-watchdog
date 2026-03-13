@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The Quality 'Learing' Center in Minnesota has been closed, records show.",
+      "insight": "This could indicate a potential case of fraud or mismanagement in the program, warranting further investigation.",
+      "entities": [
+        "Quality 'Learing' Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://aol.com/2026/03/13/minnesotas-infamous-quality-learing-center-is-now-closed-records-show/",
+      "id": "rf-1773430253131-ca3qwlgan",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T19:30:53.127Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The Quality 'Learing' Center in Minnesota is now closed, records show.",
       "insight": "This could indicate a pattern of fraudulent activity or mismanagement of funds, warranting further investigation into the center's operations and potential connections to other entities.",
       "entities": [
@@ -958,30 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T09:50:04.239Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-Up",
-      "description": "Judge tosses conviction of Somali who ripped off Minnesota taxpayers, raising concerns about potential cover-up or inadequate investigation",
-      "insight": "This development suggests that there may be more to the story than initially meets the eye. Further investigation is needed to determine the extent of the fraud and potential involvement of other individuals or organizations.",
-      "entities": [
-        "Ilhan Omar",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd1V0NTlib0dWbU9UZDBiNzZBcjFJSk1XOE45QjZjV000UkkyWVozcEpmOUJuOUVnektYRmM0c1RkWUFqNHZmVGVYcjF4bDZfY0k2RlEyaUpoQmtuYnc0RVRkSUhKLVRUeW9LRWpFS3NNemxuQmtLcGtOZnVnQ0dtMlRMbjV0SUdO",
-      "id": "rf-1773045741716-x33wr87b9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T08:42:21.713Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T18:40:07.874Z"
+  "lastUpdated": "2026-03-13T19:30:53.127Z"
 }
