@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Federal withholding of Medicaid funds from Minnesota",
+      "insight": "This could indicate a larger issue with Medicaid management in Minnesota",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Judge hears arguments over federal withholding of Medicaid funds from Minnesota - 5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSmtNS3o4cmNBM1c1QmY2OEJPaVBlUER3b1Z1eGVyQTRtVmpRa1FpQzM5RjJmSE1CNmxDUF9Kc2VYQ0pBMGVRN2J2ckEtWEpCaWI0bU03dnd0Ml8yTGxmUHBOX2ZRdHg0QnFoWWJjX2hzQ19JNFZqNnRFZnQ5Tkk5dmdiWFJFS0poN3dYQjJ2WVFvWkJ3NW9ONVo5bHhiRHpNOTZud0M4YS1aREhRVTg1cA?oc=5",
+      "id": "rf-1773401420146-6o6bulrde",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T11:30:20.143Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "A Minnesota non-profit organization was involved in a $250M pilfering scheme",
       "insight": "This case highlights a large-scale fraud scheme involving a non-profit organization meant to serve underserved children.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T10:35:42.252Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "misuse_of_funds",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T10:35:42.252Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -959,30 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T05:57:06.475Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Cover-Up",
-      "description": "Prison guards discussed a potential cover-up of Epstein's death, according to an inmate",
-      "insight": "This raises concerns about potential corruption and cover-ups within the prison system. Further investigation is needed to determine the validity of these claims.",
-      "entities": [
-        "Epstein",
-        "Prison Guards"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Detroit News",
-      "sourceUrl": "https://www.detroitnews.com/story/news/nation/2026/03/08/prison-guards-discussed-cover-up-epsteins-death-inmate-tells-fbi/6957416002/",
-      "id": "rf-1773008521460-5pdpdhsst",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T22:22:01.456Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,8 +991,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T10:35:42.252Z"
+  "lastUpdated": "2026-03-13T11:30:20.143Z"
 }
