@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation_blocked",
+      "description": "A federal judge has blocked the Justice Department's subpoenas of Federal Reserve Chair Jerome Powell, dealing a blow to the investigation.",
+      "insight": "This development raises concerns about the potential for political interference or selective enforcement in the investigation. It also highlights the challenges faced by investigators in gathering evidence against high-profile targets.",
+      "entities": [
+        "Jerome Powell",
+        "Justice Department"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/judge-blocks-subpoenas-against-fed-chair-powell-citing-essentially-zero-evidence-n1259261",
+      "id": "rf-1773440815418-hyngocjbi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T22:26:55.415Z",
+      "isNew": true
+    },
+    {
       "type": "political influence",
       "description": "The judge's ruling suggests that the DOJ investigation into Jerome Powell may have been politically motivated.",
       "insight": "The judge's ruling raises concerns about the potential for political influence in the DOJ's investigation into Jerome Powell. This could indicate a larger issue with the politicization of law enforcement.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T21:31:37.591Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential political retribution",
@@ -958,31 +978,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T14:09:58.797Z",
       "isNew": false
-    },
-    {
-      "type": "terrorism investigation",
-      "description": "The FBI has launched a terrorism investigation into a homemade explosive device ignited outside NYC Mayor Mamdani's residence.",
-      "insight": "I suspect that this incident may be linked to a larger terrorist organization or plot. Further investigation is needed to determine the motivations behind the attack and to identify any potential co-conspirators.",
-      "entities": [
-        "FBI",
-        "NYC Mayor Mamdani"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-launches-terrorism-investigation-after-homemade-explosive-device-ignited-outside-of-nyc-mayor-mamdanis-residence/",
-      "id": "rf-1773061213293-qzx5ojv16",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T13:00:13.289Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -991,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T21:31:37.591Z"
+  "lastUpdated": "2026-03-13T22:26:55.415Z"
 }
