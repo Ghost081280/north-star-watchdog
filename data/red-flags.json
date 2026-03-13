@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Judge hears arguments over federal withholding of Medicaid funds from Minnesota",
+      "insight": "Potential for significant impact on healthcare services in Minnesota",
+      "entities": [
+        "Minnesota",
+        "Medicaid"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5 Eyewitnessnews.com/news/local/judge-hears-arguments-over-federal-withholding-of-medicaid-funds-from-minnesota",
+      "id": "rf-1773391086144-xcet3d4f0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T08:38:06.140Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A Minnesota woman is accused of using $600,000 in Medicaid funds for personal expenses",
       "insight": "This case highlights the need for increased oversight and enforcement to prevent waste and abuse in the Medicaid program. I will investigate further to identify potential patterns and connections between entities and programs.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T07:44:22.802Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "data breach",
@@ -961,31 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-08T18:32:31.196Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The infamous Quality Learning Center in Minnesota is now closed",
-      "insight": "The closure of this center may indicate a response to allegations of fraud or misconduct. Further investigation is needed to determine the reasons behind the closure and any potential wrongdoing.",
-      "entities": [
-        "Quality Learning Center",
-        "Minnesota"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNT2h2b0p0Mkg0YkdNS2NwcndXNjJsV3kzZUg5aWk1MWtDYTcxbk94ZGFUbzljeE9qaktNRWR4VWFTa2RtOHBSREZPeEowMXFzc1djWUZybC0tcjRwTEt6azc3WG5kOVdsa1o5TkJfRHdoTUZRSkJCTEhTZ3g3UEZrdmhIQlRvTEhFOHUyZk1n?oc=5",
-      "id": "rf-1772987193546-u3lw6egpm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-08T16:26:33.543Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T07:44:22.802Z"
+  "lastUpdated": "2026-03-13T08:38:06.140Z"
 }
