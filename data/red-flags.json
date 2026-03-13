@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential political retribution",
+      "description": "The investigation into Federal Reserve Chair Jerome Powell has been criticized for being politically motivated.",
+      "insight": "I suspect that the investigation may be an attempt to discredit Powell and the Federal Reserve. Further investigation is needed to determine the legitimacy of the allegations.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/03/13/business/judge-quashes-justice-dept-subpoenas-federal-reserve.html",
+      "id": "rf-1773433977090-my5un7gd4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T20:32:57.086Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Quality 'Learing' Center in Minnesota has been closed, records show.",
       "insight": "This could indicate a potential case of fraud or mismanagement in the program, warranting further investigation.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T19:30:53.127Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -958,39 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T09:50:04.239Z",
       "isNew": false
-    },
-    {
-      "type": "fraud investigation",
-      "description": "An investigation into Bright Horizons Family Solutions Inc. is ongoing.",
-      "insight": "This investigation may uncover potential fraudulent activities related to family solutions services.",
-      "entities": [
-        "Bright Horizons Family Solutions Inc."
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Business Wire",
-      "sourceUrl": "https://www.businesswire.com/news/home/20260309005618/en/bfam-investors-have-opportunity-to-join-bright-horizons-family-solutions-inc.-fraud-investigation-with-the-schall-law-firm",
-      "id": "rf-1773049804243-8klngwuxq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T09:50:04.239Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T19:30:53.127Z"
+  "lastUpdated": "2026-03-13T20:32:57.086Z"
 }
