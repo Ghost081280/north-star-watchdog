@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-08T05:42:05.076Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-08T06:40:46.010Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-13T04:12:15.481Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-13T05:47:47.223Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Gov. Tim Walz connected to?",
-    "Where did the $250 million allegedly go in Feeding our Future trial?",
     "Where did the $100 million allegedly go in Childcare grant fraud?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Nancy Guthrie connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Minnesota woman connected to?",
     "What other organizations is Non-profit leader connected to?",
     "Where did the $600K allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the $250M allegedly go in COVID fraud scheme investigation?"
+    "Where did the $250M allegedly go in COVID fraud scheme investigation?",
+    "Where did the $600,000 allegedly go in Medicaid fraud investigation?",
+    "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp data breach investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1458,
-    "articlesProcessed": 72700,
-    "redFlagsFound": 1723,
+    "totalScans": 1459,
+    "articlesProcessed": 72750,
+    "redFlagsFound": 1724,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "COVID fraud scheme",
-          "description": "A non-profit leader was convicted of pilfering $250M meant for underserved children in COVID fraud scheme",
-          "insight": "This case highlights the need for increased vigilance and monitoring of COVID-related funds to prevent such abuses. Further investigation is needed to determine the extent of the scheme and to identify any other individuals or organizations involved.",
-          "entities": [
-            "Non-profit leader"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL.com",
-          "sourceUrl": "https://www.aol.com/news/minnesota-non-profit-leader-convicted-of-pilfering-250m-meant-for-underserved-children-in-countrys-largest-covid-fraud-scheme-161341441.html"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $Not specified allegedly go in Feeding Our Future fraud trial?",
-        "Where did the $Not specified allegedly go in Medicaid system overhaul?",
-        "What specific allegations exist against Tim Walz?"
+        "What other organizations is Gov. Tim Walz connected to?",
+        "Where did the $250 million allegedly go in Feeding our Future trial?",
+        "Where did the $100 million allegedly go in Childcare grant fraud?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-13T04:12:15.481Z",
-  "lastUpdated": "2026-03-13T04:12:15.482Z"
+  "lastReflection": "2026-03-13T05:47:47.223Z",
+  "lastUpdated": "2026-03-13T05:47:47.224Z"
 }
