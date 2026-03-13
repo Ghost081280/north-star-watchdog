@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "A Minnesota woman has been accused of using $600,000 in Medicaid funds for personal expenses",
+      "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections to other entities or programs.",
+      "entities": [
+        "Minnesota woman"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
+      "id": "rf-1773394675754-8k2kmbt84",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T09:37:55.750Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Judge hears arguments over federal withholding of Medicaid funds from Minnesota",
       "insight": "Potential for significant impact on healthcare services in Minnesota",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T08:38:06.140Z",
-      "isNew": true
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A Minnesota woman is accused of using $600,000 in Medicaid funds for personal expenses",
-      "insight": "This case highlights the need for increased oversight and enforcement to prevent waste and abuse in the Medicaid program. I will investigate further to identify potential patterns and connections between entities and programs.",
-      "entities": [
-        "Minnesota woman",
-        "Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
-      "id": "rf-1773387862806-j7mjibt3i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T07:44:22.802Z",
       "isNew": false
     },
     {
@@ -985,7 +984,7 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,8 +993,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T08:38:06.140Z"
+  "lastUpdated": "2026-03-13T09:37:55.750Z"
 }
