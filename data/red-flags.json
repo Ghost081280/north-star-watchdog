@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "A Minnesota non-profit organization was involved in a $250M COVID fraud scheme",
+      "insight": "This suggests a large-scale fraud scheme involving a non-profit organization and Medicaid funds",
+      "entities": [
+        "Minnesota non-profit organization"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU?oc=5",
+      "id": "rf-1773413682271-x7zouhw4l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T14:54:42.267Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "A Minnesota woman was accused of misusing $600K in Medicaid funds",
+      "insight": "This suggests a potential for misuse of Medicaid funds by individuals or organizations",
+      "entities": [
+        "Minnesota woman"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPRHY3bXAzT3Y0dUx1TkEyRzZqVzYtdDNOcThRZXl6QkxlMWZzRzJPMUJXXzluMFkzRmJYbVRnZXRPVXA1NlZQUHFLZl90T29sOExkcDllb09zVUllWTc5bklSTkhHdGwtYk5ka1pXLXBpcUlSSThJbG5Cdm5sU3ZqdUI5OXR5dEtZS0MwTVpmMFJKeV8wNzhwYml0T2haUDZ1czRRendKWnV3M3Z3Y3hmbFNnNHVreTVUNXZkUW53NGFpcmhXMGJJOFZuMzJZUUFiSjE0MUlzMjMzeXFiZ2ZHaUNB?oc=5",
+      "id": "rf-1773413682271-unqynoiu6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-13T14:54:42.267Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A Minnesota woman is accused of using $600K in Medicaid funds for personal expenses",
       "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections between this case and other cases of Medicaid fraud in Minnesota.",
@@ -18,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T14:00:16.268Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "A recent article reported that a judge dismissed most of the Gateway tunnel funding freeze lawsuit, which may indicate a lack of oversight in government funding",
-      "insight": "This could be a sign of a larger issue with government funding and oversight. I recommend investigating further to see if there are any connections to other entities or programs.",
-      "entities": [
-        "Gateway tunnel"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NJBIZ",
-      "sourceUrl": "https://njbiz.com/judge-dismisses-most-gateway-tunnel-funding-freeze-lawsuit/",
-      "id": "rf-1773406526805-gvjbb2p6y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T12:55:26.802Z",
       "isNew": false
     },
     {
@@ -960,30 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T07:03:02.295Z",
       "isNew": false
-    },
-    {
-      "type": "Bribery Scheme",
-      "description": "A bribery scheme was uncovered in the Feeding Our Future case, leading to the sentencing of a defendant.",
-      "insight": "This bribery scheme may be indicative of a larger issue with corruption in the child care system. Further investigation is needed to determine the extent of the corruption and to identify any other individuals or organizations involved.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Red Lake Nation News",
-      "sourceUrl": "https://www.redlakenationnews.com/first-defendant-sentenced-for-scheme-to-bribe-feeding-our-future-juror/",
-      "id": "rf-1773035826478-s5imj74qd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T05:57:06.475Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T14:00:16.268Z"
+  "lastUpdated": "2026-03-13T14:54:42.267Z"
 }

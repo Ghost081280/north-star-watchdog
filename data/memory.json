@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-08T14:23:49.115Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-08T15:22:39.536Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-13T14:00:16.266Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-13T14:54:42.265Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp data breach investigation?",
-    "Where did the $0 allegedly go in Figure Lending Corp data breach investigation?",
     "Where did the $0 allegedly go in Temple Israel incident investigation?",
     "Where did the $0 allegedly go in Eaton Fire response investigation?",
     "Where did the $0 allegedly go in Stauber’s ‘Stop Fraud by SOMALIA Act’?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?",
     "Where did the $600K allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is Minnesota woman connected to?",
-    "What other organizations is Non-profit leader connected to?"
+    "What other organizations is Non-profit leader connected to?",
+    "Where did the $250M allegedly go in Minnesota non-profit organization investigation?",
+    "Where did the $600K allegedly go in Minnesota woman Medicaid funds investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1467,
-    "articlesProcessed": 73150,
-    "redFlagsFound": 1735,
+    "totalScans": 1468,
+    "articlesProcessed": 73200,
+    "redFlagsFound": 1737,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal freeze",
+          "description": "A Minnesota non-profit organization was involved in a $250M COVID fraud scheme",
+          "insight": "This suggests a large-scale fraud scheme involving a non-profit organization and Medicaid funds",
+          "entities": [
+            "Minnesota non-profit organization"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in COVID fraud scheme investigation?",
-        "Where did the $600,000 allegedly go in Medicaid fraud investigation?",
-        "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp data breach investigation?"
+        "Where did the Nearly 1 million user records allegedly go in Figure Lending Corp data breach investigation?",
+        "Where did the $0 allegedly go in Figure Lending Corp data breach investigation?",
+        "Where did the $0 allegedly go in Temple Israel incident investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-13T14:00:16.266Z",
-  "lastUpdated": "2026-03-13T14:00:16.267Z"
+  "lastReflection": "2026-03-13T14:54:42.265Z",
+  "lastUpdated": "2026-03-13T14:54:42.266Z"
 }
