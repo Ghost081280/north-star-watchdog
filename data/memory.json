@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-09T14:09:58.795Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-09T15:57:35.815Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-14T11:23:39.993Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-14T12:47:49.702Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota non-profit organization investigation?",
     "Where did the $600K allegedly go in Minnesota woman Medicaid funds investigation?",
     "Where did the $600K allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $250M allegedly go in Minnesota child care fraud probe?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M+ allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Feeding Our Future defendants connected to?",
-    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $40M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1486,
-    "articlesProcessed": 74100,
-    "redFlagsFound": 1756,
+    "totalScans": 1487,
+    "articlesProcessed": 74150,
+    "redFlagsFound": 1758,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota woman connected to?",
-        "What other organizations is Non-profit leader connected to?",
-        "Where did the $250M allegedly go in Minnesota non-profit organization investigation?"
+        "Where did the $250M allegedly go in Minnesota non-profit organization investigation?",
+        "Where did the $600K allegedly go in Minnesota woman Medicaid funds investigation?",
+        "Where did the $600K allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-14T11:23:39.993Z",
-  "lastUpdated": "2026-03-14T11:23:39.994Z"
+  "lastReflection": "2026-03-14T12:47:49.702Z",
+  "lastUpdated": "2026-03-14T12:47:49.703Z"
 }

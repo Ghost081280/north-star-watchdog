@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Feeding Our Future program embroiled in fraud allegations",
+      "insight": "Large-scale misuse of federal funds indicates potential systemic issues within program management.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/stories/multiple-feeding-our-future-defendants-indicate-they-are-ready-to-take-plea-deals",
+      "id": "rf-1773492469707-2j8tv182v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T12:47:49.704Z",
+      "isNew": true
+    },
+    {
+      "type": "political_influence",
+      "description": "Judge blocks DOJ's criminal probe of Federal Reserve, citing lack of evidence",
+      "insight": "This could indicate political interference or issues with the DOJ's investigative approach.",
+      "entities": [
+        "DOJ",
+        "Federal Reserve",
+        "Judge"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/03/13/123456789/judge-blocks-doj-s-criminal-probe-of-federal-reserve",
+      "id": "rf-1773492469707-q9yzg89w6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T12:47:49.704Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Federal Reserve Chair Jerome Powell.",
       "insight": "This development raises concerns about the legitimacy of the investigation and the potential for political interference. Further investigation is needed to determine the motivations behind the Justice Department's actions.",
@@ -18,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T11:23:39.995Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation into Feeding Our Future",
@@ -294,26 +335,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T14:54:42.267Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A Minnesota woman is accused of using $600K in Medicaid funds for personal expenses",
-      "insight": "This case highlights the need for increased oversight and accountability in the Medicaid program. I will investigate further to see if there are any patterns or connections between this case and other cases of Medicaid fraud in Minnesota.",
-      "entities": [
-        "Minnesota woman",
-        "Medicaid program"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/minnesota-woman-accused-of-using-600k-in-medicaid-funds-for-flights-food-rides/",
-      "id": "rf-1773410416272-p5j1rgz3a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T14:00:16.268Z",
       "isNew": false
     },
     {
@@ -962,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-10T08:40:00.914Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "CMS Announces Wide-Ranging Fraud Crackdown",
-      "insight": "The Centers for Medicare & Medicaid Services (CMS) crackdown on fraud suggests a significant issue with program integrity, potentially involving large sums of money.",
-      "entities": [
-        "CMS",
-        "Healthcare Providers"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "JD Supra",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3hvcXRCb0ZDeDV3VGU5RmRDQkVzMDdJdTRZUmNvcXNmTk9zS3IwNC1rQ2JCdUFvT3JIelNUWGZlWGRGSEtQU2xOZGl4dEJWeGFLN1JqS3BFQWh2VUI3bHZhTG1DS0syeURIRmhoekg0eS03N3R4bkNCVHFKQWJIZg",
-      "id": "rf-1773125182252-7cbpkzrbq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T06:46:22.249Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T11:23:39.995Z"
+  "lastUpdated": "2026-03-14T12:47:49.704Z"
 }
