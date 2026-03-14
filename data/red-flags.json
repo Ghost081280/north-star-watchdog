@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Federal Reserve Chair Jerome Powell.",
+      "insight": "This development raises concerns about the legitimacy of the investigation and the potential for political interference. Further investigation is needed to determine the motivations behind the Justice Department's actions.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/business/2026/03/13/judge-quashes-subpoenas-in-justice-departments-investigation-of-fed-chair-jerome-powell/",
+      "id": "rf-1773487419998-3r98bfsrc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T11:23:39.995Z",
+      "isNew": true
+    },
+    {
       "type": "investigation into Feeding Our Future",
       "description": "Multiple defendants indicate readiness to take plea deals in Feeding Our Future fraud case",
       "insight": "This suggests that there is substantial evidence of fraud in the Feeding Our Future case, and defendants are seeking to mitigate their sentences through plea deals.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T10:26:45.477Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -98,26 +118,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T07:34:41.991Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Fed chair Jerome Powell, raising concerns about the probe's legitimacy.",
-      "insight": "I see a pattern of pushback against federal investigations, with the judge's decision to quash subpoenas in the Powell probe being the latest example. This development warrants further investigation into the relationship between the Federal Reserve and the Justice Department.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/03/14/business/jerome-powell-investigation.html",
-      "id": "rf-1773470633788-su76ems74",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T06:43:53.785Z",
       "isNew": false
     },
     {
@@ -986,17 +986,17 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T10:26:45.477Z"
+  "lastUpdated": "2026-03-14T11:23:39.995Z"
 }
