@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-09T09:50:04.237Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-09T10:43:27.209Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-14T07:34:41.989Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-14T08:33:17.156Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1482,
-    "articlesProcessed": 73900,
-    "redFlagsFound": 1750,
+    "totalScans": 1483,
+    "articlesProcessed": 73950,
+    "redFlagsFound": 1751,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What other organizations is Minnesota non-profit leader connected to?",
-        "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?"
+        "Where did the $250M allegedly go in Minnesota non-profit COVID fraud scheme?",
+        "Where did the $600K allegedly go in Minnesota Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-14T07:34:41.989Z",
-  "lastUpdated": "2026-03-14T07:34:41.990Z"
+  "lastReflection": "2026-03-14T08:33:17.156Z",
+  "lastUpdated": "2026-03-14T08:33:17.157Z"
 }
