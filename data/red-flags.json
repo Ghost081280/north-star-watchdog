@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal subpoena reveals FBI investigation of Kansas City homeless advocate",
+      "insight": "This indicates a potential pattern of corruption and abuse of power, particularly in the non-profit sector.",
+      "entities": [
+        "Kansas City homeless advocate"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "KSHB 41 Kansas City",
+      "sourceUrl": "https://www.kshb41.com/federal-subpoena-reveals-fbi-investigation-of-kansas-city-homeless-advocate/2026-03-13",
+      "id": "rf-1773509147555-gi34yhegs",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T17:25:47.552Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of transparency",
       "description": "The quashing of subpoenas in the Federal Reserve investigation raises concerns about the lack of transparency in the investigation.",
       "insight": "I believe that the lack of transparency in this investigation is a red flag that warrants further scrutiny. It is possible that the investigation is not being conducted in a thorough and impartial manner.",
@@ -964,29 +983,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-10T17:54:57.806Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota's Department of Human Services is facing scrutiny over a payment freeze affecting individuals with disabilities.",
-      "insight": "The freeze has been ongoing for nearly 100 days, causing concerns about the impact on vulnerable populations.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DHS payment freeze nears 100 days, Minnesotans with disabilities fear losing homes",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes",
-      "id": "rf-1773151357959-jy8jv78hi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T14:02:37.956Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,7 +996,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T16:30:09.550Z"
+  "lastUpdated": "2026-03-14T17:25:47.552Z"
 }
