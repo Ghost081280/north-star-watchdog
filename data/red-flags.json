@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of evidence",
+      "description": "The judge's decision to quash subpoenas in the Federal Reserve investigation raises concerns about the evidence presented by the DOJ.",
+      "insight": "This development suggests that the DOJ may not have sufficient evidence to support their investigation, which could lead to further scrutiny of their methods and motives.",
+      "entities": [
+        "Jerome Powell",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fortune",
+      "sourceUrl": "https://www.fortune.com/2026/03/14/judge-quashes-fed-subpoenas-doj-jerome-powell/",
+      "id": "rf-1773453219241-a6u7lrxlx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T01:53:39.238Z",
+      "isNew": true
+    },
+    {
       "type": "investigation_blocked",
       "description": "A federal judge has blocked the Justice Department's subpoenas of Federal Reserve Chair Jerome Powell, dealing a blow to the investigation.",
       "insight": "This development raises concerns about the potential for political interference or selective enforcement in the investigation. It also highlights the challenges faced by investigators in gathering evidence against high-profile targets.",
@@ -958,30 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T16:58:46.863Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI launches terrorism investigation after homemade explosive device ignited outside of NYC Mayor Mamdani's residence",
-      "insight": "This indicates a potential threat to public officials and could be related to larger security concerns.",
-      "entities": [
-        "FBI",
-        "NYC Mayor Mamdani"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdU9MVmJ1VENWQk5mSHI3TGdTd2dUbVRZRjVTbnlCZjVyTExKejRrZ0diMzluR1g2bUlGQUd1ODh1SUJVeEFyRmExNy12VHpVSUZBemFSN2RHQWdsUndkZGV3MU1ZSkhObXhPVVhpRVVwejlpbXVjRzZoYUFfVFZ5YUtUSy14ckNFVHJHdWxjMHZLV1hPSWZnVnFuZkQ5MFdpaExuWHJRSnduOXMzWFlteHg4RWphZ29x0gG-AUFVX3lxTE53bzZESDdCd0NhWjRxaGhwNm10REdJLUh5Y2oxVl92U0pyWDU2WTlpSFIzdENPdXBzcXZQSWNZbXA2TjdGZGNNYnEzeHdWS3BCVlI3NFNVRWtpUk5ONVBHZlRnSi01QkRLWUhGdTNCblZ4TmN6NDloVHlPQWtaTFB1cWRlMDFoSzE1QTFOZGlPNWxfZUM1RFY5aUl1RXNXZ240TmViMkFRT2dnUFlMaG9BMzIzMUY3dWk2RTlRRWc?oc=5",
-      "id": "rf-1773065398800-drt7nyjd8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T14:09:58.797Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-13T23:26:48.762Z"
+  "lastUpdated": "2026-03-14T01:53:39.238Z"
 }
