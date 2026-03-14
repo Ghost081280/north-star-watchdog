@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-09T04:24:22.520Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-09T05:57:06.473Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-14T01:53:39.236Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-14T04:10:35.332Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Woman connected to?",
-    "Where did the $250M allegedly go in Minnesota Non-Profit Organization Investigation?",
     "Where did the Nearly 1 million user records breached allegedly go in Figure Lending Corp Investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Minnesota non-profit leader connected to?",
@@ -558,7 +556,9 @@
     "Where did the No specific amount mentioned allegedly go in SOMALIA Act Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the Unknown allegedly go in Federal Reserve Investigation?",
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
+    "Where did the Unknown allegedly go in Justice Department's investigation of Fed Chair Jerome Powell?",
+    "Where did the Unknown allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1478,
-    "articlesProcessed": 73700,
-    "redFlagsFound": 1746,
+    "totalScans": 1479,
+    "articlesProcessed": 73750,
+    "redFlagsFound": 1747,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in FBI investigation into Temple Israel incident?",
-        "What other organizations is Minnesota Non-Profit Leader connected to?",
-        "What other organizations is Minnesota Woman connected to?"
+        "What other organizations is Minnesota Woman connected to?",
+        "Where did the $250M allegedly go in Minnesota Non-Profit Organization Investigation?",
+        "Where did the Nearly 1 million user records breached allegedly go in Figure Lending Corp Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-14T01:53:39.236Z",
-  "lastUpdated": "2026-03-14T01:53:39.237Z"
+  "lastReflection": "2026-03-14T04:10:35.332Z",
+  "lastUpdated": "2026-03-14T04:10:35.333Z"
 }

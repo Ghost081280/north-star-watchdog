@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation obstruction",
+      "description": "The judge's decision to quash subpoenas in the Justice Department's investigation of Fed Chair Jerome Powell raises concerns about obstruction of justice.",
+      "insight": "This development may indicate an attempt to hinder the investigation, and further research is needed to understand the implications.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/03/13/us/politics/judge-quashes-justice-dept-subpoenas-of-fed.html",
+      "id": "rf-1773461435338-skenalloz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T04:10:35.334Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of evidence",
       "description": "The judge's decision to quash subpoenas in the Federal Reserve investigation raises concerns about the evidence presented by the DOJ.",
       "insight": "This development suggests that the DOJ may not have sufficient evidence to support their investigation, which could lead to further scrutiny of their methods and motives.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T01:53:39.238Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation_blocked",
@@ -959,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T17:50:53.757Z",
       "isNew": false
-    },
-    {
-      "type": "FBI raid",
-      "description": "FBI raids homes of 2 Bucks County men accused of throwing explosive device in NYC protest",
-      "insight": "This could indicate a potential threat to public safety and national security",
-      "entities": [
-        "Two Bucks County men"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "6abc Philadelphia",
-      "sourceUrl": "https://6abc.com/fbi-raids-homes-of-2-bucks-county-men-accused-of-throwing-explosive-device-in-nyc-protest/13854214/",
-      "id": "rf-1773075526866-yz5eatpwj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T16:58:46.863Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T01:53:39.238Z"
+  "lastUpdated": "2026-03-14T04:10:35.334Z"
 }
