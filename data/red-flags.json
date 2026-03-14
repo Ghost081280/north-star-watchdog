@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota officials skip State House fraud hearing",
+      "insight": "The absence of Minnesota officials at the State House fraud hearing raises concerns about the state's commitment to addressing fraud. This could indicate a lack of transparency or accountability in the state's handling of fraudulent activities.",
+      "entities": [
+        "Minnesota officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xRFAyM2JYZ3I3NlJIUjZISXNJal92Q2pveG5TR2t3NmcwU2ljSG9fdHd2NV9lOGZQUlFCNUFlM19iRGtxSTZkMUlmYlFpU0E5Zi1NcDNBQWN0X3M",
+      "id": "rf-1773498487680-aukqyqezt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T14:28:07.676Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Judge quashes subpoenas in Federal Reserve criminal probe",
+      "insight": "The judge's decision to quash subpoenas in the Federal Reserve investigation could hinder the DOJ's ability to gather evidence. This development may impact the probe into Jerome Powell's activities.",
+      "entities": [
+        "Federal Reserve",
+        "DOJ"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUzlxeDJvbHF0cWRBXzBsamRjRGRiMUp2Sng5aUhtWHU1bHd1a1kydmtsTDEwdGVnVF9BeVRIX0dSb09ZcTVMOEFzUVdGVkc1YnZidEN3UU9MUmNWUi14QW9UelE3UGU5UnN1dXVybDNPeUpUZU02Z2xHTGx5WVFxOEVwcmR4VnY3",
+      "id": "rf-1773498487680-ml2rddlim",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T14:28:07.676Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of evidence",
       "description": "The investigation into the Federal Reserve and its chair Jerome Powell found no evidence of wrongdoing.",
       "insight": "This lack of evidence raises questions about the validity of the investigation and whether it was politically motivated. Further investigation is needed to determine the motivations behind the probe.",
@@ -18,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T13:44:21.061Z",
-      "isNew": true
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota's Feeding Our Future program embroiled in fraud allegations",
-      "insight": "Large-scale misuse of federal funds indicates potential systemic issues within program management.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/stories/multiple-feeding-our-future-defendants-indicate-they-are-ready-to-take-plea-deals",
-      "id": "rf-1773492469707-2j8tv182v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T12:47:49.704Z",
       "isNew": false
     },
     {
@@ -963,31 +982,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-10T11:32:09.665Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "DHS payment freeze nearing 100 days, affecting Minnesotans with disabilities",
-      "insight": "This prolonged freeze may indicate systemic issues or potential fraud within the payment system. Further investigation into the cause and potential impacts on vulnerable populations is warranted.",
-      "entities": [
-        "Minnesota DHS",
-        "Disability Services"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "DHS payment freeze",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/dhs-payment-freeze-nears-100-days-minnesotans-disabilities-fear-losing-homes",
-      "id": "rf-1773139070872-fqjwun75n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T10:37:50.868Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,8 +995,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T13:44:21.061Z"
+  "lastUpdated": "2026-03-14T14:28:07.676Z"
 }
