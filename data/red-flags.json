@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Fed chair Jerome Powell, raising concerns about the probe's legitimacy.",
+      "insight": "I see a pattern of pushback against federal investigations, with the judge's decision to quash subpoenas in the Powell probe being the latest example. This development warrants further investigation into the relationship between the Federal Reserve and the Justice Department.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/03/14/business/jerome-powell-investigation.html",
+      "id": "rf-1773470633788-su76ems74",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T06:43:53.785Z",
+      "isNew": true
+    },
+    {
       "type": "investigation obstruction",
       "description": "The judge's decision to quash subpoenas in the Justice Department's investigation of Fed Chair Jerome Powell raises concerns about obstruction of justice.",
       "insight": "This development may indicate an attempt to hinder the investigation, and further research is needed to understand the implications.",
@@ -960,29 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T18:51:52.743Z",
       "isNew": false
-    },
-    {
-      "type": "Suspicious activity",
-      "description": "Suspicious device found in NYC, prompting FBI terrorism investigation",
-      "insight": "This incident raises concerns about the potential for terrorism in major cities. Further investigation is needed to determine the cause and scope of the incident.",
-      "entities": [
-        "NYC Mayor Mamdani"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-terrorism-investigation-nyc-mayor-mamdani/",
-      "id": "rf-1773078653761-aaw9dqdq5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T17:50:53.757Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +992,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T05:44:27.141Z"
+  "lastUpdated": "2026-03-14T06:43:53.785Z"
 }
