@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of evidence",
+      "description": "The investigation into the Federal Reserve and its chair Jerome Powell found no evidence of wrongdoing.",
+      "insight": "This lack of evidence raises questions about the validity of the investigation and whether it was politically motivated. Further investigation is needed to determine the motivations behind the probe.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Judge quashes subpoenas in Justice Department's investigation of Fed chair Jerome Powell",
+      "sourceUrl": "https://www.nytimes.com/2026/03/14/business/judge-quashes-subpoenas-in-justice-departments-investigation-of-fed-chair-jerome-powell.html",
+      "id": "rf-1773495861065-6ogxd3p6n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T13:44:21.061Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's Feeding Our Future program embroiled in fraud allegations",
       "insight": "Large-scale misuse of federal funds indicates potential systemic issues within program management.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T12:47:49.704Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "political_influence",
@@ -39,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T12:47:49.704Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -963,41 +983,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-10T10:37:50.868Z",
       "isNew": false
-    },
-    {
-      "type": "IT systems concerns",
-      "description": "Waiting to load: The struggle to address IT systems that may contribute to social services fraud",
-      "insight": "Outdated or inadequate IT systems may be contributing to fraud in social services programs.",
-      "entities": [
-        "Minnesota social services",
-        "IT systems"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "MinnPost",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZV9SWXVXYW1hMGx6dXVHMDFka3hPamJyVmo0cE5UWmZiRGxLQTBCZURnN09zQU11LTQ5MkozUU90Y2w0WmRTWkp1SzN5MUJTU1diOG9iblR1bGJ1UUtwOEtId053eld2LTVacmJ4S29JRHNSekM5NHBqUm9HMlZVd1NGWjFmZkZ2dkdSR05ObUFQVF8ydmI4RlBPTTNlbUpBRmM0b0lucGlMNjVKSjJEeVo4WjB4SHItZUFBalVEMkFzQkVlWWxQWFgzQ3UzeHRQeEwwNjdJeFl6bVF2SmtB",
-      "id": "rf-1773132000918-a4mr8463r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T08:40:00.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T12:47:49.704Z"
+  "lastUpdated": "2026-03-14T13:44:21.061Z"
 }
