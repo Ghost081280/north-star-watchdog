@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of transparency",
+      "description": "The quashing of subpoenas in the Federal Reserve investigation raises concerns about the lack of transparency in the investigation.",
+      "insight": "I believe that the lack of transparency in this investigation is a red flag that warrants further scrutiny. It is possible that the investigation is not being conducted in a thorough and impartial manner.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Los Angeles Times",
+      "sourceUrl": "https://www.latimes.com/business/story/2026-03-13/judge-quashes-subpoenas-in-justice-departments-investigation-of-fed-chair-jerome-powell",
+      "id": "rf-1773502033723-zoddm1ji0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T15:27:13.719Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota officials skip State House fraud hearing",
       "insight": "The absence of Minnesota officials at the State House fraud hearing raises concerns about the state's commitment to addressing fraud. This could indicate a lack of transparency or accountability in the state's handling of fraudulent activities.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T14:28:07.676Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T14:28:07.676Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Lack of evidence",
@@ -963,30 +983,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-10T14:02:37.956Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "DHS payment freeze",
-      "insight": "The DHS payment freeze has left Minnesotans with disabilities fearing loss of homes.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/dhs-payment-freeze-nears-100-days-minnesotans-with-disabilities-fear-losing-homes",
-      "id": "rf-1773142329668-xg0wcaprl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-10T11:32:09.665Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,8 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T14:28:07.676Z"
+  "lastUpdated": "2026-03-14T15:27:13.719Z"
 }
