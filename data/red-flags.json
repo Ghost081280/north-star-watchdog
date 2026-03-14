@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Medicaid program is at risk of being terminated due to a fraud crisis",
+      "insight": "This could have significant implications for the state's healthcare system. Further investigation is needed to understand the extent of the fraud and the role of state officials.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://www.washingtonexaminer.com/policy/walz-proposes-state-takeover-of-medicaid-funds-with-agency-responsible-for-fraud-crisis",
+      "id": "rf-1773516372582-wrwsr29ja",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T19:26:12.578Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal subpoena reveals FBI investigation of Kansas City homeless advocate",
       "insight": "This indicates a potential pattern of corruption and abuse of power, particularly in the non-profit sector.",
@@ -37,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T15:27:13.719Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota officials skip State House fraud hearing",
-      "insight": "The absence of Minnesota officials at the State House fraud hearing raises concerns about the state's commitment to addressing fraud. This could indicate a lack of transparency or accountability in the state's handling of fraudulent activities.",
-      "entities": [
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xRFAyM2JYZ3I3NlJIUjZISXNJal92Q2pveG5TR2t3NmcwU2ljSG9fdHd2NV9lOGZQUlFCNUFlM19iRGtxSTZkMUlmYlFpU0E5Zi1NcDNBQWN0X3M",
-      "id": "rf-1773498487680-aukqyqezt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T14:28:07.676Z",
       "isNew": false
     },
     {
@@ -987,6 +987,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,7 +996,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T18:36:27.920Z"
+  "lastUpdated": "2026-03-14T19:26:12.578Z"
 }
