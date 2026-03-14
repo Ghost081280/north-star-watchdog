@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "The Feeding Our Future case involves allegations of fraud and misuse of funds meant for children.",
+      "insight": "This case raises concerns about oversight and potential vulnerabilities in programs meant to support vulnerable populations.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota AG's office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/story/50695342/multiple-feeding-our-future-defendants-indicate-they-are-ready-to-take-plea-deals",
+      "id": "rf-1773473681995-b0ug5wb4z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T07:34:41.991Z",
+      "isNew": true
+    },
+    {
+      "type": "political influence",
+      "description": "The investigation into Jerome Powell and the Federal Reserve raises questions about political influence and oversight.",
+      "insight": "The court's decision to block the DOJ's probe suggests potential political interference in the investigation.",
+      "entities": [
+        "Federal Reserve",
+        "DOJ",
+        "Jerome Powell"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/03/13/us/politics/federal-reserve-powell-probe.html",
+      "id": "rf-1773473681996-83dlk2ud9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-14T07:34:41.991Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Fed chair Jerome Powell, raising concerns about the probe's legitimacy.",
       "insight": "I see a pattern of pushback against federal investigations, with the judge's decision to quash subpoenas in the Powell probe being the latest example. This development warrants further investigation into the relationship between the Federal Reserve and the Justice Department.",
@@ -18,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-14T06:43:53.785Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "investigation obstruction",
@@ -942,44 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-09T22:27:26.715Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating the 2020 Maricopa County election results, and there are concerns about the integrity of the electoral process.",
-      "insight": "I suspect that there may be a larger pattern of election fraud at play, and I would like to investigate further to see if there are any connections between this case and other similar cases.",
-      "entities": [
-        "Maricopa County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/09/fbi-eyes-arizona-senate-audit-of-2020-maricopa-county-election-results-republican-says.html",
-      "id": "rf-1773085209388-9ergr7odm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T19:40:09.384Z",
-      "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "The Lake Odessa pharmacy responded to an FBI visit, calling the accusations 'false'.",
-      "insight": "This could indicate potential fraud or wrongdoing at the pharmacy.",
-      "entities": [
-        "Lake Odessa pharmacy"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "WZZM13.com",
-      "sourceUrl": "https://wzzm13.com/news/local/false-accusations-that-were-made-lake-odessa-pharmacy-responds-after-fbi-visit",
-      "id": "rf-1773082312746-lrz4ryjci",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-09T18:51:52.743Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1011,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-14T06:43:53.785Z"
+  "lastUpdated": "2026-03-14T07:34:41.991Z"
 }
