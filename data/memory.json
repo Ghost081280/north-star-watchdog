@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-10T01:52:31.579Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-10T04:08:54.029Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-14T21:25:25.602Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-14T22:24:37.150Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Justice Department's investigation of Fed chair Jerome Powell?",
-    "What specific allegations exist against Jerome Powell?",
-    "Where did the $0 allegedly go in Justice Department's investigation of Federal Reserve Chair Jerome Powell?",
     "Where did the $0 allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M+ allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Feeding Our Future defendants connected to?",
@@ -558,7 +555,10 @@
     "Where did the N/A allegedly go in Federal Reserve Investigation?",
     "What other organizations is Abdirizak Bihi connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $1M allegedly go in Minnesota childcare fraud?"
+    "Where did the $1M allegedly go in Minnesota childcare fraud?",
+    "What other organizations is Non-profit leader connected to?",
+    "Where did the Unknown allegedly go in Federal Reserve Investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1496,
-    "articlesProcessed": 74600,
-    "redFlagsFound": 1767,
+    "totalScans": 1497,
+    "articlesProcessed": 74650,
+    "redFlagsFound": 1768,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-        "Where did the Unknown allegedly go in Justice Department's investigation of Fed Chair Jerome Powell?",
-        "Where did the Unknown allegedly go in Feeding Our Future investigation?"
+        "Where did the Unknown allegedly go in Justice Department's investigation of Fed chair Jerome Powell?",
+        "What specific allegations exist against Jerome Powell?",
+        "Where did the $0 allegedly go in Justice Department's investigation of Federal Reserve Chair Jerome Powell?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-14T21:25:25.602Z",
-  "lastUpdated": "2026-03-14T21:25:25.602Z"
+  "lastReflection": "2026-03-14T22:24:37.150Z",
+  "lastUpdated": "2026-03-14T22:24:37.151Z"
 }
