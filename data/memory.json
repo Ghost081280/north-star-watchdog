@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-11T04:09:24.279Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-11T05:47:54.681Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-15T22:26:34.595Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-15T23:28:23.504Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1517,
-    "articlesProcessed": 75550,
+    "totalScans": 1518,
+    "articlesProcessed": 75600,
     "redFlagsFound": 1786,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "The $250M Minnesota welfare fraud scheme involved a complex web of entities and individuals, with a ringleader ordered to forfeit luxury goods.",
-          "insight": "The scale and complexity of this fraud scheme suggest a well-organized network of individuals and entities. Further investigation into the entities involved and their connections is warranted.",
-          "entities": [
-            "Minnesota DHS",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL.com",
-          "sourceUrl": "https://www.aol.com/ringleader-250m-minnesota-welfare-fraud-scandal-ordered-judge-forfeit-porsche-luxury-goods-aol-com-2026-03-15"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Federal Reserve Chair Jerome Powell investigation?",
         "What other organizations is Not specified connected to?",
-        "Where did the $1M allegedly go in Feeding Our Future?"
+        "Where did the $1M allegedly go in Feeding Our Future?",
+        "Where did the $multimillion allegedly go in Minnesota Medicaid?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-15T22:26:34.595Z",
-  "lastUpdated": "2026-03-15T22:26:34.596Z"
+  "lastReflection": "2026-03-15T23:28:23.504Z",
+  "lastUpdated": "2026-03-15T23:28:23.505Z"
 }
