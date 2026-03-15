@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-11T01:52:25.181Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-11T04:09:24.279Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-15T21:27:37.872Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-15T22:26:34.595Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Federal Reserve Chair Jerome Powell investigation?",
     "What other organizations is Not specified connected to?",
     "Where did the $1M allegedly go in Feeding Our Future?",
     "Where did the $multimillion allegedly go in Minnesota Medicaid?",
@@ -558,7 +557,8 @@
     "Where did the N/A allegedly go in Jerome Powell investigation?",
     "Where did the Unknown allegedly go in Federal Reserve investigation?",
     "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Federal Reserve Investigation?"
+    "Where did the Unknown allegedly go in Federal Reserve Investigation?",
+    "Where did the $250M, $9B+ allegedly go in Minnesota welfare fraud scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1516,
-    "articlesProcessed": 75500,
-    "redFlagsFound": 1784,
+    "totalScans": 1517,
+    "articlesProcessed": 75550,
+    "redFlagsFound": 1786,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "The $250M Minnesota welfare fraud scheme involved a complex web of entities and individuals, with a ringleader ordered to forfeit luxury goods.",
+          "insight": "The scale and complexity of this fraud scheme suggest a well-organized network of individuals and entities. Further investigation into the entities involved and their connections is warranted.",
+          "entities": [
+            "Minnesota DHS",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://www.aol.com/ringleader-250m-minnesota-welfare-fraud-scandal-ordered-judge-forfeit-porsche-luxury-goods-aol-com-2026-03-15"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Not specified in the intel provided connected to?",
-        "Where did the $1M+ allegedly go in Feeding Our Future?",
-        "Where did the Not specified allegedly go in Federal Reserve Chair Jerome Powell investigation?"
+        "Where did the Not specified allegedly go in Federal Reserve Chair Jerome Powell investigation?",
+        "What other organizations is Not specified connected to?",
+        "Where did the $1M allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-15T21:27:37.872Z",
-  "lastUpdated": "2026-03-15T21:27:37.873Z"
+  "lastReflection": "2026-03-15T22:26:34.595Z",
+  "lastUpdated": "2026-03-15T22:26:34.596Z"
 }
