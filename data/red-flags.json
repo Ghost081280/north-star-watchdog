@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "DHS announces stronger oversight of housing stabilization and autism services providers",
+      "insight": "Potential for large scale fraud in these programs",
+      "entities": [
+        "Minnesota DHS",
+        "US Federal Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigANBVV95cUxPbFpaekc3QTNJTk5jOW04Z09RTGhiT0FiUWVuVk5YV3ZqdGZvMnh4TXFOUWkwWEhCMUxYdFJ4eVFWVWplcGR6Sm1CS3REMHhHVUQySnVWQW8tTVh2dEZLd1pDdG9CdXFMVDNrdXVaUUtEZjd4UTNPX0pPVkFySjZjRjdMbUZfX0xJWHMteXNBSmdLbUR4aDEwbTZieEZYbWlVT0dnWC16QXNwODRncGNodnAtT3NDNDcwVzNSSDQ2bGYzMF9aZzAtZmg3SFZzYVktd0ZXc05mbk03V3pGWnMwdERXVFVvTjh5ZTUtMkVLUHhzR1B4Q0dQUEVGM3hjcjVhWC1XdFRDWk5LLUVBaXV4SjVrbjFxamk2RzJLeEphMm0tZWMtV1M1alF2STN2ZXBxYlkwdENLOEMxWGIxbGMtMmZQX3VHbzVWeG9iYWNTZ3QyaUg0blJpU3YtZGJpWmJZODBnZ29yb3ZELVJLZ3p3em1IcjhNMTVaWWdVQnF2NS0?oc=5",
+      "id": "rf-1773567168523-7bts8sshi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-15T09:32:48.519Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Minnesota's childcare program fraud crisis",
       "insight": "The large-scale fraud scheme indicates a significant vulnerability in Minnesota's childcare program management and oversight.",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-15T08:35:39.885Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -37,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-15T08:35:39.885Z",
-      "isNew": true
-    },
-    {
-      "type": "program_termination",
-      "description": "DHS announces stronger oversight of housing stabilization and autism services providers to prevent fraud",
-      "insight": "Potential for widespread fraud in these programs",
-      "entities": [
-        "DHS",
-        "Minnesota government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigANBVV95cUxPbFpaekc3QTNJTk5jOW04Z09RTGhiT0FiUWVuVk5YV3ZqdGZvMnh4TXFOUWkwWEhCMUxYdFJ4eVFWVWplcGR6Sm1CS3REMHhHVUQySnVWQW8tTVh2dEZLd1pDdG9CdXFMVDNrdXVaUUtEZjd4UTNPX0pPVkFySjZjRjdMbUZfX0xJWHMteXNBSmdLbUR4aDEwbTZieEZYbWlVT0dnWC16QXNwODRncGNodnAtT3NDNDcwVzNSSDQ2bGYzMF9aZzAtZmg3SFZzYVktd0ZXc05mbk03V3pGWnMwdERXVFVvTjh5ZTUtMkVLUHhzR1B4Q0dQUEVGM3hjcjVhWC1XdFRDWk5LLUVBaXV4SjVrbjFxamk2RzJLeEphMm0tZWMtV1M1alF2STN2ZXBxYlkwdENLOEMxWGIxbGMtMmZQX3VHbzVWeG9iYWNTZ3QyaUg0blJpU3YtZGJpWmJZODBnZ29yb3ZELVJLZ3p3em1IcjhNMTVaWWdVQnF2NS0?oc=5",
-      "id": "rf-1773523525607-2rthj0m3v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T21:25:25.604Z",
       "isNew": false
     },
     {
@@ -987,6 +987,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,8 +997,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-15T08:35:39.885Z"
+  "lastUpdated": "2026-03-15T09:32:48.519Z"
 }
