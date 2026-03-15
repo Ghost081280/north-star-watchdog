@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "HHS freezes childcare payments to Minnesota after massive fraud alleged",
+      "insight": "This suggests a significant level of fraud and potential abuse in the child care program, warranting further investigation.",
+      "entities": [
+        "Minnesota DHS",
+        "HHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkthU2dXOFM5cV9LeFpZQmlNSVdyS3pGZlZlOFJ2S2tvUEU4Mi16VmNabERmVnd5RzROMG9lbERzMlVGV1BqVXRYa1VPQzYzV0xTQS1IWnBDaWE2V2ZGQ2RyMG5DcDRBOXNzNXJfV1FJUWdZT3V2eFBZUDdUdFZieGR3eUdFSWNEY3QtQw?oc=5",
+      "id": "rf-1773588479147-i78e94cf1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-15T15:27:59.143Z",
+      "isNew": true
+    },
+    {
+      "type": "investigation_into_federal_reserve",
+      "description": "Judge blocks subpoenas in Federal Reserve investigation",
+      "insight": "This indicates potential challenges in investigating high-profile figures and institutions.",
+      "entities": [
+        "Federal Reserve",
+        "DOJ"
+      ],
+      "confidence": 85,
+      "priority": "medium",
+      "source": "Jefferson City News Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZ2tSQTZldHJDbnJyajUtM1FxQ2FLejFJZmh1eXljLWJraFFBaTRqckRiV3hHZTRGdlpkd1p0THJGdWRrdGpYODh2QzE2ckRvTU4ySU41S0VUbXJhYjFKWS0xbFBqR1U2MjM1WlNJVDNHc2g1a09rOElPeVp1MjY3QlhmZFppRmJiMk4xMjc3dDk0eElsdTU4ZW1wTQ?oc=5",
+      "id": "rf-1773588479147-8siif6qxt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-15T15:27:59.143Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's child care program under scrutiny for fraud",
       "insight": "The large scale of the fraud ($9B+) and involvement of Somali immigrants raise concerns about oversight and potential enabling factors.",
@@ -436,25 +476,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-13T15:41:20.167Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "A Minnesota non-profit organization was involved in a $250M COVID fraud scheme",
-      "insight": "This suggests a large-scale fraud scheme involving a non-profit organization and Medicaid funds",
-      "entities": [
-        "Minnesota non-profit organization"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU?oc=5",
-      "id": "rf-1773413682271-x7zouhw4l",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T14:54:42.267Z",
       "isNew": false
     },
     {
@@ -963,31 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T11:32:19.823Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating LAUSD Superintendent Alberto Carvalho, and federal prosecutors are seeking to delay the Feeding Our Future trial due to 'staffing changes'. These developments raise concerns about potential fraud and corruption in high-level positions.",
-      "insight": "I notice a pattern of federal investigations into high-level positions, which suggests a potential lack of oversight and accountability. I recommend further investigation into these cases to determine the extent of any wrongdoing.",
-      "entities": [
-        "Alberto Carvalho",
-        "LAUSD",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC Los Angeles",
-      "sourceUrl": "https://www.nbclosangeles.com/news/local/lausd-superintendent-alberto-carvalho-breaks-silence-following-federal-probe/3001233/",
-      "id": "rf-1773222049487-465ok7yhs",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T09:40:49.483Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,7 +998,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-15T14:29:14.296Z"
+  "lastUpdated": "2026-03-15T15:27:59.143Z"
 }
