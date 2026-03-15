@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-10T12:57:26.884Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-10T14:02:37.954Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-15T10:28:45.678Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-15T11:25:16.648Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Abdirizak Bihi connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $1M allegedly go in Minnesota childcare fraud?",
     "What other organizations is Non-profit leader connected to?",
     "Where did the Unknown allegedly go in Federal Reserve Investigation?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $1M allegedly go in Feeding Our Future?",
     "Where did the $multimillion allegedly go in Minnesota Medicaid?",
     "What other organizations is Tim Walz connected to?",
-    "Where did the $9B allegedly go in Minnesota Child Care Fraud Investigation?"
+    "Where did the $9B allegedly go in Minnesota Child Care Fraud Investigation?",
+    "What other organizations is Jerome Powell connected to?",
+    "Where did the $9B+ allegedly go in Minnesota Child Care Fraud?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1505,
-    "articlesProcessed": 75050,
-    "redFlagsFound": 1775,
+    "totalScans": 1506,
+    "articlesProcessed": 75100,
+    "redFlagsFound": 1777,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the N/A allegedly go in Federal Reserve Investigation?",
-        "What other organizations is Abdirizak Bihi connected to?"
+        "What other organizations is Abdirizak Bihi connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $1M allegedly go in Minnesota childcare fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-15T10:28:45.678Z",
-  "lastUpdated": "2026-03-15T10:28:45.679Z"
+  "lastReflection": "2026-03-15T11:25:16.648Z",
+  "lastUpdated": "2026-03-15T11:25:16.650Z"
 }
