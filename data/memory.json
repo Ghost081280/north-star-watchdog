@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-10T18:44:35.401Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-10T19:37:46.113Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-15T15:27:59.140Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-15T16:31:16.975Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Federal Reserve investigation?",
-    "Where did the Unknown allegedly go in Federal Reserve investigation?",
-    "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell investigation?",
     "Where did the $1M+ allegedly go in Minnesota day-care fraud investigation?",
     "What other organizations is Not specified in the intel provided connected to?",
     "Where did the $1M+ allegedly go in Feeding Our Future?",
@@ -558,7 +555,10 @@
     "What other organizations is Feeding Our Future juror connected to?",
     "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the N/A allegedly go in Jerome Powell Investigation?",
-    "Where did the $250M allegedly go in Minnesota Child Care Fraud?"
+    "Where did the $250M allegedly go in Minnesota Child Care Fraud?",
+    "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
+    "Where did the $250M allegedly go in Minnesota welfare fraud investigation?",
+    "Where did the N/A allegedly go in Jerome Powell investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1510,
-    "articlesProcessed": 75300,
-    "redFlagsFound": 1781,
+    "totalScans": 1511,
+    "articlesProcessed": 75350,
+    "redFlagsFound": 1782,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "HHS freezes childcare payments to Minnesota after massive fraud alleged",
-          "insight": "This suggests a significant level of fraud and potential abuse in the child care program, warranting further investigation.",
-          "entities": [
-            "Minnesota DHS",
-            "HHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkthU2dXOFM5cV9LeFpZQmlNSVdyS3pGZlZlOFJ2S2tvUEU4Mi16VmNabERmVnd5RzROMG9lbERzMlVGV1BqVXRYa1VPQzYzV0xTQS1IWnBDaWE2V2ZGQ2RyMG5DcDRBOXNzNXJfV1FJUWdZT3V2eFBZUDdUdFZieGR3eUdFSWNEY3QtQw?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future investigation?",
         "Where did the N/A allegedly go in Federal Reserve investigation?",
-        "Where did the Unknown allegedly go in Federal Reserve investigation?"
+        "Where did the Unknown allegedly go in Federal Reserve investigation?",
+        "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-15T15:27:59.140Z",
-  "lastUpdated": "2026-03-15T15:27:59.141Z"
+  "lastReflection": "2026-03-15T16:31:16.975Z",
+  "lastUpdated": "2026-03-15T16:31:16.975Z"
 }
