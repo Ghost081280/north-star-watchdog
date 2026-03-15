@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-10T09:42:11.181Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-10T10:37:50.867Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-15T07:44:31.421Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-15T08:35:39.883Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tim Walz?",
-    "What specific allegations exist against Trump?",
-    "Are any of these 3 figures connected to each other?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Feeding Our Future investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +555,10 @@
     "Where did the N/A allegedly go in Federal Reserve investigation?",
     "Where did the Unknown allegedly go in Federal Reserve investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell investigation?",
-    "Where did the $1M+ allegedly go in Minnesota day-care fraud investigation?"
+    "Where did the $1M+ allegedly go in Minnesota day-care fraud investigation?",
+    "What other organizations is Not specified in the intel provided connected to?",
+    "Where did the $1M+ allegedly go in Feeding Our Future?",
+    "Where did the Not specified allegedly go in Federal Reserve Chair Jerome Powell investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1502,
-    "articlesProcessed": 74900,
-    "redFlagsFound": 1771,
+    "totalScans": 1503,
+    "articlesProcessed": 74950,
+    "redFlagsFound": 1773,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Feeding Our Future?",
-        "Where did the $0 allegedly go in Federal Reserve investigation?",
-        "What specific allegations exist against Tim Walz?"
+        "What specific allegations exist against Tim Walz?",
+        "What specific allegations exist against Trump?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-15T07:44:31.421Z",
-  "lastUpdated": "2026-03-15T07:44:31.422Z"
+  "lastReflection": "2026-03-15T08:35:39.883Z",
+  "lastUpdated": "2026-03-15T08:35:39.884Z"
 }
