@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-11T10:37:35.631Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-11T11:32:19.821Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-16T10:05:21.356Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-16T11:44:51.613Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.65
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the N/A allegedly go in Jerome Powell Investigation?",
     "Where did the $250M allegedly go in Minnesota Child Care Fraud?",
     "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the $250M allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
-    "Where did the $250M allegedly go in Medicaid Freeze Investigation?"
+    "Where did the $250M allegedly go in Medicaid Freeze Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1523,
-    "articlesProcessed": 75850,
-    "redFlagsFound": 1791,
+    "totalScans": 1524,
+    "articlesProcessed": 75900,
+    "redFlagsFound": 1793,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Minnesota Childcare Fraud Investigation?",
-        "What other organizations is Feeding Our Future juror connected to?",
-        "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?"
+        "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?",
+        "Where did the N/A allegedly go in Jerome Powell Investigation?",
+        "Where did the $250M allegedly go in Minnesota Child Care Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-16T10:05:21.356Z",
-  "lastUpdated": "2026-03-16T10:05:21.357Z"
+  "lastReflection": "2026-03-16T11:44:51.613Z",
+  "lastUpdated": "2026-03-16T11:44:51.614Z"
 }

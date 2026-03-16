@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid freeze",
+      "description": "Court fight raises provider risk due to Medicaid freeze in Minnesota.",
+      "insight": "This could impact healthcare services in Minnesota.",
+      "entities": [
+        "Minnesota DHS",
+        "Medicaid providers"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Meyka",
+      "sourceUrl": "https://www.meyka.com/minnesota-medicaid-freeze-march-15-court-fight-raises-provider-risk",
+      "id": "rf-1773661491619-exwnmlkp5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-16T11:44:51.615Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "The $250M Minnesota welfare fraud scheme involved a complex web of entities and individuals, with a ringleader ordered to forfeit luxury goods.",
       "insight": "The scale and complexity of this fraud scheme suggest a well-organized network of individuals and entities. Further investigation into the entities involved and their connections is warranted.",
@@ -964,31 +984,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T14:07:19.905Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are underway, including into LAUSD Superintendent Alberto Carvalho and a tax fraud case in Lewiston.",
-      "insight": "These investigations suggest a pattern of potential wrongdoing and warrant further scrutiny.",
-      "entities": [
-        "Alberto Carvalho",
-        "Lewiston"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdVNKd1JoajY3R1JOOE11TGcxQ1pMZWVNWUxlb0YydFVnM2NqWFpFZmVmbEJ2SjFQcUdlTi1UazZTR1QxQlZpd2xpdVZpZXZPVldJNWlhZlB0TjhEcHlOU25FVUhPWlJMcnlXTVpzVzhFTkVfRUxkTld4TU52NXczRkFCajBQYWUxYUJ1NGdPMVZtRmtZTDFaTGo5ZGNqUdIBpgFBVV95cUxQbnNjempvSDN2UU4tbVcwRmRxVzhKU0U3RE15U2ZBSnJiemp5Nk1yb0Rvd3BiN0hkRU85Z3VEdjlWMG1RcTdCNllqVFQ5WnZPXzJBeG1xSS0zZ1lLU0Q0MnNLRk1QQ1daUFJNX3EzRi14VWJ3amVnZUU3OXR1TUdUN0F2c0hBdzQyTDBzQXotVmR6TFp5eU5URWl5cWpOdHpBWUR6QjZ3",
-      "id": "rf-1773228739827-qb8ndhrvt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T11:32:19.823Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -998,7 +997,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-16T10:05:21.358Z"
+  "lastUpdated": "2026-03-16T11:44:51.615Z"
 }
