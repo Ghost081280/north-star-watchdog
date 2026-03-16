@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Federal investigation into Newcap",
+      "insight": "This investigation suggests potential large-scale fraud",
+      "entities": [
+        "Newcap"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "WLUK",
+      "sourceUrl": "https://wluk.com/news/local/wied-steil-call-for-federal-investigation-into-newcap/",
+      "id": "rf-1773693463248-xaok8q7sz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-16T20:37:43.245Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "A federal investigation is underway after the death of a Biglerville teen at Letterkenny Army Depot.",
       "insight": "This incident may be related to a larger pattern of negligence or misconduct at the Letterkenny Army Depot. Further investigation is needed to determine the cause of the death and whether there are any connections to other incidents.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-16T19:13:30.484Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -963,30 +982,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T15:46:46.626Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Wrongdoing",
-      "description": "Alberto Carvalho denies any wrongdoing amid FBI investigation",
-      "insight": "This story raises concerns about potential wrongdoing by Alberto Carvalho and the need for further investigation. The fact that Carvalho has denied any wrongdoing suggests that there may be more to the story than initially meets the eye.",
-      "entities": [
-        "Alberto Carvalho"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/article/news/2026/03/11/alberto-carvalho-breaks-silence-denies-any-wrongdoing-amid-fbi-investigation/23383443/",
-      "id": "rf-1773244006629-flekik392",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T15:46:46.626Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-16T19:13:30.484Z"
+  "lastUpdated": "2026-03-16T20:37:43.245Z"
 }
