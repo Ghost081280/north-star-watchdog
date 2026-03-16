@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI has added three suspects to its Ten Most Wanted list, following the arrest of seven individuals under the Trump administration.",
+      "insight": "This development suggests that the FBI is actively investigating and pursuing individuals suspected of fraud. It may be worth tracking these investigations to see if they yield any new information or connections to other cases.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/news/pressrel/press-releases/fbi-adds-three-suspects-to-ten-most-wanted-list",
+      "id": "rf-1773683965683-5k8ayb4il",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-16T17:59:25.680Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid freeze",
       "description": "Court fight raises provider risk due to Medicaid freeze in Minnesota.",
       "insight": "This could impact healthcare services in Minnesota.",
@@ -965,29 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T14:07:19.905Z",
       "isNew": false
-    },
-    {
-      "type": "alleged_fraud",
-      "description": "An alleged $9B+ fraud has been reported, with multiple investigations underway.",
-      "insight": "This alleged fraud may be connected to other cases, requiring further investigation.",
-      "entities": [
-        "Individuals and organizations involved in the alleged fraud"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTktXRlhKdU4xc0VIdWl4TS0wUHU5R2F2NVVWLTRqWlNCWG9QVkdlSEktclN1UWxuMGlzSy1hNnRtejdSbFUxZXRyTlNWRkZiQ29JTXBHWUd0OWhMMTRyeGRfTjNDLVhkVWl5cEItellNUkZkcm1kQXlJVUVraEJOeU40ajlzSW5DcFdPMDJnUzRZX3lmZUEzZTQ5eDlzU2FuSHlF",
-      "id": "rf-1773238039908-zso0rcte4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T14:07:19.905Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +996,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-16T16:08:41.023Z"
+  "lastUpdated": "2026-03-16T17:59:25.680Z"
 }
