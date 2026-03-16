@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation is underway after the death of a Biglerville teen at Letterkenny Army Depot.",
+      "insight": "This incident may be related to a larger pattern of negligence or misconduct at the Letterkenny Army Depot. Further investigation is needed to determine the cause of the death and whether there are any connections to other incidents.",
+      "entities": [
+        "Letterkenny Army Depot"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Tri-State Alert",
+      "sourceUrl": "https://www.tristatealert.com",
+      "id": "rf-1773688410489-e6qmo81cw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-16T19:13:30.484Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI has added three suspects to its Ten Most Wanted list, following the arrest of seven individuals under the Trump administration.",
       "insight": "This development suggests that the FBI is actively investigating and pursuing individuals suspected of fraud. It may be worth tracking these investigations to see if they yield any new information or connections to other cases.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-16T17:59:25.680Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid freeze",
@@ -963,27 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T15:46:46.626Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating various cases, including the Epstein case and Trump's administration miscalculations.",
-      "insight": "These investigations may uncover larger patterns of corruption and fraud, requiring further analysis.",
-      "entities": [
-        "FBI",
-        "Epstein's associates",
-        "Trump's administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQd2ZsdXJHTFRjNjhqWG1MclFmZm1BTzBFd1A2NEVCVjNqYUJRNkhjV1JCemRza3VvZGE5X2x1dkpwME54SzgtOWY1OGl1aXhmZUE4MWpMOE1MTXcwbEV3WF95RUVrNEt2cnNvUlJ1X21rSEMyQkNzdk5TY01iWVAxWg",
-      "id": "rf-1773238039908-v36hog5eq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T14:07:19.905Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1015,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-16T17:59:25.680Z"
+  "lastUpdated": "2026-03-16T19:13:30.484Z"
 }
