@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation into visa fraud led to the arrest of a Pulaski man.",
+      "insight": "This investigation highlights the need for continued scrutiny of fraudulent activities, particularly those involving federal programs.",
+      "entities": [
+        "Pulaski man"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Laker Country 104.9 WJRS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMm5WT194Z3F1WGN6QXBpSkh1ZWZJTVkwT3NtU2pLcTBvVHlwYUd0akk4ekpPRzY5OUtLMHdEVkVYQzZ4ODY2aTZpNVduNUJwc0M0eWNfSkpWWS1kZUxfT0I0NElZNTlQRHJodHlBRWlVdFB5WWpTLXhDbWIyZHZBcU9QOElNMzAxV0JDanFxSEsxS3lweGNiMkkta1FIbDA",
+      "id": "rf-1773697082280-1lodwjezi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-16T21:38:02.277Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Federal investigation into Newcap",
       "insight": "This investigation suggests potential large-scale fraud",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-16T20:37:43.245Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -963,40 +982,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T17:48:25.906Z",
       "isNew": false
-    },
-    {
-      "type": "Data Breach",
-      "description": "Foreign hacker reportedly breached FBI servers holding Epstein files in 2023",
-      "insight": "This data breach raises significant concerns about the security of sensitive information and the potential consequences of such a breach. Further investigation is needed to determine the extent of the breach and the potential impact on ongoing investigations.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-epstein-fbi-exclusive-idUSKCN2AY2PY",
-      "id": "rf-1773244006629-3iaj20u6c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T15:46:46.626Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-16T20:37:43.245Z"
+  "lastUpdated": "2026-03-16T21:38:02.277Z"
 }
