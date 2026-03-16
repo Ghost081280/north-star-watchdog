@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-11T08:39:30.205Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-11T09:40:49.482Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-16T07:14:48.934Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-16T08:55:14.854Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B+ allegedly go in Minnesota Child Care Fraud?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $9B allegedly go in Minnesota Childcare Fraud Investigation?",
     "What other organizations is Feeding Our Future juror connected to?",
     "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in Minnesota Medicaid Freeze?",
     "Where did the $10B allegedly go in California Childcare Fraud Probe?",
     "What other organizations is Minnesota welfare fraudsters connected to?",
-    "Where did the Not specified allegedly go in Trump Administration's Child Care Funding Cuts?"
+    "Where did the Not specified allegedly go in Trump Administration's Child Care Funding Cuts?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $250M allegedly go in Minnesota Welfare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1521,
-    "articlesProcessed": 75750,
-    "redFlagsFound": 1789,
+    "totalScans": 1522,
+    "articlesProcessed": 75800,
+    "redFlagsFound": 1790,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Minnesota Child Care Fraud Investigation?",
-        "What other organizations is Jerome Powell connected to?",
-        "Where did the $9B+ allegedly go in Minnesota Child Care Fraud?"
+        "Where did the $9B+ allegedly go in Minnesota Child Care Fraud?",
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $9B allegedly go in Minnesota Childcare Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-16T07:14:48.934Z",
-  "lastUpdated": "2026-03-16T07:14:48.935Z"
+  "lastReflection": "2026-03-16T08:55:14.854Z",
+  "lastUpdated": "2026-03-16T08:55:14.854Z"
 }
