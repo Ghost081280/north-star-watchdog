@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-11T11:32:19.821Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-11T12:56:52.510Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-16T11:44:51.613Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
+    },
+    {
+      "date": "2026-03-16T13:07:51.429Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in Jerome Powell Investigation?",
-    "Where did the $250M allegedly go in Minnesota Child Care Fraud?",
-    "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?",
     "Where did the $250M allegedly go in Minnesota welfare fraud investigation?",
     "Where did the N/A allegedly go in Jerome Powell investigation?",
     "Where did the Unknown allegedly go in Federal Reserve investigation?",
@@ -558,7 +555,10 @@
     "Where did the $250M allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
     "Where did the $250M allegedly go in Medicaid Freeze Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Kash Patel connected to?",
+    "Where did the $250M allegedly go in Minnesota Day-Care Fraud Investigation?",
+    "Where did the Unknown allegedly go in Federal Reserve Criminal Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1524,
-    "articlesProcessed": 75900,
-    "redFlagsFound": 1793,
+    "totalScans": 1525,
+    "articlesProcessed": 75950,
+    "redFlagsFound": 1794,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Daycare Fraud Investigation?",
         "Where did the N/A allegedly go in Jerome Powell Investigation?",
-        "Where did the $250M allegedly go in Minnesota Child Care Fraud?"
+        "Where did the $250M allegedly go in Minnesota Child Care Fraud?",
+        "What other organizations is Ringleader of $250M Minnesota welfare fraud scandal connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-16T11:44:51.613Z",
-  "lastUpdated": "2026-03-16T11:44:51.614Z"
+  "lastReflection": "2026-03-16T13:07:51.429Z",
+  "lastUpdated": "2026-03-16T13:07:51.429Z"
 }
