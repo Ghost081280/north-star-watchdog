@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-12T07:45:21.420Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-12T08:40:30.414Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-17T10:51:19.569Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-17T11:42:30.393Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Federal Reserve Criminal Probe?",
     "What other organizations is Not specified connected to?",
     "Where did the $250M allegedly go in Minnesota Welfare Fraud?",
     "What other organizations is Jerome Powell connected to?",
@@ -558,7 +557,8 @@
     "Where did the $100M+ allegedly go in Minnesota Housing Program Investigation?",
     "Where did the $50 million allegedly go in Minnesota Housing Program Investigation?",
     "Where did the Multi-trillion dollars allegedly go in Federal Benefits Program Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Housing Program Fraud Investigation?"
+    "Where did the $100M+ allegedly go in Minnesota Housing Program Fraud Investigation?",
+    "Where did the Multi-trillion dollars allegedly go in Trump Administration Funding Freeze Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1540,
-    "articlesProcessed": 76700,
-    "redFlagsFound": 1811,
+    "totalScans": 1541,
+    "articlesProcessed": 76750,
+    "redFlagsFound": 1812,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "Minnesota's Housing Stabilization Services program is being terminated due to fraud concerns",
-          "insight": "This program termination suggests a significant issue with program integrity and oversight.",
-          "entities": [
-            "Minnesota Department of Human Services"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "kare11.com",
-          "sourceUrl": "https://kare11.com/article/minnesota-house-unanimously-passes-bill-to-remove-housing-stabilization-services-from-state-statute/2026-03-17"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Day-Care Fraud Investigation?",
         "Where did the Unknown allegedly go in Federal Reserve Criminal Probe?",
-        "What other organizations is Not specified connected to?"
+        "What other organizations is Not specified connected to?",
+        "Where did the $250M allegedly go in Minnesota Welfare Fraud?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-17T10:51:19.569Z",
-  "lastUpdated": "2026-03-17T10:51:19.570Z"
+  "lastReflection": "2026-03-17T11:42:30.393Z",
+  "lastUpdated": "2026-03-17T11:42:30.394Z"
 }
