@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-12T10:37:29.821Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-12T11:31:03.495Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-17T14:55:08.817Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-17T16:05:34.680Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against JD Vance?",
-    "Where did the $0 allegedly go in Somali Childcare Fraud Investigation?",
-    "Where did the $0 allegedly go in Trump Fraud Task Force?",
     "Where did the $0 allegedly go in Minnesota Medicaid Payments Investigation?",
     "Where did the $0 allegedly go in Newcap Investigation?",
     "Where did the $0 allegedly go in Stauber's Somali Childcare Fraud Bill?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Minnesota Autism Center Fraud?",
     "Where did the $0 allegedly go in Child Care Fraud?",
     "What other organizations is Minnesota DHS officials connected to?",
-    "Where did the $ millions allegedly go in Minnesota Autism Center Fraud Investigation?"
+    "Where did the $ millions allegedly go in Minnesota Autism Center Fraud Investigation?",
+    "What other organizations is Joe Kent connected to?",
+    "Where did the Unknown allegedly go in Minnesota autism fraud investigation?",
+    "Where did the Multi-trillion dollars allegedly go in Trump administration funding freeze investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1543,
-    "articlesProcessed": 76850,
-    "redFlagsFound": 1816,
+    "totalScans": 1544,
+    "articlesProcessed": 76900,
+    "redFlagsFound": 1817,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jerome Powell connected to?",
-        "What other organizations is JD Vance connected to?",
-        "What specific allegations exist against JD Vance?"
+        "What specific allegations exist against JD Vance?",
+        "Where did the $0 allegedly go in Somali Childcare Fraud Investigation?",
+        "Where did the $0 allegedly go in Trump Fraud Task Force?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-17T14:55:08.817Z",
-  "lastUpdated": "2026-03-17T14:55:08.818Z"
+  "lastReflection": "2026-03-17T16:05:34.680Z",
+  "lastUpdated": "2026-03-17T16:05:34.681Z"
 }
