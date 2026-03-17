@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Housing Stabilization Services program is being terminated due to fraud concerns",
+      "insight": "This program termination suggests a significant issue with program integrity and oversight.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://kare11.com/article/minnesota-house-unanimously-passes-bill-to-remove-housing-stabilization-services-from-state-statute/2026-03-17",
+      "id": "rf-1773744679574-hjyypwi5w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-17T10:51:19.571Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_task_force",
+      "description": "Trump launches anti-fraud task force to be led by Vance",
+      "insight": "The creation of this task force indicates a focus on addressing fraud at the federal level.",
+      "entities": [
+        "Trump Administration",
+        "JD Vance"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "star-tribune.com",
+      "sourceUrl": "https://star-tribune.com/article/jd-vance-to-lead-trumps-new-task-force-to-fight-fraud/2026-03-17",
+      "id": "rf-1773744679574-6uamhnrm6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-17T10:51:19.571Z",
+      "isNew": true
+    },
+    {
       "type": "executive_order",
       "description": "President Trump signs executive order creating task force to root out fraud in federal benefits programs",
       "insight": "The executive order indicates a high-level effort to combat fraud in federal programs. Further investigation is needed to uncover the effectiveness of the task force and identify areas of improvement.",
@@ -114,26 +153,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-16T11:44:51.615Z",
-      "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "The $250M Minnesota welfare fraud scheme involved a complex web of entities and individuals, with a ringleader ordered to forfeit luxury goods.",
-      "insight": "The scale and complexity of this fraud scheme suggest a well-organized network of individuals and entities. Further investigation into the entities involved and their connections is warranted.",
-      "entities": [
-        "Minnesota DHS",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/ringleader-250m-minnesota-welfare-fraud-scandal-ordered-judge-forfeit-porsche-luxury-goods-aol-com-2026-03-15",
-      "id": "rf-1773613594600-gdmaco79t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-15T22:26:34.597Z",
       "isNew": false
     },
     {
@@ -963,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T19:40:54.103Z",
       "isNew": false
-    },
-    {
-      "type": "breach of FBI servers",
-      "description": "An international cybercriminal breached FBI servers holding Epstein files in 2023, which could have significant implications for ongoing investigations.",
-      "insight": "The breach of FBI servers holding sensitive information like the Epstein files raises serious concerns about data security and the potential for compromised investigations. This incident warrants further investigation into the breach and its impact.",
-      "entities": [
-        "FBI",
-        "Epstein"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcmdQdjdmbnNkRG0tUmRWdVk3STRiMXNSOXJpTnlhdm96TEE2bC1KV3dsS2tqRk1xYV8tZEtvbHFmNENJdmlnUVVXVEktdWQ0ZDdtbXg3cjAtX1ZuOUpfbGhIOE90bEp1Z0xwODZPZW9hN0ZPTzFrZGQweFNLXzVPQjU0ZnNNWlk1?oc=5",
-      "id": "rf-1773255170564-966xve45a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T18:52:50.561Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,10 +990,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-17T09:54:50.819Z"
+  "lastUpdated": "2026-03-17T10:51:19.571Z"
 }
