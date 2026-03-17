@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "executive_order",
+      "description": "President Trump signs executive order creating task force to root out fraud in federal benefits programs",
+      "insight": "The executive order indicates a high-level effort to combat fraud in federal programs. Further investigation is needed to uncover the effectiveness of the task force and identify areas of improvement.",
+      "entities": [
+        "President Trump",
+        "fraud task force"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Florida's Voice",
+      "sourceUrl": "https://floridasvoice.com/president-trump-signs-executive-order-creating-task-force-to-root-out-fraud-in-federal-benefits-programs/",
+      "id": "rf-1773727135969-313rphfqa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-17T05:58:55.965Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation into visa fraud led to the arrest of a Pulaski man.",
       "insight": "This investigation highlights the need for continued scrutiny of fraudulent activities, particularly those involving federal programs.",
@@ -963,39 +983,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-11T18:52:50.561Z",
       "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "Federal agents raid Maine health provider accused of tax fraud",
-      "insight": "This indicates potential tax fraud in the healthcare sector.",
-      "entities": [
-        "Maine health provider"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Bangor Daily News",
-      "sourceUrl": "https://bangordailynews.com/2026/03/11/federal-agents-raid-maine-health-provider-accused-of-tax-fraud/",
-      "id": "rf-1773251305909-xek5h80yw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T17:48:25.906Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-17T04:24:15.531Z"
+  "lastUpdated": "2026-03-17T05:58:55.965Z"
 }
