@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Lack of Investigation",
+      "description": "Minnesota officials allegedly failed to investigate kickbacks in the state's autism program",
+      "insight": "This lack of investigation raises concerns about the state's ability to detect and prevent fraud. Further investigation is needed to determine the extent of the issue and to hold those responsible accountable.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/",
+      "id": "rf-1773790267859-xfavarmv2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-17T23:31:07.856Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's Housing Stabilization Services program is being terminated due to fraud concerns",
       "insight": "This program termination suggests a significant issue with program integrity and oversight.",
@@ -963,33 +982,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T01:58:10.551Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal agents have been spotted at a health care provider in Lewiston, accused of tax fraud",
-      "insight": "This could be a sign of a larger investigation into health care fraud in the state. I recommend tracking this case and looking for connections to other entities or individuals.",
-      "entities": [
-        "Lewiston health care provider"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WGME",
-      "sourceUrl": "https://www.wgme.com/news/federal-agents-raid-maine-health-provider-accused-of-tax-fraud/",
-      "id": "rf-1773258054106-7d4irly48",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-11T19:40:54.103Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-17T22:31:44.952Z"
+  "lastUpdated": "2026-03-17T23:31:07.856Z"
 }
