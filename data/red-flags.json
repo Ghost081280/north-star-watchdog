@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota DHS failed to investigate allegations of kickbacks in autism program",
+      "insight": "This could indicate a larger issue with oversight and potential fraud in Minnesota's Medicaid program. I recommend further investigation into the handling of these allegations and potential connections to other entities or programs.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/report-finds-minnesota-officials-failed-to-investigate-allegations-of-autism-program-kickbacks/570363493/",
+      "id": "rf-1773834291056-xabzdw546",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-18T11:44:51.052Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
+      "description": "Trump administration's Medicaid funding freeze",
+      "insight": "This could have significant implications for Minnesota's Medicaid program and potentially other states. I recommend tracking any updates on the funding freeze and potential investigations into Medicaid fraud.",
+      "entities": [
+        "Trump Administration"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Fingerlakes1.com",
+      "sourceUrl": "https://www.fingerlakes1.com/appeals-court-upholds-block-on-trump-funding-freeze/",
+      "id": "rf-1773834291056-0in5pcu3j",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-18T11:44:51.052Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of Investigation",
       "description": "Minnesota officials allegedly failed to investigate kickbacks in the state's autism program",
       "insight": "This lack of investigation raises concerns about the state's ability to detect and prevent fraud. Further investigation is needed to determine the extent of the issue and to hold those responsible accountable.",
@@ -172,26 +210,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-16T11:44:51.615Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "HHS freezes childcare payments to Minnesota after massive fraud alleged",
-      "insight": "This suggests a significant level of fraud and potential abuse in the child care program, warranting further investigation.",
-      "entities": [
-        "Minnesota DHS",
-        "HHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkthU2dXOFM5cV9LeFpZQmlNSVdyS3pGZlZlOFJ2S2tvUEU4Mi16VmNabERmVnd5RzROMG9lbERzMlVGV1BqVXRYa1VPQzYzV0xTQS1IWnBDaWE2V2ZGQ2RyMG5DcDRBOXNzNXJfV1FJUWdZT3V2eFBZUDdUdFZieGR3eUdFSWNEY3QtQw?oc=5",
-      "id": "rf-1773588479147-i78e94cf1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-15T15:27:59.143Z",
       "isNew": false
     },
     {
@@ -963,25 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T06:53:52.891Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has opened an investigation into the Louisville Comedy Club for sexual harassment.",
-      "insight": "This investigation highlights the need for increased oversight and accountability in the entertainment industry. Further research is needed to determine the extent of the harassment and the effectiveness of the settlement.",
-      "entities": [
-        "Louisville Comedy Club"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WDRB",
-      "sourceUrl": "https://www.wdrb.com/news/louisville-comedy-club-to-pay-more-than-370-000-to-settle-sexual-harassment-investigation/article_3746f4c4-9f4a-11ec-9f4a-53f4f4c4c4c4.html",
-      "id": "rf-1773280690555-0dm3m3uwf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T01:58:10.551Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-18T10:52:08.816Z"
+  "lastUpdated": "2026-03-18T11:44:51.052Z"
 }

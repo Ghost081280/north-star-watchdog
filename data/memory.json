@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T04:12:15.481Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-13T05:47:47.223Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-18T10:52:08.814Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-18T11:44:51.051Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1557,
-    "articlesProcessed": 77550,
-    "redFlagsFound": 1826,
+    "totalScans": 1558,
+    "articlesProcessed": 77600,
+    "redFlagsFound": 1828,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "Trump administration's Medicaid funding freeze",
+          "insight": "This could have significant implications for Minnesota's Medicaid program and potentially other states. I recommend tracking any updates on the funding freeze and potential investigations into Medicaid fraud.",
+          "entities": [
+            "Trump Administration"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Fingerlakes1.com",
+          "sourceUrl": "https://www.fingerlakes1.com/appeals-court-upholds-block-on-trump-funding-freeze/"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-18T10:52:08.814Z",
-  "lastUpdated": "2026-03-18T10:52:08.815Z"
+  "lastReflection": "2026-03-18T11:44:51.051Z",
+  "lastUpdated": "2026-03-18T11:44:51.051Z"
 }
