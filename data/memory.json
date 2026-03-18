@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T11:30:20.141Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-13T12:55:26.800Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-18T20:38:01.286Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-18T21:32:54.569Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Keith Ellison connected to?",
-    "Where did the $1M+ allegedly go in Minnesota Autism Program Kickbacks Investigation?",
-    "Where did the $60M+ allegedly go in Trump Administration Federal Agency Funding Freeze Investigation?",
     "What other organizations is Minnesota Sheriff connected to?",
     "Where did the Undisclosed allegedly go in Minnesota Autism Program Kickbacks?",
     "Where did the Undisclosed allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $X allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Jerome Powell connected to?",
     "Where did the $73 million allegedly go in Feeding Our Future?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Feeding Our Future defendants connected to?",
+    "Where did the Unknown allegedly go in DOJ investigation into Fed?",
+    "Where did the Unknown allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1564,
-    "articlesProcessed": 77900,
-    "redFlagsFound": 1832,
+    "totalScans": 1565,
+    "articlesProcessed": 77950,
+    "redFlagsFound": 1833,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Minnesota Autism Program Investigation?",
-        "Where did the Not specified allegedly go in California Childcare Fraud Investigation?",
-        "Where did the Not specified allegedly go in Medicaid Fraud Investigation?"
+        "What other organizations is Keith Ellison connected to?",
+        "Where did the $1M+ allegedly go in Minnesota Autism Program Kickbacks Investigation?",
+        "Where did the $60M+ allegedly go in Trump Administration Federal Agency Funding Freeze Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-18T20:38:01.286Z",
-  "lastUpdated": "2026-03-18T20:38:01.287Z"
+  "lastReflection": "2026-03-18T21:32:54.569Z",
+  "lastUpdated": "2026-03-18T21:32:54.570Z"
 }

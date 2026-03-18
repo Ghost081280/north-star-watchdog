@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The DOJ investigation into the Federal Reserve raises concerns about the integrity of the financial system.",
+      "insight": "As an investigator, I am concerned about the potential implications of this investigation on the stability of the financial system. Further research is needed to understand the scope and potential consequences of this investigation.",
+      "entities": [
+        "Federal Reserve",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ investigation into Fed",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTW9iMzBtWjYxc3RYdjNla0NHb3NVNUVyUzlvVXRtdEtSbF9PQ0RlQk9MOVh3VUhxcW5XSV9QZVN3LTFVSVY3UFZyOEx1dUN3WDE3b0FPWU5OaWlVbmctdnpBN1FqbnpOcWZmelFZV3JTd0FQQ2JRWFRyWHNjRVh0TQ",
+      "id": "rf-1773869574575-32yfkckl0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-18T21:32:54.571Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota DHS failed to investigate allegations of kickbacks in autism program",
       "insight": "This could indicate a larger issue with oversight and potential fraud in Minnesota's Medicaid program. I recommend further investigation into the handling of these allegations and potential connections to other entities or programs.",
@@ -961,31 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T07:45:21.423Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential mismanagement of Medicaid funding in Minnesota",
-      "insight": "The allegations of mismanagement and potential fraud in Minnesota's Medicaid system raise concerns about the effectiveness of the state's oversight and control measures. Further investigation is needed to determine the extent of any wrongdoing and to identify potential vulnerabilities in the system.",
-      "entities": [
-        "Minnesota DHS",
-        "Governor Tim Walz"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Minnesota human services officials skip fraud hearing as Walz promises reform - WFIN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQXpTNm01a1NuSE5pTk0tWUY2OGFGOHVJekRxV0VqdTZMYmxYMms4am1ScVQxcHV6OENfRUJJdzkxd3NzSHB1M2VnYXBlQkdROGFNemtXRzhGMUlZZl90TU12c0ZnejktOXV6MnF4dzQ3dmZDWV81QWpkN0NhbTJ1Sl9PYzRpY3hlQkdpZWN1WXllbmhqRm5HeTlUbkFFZ095ZzZWMDNJbE1qMllfOVlJQzl0Q0s",
-      "id": "rf-1773298432895-r09nzvr9z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T06:53:52.891Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,8 +993,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA",
-    "ProPublica Nonprofits"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-18T20:38:01.288Z"
+  "lastUpdated": "2026-03-18T21:32:54.571Z"
 }
