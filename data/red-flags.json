@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to fraud allegations",
+      "insight": "Several programs and organizations are under investigation for fraud, which could lead to program terminations.",
+      "entities": [
+        "Feeding Our Future",
+        "Jackson daycare"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPc2RMNXZIcjNRN0NMV2RtMkJWUVMxOUJJczlqNUNCZ1J1LXU3UmQ3anNiMl8yWjRSYTZQcUxVYVplZ0k2VWVEdWMtOTdFOWN5NFdwOVBHelFnS2hhRzlPaUsxSl9ERVNpZFpwV0RLNmw1YlNBYnBMSEwzQkh1R0x2Z3dEbi1nZmRIcGFueUVyV1BHcTlQRk5TdUs2UzBpSDRtcTVHVmZMdjd3SDg",
+      "id": "rf-1773876583580-94vcmsirm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-18T23:29:43.577Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The DOJ investigation into the Federal Reserve raises concerns about the integrity of the financial system.",
       "insight": "As an investigator, I am concerned about the potential implications of this investigation on the stability of the financial system. Further research is needed to understand the scope and potential consequences of this investigation.",
@@ -961,26 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T08:40:30.417Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Governor Walz proposes eliminating Managed Care Organizations from Medicaid system",
-      "insight": "This could indicate potential issues with the current system, possibly including fraud. Monitoring the situation for further developments is necessary.",
-      "entities": [
-        "Governor Walz",
-        "Minnesota Medicaid"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHc3FhN1JnZTNJY2s0OGhKTXI2ekFHb0ZxdUNsQWx2OS1OV1BpSHczcGJRRTczVHJjaXRyZVdiOEwxQ2duOTAtNndIcF9fMEJEa09MNmxjaDNLNExLcmlFdWNtQnBCNy1Xenh6ZGdDZFA0am1zRFpMNjV1ZFFwUQ",
-      "id": "rf-1773301521426-9nh22i06a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T07:45:21.423Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-18T22:31:12.392Z"
+  "lastUpdated": "2026-03-18T23:29:43.577Z"
 }
