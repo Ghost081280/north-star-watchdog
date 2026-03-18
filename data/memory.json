@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T12:55:26.800Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-13T14:00:16.266Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-18T21:32:54.569Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-18T22:31:12.390Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Sheriff connected to?",
-    "Where did the Undisclosed allegedly go in Minnesota Autism Program Kickbacks?",
-    "Where did the Undisclosed allegedly go in Medicaid Fraud Investigation?",
-    "Where did the $ allegedly go in Minnesota Autism Program Kickbacks?",
     "Where did the $ allegedly go in Medicaid Fraud Investigation?",
     "Where did the $ millions allegedly go in Minnesota Autism Program Investigation?",
     "Where did the $ billions allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Feeding Our Future defendants connected to?",
     "Where did the Unknown allegedly go in DOJ investigation into Fed?",
-    "Where did the Unknown allegedly go in Feeding Our Future investigation?"
+    "Where did the Unknown allegedly go in Feeding Our Future investigation?",
+    "What specific allegations exist against Jerome Powell?",
+    "What specific allegations exist against Pam Bondi?",
+    "What specific allegations exist against Kash Patel?",
+    "Where did the $40M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1565,
-    "articlesProcessed": 77950,
-    "redFlagsFound": 1833,
+    "totalScans": 1566,
+    "articlesProcessed": 78000,
+    "redFlagsFound": 1834,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Keith Ellison connected to?",
-        "Where did the $1M+ allegedly go in Minnesota Autism Program Kickbacks Investigation?",
-        "Where did the $60M+ allegedly go in Trump Administration Federal Agency Funding Freeze Investigation?"
+        "What other organizations is Minnesota Sheriff connected to?",
+        "Where did the Undisclosed allegedly go in Minnesota Autism Program Kickbacks?",
+        "Where did the Undisclosed allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-18T21:32:54.569Z",
-  "lastUpdated": "2026-03-18T21:32:54.570Z"
+  "lastReflection": "2026-03-18T22:31:12.390Z",
+  "lastUpdated": "2026-03-18T22:31:12.391Z"
 }
