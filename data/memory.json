@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T09:37:55.748Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-13T10:35:42.250Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-18T18:00:41.793Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-18T19:15:35.885Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100 million allegedly go in Minnesota Autism Program Investigation?",
-    "Where did the $1 billion allegedly go in Trump Administration Funding Freeze Investigation?",
-    "What other organizations is Not Applicable connected to?",
     "Where did the Not specified allegedly go in Minnesota Autism Program Investigation?",
     "Where did the Not specified allegedly go in California Childcare Fraud Investigation?",
     "Where did the Not specified allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Unknown connected to?",
     "Where did the $170 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $170 Million allegedly go in California Hospice Fraud Investigation?"
+    "Where did the $170 Million allegedly go in California Hospice Fraud Investigation?",
+    "What other organizations is Multiple Individuals connected to?",
+    "Where did the $X allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $X allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1562,
-    "articlesProcessed": 77800,
-    "redFlagsFound": 1830,
+    "totalScans": 1563,
+    "articlesProcessed": 77850,
+    "redFlagsFound": 1831,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota DHS autism program kickback investigation?",
-        "Where did the $0 allegedly go in Childcare fraud crackdown?",
-        "What other organizations is Minnesota DHS Officials connected to?"
+        "Where did the $100 million allegedly go in Minnesota Autism Program Investigation?",
+        "Where did the $1 billion allegedly go in Trump Administration Funding Freeze Investigation?",
+        "What other organizations is Not Applicable connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-18T18:00:41.793Z",
-  "lastUpdated": "2026-03-18T18:00:41.794Z"
+  "lastReflection": "2026-03-18T19:15:35.885Z",
+  "lastUpdated": "2026-03-18T19:15:35.886Z"
 }
