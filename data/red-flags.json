@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating Joe Kent, former Counterterrorism Chief, for allegedly sharing classified information.",
+      "insight": "This investigation raises concerns about the handling of classified information within the Trump administration. Further investigation is needed to determine the extent of the alleged wrongdoing and to identify any potential national security risks.",
+      "entities": [
+        "Joe Kent",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Semafor",
+      "sourceUrl": "https://www.semafor.com/article/fbi-investigates-intelligence-aide-who-resigned-over-war",
+      "id": "rf-1773896011750-1alh3f5gl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T04:53:31.746Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud scheme",
+      "description": "The Feeding Our Future fraud scheme allegedly defrauded the government of $250 million.",
+      "insight": "This scheme highlights the need for increased oversight and accountability in government programs. Further investigation is needed to determine the extent of the alleged wrongdoing and to identify any potential co-conspirators.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fox9.com/news/2-feeding-our-future-defendants-enter-guilty-pleas-1-rejects-plea-deal",
+      "id": "rf-1773896011750-3d1j4e4ou",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T04:53:31.746Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential program termination due to fraud allegations",
       "insight": "Several programs and organizations are under investigation for fraud, which could lead to program terminations.",
@@ -942,49 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T09:41:12.503Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal prosecutor staffing issues may delay the Feeding Our Future fraud trial",
-      "insight": "Delays in the trial could impact the recovery of potentially fraudulent funds and the prosecution of those involved.",
-      "entities": [
-        "DOJ",
-        "Feeding Our Future"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYlMyN19tc0hxSkdGbDAwdTdTZWw2cFhXUUxRdGhLaExlNTNvVmtWSWZyUFNrcVVTQmR4MTMyZXJvSkEyQlR6TkoyREdCTEI3TFR6Sm9WbjdRMmlWVjFsMzVPR29SdTM3VnRNWm9LbEpIQnNBb09ZTUo5eUdlWFhER001a0x1RTVuOGE1TDZRc0dmNGF0cHlMOXU5cGnSAaIBQVVfeXFMT2dISThXaFAxM1d4TTYyaXNxU2FCbGxhY1NLb0tYNGFtdUw2UkZPVWN1UVg5TUMtTEJCRHVXUlZRUHBROVQwMDZMRHRqdHRPZzcyWmxUV1FUdDRhOWUyQXh3T1hUbkJEQ3N3Z2I2djZ0SGhhbV8wcTdFajlwVjJsWkl1X0Y1YVhoTHFtTTk1eEw1MWJvaUotSVRqQkVwVDdQSFZ3?oc=5",
-      "id": "rf-1773308472506-xpvu703ut",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T09:41:12.503Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Feeding Our Future for alleged wire fraud and money laundering.",
-      "insight": "This investigation highlights the need for increased scrutiny of non-profit organizations receiving federal funds. I will continue to monitor the case and look for potential connections to other entities.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/federal-prosecutor-staffing-could-delay-feeding-our-future-fraud-trial",
-      "id": "rf-1773304830420-zssficndm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T08:40:30.417Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +993,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T02:04:04.262Z"
+  "lastUpdated": "2026-03-19T04:53:31.746Z"
 }
