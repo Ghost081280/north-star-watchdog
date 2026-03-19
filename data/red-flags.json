@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "Feeding Our Future is under investigation for potential fraud",
+      "insight": "This case has been ongoing and involves a large amount of money. The House Republicans are grilling Keith Ellison over his 2021 meeting with Feeding Our Future fraudsters.",
+      "entities": [
+        "Feeding Our Future",
+        "Keith Ellison"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/house-republicans-grill-keith-ellison-2021-meeting-feeding-our-future-fraudsters/",
+      "id": "rf-1773942821330-z22jp8s3k",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T17:53:41.326Z",
+      "isNew": true
+    },
+    {
+      "type": "classified information leak",
+      "description": "Joe Kent is under investigation for sharing classified information",
+      "insight": "This case involves a high-level government official and potential national security risks.",
+      "entities": [
+        "Joe Kent"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026-03-19/patel-says-agents-who-worked-mar-a-lago-case-were-fired-for-ethics-violations",
+      "id": "rf-1773942821330-fwplztery",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T17:53:41.326Z",
+      "isNew": true
+    },
+    {
       "type": "Potential leak of classified information",
       "description": "Joe Kent, the former counterterrorism chief, is under investigation for allegedly leaking classified information.",
       "insight": "This raises concerns about the handling of sensitive information within the government and the potential risks of leaks to national security.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T16:57:13.134Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Leak of Classified Information",
@@ -940,45 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T10:35:42.252Z",
       "isNew": false
-    },
-    {
-      "type": "misuse_of_funds",
-      "description": "A Minnesota woman was accused of misusing $600K in Medicaid funds",
-      "insight": "This case highlights the misuse of Medicaid funds by an individual.",
-      "entities": [
-        "Minnesota woman"
-      ],
-      "confidence": 90,
-      "priority": "medium",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWUlvWkxsTUJyQWVkdmxlMjloYnJJX2l5VXVEdjRXOHI2bzU4OG1WWTJwU29oT1lRdi1IbmltMzFNZG1hRWlseWlIZm94WHR6eHVvS2hGZXp0WUpOOGRiNUc1akJaOUlxbXFubHoyR2wwYXJIcTM4SG1IMTVzY0duY1A0ZnJScWFyOWZzdnQwMlB6aVBEbk1nX2dn0gGfAUFVX3lxTFBqQ2RtQW0wYjZrNjR2aFBhaE9xaXN4QUVoODlQNmx6OTFQUHZvOU9Td2s5dV9BaG1EZnI2eGczRm10Q08zWUlpdldfcTk5RElORTBSaEdDU3d0cFNDcmJ1MTRFQ204b21ReVdMVEI1WTZ0M3VLNExaSzRmM0psU21sR1paZkVDamVIcF9LX2NOeUJqUEVGWnNTQjg2Z3hVOA",
-      "id": "rf-1773398142256-qszlhtevl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T10:35:42.252Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Judge hears arguments over federal withholding of Medicaid funds from Minnesota",
-      "insight": "Potential for significant impact on healthcare services in Minnesota",
-      "entities": [
-        "Minnesota",
-        "Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5 Eyewitnessnews.com/news/local/judge-hears-arguments-over-federal-withholding-of-medicaid-funds-from-minnesota",
-      "id": "rf-1773391086144-xcet3d4f0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T08:38:06.140Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,6 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T16:57:13.134Z"
+  "lastUpdated": "2026-03-19T17:53:41.326Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T05:44:27.139Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-14T06:43:53.781Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-19T16:57:13.132Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-19T17:53:41.324Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Kash Patel connected to?",
-    "What other organizations is Jackson daycare operator connected to?",
-    "Where did the $100K allegedly go in Feeding Our Future?",
-    "What other organizations is Joe Kent connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
     "Where did the N/A allegedly go in Joe Kent investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +554,11 @@
     "What other organizations is Jackson Co. woman connected to?",
     "Where did the Unknown allegedly go in Joe Kent leak investigation?",
     "Where did the Unknown allegedly go in Tesla self-driving feature investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Jerome Powell connected to?",
+    "Where did the $XXX allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $0 allegedly go in Joe Kent investigation?",
+    "Where did the $0 allegedly go in Tesla Full-Self Driving investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1579,
-    "articlesProcessed": 78650,
-    "redFlagsFound": 1847,
+    "totalScans": 1580,
+    "articlesProcessed": 78700,
+    "redFlagsFound": 1849,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "classified information leak",
+          "description": "Joe Kent is under investigation for sharing classified information",
+          "insight": "This case involves a high-level government official and potential national security risks.",
+          "entities": [
+            "Joe Kent"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The New York Times",
+          "sourceUrl": "https://www.nytimes.com/2026-03-19/patel-says-agents-who-worked-mar-a-lago-case-were-fired-for-ethics-violations"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Pam Bondi?",
-        "What specific allegations exist against Kash Patel?",
-        "Where did the $40M allegedly go in Feeding Our Future?"
+        "What other organizations is Kash Patel connected to?",
+        "What other organizations is Jackson daycare operator connected to?",
+        "Where did the $100K allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T16:57:13.132Z",
-  "lastUpdated": "2026-03-19T16:57:13.133Z"
+  "lastReflection": "2026-03-19T17:53:41.324Z",
+  "lastUpdated": "2026-03-19T17:53:41.325Z"
 }
