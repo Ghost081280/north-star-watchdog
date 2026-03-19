@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T16:38:39.966Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-13T17:34:09.179Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-19T04:53:31.744Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-03-19T05:57:39.417Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Multiple Individuals connected to?",
     "Where did the $X allegedly go in Minnesota Fraud Investigation?",
     "Where did the $X allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Jerome Powell connected to?",
@@ -558,7 +557,8 @@
     "Where did the $100K allegedly go in Feeding Our Future?",
     "What other organizations is Joe Kent connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the N/A allegedly go in Joe Kent investigation?"
+    "Where did the N/A allegedly go in Joe Kent investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1569,
-    "articlesProcessed": 78150,
-    "redFlagsFound": 1837,
+    "totalScans": 1570,
+    "articlesProcessed": 78200,
+    "redFlagsFound": 1838,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud scheme",
-          "description": "The Feeding Our Future fraud scheme allegedly defrauded the government of $250 million.",
-          "insight": "This scheme highlights the need for increased oversight and accountability in government programs. Further investigation is needed to determine the extent of the alleged wrongdoing and to identify any potential co-conspirators.",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FBI",
-          "sourceUrl": "https://www.fox9.com/news/2-feeding-our-future-defendants-enter-guilty-pleas-1-rejects-plea-deal"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Unknown connected to?",
-        "Where did the $170 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $170 Million allegedly go in California Hospice Fraud Investigation?"
+        "What other organizations is Multiple Individuals connected to?",
+        "Where did the $X allegedly go in Minnesota Fraud Investigation?",
+        "Where did the $X allegedly go in Feeding Our Future Investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T04:53:31.744Z",
-  "lastUpdated": "2026-03-19T04:53:31.745Z"
+  "lastReflection": "2026-03-19T05:57:39.417Z",
+  "lastUpdated": "2026-03-19T05:57:39.418Z"
 }
