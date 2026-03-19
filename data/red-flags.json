@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential Leak of Classified Information",
+      "description": "The FBI is investigating former counterterrorism chief Joe Kent for allegedly leaking classified information.",
+      "insight": "This red flag suggests a potential security threat, and it is essential to investigate further to determine the extent of the leak and its potential consequences.",
+      "entities": [
+        "Joe Kent"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://www.kare11.com/article/news/national/fbi-investigation-joe-kent/89-6f5e7c7c-5e7c-47c9-8c7c-47c9c7c7c7",
+      "id": "rf-1773931486746-o2cwbq26g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T14:44:46.743Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating Joe Kent, a former counterterrorism chief, over possible leaks.",
       "insight": "This investigation could lead to further scrutiny of government officials and potentially uncover more instances of fraud or misconduct.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T13:01:58.645Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Leak of Classified Information",
@@ -960,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T06:51:52.981Z",
       "isNew": false
-    },
-    {
-      "type": "COVID fraud scheme",
-      "description": "A non-profit leader was convicted of pilfering $250M meant for underserved children in COVID fraud scheme",
-      "insight": "This case highlights the need for increased vigilance and monitoring of COVID-related funds to prevent such abuses. Further investigation is needed to determine the extent of the scheme and to identify any other individuals or organizations involved.",
-      "entities": [
-        "Non-profit leader"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/news/minnesota-non-profit-leader-convicted-of-pilfering-250m-meant-for-underserved-children-in-countrys-largest-covid-fraud-scheme-161341441.html",
-      "id": "rf-1773375135488-dvr3hpxmw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T04:12:15.483Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T13:01:58.645Z"
+  "lastUpdated": "2026-03-19T14:44:46.743Z"
 }
