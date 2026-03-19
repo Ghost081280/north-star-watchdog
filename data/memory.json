@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T11:23:39.993Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-14T12:47:49.702Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-19T22:27:36.285Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
+    },
+    {
+      "date": "2026-03-19T23:29:15.210Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Tesla FSD Investigation?",
-    "What other organizations is Jackson Co. woman connected to?",
-    "Where did the Unknown allegedly go in Joe Kent leak investigation?",
     "Where did the Unknown allegedly go in Tesla self-driving feature investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Jerome Powell connected to?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in HHS Investigation into State Violations of Federal Conscience Protections?",
     "Where did the $0 allegedly go in FBI Investigation into Arctic Frost?",
     "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
-    "Where did the $millions allegedly go in Minnesota Assisted Living Facilities?"
+    "Where did the $millions allegedly go in Minnesota Assisted Living Facilities?",
+    "What other organizations is James Comey connected to?",
+    "Where did the $0 allegedly go in Trump Election Investigation?",
+    "Where did the $0 allegedly go in Tesla Self-Driving System Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1585,
-    "articlesProcessed": 78950,
-    "redFlagsFound": 1855,
+    "totalScans": 1586,
+    "articlesProcessed": 79000,
+    "redFlagsFound": 1856,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Investigation into Joe Kent?",
         "Where did the Unknown allegedly go in Tesla FSD Investigation?",
-        "What other organizations is Jackson Co. woman connected to?"
+        "What other organizations is Jackson Co. woman connected to?",
+        "Where did the Unknown allegedly go in Joe Kent leak investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T22:27:36.285Z",
-  "lastUpdated": "2026-03-19T22:27:36.286Z"
+  "lastReflection": "2026-03-19T23:29:15.210Z",
+  "lastUpdated": "2026-03-19T23:29:15.210Z"
 }
