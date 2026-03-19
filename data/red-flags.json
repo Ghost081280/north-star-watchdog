@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Trump administration is facing multiple investigations, including one into Federal Reserve Chair Jerome Powell.",
+      "insight": "I notice that the Trump administration is facing multiple investigations, which could indicate a pattern of wrongdoing. I would like to investigate further to see if there are any connections between these investigations.",
+      "entities": [
+        "Trump administration",
+        "Jerome Powell"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/19/trump-signals-doj-should-continue-powell-probe.html",
+      "id": "rf-1773946617655-udth49azv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T18:56:57.652Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Feeding Our Future is under investigation for potential fraud",
       "insight": "This case has been ongoing and involves a large amount of money. The House Republicans are grilling Keith Ellison over his 2021 meeting with Feeding Our Future fraudsters.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T17:53:41.326Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "classified information leak",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T17:53:41.326Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential leak of classified information",
@@ -960,25 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T11:30:20.143Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "A Minnesota non-profit organization was involved in a $250M pilfering scheme",
-      "insight": "This case highlights a large-scale fraud scheme involving a non-profit organization meant to serve underserved children.",
-      "entities": [
-        "Minnesota non-profit organization"
-      ],
-      "confidence": 95,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBRMVE4LUJERVRhd3gzTnJ4SGxZV3Q3ZnpfWmZvOFJxZEhhVHFlUXgxTDVBNFpWcWpOcEV4Wm94QWN3azhlaXlhVkZibnVuYlg2MkRlQ0ZSY245anUzREo4ZlZVMUJEX0JlSWxoamsxa1FucHZabzRqNmtzNEU",
-      "id": "rf-1773398142256-qqegcycy8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T10:35:42.252Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +993,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T17:53:41.326Z"
+  "lastUpdated": "2026-03-19T18:56:57.652Z"
 }

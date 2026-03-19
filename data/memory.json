@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T06:43:53.781Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-14T07:34:41.989Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-19T17:53:41.324Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-19T18:56:57.650Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the N/A allegedly go in Joe Kent investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $10M+ allegedly go in Feeding Our Future fraud case?",
     "Where did the unknown allegedly go in Joe Kent Investigation?",
     "Where did the unknown allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Jerome Powell connected to?",
     "Where did the $XXX allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $0 allegedly go in Joe Kent investigation?",
-    "Where did the $0 allegedly go in Tesla Full-Self Driving investigation?"
+    "Where did the $0 allegedly go in Tesla Full-Self Driving investigation?",
+    "What other organizations is Joe Kent connected to?",
+    "Where did the Unknown allegedly go in Trump Administration Investigation into Jerome Powell?",
+    "Where did the Unknown allegedly go in HHS Investigation into 13 States?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1580,
-    "articlesProcessed": 78700,
-    "redFlagsFound": 1849,
+    "totalScans": 1581,
+    "articlesProcessed": 78750,
+    "redFlagsFound": 1850,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "classified information leak",
-          "description": "Joe Kent is under investigation for sharing classified information",
-          "insight": "This case involves a high-level government official and potential national security risks.",
-          "entities": [
-            "Joe Kent"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The New York Times",
-          "sourceUrl": "https://www.nytimes.com/2026-03-19/patel-says-agents-who-worked-mar-a-lago-case-were-fired-for-ethics-violations"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kash Patel connected to?",
-        "What other organizations is Jackson daycare operator connected to?",
-        "Where did the $100K allegedly go in Feeding Our Future?"
+        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the N/A allegedly go in Joe Kent investigation?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T17:53:41.324Z",
-  "lastUpdated": "2026-03-19T17:53:41.325Z"
+  "lastReflection": "2026-03-19T18:56:57.650Z",
+  "lastUpdated": "2026-03-19T18:56:57.651Z"
 }
