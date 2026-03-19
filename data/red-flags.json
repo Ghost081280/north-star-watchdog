@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential leak of classified information",
+      "description": "Joe Kent, the former counterterrorism chief, is under investigation for allegedly leaking classified information.",
+      "insight": "This raises concerns about the handling of sensitive information within the government and the potential risks of leaks to national security.",
+      "entities": [
+        "Joe Kent"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/mar/19/fbi-investigating-us-counter-terrorism-chief-who-resigned-over-iran-war",
+      "id": "rf-1773939433138-82lyr1mtu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T16:57:13.134Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Leak of Classified Information",
       "description": "The FBI is investigating former counterterrorism chief Joe Kent for allegedly leaking classified information.",
       "insight": "This red flag suggests a potential security threat, and it is essential to investigate further to determine the extent of the leak and its potential consequences.",
@@ -960,29 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T08:38:06.140Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "Figure Lending Corp under investigation for data breach of nearly 1 million user records.",
-      "insight": "This data breach could lead to identity theft and financial fraud.",
-      "entities": [
-        "Figure Lending Corp"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://schubertjonckheer.com/figure-lending-corp-under-investigation-for-data-breach-of-nearly-1-million-user-records/",
-      "id": "rf-1773384712984-eaxl2mxae",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T06:51:52.981Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T15:53:54.187Z"
+  "lastUpdated": "2026-03-19T16:57:13.134Z"
 }
