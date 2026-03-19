@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T20:32:57.084Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-13T21:31:37.589Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-19T09:41:33.897Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-19T10:39:02.421Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $73 million allegedly go in Feeding Our Future?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Feeding Our Future defendants connected to?",
     "Where did the Unknown allegedly go in DOJ investigation into Fed?",
@@ -558,7 +557,8 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $10M+ allegedly go in Feeding Our Future fraud case?",
     "Where did the unknown allegedly go in Joe Kent Investigation?",
-    "Where did the unknown allegedly go in Feeding Our Future Investigation?"
+    "Where did the unknown allegedly go in Feeding Our Future Investigation?",
+    "Where did the $3.7M to $9.9M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1573,
-    "articlesProcessed": 78350,
-    "redFlagsFound": 1842,
+    "totalScans": 1574,
+    "articlesProcessed": 78400,
+    "redFlagsFound": 1843,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Feeding Our Future Investigation?",
-        "What other organizations is Jerome Powell connected to?",
-        "Where did the $73 million allegedly go in Feeding Our Future?"
+        "Where did the $73 million allegedly go in Feeding Our Future?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Feeding Our Future defendants connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T09:41:33.897Z",
-  "lastUpdated": "2026-03-19T09:41:33.898Z"
+  "lastReflection": "2026-03-19T10:39:02.421Z",
+  "lastUpdated": "2026-03-19T10:39:02.422Z"
 }
