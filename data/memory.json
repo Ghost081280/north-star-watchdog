@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-13T22:26:55.412Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-13T23:26:48.760Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-19T11:35:01.476Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-19T13:01:58.643Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in DOJ investigation into Fed?",
     "Where did the Unknown allegedly go in Feeding Our Future investigation?",
     "What specific allegations exist against Jerome Powell?",
     "What specific allegations exist against Pam Bondi?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in Feeding Our Future Investigation?",
     "Where did the $3.7M to $9.9M allegedly go in Feeding Our Future?",
     "Where did the Unknown allegedly go in Joe Kent Investigation?",
-    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?"
+    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $0 allegedly go in FBI Investigation into Joe Kent?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1575,
-    "articlesProcessed": 78450,
-    "redFlagsFound": 1844,
+    "totalScans": 1576,
+    "articlesProcessed": 78500,
+    "redFlagsFound": 1845,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Feeding Our Future defendants connected to?",
-        "Where did the Unknown allegedly go in DOJ investigation into Fed?"
+        "Where did the Unknown allegedly go in DOJ investigation into Fed?",
+        "Where did the Unknown allegedly go in Feeding Our Future investigation?",
+        "What specific allegations exist against Jerome Powell?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-19T11:35:01.476Z",
-  "lastUpdated": "2026-03-19T11:35:01.477Z"
+  "lastReflection": "2026-03-19T13:01:58.643Z",
+  "lastUpdated": "2026-03-19T13:01:58.644Z"
 }

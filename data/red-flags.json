@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating Joe Kent, a former counterterrorism chief, over possible leaks.",
+      "insight": "This investigation could lead to further scrutiny of government officials and potentially uncover more instances of fraud or misconduct.",
+      "entities": [
+        "Joe Kent"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://kare11.com/news/fbi-launches-leak-investigation-into-top-counterterrorism-official-who-resigned-over-iran-war-reports-say",
+      "id": "rf-1773925318648-x6ikangp7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T13:01:58.645Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Leak of Classified Information",
       "description": "Former counterterrorism chief Joe Kent is under investigation for leaking classified information",
       "insight": "This red flag raises concerns about the potential compromise of national security and the need for stricter protocols to prevent similar incidents in the future. I recommend further investigation into the matter to determine the extent of the leak and to identify measures to prevent such incidents.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T11:35:01.478Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -960,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T04:12:15.483Z",
       "isNew": false
-    },
-    {
-      "type": "Program termination",
-      "description": "The Feeding our Future program was terminated due to alleged fraud",
-      "insight": "I suspect that the program's termination may be related to a larger pattern of fraud in Minnesota's social services. Further investigation is needed to determine the extent of the fraud and identify those responsible.",
-      "entities": [
-        "Feeding our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/",
-      "id": "rf-1773344519263-6fvp50ix1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T19:41:59.259Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,8 +991,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T11:35:01.478Z"
+  "lastUpdated": "2026-03-19T13:01:58.645Z"
 }
