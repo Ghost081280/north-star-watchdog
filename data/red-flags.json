@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential abuse of power",
+      "description": "The Trump administration's investigation into New Jersey abortion coverage has been criticized as a waste of taxpayer money. This raises concerns about the potential for abuse of power and politicization of investigations.",
+      "insight": "I am concerned that the Trump administration's investigation into New Jersey abortion coverage may be motivated by political considerations rather than a genuine concern for the public interest. Further investigation is needed to determine the facts and ensure that the administration is not abusing its power.",
+      "entities": [
+        "Trump administration",
+        "New Jersey"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Mikie Sherrill",
+      "sourceUrl": "https://www.inquirer.com/news/mikie-sherrill-trump-administration-investigation-new-jersey-abortion-coverage-20260319.html",
+      "id": "rf-1773952571248-baufcatfz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T20:36:11.245Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI investigation into Joe Kent for leaking classified information",
       "insight": "This investigation may be related to other cases of leaked classified information",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T19:47:05.651Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -961,30 +981,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T15:41:20.167Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "A Minnesota woman was accused of misusing $600K in Medicaid funds",
-      "insight": "This suggests a potential for misuse of Medicaid funds by individuals or organizations",
-      "entities": [
-        "Minnesota woman"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPRHY3bXAzT3Y0dUx1TkEyRzZqVzYtdDNOcThRZXl6QkxlMWZzRzJPMUJXXzluMFkzRmJYbVRnZXRPVXA1NlZQUHFLZl90T29sOExkcDllb09zVUllWTc5bklSTkhHdGwtYk5ka1pXLXBpcUlSSThJbG5Cdm5sU3ZqdUI5OXR5dEtZS0MwTVpmMFJKeV8wNzhwYml0T2haUDZ1czRRendKWnV3M3Z3Y3hmbFNnNHVreTVUNXZkUW53NGFpcmhXMGJJOFZuMzJZUUFiSjE0MUlzMjMzeXFiZ2ZHaUNB?oc=5",
-      "id": "rf-1773413682271-unqynoiu6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T14:54:42.267Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +993,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T19:47:05.651Z"
+  "lastUpdated": "2026-03-19T20:36:11.245Z"
 }
