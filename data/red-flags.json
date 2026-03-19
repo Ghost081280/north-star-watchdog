@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential Leak of Classified Information",
+      "description": "Former counterterrorism chief Joe Kent is under investigation for leaking classified information",
+      "insight": "This red flag raises concerns about the potential compromise of national security and the need for stricter protocols to prevent similar incidents in the future. I recommend further investigation into the matter to determine the extent of the leak and to identify measures to prevent such incidents.",
+      "entities": [
+        "Joe Kent"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Le Monde.fr",
+      "sourceUrl": "https://www.lemonde.fr/en/international/article/2026/03/19/fbi-probing-counterterrorism-official-who-quit-over-iran-war-us-media-reports_6044448_4.html",
+      "id": "rf-1773920101482-huodtjlil",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-19T11:35:01.478Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations into fraud and leaks of classified information",
       "insight": "These investigations suggest a larger pattern of potential wrongdoing and highlight the need for continued monitoring",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-19T10:39:02.423Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged classified leaks",
@@ -961,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-12T19:41:59.259Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid reform",
-      "description": "Gov. Walz offers plan to reform state's Medicaid system following fraud",
-      "insight": "This suggests that fraud has been identified within the Medicaid system, prompting a reform plan.",
-      "entities": [
-        "Gov. Walz",
-        "Minnesota"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Voice of Alexandria",
-      "sourceUrl": "https://voiceofalexandria.com/2026/03/12/gov-walz-offers-plan-to-reform-states-medicaid-system-following-fraud/",
-      "id": "rf-1773341700938-6umabgskz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-12T18:55:00.934Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,7 +993,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1012,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-19T10:39:02.423Z"
+  "lastUpdated": "2026-03-19T11:35:01.478Z"
 }
