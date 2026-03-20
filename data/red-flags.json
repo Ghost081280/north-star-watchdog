@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating Colombia President Gustavo Petro, which may indicate a larger pattern of corruption.",
+      "insight": "This investigation could lead to further discoveries of corruption and embezzlement. I recommend tracking the investigation and searching for connections to other entities.",
+      "entities": [
+        "Gustavo Petro",
+        "Colombian Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/03/20/world/americas/colombia-president-gustavo-petro-investigation.html",
+      "id": "rf-1774038641594-k3ec2g4nn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T20:30:41.590Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scheme",
       "description": "Feeding Our Future fraud scheme involves multiple defendants and ongoing investigation",
       "insight": "The Feeding Our Future fraud scheme is a significant concern, with multiple defendants pleading guilty and an ongoing investigation. This suggests a large-scale fraud operation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T19:37:15.578Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,30 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T10:26:45.477Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "The Feeding Our Future case involves allegations of fraud and mismanagement",
-      "insight": "This case highlights potential vulnerabilities in program oversight and the need for closer monitoring.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/story/57017732/multiple-feeding-our-future-defendants-indicate-they-are-ready-to-take-plea-deals",
-      "id": "rf-1773480710265-93384113i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T09:31:50.261Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +991,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T19:37:15.578Z"
+  "lastUpdated": "2026-03-20T20:30:41.590Z"
 }

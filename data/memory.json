@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T08:35:39.883Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-03-15T09:32:48.517Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-20T19:37:15.577Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-20T20:30:41.588Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "What other organizations is Joe Kent connected to?",
-    "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy' case?",
     "Where did the $250 million allegedly go in FBI Investigation into Feeding Our Future?",
     "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy'?",
     "Where did the $1.1M allegedly go in FBI Investigation into Feeding Our Future?",
@@ -558,7 +555,10 @@
     "Where did the $XXX million allegedly go in Feeding Our Future?",
     "Where did the $XXX allegedly go in Harvard University?",
     "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against Tulsi Gabbard?"
+    "What specific allegations exist against Tulsi Gabbard?",
+    "What other organizations is Gustavo Petro connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the Unknown allegedly go in Colombia President Gustavo Petro investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1602,
-    "articlesProcessed": 79800,
-    "redFlagsFound": 1871,
+    "totalScans": 1603,
+    "articlesProcessed": 79850,
+    "redFlagsFound": 1872,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud scheme",
-          "description": "Feeding Our Future fraud scheme involves multiple defendants and ongoing investigation",
-          "insight": "The Feeding Our Future fraud scheme is a significant concern, with multiple defendants pleading guilty and an ongoing investigation. This suggests a large-scale fraud operation.",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Google News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObl9oMWJ0RUNGQmdVQWo2ZXpIa0J0SXJleTVXXy01VWkwLUlCdXpRc0hTSUZYLTRfVF9Xa1NRVE83aEdYWnpyQWNCejZSck1reXBjR0U2b0Ztc0p2U1ZYS3VhNkJhZV9ieDFoYmIzZ0Q0MWhDXzNYLTdJUDNhRWpEd00xekkybWdlS1N5dWljNEp3ejFuQUN6SC1kdXR2YllDY3pYdA"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11.7M allegedly go in Feeding Our Future investigation?",
         "Are any of these 3 figures connected to each other?",
-        "What other organizations is Joe Kent connected to?"
+        "What other organizations is Joe Kent connected to?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy' case?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T19:37:15.577Z",
-  "lastUpdated": "2026-03-20T19:37:15.577Z"
+  "lastReflection": "2026-03-20T20:30:41.588Z",
+  "lastUpdated": "2026-03-20T20:30:41.589Z"
 }
