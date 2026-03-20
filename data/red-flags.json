@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI is investigating several high-profile cases, including the Trump 'conspiracy' case and the Feeding Our Future fraud case. These investigations have raised concerns about corruption and abuse of power.",
+      "insight": "I suspect that these investigations may be connected to a larger pattern of corruption and abuse of power. Further investigation is needed to determine the extent of these allegations.",
+      "entities": [
+        "Trump",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1773995953965-gue6sj0hu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T08:39:13.961Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "$800K stolen by Melbourne fraud ring",
       "insight": "This case indicates a significant amount of money was stolen through fraudulent means, suggesting a large-scale operation.",
@@ -57,26 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T05:51:41.634Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The FBI is investigating several high-profile cases, including the Trump investigation and the Feeding Our Future investigation.",
-      "insight": "I notice that there are multiple high-profile investigations currently ongoing, which could indicate a pattern of corruption or wrongdoing at the highest levels of government.",
-      "entities": [
-        "James Comey",
-        "Joe Kent"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1773980250969-np2bdorpw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T04:17:30.965Z",
       "isNew": false
     },
     {
@@ -986,6 +986,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T07:44:53.461Z"
+  "lastUpdated": "2026-03-20T08:39:13.961Z"
 }
