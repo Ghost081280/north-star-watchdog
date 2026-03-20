@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T19:26:12.576Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-14T20:26:55.305Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-20T09:39:57.247Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-20T10:36:38.804Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI Investigation into Arctic Frost?",
-    "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the $millions allegedly go in Minnesota Assisted Living Facilities?",
     "What other organizations is James Comey connected to?",
     "Where did the $0 allegedly go in Trump Election Investigation?",
@@ -558,7 +556,9 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Joe Kent connected to?",
     "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy' case?",
-    "Where did the $250 million allegedly go in FBI Investigation into Feeding Our Future?"
+    "Where did the $250 million allegedly go in FBI Investigation into Feeding Our Future?",
+    "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy'?",
+    "Where did the $1.1M allegedly go in FBI Investigation into Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1593,
-    "articlesProcessed": 79350,
-    "redFlagsFound": 1864,
+    "totalScans": 1594,
+    "articlesProcessed": 79400,
+    "redFlagsFound": 1865,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T09:39:57.247Z",
-  "lastUpdated": "2026-03-20T09:39:57.248Z"
+  "lastReflection": "2026-03-20T10:36:38.804Z",
+  "lastUpdated": "2026-03-20T10:36:38.805Z"
 }
