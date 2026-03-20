@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Multiple Minnesotan individuals and companies involved in the Feeding Our Future program are facing charges and convictions for fraud.",
+      "insight": "The Feeding Our Future program was terminated due to widespread fraud. Further investigation into the individuals and companies involved is necessary to uncover the full extent of the fraud.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Minnesota Lawyer",
+      "sourceUrl": "https://www.minnesotalawyer.com/amp/212477/ Minnesota-fraud-More-Feeding-Our-Future-plea-deals-expected-Friday",
+      "id": "rf-1774032417466-k1a8d11an",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T18:46:57.462Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating the Feeding Our Future program for alleged fraud, with multiple plea deals expected.",
       "insight": "This investigation highlights the need for increased oversight and accountability in government programs. I will continue to track this case and look for any connections to other entities or programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T17:35:14.369Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -565,25 +585,6 @@
       "isNew": false
     },
     {
-      "type": "program_termination",
-      "description": "Minnesota's Housing Stabilization Services program is being terminated due to fraud concerns",
-      "insight": "This program termination suggests a significant issue with program integrity and oversight.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://kare11.com/article/minnesota-house-unanimously-passes-bill-to-remove-housing-stabilization-services-from-state-statute/2026-03-17",
-      "id": "rf-1773744679574-hjyypwi5w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-17T10:51:19.571Z",
-      "isNew": false
-    },
-    {
       "type": "federal_task_force",
       "description": "Trump launches anti-fraud task force to be led by Vance",
       "insight": "The creation of this task force indicates a focus on addressing fraud at the federal level.",
@@ -981,7 +982,7 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,6 +991,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T17:35:14.369Z"
+  "lastUpdated": "2026-03-20T18:46:57.462Z"
 }

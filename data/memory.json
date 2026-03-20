@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T06:55:17.718Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-15T07:44:31.421Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-20T17:35:14.367Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-20T18:46:57.460Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?",
-    "What other organizations is Melbourne Fraud Ring connected to?",
-    "What other organizations is Chongqing Mayor connected to?",
     "Where did the $11.7M allegedly go in Feeding Our Future investigation?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Joe Kent connected to?",
@@ -558,7 +555,10 @@
     "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?",
     "What other organizations is Minnesotan couple connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
-    "Where did the unknown allegedly go in Harvard investigation?"
+    "Where did the unknown allegedly go in Harvard investigation?",
+    "Where did the $XXX million allegedly go in Feeding Our Future?",
+    "Where did the $XXX allegedly go in Harvard University?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1600,
-    "articlesProcessed": 79700,
-    "redFlagsFound": 1869,
+    "totalScans": 1601,
+    "articlesProcessed": 79750,
+    "redFlagsFound": 1870,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Multiple Minnesotan individuals and companies involved in the Feeding Our Future program are facing charges and convictions for fraud.",
+          "insight": "The Feeding Our Future program was terminated due to widespread fraud. Further investigation into the individuals and companies involved is necessary to uncover the full extent of the fraud.",
+          "entities": [
+            "Feeding Our Future",
+            "Minnesota DHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Minnesota Lawyer",
+          "sourceUrl": "https://www.minnesotalawyer.com/amp/212477/ Minnesota-fraud-More-Feeding-Our-Future-plea-deals-expected-Friday"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Trump?"
+        "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?",
+        "What other organizations is Melbourne Fraud Ring connected to?",
+        "What other organizations is Chongqing Mayor connected to?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T17:35:14.367Z",
-  "lastUpdated": "2026-03-20T17:35:14.368Z"
+  "lastReflection": "2026-03-20T18:46:57.460Z",
+  "lastUpdated": "2026-03-20T18:46:57.461Z"
 }
