@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T16:30:09.548Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-14T17:25:47.550Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-20T06:53:42.912Z",
       "summary": "CRITICAL: 2 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
+    },
+    {
+      "date": "2026-03-20T07:44:53.460Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1590,
-    "articlesProcessed": 79200,
+    "totalScans": 1591,
+    "articlesProcessed": 79250,
     "redFlagsFound": 1861,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "theft",
-          "description": "$800K stolen by Melbourne fraud ring",
-          "insight": "This case indicates a significant amount of money was stolen through fraudulent means, suggesting a large-scale operation.",
-          "entities": [
-            "Melbourne Fraud Ring"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Mirage News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQWNaUFVNc3hIb2trRjhDbUR4RklWZnZwQnlyRWE0U29wU2tScDdSQmRYOFJQdVJYemt3X2gxZFJ5bEtNdkRoU193VDNhTi10X3BMYUs1cHduX3hha08tNF9BZkh3QWIybUItMkpUS2VHdHdPWW5fZnAxM052RGR3bjNqZDNIMnFS?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Trump Administration Investigation into Jerome Powell?",
-        "Where did the Unknown allegedly go in HHS Investigation into 13 States?",
-        "Where did the $0 allegedly go in HHS Investigation into 13 States?"
+        "Where did the Unknown allegedly go in Trump administration investigation into New Jersey abortion coverage?",
+        "Where did the Unknown allegedly go in DOJ investigation into Powell?",
+        "Where did the $0 allegedly go in HHS Investigation into State Violations of Federal Conscience Protections?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T06:53:42.912Z",
-  "lastUpdated": "2026-03-20T06:53:42.913Z"
+  "lastReflection": "2026-03-20T07:44:53.460Z",
+  "lastUpdated": "2026-03-20T07:44:53.460Z"
 }
