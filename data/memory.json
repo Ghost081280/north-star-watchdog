@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T07:44:31.421Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-15T08:35:39.883Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-03-20T18:46:57.460Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-20T19:37:15.577Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11.7M allegedly go in Feeding Our Future investigation?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Joe Kent connected to?",
     "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy' case?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in Harvard investigation?",
     "Where did the $XXX million allegedly go in Feeding Our Future?",
     "Where did the $XXX allegedly go in Harvard University?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What specific allegations exist against Tulsi Gabbard?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1601,
-    "articlesProcessed": 79750,
-    "redFlagsFound": 1870,
+    "totalScans": 1602,
+    "articlesProcessed": 79800,
+    "redFlagsFound": 1871,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "program_termination",
-          "description": "Multiple Minnesotan individuals and companies involved in the Feeding Our Future program are facing charges and convictions for fraud.",
-          "insight": "The Feeding Our Future program was terminated due to widespread fraud. Further investigation into the individuals and companies involved is necessary to uncover the full extent of the fraud.",
+          "type": "fraud scheme",
+          "description": "Feeding Our Future fraud scheme involves multiple defendants and ongoing investigation",
+          "insight": "The Feeding Our Future fraud scheme is a significant concern, with multiple defendants pleading guilty and an ongoing investigation. This suggests a large-scale fraud operation.",
           "entities": [
             "Feeding Our Future",
-            "Minnesota DHS"
+            "Minnesota"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "Minnesota Lawyer",
-          "sourceUrl": "https://www.minnesotalawyer.com/amp/212477/ Minnesota-fraud-More-Feeding-Our-Future-plea-deals-expected-Friday"
+          "source": "Google News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObl9oMWJ0RUNGQmdVQWo2ZXpIa0J0SXJleTVXXy01VWkwLUlCdXpRc0hTSUZYLTRfVF9Xa1NRVE83aEdYWnpyQWNCejZSck1reXBjR0U2b0Ztc0p2U1ZYS3VhNkJhZV9ieDFoYmIzZ0Q0MWhDXzNYLTdJUDNhRWpEd00xekkybWdlS1N5dWljNEp3ejFuQUN6SC1kdXR2YllDY3pYdA"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?",
-        "What other organizations is Melbourne Fraud Ring connected to?",
-        "What other organizations is Chongqing Mayor connected to?"
+        "Where did the $11.7M allegedly go in Feeding Our Future investigation?",
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Joe Kent connected to?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T18:46:57.460Z",
-  "lastUpdated": "2026-03-20T18:46:57.461Z"
+  "lastReflection": "2026-03-20T19:37:15.577Z",
+  "lastUpdated": "2026-03-20T19:37:15.577Z"
 }
