@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Feeding Our Future scheme involved a large-scale pandemic fraud operation, with over $50 million allegedly involved.",
+      "insight": "This suggests a significant vulnerability in pandemic relief programs that needs to be addressed.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "KROC-AM",
+      "sourceUrl": "https://KROC-AM.com",
+      "id": "rf-1774042151040-paaqt3w6n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T21:29:11.036Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating Colombia President Gustavo Petro, which may indicate a larger pattern of corruption.",
       "insight": "This investigation could lead to further discoveries of corruption and embezzlement. I recommend tracking the investigation and searching for connections to other entities.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T20:30:41.590Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scheme",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T11:23:39.995Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into Feeding Our Future",
-      "description": "Multiple defendants indicate readiness to take plea deals in Feeding Our Future fraud case",
-      "insight": "This suggests that there is substantial evidence of fraud in the Feeding Our Future case, and defendants are seeking to mitigate their sentences through plea deals.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Multiple defendants",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS2lhOXl0WHFDWVRqaXRyUmZXTE10Y2tZZzM5T2Vjb19EdEVQd2g4QTVmYVJnVGJVTmkxU3hocDVac3NJdnZSdXB6LWprc3M4cTBCZVZhWlAxM2xjNTd5VGFpdGZfVTdvQ0V1X0doeW1ISDdUeTl4T01DR1NPZ0ZQZzdsSXpfS2laaFhZOGtGcVdfMld5THYxTEh4VdIBoAFBVV95cUxOMEoyZHRNbm1xbzd2eS1fay1qSEctaWswOWJXaVlDZzFKTXVncUNObG9CUE41ZHg4ZUd6U3hWYm45aGRTMzRhSTdvSUg3djJmMHFfNnhjQ3RxbkpQa0VnTXlHWUlEOWE3cUYzbnJ1Ti1OZGFFY0ZTdDdYd2lJZFFfRGp3Z1A1UUl0b29KRnk2UlQ5MFctWF8xS3NiY09EQnFk",
-      "id": "rf-1773484005480-tbakvpy51",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T10:26:45.477Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,6 +991,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T20:30:41.590Z"
+  "lastUpdated": "2026-03-20T21:29:11.036Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T09:32:48.517Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-15T10:28:45.678Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-20T20:30:41.588Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-20T21:29:11.033Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in FBI Investigation into Feeding Our Future?",
-    "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy'?",
     "Where did the $1.1M allegedly go in FBI Investigation into Feeding Our Future?",
     "What other organizations is Cesar Chavez connected to?",
     "Where did the $1.1M allegedly go in Minnesota Fraud Scandal?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Tulsi Gabbard?",
     "What other organizations is Gustavo Petro connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the Unknown allegedly go in Colombia President Gustavo Petro investigation?"
+    "Where did the Unknown allegedly go in Colombia President Gustavo Petro investigation?",
+    "Where did the $50M+ allegedly go in Feeding Our Future?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1603,
-    "articlesProcessed": 79850,
-    "redFlagsFound": 1872,
+    "totalScans": 1604,
+    "articlesProcessed": 79900,
+    "redFlagsFound": 1874,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program termination",
+          "description": "The Feeding Our Future scheme involved a large-scale pandemic fraud operation, with over $50 million allegedly involved.",
+          "insight": "This suggests a significant vulnerability in pandemic relief programs that needs to be addressed.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "KROC-AM",
+          "sourceUrl": "https://KROC-AM.com"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Joe Kent connected to?",
-        "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy' case?"
+        "Where did the $250 million allegedly go in FBI Investigation into Feeding Our Future?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Trump 'conspiracy'?",
+        "Where did the $1.1M allegedly go in FBI Investigation into Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T20:30:41.588Z",
-  "lastUpdated": "2026-03-20T20:30:41.589Z"
+  "lastReflection": "2026-03-20T21:29:11.033Z",
+  "lastUpdated": "2026-03-20T21:29:11.034Z"
 }
