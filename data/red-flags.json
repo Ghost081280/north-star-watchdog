@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Conspiracy",
+      "description": "The investigation into Trump has raised concerns about potential conspiracy involving high-ranking government officials.",
+      "insight": "The fact that James Comey has been subpoenaed suggests that the investigation is ongoing and that the FBI is taking a close look at potential wrongdoing. This could have major implications for the Trump administration and could potentially lead to further investigations.",
+      "entities": [
+        "James Comey",
+        "Trump"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "UPI",
+      "sourceUrl": "https://www.upi.com/Top_News/US/2026/03/19/Comey-subpoenaed-in-DOJs-Trump-conspiracy-investigation/9651679871596/",
+      "id": "rf-1773985901638-m9zryp39v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T05:51:41.634Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The FBI is investigating several high-profile cases, including the Trump investigation and the Feeding Our Future investigation.",
       "insight": "I notice that there are multiple high-profile investigations currently ongoing, which could indicate a pattern of corruption or wrongdoing at the highest levels of government.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T04:17:30.965Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential wrongdoing by government officials",
@@ -963,26 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-13T21:31:37.591Z",
       "isNew": false
-    },
-    {
-      "type": "potential political retribution",
-      "description": "The investigation into Federal Reserve Chair Jerome Powell has been criticized for being politically motivated.",
-      "insight": "I suspect that the investigation may be an attempt to discredit Powell and the Federal Reserve. Further investigation is needed to determine the legitimacy of the allegations.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/03/13/business/judge-quashes-justice-dept-subpoenas-federal-reserve.html",
-      "id": "rf-1773433977090-my5un7gd4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T20:32:57.086Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,6 +996,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T04:17:30.965Z"
+  "lastUpdated": "2026-03-20T05:51:41.634Z"
 }
