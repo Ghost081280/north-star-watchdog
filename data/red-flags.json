@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The Feeding Our Future program has been under investigation for fraud",
+      "insight": "The Feeding Our Future program has shown signs of fraudulent activity, with multiple individuals pleading guilty. Further investigation is needed to uncover the full extent of the fraud and to identify any potential connections to other programs or entities.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KOMO",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVTdkcDR5amwzN05PRHQzOUZ1Y19PRzgwYlFIVE1VcDQ0RVlLNWNxX1g4aTNZYnVTMkd5eFVvMkI0MFJ4MGhyb1lEY0NoZjBkY1piZjg1S3cyd1hOLUNON3ctenhLSzRyOHlETUFHZHB4N1NwSmNJcDhwUl9ra24wa3A2Rno1LTjSAYwBQVVfeXFMUGJqY1dyUkE0VTdILXdrYTA0Z2NSNngwblhVbS1OQ3p3LWxXU0VNS2xpMzd4ME5MdEhVZ2xtaE9vSmJGcEdyZkw2MlVTcnRQUFgxLXFxbS1FZ0hJM0JqbHdnRFNHZTc0M3dmeFY0NDBJUHpqVHNRSXdVTVhtSVd6RWxoUFJFbURCNmJOUHg?",
+      "id": "rf-1774024882393-vh4sb3dcm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T16:41:22.390Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Ohio day cares collected $1.1M in overpayments, many haven't paid it back",
       "insight": "This suggests potential fraud and misuse of funds in the Ohio day care system, which may require further investigation.",
       "entities": [
@@ -959,31 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T07:34:41.991Z",
       "isNew": false
-    },
-    {
-      "type": "political influence",
-      "description": "The investigation into Jerome Powell and the Federal Reserve raises questions about political influence and oversight.",
-      "insight": "The court's decision to block the DOJ's probe suggests potential political interference in the investigation.",
-      "entities": [
-        "Federal Reserve",
-        "DOJ",
-        "Jerome Powell"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/03/13/us/politics/federal-reserve-powell-probe.html",
-      "id": "rf-1773473681996-83dlk2ud9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T07:34:41.991Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T15:41:06.191Z"
+  "lastUpdated": "2026-03-20T16:41:22.390Z"
 }
