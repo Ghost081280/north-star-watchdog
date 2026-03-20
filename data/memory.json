@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-14T15:27:13.717Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-14T16:30:09.548Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-20T05:51:41.631Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-20T06:53:42.912Z",
+      "summary": "CRITICAL: 2 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Trump Administration Investigation into Jerome Powell?",
-    "Where did the Unknown allegedly go in HHS Investigation into 13 States?",
-    "Where did the $0 allegedly go in HHS Investigation into 13 States?",
-    "What other organizations is Mount Pleasant injury attorney connected to?",
     "Where did the Unknown allegedly go in Trump administration investigation into New Jersey abortion coverage?",
     "Where did the Unknown allegedly go in DOJ investigation into Powell?",
     "Where did the $0 allegedly go in HHS Investigation into State Violations of Federal Conscience Protections?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the Unknown allegedly go in DOJ Investigation into Trump?",
-    "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?"
+    "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?",
+    "What other organizations is Melbourne Fraud Ring connected to?",
+    "What other organizations is Chongqing Mayor connected to?",
+    "Where did the $11.7M allegedly go in Feeding Our Future investigation?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1589,
-    "articlesProcessed": 79150,
-    "redFlagsFound": 1859,
+    "totalScans": 1590,
+    "articlesProcessed": 79200,
+    "redFlagsFound": 1861,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "theft",
+          "description": "$800K stolen by Melbourne fraud ring",
+          "insight": "This case indicates a significant amount of money was stolen through fraudulent means, suggesting a large-scale operation.",
+          "entities": [
+            "Melbourne Fraud Ring"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Mirage News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQWNaUFVNc3hIb2trRjhDbUR4RklWZnZwQnlyRWE0U29wU2tScDdSQmRYOFJQdVJYemt3X2gxZFJ5bEtNdkRoU193VDNhTi10X3BMYUs1cHduX3hha08tNF9BZkh3QWIybUItMkpUS2VHdHdPWW5fZnAxM052RGR3bjNqZDNIMnFS?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Tesla Full-Self Driving investigation?",
-        "What other organizations is Joe Kent connected to?",
-        "Where did the Unknown allegedly go in Trump Administration Investigation into Jerome Powell?"
+        "Where did the Unknown allegedly go in Trump Administration Investigation into Jerome Powell?",
+        "Where did the Unknown allegedly go in HHS Investigation into 13 States?",
+        "Where did the $0 allegedly go in HHS Investigation into 13 States?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T05:51:41.631Z",
-  "lastUpdated": "2026-03-20T05:51:41.633Z"
+  "lastReflection": "2026-03-20T06:53:42.912Z",
+  "lastUpdated": "2026-03-20T06:53:42.913Z"
 }

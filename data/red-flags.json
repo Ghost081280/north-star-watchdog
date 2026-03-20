@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "theft",
+      "description": "$800K stolen by Melbourne fraud ring",
+      "insight": "This case indicates a significant amount of money was stolen through fraudulent means, suggesting a large-scale operation.",
+      "entities": [
+        "Melbourne Fraud Ring"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Mirage News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQWNaUFVNc3hIb2trRjhDbUR4RklWZnZwQnlyRWE0U29wU2tScDdSQmRYOFJQdVJYemt3X2gxZFJ5bEtNdkRoU193VDNhTi10X3BMYUs1cHduX3hha08tNF9BZkh3QWIybUItMkpUS2VHdHdPWW5fZnAxM052RGR3bjNqZDNIMnFS?oc=5",
+      "id": "rf-1773989622919-wpkqx7v4d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T06:53:42.914Z",
+      "isNew": true
+    },
+    {
+      "type": "subpoena",
+      "description": "James Comey subpoenaed in DOJ investigation",
+      "insight": "The subpoena of James Comey suggests that the DOJ is pursuing a significant investigation into potential wrongdoing.",
+      "entities": [
+        "James Comey",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaE5UQ3k4NlVpc010Z0hrS1BNd3NmaHhpdkw3MzN6V2ZrbjVWTWszMEdBejJ3a3BheGRrR2llOGpvUUdQcUtIMjRLYzh4TDdGVXltSEZTZVIzUGxNMWg4R3JiQnNtTUJzdktBTU5URlVvZEljYUlyU016RkgzcHJmSk1IT2NZZG5Vc1NjRw?oc=5",
+      "id": "rf-1773989622919-4g7mru4pb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T06:53:42.914Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Conspiracy",
       "description": "The investigation into Trump has raised concerns about potential conspiracy involving high-ranking government officials.",
       "insight": "The fact that James Comey has been subpoenaed suggests that the investigation is ongoing and that the FBI is taking a close look at potential wrongdoing. This could have major implications for the Trump administration and could potentially lead to further investigations.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T05:51:41.634Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -943,61 +982,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T01:53:39.238Z",
       "isNew": false
-    },
-    {
-      "type": "investigation_blocked",
-      "description": "A federal judge has blocked the Justice Department's subpoenas of Federal Reserve Chair Jerome Powell, dealing a blow to the investigation.",
-      "insight": "This development raises concerns about the potential for political interference or selective enforcement in the investigation. It also highlights the challenges faced by investigators in gathering evidence against high-profile targets.",
-      "entities": [
-        "Jerome Powell",
-        "Justice Department"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/judge-blocks-subpoenas-against-fed-chair-powell-citing-essentially-zero-evidence-n1259261",
-      "id": "rf-1773440815418-hyngocjbi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T22:26:55.415Z",
-      "isNew": false
-    },
-    {
-      "type": "political influence",
-      "description": "The judge's ruling suggests that the DOJ investigation into Jerome Powell may have been politically motivated.",
-      "insight": "The judge's ruling raises concerns about the potential for political influence in the DOJ's investigation into Jerome Powell. This could indicate a larger issue with the politicization of law enforcement.",
-      "entities": [
-        "DOJ",
-        "Jerome Powell"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Hill",
-      "sourceUrl": "https://thehill.com/opinion/judicial-discretion/433111-judge-blocks-subpoenas-in-powell-probe-dealing-blow-to-doj",
-      "id": "rf-1773437497594-plauhjbr1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-13T21:31:37.591Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T05:51:41.634Z"
+  "lastUpdated": "2026-03-20T06:53:42.914Z"
 }
