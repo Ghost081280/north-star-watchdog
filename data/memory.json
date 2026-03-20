@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T11:25:16.648Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-15T12:49:57.975Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-20T22:27:37.526Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-20T23:27:35.826Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 74,
+      "count": 75,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-03-13T08:38:06.138Z"
+      "lastSeen": "2026-03-20T23:27:35.827Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.1M allegedly go in Feeding Our Future?",
-    "What other organizations is Erin Montgomery connected to?",
-    "What specific allegations exist against Erin Montgomery?",
-    "What specific allegations exist against James Comey?",
     "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?",
     "What other organizations is Minnesotan couple connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +554,11 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Unknown connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future case?",
-    "Where did the Unknown allegedly go in Harvard University case?"
+    "Where did the Unknown allegedly go in Harvard University case?",
+    "What other organizations is Not specified connected to?",
+    "What specific allegations exist against Not specified?",
+    "Where did the $40M+ allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1605,
-    "articlesProcessed": 79950,
-    "redFlagsFound": 1875,
+    "totalScans": 1606,
+    "articlesProcessed": 80000,
+    "redFlagsFound": 1877,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.1M allegedly go in FBI Investigation into Feeding Our Future?",
-        "What other organizations is Cesar Chavez connected to?",
-        "Where did the $1.1M allegedly go in Minnesota Fraud Scandal?"
+        "Where did the $1.1M allegedly go in Feeding Our Future?",
+        "What other organizations is Erin Montgomery connected to?",
+        "What specific allegations exist against Erin Montgomery?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T22:27:37.526Z",
-  "lastUpdated": "2026-03-20T22:27:37.527Z"
+  "lastReflection": "2026-03-20T23:27:35.826Z",
+  "lastUpdated": "2026-03-20T23:27:35.827Z"
 }
