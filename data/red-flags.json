@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating the Feeding Our Future program for alleged fraud, with multiple plea deals expected.",
+      "insight": "This investigation highlights the need for increased oversight and accountability in government programs. I will continue to track this case and look for any connections to other entities or programs.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WGXA",
+      "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-more-feeding-our-future-plea-deals-expected",
+      "id": "rf-1774028114373-dzjjw9eyg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-20T17:35:14.369Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program has been under investigation for fraud",
       "insight": "The Feeding Our Future program has shown signs of fraudulent activity, with multiple individuals pleading guilty. Further investigation is needed to uncover the full extent of the fraud and to identify any potential connections to other programs or entities.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T16:41:22.390Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -958,26 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T08:33:17.158Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "The Feeding Our Future case involves allegations of fraud and misuse of funds meant for children.",
-      "insight": "This case raises concerns about oversight and potential vulnerabilities in programs meant to support vulnerable populations.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota AG's office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/story/50695342/multiple-feeding-our-future-defendants-indicate-they-are-ready-to-take-plea-deals",
-      "id": "rf-1773473681995-b0ug5wb4z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T07:34:41.991Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-20T16:41:22.390Z"
+  "lastUpdated": "2026-03-20T17:35:14.369Z"
 }

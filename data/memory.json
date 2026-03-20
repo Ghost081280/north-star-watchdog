@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T05:04:51.045Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-15T06:55:17.718Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-20T16:41:22.388Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-20T17:35:14.367Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "Where did the Unknown allegedly go in DOJ Investigation into Trump?",
     "Where did the Unknown allegedly go in FBI Investigation into Feeding Our Future?",
     "What other organizations is Melbourne Fraud Ring connected to?",
     "What other organizations is Chongqing Mayor connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Erin Montgomery connected to?",
     "What specific allegations exist against Erin Montgomery?",
     "What specific allegations exist against James Comey?",
-    "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?"
+    "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?",
+    "What other organizations is Minnesotan couple connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future investigation?",
+    "Where did the unknown allegedly go in Harvard investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1599,
-    "articlesProcessed": 79650,
-    "redFlagsFound": 1868,
+    "totalScans": 1600,
+    "articlesProcessed": 79700,
+    "redFlagsFound": 1869,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Trump Investigation?",
         "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the Unknown allegedly go in DOJ Investigation into Trump?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T16:41:22.388Z",
-  "lastUpdated": "2026-03-20T16:41:22.389Z"
+  "lastReflection": "2026-03-20T17:35:14.367Z",
+  "lastUpdated": "2026-03-20T17:35:14.368Z"
 }
