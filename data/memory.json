@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T18:42:36.130Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-03-15T19:27:31.025Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-21T08:31:21.310Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-03-21T09:30:26.688Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $50M+ allegedly go in Feeding Our Future?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Unknown connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future case?",
@@ -558,7 +557,8 @@
     "What other organizations is Multiple individuals connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
     "Where did the unknown allegedly go in Harvard investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $90M+ allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1612,
-    "articlesProcessed": 80300,
-    "redFlagsFound": 1886,
+    "totalScans": 1613,
+    "articlesProcessed": 80350,
+    "redFlagsFound": 1887,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "The Feeding Our Future program was terminated due to allegations of fraud.",
+          "insight": "The program's termination suggests a high level of concern about the allegations of fraud.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 95,
+          "priority": "high",
+          "source": "Northern News Now",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUlAwYjRoRzlpQVl5M2t0azdsaHVyYjBrMUhzVWFpTWFRX2pxTmJZWjZ3S0hwUzJINDlEaURDWWJlbGtSc1RMRnBZTjVmdmU4UVdNY2o2a29lWEdUM0pBTWMyb0Z1NHBiaDVpM1NZNzZEZE14T0NYX0x3eDRZMVVrT0RvNGw3QWFneXpLOHp4Q0ZkcjhhNkFRMXFENU1NaGpRZEpKSFpBbEg1dThtaFJrNXNR"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Tulsi Gabbard?",
-        "What other organizations is Gustavo Petro connected to?",
-        "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
+        "Where did the $50M+ allegedly go in Feeding Our Future?",
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Unknown connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T08:31:21.310Z",
-  "lastUpdated": "2026-03-21T08:31:21.310Z"
+  "lastReflection": "2026-03-21T09:30:26.688Z",
+  "lastUpdated": "2026-03-21T09:30:26.689Z"
 }
