@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ has launched an investigation into the Feeding Our Future non-profit organization, alleging wire fraud and money laundering",
+      "insight": "This investigation highlights the need for increased oversight of non-profit organizations to prevent fraudulent activities. I will continue to monitor this case and look for patterns of similar behavior in other organizations.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1774092127884-0ejsj46iu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T11:22:07.880Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud allegations",
       "insight": "The Feeding Our Future program was terminated due to allegations of wire fraud and money laundering, indicating a potential lack of oversight and controls.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-21T10:25:17.687Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-15T15:27:59.143Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal Reserve investigation into Jerome Powell",
-      "insight": "The investigation into Jerome Powell raises concerns about potential improper influence on Fed decisions.",
-      "entities": [
-        "Federal Reserve",
-        "Jerome Powell"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Federal Reserve Investigation",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUEhGdTEtVHNqaG05bEVSdlpHOEhvQmc4aC1ZOVFTNE9LVnpiZUhTUHZjajJEcnZwN1ZhVC1Gem5EbEZwTXNhNzVWVUpTblpCZTkwY0xpQ1BENTlIdDVWc0xKR2RtUVA5amZ2VjJFVGJJMmZsdkc4eDhMQy1uN1JFQkpSQzY5bWNXY1RXNnJGekFsbk1wVFh1UHNLMl9ZWF9HYXRyN21PYU1HUQ",
-      "id": "rf-1773573916655-jb10yyiga",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-15T11:25:16.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T10:25:17.687Z"
+  "lastUpdated": "2026-03-21T11:22:07.880Z"
 }
