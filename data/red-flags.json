@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future's program was terminated due to allegations of fraud and misuse of funds.",
+      "insight": "The termination of Feeding Our Future's program raises concerns about the oversight and monitoring of nonprofit organizations in Minnesota. Further investigation is needed to determine if there were any systemic failures or negligence that allowed the alleged fraud to occur.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota Attorney General's Office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-sentencing-date-set-for-convicted-feeding-our-future-ringleader-aimee-bock",
+      "id": "rf-1774131774889-heraktq4b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T22:22:54.885Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "A $17.4 million mortgage scam targeting seniors was uncovered in Hollywood, with 11 arrests made.",
       "insight": "This large-scale fraud targeting vulnerable populations warrants further investigation into potential connections with other similar schemes.",
@@ -957,29 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-16T20:37:43.245Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation is underway after the death of a Biglerville teen at Letterkenny Army Depot.",
-      "insight": "This incident may be related to a larger pattern of negligence or misconduct at the Letterkenny Army Depot. Further investigation is needed to determine the cause of the death and whether there are any connections to other incidents.",
-      "entities": [
-        "Letterkenny Army Depot"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Tri-State Alert",
-      "sourceUrl": "https://www.tristatealert.com",
-      "id": "rf-1773688410489-e6qmo81cw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-16T19:13:30.484Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T21:23:27.008Z"
+  "lastUpdated": "2026-03-21T22:22:54.885Z"
 }
