@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Feeding Our Future program terminated amid fraud allegations",
+      "insight": "The program was terminated due to allegations of fraud, which could indicate a larger issue with oversight and management.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Willmar Radio",
+      "sourceUrl": "https://www.willmarradio.com/2026/03/21/more-guilty-pleas-feeding-our-future-fraud-cases",
+      "id": "rf-1774118081885-63fro270f",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T18:34:41.882Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program was terminated due to allegations of fraud",
       "insight": "The large-scale fraud scheme involved misuse of food assistance funds, indicating a significant lack of oversight and potential vulnerabilities in program management.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-21T17:24:38.385Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -956,30 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-16T17:59:25.680Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid freeze",
-      "description": "Court fight raises provider risk due to Medicaid freeze in Minnesota.",
-      "insight": "This could impact healthcare services in Minnesota.",
-      "entities": [
-        "Minnesota DHS",
-        "Medicaid providers"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Meyka",
-      "sourceUrl": "https://www.meyka.com/minnesota-medicaid-freeze-march-15-court-fight-raises-provider-risk",
-      "id": "rf-1773661491619-exwnmlkp5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-16T11:44:51.615Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -989,7 +989,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T17:24:38.385Z"
+  "lastUpdated": "2026-03-21T18:34:41.882Z"
 }
