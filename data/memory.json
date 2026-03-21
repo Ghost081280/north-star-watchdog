@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T15:27:59.140Z",
-      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-03-15T16:31:16.975Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-21T05:39:54.311Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-21T06:40:58.221Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $XXX million allegedly go in Feeding Our Future?",
     "Where did the $XXX allegedly go in Harvard University?",
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Tulsi Gabbard?",
@@ -558,7 +557,8 @@
     "What other organizations is Aimee Bock connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
-    "Where did the N/A allegedly go in Rogers Park shooting investigation?"
+    "Where did the N/A allegedly go in Rogers Park shooting investigation?",
+    "Where did the $40M allegedly go in Feeding Our Future fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1609,
-    "articlesProcessed": 80150,
-    "redFlagsFound": 1880,
+    "totalScans": 1610,
+    "articlesProcessed": 80200,
+    "redFlagsFound": 1882,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "The Feeding Our Future program has been terminated due to allegations of fraud",
+          "insight": "This termination suggests a large-scale fraud scheme may have been uncovered, warranting further investigation into the organization's finances and management.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Northern News Now",
+          "sourceUrl": "https://www.northernnewsnow.com/northern-news-now/five-more-plead-guilty-in-feeding-our-future-fraud-case-in-minnesota/2026/03/21"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T05:39:54.311Z",
-  "lastUpdated": "2026-03-21T05:39:54.312Z"
+  "lastReflection": "2026-03-21T06:40:58.221Z",
+  "lastUpdated": "2026-03-21T06:40:58.222Z"
 }
