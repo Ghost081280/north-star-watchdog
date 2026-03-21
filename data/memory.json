@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-16T10:05:21.356Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-16T11:44:51.613Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-03-21T18:34:41.880Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-21T20:25:15.340Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
     "Where did the N/A allegedly go in Rogers Park shooting investigation?",
     "Where did the $40M allegedly go in Feeding Our Future fraud case?",
     "Where did the $9B+ allegedly go in Feeding Our Future?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Donald Trump?",
     "Where did the $40 million allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Kellogg connected to?",
-    "Where did the $2.4M allegedly go in Feeding Our Future investigation?"
+    "Where did the $2.4M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1622,
-    "articlesProcessed": 80800,
-    "redFlagsFound": 1895,
+    "totalScans": 1623,
+    "articlesProcessed": 80850,
+    "redFlagsFound": 1896,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "A $17.4 million mortgage scam targeting seniors was uncovered in Hollywood, with 11 arrests made.",
+          "insight": "This large-scale fraud targeting vulnerable populations warrants further investigation into potential connections with other similar schemes.",
+          "entities": [
+            "Hollywood Estate",
+            "Iranian national"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "stl.news",
+          "sourceUrl": "https://stl.news/FBI-Executes-Search-at-Hollywood-Estate-Linked-to-$17.4-Million-Elderly-Mortgage-Fraud-Investigation-2026-03-21"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?",
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?"
+        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+        "Where did the N/A allegedly go in Rogers Park shooting investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T18:34:41.880Z",
-  "lastUpdated": "2026-03-21T18:34:41.880Z"
+  "lastReflection": "2026-03-21T20:25:15.340Z",
+  "lastUpdated": "2026-03-21T20:25:15.341Z"
 }

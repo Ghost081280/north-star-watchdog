@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large-scale fraud",
+      "description": "A $17.4 million mortgage scam targeting seniors was uncovered in Hollywood, with 11 arrests made.",
+      "insight": "This large-scale fraud targeting vulnerable populations warrants further investigation into potential connections with other similar schemes.",
+      "entities": [
+        "Hollywood Estate",
+        "Iranian national"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "stl.news",
+      "sourceUrl": "https://stl.news/FBI-Executes-Search-at-Hollywood-Estate-Linked-to-$17.4-Million-Elderly-Mortgage-Fraud-Investigation-2026-03-21",
+      "id": "rf-1774124715345-1f694yann",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T20:25:15.342Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Feeding Our Future program terminated amid fraud allegations",
       "insight": "The program was terminated due to allegations of fraud, which could indicate a larger issue with oversight and management.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-21T18:34:41.882Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -956,30 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-16T19:13:30.484Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has added three suspects to its Ten Most Wanted list, following the arrest of seven individuals under the Trump administration.",
-      "insight": "This development suggests that the FBI is actively investigating and pursuing individuals suspected of fraud. It may be worth tracking these investigations to see if they yield any new information or connections to other cases.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/news/pressrel/press-releases/fbi-adds-three-suspects-to-ten-most-wanted-list",
-      "id": "rf-1773683965683-5k8ayb4il",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-16T17:59:25.680Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -989,6 +989,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T18:34:41.882Z"
+  "lastUpdated": "2026-03-21T20:25:15.342Z"
 }
