@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T17:26:23.391Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-15T18:42:36.130Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
@@ -510,6 +505,11 @@
       "date": "2026-03-21T07:32:35.685Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-03-21T08:31:21.310Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tulsi Gabbard?",
-    "What other organizations is Gustavo Petro connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the Unknown allegedly go in Colombia President Gustavo Petro investigation?",
     "Where did the $50M+ allegedly go in Feeding Our Future?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Unknown connected to?",
@@ -558,7 +554,11 @@
     "Where did the N/A allegedly go in Rogers Park shooting investigation?",
     "Where did the $40M allegedly go in Feeding Our Future fraud case?",
     "Where did the $9B+ allegedly go in Feeding Our Future?",
-    "Where did the $ allegedly go in Harvard University?"
+    "Where did the $ allegedly go in Harvard University?",
+    "What other organizations is Multiple individuals connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future investigation?",
+    "Where did the unknown allegedly go in Harvard investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1611,
-    "articlesProcessed": 80250,
-    "redFlagsFound": 1884,
+    "totalScans": 1612,
+    "articlesProcessed": 80300,
+    "redFlagsFound": 1886,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,46 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 2 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Feeding Our Future program has been terminated amid allegations of fraud.",
-          "insight": "The large-scale fraud allegations against Feeding Our Future indicate a significant abuse of public trust and potentially a lack of oversight.",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota DHS"
-          ],
-          "confidence": 95,
-          "priority": "high",
-          "source": "Northern News Now",
-          "sourceUrl": "https://www.northernnewsnow.com/2026/03/21/five-more-plead-guilty-feeding-our-future-fraud-case-minnesota"
-        },
-        {
-          "type": "federal_freeze",
-          "description": "The federal government has frozen funding for certain programs amid fraud investigations.",
-          "insight": "The federal freeze on funding indicates a significant concern about the management and oversight of these programs.",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota DHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "kare11.com",
-          "sourceUrl": "https://www.kare11.com/2026/03/20/minnesota-has-approved-plan-address-fraud-federal-government-hasnt-given-back-medicaid-funds"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $XXX allegedly go in Harvard University?",
-        "Are any of these 2 figures connected to each other?",
-        "What specific allegations exist against Tulsi Gabbard?"
+        "What specific allegations exist against Tulsi Gabbard?",
+        "What other organizations is Gustavo Petro connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -627,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T07:32:35.685Z",
-  "lastUpdated": "2026-03-21T07:32:35.685Z"
+  "lastReflection": "2026-03-21T08:31:21.310Z",
+  "lastUpdated": "2026-03-21T08:31:21.310Z"
 }
