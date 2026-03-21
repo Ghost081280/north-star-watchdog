@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T12:49:57.975Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-15T13:45:58.956Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-20T23:27:35.826Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-21T01:52:02.350Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?",
-    "What other organizations is Minnesotan couple connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the unknown allegedly go in Harvard investigation?",
     "Where did the $XXX million allegedly go in Feeding Our Future?",
@@ -558,7 +556,9 @@
     "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $40M+ allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?"
+    "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1606,
-    "articlesProcessed": 80000,
-    "redFlagsFound": 1877,
+    "totalScans": 1607,
+    "articlesProcessed": 80050,
+    "redFlagsFound": 1878,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.1M allegedly go in Feeding Our Future?",
-        "What other organizations is Erin Montgomery connected to?",
-        "What specific allegations exist against Erin Montgomery?"
+        "Where did the $1.1M+ allegedly go in Feeding Our Future fraud?",
+        "What other organizations is Minnesotan couple connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-20T23:27:35.826Z",
-  "lastUpdated": "2026-03-20T23:27:35.827Z"
+  "lastReflection": "2026-03-21T01:52:02.350Z",
+  "lastUpdated": "2026-03-21T01:52:02.351Z"
 }
