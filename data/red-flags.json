@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Rogers Park shooting has led to a federal investigation, which may indicate a larger pattern of crime in the area",
+      "insight": "I am concerned that the Rogers Park shooting may be connected to other crimes in the area, and the federal investigation may uncover a larger pattern of activity. I recommend tracking the investigation and looking for connections to other cases.",
+      "entities": [
+        "Rogers Park"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "12newsnow.com",
+      "sourceUrl": "https://www.12newsnow.com/article/news/crime/additional-arrests-made-in-connection-to-rogers-park-shooting-federal-investigation-being-launched/287-4c6a54a7-7f4f-4f9b-8f5d-4a9a4d9f5e6d",
+      "id": "rf-1774065900832-01awvu88d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T04:05:00.829Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Feeding Our Future scheme involved a large-scale pandemic fraud operation, with over $50 million allegedly involved.",
       "insight": "This suggests a significant vulnerability in pandemic relief programs that needs to be addressed.",
@@ -958,26 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-14T12:47:49.704Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "A federal judge has quashed subpoenas in the Justice Department's investigation of Federal Reserve Chair Jerome Powell.",
-      "insight": "This development raises concerns about the legitimacy of the investigation and the potential for political interference. Further investigation is needed to determine the motivations behind the Justice Department's actions.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/business/2026/03/13/judge-quashes-subpoenas-in-justice-departments-investigation-of-fed-chair-jerome-powell/",
-      "id": "rf-1773487419998-3r98bfsrc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-14T11:23:39.995Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T01:52:02.352Z"
+  "lastUpdated": "2026-03-21T04:05:00.829Z"
 }
