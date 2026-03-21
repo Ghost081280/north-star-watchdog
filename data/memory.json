@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T14:29:14.294Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-15T15:27:59.140Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-03-21T04:05:00.827Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-21T05:39:54.311Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1608,
-    "articlesProcessed": 80100,
-    "redFlagsFound": 1879,
+    "totalScans": 1609,
+    "articlesProcessed": 80150,
+    "redFlagsFound": 1880,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future investigation?",
-        "Where did the unknown allegedly go in Harvard investigation?",
-        "Where did the $XXX million allegedly go in Feeding Our Future?"
+        "Where did the $XXX million allegedly go in Feeding Our Future?",
+        "Where did the $XXX allegedly go in Harvard University?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T04:05:00.827Z",
-  "lastUpdated": "2026-03-21T04:05:00.828Z"
+  "lastReflection": "2026-03-21T05:39:54.311Z",
+  "lastUpdated": "2026-03-21T05:39:54.312Z"
 }
