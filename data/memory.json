@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-16T05:14:13.011Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-16T07:14:48.934Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-21T15:24:31.316Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-21T16:28:00.284Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1619,
-    "articlesProcessed": 80650,
+    "totalScans": 1620,
+    "articlesProcessed": 80700,
     "redFlagsFound": 1893,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Feeding Our Future program was terminated due to widespread fraud",
-          "insight": "The program's lack of oversight and management allowed for large-scale fraud to occur",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota Department of Education"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Northern News Now",
-          "sourceUrl": "https://www.northernnewsnow.com/story/2026/03/21/five-more-plead-guilty-in-feeding-our-future-fraud-case-in-minnesota/110101027/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Not specified?",
         "Where did the $40M+ allegedly go in Feeding Our Future fraud scheme?",
-        "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?"
+        "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?",
+        "What other organizations is Aimee Bock connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T15:24:31.316Z",
-  "lastUpdated": "2026-03-21T15:24:31.317Z"
+  "lastReflection": "2026-03-21T16:28:00.284Z",
+  "lastUpdated": "2026-03-21T16:28:00.284Z"
 }
