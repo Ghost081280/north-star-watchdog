@@ -2,21 +2,42 @@
   "flags": [
     {
       "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated due to allegations of fraud",
-      "insight": "This termination suggests a large-scale fraud scheme may have been uncovered, warranting further investigation into the organization's finances and management.",
+      "description": "The Feeding Our Future program has been terminated amid allegations of fraud.",
+      "insight": "The large-scale fraud allegations against Feeding Our Future indicate a significant abuse of public trust and potentially a lack of oversight.",
       "entities": [
-        "Feeding Our Future"
+        "Feeding Our Future",
+        "Minnesota DHS"
       ],
-      "confidence": 90,
+      "confidence": 95,
       "priority": "high",
       "source": "Northern News Now",
-      "sourceUrl": "https://www.northernnewsnow.com/northern-news-now/five-more-plead-guilty-in-feeding-our-future-fraud-case-in-minnesota/2026/03/21",
-      "id": "rf-1774075258227-6s2ill1cn",
+      "sourceUrl": "https://www.northernnewsnow.com/2026/03/21/five-more-plead-guilty-feeding-our-future-fraud-case-minnesota",
+      "id": "rf-1774078355691-ki50aqex9",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-21T06:40:58.224Z",
+      "detectedAt": "2026-03-21T07:32:35.687Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen funding for certain programs amid fraud investigations.",
+      "insight": "The federal freeze on funding indicates a significant concern about the management and oversight of these programs.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://www.kare11.com/2026/03/20/minnesota-has-approved-plan-address-fraud-federal-government-hasnt-given-back-medicaid-funds",
+      "id": "rf-1774078355691-jf4xw321w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T07:32:35.687Z",
       "isNew": true
     },
     {
@@ -36,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-21T06:40:58.224Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -682,25 +703,6 @@
       "isNew": false
     },
     {
-      "type": "federal_freeze",
-      "description": "Trump administration's Medicaid funding freeze",
-      "insight": "This could have significant implications for Minnesota's Medicaid program and potentially other states. I recommend tracking any updates on the funding freeze and potential investigations into Medicaid fraud.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Fingerlakes1.com",
-      "sourceUrl": "https://www.fingerlakes1.com/appeals-court-upholds-block-on-trump-funding-freeze/",
-      "id": "rf-1773834291056-0in5pcu3j",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-18T11:44:51.052Z",
-      "isNew": false
-    },
-    {
       "type": "Lack of Investigation",
       "description": "Minnesota officials allegedly failed to investigate kickbacks in the state's autism program",
       "insight": "This lack of investigation raises concerns about the state's ability to detect and prevent fraud. Further investigation is needed to determine the extent of the issue and to hold those responsible accountable.",
@@ -1004,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T06:40:58.224Z"
+  "lastUpdated": "2026-03-21T07:32:35.687Z"
 }
