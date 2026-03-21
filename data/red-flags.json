@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's Feeding Our Future program terminated due to fraud",
+      "insight": "Large-scale program termination indicates significant fraud and potential systemic issues",
+      "entities": [
+        "Minnesota DHS",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Northern News Now",
+      "sourceUrl": "https://www.northernnewsnow.com/2026/03/21/five-more-plead-guilty-feeding-our-future-fraud-case-minnesota",
+      "id": "rf-1774103132162-1duror2b0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-21T14:25:32.157Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "The Feeding Our Future fraud case involves a large-scale conspiracy with multiple defendants and a significant amount of alleged fraud.",
       "insight": "This case suggests a large-scale conspiracy involving multiple entities and individuals. Further investigation into the network of defendants and their connections is warranted.",
@@ -273,26 +293,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-20T19:37:15.578Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Multiple Minnesotan individuals and companies involved in the Feeding Our Future program are facing charges and convictions for fraud.",
-      "insight": "The Feeding Our Future program was terminated due to widespread fraud. Further investigation into the individuals and companies involved is necessary to uncover the full extent of the fraud.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Minnesota Lawyer",
-      "sourceUrl": "https://www.minnesotalawyer.com/amp/212477/ Minnesota-fraud-More-Feeding-Our-Future-plea-deals-expected-Friday",
-      "id": "rf-1774032417466-k1a8d11an",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T18:46:57.462Z",
       "isNew": false
     },
     {
@@ -988,6 +988,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-21T13:41:25.052Z"
+  "lastUpdated": "2026-03-21T14:25:32.157Z"
 }

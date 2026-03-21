@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-15T23:28:23.504Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-16T02:12:02.952Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-21T13:41:25.050Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-21T14:25:32.155Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $40M+ allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $Not specified allegedly go in Harvard University antisemitism allegations?",
@@ -558,7 +557,8 @@
     "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $9B+ allegedly go in Feeding Our Future fraud case?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
-    "Where did the $2B allegedly go in Medicaid Fraud Crackdown?"
+    "Where did the $2B allegedly go in Medicaid Fraud Crackdown?",
+    "Where did the $ allegedly go in Harvard University fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1617,
-    "articlesProcessed": 80550,
-    "redFlagsFound": 1891,
+    "totalScans": 1618,
+    "articlesProcessed": 80600,
+    "redFlagsFound": 1892,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Minnesota's Feeding Our Future program terminated due to fraud",
+          "insight": "Large-scale program termination indicates significant fraud and potential systemic issues",
+          "entities": [
+            "Minnesota DHS",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Northern News Now",
+          "sourceUrl": "https://www.northernnewsnow.com/2026/03/21/five-more-plead-guilty-feeding-our-future-fraud-case-minnesota"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future case?",
-        "Where did the Unknown allegedly go in Harvard University case?",
-        "What other organizations is Not specified connected to?"
+        "What other organizations is Not specified connected to?",
+        "What specific allegations exist against Not specified?",
+        "Where did the $40M+ allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T13:41:25.050Z",
-  "lastUpdated": "2026-03-21T13:41:25.050Z"
+  "lastReflection": "2026-03-21T14:25:32.155Z",
+  "lastUpdated": "2026-03-21T14:25:32.156Z"
 }
