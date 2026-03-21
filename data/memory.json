@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-16T14:58:25.600Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-16T16:08:41.021Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-21T22:22:54.883Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-21T23:23:16.146Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $40M allegedly go in Feeding Our Future fraud case?",
     "Where did the $9B+ allegedly go in Feeding Our Future?",
     "Where did the $ allegedly go in Harvard University?",
     "What other organizations is Multiple individuals connected to?",
@@ -558,7 +557,8 @@
     "Where did the $2.4M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?",
-    "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?"
+    "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?",
+    "Where did the $40M allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1625,
-    "articlesProcessed": 80950,
-    "redFlagsFound": 1897,
+    "totalScans": 1626,
+    "articlesProcessed": 81000,
+    "redFlagsFound": 1898,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Feeding Our Future nonprofit program terminated due to allegations of fraud",
+          "insight": "The termination of Feeding Our Future's program suggests a significant red flag for potential fraud and misuse of funds. Further investigation into the nonprofit's financials and management is warranted.",
+          "entities": [
+            "Feeding Our Future",
+            "Aimee Bock"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "FOX 9 Minneapolis-St. Paul",
+          "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-sentencing-date-set-for-convicted-feeding-our-future-ringleader-aimee-bock"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Rogers Park shooting investigation?",
         "Where did the $40M allegedly go in Feeding Our Future fraud case?",
-        "Where did the $9B+ allegedly go in Feeding Our Future?"
+        "Where did the $9B+ allegedly go in Feeding Our Future?",
+        "Where did the $ allegedly go in Harvard University?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-21T22:22:54.883Z",
-  "lastUpdated": "2026-03-21T22:22:54.884Z"
+  "lastReflection": "2026-03-21T23:23:16.146Z",
+  "lastUpdated": "2026-03-21T23:23:16.147Z"
 }
