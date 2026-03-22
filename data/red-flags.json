@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Underreporting of income",
+      "description": "A Minnesota man has been accused of underreporting his income by nearly $2M, while claiming $40K in SNAP and medical benefits",
+      "insight": "This case highlights the need for increased scrutiny of tax returns and benefits claims, to prevent similar cases of underreporting and fraud. I will be tracking this case and others like it, to identify patterns and connections between entities and programs.",
+      "entities": [
+        "Minnesota Man"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL News",
+      "sourceUrl": "https://www.aol.com/news/minnesota-man-accused-tax-evasion-underreporting-income-nearly-2m-while-claiming-40k-snap-medical-aid/24145546/",
+      "id": "rf-1774218239336-t1e2x6l8t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-22T22:23:59.333Z",
+      "isNew": true
+    },
+    {
       "type": "accused_tax_fraud",
       "description": "Minnesota man accused of tax fraud",
       "insight": "The accusation against the Minnesota man highlights the ongoing issue of tax fraud and the need for vigilance in detecting and preventing such crimes.",
@@ -958,33 +977,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-18T11:44:51.052Z",
       "isNew": false
-    },
-    {
-      "type": "Lack of Investigation",
-      "description": "Minnesota officials allegedly failed to investigate kickbacks in the state's autism program",
-      "insight": "This lack of investigation raises concerns about the state's ability to detect and prevent fraud. Further investigation is needed to determine the extent of the issue and to hold those responsible accountable.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/",
-      "id": "rf-1773790267859-xfavarmv2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-17T23:31:07.856Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-22T21:24:41.891Z"
+  "lastUpdated": "2026-03-22T22:23:59.333Z"
 }
