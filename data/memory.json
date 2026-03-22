@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-16T17:59:25.679Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-16T19:13:30.482Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-22T02:03:58.862Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-22T04:51:21.517Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ allegedly go in Harvard University?",
     "What other organizations is Multiple individuals connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
     "Where did the unknown allegedly go in Harvard investigation?",
@@ -558,7 +557,8 @@
     "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?",
     "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?",
     "Where did the $40M allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $220K allegedly go in Feeding Our Future Investigation?"
+    "Where did the $220K allegedly go in Feeding Our Future Investigation?",
+    "Where did the $250 million allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1627,
-    "articlesProcessed": 81050,
-    "redFlagsFound": 1899,
+    "totalScans": 1628,
+    "articlesProcessed": 81100,
+    "redFlagsFound": 1900,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B+ allegedly go in Feeding Our Future?",
         "Where did the $ allegedly go in Harvard University?",
-        "What other organizations is Multiple individuals connected to?"
+        "What other organizations is Multiple individuals connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T02:03:58.862Z",
-  "lastUpdated": "2026-03-22T02:03:58.863Z"
+  "lastReflection": "2026-03-22T04:51:21.517Z",
+  "lastUpdated": "2026-03-22T04:51:21.519Z"
 }
