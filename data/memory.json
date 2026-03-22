@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T14:55:08.817Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T16:05:34.680Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-03-22T18:35:49.228Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-22T19:24:18.850Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1642,
-    "articlesProcessed": 81800,
+    "totalScans": 1643,
+    "articlesProcessed": 81850,
     "redFlagsFound": 1915,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ allegedly go in Harvard University fraud case?",
-        "What specific allegations exist against Donald Trump?",
-        "Where did the $40 million allegedly go in Feeding Our Future fraud case?"
+        "Where did the $40 million allegedly go in Feeding Our Future fraud case?",
+        "What other organizations is Kellogg connected to?",
+        "Where did the $2.4M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T18:35:49.228Z",
-  "lastUpdated": "2026-03-22T18:35:49.229Z"
+  "lastReflection": "2026-03-22T19:24:18.850Z",
+  "lastUpdated": "2026-03-22T19:24:18.850Z"
 }
