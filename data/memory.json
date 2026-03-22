@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T10:51:19.569Z",
-      "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-17T11:42:30.393Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-22T15:25:04.324Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-22T16:28:57.381Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1639,
-    "articlesProcessed": 81650,
+    "totalScans": 1640,
+    "articlesProcessed": 81700,
     "redFlagsFound": 1912,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future Investigation?",
         "Where did the $2B allegedly go in Medicaid Fraud Crackdown?",
-        "Where did the $ allegedly go in Harvard University fraud case?"
+        "Where did the $ allegedly go in Harvard University fraud case?",
+        "What specific allegations exist against Donald Trump?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T15:25:04.324Z",
-  "lastUpdated": "2026-03-22T15:25:04.324Z"
+  "lastReflection": "2026-03-22T16:28:57.381Z",
+  "lastUpdated": "2026-03-22T16:28:57.382Z"
 }
