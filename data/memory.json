@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T08:52:50.863Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T09:54:50.817Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-22T13:43:17.240Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-22T14:27:05.420Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1637,
-    "articlesProcessed": 81550,
-    "redFlagsFound": 1909,
+    "totalScans": 1638,
+    "articlesProcessed": 81600,
+    "redFlagsFound": 1911,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "accused_tax_fraud",
+          "description": "Minnesota man accused of tax fraud",
+          "insight": "The accusation against the Minnesota man highlights the ongoing issue of tax fraud and the need for vigilance in detecting and preventing such crimes.",
+          "entities": [
+            "Minnesota man"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "moneywise.com",
+          "sourceUrl": "https://moneywise.com/personal-finance/tax-fraud-minnesota-man-accused-of-underreporting-income-by-2m-while-claiming-40k-in-snap-medical-benefits"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T13:43:17.240Z",
-  "lastUpdated": "2026-03-22T13:43:17.241Z"
+  "lastReflection": "2026-03-22T14:27:05.420Z",
+  "lastUpdated": "2026-03-22T14:27:05.422Z"
 }
