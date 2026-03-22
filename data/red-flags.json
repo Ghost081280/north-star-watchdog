@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud scheme",
+      "description": "The Feeding Our Future fraud scheme involves multiple individuals and large sums of money.",
+      "insight": "This appears to be a large-scale fraud scheme with multiple individuals involved. Further investigation into the scheme and individuals involved is warranted.",
+      "entities": [
+        "Five individuals",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Valley News Live",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQW4td2Z5SXFrZ2dpUHFjblR5YkM2ZXFSR29hazRtUW80NDhkeHBleTQ2bEJoSmFvNl8tMlVqdXR0ZmFtb2YzaS1uSzlqaDdRRUptSG5FaG40Y1RlSTZRXzJobUxGNmp3OENvOFRpLXJzMnhRb1l6",
+      "id": "rf-1774221987635-3aakqnvo1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-22T23:26:27.631Z",
+      "isNew": true
+    },
+    {
       "type": "Underreporting of income",
       "description": "A Minnesota man has been accused of underreporting his income by nearly $2M, while claiming $40K in SNAP and medical benefits",
       "insight": "This case highlights the need for increased scrutiny of tax returns and benefits claims, to prevent similar cases of underreporting and fraud. I will be tracking this case and others like it, to identify patterns and connections between entities and programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-22T22:23:59.333Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "accused_tax_fraud",
@@ -958,31 +978,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-18T21:32:54.571Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota DHS failed to investigate allegations of kickbacks in autism program",
-      "insight": "This could indicate a larger issue with oversight and potential fraud in Minnesota's Medicaid program. I recommend further investigation into the handling of these allegations and potential connections to other entities or programs.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/report-finds-minnesota-officials-failed-to-investigate-allegations-of-autism-program-kickbacks/570363493/",
-      "id": "rf-1773834291056-xabzdw546",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-18T11:44:51.052Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-22T22:23:59.333Z"
+  "lastUpdated": "2026-03-22T23:26:27.631Z"
 }
