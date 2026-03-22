@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T09:54:50.817Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T10:51:19.569Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-22T14:27:05.420Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-22T15:25:04.324Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "Where did the $2B allegedly go in Medicaid Fraud Crackdown?",
     "Where did the $ allegedly go in Harvard University fraud case?",
     "What specific allegations exist against Donald Trump?",
@@ -558,7 +557,8 @@
     "Where did the $40K allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Minnesota Man connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future scheme?",
-    "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?"
+    "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?",
+    "Where did the $2M allegedly go in Minnesota Tax Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1638,
-    "articlesProcessed": 81600,
-    "redFlagsFound": 1911,
+    "totalScans": 1639,
+    "articlesProcessed": 81650,
+    "redFlagsFound": 1912,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,25 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "accused_tax_fraud",
-          "description": "Minnesota man accused of tax fraud",
-          "insight": "The accusation against the Minnesota man highlights the ongoing issue of tax fraud and the need for vigilance in detecting and preventing such crimes.",
-          "entities": [
-            "Minnesota man"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "moneywise.com",
-          "sourceUrl": "https://moneywise.com/personal-finance/tax-fraud-minnesota-man-accused-of-underreporting-income-by-2m-while-claiming-40k-in-snap-medical-benefits"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T14:27:05.420Z",
-  "lastUpdated": "2026-03-22T14:27:05.422Z"
+  "lastReflection": "2026-03-22T15:25:04.324Z",
+  "lastUpdated": "2026-03-22T15:25:04.324Z"
 }
