@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T04:24:15.529Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-17T05:58:55.963Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-03-22T10:26:30.524Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-22T11:22:34.828Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $90M+ allegedly go in Feeding Our Future?",
-    "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $9B+ allegedly go in Feeding Our Future fraud case?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "Where did the $2B allegedly go in Medicaid Fraud Crackdown?",
@@ -558,7 +556,9 @@
     "What other organizations is Robert Mueller connected to?",
     "What specific allegations exist against Robert Mueller?",
     "Where did the $800,000 allegedly go in Feeding Our Future?",
-    "Where did the $40K allegedly go in Feeding Our Future fraud case?"
+    "Where did the $40K allegedly go in Feeding Our Future fraud case?",
+    "What other organizations is Minnesota Man connected to?",
+    "Where did the Unknown allegedly go in Feeding Our Future scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1634,
-    "articlesProcessed": 81400,
-    "redFlagsFound": 1905,
+    "totalScans": 1635,
+    "articlesProcessed": 81450,
+    "redFlagsFound": 1906,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "Where did the $90M+ allegedly go in Feeding Our Future?",
-        "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?"
+        "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the $9B+ allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T10:26:30.524Z",
-  "lastUpdated": "2026-03-22T10:26:30.525Z"
+  "lastReflection": "2026-03-22T11:22:34.828Z",
+  "lastUpdated": "2026-03-22T11:22:34.829Z"
 }
