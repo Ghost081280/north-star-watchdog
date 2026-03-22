@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T13:08:28.986Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T14:55:08.817Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-22T17:25:01.672Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-03-22T18:35:49.228Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ allegedly go in Harvard University fraud case?",
-    "What specific allegations exist against Donald Trump?",
     "Where did the $40 million allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Kellogg connected to?",
     "Where did the $2.4M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Feeding Our Future scheme?",
     "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?",
     "Where did the $2M allegedly go in Minnesota Tax Fraud Case?",
-    "Where did the None allegedly go in Chicago Transit Funding Freeze?"
+    "Where did the None allegedly go in Chicago Transit Funding Freeze?",
+    "Where did the $2M allegedly go in Minnesota Fraud Case?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1641,
-    "articlesProcessed": 81750,
-    "redFlagsFound": 1914,
+    "totalScans": 1642,
+    "articlesProcessed": 81800,
+    "redFlagsFound": 1915,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2B allegedly go in Medicaid Fraud Crackdown?",
         "Where did the $ allegedly go in Harvard University fraud case?",
-        "What specific allegations exist against Donald Trump?"
+        "What specific allegations exist against Donald Trump?",
+        "Where did the $40 million allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T17:25:01.672Z",
-  "lastUpdated": "2026-03-22T17:25:01.673Z"
+  "lastReflection": "2026-03-22T18:35:49.228Z",
+  "lastUpdated": "2026-03-22T18:35:49.229Z"
 }
