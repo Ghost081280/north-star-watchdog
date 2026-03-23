@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "fraud scheme",
+      "description": "Feeding Our Future, a non-profit organization, has been involved in a fraud scheme",
+      "insight": "I notice that there have been multiple cases of fraud in Minnesota, which could indicate a larger issue. I would like to investigate further to see if there are any connections between these cases.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/minnesota-fraud-3-more-guilty-pleas-in-feeding-our-future-scheme/ar-AA18HvzQ",
+      "id": "rf-1774266149948-lycdsi5qr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-23T11:42:29.945Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud scheme",
       "description": "The Feeding Our Future fraud scheme involves multiple individuals and large sums of money.",
       "insight": "This appears to be a large-scale fraud scheme with multiple individuals involved. Further investigation into the scheme and individuals involved is warranted.",
       "entities": [
@@ -958,40 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-18T23:29:43.577Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The DOJ investigation into the Federal Reserve raises concerns about the integrity of the financial system.",
-      "insight": "As an investigator, I am concerned about the potential implications of this investigation on the stability of the financial system. Further research is needed to understand the scope and potential consequences of this investigation.",
-      "entities": [
-        "Federal Reserve",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ investigation into Fed",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTW9iMzBtWjYxc3RYdjNla0NHb3NVNUVyUzlvVXRtdEtSbF9PQ0RlQk9MOVh3VUhxcW5XSV9QZVN3LTFVSVY3UFZyOEx1dUN3WDE3b0FPWU5OaWlVbmctdnpBN1FqbnpOcWZmelFZV3JTd0FQQ2JRWFRyWHNjRVh0TQ",
-      "id": "rf-1773869574575-32yfkckl0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-18T21:32:54.571Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-23T10:01:26.957Z"
+  "lastUpdated": "2026-03-23T11:42:29.945Z"
 }

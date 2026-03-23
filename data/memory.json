@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-18T06:02:41.840Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-18T07:51:49.969Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-23T10:01:26.955Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-23T11:42:29.943Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future scheme?",
-    "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?",
     "Where did the $2M allegedly go in Minnesota Tax Fraud Case?",
     "Where did the None allegedly go in Chicago Transit Funding Freeze?",
     "Where did the $2M allegedly go in Minnesota Fraud Case?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Not specified connected to?",
     "Where did the Not specified allegedly go in Feeding Our Future Investigation?",
-    "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
+    "What other organizations is Minnesota Man connected to?",
+    "Where did the $2M allegedly go in Tax fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1652,
-    "articlesProcessed": 82300,
-    "redFlagsFound": 1924,
+    "totalScans": 1653,
+    "articlesProcessed": 82350,
+    "redFlagsFound": 1925,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota Man connected to?",
         "Where did the Unknown allegedly go in Feeding Our Future scheme?",
-        "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?"
+        "Where did the $2M allegedly go in Minnesota Tax Fraud Investigation?",
+        "Where did the $2M allegedly go in Minnesota Tax Fraud Case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-23T10:01:26.955Z",
-  "lastUpdated": "2026-03-23T10:01:26.955Z"
+  "lastReflection": "2026-03-23T11:42:29.943Z",
+  "lastUpdated": "2026-03-23T11:42:29.944Z"
 }
