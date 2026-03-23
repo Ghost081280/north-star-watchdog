@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T22:31:44.950Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T23:31:07.854Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-23T02:05:16.495Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-23T05:02:08.192Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $220K allegedly go in Feeding Our Future Investigation?",
-    "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Robert Mueller connected to?",
     "What specific allegations exist against Robert Mueller?",
     "Where did the $800,000 allegedly go in Feeding Our Future?",
@@ -558,7 +556,9 @@
     "Where did the $2M allegedly go in Tax Fraud Investigation?",
     "What other organizations is Jessi Pierce connected to?",
     "What specific allegations exist against Jessi Pierce?",
-    "What other organizations is Five individuals connected to?"
+    "What other organizations is Five individuals connected to?",
+    "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the Unknown allegedly go in Child Care Funding Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1648,
-    "articlesProcessed": 82100,
-    "redFlagsFound": 1920,
+    "totalScans": 1649,
+    "articlesProcessed": 82150,
+    "redFlagsFound": 1921,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?",
-        "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?",
-        "Where did the $40M allegedly go in Feeding Our Future fraud investigation?"
+        "Where did the $220K allegedly go in Feeding Our Future Investigation?",
+        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
+        "What other organizations is Robert Mueller connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-23T02:05:16.495Z",
-  "lastUpdated": "2026-03-23T02:05:16.496Z"
+  "lastReflection": "2026-03-23T05:02:08.192Z",
+  "lastUpdated": "2026-03-23T05:02:08.192Z"
 }
