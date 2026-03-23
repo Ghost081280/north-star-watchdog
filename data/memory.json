@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-18T13:07:28.826Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-18T15:01:14.800Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-23T17:56:40.023Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-23T18:55:26.950Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Jessi Pierce?",
     "What other organizations is Five individuals connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
     "Where did the Unknown allegedly go in Child Care Funding Fraud?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Robert Mueller?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $5.7 million allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $40 million allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1658,
-    "articlesProcessed": 82600,
-    "redFlagsFound": 1931,
+    "totalScans": 1659,
+    "articlesProcessed": 82650,
+    "redFlagsFound": 1932,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jessi Pierce connected to?",
         "What specific allegations exist against Jessi Pierce?",
-        "What other organizations is Five individuals connected to?"
+        "What other organizations is Five individuals connected to?",
+        "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-23T17:56:40.023Z",
-  "lastUpdated": "2026-03-23T17:56:40.024Z"
+  "lastReflection": "2026-03-23T18:55:26.950Z",
+  "lastUpdated": "2026-03-23T18:55:26.951Z"
 }
