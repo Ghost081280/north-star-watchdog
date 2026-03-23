@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-18T08:46:23.858Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-18T09:54:28.088Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-23T13:03:48.972Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-23T14:53:59.243Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 29,
+      "count": 30,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-02-21T22:22:09.419Z"
+      "lastSeen": "2026-03-23T14:53:59.244Z"
     },
     {
       "type": "federal_funding",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2M allegedly go in Minnesota Fraud Case?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the Unknown allegedly go in Minnesota Fraud Case?",
     "Where did the Unknown allegedly go in Daycare and Hospice Fraud Investigation?",
     "Where did the Unknown allegedly go in Child Care Funding Fraud Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Minnesota Man connected to?",
     "Where did the $2M allegedly go in Tax fraud investigation?",
     "What other organizations is Aimee Bock connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+    "Where did the $100M allegedly go in Daycare and Hospice Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1654,
-    "articlesProcessed": 82400,
-    "redFlagsFound": 1926,
+    "totalScans": 1655,
+    "articlesProcessed": 82450,
+    "redFlagsFound": 1928,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2M allegedly go in Minnesota Tax Fraud Case?",
-        "Where did the None allegedly go in Chicago Transit Funding Freeze?",
-        "Where did the $2M allegedly go in Minnesota Fraud Case?"
+        "Where did the $2M allegedly go in Minnesota Fraud Case?",
+        "Are any of these 2 figures connected to each other?",
+        "Where did the Unknown allegedly go in Minnesota Fraud Case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-23T13:03:48.972Z",
-  "lastUpdated": "2026-03-23T13:03:48.973Z"
+  "lastReflection": "2026-03-23T14:53:59.243Z",
+  "lastUpdated": "2026-03-23T14:53:59.244Z"
 }
