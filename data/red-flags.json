@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible termination of CDC grants to Minnesota and other states",
+      "insight": "This could indicate a larger issue with program oversight and funding.",
+      "entities": [
+        "Minnesota",
+        "CDC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV1FtazlXZ3Frc2s2ZE4zU0VBV3pRQ2FTeDVQcWRhQzc0Z3ozaWZzMU9UM21CVkpLSXdfeVM5WnhYQkVfNmd2WnpSX29rOWhaOTBTUDhEaHVZbzU1VnhOUi1PNnQ2a2Faa1lqUFQyRjdWQl9IdFA5N0JpOWxwSGwxdWI1TFA",
+      "id": "rf-1774281542086-pamwtgyc2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-23T15:59:02.083Z",
+      "isNew": true
+    },
+    {
       "type": "shell_company",
       "description": "Several shell companies have been linked to the Feeding Our Future fraud scheme.",
       "insight": "This could be a sign of a larger pattern of money laundering or other financial crimes. Further investigation is needed to determine the extent of the issue.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-23T14:53:59.245Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scheme",
@@ -957,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T04:53:31.746Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "The Feeding Our Future fraud scheme allegedly defrauded the government of $250 million.",
-      "insight": "This scheme highlights the need for increased oversight and accountability in government programs. Further investigation is needed to determine the extent of the alleged wrongdoing and to identify any potential co-conspirators.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fox9.com/news/2-feeding-our-future-defendants-enter-guilty-pleas-1-rejects-plea-deal",
-      "id": "rf-1773896011750-3d1j4e4ou",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T04:53:31.746Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-23T14:53:59.245Z"
+  "lastUpdated": "2026-03-23T15:59:02.083Z"
 }
