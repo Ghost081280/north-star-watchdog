@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-18T16:15:01.443Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-18T18:00:41.793Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-23T19:48:16.693Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-23T20:37:01.569Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the Unknown allegedly go in Child Care Funding Fraud?",
-    "What other organizations is Unknown connected to?",
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Not specified connected to?",
     "Where did the Not specified allegedly go in Feeding Our Future Investigation?",
     "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +554,11 @@
     "Where did the $5.7 million allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $40 million allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $2.5M allegedly go in Feeding Our Future Fraud?"
+    "Where did the $2.5M allegedly go in Feeding Our Future Fraud?",
+    "What other organizations is Minnesota AG Ellison connected to?",
+    "What other organizations is Baltimore child care owner connected to?",
+    "Where did the $2.5M allegedly go in Feeding our Future fraud case?",
+    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1660,
-    "articlesProcessed": 82700,
-    "redFlagsFound": 1933,
+    "totalScans": 1661,
+    "articlesProcessed": 82750,
+    "redFlagsFound": 1935,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Five individuals connected to?",
         "Where did the Unknown allegedly go in Feeding Our Future fraud scheme?",
-        "Where did the Unknown allegedly go in Child Care Funding Fraud?"
+        "Where did the Unknown allegedly go in Child Care Funding Fraud?",
+        "What other organizations is Unknown connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-23T19:48:16.693Z",
-  "lastUpdated": "2026-03-23T19:48:16.694Z"
+  "lastReflection": "2026-03-23T20:37:01.569Z",
+  "lastUpdated": "2026-03-23T20:37:01.570Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "guilty plea",
+      "description": "Guilty pleas have been entered in the Feeding our Future fraud case",
+      "insight": "This guilty plea may indicate a larger issue with child care fraud in the state, and potentially across the country. I recommend tracking this case and its developments closely.",
+      "entities": [
+        "Feeding our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "news8000",
+      "sourceUrl": "https://news8000.com/news/guilty-pleas-in-feeding-our-future-fraud-case/",
+      "id": "rf-1774298221576-dx3uedfm0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-23T20:37:01.571Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible termination of CDC grants to Minnesota and other states",
       "insight": "This could indicate a larger issue with program oversight and funding.",
@@ -957,31 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T07:01:42.617Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Joe Kent, former Counterterrorism Chief, for allegedly sharing classified information.",
-      "insight": "This investigation raises concerns about the handling of classified information within the Trump administration. Further investigation is needed to determine the extent of the alleged wrongdoing and to identify any potential national security risks.",
-      "entities": [
-        "Joe Kent",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Semafor",
-      "sourceUrl": "https://www.semafor.com/article/fbi-investigates-intelligence-aide-who-resigned-over-war",
-      "id": "rf-1773896011750-1alh3f5gl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T04:53:31.746Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,6 +989,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-23T19:48:16.695Z"
+  "lastUpdated": "2026-03-23T20:37:01.571Z"
 }
