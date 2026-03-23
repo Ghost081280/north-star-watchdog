@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-17T21:36:48.383Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-17T22:31:44.950Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-22T23:26:27.629Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-23T02:05:16.495Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?",
-    "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?",
-    "Where did the $40M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $220K allegedly go in Feeding Our Future Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Robert Mueller connected to?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Minnesota Fraud Case?",
     "Where did the Unknown allegedly go in Daycare and Hospice Fraud Investigation?",
     "Where did the Unknown allegedly go in Child Care Funding Fraud Investigation?",
-    "Where did the $2M allegedly go in Tax Fraud Investigation?"
+    "Where did the $2M allegedly go in Tax Fraud Investigation?",
+    "What other organizations is Jessi Pierce connected to?",
+    "What specific allegations exist against Jessi Pierce?",
+    "What other organizations is Five individuals connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1647,
-    "articlesProcessed": 82050,
-    "redFlagsFound": 1919,
+    "totalScans": 1648,
+    "articlesProcessed": 82100,
+    "redFlagsFound": 1920,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud scheme",
-          "description": "The Feeding Our Future fraud scheme involves multiple individuals and large sums of money.",
-          "insight": "This appears to be a large-scale fraud scheme with multiple individuals involved. Further investigation into the scheme and individuals involved is warranted.",
-          "entities": [
-            "Five individuals",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Valley News Live",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQW4td2Z5SXFrZ2dpUHFjblR5YkM2ZXFSR29hazRtUW80NDhkeHBleTQ2bEJoSmFvNl8tMlVqdXR0ZmFtb2YzaS1uSzlqaDdRRUptSG5FaG40Y1RlSTZRXzJobUxGNmp3OENvOFRpLXJzMnhRb1l6"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
         "Where did the $17.4 Million allegedly go in $17.4 Million Elderly Mortgage Fraud Investigation?",
-        "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?"
+        "Where did the $5.2 million allegedly go in Feeding Our Future Fraud Investigation?",
+        "Where did the $40M allegedly go in Feeding Our Future fraud investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-22T23:26:27.629Z",
-  "lastUpdated": "2026-03-22T23:26:27.630Z"
+  "lastReflection": "2026-03-23T02:05:16.495Z",
+  "lastUpdated": "2026-03-23T02:05:16.496Z"
 }
