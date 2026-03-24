@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential corruption",
+      "description": "An individual who pleaded guilty in the Feeding Our Future scheme reportedly met with Minnesota AG Keith Ellison.",
+      "insight": "This raises concerns about potential corruption and undue influence in the investigation and prosecution of fraud cases in Minnesota.",
+      "entities": [
+        "Keith Ellison",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KBOI",
+      "sourceUrl": "https://www.kboi.com/news/national/individual-who-pleaded-guilty-in-fraud-scheme-reportedly-met-with-minnesota-ag/",
+      "id": "rf-1774331946601-sy4w3o418",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-24T05:59:06.598Z",
+      "isNew": true
+    },
+    {
       "type": "Fraud scheme",
       "description": "The Feeding Our Future scheme has resulted in multiple guilty pleas, indicating a large-scale fraud operation.",
       "insight": "I suspect that there may be more individuals involved in this scheme, and further investigation is needed to uncover the full extent of the fraud. I recommend tracking the financial transactions and connections between the individuals involved.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-24T04:21:08.006Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "guilty plea",
@@ -956,32 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T09:41:33.899Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Former counterterrorism chief Joe Kent under FBI investigation for alleged classified leaks",
-      "insight": "This suggests potential national security concerns and possible improper handling of classified information",
-      "entities": [
-        "Joe Kent",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.yahoo.com/news/joe-kent-under-fbi-investigation-for-alleged-leaks-34095641.html",
-      "id": "rf-1773909649383-3b2x2yhs1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T08:40:49.379Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,6 +988,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T04:21:08.006Z"
+  "lastUpdated": "2026-03-24T05:59:06.598Z"
 }
