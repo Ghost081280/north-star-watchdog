@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal officials confirm investigation of LaGuardia crash",
+      "insight": "While not directly related to Minnesota fraud, this investigation may indicate a larger pattern of federal scrutiny into potential wrongdoing. I recommend monitoring this investigation for any connections to Minnesota-based entities.",
+      "entities": [
+        "LaGuardia"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "Federal officials",
+      "sourceUrl": "https://www.wsfa.com/article/news/national/federal-officials-confirm-investigation-of-laguardia-crash/525-8a52f6f7-7f4b-4a1b-8a6f-4a3cfcf9c2b2",
+      "id": "rf-1774346090210-5v8ejt2to",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-24T09:54:50.207Z",
+      "isNew": true
+    },
+    {
       "type": "Potential corruption",
       "description": "An individual who pleaded guilty in the Feeding Our Future scheme reportedly met with Minnesota AG Keith Ellison.",
       "insight": "This raises concerns about potential corruption and undue influence in the investigation and prosecution of fraud cases in Minnesota.",
@@ -957,25 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T10:39:02.423Z",
       "isNew": false
-    },
-    {
-      "type": "alleged classified leaks",
-      "description": "Former counterterrorism chief Joe Kent is under investigation for alleged classified leaks",
-      "insight": "This investigation raises concerns about the handling of classified information and the potential risks of leaks. Further investigation is needed to determine the extent of the leaks and the individuals involved.",
-      "entities": [
-        "Joe Kent"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/article/us-usa-fbi-kent-idUSKCN2MB2RR",
-      "id": "rf-1773913293903-c38l9dwxb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T09:41:33.899Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,6 +989,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T08:52:06.703Z"
+  "lastUpdated": "2026-03-24T09:54:50.207Z"
 }
