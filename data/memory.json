@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-19T08:40:49.377Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-19T09:41:33.897Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-24T10:51:53.838Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-24T11:44:00.032Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1671,
-    "articlesProcessed": 83250,
+    "totalScans": 1672,
+    "articlesProcessed": 83300,
     "redFlagsFound": 1945,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud_scheme",
-          "description": "$14.6M Feeding Our Future Fraud Scheme",
-          "insight": "This is a significant fraud scheme with 5 individuals pleading guilty.",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "National Today",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV0hhUDh1bklJSUxGY08xX096ZUVEcWZ4dUN3LU9McUZFZk1OVG5FWjd6SUt1ckdPb0NvQzNDMlZkYkpIdFZRbC1Ha09mdVFSM3hhU29zOVdKVE5EbTVsd05pSENQZEtVZlpraWx4SFlWUXRFTGRwQzNEQlJnVWNHM1d6eHJBc2pXQkctdUdEQU54WEM3clgxWWxFekVnOVJlaENLLUV2SUhUNENHdXVzbE0yX2hmeDA?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
-        "What other organizations is Leading Figure connected to?",
-        "Where did the $2.5M allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "What other organizations is Keith Ellison connected to?",
+        "What specific allegations exist against Keith Ellison?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-24T10:51:53.838Z",
-  "lastUpdated": "2026-03-24T10:51:53.839Z"
+  "lastReflection": "2026-03-24T11:44:00.032Z",
+  "lastUpdated": "2026-03-24T11:44:00.033Z"
 }
