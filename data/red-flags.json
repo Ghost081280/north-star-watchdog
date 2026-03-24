@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential fraud",
+      "description": "The investigation into the Feeding Our Future scheme has raised concerns about potential fraud in the state's food assistance programs.",
+      "insight": "I believe that this investigation may be just the tip of the iceberg, and that there may be more widespread fraud in the state's food assistance programs. I would recommend further investigation into this matter.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Patch",
+      "sourceUrl": "https://www.patch.com/minnesota/stpaul/5-plead-guilty-feeding-our-future-scheme-authorities",
+      "id": "rf-1774357723563-l05jec4ag",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-24T13:08:43.559Z",
+      "isNew": true
+    },
+    {
       "type": "fraud_scheme",
       "description": "$14.6M Feeding Our Future Fraud Scheme",
       "insight": "This is a significant fraud scheme with 5 individuals pleading guilty.",
@@ -956,29 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T13:01:58.645Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Leak of Classified Information",
-      "description": "Former counterterrorism chief Joe Kent is under investigation for leaking classified information",
-      "insight": "This red flag raises concerns about the potential compromise of national security and the need for stricter protocols to prevent similar incidents in the future. I recommend further investigation into the matter to determine the extent of the leak and to identify measures to prevent such incidents.",
-      "entities": [
-        "Joe Kent"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Le Monde.fr",
-      "sourceUrl": "https://www.lemonde.fr/en/international/article/2026/03/19/fbi-probing-counterterrorism-official-who-quit-over-iran-war-us-media-reports_6044448_4.html",
-      "id": "rf-1773920101482-huodtjlil",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T11:35:01.478Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,7 +987,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T11:44:00.034Z"
+  "lastUpdated": "2026-03-24T13:08:43.559Z"
 }
