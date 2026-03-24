@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Fraud scheme",
+      "description": "The Feeding Our Future scheme has resulted in multiple guilty pleas, indicating a large-scale fraud operation.",
+      "insight": "I suspect that there may be more individuals involved in this scheme, and further investigation is needed to uncover the full extent of the fraud. I recommend tracking the financial transactions and connections between the individuals involved.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-fraud-3-more-guilty-pleas-in-feeding-our-future-scheme/600246523/",
+      "id": "rf-1774326068010-dun8tpyag",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-24T04:21:08.006Z",
+      "isNew": true
+    },
+    {
       "type": "guilty plea",
       "description": "Guilty pleas have been entered in the Feeding our Future fraud case",
       "insight": "This guilty plea may indicate a larger issue with child care fraud in the state, and potentially across the country. I recommend tracking this case and its developments closely.",
@@ -956,30 +976,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T08:40:49.379Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "Feeding Our Future defendants have entered guilty pleas, indicating a large-scale fraud scheme",
-      "insight": "I suspect that there may be more individuals involved in the fraud scheme, and further investigation is needed to uncover the full extent of the scheme",
-      "entities": [
-        "Feeding Our Future",
-        "Joe Kent"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.fox9.com/news/2-feeding-our-future-defendants-enter-guilty-pleas-1-rejects-plea-deal",
-      "id": "rf-1773903702622-m85zbwjmy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T07:01:42.617Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -989,7 +990,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T01:56:42.542Z"
+  "lastUpdated": "2026-03-24T04:21:08.006Z"
 }
