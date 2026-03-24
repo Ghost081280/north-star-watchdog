@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-19T07:01:42.615Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-19T08:40:49.377Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-24T09:54:50.205Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-24T10:51:53.838Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
-    "What other organizations is Leading Figure connected to?",
-    "Where did the $2.5M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future COVID-19 Child Nutrition Fraud?",
     "What other organizations is Keith Ellison connected to?",
     "What specific allegations exist against Keith Ellison?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +554,11 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Individual who pleaded guilty in fraud scheme connected to?",
     "Where did the $14.6M allegedly go in Feeding Our Future Fraud Scheme?",
-    "Where did the Unknown allegedly go in Autism Fraud Kickback Claims?"
+    "Where did the Unknown allegedly go in Autism Fraud Kickback Claims?",
+    "What specific allegations exist against Jessi Pierce?",
+    "What specific allegations exist against Kash Patel?",
+    "What specific allegations exist against Robert S. Mueller III?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1670,
-    "articlesProcessed": 83200,
-    "redFlagsFound": 1943,
+    "totalScans": 1671,
+    "articlesProcessed": 83250,
+    "redFlagsFound": 1945,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud_scheme",
+          "description": "$14.6M Feeding Our Future Fraud Scheme",
+          "insight": "This is a significant fraud scheme with 5 individuals pleading guilty.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "National Today",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV0hhUDh1bklJSUxGY08xX096ZUVEcWZ4dUN3LU9McUZFZk1OVG5FWjd6SUt1ckdPb0NvQzNDMlZkYkpIdFZRbC1Ha09mdVFSM3hhU29zOVdKVE5EbTVsd05pSENQZEtVZlpraWx4SFlWUXRFTGRwQzNEQlJnVWNHM1d6eHJBc2pXQkctdUdEQU54WEM3clgxWWxFekVnOVJlaENLLUV2SUhUNENHdXVzbE0yX2hmeDA?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2.5M allegedly go in Feeding our Future fraud case?",
         "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
-        "What other organizations is Leading Figure connected to?"
+        "What other organizations is Leading Figure connected to?",
+        "Where did the $2.5M allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-24T09:54:50.205Z",
-  "lastUpdated": "2026-03-24T09:54:50.206Z"
+  "lastReflection": "2026-03-24T10:51:53.838Z",
+  "lastUpdated": "2026-03-24T10:51:53.839Z"
 }

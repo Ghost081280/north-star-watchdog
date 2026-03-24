@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud_scheme",
+      "description": "$14.6M Feeding Our Future Fraud Scheme",
+      "insight": "This is a significant fraud scheme with 5 individuals pleading guilty.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "National Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV0hhUDh1bklJSUxGY08xX096ZUVEcWZ4dUN3LU9McUZFZk1OVG5FWjd6SUt1ckdPb0NvQzNDMlZkYkpIdFZRbC1Ha09mdVFSM3hhU29zOVdKVE5EbTVsd05pSENQZEtVZlpraWx4SFlWUXRFTGRwQzNEQlJnVWNHM1d6eHJBc2pXQkctdUdEQU54WEM3clgxWWxFekVnOVJlaENLLUV2SUhUNENHdXVzbE0yX2hmeDA?oc=5",
+      "id": "rf-1774349513844-vethir96x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-24T10:51:53.840Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal officials confirm investigation of LaGuardia crash",
       "insight": "While not directly related to Minnesota fraud, this investigation may indicate a larger pattern of federal scrutiny into potential wrongdoing. I recommend monitoring this investigation for any connections to Minnesota-based entities.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-24T09:54:50.207Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential corruption",
@@ -956,30 +975,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T11:35:01.478Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations into fraud and leaks of classified information",
-      "insight": "These investigations suggest a larger pattern of potential wrongdoing and highlight the need for continued monitoring",
-      "entities": [
-        "Joe Kent",
-        "Feeding Our Future"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Source name",
-      "sourceUrl": "https://www.thebanner.com/investigations/2026/03/19/from-37m-to-99m-federal-probe-focuses-on-42-baltimore-homes-sold-again-and-again/",
-      "id": "rf-1773916742427-dal2lzmtr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T10:39:02.423Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -988,8 +989,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T09:54:50.207Z"
+  "lastUpdated": "2026-03-24T10:51:53.840Z"
 }
