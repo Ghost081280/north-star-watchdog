@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-19T16:57:13.132Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-19T17:53:41.324Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-24T20:40:23.649Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-03-24T21:37:12.280Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Individual (name not specified) connected to?",
-    "Where did the not specified allegedly go in Feeding Our Future scheme?",
-    "Where did the not specified allegedly go in LaGuardia crash investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Individual who pleaded guilty in fraud scheme connected to?",
     "Where did the $14.6M allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the Unknown allegedly go in Autism Fraud Kickback Claims?",
     "What specific allegations exist against Jessi Pierce?",
@@ -558,7 +553,12 @@
     "Where did the $25 billion allegedly go in Medicaid Fraud Investigation?",
     "Where did the $3.8M allegedly go in Feeding Our Future Scheme?",
     "What other organizations is Keene gun store employee connected to?",
-    "Where did the $14.6M allegedly go in $14.6M Child Nutrition Funds Fraud?"
+    "Where did the $14.6M allegedly go in $14.6M Child Nutrition Funds Fraud?",
+    "What other organizations is Shah Alam connected to?",
+    "What other organizations is Alex Pretti connected to?",
+    "What other organizations is Renee Good connected to?",
+    "Where did the Unknown allegedly go in Minnesota v. Trump Administration?",
+    "Where did the Unknown allegedly go in Inspector General Bill?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1678,
-    "articlesProcessed": 83600,
-    "redFlagsFound": 1950,
+    "totalScans": 1679,
+    "articlesProcessed": 83650,
+    "redFlagsFound": 1951,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud",
-          "description": "$14.6M diverted from child nutrition funds",
-          "insight": "Significant fraud detected in child nutrition program",
-          "entities": [
-            "Five individuals",
-            "Child nutrition program"
-          ],
-          "confidence": 95,
-          "priority": "high",
-          "source": "International Business Times UK",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcG83eExmWkVLeEFhamc4cjBVRkhZekV3YTdWTXgxejQ5a2R3bjdXbFFJemRMcER3clJ1N09ENzZMc3VScEp6YXZIUWt2MjlEV1FiZXVyX2JtX0lKdzNJNG1pbnRlQlBmZ1VwRFp2Z29rakRuY04tR0xIZFVyY0hNU0kyX0UtWE9MVE9BaU85a2JpNzNUV3c3OGQ4eUk3Ykd2c2ZGU3ZZNE9xbWdjY0E"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?",
-        "Where did the N/A allegedly go in LaGuardia crash investigation?",
-        "What other organizations is Individual (name not specified) connected to?"
+        "What other organizations is Individual (name not specified) connected to?",
+        "Where did the not specified allegedly go in Feeding Our Future scheme?",
+        "Where did the not specified allegedly go in LaGuardia crash investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-24T20:40:23.649Z",
-  "lastUpdated": "2026-03-24T20:40:23.650Z"
+  "lastReflection": "2026-03-24T21:37:12.280Z",
+  "lastUpdated": "2026-03-24T21:37:12.281Z"
 }
