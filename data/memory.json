@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-19T13:01:58.643Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-19T14:44:46.741Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-24T16:06:57.643Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-24T17:55:16.398Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1675,
-    "articlesProcessed": 83450,
+    "totalScans": 1676,
+    "articlesProcessed": 83500,
     "redFlagsFound": 1948,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Individuals from Feeding Our Future scheme connected to?",
         "Where did the $250 million allegedly go in Feeding Our Future scheme investigation?",
-        "Where did the N/A allegedly go in LaGuardia crash investigation?"
+        "Where did the N/A allegedly go in LaGuardia crash investigation?",
+        "What other organizations is Individual (name not specified) connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-24T16:06:57.643Z",
-  "lastUpdated": "2026-03-24T16:06:57.644Z"
+  "lastReflection": "2026-03-24T17:55:16.398Z",
+  "lastUpdated": "2026-03-24T17:55:16.398Z"
 }
