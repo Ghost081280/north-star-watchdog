@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-20T12:56:30.805Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-20T14:01:45.436Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-03-25T19:51:17.410Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-25T20:37:33.296Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota vs. Trump Administration?",
-    "Where did the $0 allegedly go in Federal Reserve Investigation?",
     "Where did the Undisclosed allegedly go in Minnesota vs. Trump Administration?",
     "Where did the Undisclosed allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Renee Good connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Baltimore Childcare Kingpin connected to?",
     "What other organizations is Keene man connected to?",
     "Where did the 131,000 records allegedly go in Hightower Holding LLC Data Breach Investigation?",
-    "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?"
+    "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
+    "What other organizations is Hightower Holding LLC connected to?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1695,
-    "articlesProcessed": 84450,
-    "redFlagsFound": 1970,
+    "totalScans": 1696,
+    "articlesProcessed": 84500,
+    "redFlagsFound": 1972,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump administration officials connected to?",
-        "Where did the Unknown allegedly go in Minnesota shootings investigation?",
-        "Where did the Unknown allegedly go in Federal Reserve investigation?"
+        "Where did the $0 allegedly go in Minnesota vs. Trump Administration?",
+        "Where did the $0 allegedly go in Federal Reserve Investigation?",
+        "Where did the Undisclosed allegedly go in Minnesota vs. Trump Administration?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-25T19:51:17.410Z",
-  "lastUpdated": "2026-03-25T19:51:17.411Z"
+  "lastReflection": "2026-03-25T20:37:33.296Z",
+  "lastUpdated": "2026-03-25T20:37:33.297Z"
 }
