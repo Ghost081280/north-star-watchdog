@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "withholding evidence",
+      "description": "The Trump administration is accused of withholding evidence in the Minnesota shootings investigation.",
+      "insight": "This raises concerns about government transparency and accountability. Further investigation is needed to determine the extent of the evidence withholding and its impact on the case.",
+      "entities": [
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/25/minnesota-sues-trump-administration-shootings/",
+      "id": "rf-1774404157626-j071fun8e",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T02:02:37.623Z",
+      "isNew": true
+    },
+    {
       "type": "Withholding evidence",
       "description": "The Trump administration is being sued by Minnesota for withholding evidence in the Good and Pretti killings.",
       "insight": "This pattern of withholding evidence is concerning and warrants further investigation. It may indicate a larger issue with the Trump administration's transparency and accountability.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-24T23:30:50.706Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "withheld evidence",
@@ -956,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T19:47:05.651Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Trump administration is facing multiple investigations, including one into Federal Reserve Chair Jerome Powell.",
-      "insight": "I notice that the Trump administration is facing multiple investigations, which could indicate a pattern of wrongdoing. I would like to investigate further to see if there are any connections between these investigations.",
-      "entities": [
-        "Trump administration",
-        "Jerome Powell"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/19/trump-signals-doj-should-continue-powell-probe.html",
-      "id": "rf-1773946617655-udth49azv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T18:56:57.652Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,11 +983,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-24T23:30:50.706Z"
+  "lastUpdated": "2026-03-25T02:02:37.623Z"
 }
