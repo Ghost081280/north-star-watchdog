@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-20T09:39:57.247Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-20T10:36:38.804Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-03-25T16:14:04.586Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-25T17:58:06.954Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Sues Trump Administration?",
-    "Where did the $100M+ allegedly go in Minnesota Daycare Scandal?",
-    "What other organizations is Powell connected to?",
     "What other organizations is Trump administration officials connected to?",
     "Where did the Unknown allegedly go in Minnesota shootings investigation?",
     "Where did the Unknown allegedly go in Federal Reserve investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Minnesota man connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future fraud investigation?",
     "Where did the Unknown allegedly go in ICE shooting investigations?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future investigation?",
+    "Where did the Unknown allegedly go in ICE shooting investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1692,
-    "articlesProcessed": 84300,
-    "redFlagsFound": 1968,
+    "totalScans": 1693,
+    "articlesProcessed": 84350,
+    "redFlagsFound": 1969,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump Administration connected to?",
-        "Where did the Unknown allegedly go in Minnesota Shootings Investigation?",
-        "Where did the Unknown allegedly go in Federal Reserve Investigation?"
+        "Where did the Unknown allegedly go in Minnesota Sues Trump Administration?",
+        "Where did the $100M+ allegedly go in Minnesota Daycare Scandal?",
+        "What other organizations is Powell connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-25T16:14:04.586Z",
-  "lastUpdated": "2026-03-25T16:14:04.587Z"
+  "lastReflection": "2026-03-25T17:58:06.954Z",
+  "lastUpdated": "2026-03-25T17:58:06.955Z"
 }
