@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Withheld Evidence",
+      "description": "The Trump administration is being sued by Minnesota for withholding evidence in shooting investigations",
+      "insight": "This could indicate a larger pattern of obstruction of justice or a cover-up. Further investigation is needed to determine the extent of the evidence being withheld and the motivations behind it.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-for-evidence-in-good-pretti-killings/600246633/",
+      "id": "rf-1774443992379-x05audnre",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T13:06:32.376Z",
+      "isNew": true
+    },
+    {
       "type": "potential obstruction of justice",
       "description": "The Trump administration's withholding of evidence in shootings by agents during immigration crackdown",
       "insight": "This could indicate a larger pattern of wrongdoing by the administration and a lack of transparency. Further investigation is needed to uncover the extent of this issue.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T11:40:46.916Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential wrongdoing by Federal Reserve",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T11:40:46.916Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Lack of Transparency",
@@ -955,40 +975,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T14:01:45.438Z",
       "isNew": false
-    },
-    {
-      "type": "election fraud allegations",
-      "description": "New video appears to show election fraud in California, bribes & drugs for signatures",
-      "insight": "This could indicate a larger pattern of election fraud across states, with California being a focal point.",
-      "entities": [
-        "California"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "WBMA",
-      "sourceUrl": "https://www.wbma.com/news/national/new-video-appears-to-show-election-fraud-in-california-bribes-drugs-for-signatures",
-      "id": "rf-1773999597254-w7xjy66qf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T09:39:57.249Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T11:40:46.916Z"
+  "lastUpdated": "2026-03-25T13:06:32.376Z"
 }
