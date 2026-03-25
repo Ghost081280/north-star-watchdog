@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "potential obstruction of justice",
+      "description": "The Trump administration's withholding of evidence in shootings by agents during immigration crackdown",
+      "insight": "This could indicate a larger pattern of wrongdoing by the administration and a lack of transparency. Further investigation is needed to uncover the extent of this issue.",
+      "entities": [
+        "Trump Administration",
+        "Minnesota DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/minnesota-sues-trump-administration-over-withheld-evidence-in-shootings/2026/03/25/1b2b44c4-9f6c-11ee-85c7-1d036c6e9a29_story.html",
+      "id": "rf-1774438846920-13qpma568",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T11:40:46.916Z",
+      "isNew": true
+    },
+    {
+      "type": "potential wrongdoing by Federal Reserve",
+      "description": "The Federal Reserve investigation found lack of criminal evidence",
+      "insight": "This could indicate potential wrongdoing by the Federal Reserve and a lack of effective oversight. Further investigation is needed to uncover the extent of this issue.",
+      "entities": [
+        "Federal Reserve",
+        "DOJ"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/business/economy/prosecutor-conceded-lack-evidence-federal-reserve-investigation-transcript-shows/2026/03/25/8a6e556c-11ee-11ef-85c7-1d036c6e9a29_story.html",
+      "id": "rf-1774438846920-xeaqhobit",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T11:40:46.916Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of Transparency",
       "description": "The Trump administration's withholding of evidence in the Minnesota shootings investigation raises concerns about transparency and accountability.",
       "insight": "This lack of transparency may indicate a larger pattern of obstruction or cover-up, and further investigation is needed to determine the extent of the administration's involvement.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T10:47:39.188Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -934,60 +974,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T09:39:57.249Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The FBI is investigating several high-profile cases, including the Trump 'conspiracy' case and the Feeding Our Future fraud case. These investigations have raised concerns about corruption and abuse of power.",
-      "insight": "I suspect that these investigations may be connected to a larger pattern of corruption and abuse of power. Further investigation is needed to determine the extent of these allegations.",
-      "entities": [
-        "Trump",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1773995953965-gue6sj0hu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T08:39:13.961Z",
-      "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "$800K stolen by Melbourne fraud ring",
-      "insight": "This case indicates a significant amount of money was stolen through fraudulent means, suggesting a large-scale operation.",
-      "entities": [
-        "Melbourne Fraud Ring"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Mirage News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQWNaUFVNc3hIb2trRjhDbUR4RklWZnZwQnlyRWE0U29wU2tScDdSQmRYOFJQdVJYemt3X2gxZFJ5bEtNdkRoU193VDNhTi10X3BMYUs1cHduX3hha08tNF9BZkh3QWIybUItMkpUS2VHdHdPWW5fZnAxM052RGR3bjNqZDNIMnFS?oc=5",
-      "id": "rf-1773989622919-wpkqx7v4d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T06:53:42.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T10:47:39.188Z"
+  "lastUpdated": "2026-03-25T11:40:46.916Z"
 }

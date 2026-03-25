@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-20T05:51:41.631Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-03-20T06:53:42.912Z",
       "summary": "CRITICAL: 2 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
@@ -510,6 +505,11 @@
       "date": "2026-03-25T10:47:39.186Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-25T11:40:46.914Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Alex Pretti connected to?",
-    "What other organizations is Renee Good connected to?",
     "Where did the Unknown allegedly go in Minnesota v. Trump Administration?",
     "Where did the Unknown allegedly go in Inspector General Bill?",
     "What other organizations is Trump Administration Officials connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Trump administration officials connected to?",
     "Where did the Unknown allegedly go in Minnesota shootings investigation?",
     "Where did the Unknown allegedly go in Federal Reserve investigation?",
-    "What other organizations is Fed Chair connected to?"
+    "What other organizations is Fed Chair connected to?",
+    "Where did the $0 allegedly go in Minnesota vs. Trump Administration?",
+    "Where did the $0 allegedly go in Federal Reserve Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1688,
-    "articlesProcessed": 84100,
-    "redFlagsFound": 1963,
+    "totalScans": 1689,
+    "articlesProcessed": 84150,
+    "redFlagsFound": 1965,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Shah Alam connected to?",
         "What other organizations is Alex Pretti connected to?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "Where did the Unknown allegedly go in Minnesota v. Trump Administration?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-25T10:47:39.186Z",
-  "lastUpdated": "2026-03-25T10:47:39.187Z"
+  "lastReflection": "2026-03-25T11:40:46.914Z",
+  "lastUpdated": "2026-03-25T11:40:46.915Z"
 }
