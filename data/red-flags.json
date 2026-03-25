@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The federal government is investigating several high-profile cases, including the Feeding Our Future fraud scheme and the ICE shooting investigations",
+      "insight": "These investigations suggest a pattern of corruption and lack of accountability in government and private organizations. Further investigation is needed to determine the extent of the corruption and to hold those responsible accountable.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future",
+        "ICE"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/nation/2026/03/25/minnesota-sues-trump-administration-over-withheld-evidence-in-ice-shootings/",
+      "id": "rf-1774455244592-tci94zrbg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T16:14:04.588Z",
+      "isNew": true
+    },
+    {
       "type": "Withheld Evidence",
       "description": "The Trump administration is being sued by Minnesota for withholding evidence in shooting investigations",
       "insight": "This could indicate a larger pattern of obstruction of justice or a cover-up. Further investigation is needed to determine the extent of the evidence being withheld and the motivations behind it.",
@@ -956,40 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T16:41:22.390Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Ohio day cares collected $1.1M in overpayments, many haven't paid it back",
-      "insight": "This suggests potential fraud and misuse of funds in the Ohio day care system, which may require further investigation.",
-      "entities": [
-        "Ohio day cares"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "The Columbus Dispatch",
-      "sourceUrl": "https://www.dispatch.com/story/news/2026/03/20/ohio-day-cares-collected-11m-overpayments-many-havent-paid-it-back/63552224007/",
-      "id": "rf-1774015305442-zin8ky7zn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T14:01:45.438Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T14:58:14.675Z"
+  "lastUpdated": "2026-03-25T16:14:04.588Z"
 }
