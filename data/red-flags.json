@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of Transparency",
+      "description": "The Trump administration is being sued by Minnesota for withholding evidence in shootings by federal officers. This lack of transparency raises concerns about government accountability.",
+      "insight": "I suspect a pattern of obstruction of justice, and I recommend further investigation into the Trump administration's handling of evidence in this case.",
+      "entities": [
+        "Trump Administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2023/03/24/us/minnesota-prosecutors-sue-to-access-evidence-in-shootings-by-agents-during-immigration-crackdown.html",
+      "id": "rf-1774422898595-maqdrzgss",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T07:14:58.592Z",
+      "isNew": true
+    },
+    {
       "type": "potential evidence tampering",
       "description": "The Trump administration's withholding of evidence in shootings raises concerns about potential evidence tampering",
       "insight": "This could indicate a larger cover-up or obstruction of justice. Investigating the extent of evidence withholding and its impact on cases is necessary.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T06:00:03.636Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "lack of evidence",
@@ -36,26 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T06:00:03.636Z",
-      "isNew": true
-    },
-    {
-      "type": "Lack of transparency",
-      "description": "The Trump administration is being sued by Minnesota for withholding evidence in shootings by federal officers during an ICE surge.",
-      "insight": "This lack of transparency is concerning and warrants further investigation. It is possible that the Trump administration is hiding something, and it is the responsibility of the state of Minnesota to seek answers.",
-      "entities": [
-        "Trump administration",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-for-evidence-in-good-pretti-killings/600246203/",
-      "id": "rf-1774414366336-ruak53pvv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T04:52:46.333Z",
       "isNew": false
     },
     {
@@ -978,17 +978,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T06:00:03.636Z"
+  "lastUpdated": "2026-03-25T07:14:58.592Z"
 }
