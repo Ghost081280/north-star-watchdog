@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Lack of Transparency",
+      "description": "The Trump administration's withholding of evidence in the Minnesota shootings investigation raises concerns about transparency and accountability.",
+      "insight": "This lack of transparency may indicate a larger pattern of obstruction or cover-up, and further investigation is needed to determine the extent of the administration's involvement.",
+      "entities": [
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/nation/2026/03/25/minnesota-sues-trump-administration-shootings/",
+      "id": "rf-1774435659191-orfcvo1os",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T10:47:39.188Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The lack of evidence in the Federal Reserve investigation could indicate a lack of wrongdoing or a flawed investigation.",
       "insight": "This could indicate a need for further investigation into the Federal Reserve.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T09:53:07.134Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Withholding evidence",
@@ -152,25 +171,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-24T22:29:43.284Z",
-      "isNew": false
-    },
-    {
-      "type": "lack of transparency",
-      "description": "The Trump administration's withholding of evidence in the shootings of Alex Pretti and Renee Good has raised concerns about government transparency and accountability.",
-      "insight": "This lack of transparency could indicate a larger issue with government accountability and the need for further investigation.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1774388232285-5l8hoqwma",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T21:37:12.282Z",
       "isNew": false
     },
     {
@@ -977,17 +977,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T09:53:07.134Z"
+  "lastUpdated": "2026-03-25T10:47:39.188Z"
 }
