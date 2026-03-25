@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "potential evidence tampering",
+      "description": "The Trump administration's withholding of evidence in shootings raises concerns about potential evidence tampering",
+      "insight": "This could indicate a larger cover-up or obstruction of justice. Investigating the extent of evidence withholding and its impact on cases is necessary.",
+      "entities": [
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/minnesota-sues-trump-administration-over-withheld-evidence-in-shootings/2026/03/25/",
+      "id": "rf-1774418403640-zipey5rmr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T06:00:03.636Z",
+      "isNew": true
+    },
+    {
+      "type": "lack of evidence",
+      "description": "The DOJ's conceded lack of criminal evidence in the Federal Reserve investigation raises concerns about the effectiveness of the investigation",
+      "insight": "This could indicate a lack of thoroughness in the investigation or insufficient resources. Further investigation into the investigation's procedures is warranted.",
+      "entities": [
+        "DOJ"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/prosecutor-admits-lacking-evidence-in-powell-investigation-unsealed-transcripts-show/2026/03/25/",
+      "id": "rf-1774418403640-om741apj8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T06:00:03.636Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of transparency",
       "description": "The Trump administration is being sued by Minnesota for withholding evidence in shootings by federal officers during an ICE surge.",
       "insight": "This lack of transparency is concerning and warrants further investigation. It is possible that the Trump administration is hiding something, and it is the responsibility of the state of Minnesota to seek answers.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T04:52:46.333Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "withholding evidence",
@@ -936,61 +974,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T05:51:41.634Z",
       "isNew": false
-    },
-    {
-      "type": "potential wrongdoing by government officials",
-      "description": "Two ex-FBI agents are suing for wrongful termination related to the 'Arctic Frost' investigation",
-      "insight": "This could indicate potential wrongdoing or misconduct by government officials, which could have significant implications for accountability and oversight.",
-      "entities": [
-        "FBI",
-        "ex-FBI agents"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://www.washingtonexaminer.com/breaking-news/two-ex-fbi-agents-assigned-to-arctic-frost-investigation-sue-patiel-and-bondi-over-wrongful-termination-18514472",
-      "id": "rf-1773956074755-lesv2q53y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T21:34:34.751Z",
-      "isNew": false
-    },
-    {
-      "type": "Potential abuse of power",
-      "description": "The Trump administration's investigation into New Jersey abortion coverage has been criticized as a waste of taxpayer money. This raises concerns about the potential for abuse of power and politicization of investigations.",
-      "insight": "I am concerned that the Trump administration's investigation into New Jersey abortion coverage may be motivated by political considerations rather than a genuine concern for the public interest. Further investigation is needed to determine the facts and ensure that the administration is not abusing its power.",
-      "entities": [
-        "Trump administration",
-        "New Jersey"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Mikie Sherrill",
-      "sourceUrl": "https://www.inquirer.com/news/mikie-sherrill-trump-administration-investigation-new-jersey-abortion-coverage-20260319.html",
-      "id": "rf-1773952571248-baufcatfz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T20:36:11.245Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T04:52:46.333Z"
+  "lastUpdated": "2026-03-25T06:00:03.636Z"
 }
