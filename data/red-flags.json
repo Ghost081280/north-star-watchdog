@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Lack of transparency",
+      "description": "The Trump administration is being sued by Minnesota for withholding evidence in shootings by federal officers during an ICE surge.",
+      "insight": "This lack of transparency is concerning and warrants further investigation. It is possible that the Trump administration is hiding something, and it is the responsibility of the state of Minnesota to seek answers.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-for-evidence-in-good-pretti-killings/600246203/",
+      "id": "rf-1774414366336-ruak53pvv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-25T04:52:46.333Z",
+      "isNew": true
+    },
+    {
       "type": "withholding evidence",
       "description": "The Trump administration is accused of withholding evidence in the Minnesota shootings investigation.",
       "insight": "This raises concerns about government transparency and accountability. Further investigation is needed to determine the extent of the evidence withholding and its impact on the case.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-25T02:02:37.623Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Withholding evidence",
@@ -956,38 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-19T20:36:11.245Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI investigation into Joe Kent for leaking classified information",
-      "insight": "This investigation may be related to other cases of leaked classified information",
-      "entities": [
-        "Joe Kent"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "People.com",
-      "sourceUrl": "https://people.com/politics/joe-kent-under-fbi-investigation-before-resigning-as-counterterrorism-chief-2026-03-19",
-      "id": "rf-1773949625655-ib2wkkf8u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-19T19:47:05.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T02:02:37.623Z"
+  "lastUpdated": "2026-03-25T04:52:46.333Z"
 }
