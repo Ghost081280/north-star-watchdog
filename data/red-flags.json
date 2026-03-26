@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential voter record tampering",
+      "description": "Minnesota elections office subpoenaed in federal criminal probe",
+      "insight": "This could indicate a larger issue with election integrity in Minnesota. Further investigation is needed to determine the extent of the tampering and those involved.",
+      "entities": [
+        "Minnesota elections office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minnesota-elections-office-subpoenaed-federal-criminal-probe/",
+      "id": "rf-1774554887330-sd2brobqd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T19:54:47.327Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ has launched an investigation into the Ohio State College of Medicine for possible Title VI violations.",
       "insight": "This investigation may indicate a larger pattern of discrimination in medical schools. Further research is needed to determine the scope of the issue.",
@@ -959,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-21T07:32:35.687Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "A federal investigation has been launched into the Rogers Park shooting",
-      "insight": "The involvement of federal agencies suggests the possibility of organized crime or gang activity, which should be further explored.",
-      "entities": [
-        "Rogers Park"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "12newsnow.com",
-      "sourceUrl": "https://www.12newsnow.com/12-news-now/additional-arrests-made-in-connection-to-rogers-park-shooting-federal-investigation-being-launched/2026/03/21",
-      "id": "rf-1774075258227-nmbgjpdro",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-21T06:40:58.224Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,13 +986,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T18:04:27.167Z"
+  "lastUpdated": "2026-03-26T19:54:47.327Z"
 }
