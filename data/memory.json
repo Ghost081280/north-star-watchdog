@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-21T09:30:26.688Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-21T10:25:17.685Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-26T21:30:38.430Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-26T22:28:22.950Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in ICE shootings investigation?",
-    "Where did the Over 131,000 records allegedly go in Hightower Holding LLC data breach investigation?",
-    "What other organizations is Former Maryland childcare center owner connected to?",
     "What other organizations is PA Man connected to?",
     "Where did the None allegedly go in ICE Shootings Investigation?",
     "Where did the None allegedly go in ICE shootings investigation?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against ?",
     "Where did the $2.5M allegedly go in Pennsylvania Man Sentenced For $2.5M Childcare Fraud Scheme?",
     "What other organizations is Will Wade connected to?",
-    "What specific allegations exist against Will Wade?"
+    "What specific allegations exist against Will Wade?",
+    "What other organizations is Miguel Oliveras connected to?",
+    "Where did the Unknown allegedly go in Minnesota elections office investigation?",
+    "Where did the Unknown allegedly go in MacDill Air Force Base investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1712,
-    "articlesProcessed": 85300,
-    "redFlagsFound": 1988,
+    "totalScans": 1713,
+    "articlesProcessed": 85350,
+    "redFlagsFound": 1989,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in ICE Shootings Investigation?",
-        "What other organizations is Skowhegan town manager connected to?",
-        "Where did the Unknown allegedly go in ICE shootings investigation?"
+        "Where did the Unknown allegedly go in ICE shootings investigation?",
+        "Where did the Over 131,000 records allegedly go in Hightower Holding LLC data breach investigation?",
+        "What other organizations is Former Maryland childcare center owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-26T21:30:38.430Z",
-  "lastUpdated": "2026-03-26T21:30:38.431Z"
+  "lastReflection": "2026-03-26T22:28:22.950Z",
+  "lastUpdated": "2026-03-26T22:28:22.950Z"
 }
