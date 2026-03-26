@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ has launched an investigation into the Ohio State College of Medicine for possible Title VI violations.",
+      "insight": "This investigation may indicate a larger pattern of discrimination in medical schools. Further research is needed to determine the scope of the issue.",
+      "entities": [
+        "Ohio State College of Medicine"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "10tv.com",
+      "sourceUrl": "https://10tv.com/news/local-news/doj-launches-title-vi-investigation-into-ohio-state-college-of-medicine-admissions-policy",
+      "id": "rf-1774537387693-ux4yhv3bo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T15:03:07.689Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal investigation into Hightower Holding LLC for data breach of over 131,000 records.",
       "insight": "Potential for widespread identity theft and cybersecurity concerns.",
@@ -959,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-21T06:40:58.224Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation has been launched into the Rogers Park shooting, which may be connected to a larger fraud scheme",
-      "insight": "I suspect that the Rogers Park shooting may be connected to a larger fraud scheme, potentially involving government funding programs. Further investigation is needed to determine the extent of the scheme and the individuals involved.",
-      "entities": [
-        "Rogers Park"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "12newsnow.com",
-      "sourceUrl": "https://www.12newsnow.com/article/news/crime/additional-arrests-made-in-connection-to-rogers-park-shooting-federal-investigation-being-launched/502-8c251a4a-4f4a-۴c۷-۸c۳-۴c۷c۳c۷c",
-      "id": "rf-1774071594317-792vf625p",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-21T05:39:54.313Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,7 +989,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T13:11:38.878Z"
+  "lastUpdated": "2026-03-26T15:03:07.689Z"
 }
