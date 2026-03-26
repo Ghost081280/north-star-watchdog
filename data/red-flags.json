@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal investigation into Hightower Holding LLC for data breach of over 131,000 records.",
+      "insight": "Potential for widespread identity theft and cybersecurity concerns.",
+      "entities": [
+        "Hightower Holding LLC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kbnpsSURja1paN1ktcHE5dlh0c09FdWkxc3pwTy0yczllZFBiRC12YS02YjZySDFfVUlLM25NNHE2cm90M1o2UmxhVjJxeDVZYkd5TF9rS1JVdkd2Nk5UX2g5UTk3Y3c",
+      "id": "rf-1774523062359-viaykkmi4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T11:04:22.355Z",
+      "isNew": true
+    },
+    {
+      "type": "lawsuit",
+      "description": "Minnesota sues federal government for evidence in ICE shootings.",
+      "insight": "Potential for increased transparency and accountability in ICE operations.",
+      "entities": [
+        "Minnesota",
+        "Trump Administration"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "ProPublica",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmRJM3hDeklLQk5rQ0tiSHMxUlpJekw0VUthNGJYemtWNnlVamVEMWNyZjlldnRrTmVIcmtqdFRPc1JEczJOeW4teDR0M3pPeXNWODRwT09MVWhWOWlnbnkzemZlei1KOVg1WnFRczQwRzBpbTZ2ZFBuMnpib1pKaGFLdkpWSDZwY0xlQjFpalhoM3BDdzAxQnZR",
+      "id": "rf-1774523062359-2f51rrnj9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T11:04:22.355Z",
+      "isNew": true
+    },
+    {
       "type": "Data breach",
       "description": "Hightower Holding LLC has been breached, resulting in the exposure of over 131,000 records.",
       "insight": "This breach may indicate a lack of security measures in place, and further investigation is needed to determine the cause and extent of the breach.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-26T10:00:25.992Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -939,48 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-21T05:39:54.313Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Rogers Park shooting has led to a federal investigation, which may indicate a larger pattern of crime in the area",
-      "insight": "I am concerned that the Rogers Park shooting may be connected to other crimes in the area, and the federal investigation may uncover a larger pattern of activity. I recommend tracking the investigation and looking for connections to other cases.",
-      "entities": [
-        "Rogers Park"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "12newsnow.com",
-      "sourceUrl": "https://www.12newsnow.com/article/news/crime/additional-arrests-made-in-connection-to-rogers-park-shooting-federal-investigation-being-launched/287-4c6a54a7-7f4f-4f9b-8f5d-4a9a4d9f5e6d",
-      "id": "rf-1774065900832-01awvu88d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-21T04:05:00.829Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Feeding Our Future scheme involved a large-scale pandemic fraud operation, with over $50 million allegedly involved.",
-      "insight": "This suggests a significant vulnerability in pandemic relief programs that needs to be addressed.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KROC-AM",
-      "sourceUrl": "https://KROC-AM.com",
-      "id": "rf-1774042151040-paaqt3w6n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T21:29:11.036Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T10:00:25.992Z"
+  "lastUpdated": "2026-03-26T11:04:22.355Z"
 }

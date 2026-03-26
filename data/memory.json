@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-20T22:27:37.526Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-20T23:27:35.826Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-26T10:00:25.990Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-26T11:04:22.353Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 75,
+      "count": 76,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-03-20T23:27:35.827Z"
+      "lastSeen": "2026-03-26T11:04:22.353Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future investigation?",
-    "Where did the Unknown allegedly go in ICE shooting investigation?",
     "What other organizations is Baltimore Childcare Kingpin connected to?",
     "What other organizations is Keene man connected to?",
     "Where did the 131,000 records allegedly go in Hightower Holding LLC Data Breach Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is PA Man connected to?",
     "Where did the None allegedly go in ICE Shootings Investigation?",
     "Where did the None allegedly go in ICE shootings investigation?",
-    "Where did the 131,000 records allegedly go in Hightower Holding LLC data breach investigation?"
+    "Where did the 131,000 records allegedly go in Hightower Holding LLC data breach investigation?",
+    "Where did the Over 131,000 Records allegedly go in Hightower Holding LLC Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1704,
-    "articlesProcessed": 84900,
-    "redFlagsFound": 1978,
+    "totalScans": 1705,
+    "articlesProcessed": 84950,
+    "redFlagsFound": 1980,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $250M allegedly go in Feeding Our Future investigation?"
+        "Where did the $250M allegedly go in Feeding Our Future investigation?",
+        "Where did the Unknown allegedly go in ICE shooting investigation?",
+        "What other organizations is Baltimore Childcare Kingpin connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-26T10:00:25.990Z",
-  "lastUpdated": "2026-03-26T10:00:25.991Z"
+  "lastReflection": "2026-03-26T11:04:22.353Z",
+  "lastUpdated": "2026-03-26T11:04:22.353Z"
 }
