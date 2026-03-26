@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-20T17:35:14.367Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-20T18:46:57.460Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-25T23:33:44.623Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-26T02:08:53.172Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Undisclosed allegedly go in Feeding Our Future Investigation?",
-    "What other organizations is Renee Good connected to?",
-    "What specific allegations exist against Renee Good?",
     "What other organizations is Alex Pretti connected to?",
     "What specific allegations exist against Alex Pretti?",
     "What other organizations is Minnesota Attorney General Ellison connected to?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Minnesota ICE Shooting Investigation?",
     "What other organizations is Hightower Holding LLC connected to?",
     "Are any of these 3 figures connected to each other?",
-    "Where did the $2.76M allegedly go in Investigation into Feeding Our Future?"
+    "Where did the $2.76M allegedly go in Investigation into Feeding Our Future?",
+    "What other organizations is Michael Flynn connected to?",
+    "What other organizations is Taylor Frankie Paul connected to?",
+    "Where did the Unknown allegedly go in ICE Shootings Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1699,
-    "articlesProcessed": 84650,
-    "redFlagsFound": 1974,
+    "totalScans": 1700,
+    "articlesProcessed": 84700,
+    "redFlagsFound": 1975,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in Minnesota vs. Trump Administration?",
         "Where did the Undisclosed allegedly go in Feeding Our Future Investigation?",
-        "What other organizations is Renee Good connected to?"
+        "What other organizations is Renee Good connected to?",
+        "What specific allegations exist against Renee Good?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-25T23:33:44.623Z",
-  "lastUpdated": "2026-03-25T23:33:44.624Z"
+  "lastReflection": "2026-03-26T02:08:53.172Z",
+  "lastUpdated": "2026-03-26T02:08:53.173Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Hightower Holding LLC is under investigation for a data breach of over 131,000 records, which may indicate a larger issue with the company's security and potential shell company activity.",
+      "insight": "I suspect that Hightower Holding LLC may be a shell company, and further investigation is needed to determine the extent of their activities and potential connections to other entities.",
+      "entities": [
+        "Hightower Holding LLC"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.sjklaw.com/news/hightower-holding-llc-under-investigation-for-data-breach-of-over-131000-records/",
+      "id": "rf-1774490933177-wlbl7gjtj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T02:08:53.174Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Minnesota is suing the federal government for evidence in ICE shooting investigations",
       "insight": "This red flag suggests that there may be a lack of transparency or cooperation between state and federal agencies, which could hinder investigations and justice. I recommend further investigation into the relationship between state and federal agencies.",
@@ -959,30 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T20:30:41.590Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "Feeding Our Future fraud scheme involves multiple defendants and ongoing investigation",
-      "insight": "The Feeding Our Future fraud scheme is a significant concern, with multiple defendants pleading guilty and an ongoing investigation. This suggests a large-scale fraud operation.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Google News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObl9oMWJ0RUNGQmdVQWo2ZXpIa0J0SXJleTVXXy01VWkwLUlCdXpRc0hTSUZYLTRfVF9Xa1NRVE83aEdYWnpyQWNCejZSck1reXBjR0U2b0Ztc0p2U1ZYS3VhNkJhZV9ieDFoYmIzZ0Q0MWhDXzNYLTdJUDNhRWpEd00xekkybWdlS1N5dWljNEp3ejFuQUN6SC1kdXR2YllDY3pYdA",
-      "id": "rf-1774035435583-q4pr7c2kl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T19:37:15.578Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -992,7 +992,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-25T23:33:44.625Z"
+  "lastUpdated": "2026-03-26T02:08:53.174Z"
 }
