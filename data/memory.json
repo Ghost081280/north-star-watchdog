@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-21T04:05:00.827Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-21T05:39:54.311Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-26T15:03:07.687Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-03-26T16:59:38.477Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1707,
-    "articlesProcessed": 85050,
+    "totalScans": 1708,
+    "articlesProcessed": 85100,
     "redFlagsFound": 1981,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Baltimore Childcare Kingpin connected to?",
-        "What other organizations is Keene man connected to?",
-        "Where did the 131,000 records allegedly go in Hightower Holding LLC Data Breach Investigation?"
+        "What other organizations is Hightower Holding LLC connected to?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $2.76M allegedly go in Investigation into Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-26T15:03:07.687Z",
-  "lastUpdated": "2026-03-26T15:03:07.688Z"
+  "lastReflection": "2026-03-26T16:59:38.477Z",
+  "lastUpdated": "2026-03-26T16:59:38.477Z"
 }
