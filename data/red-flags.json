@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal probe",
+      "description": "Minnesota elections office subpoenaed in federal criminal probe over non-citizen voter rolls",
+      "insight": "This could indicate potential voter fraud or irregularities in Minnesota's voter registration process.",
+      "entities": [
+        "Minnesota elections office"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU0NvZ0NBcFFrMWVPdDdyUEwzdFR6M2w4WW5QUkpmcmhtVXlxT25lc2VsOGdSeVNZUWFLQ2Z6UGR5RVB2Zzg3S01hX2dmdnNoTVdsY0w5blJuNXZjUFE4QTlWbmRZenB2bWVJZUU4cXh4Zm1IOXQ4dzJ0ZlByN1U2S2prTTZLQjdYTE1fZmk3cTczSDdYSElWRWpOZGZtM0U1eHdOV3N4MGFOMFluWnBweWN2aU9KX1I1T3o4VTV30gHDAUFVX3lxTFBabWhrWDZLaTNnaGoyTHZ2MVRrQmQ0MEFxeFdqbXk1VDh0N2JFeW03NnhfcDZQRGtZWTN1UmpqdnBqRks3S2JOWGRfclhSMzJRTG01Z29OWmxjUGVNUUhQYzd6QTlBWTEwUGhodGJIckNPZU9MNHFIUHV4XzRiZWdoZTdYLUdHVjF6Y2VjXy0yV2I4Tk5BV01lZHlTQkY1cG9TRGFzUkJEYTJuVUtGWkkxcVhWYXF0TFNyVGJLdHBIWVhVVQ",
+      "id": "rf-1774567899381-9yj5qyq2o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T23:31:39.378Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing, including ones into voter rolls and a bomb case.",
       "insight": "These investigations may be connected or indicate a larger issue. Further research is needed to determine the extent of the investigations and potential connections.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-26T22:28:22.952Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -957,31 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-21T11:22:07.880Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Feeding Our Future program terminated due to fraud allegations",
-      "insight": "The Feeding Our Future program was terminated due to allegations of wire fraud and money laundering, indicating a potential lack of oversight and controls.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Northern News Now",
-      "sourceUrl": "https://www.northernnewsnow.com/2026/03/21/five-more-plead-guilty-feeding-our-future-fraud-case-minnesota",
-      "id": "rf-1774088717691-j6l82nbb5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-21T10:25:17.687Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +988,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T22:28:22.952Z"
+  "lastUpdated": "2026-03-26T23:31:39.378Z"
 }
