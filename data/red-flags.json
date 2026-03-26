@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Data breach",
+      "description": "Hightower Holding LLC has been breached, resulting in the exposure of over 131,000 records.",
+      "insight": "This breach may indicate a lack of security measures in place, and further investigation is needed to determine the cause and extent of the breach.",
+      "entities": [
+        "Hightower Holding LLC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.sjk-law.com/news/hightower-holding-llc-under-investigation-for-data-breach-of-over-131000-records",
+      "id": "rf-1774519225996-bc29vq7qe",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-26T10:00:25.992Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Hightower Holding LLC is under investigation for a data breach of over 131,000 records, which may indicate a larger issue with the company's security and potential shell company activity.",
       "insight": "I suspect that Hightower Holding LLC may be a shell company, and further investigation is needed to determine the extent of their activities and potential connections to other entities.",
@@ -958,26 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-20T21:29:11.036Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating Colombia President Gustavo Petro, which may indicate a larger pattern of corruption.",
-      "insight": "This investigation could lead to further discoveries of corruption and embezzlement. I recommend tracking the investigation and searching for connections to other entities.",
-      "entities": [
-        "Gustavo Petro",
-        "Colombian Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/03/20/world/americas/colombia-president-gustavo-petro-investigation.html",
-      "id": "rf-1774038641594-k3ec2g4nn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-20T20:30:41.590Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,6 +985,7 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T08:54:02.908Z"
+  "lastUpdated": "2026-03-26T10:00:25.992Z"
 }
