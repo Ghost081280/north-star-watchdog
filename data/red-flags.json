@@ -1,23 +1,23 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The federal government has frozen funds for Medicaid in Minnesota due to suspected fraud.",
-      "insight": "This freeze may indicate a larger issue with Medicaid fraud in the state, and further investigation is needed to determine the extent of the problem.",
+      "type": "federal freeze",
+      "description": "Potential federal freeze on Minnesota Medicaid funds",
+      "insight": "The Minnesota Medicaid fraud investigation may lead to a federal freeze on funds, which could have significant implications for the state's healthcare system.",
       "entities": [
-        "Minnesota Medicaid"
+        "Minnesota Department of Health"
       ],
       "confidence": 80,
       "priority": "high",
       "source": "The Center Square",
-      "sourceUrl": "https://www.thecentersquare.com/minnesota/article_8c41f4d2-cc7a-11ec-8f6c-47eb3c3e7a3d.html",
-      "id": "rf-1774637662680-39ydfjehw",
+      "sourceUrl": "https://www.thecentersquare.com/minnesota/fraud-task-force-minnesota-snap-reciepts-not-available/",
+      "id": "rf-1774643852740-7htu4aaws",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-27T18:54:22.676Z",
-      "isNew": false
+      "detectedAt": "2026-03-27T20:37:32.736Z",
+      "isNew": true
     },
     {
       "type": "program_termination",
@@ -980,15 +980,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T19:40:22.113Z"
+  "lastUpdated": "2026-03-27T20:37:32.736Z"
 }
