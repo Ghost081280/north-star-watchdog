@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen funds for Medicaid in Minnesota due to suspected fraud.",
+      "insight": "This freeze may indicate a larger issue with Medicaid fraud in the state, and further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "Minnesota Medicaid"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Center Square",
+      "sourceUrl": "https://www.thecentersquare.com/minnesota/article_8c41f4d2-cc7a-11ec-8f6c-47eb3c3e7a3d.html",
+      "id": "rf-1774637662680-39ydfjehw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T18:54:22.676Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential program termination due to fraud allegations",
       "insight": "The Minnesota Medicaid fraud investigation and the Texas child care spending review raise concerns about potential program termination due to fraud allegations. Further investigation is needed to determine the extent of the fraud and potential consequences.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T17:49:26.389Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -39,26 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T16:54:32.324Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Trump administration freezes childcare funding nationwide",
-      "insight": "This freeze may be a sign of a larger issue with child care fraud, and warrants further investigation.",
-      "entities": [
-        "Trump administration",
-        "Child care providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/news/politics/trump-administration-freezes-childcare-funding-nationwide/ar-BB12jXKo",
-      "id": "rf-1774622899835-t3ew3w6yh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T14:48:19.831Z",
       "isNew": false
     },
     {
@@ -981,6 +980,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,6 +989,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T17:49:26.389Z"
+  "lastUpdated": "2026-03-27T18:54:22.676Z"
 }
