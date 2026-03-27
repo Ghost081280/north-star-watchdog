@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-22T07:37:57.328Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-03-22T08:32:44.310Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-27T21:33:25.962Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-03-27T22:30:31.879Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Donald Trump?",
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $2M allegedly go in Minnesota tax evasion case?",
     "What other organizations is Minnesota man connected to?",
     "Where did the Unknown allegedly go in Ohio State College of Medicine investigation?",
     "Where did the Unknown allegedly go in Fulton County election investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is JD Vance connected to?",
     "Where did the $4 million allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $0 allegedly go in Fulton County Ballot Investigation?"
+    "Where did the $0 allegedly go in Fulton County Ballot Investigation?",
+    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $X allegedly go in Fulton County ballot investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1730,
-    "articlesProcessed": 86200,
-    "redFlagsFound": 2007,
+    "totalScans": 1731,
+    "articlesProcessed": 86250,
+    "redFlagsFound": 2008,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
-        "What specific allegations exist against Janet Mills?",
-        "What specific allegations exist against Donald Trump?"
+        "What specific allegations exist against Donald Trump?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $2M allegedly go in Minnesota tax evasion case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-27T21:33:25.962Z",
-  "lastUpdated": "2026-03-27T21:33:25.963Z"
+  "lastReflection": "2026-03-27T22:30:31.879Z",
+  "lastUpdated": "2026-03-27T22:30:31.880Z"
 }
