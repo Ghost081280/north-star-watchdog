@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Tax evasion",
+      "description": "A Minnesota man has been accused of tax evasion and underreporting income by nearly $2M while claiming $40K in SNAP and medical aid.",
+      "insight": "This case highlights the need for increased scrutiny of tax returns and benefit claims to prevent similar instances of fraud. Further investigation is necessary to determine the extent of the issue and identify potential patterns.",
+      "entities": [
+        "Minnesota man"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/news/minnesota-man-accused-tax-evasion-underreporting-income-140000-snap-medical-aid/24610341/",
+      "id": "rf-1774611652277-zen6ms5lt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T11:40:52.274Z",
+      "isNew": true
+    },
+    {
       "type": "electoral integrity",
       "description": "FBI seizure of 2020 election materials in Fulton County, Georgia",
       "insight": "This case raises concerns about electoral integrity and the potential for voter suppression.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T10:47:29.716Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged misconduct",
@@ -957,41 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-22T05:52:39.803Z",
       "isNew": false
-    },
-    {
-      "type": "Theft by executive director",
-      "description": "The executive director of a Minnesota suicide prevention nonprofit stole $220K from the organization, highlighting the need for increased oversight and accountability in non-profit management.",
-      "insight": "This case raises concerns about the lack of transparency and accountability in non-profit organizations, particularly when it comes to financial management. Further investigation is needed to determine the extent of the theft and whether there were any other individuals involved.",
-      "entities": [
-        "Aimee Bock",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-sentencing-date-set-for-convicted-feeding-our-future-ringleader-aimee-bock",
-      "id": "rf-1774145038867-qldn1bh15",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-22T02:03:58.864Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T10:47:29.716Z"
+  "lastUpdated": "2026-03-27T11:40:52.274Z"
 }
