@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations are currently underway, including a joint narcotic investigation in Evansville and an investigation into Ohio State.",
+      "insight": "I notice that there are multiple federal investigations currently underway, which suggests a heightened focus on combating crime and corruption. I will continue to monitor these investigations and look for any patterns or connections between them.",
+      "entities": [
+        "DOJ",
+        "Ohio State"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://wevv.com/news/10-indicted-in-federal-methamphetamine-conspiracy-investigation-in-evansville",
+      "id": "rf-1774577405537-aps4t3jtr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T02:10:05.534Z",
+      "isNew": true
+    },
+    {
       "type": "federal probe",
       "description": "Minnesota elections office subpoenaed in federal criminal probe over non-citizen voter rolls",
       "insight": "This could indicate potential voter fraud or irregularities in Minnesota's voter registration process.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-26T23:31:39.378Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -956,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-21T12:44:13.276Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has launched an investigation into the Feeding Our Future non-profit organization, alleging wire fraud and money laundering",
-      "insight": "This investigation highlights the need for increased oversight of non-profit organizations to prevent fraudulent activities. I will continue to monitor this case and look for patterns of similar behavior in other organizations.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1774092127884-0ejsj46iu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-21T11:22:07.880Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,12 +984,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-26T23:31:39.378Z"
+  "lastUpdated": "2026-03-27T02:10:05.534Z"
 }
