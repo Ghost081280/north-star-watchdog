@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Trump administration freezes childcare funding nationwide",
+      "insight": "This freeze may be a sign of a larger issue with child care fraud, and warrants further investigation.",
+      "entities": [
+        "Trump administration",
+        "Child care providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/politics/trump-administration-freezes-childcare-funding-nationwide/ar-BB12jXKo",
+      "id": "rf-1774622899835-t3ew3w6yh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T14:48:19.831Z",
+      "isNew": true
+    },
+    {
       "type": "Tax evasion",
       "description": "A Minnesota man has been accused of tax evasion and underreporting income by nearly $2M while claiming $40K in SNAP and medical aid.",
       "insight": "This case highlights the need for increased scrutiny of tax returns and benefit claims to prevent similar instances of fraud. Further investigation is necessary to determine the extent of the issue and identify potential patterns.",
@@ -58,26 +78,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T09:53:59.738Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has launched an investigation into the handling of Medicaid funding in Minnesota, which may indicate potential fraud or abuse.",
-      "insight": "I suspect that this investigation may uncover a larger pattern of fraud and abuse in Medicaid funding, potentially involving multiple states and entities. Further investigation is needed to determine the scope and extent of the issue.",
-      "entities": [
-        "Minnesota",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/03/26/sens-gillibrand-schumer-call-on-trump-admin-to-end-crackdown-on-medicaid-funding/",
-      "id": "rf-1774601476851-trosek3jd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T08:51:16.847Z",
       "isNew": false
     },
     {
@@ -980,15 +980,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T13:03:03.703Z"
+  "lastUpdated": "2026-03-27T14:48:19.831Z"
 }
