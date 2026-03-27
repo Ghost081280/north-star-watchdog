@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Trump administration is investigating multiple medical schools, including Stanford, Ohio State, and U.C. San Diego, for potential fraud.",
+      "insight": "This could indicate a larger pattern of fraud in the medical school system, and further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "Stanford",
+        "Ohio State",
+        "U.C. San Diego"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2023/03/27/us/trump-administration-medical-school-investigation.html",
+      "id": "rf-1774630472328-2cmixwtn0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T16:54:32.324Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Trump administration freezes childcare funding nationwide",
       "insight": "This freeze may be a sign of a larger issue with child care fraud, and warrants further investigation.",
@@ -956,39 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-22T10:26:30.527Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has issued a subpoena in the Maricopa County probe, focusing on a discredited 'audit'",
-      "insight": "This development suggests that the FBI is actively investigating potential wrongdoing in the Maricopa County audit, which may be connected to larger patterns of election interference or corruption",
-      "entities": [
-        "Maricopa County",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Democracy Docket",
-      "sourceUrl": "https://www.democracydocket.com/",
-      "id": "rf-1774158759807-ugd6311v4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-22T05:52:39.803Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T15:52:18.857Z"
+  "lastUpdated": "2026-03-27T16:54:32.324Z"
 }
