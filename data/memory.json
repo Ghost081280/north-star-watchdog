@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-21T15:24:31.316Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-21T16:28:00.284Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-27T08:51:16.845Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-27T09:53:59.736Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Will Wade connected to?",
-    "What specific allegations exist against Will Wade?",
-    "What other organizations is Miguel Oliveras connected to?",
     "Where did the Unknown allegedly go in Minnesota elections office investigation?",
     "Where did the Unknown allegedly go in MacDill Air Force Base investigation?",
     "What other organizations is Fugitive from 1988 heist connected to?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Fulton County Ballot Seizure?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the undisclosed allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?"
+    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
+    "What specific allegations exist against Janet Mills?",
+    "What specific allegations exist against Donald Trump?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1718,
-    "articlesProcessed": 85600,
-    "redFlagsFound": 1994,
+    "totalScans": 1719,
+    "articlesProcessed": 85650,
+    "redFlagsFound": 1995,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Miguel Oliveras?",
-        "What specific allegations exist against ?",
-        "Where did the $2.5M allegedly go in Pennsylvania Man Sentenced For $2.5M Childcare Fraud Scheme?"
+        "What other organizations is Will Wade connected to?",
+        "What specific allegations exist against Will Wade?",
+        "What other organizations is Miguel Oliveras connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-27T08:51:16.845Z",
-  "lastUpdated": "2026-03-27T08:51:16.846Z"
+  "lastReflection": "2026-03-27T09:53:59.736Z",
+  "lastUpdated": "2026-03-27T09:53:59.737Z"
 }
