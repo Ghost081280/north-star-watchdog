@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-21T14:25:32.155Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-21T15:24:31.316Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-03-27T07:04:58.024Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-27T08:51:16.845Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Miguel Oliveras?",
-    "What specific allegations exist against ?",
-    "Where did the $2.5M allegedly go in Pennsylvania Man Sentenced For $2.5M Childcare Fraud Scheme?",
     "What other organizations is Will Wade connected to?",
     "What specific allegations exist against Will Wade?",
     "What other organizations is Miguel Oliveras connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Felon Gun Store Employee connected to?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Kristi Noem connected to?",
-    "Where did the Unknown allegedly go in Fulton County Ballot Seizure?"
+    "Where did the Unknown allegedly go in Fulton County Ballot Seizure?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the undisclosed allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1717,
-    "articlesProcessed": 85550,
-    "redFlagsFound": 1993,
+    "totalScans": 1718,
+    "articlesProcessed": 85600,
+    "redFlagsFound": 1994,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Hanif Johnson connected to?",
-        "Where did the Unknown allegedly go in Minnesota Voter Records Investigation?",
-        "What specific allegations exist against Miguel Oliveras?"
+        "What specific allegations exist against Miguel Oliveras?",
+        "What specific allegations exist against ?",
+        "Where did the $2.5M allegedly go in Pennsylvania Man Sentenced For $2.5M Childcare Fraud Scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-27T07:04:58.024Z",
-  "lastUpdated": "2026-03-27T07:04:58.025Z"
+  "lastReflection": "2026-03-27T08:51:16.845Z",
+  "lastUpdated": "2026-03-27T08:51:16.846Z"
 }
