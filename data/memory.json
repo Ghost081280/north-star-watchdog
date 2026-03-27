@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-22T06:49:57.072Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-22T07:37:57.328Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-03-27T20:37:32.733Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-27T21:33:25.962Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
-    "What specific allegations exist against Janet Mills?",
     "What specific allegations exist against Donald Trump?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $2M allegedly go in Minnesota tax evasion case?",
@@ -558,7 +556,9 @@
     "Where did the $10 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the undisclosed allegedly go in Texas Child Care Spending Review?",
     "What other organizations is JD Vance connected to?",
-    "Where did the $4 million allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $4 million allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $0 allegedly go in Fulton County Ballot Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1729,
-    "articlesProcessed": 86150,
-    "redFlagsFound": 2006,
+    "totalScans": 1730,
+    "articlesProcessed": 86200,
+    "redFlagsFound": 2007,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the undisclosed allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?"
+        "Where did the undisclosed allegedly go in Minnesota Medicaid funding investigation?",
+        "What specific allegations exist against Janet Mills?",
+        "What specific allegations exist against Donald Trump?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-27T20:37:32.733Z",
-  "lastUpdated": "2026-03-27T20:37:32.734Z"
+  "lastReflection": "2026-03-27T21:33:25.962Z",
+  "lastUpdated": "2026-03-27T21:33:25.963Z"
 }
