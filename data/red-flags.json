@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to fraud allegations",
+      "insight": "The Minnesota Medicaid fraud investigation and the Texas child care spending review raise concerns about potential program termination due to fraud allegations. Further investigation is needed to determine the extent of the fraud and potential consequences.",
+      "entities": [
+        "Minnesota DHS",
+        "Texas child care program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS, Texas child care program",
+      "sourceUrl": "https://sanangelolive.com/story/after-minnesota-scandal-texas-reviewed-its-child-care-spending-it-found-little-fraud",
+      "id": "rf-1774633766393-guz42tiy3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-27T17:49:26.389Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Trump administration is investigating multiple medical schools, including Stanford, Ohio State, and U.C. San Diego, for potential fraud.",
       "insight": "This could indicate a larger pattern of fraud in the medical school system, and further investigation is needed to determine the extent of the issue.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T16:54:32.324Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -957,31 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-22T12:47:39.217Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program was terminated due to allegations of fraud",
-      "insight": "This termination suggests that there may have been inadequate oversight and controls in place, allowing fraudulent activities to occur. Further investigation into the program's management and oversight is warranted.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota Department of Health and Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZmFKdXh2clRnNUlLeU9SQXZGamRucF9kYWhkSU5ySEVTa1QxOU4yM0lGendzRFRZVlF6dFFMdFdzTzY2SWZDSVJYNnVRUlFlMkdZQzJSOFZJRm5YMU1wY1ZsTDNIbTlSSHBvVWF1V010aUVtREZKXzl1ZFBxRGFIYUhrdjBtVDFTSmRqd3FVM3d3Wk96OFRaaGFFVVVKZnBTSXFtdU9EV1pjOTBmblpaWEFaVGc5b09L0gG-AUFVX3lxTFA3QkxPRXRUMnVwQ0dVaEhNMXZIcjF3UjNHVmE5bFk3VXp2ZlBSZmNpV1JaVHRsN1VEOE9hQ0FFamp3Wk1IN0tKNmZyanl0emJvbGtTLVVJS0EzQnFCeUFpcDVlNVVtalpCVkdVRVNrMmZwaS03SERHSHNaS3N3cm9BM2tFMHB3aXpLd2pJcnZ5ZVlwcmFfdWJtZFBWMVVtWmxhVnhZTVN3MzlvOGFpRHdHdVZvQW1SWlV5QzhzTkE",
-      "id": "rf-1774175190531-7qrwk2xa6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-22T10:26:30.527Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +989,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T16:54:32.324Z"
+  "lastUpdated": "2026-03-27T17:49:26.389Z"
 }
