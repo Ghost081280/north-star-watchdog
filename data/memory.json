@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-21T18:34:41.880Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-03-21T20:25:15.340Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.8
@@ -510,6 +505,11 @@
       "date": "2026-03-27T11:40:52.272Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-27T13:03:03.700Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota elections office subpoenaed in federal criminal probe?",
-    "Where did the $0 allegedly go in Ohio State medical school investigation?",
     "Where did the $unknown allegedly go in Federal joint narcotic investigation in Evansville?",
     "Where did the $unknown allegedly go in Investigation into Ohio State?",
     "What other organizations is Epstein’s lawyer connected to?",
@@ -558,7 +556,9 @@
     "Where did the $2M allegedly go in Minnesota tax evasion case?",
     "What other organizations is Minnesota man connected to?",
     "Where did the Unknown allegedly go in Ohio State College of Medicine investigation?",
-    "Where did the Unknown allegedly go in Fulton County election investigation?"
+    "Where did the Unknown allegedly go in Fulton County election investigation?",
+    "Where did the $0 allegedly go in Minnesota Child Care Assistance Fraud?",
+    "Where did the $0 allegedly go in Ohio State College of Medicine Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1721,
-    "articlesProcessed": 85750,
-    "redFlagsFound": 1998,
+    "totalScans": 1722,
+    "articlesProcessed": 85800,
+    "redFlagsFound": 1999,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in MacDill Air Force Base investigation?",
-        "What other organizations is Fugitive from 1988 heist connected to?",
-        "What other organizations is Joe Kent connected to?"
+        "Where did the $0 allegedly go in Minnesota elections office subpoenaed in federal criminal probe?",
+        "Where did the $0 allegedly go in Ohio State medical school investigation?",
+        "Where did the $unknown allegedly go in Federal joint narcotic investigation in Evansville?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-27T11:40:52.272Z",
-  "lastUpdated": "2026-03-27T11:40:52.273Z"
+  "lastReflection": "2026-03-27T13:03:03.700Z",
+  "lastUpdated": "2026-03-27T13:03:03.702Z"
 }
