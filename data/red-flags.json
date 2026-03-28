@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Fraud",
+      "description": "Multiple investigations into potential fraud have raised concerns about the effectiveness of current oversight and detection mechanisms.",
+      "insight": "I notice that several investigations are focusing on potential fraud in government programs, which suggests that there may be systemic issues that need to be addressed. I recommend further investigation into the oversight and detection mechanisms currently in place to prevent and detect fraudulent activities.",
+      "entities": [
+        "Minnesota DHS",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Financial Times",
+      "sourceUrl": "https://www.ft.com/content/robert-mueller-lawyer-and-former-fbi-director-1944-2026",
+      "id": "rf-1774718864325-90qiq6oy5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T17:27:44.321Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota's child care program faced allegations of fraud, leading to potential program terminations and increased scrutiny.",
       "insight": "The Minnesota child care program fraud allegations indicate a need for closer monitoring and oversight of state programs to prevent misuse of funds.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T16:32:15.114Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal funding mismanagement",
@@ -959,29 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-23T15:59:02.083Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "Several shell companies have been linked to the Feeding Our Future fraud scheme.",
-      "insight": "This could be a sign of a larger pattern of money laundering or other financial crimes. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/",
-      "id": "rf-1774277639249-lbpaud0oq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-23T14:53:59.245Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T16:32:15.114Z"
+  "lastUpdated": "2026-03-28T17:27:44.321Z"
 }
