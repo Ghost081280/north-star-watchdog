@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential fraud in government programs",
+      "description": "Investigations into potential fraud in government programs, such as SNAP and federal funds mismanagement, have been reported.",
+      "insight": "These investigations suggest a need for increased oversight and monitoring of government programs to prevent and detect fraud.",
+      "entities": [
+        "Minnesota DHS",
+        "Bearden High Navy JROTC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://blackchronicle.com/fraud-task-force-minnesota-snap-reciepts-not-available/",
+      "id": "rf-1774663273513-cvcn82tp9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T02:01:13.508Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The National Blues Museum is shutting down due to federal funding cuts.",
       "insight": "This could indicate a larger issue with funding for arts programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-27T23:31:06.006Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-22T14:27:05.423Z",
       "isNew": false
-    },
-    {
-      "type": "tax evasion",
-      "description": "Minnesota man accused of tax evasion, underreporting income by nearly $2M",
-      "insight": "This case indicates a significant amount of tax evasion in Minnesota, potentially linked to other similar cases",
-      "entities": [
-        "Minnesota Man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSWJQUnRLNnlZNlQ2b1d6WUZJWUFjNVRrcHdWQmVBajFxUVBQLVVvRTdfckdDazR1ZHNHb1pIOGZ4WVVDaWhXVW5XN2ZsUGZMalU3VUhGU2xJRXpkekNwOTZHaElyOEl4cF93WXE5WTRfakluRmp0bmY5LW1WdldSTTNR?oc=5",
-      "id": "rf-1774183659222-5qdpv4y6m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-22T12:47:39.217Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,7 +990,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-27T23:31:06.006Z"
+  "lastUpdated": "2026-03-28T02:01:13.508Z"
 }
