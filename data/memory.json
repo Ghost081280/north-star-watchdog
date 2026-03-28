@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-23T11:42:29.943Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-23T13:03:48.972Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-28T22:27:45.440Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-28T23:29:43.918Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Robert Mueller connected to?",
-    "What specific allegations exist against Robert Mueller?",
     "Where did the $ allegedly go in Minnesota SNAP Fraud Investigation?",
     "Where did the $ allegedly go in FBI Investigation into Iranian Hackers?",
     "Where did the $0 allegedly go in Minnesota SNAP Recipients Investigation?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Eric Swalwell?",
     "What other organizations is Jessi Pierce connected to?",
     "Where did the Unknown allegedly go in Minnesota Somali fraud investigation?",
-    "Where did the Unknown allegedly go in Texas child care spending investigation?"
+    "Where did the Unknown allegedly go in Texas child care spending investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What specific allegations exist against Tim Walz?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1752,
-    "articlesProcessed": 87300,
-    "redFlagsFound": 2027,
+    "totalScans": 1753,
+    "articlesProcessed": 87350,
+    "redFlagsFound": 2028,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is FBI Director Patel connected to?",
-        "Where did the $ allegedly go in Minnesota SNAP fraud investigation?",
-        "Where did the $ allegedly go in Bearden High Navy JROTC mismanaged federal funds investigation?"
+        "What other organizations is Robert Mueller connected to?",
+        "What specific allegations exist against Robert Mueller?",
+        "Where did the $ allegedly go in Minnesota SNAP Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-28T22:27:45.440Z",
-  "lastUpdated": "2026-03-28T22:27:45.440Z"
+  "lastReflection": "2026-03-28T23:29:43.918Z",
+  "lastUpdated": "2026-03-28T23:29:43.919Z"
 }
