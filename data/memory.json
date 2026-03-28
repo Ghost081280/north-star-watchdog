@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-22T19:24:18.850Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-22T20:26:01.977Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-28T12:52:27.561Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-03-28T13:51:01.723Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1742,
-    "articlesProcessed": 86800,
-    "redFlagsFound": 2017,
+    "totalScans": 1743,
+    "articlesProcessed": 86850,
+    "redFlagsFound": 2018,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Fulton County Ballot Investigation?",
-        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the $X allegedly go in Fulton County ballot investigation?"
+        "Where did the $X allegedly go in Fulton County ballot investigation?",
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against JD Vance?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-28T12:52:27.561Z",
-  "lastUpdated": "2026-03-28T12:52:27.562Z"
+  "lastReflection": "2026-03-28T13:51:01.723Z",
+  "lastUpdated": "2026-03-28T13:51:01.724Z"
 }
