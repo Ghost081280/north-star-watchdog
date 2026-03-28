@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating a former Trump administration official, Kash Patel, for alleged obstruction of justice.",
+      "insight": "This investigation may be connected to other probes into election fraud and corruption. Further research is needed to determine the extent of Patel's involvement and potential connections to other individuals or organizations.",
+      "entities": [
+        "Kash Patel",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1774690558329-d75tweh0r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T09:35:58.326Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota SNAP recipients investigation",
       "insight": "Potential for large-scale fraud in Minnesota SNAP program",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T08:37:23.497Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -958,29 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-22T23:26:27.631Z",
       "isNew": false
-    },
-    {
-      "type": "Underreporting of income",
-      "description": "A Minnesota man has been accused of underreporting his income by nearly $2M, while claiming $40K in SNAP and medical benefits",
-      "insight": "This case highlights the need for increased scrutiny of tax returns and benefits claims, to prevent similar cases of underreporting and fraud. I will be tracking this case and others like it, to identify patterns and connections between entities and programs.",
-      "entities": [
-        "Minnesota Man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL News",
-      "sourceUrl": "https://www.aol.com/news/minnesota-man-accused-tax-evasion-underreporting-income-nearly-2m-while-claiming-40k-snap-medical-aid/24145546/",
-      "id": "rf-1774218239336-t1e2x6l8t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-22T22:23:59.333Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T08:37:23.497Z"
+  "lastUpdated": "2026-03-28T09:35:58.326Z"
 }
