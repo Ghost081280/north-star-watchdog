@@ -2,6 +2,32 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Minnesota SNAP receipts not being available",
+      "insight": "Potential for fraud in Minnesota's SNAP program",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "ONLY ON KTTC: DHS Commissioner Shireen Gandhi on the fight against fraud",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVS1TWEFWTDRUbTRxVW52ZmdQdnZfSzkwU2xfMjA2d0h6Zm11aEY3M1hjcGgzNVRJZklSUF9YVW1aS2xkcVkzQ1RlbjNqdzJMelYwWjM1X21JMV9UUjh4YTRVYnhEMG9xZWsxa3lIZzRXNVlhS1RmRGUyZHMtelpiRDhkbDdjTW9sOERmMUNXcUNOM1V5U0dVYTZn0gGuAUFVX3lxTE5SZXVnZHRld1dfdlhCT0kxb09JTEJPUklFZDZERkJHSm5Ya1ZQQjlQSEVSaFlmX0lwUkdhWWZab09mdVJ2SHpTc05wRmFPM3U2TnVmWkYyNFZ3a0dnU3Q0bVdDdTVIWVB6eWg4LVBGUGx6ZTQxdnEyalVnbk9mOTJBNHFaZ3o3QkJpSko0aE53UjVPNTFTQjZuNVVfeUZyUjN2YlJBbW9seXBIdF8yUQ",
+      "newEntities": [
+        "Minnesota DHS"
+      ],
+      "newSearchTerms": [
+        "Minnesota SNAP program",
+        "fraud investigation"
+      ],
+      "id": "rf-1774733343205-9wmbfha5c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T21:29:03.201Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Potential program termination due to fraud",
       "insight": "The recent scrutiny on child care spending in Minnesota and Texas may lead to program terminations or changes in funding allocations.",
       "entities": [
@@ -18,7 +44,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T20:29:01.682Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "mismanaged federal funds",
@@ -959,39 +985,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T05:59:06.598Z",
       "isNew": false
-    },
-    {
-      "type": "Fraud scheme",
-      "description": "The Feeding Our Future scheme has resulted in multiple guilty pleas, indicating a large-scale fraud operation.",
-      "insight": "I suspect that there may be more individuals involved in this scheme, and further investigation is needed to uncover the full extent of the fraud. I recommend tracking the financial transactions and connections between the individuals involved.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/minnesota-fraud-3-more-guilty-pleas-in-feeding-our-future-scheme/600246523/",
-      "id": "rf-1774326068010-dun8tpyag",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T04:21:08.006Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T20:29:01.682Z"
+  "lastUpdated": "2026-03-28T21:29:03.201Z"
 }
