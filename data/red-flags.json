@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to fraud",
+      "insight": "The recent scrutiny on child care spending in Minnesota and Texas may lead to program terminations or changes in funding allocations.",
+      "entities": [
+        "Minnesota DHS",
+        "Texas State Government"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdzA5OVNBQkFtWkJPWTFhUzkwaEVyZ2kxRW81RjFUSWgwb242RXNMNWVkVkstcWNCV0ZBdC1LdklvSmk3WkRSSVRic0IwZGJ2cHpjTDFTOFU3M243SU1MUTFBbTZqaFRWR3NTbmE3Mk5aWGtaakhnMTUtdHNaemE5S3NxWnpsZWx6ZTdhMmc2ZGxKd3NaU2F1WElKb19telJa?oc=5",
+      "id": "rf-1774729741686-kydv6dm9v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T20:29:01.682Z",
+      "isNew": true
+    },
+    {
       "type": "mismanaged federal funds",
       "description": "An investigation found that the Bearden High Navy JROTC mismanaged federal funds.",
       "insight": "This is a concern because it suggests that there may be a lack of oversight or accountability in the management of federal funds.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T19:29:08.894Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T04:21:08.006Z",
       "isNew": false
-    },
-    {
-      "type": "guilty plea",
-      "description": "Guilty pleas have been entered in the Feeding our Future fraud case",
-      "insight": "This guilty plea may indicate a larger issue with child care fraud in the state, and potentially across the country. I recommend tracking this case and its developments closely.",
-      "entities": [
-        "Feeding our Future"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "news8000",
-      "sourceUrl": "https://news8000.com/news/guilty-pleas-in-feeding-our-future-fraud-case/",
-      "id": "rf-1774298221576-dx3uedfm0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-23T20:37:01.571Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,7 +991,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T19:29:08.894Z"
+  "lastUpdated": "2026-03-28T20:29:01.682Z"
 }
