@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The FBI is investigating a former church leader and seeking potential victims.",
+      "insight": "This investigation may be related to other cases of fraud or abuse in the state, and it is worth monitoring for any connections to other entities or individuals.",
+      "entities": [
+        "FBI",
+        "former church leader"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR Illinois",
+      "sourceUrl": "https://www.nprillinois.org/news/2026-03-28/fbi-seeking-potential-victims-in-former-church-leader-investigation",
+      "id": "rf-1774736865445-l5l4e43gq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T22:27:45.441Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota SNAP receipts not being available",
       "insight": "Potential for fraud in Minnesota's SNAP program",
@@ -24,7 +44,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T21:29:03.201Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -121,25 +141,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T16:32:15.114Z",
-      "isNew": false
-    },
-    {
-      "type": "federal funding mismanagement",
-      "description": "Bearden High Navy JROTC mismanaged federal funds",
-      "insight": "This case highlights the need for proper oversight and management of federal funds. Further investigation is needed to determine the extent of the mismanagement and to identify measures to prevent similar incidents in the future.",
-      "entities": [
-        "Bearden High Navy JROTC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Comptroller",
-      "sourceUrl": "https://wbir.com/investigation-finds-bearden-high-navy-jrotc-mismanaged-federal-funds",
-      "id": "rf-1774708259569-8e52sc3x2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T14:30:59.566Z",
       "isNew": false
     },
     {
@@ -989,16 +990,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T21:29:03.201Z"
+  "lastUpdated": "2026-03-28T22:27:45.441Z"
 }
