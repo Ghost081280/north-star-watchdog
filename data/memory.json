@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-23T02:05:16.495Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-03-23T05:02:08.192Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-28T17:27:44.319Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-03-28T18:38:30.854Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota SNAP fraud investigation?",
-    "Where did the $100K allegedly go in Bearden High Navy JROTC mismanaged federal funds investigation?",
     "Where did the $100k allegedly go in Bearden High Navy JROTC mismanaged federal funds investigation?",
     "Where did the $100M allegedly go in FBI Investigation into Minnesota Child Care Fraud?",
     "Where did the $10M allegedly go in Minnesota SNAP Reciepts Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Robert Mueller connected to?",
     "What specific allegations exist against Robert Mueller?",
     "Where did the $ allegedly go in Minnesota SNAP Fraud Investigation?",
-    "Where did the $ allegedly go in FBI Investigation into Iranian Hackers?"
+    "Where did the $ allegedly go in FBI Investigation into Iranian Hackers?",
+    "Where did the $0 allegedly go in Minnesota SNAP Recipients Investigation?",
+    "Where did the $0 allegedly go in Bearden High Navy JROTC Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1747,
-    "articlesProcessed": 87050,
-    "redFlagsFound": 2022,
+    "totalScans": 1748,
+    "articlesProcessed": 87100,
+    "redFlagsFound": 2023,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Kash Patel?",
-        "What other organizations is Cleveland man connected to?",
-        "Where did the Unknown allegedly go in Minnesota SNAP fraud investigation?"
+        "Where did the $100M allegedly go in Minnesota SNAP fraud investigation?",
+        "Where did the $100K allegedly go in Bearden High Navy JROTC mismanaged federal funds investigation?",
+        "Where did the $100k allegedly go in Bearden High Navy JROTC mismanaged federal funds investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-28T17:27:44.319Z",
-  "lastUpdated": "2026-03-28T17:27:44.320Z"
+  "lastReflection": "2026-03-28T18:38:30.854Z",
+  "lastUpdated": "2026-03-28T18:38:30.855Z"
 }
