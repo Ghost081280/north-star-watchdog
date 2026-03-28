@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal funding mismanagement",
+      "description": "Bearden High Navy JROTC mismanaged federal funds",
+      "insight": "This case highlights the need for proper oversight and management of federal funds. Further investigation is needed to determine the extent of the mismanagement and to identify measures to prevent similar incidents in the future.",
+      "entities": [
+        "Bearden High Navy JROTC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Comptroller",
+      "sourceUrl": "https://wbir.com/investigation-finds-bearden-high-navy-jrotc-mismanaged-federal-funds",
+      "id": "rf-1774708259569-8e52sc3x2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T14:30:59.566Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Potential termination of programs due to fraud and mismanagement",
       "insight": "Patterns of fraud and mismanagement in Minnesota and other states may lead to program terminations and increased scrutiny.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T13:51:01.725Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -57,25 +76,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T08:37:23.497Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The National Blues Museum is shutting down due to federal funding cuts, which may indicate a larger issue with federal funding and management.",
-      "insight": "This could be a sign of a larger problem with federal funding and management, and warrants further investigation.",
-      "entities": [
-        "National Blues Museum"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "First Alert 4",
-      "sourceUrl": "https://www.firstalert4.com/news/national-blues-museum-shutting-down-sites-downtown-economic-climate-and-federal-funding-cuts",
-      "id": "rf-1774683972461-02v4me0jp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T07:46:12.458Z",
       "isNew": false
     },
     {
@@ -982,7 +982,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T13:51:01.725Z"
+  "lastUpdated": "2026-03-28T14:30:59.566Z"
 }
