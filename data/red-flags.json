@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "mismanaged federal funds",
+      "description": "An investigation found that the Bearden High Navy JROTC mismanaged federal funds.",
+      "insight": "This is a concern because it suggests that there may be a lack of oversight or accountability in the management of federal funds.",
+      "entities": [
+        "Bearden High Navy JROTC"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "WBIR",
+      "sourceUrl": "https://www.wbir.com/article/news/investigation-finds-bearden-high-navy-jrotc-mismanaged-federal-funds/651334111",
+      "id": "rf-1774726148897-o3hy7plnj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-28T19:29:08.894Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota SNAP recipients investigation",
       "insight": "Potential for widespread fraud in SNAP program",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T18:38:30.856Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Fraud",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-23T20:37:01.571Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of CDC grants to Minnesota and other states",
-      "insight": "This could indicate a larger issue with program oversight and funding.",
-      "entities": [
-        "Minnesota",
-        "CDC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV1FtazlXZ3Frc2s2ZE4zU0VBV3pRQ2FTeDVQcWRhQzc0Z3ozaWZzMU9UM21CVkpLSXdfeVM5WnhYQkVfNmd2WnpSX29rOWhaOTBTUDhEaHVZbzU1VnhOUi1PNnQ2a2Faa1lqUFQyRjdWQl9IdFA5N0JpOWxwSGwxdWI1TFA",
-      "id": "rf-1774281542086-pamwtgyc2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-23T15:59:02.083Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,6 +990,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-28T18:38:30.856Z"
+  "lastUpdated": "2026-03-28T19:29:08.894Z"
 }
