@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-22T18:35:49.228Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-03-22T19:24:18.850Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-28T11:27:20.499Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-28T12:52:27.561Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Fulton County Ballot Investigation?",
-    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $X allegedly go in Fulton County ballot investigation?",
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against JD Vance?",
@@ -558,7 +556,9 @@
     "What other organizations is Kash Patel connected to?",
     "Where did the Unknown allegedly go in FBI 2020 election probe?",
     "Where did the Unknown allegedly go in Minnesota child care fraud investigation?",
-    "Where did the $0 allegedly go in Minnesota SNAP Reciepts Investigation?"
+    "Where did the $0 allegedly go in Minnesota SNAP Reciepts Investigation?",
+    "Where did the $100M allegedly go in Minnesota SNAP Fraud Investigation?",
+    "Where did the $100k allegedly go in Bearden High Navy JROTC Mismanagement Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1741,
-    "articlesProcessed": 86750,
-    "redFlagsFound": 2016,
+    "totalScans": 1742,
+    "articlesProcessed": 86800,
+    "redFlagsFound": 2017,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
         "Where did the $0 allegedly go in Fulton County Ballot Investigation?",
-        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?"
+        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the $X allegedly go in Fulton County ballot investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-28T11:27:20.499Z",
-  "lastUpdated": "2026-03-28T11:27:20.500Z"
+  "lastReflection": "2026-03-28T12:52:27.561Z",
+  "lastUpdated": "2026-03-28T12:52:27.562Z"
 }
