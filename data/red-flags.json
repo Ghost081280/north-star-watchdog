@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Potential termination of programs due to fraud allegations",
+      "insight": "Several programs and organizations are under investigation for alleged fraud, which could lead to program terminations and funding freezes.",
+      "entities": [
+        "Minnesota Somali housing program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "economictimes.com",
+      "sourceUrl": "https://economictimes.com/stories/answer-the-question-senators-torch-soros-funded-witness-at-fiery-minnesota-somali-fraud-hearing",
+      "id": "rf-1774805343659-fvwa3ibpi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T17:29:03.656Z",
+      "isNew": true
+    },
+    {
+      "type": "misuse_of_power",
+      "description": "Allegations of misuse of power by high-ranking officials",
+      "insight": "Recent developments suggest potential misuse of power by officials, including Kash Patel's actions against Democratic lawmakers.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2023/03/28/kash-patel-fbi-internal-investigations/",
+      "id": "rf-1774805343659-p20k5hh53",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T17:29:03.656Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Potential fraud in a Minnesota program",
       "insight": "Large sums of money ($200M) potentially misspent",
       "entities": [
@@ -949,50 +988,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T20:40:23.651Z",
       "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "$14.6M diverted from child nutrition funds",
-      "insight": "Significant fraud detected in child nutrition program",
-      "entities": [
-        "Five individuals",
-        "Child nutrition program"
-      ],
-      "confidence": 95,
-      "priority": "high",
-      "source": "International Business Times UK",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcG83eExmWkVLeEFhamc4cjBVRkhZekV3YTdWTXgxejQ5a2R3bjdXbFFJemRMcER3clJ1N09ENzZMc3VScEp6YXZIUWt2MjlEV1FiZXVyX2JtX0lKdzNJNG1pbnRlQlBmZ1VwRFp2Z29rakRuY04tR0xIZFVyY0hNU0kyX0UtWE9MVE9BaU85a2JpNzNUV3c3OGQ4eUk3Ykd2c2ZGU3ZZNE9xbWdjY0E",
-      "id": "rf-1774384823655-8v84zh2vh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T20:40:23.651Z",
-      "isNew": false
-    },
-    {
-      "type": "Potential fraud",
-      "description": "The investigation into the Feeding Our Future scheme has raised concerns about potential fraud in the state's food assistance programs.",
-      "insight": "I believe that this investigation may be just the tip of the iceberg, and that there may be more widespread fraud in the state's food assistance programs. I would recommend further investigation into this matter.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Patch",
-      "sourceUrl": "https://www.patch.com/minnesota/stpaul/5-plead-guilty-feeding-our-future-scheme-authorities",
-      "id": "rf-1774357723563-l05jec4ag",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T13:08:43.559Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1002,7 +1001,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T16:33:47.888Z"
+  "lastUpdated": "2026-03-29T17:29:03.656Z"
 }
