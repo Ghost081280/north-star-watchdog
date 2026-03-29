@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-24T01:56:42.540Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-03-24T04:21:08.004Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-29T15:30:25.037Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-29T16:33:47.887Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "What specific allegations exist against Tim Walz?",
     "What other organizations is Andrew connected to?",
     "What other organizations is Eric Swalwell connected to?",
     "Where did the $100M allegedly go in Minnesota Somali Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $100M allegedly go in Minnesota Somali fraud hearing?",
     "Where did the unknown allegedly go in FBI investigation into former church leader?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $200M allegedly go in Minnesota Somali fraud hearing?"
+    "Where did the $200M allegedly go in Minnesota Somali fraud hearing?",
+    "Where did the $200M allegedly go in Minnesota Somali Fraud Hearing?",
+    "Where did the Unknown allegedly go in FBI Investigation into Illinois-based Church President?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1764,
-    "articlesProcessed": 87900,
-    "redFlagsFound": 2041,
+    "totalScans": 1765,
+    "articlesProcessed": 87950,
+    "redFlagsFound": 2042,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Texas child care spending investigation?",
         "What other organizations is Tim Walz connected to?",
-        "What specific allegations exist against Tim Walz?"
+        "What specific allegations exist against Tim Walz?",
+        "What other organizations is Andrew connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-29T15:30:25.037Z",
-  "lastUpdated": "2026-03-29T15:30:25.038Z"
+  "lastReflection": "2026-03-29T16:33:47.887Z",
+  "lastUpdated": "2026-03-29T16:33:47.887Z"
 }
