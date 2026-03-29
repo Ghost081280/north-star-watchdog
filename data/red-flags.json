@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential fraud in a Minnesota program",
+      "insight": "Large sums of money ($200M) potentially misspent",
+      "entities": [
+        "Minnesota State Legislature"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://www.economic-times.com/answer-the-question-senators-torch-soros-funded-witness-at-fiery-minnesota-somali-fraud-hearing",
+      "id": "rf-1774798225043-kxlarspof",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T15:30:25.039Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI investigation into Eric Swalwell",
+      "insight": "Potential ties to a Chinese spy",
+      "entities": [
+        "Eric Swalwell",
+        "FBI"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://www.yahoo.com/finance/kash-patel-s-fbi-release-eric-swalwell-files-decade-old-investigation-involving-chinese-spy-report-2671331",
+      "id": "rf-1774798225043-5im55xscf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T15:30:25.039Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a former church leader for potential crimes, and is seeking potential victims. This case raises concerns about the potential for abuse of power and the need for greater oversight.",
       "insight": "I suspect that this investigation may be connected to a larger pattern of abuse within the church or other organizations. Further research is needed to determine the extent of the issue and potential connections to other cases.",
@@ -18,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T14:33:13.613Z",
-      "isNew": true
-    },
-    {
-      "type": "potential fraud",
-      "description": "Minnesota SNAP receipts not being available for review, potentially indicating fraudulent activity.",
-      "insight": "The lack of available receipts raises concerns about the potential for fraudulent activity within the SNAP program in Minnesota. Further investigation is warranted to determine the extent of any potential fraud.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Black Chronicle",
-      "sourceUrl": "https://www.theblackchronicle.com/2026/03/27/fraud-task-force-minnesota-snap-receipts-not-available/",
-      "id": "rf-1774792376988-dmvo86l7b",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T13:52:56.985Z",
       "isNew": false
     },
     {
@@ -968,25 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T13:08:43.559Z",
       "isNew": false
-    },
-    {
-      "type": "fraud_scheme",
-      "description": "$14.6M Feeding Our Future Fraud Scheme",
-      "insight": "This is a significant fraud scheme with 5 individuals pleading guilty.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV0hhUDh1bklJSUxGY08xX096ZUVEcWZ4dUN3LU9McUZFZk1OVG5FWjd6SUt1ckdPb0NvQzNDMlZkYkpIdFZRbC1Ha09mdVFSM3hhU29zOVdKVE5EbTVsd05pSENQZEtVZlpraWx4SFlWUXRFTGRwQzNEQlJnVWNHM1d6eHJBc2pXQkctdUdEQU54WEM3clgxWWxFekVnOVJlaENLLUV2SUhUNENHdXVzbE0yX2hmeDA?oc=5",
-      "id": "rf-1774349513844-vethir96x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T10:51:53.840Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,8 +1001,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T14:33:13.613Z"
+  "lastUpdated": "2026-03-29T15:30:25.039Z"
 }
