@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-23T14:53:59.243Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-03-23T15:59:02.081Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-03-29T02:12:28.231Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-29T05:09:54.095Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Leland daycare workers connected to?",
-    "What other organizations is Columbia County deputy connected to?",
-    "Where did the unknown allegedly go in FBI investigation into former church leader?",
     "Where did the unknown allegedly go in Minnesota SNAP fraud investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $10M+ allegedly go in Minnesota Child Care Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Andrew connected to?",
     "What other organizations is Eric Swalwell connected to?",
     "Where did the $100M allegedly go in Minnesota Somali Fraud?",
-    "Where did the $1B allegedly go in Texas Child Care Spending?"
+    "Where did the $1B allegedly go in Texas Child Care Spending?",
+    "What other organizations is Daycare workers connected to?",
+    "Where did the unknown allegedly go in Minnesota Somali fraud hearing?",
+    "Where did the unknown allegedly go in Texas child care spending investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1754,
-    "articlesProcessed": 87400,
-    "redFlagsFound": 2029,
+    "totalScans": 1755,
+    "articlesProcessed": 87450,
+    "redFlagsFound": 2030,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ allegedly go in Minnesota SNAP Fraud Investigation?",
-        "Where did the $ allegedly go in FBI Investigation into Iranian Hackers?",
-        "Where did the $0 allegedly go in Minnesota SNAP Recipients Investigation?"
+        "What other organizations is Leland daycare workers connected to?",
+        "What other organizations is Columbia County deputy connected to?",
+        "Where did the unknown allegedly go in FBI investigation into former church leader?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-29T02:12:28.231Z",
-  "lastUpdated": "2026-03-29T02:12:28.231Z"
+  "lastReflection": "2026-03-29T05:09:54.095Z",
+  "lastUpdated": "2026-03-29T05:09:54.096Z"
 }
