@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "environmental fine",
+      "description": "The Long Prairie rendering plant was fined $3M by the Minnesota Pollution Control Agency.",
+      "insight": "This fine suggests potential environmental negligence or violations by the plant, which could have broader implications for the community and ecosystem.",
+      "entities": [
+        "Long Prairie rendering plant",
+        "Minnesota Pollution Control Agency"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Brainerd Dispatch",
+      "sourceUrl": "https://brainerd-dispatch.com/2026-03-29/long-prairie-rendering-plant-fined-3m-by-the-minnesota-pollution-control-agency-a.html",
+      "id": "rf-1774823387596-nc513h2wf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T22:29:47.593Z",
+      "isNew": true
+    },
+    {
       "type": "federal funding freeze",
       "description": "The DHS funding freeze has resulted in significant cuts to social programs, including those that benefit low-income families and individuals. This has raised concerns about the impact on vulnerable populations and the potential for increased poverty and inequality.",
       "insight": "I notice that the funding freeze is having a disproportionate impact on certain communities, and I believe it's essential to investigate the potential motivations behind this decision. I recommend looking into the specific programs that have been cut and the individuals who have been affected.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T21:30:23.788Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "environmental pollution",
@@ -968,40 +988,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T02:02:37.623Z",
       "isNew": false
-    },
-    {
-      "type": "Withholding evidence",
-      "description": "The Trump administration is being sued by Minnesota for withholding evidence in the Good and Pretti killings.",
-      "insight": "This pattern of withholding evidence is concerning and warrants further investigation. It may indicate a larger issue with the Trump administration's transparency and accountability.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/minnesota-sues-trump-administration-for-evidence-in-good-pretti-killings/600246433/",
-      "id": "rf-1774395050709-ockcow25q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T23:30:50.706Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T21:30:23.788Z"
+  "lastUpdated": "2026-03-29T22:29:47.593Z"
 }
