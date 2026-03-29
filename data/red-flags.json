@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "environmental pollution",
+      "description": "Long Prairie rendering plant fined $3M for environmental pollution",
+      "insight": "This could indicate a larger issue with environmental regulations in Minnesota",
+      "entities": [
+        "Long Prairie rendering plant"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Brainerd Dispatch",
+      "sourceUrl": "https://brainerdispatch.com/news/local/long-prairie-rendering-plant-fined-3m-by-minnesota-pollution-control-agency/2026-03-29/",
+      "id": "rf-1774812711446-fgo8hlv2o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T19:31:51.443Z",
+      "isNew": true
+    },
+    {
+      "type": "housing fraud",
+      "description": "Philadelphia men repeatedly traveled to Minneapolis to carry out $3.5M housing fraud scheme",
+      "insight": "This indicates a significant housing fraud scheme in Minneapolis",
+      "entities": [
+        "Philadelphia men"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://msn.com/en-us/news/crime/philadelphia-men-repeatedly-traveled-to-minneapolis-to-carry-out-3-5m-housing-fraud-scheme-doj/2026-03-28",
+      "id": "rf-1774812711446-bd97tkbfx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T19:31:51.443Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The DHS funding freeze is now the longest partial government shutdown in US history, with potential implications for national security and public health.",
       "insight": "I suspect that the prolonged shutdown may be causing significant disruptions to essential services, potentially putting vulnerable populations at risk. Further investigation is needed to determine the full extent of the impact.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T18:43:17.319Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -949,45 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T23:30:50.706Z",
       "isNew": false
-    },
-    {
-      "type": "withheld evidence",
-      "description": "Trump administration potentially withholding evidence in shootings.",
-      "insight": "This could be a case of obstruction of justice or cover-up.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Minnesota sues Trump administration over shootings, including deaths of Alex Pretti and Renee Good",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRG16YkJNdEIydkNuQlBCRXR3NmhNWEFoeVpSTjAyc1dGTnl5ampidUFjTTJlWEctc1RjNzlvUXNXeW5GTWFyTENRNEpHSEdDRlFucHJ3QWk4NC10aUpzUUJkTC1RV01IRF96a0FuNUpQT0I3N2Z5bU9YeU9fREZRVmhpbEJmQ3dnQXJ4cUlObmZTYnJMTGFZ",
-      "id": "rf-1774391383287-zt6fpk1xn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T22:29:43.284Z",
-      "isNew": false
-    },
-    {
-      "type": "lawsuit",
-      "description": "Minnesota suing Trump administration over handling of Alex Pretti and Renee Good killings",
-      "insight": "Possible lack of transparency or cooperation from Trump administration in handling of cases",
-      "entities": [
-        "Minnesota AG",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.star-tribune.com/2026/03/24/minnesota-sues-trump-administration-evidence-good-pretti-killings/",
-      "id": "rf-1774384823655-pwx2thegb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T20:40:23.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,12 +996,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T18:43:17.319Z"
+  "lastUpdated": "2026-03-29T19:31:51.443Z"
 }
