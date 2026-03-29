@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The DHS funding freeze is now the longest partial government shutdown in US history, with potential implications for national security and public health.",
+      "insight": "I suspect that the prolonged shutdown may be causing significant disruptions to essential services, potentially putting vulnerable populations at risk. Further investigation is needed to determine the full extent of the impact.",
+      "entities": [
+        "DHS",
+        "US Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com",
+      "id": "rf-1774809797323-08v1n55kq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T18:43:17.319Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud allegations",
       "insight": "Several programs and organizations are under investigation for alleged fraud, which could lead to program terminations and funding freezes.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T17:29:03.656Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "misuse_of_power",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T17:29:03.656Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -116,26 +136,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T09:35:55.129Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Multiple daycare centers under investigation for fraud",
-      "insight": "I suspect a larger pattern of childcare fraud across the US, with potential connections to government agencies and large-scale financial transactions. Further investigation is needed to uncover the full extent of the issue.",
-      "entities": [
-        "Somali daycare centers",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.theeconomicimes.com/",
-      "id": "rf-1774773489120-kequtuozx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T08:38:09.117Z",
       "isNew": false
     },
     {
@@ -1001,8 +1001,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T17:29:03.656Z"
+  "lastUpdated": "2026-03-29T18:43:17.319Z"
 }
