@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal funding freeze",
+      "description": "The DHS funding freeze has resulted in significant cuts to social programs, including those that benefit low-income families and individuals. This has raised concerns about the impact on vulnerable populations and the potential for increased poverty and inequality.",
+      "insight": "I notice that the funding freeze is having a disproportionate impact on certain communities, and I believe it's essential to investigate the potential motivations behind this decision. I recommend looking into the specific programs that have been cut and the individuals who have been affected.",
+      "entities": [
+        "DHS",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com",
+      "id": "rf-1774819823792-m9o0ln0e2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T21:30:23.788Z",
+      "isNew": true
+    },
+    {
       "type": "environmental pollution",
       "description": "Long Prairie rendering plant fined $3M for environmental pollution",
       "insight": "This could indicate a larger issue with environmental regulations in Minnesota",
@@ -36,26 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T19:31:51.443Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The DHS funding freeze is now the longest partial government shutdown in US history, with potential implications for national security and public health.",
-      "insight": "I suspect that the prolonged shutdown may be causing significant disruptions to essential services, potentially putting vulnerable populations at risk. Further investigation is needed to determine the full extent of the impact.",
-      "entities": [
-        "DHS",
-        "US Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com",
-      "id": "rf-1774809797323-08v1n55kq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T18:43:17.319Z",
       "isNew": false
     },
     {
@@ -991,6 +991,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,6 +1000,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T20:30:12.821Z"
+  "lastUpdated": "2026-03-29T21:30:23.788Z"
 }
