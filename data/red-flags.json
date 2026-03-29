@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a Democratic lawmaker, which may indicate wrongdoing or corruption.",
+      "insight": "This investigation could be a sign of a larger pattern of corruption within the government. I recommend tracking the progress of this investigation and looking for any connections to other entities or programs.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/28/kash-patel-fbi-democratic-lawmaker/",
+      "id": "rf-1774827154495-zbk2tdm5w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T23:32:34.492Z",
+      "isNew": true
+    },
+    {
       "type": "environmental fine",
       "description": "The Long Prairie rendering plant was fined $3M by the Minnesota Pollution Control Agency.",
       "insight": "This fine suggests potential environmental negligence or violations by the plant, which could have broader implications for the community and ecosystem.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T22:29:47.593Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal funding freeze",
@@ -969,25 +989,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T06:00:03.636Z",
       "isNew": false
-    },
-    {
-      "type": "withholding evidence",
-      "description": "The Trump administration is accused of withholding evidence in the Minnesota shootings investigation.",
-      "insight": "This raises concerns about government transparency and accountability. Further investigation is needed to determine the extent of the evidence withholding and its impact on the case.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/25/minnesota-sues-trump-administration-shootings/",
-      "id": "rf-1774404157626-j071fun8e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T02:02:37.623Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,11 +997,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T22:29:47.593Z"
+  "lastUpdated": "2026-03-29T23:32:34.492Z"
 }
