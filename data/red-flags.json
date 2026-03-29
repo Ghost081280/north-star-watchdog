@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a former church leader in Illinois for child pornography charges.",
+      "insight": "This investigation may be connected to other cases of child abuse and exploitation. I recommend further research into the church and its affiliates.",
+      "entities": [
+        "FBI",
+        "Illinois church leader"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR Illinois",
+      "sourceUrl": "https://www.nprillinois.org/",
+      "id": "rf-1774776955132-ui2kw1nwd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-29T09:35:55.129Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Multiple daycare centers under investigation for fraud",
       "insight": "I suspect a larger pattern of childcare fraud across the US, with potential connections to government agencies and large-scale financial transactions. Further investigation is needed to uncover the full extent of the issue.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T08:38:09.117Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential childcare fraud",
@@ -967,31 +987,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-24T09:54:50.207Z",
       "isNew": false
-    },
-    {
-      "type": "Potential corruption",
-      "description": "An individual who pleaded guilty in the Feeding Our Future scheme reportedly met with Minnesota AG Keith Ellison.",
-      "insight": "This raises concerns about potential corruption and undue influence in the investigation and prosecution of fraud cases in Minnesota.",
-      "entities": [
-        "Keith Ellison",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KBOI",
-      "sourceUrl": "https://www.kboi.com/news/national/individual-who-pleaded-guilty-in-fraud-scheme-reportedly-met-with-minnesota-ag/",
-      "id": "rf-1774331946601-sy4w3o418",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-24T05:59:06.598Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1001,6 +1000,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T08:38:09.117Z"
+  "lastUpdated": "2026-03-29T09:35:55.129Z"
 }
