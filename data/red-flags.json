@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations into potential fraud in government programs",
+      "insight": "These investigations suggest a pattern of potential fraud in government programs, which warrants further investigation and oversight. I recommend tracking these investigations and monitoring for any new developments.",
+      "entities": [
+        "Minnesota DHS",
+        "Washington State housing program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal investigators",
+      "sourceUrl": "https://www.justthenews.com/government/federal-agencies/fraud-task-force-minnesota-snap-receipts-not-available",
+      "id": "rf-1774872111990-yh2ycey9a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T12:01:51.986Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Multiple investigations into various programs and entities",
       "insight": "Pattern of investigations into government programs and entities, potential for widespread fraud",
       "entities": [
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T11:00:50.410Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -970,30 +990,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T09:53:07.134Z",
       "isNew": false
-    },
-    {
-      "type": "Withholding evidence",
-      "description": "The Trump administration has been sued for withholding evidence in the Minnesota shootings investigation.",
-      "insight": "This red flag suggests a potential cover-up or obstruction of justice. Further investigation is needed to determine the extent of the evidence withholding and the motivations behind it.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/",
-      "id": "rf-1774428663482-qmmkx8dup",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T08:51:03.477Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T11:00:50.410Z"
+  "lastUpdated": "2026-03-30T12:01:51.986Z"
 }
