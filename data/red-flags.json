@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a fatal school bus crash in Tennessee",
+      "insight": "This investigation may be related to other cases of fraud or negligence in the transportation industry. Further research is needed to determine the scope of the investigation and potential connections to other entities.",
+      "entities": [
+        "FBI",
+        "Tennessee"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "The Tennessean",
+      "sourceUrl": "https://www.tennessean.com/story/news/2026/03/30/federal-investigators-probing-school-bus-crash-that-killed-two/7077651001/",
+      "id": "rf-1774903852614-wbz8qtkci",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T20:50:52.611Z",
+      "isNew": true
+    },
+    {
       "type": "alleged fraud",
       "description": "Hortonville woman allegedly committed $58,000 FoodShare, child care fraud",
       "insight": "This case suggests a potential pattern of abuse in the FoodShare program",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T19:58:07.644Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -969,32 +989,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T11:40:46.916Z",
       "isNew": false
-    },
-    {
-      "type": "potential wrongdoing by Federal Reserve",
-      "description": "The Federal Reserve investigation found lack of criminal evidence",
-      "insight": "This could indicate potential wrongdoing by the Federal Reserve and a lack of effective oversight. Further investigation is needed to uncover the extent of this issue.",
-      "entities": [
-        "Federal Reserve",
-        "DOJ"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/business/economy/prosecutor-conceded-lack-evidence-federal-reserve-investigation-transcript-shows/2026/03/25/8a6e556c-11ee-11ef-85c7-1d036c6e9a29_story.html",
-      "id": "rf-1774438846920-xeaqhobit",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T11:40:46.916Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,7 +1001,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T19:58:07.644Z"
+  "lastUpdated": "2026-03-30T20:50:52.611Z"
 }
