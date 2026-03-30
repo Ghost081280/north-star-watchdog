@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating the New York investors behind Baltimore’s foreclosure wave, and the Minnesota DHS is investigating SNAP fraud.",
+      "insight": "I notice a pattern of federal investigations into various forms of fraud, which suggests a potential widespread issue. I recommend further investigation into these matters to determine the extent of the fraud and hold those responsible accountable.",
+      "entities": [
+        "FBI",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1774880769651-mprndvgj6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T14:26:09.647Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations into potential fraud in government programs",
       "insight": "These investigations suggest a pattern of potential fraud in government programs, which warrants further investigation and oversight. I recommend tracking these investigations and monitoring for any new developments.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T12:01:51.986Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -213,25 +233,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T17:29:03.656Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential fraud in a Minnesota program",
-      "insight": "Large sums of money ($200M) potentially misspent",
-      "entities": [
-        "Minnesota State Legislature"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.economic-times.com/answer-the-question-senators-torch-soros-funded-witness-at-fiery-minnesota-somali-fraud-hearing",
-      "id": "rf-1774798225043-kxlarspof",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T15:30:25.039Z",
       "isNew": false
     },
     {
@@ -1003,6 +1004,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T12:01:51.986Z"
+  "lastUpdated": "2026-03-30T14:26:09.647Z"
 }
