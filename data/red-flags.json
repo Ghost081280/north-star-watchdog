@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of food assistance programs due to fraud",
+      "insight": "Increased scrutiny of assistance programs may indicate widespread issues",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS",
+      "sourceUrl": "https://kare11.com/story/feeding-our-future-defendant-apologizes-before-sentencing-i-will-attempt-to-fix-it-for-the-rest-of-my-life",
+      "id": "rf-1774893256688-okhl2mex0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T17:54:16.684Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the New York investors behind Baltimore's foreclosure wave, which may indicate a larger pattern of fraud and corruption.",
       "insight": "I suspect that this investigation may uncover a complex web of financial transactions and shell companies. Further research is needed to understand the scope of this scheme.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T16:05:16.731Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -971,25 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T11:40:46.916Z",
       "isNew": false
-    },
-    {
-      "type": "Lack of Transparency",
-      "description": "The Trump administration's withholding of evidence in the Minnesota shootings investigation raises concerns about transparency and accountability.",
-      "insight": "This lack of transparency may indicate a larger pattern of obstruction or cover-up, and further investigation is needed to determine the extent of the administration's involvement.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/nation/2026/03/25/minnesota-sues-trump-administration-shootings/",
-      "id": "rf-1774435659191-orfcvo1os",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T10:47:39.188Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,7 +1002,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T16:05:16.731Z"
+  "lastUpdated": "2026-03-30T17:54:16.684Z"
 }
