@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Patients losing access to care amid Medicaid fraud investigation",
+      "insight": "This indicates potential systemic issues and the need for closer monitoring of healthcare providers",
+      "entities": [
+        "Fishing Point Healthcare"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WTKR",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNdUZveUVfSnFEMVlmYWtZQkFicHFVdGRZUUMwSnZDY3NINWVzWXNGcVZqaDhlUU11Q0E3eml5WkVZT0oydTBYRFpvUGJPbUR4d1Z0ZFk2Z3E2cVBrcWNnZ3l5ZWU3dzNkYUtqLVJTNy1GRzRkc09HX203QVBiNzRSQVFKaVFiYnJZWV9HTkFQZldIRGVSMDkzX0VhQ2gxdDNENE9kYkJkOUg0VGYxZzJmLTAyaVplUEpvTjAwSzd2Wlo1UTllQkR0d3V4S2dvS1BNTnRXRTdaaUh4OXJhY0UyUg",
+      "id": "rf-1774910065575-14d4b1iac",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T22:34:25.572Z",
+      "isNew": true
+    },
+    {
       "type": "alleged fraud",
       "description": "A Hortonville woman is accused of stealing $58,000 in food assistance and child care benefits.",
       "insight": "This case suggests potential vulnerabilities in Minnesota's food assistance and child care programs.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T21:41:07.581Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election interference",
@@ -37,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T21:41:07.581Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -557,27 +576,6 @@
       "isNew": false
     },
     {
-      "type": "federal investigation",
-      "description": "The Trump administration is investigating multiple medical schools, including Stanford, Ohio State, and U.C. San Diego, for potential fraud.",
-      "insight": "This could indicate a larger pattern of fraud in the medical school system, and further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Stanford",
-        "Ohio State",
-        "U.C. San Diego"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2023/03/27/us/trump-administration-medical-school-investigation.html",
-      "id": "rf-1774630472328-2cmixwtn0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T16:54:32.324Z",
-      "isNew": false
-    },
-    {
       "type": "Tax evasion",
       "description": "A Minnesota man has been accused of tax evasion and underreporting income by nearly $2M while claiming $40K in SNAP and medical aid.",
       "insight": "This case highlights the need for increased scrutiny of tax returns and benefit claims to prevent similar instances of fraud. Further investigation is necessary to determine the extent of the issue and identify potential patterns.",
@@ -993,16 +991,15 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T21:41:07.581Z"
+  "lastUpdated": "2026-03-30T22:34:25.572Z"
 }
