@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple investigations into various programs and entities",
+      "insight": "Pattern of investigations into government programs and entities, potential for widespread fraud",
+      "entities": [
+        "FEMA",
+        "Minnesota DHS",
+        "Washington State"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "",
+      "id": "rf-1774868450414-1q6pi1yga",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T11:00:50.410Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "DHS funding freeze is now the longest partial government shutdown in US history",
       "insight": "This prolonged shutdown may lead to increased vulnerability to fraud and abuse, as resources are stretched thin and oversight is reduced. I recommend monitoring government spending and contracts during this time for any suspicious activity.",
@@ -17,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T09:10:27.792Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -968,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T08:51:03.477Z",
       "isNew": false
-    },
-    {
-      "type": "Lack of Transparency",
-      "description": "The Trump administration is being sued by Minnesota for withholding evidence in shootings by federal officers. This lack of transparency raises concerns about government accountability.",
-      "insight": "I suspect a pattern of obstruction of justice, and I recommend further investigation into the Trump administration's handling of evidence in this case.",
-      "entities": [
-        "Trump Administration",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2023/03/24/us/minnesota-prosecutors-sue-to-access-evidence-in-shootings-by-agents-during-immigration-crackdown.html",
-      "id": "rf-1774422898595-maqdrzgss",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T07:14:58.592Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1001,7 +1003,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T09:10:27.792Z"
+  "lastUpdated": "2026-03-30T11:00:50.410Z"
 }
