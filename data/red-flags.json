@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen assets related to the Feeding Our Future scheme",
+      "insight": "This suggests that the government is taking the investigation seriously and is taking steps to prevent further fraud",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-sentencing-change-of-plea-monday-in-feeding-our-future-scheme",
+      "id": "rf-1774897104890-qkqx822n8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T18:58:24.886Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of food assistance programs due to fraud",
       "insight": "Increased scrutiny of assistance programs may indicate widespread issues",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T17:54:16.684Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -97,25 +116,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T11:00:50.410Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "DHS funding freeze is now the longest partial government shutdown in US history",
-      "insight": "This prolonged shutdown may lead to increased vulnerability to fraud and abuse, as resources are stretched thin and oversight is reduced. I recommend monitoring government spending and contracts during this time for any suspicious activity.",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/mar/29/dhs-funding-freeze-longest-partial-government-shutdown-us-history",
-      "id": "rf-1774861827795-57g0xop9n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T09:10:27.792Z",
       "isNew": false
     },
     {
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T17:54:16.684Z"
+  "lastUpdated": "2026-03-30T18:58:24.886Z"
 }
