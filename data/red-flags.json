@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The DHS funding freeze has led to a freeze in funding for various investigations and programs, including those related to fraud and abuse.",
+      "insight": "This freeze could potentially hinder the progress of ongoing investigations and the implementation of new programs, allowing fraudulent activities to continue unchecked.",
+      "entities": [
+        "DHS",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "theguardian.com",
+      "sourceUrl": "https://www.theguardian.com/",
+      "id": "rf-1774836874178-9jo8i67rn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T02:14:34.173Z",
+      "isNew": true
+    },
+    {
+      "type": "shell_company",
+      "description": "There have been reports of shell companies being used to launder money and commit fraud.",
+      "insight": "These shell companies can be used to hide the true ownership and activities of individuals and organizations, making it difficult to track and prosecute fraudulent activities.",
+      "entities": [
+        "Unknown"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "mynorthwest.com",
+      "sourceUrl": "https://mynorthwest.com/",
+      "id": "rf-1774836874178-vd57njraa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T02:14:34.173Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a Democratic lawmaker, which may indicate wrongdoing or corruption.",
       "insight": "This investigation could be a sign of a larger pattern of corruption within the government. I recommend tracking the progress of this investigation and looking for any connections to other entities or programs.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T23:32:34.492Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "environmental fine",
@@ -38,26 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-29T22:29:47.593Z",
-      "isNew": false
-    },
-    {
-      "type": "federal funding freeze",
-      "description": "The DHS funding freeze has resulted in significant cuts to social programs, including those that benefit low-income families and individuals. This has raised concerns about the impact on vulnerable populations and the potential for increased poverty and inequality.",
-      "insight": "I notice that the funding freeze is having a disproportionate impact on certain communities, and I believe it's essential to investigate the potential motivations behind this decision. I recommend looking into the specific programs that have been cut and the individuals who have been affected.",
-      "entities": [
-        "DHS",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com",
-      "id": "rf-1774819823792-m9o0ln0e2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T21:30:23.788Z",
       "isNew": false
     },
     {
@@ -970,29 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T06:00:03.636Z",
       "isNew": false
-    },
-    {
-      "type": "lack of evidence",
-      "description": "The DOJ's conceded lack of criminal evidence in the Federal Reserve investigation raises concerns about the effectiveness of the investigation",
-      "insight": "This could indicate a lack of thoroughness in the investigation or insufficient resources. Further investigation into the investigation's procedures is warranted.",
-      "entities": [
-        "DOJ"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/prosecutor-admits-lacking-evidence-in-powell-investigation-unsealed-transcripts-show/2026/03/25/",
-      "id": "rf-1774418403640-om741apj8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T06:00:03.636Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,7 +1002,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "ProPublica Nonprofits",
     "FDA"
   ],
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-29T23:32:34.492Z"
+  "lastUpdated": "2026-03-30T02:14:34.173Z"
 }
