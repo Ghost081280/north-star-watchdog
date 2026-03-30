@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-25T04:52:46.331Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-25T06:00:03.635Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-30T18:58:24.884Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-30T19:58:07.642Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in FBI investigation into Democratic lawmaker?",
-    "What other organizations is Eric Swalwell connected to?",
-    "Where did the $200M allegedly go in Minnesota SNAP Fraud Investigation?",
     "Where did the Unknown allegedly go in FEMA Contractor Investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the Unknown allegedly go in Minnesota SNAP receipts investigation?",
@@ -558,7 +555,10 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Feeding Our Future defendants connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $58,000 allegedly go in Feeding Our Future scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1782,
-    "articlesProcessed": 88800,
-    "redFlagsFound": 2063,
+    "totalScans": 1783,
+    "articlesProcessed": 88850,
+    "redFlagsFound": 2064,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3M allegedly go in Long Prairie rendering plant investigation?",
-        "What other organizations is Lt. Gov. Flanagan connected to?",
-        "Where did the undisclosed allegedly go in Minnesota Somali fraud investigation?"
+        "Where did the undisclosed allegedly go in FBI investigation into Democratic lawmaker?",
+        "What other organizations is Eric Swalwell connected to?",
+        "Where did the $200M allegedly go in Minnesota SNAP Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-30T18:58:24.884Z",
-  "lastUpdated": "2026-03-30T18:58:24.885Z"
+  "lastReflection": "2026-03-30T19:58:07.642Z",
+  "lastUpdated": "2026-03-30T19:58:07.642Z"
 }
