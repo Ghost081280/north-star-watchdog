@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "alleged fraud",
+      "description": "A Hortonville woman is accused of stealing $58,000 in food assistance and child care benefits.",
+      "insight": "This case suggests potential vulnerabilities in Minnesota's food assistance and child care programs.",
+      "entities": [
+        "Hortonville woman"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WTAQ",
+      "sourceUrl": "https://wtaq.com/2026/03/30/hortonville-woman-pleads-not-guilty-to-alleged-58000-foodshare-child-care-fraud/",
+      "id": "rf-1774906867584-u5exp8rm0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T21:41:07.581Z",
+      "isNew": true
+    },
+    {
+      "type": "election interference",
+      "description": "Eric Swalwell accuses FBI Director Kash Patel of election interference.",
+      "insight": "This accusation raises concerns about potential election interference.",
+      "entities": [
+        "Eric Swalwell",
+        "Kash Patel"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "SFGATE",
+      "sourceUrl": "https://sfgate.com/2026/03/30/sf-swalwell-accuses-fbi-director-kash-patel-of-election-interference-in-governors-race-threatens-legal-action/",
+      "id": "rf-1774906867585-lsezu7v19",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-30T21:41:07.581Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a fatal school bus crash in Tennessee",
       "insight": "This investigation may be related to other cases of fraud or negligence in the transportation industry. Further research is needed to determine the scope of the investigation and potential connections to other entities.",
@@ -18,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T20:50:52.611Z",
-      "isNew": true
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Hortonville woman allegedly committed $58,000 FoodShare, child care fraud",
-      "insight": "This case suggests a potential pattern of abuse in the FoodShare program",
-      "entities": [
-        "Hortonville woman"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WLUK",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNbWt0MnluVV9zQ3A5QWVjdnl1VmxzeHh2RWFabllCdHV5cGJVVkdHQi1Dd20yOG5RdWo4bTQ0aGVFNWxHa2NEazZXYWV6Q2Rndy1ERE1ZLVh2LW13OHMtaVo5U09tUFU0SUxianMzTE0xc2w3SXA0YTR3VFZCZHdLLWMtby1XbFFKX2NWZWVXNTFrVUFncFpCNEhJNEFsWWNkaFVxSTN1ekVjcVBjRFpNa0RZcUNZekdrY2diaThHWm1xU3h5SGJCYXFJMENzTkM0WUp6dENTdzFrRVl4M2VLdEJHNU16QS1FS2l6aXl2dU5rS3R1Nk1iRUxVdmoxRjNVSkxCc1VRUU1ycTBkdkhJTDIxVjJ3ZTBWVWNBYXNJN7BQYktJUEtGNFNqbUNGVTRHdjNYNElDcDY",
-      "id": "rf-1774900687647-983xejdtb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T19:58:07.644Z",
       "isNew": false
     },
     {
@@ -969,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-25T13:06:32.376Z",
       "isNew": false
-    },
-    {
-      "type": "potential obstruction of justice",
-      "description": "The Trump administration's withholding of evidence in shootings by agents during immigration crackdown",
-      "insight": "This could indicate a larger pattern of wrongdoing by the administration and a lack of transparency. Further investigation is needed to uncover the extent of this issue.",
-      "entities": [
-        "Trump Administration",
-        "Minnesota DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/minnesota-sues-trump-administration-over-withheld-evidence-in-shootings/2026/03/25/1b2b44c4-9f6c-11ee-85c7-1d036c6e9a29_story.html",
-      "id": "rf-1774438846920-13qpma568",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T11:40:46.916Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,9 +1002,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-30T20:50:52.611Z"
+  "lastUpdated": "2026-03-30T21:41:07.581Z"
 }
