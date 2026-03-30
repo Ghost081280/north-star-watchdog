@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-24T22:29:43.282Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-24T23:30:50.704Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-30T14:26:09.645Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-30T16:05:16.729Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $200M allegedly go in Federal Investigation into WA Housing Program?",
-    "Where did the $0 allegedly go in Minnesota Somali fraud hearing?",
     "Where did the $3M allegedly go in Long Prairie rendering plant fine?",
     "Where did the $200M allegedly go in Minnesota Somali fraud investigation?",
     "Where did the unknown allegedly go in FBI investigation into Trump administration?",
@@ -558,7 +556,9 @@
     "Where did the $200M allegedly go in FEMA contractor investigation?",
     "Where did the $200M allegedly go in Washington State housing program investigation?",
     "Where did the $200M allegedly go in Minnesota SNAP fraud investigation?",
-    "Where did the Unknown allegedly go in FBI investigation into Temple Israel?"
+    "Where did the Unknown allegedly go in FBI investigation into Temple Israel?",
+    "Where did the $250M allegedly go in Feeding Our Future scheme?",
+    "Where did the Unknown allegedly go in FBI investigation into New York investors?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1779,
-    "articlesProcessed": 88650,
-    "redFlagsFound": 2060,
+    "totalScans": 1780,
+    "articlesProcessed": 88700,
+    "redFlagsFound": 2061,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3M allegedly go in Minnesota Pollution Control Agency Investigation?",
         "Where did the $200M allegedly go in Federal Investigation into WA Housing Program?",
-        "Where did the $0 allegedly go in Minnesota Somali fraud hearing?"
+        "Where did the $0 allegedly go in Minnesota Somali fraud hearing?",
+        "Where did the $3M allegedly go in Long Prairie rendering plant fine?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-30T14:26:09.645Z",
-  "lastUpdated": "2026-03-30T14:26:09.646Z"
+  "lastReflection": "2026-03-30T16:05:16.729Z",
+  "lastUpdated": "2026-03-30T16:05:16.730Z"
 }
