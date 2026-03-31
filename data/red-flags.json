@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen funds for several organizations linked to Medicaid fraud.",
+      "insight": "This pattern of freezing funds suggests a larger effort to combat Medicaid fraud, but it also raises concerns about the potential for innocent organizations to be caught in the crossfire.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://www.washingtonexaminer.com/news/feeding-our-future-fraudster-sentenced",
+      "id": "rf-1774993089046-sctlrkzwl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T21:38:09.043Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A Minnesota man was sentenced for Medicaid fraud, indicating a potential pattern of fraudulent activity in the state's Medicaid program.",
       "insight": "I suspect that there may be a larger scheme at play, with multiple individuals involved in Medicaid fraud. Further investigation is needed to uncover the full extent of the fraud.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T20:49:42.589Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -36,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T19:58:31.351Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Minnesota DHS is holding federal Medicaid funding due to potential changes to the system",
-      "insight": "This could indicate a larger issue with Medicaid funding in Minnesota and potential fraud",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota DHS talks federal Medicaid funding hold, potential changes to system - Park Rapids Enterprise",
-      "sourceUrl": "https://www.parkrapidsenterprise.com/news/minnesota-dhs-talks-federal-medicaid-funding-hold-potential-changes-system",
-      "id": "rf-1774983661489-2y2yaqmtr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-31T19:01:01.485Z",
       "isNew": false
     },
     {
@@ -989,17 +989,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T20:49:42.589Z"
+  "lastUpdated": "2026-03-31T21:38:09.043Z"
 }
