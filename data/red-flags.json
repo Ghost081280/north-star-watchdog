@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "A Medicaid provider was banned for fraud but continued billing",
+      "insight": "This suggests a possible lack of oversight or enforcement",
+      "entities": [
+        "Medicaid provider"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/article-12345678.html",
+      "id": "rf-1774987111355-pq8dvm5g0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T19:58:31.351Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Minnesota DHS is holding federal Medicaid funding due to potential changes to the system",
       "insight": "This could indicate a larger issue with Medicaid funding in Minnesota and potential fraud",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T19:01:01.485Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud",
@@ -115,25 +134,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T07:11:33.580Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Fishing Point Healthcare has been targeted in a Medicaid fraud investigation, with patients losing access to care",
-      "insight": "This investigation raises concerns about the potential for fraud and misuse of funds in the Medicaid program. Further investigation is needed to determine the extent of the fraud and to identify any other entities involved.",
-      "entities": [
-        "Fishing Point Healthcare"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WTKR",
-      "sourceUrl": "https://www.google.com/url?q=https://www.wtkr.com/news/medicaid-fraud-investigation-targets-fishing-point-healthcare-as-patients-lose-access-to-care",
-      "id": "rf-1774933683160-rxu9vj9ox",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-31T05:08:03.156Z",
       "isNew": false
     },
     {
@@ -998,7 +998,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T19:01:01.485Z"
+  "lastUpdated": "2026-03-31T19:58:31.351Z"
 }
