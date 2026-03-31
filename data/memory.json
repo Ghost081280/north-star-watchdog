@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-25T20:37:33.296Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-25T21:37:53.631Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-31T15:01:21.255Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-31T16:12:05.337Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $58,000 allegedly go in Feeding Our Future investigation?",
-    "What other organizations is Unnamed Hortonville woman connected to?",
     "What other organizations is Unnamed Feeding Our Future defendant connected to?",
     "Where did the N/A allegedly go in Fishing Point Healthcare Medicaid fraud investigation?",
     "Where did the N/A allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +556,9 @@
     "What other organizations is Feeding Our Future defendant connected to?",
     "What other organizations is Abdul Ali connected to?",
     "Where did the $3M allegedly go in Feeding Our Future investigation?",
-    "Where did the $3M allegedly go in Feeding Our Future scam?"
+    "Where did the $3M allegedly go in Feeding Our Future scam?",
+    "Where did the $3M allegedly go in Feeding Our Future fraud case?",
+    "Where did the unknown allegedly go in Minnesota Somali fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1795,
-    "articlesProcessed": 89450,
-    "redFlagsFound": 2076,
+    "totalScans": 1796,
+    "articlesProcessed": 89500,
+    "redFlagsFound": 2077,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kash Patel connected to?",
         "Where did the $58,000 allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Unnamed Hortonville woman connected to?"
+        "What other organizations is Unnamed Hortonville woman connected to?",
+        "What other organizations is Unnamed Feeding Our Future defendant connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-31T15:01:21.255Z",
-  "lastUpdated": "2026-03-31T15:01:21.256Z"
+  "lastReflection": "2026-03-31T16:12:05.337Z",
+  "lastUpdated": "2026-03-31T16:12:05.337Z"
 }
