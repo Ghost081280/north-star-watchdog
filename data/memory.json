@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-25T10:47:39.186Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-25T11:40:46.914Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-30T23:33:48.318Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-31T02:10:09.601Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1787,
-    "articlesProcessed": 89050,
+    "totalScans": 1788,
+    "articlesProcessed": 89100,
     "redFlagsFound": 2069,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Somali fraud hearing?",
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Feeding Our Future defendants connected to?"
+        "What other organizations is Feeding Our Future defendants connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-30T23:33:48.318Z",
-  "lastUpdated": "2026-03-30T23:33:48.319Z"
+  "lastReflection": "2026-03-31T02:10:09.601Z",
+  "lastUpdated": "2026-03-31T02:10:09.602Z"
 }
