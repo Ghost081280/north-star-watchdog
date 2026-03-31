@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T08:54:02.907Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-26T10:00:25.990Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-31T22:33:35.272Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-03-31T23:33:22.512Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 76,
+      "count": 77,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-03-26T11:04:22.353Z"
+      "lastSeen": "2026-03-31T23:33:22.512Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "What other organizations is Feeding Our Future defendant connected to?",
-    "What other organizations is Abdul Ali connected to?",
     "Where did the $3M allegedly go in Feeding Our Future investigation?",
     "Where did the $3M allegedly go in Feeding Our Future scam?",
     "Where did the $3M allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +555,10 @@
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the $511K allegedly go in NYC homeless shelter operator investigation?",
     "Where did the $243M allegedly go in Minnesota Medicaid funds?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
+    "Where did the $511K allegedly go in Missouri childcare expansion program fraud?",
+    "Where did the $243M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1802,
-    "articlesProcessed": 89800,
-    "redFlagsFound": 2084,
+    "totalScans": 1803,
+    "articlesProcessed": 89850,
+    "redFlagsFound": 2086,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $58,000 allegedly go in Feeding Our Future fraud case?",
-        "Where did the $58,000 allegedly go in Hortonville woman FoodShare and child care fraud plot?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Feeding Our Future defendant connected to?",
+        "What other organizations is Abdul Ali connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-31T22:33:35.272Z",
-  "lastUpdated": "2026-03-31T22:33:35.273Z"
+  "lastReflection": "2026-03-31T23:33:22.512Z",
+  "lastUpdated": "2026-03-31T23:33:22.512Z"
 }
