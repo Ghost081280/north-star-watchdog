@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-25T13:06:32.374Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-25T14:58:14.673Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-31T05:08:03.154Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-03-31T07:11:33.578Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the $58,000 allegedly go in Feeding Our Future scheme?",
@@ -558,7 +557,8 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $58,000 allegedly go in Medicaid fraud investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $37M allegedly go in Medicaid fraud investigation?"
+    "Where did the $37M allegedly go in Medicaid fraud investigation?",
+    "Where did the Unknown allegedly go in NYC Council member and Hochul aide bribery probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1789,
-    "articlesProcessed": 89150,
-    "redFlagsFound": 2070,
+    "totalScans": 1790,
+    "articlesProcessed": 89200,
+    "redFlagsFound": 2071,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future defendants connected to?",
-        "Where did the $250 million allegedly go in Feeding Our Future investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Tim Walz connected to?",
+        "What other organizations is Keith Ellison connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-31T05:08:03.154Z",
-  "lastUpdated": "2026-03-31T05:08:03.155Z"
+  "lastReflection": "2026-03-31T07:11:33.578Z",
+  "lastUpdated": "2026-03-31T07:11:33.578Z"
 }
