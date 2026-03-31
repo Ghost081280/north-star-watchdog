@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Minnesota DHS is holding federal Medicaid funding due to potential changes to the system",
+      "insight": "This could indicate a larger issue with Medicaid funding in Minnesota and potential fraud",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS talks federal Medicaid funding hold, potential changes to system - Park Rapids Enterprise",
+      "sourceUrl": "https://www.parkrapidsenterprise.com/news/minnesota-dhs-talks-federal-medicaid-funding-hold-potential-changes-system",
+      "id": "rf-1774983661489-2y2yaqmtr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T19:01:01.485Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "A Minnesota man was sentenced to prison for his role in a $3M Feeding Our Future scam.",
       "insight": "This case indicates a potential pattern of fraud in Minnesota, particularly in programs related to children's meals.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T17:55:58.284Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -155,25 +174,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-30T20:50:52.611Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government has frozen assets related to the Feeding Our Future scheme",
-      "insight": "This suggests that the government is taking the investigation seriously and is taking steps to prevent further fraud",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fox9.com/news/minnesota-fraud-sentencing-change-of-plea-monday-in-feeding-our-future-scheme",
-      "id": "rf-1774897104890-qkqx822n8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T18:58:24.886Z",
       "isNew": false
     },
     {
@@ -989,8 +989,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +996,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T17:55:58.284Z"
+  "lastUpdated": "2026-03-31T19:01:01.485Z"
 }
