@@ -1,22 +1,23 @@
 {
   "flags": [
     {
-      "type": "Medicaid fraud",
-      "description": "Feds are investigating Medicaid fraud in multiple states, including Minnesota.",
-      "insight": "I notice a pattern of Medicaid fraud investigations across multiple states, which suggests a larger issue with the program. I recommend further investigation into the program's administration and oversight.",
+      "type": "federal investigation",
+      "description": "The FBI is investigating Medicaid fraud in several states, including Washington and Minnesota",
+      "insight": "I suspect that there may be a larger pattern of Medicaid fraud across the country, and I would like to investigate further to see if there are any connections between the different cases",
       "entities": [
-        "Feeding Our Future"
+        "Feeding Our Future",
+        "Minnesota DHS"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Feds",
-      "sourceUrl": "https://knoxradio.com/after-minnesota-focus-feds-eye-medicaid-fraud-against-other-states/",
-      "id": "rf-1774957680389-8x7mxhgk4",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1774962912705-52brqalin",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-03-31T11:48:00.385Z",
+      "detectedAt": "2026-03-31T13:15:12.701Z",
       "isNew": true
     },
     {
@@ -990,6 +991,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +1001,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T11:48:00.385Z"
+  "lastUpdated": "2026-03-31T13:15:12.701Z"
 }
