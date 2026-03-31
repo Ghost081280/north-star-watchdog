@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to fraud",
+      "insight": "The Feeding Our Future case and the Hortonville woman's FoodShare and child care fraud plot suggest a need for increased oversight and monitoring of programs to prevent fraud.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota DHS",
+      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-fraud-case-update-one-sentenced-as-hearings-continue",
+      "id": "rf-1774951677229-dkcnunyyk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T10:07:57.225Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation is targeting a NYC Council member and a Hochul aide for allegedly taking bribes to help a migrant shelter provider.",
       "insight": "This investigation raises concerns about corruption and abuse of power. Further investigation is needed to determine the extent of the bribery scheme and whether other officials are involved.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T08:58:08.692Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -455,26 +475,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-28T21:29:03.201Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential program termination due to fraud",
-      "insight": "The recent scrutiny on child care spending in Minnesota and Texas may lead to program terminations or changes in funding allocations.",
-      "entities": [
-        "Minnesota DHS",
-        "Texas State Government"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdzA5OVNBQkFtWkJPWTFhUzkwaEVyZ2kxRW81RjFUSWgwb242RXNMNWVkVkstcWNCV0ZBdC1LdklvSmk3WkRSSVRic0IwZGJ2cHpjTDFTOFU3M243SU1MUTFBbTZqaFRWR3NTbmE3Mk5aWGtaakhnMTUtdHNaemE5S3NxWnpsZWx6ZTdhMmc2ZGxKd3NaU2F1WElKb19telJa?oc=5",
-      "id": "rf-1774729741686-kydv6dm9v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T20:29:01.682Z",
       "isNew": false
     },
     {
@@ -994,11 +994,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T08:58:08.692Z"
+  "lastUpdated": "2026-03-31T10:07:57.225Z"
 }
