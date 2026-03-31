@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "Ex-NYPD Sergeant and others arrested in bribery probe linked to City Council",
+      "insight": "Potential pattern of corruption in city government.",
+      "entities": [
+        "Ex-NYPD Sergeant",
+        "City Council"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "THE CITY - NYC News",
+      "sourceUrl": "https://thecity.nyc/",
+      "id": "rf-1774996415277-y14e61no6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T22:33:35.274Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The federal government has frozen funds for several organizations linked to Medicaid fraud.",
       "insight": "This pattern of freezing funds suggests a larger effort to combat Medicaid fraud, but it also raises concerns about the potential for innocent organizations to be caught in the crossfire.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T21:38:09.043Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -965,40 +985,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T02:08:53.174Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Minnesota is suing the federal government for evidence in ICE shooting investigations",
-      "insight": "This red flag suggests that there may be a lack of transparency or cooperation between state and federal agencies, which could hinder investigations and justice. I recommend further investigation into the relationship between state and federal agencies.",
-      "entities": [
-        "Minnesota government",
-        "Federal government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "St. Cloud Times",
-      "sourceUrl": "https://www.stcloudtimes.com/story/news/2026/03/25/minnesota-sues-federal-government-evidence-ice-shootings/456789012/",
-      "id": "rf-1774478077470-9ab2lymc2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-25T22:34:37.467Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T21:38:09.043Z"
+  "lastUpdated": "2026-03-31T22:33:35.274Z"
 }

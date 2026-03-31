@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T07:06:22.758Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-26T08:54:02.907Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-03-31T21:38:09.040Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-03-31T22:33:35.272Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $58,000 allegedly go in Feeding Our Future fraud case?",
-    "Where did the $58,000 allegedly go in Hortonville woman FoodShare and child care fraud plot?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "What other organizations is Abdul Ali connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Abdulzeez Abiola connected to?",
     "What other organizations is Ex-NYPD Sergeant connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
-    "Where did the $511K allegedly go in NYC homeless shelter operator investigation?"
+    "Where did the $511K allegedly go in NYC homeless shelter operator investigation?",
+    "Where did the $243M allegedly go in Minnesota Medicaid funds?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1801,
-    "articlesProcessed": 89750,
-    "redFlagsFound": 2082,
+    "totalScans": 1802,
+    "articlesProcessed": 89800,
+    "redFlagsFound": 2084,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $37M allegedly go in Medicaid fraud investigation?",
-        "Where did the Unknown allegedly go in NYC Council member and Hochul aide bribery probe?",
-        "Where did the Unknown allegedly go in NYC Council member and Hochul aide federal bribery investigation?"
+        "Where did the $58,000 allegedly go in Feeding Our Future fraud case?",
+        "Where did the $58,000 allegedly go in Hortonville woman FoodShare and child care fraud plot?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-31T21:38:09.040Z",
-  "lastUpdated": "2026-03-31T21:38:09.041Z"
+  "lastReflection": "2026-03-31T22:33:35.272Z",
+  "lastUpdated": "2026-03-31T22:33:35.273Z"
 }
