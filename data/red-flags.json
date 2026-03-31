@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Feds are investigating Medicaid fraud in multiple states, including Minnesota.",
+      "insight": "I notice a pattern of Medicaid fraud investigations across multiple states, which suggests a larger issue with the program. I recommend further investigation into the program's administration and oversight.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Feds",
+      "sourceUrl": "https://knoxradio.com/after-minnesota-focus-feds-eye-medicaid-fraud-against-other-states/",
+      "id": "rf-1774957680389-8x7mxhgk4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-03-31T11:48:00.385Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential program termination due to fraud",
       "insight": "The Feeding Our Future case and the Hortonville woman's FoodShare and child care fraud plot suggest a need for increased oversight and monitoring of programs to prevent fraud.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T10:07:57.225Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -77,25 +96,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T05:08:03.156Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "A Hortonville woman is accused of stealing $58,000 in food assistance and child care benefits.",
-      "insight": "This case suggests potential vulnerabilities in Minnesota's food assistance and child care programs.",
-      "entities": [
-        "Hortonville woman"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WTAQ",
-      "sourceUrl": "https://wtaq.com/2026/03/30/hortonville-woman-pleads-not-guilty-to-alleged-58000-foodshare-child-care-fraud/",
-      "id": "rf-1774906867584-u5exp8rm0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T21:41:07.581Z",
       "isNew": false
     },
     {
@@ -994,13 +994,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-03-31T10:07:57.225Z"
+  "lastUpdated": "2026-03-31T11:48:00.385Z"
 }
