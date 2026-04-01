@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T10:00:25.990Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-26T11:04:22.353Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-03-31T23:33:22.512Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-01T02:27:37.495Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 30,
+      "count": 31,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-03-23T14:53:59.244Z"
+      "lastSeen": "2026-04-01T02:27:37.495Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 77,
+      "count": 78,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-03-31T23:33:22.512Z"
+      "lastSeen": "2026-04-01T02:27:37.495Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3M allegedly go in Feeding Our Future investigation?",
-    "Where did the $3M allegedly go in Feeding Our Future scam?",
-    "Where did the $3M allegedly go in Feeding Our Future fraud case?",
     "Where did the unknown allegedly go in Minnesota Somali fraud investigation?",
     "What specific allegations exist against Todd Blanche?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +555,10 @@
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
     "Where did the $511K allegedly go in Missouri childcare expansion program fraud?",
-    "Where did the $243M allegedly go in Feeding Our Future?"
+    "Where did the $243M allegedly go in Feeding Our Future?",
+    "What other organizations is Feeding Our Future fraudster connected to?",
+    "What other organizations is Four individuals connected to?",
+    "Where did the $243M allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1803,
-    "articlesProcessed": 89850,
-    "redFlagsFound": 2086,
+    "totalScans": 1804,
+    "articlesProcessed": 89900,
+    "redFlagsFound": 2088,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Feeding Our Future defendant connected to?",
-        "What other organizations is Abdul Ali connected to?"
+        "Where did the $3M allegedly go in Feeding Our Future investigation?",
+        "Where did the $3M allegedly go in Feeding Our Future scam?",
+        "Where did the $3M allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-03-31T23:33:22.512Z",
-  "lastUpdated": "2026-03-31T23:33:22.512Z"
+  "lastReflection": "2026-04-01T02:27:37.495Z",
+  "lastUpdated": "2026-04-01T02:27:37.495Z"
 }
