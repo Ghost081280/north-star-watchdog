@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-27T09:53:59.736Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-27T10:47:29.714Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-01T22:36:24.179Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-01T23:35:14.368Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Former RI judge and lawyer connected to?",
-    "Where did the $243M allegedly go in Minnesota Medicaid investigation?",
-    "Where did the N/A allegedly go in Trump White House ballroom investigation?",
-    "What other organizations is Tim Walz connected to?",
     "Where did the $37 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $243 million allegedly go in Minnesota Medicaid funds delay?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +554,11 @@
     "Where did the $511K allegedly go in Missouri childcare relief funds?",
     "Where did the $511K allegedly go in Missouri childcare fraud scheme?",
     "Where did the $250 million allegedly go in Feeding our Future fraud scheme?",
-    "Where did the $billions allegedly go in Child care funding freeze?"
+    "Where did the $billions allegedly go in Child care funding freeze?",
+    "What other organizations is Rochester woman connected to?",
+    "What other organizations is Minnesota man connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future investigation?",
+    "Where did the $511K allegedly go in Child care funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1818,
-    "articlesProcessed": 90600,
-    "redFlagsFound": 2104,
+    "totalScans": 1819,
+    "articlesProcessed": 90650,
+    "redFlagsFound": 2105,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $243M allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Feeding Our Future defendant connected to?",
-        "What other organizations is Former RI judge and lawyer connected to?"
+        "What other organizations is Former RI judge and lawyer connected to?",
+        "Where did the $243M allegedly go in Minnesota Medicaid investigation?",
+        "Where did the N/A allegedly go in Trump White House ballroom investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T22:36:24.179Z",
-  "lastUpdated": "2026-04-01T22:36:24.180Z"
+  "lastReflection": "2026-04-01T23:35:14.368Z",
+  "lastUpdated": "2026-04-01T23:35:14.369Z"
 }
