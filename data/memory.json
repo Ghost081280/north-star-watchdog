@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T11:04:22.353Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-26T13:11:38.877Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-01T02:27:37.495Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-01T05:23:47.379Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -517,17 +517,17 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 31,
+      "count": 32,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-04-01T02:27:37.495Z"
+      "lastSeen": "2026-04-01T05:23:47.380Z"
     },
     {
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 78,
+      "count": 79,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-01T02:27:37.495Z"
+      "lastSeen": "2026-04-01T05:23:47.380Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in Minnesota Somali fraud investigation?",
-    "What specific allegations exist against Todd Blanche?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $3m allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Minnesota man connected to?",
     "What other organizations is Five individuals connected to?",
@@ -558,7 +555,10 @@
     "Where did the $243M allegedly go in Feeding Our Future?",
     "What other organizations is Feeding Our Future fraudster connected to?",
     "What other organizations is Four individuals connected to?",
-    "Where did the $243M allegedly go in Feeding Our Future investigation?"
+    "Where did the $243M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Feeding Our Future defendant connected to?",
+    "What other organizations is Former RI judge and lawyer connected to?",
+    "Where did the $243M allegedly go in Minnesota Medicaid investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1804,
-    "articlesProcessed": 89900,
-    "redFlagsFound": 2088,
+    "totalScans": 1805,
+    "articlesProcessed": 89950,
+    "redFlagsFound": 2090,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3M allegedly go in Feeding Our Future investigation?",
-        "Where did the $3M allegedly go in Feeding Our Future scam?",
-        "Where did the $3M allegedly go in Feeding Our Future fraud case?"
+        "Where did the unknown allegedly go in Minnesota Somali fraud investigation?",
+        "What specific allegations exist against Todd Blanche?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T02:27:37.495Z",
-  "lastUpdated": "2026-04-01T02:27:37.495Z"
+  "lastReflection": "2026-04-01T05:23:47.379Z",
+  "lastUpdated": "2026-04-01T05:23:47.380Z"
 }
