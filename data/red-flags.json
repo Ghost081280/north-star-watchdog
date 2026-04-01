@@ -2,6 +2,46 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Judge blocks funding freeze for childcare programs in blue states",
+      "insight": "This could indicate a potential issue with the program's administration or oversight.",
+      "entities": [
+        "Minnesota",
+        "US government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "SF: Federal Judge Blocks Funding Freeze For Childcare Programs In Blue States - sfgate.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVY2U0MyUjJ3ZENsSHFCS1RId1d2WlYzQ25zWi1fWk1FRkhNZ0hxWjZSbHJubmRfelFVenhQcVZlQjRRb3V2Ymp3RmcyNW1LeDFRaXNOcHJzZEoxMmY4b1l3cGdCN0ZINV96TXJpSTBXZEMwYVpURF9hWG5UckZYUmFFb096N25LMWZ3VlJIMUZNUEkwN1llaElfWVZCMTN1",
+      "id": "rf-1775073626365-tgxhxx8e6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-01T20:00:26.361Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident'",
+      "insight": "This could indicate a potential national security threat.",
+      "entities": [
+        "FBI",
+        "US government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident' - Politico",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU0xCMUplMENEZTNKU0txeU45M2tJN3Q3Vm96SWxmU3ZhZURKeVIzYlJJb1c5dEdvbWlWM3ROd1UyZUxRMi1Fd1puM003Uk5GTFBiUDRodVA2ZUxxc3dkeDF0YTNTdG9xc0o5ZklrQS1scFBPbHFndlZpMVQyRWdPaGxXYTFxWng1cXIzWmNiYjRNUjg4WXlWVg",
+      "id": "rf-1775073626365-qnebgeq7h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-01T20:00:26.361Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The MLBPA shut down the embattled Players Way program amid an inquiry",
       "insight": "This could indicate a larger issue with the program and potential fraud",
       "entities": [
@@ -56,26 +96,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-01T13:18:42.234Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal judge blocks funding cuts for child care programs",
-      "insight": "This development suggests a pattern of federal intervention in child care funding, potentially indicating a larger issue with the funding system. Further investigation is needed to determine the extent of the issue and the impact on affected families.",
-      "entities": [
-        "Federal Court",
-        "Child care programs"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/",
-      "id": "rf-1775027917375-2bz3cudez",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-01T07:18:37.372Z",
       "isNew": false
     },
     {
@@ -967,38 +987,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T11:04:22.355Z",
       "isNew": false
-    },
-    {
-      "type": "lawsuit",
-      "description": "Minnesota sues federal government for evidence in ICE shootings.",
-      "insight": "Potential for increased transparency and accountability in ICE operations.",
-      "entities": [
-        "Minnesota",
-        "Trump Administration"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "ProPublica",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdmRJM3hDeklLQk5rQ0tiSHMxUlpJekw0VUthNGJYemtWNnlVamVEMWNyZjlldnRrTmVIcmtqdFRPc1JEczJOeW4teDR0M3pPeXNWODRwT09MVWhWOWlnbnkzemZlei1KOVg1WnFRczQwRzBpbTZ2ZFBuMnpib1pKaGFLdkpWSDZwY0xlQjFpalhoM3BDdzAxQnZR",
-      "id": "rf-1774523062359-2f51rrnj9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T11:04:22.355Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-01T18:59:46.145Z"
+  "lastUpdated": "2026-04-01T20:00:26.361Z"
 }

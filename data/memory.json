@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-27T02:10:05.532Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-27T05:06:32.482Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-01T18:59:46.143Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-01T20:00:26.359Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Four individuals connected to?",
     "Where did the $243M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "What other organizations is Former RI judge and lawyer connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Pooh Shiesty connected to?",
     "What other organizations is Trump's Justice Department connected to?",
     "Where did the $37 MILLION allegedly go in Feeding Our Future?",
-    "Where did the $511K allegedly go in Missouri childcare relief funds?"
+    "Where did the $511K allegedly go in Missouri childcare relief funds?",
+    "Where did the $511K allegedly go in Missouri childcare fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1814,
-    "articlesProcessed": 90400,
-    "redFlagsFound": 2099,
+    "totalScans": 1815,
+    "articlesProcessed": 90450,
+    "redFlagsFound": 2101,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident'",
+          "insight": "This could indicate a potential national security threat.",
+          "entities": [
+            "FBI",
+            "US government"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident' - Politico",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU0xCMUplMENEZTNKU0txeU45M2tJN3Q3Vm96SWxmU3ZhZURKeVIzYlJJb1c5dEdvbWlWM3ROd1UyZUxRMi1Fd1puM003Uk5GTFBiUDRodVA2ZUxxc3dkeDF0YTNTdG9xc0o5ZklrQS1scFBPbHFndlZpMVQyRWdPaGxXYTFxWng1cXIzWmNiYjRNUjg4WXlWVg"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T18:59:46.143Z",
-  "lastUpdated": "2026-04-01T18:59:46.144Z"
+  "lastReflection": "2026-04-01T20:00:26.359Z",
+  "lastUpdated": "2026-04-01T20:00:26.359Z"
 }
