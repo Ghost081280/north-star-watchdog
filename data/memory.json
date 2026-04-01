@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-27T05:06:32.482Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-27T07:04:58.024Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-01T20:00:26.359Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-01T20:56:38.210Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 79,
+      "count": 80,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-01T05:23:47.380Z"
+      "lastSeen": "2026-04-01T20:56:38.210Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1815,
-    "articlesProcessed": 90450,
-    "redFlagsFound": 2101,
+    "totalScans": 1816,
+    "articlesProcessed": 90500,
+    "redFlagsFound": 2103,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident'",
-          "insight": "This could indicate a potential national security threat.",
-          "entities": [
-            "FBI",
-            "US government"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident' - Politico",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU0xCMUplMENEZTNKU0txeU45M2tJN3Q3Vm96SWxmU3ZhZURKeVIzYlJJb1c5dEdvbWlWM3ROd1UyZUxRMi1Fd1puM003Uk5GTFBiUDRodVA2ZUxxc3dkeDF0YTNTdG9xc0o5ZklrQS1scFBPbHFndlZpMVQyRWdPaGxXYTFxWng1cXIzWmNiYjRNUjg4WXlWVg"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Four individuals connected to?",
         "Where did the $243M allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Feeding Our Future defendant connected to?"
+        "What other organizations is Feeding Our Future defendant connected to?",
+        "What other organizations is Former RI judge and lawyer connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T20:00:26.359Z",
-  "lastUpdated": "2026-04-01T20:00:26.359Z"
+  "lastReflection": "2026-04-01T20:56:38.210Z",
+  "lastUpdated": "2026-04-01T20:56:38.210Z"
 }
