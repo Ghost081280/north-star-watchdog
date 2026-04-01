@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T15:03:07.687Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-26T16:59:38.477Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-01T07:18:37.370Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-01T09:03:01.510Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota man connected to?",
-    "What other organizations is Five individuals connected to?",
-    "Where did the $511K allegedly go in Missouri childcare expansion program investigation?",
-    "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Abdulzeez Abiola connected to?",
     "What other organizations is Ex-NYPD Sergeant connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +554,11 @@
     "What other organizations is Feeding Our Future defendant connected to?",
     "What other organizations is Former RI judge and lawyer connected to?",
     "Where did the $243M allegedly go in Minnesota Medicaid investigation?",
-    "Where did the N/A allegedly go in Trump White House ballroom investigation?"
+    "Where did the N/A allegedly go in Trump White House ballroom investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "Where did the $37 million allegedly go in Feeding Our Future fraud case?",
+    "Where did the $243 million allegedly go in Minnesota Medicaid funds delay?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1806,
-    "articlesProcessed": 90000,
-    "redFlagsFound": 2091,
+    "totalScans": 1807,
+    "articlesProcessed": 90050,
+    "redFlagsFound": 2093,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3m allegedly go in Minnesota Medicaid fraud investigation?",
         "What other organizations is Minnesota man connected to?",
-        "What other organizations is Five individuals connected to?"
+        "What other organizations is Five individuals connected to?",
+        "Where did the $511K allegedly go in Missouri childcare expansion program investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T07:18:37.370Z",
-  "lastUpdated": "2026-04-01T07:18:37.371Z"
+  "lastReflection": "2026-04-01T09:03:01.510Z",
+  "lastUpdated": "2026-04-01T09:03:01.511Z"
 }

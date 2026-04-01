@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple news articles report on fraud allegations in Minnesota",
+      "insight": "This suggests a potential pattern of fraudulent activity in the state.",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "",
+      "id": "rf-1775034181517-8oa56pwlk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-01T09:03:01.513Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal judge blocks funding cuts for child care programs",
       "insight": "This development suggests a pattern of federal intervention in child care funding, potentially indicating a larger issue with the funding system. Further investigation is needed to determine the extent of the issue and the impact on affected families.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-01T07:18:37.372Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell_company",
@@ -38,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-03-31T22:33:35.274Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A Minnesota man was sentenced for Medicaid fraud, indicating a potential pattern of fraudulent activity in the state's Medicaid program.",
-      "insight": "I suspect that there may be a larger scheme at play, with multiple individuals involved in Medicaid fraud. Further investigation is needed to uncover the full extent of the fraud.",
-      "entities": [
-        "Minnesota man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/minnesota-man-who-pocketed-cash-in-kids-meal-scheme-gets-prison-time-despite-im-sorry-apology",
-      "id": "rf-1774990182592-jgohosg6q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-31T20:49:42.589Z",
       "isNew": false
     },
     {
@@ -990,6 +990,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +1000,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-01T07:18:37.372Z"
+  "lastUpdated": "2026-04-01T09:03:01.513Z"
 }
