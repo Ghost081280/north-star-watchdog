@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T21:30:38.430Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-26T22:28:22.950Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-01T15:03:03.211Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-01T16:53:17.276Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $511K allegedly go in NYC homeless shelter operator investigation?",
-    "Where did the $243M allegedly go in Minnesota Medicaid funds?",
-    "Are any of these 4 figures connected to each other?",
     "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
     "Where did the $511K allegedly go in Missouri childcare expansion program fraud?",
     "Where did the $243M allegedly go in Feeding Our Future?",
@@ -558,7 +555,10 @@
     "Are any of these 2 figures connected to each other?",
     "Where did the $37 million allegedly go in Washington State's Daycare Fraud Scandal?",
     "Where did the $1.8M allegedly go in Feeding Our Future investigation?",
-    "Where did the $37M allegedly go in Minnesota childcare fraud?"
+    "Where did the $37M allegedly go in Minnesota childcare fraud?",
+    "What specific allegations exist against Pooh Shiesty?",
+    "What specific allegations exist against Trump?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1811,
-    "articlesProcessed": 90250,
-    "redFlagsFound": 2096,
+    "totalScans": 1812,
+    "articlesProcessed": 90300,
+    "redFlagsFound": 2097,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ex-NYPD Sergeant connected to?",
-        "Where did the $250M allegedly go in Feeding Our Future investigation?",
-        "Where did the $511K allegedly go in NYC homeless shelter operator investigation?"
+        "Where did the $511K allegedly go in NYC homeless shelter operator investigation?",
+        "Where did the $243M allegedly go in Minnesota Medicaid funds?",
+        "Are any of these 4 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T15:03:03.211Z",
-  "lastUpdated": "2026-04-01T15:03:03.212Z"
+  "lastReflection": "2026-04-01T16:53:17.276Z",
+  "lastUpdated": "2026-04-01T16:53:17.276Z"
 }
