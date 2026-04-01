@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-26T22:28:22.950Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-26T23:31:39.376Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-01T16:53:17.276Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-01T17:49:31.001Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
-    "Where did the $511K allegedly go in Missouri childcare expansion program fraud?",
-    "Where did the $243M allegedly go in Feeding Our Future?",
-    "What other organizations is Feeding Our Future fraudster connected to?",
     "What other organizations is Four individuals connected to?",
     "Where did the $243M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Feeding Our Future defendant connected to?",
@@ -558,7 +554,11 @@
     "Where did the $37M allegedly go in Minnesota childcare fraud?",
     "What specific allegations exist against Pooh Shiesty?",
     "What specific allegations exist against Trump?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Pooh Shiesty connected to?",
+    "What other organizations is Trump's Justice Department connected to?",
+    "Where did the $37 MILLION allegedly go in Feeding Our Future?",
+    "Where did the $511K allegedly go in Missouri childcare relief funds?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1812,
-    "articlesProcessed": 90300,
-    "redFlagsFound": 2097,
+    "totalScans": 1813,
+    "articlesProcessed": 90350,
+    "redFlagsFound": 2099,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $511K allegedly go in NYC homeless shelter operator investigation?",
-        "Where did the $243M allegedly go in Minnesota Medicaid funds?",
-        "Are any of these 4 figures connected to each other?"
+        "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
+        "Where did the $511K allegedly go in Missouri childcare expansion program fraud?",
+        "Where did the $243M allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-01T16:53:17.276Z",
-  "lastUpdated": "2026-04-01T16:53:17.276Z"
+  "lastReflection": "2026-04-01T17:49:31.001Z",
+  "lastUpdated": "2026-04-01T17:49:31.002Z"
 }
