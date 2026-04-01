@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The MLBPA shut down the Players Way program amid an inquiry",
+      "insight": "This could indicate a larger issue within the program that requires further investigation.",
+      "entities": [
+        "MLBPA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ESPN",
+      "sourceUrl": "https://www.espn.com/mlb/story/_/id/39942441/mlbpa-shuts-down-embattled-players-way-program-amid-inquiry",
+      "id": "rf-1775055783217-cf4zr30di",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-01T15:03:03.213Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Potential fraud in childcare programs",
       "insight": "Patterns of fraud in childcare programs suggest a need for closer monitoring and oversight.",
       "entities": [
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-01T13:18:42.234Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -968,25 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T10:00:25.992Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Hightower Holding LLC is under investigation for a data breach of over 131,000 records, which may indicate a larger issue with the company's security and potential shell company activity.",
-      "insight": "I suspect that Hightower Holding LLC may be a shell company, and further investigation is needed to determine the extent of their activities and potential connections to other entities.",
-      "entities": [
-        "Hightower Holding LLC"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.sjklaw.com/news/hightower-holding-llc-under-investigation-for-data-breach-of-over-131000-records/",
-      "id": "rf-1774490933177-wlbl7gjtj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T02:08:53.174Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,8 +1000,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-01T13:18:42.234Z"
+  "lastUpdated": "2026-04-01T15:03:03.213Z"
 }
