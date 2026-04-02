@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-27T22:30:31.879Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-27T23:31:06.004Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-04-02T18:55:08.825Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-02T19:50:22.014Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
     "What other organizations is Pooh Shiesty connected to?",
     "What other organizations is Trump's Justice Department connected to?",
     "Where did the $37 MILLION allegedly go in Feeding Our Future?",
@@ -558,7 +557,8 @@
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Case?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the $ allegedly go in Feeding Our Future?",
-    "Where did the $ allegedly go in Nacogdoches Memorial Hospital?"
+    "Where did the $ allegedly go in Nacogdoches Memorial Hospital?",
+    "Where did the $9B+ allegedly go in Feeding Our Future Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1830,
-    "articlesProcessed": 91200,
-    "redFlagsFound": 2115,
+    "totalScans": 1831,
+    "articlesProcessed": 91250,
+    "redFlagsFound": 2116,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Pooh Shiesty?",
-        "What specific allegations exist against Trump?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Pooh Shiesty connected to?",
+        "What other organizations is Trump's Justice Department connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-02T18:55:08.825Z",
-  "lastUpdated": "2026-04-02T18:55:08.826Z"
+  "lastReflection": "2026-04-02T19:50:22.014Z",
+  "lastUpdated": "2026-04-02T19:50:22.015Z"
 }
