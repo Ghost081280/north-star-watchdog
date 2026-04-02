@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T04:27:48.819Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-28T05:56:03.192Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-02T21:36:43.481Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-02T22:30:20.058Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Rochester woman connected to?",
     "What other organizations is Minnesota man connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
     "Where did the $511K allegedly go in Child care funding investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Corey Lewandowski connected to?",
     "What other organizations is Bruce Springsteen connected to?",
     "What specific allegations exist against Bruce Springsteen?",
-    "Where did the $0 allegedly go in Minnesota Somali Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Somali Fraud Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1833,
-    "articlesProcessed": 91350,
-    "redFlagsFound": 2119,
+    "totalScans": 1834,
+    "articlesProcessed": 91400,
+    "redFlagsFound": 2121,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -586,15 +586,15 @@
         {
           "type": "federal_investigation",
           "description": "FBI calls breach of sensitive agency networks a 'major incident'",
-          "insight": "This suggests a significant cybersecurity threat or breach, potentially involving fraud or misuse of federal resources.",
+          "insight": "This could indicate a potential red flag for national security and data breaches.",
           "entities": [
             "FBI",
-            "U.S. Government"
+            "US Agencies"
           ],
           "confidence": 90,
           "priority": "high",
           "source": "Bloomberg.com",
-          "sourceUrl": "https://www.bloomberg.com/FBI-Calls-Breach-of-Sensitive-Agency-Networks-a-Major-Incident/amp"
+          "sourceUrl": "https://Bloomberg.com/2026-04-02/FBI-Calls-Breach-of-Sensitive-Agency-Networks-a-Major-Incident"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $37 MILLION allegedly go in Feeding Our Future?",
-        "Where did the $511K allegedly go in Missouri childcare relief funds?",
-        "Where did the $511K allegedly go in Missouri childcare fraud scheme?"
+        "What other organizations is Rochester woman connected to?",
+        "What other organizations is Minnesota man connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-02T21:36:43.481Z",
-  "lastUpdated": "2026-04-02T21:36:43.481Z"
+  "lastReflection": "2026-04-02T22:30:20.058Z",
+  "lastUpdated": "2026-04-02T22:30:20.059Z"
 }
