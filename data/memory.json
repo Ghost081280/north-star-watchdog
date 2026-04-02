@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-27T21:33:25.962Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-27T22:30:31.879Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-04-02T17:04:33.051Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-02T18:55:08.825Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Pooh Shiesty?",
-    "What specific allegations exist against Trump?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Pooh Shiesty connected to?",
     "What other organizations is Trump's Justice Department connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Rochester Woman connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Case?",
-    "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?"
+    "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?",
+    "Where did the $ allegedly go in Feeding Our Future?",
+    "Where did the $ allegedly go in Nacogdoches Memorial Hospital?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1829,
-    "articlesProcessed": 91150,
-    "redFlagsFound": 2114,
+    "totalScans": 1830,
+    "articlesProcessed": 91200,
+    "redFlagsFound": 2115,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $37M allegedly go in Minnesota childcare fraud?",
         "What specific allegations exist against Pooh Shiesty?",
-        "What specific allegations exist against Trump?"
+        "What specific allegations exist against Trump?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-02T17:04:33.051Z",
-  "lastUpdated": "2026-04-02T17:04:33.052Z"
+  "lastReflection": "2026-04-02T18:55:08.825Z",
+  "lastUpdated": "2026-04-02T18:55:08.826Z"
 }
