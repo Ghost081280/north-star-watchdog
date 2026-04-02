@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Potential termination of child care programs due to funding issues",
+      "insight": "This could leave many without access to necessary services",
+      "entities": [
+        "Minnesota",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Newsweek",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORlAzUENaN3BXUFFyT3VpWlhFUlBPbkpPX1FMZTlCVkxlSVByVFpqeUsxVjZINHBkZTBvOHExUG9qaWo5R3VJSVFFeFloT05wOUFjdnRsVGc3aXF6NDdacV9XZEEzZEFJY01BY0Q5RGljclNJNm5oQUdSNVo2Y3pObksxaEVEeFM1YUNRT2t0cEV4dE5XcVFHY1Y0eWgxd21iZ0E",
+      "id": "rf-1775135414966-cg7e1vfoj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-02T13:10:14.963Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Trump's proposed cuts to social services, including Medicare and daycare",
       "insight": "Potential for widespread fraud in social services programs due to lack of oversight",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-02T11:03:20.395Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large-scale fraud",
@@ -55,26 +75,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-02T08:54:35.324Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of child care funding programs",
-      "insight": "This could have significant impacts on families and children in need of care. Further investigation into the funding dispute and potential consequences is warranted.",
-      "entities": [
-        "Federal government",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Local News Matters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNM3hLVkV6bXJRcnl5dzlQb29PcVpKUUxYSy1yWmhod3pKMFlCX0tEbVM3NEJLdjlRZ2pFazRfX0hKSUVnT2ZRRW9OZUZyTFhWNVFTNkU2aldrakpRZ3ZZczN2a3k1YVZ1YnVYZVNVY2xyU3E5NzBYRmd4eTBDUThfeUs3QlVCZmFWeTJrdUdia1ludWtpbkdYMzFKUXNGY0NXeG04enh6RFZUMEFkLTBrTkpUbENLSjJfaFN1S2JQWmQ1Vl9BLUJEajBrMA",
-      "id": "rf-1775113822827-4tcbd9ayv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T07:10:22.822Z",
       "isNew": false
     },
     {
@@ -991,6 +991,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,7 +1000,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-02T11:03:20.395Z"
+  "lastUpdated": "2026-04-02T13:10:14.963Z"
 }
