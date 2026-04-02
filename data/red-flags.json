@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "large-scale fraud",
+      "description": "$250 million Feeding Our Future fraud scheme",
+      "insight": "This large-scale fraud scheme warrants further investigation into potential connections with other entities and programs.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KTTC | Rochester, MN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTEVRZFdKS0VDaE9rUmxFa3ZkYzNqT0ZTMThQMTktTHZKNmRNelFHaTM2X0lQMEw2TVZ3M2xCa0dSMXB3Qmozd18yRXpsaGpRRFo5TWw4QzFPQzcyNnhGQzRpeHA0QWtRRHc4RmI3c2szcUJvYWl0eHo1TnZJano4YW1yN1BubVh0WWJuS1RYZHpCLUdRTlpzVHJrenZBSjZVZUZnZlRiVXA0SjA2",
+      "id": "rf-1775124038262-pxa600353",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-02T10:00:38.258Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program was terminated due to the fraud scheme",
       "insight": "The large-scale fraud scheme led to the termination of the program, indicating a significant impact on the community.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-02T08:54:35.324Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -968,30 +987,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T19:54:47.327Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The DOJ has launched an investigation into the Ohio State College of Medicine for possible Title VI violations.",
-      "insight": "This investigation may indicate a larger pattern of discrimination in medical schools. Further research is needed to determine the scope of the issue.",
-      "entities": [
-        "Ohio State College of Medicine"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "10tv.com",
-      "sourceUrl": "https://10tv.com/news/local-news/doj-launches-title-vi-investigation-into-ohio-state-college-of-medicine-admissions-policy",
-      "id": "rf-1774537387693-ux4yhv3bo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T15:03:07.689Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,7 +999,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-02T08:54:35.324Z"
+  "lastUpdated": "2026-04-02T10:00:38.258Z"
 }
