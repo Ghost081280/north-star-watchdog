@@ -1,23 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The Trump administration has implemented a freeze on federal funding for certain social services programs, citing concerns about fraud and abuse.",
-      "insight": "This freeze may have unintended consequences, such as leaving vulnerable populations without access to essential services. Further investigation is needed to determine the impact of this policy.",
+      "type": "program_termination",
+      "description": "Federal court blocks Trump administration's childcare funding freeze",
+      "insight": "This indicates potential misuse of funds or political interference in essential programs.",
       "entities": [
-        "Trump administration",
-        "Minnesota DHS"
+        "Trump Administration",
+        "U.S. Congress"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/politics/trump-administration/trump-says-it-s-not-possible-u-s-pay-medicaid-n1261046",
-      "id": "rf-1775162061866-pkp55xmx1",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/Fate-of-DHS-funding-uncertain-as-US-Congress-Republicans-decide-next-steps/amp",
+      "id": "rf-1775165803487-6r15ln9x3",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-02T20:34:21.863Z",
+      "detectedAt": "2026-04-02T21:36:43.483Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI calls breach of sensitive agency networks a 'major incident'",
+      "insight": "This suggests a significant cybersecurity threat or breach, potentially involving fraud or misuse of federal resources.",
+      "entities": [
+        "FBI",
+        "U.S. Government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Bloomberg.com",
+      "sourceUrl": "https://www.bloomberg.com/FBI-Calls-Breach-of-Sensitive-Agency-Networks-a-Major-Incident/amp",
+      "id": "rf-1775165803487-iy651madk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-02T21:36:43.483Z",
       "isNew": true
     },
     {
@@ -967,40 +987,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T21:30:38.432Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating voter records in Minnesota, which could indicate potential voting irregularities.",
-      "insight": "This investigation could uncover patterns of voter fraud or other election-related crimes.",
-      "entities": [
-        "Minnesota elections office",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/minnesota-elections-office-subpoenaed-federal-criminal-probe-non-citizens-voter-rolls/",
-      "id": "rf-1774557315720-viseloprl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T20:35:15.717Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-02T20:34:21.863Z"
+  "lastUpdated": "2026-04-02T21:36:43.483Z"
 }

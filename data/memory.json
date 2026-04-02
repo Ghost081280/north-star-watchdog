@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T02:01:13.505Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-28T04:27:48.819Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-04-02T20:34:21.861Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-02T21:36:43.481Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $37 MILLION allegedly go in Feeding Our Future?",
-    "Where did the $511K allegedly go in Missouri childcare relief funds?",
-    "Where did the $511K allegedly go in Missouri childcare fraud scheme?",
-    "Where did the $250 million allegedly go in Feeding our Future fraud scheme?",
-    "Where did the $billions allegedly go in Child care funding freeze?",
     "What other organizations is Rochester woman connected to?",
     "What other organizations is Minnesota man connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
@@ -558,7 +553,12 @@
     "Where did the $ allegedly go in Nacogdoches Memorial Hospital?",
     "Where did the $9B+ allegedly go in Feeding Our Future Fraud Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Investigation?",
-    "Where did the $10 million allegedly go in Federal Healthcare Fraud Investigation?"
+    "Where did the $10 million allegedly go in Federal Healthcare Fraud Investigation?",
+    "What other organizations is Kristi Noem connected to?",
+    "What other organizations is Corey Lewandowski connected to?",
+    "What other organizations is Bruce Springsteen connected to?",
+    "What specific allegations exist against Bruce Springsteen?",
+    "Where did the $0 allegedly go in Minnesota Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1832,
-    "articlesProcessed": 91300,
-    "redFlagsFound": 2117,
+    "totalScans": 1833,
+    "articlesProcessed": 91350,
+    "redFlagsFound": 2119,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "FBI calls breach of sensitive agency networks a 'major incident'",
+          "insight": "This suggests a significant cybersecurity threat or breach, potentially involving fraud or misuse of federal resources.",
+          "entities": [
+            "FBI",
+            "U.S. Government"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Bloomberg.com",
+          "sourceUrl": "https://www.bloomberg.com/FBI-Calls-Breach-of-Sensitive-Agency-Networks-a-Major-Incident/amp"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Pooh Shiesty connected to?",
-        "What other organizations is Trump's Justice Department connected to?",
-        "Where did the $37 MILLION allegedly go in Feeding Our Future?"
+        "Where did the $37 MILLION allegedly go in Feeding Our Future?",
+        "Where did the $511K allegedly go in Missouri childcare relief funds?",
+        "Where did the $511K allegedly go in Missouri childcare fraud scheme?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-02T20:34:21.861Z",
-  "lastUpdated": "2026-04-02T20:34:21.862Z"
+  "lastReflection": "2026-04-02T21:36:43.481Z",
+  "lastUpdated": "2026-04-02T21:36:43.481Z"
 }
