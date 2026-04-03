@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal funding freeze impacting Minnesota child care",
+      "insight": "The federal funding freeze may be exacerbating the child care fraud problem, as providers may be more desperate for funding and more vulnerable to fraudulent schemes.",
+      "entities": [
+        "Minnesota child care providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal funding freeze impacts Minnesota child care",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOejg2S0ZvRGJKdGlXaWU5YVNzRmgxSjBqcGR1UlRSdTY4VHlfdmlLbl9PTmVocFBzVFN3SnJnXzBwbHg3ZFh6Q0pqdXZ2bnBTTEoyclZWaUd6Yk5pc3NLMmxKVko5MXNNWjNIdmJCME5pbGFqOEZYN3BtcWpxZmZ6Ml9jamFrSjREYmk2WFBDcXJuOFFvV3ltSmxMU3p2V3I3aWtfQ3ZLcjVQNXFDRkQzUDhoZFM2V0pidjRqbzRrRnpfb09iTkhCQ3FiWG5MTXpJRGNVTjd6TldDa3o3dVJFLW9jLXM4eFhaMDJ1Q3RndVJWVm45d2lpUHFRM0NnM3ZhOHRlY2JmSl9wc1HSAYsCQVVfeXFMUFBpa2pkUnd3VXFOT1NiZktOb21aMmRueW11U1B6OFBFejZZLUVBSEhpS2QwMkstUXk3SDJFdVlqNkZGZzl4SEVLSTIxMnNJNkVTOTVKOGRyUWdLeU5OUXVlanNHSGZBSVl5THR5SnkyTHpPR1hJczF2Rk5tV2JLZ21uajJ0RmFfT2VUSUJ0Qlc4WE1jSmg3dl8wUHp5cmc",
+      "id": "rf-1775234347327-orwxflfa8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T16:39:07.323Z",
+      "isNew": true
+    },
+    {
       "type": "large scale fraud",
       "description": "$19B Minnesota child care fraud case",
       "insight": "This case involves a large sum of money and a potentially vulnerable population, indicating a high priority for investigation",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T15:38:13.932Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -38,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T14:05:02.632Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration has prioritized military spending over child care, raising concerns about the impact on vulnerable populations.",
-      "insight": "This decision may indicate a lack of commitment to addressing social issues, and could be a red flag for potential fraud or mismanagement of funds.",
-      "entities": [
-        "The White House",
-        "Donald Trump"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/news/trump-prioritizes-military-spending-over-child-care/",
-      "id": "rf-1775221255030-iyoixfxmf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T13:00:55.026Z",
       "isNew": false
     },
     {
@@ -991,6 +990,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,8 +999,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T15:38:13.932Z"
+  "lastUpdated": "2026-04-03T16:39:07.323Z"
 }
