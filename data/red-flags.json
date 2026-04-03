@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI has declared a surveillance system breach a 'major incident', which may indicate a larger issue with the agency's security protocols.",
+      "insight": "This breach could potentially compromise sensitive information and put national security at risk. Further investigation is needed to determine the extent of the breach and identify potential vulnerabilities.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI Declares Surveillance System Breach a ‘Major Incident’",
+      "sourceUrl": "https://www.techrepublic.com/article/fbi-declares-surveillance-system-breach-a-major-incident",
+      "id": "rf-1775251978126-qyuwmgnsg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T21:32:58.122Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into Apache flyby at Kid Rock's house",
       "insight": "This could be a misuse of government resources for personal gain.",
@@ -967,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-27T07:04:58.026Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are currently ongoing, including investigations into Ohio State College of Medicine and Arizona's 2020 election review.",
-      "insight": "I notice that there are multiple federal investigations currently ongoing, which could indicate a pattern of wrongdoing or corruption. I would recommend further investigation into these matters to determine the extent of any potential wrongdoing.",
-      "entities": [
-        "Ohio State College of Medicine",
-        "Arizona"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVEJrSlZDcHM3aUVaQmNGN0hCdTlWVERXRzQyaS1UVW5jVlV3bTV4TlhvZUc4YXd0NmFyeXJ6QURTT0d4dGFVLURxWjJTanE1d0xYRFo1OEwtNFM4bV9vdWc1LU9HOG1BQThYY1hJOW1FaVRnYVpXbVRhMFN5TjlUN3NCcWZJTVZrMUhSVVdBa2hUbENYVGdIX0FzRkExS1VoajFYZDNGVWoxc3JuVnU5RnJpaTlYWXFfR1laU1E1ZGE2V3VwYmstTWtCdkM3bEFzdG5PUEdYaDZxYklCbHFFTjYtcmJ5UHpzcWNVRVJ5YnhJQXFJQ3V4VEZtaDdMQQ",
-      "id": "rf-1774587992487-zw6k749hj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T05:06:32.484Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -998,7 +997,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T20:34:50.268Z"
+  "lastUpdated": "2026-04-03T21:32:58.122Z"
 }
