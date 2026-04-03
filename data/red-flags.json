@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "A federal freeze on funding for certain programs has been implemented due to allegations of fraud.",
+      "insight": "This could indicate a larger issue with program management and oversight.",
+      "entities": [
+        "U.S. Government",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPMlQ4MFRYNENoWHlHbDZSejJ0MXRaczh2Z2Mwd3BnTHgzcDZXUzVudU5kamo0ZFZ2QmdBNHRQWmlXNGJfUkpKVmFVeXVQakNpTjZSeF9SUHpTNnVnelc0LWwyMW1vV1dGNDFGQmJXVnRKaVJDdlFBMUstbENUVG1xMDZXRlRkaDQ2Q0dGektGRUNwdDBKNk9NV3BQNUIwVkxHanhaRHItVERMY01ST3JMUU5jS3ZZUndtQlVldW43RENpRlRjVzd3Q0RodVd6OVRnaEktMWtJSVFBNDF6WldkT1drcmFGUXFXMVZmZlktbjM1VHA0MlhkM3FvalNwSG9oLWlSTXFB0gGLAkFVX3lxTE9yVzVjY1QzbGJzNFZTZktTWTFpTkh3aWZ6azVRMm1UM0hiMkpyd1NtWjdTTzU0eEd6aEJ0cGpJX3hwejVJODQybkJ6NWRNek1ObjBnQy1fSEwtZVZZckRZeDR4amp6SGtsRW1QZkhhN3puM1hkLWYtUXpyUFlNTDB5bHJLQU1HZ2EtdjY4Mk94SExTaXJiWTV0bXZ4QVNKcjBYVUxYSDVYeDgyQWNyY2Q1QndobHppRHI3X3dVeTBLNjdITlhZM0ExZFhGNXhwNmg4ek5GdmU2dkRGdElZN1BKU2JMMGRLc3NRUFlvbVYtaXVNUlE4bDFkWGUtNzJJdkg5cHlaM3lCNGF0cw?oc=5",
+      "id": "rf-1775182109527-mksys9gat",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T02:08:29.523Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "A Minnesota family's $14M fraud scheme involved terminating programs",
       "insight": "This could indicate a larger issue with program management and oversight.",
@@ -17,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-02T23:34:05.373Z",
-      "isNew": true
-    },
-    {
-      "type": "program_termination",
-      "description": "Federal court blocks Trump administration's childcare funding freeze",
-      "insight": "This could indicate a potential red flag for healthcare and childcare programs, as funding issues may lead to program terminations or suspensions.",
-      "entities": [
-        "Trump Administration",
-        "Federal Court"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Black Enterprise",
-      "sourceUrl": "https://Black Enterprise/2026-04-02/Federal-Court-Blocks-Trump-Administrations-Childcare-Funding-Freeze",
-      "id": "rf-1775169020064-s1q1qmqfu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T22:30:20.060Z",
       "isNew": false
     },
     {
@@ -990,6 +990,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,8 +1000,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-02T23:34:05.373Z"
+  "lastUpdated": "2026-04-03T02:08:29.523Z"
 }
