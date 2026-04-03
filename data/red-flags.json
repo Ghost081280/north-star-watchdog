@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Justice Department has announced federal charges in a health care and hospice fraud investigation in Southern California, indicating a potential freeze on federal funds.",
+      "insight": "This could be a sign of a larger issue with healthcare fraud in the region, and further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "SoCal Hospice"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/justice-department-announces-federal-charges-in-southern-california-health-care-hospice-fraud-investigation/",
+      "id": "rf-1775209950237-1uhhbpbse",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T09:52:30.233Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "Multiple federal investigations into health care fraud and other crimes",
       "insight": "I notice a pattern of federal investigations into health care fraud and other crimes, indicating a potential large-scale issue. I recommend further investigation into the connections between these cases and the entities involved.",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T07:06:14.018Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "A federal freeze on funding for certain programs has been implemented due to allegations of fraud.",
-      "insight": "This could indicate a larger issue with program management and oversight.",
-      "entities": [
-        "U.S. Government",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPMlQ4MFRYNENoWHlHbDZSejJ0MXRaczh2Z2Mwd3BnTHgzcDZXUzVudU5kamo0ZFZ2QmdBNHRQWmlXNGJfUkpKVmFVeXVQakNpTjZSeF9SUHpTNnVnelc0LWwyMW1vV1dGNDFGQmJXVnRKaVJDdlFBMUstbENUVG1xMDZXRlRkaDQ2Q0dGektGRUNwdDBKNk9NV3BQNUIwVkxHanhaRHItVERMY01ST3JMUU5jS3ZZUndtQlVldW43RENpRlRjVzd3Q0RodVd6OVRnaEktMWtJSVFBNDF6WldkT1drcmFGUXFXMVZmZlktbjM1VHA0MlhkM3FvalNwSG9oLWlSTXFB0gGLAkFVX3lxTE9yVzVjY1QzbGJzNFZTZktTWTFpTkh3aWZ6azVRMm1UM0hiMkpyd1NtWjdTTzU0eEd6aEJ0cGpJX3hwejVJODQybkJ6NWRNek1ObjBnQy1fSEwtZVZZckRZeDR4amp6SGtsRW1QZkhhN3puM1hkLWYtUXpyUFlNTDB5bHJLQU1HZ2EtdjY4Mk94SExTaXJiWTV0bXZ4QVNKcjBYVUxYSDVYeDgyQWNyY2Q1QndobHppRHI3X3dVeTBLNjdITlhZM0ExZFhGNXhwNmg4ek5GdmU2dkRGdElZN1BKU2JMMGRLc3NRUFlvbVYtaXVNUlE4bDFkWGUtNzJJdkg5cHlaM3lCNGF0cw?oc=5",
-      "id": "rf-1775182109527-mksys9gat",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T02:08:29.523Z",
       "isNew": false
     },
     {
@@ -990,6 +989,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,7 +997,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T08:52:15.544Z"
+  "lastUpdated": "2026-04-03T09:52:30.233Z"
 }
