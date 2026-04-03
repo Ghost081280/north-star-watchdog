@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into Apache flyby at Kid Rock's house",
+      "insight": "This could be a misuse of government resources for personal gain.",
+      "entities": [
+        "Kid Rock",
+        "Apache flyby"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/2026/04/watchdog-group-calls-for-federal-investigation-into-apache-flyby-at-kid-rocks-house",
+      "id": "rf-1775245092433-709c77rgj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T19:38:12.429Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Funding freeze for certain programs, including child care and Medicare",
       "insight": "I notice a pattern of funding freezes and cuts to social programs, which may indicate a larger issue with government priorities and budget allocation. Further investigation is needed to determine the impact of these freezes on vulnerable populations.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T18:44:32.301Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large-scale fraud",
@@ -967,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-27T05:06:32.484Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are currently underway, including a joint narcotic investigation in Evansville and an investigation into Ohio State.",
-      "insight": "I notice that there are multiple federal investigations currently underway, which suggests a heightened focus on combating crime and corruption. I will continue to monitor these investigations and look for any patterns or connections between them.",
-      "entities": [
-        "DOJ",
-        "Ohio State"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://wevv.com/news/10-indicted-in-federal-methamphetamine-conspiracy-investigation-in-evansville",
-      "id": "rf-1774577405537-aps4t3jtr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T02:10:05.534Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,7 +1000,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T18:44:32.301Z"
+  "lastUpdated": "2026-04-03T19:38:12.429Z"
 }

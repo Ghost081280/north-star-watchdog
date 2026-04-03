@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T19:29:08.892Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-28T20:29:01.680Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-03T18:44:32.299Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-03T19:38:12.427Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future case?",
-    "Where did the Millions allegedly go in Southern California health care fraud investigation?",
     "What other organizations is Doctors and Nurses connected to?",
     "What other organizations is Hospice Owners connected to?",
     "Where did the $50m allegedly go in California Health Care Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Star Distribution Owner connected to?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud Investigation?",
-    "Where did the Unknown allegedly go in Child Care Fraud Probe?"
+    "Where did the Unknown allegedly go in Child Care Fraud Probe?",
+    "Where did the $50M allegedly go in Feeding Our Future Fraud?",
+    "Where did the $X allegedly go in Star Distribution Meal Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1848,
-    "articlesProcessed": 92050,
-    "redFlagsFound": 2136,
+    "totalScans": 1849,
+    "articlesProcessed": 92100,
+    "redFlagsFound": 2138,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the millions allegedly go in Southern California health care, hospice fraud investigation?",
-        "What other organizations is Man who claimed to run food distribution site connected to?",
-        "What other organizations is Newton man connected to?"
+        "Where did the Unknown allegedly go in Feeding Our Future case?",
+        "Where did the Millions allegedly go in Southern California health care fraud investigation?",
+        "What other organizations is Doctors and Nurses connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-03T18:44:32.299Z",
-  "lastUpdated": "2026-04-03T18:44:32.300Z"
+  "lastReflection": "2026-04-03T19:38:12.427Z",
+  "lastUpdated": "2026-04-03T19:38:12.428Z"
 }
