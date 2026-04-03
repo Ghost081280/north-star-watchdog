@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large scale fraud",
+      "description": "$19B Minnesota child care fraud case",
+      "insight": "This case involves a large sum of money and a potentially vulnerable population, indicating a high priority for investigation",
+      "entities": [
+        "Minnesota State Government",
+        "Ilhan Omar"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "News article",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOejg2S0ZvRGJKdGlXaWU5YVNzRmgxSjBqcGR1UlRSdTY4VHlfdmlLbl9PTmVocFBzVFN3SnJnXzBwbHg3ZFh6Q0pqdXZ2bnBTTEoyclZWaUd6Yk5pc3NLMmxKVko5MXNNWjNIdmJCME5pbGFqOEZYN3BtcWpxZmZ6Ml9jamFrSjREYmk2WFBDcXJuOFFvV3ltSmxMU3p2V3I3aWtfQ3ZLcjVQNXFDRkQzUDhoZFM2V0pidjRqbzRrRnpfb09iTkhCQ3FiWG5MTXpJRGNVTjd6TldDa3o3dVJFLW9jLXM4eFhaMDJ1Q3RndVJWVm45d2lpUHFRM0NnM3ZhOHRlY2JmSl9wc1HSAYsCQVVfeXFMTno4NktGb0RiSnRpV2llOWFTc0ZoMUowanBkdVJUUnU2OFR5X3ZpS25fT05laHBQc1RTd0pyZ18wcGx4N2RYekNKanV2dm5wU0xKMjJWVmlHemJOaXNzSzJsSlZKOTFzTVozSHZiQjBOaWxhajhGWDdwbXFqcWZmejJfY2pha0o0RGJpNlhQQ3FybjhRb1d5bUpsTFN6dldyN2lrX0N2S3I1UDVxQ0ZEM1A4aGRTNldKYnY0am80a0Z6X29PYk5IQkNxYlhuTE16SURjVU43ek5XQ2t6N3VSRS1vYy1zOHhYWjAydUN0Z3VSVlZuOXdpaVBxUTNDZzN2YTh0ZWNiZkpfcHNR",
+      "id": "rf-1775230693935-ks5qojzol",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T15:38:13.932Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a $134 million office in Boston",
       "insight": "Large government contracts often attract scrutiny, and this one warrants further review for potential irregularities.",
@@ -18,27 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T14:05:02.632Z",
-      "isNew": true
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Allegations of $19B Medicaid fraud in Minnesota",
-      "insight": "This is a large alleged fraud scheme that warrants further investigation, particularly given the involvement of public figures.",
-      "entities": [
-        "Minnesota DHS",
-        "Ilhan Omar"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.economictimes.com/news/ilhan-omars-brother-became-her-husband-trumps-shocking-rant-against-somalis-over-19b-mn-fraud",
-      "id": "rf-1775225102635-iqyh8zttc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T14:05:02.632Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -991,17 +991,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T14:05:02.632Z"
+  "lastUpdated": "2026-04-03T15:38:13.932Z"
 }

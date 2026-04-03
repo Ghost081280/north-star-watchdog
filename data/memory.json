@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T15:29:19.582Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-28T16:32:15.112Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-03T14:05:02.630Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-04-03T15:38:13.930Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1844,
-    "articlesProcessed": 91850,
-    "redFlagsFound": 2131,
+    "totalScans": 1845,
+    "articlesProcessed": 91900,
+    "redFlagsFound": 2132,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "alleged fraud",
-          "description": "Allegations of $19B Medicaid fraud in Minnesota",
-          "insight": "This is a large alleged fraud scheme that warrants further investigation, particularly given the involvement of public figures.",
+          "type": "large scale fraud",
+          "description": "$19B Minnesota child care fraud case",
+          "insight": "This case involves a large sum of money and a potentially vulnerable population, indicating a high priority for investigation",
           "entities": [
-            "Minnesota DHS",
+            "Minnesota State Government",
             "Ilhan Omar"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "The Economic Times",
-          "sourceUrl": "https://www.economictimes.com/news/ilhan-omars-brother-became-her-husband-trumps-shocking-rant-against-somalis-over-19b-mn-fraud"
+          "source": "News article",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOejg2S0ZvRGJKdGlXaWU5YVNzRmgxSjBqcGR1UlRSdTY4VHlfdmlLbl9PTmVocFBzVFN3SnJnXzBwbHg3ZFh6Q0pqdXZ2bnBTTEoyclZWaUd6Yk5pc3NLMmxKVko5MXNNWjNIdmJCME5pbGFqOEZYN3BtcWpxZmZ6Ml9jamFrSjREYmk2WFBDcXJuOFFvV3ltSmxMU3p2V3I3aWtfQ3ZLcjVQNXFDRkQzUDhoZFM2V0pidjRqbzRrRnpfb09iTkhCQ3FiWG5MTXpJRGNVTjd6TldDa3o3dVJFLW9jLXM4eFhaMDJ1Q3RndVJWVm45d2lpUHFRM0NnM3ZhOHRlY2JmSl9wc1HSAYsCQVVfeXFMTno4NktGb0RiSnRpV2llOWFTc0ZoMUowanBkdVJUUnU2OFR5X3ZpS25fT05laHBQc1RTd0pyZ18wcGx4N2RYekNKanV2dm5wU0xKMjJWVmlHemJOaXNzSzJsSlZKOTFzTVozSHZiQjBOaWxhajhGWDdwbXFqcWZmejJfY2pha0o0RGJpNlhQQ3FybjhRb1d5bUpsTFN6dldyN2lrX0N2S3I1UDVxQ0ZEM1A4aGRTNldKYnY0am80a0Z6X29PYk5IQkNxYlhuTE16SURjVU43ek5XQ2t6N3VSRS1vYy1zOHhYWjAydUN0Z3VSVlZuOXdpaVBxUTNDZzN2YTh0ZWNiZkpfcHNR"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $200M+ allegedly go in Feeding Our Future?",
-        "Are any of these 4 figures connected to each other?",
-        "What other organizations is Donald Trump connected to?"
+        "What other organizations is Donald Trump connected to?",
+        "Where did the $478K allegedly go in Feeding Our Future?",
+        "Where did the $millions allegedly go in Southern California Health Care Fraud?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-03T14:05:02.630Z",
-  "lastUpdated": "2026-04-03T14:05:02.631Z"
+  "lastReflection": "2026-04-03T15:38:13.930Z",
+  "lastUpdated": "2026-04-03T15:38:13.931Z"
 }
