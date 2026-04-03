@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T14:30:59.564Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-03-28T15:29:19.582Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-03T13:00:55.024Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-03T14:05:02.630Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $200M+ allegedly go in Feeding Our Future?",
-    "Are any of these 4 figures connected to each other?",
     "What other organizations is Donald Trump connected to?",
     "Where did the $478K allegedly go in Feeding Our Future?",
     "Where did the $millions allegedly go in Southern California Health Care Fraud?",
@@ -558,7 +556,9 @@
     "Where did the None allegedly go in Kansas City Mayor Pro Tem Investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the N/A allegedly go in Apache Flyby Investigation?"
+    "Where did the N/A allegedly go in Apache Flyby Investigation?",
+    "Where did the $19B allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $50m allegedly go in California Healthcare Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1843,
-    "articlesProcessed": 91800,
-    "redFlagsFound": 2129,
+    "totalScans": 1844,
+    "articlesProcessed": 91850,
+    "redFlagsFound": 2131,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "alleged fraud",
+          "description": "Allegations of $19B Medicaid fraud in Minnesota",
+          "insight": "This is a large alleged fraud scheme that warrants further investigation, particularly given the involvement of public figures.",
+          "entities": [
+            "Minnesota DHS",
+            "Ilhan Omar"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Economic Times",
+          "sourceUrl": "https://www.economictimes.com/news/ilhan-omars-brother-became-her-husband-trumps-shocking-rant-against-somalis-over-19b-mn-fraud"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Somali Fraud Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $100M+ allegedly go in Minnesota Somali Fraud?"
+        "Where did the $200M+ allegedly go in Feeding Our Future?",
+        "Are any of these 4 figures connected to each other?",
+        "What other organizations is Donald Trump connected to?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-03T13:00:55.024Z",
-  "lastUpdated": "2026-04-03T13:00:55.024Z"
+  "lastReflection": "2026-04-03T14:05:02.630Z",
+  "lastUpdated": "2026-04-03T14:05:02.631Z"
 }

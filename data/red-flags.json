@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a $134 million office in Boston",
+      "insight": "Large government contracts often attract scrutiny, and this one warrants further review for potential irregularities.",
+      "entities": [
+        "FBI",
+        "Boston office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CoStar",
+      "sourceUrl": "https://www.costar.com/article/news/fbi-anchored-office-in-boston-area-lands-134-million-price-tag",
+      "id": "rf-1775225102635-xig9cnfcv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T14:05:02.632Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged fraud",
+      "description": "Allegations of $19B Medicaid fraud in Minnesota",
+      "insight": "This is a large alleged fraud scheme that warrants further investigation, particularly given the involvement of public figures.",
+      "entities": [
+        "Minnesota DHS",
+        "Ilhan Omar"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://www.economictimes.com/news/ilhan-omars-brother-became-her-husband-trumps-shocking-rant-against-somalis-over-19b-mn-fraud",
+      "id": "rf-1775225102635-iqyh8zttc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T14:05:02.632Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has prioritized military spending over child care, raising concerns about the impact on vulnerable populations.",
       "insight": "This decision may indicate a lack of commitment to addressing social issues, and could be a red flag for potential fraud or mismanagement of funds.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T13:00:55.026Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -38,25 +78,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T07:06:14.018Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "A Minnesota family's $14M fraud scheme involved terminating programs",
-      "insight": "This could indicate a larger issue with program management and oversight.",
-      "entities": [
-        "Karen Sue Johnston"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/mn-fraud-man-pleads-guilty-in-familys-14m-fraud-scheme",
-      "id": "rf-1775172845377-gv6tbsx5z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T23:34:05.373Z",
       "isNew": false
     },
     {
@@ -966,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T23:31:39.378Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing, including ones into voter rolls and a bomb case.",
-      "insight": "These investigations may be connected or indicate a larger issue. Further research is needed to determine the extent of the investigations and potential connections.",
-      "entities": [
-        "Minnesota elections office",
-        "MacDill Air Force Base"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/minnesota-elections-office-subpoenaed-federal-criminal-probe-voter-rolls/",
-      "id": "rf-1774564102955-fwofzs4ix",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T22:28:22.952Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T13:00:55.026Z"
+  "lastUpdated": "2026-04-03T14:05:02.632Z"
 }
