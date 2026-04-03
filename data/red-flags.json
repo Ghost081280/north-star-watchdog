@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Multiple federal investigations into health care fraud and other crimes",
+      "insight": "I notice a pattern of federal investigations into health care fraud and other crimes, indicating a potential large-scale issue. I recommend further investigation into the connections between these cases and the entities involved.",
+      "entities": [
+        "Feeding Our Future",
+        "Southern California health care providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News, ABC7 Los Angeles",
+      "sourceUrl": "https://www.cbsnews.com/news/feeding-our-future-case-guilty-plea/, https://abc7.com/health-care-fraud-investigation-southern-california/12943441/",
+      "id": "rf-1775199974022-vmc5fa9r6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T07:06:14.018Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "A federal freeze on funding for certain programs has been implemented due to allegations of fraud.",
       "insight": "This could indicate a larger issue with program management and oversight.",
@@ -966,26 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-26T22:28:22.952Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Minnesota elections office is under investigation for potential irregularities in voter rolls.",
-      "insight": "This investigation raises concerns over the integrity of the electoral process in Minnesota and potentially other states. It is essential to monitor developments and assess the impact on election security.",
-      "entities": [
-        "Minnesota elections office",
-        "Federal Authorities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU0NvZ0NBcFFrMWVPdDdyUEwzdFR6M2w4WW5QUkpmcmhtVXlxT25lc2VsOGdSeVNZUWFLQ2Z6UGR5RVB2Zzg3S01hX2dmdnNoTVdsY0w5blJuNXZjUFE4QTlWbmRZenB2bWVJZUU4cXh4Zm1IOXQ4dzJ0ZlByN1U2S2prTTZLQjdYTE1fZmk3cTczSDdYSElWRWpOZGZtM0U1eHdOV3N4MGFOMFluWnBweWN2aU9KX1I1T3o4VTV30gHDAUFVX3lxTFBabWhrWDZLaTNnaGoyTHZ2MVRrQmQ0MEFxeFdqbXk1VDh0N2JFeW03NnhfcDZQRGtZWTN1UmpqdnBqRks3S2JOWGRfclhSMzJRTG01Z29OWmxjUGVNUUhQYzd6QTlBWTEwUGhodGJIckNPZU9MNHFIUHV4XzRiZWdoZTdYLUdHVjF6Y2VjXy0yV2I4Tk5BV01lZHlTQkY1cG9TRGFzUkJEYTJuVUtGWkkxcVhWYXF0TFNyVGJLdHBIWVhVVQ",
-      "id": "rf-1774560638436-fd4b37mfw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-26T21:30:38.432Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,8 +999,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T05:04:12.853Z"
+  "lastUpdated": "2026-04-03T07:06:14.018Z"
 }
