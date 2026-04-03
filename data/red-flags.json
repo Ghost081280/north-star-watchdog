@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Funding freeze for certain programs, including child care and Medicare",
+      "insight": "I notice a pattern of funding freezes and cuts to social programs, which may indicate a larger issue with government priorities and budget allocation. Further investigation is needed to determine the impact of these freezes on vulnerable populations.",
+      "entities": [
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/news/trump-backs-off-campaign-promises-to-protect-medicare-help-with-child-care/",
+      "id": "rf-1775241872304-uxhe3zbby",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T18:44:32.301Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "A $19B fraud investigation involving multiple individuals and organizations in Minnesota",
       "insight": "This investigation suggests a large-scale, coordinated effort to commit fraud, potentially involving multiple government agencies and organizations.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T17:33:19.932Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "guilty plea",
@@ -38,25 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T17:33:19.932Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal funding freeze impacting Minnesota child care",
-      "insight": "The federal funding freeze may be exacerbating the child care fraud problem, as providers may be more desperate for funding and more vulnerable to fraudulent schemes.",
-      "entities": [
-        "Minnesota child care providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal funding freeze impacts Minnesota child care",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOejg2S0ZvRGJKdGlXaWU5YVNzRmgxSjBqcGR1UlRSdTY4VHlfdmlLbl9PTmVocFBzVFN3SnJnXzBwbHg3ZFh6Q0pqdXZ2bnBTTEoyclZWaUd6Yk5pc3NLMmxKVko5MXNNWjNIdmJCME5pbGFqOEZYN3BtcWpxZmZ6Ml9jamFrSjREYmk2WFBDcXJuOFFvV3ltSmxMU3p2V3I3aWtfQ3ZLcjVQNXFDRkQzUDhoZFM2V0pidjRqbzRrRnpfb09iTkhCQ3FiWG5MTXpJRGNVTjd6TldDa3o3dVJFLW9jLXM4eFhaMDJ1Q3RndVJWVm45d2lpUHFRM0NnM3ZhOHRlY2JmSl9wc1HSAYsCQVVfeXFMUFBpa2pkUnd3VXFOT1NiZktOb21aMmRueW11U1B6OFBFejZZLUVBSEhpS2QwMkstUXk3SDJFdVlqNkZGZzl4SEVLSTIxMnNJNkVTOTVKOGRyUWdLeU5OUXVlanNHSGZBSVl5THR5SnkyTHpPR1hJczF2Rk5tV2JLZ21uajJ0RmFfT2VUSUJ0Qlc4WE1jSmg3dl8wUHp5cmc",
-      "id": "rf-1775234347327-orwxflfa8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T16:39:07.323Z",
       "isNew": false
     },
     {
@@ -1000,8 +1000,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T17:33:19.932Z"
+  "lastUpdated": "2026-04-03T18:44:32.301Z"
 }

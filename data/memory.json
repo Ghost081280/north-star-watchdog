@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T18:38:30.854Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-28T19:29:08.892Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-03T17:33:19.930Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-04-03T18:44:32.299Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the millions allegedly go in Southern California health care, hospice fraud investigation?",
-    "What other organizations is Man who claimed to run food distribution site connected to?",
-    "What other organizations is Newton man connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future case?",
     "Where did the Millions allegedly go in Southern California health care fraud investigation?",
     "What other organizations is Doctors and Nurses connected to?",
@@ -558,7 +555,10 @@
     "Where did the $19B allegedly go in Feeding Our Future Fraud Investigation?",
     "What other organizations is Ishan Vartak connected to?",
     "Where did the $19B allegedly go in Feeding Our Future fraud?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Star Distribution Owner connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future Fraud Investigation?",
+    "Where did the Unknown allegedly go in Child Care Fraud Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1847,
-    "articlesProcessed": 92000,
-    "redFlagsFound": 2135,
+    "totalScans": 1848,
+    "articlesProcessed": 92050,
+    "redFlagsFound": 2136,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "A $19B fraud investigation involving multiple individuals and organizations in Minnesota",
-          "insight": "This investigation suggests a large-scale, coordinated effort to commit fraud, potentially involving multiple government agencies and organizations.",
-          "entities": [
-            "Minnesota DHS",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Google News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmVWLXN5cEhXckYtNVZIWTF2ekEzWHJpVjVodHBGSzZoMkVOZVJoemV6cFJhUmFHX0RMR1RqdHFJQ3ZPUEhPNGlfNkVTanJHRmhuM2JDbWwxcXV3UVVxLVJLV0p4QlNhbVc1U1VTcnhtR0VlY1hwUmEtRU9wUkNWUlI2Mm02TTZVa2NlOUxjbHpQSmFRNG5z"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $millions allegedly go in Southern California Health Care Fraud?",
-        "What other organizations is Owner of Star Distribution connected to?",
-        "What specific allegations exist against Donald Trump?"
+        "Where did the millions allegedly go in Southern California health care, hospice fraud investigation?",
+        "What other organizations is Man who claimed to run food distribution site connected to?",
+        "What other organizations is Newton man connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-03T17:33:19.930Z",
-  "lastUpdated": "2026-04-03T17:33:19.931Z"
+  "lastReflection": "2026-04-03T18:44:32.299Z",
+  "lastUpdated": "2026-04-03T18:44:32.300Z"
 }
