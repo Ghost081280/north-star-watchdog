@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to fraud, such as Feeding Our Future",
+      "insight": "Need to investigate program management and oversight",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Rochester Woman Sentenced In Feeding Our Future Fraud - Hoodline",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmVWLXN5cEhXckYtNVZIWTF2ekEzWHJpVjVodHBGSzZoMkVOZVJoemV6cFJhUmFHX0RMR1RqdHFJQ3ZPUEhPNGlfNkVTanJHRmhuM2JDbWwxcXV3UVVxLVJLV0p4QlNhbVc1U1VTcnhtR0VlY1hwUmEtRU9wUkNWUlI2Mm02TTZVa2NlOUxjbHpQSmFRNG5z",
+      "id": "rf-1775259198918-ue55bx8pb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T23:33:18.914Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Federal investigation into ActBlue fundraising platform",
+      "insight": "Potential for high-level involvement and large-scale fraud",
+      "entities": [
+        "ActBlue",
+        "Federal Agency"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Democrats' ActBlue fundraising platform faces federal investigation - Fox Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YVC11cWRKd2NsWjk1cWktdy1zWTBVTmVqR2ZoX1MzRi1fV1pRTnk0ZUtGeTZaNjlRMUF5MmV2UzJVUHNMMEhUUlJLMXQxYVR2SjRpR004MzBNX2M",
+      "id": "rf-1775259198918-w8e88v4ag",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-03T23:33:18.914Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A watchdog group has called for a federal investigation into an Apache flyby at Kid Rock's house",
       "insight": "This incident may indicate a larger issue with the use of military equipment for personal purposes. Further investigation is needed to determine the circumstances surrounding the flyby and whether any laws were broken.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T22:31:54.319Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -945,51 +985,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-27T11:40:52.274Z",
       "isNew": false
-    },
-    {
-      "type": "electoral integrity",
-      "description": "FBI seizure of 2020 election materials in Fulton County, Georgia",
-      "insight": "This case raises concerns about electoral integrity and the potential for voter suppression.",
-      "entities": [
-        "Fulton County",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "myMotherLode.com",
-      "sourceUrl": "https://www.mymotherlode.com/news/article/myMotherLode/120533675/Georgias-Fulton-County-heads-to-court-to-seek",
-      "id": "rf-1774608449720-vt846yf5p",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T10:47:29.716Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged misconduct",
-      "description": "Allegations of misconduct and abuse of power by public officials",
-      "insight": "These allegations suggest a pattern of behavior that may indicate a larger issue with accountability and transparency in government.",
-      "entities": [
-        "Kristi Noem",
-        "Janet Mills",
-        "Donald Trump"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONTlqT1Zwc213X0hrZmVfeDZWZE1sUlkwRUV4ZmQzWEIwa1VGSGRaWFFLc3FqdWs3WmcweDAzQUYxclBhdmx5bEVRNFROQm5ac1lhMDhVOUpackFPZUdCU1JjVjNINE1XLVJubG84NlNOUkdLWUVwZlA5RTlPeXpUTU5aNWdLUlh5MlFwMy1nVWo4S29tRmYxLVI0cFNNbzlpSDU4?oc=5",
-      "id": "rf-1774605239742-cdd3mgox9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T09:53:59.738Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,8 +999,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T22:31:54.319Z"
+  "lastUpdated": "2026-04-03T23:33:18.914Z"
 }

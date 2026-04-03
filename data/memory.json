@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-28T23:29:43.918Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-29T02:12:28.231Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-03T22:31:54.317Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-03T23:33:18.912Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
-    "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the N/A allegedly go in Apache Flyby Investigation?",
-    "Where did the $19B allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $50m allegedly go in California Healthcare Fraud?",
     "What other organizations is Rochester Woman connected to?",
     "Where did the $19B allegedly go in Feeding Our Future Fraud Investigation?",
@@ -558,7 +554,11 @@
     "What other organizations is Owner of Star Distribution connected to?",
     "Where did the $19B allegedly go in Minnesota Somali Fraud?",
     "Where did the Unknown allegedly go in Feeding Our Future Fraud?",
-    "Where did the None allegedly go in Apache Flyby Investigation?"
+    "Where did the None allegedly go in Apache Flyby Investigation?",
+    "What other organizations is Kristi Noem connected to?",
+    "What specific allegations exist against Kristi Noem?",
+    "What specific allegations exist against Pam Bondi?",
+    "Are any of these 5 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1852,
-    "articlesProcessed": 92250,
-    "redFlagsFound": 2140,
+    "totalScans": 1853,
+    "articlesProcessed": 92300,
+    "redFlagsFound": 2142,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "Federal investigation into ActBlue fundraising platform",
+          "insight": "Potential for high-level involvement and large-scale fraud",
+          "entities": [
+            "ActBlue",
+            "Federal Agency"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Democrats' ActBlue fundraising platform faces federal investigation - Fox Business",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YVC11cWRKd2NsWjk1cWktdy1zWTBVTmVqR2ZoX1MzRi1fV1pRTnk0ZUtGeTZaNjlRMUF5MmV2UzJVUHNMMEhUUlJLMXQxYVR2SjRpR004MzBNX2M"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Kansas City Mayor Pro Tem Investigation?",
         "What other organizations is Ilhan Omar connected to?",
-        "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $19B allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the N/A allegedly go in Apache Flyby Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-03T22:31:54.317Z",
-  "lastUpdated": "2026-04-03T22:31:54.318Z"
+  "lastReflection": "2026-04-03T23:33:18.912Z",
+  "lastUpdated": "2026-04-03T23:33:18.913Z"
 }
