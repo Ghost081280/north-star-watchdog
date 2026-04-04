@@ -2,22 +2,40 @@
   "flags": [
     {
       "type": "federal freeze",
-      "description": "Nonprofit at Center of Federal Probe Still Has $94M City Contract",
-      "insight": "This raises concerns about oversight and potential misuse of funds",
+      "description": "The ActBlue fundraising platform is under federal investigation",
+      "insight": "This could indicate potential fraud or misuse of funds",
       "entities": [
-        "Nonprofit",
-        "City"
+        "ActBlue"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/nonprofit-at-center-of-federal-probe-still-has-94m-city-contract",
-      "id": "rf-1775289256910-jf958xjyx",
+      "source": "Fox Business",
+      "sourceUrl": "https://www.foxbusiness.com/politics/actblue-fundraising-platform-federal-investigation",
+      "id": "rf-1775291959769-8qpayalr0",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-04T07:54:16.906Z",
+      "detectedAt": "2026-04-04T08:39:19.765Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "The Feeding Our Future program is under investigation",
+      "insight": "This could indicate potential fraud or misuse of funds in the program",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
+      "id": "rf-1775291959769-vxo40oi2d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T08:39:19.765Z",
       "isNew": true
     },
     {
@@ -38,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T07:54:16.906Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -964,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-28T18:38:30.856Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Fraud",
-      "description": "Multiple investigations into potential fraud have raised concerns about the effectiveness of current oversight and detection mechanisms.",
-      "insight": "I notice that several investigations are focusing on potential fraud in government programs, which suggests that there may be systemic issues that need to be addressed. I recommend further investigation into the oversight and detection mechanisms currently in place to prevent and detect fraudulent activities.",
-      "entities": [
-        "Minnesota DHS",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Financial Times",
-      "sourceUrl": "https://www.ft.com/content/robert-mueller-lawyer-and-former-fbi-director-1944-2026",
-      "id": "rf-1774718864325-90qiq6oy5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T17:27:44.321Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,8 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T07:54:16.906Z"
+  "lastUpdated": "2026-04-04T08:39:19.765Z"
 }
