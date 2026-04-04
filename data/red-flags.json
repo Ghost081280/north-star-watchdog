@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large scale fraud",
+      "description": "$94M allegedly involved in the Feeding Our Future fraud case",
+      "insight": "This case indicates a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to uncover the full extent of the fraud and identify all parties involved.",
+      "entities": [
+        "Star Distribution",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
+      "id": "rf-1775323734646-2c4mno158",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T17:28:54.642Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Democrats' ActBlue fundraising platform is facing a federal investigation.",
       "insight": "This could indicate a larger pattern of corruption and fraud in the Democratic party, and warrants further investigation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T16:34:43.474Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,32 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-29T09:35:55.129Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota SNAP receipts not being available",
-      "insight": "Potential for fraud in Minnesota's SNAP program",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "ONLY ON KTTC: DHS Commissioner Shireen Gandhi on the fight against fraud",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVS1TWEFWTDRUbTRxVW52ZmdQdnZfSzkwU2xfMjA2d0h6Zm11aEY3M1hjcGgzNVRJZklSUF9YVW1aS2xkcVkzQ1RlbjNqdzJMelYwWjM1X21JMV9UUjh4YTRVYnhEMG9xZWsxa3lIZzRXNVlhS1RmRGUyZHMtelpiRDhkbDdjTW9sOERmMUNXcUNOM1V5U0dVYTZn0gGuAUFVX3lxTE5SZXVnZHRld1dfdlhCT0kxb09JTEJPUklFZDZERkJHSm5Ya1ZQQjlQSEVSaFlmX0lwUkdhWWZab09mdVJ2SHpTc05wRmFPM3U2TnVmWkYyNFZ3a0dnU3Q0bVdDdTVIWVB6eWg4LVBGUGx6ZTQxdnEyalVnbk9mOTJBNHFaZ3o3QkJpSko0aE53UjVPNTFTQjZuNVVfeUZyUjN2YlJBbW9seXBIdF8yUQ",
-      "newEntities": [
-        "Minnesota DHS"
-      ],
-      "newSearchTerms": [
-        "Minnesota SNAP program",
-        "fraud investigation"
-      ],
-      "id": "rf-1774733343205-9wmbfha5c",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T21:29:03.201Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,8 +990,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T16:34:43.474Z"
+  "lastUpdated": "2026-04-04T17:28:54.642Z"
 }
