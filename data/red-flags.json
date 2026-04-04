@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The ActBlue fundraising platform is under federal investigation, which may indicate potential wrongdoing or irregularities in the platform's financial transactions.",
+      "insight": "I suspect that this investigation may uncover a larger pattern of fraud or abuse, potentially involving multiple individuals or organizations. Further investigation is needed to determine the scope and extent of any potential wrongdoing.",
+      "entities": [
+        "ActBlue"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/politics/democrats-actblue-fundraising-platform-faces-federal-investigation-1234567890",
+      "id": "rf-1775268068796-kw5b46jk1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T02:01:08.793Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud, such as Feeding Our Future",
       "insight": "Need to investigate program management and oversight",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T23:33:18.914Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T23:33:18.914Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -966,30 +985,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-27T17:49:26.389Z",
       "isNew": false
-    },
-    {
-      "type": "Tax evasion",
-      "description": "A Minnesota man has been accused of tax evasion and underreporting income by nearly $2M while claiming $40K in SNAP and medical aid.",
-      "insight": "This case highlights the need for increased scrutiny of tax returns and benefit claims to prevent similar instances of fraud. Further investigation is necessary to determine the extent of the issue and identify potential patterns.",
-      "entities": [
-        "Minnesota man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/news/minnesota-man-accused-tax-evasion-underreporting-income-140000-snap-medical-aid/24610341/",
-      "id": "rf-1774611652277-zen6ms5lt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T11:40:52.274Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1016,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-03T23:33:18.914Z"
+  "lastUpdated": "2026-04-04T02:01:08.793Z"
 }
