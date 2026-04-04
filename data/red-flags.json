@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Nonprofit at center of federal probe still has $94M city contract",
+      "insight": "This raises concerns about potential misuse of funds and lack of oversight",
+      "entities": [
+        "Nonprofit organization"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "National Today",
+      "sourceUrl": "https://www.nationaltoday.com/2026-04-03/?oc=5",
+      "id": "rf-1775334583037-kw919mloy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T20:29:43.034Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The ActBlue fundraising platform is under federal investigation, which could indicate potential wrongdoing or misuse of funds.",
       "insight": "I suspect that this investigation may uncover significant financial irregularities or embezzlement. Further research is needed to determine the scope of the investigation and potential consequences for those involved.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T19:30:39.710Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -97,25 +116,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T16:34:43.474Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Nonprofit at Center of Federal Probe Still Has $94M City Contract",
-      "insight": "This raises concerns about oversight and accountability in government contracting. The nonprofit in question is still operating and has a significant contract despite being under investigation.",
-      "entities": [
-        "Nonprofit organization"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaUJuZEpYYVQ0UXJRaVZ4VjVGSlFBUzZxVzNYMkNiZnFOdVRfQUxFaVVqNjMtNXA2c2hueE1oZ290LXc5djJoejRGNWhnV3FuX0toWkl0RTN5ZUV1Y3ZVU2hmWjVTTDdnWkhheDd5YVMwbkJmY2hUTlVtOXJWN181bGxLOG1lZHZXLXFiM1FOSnpibVZBYk1uamhFQVBXQXktQ05XUVZiRXdKa1NwMm1IdXN5ajVCTThtVzFDSFZsRQ?oc=5",
-      "id": "rf-1775310788434-u0cerm4fr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T13:53:08.429Z",
       "isNew": false
     },
     {
@@ -982,16 +982,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T19:30:39.710Z"
+  "lastUpdated": "2026-04-04T20:29:43.034Z"
 }
