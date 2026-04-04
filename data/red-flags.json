@@ -2,6 +2,47 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "A nonprofit organization with a $94M city contract is under federal investigation",
+      "insight": "The Minnesota Somali Fraud case raises concerns about oversight and management of large city contracts. The investigation should focus on ensuring accountability and transparency.",
+      "entities": [
+        "Minnesota DHS",
+        "Governor Walz",
+        "AG Ellison"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbUVIY3FORkJOMUpVV2NGaEdGbXV2cE92SUhUcXUyOU5mTndyZnduYUdsdDhxZDhGOGMzblM4X3pOREEwQy03ZkFGQlVZTVJYdFdESXlydFVaLTk4ektaMXREMUNaZWdRR3dRQ2JjZWs3QlNXV3hBdWFjbDJrTGxhaDFTNWFXOG9FSWJnRzhnQUZSekpJN3NlSVlkaDB6cmY5dFE3UFdSeDhrdmo5dGlEMHg5aGZKVTVMTGdzVTY4ZlE4SlNOQ2c4dUt3X1JhX21yUi1sakNlNDFRNlExU3ZQVDJ1dXZhLThvMWYtZkRrN2fSAfABQVVfeXFMTW1FSGNxTkZCTjFKVVdjRmhHRm11dnBPdklIVHF1MjlOZk53cmZ3bmFHbHQ4cWQ4RjhjM25TOF96TkRBMEMtN2ZBRkJVWU1SWHRXREl5cnRVWi05OHpLWjF0RDFDWmVnUUd3UUNiY2VrN0JTV1d4QXVhY2wya0xsYWgxUzVhVzhvRUliZ0c4Z0FGUnpKSTdzZUlZZGgwenJmOXRRN1BXUng4aZVpOXRpRDB4OWhmSlU1TExnc1U2OGZROEpTTkNnOHVLd19SYV9tclItbGpDZTQxUTZRMVN2UFQydXV2YS04bzFmLWZEazdn?oc=5",
+      "id": "rf-1775338223570-vs117mpfv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T21:30:23.567Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Federal investigation into Democrats' ActBlue fundraising platform",
+      "insight": "The ActBlue investigation raises concerns about fundraising practices and potential misuse of funds. The investigation should focus on ensuring compliance with federal regulations.",
+      "entities": [
+        "ActBlue",
+        "Democrats"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Fox Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YVC11cWRKd2NsWjk1cWktdy1zWTBVTmVqR2ZoX1MzRi1fV1pRTnk0ZUtGeTZaNjlRMUF5MmV2UzJVUHNMMEhUUlJLMXQxYVR2SjRpR004MzBNX2M?oc=5",
+      "id": "rf-1775338223570-3lob3v9ml",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T21:30:23.567Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Nonprofit at center of federal probe still has $94M city contract",
       "insight": "This raises concerns about potential misuse of funds and lack of oversight",
       "entities": [
@@ -17,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T20:29:43.034Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -938,60 +979,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-29T17:29:03.656Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigation into Eric Swalwell",
-      "insight": "Potential ties to a Chinese spy",
-      "entities": [
-        "Eric Swalwell",
-        "FBI"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Yahoo Finance",
-      "sourceUrl": "https://www.yahoo.com/finance/kash-patel-s-fbi-release-eric-swalwell-files-decade-old-investigation-involving-chinese-spy-report-2671331",
-      "id": "rf-1774798225043-5im55xscf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T15:30:25.039Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a former church leader for potential crimes, and is seeking potential victims. This case raises concerns about the potential for abuse of power and the need for greater oversight.",
-      "insight": "I suspect that this investigation may be connected to a larger pattern of abuse within the church or other organizations. Further research is needed to determine the extent of the issue and potential connections to other cases.",
-      "entities": [
-        "FBI",
-        "former church leader"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NPR Illinois",
-      "sourceUrl": "https://www.nprillinois.org/post/fbi-seeking-potential-victims-former-church-leader-investigation#stream/0",
-      "id": "rf-1774794793617-kc1rht9r1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T14:33:13.613Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T20:29:43.034Z"
+  "lastUpdated": "2026-04-04T21:30:23.567Z"
 }

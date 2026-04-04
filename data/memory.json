@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-29T23:32:34.490Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-30T02:14:34.171Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-04-04T20:29:43.032Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-04T21:30:23.565Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 80,
+      "count": 81,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-01T20:56:38.210Z"
+      "lastSeen": "2026-04-04T21:30:23.566Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $94M allegedly go in Federal Probe into Nonprofit?",
     "Where did the $94M allegedly go in Feeding Our Future fraud?",
     "Where did the $94M allegedly go in Feeding Our Future fraud case?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in FBI’s Secret Surveillance System Breach Investigation?",
     "What other organizations is Ma Xingrui connected to?",
     "Where did the Unknown allegedly go in Minnesota Somali Fraud?",
-    "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?"
+    "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?",
+    "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1871,
-    "articlesProcessed": 93200,
-    "redFlagsFound": 2166,
+    "totalScans": 1872,
+    "articlesProcessed": 93250,
+    "redFlagsFound": 2168,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-04T20:29:43.032Z",
-  "lastUpdated": "2026-04-04T20:29:43.033Z"
+  "lastReflection": "2026-04-04T21:30:23.565Z",
+  "lastUpdated": "2026-04-04T21:30:23.566Z"
 }
