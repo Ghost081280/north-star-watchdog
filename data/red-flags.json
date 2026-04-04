@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Nonprofit at center of federal probe still has $94M city contract",
+      "insight": "This raises concerns about oversight and potential continued fraud. Investigate the nonprofit and city officials involved.",
+      "entities": [
+        "Nonprofit",
+        "City officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "National Today",
+      "sourceUrl": "https://nationaltoday.com/2026-04-03/nonprofit-at-center-of-federal-probe-still-has-94m-city-contract",
+      "id": "rf-1775295386942-02xci9i9m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T09:36:26.938Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The ActBlue fundraising platform is under federal investigation",
       "insight": "This could indicate potential fraud or misuse of funds",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T08:39:19.765Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T08:39:19.765Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -963,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-28T19:29:08.894Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota SNAP recipients investigation",
-      "insight": "Potential for widespread fraud in SNAP program",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "blackchronicle.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcEZVd1BQWDg2WVhhaFJZY0dheXRsX1pnSzVOZGpBMVNXek9CbUl5RTJLSm54MVBxUDJUb085XzFlMENxamVvaFk4bk1YdEYyUHhUUTIyTHJuOERQSDRzUWNMdFZYSTA1cWt1TUV2cC0yQ1JMNzZWYWxLUmx5VzNLS3hfMWVRV3JlQTFwaEJRNVI",
-      "id": "rf-1774723110859-dtoxkh2jq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T18:38:30.856Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,7 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T08:39:19.765Z"
+  "lastUpdated": "2026-04-04T09:36:26.938Z"
 }
