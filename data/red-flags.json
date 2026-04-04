@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "Star Distribution, a company involved in Feeding Our Future program, has pleaded guilty to fraud",
+      "insight": "This suggests a potential shell company or entity used for fraudulent activities",
+      "entities": [
+        "Star Distribution"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
+      "id": "rf-1775282189197-7q58fjgsm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T05:56:29.194Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "Feeding Our Future program under investigation",
+      "insight": "This suggests a potential program termination or suspension due to fraudulent activities",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Hoodline",
+      "sourceUrl": "https://hoodline.com/2024/04/rochester-woman-sentenced-in-feeding-our-future-fraud/",
+      "id": "rf-1775282189197-about6y1o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T05:56:29.194Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The ActBlue fundraising platform is under federal investigation, which may indicate potential wrongdoing or irregularities in the platform's financial transactions.",
       "insight": "I suspect that this investigation may uncover a larger pattern of fraud or abuse, potentially involving multiple individuals or organizations. Further investigation is needed to determine the scope and extent of any potential wrongdoing.",
@@ -945,46 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-28T09:35:58.326Z",
       "isNew": false
-    },
-    {
-      "type": "Potential fraud in government programs",
-      "description": "Investigations into potential fraud in government programs, such as SNAP and federal funds mismanagement, have been reported.",
-      "insight": "These investigations suggest a need for increased oversight and monitoring of government programs to prevent and detect fraud.",
-      "entities": [
-        "Minnesota DHS",
-        "Bearden High Navy JROTC"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://blackchronicle.com/fraud-task-force-minnesota-snap-reciepts-not-available/",
-      "id": "rf-1774663273513-cvcn82tp9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T02:01:13.508Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential program termination due to fraud allegations",
-      "insight": "The Minnesota Medicaid fraud investigation and the Texas child care spending review raise concerns about potential program termination due to fraud allegations. Further investigation is needed to determine the extent of the fraud and potential consequences.",
-      "entities": [
-        "Minnesota DHS",
-        "Texas child care program"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota DHS, Texas child care program",
-      "sourceUrl": "https://sanangelolive.com/story/after-minnesota-scandal-texas-reviewed-its-child-care-spending-it-found-little-fraud",
-      "id": "rf-1774633766393-guz42tiy3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-27T17:49:26.389Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,12 +991,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1016,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T04:24:55.479Z"
+  "lastUpdated": "2026-04-04T05:56:29.194Z"
 }

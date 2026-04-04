@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-29T07:02:44.871Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-29T08:38:09.115Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-04T04:24:55.477Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-04T05:56:29.192Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 32,
+      "count": 33,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-04-01T05:23:47.380Z"
+      "lastSeen": "2026-04-04T05:56:29.193Z"
     },
     {
       "type": "federal_funding",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ishan Vartak connected to?",
     "Where did the $19B allegedly go in Feeding Our Future fraud?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Star Distribution Owner connected to?",
@@ -558,7 +557,8 @@
     "Are any of these 5 figures connected to each other?",
     "Where did the Unknown allegedly go in ActBlue Fundraising Platform Investigation?",
     "Where did the Unknown allegedly go in Feeding Our Future Fraud Investigation?",
-    "Where did the $94M allegedly go in Federal Probe into Nonprofit?"
+    "Where did the $94M allegedly go in Federal Probe into Nonprofit?",
+    "Where did the $94M allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1855,
-    "articlesProcessed": 92400,
-    "redFlagsFound": 2144,
+    "totalScans": 1856,
+    "articlesProcessed": 92450,
+    "redFlagsFound": 2146,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Rochester Woman connected to?",
-        "Where did the $19B allegedly go in Feeding Our Future Fraud Investigation?",
-        "What other organizations is Ishan Vartak connected to?"
+        "What other organizations is Ishan Vartak connected to?",
+        "Where did the $19B allegedly go in Feeding Our Future fraud?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-04T04:24:55.477Z",
-  "lastUpdated": "2026-04-04T04:24:55.478Z"
+  "lastReflection": "2026-04-04T05:56:29.192Z",
+  "lastUpdated": "2026-04-04T05:56:29.193Z"
 }
