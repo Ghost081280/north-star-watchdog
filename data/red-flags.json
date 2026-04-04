@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The ActBlue fundraising platform is under federal investigation, which could indicate potential wrongdoing or misuse of funds.",
+      "insight": "I suspect that this investigation may uncover significant financial irregularities or embezzlement. Further research is needed to determine the scope of the investigation and potential consequences for those involved.",
+      "entities": [
+        "ActBlue"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Fox Business",
+      "sourceUrl": "https://www.foxbusiness.com/politics/democrats-actblue-fundraising-platform-federal-investigation",
+      "id": "rf-1775331039713-1pljchv5i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T19:30:39.710Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The FBI's secret surveillance system was breached by Chinese hackers, raising concerns about national security.",
       "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will be investigating further to determine the extent of the breach and potential connections to other cases.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T18:40:17.413Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T18:40:17.413Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large scale fraud",
@@ -194,25 +213,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T05:56:29.194Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The ActBlue fundraising platform is under federal investigation, which may indicate potential wrongdoing or irregularities in the platform's financial transactions.",
-      "insight": "I suspect that this investigation may uncover a larger pattern of fraud or abuse, potentially involving multiple individuals or organizations. Further investigation is needed to determine the scope and extent of any potential wrongdoing.",
-      "entities": [
-        "ActBlue"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/politics/democrats-actblue-fundraising-platform-faces-federal-investigation-1234567890",
-      "id": "rf-1775268068796-kw5b46jk1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T02:01:08.793Z",
       "isNew": false
     },
     {
@@ -982,8 +982,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,6 +990,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T18:40:17.413Z"
+  "lastUpdated": "2026-04-04T19:30:39.710Z"
 }
