@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Nonprofit at Center of Federal Probe Still Has $94M City Contract",
+      "insight": "This raises concerns about oversight and potential misuse of funds",
+      "entities": [
+        "Nonprofit",
+        "City"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "National Today",
+      "sourceUrl": "https://www.nationaltoday.com/nonprofit-at-center-of-federal-probe-still-has-94m-city-contract",
+      "id": "rf-1775289256910-jf958xjyx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T07:54:16.906Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Feeding Our Future program under investigation",
+      "insight": "This program was vulnerable to fraud, indicating potential programmatic issues",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
+      "id": "rf-1775289256910-n7poj0qbf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T07:54:16.906Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Star Distribution",
       "insight": "The owner of Star Distribution has pleaded guilty in the Feeding Our Future fraud case, indicating a potential shell company or entity used for fraudulent activities.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T07:00:50.254Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell_company",
@@ -173,25 +213,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-03T19:38:12.429Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Funding freeze for certain programs, including child care and Medicare",
-      "insight": "I notice a pattern of funding freezes and cuts to social programs, which may indicate a larger issue with government priorities and budget allocation. Further investigation is needed to determine the impact of these freezes on vulnerable populations.",
-      "entities": [
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/news/trump-backs-off-campaign-promises-to-protect-medicare-help-with-child-care/",
-      "id": "rf-1775241872304-uxhe3zbby",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T18:44:32.301Z",
       "isNew": false
     },
     {
@@ -963,26 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-28T17:27:44.321Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Potential termination of programs due to fraud and mismanagement",
-      "insight": "Patterns of fraud and mismanagement in Minnesota and other states may lead to program terminations and increased scrutiny.",
-      "entities": [
-        "Minnesota DHS",
-        "Bearden High Navy JROTC"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Source articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcEZVd1BQWDg2WVhhaFJZY0dheXRsX1pnSzVOZGpBMVNXek9CbUl5RTJLSm54MVBxUDJUb085XzFlMENxamVvaFk4bk1YdEYyUHhUUTIyTHJuOERQSDRzUWNMdFZYSTA1cWt1TUV2cC0yQ1JMNzZWYWxLUmx5VzNLS3hfMWVRV3JlQTFwaEJRNVI",
-      "id": "rf-1774705861729-t1aw8kzuv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-28T13:51:01.725Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1014,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T07:00:50.254Z"
+  "lastUpdated": "2026-04-04T07:54:16.906Z"
 }
