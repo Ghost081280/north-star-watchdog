@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "large city contract",
+      "description": "A nonprofit with a $94M city contract is under investigation for fraud.",
+      "insight": "High-risk situation with potential for large-scale mismanagement or corruption.",
+      "entities": [
+        "Minnesota Nonprofit"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "nationaltoday.com",
+      "sourceUrl": "https://www.nationaltoday.com/nonprofit-at-center-of-federal-probe-still-has-94m-city-contract",
+      "id": "rf-1775345432401-qmmm5t32b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T23:30:32.398Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
+      "description": "ActBlue, a major Democrats' fundraising platform, faces federal investigation.",
+      "insight": "Potential for significant findings on campaign finance practices.",
+      "entities": [
+        "ActBlue",
+        "Democrats"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox Business",
+      "sourceUrl": "https://www.foxbusiness.com/politics/democrats-actblue-fundraising-platform-faces-federal-investigation",
+      "id": "rf-1775345432401-i6jmqsp58",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T23:30:32.398Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "A nonprofit organization with a $94M city contract is under federal investigation",
       "insight": "The Minnesota Somali Fraud case raises concerns about oversight and management of large city contracts. The investigation should focus on ensuring accountability and transparency.",
@@ -940,49 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-29T19:31:51.443Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of programs due to fraud allegations",
-      "insight": "Several programs and organizations are under investigation for alleged fraud, which could lead to program terminations and funding freezes.",
-      "entities": [
-        "Minnesota Somali housing program"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "economictimes.com",
-      "sourceUrl": "https://economictimes.com/stories/answer-the-question-senators-torch-soros-funded-witness-at-fiery-minnesota-somali-fraud-hearing",
-      "id": "rf-1774805343659-fvwa3ibpi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T17:29:03.656Z",
-      "isNew": false
-    },
-    {
-      "type": "misuse_of_power",
-      "description": "Allegations of misuse of power by high-ranking officials",
-      "insight": "Recent developments suggest potential misuse of power by officials, including Kash Patel's actions against Democratic lawmakers.",
-      "entities": [
-        "Kash Patel",
-        "FBI"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2023/03/28/kash-patel-fbi-internal-investigations/",
-      "id": "rf-1774805343659-p20k5hh53",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T17:29:03.656Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T22:28:02.900Z"
+  "lastUpdated": "2026-04-04T23:30:32.398Z"
 }
