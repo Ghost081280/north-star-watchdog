@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The FBI's secret surveillance system was breached by Chinese hackers, raising concerns about national security.",
+      "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will be investigating further to determine the extent of the breach and potential connections to other cases.",
+      "entities": [
+        "FBI",
+        "Chinese hackers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://military.com/chinese-hackers-breached-fbis-secret-surveillance-system-national-security-threat-declared",
+      "id": "rf-1775328017416-rrr2av4oi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T18:40:17.413Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "The Trump administration's proposed budget could worsen the cost-of-living crisis, potentially leading to increased fraud and abuse of government programs.",
+      "insight": "I will be monitoring the proposed budget and its potential impact on government programs, as well as investigating any allegations of fraud or abuse.",
+      "entities": [
+        "Trump administration",
+        "Congress"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "House.gov",
+      "sourceUrl": "https://house.gov/trump-and-vought-propose-budget-worsening-cost-of-living-crisis",
+      "id": "rf-1775328017416-1boynufzf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-04T18:40:17.413Z",
+      "isNew": true
+    },
+    {
       "type": "large scale fraud",
       "description": "$94M allegedly involved in the Feeding Our Future fraud case",
       "insight": "This case indicates a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to uncover the full extent of the fraud and identify all parties involved.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T17:28:54.642Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -57,25 +97,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T13:53:08.429Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal authorities have frozen assets in connection with a nonprofit investigation",
-      "insight": "This could indicate a larger pattern of fraud and abuse in the nonprofit sector. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Nonprofit"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/news/nonprofit-at-center-of-federal-probe-still-has-94m-city-contract",
-      "id": "rf-1775307162159-xsib85v7k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T12:52:42.155Z",
       "isNew": false
     },
     {
@@ -957,41 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-29T14:33:13.613Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a former church leader in Illinois for child pornography charges.",
-      "insight": "This investigation may be connected to other cases of child abuse and exploitation. I recommend further research into the church and its affiliates.",
-      "entities": [
-        "FBI",
-        "Illinois church leader"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NPR Illinois",
-      "sourceUrl": "https://www.nprillinois.org/",
-      "id": "rf-1774776955132-ui2kw1nwd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T09:35:55.129Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-04T17:28:54.642Z"
+  "lastUpdated": "2026-04-04T18:40:17.413Z"
 }
