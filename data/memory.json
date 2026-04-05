@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-30T14:26:09.645Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-30T16:05:16.729Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-05T08:41:02.890Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-05T09:37:55.602Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "What other organizations is Rochester Woman connected to?",
     "Where did the Undisclosed allegedly go in Feeding Our Future fraud case?",
     "Where did the $94M allegedly go in Federal probe into nonprofit?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?",
     "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?",
     "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+    "Where did the $X allegedly go in Feeding Our Future fraud case?",
+    "Where did the $X allegedly go in ActBlue fundraising platform investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1878,
-    "articlesProcessed": 93550,
-    "redFlagsFound": 2175,
+    "totalScans": 1879,
+    "articlesProcessed": 93600,
+    "redFlagsFound": 2177,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Feeding Our Future program terminated due to fraud allegations",
+          "insight": "This termination suggests a large-scale fraud scheme was uncovered, potentially involving multiple entities and individuals.",
+          "entities": [
+            "Star Distribution",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $94M allegedly go in Feeding Our Future fraud case?",
         "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-        "What other organizations is Rochester Woman connected to?"
+        "What other organizations is Rochester Woman connected to?",
+        "Where did the Undisclosed allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T08:41:02.890Z",
-  "lastUpdated": "2026-04-05T08:41:02.890Z"
+  "lastReflection": "2026-04-05T09:37:55.602Z",
+  "lastUpdated": "2026-04-05T09:37:55.602Z"
 }

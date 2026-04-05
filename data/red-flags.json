@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future program terminated due to fraud allegations",
+      "insight": "This termination suggests a large-scale fraud scheme was uncovered, potentially involving multiple entities and individuals.",
+      "entities": [
+        "Star Distribution",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
+      "id": "rf-1775381875607-83l2w5wkh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T09:37:55.604Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "ActBlue fundraising platform under federal investigation",
+      "insight": "This investigation suggests potential wrongdoing in campaign finance, potentially involving large sums of money.",
+      "entities": [
+        "ActBlue"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Fox Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YVC11cWRKd2NsWjk1cWktdy1zWTBVTmVqR2ZoX1MzRi1fV1pRTnk0ZUtGeTZaNjlRMUF5MmV2UzJVUHNMMEhUUlJLMXQxYVR2SjRpR004MzBNX2M?oc=5",
+      "id": "rf-1775381875607-ajyzegp1z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T09:37:55.604Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The DOJ has frozen assets related to the Feeding Our Future fraud case, indicating a significant investigation",
       "insight": "This freeze suggests that the DOJ is taking a strong stance against fraud and is willing to take swift action to prevent further losses. I will continue to monitor this case and look for any connections to other potential fraud schemes.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-05T08:41:02.891Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -941,46 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T02:14:34.173Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a Democratic lawmaker, which may indicate wrongdoing or corruption.",
-      "insight": "This investigation could be a sign of a larger pattern of corruption within the government. I recommend tracking the progress of this investigation and looking for any connections to other entities or programs.",
-      "entities": [
-        "Kash Patel",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national-security/2026/03/28/kash-patel-fbi-democratic-lawmaker/",
-      "id": "rf-1774827154495-zbk2tdm5w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T23:32:34.492Z",
-      "isNew": false
-    },
-    {
-      "type": "environmental fine",
-      "description": "The Long Prairie rendering plant was fined $3M by the Minnesota Pollution Control Agency.",
-      "insight": "This fine suggests potential environmental negligence or violations by the plant, which could have broader implications for the community and ecosystem.",
-      "entities": [
-        "Long Prairie rendering plant",
-        "Minnesota Pollution Control Agency"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Brainerd Dispatch",
-      "sourceUrl": "https://brainerd-dispatch.com/2026-03-29/long-prairie-rendering-plant-fined-3m-by-the-minnesota-pollution-control-agency-a.html",
-      "id": "rf-1774823387596-nc513h2wf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-29T22:29:47.593Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,8 +993,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-05T08:41:02.891Z"
+  "lastUpdated": "2026-04-05T09:37:55.604Z"
 }
