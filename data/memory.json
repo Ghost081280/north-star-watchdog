@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-31T11:48:00.383Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-31T13:15:12.699Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-05T22:29:27.925Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-04-05T23:33:00.648Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Minnesota Somali Fraud?",
-    "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?",
     "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?",
     "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Elliott Engen connected to?",
     "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?",
-    "Where did the unknown allegedly go in Feeding Our Future fraud case?"
+    "Where did the unknown allegedly go in Feeding Our Future fraud case?",
+    "What other organizations is Ma Xingrui connected to?",
+    "What other organizations is Vanessa Motta connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1892,
-    "articlesProcessed": 94250,
-    "redFlagsFound": 2191,
+    "totalScans": 1893,
+    "articlesProcessed": 94300,
+    "redFlagsFound": 2192,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota Somali Fraud Investigation?",
-        "Where did the Unknown allegedly go in FBI’s Secret Surveillance System Breach Investigation?",
-        "What other organizations is Ma Xingrui connected to?"
+        "Where did the Unknown allegedly go in Minnesota Somali Fraud?",
+        "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?",
+        "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T22:29:27.925Z",
-  "lastUpdated": "2026-04-05T22:29:27.926Z"
+  "lastReflection": "2026-04-05T23:33:00.648Z",
+  "lastUpdated": "2026-04-05T23:33:00.649Z"
 }
