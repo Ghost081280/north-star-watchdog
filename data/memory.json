@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-30T09:10:27.790Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-30T11:00:50.409Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-05T02:14:14.914Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-05T05:11:11.913Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1875,
-    "articlesProcessed": 93400,
-    "redFlagsFound": 2171,
+    "totalScans": 1876,
+    "articlesProcessed": 93450,
+    "redFlagsFound": 2173,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud allegations",
+          "description": "The owner of Star Distribution pleaded guilty to fraud allegations",
+          "insight": "This indicates a potential case of fraud and misuse of funds, which could lead to further investigations and potential penalties.",
+          "entities": [
+            "Star Distribution",
+            "owner"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T02:14:14.914Z",
-  "lastUpdated": "2026-04-05T02:14:14.915Z"
+  "lastReflection": "2026-04-05T05:11:11.913Z",
+  "lastUpdated": "2026-04-05T05:11:11.914Z"
 }
