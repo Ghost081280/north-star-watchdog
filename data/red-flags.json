@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Nonprofit at center of federal corruption probe still has a $94M city contract",
+      "insight": "This raises concerns about oversight and potential misuse of funds. The nonprofit's contract with the city is still active despite the ongoing investigation.",
+      "entities": [
+        "Nonprofit organization"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "gothamist.com",
+      "sourceUrl": "https://gothamist.com/news/nonprofit-at-the-center-of-federal-corruption-probe-still-has-a-94m-city-contract",
+      "id": "rf-1775397259302-nv6fppmtq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T13:54:19.299Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud scheme",
+      "description": "Eight people face federal charges related to a multi-million dollar Housing Stabilization Fraud scheme in Minnesota",
+      "insight": "This indicates a large-scale fraud scheme involving multiple individuals and potentially affecting many people in Minnesota.",
+      "entities": [
+        "Eight individuals"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilANBVV95cUxOS01nWDJZZVpCcFotX2NPUi1NYmNqbjFCSVJoaWZIcWl3WUpVTmtscWZsM2l6a01IbHR5MUtNVEVlcENBd0tfbEQzUHpwRGlvSWZrZjJaVzh5dDFOV3d0dEVTbkwxYTB2RWI3UnhiTkhHM1lJTXY1WDhYWFRGeEJiOXhWUFUtelN0WDFGVGhTWlZvMnk2Z2V2ZUhINzN5UG5NajJrN0hMOXZPcGo1NlVsREgzWTZRbUl1YmFYTXhQaGRCSWVYYlFRV0trRHRDRkJ4YW15ZHBuZHp4RjFOSzZEeTFmSDBQLUtKaGFsVHdCVG9zVGp3YXNQb1EteHotZmdMU3RVMkRVNXlubEVfSTV5WFVSRXRQaGVfZkNsVHl5bTYwVnp4b1d6NzU2VTFBSldoQ1VCQlVlZ191X2FfUElxR2VtV09Ea0RjQllvLWttbE95eWhLUlY0bHUybHRXalZ4YndhNzYwV09xODF5NmVnQUV2aDlwNmthaEZIRXE1Z0puaHFlLXNpZjg2cVhFUDcxVUxrTQ",
+      "id": "rf-1775397259302-wg4z9rv2e",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T13:54:19.299Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud allegations",
       "insight": "This termination suggests a large-scale fraud scheme was uncovered, potentially involving multiple entities and individuals.",
@@ -473,26 +511,6 @@
       "isNew": false
     },
     {
-      "type": "large-scale fraud",
-      "description": "A $19B fraud investigation involving multiple individuals and organizations in Minnesota",
-      "insight": "This investigation suggests a large-scale, coordinated effort to commit fraud, potentially involving multiple government agencies and organizations.",
-      "entities": [
-        "Minnesota DHS",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Google News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmVWLXN5cEhXckYtNVZIWTF2ekEzWHJpVjVodHBGSzZoMkVOZVJoemV6cFJhUmFHX0RMR1RqdHFJQ3ZPUEhPNGlfNkVTanJHRmhuM2JDbWwxcXV3UVVxLVJLV0p4QlNhbVc1U1VTcnhtR0VlY1hwUmEtRU9wUkNWUlI2Mm02TTZVa2NlOUxjbHpQSmFRNG5z",
-      "id": "rf-1775237599935-thk907ycq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T17:33:19.932Z",
-      "isNew": false
-    },
-    {
       "type": "guilty plea",
       "description": "Owner of Star Distribution pleaded guilty to meal fraud",
       "insight": "This guilty plea suggests that the individual and potentially others involved in the fraud scheme are being held accountable.",
@@ -961,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T05:23:09.735Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "There have been reports of shell companies being used to launder money and commit fraud.",
-      "insight": "These shell companies can be used to hide the true ownership and activities of individuals and organizations, making it difficult to track and prosecute fraudulent activities.",
-      "entities": [
-        "Unknown"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "mynorthwest.com",
-      "sourceUrl": "https://mynorthwest.com/",
-      "id": "rf-1774836874178-vd57njraa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T02:14:34.173Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,7 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-05T12:54:56.128Z"
+  "lastUpdated": "2026-04-05T13:54:19.299Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-30T19:58:07.642Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-30T20:50:52.609Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-05T12:54:56.125Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-05T13:54:19.296Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 81,
+      "count": 82,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-04T21:30:23.566Z"
+      "lastSeen": "2026-04-05T13:54:19.298Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future fraud case?",
     "What other organizations is Owner of Star Distribution connected to?",
     "Where did the undisclosed allegedly go in Feeding Our Future fraud case?",
     "Where did the undisclosed allegedly go in Minnesota Somali Fraud?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Donald Trump?",
     "Where did the multi-million dollar allegedly go in Minnesota Housing Stabilization Fraud scheme?",
     "Are any of these 3 figures connected to each other?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $94M allegedly go in Feeding Our Future fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1882,
-    "articlesProcessed": 93750,
-    "redFlagsFound": 2179,
+    "totalScans": 1883,
+    "articlesProcessed": 93800,
+    "redFlagsFound": 2181,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud scheme",
+          "description": "Eight people face federal charges related to a multi-million dollar Housing Stabilization Fraud scheme in Minnesota",
+          "insight": "This indicates a large-scale fraud scheme involving multiple individuals and potentially affecting many people in Minnesota.",
+          "entities": [
+            "Eight individuals"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMilANBVV95cUxOS01nWDJZZVpCcFotX2NPUi1NYmNqbjFCSVJoaWZIcWl3WUpVTmtscWZsM2l6a01IbHR5MUtNVEVlcENBd0tfbEQzUHpwRGlvSWZrZjJaVzh5dDFOV3d0dEVTbkwxYTB2RWI3UnhiTkhHM1lJTXY1WDhYWFRGeEJiOXhWUFUtelN0WDFGVGhTWlZvMnk2Z2V2ZUhINzN5UG5NajJrN0hMOXZPcGo1NlVsREgzWTZRbUl1YmFYTXhQaGRCSWVYYlFRV0trRHRDRkJ4YW15ZHBuZHp4RjFOSzZEeTFmSDBQLUtKaGFsVHdCVG9zVGp3YXNQb1EteHotZmdMU3RVMkRVNXlubEVfSTV5WFVSRXRQaGVfZkNsVHl5bTYwVnp4b1d6NzU2VTFBSldoQ1VCQlVlZ191X2FfUElxR2VtV09Ea0RjQllvLWttbE95eWhLUlY0bHUybHRXalZ4YndhNzYwV09xODF5NmVnQUV2aDlwNmthaEZIRXE1Z0puaHFlLXNpZjg2cVhFUDcxVUxrTQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?",
         "Where did the Unknown allegedly go in Feeding Our Future fraud case?",
-        "What other organizations is Owner of Star Distribution connected to?"
+        "What other organizations is Owner of Star Distribution connected to?",
+        "Where did the undisclosed allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T12:54:56.125Z",
-  "lastUpdated": "2026-04-05T12:54:56.127Z"
+  "lastReflection": "2026-04-05T13:54:19.296Z",
+  "lastUpdated": "2026-04-05T13:54:19.298Z"
 }
