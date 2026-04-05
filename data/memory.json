@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-30T22:34:25.569Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-03-30T23:33:48.318Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-05T15:31:18.224Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-05T16:35:03.377Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Owner of Star Distribution connected to?",
-    "Where did the undisclosed allegedly go in Feeding Our Future fraud case?",
     "Where did the undisclosed allegedly go in Minnesota Somali Fraud?",
     "What other organizations is Donald Trump connected to?",
     "Where did the $100M allegedly go in Minnesota Somali Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the multi-million dollar allegedly go in Minnesota Housing Stabilization Fraud scheme?",
     "Are any of these 3 figures connected to each other?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $94M allegedly go in Feeding Our Future fraud case?"
+    "Where did the $94M allegedly go in Feeding Our Future fraud case?",
+    "Where did the Undisclosed allegedly go in Feeding Our Future fraud case?",
+    "Where did the multi-million dollar allegedly go in Housing Stabilization Fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1885,
-    "articlesProcessed": 93900,
-    "redFlagsFound": 2184,
+    "totalScans": 1886,
+    "articlesProcessed": 93950,
+    "redFlagsFound": 2185,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T15:31:18.224Z",
-  "lastUpdated": "2026-04-05T15:31:18.225Z"
+  "lastReflection": "2026-04-05T16:35:03.377Z",
+  "lastUpdated": "2026-04-05T16:35:03.378Z"
 }
