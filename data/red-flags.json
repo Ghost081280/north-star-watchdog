@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The DOJ has frozen assets related to the Feeding Our Future fraud case, indicating a significant investigation",
+      "insight": "This freeze suggests that the DOJ is taking a strong stance against fraud and is willing to take swift action to prevent further losses. I will continue to monitor this case and look for any connections to other potential fraud schemes.",
+      "entities": [
+        "Feeding Our Future",
+        "Star Distribution"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/eight-people-face-federal-charges-related-to-a-multi-million-dollar-housing-stabilization-fraud-scheme-in-minnesota/ar-AA191yY5",
+      "id": "rf-1775378462896-b4hbd8m3d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T08:41:02.891Z",
+      "isNew": true
+    },
+    {
       "type": "fraud allegations",
       "description": "The owner of Star Distribution pleaded guilty to fraud allegations",
       "insight": "This indicates a potential case of fraud and misuse of funds, which could lead to further investigations and potential penalties.",
@@ -156,26 +176,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-04T19:30:39.710Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The FBI's secret surveillance system was breached by Chinese hackers, raising concerns about national security.",
-      "insight": "This breach highlights the need for increased cybersecurity measures to protect sensitive information. I will be investigating further to determine the extent of the breach and potential connections to other cases.",
-      "entities": [
-        "FBI",
-        "Chinese hackers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://military.com/chinese-hackers-breached-fbis-secret-surveillance-system-national-security-threat-declared",
-      "id": "rf-1775328017416-rrr2av4oi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T18:40:17.413Z",
       "isNew": false
     },
     {
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-05T07:03:57.374Z"
+  "lastUpdated": "2026-04-05T08:41:02.891Z"
 }
