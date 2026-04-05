@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Nonprofit at center of federal corruption probe still has $94M city contract",
+      "insight": "This raises concerns about oversight and potential misuse of funds. Further investigation into the nonprofit's activities and connections is warranted.",
+      "entities": [
+        "Star Distribution",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Gothamist",
+      "sourceUrl": "https://gothamist.com/news/nonprofit-at-the-center-of-federal-corruption-probe-still-has-a-94m-city-contract",
+      "id": "rf-1775403078229-bo3lohgrp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T15:31:18.226Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Almost 14,000 Colorado kids on waitlist for subsidized childcare with program on brink of collapse",
+      "insight": "This indicates potential mismanagement or lack of resources. Investigating the program's financials and management structure could reveal underlying issues.",
+      "entities": [
+        "Colorado subsidized childcare program"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "The Colorado Sun",
+      "sourceUrl": "https://www.thecoloradosun.com/2026/04/05/almost-14-000-colorado-kids-are-on-the-waitlist-for-subsidized-child-care-with-program-on-the-brink-of-collapse/",
+      "id": "rf-1775403078229-h25754gfm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-05T15:31:18.226Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Nonprofit at the center of federal corruption probe still has a $94M city contract",
       "insight": "This raises concerns about oversight and potential misuse of funds. Further investigation into the nonprofit's activities and connections is warranted.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-05T14:34:38.741Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -94,26 +133,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-05T09:37:55.604Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The DOJ has frozen assets related to the Feeding Our Future fraud case, indicating a significant investigation",
-      "insight": "This freeze suggests that the DOJ is taking a strong stance against fraud and is willing to take swift action to prevent further losses. I will continue to monitor this case and look for any connections to other potential fraud schemes.",
-      "entities": [
-        "Feeding Our Future",
-        "Star Distribution"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/eight-people-face-federal-charges-related-to-a-multi-million-dollar-housing-stabilization-fraud-scheme-in-minnesota/ar-AA191yY5",
-      "id": "rf-1775378462896-b4hbd8m3d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T08:41:02.891Z",
       "isNew": false
     },
     {
@@ -958,27 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T12:01:51.986Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple investigations into various programs and entities",
-      "insight": "Pattern of investigations into government programs and entities, potential for widespread fraud",
-      "entities": [
-        "FEMA",
-        "Minnesota DHS",
-        "Washington State"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "",
-      "id": "rf-1774868450414-1q6pi1yga",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T11:00:50.410Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,6 +990,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-05T14:34:38.741Z"
+  "lastUpdated": "2026-04-05T15:31:18.226Z"
 }
