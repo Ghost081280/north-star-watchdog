@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-31T21:38:09.040Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-31T22:33:35.272Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-06T13:06:33.856Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-06T14:45:33.056Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in ActBlue fundraising platform investigation?",
     "What other organizations is Tim Walz connected to?",
     "What specific allegations exist against Donald Trump?",
     "Where did the multi-million dollar allegedly go in Minnesota Housing Stabilization Fraud scheme?",
@@ -558,7 +557,8 @@
     "Where did the $60M allegedly go in Medicare fraud investigation?",
     "Where did the $60M allegedly go in Feeding Our Future fraud case?",
     "Where did the Unknown allegedly go in FBI Secret Surveillance System Breach?",
-    "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?"
+    "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
+    "Where did the $60M allegedly go in Medicare Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1900,
-    "articlesProcessed": 94650,
-    "redFlagsFound": 2199,
+    "totalScans": 1901,
+    "articlesProcessed": 94700,
+    "redFlagsFound": 2200,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Feeding Our Future fraud case?",
         "Where did the $X allegedly go in ActBlue fundraising platform investigation?",
-        "What other organizations is Tim Walz connected to?"
+        "What other organizations is Tim Walz connected to?",
+        "What specific allegations exist against Donald Trump?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-06T13:06:33.856Z",
-  "lastUpdated": "2026-04-06T13:06:33.856Z"
+  "lastReflection": "2026-04-06T14:45:33.056Z",
+  "lastUpdated": "2026-04-06T14:45:33.057Z"
 }

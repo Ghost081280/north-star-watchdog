@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Potential freeze on federal funds for childcare programs due to concerns about fraud and mismanagement",
+      "insight": "I suspect that there may be a larger pattern of fraud and mismanagement in the childcare industry, particularly in light of recent remarks made by President Trump. Further investigation is needed to determine the extent of the issue and to identify potential solutions.",
+      "entities": [
+        "President Trump",
+        "Childcare Industry"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Detroit Free Press",
+      "sourceUrl": "https://www.freep.com/story/news/politics/2026/04/04/trump-remarks-childcare/7096333002/",
+      "id": "rf-1775486733062-28z4mf2u1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T14:45:33.058Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI's secret surveillance system was breached, which could compromise national security.",
       "insight": "This breach is a major concern, as it could allow hackers to access sensitive information and compromise national security. I will be tracking this investigation closely to see how it develops.",
@@ -57,26 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-06T07:27:39.984Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Nonprofit at center of federal corruption probe still has $94M city contract",
-      "insight": "This raises concerns about oversight and potential misuse of funds. Further investigation into the nonprofit's activities and connections is warranted.",
-      "entities": [
-        "Star Distribution",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Gothamist",
-      "sourceUrl": "https://gothamist.com/news/nonprofit-at-the-center-of-federal-corruption-probe-still-has-a-94m-city-contract",
-      "id": "rf-1775403078229-bo3lohgrp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T15:31:18.226Z",
       "isNew": false
     },
     {
@@ -982,17 +982,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T13:06:33.857Z"
+  "lastUpdated": "2026-04-06T14:45:33.058Z"
 }
