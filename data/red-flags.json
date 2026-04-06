@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Potential program termination due to allegations of fraud",
+      "insight": "Several government programs are under investigation for potential fraud, including the Sun Relocation Deal and Medicare programs in Southern California.",
+      "entities": [
+        "Sun Relocation Deal",
+        "Medicare"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Source article",
+      "sourceUrl": "https://www.pymnts.com/2026/04/blumenthal-calls-for-federal-investigation-into-sun-relocation-deal/",
+      "id": "rf-1775505228221-tpihozbbe",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T19:53:48.217Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Colorado's subsidized child care program is on the brink of collapse with 14,000 kids on the waitlist.",
       "insight": "This indicates a potential vulnerability in social services and a need for investigation into the program's management.",
       "entities": [
@@ -22,7 +42,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-06T18:57:13.372Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -962,32 +982,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-31T07:11:33.580Z",
       "isNew": false
-    },
-    {
-      "type": "election interference",
-      "description": "Eric Swalwell accuses FBI Director Kash Patel of election interference.",
-      "insight": "This accusation raises concerns about potential election interference.",
-      "entities": [
-        "Eric Swalwell",
-        "Kash Patel"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "SFGATE",
-      "sourceUrl": "https://sfgate.com/2026/03/30/sf-swalwell-accuses-fbi-director-kash-patel-of-election-interference-in-governors-race-threatens-legal-action/",
-      "id": "rf-1774906867585-lsezu7v19",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T21:41:07.581Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,7 +994,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T18:57:13.372Z"
+  "lastUpdated": "2026-04-06T19:53:48.217Z"
 }
