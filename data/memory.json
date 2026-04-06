@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-31T16:12:05.337Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-31T17:55:58.282Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-06T05:22:43.050Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-06T07:27:39.982Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1895,
-    "articlesProcessed": 94400,
-    "redFlagsFound": 2194,
+    "totalScans": 1896,
+    "articlesProcessed": 94450,
+    "redFlagsFound": 2196,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "The FBI has called a breach of sensitive agency networks a 'major incident', indicating a significant investigation.",
+          "insight": "This breach, combined with other fraud and security incidents, suggests a need to investigate potential connections between these events and Minnesota.",
+          "entities": [
+            "FBI"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Insurance Journal",
+          "sourceUrl": "https://www.insurancejournal.com/news/national/2026/04/06/764123.htm"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-06T05:22:43.050Z",
-  "lastUpdated": "2026-04-06T05:22:43.051Z"
+  "lastReflection": "2026-04-06T07:27:39.982Z",
+  "lastUpdated": "2026-04-06T07:27:39.983Z"
 }

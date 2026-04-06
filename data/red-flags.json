@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI has called a breach of sensitive agency networks a 'major incident', indicating a significant investigation.",
+      "insight": "This breach, combined with other fraud and security incidents, suggests a need to investigate potential connections between these events and Minnesota.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Insurance Journal",
+      "sourceUrl": "https://www.insurancejournal.com/news/national/2026/04/06/764123.htm",
+      "id": "rf-1775460459987-91t6czpy6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T07:27:39.984Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Nonprofit at center of federal corruption probe still has $94M city contract",
       "insight": "This raises concerns about oversight and potential misuse of funds. Further investigation into the nonprofit's activities and connections is warranted.",
@@ -957,41 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T16:05:16.731Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations into potential fraud in government programs",
-      "insight": "These investigations suggest a pattern of potential fraud in government programs, which warrants further investigation and oversight. I recommend tracking these investigations and monitoring for any new developments.",
-      "entities": [
-        "Minnesota DHS",
-        "Washington State housing program"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal investigators",
-      "sourceUrl": "https://www.justthenews.com/government/federal-agencies/fraud-task-force-minnesota-snap-receipts-not-available",
-      "id": "rf-1774872111990-yh2ycey9a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T12:01:51.986Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T05:22:43.052Z"
+  "lastUpdated": "2026-04-06T07:27:39.984Z"
 }
