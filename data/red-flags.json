@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Multiple cases of Medicare fraud under investigation, with new arrests and cases being added regularly.",
+      "insight": "I notice a pattern of Medicare fraud cases popping up across the country, with significant amounts of money being defrauded from the system. This suggests a larger issue that needs to be addressed.",
+      "entities": [
+        "Southern California individuals",
+        "healthcare providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://foxla.com/news/inside-the-60m-takedown-8-southern-california-cases-under-medicare-fraud-investigation/",
+      "id": "rf-1775507786010-mdvatki48",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T20:36:26.006Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential program termination due to allegations of fraud",
       "insight": "Several government programs are under investigation for potential fraud, including the Sun Relocation Deal and Medicare programs in Southern California.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-06T19:53:48.217Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -962,40 +982,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-31T08:58:08.692Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI investigation into NYC Council member and Hochul aide for alleged bribery",
-      "insight": "This investigation raises concerns about corruption and abuse of power. Further research is needed to determine the extent of the alleged bribery and any potential connections to other cases.",
-      "entities": [
-        "NYC Council member",
-        "Hochul aide"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.pix11.com/news/feds-probe-whether-nyc-council-member-hochul-aide-took-bribes-to-help-migrant-shelter-provider",
-      "id": "rf-1774941093584-f9jg9apov",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-31T07:11:33.580Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T19:53:48.217Z"
+  "lastUpdated": "2026-04-06T20:36:26.006Z"
 }
