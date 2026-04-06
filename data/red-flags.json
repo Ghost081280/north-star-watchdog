@@ -2,23 +2,23 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "Potential freeze on federal funds for childcare programs due to concerns about fraud and mismanagement",
-      "insight": "I suspect that there may be a larger pattern of fraud and mismanagement in the childcare industry, particularly in light of recent remarks made by President Trump. Further investigation is needed to determine the extent of the issue and to identify potential solutions.",
+      "description": "Suspicious activity detected in federal programs",
+      "insight": "I notice a pattern of suspicious activity in federal programs, which may indicate a larger issue with fraud and abuse. Further investigation is needed to determine the scope of the problem.",
       "entities": [
-        "President Trump",
-        "Childcare Industry"
+        "FBI",
+        "HHS"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Detroit Free Press",
-      "sourceUrl": "https://www.freep.com/story/news/politics/2026/04/04/trump-remarks-childcare/7096333002/",
-      "id": "rf-1775486733062-28z4mf2u1",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1775493885547-f5jot0rko",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-06T14:45:33.058Z",
-      "isNew": false
+      "detectedAt": "2026-04-06T16:44:45.544Z",
+      "isNew": true
     },
     {
       "type": "Federal investigation",
@@ -982,6 +982,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T15:44:18.793Z"
+  "lastUpdated": "2026-04-06T16:44:45.544Z"
 }
