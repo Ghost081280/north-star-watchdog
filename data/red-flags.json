@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI's secret surveillance system was breached, which could compromise national security.",
+      "insight": "This breach is a major concern, as it could allow hackers to access sensitive information and compromise national security. I will be tracking this investigation closely to see how it develops.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Insurance Journal",
+      "sourceUrl": "https://www.insurancejournal.com/news/national/2026/04/06/644411.htm",
+      "id": "rf-1775476102851-55t5atw0p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T11:48:22.847Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scheme",
       "description": "The Feeding Our Future fraud case and the Medicare fraud investigation in Southern California both involve complex fraud schemes that have resulted in significant financial losses.",
       "insight": "These cases demonstrate the need for increased vigilance and oversight to prevent similar schemes from occurring in the future. I will continue to monitor these cases and look for patterns and connections to other potential fraud schemes.",
@@ -959,29 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T20:50:52.611Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of food assistance programs due to fraud",
-      "insight": "Increased scrutiny of assistance programs may indicate widespread issues",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota DHS",
-      "sourceUrl": "https://kare11.com/story/feeding-our-future-defendant-apologizes-before-sentencing-i-will-attempt-to-fix-it-for-the-rest-of-my-life",
-      "id": "rf-1774893256688-okhl2mex0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T17:54:16.684Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T10:55:35.160Z"
+  "lastUpdated": "2026-04-06T11:48:22.847Z"
 }
