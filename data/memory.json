@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-31T13:15:12.699Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-31T15:01:21.255Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-05T23:33:00.648Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-04-06T02:23:50.518Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1893,
-    "articlesProcessed": 94300,
-    "redFlagsFound": 2192,
+    "totalScans": 1894,
+    "articlesProcessed": 94350,
+    "redFlagsFound": 2193,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota Somali Fraud?",
-        "Where did the Unknown allegedly go in ActBlue fundraising platform investigation?",
-        "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?"
+        "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?",
+        "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-05T23:33:00.648Z",
-  "lastUpdated": "2026-04-05T23:33:00.649Z"
+  "lastReflection": "2026-04-06T02:23:50.518Z",
+  "lastUpdated": "2026-04-06T02:23:50.518Z"
 }
