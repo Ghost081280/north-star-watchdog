@@ -1,6 +1,30 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Colorado's subsidized child care program is on the brink of collapse with 14,000 kids on the waitlist.",
+      "insight": "This indicates a potential vulnerability in social services and a need for investigation into the program's management.",
+      "entities": [
+        "Colorado",
+        "subsidized child care program"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Colorado Sun",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSERrUDlUNmwxMkY1ZzlkUlpQNnU3a3dFdmlDRXJzR1FxZjVfRG41bGJjRWdZTVpaUk4zTG1ZVGp4dF9SSmVwRnE2aHZwQ0ExU0hjbHk1SXFtMlhkQmZQTWdoOHlCUkxBZUV1bTNTX1lNVmJFa1BPMXJ2cmp2WUhDRkpzV3JBT2pxMW0yeVc1eXpMMV9wSzhnOFo0cWZTRnYyeHNvVkl5dmZXWDhtZUVyRw",
+      "searches": [
+        "Colorado subsidized child care",
+        "program collapse"
+      ],
+      "id": "rf-1775501833375-50702ex8c",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-06T18:57:13.372Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Suspicious activity detected in federal programs",
       "insight": "I notice a pattern of suspicious activity in federal programs, which may indicate a larger issue with fraud and abuse. Further investigation is needed to determine the scope of the problem.",
@@ -958,34 +982,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-30T21:41:07.581Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a fatal school bus crash in Tennessee",
-      "insight": "This investigation may be related to other cases of fraud or negligence in the transportation industry. Further research is needed to determine the scope of the investigation and potential connections to other entities.",
-      "entities": [
-        "FBI",
-        "Tennessee"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "The Tennessean",
-      "sourceUrl": "https://www.tennessean.com/story/news/2026/03/30/federal-investigators-probing-school-bus-crash-that-killed-two/7077651001/",
-      "id": "rf-1774903852614-wbz8qtkci",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-30T20:50:52.611Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1006,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-06T17:42:40.892Z"
+  "lastUpdated": "2026-04-06T18:57:13.372Z"
 }
