@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-03-31T19:01:01.483Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-03-31T19:58:31.349Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-06T09:07:34.227Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-06T10:55:35.159Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1897,
-    "articlesProcessed": 94500,
+    "totalScans": 1898,
+    "articlesProcessed": 94550,
     "redFlagsFound": 2197,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $94M allegedly go in Minnesota Somali Fraud Investigation?",
         "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
-        "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
+        "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+        "Where did the $X allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-06T09:07:34.227Z",
-  "lastUpdated": "2026-04-06T09:07:34.227Z"
+  "lastReflection": "2026-04-06T10:55:35.159Z",
+  "lastUpdated": "2026-04-06T10:55:35.159Z"
 }
