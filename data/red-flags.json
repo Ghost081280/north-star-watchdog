@@ -1,23 +1,41 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "The Trump administration has frozen Medicaid funding to Minnesota, citing concerns about fraud.",
-      "insight": "This could be a sign of a larger issue with Medicaid fraud in the state, and warrants further investigation.",
+      "type": "federal freeze",
+      "description": "Judge declines to block White House from pausing Medicaid payments to Minnesota",
+      "insight": "This suggests a significant fraud problem in Minnesota's Medicaid system",
       "entities": [
-        "Minnesota",
-        "Trump administration"
+        "Minnesota"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Judge denies Minnesota bid to keep Trump administration from withholding Medicaid funds",
-      "sourceUrl": "https://www.startribune.com/judge-denies-minnesota-bid-to-keep-trump-administration-from-withholding-medicaid-funds/600246433/",
-      "id": "rf-1775581015644-z4n96833c",
+      "source": "MPR News",
+      "sourceUrl": "https://www.mprnews.org/story/2026/04/07/judge-declines-block-white-house-pausing-medicaid-payments-minnesota",
+      "id": "rf-1775584726130-fo06rn6h8",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-07T16:56:55.641Z",
+      "detectedAt": "2026-04-07T17:58:46.127Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Chattanooga Pharmacy Loses Controlled Substances License",
+      "insight": "This may indicate a compliance issue or potential fraud",
+      "entities": [
+        "Chattanooga Pharmacy"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "National Today",
+      "sourceUrl": "https://www.nationaltoday.com/chattanooga-pharmacy-loses-controlled-substances-license/",
+      "id": "rf-1775584726130-mp2vz5v26",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T17:58:46.127Z",
       "isNew": true
     },
     {
@@ -37,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T16:56:55.641Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -963,26 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-02T08:54:35.324Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident'",
-      "insight": "This could indicate a potential national security threat.",
-      "entities": [
-        "FBI",
-        "US government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FBI declares suspected Chinese hack of US surveillance system a 'major cyber incident' - Politico",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU0xCMUplMENEZTNKU0txeU45M2tJN3Q3Vm96SWxmU3ZhZURKeVIzYlJJb1c5dEdvbWlWM3ROd1UyZUxRMi1Fd1puM003Uk5GTFBiUDRodVA2ZUxxc3dkeDF0YTNTdG9xc0o5ZklrQS1scFBPbHFndlZpMVQyRWdPaGxXYTFxWng1cXIzWmNiYjRNUjg4WXlWVg",
-      "id": "rf-1775073626365-qnebgeq7h",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-01T20:00:26.361Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,8 +994,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T16:56:55.641Z"
+  "lastUpdated": "2026-04-07T17:58:46.127Z"
 }
