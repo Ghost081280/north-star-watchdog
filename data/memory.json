@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-02T08:54:35.322Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-02T10:00:38.256Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-07T20:45:13.489Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-07T21:41:08.335Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Toddler suffered alleged sex abuse in federal custody in Harlingen, Texas foster care, family says?",
-    "Where did the $60M allegedly go in $60M takedown: 8 Southern California cases under Medicare fraud investigation?",
     "What other organizations is Matthew Farwell connected to?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the $243M allegedly go in Medicaid funds withholding?",
@@ -558,7 +556,9 @@
     "Where did the $14M allegedly go in Medicaid Fraud Investigation?",
     "Where did the $14M allegedly go in Feeding Our Future Investigation?",
     "Where did the $14M allegedly go in Feeding Our Future?",
-    "Where did the $14M allegedly go in Medicaid fraud investigation?"
+    "Where did the $14M allegedly go in Medicaid fraud investigation?",
+    "Where did the $14M allegedly go in Medicaid funds investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1922,
-    "articlesProcessed": 95750,
-    "redFlagsFound": 2224,
+    "totalScans": 1923,
+    "articlesProcessed": 95800,
+    "redFlagsFound": 2225,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What specific allegations exist against Toddler suffered alleged sex abuse in federal custody in Harlingen, Texas foster care, family says?",
-        "Where did the $60M allegedly go in $60M takedown: 8 Southern California cases under Medicare fraud investigation?"
+        "Where did the $60M allegedly go in $60M takedown: 8 Southern California cases under Medicare fraud investigation?",
+        "What other organizations is Matthew Farwell connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-07T20:45:13.489Z",
-  "lastUpdated": "2026-04-07T20:45:13.489Z"
+  "lastReflection": "2026-04-07T21:41:08.335Z",
+  "lastUpdated": "2026-04-07T21:41:08.335Z"
 }
