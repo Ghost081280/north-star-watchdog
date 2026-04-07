@@ -1,23 +1,24 @@
 {
   "flags": [
     {
-      "type": "federal freeze",
-      "description": "Judge declines to block White House from pausing Medicaid payments to Minnesota",
-      "insight": "This suggests a significant fraud problem in Minnesota's Medicaid system",
+      "type": "federal_freeze",
+      "description": "Judge allows Trump administration to withhold Minnesota's Medicaid funds due to 'serious fraud problem'",
+      "insight": "This indicates a significant issue with Medicaid fraud in Minnesota, potentially leading to further investigations and consequences.",
       "entities": [
-        "Minnesota"
+        "Minnesota",
+        "Trump administration"
       ],
-      "confidence": 80,
+      "confidence": 85,
       "priority": "high",
-      "source": "MPR News",
-      "sourceUrl": "https://www.mprnews.org/story/2026/04/07/judge-declines-block-white-house-pausing-medicaid-payments-minnesota",
-      "id": "rf-1775584726130-fo06rn6h8",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWUxZeXJIWU04T21vakFiR2FPQVhyTHhDdU9QZm1WZDN2dlhzbXBqSEpLLWhBaThkVUZGZWJDUVJja09KR1BQWXNLMC1ZcXRDQl9xdHRZZ3c3Yy1WR0l1ZGJBSU40Z084LVNYdlEwSXBjYnZicXpVVXZDYV9IQ3NWMWJiaGZRRGV1MWVjQVdSSkFCVlcwTndGTGJzdEsyWkRyVnlINmpEbHVINFNJWm1Qa0ZnY3R6dV93eTRqeTdOdU43a3FfYW9IRVl5aw",
+      "id": "rf-1775594713494-sujkdbeid",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-07T17:58:46.127Z",
-      "isNew": false
+      "detectedAt": "2026-04-07T20:45:13.490Z",
+      "isNew": true
     },
     {
       "type": "program termination",
@@ -985,14 +986,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T19:11:27.547Z"
+  "lastUpdated": "2026-04-07T20:45:13.490Z"
 }
