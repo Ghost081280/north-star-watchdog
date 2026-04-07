@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-01T17:49:31.001Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-01T18:59:46.143Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-07T05:08:21.960Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-07T07:14:15.327Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -532,10 +532,10 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.7500000000000002,
-      "count": 6,
+      "confidence": 0.8000000000000003,
+      "count": 7,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-03-05T14:02:31.628Z"
+      "lastSeen": "2026-04-07T07:14:15.327Z"
     }
   ],
   "openQuestions": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1912,
-    "articlesProcessed": 95250,
-    "redFlagsFound": 2208,
+    "totalScans": 1913,
+    "articlesProcessed": 95300,
+    "redFlagsFound": 2210,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Vanessa Motta connected to?",
-        "Where did the $60M allegedly go in Medicare fraud investigation?",
-        "Where did the $60M allegedly go in Feeding Our Future fraud case?"
+        "Where did the Unknown allegedly go in FBI Secret Surveillance System Breach?",
+        "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
+        "Where did the $60M allegedly go in Medicare Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-07T05:08:21.960Z",
-  "lastUpdated": "2026-04-07T05:08:21.961Z"
+  "lastReflection": "2026-04-07T07:14:15.327Z",
+  "lastUpdated": "2026-04-07T07:14:15.327Z"
 }
