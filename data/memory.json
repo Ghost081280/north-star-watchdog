@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-01T20:00:26.359Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-01T20:56:38.210Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-07T09:00:41.555Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-07T10:14:39.851Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI’s Secret Surveillance System Breach?",
-    "What other organizations is Toddler suffered alleged sex abuse in federal custody in Harlingen, Texas foster care connected to?",
     "Where did the $60M allegedly go in Sun Relocation Deal?",
     "Where did the $60M allegedly go in Medicare Fraud?",
     "Where did the unknown allegedly go in Healthcare Fraud Scheme?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Jason Giles connected to?",
     "Where did the Not specified allegedly go in Medicaid fraud investigation?",
-    "Where did the Not specified allegedly go in Feeding Our Future investigation?"
+    "Where did the Not specified allegedly go in Feeding Our Future investigation?",
+    "Where did the Unknown allegedly go in Feeding Our Future?",
+    "Where did the Unknown allegedly go in Sun Relocation Deal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1914,
-    "articlesProcessed": 95350,
-    "redFlagsFound": 2211,
+    "totalScans": 1915,
+    "articlesProcessed": 95400,
+    "redFlagsFound": 2212,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in FBI Secret Surveillance System Breach?",
-        "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
-        "Where did the $60M allegedly go in Medicare Fraud Investigation?"
+        "Where did the Unknown allegedly go in FBI’s Secret Surveillance System Breach?",
+        "What other organizations is Toddler suffered alleged sex abuse in federal custody in Harlingen, Texas foster care connected to?",
+        "Where did the $60M allegedly go in Sun Relocation Deal?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-07T09:00:41.555Z",
-  "lastUpdated": "2026-04-07T09:00:41.555Z"
+  "lastReflection": "2026-04-07T10:14:39.851Z",
+  "lastUpdated": "2026-04-07T10:14:39.852Z"
 }
