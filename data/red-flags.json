@@ -1,23 +1,42 @@
 {
   "flags": [
     {
-      "type": "federal freeze",
-      "description": "A federal freeze on Medicaid funds due to fraud concerns.",
-      "insight": "This freeze indicates a significant concern about fraud in the Medicaid program.",
+      "type": "federal_freeze",
+      "description": "The Trump administration has frozen Medicaid funding to Minnesota, citing concerns about fraud.",
+      "insight": "This could be a sign of a larger issue with Medicaid fraud in the state, and warrants further investigation.",
       "entities": [
-        "Minnesota DHS",
-        "Federal agency"
+        "Minnesota",
+        "Trump administration"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Washington Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3pRVXREZ3FGS0U2dFR3Tm5Od3daR0hVb09Zd3pyX3R4QTV0Vkt6M3ZrSHZkcDNXVnVxV1NnWWVlelRodjFzM2xaU0ZaRXZPcGsyNk40am5HOFFqUEZyODRXU2sxMEEwUC1UOEQtTWJpbm1rVkpScUZnWG40QU5JYWF1bHBPSXBucS1oVzk4ckFLQXBMYWNaUHJIWnFEV3J2dWIzWExrTWZ5aDY3ejd4UE5n?oc=5",
-      "id": "rf-1775574403189-jrkqv0hye",
+      "source": "Judge denies Minnesota bid to keep Trump administration from withholding Medicaid funds",
+      "sourceUrl": "https://www.startribune.com/judge-denies-minnesota-bid-to-keep-trump-administration-from-withholding-medicaid-funds/600246433/",
+      "id": "rf-1775581015644-z4n96833c",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-07T15:06:43.185Z",
+      "detectedAt": "2026-04-07T16:56:55.641Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated due to allegations of fraud.",
+      "insight": "This could be a sign of a larger issue with non-profit fraud in the state, and warrants further investigation.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Feeding Our Future defendant avoids prison after early cooperation",
+      "sourceUrl": "https://www.mprnews.org/story/2024/04/06/feeding-our-future-defendant-avoids-prison",
+      "id": "rf-1775581015644-3wnb3bv4q",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T16:56:55.641Z",
       "isNew": true
     },
     {
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T15:06:43.185Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -964,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-01T20:00:26.361Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The MLBPA shut down the embattled Players Way program amid an inquiry",
-      "insight": "This could indicate a larger issue with the program and potential fraud",
-      "entities": [
-        "MLBPA"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "ESPN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeFhGYnRxazZCeEZUaDdOVXhCVmRxWUduclc0Qjl4ekdiY0dRX0c1T1VZakNCYWNMZkRscTBBdWV3VU1fa3Vka1gxWXBiOHFmLWEwS3JKc0V1b2IwNG9naTBjemtHQ2ZWNGR4V0tXYzdWRVJtNEtqUU1oWmJidV9fcWF6aTd3MHEtMVp6OHlMYlNHVDlrUVdDYTlSdkxBQQ",
-      "id": "rf-1775065771007-2b8vgk9go",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-01T17:49:31.003Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,8 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T15:06:43.185Z"
+  "lastUpdated": "2026-04-07T16:56:55.641Z"
 }
