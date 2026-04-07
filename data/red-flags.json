@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Hennepin County faces SNAP shortfalls and other federal cuts",
+      "insight": "This could indicate a larger issue with program management or oversight, potentially leading to further investigation.",
+      "entities": [
+        "Hennepin County"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "MinnPost",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZEpBQ1dFaG50ZnhRWUU1a0Y3N0h4NzNBaEl1eDFDSW82ckgyVm5TaGExMVoxc3NTaGlqUnkxc3YtSzJiODFCMzJsbEZVeHRORURHZHBGclhMRlhmbjAtODlnWF9zT3JoTDJVU1BFaEN1TmhBaXdhUEttYnIyZ1VTR205REtvSHlaTUQtRA?oc=5",
+      "id": "rf-1775562831205-43hmzfrb3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T11:53:51.201Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
+      "description": "Judge denies Minnesota bid to keep Trump administration from withholding Medicaid funds",
+      "insight": "This suggests potential issues with Minnesota's Medicaid program, possibly related to fraud or mismanagement.",
+      "entities": [
+        "Minnesota",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUU91a19VSGV2M0EtVGQ3Vm1ydHZiNHpBNDNXQS1qRUNTbTF4ZWZoRmx2eGh6SEk3dUQtWVNMOWlCRWoyX2hpdEdJbGNZMzVKRmZlcVUxMVF2ZkR4RnVzY3A5UFJlcUlkSndSZmdrbmNpOFZFQ1FDVjdyU2VQaUd5QWoyRzBnWkhpVDhua0xzS0xCcFlKX0lZbk1FUVo4a3FfUzh2TDI3YzdGempQX0NQcW1ER3VaUHBGcWZOYVlZcVVzQjg?oc=5",
+      "id": "rf-1775562831205-ksbaof6r7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T11:53:51.201Z",
+      "isNew": true
+    },
+    {
       "type": "Potential fraud",
       "description": "Multiple cases of Medicaid fraud and other federal investigations suggest potential vulnerabilities in the system",
       "insight": "I notice a pattern of fraud and corruption in various sectors, including healthcare and government contracting. It is essential to investigate these cases further and identify areas for improvement to prevent future incidents.",
@@ -18,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T10:14:39.853Z",
-      "isNew": true
-    },
-    {
-      "type": "Federal funding freeze",
-      "description": "The Trump administration's efforts to withhold Medicaid funds from Minnesota have raised concerns about the impact on vulnerable populations.",
-      "insight": "I suspect that the Trump administration's actions may be motivated by a desire to reduce federal spending, but this could have unintended consequences for those who rely on Medicaid.",
-      "entities": [
-        "Trump administration",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Times",
-      "sourceUrl": "https://www.washingtontimes.com/news/2023/apr/7/judge-finds-minnesota-has-fraud-problem-refuses-to-/",
-      "id": "rf-1775552441560-wcum5huex",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T09:00:41.557Z",
       "isNew": false
     },
     {
@@ -963,25 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-03-31T22:33:35.274Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI joins investigation into Jackson County cyberattack",
-      "insight": "This could be a sign of a larger issue with cybersecurity in local governments. I recommend investigating further to see if there are any connections to other cases.",
-      "entities": [
-        "Jackson County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WBIW",
-      "sourceUrl": "https://www.wbiw.com/",
-      "id": "rf-1774973525342-0p40wlfhz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-03-31T16:12:05.338Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,8 +995,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T10:14:39.853Z"
+  "lastUpdated": "2026-04-07T11:53:51.201Z"
 }
