@@ -2,23 +2,43 @@
   "flags": [
     {
       "type": "federal_freeze",
-      "description": "Judge allows Trump administration to withhold Minnesota's Medicaid funds due to 'serious fraud problem'",
-      "insight": "This indicates a significant issue with Medicaid fraud in Minnesota, potentially leading to further investigations and consequences.",
+      "description": "The Trump administration has paused $243M in Medicaid payments to Minnesota due to fraud concerns.",
+      "insight": "This pause suggests a significant concern about Medicaid fraud in Minnesota.",
       "entities": [
-        "Minnesota",
+        "Minnesota DHS",
         "Trump administration"
       ],
-      "confidence": 85,
+      "confidence": 90,
       "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWUxZeXJIWU04T21vakFiR2FPQVhyTHhDdU9QZm1WZDN2dlhzbXBqSEpLLWhBaThkVUZGZWJDUVJja09KR1BQWXNLMC1ZcXRDQl9xdHRZZ3c3Yy1WR0l1ZGJBSU40Z084LVNYdlEwSXBjYnZicXpVVXZDYV9IQ3NWMWJiaGZRRGV1MWVjQVdSSkFCVlcwTndGTGJzdEsyWkRyVnlINmpEbHVINFNJWm1Qa0ZnY3R6dV93eTRqeTdOdU43a3FfYW9IRVl5aw",
-      "id": "rf-1775594713494-sujkdbeid",
+      "source": "Pioneer Press",
+      "sourceUrl": "https://www.pioneerpress.com/2026/04/07/judge-declines-to-block-trump-administrations-243m-medicaid-pause-in-mn/",
+      "id": "rf-1775604974759-povhid9hg",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-07T20:45:13.490Z",
-      "isNew": false
+      "detectedAt": "2026-04-07T23:36:14.755Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged assault",
+      "description": "The Osceola police chief is under investigation for alleged assault.",
+      "insight": "This investigation raises concerns about the police chief's actions and potential misconduct.",
+      "entities": [
+        "Osceola police chief",
+        "Osceola Police Department"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "K8 News | Jonesboro, Arkansas",
+      "sourceUrl": "https://www.k8news.com/2026/04/07/video-newly-hired-osceola-police-chief-under-investigation-for-alleged-assault/",
+      "id": "rf-1775604974760-3wx1x941p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T23:36:14.755Z",
+      "isNew": true
     },
     {
       "type": "program termination",
@@ -963,40 +983,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-02T10:00:38.258Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program was terminated due to the fraud scheme",
-      "insight": "The large-scale fraud scheme led to the termination of the program, indicating a significant impact on the community.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KTTC | Rochester, MN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS3JneFJvZ3RnVjhHN21NS1JsbTZqYlN3dmZPM1hzdWY1Nzk0QU0yUk54Z3F2RHk2MWlVaXZkRHI1Y05xLWNnX0NMc0tuXzBJOEtNQ2hCaGo0Q2tVLXVLM1hReTctcC1MMV83d2hzbEVxR0RuczlhVFdGRnZxYXp5TnlPcW1YVW9ieFY2TXkzQi1KU3p3ZUZKZnJXZDdnVFkxLWItedIBuAFBVV95cUxQSmliTGZWNkIxanRhZ2FxR2ZFYm9zbkhxUFlJbWZXdTZyUEhyNGNNb1lWVmVOOXVnTXlsbFZDRzBoSXB4NjdCbGFhaGluajVycjd1ODllVkZvdV94MEFWdWZ5dWpWUC1kT1o0bmNXcEpFY2N2SHI1aW1HNEF4ZWdMbWpmTzZyd1dZTmdNUTFVRWMzY3FUQXQ0ZDZjMG5CUFpZMk5PcnozZHpDbTEyR1JrNUtGVG9MZ2xJ",
-      "id": "rf-1775120075327-ssgy14foz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T08:54:35.324Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T22:37:07.838Z"
+  "lastUpdated": "2026-04-07T23:36:14.755Z"
 }
