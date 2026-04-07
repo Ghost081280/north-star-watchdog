@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "A federal freeze on Medicaid funds due to fraud concerns.",
+      "insight": "This freeze indicates a significant concern about fraud in the Medicaid program.",
+      "entities": [
+        "Minnesota DHS",
+        "Federal agency"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3pRVXREZ3FGS0U2dFR3Tm5Od3daR0hVb09Zd3pyX3R4QTV0Vkt6M3ZrSHZkcDNXVnVxV1NnWWVlelRodjFzM2xaU0ZaRXZPcGsyNk40am5HOFFqUEZyODRXU2sxMEEwUC1UOEQtTWJpbm1rVkpScUZnWG40QU5JYWF1bHBPSXBucS1oVzk4ckFLQXBMYWNaUHJIWnFEV3J2dWIzWExrTWZ5aDY3ejd4UE5n?oc=5",
+      "id": "rf-1775574403189-jrkqv0hye",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T15:06:43.185Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "The termination of a nonprofit organization's program due to fraud concerns.",
+      "insight": "This termination indicates a significant concern about fraud in nonprofit organizations.",
+      "entities": [
+        "Feeding Our Future",
+        "Federal agency"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLTE5RzRWZGZrdEpmMFRPQ0k1elI4ZzNXbHIydDVPYzVCcUlnSFhtWlU5SDFTMVVTWHRyWXpHTU9SaEZ6eVR0cVpUU1JLQ01OdnlwVUJfbWpXTmUxZ3cwLXplTzk4Q2N4TDNXaHkwbnpVRW9nS3RWeHJXQ2xxV2pQNEFGM0NWbWQtUUhfaDIxYm1ibE92emFtV2FMd2VRbWt1Q3lPWDZOZXJ3OWM?oc=5",
+      "id": "rf-1775574403189-mgenbu5ld",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-07T15:06:43.185Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Hennepin County faces SNAP shortfalls and other federal cuts",
       "insight": "This suggests potential mismanagement or fraud in the administration of federal programs, which could be a red flag for further investigation.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T13:15:50.284Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraudulent activities",
@@ -37,26 +77,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T13:15:50.284Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Judge denies Minnesota bid to keep Trump administration from withholding Medicaid funds",
-      "insight": "This suggests potential issues with Minnesota's Medicaid program, possibly related to fraud or mismanagement.",
-      "entities": [
-        "Minnesota",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUU91a19VSGV2M0EtVGQ3Vm1ydHZiNHpBNDNXQS1qRUNTbTF4ZWZoRmx2eGh6SEk3dUQtWVNMOWlCRWoyX2hpdEdJbGNZMzVKRmZlcVUxMVF2ZkR4RnVzY3A5UFJlcUlkSndSZmdrbmNpOFZFQ1FDVjdyU2VQaUd5QWoyRzBnWkhpVDhua0xzS0xCcFlKX0lZbk1FUVo4a3FfUzh2TDI3YzdGempQX0NQcW1ER3VaUHBGcWZOYVlZcVVzQjg?oc=5",
-      "id": "rf-1775562831205-ksbaof6r7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T11:53:51.201Z",
       "isNew": false
     },
     {
@@ -963,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-01T17:49:31.003Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The MLBPA shut down the Players Way program amid an inquiry",
-      "insight": "This could indicate a larger issue within the program that requires further investigation.",
-      "entities": [
-        "MLBPA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ESPN",
-      "sourceUrl": "https://www.espn.com/mlb/story/_/id/39942441/mlbpa-shuts-down-embattled-players-way-program-amid-inquiry",
-      "id": "rf-1775055783217-cf4zr30di",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-01T15:03:03.213Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,8 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-07T13:15:50.284Z"
+  "lastUpdated": "2026-04-07T15:06:43.185Z"
 }
