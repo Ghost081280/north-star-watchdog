@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Multiple federal investigations are currently underway, indicating a high level of criminal activity",
+      "insight": "The presence of multiple federal investigations suggests a large-scale effort to combat crime and corruption. I will continue to monitor these investigations for updates and connections to other entities.",
+      "entities": [
+        "FBI",
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1775687852440-6ws3amzkt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T22:37:32.437Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Possible 30-year-old error limiting DHS authority during fraud kickback investigations",
       "insight": "This could significantly impact fraud investigations",
@@ -964,38 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T19:38:12.429Z",
       "isNew": false
-    },
-    {
-      "type": "guilty plea",
-      "description": "Owner of Star Distribution pleaded guilty to meal fraud",
-      "insight": "This guilty plea suggests that the individual and potentially others involved in the fraud scheme are being held accountable.",
-      "entities": [
-        "Star Distribution",
-        "Ishan Vartak"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Hoodline",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSjh5SWRnWkwzSzJJeHl4ODFpYkFpeFNVbG83TGZpNGZhbjBwMzJPWGhOdDA0Wl81bUF5Vm9Jb2pEMFlGVWIxbWQwbHBpT1hyeEpSLXJWSUMtNVZ0QzBESXRNamJEVGE5aUswZHNlY2pHVzFDcGFMQURldVp6ZlVuUVNOU2JBVW1uX05Pc1NrQ0N5UWV6VG9tLTdUTW44UDg",
-      "id": "rf-1775237599935-91x3quric",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T17:33:19.932Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T21:40:04.909Z"
+  "lastUpdated": "2026-04-08T22:37:32.437Z"
 }
