@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "Multiple cases of potential fraud have been reported, including a Missouri company suspending operations amid a criminal probe and a Quebec immigration minister under investigation for alleged ethics breaches.",
+      "insight": "These cases suggest a need for increased scrutiny of companies and government officials to prevent fraudulent activities.",
+      "entities": [
+        "Missouri company",
+        "Quebec immigration minister"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT1NoVlB3T3hPTnk5czcxMFJMeDliU2h1NVlteUVGbXBmUXFMbGZDS3pWWENXTVFwN2sxZnU1RlNLSktwd094NUJDSThTdjZkM2E4azNXUldCb3lrcmJ6UGtTNmJSLUxmSktfMF9QMkRPQ1RIQ1FOS1JIVm5VN0ZMY2owQ2hqQ1phcWVMaWNWRE5scGdNLUxpZXdmZ2ZfUEpMZ1hxU2E0RXh0anR3aVBUTjFaU21sTjI4N1o5Qng1emttLWhjX0lGdlV1ZWRvLW0z",
+      "id": "rf-1775691446174-xwgexergh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T23:37:26.170Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "Multiple federal investigations are currently underway, indicating a high level of criminal activity",
       "insight": "The presence of multiple federal investigations suggests a large-scale effort to combat crime and corruption. I will continue to monitor these investigations for updates and connections to other entities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-08T22:37:32.437Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -964,41 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T21:32:58.122Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into Apache flyby at Kid Rock's house",
-      "insight": "This could be a misuse of government resources for personal gain.",
-      "entities": [
-        "Kid Rock",
-        "Apache flyby"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Hill",
-      "sourceUrl": "https://thehill.com/2026/04/watchdog-group-calls-for-federal-investigation-into-apache-flyby-at-kid-rocks-house",
-      "id": "rf-1775245092433-709c77rgj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T19:38:12.429Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T22:37:32.437Z"
+  "lastUpdated": "2026-04-08T23:37:26.170Z"
 }
