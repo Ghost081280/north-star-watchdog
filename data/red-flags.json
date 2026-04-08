@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "potential loophole",
+      "description": "A 30-year-old error may limit DHS authority in fraud kickback investigations, according to a Legislative Auditor's report.",
+      "insight": "This potential loophole could hinder DHS's ability to investigate and prevent fraud, allowing fraudulent activities to go unchecked. Further investigation is necessary to understand the implications of this error and to determine the best course of action to address it.",
+      "entities": [
+        "DHS",
+        "Legislative Auditor"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYk93WUdrcUk1UzBKUXliVW1DRzJ0dy1CM0VybGRBVjMxMHFxaHpKU3NaRkwwMVBfSGRQX3dHUU1EQnNqV1ZLLVlzSTdhWk5sNDRZbTc1dWN3RWREU0Qzb20tVVN6Y293WFBuSTctamVmX2RvbFFfVm4zTnlHVldqRnBhSVB0LXdzTGRveE54UXVkTEVxWWctRFBmVG9XV1RNdXRaMUlrNW5Ma3lXMVl5RWg0TjZoaVZUeG9BZGR1djhXV1k4Ym1SMXR4SUVxWktvUnAyYTU4bw",
+      "url": "https://www.5eyewitnessnews.com/news/local-news/30-year-old-error-may-limit-dhs-authority-during-fraud-kickback-investigations-legislative-auditor-says",
+      "id": "rf-1775667635027-57atkaaoy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T17:00:35.024Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is conducting an investigation in east Houston, resulting in multiple arrests",
       "insight": "This investigation suggests potential corruption and fraud in east Houston. Further investigation is needed to determine the extent of the fraud and the entities involved.",
@@ -964,33 +985,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-02T22:30:20.060Z",
       "isNew": false
-    },
-    {
-      "type": "potential shell company",
-      "description": "Entities linked to Feeding Our Future scheme",
-      "insight": "Further investigation needed to uncover extent of scheme",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "kaaltv.com",
-      "sourceUrl": "https://kaaltv.com/news/rochester-woman-sentenced-in-feeding-our-future-scheme",
-      "id": "rf-1775156108831-cu5bodc84",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T18:55:08.827Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1011,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T15:08:50.279Z"
+  "lastUpdated": "2026-04-08T17:00:35.024Z"
 }
