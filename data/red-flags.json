@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is conducting an investigation in east Houston, resulting in multiple arrests",
+      "insight": "This investigation suggests potential corruption and fraud in east Houston. Further investigation is needed to determine the extent of the fraud and the entities involved.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "ABC13 Houston",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVWFPRDJvMTZLaTg0cTBvQ2k1OUVfVjJ5dWtNMnowWUxDd1c5VHhuWmlhZjVUMWdKaHJ6bjgwVTZ4bDRWZ3hQUVUxUWFER2NyV1EtV1RENWRwY21lbUM3M3ZmVW1uMk50SGlxZnJVbHBmVW9od2RHTXJCSUZWbi1VUU9XQUFLeEpTaG9BMUNaRW1xMGVuUVNQenppTzJSNTNsdzF1S1RqclktaEJNNFp1b0wzLWF3UXhUYlBaTy1IRk8tNGtUdjkyeS1HcGfSAdIBQVVfeXFMTzFUUXgzMjVaSU5KbDVTNnRxTlFBRXdRaXRrcGd4OFlUREV1TVlVRG1YU3FzWWw3RzJyM1prX1NZTUE5d0d2cnBLbjhnRkc0aG11eXdfaWlFbXJ6dmJJMG1ab21TQl9ZbkgzSi1WTDBWcUFoejl4enJZajR0R0gzV00zZDR0M0JWeHRuZ25ScWUtLU9PYUJoQVhGSl9xUk5Hc2hFSS0tV25BU3RRMm5JVlZNNlRVSzZ2aGpyY1dDVkFyRTl6aTlhdTROOW16RVEzYjlR?oc=5",
+      "id": "rf-1775649271308-r6cbvs0xf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T11:54:31.304Z",
+      "isNew": true
+    },
+    {
       "type": "potential_scam",
       "description": "Jelly Lean Gummies and Gluco Zen Drops under investigation for potential scams",
       "insight": "Possible scams related to weight loss products",
@@ -964,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-02T18:55:08.827Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Trump's proposed cuts to social services, including Medicare and daycare",
-      "insight": "Potential for widespread fraud in social services programs due to lack of oversight",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Daily Gazette",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQNTZENkZzRTV6YmZzTjBTQ3NoZGFaaUpERmhhaEN1Nk9YdHFJVWdPamxFOWd3cVU4bkp2VW1uenphZXRWNzhMS2ZhTU9PQjctVjFadElEVDNPdTJNVloxOW1MY3pPeUg3RTZXODhud0tScnFaMlJBMEhGdXA3VXdDbTcteVdpS3oyeFNwX3N3WHd2YXpwcUlyUV9NUy00RW5YLWpiMW5ZZ3ZRUjYxLXBBRVlKcG44a2NHTnk2eWt4QmJtTWR5OGdpb3U2dHgxcVk4NFg2ZTRESS15REpfNFJkMjZKeV9zeXNQVDB2LXFfVzdLRi1oSFprQnVjb2lxcTNZ",
-      "id": "rf-1775127800399-7kkd6qssa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T11:03:20.395Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,13 +991,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T10:14:23.855Z"
+  "lastUpdated": "2026-04-08T11:54:31.304Z"
 }
