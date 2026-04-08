@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Possible 30-year-old error limiting DHS authority during fraud kickback investigations",
+      "insight": "This could significantly impact fraud investigations",
+      "entities": [
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://5eyewitnessnews.com/2026/04/08/30-year-old-error-may-limit-dhs-authority-during-fraud-kickback-investigations-legislative-auditor-says/",
+      "id": "rf-1775681529140-f9gp115qz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T20:52:09.136Z",
+      "isNew": true
+    },
+    {
       "type": "potential legal loophole",
       "description": "A 30-year-old error may limit DHS authority during fraud kickback investigations, according to a Legislative Auditor report.",
       "insight": "This potential loophole could hinder fraud investigations and needs to be addressed to ensure proper oversight.",
@@ -965,40 +984,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T17:33:19.932Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a $134 million office in Boston",
-      "insight": "Large government contracts often attract scrutiny, and this one warrants further review for potential irregularities.",
-      "entities": [
-        "FBI",
-        "Boston office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CoStar",
-      "sourceUrl": "https://www.costar.com/article/news/fbi-anchored-office-in-boston-area-lands-134-million-price-tag",
-      "id": "rf-1775225102635-xig9cnfcv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T14:05:02.632Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1016,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T19:58:35.041Z"
+  "lastUpdated": "2026-04-08T20:52:09.136Z"
 }

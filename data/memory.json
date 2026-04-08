@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-03T05:04:12.851Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-03T07:06:14.016Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-08T19:58:35.039Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-08T20:52:09.134Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $14M allegedly go in $14M family fraud scheme?",
-    "What specific allegations exist against Nancy Guthrie?",
     "What other organizations is Former Public Schools employee connected to?",
     "What specific allegations exist against Former Public Schools employee?",
     "What other organizations is Trump administration officials connected to?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Feeding Our Future Fraud?",
     "What other organizations is Largo Woman connected to?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud?",
-    "Where did the Unknown allegedly go in Clinton Park Operation?"
+    "Where did the Unknown allegedly go in Clinton Park Operation?",
+    "What specific allegations exist against Stephen M. Wrzesien?",
+    "Where did the $100M allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1936,
-    "articlesProcessed": 96450,
-    "redFlagsFound": 2241,
+    "totalScans": 1937,
+    "articlesProcessed": 96500,
+    "redFlagsFound": 2242,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What specific allegations exist against Danhao Wang?",
-        "Where did the $243M allegedly go in Medicaid funds freeze?"
+        "Where did the $14M allegedly go in $14M family fraud scheme?",
+        "What specific allegations exist against Nancy Guthrie?",
+        "What other organizations is Former Public Schools employee connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-08T19:58:35.039Z",
-  "lastUpdated": "2026-04-08T19:58:35.040Z"
+  "lastReflection": "2026-04-08T20:52:09.134Z",
+  "lastUpdated": "2026-04-08T20:52:09.135Z"
 }
