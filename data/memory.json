@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-02T23:34:05.370Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-03T02:08:29.521Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-08T17:00:35.022Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-08T18:12:45.420Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $14M allegedly go in Medicaid funds investigation?",
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Danhao Wang?",
     "Where did the $243M allegedly go in Medicaid funds freeze?",
@@ -558,7 +557,8 @@
     "What other organizations is Trump Administration connected to?",
     "Where did the unknown allegedly go in Texas Medicaid Provider Investigation?",
     "Where did the $243M allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Dozens of providers allegedly go in Texas Medicaid Provider Fraud Investigation?"
+    "Where did the Dozens of providers allegedly go in Texas Medicaid Provider Fraud Investigation?",
+    "Where did the $0 allegedly go in Feeding Our Future Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1934,
-    "articlesProcessed": 96350,
-    "redFlagsFound": 2238,
+    "totalScans": 1935,
+    "articlesProcessed": 96400,
+    "redFlagsFound": 2240,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $14M allegedly go in Medicaid fraud investigation?",
         "Where did the $14M allegedly go in Medicaid funds investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against Danhao Wang?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-08T17:00:35.022Z",
-  "lastUpdated": "2026-04-08T17:00:35.023Z"
+  "lastReflection": "2026-04-08T18:12:45.420Z",
+  "lastUpdated": "2026-04-08T18:12:45.421Z"
 }

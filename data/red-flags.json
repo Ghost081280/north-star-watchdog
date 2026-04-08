@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "potential legal loophole",
+      "description": "A 30-year-old error may limit DHS authority during fraud kickback investigations, according to a Legislative Auditor report.",
+      "insight": "This potential loophole could hinder fraud investigations and needs to be addressed to ensure proper oversight.",
+      "entities": [
+        "DHS",
+        "Legislative Auditor"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/30-year-old-error-may-limit-dhs-authority-during-fraud-kickback-investigations-legislative-auditor-says",
+      "id": "rf-1775671965425-svk2bwuzg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T18:12:45.422Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid pause",
+      "description": "A $243M Medicaid pause in MN is under scrutiny, with a judge declining to block the Trump administration's pause.",
+      "insight": "This pause could have significant implications for Medicaid recipients in MN and warrants further investigation.",
+      "entities": [
+        "MN",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Pioneer Press",
+      "sourceUrl": "https://www.pioneerpress.com/2026/04/07/judge-declines-to-block-trumps-administrations-243m-medicaid-pause-in-mn/",
+      "id": "rf-1775671965425-htvkmpj3i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-08T18:12:45.422Z",
+      "isNew": true
+    },
+    {
       "type": "potential loophole",
       "description": "A 30-year-old error may limit DHS authority in fraud kickback investigations, according to a Legislative Auditor's report.",
       "insight": "This potential loophole could hinder DHS's ability to investigate and prevent fraud, allowing fraudulent activities to go unchecked. Further investigation is necessary to understand the implications of this error and to determine the best course of action to address it.",
@@ -19,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-08T17:00:35.024Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -945,46 +985,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T14:05:02.632Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "Multiple federal investigations into health care fraud and other crimes",
-      "insight": "I notice a pattern of federal investigations into health care fraud and other crimes, indicating a potential large-scale issue. I recommend further investigation into the connections between these cases and the entities involved.",
-      "entities": [
-        "Feeding Our Future",
-        "Southern California health care providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News, ABC7 Los Angeles",
-      "sourceUrl": "https://www.cbsnews.com/news/feeding-our-future-case-guilty-plea/, https://abc7.com/health-care-fraud-investigation-southern-california/12943441/",
-      "id": "rf-1775199974022-vmc5fa9r6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T07:06:14.018Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI calls breach of sensitive agency networks a 'major incident'",
-      "insight": "This could indicate a potential red flag for national security and data breaches.",
-      "entities": [
-        "FBI",
-        "US Agencies"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Bloomberg.com",
-      "sourceUrl": "https://Bloomberg.com/2026-04-02/FBI-Calls-Breach-of-Sensitive-Agency-Networks-a-Major-Incident",
-      "id": "rf-1775169020064-uznd1fmbt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-02T22:30:20.060Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,11 +995,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T17:00:35.024Z"
+  "lastUpdated": "2026-04-08T18:12:45.422Z"
 }
