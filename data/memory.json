@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-02T13:10:14.961Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-02T14:54:47.988Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-07T23:36:14.753Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-04-08T02:11:59.253Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
-    "What other organizations is Jason Giles connected to?",
-    "Where did the Not specified allegedly go in Medicaid fraud investigation?",
-    "Where did the Not specified allegedly go in Feeding Our Future investigation?",
     "Where did the Unknown allegedly go in Feeding Our Future?",
     "Where did the Unknown allegedly go in Sun Relocation Deal?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +554,11 @@
     "Where did the $14M allegedly go in $14M family fraud scheme?",
     "What specific allegations exist against Nancy Guthrie?",
     "What other organizations is Former Public Schools employee connected to?",
-    "What specific allegations exist against Former Public Schools employee?"
+    "What specific allegations exist against Former Public Schools employee?",
+    "What other organizations is Trump administration officials connected to?",
+    "What other organizations is Family members of $14M family fraud scheme connected to?",
+    "Where did the $243M allegedly go in Medicaid fraud investigation?",
+    "Where did the Unknown allegedly go in FBI investigation into Native American communities?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1925,
-    "articlesProcessed": 95900,
-    "redFlagsFound": 2228,
+    "totalScans": 1926,
+    "articlesProcessed": 95950,
+    "redFlagsFound": 2229,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The Trump administration has paused $243M in Medicaid payments to Minnesota due to fraud concerns.",
-          "insight": "This pause suggests a significant concern about Medicaid fraud in Minnesota.",
-          "entities": [
-            "Minnesota DHS",
-            "Trump administration"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Pioneer Press",
-          "sourceUrl": "https://www.pioneerpress.com/2026/04/07/judge-declines-to-block-trump-administrations-243m-medicaid-pause-in-mn/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the None allegedly go in Feeding Our Future?",
-        "What other organizations is Tadej Pogačar connected to?",
-        "Where did the $100M allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+        "What other organizations is Jason Giles connected to?",
+        "Where did the Not specified allegedly go in Medicaid fraud investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-07T23:36:14.753Z",
-  "lastUpdated": "2026-04-07T23:36:14.754Z"
+  "lastReflection": "2026-04-08T02:11:59.253Z",
+  "lastUpdated": "2026-04-08T02:11:59.253Z"
 }
