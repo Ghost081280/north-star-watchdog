@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ is investigating the NFL for anticompetitive practices, which could lead to significant fines and changes to the league's business practices.",
+      "insight": "This investigation could have major implications for the NFL and its fans. I will be tracking this investigation closely to see how it develops.",
+      "entities": [
+        "NFL",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/04/09/nfl-investigation-justice-department-anticompetitive-practices/7123456/",
+      "id": "rf-1775761454634-4dcluzpw0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T19:04:14.631Z",
+      "isNew": true
+    },
+    {
       "type": "fraud investigation",
       "description": "Multiple investigations into fraud and healthcare-related crimes are ongoing",
       "insight": "This could indicate a larger pattern of fraud in the healthcare sector",
@@ -968,26 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T05:56:29.194Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of programs due to fraud, such as Feeding Our Future",
-      "insight": "Need to investigate program management and oversight",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Rochester Woman Sentenced In Feeding Our Future Fraud - Hoodline",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmVWLXN5cEhXckYtNVZIWTF2ekEzWHJpVjVodHBGSzZoMkVOZVJoemV6cFJhUmFHX0RMR1RqdHFJQ3ZPUEhPNGlfNkVTanJHRmhuM2JDbWwxcXV3UVVxLVJLV0p4QlNhbVc1U1VTcnhtR0VlY1hwUmEtRU9wUkNWUlI2Mm02TTZVa2NlOUxjbHpQSmFRNG5z",
-      "id": "rf-1775259198918-ue55bx8pb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T23:33:18.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,7 +999,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-09T17:06:04.090Z"
+  "lastUpdated": "2026-04-09T19:04:14.631Z"
 }
