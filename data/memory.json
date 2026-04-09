@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-03T22:31:54.317Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-03T23:33:18.912Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-09T20:48:54.968Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-09T21:43:49.479Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in FBI Houston Operation?",
-    "Where did the Unknown allegedly go in Medicaid Fraud Crackdown?",
-    "What specific allegations exist against No specific individuals charged?",
     "What other organizations is Nederland man connected to?",
     "Where did the $ millions allegedly go in Medicaid fraud crackdown?",
     "Where did the Over 116,000 records allegedly go in DocketWise data breach?",
@@ -558,7 +555,10 @@
     "What other organizations is Man who stole $1M in Feeding Our Future scheme connected to?",
     "What other organizations is Minnesota man connected to?",
     "Where did the $14M allegedly go in Feeding Our Future investigation?",
-    "Where did the N/A allegedly go in NFL investigation?"
+    "Where did the N/A allegedly go in NFL investigation?",
+    "What other organizations is Minneapolis man connected to?",
+    "What other organizations is Sixth family member connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1951,
-    "articlesProcessed": 97200,
-    "redFlagsFound": 2253,
+    "totalScans": 1952,
+    "articlesProcessed": 97250,
+    "redFlagsFound": 2255,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud scheme",
+          "description": "A COVID meal fraud scheme totaling $250M was uncovered in Minnesota.",
+          "insight": "This scheme highlights the need for increased oversight and monitoring of COVID relief funds to prevent similar fraud schemes.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "KIMT",
+          "sourceUrl": "https://www.kimt.com/news/minneapolis-man-gets-43-months-in-prison-for-his-part-in-250m-covid-meal-fraud/"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-09T20:48:54.968Z",
-  "lastUpdated": "2026-04-09T20:48:54.968Z"
+  "lastReflection": "2026-04-09T21:43:49.479Z",
+  "lastUpdated": "2026-04-09T21:43:49.480Z"
 }

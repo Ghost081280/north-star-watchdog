@@ -2,6 +2,44 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The NFL is under federal investigation for anticompetitive practices.",
+      "insight": "This investigation could lead to significant changes in the NFL's business practices and potentially result in fines or other penalties.",
+      "entities": [
+        "NFL"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/04/09/nfl-investigation-anticompetitive-practices/7123456/",
+      "id": "rf-1775771029484-m322xw643",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T21:43:49.481Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud scheme",
+      "description": "A COVID meal fraud scheme totaling $250M was uncovered in Minnesota.",
+      "insight": "This scheme highlights the need for increased oversight and monitoring of COVID relief funds to prevent similar fraud schemes.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "KIMT",
+      "sourceUrl": "https://www.kimt.com/news/minneapolis-man-gets-43-months-in-prison-for-his-part-in-250m-covid-meal-fraud/",
+      "id": "rf-1775771029484-6fug7527o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T21:43:49.481Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ is investigating the NFL for anticompetitive practices, which could lead to significant fines and changes to the league's business practices.",
       "insight": "This investigation could have major implications for the NFL and its fans. I will be tracking this investigation closely to see how it develops.",
       "entities": [
@@ -617,25 +655,6 @@
       "isNew": false
     },
     {
-      "type": "fraud scheme",
-      "description": "Eight people face federal charges related to a multi-million dollar Housing Stabilization Fraud scheme in Minnesota",
-      "insight": "This indicates a large-scale fraud scheme involving multiple individuals and potentially affecting many people in Minnesota.",
-      "entities": [
-        "Eight individuals"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilANBVV95cUxOS01nWDJZZVpCcFotX2NPUi1NYmNqbjFCSVJoaWZIcWl3WUpVTmtscWZsM2l6a01IbHR5MUtNVEVlcENBd0tfbEQzUHpwRGlvSWZrZjJaVzh5dDFOV3d0dEVTbkwxYTB2RWI3UnhiTkhHM1lJTXY1WDhYWFRGeEJiOXhWUFUtelN0WDFGVGhTWlZvMnk2Z2V2ZUhINzN5UG5NajJrN0hMOXZPcGo1NlVsREgzWTZRbUl1YmFYTXhQaGRCSWVYYlFRV0trRHRDRkJ4YW15ZHBuZHp4RjFOSzZEeTFmSDBQLUtKaGFsVHdCVG9zVGp3YXNQb1EteHotZmdMU3RVMkRVNXlubEVfSTV5WFVSRXRQaGVfZkNsVHl5bTYwVnp4b1d6NzU2VTFBSldoQ1VCQlVlZ191X2FfUElxR2VtV09Ea0RjQllvLWttbE95eWhLUlY0bHUybHRXalZ4YndhNzYwV09xODF5NmVnQUV2aDlwNmthaEZIRXE1Z0puaHFlLXNpZjg2cVhFUDcxVUxrTQ",
-      "id": "rf-1775397259302-wg4z9rv2e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T13:54:19.299Z",
-      "isNew": false
-    },
-    {
       "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud allegations",
       "insight": "This termination suggests a large-scale fraud scheme was uncovered, potentially involving multiple entities and individuals.",
@@ -969,25 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T05:56:29.194Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Feeding Our Future program under investigation",
-      "insight": "This suggests a potential program termination or suspension due to fraudulent activities",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Hoodline",
-      "sourceUrl": "https://hoodline.com/2024/04/rochester-woman-sentenced-in-feeding-our-future-fraud/",
-      "id": "rf-1775282189197-about6y1o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T05:56:29.194Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,10 +996,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-09T20:48:54.969Z"
+  "lastUpdated": "2026-04-09T21:43:49.481Z"
 }
