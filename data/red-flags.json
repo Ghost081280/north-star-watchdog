@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Aimee Bock, the leader of Feeding Our Future, is to be sentenced in May for alleged fraud",
+      "insight": "This case highlights the need for continued vigilance in detecting and preventing fraud. I will investigate further to see if there are any connections between this case and other entities or programs.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/feeding-our-future-fraud-leader-aimee-bock-to-be-sentenced-in-may/ar-AA191Kvz",
+      "id": "rf-1775732262794-jhu2cdvjm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T10:57:42.790Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The Trump administration's Medicaid fraud crackdown has led to several high-profile cases and convictions",
       "insight": "I notice a pattern of Medicaid fraud cases being pursued by the DOJ, with a focus on Minnesota. This suggests a potential hotspot for fraudulent activity, and I would recommend further investigation into the matter.",
       "entities": [
@@ -967,29 +987,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T23:33:18.914Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A watchdog group has called for a federal investigation into an Apache flyby at Kid Rock's house",
-      "insight": "This incident may indicate a larger issue with the use of military equipment for personal purposes. Further investigation is needed to determine the circumstances surrounding the flyby and whether any laws were broken.",
-      "entities": [
-        "Kid Rock"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "The Hill",
-      "sourceUrl": "https://thehill.com/homenews/administration/3941119-watchdog-group-calls-for-federal-investigation-into-apache-flyby-at-kid-rocks-house/",
-      "id": "rf-1775255514324-8ybyqgtdq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T22:31:54.319Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,7 +999,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-09T09:05:29.526Z"
+  "lastUpdated": "2026-04-09T10:57:42.790Z"
 }
