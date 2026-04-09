@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-03T10:47:19.810Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-04-03T11:36:56.528Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-08T23:37:26.168Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-09T02:05:25.031Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1940,
-    "articlesProcessed": 96650,
-    "redFlagsFound": 2244,
+    "totalScans": 1941,
+    "articlesProcessed": 96700,
+    "redFlagsFound": 2246,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,34 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Data Breach",
+          "description": "Multiple companies are under investigation for data breaches affecting millions of records.",
+          "insight": "This trend indicates a significant concern for data security and potential vulnerabilities in various industries.",
+          "entities": [
+            "DocketWise",
+            "Mercor.io Corporation",
+            "Russell Cellular"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Schubert Jonckheer & Kolbe",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ubkNXMkhSSTJZUHg4V3NVZjQ1RWxHMTUtUXRsVE45VmpDRWozVXpGQW5tVlJhSi02VDgxMDFfUVhJeEVRRXdtcmVsMWhCakdfMnFmVm5rUE5VbjRkRmpJ?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Trump administration officials connected to?",
         "What other organizations is Family members of $14M family fraud scheme connected to?",
-        "Where did the $243M allegedly go in Medicaid fraud investigation?"
+        "Where did the $243M allegedly go in Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in FBI investigation into Native American communities?"
       ]
     }
   ],
@@ -594,6 +615,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-08T23:37:26.168Z",
-  "lastUpdated": "2026-04-08T23:37:26.169Z"
+  "lastReflection": "2026-04-09T02:05:25.031Z",
+  "lastUpdated": "2026-04-09T02:05:25.031Z"
 }

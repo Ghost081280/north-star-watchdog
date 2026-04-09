@@ -1,6 +1,47 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "The Trump administration's Medicaid fraud crackdown in Minnesota indicates a significant effort to combat healthcare fraud.",
+      "insight": "This trend suggests a focus on healthcare fraud at the federal level, potentially leading to more investigations and prosecutions.",
+      "entities": [
+        "Minnesota",
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WFIN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZ1NMNC14Sy1EOUhLNlRLeV9PVE43dzZtcTVPZWM0eDRkYnNyenBrZW1oVHYzazU5d0xBTjRkZWtXQzRZYmRmMFhPdmZSWGJNckZTSEtfZ3pHSVd1Vm1wQ2hUWnRLMjJQQnZoMG51TjBWMmxLV2ROSjRpeG5EM29GVi13WVlYOF85cER2Z2IySGdFOTJfWklwSmd6Tkt0ZzhsQkdWUGt3?oc=5",
+      "id": "rf-1775700325036-ykjytnylc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T02:05:25.032Z",
+      "isNew": true
+    },
+    {
+      "type": "Data Breach",
+      "description": "Multiple companies are under investigation for data breaches affecting millions of records.",
+      "insight": "This trend indicates a significant concern for data security and potential vulnerabilities in various industries.",
+      "entities": [
+        "DocketWise",
+        "Mercor.io Corporation",
+        "Russell Cellular"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ubkNXMkhSSTJZUHg4V3NVZjQ1RWxHMTUtUXRsVE45VmpDRWozVXpGQW5tVlJhSi02VDgxMDFfUVhJeEVRRXdtcmVsMWhCakdfMnFmVm5rUE5VbjRkRmpJ?oc=5",
+      "id": "rf-1775700325036-u3x8fw8f5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T02:05:25.032Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Multiple cases of potential fraud have been reported, including a Missouri company suspending operations amid a criminal probe and a Quebec immigration minister under investigation for alleged ethics breaches.",
       "insight": "These cases suggest a need for increased scrutiny of companies and government officials to prevent fraudulent activities.",
@@ -18,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-08T23:37:26.170Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -293,26 +334,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-07T13:15:50.284Z",
-      "isNew": false
-    },
-    {
-      "type": "Potential fraud",
-      "description": "Multiple cases of Medicaid fraud and other federal investigations suggest potential vulnerabilities in the system",
-      "insight": "I notice a pattern of fraud and corruption in various sectors, including healthcare and government contracting. It is essential to investigate these cases further and identify areas for improvement to prevent future incidents.",
-      "entities": [
-        "Feeding Our Future",
-        "Sun Relocation Deal"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://www.mprnews.org/story/2026/04/06/feeding-our-future-defendant-avoids-prison",
-      "id": "rf-1775556879857-ypcs5xaxt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T10:14:39.853Z",
       "isNew": false
     },
     {
@@ -965,40 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T22:31:54.319Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has declared a surveillance system breach a 'major incident', which may indicate a larger issue with the agency's security protocols.",
-      "insight": "This breach could potentially compromise sensitive information and put national security at risk. Further investigation is needed to determine the extent of the breach and identify potential vulnerabilities.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI Declares Surveillance System Breach a ‘Major Incident’",
-      "sourceUrl": "https://www.techrepublic.com/article/fbi-declares-surveillance-system-breach-a-major-incident",
-      "id": "rf-1775251978126-qyuwmgnsg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T21:32:58.122Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-08T23:37:26.170Z"
+  "lastUpdated": "2026-04-09T02:05:25.032Z"
 }
