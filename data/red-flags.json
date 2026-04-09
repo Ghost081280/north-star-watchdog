@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "data breaches",
+      "description": "Several data breaches reported, including DocketWise, Mercor.io Corporation, and Russell Cellular",
+      "insight": "The frequency and scale of these breaches indicate a broader issue with data security and the potential for fraud through compromised information.",
+      "entities": [
+        "DocketWise",
+        "Mercor.io Corporation",
+        "Russell Cellular"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "",
+      "id": "rf-1775735803550-flqkvhs9z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T11:56:43.547Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Aimee Bock, the leader of Feeding Our Future, is to be sentenced in May for alleged fraud",
       "insight": "This case highlights the need for continued vigilance in detecting and preventing fraud. I will investigate further to see if there are any connections between this case and other entities or programs.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-09T10:57:42.790Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -967,31 +988,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-03T23:33:18.914Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into ActBlue fundraising platform",
-      "insight": "Potential for high-level involvement and large-scale fraud",
-      "entities": [
-        "ActBlue",
-        "Federal Agency"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Democrats' ActBlue fundraising platform faces federal investigation - Fox Business",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YVC11cWRKd2NsWjk1cWktdy1zWTBVTmVqR2ZoX1MzRi1fV1pRTnk0ZUtGeTZaNjlRMUF5MmV2UzJVUHNMMEhUUlJLMXQxYVR2SjRpR004MzBNX2M",
-      "id": "rf-1775259198918-w8e88v4ag",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-03T23:33:18.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,8 +1000,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FDA",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-09T10:57:42.790Z"
+  "lastUpdated": "2026-04-09T11:56:43.547Z"
 }
