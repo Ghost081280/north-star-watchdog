@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud investigation",
+      "description": "Multiple investigations into fraud and healthcare-related crimes are ongoing",
+      "insight": "This could indicate a larger pattern of fraud in the healthcare sector",
+      "entities": [
+        "Ascend Federal Credit Union",
+        "Texas Senate committee"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOakpKV1JRc2duc0tmUEZUOW0wcWV3M09GajVta3U3UDhjUHpxX3ZTeTVZWlZvLWZ3eFBpQ3F0enNJVUdqSkhmclhTUV9IMmdWTjNzcTNmMDQtQ2RKRWRaU0FpanU5d1E0WVJpaWxUbW0wQnBwMmRmclJTeXN5OC05VkcwMXpvZzVTVDFGMzNrR3VRVHp2dHh0Rk5Id1l2bGVDVkswRWxIRWFlRlROWndSTlhR",
+      "id": "rf-1775741182184-zu2dwnpka",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-09T13:26:22.180Z",
+      "isNew": true
+    },
+    {
       "type": "data breaches",
       "description": "Several data breaches reported, including DocketWise, Mercor.io Corporation, and Russell Cellular",
       "insight": "The frequency and scale of these breaches indicate a broader issue with data security and the potential for fraud through compromised information.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-09T11:56:43.547Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -39,26 +59,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-09T10:57:42.790Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Trump administration's Medicaid fraud crackdown has led to several high-profile cases and convictions",
-      "insight": "I notice a pattern of Medicaid fraud cases being pursued by the DOJ, with a focus on Minnesota. This suggests a potential hotspot for fraudulent activity, and I would recommend further investigation into the matter.",
-      "entities": [
-        "Minnesota",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/politics/trump-admin-scores-minnesota-court-win-medicaid-fraud-crackdown",
-      "id": "rf-1775711295208-0rsqvmyaj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-09T05:08:15.205Z",
       "isNew": false
     },
     {
@@ -992,17 +992,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-09T11:56:43.547Z"
+  "lastUpdated": "2026-04-09T13:26:22.180Z"
 }
