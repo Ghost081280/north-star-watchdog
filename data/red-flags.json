@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future program terminated due to fraud scheme",
+      "insight": "This could indicate a larger issue with program management and oversight, and further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "Texas Border Business",
+      "sourceUrl": "https://www.texasborderbusiness.com/news/local/more-guilty-pleas-entered-in-multi-million-dollar-feeding-our-future-fraud-scheme/",
+      "id": "rf-1775853300016-9w64crusd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T20:35:00.012Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating several cases of fraud and corruption, including the Feeding Our Future case and the NFL investigation.",
       "insight": "I notice a pattern of large-scale fraud schemes being uncovered by the FBI, which suggests a potential lack of oversight and regulation in certain industries. Further investigation is needed to determine the extent of these schemes and to identify potential perpetrators.",
@@ -834,26 +853,6 @@
       "isNew": false
     },
     {
-      "type": "program_termination",
-      "description": "Feeding Our Future program terminated due to fraud allegations",
-      "insight": "This termination suggests a large-scale fraud scheme was uncovered, potentially involving multiple entities and individuals.",
-      "entities": [
-        "Star Distribution",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
-      "id": "rf-1775381875607-83l2w5wkh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T09:37:55.604Z",
-      "isNew": false
-    },
-    {
       "type": "federal_investigation",
       "description": "ActBlue fundraising platform under federal investigation",
       "insight": "This investigation suggests potential wrongdoing in campaign finance, potentially involving large sums of money.",
@@ -995,6 +994,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1002,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T19:42:34.301Z"
+  "lastUpdated": "2026-04-10T20:35:00.012Z"
 }
