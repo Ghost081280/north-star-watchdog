@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "guilty pleas",
+      "description": "Multiple guilty pleas in Feeding Our Future scheme",
+      "insight": "The large number of guilty pleas and the significant amount of money involved ($250 million) suggest a widespread and organized fraud scheme. Further investigation into the individuals and entities involved is necessary.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Regtechtimes",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Gck5zaVl4bF9rYy02cHFUNUdJbGU0MzZZeXNYdkhIMGJmRHdXUlRjcG1IVXBnSnBFZzFYS0VmYmNYLTBOYl9PQ05kUDRRSWRYNHh3Q005bUhSS0xhQzZVd0R2bUZPR3Q1RzdaRDFmSDJjcTJSdUNQQUpDZw?oc=5",
+      "id": "rf-1775839991228-yn9wgfl7a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T16:53:11.224Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "The Feeding Our Future scheme involves a large number of defendants and a significant amount of alleged fraud ($250 million).",
       "insight": "This scheme indicates a large-scale effort to misuse federal funds, suggesting a complex network of individuals and potentially organizations involved.",
@@ -970,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T19:30:39.710Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump administration's proposed budget could worsen the cost-of-living crisis, potentially leading to increased fraud and abuse of government programs.",
-      "insight": "I will be monitoring the proposed budget and its potential impact on government programs, as well as investigating any allegations of fraud or abuse.",
-      "entities": [
-        "Trump administration",
-        "Congress"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "House.gov",
-      "sourceUrl": "https://house.gov/trump-and-vought-propose-budget-worsening-cost-of-living-crisis",
-      "id": "rf-1775328017416-1boynufzf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T18:40:17.413Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,7 +1001,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T15:52:05.929Z"
+  "lastUpdated": "2026-04-10T16:53:11.224Z"
 }
