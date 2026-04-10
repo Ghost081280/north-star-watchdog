@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-04T07:54:16.903Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-04T08:39:19.763Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-10T07:25:34.912Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-04-10T09:07:11.523Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Renee Good connected to?",
-    "What specific allegations exist against Renee Good?",
-    "What specific allegations exist against Matthew Perry?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Man who stole $1M in Feeding Our Future scheme connected to?",
     "What other organizations is Minnesota man connected to?",
     "Where did the $14M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +554,11 @@
     "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the $243 million allegedly go in Minnesota Medicaid Fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Minneapolis Man connected to?",
+    "What other organizations is Anoka County couple connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud probe?",
+    "Where did the $243 million allegedly go in Minnesota Medicaid fraud effort?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1957,
-    "articlesProcessed": 97500,
-    "redFlagsFound": 2261,
+    "totalScans": 1958,
+    "articlesProcessed": 97550,
+    "redFlagsFound": 2262,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud scheme",
-          "description": "A $250 million fraud scheme involving feeding programs for children",
-          "insight": "This scheme involves multiple defendants and significant financial losses",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Regtechtimes",
-          "sourceUrl": "https://regtechtimes.com/feeding-our-future-fraud-scheme-sees-two-more-guilty-pleas-in-250-million-case/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Matthew Perry connected to?",
-        "Where did the $Unknown allegedly go in Ascend Federal Credit Union Robbery?",
-        "Where did the $Unknown allegedly go in Minnesota Medicaid Fraud?"
+        "What other organizations is Renee Good connected to?",
+        "What specific allegations exist against Renee Good?",
+        "What specific allegations exist against Matthew Perry?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-10T07:25:34.912Z",
-  "lastUpdated": "2026-04-10T07:25:34.913Z"
+  "lastReflection": "2026-04-10T09:07:11.523Z",
+  "lastUpdated": "2026-04-10T09:07:11.524Z"
 }
