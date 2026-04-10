@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-04T18:40:17.411Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-04T19:30:39.708Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-10T20:35:00.010Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-10T21:35:47.781Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 82,
+      "count": 83,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-05T13:54:19.298Z"
+      "lastSeen": "2026-04-10T21:35:47.782Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?",
-    "Where did the $243 million allegedly go in Minnesota Medicaid Fraud?",
-    "Are any of these 3 figures connected to each other?",
     "What other organizations is Minneapolis Man connected to?",
     "What other organizations is Anoka County couple connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud probe?",
@@ -558,7 +555,10 @@
     "What other organizations is Renee Good connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Multi-Million Dollars allegedly go in Feeding Our Future Fraud Scheme?"
+    "Where did the Multi-Million Dollars allegedly go in Feeding Our Future Fraud Scheme?",
+    "What other organizations is Minnesota Woman connected to?",
+    "What other organizations is Cudahy Teacher connected to?",
+    "Where did the $40M+ allegedly go in Feeding Our Future Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1968,
-    "articlesProcessed": 98050,
-    "redFlagsFound": 2273,
+    "totalScans": 1969,
+    "articlesProcessed": 98100,
+    "redFlagsFound": 2275,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "Federal government freezes funding due to fraud concerns",
+          "insight": "This indicates a serious concern about Minnesota's management of federal funds, potentially leading to service disruptions.",
+          "entities": [
+            "Minnesota State Government",
+            "Federal Government"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MPR News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEk4SlBHNDUwU19tcThEaFQxcFRRaG9hS3V2N1FHMFJsdWFlTjZkZnNGSkpjZU9ESENxWVdjVmtkUVBEdTVfMjFvU0p1bDRISmx4dlhpcmVsTjk2TTZ6QWFCZXhWakJMMjNFOHJhX050WFVtMlRWaU1tRUxWbHExV1lfNU84Rk5QNFVva3p5eEdaTVctVGo5SmhSUm5kSjBqMkJVbWVnQkVxRmNEb19od211VEZXMFZlUnA5MGhB?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $243M allegedly go in Minnesota Medicaid fraud prevention?",
-        "Where did the $243M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?"
+        "Where did the $250 million allegedly go in Feeding Our Future Fraud Scheme?",
+        "Where did the $243 million allegedly go in Minnesota Medicaid Fraud?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-10T20:35:00.010Z",
-  "lastUpdated": "2026-04-10T20:35:00.011Z"
+  "lastReflection": "2026-04-10T21:35:47.781Z",
+  "lastUpdated": "2026-04-10T21:35:47.782Z"
 }

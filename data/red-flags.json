@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal government freezes funding due to fraud concerns",
+      "insight": "This indicates a serious concern about Minnesota's management of federal funds, potentially leading to service disruptions.",
+      "entities": [
+        "Minnesota State Government",
+        "Federal Government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEk4SlBHNDUwU19tcThEaFQxcFRRaG9hS3V2N1FHMFJsdWFlTjZkZnNGSkpjZU9ESENxWVdjVmtkUVBEdTVfMjFvU0p1bDRISmx4dlhpcmVsTjk2TTZ6QWFCZXhWakJMMjNFOHJhX050WFVtMlRWaU1tRUxWbHExV1lfNU84Rk5QNFVva3p5eEdaTVctVGo5SmhSUm5kSjBqMkJVbWVnQkVxRmNEb19od211VEZXMFZlUnA5MGhB?oc=5",
+      "id": "rf-1775856947787-y9e4pnpm5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T21:35:47.783Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud scheme",
       "insight": "This could indicate a larger issue with program management and oversight, and further investigation is needed to determine the extent of the problem.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-10T20:35:00.012Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -494,26 +514,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-08T07:16:39.901Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration has paused $243M in Medicaid payments to Minnesota due to fraud concerns.",
-      "insight": "This pause suggests a significant concern about Medicaid fraud in Minnesota.",
-      "entities": [
-        "Minnesota DHS",
-        "Trump administration"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://www.pioneerpress.com/2026/04/07/judge-declines-to-block-trump-administrations-243m-medicaid-pause-in-mn/",
-      "id": "rf-1775604974759-povhid9hg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T23:36:14.755Z",
       "isNew": false
     },
     {
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T20:35:00.012Z"
+  "lastUpdated": "2026-04-10T21:35:47.783Z"
 }
