@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-04T10:31:53.310Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-04T11:27:55.167Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-10T11:47:31.274Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-10T13:06:30.483Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in NFL investigation?",
-    "What other organizations is Minneapolis man connected to?",
     "What other organizations is Sixth family member connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud?",
@@ -558,7 +556,9 @@
     "Where did the $243 million allegedly go in Minnesota Medicaid fraud effort?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $800K allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $800K allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $250M allegedly go in Feeding Our Future?",
+    "Where did the $800K allegedly go in $800K Public Benefits Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1960,
-    "articlesProcessed": 97650,
-    "redFlagsFound": 2265,
+    "totalScans": 1961,
+    "articlesProcessed": 97700,
+    "redFlagsFound": 2266,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,16 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal_investigation",
-          "description": "The NFL is under federal investigation for potential anticompetitive practices.",
-          "insight": "This could lead to significant consequences for the NFL and potentially other organizations involved.",
+          "type": "large-scale fraud",
+          "description": "The Feeding Our Future scheme involves a large number of defendants and a significant amount of alleged fraud ($250 million).",
+          "insight": "This scheme indicates a large-scale effort to misuse federal funds, suggesting a complex network of individuals and potentially organizations involved.",
           "entities": [
-            "NFL"
+            "Feeding Our Future",
+            "Minnesota DHS"
           ],
-          "confidence": 90,
+          "confidence": 95,
           "priority": "high",
-          "source": "AP News",
-          "sourceUrl": "https://AP News"
+          "source": "Multiple news sources",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZ25NOHdFNHJWSlkwdUFvQTJhVVg2WTlLYnhJdmtiRUpUWUUweXFlZlFrQl9LX0hkcjdfbVF3SWlYaE5sbnBtR0x0WTMtMFYySGZkRVNHM3J2bFlPdkkxaldTQmplOHNzMFg1X3kwQ01MY0VPbDlwaUJId01WY2ZuNnJ3akZDa2dTVVJKTDQ1SEpmazJtcF9sOVdmRXctWjh5QmY3NVB5LVd3bzUwRmh6anZBbHpBRlFpeTdYa1NQa29BbmlIYkM5dENNUThzcDhVRzcwOWVnUWZoUzBOWTFtNTFOTzVCd1M4dHc"
         }
       ]
     },
@@ -602,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $14M allegedly go in Feeding Our Future investigation?",
         "Where did the N/A allegedly go in NFL investigation?",
-        "What other organizations is Minneapolis man connected to?"
+        "What other organizations is Minneapolis man connected to?",
+        "What other organizations is Sixth family member connected to?"
       ]
     }
   ],
@@ -613,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-10T11:47:31.274Z",
-  "lastUpdated": "2026-04-10T11:47:31.275Z"
+  "lastReflection": "2026-04-10T13:06:30.483Z",
+  "lastUpdated": "2026-04-10T13:06:30.484Z"
 }

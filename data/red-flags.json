@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large-scale fraud",
+      "description": "The Feeding Our Future scheme involves a large number of defendants and a significant amount of alleged fraud ($250 million).",
+      "insight": "This scheme indicates a large-scale effort to misuse federal funds, suggesting a complex network of individuals and potentially organizations involved.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 95,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZ25NOHdFNHJWSlkwdUFvQTJhVVg2WTlLYnhJdmtiRUpUWUUweXFlZlFrQl9LX0hkcjdfbVF3SWlYaE5sbnBtR0x0WTMtMFYySGZkRVNHM3J2bFlPdkkxaldTQmplOHNzMFg1X3kwQ01MY0VPbDlwaUJId01WY2ZuNnJ3akZDa2dTVVJKTDQ1SEpmazJtcF9sOVdmRXctWjh5QmY3NVB5LVd3bzUwRmh6anZBbHpBRlFpeTdYa1NQa29BbmlIYkM5dENNUThzcDhVRzcwOWVnUWZoUzBOWTFtNTFOTzVCd1M4dHc",
+      "id": "rf-1775826390488-ca22xr3ym",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T13:06:30.485Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The NFL is under federal investigation for potential anticompetitive practices.",
       "insight": "This could lead to significant consequences for the NFL and potentially other organizations involved.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-10T11:47:31.276Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -970,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T18:40:17.413Z",
       "isNew": false
-    },
-    {
-      "type": "large scale fraud",
-      "description": "$94M allegedly involved in the Feeding Our Future fraud case",
-      "insight": "This case indicates a large-scale fraud scheme involving multiple individuals and organizations. Further investigation is needed to uncover the full extent of the fraud and identify all parties involved.",
-      "entities": [
-        "Star Distribution",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
-      "id": "rf-1775323734646-2c4mno158",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T17:28:54.642Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -998,13 +998,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T11:47:31.276Z"
+  "lastUpdated": "2026-04-10T13:06:30.485Z"
 }
