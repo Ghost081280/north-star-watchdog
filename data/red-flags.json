@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The NFL is under federal investigation for potential anticompetitive practices.",
+      "insight": "This could lead to significant consequences for the NFL and potentially other organizations involved.",
+      "entities": [
+        "NFL"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://AP News",
+      "id": "rf-1775821651280-9v7tcgqs5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T11:47:31.276Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating the NFL for potential anticompetitive practices",
       "insight": "This investigation could have significant implications for the NFL and its business practices. I will continue to monitor the situation and look for any connections to other entities or programs.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-10T10:52:43.939Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scheme",
@@ -971,26 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T17:28:54.642Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Democrats' ActBlue fundraising platform is facing a federal investigation.",
-      "insight": "This could indicate a larger pattern of corruption and fraud in the Democratic party, and warrants further investigation.",
-      "entities": [
-        "ActBlue",
-        "Democratic party"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox Business",
-      "sourceUrl": "https://www.google.com/url?q=https://www.foxbusiness.com/politics/democrats-actblue-fundraising-platform-federal-investigation",
-      "id": "rf-1775320483478-6p184sfk8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T16:34:43.474Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1022,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T10:52:43.939Z"
+  "lastUpdated": "2026-04-10T11:47:31.276Z"
 }
