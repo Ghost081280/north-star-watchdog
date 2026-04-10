@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "fraud scheme",
+      "description": "A $250 million fraud scheme involving feeding programs for children",
+      "insight": "This scheme involves multiple defendants and significant financial losses",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Regtechtimes",
+      "sourceUrl": "https://regtechtimes.com/feeding-our-future-fraud-scheme-sees-two-more-guilty-pleas-in-250-million-case/",
+      "id": "rf-1775805934917-1ti3h3m71",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T07:25:34.914Z",
+      "isNew": true
+    },
+    {
+      "type": "anticompetitive practices",
+      "description": "Potential anticompetitive practices by the NFL",
+      "insight": "This could have significant implications for the NFL and its fans",
+      "entities": [
+        "NFL"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/sports/nfl/nfl-reportedly-under-investigation-by-the-justice-department-over-making-it-harder-for-fans-to-watch-games",
+      "id": "rf-1775805934917-lkn2fmmbg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T07:25:34.914Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Nearly 1,000 unresponsive Medicaid providers could be disenrolled as Minnesota checks programs",
       "insight": "This could indicate a larger issue with Medicaid provider oversight and potential fraud. I would investigate further to see if there are any patterns or connections between these providers.",
@@ -953,46 +991,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T10:31:53.312Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Feeding Our Future program under investigation",
-      "insight": "This program was vulnerable to fraud, indicating potential programmatic issues",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
-      "id": "rf-1775289256910-n7poj0qbf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T07:54:16.906Z",
-      "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Star Distribution",
-      "insight": "The owner of Star Distribution has pleaded guilty in the Feeding Our Future fraud case, indicating a potential shell company or entity used for fraudulent activities.",
-      "entities": [
-        "Star Distribution",
-        "Owner of Star Distribution"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
-      "id": "rf-1775286050258-o5vc4kjso",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T07:00:50.254Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,11 +999,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T05:23:54.957Z"
+  "lastUpdated": "2026-04-10T07:25:34.914Z"
 }
