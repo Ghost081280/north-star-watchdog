@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating several cases of fraud and corruption, including the Feeding Our Future case and the NFL investigation.",
+      "insight": "I notice a pattern of large-scale fraud schemes being uncovered by the FBI, which suggests a potential lack of oversight and regulation in certain industries. Further investigation is needed to determine the extent of these schemes and to identify potential perpetrators.",
+      "entities": [
+        "Feeding Our Future",
+        "NFL"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1775847071428-9w9z6j7b0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-10T18:51:11.425Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ is investigating the NFL's business practices, including its TV deals.",
       "insight": "This investigation could potentially uncover significant wrongdoing and result in major changes to the NFL's business practices. I will continue to monitor this investigation and track any developments.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-10T17:45:57.849Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "guilty pleas",
@@ -971,30 +991,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T21:30:23.567Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Nonprofit at center of federal probe still has $94M city contract",
-      "insight": "This raises concerns about potential misuse of funds and lack of oversight",
-      "entities": [
-        "Nonprofit organization"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/2026-04-03/?oc=5",
-      "id": "rf-1775334583037-kw919mloy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T20:29:43.034Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,8 +1005,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1021,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-10T17:45:57.849Z"
+  "lastUpdated": "2026-04-10T18:51:11.425Z"
 }
