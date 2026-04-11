@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T15:31:18.224Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-05T16:35:03.377Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-04-11T16:35:37.713Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-11T17:30:19.252Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Terry Rozier?",
-    "What specific allegations exist against Dr. Oz?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the Unknown allegedly go in NFL TV deals investigation?",
     "What other organizations is Cudahy teacher connected to?",
@@ -558,7 +556,9 @@
     "Are any of these 6 figures connected to each other?",
     "What other organizations is Minnesota Defendant connected to?",
     "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
+    "What other organizations is Minnesota Fraud Suspect connected to?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1984,
-    "articlesProcessed": 98850,
-    "redFlagsFound": 2292,
+    "totalScans": 1985,
+    "articlesProcessed": 98900,
+    "redFlagsFound": 2293,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Keith Ellison connected to?",
-        "What specific allegations exist against Keith Ellison?"
+        "What specific allegations exist against Terry Rozier?",
+        "What specific allegations exist against Dr. Oz?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T16:35:37.713Z",
-  "lastUpdated": "2026-04-11T16:35:37.713Z"
+  "lastReflection": "2026-04-11T17:30:19.252Z",
+  "lastUpdated": "2026-04-11T17:30:19.252Z"
 }
