@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "HHS freezes all child care payments to Minnesota over fraud allegations",
+      "insight": "This suggests a significant level of fraud and potential mismanagement in Minnesota's child care programs.",
+      "entities": [
+        "Minnesota",
+        "HHS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://msn.com/en-us/news/local/hhs-freezes-all-child-care-payments-to-minnesota-over-fraud-allegations",
+      "id": "rf-1775918145688-99k3rouzh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-11T14:35:45.684Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Federal investigation into Feeding Our Future fraud scheme",
+      "insight": "This indicates a large-scale investigation into a significant fraud scheme.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota"
+      ],
+      "confidence": 95,
+      "priority": "high",
+      "source": "thepostmillennial.com",
+      "sourceUrl": "https://thepostmillennial.com/two-more-defendants-plead-guilty-in-minnesota-feeding-our-future-fraud-scheme-as-convictions-hit-65",
+      "id": "rf-1775918145688-gk8levpem",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-11T14:35:45.684Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Torch Electronics pulls out of Missouri amid prosecution threat",
       "insight": "This suggests that the company may be trying to avoid potential penalties or reputational damage by exiting the state.",
@@ -248,25 +288,6 @@
       "source": "USA Today",
       "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/04/09/nfl-investigation-anticompetitive-practices/7123456/",
       "id": "rf-1775771029484-m322xw643",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-09T21:43:49.481Z",
-      "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "A COVID meal fraud scheme totaling $250M was uncovered in Minnesota.",
-      "insight": "This scheme highlights the need for increased oversight and monitoring of COVID relief funds to prevent similar fraud schemes.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KIMT",
-      "sourceUrl": "https://www.kimt.com/news/minneapolis-man-gets-43-months-in-prison-for-his-part-in-250m-covid-meal-fraud/",
-      "id": "rf-1775771029484-6fug7527o",
       "apisUsed": [
         "Google News"
       ],
@@ -967,27 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-04T23:30:32.398Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "A nonprofit organization with a $94M city contract is under federal investigation",
-      "insight": "The Minnesota Somali Fraud case raises concerns about oversight and management of large city contracts. The investigation should focus on ensuring accountability and transparency.",
-      "entities": [
-        "Minnesota DHS",
-        "Governor Walz",
-        "AG Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbUVIY3FORkJOMUpVV2NGaEdGbXV2cE92SUhUcXUyOU5mTndyZnduYUdsdDhxZDhGOGMzblM4X3pOREEwQy03ZkFGQlVZTVJYdFdESXlydFVaLTk4ektaMXREMUNaZWdRR3dRQ2JjZWs3QlNXV3hBdWFjbDJrTGxhaDFTNWFXOG9FSWJnRzhnQUZSekpJN3NlSVlkaDB6cmY5dFE3UFdSeDhrdmo5dGlEMHg5aGZKVTVMTGdzVTY4ZlE4SlNOQ2c4dUt3X1JhX21yUi1sakNlNDFRNlExU3ZQVDJ1dXZhLThvMWYtZkRrN2fSAfABQVVfeXFMTW1FSGNxTkZCTjFKVVdjRmhHRm11dnBPdklIVHF1MjlOZk53cmZ3bmFHbHQ4cWQ4RjhjM25TOF96TkRBMEMtN2ZBRkJVWU1SWHRXREl5cnRVWi05OHpLWjF0RDFDWmVnUUd3UUNiY2VrN0JTV1d4QXVhY2wya0xsYWgxUzVhVzhvRUliZ0c4Z0FGUnpKSTdzZUlZZGgwenJmOXRRN1BXUng4aZVpOXRpRDB4OWhmSlU1TExnc1U2OGZROEpTTkNnOHVLd19SYV9tclItbGpDZTQxUTZRMVN2UFQydXV2YS04bzFmLWZEazdn?oc=5",
-      "id": "rf-1775338223570-vs117mpfv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-04T21:30:23.567Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,6 +1000,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-11T13:55:51.366Z"
+  "lastUpdated": "2026-04-11T14:35:45.684Z"
 }

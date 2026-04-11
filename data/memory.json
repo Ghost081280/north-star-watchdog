@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T12:54:56.125Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-05T13:54:19.296Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-04-11T13:55:51.364Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-11T14:35:45.682Z",
+      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 34,
+      "count": 35,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-04-11T08:41:19.338Z"
+      "lastSeen": "2026-04-11T14:35:45.683Z"
     },
     {
       "type": "federal_funding",
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud scheme?",
-    "Where did the $11M allegedly go in Minnesota Medicaid fraud scheme?",
-    "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $11M allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is Terry Rozier connected to?",
     "What other organizations is Keith Ellison donor connected to?",
@@ -558,7 +555,10 @@
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Feeding Our Future fraudster connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $11M allegedly go in Medicaid fraud investigation?"
+    "Where did the $11M allegedly go in Medicaid fraud investigation?",
+    "Where did the $11 Million allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $11 Million allegedly go in $11 Million Medicaid fraud scheme?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1981,
-    "articlesProcessed": 98700,
-    "redFlagsFound": 2288,
+    "totalScans": 1982,
+    "articlesProcessed": 98750,
+    "redFlagsFound": 2290,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,46 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 2 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "HHS freezes all child care payments to Minnesota over fraud allegations",
+          "insight": "This suggests a significant level of fraud and potential mismanagement in Minnesota's child care programs.",
+          "entities": [
+            "Minnesota",
+            "HHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://msn.com/en-us/news/local/hhs-freezes-all-child-care-payments-to-minnesota-over-fraud-allegations"
+        },
+        {
+          "type": "federal_investigation",
+          "description": "Federal investigation into Feeding Our Future fraud scheme",
+          "insight": "This indicates a large-scale investigation into a significant fraud scheme.",
+          "entities": [
+            "Feeding Our Future",
+            "Minnesota"
+          ],
+          "confidence": 95,
+          "priority": "high",
+          "source": "thepostmillennial.com",
+          "sourceUrl": "https://thepostmillennial.com/two-more-defendants-plead-guilty-in-minnesota-feeding-our-future-fraud-scheme-as-convictions-hit-65"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?",
-        "Where did the $11M allegedly go in $11M Medicaid Fraud Scheme?",
-        "Are any of these 3 figures connected to each other?"
+        "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud scheme?",
+        "Where did the $11M allegedly go in Minnesota Medicaid fraud scheme?",
+        "Where did the $11M allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -594,6 +627,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T13:55:51.364Z",
-  "lastUpdated": "2026-04-11T13:55:51.365Z"
+  "lastReflection": "2026-04-11T14:35:45.682Z",
+  "lastUpdated": "2026-04-11T14:35:45.683Z"
 }
