@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T14:34:38.739Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-05T15:31:18.224Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-11T15:32:20.304Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-11T16:35:37.713Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Keith Ellison connected to?",
-    "What specific allegations exist against Keith Ellison?",
     "What specific allegations exist against Terry Rozier?",
     "What specific allegations exist against Dr. Oz?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Dearborn man?",
     "What specific allegations exist against Feeding Our Future defendant?",
     "What specific allegations exist against Cudahy teacher?",
-    "Are any of these 6 figures connected to each other?"
+    "Are any of these 6 figures connected to each other?",
+    "What other organizations is Minnesota Defendant connected to?",
+    "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1983,
-    "articlesProcessed": 98800,
-    "redFlagsFound": 2291,
+    "totalScans": 1984,
+    "articlesProcessed": 98850,
+    "redFlagsFound": 2292,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in Minnesota Medicaid fraud?",
-        "What other organizations is Terry Rozier connected to?",
-        "What other organizations is Keith Ellison donor connected to?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Keith Ellison connected to?",
+        "What specific allegations exist against Keith Ellison?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T15:32:20.304Z",
-  "lastUpdated": "2026-04-11T15:32:20.306Z"
+  "lastReflection": "2026-04-11T16:35:37.713Z",
+  "lastUpdated": "2026-04-11T16:35:37.713Z"
 }
