@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T11:28:47.943Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-05T12:54:56.125Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-11T12:54:39.520Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-11T13:55:51.364Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?",
-    "Where did the $11M allegedly go in $11M Medicaid Fraud Scheme?",
-    "Are any of these 3 figures connected to each other?",
     "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud scheme?",
     "Where did the $11M allegedly go in Minnesota Medicaid fraud scheme?",
     "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in NFL TV deals investigation?",
     "What other organizations is Cudahy teacher connected to?",
     "Where did the $50M+ allegedly go in Feeding Our Future fraud scheme?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "What other organizations is Feeding Our Future fraudster connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $11M allegedly go in Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1980,
-    "articlesProcessed": 98650,
-    "redFlagsFound": 2287,
+    "totalScans": 1981,
+    "articlesProcessed": 98700,
+    "redFlagsFound": 2288,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Dr. Oz connected to?",
-        "Where did the $14M allegedly go in Feeding Our Future fraud case?",
-        "Where did the Federal Medicaid money remains frozen allegedly go in Minnesota Medicaid fraud?"
+        "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?",
+        "Where did the $11M allegedly go in $11M Medicaid Fraud Scheme?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T12:54:39.520Z",
-  "lastUpdated": "2026-04-11T12:54:39.520Z"
+  "lastReflection": "2026-04-11T13:55:51.364Z",
+  "lastUpdated": "2026-04-11T13:55:51.365Z"
 }
