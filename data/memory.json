@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T09:37:55.602Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-05T10:33:30.479Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-11T10:32:50.587Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-11T11:28:55.390Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1978,
-    "articlesProcessed": 98550,
+    "totalScans": 1979,
+    "articlesProcessed": 98600,
     "redFlagsFound": 2285,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in Feeding Our Future fraud case?",
-        "Where did the $96 million allegedly go in Terry Rozier investigation?",
-        "What other organizations is Dr. Oz connected to?"
+        "What other organizations is Dr. Oz connected to?",
+        "Where did the $14M allegedly go in Feeding Our Future fraud case?",
+        "Where did the Federal Medicaid money remains frozen allegedly go in Minnesota Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T10:32:50.587Z",
-  "lastUpdated": "2026-04-11T10:32:50.587Z"
+  "lastReflection": "2026-04-11T11:28:55.390Z",
+  "lastUpdated": "2026-04-11T11:28:55.390Z"
 }
