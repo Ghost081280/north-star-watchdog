@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-04T23:30:32.396Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-05T02:14:14.914Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-11T04:53:52.807Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-11T05:59:50.514Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota woman connected to?",
-    "Where did the Unknown allegedly go in NFL investigation?",
     "What other organizations is Renee Good connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $11M allegedly go in $11M Medicaid Fraud Scheme?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud scheme?",
-    "Where did the $11M allegedly go in Minnesota Medicaid fraud scheme?"
+    "Where did the $11M allegedly go in Minnesota Medicaid fraud scheme?",
+    "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $11M allegedly go in Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1973,
-    "articlesProcessed": 98300,
-    "redFlagsFound": 2279,
+    "totalScans": 1974,
+    "articlesProcessed": 98350,
+    "redFlagsFound": 2280,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future?",
-        "What other organizations is Terry Rozier connected to?",
-        "What other organizations is Minnesota woman connected to?"
+        "What other organizations is Minnesota woman connected to?",
+        "Where did the Unknown allegedly go in NFL investigation?",
+        "What other organizations is Renee Good connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T04:53:52.807Z",
-  "lastUpdated": "2026-04-11T04:53:52.807Z"
+  "lastReflection": "2026-04-11T05:59:50.514Z",
+  "lastUpdated": "2026-04-11T05:59:50.514Z"
 }
