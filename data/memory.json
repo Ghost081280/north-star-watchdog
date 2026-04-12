@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-06T14:45:33.056Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-06T15:44:18.791Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-12T14:01:18.522Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-12T15:34:44.939Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11M allegedly go in Minnesota Medicaid fraud case?",
-    "Where did the $11M allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $9B+ allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the $11M allegedly go in $11M Medicaid Fraud Case?",
     "What other organizations is Martin Weiss connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Unnamed Defendant connected to?",
     "Where did the $11 million allegedly go in $11M Medicaid Fraud Case?",
     "What other organizations is Unknown connected to?",
-    "Where did the $11M allegedly go in Minnesota Medicaid Fraud Case?"
+    "Where did the $11M allegedly go in Minnesota Medicaid Fraud Case?",
+    "What other organizations is Unnamed Minnesota Defendant connected to?",
+    "Where did the $11 million allegedly go in $11M Minnesota Medicaid Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2000,
-    "articlesProcessed": 99650,
-    "redFlagsFound": 2308,
+    "totalScans": 2001,
+    "articlesProcessed": 99700,
+    "redFlagsFound": 2309,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-12T14:01:18.522Z",
-  "lastUpdated": "2026-04-12T14:01:18.522Z"
+  "lastReflection": "2026-04-12T15:34:44.939Z",
+  "lastUpdated": "2026-04-12T15:34:44.940Z"
 }
