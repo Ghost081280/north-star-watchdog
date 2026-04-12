@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal_investigation",
+      "description": "A federal investigation is underway into NFL TV deals, which may indicate a larger pattern of corruption or fraud in the sports industry.",
+      "insight": "As an investigator, I am concerned about the potential for widespread corruption in the sports industry, and I believe that further investigation is needed to uncover the full extent of any wrongdoing.",
+      "entities": [
+        "NFL"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KXLY.com",
+      "sourceUrl": "https://www.kxly.com/news/nfl-tv-deals-under-federal-investigation",
+      "id": "rf-1775971357585-k02iscrea",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-12T05:22:37.582Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
       "description": "NFL TV deals under federal investigation",
       "insight": "This could indicate a larger issue with sports broadcasting rights and potential financial irregularities.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-12T02:26:50.840Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraudulent_activity",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-12T02:26:50.840Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -966,32 +985,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-05T09:37:55.604Z",
       "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "The owner of Star Distribution pleaded guilty to fraud allegations",
-      "insight": "This indicates a potential case of fraud and misuse of funds, which could lead to further investigations and potential penalties.",
-      "entities": [
-        "Star Distribution",
-        "owner"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
-      "id": "rf-1775365871919-s9240xu16",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T05:11:11.915Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,6 +997,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-12T02:26:50.840Z"
+  "lastUpdated": "2026-04-12T05:22:37.582Z"
 }
