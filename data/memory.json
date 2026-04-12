@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-06T21:36:55.590Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-06T22:35:42.382Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-12T21:33:09.615Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-04-12T22:32:37.330Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Medicaid Fraud Suspect connected to?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?",
     "What other organizations is Minneapolis man connected to?",
     "What other organizations is Fridley Man connected to?",
     "Where did the $11M allegedly go in Medicaid fraud investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Kenyan-linked man connected to?",
     "Where did the $11 million allegedly go in $11M Minnesota Medicaid fraud case?",
     "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What specific allegations exist against Raymond Elders?",
+    "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2007,
-    "articlesProcessed": 100000,
-    "redFlagsFound": 2315,
+    "totalScans": 2008,
+    "articlesProcessed": 100050,
+    "redFlagsFound": 2316,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "Federal investigation into $11M Minnesota Medicaid fraud",
+          "insight": "This case involves a large amount of alleged fraud and a defendant who has skipped court, forfeiting their bond.",
+          "entities": [
+            "Raymond Elders"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUEZJRHZBT0dhbmliX1owZFRUamFJMW5lOHRJd2FEYk5nbzh4dHB3MjJQSXhPa1l5RG9vak13Ullpd29jYXJkZkh6LWFJcGFvYl9mXzBSdlcyMDYtN2YweEdPUDNRZnBHRzJoRi1kdDZFRFN0OFpzTU5ISU53YU5OaElMNGszSGlxVi10WTFIV0Z6azcyeFNuUXdpblRmMFdtVEkzdkk3SzlyRVo0YTFVMTRPWXZsU00yTXMxZW1nTVlmOHZ6MlY3aFM2R1hJQQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in $11M Minnesota Medicaid Fraud Case?",
         "What other organizations is Minnesota Medicaid Fraud Suspect connected to?",
-        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?"
+        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
+        "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-12T21:33:09.615Z",
-  "lastUpdated": "2026-04-12T21:33:09.616Z"
+  "lastReflection": "2026-04-12T22:32:37.330Z",
+  "lastUpdated": "2026-04-12T22:32:37.331Z"
 }

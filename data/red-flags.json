@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into $11M Minnesota Medicaid fraud",
+      "insight": "This case involves a large amount of alleged fraud and a defendant who has skipped court, forfeiting their bond.",
+      "entities": [
+        "Raymond Elders"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUEZJRHZBT0dhbmliX1owZFRUamFJMW5lOHRJd2FEYk5nbzh4dHB3MjJQSXhPa1l5RG9vak13Ullpd29jYXJkZkh6LWFJcGFvYl9mXzBSdlcyMDYtN2YweEdPUDNRZnBHRzJoRi1kdDZFRFN0OFpzTU5ISU53YU5OaElMNGszSGlxVi10WTFIV0Z6azcyeFNuUXdpblRmMFdtVEkzdkk3SzlyRVo0YTFVMTRPWXZsU00yTXMxZW1nTVlmOHZ6MlY3aFM2R1hJQQ",
+      "id": "rf-1776033157338-sg8x9qzw0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-12T22:32:37.333Z",
+      "isNew": true
+    },
+    {
       "type": "large sum of money involved",
       "description": "$11 million is a significant amount of money, suggesting a large-scale fraud scheme.",
       "insight": "The fact that the defendant failed to appear in court and forfeited bond suggests that he may be attempting to evade justice.",
@@ -133,26 +152,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-11T22:30:52.921Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "HHS freezes all child care payments to Minnesota over fraud allegations",
-      "insight": "This suggests a significant level of fraud and potential mismanagement in Minnesota's child care programs.",
-      "entities": [
-        "Minnesota",
-        "HHS"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://msn.com/en-us/news/local/hhs-freezes-all-child-care-payments-to-minnesota-over-fraud-allegations",
-      "id": "rf-1775918145688-99k3rouzh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-11T14:35:45.684Z",
       "isNew": false
     },
     {
@@ -990,6 +989,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +998,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-12T21:33:09.617Z"
+  "lastUpdated": "2026-04-12T22:32:37.333Z"
 }
