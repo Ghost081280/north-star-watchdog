@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-06T22:35:42.382Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-06T23:34:47.961Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-12T22:32:37.330Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-12T23:33:36.418Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minneapolis man connected to?",
-    "What other organizations is Fridley Man connected to?",
     "Where did the $11M allegedly go in Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in Feeding Our Future scheme investigation?",
     "What other organizations is Unnamed suspect connected to?",
@@ -558,7 +556,9 @@
     "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Raymond Elders?",
     "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What specific allegations exist against Katie Cook?",
+    "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2008,
-    "articlesProcessed": 100050,
-    "redFlagsFound": 2316,
+    "totalScans": 2009,
+    "articlesProcessed": 100100,
+    "redFlagsFound": 2317,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Federal investigation into $11M Minnesota Medicaid fraud",
-          "insight": "This case involves a large amount of alleged fraud and a defendant who has skipped court, forfeiting their bond.",
-          "entities": [
-            "Raymond Elders"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUEZJRHZBT0dhbmliX1owZFRUamFJMW5lOHRJd2FEYk5nbzh4dHB3MjJQSXhPa1l5RG9vak13Ullpd29jYXJkZkh6LWFJcGFvYl9mXzBSdlcyMDYtN2YweEdPUDNRZnBHRzJoRi1kdDZFRFN0OFpzTU5ISU53YU5OaElMNGszSGlxVi10WTFIV0Z6azcyeFNuUXdpblRmMFdtVEkzdkk3SzlyRVo0YTFVMTRPWXZsU00yTXMxZW1nTVlmOHZ6MlY3aFM2R1hJQQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota Medicaid Fraud Suspect connected to?",
-        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
-        "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?"
+        "What other organizations is Minneapolis man connected to?",
+        "What other organizations is Fridley Man connected to?",
+        "Where did the $11M allegedly go in Medicaid fraud investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-12T22:32:37.330Z",
-  "lastUpdated": "2026-04-12T22:32:37.331Z"
+  "lastReflection": "2026-04-12T23:33:36.418Z",
+  "lastUpdated": "2026-04-12T23:33:36.419Z"
 }
