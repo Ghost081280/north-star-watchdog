@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-05T22:29:27.925Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-04-05T23:33:00.648Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-04-11T23:32:14.211Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-12T02:26:50.838Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11 Million allegedly go in $11 Million Medicaid fraud scheme?",
     "Are any of these 3 figures connected to each other?",
     "What specific allegations exist against Dearborn man?",
     "What specific allegations exist against Feeding Our Future defendant?",
@@ -558,7 +557,8 @@
     "What other organizations is Martin Weiss connected to?",
     "Where did the $11M allegedly go in $11M Minnesota Medicaid Fraud Case?",
     "What other organizations is Minnesota Medicaid Fraud Suspect connected to?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?"
+    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
+    "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 1991,
-    "articlesProcessed": 99200,
-    "redFlagsFound": 2300,
+    "totalScans": 1992,
+    "articlesProcessed": 99250,
+    "redFlagsFound": 2302,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraudulent_activity",
+          "description": "$11 million Medicaid fraud case",
+          "insight": "This indicates a significant case of fraud involving Medicaid funds, potentially linked to a larger scheme.",
+          "entities": [
+            "Minnesota Medicaid"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "CBS News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR0JGWHpaaFpJWEx2SGVmbEVyU2JSQ0phUlFXVUJ2cEttdlhlYkd0THlTMFFNUTQzeUlURkZRTXZLMDNWdnNaaWlpVUtPVnpMZDhIdTEwZVBuT3Foal9OYTlpYnhpVU1SUHl5SE16RXJGYzM0b1lYb0VzczlJU2xoaWw5bHpGMlVuRFpUdGV1cllDV0psZXFtd1JVYw"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in Medicaid fraud investigation?",
-        "Where did the $11 Million allegedly go in Feeding Our Future fraud scheme?",
-        "Where did the $11 Million allegedly go in $11 Million Medicaid fraud scheme?"
+        "Where did the $11 Million allegedly go in $11 Million Medicaid fraud scheme?",
+        "Are any of these 3 figures connected to each other?",
+        "What specific allegations exist against Dearborn man?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-11T23:32:14.211Z",
-  "lastUpdated": "2026-04-11T23:32:14.212Z"
+  "lastReflection": "2026-04-12T02:26:50.838Z",
+  "lastUpdated": "2026-04-12T02:26:50.839Z"
 }

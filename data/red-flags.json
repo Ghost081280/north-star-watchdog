@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "NFL TV deals under federal investigation",
+      "insight": "This could indicate a larger issue with sports broadcasting rights and potential financial irregularities.",
+      "entities": [
+        "NFL"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KXLY.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObFMyUEs3OFE5ZTFxWmVLbklFWUNqRlNMdzRMTHBmclhaTy1rMTBVS2hxNmZka19rN3RNUnFhejlyMG9KSnhYQkVsV0MxMGthU2YwUlZuYW9BZGxqVm0xLXl5R3owdWNfSFhzVVlQbnlJMnFDRXkySUNZZm1KNFZpM25nbllqMlFiTEQ0elU2bTNtMzBzZHByQnNwdlI5T1ZCX2xZbWxZLWYxWXNnSEhCZVNtRFVNZw",
+      "id": "rf-1775960810845-81mrm5x7o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-12T02:26:50.840Z",
+      "isNew": true
+    },
+    {
+      "type": "fraudulent_activity",
+      "description": "$11 million Medicaid fraud case",
+      "insight": "This indicates a significant case of fraud involving Medicaid funds, potentially linked to a larger scheme.",
+      "entities": [
+        "Minnesota Medicaid"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNR0JGWHpaaFpJWEx2SGVmbEVyU2JSQ0phUlFXVUJ2cEttdlhlYkd0THlTMFFNUTQzeUlURkZRTXZLMDNWdnNaaWlpVUtPVnpMZDhIdTEwZVBuT3Foal9OYTlpYnhpVU1SUHl5SE16RXJGYzM0b1lYb0VzczlJU2xoaWw5bHpGMlVuRFpUdGV1cllDV0psZXFtd1JVYw",
+      "id": "rf-1775960810845-utlihszi7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-12T02:26:50.840Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "NFL TV deals under federal investigation",
       "insight": "This could indicate a larger issue with sports broadcasting rights and potential financial irregularities.",
@@ -37,25 +75,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-11T22:30:52.921Z",
-      "isNew": false
-    },
-    {
-      "type": "large financial loss",
-      "description": "$11M Medicaid fraud case",
-      "insight": "The suspect's evasion and bond forfeiture indicate a significant risk of financial loss and potentially larger scheme.",
-      "entities": [
-        "Minnesota Medicaid Fraud Suspect"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWDFRNTNwVlB5bzZQX3Naa1Vta3AtUHM0OFpERTBEMklnTm9UbWJtdTZSVkhQNTI4Z3RMYVFsNVFyU1RrVHc3SEhFa3M4YTNMbGktQk5meHk0bE1QOE5WMG13NWlOQ2pVTXFvOXhDV2szQi1OY1h0SHRvXzJjSlEtZl9ERzhSZw?oc=5",
-      "id": "rf-1775939502938-bnl3argz6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-11T20:31:42.934Z",
       "isNew": false
     },
     {
@@ -967,30 +986,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-05T05:11:11.915Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program is under investigation and may face termination.",
-      "insight": "This could indicate a larger issue with program oversight and management.",
-      "entities": [
-        "Star Distribution",
-        "Minnesota authorities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUnZySjQ2b05IaG5CRXhJcWgzOXJmREhPYmJYcHZNOE9YdWZ0WG1ENUJSVmw5blNYVGZfSE9KUnRXTHVFdTYtNHpmQTFPZk5OUDMzOFNxUzZmcmpjVTJlbm9NR1VzNEI2Wk1uWWZKd3poYi1Wa3ZvczItUG1sRDk1bGlZdklwellYVklJYmFRbzJLQWxZVW5rbEJMSG5mOU1LX2NpZmRzRVZ4WTNENVVv?oc=5",
-      "id": "rf-1775355254920-k7t5hfecq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T02:14:14.916Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,7 +1000,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-11T23:32:14.213Z"
+  "lastUpdated": "2026-04-12T02:26:50.840Z"
 }
