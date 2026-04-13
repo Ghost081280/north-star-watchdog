@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential_kidnapping",
+      "description": "Ramsey County officials are investigating allegations of kidnapping and false imprisonment by federal officers",
+      "insight": "The allegations of kidnapping and false imprisonment by federal officers raise concerns about potential misconduct by law enforcement agencies",
+      "entities": [
+        "Ramsey County",
+        "federal agents"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://kare11.com/news/search-for-man-who-skipped-court-postpones-11-million-medicaid-fraud-trial",
+      "id": "rf-1776096693394-sn9ekft68",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-13T16:11:33.391Z",
+      "isNew": true
+    },
+    {
       "type": "Unauthorized employment",
       "description": "Eric Swalwell under investigation for hiring nanny from Brazil without authorization",
       "insight": "This raises concerns about potential immigration and employment law violations.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-13T14:46:50.216Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -966,42 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-06T11:48:22.847Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "The Feeding Our Future fraud case and the Medicare fraud investigation in Southern California both involve complex fraud schemes that have resulted in significant financial losses.",
-      "insight": "These cases demonstrate the need for increased vigilance and oversight to prevent similar schemes from occurring in the future. I will continue to monitor these cases and look for patterns and connections to other potential fraud schemes.",
-      "entities": [
-        "Feeding Our Future",
-        "Star Distribution",
-        "Medicare"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.fox9.com/news/owner-of-star-distribution-pleads-guilty-in-feeding-our-future-fraud-case",
-      "id": "rf-1775466454232-razt05zo8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-06T09:07:34.228Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-13T14:46:50.216Z"
+  "lastUpdated": "2026-04-13T16:11:33.391Z"
 }

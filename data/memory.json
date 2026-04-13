@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T11:53:51.199Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-07T13:15:50.283Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-13T14:46:50.214Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-13T16:11:33.389Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Unnamed Minnesota Defendant connected to?",
-    "Where did the $11 million allegedly go in $11M Minnesota Medicaid Fraud Case?",
     "What other organizations is Kenyan-linked man connected to?",
     "Where did the $11 million allegedly go in $11M Minnesota Medicaid fraud case?",
     "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
@@ -558,7 +556,9 @@
     "Where did the $11 million allegedly go in Medicaid Fraud Investigation?",
     "Where did the unknown allegedly go in Feeding Our Future Investigation?",
     "Where did the N/A allegedly go in DOJ Investigation into Assault on Journalist?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $0 allegedly go in Ramsey County investigation into federal agents?",
+    "Where did the $11 million allegedly go in $11 million Medicaid fraud trial?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2015,
-    "articlesProcessed": 100400,
-    "redFlagsFound": 2324,
+    "totalScans": 2016,
+    "articlesProcessed": 100450,
+    "redFlagsFound": 2326,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T14:46:50.214Z",
-  "lastUpdated": "2026-04-13T14:46:50.215Z"
+  "lastReflection": "2026-04-13T16:11:33.389Z",
+  "lastUpdated": "2026-04-13T16:11:33.390Z"
 }
