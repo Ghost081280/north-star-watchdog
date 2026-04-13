@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T02:11:04.247Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-07T05:08:21.960Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T02:32:00.497Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-13T05:40:19.714Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future scheme investigation?",
-    "What other organizations is Unnamed suspect connected to?",
-    "Where did the $11 million allegedly go in $11M Medicaid Fraud?",
     "Where did the N/A allegedly go in Feeding Our Future fraud?",
     "What other organizations is Unnamed Defendant connected to?",
     "Where did the $11 million allegedly go in $11M Medicaid Fraud Case?",
@@ -558,7 +555,10 @@
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Katie Cook?",
     "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?",
-    "Where did the $11 million allegedly go in $11 million Medicaid fraud case?"
+    "Where did the $11 million allegedly go in $11 million Medicaid fraud case?",
+    "What other organizations is Eric Swalwell connected to?",
+    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
+    "Where did the N/A allegedly go in Eric Swalwell Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2010,
-    "articlesProcessed": 100150,
-    "redFlagsFound": 2318,
+    "totalScans": 2011,
+    "articlesProcessed": 100200,
+    "redFlagsFound": 2319,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in Medicaid fraud investigation?",
         "Where did the Unknown allegedly go in Feeding Our Future scheme investigation?",
-        "What other organizations is Unnamed suspect connected to?"
+        "What other organizations is Unnamed suspect connected to?",
+        "Where did the $11 million allegedly go in $11M Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T02:32:00.497Z",
-  "lastUpdated": "2026-04-13T02:32:00.497Z"
+  "lastReflection": "2026-04-13T05:40:19.714Z",
+  "lastUpdated": "2026-04-13T05:40:19.715Z"
 }
