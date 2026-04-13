@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T19:11:27.546Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-07T20:45:13.489Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-13T21:46:55.456Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-13T22:42:06.583Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Raymond Elders?",
-    "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
     "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Katie Cook?",
     "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?",
@@ -558,7 +556,9 @@
     "Where did the unknown allegedly go in Ramsey County Investigation?",
     "Where did the $20M allegedly go in FBI Investigation into Phishing Network?",
     "Where did the $0 allegedly go in Minnesota ICE Arrest Investigation?",
-    "Where did the $11M allegedly go in $11M Minnesota Fraud Case?"
+    "Where did the $11M allegedly go in $11M Minnesota Fraud Case?",
+    "What other organizations is ChongLy Scott Thao connected to?",
+    "Where did the $11M allegedly go in $11M Minnesota fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2020,
-    "articlesProcessed": 100650,
-    "redFlagsFound": 2333,
+    "totalScans": 2021,
+    "articlesProcessed": 100700,
+    "redFlagsFound": 2335,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,16 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "large_fraud_case",
-          "description": "A suspect in an $11M Minnesota fraud case is missing ahead of a court date",
-          "insight": "This case involves a significant amount of money and raises concerns about potential financial misconduct",
+          "type": "large-scale fraud",
+          "description": "$11M Minnesota fraud case",
+          "insight": "This case raises concerns over large-scale fraud in Minnesota. Further investigation is needed to determine the extent of the fraud and identify those involved.",
           "entities": [
-            "suspect",
-            "$11M"
+            "Minnesota authorities"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "newsnation.com",
-          "sourceUrl": "https://newsnation.com/story/2026-04-13/suspect-in-11m-minnesota-fraud-case-missing-ahead-of-court-date/"
+          "source": "NewsNation",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSy1LZzJTNkZXbEZNWDRsZ0RZV3lBRkItT0pXaXFfcTY2ZjNhOS1jNTJSY3Zld1o1dUM0dUlNMWVyN3B2VUEzYV9mam5ET2NSckVqc3o0LXNNdnNRMnBJdEg0Tjg2bXFkbWhHMDd5WGZGM0NxaXJHX3dKN0dsNklSOW5aZUQ4Zkh3XzNjenFkcUnSAZYBQVVfeXFMTVZUY2FSODVxTWxhdlRMbXVGWHlGVlQzbkhTVDlIWS15ZVRFRFVhanFRckptZFFtclNDVWN1V2FUTGszZ2JGTWhoNmRWdGV6anpWMzhBZjZVMldiQTdTdThUSmNJOEVGUzJfdkJ5YktVWmp6Zk1TQkFObGlHdWNxY0RET1kwLXpQN3lDSXFOOS1ZQUs4d2Jn"
         }
       ]
     },
@@ -603,9 +602,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
-        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What specific allegations exist against Raymond Elders?"
+        "What specific allegations exist against Raymond Elders?",
+        "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -614,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T21:46:55.456Z",
-  "lastUpdated": "2026-04-13T21:46:55.456Z"
+  "lastReflection": "2026-04-13T22:42:06.583Z",
+  "lastUpdated": "2026-04-13T22:42:06.584Z"
 }
