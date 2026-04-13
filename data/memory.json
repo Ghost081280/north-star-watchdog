@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T20:45:13.489Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-07T21:41:08.335Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T22:42:06.583Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-04-13T23:41:27.829Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against Katie Cook?",
-    "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?",
     "Where did the $11 million allegedly go in $11 million Medicaid fraud case?",
     "What other organizations is Eric Swalwell connected to?",
     "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Minnesota ICE Arrest Investigation?",
     "Where did the $11M allegedly go in $11M Minnesota Fraud Case?",
     "What other organizations is ChongLy Scott Thao connected to?",
-    "Where did the $11M allegedly go in $11M Minnesota fraud case?"
+    "Where did the $11M allegedly go in $11M Minnesota fraud case?",
+    "What other organizations is Unknown connected to?",
+    "Where did the $20 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in ICE Arrest Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2021,
-    "articlesProcessed": 100700,
-    "redFlagsFound": 2335,
+    "totalScans": 2022,
+    "articlesProcessed": 100750,
+    "redFlagsFound": 2336,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "$11M Minnesota fraud case",
-          "insight": "This case raises concerns over large-scale fraud in Minnesota. Further investigation is needed to determine the extent of the fraud and identify those involved.",
-          "entities": [
-            "Minnesota authorities"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "NewsNation",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSy1LZzJTNkZXbEZNWDRsZ0RZV3lBRkItT0pXaXFfcTY2ZjNhOS1jNTJSY3Zld1o1dUM0dUlNMWVyN3B2VUEzYV9mam5ET2NSckVqc3o0LXNNdnNRMnBJdEg0Tjg2bXFkbWhHMDd5WGZGM0NxaXJHX3dKN0dsNklSOW5aZUQ4Zkh3XzNjenFkcUnSAZYBQVVfeXFMTVZUY2FSODVxTWxhdlRMbXVGWHlGVlQzbkhTVDlIWS15ZVRFRFVhanFRckptZFFtclNDVWN1V2FUTGszZ2JGTWhoNmRWdGV6anpWMzhBZjZVMldiQTdTdThUSmNJOEVGUzJfdkJ5YktVWmp6Zk1TQkFObGlHdWNxY0RET1kwLXpQN3lDSXFOOS1ZQUs4d2Jn"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Raymond Elders?",
-        "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What specific allegations exist against Katie Cook?",
+        "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T22:42:06.583Z",
-  "lastUpdated": "2026-04-13T22:42:06.584Z"
+  "lastReflection": "2026-04-13T23:41:27.829Z",
+  "lastUpdated": "2026-04-13T23:41:27.830Z"
 }

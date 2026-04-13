@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential Kidnapping",
+      "description": "The arrest of a Hmong American man by ICE agents is being investigated as a possible kidnapping",
+      "insight": "This case raises concerns about the actions of federal agents and the potential for abuse of power. Further investigation is needed to determine the circumstances surrounding the arrest and to ensure that the rights of the individual were not violated.",
+      "entities": [
+        "ICE",
+        "Ramsey County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/ice-arrest-hmong-american-man-kidnapping-investigation/",
+      "id": "rf-1776123687834-k80zu9vcp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-13T23:41:27.831Z",
+      "isNew": true
+    },
+    {
       "type": "potential kidnapping",
       "description": "Ramsey County officials are investigating the removal of a US citizen from his home as a possible kidnapping",
       "insight": "This case raises concerns over the treatment of individuals by federal officers, particularly those of Hmong descent. Further investigation is needed to determine the circumstances surrounding the arrest.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-13T22:42:06.585Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large-scale fraud",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-13T22:42:06.585Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential_kidnapping",
@@ -964,41 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-07T13:15:50.284Z",
       "isNew": false
-    },
-    {
-      "type": "fraudulent activities",
-      "description": "Alberta Justice Minister curtailed election regulator when Sam Mraiche was under investigation",
-      "insight": "This indicates potential interference or corruption in investigations, which could be a significant red flag for fraud and abuse of power.",
-      "entities": [
-        "Alberta Justice Minister",
-        "Sam Mraiche"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Globe and Mail",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbFZTN3BkMFRwcTltcjVpNTYtemJnenFHY09iTDlkU29fNkxPT2lfMV9ZZGN0ZG80dTlEbFd5cFVwbXRGNHhJUmRVbmVSUGR1YUs2SFdkWm81Xy1MMGU1VGh6VTJYOXB2MFFzcmpmT2tzRWU4NDA5Mmg1cjZJaXlOWTRUZ2lyMk1ZT3VfZVJCcDZyMGlTYnNUdmM4T2tuTmM?oc=5",
-      "id": "rf-1775567750287-qtywjztxl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T13:15:50.284Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-13T22:42:06.585Z"
+  "lastUpdated": "2026-04-13T23:41:27.831Z"
 }
