@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "DOJ opens investigation into alleged assault against a journalist during anti-ICE protest",
+      "insight": "Potential connection to larger pattern of protests and potential violence",
+      "entities": [
+        "DOJ",
+        "journalist"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WPEC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPZnVtMW85aEtlR2I5by1UbHF6V0xXZlNBWk5TdlNEMVd3cTN1VXJSMHJQdm9hbXBsVFdRS0F0NEFKODdlclljSl9zUmNxVzYyYXM2dE1Cd1lzWlM4TFRDZ1dRaHR0cndibE5Kd2N3dGVHZGlQY09iRGVBVXZqOTVnbTlrMjdZaFFJRkk3TFZiTFh5bFRmcnZ6U0FpV1IzZ0VaRGdTSWdnNmpTcWlwRlZCQmdoVDVLNVlpb005S0hMaE9VSklpQ3ZrTWJIcWJybHhIV1g4d3JTZVNTVndaeU9pRTV1SnRhenQ3dEFZajNLN0wzV2pOLTRzREJTV3FNMWN4YkZ2UFpsc2haZFZlZFlnb1duRWxab3VORnNnRDVya3FZYmtvRFNwYmFZUTRCbEEzVzlqdEZCaXRPdmY4OHAzWjJWa2l1Uy00WTQtS3FlLXZ5SDNlOGhmblkyV1IyUXc",
+      "priorityLevel": "high",
+      "id": "rf-1776047520502-vill255yo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-13T02:32:00.499Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into $11M Minnesota Medicaid fraud",
       "insight": "This case involves a large amount of alleged fraud and a defendant who has skipped court, forfeiting their bond.",
@@ -966,30 +987,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-05T15:31:18.226Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Nonprofit at the center of federal corruption probe still has a $94M city contract",
-      "insight": "This raises concerns about oversight and potential misuse of funds. Further investigation into the nonprofit's activities and connections is warranted.",
-      "entities": [
-        "Nonprofit organization"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Gothamist",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaWZaWXN4cU50Q2FmTG5pVHFaeUZjRVcxWkJuV09yMnJhUkZvc2xQZVZQcHdKeWtNLXI2NWFmLTZYTHFlMjhNRnBfWVZNUV9scXVreTJwcE0tNzI0TFZSTWpwRWNvN3RnNC1VTVBkU29sSWZSYUd1TFpBMUF3anBGTHRUZnBSRHVCNERua3VCbjJmSDVHekFCM1k2LU4yTlVxelFQcTJtR1JlVGRv",
-      "id": "rf-1775399678745-ks2bqakvb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-05T14:34:38.741Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,8 +1000,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-12T23:33:36.420Z"
+  "lastUpdated": "2026-04-13T02:32:00.499Z"
 }
