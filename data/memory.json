@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T17:58:46.125Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-07T19:11:27.546Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T20:53:55.279Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-13T21:46:55.456Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Raymond Elders?",
     "Where did the $11M allegedly go in $11M Minnesota Medicaid fraud?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Ramsey County investigation into federal agents?",
     "Where did the $11 million allegedly go in $11 million Medicaid fraud trial?",
     "Where did the unknown allegedly go in Ramsey County Investigation?",
-    "Where did the $20M allegedly go in FBI Investigation into Phishing Network?"
+    "Where did the $20M allegedly go in FBI Investigation into Phishing Network?",
+    "Where did the $0 allegedly go in Minnesota ICE Arrest Investigation?",
+    "Where did the $11M allegedly go in $11M Minnesota Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2019,
-    "articlesProcessed": 100600,
-    "redFlagsFound": 2331,
+    "totalScans": 2020,
+    "articlesProcessed": 100650,
+    "redFlagsFound": 2333,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large_fraud_case",
+          "description": "A suspect in an $11M Minnesota fraud case is missing ahead of a court date",
+          "insight": "This case involves a significant amount of money and raises concerns about potential financial misconduct",
+          "entities": [
+            "suspect",
+            "$11M"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "newsnation.com",
+          "sourceUrl": "https://newsnation.com/story/2026-04-13/suspect-in-11m-minnesota-fraud-case-missing-ahead-of-court-date/"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T20:53:55.279Z",
-  "lastUpdated": "2026-04-13T20:53:55.280Z"
+  "lastReflection": "2026-04-13T21:46:55.456Z",
+  "lastUpdated": "2026-04-13T21:46:55.456Z"
 }
