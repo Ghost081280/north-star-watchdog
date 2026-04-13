@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T15:06:43.183Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-07T16:56:55.638Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T17:59:14.359Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-13T19:21:48.243Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2017,
-    "articlesProcessed": 100500,
-    "redFlagsFound": 2327,
+    "totalScans": 2018,
+    "articlesProcessed": 100550,
+    "redFlagsFound": 2329,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "phishing_network",
+          "description": "FBI and Indonesian Police dismantle global phishing operation behind $20M fraud attempts",
+          "insight": "This is a significant development in the fight against cybercrime. The dismantling of the phishing network will help prevent further financial losses.",
+          "entities": [
+            "FBI",
+            "Indonesian Police"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Hacker News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96Rm4wazdIR092WmdMN3A4SXZRVlB5RFczbUluWUlYazd6NGFQbHpsNEZ3d1dxc2s1a2VVSnR3bnBWcmtLTG5vX2RJRXlQeXJfSkRmVGcyX1pUakg0QkZSbUF3bGExdXg4R19DVk92MXBwSDlQc0JXVzRVR2VDb0U?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kenyan-linked man connected to?",
-        "Where did the $11 million allegedly go in $11M Minnesota Medicaid fraud case?",
-        "Where did the $11 million allegedly go in $11 million Medicaid fraud?"
+        "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
+        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What specific allegations exist against Raymond Elders?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T17:59:14.359Z",
-  "lastUpdated": "2026-04-13T17:59:14.360Z"
+  "lastReflection": "2026-04-13T19:21:48.243Z",
+  "lastUpdated": "2026-04-13T19:21:48.243Z"
 }
