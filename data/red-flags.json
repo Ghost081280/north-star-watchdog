@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential_misconduct",
+      "description": "FBI investigation into ICE agents for alleged kidnapping and burglary",
+      "insight": "This raises concerns about law enforcement accountability and potential misconduct. Further investigation is needed to determine the facts and identify any wrongdoing.",
+      "entities": [
+        "ICE agents",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPXzFFQlVkYnp6RnpfbW9iSnpkdmN2dHN2aHlsVHFZbmJPbkE5UTdnS1Q0UHJVOTAxZ2VsT2d3TDBMUmVYc2hBbDJyYjRaUHpQQXBaWVpuOFQ4Y0l1WV9BWU9hN1hRcEZzZWJpUzF1QUhiZGJQQ2txVWdlMlJ3VXByYXVYdTYtR3ZhMTNIeHRxM2haNTJ5ekQ3MnBXZ2hONTdhMndOb2otSWhkQUxnZkc3QVdMVGs2STJVczZNQmxPWV9hZ2ZiRV9qWTBSWkd2YmFvelFnUWR4TzRNVFVqNlVDUVR4dWNGN1NuazR0RQ?oc=5",
+      "id": "rf-1776113635285-ca4yoxkhy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-13T20:53:55.281Z",
+      "isNew": true
+    },
+    {
       "type": "potential_kidnapping",
       "description": "Ramsey County officials are investigating potential kidnapping and false imprisonment by federal officers",
       "insight": "This is a serious allegation that requires thorough investigation. The involvement of federal agents raises concerns about potential abuse of power.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-13T19:21:48.244Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "phishing_network",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-13T19:21:48.244Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential misconduct by federal agents",
@@ -963,41 +983,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-06T22:35:42.384Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Multiple cases of Medicare fraud under investigation, with new arrests and cases being added regularly.",
-      "insight": "I notice a pattern of Medicare fraud cases popping up across the country, with significant amounts of money being defrauded from the system. This suggests a larger issue that needs to be addressed.",
-      "entities": [
-        "Southern California individuals",
-        "healthcare providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://foxla.com/news/inside-the-60m-takedown-8-southern-california-cases-under-medicare-fraud-investigation/",
-      "id": "rf-1775507786010-mdvatki48",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-06T20:36:26.006Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-13T19:21:48.244Z"
+  "lastUpdated": "2026-04-13T20:53:55.281Z"
 }

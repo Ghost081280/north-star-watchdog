@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T16:56:55.638Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-07T17:58:46.125Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T19:21:48.243Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-13T20:53:55.279Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2018,
-    "articlesProcessed": 100550,
-    "redFlagsFound": 2329,
+    "totalScans": 2019,
+    "articlesProcessed": 100600,
+    "redFlagsFound": 2331,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "phishing_network",
-          "description": "FBI and Indonesian Police dismantle global phishing operation behind $20M fraud attempts",
-          "insight": "This is a significant development in the fight against cybercrime. The dismantling of the phishing network will help prevent further financial losses.",
-          "entities": [
-            "FBI",
-            "Indonesian Police"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Hacker News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96Rm4wazdIR092WmdMN3A4SXZRVlB5RFczbUluWUlYazd6NGFQbHpsNEZ3d1dxc2s1a2VVSnR3bnBWcmtLTG5vX2RJRXlQeXJfSkRmVGcyX1pUakg0QkZSbUF3bGExdXg4R19DVk92MXBwSDlQc0JXVzRVR2VDb0U?oc=5"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T19:21:48.243Z",
-  "lastUpdated": "2026-04-13T19:21:48.243Z"
+  "lastReflection": "2026-04-13T20:53:55.279Z",
+  "lastUpdated": "2026-04-13T20:53:55.280Z"
 }
