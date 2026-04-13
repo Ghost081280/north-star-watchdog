@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T13:15:50.283Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-07T15:06:43.183Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-13T16:11:33.389Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-04-13T17:59:14.359Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Kenyan-linked man connected to?",
-    "Where did the $11 million allegedly go in $11M Minnesota Medicaid fraud case?",
     "Where did the $11 million allegedly go in $11 million Medicaid fraud?",
     "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Raymond Elders?",
@@ -558,7 +556,9 @@
     "Where did the N/A allegedly go in DOJ Investigation into Assault on Journalist?",
     "Where did the $11 million allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $0 allegedly go in Ramsey County investigation into federal agents?",
-    "Where did the $11 million allegedly go in $11 million Medicaid fraud trial?"
+    "Where did the $11 million allegedly go in $11 million Medicaid fraud trial?",
+    "Where did the unknown allegedly go in Ramsey County Investigation?",
+    "Where did the $20M allegedly go in FBI Investigation into Phishing Network?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2016,
-    "articlesProcessed": 100450,
-    "redFlagsFound": 2326,
+    "totalScans": 2017,
+    "articlesProcessed": 100500,
+    "redFlagsFound": 2327,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Unnamed Minnesota Defendant connected to?",
-        "Where did the $11 million allegedly go in $11M Minnesota Medicaid Fraud Case?",
-        "What other organizations is Kenyan-linked man connected to?"
+        "What other organizations is Kenyan-linked man connected to?",
+        "Where did the $11 million allegedly go in $11M Minnesota Medicaid fraud case?",
+        "Where did the $11 million allegedly go in $11 million Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T16:11:33.389Z",
-  "lastUpdated": "2026-04-13T16:11:33.390Z"
+  "lastReflection": "2026-04-13T17:59:14.359Z",
+  "lastUpdated": "2026-04-13T17:59:14.360Z"
 }
