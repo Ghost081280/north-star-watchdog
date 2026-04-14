@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future nonprofit organization terminated due to allegations of wire fraud and money laundering",
+      "insight": "The termination of Feeding Our Future's program raises concerns about the organization's accountability and potential misuse of funds. Further investigation is needed to uncover the extent of the fraud and identify any other individuals or entities involved.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Feeding Our Future fraud leader Aimee Bock to be sentenced in May",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgNBVV95cUxQTGhtOFkyLU5wUTJtcDVMOUxzZlRSQmpMX3EzcmJROTlFNVB6WW84NkphVHpYeFhGX0REV2RScWY1Q0k4XzZ1dEF2VnpUMU5XdVFzdTl4VnMyb2R1V2kyam9nbWVoUjZidThuci1fblprWUNrUDQ4dE55OV9RVHlfeFFTTm1qSVJoUVJlM3NkWHdwSS1jVDBUanc1VFVEWFA5LXNUU3QxQkhoa0pDSER3NWVPTElsNXBWVDFXZlpwRXUxeHNHOUh3QW43MUxVRXZNVzE0QUdjZGxPaUkzYUtMVkYwMzQtazE4cmRDd1ZTQUxDYlowRDYwQ1NBdVRadHRlUzhyeDZEZnJ3cEVMZVpSRFg4cW54X0pPRUVTaDB4SFJiX1hkc1VSR0l1TUplTHZPYkR1RTVoVHkyOGp2dHBLMGRaLVBvSWJUdjhBUlg2VjhnZ1Q5RDExZmdHODJZY1NvNEhCYkdxQkRGQWxjWVZacGxiMTZoVzBIYjVzRU9PaVNqaUx3dDRJd0djNlJRVFRGZnpGSVh3",
+      "id": "rf-1776199944135-05nsae0ad",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-14T20:52:24.132Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI has launched an investigation into the Offset shooting at a South Florida casino.",
       "insight": "This investigation may be connected to other cases of violence or fraud in the entertainment industry. Further research is needed to determine the extent of the investigation and potential connections to other entities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-14T19:13:27.895Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -967,30 +987,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-08T07:16:39.901Z",
       "isNew": false
-    },
-    {
-      "type": "alleged assault",
-      "description": "The Osceola police chief is under investigation for alleged assault.",
-      "insight": "This investigation raises concerns about the police chief's actions and potential misconduct.",
-      "entities": [
-        "Osceola police chief",
-        "Osceola Police Department"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "K8 News | Jonesboro, Arkansas",
-      "sourceUrl": "https://www.k8news.com/2026/04/07/video-newly-hired-osceola-police-chief-under-investigation-for-alleged-assault/",
-      "id": "rf-1775604974760-3wx1x941p",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T23:36:14.755Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,7 +1001,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1018,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-14T19:13:27.895Z"
+  "lastUpdated": "2026-04-14T20:52:24.132Z"
 }
