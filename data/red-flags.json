@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal_investigation",
+      "description": "ICE agents are being investigated for detaining a US citizen in Minnesota",
+      "insight": "This incident raises concerns about the accountability of ICE agents and the potential for wrongful detentions. Further investigation is needed to determine the circumstances surrounding the detention and to ensure that those responsible are held accountable.",
+      "entities": [
+        "ICE",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/04/13/us/ice-detention-investigation-minnesota.html",
+      "id": "rf-1776172931342-4vrqk2bf0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-14T13:22:11.338Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
       "description": "Investigation into ICE agents' actions during Metro Surge",
       "insight": "The investigation into potential crimes by federal officials during Metro Surge indicates possible misconduct by ICE agents.",
       "entities": [
@@ -966,25 +986,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-07T17:58:46.127Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated due to allegations of fraud.",
-      "insight": "This could be a sign of a larger issue with non-profit fraud in the state, and warrants further investigation.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Feeding Our Future defendant avoids prison after early cooperation",
-      "sourceUrl": "https://www.mprnews.org/story/2024/04/06/feeding-our-future-defendant-avoids-prison",
-      "id": "rf-1775581015644-3wnb3bv4q",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T16:56:55.641Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,6 +998,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1014,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-14T11:01:52.432Z"
+  "lastUpdated": "2026-04-14T13:22:11.338Z"
 }
