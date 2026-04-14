@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Investigation into ICE agents' actions during Metro Surge",
+      "insight": "The investigation into potential crimes by federal officials during Metro Surge indicates possible misconduct by ICE agents.",
+      "entities": [
+        "ICE agents",
+        "Ramsey County"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://minnesota-reformer.com/2024/04/13/ramsey-county-investigating-five-cases-of-potential-crimes-by-federal-officials-during-metro-surge/",
+      "id": "rf-1776151738425-l122vrssa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-14T07:28:58.421Z",
+      "isNew": true
+    },
+    {
       "type": "Potential kidnapping and false imprisonment",
       "description": "The detention of ChongLy Scott Thao by ICE agents has raised concerns about potential kidnapping and false imprisonment.",
       "insight": "This incident highlights the need for increased oversight of federal officers and their interactions with the public. Further investigation is needed to determine the circumstances surrounding Thao's detention.",
@@ -965,31 +985,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-07T16:56:55.641Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The termination of a nonprofit organization's program due to fraud concerns.",
-      "insight": "This termination indicates a significant concern about fraud in nonprofit organizations.",
-      "entities": [
-        "Feeding Our Future",
-        "Federal agency"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MPR News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLTE5RzRWZGZrdEpmMFRPQ0k1elI4ZzNXbHIydDVPYzVCcUlnSFhtWlU5SDFTMVVTWHRyWXpHTU9SaEZ6eVR0cVpUU1JLQ01OdnlwVUJfbWpXTmUxZ3cwLXplTzk4Q2N4TDNXaHkwbnpVRW9nS3RWeHJXQ2xxV2pQNEFGM0NWbWQtUUhfaDIxYm1ibE92emFtV2FMd2VRbWt1Q3lPWDZOZXJ3OWM?oc=5",
-      "id": "rf-1775574403189-mgenbu5ld",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T15:06:43.185Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +997,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-14T05:22:17.870Z"
+  "lastUpdated": "2026-04-14T07:28:58.421Z"
 }
