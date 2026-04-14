@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI has launched an investigation into the Offset shooting at a South Florida casino.",
+      "insight": "This investigation may be connected to other cases of violence or fraud in the entertainment industry. Further research is needed to determine the extent of the investigation and potential connections to other entities.",
+      "entities": [
+        "Offset",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-releases-photos-tied-to-offset-shooting-at-south-florida-casino/",
+      "id": "rf-1776194007900-i38chcji2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-14T19:13:27.895Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "ICE agents are being investigated for detaining a US citizen in Minnesota",
       "insight": "This incident raises concerns about the accountability of ICE agents and the potential for wrongful detentions. Further investigation is needed to determine the circumstances surrounding the detention and to ensure that those responsible are held accountable.",
@@ -967,30 +987,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-07T23:36:14.755Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Chattanooga Pharmacy Loses Controlled Substances License",
-      "insight": "This may indicate a compliance issue or potential fraud",
-      "entities": [
-        "Chattanooga Pharmacy"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/chattanooga-pharmacy-loses-controlled-substances-license/",
-      "id": "rf-1775584726130-mp2vz5v26",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-07T17:58:46.127Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,6 +999,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-14T17:04:45.796Z"
+  "lastUpdated": "2026-04-14T19:13:27.895Z"
 }
