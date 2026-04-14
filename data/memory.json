@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-07T21:41:08.335Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-07T22:37:07.836Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-13T23:41:27.829Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-14T02:25:56.446Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11 million allegedly go in $11 million Medicaid fraud case?",
-    "What other organizations is Eric Swalwell connected to?",
-    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?",
     "Where did the N/A allegedly go in Eric Swalwell Investigation?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $11 million allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $11M allegedly go in $11M Minnesota fraud case?",
     "What other organizations is Unknown connected to?",
     "Where did the $20 billion allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in ICE Arrest Investigation?"
+    "Where did the Unknown allegedly go in ICE Arrest Investigation?",
+    "Where did the $20 billion allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the None allegedly go in ICE agents investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2022,
-    "articlesProcessed": 100750,
-    "redFlagsFound": 2336,
+    "totalScans": 2023,
+    "articlesProcessed": 100800,
+    "redFlagsFound": 2338,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "The high risk of Medicaid fraud in Minnesota is a significant concern, with the state spending $20 billion on programs at high risk for fraud since 2018.",
+          "insight": "This issue highlights the need for increased oversight and monitoring of Medicaid programs to prevent fraud and ensure that funds are being used effectively. Further investigation is needed to determine the extent of the problem and identify potential solutions.",
+          "entities": [
+            "Minnesota DHS"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "kare11.com",
+          "sourceUrl": "https://www.kare11.com/article/news/investigations/minnesota-medicaid-fraud/89-615e5d8e-5f7a-41a6-8f7e-5e934f2e2c7d"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What specific allegations exist against Katie Cook?",
-        "Where did the $11 million allegedly go in $11 million Minnesota Medicaid fraud case?"
+        "Where did the $11 million allegedly go in $11 million Medicaid fraud case?",
+        "What other organizations is Eric Swalwell connected to?",
+        "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-13T23:41:27.829Z",
-  "lastUpdated": "2026-04-13T23:41:27.830Z"
+  "lastReflection": "2026-04-14T02:25:56.446Z",
+  "lastUpdated": "2026-04-14T02:25:56.446Z"
 }
