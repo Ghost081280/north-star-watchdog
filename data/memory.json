@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-08T08:59:28.344Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-08T10:14:23.853Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-14T13:22:11.337Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-14T15:12:10.011Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2028,
-    "articlesProcessed": 101050,
-    "redFlagsFound": 2344,
+    "totalScans": 2029,
+    "articlesProcessed": 101100,
+    "redFlagsFound": 2345,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in DOJ Investigation into Assault on Journalist?",
         "Where did the $11 million allegedly go in Minnesota Medicaid Fraud?",
-        "Where did the $0 allegedly go in Ramsey County investigation into federal agents?"
+        "Where did the $0 allegedly go in Ramsey County investigation into federal agents?",
+        "Where did the $11 million allegedly go in $11 million Medicaid fraud trial?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-14T13:22:11.337Z",
-  "lastUpdated": "2026-04-14T13:22:11.337Z"
+  "lastReflection": "2026-04-14T15:12:10.011Z",
+  "lastUpdated": "2026-04-14T15:12:10.012Z"
 }
