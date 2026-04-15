@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-09T02:05:25.031Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-04-09T05:08:15.203Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-15T10:58:21.031Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-04-15T11:58:01.446Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2040,
-    "articlesProcessed": 101650,
-    "redFlagsFound": 2358,
+    "totalScans": 2041,
+    "articlesProcessed": 101700,
+    "redFlagsFound": 2360,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,25 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud",
-          "description": "A Corpus Christi tire shop owner has been charged with fraud, and the FBI is searching for victims.",
-          "insight": "This could indicate a larger scheme or pattern of fraudulent activity.",
-          "entities": [
-            "Corpus Christi tire shop owner"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "WOAI",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZS1SODhCU3FpNTJLNzZVcmN4LUdtaWFxenU1YXRmZVJLcGtRSjR6bjBoOGxjenUwSDJWYVhQQmF1dENsM1VybXAtRGEzX1VUbWdhSTZEd0NDZTk2ZS1hZWROemtndWFMS2cxdk9OVFBQSGVBX1dhYmlXVTFPazdOYzdoVmlzZzZuVXN3RUw3M1pzS3VQSy1hTmxvVjhxTHZOWW9iV1Z3LVZHX0FOMHNBOXdMcUZZQlNjT1dxSEFGSktRdVhrbVgwN3FxWnRZWUoxbDhVME9nRVowWFFzZkxvSzVUdTRRb3dmM1NTbzNn"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-15T10:58:21.031Z",
-  "lastUpdated": "2026-04-15T10:58:21.032Z"
+  "lastReflection": "2026-04-15T11:58:01.446Z",
+  "lastUpdated": "2026-04-15T11:58:01.447Z"
 }
