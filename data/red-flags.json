@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "corruption_investigation",
+      "description": "The FBI's investigation into possible corruption in Lancaster City Hall.",
+      "insight": "This investigation could uncover potential corruption and wrongdoing by public officials.",
+      "entities": [
+        "Lancaster City Hall",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "FOX 11 Los Angeles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1xYTdyejYwOHJDNEdKLVQ3cXphMHVIQWNwRnZzNGE1bVFUOUdYNGp3QjJfZ3FDTlVkcEhJcnB5MWFJcUE2SjNLaWFJcTB2d0FoUmFSeHlsSWs1U1FsbV9Vb0w0TmhySVcwODFVeG1LODJ5RG1hUEs1WTh6OE52d9IBgwFBVV95cUxNeWhQdmZDakN2Q3BQVXlnemIyVTF6RlQtcVBLMnd0QUM0ZHV6cHhuRnIxV2YzUGlZTlVIWU9jLS1OOW1hZzdWcVpJaGlfNEN1cENEV3BBR0FXQW1RWmJuRnltX0hqSXlEQW9zd25haGZsWEJKMTNuNENaaHFqWi1zS0Vfdw",
+      "id": "rf-1776289885811-qw2vnrwih",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-15T21:51:25.808Z",
+      "isNew": true
+    },
+    {
       "type": "threats to federal officials",
       "description": "Trump has threatened to fire Federal Reserve Chair Jerome Powell if he doesn't leave office, which could be seen as a threat to a federal official.",
       "insight": "This could be a sign of a larger pattern of behavior by Trump, and it's essential to investigate further to determine if there are any other instances of similar threats or actions.",
@@ -961,41 +981,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-09T21:43:49.481Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating the NFL for anticompetitive practices, which could lead to significant fines and changes to the league's business practices.",
-      "insight": "This investigation could have major implications for the NFL and its fans. I will be tracking this investigation closely to see how it develops.",
-      "entities": [
-        "NFL",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/sports/nfl/2026/04/09/nfl-investigation-justice-department-anticompetitive-practices/7123456/",
-      "id": "rf-1775761454634-4dcluzpw0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-09T19:04:14.631Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-15T20:44:55.351Z"
+  "lastUpdated": "2026-04-15T21:51:25.808Z"
 }
