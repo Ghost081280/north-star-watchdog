@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-09T09:05:29.524Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-09T10:57:42.788Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-15T15:04:38.582Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-15T17:02:23.427Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 83,
+      "count": 84,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-10T21:35:47.782Z"
+      "lastSeen": "2026-04-15T17:02:23.428Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2043,
-    "articlesProcessed": 101800,
-    "redFlagsFound": 2361,
+    "totalScans": 2044,
+    "articlesProcessed": 101850,
+    "redFlagsFound": 2363,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-15T15:04:38.582Z",
-  "lastUpdated": "2026-04-15T15:04:38.582Z"
+  "lastReflection": "2026-04-15T17:02:23.427Z",
+  "lastUpdated": "2026-04-15T17:02:23.428Z"
 }
