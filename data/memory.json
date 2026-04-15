@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-08T23:37:26.168Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-09T02:05:25.031Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-04-15T09:17:54.979Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-15T10:58:21.031Z",
+      "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2039,
-    "articlesProcessed": 101600,
-    "redFlagsFound": 2356,
+    "totalScans": 2040,
+    "articlesProcessed": 101650,
+    "redFlagsFound": 2358,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud",
+          "description": "A Corpus Christi tire shop owner has been charged with fraud, and the FBI is searching for victims.",
+          "insight": "This could indicate a larger scheme or pattern of fraudulent activity.",
+          "entities": [
+            "Corpus Christi tire shop owner"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "WOAI",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZS1SODhCU3FpNTJLNzZVcmN4LUdtaWFxenU1YXRmZVJLcGtRSjR6bjBoOGxjenUwSDJWYVhQQmF1dENsM1VybXAtRGEzX1VUbWdhSTZEd0NDZTk2ZS1hZWROemtndWFMS2cxdk9OVFBQSGVBX1dhYmlXVTFPazdOYzdoVmlzZzZuVXN3RUw3M1pzS3VQSy1hTmxvVjhxTHZOWW9iV1Z3LVZHX0FOMHNBOXdMcUZZQlNjT1dxSEFGSktRdVhrbVgwN3FxWnRZWUoxbDhVME9nRVowWFFzZkxvSzVUdTRRb3dmM1NTbzNn"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Ramsey County Investigation?",
-        "Where did the None allegedly go in ICE Agent Investigation?",
-        "Where did the N/A allegedly go in ICE Detention Investigation?"
+        "What other organizations is Aimee Bock connected to?",
+        "Where did the $20 billion allegedly go in Medicaid Fraud Investigation?",
+        "What other organizations is Hanahan Mayor Pro Tem connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-15T09:17:54.979Z",
-  "lastUpdated": "2026-04-15T09:17:54.980Z"
+  "lastReflection": "2026-04-15T10:58:21.031Z",
+  "lastUpdated": "2026-04-15T10:58:21.032Z"
 }
