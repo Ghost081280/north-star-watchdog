@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Feeding Our Future investigation has raised concerns about the potential for widespread fraud in the non-profit sector.",
+      "insight": "I believe that this investigation may be just the tip of the iceberg, and that there may be other similar schemes operating in the non-profit sector. Further investigation is needed to determine the full extent of the fraud.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/feeding-our-future-fraud-leader-aimee-bock-to-be-sentenced-in-may/ar-AAI5xLq",
+      "id": "rf-1776238145802-vzhdr7czk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-15T07:29:05.798Z",
+      "isNew": true
+    },
+    {
       "type": "fraud allegations",
       "description": "Feeding Our Future accused of fraud, leader to be sentenced",
       "insight": "This case indicates potential widespread fraud in Minnesota, possibly involving nonprofit organizations.",
@@ -968,31 +988,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-08T18:12:45.422Z",
       "isNew": false
-    },
-    {
-      "type": "potential loophole",
-      "description": "A 30-year-old error may limit DHS authority in fraud kickback investigations, according to a Legislative Auditor's report.",
-      "insight": "This potential loophole could hinder DHS's ability to investigate and prevent fraud, allowing fraudulent activities to go unchecked. Further investigation is necessary to understand the implications of this error and to determine the best course of action to address it.",
-      "entities": [
-        "DHS",
-        "Legislative Auditor"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYk93WUdrcUk1UzBKUXliVW1DRzJ0dy1CM0VybGRBVjMxMHFxaHpKU3NaRkwwMVBfSGRQX3dHUU1EQnNqV1ZLLVlzSTdhWk5sNDRZbTc1dWN3RWREU0Qzb20tVVN6Y293WFBuSTctamVmX2RvbFFfVm4zTnlHVldqRnBhSVB0LXdzTGRveE54UXVkTEVxWWctRFBmVG9XV1RNdXRaMUlrNW5Ma3lXMVl5RWg0TjZoaVZUeG9BZGR1djhXV1k4Ym1SMXR4SUVxWktvUnAyYTU4bw",
-      "url": "https://www.5eyewitnessnews.com/news/local-news/30-year-old-error-may-limit-dhs-authority-during-fraud-kickback-investigations-legislative-auditor-says",
-      "id": "rf-1775667635027-57atkaaoy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-08T17:00:35.024Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1002,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1020,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-15T05:22:54.846Z"
+  "lastUpdated": "2026-04-15T07:29:05.798Z"
 }
