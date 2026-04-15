@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The Federal Reserve renovations investigation has been met with resistance from the Federal Reserve, with Justice Department officials being turned away from the construction site.",
+      "insight": "This resistance from the Federal Reserve could indicate that there is something to hide, and further investigation is needed to uncover the truth.",
+      "entities": [
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/article/justice-department-officials-turned-away-from-fed-construction-site",
+      "id": "rf-1776260650234-qvwfp498r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-15T13:44:10.230Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Federal H.R. 1 cuts threaten Lake County health care, food aid, and fiscal stability",
       "insight": "Potential program terminations and funding cuts could indicate a larger pattern of financial mismanagement or political maneuvering. Investigating the entities involved and the extent of these cuts could reveal more about the situation.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-15T11:58:01.448Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-15T11:58:01.448Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -965,30 +984,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-09T02:05:25.032Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "Multiple cases of potential fraud have been reported, including a Missouri company suspending operations amid a criminal probe and a Quebec immigration minister under investigation for alleged ethics breaches.",
-      "insight": "These cases suggest a need for increased scrutiny of companies and government officials to prevent fraudulent activities.",
-      "entities": [
-        "Missouri company",
-        "Quebec immigration minister"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOT1NoVlB3T3hPTnk5czcxMFJMeDliU2h1NVlteUVGbXBmUXFMbGZDS3pWWENXTVFwN2sxZnU1RlNLSktwd094NUJDSThTdjZkM2E4azNXUldCb3lrcmJ6UGtTNmJSLUxmSktfMF9QMkRPQ1RIQ1FOS1JIVm5VN0ZMY2owQ2hqQ1phcWVMaWNWRE5scGdNLUxpZXdmZ2ZfUEpMZ1hxU2E0RXh0anR3aVBUTjFaU21sTjI4N1o5Qng1emttLWhjX0lGdlV1ZWRvLW0z",
-      "id": "rf-1775691446174-xwgexergh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-08T23:37:26.170Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -997,8 +998,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1016,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-15T11:58:01.448Z"
+  "lastUpdated": "2026-04-15T13:44:10.230Z"
 }
