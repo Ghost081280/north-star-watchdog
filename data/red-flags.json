@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Feeding Our Future accused of fraud, leader to be sentenced",
+      "insight": "This case indicates potential widespread fraud in Minnesota, possibly involving nonprofit organizations.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxQRXUzaHFWNkFuaGYyTjZISW04WFp0b0p3MV9vU2VQNk56NnlZMXh3dkRSVWljM29yZkJ2NWhPME01SVdZRFQxWnhvclJkZlc3TlBRU2RGSXZaY2d2WkhMYmVLWk5PbUdrbXdHTnZIeXBIb3BYWnNyVXlHRUNVaHlHOTNBUjlPMkptUzBOWVhZa01FajV4NGdDbHpzT3YyWm1GdFZXVEltT3JEdEZrXzA1aGlrWTY3X2pxWE5RVld0ejFxS3Y5YXl3WHZ6dGdZSTRpMjVHbG9ad0llMDB5b3ZGeEhJc2JBT2hhZU1kWVZQV08tVS1TazJuVkprYmRxWUtpLWZBYzF3MC1Sd0NaNjZQSFhSWFRoMi11b1lHQk52SGJNaGVlS1hXZzBJSWdSM0NPWG9XMzVZb0Y5ZDZYQ1F3YndVdE5vTWxGMlpaYWp2VW1oeFhRR3hQWFAwU1ZxSmdSY183dmNmdk9zRGlDM3lvMG1Lc1FaUGNpaDdzdEtlbXhUcDlBTEk3RjIwOA",
+      "id": "rf-1776219296305-mxa9e5a4j",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-15T02:14:56.301Z",
+      "isNew": true
+    },
+    {
       "type": "investigation into government agency",
       "description": "The Minnesota DHS is investigating federal agents for alleged kidnapping",
       "insight": "This could indicate a potential pattern of abuse of power by federal agents",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-14T23:40:47.701Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -969,29 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-08T17:00:35.024Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is conducting an investigation in east Houston, resulting in multiple arrests",
-      "insight": "This investigation suggests potential corruption and fraud in east Houston. Further investigation is needed to determine the extent of the fraud and the entities involved.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "ABC13 Houston",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVWFPRDJvMTZLaTg0cTBvQ2k1OUVfVjJ5dWtNMnowWUxDd1c5VHhuWmlhZjVUMWdKaHJ6bjgwVTZ4bDRWZ3hQUVUxUWFER2NyV1EtV1RENWRwY21lbUM3M3ZmVW1uMk50SGlxZnJVbHBmVW9od2RHTXJCSUZWbi1VUU9XQUFLeEpTaG9BMUNaRW1xMGVuUVNQenppTzJSNTNsdzF1S1RqclktaEJNNFp1b0wzLWF3UXhUYlBaTy1IRk8tNGtUdjkyeS1HcGfSAdIBQVVfeXFMTzFUUXgzMjVaSU5KbDVTNnRxTlFBRXdRaXRrcGd4OFlUREV1TVlVRG1YU3FzWWw3RzJyM1prX1NZTUE5d0d2cnBLbjhnRkc0aG11eXdfaWlFbXJ6dmJJMG1ab21TQl9ZbkgzSi1WTDBWcUFoejl4enJZajR0R0gzV00zZDR0M0JWeHRuZ25ScWUtLU9PYUJoQVhGSl9xUk5Hc2hFSS0tV25BU3RRMm5JVlZNNlRVSzZ2aGpyY1dDVkFyRTl6aTlhdTROOW16RVEzYjlR?oc=5",
-      "id": "rf-1775649271308-r6cbvs0xf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-08T11:54:31.304Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1018,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-14T23:40:47.701Z"
+  "lastUpdated": "2026-04-15T02:14:56.301Z"
 }
