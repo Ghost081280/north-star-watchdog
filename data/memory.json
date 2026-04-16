@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-09T22:39:30.812Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-09T23:36:38.739Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-16T07:43:58.415Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-16T09:18:02.786Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2052,
-    "articlesProcessed": 102250,
-    "redFlagsFound": 2374,
+    "totalScans": 2053,
+    "articlesProcessed": 102300,
+    "redFlagsFound": 2376,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the unknown allegedly go in Maricopa County election investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Offset connected to?",
+        "Where did the Unknown allegedly go in Federal Reserve Renovations Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-16T07:43:58.415Z",
-  "lastUpdated": "2026-04-16T07:43:58.415Z"
+  "lastReflection": "2026-04-16T09:18:02.786Z",
+  "lastUpdated": "2026-04-16T09:18:02.786Z"
 }

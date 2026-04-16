@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "corruption_investigation",
+      "description": "The FBI executed search warrants at Lancaster City Hall as part of an unspecified investigation. This action suggests potential corruption or wrongdoing within local government.",
+      "insight": "The lack of specific details about the investigation makes it difficult to assess the scope or potential impact. However, FBI involvement typically indicates serious allegations.",
+      "entities": [
+        "Lancaster City Hall",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "National Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTU9YcWpUTzRwUWdBc00zYlpqYkxDRnd6dGtZTUNTTmtvem1fYXBWbnE0d2JOSTR0OWRJQTZWNG45Y3k5S2huVGtKLUs1ejdZQnhaN3R6QWNmdXpKejlBUktWdEowR0sxSU5fd0REMGxtRUZ2VnR5OVkzTWtscG5reDBWVmx1cTJKU2ZvbUVJSldaUXZrZ0cwMEFrRzNSRlBBYkZxX2Jtel91MW9h?oc=5",
+      "id": "rf-1776331082791-94dk29q27",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T09:18:02.787Z",
+      "isNew": true
+    },
+    {
       "type": "Corruption",
       "description": "FBI searches Lancaster City Hall and homes of top officials in federal probe, indicating potential corruption and abuse of power",
       "insight": "The fact that the FBI is investigating Lancaster City Hall and its officials suggests a high level of concern about potential corruption and wrongdoing. I recommend further investigation into the city's financial records and contracts to identify any potential irregularities or improprieties.",
@@ -959,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-10T07:25:34.914Z",
       "isNew": false
-    },
-    {
-      "type": "anticompetitive practices",
-      "description": "Potential anticompetitive practices by the NFL",
-      "insight": "This could have significant implications for the NFL and its fans",
-      "entities": [
-        "NFL"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/sports/nfl/nfl-reportedly-under-investigation-by-the-justice-department-over-making-it-harder-for-fans-to-watch-games",
-      "id": "rf-1775805934917-lkn2fmmbg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-10T07:25:34.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,12 +987,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-16T07:43:58.417Z"
+  "lastUpdated": "2026-04-16T09:18:02.787Z"
 }
