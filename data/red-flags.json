@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Trump Administration canceled an $11M Catholic Charities contract",
+      "insight": "This cancellation could indicate potential issues with the program or allegations of misconduct",
+      "entities": [
+        "Catholic Charities",
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "National Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYkx0VkZBUWZFcmd4bG82R2YxS1ZnOXoyZGJhLVZGa0E2SEtORm1TUTVGZGR3cF9KWU9faXo2Tk9NYkx0a1dXMHJFUUNMSHRyX0x2TElQNm8taW9mcVJjYWpzZHExa2lUNG9vV3Faek5VUkxOX0luaGhCVWtRQ0tCRzBiWnpjeDhKVzYtcFJTeVZhajdNZi1vTnNzSnRfOGhLaDByRkVSX1IxUQ",
+      "id": "rf-1776353066559-igkf3yxym",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T15:24:26.556Z",
+      "isNew": true
+    },
+    {
+      "type": "impeachment",
+      "description": "There was a failed effort to impeach Governor Tim Walz and Attorney General Keith Ellison",
+      "insight": "This could indicate potential controversy or allegations of misconduct within the administration",
+      "entities": [
+        "Tim Walz",
+        "Keith Ellison"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Minnesota House of Representatives",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4tRDZ3X043NndOYW9iNlN5aTZVM21nMHdjcVU0NUJaUnpyZnF6VEhxZS1DSzYxbE8tQ1JwejlyNVZXS3Nnbm9sZGdSclAwcXBYNTRRM21aSnVEOTFHdlE",
+      "id": "rf-1776353066559-lhmnjyu6w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T15:24:26.556Z",
+      "isNew": true
+    },
+    {
       "type": "corruption_investigation",
       "description": "The FBI executed search warrants at Lancaster City Hall as part of an unspecified investigation. This action suggests potential corruption or wrongdoing within local government.",
       "insight": "The lack of specific details about the investigation makes it difficult to assess the scope or potential impact. However, FBI involvement typically indicates serious allegations.",
@@ -941,48 +981,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-10T11:47:31.276Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating the NFL for potential anticompetitive practices",
-      "insight": "This investigation could have significant implications for the NFL and its business practices. I will continue to monitor the situation and look for any connections to other entities or programs.",
-      "entities": [
-        "NFL"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://apnews.com/article/nfl-justice-department-investigation-anticompetitive-practices-6b503f4a44e54f5a9f4e2f4f4f4f4f4",
-      "id": "rf-1775818363942-e4r2l9yy4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-10T10:52:43.939Z",
-      "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "A $250 million fraud scheme involving feeding programs for children",
-      "insight": "This scheme involves multiple defendants and significant financial losses",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Regtechtimes",
-      "sourceUrl": "https://regtechtimes.com/feeding-our-future-fraud-scheme-sees-two-more-guilty-pleas-in-250-million-case/",
-      "id": "rf-1775805934917-1ti3h3m71",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-10T07:25:34.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +994,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-16T13:26:31.513Z"
+  "lastUpdated": "2026-04-16T15:24:26.556Z"
 }
