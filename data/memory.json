@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-10T11:47:31.274Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-10T13:06:30.483Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-04-16T20:46:07.788Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-16T21:41:38.239Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 84,
+      "count": 85,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-04-15T17:02:23.428Z"
+      "lastSeen": "2026-04-16T21:41:38.240Z"
     },
     {
       "type": "healthcare_fraud",
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2059,
-    "articlesProcessed": 102600,
-    "redFlagsFound": 2383,
+    "totalScans": 2060,
+    "articlesProcessed": 102650,
+    "redFlagsFound": 2385,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is SantaCon bar crawl organizer connected to?",
         "Where did the Unknown allegedly go in Lancaster City Hall corruption probe?",
-        "Where did the Unknown allegedly go in New Home ISD special education program investigation?"
+        "Where did the Unknown allegedly go in New Home ISD special education program investigation?",
+        "Where did the Unknown allegedly go in New Home ISD Special Education Program Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-16T20:46:07.788Z",
-  "lastUpdated": "2026-04-16T20:46:07.789Z"
+  "lastReflection": "2026-04-16T21:41:38.239Z",
+  "lastUpdated": "2026-04-16T21:41:38.240Z"
 }
