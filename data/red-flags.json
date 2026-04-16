@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Corruption",
+      "description": "FBI searches Lancaster City Hall and homes of top officials in federal probe, indicating potential corruption and abuse of power",
+      "insight": "The fact that the FBI is investigating Lancaster City Hall and its officials suggests a high level of concern about potential corruption and wrongdoing. I recommend further investigation into the city's financial records and contracts to identify any potential irregularities or improprieties.",
+      "entities": [
+        "Lancaster City Hall",
+        "City Officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1776306682974-9bi3iib6n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T02:31:22.970Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Trump administration has ended Catholic Charities funding for migrant children in Miami.",
       "insight": "This could have significant implications for the services provided to migrant children in Miami.",
@@ -958,30 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-10T07:25:34.914Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Nearly 1,000 unresponsive Medicaid providers could be disenrolled as Minnesota checks programs",
-      "insight": "This could indicate a larger issue with Medicaid provider oversight and potential fraud. I would investigate further to see if there are any patterns or connections between these providers.",
-      "entities": [
-        "Minnesota DHS",
-        "Medicaid providers"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Post Bulletin",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSHlzcUNaRnpXWjh5dGpmbmpydk9Wd3otT0hFREJGa056OXI3WEVnQXhlOTc4S0VHajdFQXlOWlY4Mm95LVA3c0VDRFFfSHRGOW1XcG14QUNyNDBhZXRSdEFYNC15MnlGY0xJQ1NyeG0wbFhQeFdpMk5vN3VWd3FSdU9LYy03c3dtQ2FtV2Y5Rk1seDFCb25JMWk5SkpoeDFLSnJVVHlWdm5sTWVTVUxMWEhXYzVEOHp2WFhQSlMyc0UwT21PYVJKRE1n",
-      "searches": [
-        "Medicaid provider disenrollment",
-        "Minnesota DHS oversight"
-      ],
-      "id": "rf-1775787905887-thb28cmd5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-10T02:25:05.883Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,9 +990,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-15T23:41:01.418Z"
+  "lastUpdated": "2026-04-16T02:31:22.970Z"
 }
