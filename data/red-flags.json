@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Significant Medicaid cuts loom in Minnesota",
+      "insight": "Potential for fraud and abuse with reduced oversight",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Detroit Lakes Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWkxlbEhjUG95WEVzX2o4VDI2YlVHNTl0LW52WXNmU2lJVUE0OTRDS0V6TVVmWHVkUUZ2LTBTTVFVLTRMVk92N2NCVWZvY3hqS0xOeVROc01RVjVDbzdzVHNUbmlaSUhENkllYllzNEFTLUxTVkhraTRHTmpzaXp2djB4My1RN21BMFR5WWdad0JkeGRFaGoyUGUtS2kyZTVWa0RfRVN1bVFaUQ",
+      "id": "rf-1776382767687-fcc3y4qb0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T23:39:27.684Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_freeze",
+      "description": "Federal government freezes funds for Second Avenue Subway",
+      "insight": "Potential for corruption and mismanagement with large infrastructure projects",
+      "entities": [
+        "New York",
+        "Federal Government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "amNewYork",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMFV2djB4ZzRMZHFiU2NrVlplRmZMcmFUaGZxcEtkQzU2bE1sbGQyWWFzQW80UzF3STNFZkl0Y3UzNXNKZDhqa3IyeGNrWEhudEJGVWFfbGhKVDMyYkU3Z0xuTnc3ampJSzU2dVcxX3lHQWlTdnN4RWRLNWY5NkNVUA",
+      "id": "rf-1776382767687-fyavy0kon",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-16T23:39:27.684Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Elmhurst firm under federal investigation for multiple violations",
       "insight": "This indicates potential widespread fraud and regulatory non-compliance in Minnesota.",
@@ -926,25 +965,6 @@
     },
     {
       "type": "program_termination",
-      "description": "Federal Medicaid money remains frozen due to Minnesota's fraud concerns",
-      "insight": "This suggests a significant issue with Minnesota's Medicaid program that requires immediate attention.",
-      "entities": [
-        "Minnesota State Government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Minnesota’s plan to fight fraud underway as federal Medicaid money remains frozen",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNaEk4SlBHNDUwU19tcThEaFQxcFRRaG9hS3V2N1FHMFJsdWFlTjZkZnNGSkpjZU9ESENxWVdjVmtkUVBEdTVfMjFvU0p1bDRISmx4dlhpcmVsTjk2TTZ6QWFCZXhWakJMMjNFOHJhX050WFVtMlRWaU1tRUxWbHExV1lfNU84Rk5QNFVva3p5eEdaTVctVGo5SmhSUm5kSjBqMkJVbWVnQkVxRmNEb19od211VEZXMFZlUnA5MGhB",
-      "id": "rf-1775900355191-6y0lsviug",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-11T09:39:15.186Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud scheme",
       "insight": "This could indicate a larger issue with program management and oversight, and further investigation is needed to determine the extent of the problem.",
       "entities": [
@@ -961,30 +981,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-10T20:35:00.012Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating several cases of fraud and corruption, including the Feeding Our Future case and the NFL investigation.",
-      "insight": "I notice a pattern of large-scale fraud schemes being uncovered by the FBI, which suggests a potential lack of oversight and regulation in certain industries. Further investigation is needed to determine the extent of these schemes and to identify potential perpetrators.",
-      "entities": [
-        "Feeding Our Future",
-        "NFL"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1775847071428-9w9z6j7b0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-10T18:51:11.425Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +994,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-16T22:38:22.193Z"
+  "lastUpdated": "2026-04-16T23:39:27.684Z"
 }
