@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-10T09:07:11.523Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-10T10:52:43.937Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-16T17:12:48.068Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-16T19:10:39.025Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Investigation into New Home ISD special education program?",
     "What other organizations is SantaCon bar crawl organizer connected to?",
     "Where did the Unknown allegedly go in Lancaster City Hall corruption probe?",
     "Where did the Unknown allegedly go in New Home ISD special education program investigation?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Keith Ellison?",
     "Where did the $1bn allegedly go in Minnesota Fraud Investigation?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2057,
-    "articlesProcessed": 102500,
-    "redFlagsFound": 2380,
+    "totalScans": 2058,
+    "articlesProcessed": 102550,
+    "redFlagsFound": 2381,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jarren Duran connected to?",
-        "Where did the Unknown allegedly go in Lancaster City Hall Corruption Probe?",
-        "Where did the Unknown allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $0 allegedly go in Investigation into New Home ISD special education program?",
+        "What other organizations is SantaCon bar crawl organizer connected to?",
+        "Where did the Unknown allegedly go in Lancaster City Hall corruption probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-16T17:12:48.068Z",
-  "lastUpdated": "2026-04-16T17:12:48.069Z"
+  "lastReflection": "2026-04-16T19:10:39.025Z",
+  "lastUpdated": "2026-04-16T19:10:39.025Z"
 }
