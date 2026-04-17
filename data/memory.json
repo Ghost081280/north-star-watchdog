@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T11:28:55.390Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-11T12:54:39.520Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-17T22:37:38.300Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-17T23:37:56.158Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?",
-    "What other organizations is Eric Swalwell connected to?",
-    "Where did the $100 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the N/A allegedly go in Nancy Guthrie Disappearance Investigation?",
     "What other organizations is Aimee Bock connected to?",
     "What specific allegations exist against Nancy Guthrie?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Tim Walz?",
     "Where did the $40M allegedly go in Woodhill Ponzi Scheme?",
     "Where did the $11M allegedly go in $11 million Medicaid case?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Woodhill Capital connected to?",
+    "Where did the $40M allegedly go in Woodhill Capital Ponzi Scheme Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2078,
-    "articlesProcessed": 103550,
-    "redFlagsFound": 2406,
+    "totalScans": 2079,
+    "articlesProcessed": 103600,
+    "redFlagsFound": 2407,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "Federal investigation into a Ponzi scheme",
-          "insight": "Monitoring for any updates on the Woodhill Ponzi Scheme investigation",
-          "entities": [
-            "Woodhill"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "WGRZ",
-          "sourceUrl": "https://www.wgrz.com"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against TBD?",
-        "Where did the $0 allegedly go in FBI investigation into Nancy Guthrie disappearance?",
-        "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?"
+        "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?",
+        "What other organizations is Eric Swalwell connected to?",
+        "Where did the $100 million allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-17T22:37:38.300Z",
-  "lastUpdated": "2026-04-17T22:37:38.301Z"
+  "lastReflection": "2026-04-17T23:37:56.158Z",
+  "lastUpdated": "2026-04-17T23:37:56.159Z"
 }
