@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-10T16:53:11.222Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-10T17:45:57.847Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-17T02:27:10.593Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-17T05:27:03.714Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI investigation at Lancaster City Hall?",
-    "Where did the $0 allegedly go in MLBPA financial investigation?",
-    "What other organizations is SantaCon Organizer connected to?",
     "Where did the Unspecified allegedly go in FBI Investigation at Lancaster City Hall?",
     "Where did the Unspecified allegedly go in Minnesota Impeachment Effort?",
     "Where did the $11M allegedly go in Minnesota Somali Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in FBI investigation into Nancy Guthrie disappearance?",
     "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?",
     "Where did the $1 million allegedly go in FBI Investigation into Nancy Guthrie Disappearance?",
-    "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?"
+    "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?",
+    "What other organizations is Eric Swalwell connected to?",
+    "Where did the $100 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the N/A allegedly go in Nancy Guthrie Disappearance Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2063,
-    "articlesProcessed": 102800,
-    "redFlagsFound": 2388,
+    "totalScans": 2064,
+    "articlesProcessed": 102850,
+    "redFlagsFound": 2389,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1 million allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the unspecified allegedly go in Lancaster City Hall corruption investigation?",
-        "Where did the $0 allegedly go in FBI investigation at Lancaster City Hall?"
+        "Where did the $0 allegedly go in FBI investigation at Lancaster City Hall?",
+        "Where did the $0 allegedly go in MLBPA financial investigation?",
+        "What other organizations is SantaCon Organizer connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-17T02:27:10.593Z",
-  "lastUpdated": "2026-04-17T02:27:10.593Z"
+  "lastReflection": "2026-04-17T05:27:03.714Z",
+  "lastUpdated": "2026-04-17T05:27:03.715Z"
 }
