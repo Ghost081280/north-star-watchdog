@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T08:41:19.337Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-11T09:39:15.184Z",
       "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
@@ -510,6 +505,11 @@
       "date": "2026-04-17T20:00:04.884Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-17T20:57:51.709Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Ilhan Omar connected to?",
-    "What other organizations is TBD connected to?",
     "What specific allegations exist against TBD?",
     "Where did the $0 allegedly go in FBI investigation into Nancy Guthrie disappearance?",
     "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?",
@@ -558,7 +555,10 @@
     "What other organizations is Damon Jones connected to?",
     "Where did the Undisclosed allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the Undisclosed allegedly go in ICE Investigations?",
-    "Where did the $11 million allegedly go in Feeding Our Future fraud?"
+    "Where did the $11 million allegedly go in Feeding Our Future fraud?",
+    "What other organizations is Former Northwest ISD teacher connected to?",
+    "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?",
+    "Where did the $340M allegedly go in DOJ benefit schemes?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2075,
-    "articlesProcessed": 103400,
-    "redFlagsFound": 2403,
+    "totalScans": 2076,
+    "articlesProcessed": 103450,
+    "redFlagsFound": 2404,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
         "Are any of these 2 figures connected to each other?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "What other organizations is TBD connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-17T20:00:04.884Z",
-  "lastUpdated": "2026-04-17T20:00:04.885Z"
+  "lastReflection": "2026-04-17T20:57:51.709Z",
+  "lastUpdated": "2026-04-17T20:57:51.710Z"
 }
