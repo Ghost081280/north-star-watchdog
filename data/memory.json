@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-10T15:52:05.927Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-10T16:53:11.222Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-16T23:39:27.682Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-17T02:27:10.593Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1 million allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the unspecified allegedly go in Lancaster City Hall corruption investigation?",
     "Where did the $0 allegedly go in FBI investigation at Lancaster City Hall?",
     "Where did the $0 allegedly go in MLBPA financial investigation?",
     "What other organizations is SantaCon Organizer connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is TBD connected to?",
     "What specific allegations exist against TBD?",
     "Where did the $0 allegedly go in FBI investigation into Nancy Guthrie disappearance?",
-    "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?"
+    "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?",
+    "Where did the $1 million allegedly go in FBI Investigation into Nancy Guthrie Disappearance?",
+    "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2062,
-    "articlesProcessed": 102750,
-    "redFlagsFound": 2387,
+    "totalScans": 2063,
+    "articlesProcessed": 102800,
+    "redFlagsFound": 2388,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "Federal government freezes funds for Second Avenue Subway",
-          "insight": "Potential for corruption and mismanagement with large infrastructure projects",
-          "entities": [
-            "New York",
-            "Federal Government"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "amNewYork",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMFV2djB4ZzRMZHFiU2NrVlplRmZMcmFUaGZxcEtkQzU2bE1sbGQyWWFzQW80UzF3STNFZkl0Y3UzNXNKZDhqa3IyeGNrWEhudEJGVWFfbGhKVDMyYkU3Z0xuTnc3ampJSzU2dVcxX3lHQWlTdnN4RWRLNWY5NkNVUA"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Lancaster City Hall corruption probe?",
-        "Where did the Unknown allegedly go in New Home ISD special education program investigation?",
-        "Where did the Unknown allegedly go in New Home ISD Special Education Program Investigation?"
+        "Where did the $1 million allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the unspecified allegedly go in Lancaster City Hall corruption investigation?",
+        "Where did the $0 allegedly go in FBI investigation at Lancaster City Hall?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-16T23:39:27.682Z",
-  "lastUpdated": "2026-04-16T23:39:27.683Z"
+  "lastReflection": "2026-04-17T02:27:10.593Z",
+  "lastUpdated": "2026-04-17T02:27:10.593Z"
 }
