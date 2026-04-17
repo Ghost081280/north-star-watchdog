@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T05:59:50.514Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-11T07:12:50.741Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-17T17:56:20.960Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-17T18:58:40.310Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2073,
-    "articlesProcessed": 103300,
-    "redFlagsFound": 2399,
+    "totalScans": 2074,
+    "articlesProcessed": 103350,
+    "redFlagsFound": 2401,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Tim Walz?",
-        "What specific allegations exist against Keith Ellison?",
-        "Where did the $1bn allegedly go in Minnesota Fraud Investigation?"
+        "Are any of these 3 figures connected to each other?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-17T17:56:20.960Z",
-  "lastUpdated": "2026-04-17T17:56:20.960Z"
+  "lastReflection": "2026-04-17T18:58:40.310Z",
+  "lastUpdated": "2026-04-17T18:58:40.310Z"
 }
