@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible program termination due to fraud allegations",
+      "insight": "Monitoring for any program terminations related to fraud investigations",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota fraud cases",
+      "sourceUrl": "https://www.msn.com",
+      "id": "rf-1776465458305-925sszyxb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-17T22:37:38.302Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "Federal investigation into a Ponzi scheme",
+      "insight": "Monitoring for any updates on the Woodhill Ponzi Scheme investigation",
+      "entities": [
+        "Woodhill"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "WGRZ",
+      "sourceUrl": "https://www.wgrz.com",
+      "id": "rf-1776465458305-yykvoavnb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-17T22:37:38.302Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A suspect failed to show up in court, throwing an $11 million Medicaid case into doubt.",
       "insight": "This could indicate a larger scheme to defraud the Medicaid system, and further investigation is needed to uncover the extent of the fraud.",
@@ -942,49 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-12T20:34:25.338Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The suspect's sudden disappearance and forfeiture of bond",
-      "insight": "This case raises concerns about the potential for larger-scale fraud schemes and the need for increased scrutiny of Medicaid claims. The involvement of a Kenyan-linked suspect suggests possible international connections.",
-      "entities": [
-        "Kenyan-linked man",
-        "Minnesota authorities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Kenya Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BaUh2VUdEaE1ubm1vMDRiNW5RSDRrVGVQd3JNSDZiLVNuX2FURjJ4TW1fUk1wWUJRRHdRRWFvRi1IR1drQnh6YVByTVg5VnVxUFFvbVdsTkRrR2x3QmR6aQ",
-      "id": "rf-1776011838580-52s2sfkis",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-12T16:37:18.576Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "A federal investigation is underway into NFL TV deals, which may indicate a larger pattern of corruption or fraud in the sports industry.",
-      "insight": "As an investigator, I am concerned about the potential for widespread corruption in the sports industry, and I believe that further investigation is needed to uncover the full extent of any wrongdoing.",
-      "entities": [
-        "NFL"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KXLY.com",
-      "sourceUrl": "https://www.kxly.com/news/nfl-tv-deals-under-federal-investigation",
-      "id": "rf-1775971357585-k02iscrea",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-12T05:22:37.582Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-17T21:43:37.715Z"
+  "lastUpdated": "2026-04-17T22:37:38.302Z"
 }

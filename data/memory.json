@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T10:32:50.587Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-11T11:28:55.390Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-17T21:43:37.713Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-17T22:37:38.300Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against TBD?",
-    "Where did the $0 allegedly go in FBI investigation into Nancy Guthrie disappearance?",
-    "Where did the $0 allegedly go in Investigation into federal officers months after immigration crackdown in Minnesota?",
-    "Where did the $1 million allegedly go in FBI Investigation into Nancy Guthrie Disappearance?",
     "Where did the $ millions allegedly go in Phantom Billing Fraud Investigation?",
     "What other organizations is Eric Swalwell connected to?",
     "Where did the $100 million allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the $11 million allegedly go in Feeding Our Future fraud?",
     "What other organizations is Former Northwest ISD teacher connected to?",
     "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?",
-    "Where did the $340M allegedly go in DOJ benefit schemes?"
+    "Where did the $340M allegedly go in DOJ benefit schemes?",
+    "What specific allegations exist against Tim Walz?",
+    "Where did the $40M allegedly go in Woodhill Ponzi Scheme?",
+    "Where did the $11M allegedly go in $11 million Medicaid case?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2077,
-    "articlesProcessed": 103500,
-    "redFlagsFound": 2404,
+    "totalScans": 2078,
+    "articlesProcessed": 103550,
+    "redFlagsFound": 2406,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "Federal investigation into a Ponzi scheme",
+          "insight": "Monitoring for any updates on the Woodhill Ponzi Scheme investigation",
+          "entities": [
+            "Woodhill"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "WGRZ",
+          "sourceUrl": "https://www.wgrz.com"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-17T21:43:37.713Z",
-  "lastUpdated": "2026-04-17T21:43:37.714Z"
+  "lastReflection": "2026-04-17T22:37:38.300Z",
+  "lastUpdated": "2026-04-17T22:37:38.301Z"
 }
