@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T22:30:52.919Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-11T23:32:14.211Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-18T15:36:23.269Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-18T16:38:35.856Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against John Brennan?",
-    "What specific allegations exist against Trump?",
     "Where did the $40M allegedly go in Woodhill Capital Ponzi Scheme?",
     "Where did the $2.48M allegedly go in Zion Baptist Church?",
     "What specific allegations exist against Trump Administration?",
@@ -558,7 +556,9 @@
     "Where did the $40M allegedly go in Woodhill Capital investigation?",
     "Where did the $2.48M allegedly go in Zion Baptist Church investigation?",
     "What other organizations is Youth Volleyball Coach connected to?",
-    "Where did the $2.48M allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $2.48M allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $2.48M allegedly go in Zion Baptist Church Grant Investigation?",
+    "Where did the $40M allegedly go in Woodhill Ponzi Scheme Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2089,
-    "articlesProcessed": 104100,
-    "redFlagsFound": 2422,
+    "totalScans": 2090,
+    "articlesProcessed": 104150,
+    "redFlagsFound": 2423,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Westmoreland man connected to?",
-        "Where did the Unknown allegedly go in Minnesota Somali fraud?",
-        "What specific allegations exist against John Brennan?"
+        "What specific allegations exist against John Brennan?",
+        "What specific allegations exist against Trump?",
+        "Where did the $40M allegedly go in Woodhill Capital Ponzi Scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T15:36:23.269Z",
-  "lastUpdated": "2026-04-18T15:36:23.270Z"
+  "lastReflection": "2026-04-18T16:38:35.856Z",
+  "lastUpdated": "2026-04-18T16:38:35.857Z"
 }
