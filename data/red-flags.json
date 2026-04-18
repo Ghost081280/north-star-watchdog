@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The DOJ's new fraud division thwarted $340M in benefit schemes during its first week",
+      "insight": "This shows the DOJ is actively targeting and disrupting fraudulent activities. Monitoring the DOJ's actions and related cases could uncover more widespread issues.",
+      "entities": [
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/04/17/new-doj-fraud-division-thwarted-340m-benefit-schemes-first-week/",
+      "id": "rf-1776488757406-kp1s4vd5j",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T05:05:57.403Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible program termination due to fraud allegations",
       "insight": "Monitoring for any program terminations related to fraud investigations",
@@ -961,25 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-13T02:32:00.499Z",
       "isNew": false
-    },
-    {
-      "type": "large sum of money involved",
-      "description": "$11 million is a significant amount of money, suggesting a large-scale fraud scheme.",
-      "insight": "The fact that the defendant failed to appear in court and forfeited bond suggests that he may be attempting to evade justice.",
-      "entities": [
-        "Kareem McClanahan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota fraud suspect fails to show in court throwing $11 million Medicaid case into doubt - MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNelF3c0xvMGVuN2hUcl9hTGdHcURqR05tSkxFYUpvcmV3eHRObEY3M1ZtbHNHRk9kc1ZISV9GWEhXV2lBVm14dXBNVS1sS3FWVl9RUHFKUjJRNk9XWHAtUXNhdjJmeWxiYU9rSFlqVEF0NUFta3E5U0gzd014WW12Q2hodFlFTjA0M3JodjRsNFJ6bFNRVzFwOVZBT2FUUXJQLUJHWGFleDJveFZLN0pOOFlPVkRNVUFUSjJKLUktbndYNmZSQVI0dmhjYkozaVJtUUtBdUZFNEFCSk0yQVB3OG1odDFnbzJLX3k3SnEtVkxxUTVOWWg5SzhoMXN4UW4xbjVnOU9oRlFzdnZIUXpGUjBnczlkRGJXUWZLcmF1NnN3Z1dZd0pEM0RRUWxhWVF4RG9J?oc=5",
-      "id": "rf-1776026065342-cspawnzzn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-12T20:34:25.338Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,10 +988,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T02:09:57.253Z"
+  "lastUpdated": "2026-04-18T05:05:57.403Z"
 }
