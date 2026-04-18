@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T15:32:20.304Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-04-11T16:35:37.713Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-18T07:05:18.850Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-18T08:47:09.618Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11 million allegedly go in Feeding Our Future fraud?",
-    "What other organizations is Former Northwest ISD teacher connected to?",
     "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?",
     "Where did the $340M allegedly go in DOJ benefit schemes?",
     "What specific allegations exist against Tim Walz?",
@@ -558,7 +556,9 @@
     "What other organizations is Individuals involved in Woodhill Capital connected to?",
     "What other organizations is Former Dutchess County teacher connected to?",
     "Where did the $40M allegedly go in Woodhill Capital Ponzi scheme?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Westmoreland man connected to?",
+    "Where did the Unknown allegedly go in Minnesota Somali fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2082,
-    "articlesProcessed": 103750,
-    "redFlagsFound": 2411,
+    "totalScans": 2083,
+    "articlesProcessed": 103800,
+    "redFlagsFound": 2412,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Nancy Guthrie case?",
-        "Where did the Unknown allegedly go in Phantom billing fraud?",
-        "What other organizations is Damon Jones connected to?"
+        "Where did the $11 million allegedly go in Feeding Our Future fraud?",
+        "What other organizations is Former Northwest ISD teacher connected to?",
+        "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T07:05:18.850Z",
-  "lastUpdated": "2026-04-18T07:05:18.852Z"
+  "lastReflection": "2026-04-18T08:47:09.618Z",
+  "lastUpdated": "2026-04-18T08:47:09.619Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Ponzi scheme",
+      "description": "A federal investigation is underway for a Ponzi scheme involving Woodhill Capital, with over $40M unaccounted for.",
+      "insight": "This scheme highlights the need for increased vigilance in financial transactions and the importance of regulatory oversight. I will continue to track this investigation and look for potential connections to other entities.",
+      "entities": [
+        "Woodhill Capital"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WGRZ",
+      "sourceUrl": "https://www.wgrz.com/article/news/crime/judge-freezes-woodhill-capital-accounts-as-alleged-ponzi-scheme-widens/71-eb24f934-7f6b-48a4-9f4e-4e2a325f6e7a",
+      "id": "rf-1776502029624-9ddcnxbba",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T08:47:09.620Z",
+      "isNew": true
+    },
+    {
       "type": "alleged Ponzi scheme",
       "description": "Woodhill Capital accounts frozen due to alleged Ponzi scheme",
       "insight": "This suggests a potential large-scale financial crime and warrants further investigation into Woodhill Capital and related entities.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-18T07:05:18.853Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -959,31 +978,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-13T14:46:50.216Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Eric Swalwell is under investigation by DHS for hiring a nanny from Brazil without authorization",
-      "insight": "This case raises concerns about the potential for abuse of power and lack of oversight in the hiring practices of government officials. Further investigation is needed to determine the extent of the issue and whether other officials may be involved.",
-      "entities": [
-        "Eric Swalwell"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KTLA",
-      "sourceUrl": "https://www.ktla.com/news/california/eric-swalwell-under-investigation-by-dhs-for-hiring-nanny-from-brazil-without-authorization/",
-      "id": "rf-1776067239955-oqjwoxalx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-13T08:00:39.951Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1009,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T07:05:18.853Z"
+  "lastUpdated": "2026-04-18T08:47:09.620Z"
 }
