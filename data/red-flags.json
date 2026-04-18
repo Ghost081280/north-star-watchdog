@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI has launched an investigation into the Feeding Our Future fraud scheme, which has resulted in millions of dollars in losses.",
+      "insight": "This case highlights the need for increased oversight and accountability in government funding programs. I will continue to track this investigation and look for any connections to other cases of fraud in Minnesota.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/feeding-our-future-fraud-leader-aimee-bock-to-be-sentenced-in-may/ar-AA191yfK",
+      "id": "rf-1776538079743-32iq7zy13",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T18:47:59.739Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The DOJ's action to stop $340M in schemes indicates a significant fraud issue.",
       "insight": "The newly launched DOJ fraud division's immediate success in stopping $340M in schemes suggests a substantial fraud problem in Minnesota. The involvement of multiple entities, such as Zion Baptist Church and Woodhill Capital, indicates a need for thorough investigation.",
@@ -20,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-18T17:35:51.619Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged Ponzi scheme",
@@ -957,30 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-13T20:53:55.281Z",
       "isNew": false
-    },
-    {
-      "type": "potential_kidnapping",
-      "description": "Ramsey County officials are investigating potential kidnapping and false imprisonment by federal officers",
-      "insight": "This is a serious allegation that requires thorough investigation. The involvement of federal agents raises concerns about potential abuse of power.",
-      "entities": [
-        "Ramsey County",
-        "Federal Agents"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQMFdkS0RFUHZpWnlVQ3V4bXhqNVBqQmppbDhWekRhb0lQZ2IzN2E3WnVRaThsZWZGR0tEYlNqYnF4R1IwM1VEcElwNzZDRlZ5MUpmT1RCM3V3cUlRR3pRbHJqXzYyd1Z6SGwxamhQZElYQUMwNWdrSEFCNWVOMWxyMGpjRFNsN2t2S1JmOXBIcVFkMnZVZDZsRV9RenN3aHh0UER6RXFwQ1FCRWE1YjBRdU5wSVV1YjhsRlEwSGM2RzU2OFdXN3B5Q1U1YnZhbUdSN3hxQmJjYlF5R1VfX2ZtNTZkWXJCLUZfeFhJaktHSGRsTFIzamtJ?oc=5",
-      "id": "rf-1776108108247-vs0cmqpn4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-13T19:21:48.244Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T17:35:51.619Z"
+  "lastUpdated": "2026-04-18T18:47:59.739Z"
 }

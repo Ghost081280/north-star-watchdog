@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-12T02:26:50.838Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-04-12T05:22:37.580Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-18T17:35:51.618Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-18T18:47:59.737Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Trump Administration?",
-    "What other organizations is Zion Baptist Church connected to?",
-    "What specific allegations exist against Zion Baptist Church?",
     "What specific allegations exist against Pope Leo?",
     "Where did the $2.48M allegedly go in Zion Baptist Church grant investigation?",
     "What other organizations is Avon firefighter connected to?",
@@ -558,7 +555,10 @@
     "Where did the $2.48M allegedly go in Zion Baptist Church Grant Investigation?",
     "Where did the $40M allegedly go in Woodhill Ponzi Scheme Investigation?",
     "What specific allegations exist against No specific individuals charged?",
-    "Where did the $340M allegedly go in DOJ Fraud Division Investigation?"
+    "Where did the $340M allegedly go in DOJ Fraud Division Investigation?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $340M allegedly go in DOJ Fraud Division?",
+    "Where did the $2.48M allegedly go in Zion Baptist Church Grants?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2091,
-    "articlesProcessed": 104200,
-    "redFlagsFound": 2424,
+    "totalScans": 2092,
+    "articlesProcessed": 104250,
+    "redFlagsFound": 2425,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,35 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal freeze",
-          "description": "The DOJ's action to stop $340M in schemes indicates a significant fraud issue.",
-          "insight": "The newly launched DOJ fraud division's immediate success in stopping $340M in schemes suggests a substantial fraud problem in Minnesota. The involvement of multiple entities, such as Zion Baptist Church and Woodhill Capital, indicates a need for thorough investigation.",
-          "entities": [
-            "Minnesota",
-            "DOJ",
-            "Zion Baptist Church",
-            "Woodhill Capital"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "DOJ, State of Minnesota, News articles",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxNZ3VoQmZSSGVzVzU2Y0ZLTjYtRlNmWjlJdWozZ2NFeWhJaW1lVmtBeGRWUkZQeHVobWE0Tzc5dUdXRlhRWWEwV0FIYWJyY09vZ3BGQjFocHFpRTNQM25leV9JXy1HVzBmRWFsd1B5ZnBpM19zYU50b3NvMzM5RHh1NjlmSklpMjBicDQtUlhhTFA2bnh5V2RyMDMwU2tnaUZzVUxVYkxiS2Npd0hJV3kzVFI5TEZPWnFMRXRCLWZXMkZoQ3FYRUNGZ2M1MTc4VlJWWkl0TUpxei11cHAtU0pwT0xncmR5Y3BycWFkMVF2ZHJDYmt2MzRDMkIxaHpYNnNoRDJuY2RlSk11RWN4djZ2NmFEVEVZVVg5aVhURklqT0kwYjcwVEUxb0RwdmUwZklfWk02WFhLWVcwZm5IQlVESk45VDJQcFhUSHJaMTdFS2NHbWdhU29RQllieTJLVXM0Qml0WTI0alFKSVNI"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Woodhill Capital Ponzi Scheme?",
-        "Where did the $2.48M allegedly go in Zion Baptist Church?",
-        "What specific allegations exist against Trump Administration?"
+        "What specific allegations exist against Trump Administration?",
+        "What other organizations is Zion Baptist Church connected to?",
+        "What specific allegations exist against Zion Baptist Church?"
       ]
     }
   ],
@@ -616,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T17:35:51.618Z",
-  "lastUpdated": "2026-04-18T17:35:51.618Z"
+  "lastReflection": "2026-04-18T18:47:59.737Z",
+  "lastUpdated": "2026-04-18T18:47:59.738Z"
 }
