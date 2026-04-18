@@ -1,6 +1,28 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The DOJ's action to stop $340M in schemes indicates a significant fraud issue.",
+      "insight": "The newly launched DOJ fraud division's immediate success in stopping $340M in schemes suggests a substantial fraud problem in Minnesota. The involvement of multiple entities, such as Zion Baptist Church and Woodhill Capital, indicates a need for thorough investigation.",
+      "entities": [
+        "Minnesota",
+        "DOJ",
+        "Zion Baptist Church",
+        "Woodhill Capital"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ, State of Minnesota, News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxNZ3VoQmZSSGVzVzU2Y0ZLTjYtRlNmWjlJdWozZ2NFeWhJaW1lVmtBeGRWUkZQeHVobWE0Tzc5dUdXRlhRWWEwV0FIYWJyY09vZ3BGQjFocHFpRTNQM25leV9JXy1HVzBmRWFsd1B5ZnBpM19zYU50b3NvMzM5RHh1NjlmSklpMjBicDQtUlhhTFA2bnh5V2RyMDMwU2tnaUZzVUxVYkxiS2Npd0hJV3kzVFI5TEZPWnFMRXRCLWZXMkZoQ3FYRUNGZ2M1MTc4VlJWWkl0TUpxei11cHAtU0pwT0xncmR5Y3BycWFkMVF2ZHJDYmt2MzRDMkIxaHpYNnNoRDJuY2RlSk11RWN4djZ2NmFEVEVZVVg5aVhURklqT0kwYjcwVEUxb0RwdmUwZklfWk02WFhLWVcwZm5IQlVESk45VDJQcFhUSHJaMTdFS2NHbWdhU29RQllieTJLVXM0Qml0WTI0alFKSVNI",
+      "id": "rf-1776533751622-nwub7y5gy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T17:35:51.619Z",
+      "isNew": true
+    },
+    {
       "type": "alleged Ponzi scheme",
       "description": "Zion Baptist Church allegedly misused $2.48M in grants",
       "insight": "This alleged misuse of funds indicates a potential for financial mismanagement or fraud within the church. Further investigation into the church's financial dealings and individuals involved is warranted.",
@@ -318,26 +340,6 @@
       "source": "Detroit Lakes Tribune",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWkxlbEhjUG95WEVzX2o4VDI2YlVHNTl0LW52WXNmU2lJVUE0OTRDS0V6TVVmWHVkUUZ2LTBTTVFVLTRMVk92N2NCVWZvY3hqS0xOeVROc01RVjVDbzdzVHNUbmlaSUhENkllYllzNEFTLUxTVkhraTRHTmpzaXp2djB4My1RN21BMFR5WWdad0JkeGRFaGoyUGUtS2kyZTVWa0RfRVN1bVFaUQ",
       "id": "rf-1776382767687-fcc3y4qb0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T23:39:27.684Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal government freezes funds for Second Avenue Subway",
-      "insight": "Potential for corruption and mismanagement with large infrastructure projects",
-      "entities": [
-        "New York",
-        "Federal Government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "amNewYork",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMFV2djB4ZzRMZHFiU2NrVlplRmZMcmFUaGZxcEtkQzU2bE1sbGQyWWFzQW80UzF3STNFZkl0Y3UzNXNKZDhqa3IyeGNrWEhudEJGVWFfbGhKVDMyYkU3Z0xuTnc3ampJSzU2dVcxX3lHQWlTdnN4RWRLNWY5NkNVUA",
-      "id": "rf-1776382767687-fyavy0kon",
       "apisUsed": [
         "Google News"
       ],
@@ -979,16 +981,17 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T16:38:35.858Z"
+  "lastUpdated": "2026-04-18T17:35:51.619Z"
 }
