@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "State seeks returns of $2.48M in grants from Zion Baptist Church.",
+      "insight": "This action suggests potential misuse of grant funds and the need for further investigation into Zion Baptist Church's activities.",
+      "entities": [
+        "Zion Baptist Church"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWFc3MF9JS05OWTFxb1hLYTRLbEJjTTdqS0RRMkpUbzlGS0wwRkFPYjMzZTVpQ3VSbEtVeEdDa0s3VjlWVVI4dDlTTl9saXM1WVhnMnd2Y28xWGNsMzFrSV80RjRtODRLaG1zd3Fuekg5U2NmU2dncmRzem12YUZMdWM0Z3pLaE1wMjY0MHRkWGFQRDBvY29pUFV0NmxQWmFnakE?oc=5",
+      "id": "rf-1776505579718-e9tdmdkli",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T09:46:19.714Z",
+      "isNew": true
+    },
+    {
       "type": "Ponzi scheme",
       "description": "A federal investigation is underway for a Ponzi scheme involving Woodhill Capital, with over $40M unaccounted for.",
       "insight": "This scheme highlights the need for increased vigilance in financial transactions and the importance of regulatory oversight. I will continue to track this investigation and look for potential connections to other entities.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-18T08:47:09.620Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged Ponzi scheme",
@@ -959,29 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-13T16:11:33.391Z",
       "isNew": false
-    },
-    {
-      "type": "Unauthorized employment",
-      "description": "Eric Swalwell under investigation for hiring nanny from Brazil without authorization",
-      "insight": "This raises concerns about potential immigration and employment law violations.",
-      "entities": [
-        "Eric Swalwell"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "KTLA",
-      "sourceUrl": "https://ktla.com/eric-swalwell-under-investigation-by-dhs-for-hiring-nanny-from-brazil-without-authorization/",
-      "id": "rf-1776091610220-3zjgnd7sx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-13T14:46:50.216Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T08:47:09.620Z"
+  "lastUpdated": "2026-04-18T09:46:19.714Z"
 }
