@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-12T10:37:22.391Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-04-12T11:33:27.444Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-18T22:33:28.551Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-04-18T23:33:40.794Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the N/A allegedly go in MLB Streaming Deals Investigation?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Not specified connected to?",
     "What specific allegations exist against Not specified?",
     "Where did the $40M allegedly go in Woodhill Capital investigation?",
@@ -558,7 +556,9 @@
     "Where did the $40M allegedly go in Woodhill Capital alleged Ponzi scheme?",
     "What other organizations is Kash Patel connected to?",
     "Where did the $40M allegedly go in Feeding Our Future fraud?",
-    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?"
+    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?",
+    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?",
+    "Where did the $340M allegedly go in Feeding Our Future fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2096,
-    "articlesProcessed": 104450,
-    "redFlagsFound": 2429,
+    "totalScans": 2097,
+    "articlesProcessed": 104500,
+    "redFlagsFound": 2431,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,9 +584,9 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "fraud_leader",
-          "description": "Aimee Bock, leader of Feeding Our Future, to be sentenced",
-          "insight": "Potential for large-scale fraud in non-profit organization",
+          "type": "fraud_scheme",
+          "description": "Feeding Our Future fraud leader Aimee Bock to be sentenced in May",
+          "insight": "The Feeding Our Future fraud case indicates a significant fraud scheme, with Aimee Bock's sentencing in May being a key development.",
           "entities": [
             "Aimee Bock",
             "Feeding Our Future"
@@ -594,7 +594,7 @@
           "confidence": 90,
           "priority": "high",
           "source": "MSN",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWmowRk03VGpra0htWXoxTnd4dDBUUWJMR0MwWnhHODVvS0E3MTExNXNDblBLRHZrTGZ1NC1SczBSZEJKRWx6eUZaTzNCUTVLN0Uxek5OSGlQMTAzeFBJaHNIVkpLd1JhSnI4SFNJa1BIY2g5a1U0UDEyUWR1N7JreUM3RDB4R3czcGtjLTBFcWhnQ0VxQTFQSmVIaFJieF9tTHp5UHVveFBySmZoVkhET2JGSlc1VElLM2N4T1RvUkZ5dnBBWExsTHpzQjkyNG5RckN6SnFjbVZSWmg5QjhieDZBYVI0dzJsR1hFYmRnUmxMSC1sbUE"
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWmowRk03VGpra0htWXoxTnd4dDBUUWJMR0MwWnhHODVvS0E3MTExNXNDblBLRHZrTGZ1NC1SczBSZEJKRWx6eUZaTzNCUTVLN0Uxek5OSGlQMTAzeFBJaHNIVkpLd1JhSnI4SFNJa1BIY2g5a1U0UDEyUWR1N7JreUM3RDB4R3czcGtjLTBFcWhnQ0VxQTFQSmVIaFJieF9tTHp5UHVveFBySmZoVkhET2JGSlc5VElLM2N4T1RvUkZ5dnBBWExsTHpzQjkyNG5RckN6SnFjbVZSWmg5QjhieDZBYVI0dzJsR1hFYmRnUmxMSC1sbUE"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Former Northwest ISD teacher connected to?",
-        "Where did the $40M allegedly go in Woodhill Ponzi Scheme?",
-        "Where did the N/A allegedly go in MLB Streaming Deals Investigation?"
+        "Where did the N/A allegedly go in MLB Streaming Deals Investigation?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Not specified connected to?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T22:33:28.551Z",
-  "lastUpdated": "2026-04-18T22:33:28.551Z"
+  "lastReflection": "2026-04-18T23:33:40.794Z",
+  "lastUpdated": "2026-04-18T23:33:40.795Z"
 }
