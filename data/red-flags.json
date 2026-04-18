@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "alleged Ponzi scheme",
+      "description": "Woodhill Capital accounts frozen due to alleged Ponzi scheme",
+      "insight": "This suggests a potential large-scale financial crime and warrants further investigation into Woodhill Capital and related entities.",
+      "entities": [
+        "Woodhill Capital"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WGRZ",
+      "sourceUrl": "https://www.wgrz.com/2026/04/17/judge-freezes-woodhill-capital-accounts-as-alleged-ponzi-scheme-widens-10.html",
+      "id": "rf-1776495918857-k3rkz9036",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-18T07:05:18.853Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The DOJ's new fraud division thwarted $340M in benefit schemes during its first week",
       "insight": "This shows the DOJ is actively targeting and disrupting fraudulent activities. Monitoring the DOJ's actions and related cases could uncover more widespread issues.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-18T05:05:57.403Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,42 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-13T08:00:39.951Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "DOJ opens investigation into alleged assault against a journalist during anti-ICE protest",
-      "insight": "Potential connection to larger pattern of protests and potential violence",
-      "entities": [
-        "DOJ",
-        "journalist"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WPEC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPZnVtMW85aEtlR2I5by1UbHF6V0xXZlNBWk5TdlNEMVd3cTN1VXJSMHJQdm9hbXBsVFdRS0F0NEFKODdlclljSl9zUmNxVzYyYXM2dE1Cd1lzWlM4TFRDZ1dRaHR0cndibE5Kd2N3dGVHZGlQY09iRGVBVXZqOTVnbTlrMjdZaFFJRkk3TFZiTFh5bFRmcnZ6U0FpV1IzZ0VaRGdTSWdnNmpTcWlwRlZCQmdoVDVLNVlpb005S0hMaE9VSklpQ3ZrTWJIcWJybHhIV1g4d3JTZVNTVndaeU9pRTV1SnRhenQ3dEFZajNLN0wzV2pOLTRzREJTV3FNMWN4YkZ2UFpsc2haZFZlZFlnb1duRWxab3VORnNnRDVya3FZYmtvRFNwYmFZUTRCbEEzVzlqdEZCaXRPdmY4OHAzWjJWa2l1Uy00WTQtS3FlLXZ5SDNlOGhmblkyV1IyUXc",
-      "priorityLevel": "high",
-      "id": "rf-1776047520502-vill255yo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-13T02:32:00.499Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-18T05:05:57.403Z"
+  "lastUpdated": "2026-04-18T07:05:18.853Z"
 }

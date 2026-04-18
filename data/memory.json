@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-11T14:35:45.682Z",
-      "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-04-11T15:32:20.304Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-18T05:05:57.401Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-18T07:05:18.850Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Nancy Guthrie case?",
-    "Where did the Unknown allegedly go in Phantom billing fraud?",
-    "What other organizations is Damon Jones connected to?",
-    "Where did the Undisclosed allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the Undisclosed allegedly go in ICE Investigations?",
     "Where did the $11 million allegedly go in Feeding Our Future fraud?",
     "What other organizations is Former Northwest ISD teacher connected to?",
     "Where did the $11 million allegedly go in Minnesota Medicaid fraud case?",
@@ -558,7 +553,12 @@
     "What other organizations is Individuals associated with Woodhill Capital connected to?",
     "Where did the $40M allegedly go in Woodhill Capital Investigation?",
     "Where did the $340M allegedly go in Child Care Fraud Investigation?",
-    "Where did the $2.48M allegedly go in Zion Baptist Church Grant Investigation?"
+    "Where did the $2.48M allegedly go in Zion Baptist Church Grant Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Individuals involved in Woodhill Capital connected to?",
+    "What other organizations is Former Dutchess County teacher connected to?",
+    "Where did the $40M allegedly go in Woodhill Capital Ponzi scheme?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2081,
-    "articlesProcessed": 103700,
-    "redFlagsFound": 2409,
+    "totalScans": 2082,
+    "articlesProcessed": 103750,
+    "redFlagsFound": 2411,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Nancy Guthrie Disappearance Investigation?",
-        "What other organizations is Aimee Bock connected to?",
-        "What specific allegations exist against Nancy Guthrie?"
+        "Where did the Unknown allegedly go in Nancy Guthrie case?",
+        "Where did the Unknown allegedly go in Phantom billing fraud?",
+        "What other organizations is Damon Jones connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T05:05:57.401Z",
-  "lastUpdated": "2026-04-18T05:05:57.402Z"
+  "lastReflection": "2026-04-18T07:05:18.850Z",
+  "lastUpdated": "2026-04-18T07:05:18.852Z"
 }
