@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-12T09:43:41.642Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-12T10:37:22.391Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-18T21:33:56.092Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-18T22:33:28.551Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Former Northwest ISD teacher connected to?",
-    "Where did the $40M allegedly go in Woodhill Ponzi Scheme?",
     "Where did the N/A allegedly go in MLB Streaming Deals Investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Not specified connected to?",
@@ -558,7 +556,9 @@
     "Where did the $2.48M allegedly go in Zion Baptist Church Grants?",
     "Where did the $2.48M allegedly go in Feeding Our Future fraud?",
     "Where did the $40M allegedly go in Woodhill Capital alleged Ponzi scheme?",
-    "What other organizations is Kash Patel connected to?"
+    "What other organizations is Kash Patel connected to?",
+    "Where did the $40M allegedly go in Feeding Our Future fraud?",
+    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2095,
-    "articlesProcessed": 104400,
-    "redFlagsFound": 2427,
+    "totalScans": 2096,
+    "articlesProcessed": 104450,
+    "redFlagsFound": 2429,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud_leader",
+          "description": "Aimee Bock, leader of Feeding Our Future, to be sentenced",
+          "insight": "Potential for large-scale fraud in non-profit organization",
+          "entities": [
+            "Aimee Bock",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQWmowRk03VGpra0htWXoxTnd4dDBUUWJMR0MwWnhHODVvS0E3MTExNXNDblBLRHZrTGZ1NC1SczBSZEJKRWx6eUZaTzNCUTVLN0Uxek5OSGlQMTAzeFBJaHNIVkpLd1JhSnI4SFNJa1BIY2g5a1U0UDEyUWR1N7JreUM3RDB4R3czcGtjLTBFcWhnQ0VxQTFQSmVIaFJieF9tTHp5UHVveFBySmZoVkhET2JGSlc1VElLM2N4T1RvUkZ5dnBBWExsTHpzQjkyNG5RckN6SnFjbVZSWmg5QjhieDZBYVI0dzJsR1hFYmRnUmxMSC1sbUE"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Avon firefighter connected to?",
         "What other organizations is Former Northwest ISD teacher connected to?",
-        "Where did the $40M allegedly go in Woodhill Ponzi Scheme?"
+        "Where did the $40M allegedly go in Woodhill Ponzi Scheme?",
+        "Where did the N/A allegedly go in MLB Streaming Deals Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-18T21:33:56.092Z",
-  "lastUpdated": "2026-04-18T21:33:56.092Z"
+  "lastReflection": "2026-04-18T22:33:28.551Z",
+  "lastUpdated": "2026-04-18T22:33:28.551Z"
 }
