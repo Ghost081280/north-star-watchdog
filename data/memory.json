@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-13T02:32:00.497Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-13T05:40:19.714Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-19T16:38:38.648Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-19T17:34:59.307Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $40M allegedly go in Feeding Our Future fraud?",
-    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?",
     "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?",
     "Where did the $340M allegedly go in Feeding Our Future fraud case?",
     "Where did the $340M allegedly go in DOJ fraud division investigation?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against John Brennan?",
     "Where did the $3.1 billion allegedly go in $3.1 billion in Medicaid funding at risk in Minnesota?",
     "Where did the $3.1 billion allegedly go in Minnesota Medical Drivers Fraud?",
-    "Where did the $340M allegedly go in DOJ Fraud Division?"
+    "Where did the $340M allegedly go in DOJ Fraud Division?",
+    "What other organizations is Minneapolis man connected to?",
+    "Where did the $340M allegedly go in Feeding Our Future scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2109,
-    "articlesProcessed": 105100,
-    "redFlagsFound": 2446,
+    "totalScans": 2110,
+    "articlesProcessed": 105150,
+    "redFlagsFound": 2447,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Woodhill Capital alleged Ponzi scheme?",
-        "What other organizations is Kash Patel connected to?",
-        "Where did the $40M allegedly go in Feeding Our Future fraud?"
+        "Where did the $40M allegedly go in Feeding Our Future fraud?",
+        "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?",
+        "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-19T16:38:38.648Z",
-  "lastUpdated": "2026-04-19T16:38:38.648Z"
+  "lastReflection": "2026-04-19T17:34:59.307Z",
+  "lastUpdated": "2026-04-19T17:34:59.308Z"
 }
