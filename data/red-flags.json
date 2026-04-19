@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Contract cancellation",
+      "description": "A Somali-owned Minnesota transportation company had its contract cancelled, which the company claims is ‘blatant discrimination’.",
+      "insight": "This could be a sign of potential fraud or corruption in the contracting process. Further investigation is needed to determine the cause of the contract cancellation.",
+      "entities": [
+        "Somali-owned Minnesota transportation company"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/somali-owned-minnesota-transportation-company-calls-contract-cancellation-blatant-discrimination/600246433/",
+      "id": "rf-1776598482818-0q2vrwkkb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-19T11:34:42.814Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Somali-owned Minnesota transportation company calls contract cancellation 'blatant discrimination'",
       "insight": "I believe that there may be a pattern of discrimination against Somali-owned businesses in Minnesota. Further investigation is needed to determine the extent of the issue.",
@@ -954,41 +973,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-14T02:25:56.447Z",
       "isNew": false
-    },
-    {
-      "type": "Potential Kidnapping",
-      "description": "The arrest of a Hmong American man by ICE agents is being investigated as a possible kidnapping",
-      "insight": "This case raises concerns about the actions of federal agents and the potential for abuse of power. Further investigation is needed to determine the circumstances surrounding the arrest and to ensure that the rights of the individual were not violated.",
-      "entities": [
-        "ICE",
-        "Ramsey County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/ice-arrest-hmong-american-man-kidnapping-investigation/",
-      "id": "rf-1776123687834-k80zu9vcp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-13T23:41:27.831Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-19T10:37:55.118Z"
+  "lastUpdated": "2026-04-19T11:34:42.814Z"
 }
