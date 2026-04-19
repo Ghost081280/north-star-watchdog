@@ -1,22 +1,41 @@
 {
   "flags": [
     {
-      "type": "fraud allegations",
+      "type": "program termination",
+      "description": "Minnesota medical transport company contract termination",
+      "insight": "This termination may be related to fraud allegations. Investigate the company's background and the circumstances of the termination.",
+      "entities": [
+        "Minnesota medical transport company"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/2026-04-19/minnesota-medical-transport-company-says-sudden-contract-termination-will-leave-95-workers-jobless",
+      "id": "rf-1776634479621-nhypqgi09",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-19T21:34:39.617Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged fraud",
       "description": "Somali-owned Minnesota transportation company calls contract cancellation 'blatant discrimination'",
-      "insight": "This may indicate a potential case of discrimination and fraud.",
+      "insight": "This may be related to a larger fraud scheme. Investigate the company's dealings and the circumstances of the contract cancellation.",
       "entities": [
         "Somali-owned Minnesota transportation company"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Somali-owned Minnesota transportation company calls contract cancellation ‘blatant discrimination’ - Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRk5mZkRnb2dJU0F1TW41RVd3dGFsTW1UYVdHdXlyV01CN3NTZEZXNFA2N1paMndRbnNLN2N5bTgwOTE3bUhBQ1NvQWNSeUktQ2hJQ0hNWTNIanZUcWJ3THIxTFZ5YUxpZENTNHF0ZHF6Z1dIQ0U0UjBySDZvSnJ4cXpjaWdCMERrNXNJUGVEdVlwVzRYaUNsa3ktLXBlLThqOVdxSHd3S3VDVF9DZzVmTGFXallFQjZDeEZnMWdaRUZVemdEb0tpQ0hwNlBvbzg",
-      "id": "rf-1776630979278-npn5wudg6",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/2026-04-18/somali-owned-minnesota-transportation-company-calls-contract-cancellation-blatant-discrimination/",
+      "id": "rf-1776634479621-q5ws2fsnz",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-19T20:36:19.274Z",
+      "detectedAt": "2026-04-19T21:34:39.617Z",
       "isNew": true
     },
     {
@@ -949,31 +968,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-15T02:14:56.301Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into government agency",
-      "description": "The Minnesota DHS is investigating federal agents for alleged kidnapping",
-      "insight": "This could indicate a potential pattern of abuse of power by federal agents",
-      "entities": [
-        "Minnesota DHS",
-        "Federal Agents"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Meyka",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa19VY0tENGYxVDZ4WmFjUjkzQzR0SFQzZGJLZS1WcEV0YThnOXRpTHVWTWFQUXlLRzgwS0pOajBYQVB5Vk1lSHhMclBIVmZVeTVUOHB3RVA5UnYteGZpWTJmOU1uOVowdTJPcWV6UHE2OW1XeEZUTVBLU3A3aWpQc3d0ZWJKTGhjSXZJQm01cHpWRFZmXzVNX2xfYmZMWk0",
-      "id": "rf-1776210047704-k195j7jvr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-14T23:40:47.701Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -982,7 +980,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1000,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-19T20:36:19.274Z"
+  "lastUpdated": "2026-04-19T21:34:39.617Z"
 }
