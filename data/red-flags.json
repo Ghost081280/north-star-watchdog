@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating a fatal shooting in North Highlands",
+      "insight": "This could indicate a larger issue with violence in the area",
+      "entities": [
+        "FBI",
+        "North Highlands"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "ABC10",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSTRzbTVIaF9BSHFmR0dyYVZDVFpjakZERGYyRHZMUjR4dk5DVWJLVGdENFZCTEdnckpBeEhCODdfSGVVMnpGMmw0eks3SVpZdDdwVjhPa1czUTNGQWNsZDBoV3I4dUxMNDRlckNaclpRZ1BabTNKdnpBZjkxbTdDVjZBaldYdzNCZmI5Wi0wVnp3Wkc5bGtKMlN3bTNFbVNMVkg2NWJTV2NnTVhTcWpJWWhSNmxITVVzWEs3WnJSelVySmhidEwxYno1TkVFdWNORFVaZWFRQlA1dW9ZenZV",
+      "id": "rf-1776624487654-exxv4tq3x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-19T18:48:07.650Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid funding at risk",
       "description": "$3.1 billion in Medicaid funding is at risk in Minnesota",
       "insight": "This could have significant implications for healthcare services in Minnesota.",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-14T20:52:24.132Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has launched an investigation into the Offset shooting at a South Florida casino.",
-      "insight": "This investigation may be connected to other cases of violence or fraud in the entertainment industry. Further research is needed to determine the extent of the investigation and potential connections to other entities.",
-      "entities": [
-        "Offset",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-releases-photos-tied-to-offset-shooting-at-south-florida-casino/",
-      "id": "rf-1776194007900-i38chcji2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-14T19:13:27.895Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -982,11 +982,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-19T17:34:59.309Z"
+  "lastUpdated": "2026-04-19T18:48:07.650Z"
 }

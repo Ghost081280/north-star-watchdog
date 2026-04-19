@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-13T05:40:19.714Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-04-13T08:00:39.949Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-19T17:34:59.307Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-19T18:48:07.647Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?",
-    "Where did the $340M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $340M allegedly go in DOJ fraud division investigation?",
     "Where did the $3.1 billion allegedly go in Minnesota Somali fraud hearing?",
     "Where did the $340M allegedly go in DOJ fraud division?",
     "Where did the $3.1 billion allegedly go in Minnesota Medicaid Funding Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $3.1 billion allegedly go in Minnesota Medical Drivers Fraud?",
     "Where did the $340M allegedly go in DOJ Fraud Division?",
     "What other organizations is Minneapolis man connected to?",
-    "Where did the $340M allegedly go in Feeding Our Future scheme?"
+    "Where did the $340M allegedly go in Feeding Our Future scheme?",
+    "What other organizations is Minnesota AG Ellison connected to?",
+    "What other organizations is Kash Patel connected to?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2110,
-    "articlesProcessed": 105150,
-    "redFlagsFound": 2447,
+    "totalScans": 2111,
+    "articlesProcessed": 105200,
+    "redFlagsFound": 2449,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Feeding Our Future fraud?",
-        "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?",
-        "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?"
+        "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?",
+        "Where did the $340M allegedly go in Feeding Our Future fraud case?",
+        "Where did the $340M allegedly go in DOJ fraud division investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-19T17:34:59.307Z",
-  "lastUpdated": "2026-04-19T17:34:59.308Z"
+  "lastReflection": "2026-04-19T18:48:07.647Z",
+  "lastUpdated": "2026-04-19T18:48:07.648Z"
 }
