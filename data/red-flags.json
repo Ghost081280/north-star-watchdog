@@ -2,6 +2,29 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "A national business has canceled its contract with a Somali-owned Minnesota transportation company over fraud allegations.",
+      "insight": "This could indicate a larger issue with fraud in Minnesota's transportation sector, potentially involving other companies or government programs.",
+      "entities": [
+        "Somali-owned Minnesota transportation company"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRk5mZkRnb2dJU0F1TW41RVd3dGFsTW1UYVdHdXlyV01CN3NTZEZXNFA2N1paMndRbnNLN2N5bTgwOTE3bUhBQ1NvQWNSeUktQ2hJQ0hNWTNIanZUcWJ3THIxTFZ5YUxpZENTNHF0ZHF6Z1dIQ0U0UjBySDZvSnJ4cXpjaWdCMERrNXNJUGVEdVlwVzRYaUNsa3ktLXBlLThqOVdxSHd3S3VDVF9DZzVmTGFXallFQjZDeEZnMWdaRUZVemdEb0tpQ0hwNlBvbzg",
+      "searches": [
+        "Minnesota transportation company fraud",
+        "program termination"
+      ],
+      "id": "rf-1776613004934-o6g8mosko",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-19T15:36:44.930Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Contract cancellation due to fraud allegations",
       "insight": "This could indicate a larger issue with fraud in Minnesota's Medicaid program",
       "entities": [
@@ -17,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-19T14:53:09.425Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "allegations_of_misconduct",
@@ -36,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-19T14:53:09.425Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Contract cancellation",
@@ -952,30 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-14T13:22:11.338Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Investigation into ICE agents' actions during Metro Surge",
-      "insight": "The investigation into potential crimes by federal officials during Metro Surge indicates possible misconduct by ICE agents.",
-      "entities": [
-        "ICE agents",
-        "Ramsey County"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://minnesota-reformer.com/2024/04/13/ramsey-county-investigating-five-cases-of-potential-crimes-by-federal-officials-during-metro-surge/",
-      "id": "rf-1776151738425-l122vrssa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-14T07:28:58.421Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,6 +988,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1001,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-19T14:53:09.425Z"
+  "lastUpdated": "2026-04-19T15:36:44.930Z"
 }
