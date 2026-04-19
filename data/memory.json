@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-12T14:01:18.522Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-12T15:34:44.939Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-19T05:27:46.292Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
+    },
+    {
+      "date": "2026-04-19T07:17:04.827Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2.48M allegedly go in Zion Baptist Church investigation?",
     "What other organizations is Youth Volleyball Coach connected to?",
     "Where did the $2.48M allegedly go in Minnesota Fraud Investigation?",
     "Where did the $2.48M allegedly go in Zion Baptist Church Grant Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $340M allegedly go in Feeding Our Future fraud case?",
     "Where did the $340M allegedly go in DOJ fraud division investigation?",
     "Where did the $3.1 billion allegedly go in Minnesota Somali fraud hearing?",
-    "Where did the $340M allegedly go in DOJ fraud division?"
+    "Where did the $340M allegedly go in DOJ fraud division?",
+    "Where did the $3.1 billion allegedly go in Minnesota Medicaid Funding Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2099,
-    "articlesProcessed": 104600,
-    "redFlagsFound": 2433,
+    "totalScans": 2100,
+    "articlesProcessed": 104650,
+    "redFlagsFound": 2434,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Not specified?",
-        "Where did the $40M allegedly go in Woodhill Capital investigation?",
-        "Where did the $2.48M allegedly go in Zion Baptist Church investigation?"
+        "Where did the $2.48M allegedly go in Zion Baptist Church investigation?",
+        "What other organizations is Youth Volleyball Coach connected to?",
+        "Where did the $2.48M allegedly go in Minnesota Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-19T05:27:46.292Z",
-  "lastUpdated": "2026-04-19T05:27:46.293Z"
+  "lastReflection": "2026-04-19T07:17:04.827Z",
+  "lastUpdated": "2026-04-19T07:17:04.828Z"
 }
