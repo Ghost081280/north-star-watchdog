@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-12T23:33:36.418Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-04-13T02:32:00.497Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-19T15:36:44.928Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-19T16:38:38.648Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -532,15 +532,13 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.8000000000000003,
-      "count": 7,
+      "confidence": 0.8500000000000003,
+      "count": 8,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-04-07T07:14:15.327Z"
+      "lastSeen": "2026-04-19T16:38:38.648Z"
     }
   ],
   "openQuestions": [
-    "Where did the $40M allegedly go in Woodhill Capital alleged Ponzi scheme?",
-    "What other organizations is Kash Patel connected to?",
     "Where did the $40M allegedly go in Feeding Our Future fraud?",
     "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding?",
     "Where did the $3.1 billion allegedly go in Minnesota Medicaid funding investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in FBI and Justice Department Rebuilding?",
     "What other organizations is John Brennan connected to?",
     "What specific allegations exist against John Brennan?",
-    "Where did the $3.1 billion allegedly go in $3.1 billion in Medicaid funding at risk in Minnesota?"
+    "Where did the $3.1 billion allegedly go in $3.1 billion in Medicaid funding at risk in Minnesota?",
+    "Where did the $3.1 billion allegedly go in Minnesota Medical Drivers Fraud?",
+    "Where did the $340M allegedly go in DOJ Fraud Division?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2108,
-    "articlesProcessed": 105050,
-    "redFlagsFound": 2444,
+    "totalScans": 2109,
+    "articlesProcessed": 105100,
+    "redFlagsFound": 2446,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-19T15:36:44.928Z",
-  "lastUpdated": "2026-04-19T15:36:44.929Z"
+  "lastReflection": "2026-04-19T16:38:38.648Z",
+  "lastUpdated": "2026-04-19T16:38:38.648Z"
 }

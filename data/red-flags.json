@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid funding at risk",
+      "description": "$3.1 billion in Medicaid funding is at risk in Minnesota",
+      "insight": "This could have significant implications for healthcare services in Minnesota.",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KROX",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQbjkxakNCSGpmNmZPdEEwVmFqUE9UZDFhWDE4a1ZmMUFEMTd3Z29UNG5oMDFGMVNiajdwQ2tkWko1RC1CRE9hWUdvT08zVXZSZnNJLUpSVzRlU00wVS1aLTVkUGk5dzVkYk9yOGpZTmd1Q2FnYzBGMWFUVUU",
+      "id": "rf-1776616718654-sglaojqru",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-19T16:38:38.650Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "A national business has canceled its contract with a Somali-owned Minnesota transportation company over fraud allegations.",
       "insight": "This could indicate a larger issue with fraud in Minnesota's transportation sector, potentially involving other companies or government programs.",
@@ -21,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-19T15:36:44.930Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,31 +974,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-14T19:13:27.895Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "ICE agents are being investigated for detaining a US citizen in Minnesota",
-      "insight": "This incident raises concerns about the accountability of ICE agents and the potential for wrongful detentions. Further investigation is needed to determine the circumstances surrounding the detention and to ensure that those responsible are held accountable.",
-      "entities": [
-        "ICE",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/04/13/us/ice-detention-investigation-minnesota.html",
-      "id": "rf-1776172931342-4vrqk2bf0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-14T13:22:11.338Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,6 +987,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-19T15:36:44.930Z"
+  "lastUpdated": "2026-04-19T16:38:38.650Z"
 }
