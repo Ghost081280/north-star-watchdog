@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-13T20:53:55.279Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-13T21:46:55.456Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-20T05:39:46.649Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-04-20T08:04:19.833Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota AG Ellison connected to?",
-    "What other organizations is Kash Patel connected to?",
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Greggy connected to?",
     "Where did the $340M allegedly go in Somali fraud investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Minnesota medical transport company contract termination?",
     "Where did the $3.1 billion allegedly go in Minnesota Medicaid Funding?",
     "Where did the $340 million allegedly go in Feeding Our Future fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $0 allegedly go in Minnesota medical transport company fraud?",
+    "Where did the $0 allegedly go in FBI investigation into missing and deceased US scientists?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2118,
-    "articlesProcessed": 105550,
-    "redFlagsFound": 2461,
+    "totalScans": 2119,
+    "articlesProcessed": 105600,
+    "redFlagsFound": 2463,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "alleged fraud",
-          "description": "Feeding Our Future fraud leader Aimee Bock to be sentenced in May",
-          "insight": "This indicates a significant case of fraud in Minnesota, potentially involving multiple parties.",
-          "entities": [
-            "Aimee Bock",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://www.msn.com/en/en-us/article/Feeding-Our-Future-fraud-leader-Aimee-Bock-to-be-sentenced-in-May-2026-04-19"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minneapolis man connected to?",
-        "Where did the $340M allegedly go in Feeding Our Future scheme?",
-        "What other organizations is Minnesota AG Ellison connected to?"
+        "What other organizations is Minnesota AG Ellison connected to?",
+        "What other organizations is Kash Patel connected to?",
+        "Are any of these 4 figures connected to each other?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-20T05:39:46.649Z",
-  "lastUpdated": "2026-04-20T05:39:46.650Z"
+  "lastReflection": "2026-04-20T08:04:19.833Z",
+  "lastUpdated": "2026-04-20T08:04:19.834Z"
 }
