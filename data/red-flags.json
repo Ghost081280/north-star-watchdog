@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Colorado Department of Human Services is under investigation amid turnover, complaints, and nearly $3 million in payouts.",
+      "insight": "This could indicate a larger issue with the department's management and potential fraud.",
+      "entities": [
+        "Colorado Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Denver Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUF9rcXNrX0t6RWJnNjVhaHl5bmJQZlk4Y0l3cXowelZPOXIzd0dkVWM4R3RQNC0ySGk3bzFEMElRWUZzZTlFQjlxNDRFUVlQRXNwSGwyLWtRejZZcDBOM1Ezd1d6S2tDU2pKb21ZQWhOOGpsTjFDZ3NGOFllcnA3UzRwSzBtV21OSnkwUTZFX24wOW1oMEctT2g4ak44UlZR",
+      "id": "rf-1776701283489-7bdjprd7m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-20T16:08:03.486Z",
+      "isNew": true
+    },
+    {
       "type": "large payouts",
       "description": "The Colorado Department of Human Services has made large payouts amid an investigation.",
       "insight": "This could indicate potential wrongdoing or mismanagement within the department.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-20T14:49:11.202Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-20T14:49:11.202Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "contract termination",
@@ -949,40 +968,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-15T11:58:01.448Z",
       "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "Lavish lifestyle linked to fraudulent tax returns",
-      "insight": "The connection between lavish lifestyles and fraudulent tax returns suggests a potential pattern of financial crimes. Investigating these cases could lead to uncovering larger networks of fraud.",
-      "entities": [
-        "Individuals involved in tax fraud"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/2026-04-15/lavish-lifestyle-linked-to-fraudulent-tax-returns",
-      "id": "rf-1776254281451-bdpdgmyh7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-15T11:58:01.448Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +997,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-20T14:49:11.202Z"
+  "lastUpdated": "2026-04-20T16:08:03.486Z"
 }
