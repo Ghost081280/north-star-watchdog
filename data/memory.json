@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-13T17:59:14.359Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-13T19:21:48.243Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-19T23:34:38.810Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-20T02:32:13.082Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.65
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $340M allegedly go in DOJ Fraud Division?",
     "What other organizations is Minneapolis man connected to?",
     "Where did the $340M allegedly go in Feeding Our Future scheme?",
     "What other organizations is Minnesota AG Ellison connected to?",
@@ -558,7 +557,8 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Denton teacher connected to?",
     "Where did the $340 million allegedly go in National Fraud Enforcement Division?",
-    "Where did the $0 allegedly go in Minnesota medical transport company contract termination?"
+    "Where did the $0 allegedly go in Minnesota medical transport company contract termination?",
+    "Where did the $3.1 billion allegedly go in Minnesota Medicaid Funding?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2116,
-    "articlesProcessed": 105450,
-    "redFlagsFound": 2458,
+    "totalScans": 2117,
+    "articlesProcessed": 105500,
+    "redFlagsFound": 2459,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against John Brennan?",
-        "Where did the $3.1 billion allegedly go in $3.1 billion in Medicaid funding at risk in Minnesota?",
-        "Where did the $3.1 billion allegedly go in Minnesota Medical Drivers Fraud?"
+        "Where did the $340M allegedly go in DOJ Fraud Division?",
+        "What other organizations is Minneapolis man connected to?",
+        "Where did the $340M allegedly go in Feeding Our Future scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-19T23:34:38.810Z",
-  "lastUpdated": "2026-04-19T23:34:38.812Z"
+  "lastReflection": "2026-04-20T02:32:13.082Z",
+  "lastUpdated": "2026-04-20T02:32:13.083Z"
 }
