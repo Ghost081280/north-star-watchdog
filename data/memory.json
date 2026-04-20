@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-14T05:22:17.868Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-14T07:28:58.419Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-20T16:08:03.484Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-20T17:56:29.966Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Joe diGenova connected to?",
     "What other organizations is Tommaso Cioni connected to?",
     "Where did the $0 allegedly go in Somali fraud hearing?",
     "Where did the Unknown allegedly go in Minnesota Somali fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the $340 million allegedly go in Minnesota Fraud Scheme?",
     "Where did the $3 million allegedly go in Colorado Department of Human Services Investigation?",
     "Where did the $340 million allegedly go in Minnesota Fraud Scheme Investigation?",
-    "Where did the $340 million allegedly go in National Fraud Enforcement Division Operation?"
+    "Where did the $340 million allegedly go in National Fraud Enforcement Division Operation?",
+    "Where did the $250 million allegedly go in FBI Investigation into Kash Patel?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2123,
-    "articlesProcessed": 105800,
-    "redFlagsFound": 2470,
+    "totalScans": 2124,
+    "articlesProcessed": 105850,
+    "redFlagsFound": 2472,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud scheme",
+          "description": "National Fraud Enforcement Division uncovers $340 million in fraud schemes in its first week of operation.",
+          "insight": "This uncovering of a large-scale fraud scheme raises concerns about the prevalence of fraud and the effectiveness of law enforcement agencies in detecting and preventing it.",
+          "entities": [
+            "National Fraud Enforcement Division"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Lynnwood Times",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNc0ExNkNiOFNzSHNJWDgwZnNIYWJzd2hjcWx0eHVlOHJsY1BRZVVweHczNlh6NkhLSENyZ0xqdnlCZnBqVW1feGlGRzBXMXdIU0pPRGNPcTkwWHlfMENkaGhFdFA0QQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $N/A allegedly go in Minnesota medical transport company fraud?",
-        "Where did the $340M allegedly go in DOJ fraud division?",
-        "What other organizations is Joe diGenova connected to?"
+        "What other organizations is Joe diGenova connected to?",
+        "What other organizations is Tommaso Cioni connected to?",
+        "Where did the $0 allegedly go in Somali fraud hearing?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-20T16:08:03.484Z",
-  "lastUpdated": "2026-04-20T16:08:03.485Z"
+  "lastReflection": "2026-04-20T17:56:29.966Z",
+  "lastUpdated": "2026-04-20T17:56:29.967Z"
 }

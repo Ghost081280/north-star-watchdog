@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "lawsuit",
+      "description": "FBI Director Kash Patel sues The Atlantic over a story claiming he has a drinking problem.",
+      "insight": "This lawsuit raises concerns about the credibility of The Atlantic and the potential impact on Kash Patel's reputation.",
+      "entities": [
+        "Kash Patel",
+        "The Atlantic"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Atlantic",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLWV6MVJIR0lwRTRLdHBVUURDRmpfbkoybXhTdWxPN29FcTFGR2VWVHAyNFRCMGszbjhyaUM4VXdXUDBJZWI2cGJ6WXN1ZVlHNTNqYmJwekczcG9FX0RLV0Q0clF5ak16bFdKVl96M2RaaE1pdzN1RldZbW02T1V1ZWtlZnhJTWY5NFUxR1R4WWFaMm5BMXc",
+      "id": "rf-1776707789971-efnw1ebs3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-20T17:56:29.968Z",
+      "isNew": true
+    },
+    {
+      "type": "fraud scheme",
+      "description": "National Fraud Enforcement Division uncovers $340 million in fraud schemes in its first week of operation.",
+      "insight": "This uncovering of a large-scale fraud scheme raises concerns about the prevalence of fraud and the effectiveness of law enforcement agencies in detecting and preventing it.",
+      "entities": [
+        "National Fraud Enforcement Division"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Lynnwood Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNc0ExNkNiOFNzSHNJWDgwZnNIYWJzd2hjcWx0eHVlOHJsY1BRZVVweHczNlh6NkhLSENyZ0xqdnlCZnBqVW1feGlGRzBXMXdIU0pPRGNPcTkwWHlfMENkaGhFdFA0QQ",
+      "id": "rf-1776707789971-s9wjdxzmz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-20T17:56:29.968Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Colorado Department of Human Services is under investigation amid turnover, complaints, and nearly $3 million in payouts.",
       "insight": "This could indicate a larger issue with the department's management and potential fraud.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-20T16:08:03.486Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large payouts",
@@ -930,57 +969,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-15T17:02:23.429Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The Federal Reserve renovations investigation has been met with resistance from the Federal Reserve, with Justice Department officials being turned away from the construction site.",
-      "insight": "This resistance from the Federal Reserve could indicate that there is something to hide, and further investigation is needed to uncover the truth.",
-      "entities": [
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/article/justice-department-officials-turned-away-from-fed-construction-site",
-      "id": "rf-1776260650234-qvwfp498r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-15T13:44:10.230Z",
-      "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Federal H.R. 1 cuts threaten Lake County health care, food aid, and fiscal stability",
-      "insight": "Potential program terminations and funding cuts could indicate a larger pattern of financial mismanagement or political maneuvering. Investigating the entities involved and the extent of these cuts could reveal more about the situation.",
-      "entities": [
-        "Lake County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Lake County News,California",
-      "sourceUrl": "https://www.lakecountnews.com/2026-04-15/federal-hr-1-cuts-threaten-lake-county-health-care-food-aid-and-fiscal-stability",
-      "id": "rf-1776254281451-omvrgdish",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-15T11:58:01.448Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -997,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-20T16:08:03.486Z"
+  "lastUpdated": "2026-04-20T17:56:29.968Z"
 }
