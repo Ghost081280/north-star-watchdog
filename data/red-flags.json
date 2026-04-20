@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged fraud",
+      "description": "The Daily Beast reports on Keystone Kash's FBI Shake-Up setting off alarm bells.",
+      "insight": "Possible connection to FBI Director Kash Patel's actions and allegations of excessive drinking.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Daily Beast",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTFdfVGVIOEZRajhtVnNzaWRHZjZyanA3dERrWGxkeG5EUFVXVzQ4T1NycG1hWGFKQ1lhanM3aUR2RFg4b2ItMlZ1d3luS0Z1OEdvZXFxOE9JZ0otYWpIUzdnel9YWnlJbzN5Y3ZWaDdzZGt1N1ppTG9BSXV6SzRYNmxjcUxydw",
+      "id": "rf-1776721482646-qxzi387op",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-20T21:44:42.642Z",
+      "isNew": true
+    },
+    {
       "type": "alleged theft and fraud",
       "description": "The DACC Adult Education program is under investigation for alleged theft and fraud.",
       "insight": "This investigation suggests potential mismanagement or malfeasance within the program.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-20T20:43:24.858Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scheme",
@@ -947,39 +967,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-16T02:31:22.970Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Trump administration has ended Catholic Charities funding for migrant children in Miami.",
-      "insight": "This could have significant implications for the services provided to migrant children in Miami.",
-      "entities": [
-        "Catholic Charities",
-        "Trump Administration"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "National Today",
-      "sourceUrl": "https://www.nationaltoday.com/news/trump-administration-ends-catholic-charities-funding-for-migrant-children-in-miami",
-      "id": "rf-1776292864870-trttj5qzt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-15T22:41:04.866Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -996,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-20T20:43:24.858Z"
+  "lastUpdated": "2026-04-20T21:44:42.642Z"
 }
