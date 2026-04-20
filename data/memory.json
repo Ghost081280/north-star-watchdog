@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-13T23:41:27.829Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-14T02:25:56.446Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-04-20T12:03:01.308Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-20T14:49:11.200Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $340M allegedly go in Somali fraud investigation?",
-    "Where did the $3.1 billion allegedly go in Minnesota medical drivers fraud?",
     "Where did the $N/A allegedly go in Minnesota medical transport company fraud?",
     "Where did the $340M allegedly go in DOJ fraud division?",
     "What other organizations is Joe diGenova connected to?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Minnesota medical transport company fraud?",
     "Where did the $0 allegedly go in FBI investigation into missing and deceased US scientists?",
     "What other organizations is Minnesota AG Ellison connected to?",
-    "Where did the $25,000 allegedly go in FBI Investigation into 'Greggy’s Cult'?"
+    "Where did the $25,000 allegedly go in FBI Investigation into 'Greggy’s Cult'?",
+    "Where did the $340 million allegedly go in Minnesota Fraud Scheme?",
+    "Where did the $3 million allegedly go in Colorado Department of Human Services Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2121,
-    "articlesProcessed": 105700,
-    "redFlagsFound": 2467,
+    "totalScans": 2122,
+    "articlesProcessed": 105750,
+    "redFlagsFound": 2469,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Greggy connected to?",
         "Where did the $340M allegedly go in Somali fraud investigation?",
-        "Where did the $3.1 billion allegedly go in Minnesota medical drivers fraud?"
+        "Where did the $3.1 billion allegedly go in Minnesota medical drivers fraud?",
+        "Where did the $N/A allegedly go in Minnesota medical transport company fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-20T12:03:01.308Z",
-  "lastUpdated": "2026-04-20T12:03:01.309Z"
+  "lastReflection": "2026-04-20T14:49:11.200Z",
+  "lastUpdated": "2026-04-20T14:49:11.201Z"
 }
