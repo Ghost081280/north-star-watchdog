@@ -1,22 +1,41 @@
 {
   "flags": [
     {
-      "type": "program_termination",
-      "description": "Minnesota medical transport company contract termination due to fraud allegations",
-      "insight": "This termination suggests potential fraud in the company's operations, warranting further investigation.",
+      "type": "contract termination",
+      "description": "Minnesota medical transport company says sudden contract termination will leave 95 workers jobless",
+      "insight": "This seems suspicious and warrants further investigation into the reasons behind the contract termination and potential connections to fraud allegations.",
       "entities": [
         "Minnesota medical transport company"
       ],
-      "confidence": 80,
+      "confidence": 75,
       "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQTRUdE1lcWV5aThrNW9FbjRaMEZnZ1BFa1ZzcjlYRU9KYXB6WjIxUXFYYnhPYktCWUFJaTNzTmhJRE5QdzRNS3h2dzY1LWFyY013NHh4UEwxQzBMTzVhczB1SXFnejZkaHJtbnBmaVRJNjZvamFiVWVkQjQ1X3ByTUlmaU1WbHlpSHRYUHhIdWZ3bHd0VWwtb09wTF9ybVhUTlNBamRLWGxJRU9s?oc=5",
-      "id": "rf-1776682015820-1c3g2f15w",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://5eyewitnessnews.com/2026/04/19/minnesota-medical-transport-company-says-sudden-contract-termination-will-leave-95-workers-jobless/",
+      "id": "rf-1776686581315-7mndhegpu",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-20T10:46:55.816Z",
+      "detectedAt": "2026-04-20T12:03:01.310Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged fraud",
+      "description": "Somali-owned Minnesota transportation company calls contract cancellation ‘blatant discrimination’",
+      "insight": "This could indicate a pattern of discrimination or unfair treatment towards certain companies, potentially linked to fraud allegations.",
+      "entities": [
+        "Somali-owned Minnesota transportation company"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://strib.com/2026/04/18/somali-owned-minnesota-transportation-company-calls-contract-cancellation-blatant-discrimination/",
+      "id": "rf-1776686581315-zinupk0k1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-20T12:03:01.310Z",
       "isNew": true
     },
     {
@@ -947,25 +966,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-15T10:58:21.033Z",
       "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "A Corpus Christi tire shop owner has been charged with fraud, and the FBI is searching for victims.",
-      "insight": "This could indicate a larger scheme or pattern of fraudulent activity.",
-      "entities": [
-        "Corpus Christi tire shop owner"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "WOAI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZS1SODhCU3FpNTJLNzZVcmN4LUdtaWFxenU1YXRmZVJLcGtRSjR6bjBoOGxjenUwSDJWYVhQQmF1dENsM1VybXAtRGEzX1VUbWdhSTZEd0NDZTk2ZS1hZWROemtndWFMS2cxdk9OVFBQSGVBX1dhYmlXVTFPazdOYzdoVmlzZzZuVXN3RUw3M1pzS3VQSy1hTmxvVjhxTHZOWW9iV1Z3LVZHX0FOMHNBOXdMcUZZQlNjT1dxSEFGSktRdVhrbVgwN3FxWnRZWUoxbDhVME9nRVowWFFzZkxvSzVUdTRRb3dmM1NTbzNn",
-      "id": "rf-1776250701037-abbb29c85",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-15T10:58:21.033Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -978,8 +978,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -997,5 +995,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-20T10:46:55.816Z"
+  "lastUpdated": "2026-04-20T12:03:01.310Z"
 }
