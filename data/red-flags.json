@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "misuse of grants",
+      "description": "A church in Minnesota is being sued by the state's DHS for alleged misuse of $2.5 million in grants.",
+      "insight": "This case highlights the need for increased oversight of grant funding to non-profit organizations. Further investigation is needed to determine the extent of the misuse and to identify any other organizations that may be involved.",
+      "entities": [
+        "Minnesota DHS",
+        "church"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Center Square",
+      "sourceUrl": "https://www.thecentersquare.com/minnesota/minnesota-dhs-sues-church-over-alleged-misuse-of-2-5-million-in-grants/article_3b7f44ee-e72d-11ec-8f6d-87db17f44c7c.html",
+      "id": "rf-1776794688852-0dwdp7ptm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T18:04:48.848Z",
+      "isNew": true
+    },
+    {
       "type": "disability_program_vulnerability",
       "description": "Disability program vulnerable to fraud",
       "insight": "Potential for misuse of funds or corruption in the program",
@@ -943,29 +963,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-16T23:39:27.684Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Elmhurst firm under federal investigation for multiple violations",
-      "insight": "This indicates potential widespread fraud and regulatory non-compliance in Minnesota.",
-      "entities": [
-        "Elmhurst Firm"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Patch",
-      "sourceUrl": "https://patch.com/us/local-news/elmhurst-firm-under-federal-investigation-raxks-up-violations-report",
-      "id": "rf-1776375698245-alj4jqc04",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T21:41:38.241Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -973,7 +975,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -990,5 +994,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-21T16:59:25.175Z"
+  "lastUpdated": "2026-04-21T18:04:48.848Z"
 }
