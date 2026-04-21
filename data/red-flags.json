@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "disability_program_vulnerability",
+      "description": "Disability program vulnerable to fraud",
+      "insight": "Potential for misuse of funds or corruption in the program",
+      "entities": [
+        "Disability program providers"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "This disability program is vulnerable to fraud. Providers want to scrap it. - Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWlRzUkVBV1hZNHZGUUpOdUpFTUc2NllNM2c2UUZBeXBSY0ppZW1kV3JTUDEzNHZYZXFvNlljYXhoUTAtcTFKSzE3UjhVQWxMWko3UElKMXFwRFpxN2NoX0VKSTZSRi1qT3l1UmpQTFFUNkdGMEpOVThPalJsQVRvRl9kSHktMG16NXFNT3NJXy1iZEJtdHp0Q2JjcTREUzJuVDhXcnZ6LTRNbFRJZGFCZVpYQlRrM05TOHYzS1d5b0thXzZzNnZsNkdhVQ",
+      "id": "rf-1776784352904-93df4fcvq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T15:12:32.900Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI investigating ballots found in Renton dumpster",
       "insight": "This could be a sign of election tampering or voter fraud, which would be a serious concern.",
@@ -943,25 +962,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-16T21:41:38.241Z",
       "isNew": false
-    },
-    {
-      "type": "funding dispute",
-      "description": "Second Avenue Subway funding dispute resolved",
-      "insight": "This highlights the complexities of large infrastructure projects and potential for financial mismanagement.",
-      "entities": [
-        "Second Avenue Subway"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Crain's New York Business",
-      "sourceUrl": "https://www.crainsnewyork.com/article/hochul-says-second-avenue-subway-funding-freeze-over",
-      "id": "rf-1776375698245-sekegtk2w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T21:41:38.241Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -975,8 +975,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -993,5 +992,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-21T13:23:13.138Z"
+  "lastUpdated": "2026-04-21T15:12:32.900Z"
 }
