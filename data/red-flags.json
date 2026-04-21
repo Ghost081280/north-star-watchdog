@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "misuse of funds",
+      "description": "Woodhaven mayor under investigation for alleged misuse of funds",
+      "insight": "This case suggests potential corruption and mismanagement of public funds",
+      "entities": [
+        "Woodhaven mayor"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://cbsnews.com/news/woodhaven-mayor-under-investigation-for-alleged-misuse-of-funds/",
+      "id": "rf-1776757652864-00hrcdh7v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T07:47:32.860Z",
+      "isNew": true
+    },
+    {
+      "type": "theft",
+      "description": "HS hockey coach charged with stealing money from team fundraising event",
+      "insight": "This case indicates potential financial mismanagement and theft in youth sports organizations",
+      "entities": [
+        "HS hockey coach"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "kare11.com",
+      "sourceUrl": "https://kare11.com/news/hs-hockey-coach-charged-with-stealing-money-from-team-fundraising-event",
+      "id": "rf-1776757652864-zcs5j8u9o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T07:47:32.860Z",
+      "isNew": true
+    },
+    {
       "type": "alleged misconduct",
       "description": "The Woodhaven mayor is under investigation for alleged misconduct.",
       "insight": "This could indicate a larger issue with governance in Woodhaven.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-21T05:26:29.224Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud",
@@ -36,7 +74,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-21T05:26:29.224Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged theft and fraud",
@@ -924,50 +962,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-16T20:46:07.790Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Trump Admin Cancels $11M Catholic Charities Contract",
-      "insight": "This cancellation may indicate a larger issue with the program or potential fraud",
-      "entities": [
-        "Catholic Charities",
-        "Trump Admin"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "National Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYkx0VkZBUWZFcmd4bG82R2YxS1ZnOXoyZGJhLVZGa0E2SEtORm1TUTVGZGR3cF9KWU9faXo2Tk9NYkx0a1dXMHJFUUNMSHRyX0x2TElQNm8taW9mcVJjYWpzZHExa2lUNG9vV3Faek5VUkxOX0luaGhCVWtRQ0tCRzBiWnpjeDhKVzYtcFJTeVZhajdNZi1vTnMzSnRfOGhLaDByRkVSX1IxUQ",
-      "id": "rf-1776372367793-4de2pf3xa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T20:46:07.790Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Trump Administration canceled an $11M Catholic Charities contract",
-      "insight": "This cancellation could indicate potential issues with the program or allegations of misconduct",
-      "entities": [
-        "Catholic Charities",
-        "Trump Administration"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "National Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYkx0VkZBUWZFcmd4bG82R2YxS1ZnOXoyZGJhLVZGa0E2SEtORm1TUTVGZGR3cF9KWU9faXo2Tk9NYkx0a1dXMHJFUUNMSHRyX0x2TElQNm8taW9mcVJjYWpzZHExa2lUNG9vV3Faek5VUkxOX0luaGhCVWtRQ0tCRzBiWnpjeDhKVzYtcFJTeVZhajdNZi1vTnNzSnRfOGhLaDByRkVSX1IxUQ",
-      "id": "rf-1776353066559-igkf3yxym",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T15:24:26.556Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -976,7 +975,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -993,5 +992,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-21T05:26:29.224Z"
+  "lastUpdated": "2026-04-21T07:47:32.860Z"
 }
