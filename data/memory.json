@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-14T21:51:23.358Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-14T22:43:29.121Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-21T07:47:32.858Z",
       "summary": "SIGNIFICANT: 2 high-profile figures, 1 new legal actions, Breaking news present",
       "confidence": 0.65
+    },
+    {
+      "date": "2026-04-21T09:24:37.759Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI investigation into missing and deceased US scientists?",
-    "What other organizations is Minnesota AG Ellison connected to?",
     "Where did the $25,000 allegedly go in FBI Investigation into 'Greggy’s Cult'?",
     "Where did the $340 million allegedly go in Minnesota Fraud Scheme?",
     "Where did the $3 million allegedly go in Colorado Department of Human Services Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Woodhaven Mayor Investigation?",
     "Where did the $0 allegedly go in FBI Steam Malware Investigation?",
     "What other organizations is Woodhaven mayor connected to?",
-    "What other organizations is HS hockey coach connected to?"
+    "What other organizations is HS hockey coach connected to?",
+    "Where did the $3.1B allegedly go in Minnesota Medicaid Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2132,
-    "articlesProcessed": 106250,
-    "redFlagsFound": 2483,
+    "totalScans": 2133,
+    "articlesProcessed": 106300,
+    "redFlagsFound": 2484,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $0 allegedly go in Minnesota medical transport company fraud?",
-        "Where did the $0 allegedly go in FBI investigation into missing and deceased US scientists?"
+        "Where did the $0 allegedly go in FBI investigation into missing and deceased US scientists?",
+        "What other organizations is Minnesota AG Ellison connected to?",
+        "Where did the $25,000 allegedly go in FBI Investigation into 'Greggy’s Cult'?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-21T07:47:32.858Z",
-  "lastUpdated": "2026-04-21T07:47:32.858Z"
+  "lastReflection": "2026-04-21T09:24:37.759Z",
+  "lastUpdated": "2026-04-21T09:24:37.760Z"
 }
