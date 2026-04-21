@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI investigating ballots found in Renton dumpster",
+      "insight": "This could be a sign of election tampering or voter fraud, which would be a serious concern.",
+      "entities": [
+        "FBI",
+        "Renton"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "KING5.com",
+      "sourceUrl": "https://www.king5.com/2026/04/21/feds-now-investigating-ballots-found-by-renton-dumpster/",
+      "id": "rf-1776769521252-948vo20gd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T11:05:21.248Z",
+      "isNew": true
+    },
+    {
       "type": "misuse of funds",
       "description": "Woodhaven mayor under investigation for alleged misuse of funds",
       "insight": "This case suggests potential corruption and mismanagement of public funds",
@@ -942,31 +962,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-16T21:41:38.241Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation upended Texas’ gill-net sampling program",
-      "insight": "This investigation may indicate a larger issue with regulatory compliance in the program",
-      "entities": [
-        "Texas",
-        "federal agency"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Houston Chronicle",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc29Yb1RSM2dKLUx2Q3YzUGl0X2M5MkV0ck9mOFJZTEZWOURzYUZnR2hsUHRvS0gtUnhHOWljR2tXNkhYQW1fNlNYLThHcXA3T3FFUWFLZFJPQlRsOUJpVzhMTDMySHJLTTA2QzRKSUdNdGw0X1dDUEh3VEtTT2ZOSm1PZmREeU9GMmM0R2JpdVpFRWlKTWlRYWVlZUNLQQ",
-      "id": "rf-1776372367793-34ib11sus",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T20:46:07.790Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -975,6 +974,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "ProPublica Nonprofits",
     "FDA"
   ],
@@ -993,5 +993,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-21T09:24:37.761Z"
+  "lastUpdated": "2026-04-21T11:05:21.248Z"
 }
