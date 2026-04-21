@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The Southern Poverty Law Center is under federal investigation for its paid informant program.",
+      "insight": "This investigation raises concerns about the Center's activities and potential misuse of funds.",
+      "entities": [
+        "Southern Poverty Law Center"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Daily Signal",
+      "sourceUrl": "https://www.dailysignal.com/2026/04/21/breaking-splc-under-criminal-investigation-for-paid-informant-program/",
+      "id": "rf-1776807846274-cek2zxvym",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-21T21:44:06.271Z",
+      "isNew": true
+    },
+    {
       "type": "misuse of grants",
       "description": "A church in Minnesota is being sued by the state's DHS for alleged misuse of $2.5 million in grants.",
       "insight": "This case highlights the need for increased oversight of grant funding to non-profit organizations. Further investigation is needed to determine the extent of the misuse and to identify any other organizations that may be involved.",
@@ -944,25 +963,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-17T10:54:35.639Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Significant Medicaid cuts loom in Minnesota",
-      "insight": "Potential for fraud and abuse with reduced oversight",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Detroit Lakes Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWkxlbEhjUG95WEVzX2o4VDI2YlVHNTl0LW52WXNmU2lJVUE0OTRDS0V6TVVmWHVkUUZ2LTBTTVFVLTRMVk92N2NCVWZvY3hqS0xOeVROc01RVjVDbzdzVHNUbmlaSUhENkllYllzNEFTLUxTVkhraTRHTmpzaXp2djB4My1RN21BMFR5WWdad0JkeGRFaGoyUGUtS2kyZTVWa0RfRVN1bVFaUQ",
-      "id": "rf-1776382767687-fcc3y4qb0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-16T23:39:27.684Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -971,10 +971,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -991,5 +994,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-21T20:02:29.101Z"
+  "lastUpdated": "2026-04-21T21:44:06.271Z"
 }
