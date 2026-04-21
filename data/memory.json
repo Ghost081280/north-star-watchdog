@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-15T11:58:01.446Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-15T13:44:10.229Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-21T21:44:06.269Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-21T22:37:02.947Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Woodhaven Mayor connected to?",
-    "What other organizations is Trump's Labor Secretary connected to?",
-    "Where did the $0 allegedly go in Woodhaven Mayor Investigation?",
     "Where did the $0 allegedly go in FBI Steam Malware Investigation?",
     "What other organizations is Woodhaven mayor connected to?",
     "What other organizations is HS hockey coach connected to?",
@@ -558,7 +555,10 @@
     "Where did the unknown allegedly go in Southern Poverty Law Center investigation?",
     "Where did the $0 allegedly go in Southern Poverty Law Center Investigation?",
     "Where did the $2.5 million allegedly go in Minnesota DHS Grant Misuse?",
-    "Where did the $0 allegedly go in Ghost Daycares in Minnesota?"
+    "Where did the $0 allegedly go in Ghost Daycares in Minnesota?",
+    "What other organizations is Southern Poverty Law Center connected to?",
+    "Where did the unknown allegedly go in Southern Poverty Law Center Investigation?",
+    "Where did the $2.5 million allegedly go in Minnesota DHS Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2140,
-    "articlesProcessed": 106650,
-    "redFlagsFound": 2492,
+    "totalScans": 2141,
+    "articlesProcessed": 106700,
+    "redFlagsFound": 2493,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "The Southern Poverty Law Center is under federal investigation for its paid informant program.",
-          "insight": "This investigation raises concerns about the Center's activities and potential misuse of funds.",
-          "entities": [
-            "Southern Poverty Law Center"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Daily Signal",
-          "sourceUrl": "https://www.dailysignal.com/2026/04/21/breaking-splc-under-criminal-investigation-for-paid-informant-program/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kash Patel connected to?",
-        "What other organizations is Joseph diGenova connected to?",
-        "What specific allegations exist against Joseph diGenova?"
+        "What other organizations is Woodhaven Mayor connected to?",
+        "What other organizations is Trump's Labor Secretary connected to?",
+        "Where did the $0 allegedly go in Woodhaven Mayor Investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-21T21:44:06.269Z",
-  "lastUpdated": "2026-04-21T21:44:06.269Z"
+  "lastReflection": "2026-04-21T22:37:02.947Z",
+  "lastUpdated": "2026-04-21T22:37:02.948Z"
 }
