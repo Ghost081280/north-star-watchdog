@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-15T09:17:54.979Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-15T10:58:21.031Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-04-21T18:04:48.846Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-04-21T20:02:29.100Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2138,
-    "articlesProcessed": 106550,
+    "totalScans": 2139,
+    "articlesProcessed": 106600,
     "redFlagsFound": 2490,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3 million allegedly go in Colorado Department of Human Services investigation?",
-        "Where did the $0 allegedly go in DACC Adult Education program investigation?",
-        "Where did the $250 million allegedly go in Kash Patel defamation lawsuit?"
+        "What other organizations is Kash Patel connected to?",
+        "What other organizations is Joseph diGenova connected to?",
+        "What specific allegations exist against Joseph diGenova?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-21T18:04:48.846Z",
-  "lastUpdated": "2026-04-21T18:04:48.846Z"
+  "lastReflection": "2026-04-21T20:02:29.100Z",
+  "lastUpdated": "2026-04-21T20:02:29.100Z"
 }
