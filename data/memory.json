@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-15T13:44:10.229Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-15T15:04:38.582Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-21T22:37:02.947Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-21T23:34:07.339Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in FBI Steam Malware Investigation?",
     "What other organizations is Woodhaven mayor connected to?",
     "What other organizations is HS hockey coach connected to?",
     "Where did the $3.1B allegedly go in Minnesota Medicaid Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Ghost Daycares in Minnesota?",
     "What other organizations is Southern Poverty Law Center connected to?",
     "Where did the unknown allegedly go in Southern Poverty Law Center Investigation?",
-    "Where did the $2.5 million allegedly go in Minnesota DHS Investigation?"
+    "Where did the $2.5 million allegedly go in Minnesota DHS Investigation?",
+    "Where did the unknown allegedly go in Minnesota Medicaid Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2141,
-    "articlesProcessed": 106700,
-    "redFlagsFound": 2493,
+    "totalScans": 2142,
+    "articlesProcessed": 106750,
+    "redFlagsFound": 2494,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Woodhaven Mayor connected to?",
-        "What other organizations is Trump's Labor Secretary connected to?",
-        "Where did the $0 allegedly go in Woodhaven Mayor Investigation?"
+        "Where did the $0 allegedly go in FBI Steam Malware Investigation?",
+        "What other organizations is Woodhaven mayor connected to?",
+        "What other organizations is HS hockey coach connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-21T22:37:02.947Z",
-  "lastUpdated": "2026-04-21T22:37:02.948Z"
+  "lastReflection": "2026-04-21T23:34:07.339Z",
+  "lastUpdated": "2026-04-21T23:34:07.340Z"
 }
