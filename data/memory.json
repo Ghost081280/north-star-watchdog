@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-15T20:44:55.349Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-15T21:51:25.806Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-22T07:44:18.729Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-22T09:19:12.533Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Somali suspect connected to?",
     "What other organizations is Labor Secretary connected to?",
     "Where did the $1.4 billion allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in Minnesota Medicaid Investigation?",
     "What other organizations is Kash Patel connected to?",
     "What specific allegations exist against Kash Patel?",
-    "Where did the unknown allegedly go in University of Washington Investigation?"
+    "Where did the unknown allegedly go in University of Washington Investigation?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2145,
-    "articlesProcessed": 106900,
-    "redFlagsFound": 2497,
+    "totalScans": 2146,
+    "articlesProcessed": 106950,
+    "redFlagsFound": 2499,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $3.1B allegedly go in Minnesota Medicaid Investigation?",
         "Are any of these 2 figures connected to each other?",
-        "What other organizations is Somali suspect connected to?"
+        "What other organizations is Somali suspect connected to?",
+        "What other organizations is Labor Secretary connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-22T07:44:18.729Z",
-  "lastUpdated": "2026-04-22T07:44:18.730Z"
+  "lastReflection": "2026-04-22T09:19:12.533Z",
+  "lastUpdated": "2026-04-22T09:19:12.533Z"
 }

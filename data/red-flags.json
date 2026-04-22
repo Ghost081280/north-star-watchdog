@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota's spending on Medicaid programs at high risk of fraud has doubled in the past 5 years.",
+      "insight": "This is a red flag for potential fraud and abuse in the Medicaid program. Further investigation is needed to determine the cause of the increased spending and to identify any potential wrongdoing.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KFGO",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1nU3ZQemZHaVRHTndRTXZORG5tdlE4QVFqUHIxYkRJMmRWQ25EQW93NWhSd2FPNHdONE1uMGRfNk5jd1JiR3B2NmVLVkg?oc=5",
+      "id": "rf-1776849552538-yo5bntvvj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T09:19:12.535Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "The DOJ is investigating the University of Washington for alleged antisemitism.",
+      "insight": "This is a red flag for potential wrongdoing at the University of Washington. Further investigation is needed to determine the cause of the allegations and to identify any potential wrongdoing.",
+      "entities": [
+        "University of Washington",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Washington State Standard",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSEo0eGNZNzRqUTFKUjhSWWNCWTlpRlI0LS01NHEzUFVzOC01OXJMSXhqOHBmbUJEajM5dTR1RUZKSmpDSEtuN3AtbWtmSU9JdFZuaTQ4RjI4RDNCSk12OUYtaEE1VmQ5OGlvWG42QkMtS1BxOE5zdWU1Q2VtZVk4WjRxeElxS3Zianp2S2p5SWgtdGFyQVMxLUZyZ1AzRzBoLXgtWFdhai1YRGZUYzBlVHNEM2xqd04w?oc=5",
+      "id": "rf-1776849552538-bqflp5bbh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T09:19:12.535Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Southern Poverty Law Center is under federal investigation for fraud and money laundering.",
       "insight": "This investigation raises concerns about the organization's financial practices and the potential for misuse of donor funds. Further investigation is needed to determine the extent of the fraud and to hold those responsible accountable.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-22T07:44:18.731Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal charges",
@@ -377,27 +416,6 @@
       "source": "The Denver Post",
       "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUF9rcXNrX0t6RWJnNjVhaHl5bmJQZlk4Y0l3cXowelZPOXIzd0dkVWM4R3RQNC0ySGk3bzFEMElRWUZzZTlFQjlxNDRFUVlQRXNwSGwyLWtRejZZcDBOM1Ezd1d6S2tDU2pKb21ZQWhOOGpsTjFDZ3NGOFllcnA3UzRwSzBtV21OSnkwUTZFX24wOW1oMEctT2g4ak44UlZR?oc=5",
       "id": "rf-1776696551206-picng91a2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T14:49:11.202Z",
-      "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "Michele Tafoya has accused Walz and Ellison of ignoring a Minnesota fraud scheme.",
-      "insight": "This could indicate a larger issue with fraud in Minnesota and potential involvement of high-ranking officials.",
-      "entities": [
-        "Michele Tafoya",
-        "Walz",
-        "Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WFIN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUVlGUXpZQ2U5c2NOdUhhQU1HR2FjX1BfS1lOREJNbGRFeEc3R0o0cGZfd1VCZHljZ3JuVmZDVmFoeEwydEdKYUctb05TY1VFTlVVM0hhRWZ4ZTVRMk1pNHU0NGJBWGszdDJXUjd5UlBTZTQwN2M3N2hwR2toQWJKYWJYdmhtYUVRUC1ZdkRlX0llY0xaMm8zSFNGTTFqcXlmQ2dVb19uOFdXblA2YVFKOTg3b193b05BNEk1OTdNNldzX2Jm?oc=5",
-      "id": "rf-1776696551206-piwz41tts",
       "apisUsed": [
         "Google News"
       ],
@@ -943,41 +961,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-17T20:00:04.886Z",
       "isNew": false
-    },
-    {
-      "type": "SNAP fraud",
-      "description": "Federal agents raided 2 Twin Cities stores in SNAP fraud probe",
-      "insight": "This indicates a potential pattern of SNAP fraud in the Twin Cities area, requiring further investigation.",
-      "entities": [
-        "Twin Cities",
-        "SNAP"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/federal-agents-raid-2-twin-cities-stores-in-snap-fraud-probe/",
-      "id": "rf-1776452320316-6ipsyl352",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-17T18:58:40.312Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -994,5 +992,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-22T07:44:18.731Z"
+  "lastUpdated": "2026-04-22T09:19:12.535Z"
 }
