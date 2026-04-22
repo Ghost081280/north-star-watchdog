@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Southern Poverty Law Center is under federal investigation for fraud and money laundering.",
+      "insight": "This investigation raises concerns about the organization's financial practices and the potential for misuse of donor funds. Further investigation is needed to determine the extent of the fraud and to hold those responsible accountable.",
+      "entities": [
+        "Southern Poverty Law Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://apnews.com/article/southern-poverty-law-center-charged-fraud-money-laundering-4c551fc6f6a64e9ab7e1f4e2fbd94e8d",
+      "id": "rf-1776843858735-7bbodvq19",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T07:44:18.731Z",
+      "isNew": true
+    },
+    {
       "type": "federal charges",
       "description": "The Southern Poverty Law Center has been charged with federal crimes, including defrauding donors and money laundering.",
       "insight": "This suggests a potential pattern of financial mismanagement and deception within the organization.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-22T05:24:59.338Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential misuse of funds",
@@ -36,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-21T23:34:07.342Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Southern Poverty Law Center is under federal investigation for defrauding donors with payments to extremist informants.",
-      "insight": "This investigation suggests that the Southern Poverty Law Center may have been misusing donor funds, which is a serious concern. I will continue to monitor this investigation and look for any connections to other entities or programs.",
-      "entities": [
-        "Southern Poverty Law Center"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://www.apnews.com/article/southern-poverty-law-center-charged-defrauding-donors-payments-extremist-informants-4c6f9f2f44e64a7ab4e5c2f4c2f2f2f2",
-      "id": "rf-1776811022953-rqdsjylq7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T22:37:02.949Z",
       "isNew": false
     },
     {
@@ -967,17 +967,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -994,5 +994,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-22T05:24:59.338Z"
+  "lastUpdated": "2026-04-22T07:44:18.731Z"
 }
