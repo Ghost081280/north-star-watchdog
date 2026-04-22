@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-16T11:01:31.360Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-16T13:26:31.511Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-22T21:50:39.001Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-22T22:45:24.222Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.85
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Ghost Daycares in Minnesota?",
     "What other organizations is Southern Poverty Law Center connected to?",
     "Where did the unknown allegedly go in Southern Poverty Law Center Investigation?",
     "Where did the $2.5 million allegedly go in Minnesota DHS Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $11 million allegedly go in Medicaid fraud case?",
     "Where did the $11 million allegedly go in Medicaid fraud?",
     "Where did the $250 million allegedly go in Ilhan Omar fraud scandal?",
-    "Where did the $ doubling in 5 years allegedly go in Minnesota Medicaid spending investigation?"
+    "Where did the $ doubling in 5 years allegedly go in Minnesota Medicaid spending investigation?",
+    "Where did the $250Million allegedly go in Ilhan Omar Fraud Scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2153,
-    "articlesProcessed": 107300,
-    "redFlagsFound": 2509,
+    "totalScans": 2154,
+    "articlesProcessed": 107350,
+    "redFlagsFound": 2511,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Southern Poverty Law Center Investigation?",
-        "Where did the $2.5 million allegedly go in Minnesota DHS Grant Misuse?",
-        "Where did the $0 allegedly go in Ghost Daycares in Minnesota?"
+        "Where did the $0 allegedly go in Ghost Daycares in Minnesota?",
+        "What other organizations is Southern Poverty Law Center connected to?",
+        "Where did the unknown allegedly go in Southern Poverty Law Center Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-22T21:50:39.001Z",
-  "lastUpdated": "2026-04-22T21:50:39.002Z"
+  "lastReflection": "2026-04-22T22:45:24.222Z",
+  "lastUpdated": "2026-04-22T22:45:24.223Z"
 }
