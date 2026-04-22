@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-15T21:51:25.806Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-15T22:41:04.865Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-22T09:19:12.533Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-22T11:03:39.047Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Somali suspect connected to?",
-    "What other organizations is Labor Secretary connected to?",
-    "Where did the $1.4 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Not specified allegedly go in FBI investigation into deaths and disappearances of staff at secretive government laboratories?",
     "Where did the Doubled spending allegedly go in Minnesota’s spending doubled across 14 Medicaid programs at 'high risk' of fraud?",
     "Where did the $1.4 billion allegedly go in Minnesota Medicaid programs fraud?",
@@ -558,7 +555,10 @@
     "What other organizations is Kash Patel connected to?",
     "What specific allegations exist against Kash Patel?",
     "Where did the unknown allegedly go in University of Washington Investigation?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What specific allegations exist against Kerry Buckner?",
+    "What other organizations is Southern Poverty Law Center officials connected to?",
+    "Where did the $2.5B allegedly go in Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2146,
-    "articlesProcessed": 106950,
-    "redFlagsFound": 2499,
+    "totalScans": 2147,
+    "articlesProcessed": 107000,
+    "redFlagsFound": 2501,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "The Southern Poverty Law Center is under investigation for alleged fraud and money laundering",
+          "insight": "This suggests potential wrongdoing by the organization, which could have implications for its donors and the broader non-profit sector.",
+          "entities": [
+            "Southern Poverty Law Center"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AP News",
+          "sourceUrl": "https://www.apnews.com/article/2024/04/22/southern-poverty-law-center-charged-defrauding-donors-extremist-informants"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What other organizations is Somali suspect connected to?",
-        "What other organizations is Labor Secretary connected to?"
+        "What other organizations is Labor Secretary connected to?",
+        "Where did the $1.4 billion allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-22T09:19:12.533Z",
-  "lastUpdated": "2026-04-22T09:19:12.533Z"
+  "lastReflection": "2026-04-22T11:03:39.047Z",
+  "lastUpdated": "2026-04-22T11:03:39.048Z"
 }

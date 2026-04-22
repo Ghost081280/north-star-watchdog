@@ -2,21 +2,40 @@
   "flags": [
     {
       "type": "program_termination",
-      "description": "Minnesota's spending on Medicaid programs at high risk of fraud has doubled in the past 5 years.",
-      "insight": "This is a red flag for potential fraud and abuse in the Medicaid program. Further investigation is needed to determine the cause of the increased spending and to identify any potential wrongdoing.",
+      "description": "Minnesota's spending doubled across 14 Medicaid programs at high risk of fraud",
+      "insight": "This suggests a potential lack of oversight and control in the Medicaid program, which could be indicative of a larger issue.",
       "entities": [
-        "Minnesota DHS"
+        "Minnesota Department of Human Services"
       ],
       "confidence": 80,
       "priority": "high",
       "source": "KFGO",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1nU3ZQemZHaVRHTndRTXZORG5tdlE4QVFqUHIxYkRJMmRWQ25EQW93NWhSd2FPNHdONE1uMGRfNk5jd1JiR3B2NmVLVkg?oc=5",
-      "id": "rf-1776849552538-yo5bntvvj",
+      "sourceUrl": "https://kfgo.com/2026/04/21/minnesotas-spending-doubled-across-14-medicaid-programs-at-high-risk-of-fraud-in-past-5-years/",
+      "id": "rf-1776855819053-diit97kuh",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-22T09:19:12.535Z",
+      "detectedAt": "2026-04-22T11:03:39.049Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "The Southern Poverty Law Center is under investigation for alleged fraud and money laundering",
+      "insight": "This suggests potential wrongdoing by the organization, which could have implications for its donors and the broader non-profit sector.",
+      "entities": [
+        "Southern Poverty Law Center"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://www.apnews.com/article/2024/04/22/southern-poverty-law-center-charged-defrauding-donors-extremist-informants",
+      "id": "rf-1776855819053-33mm9bhvk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T11:03:39.049Z",
       "isNew": true
     },
     {
@@ -37,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-22T09:19:12.535Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -941,31 +960,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-17T20:00:04.886Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigates 3D-Housing Project in Struggling Illinois Town",
-      "insight": "This could indicate a larger issue with federal funding for housing projects, potentially leading to a lack of affordable housing.",
-      "entities": [
-        "FBI",
-        "3D-Housing Project"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Realtor.com",
-      "sourceUrl": "https://www.realtor.com/news/2024/04/17/fbi-investigates-3d-housing-project-in-struggling-illinois-town-as-questions-mount-over-failed-deal/",
-      "id": "rf-1776456004890-vwp6h4ako",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-17T20:00:04.886Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -974,8 +972,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -992,5 +991,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-22T09:19:12.535Z"
+  "lastUpdated": "2026-04-22T11:03:39.049Z"
 }
