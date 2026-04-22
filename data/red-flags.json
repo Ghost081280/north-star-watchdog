@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal charges",
+      "description": "The Southern Poverty Law Center has been charged with federal crimes, including defrauding donors and money laundering.",
+      "insight": "This suggests a potential pattern of financial mismanagement and deception within the organization.",
+      "entities": [
+        "Southern Poverty Law Center"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AP News",
+      "sourceUrl": "https://www.apnews.com/article/southern-poverty-law-center-federal-charges-6f6d37cd57f835d81451e6d57f4e6c4d",
+      "id": "rf-1776835499341-scstaz4uy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T05:24:59.338Z",
+      "isNew": true
+    },
+    {
       "type": "potential misuse of funds",
       "description": "The Southern Poverty Law Center has been accused of misusing funds, including paying informants in extremist groups.",
       "insight": "This raises concerns about the organization's financial management and potential misuse of donor funds. Further investigation is needed to determine the extent of the issue.",
@@ -944,29 +963,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-17T18:58:40.312Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "Federal agents raid 2 Twin Cities stores in SNAP fraud probe",
-      "insight": "This investigation may indicate a larger pattern of fraud in Minnesota, particularly in relation to federal programs. Further research is needed to determine the extent of the issue.",
-      "entities": [
-        "Twin Cities stores"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBEM1Btdk05azlyc0dVZkxXX1BPOTExYWROSlo3NTVfWDBqa0hNOVEyS2UtMUx5RjJJaU9sSG1LdjVwdWxEbHRaYXNVUmJCSXYtVXVvSWV6d3cxODhxN2d0ejJQY21aWjc0a2JsVmVtMHowTmppVmNfUW1Tcw",
-      "id": "rf-1776448580966-2yaqryd0g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-17T17:56:20.961Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -974,7 +975,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -991,5 +994,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-22T02:25:38.655Z"
+  "lastUpdated": "2026-04-22T05:24:59.338Z"
 }
