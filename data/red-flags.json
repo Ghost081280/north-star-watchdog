@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "alleged fraud",
+      "description": "Ilhan Omar suspected of involvement in $250 million fraud scheme",
+      "insight": "This is a significant allegation that requires further investigation, potentially involving multiple entities and programs.",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Kenya Times",
+      "sourceUrl": "https://www.washington_examiner.com/2026/04/minnesota-fraud-committee-suspects-ilhan-omar-involvement-feeding-our-future-scheme/",
+      "id": "rf-1776880980087-n3d03tf8f",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T18:03:00.084Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Southern Poverty Law Center under federal investigation",
+      "insight": "The investigation into the Southern Poverty Law Center could lead to further scrutiny of similar organizations.",
+      "entities": [
+        "Southern Poverty Law Center"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Charisma Magazine Online",
+      "sourceUrl": "https://www.charismamag.com/2026/04/22/southern-poverty-law-center-under-federal-investigation/",
+      "id": "rf-1776880980087-89ndzhq79",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-22T18:03:00.084Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Ilhan Omar suspected of involvement in $250 million fraud scheme",
       "insight": "This is a high-profile case with potential connections to other entities and programs",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-22T16:58:21.660Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -922,44 +960,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-17T22:37:38.302Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into a Ponzi scheme",
-      "insight": "Monitoring for any updates on the Woodhill Ponzi Scheme investigation",
-      "entities": [
-        "Woodhill"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "WGRZ",
-      "sourceUrl": "https://www.wgrz.com",
-      "id": "rf-1776465458305-yykvoavnb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-17T22:37:38.302Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A suspect failed to show up in court, throwing an $11 million Medicaid case into doubt.",
-      "insight": "This could indicate a larger scheme to defraud the Medicaid system, and further investigation is needed to uncover the extent of the fraud.",
-      "entities": [
-        "Minnesota Attorney General's office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota fraud suspect fails to show in court throwing $11 million Medicaid case into doubt",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiygNBVV95cUxNUGUweE83MGZzc0tKbnVYTDQ0N0J6cG5NTXdBM3NVZ2xfMkVGWlgwYkxielFobWROcV9rRENEa2Zuc0F4cFFjdGU1NTlFX3NoLXE1S1hjanJvUG54QzdjbEMwZUhXZXdkb2hMbUtDelRhc2xqa0VwSmZvNUhGN040TkhUQnVUWFdKY3dKNktmQWNHNzJHUkZPZ19zNDdGaGpuSkI0U2l0MW9WLWFxdnFiSE44dzlzUU5xbjdvUUhrWHcwMnlpRUY3NWNtUG13YlVTMXdCREluWjBpUGZhUWM4bU0xd1lyenRZQnNTZUYzN0NEMmxuM0o0MV9wVzJJT2tLMXJHT0pZMi1Tc0llWHczUUxvLTFRWjU5VFBuNTFXYXpUQ2R4amExOTlWRjFHT09tZ2VwZk4zNHZnWnJsNkp5RVRZOGtXbUtpdE5wUzdiT1BadWdPbGVkaDVKWWtzQWVtMnJzcEF0SkN6V2R3LU9vR24zNExBMS1SZHpnMjdkT1RxVWVuRXlBYlVuM2pYQVZENV9vWGl5aHkzZjFTTFpNM1lLWXU3WkpTVE9DdlRiVUwwVEMyQ3JsZFRBbnI1WHdmOE9weGVvMkNCZw",
-      "id": "rf-1776459471715-hi1vvn181",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-17T20:57:51.711Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -973,6 +973,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -990,5 +991,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-22T16:58:21.660Z"
+  "lastUpdated": "2026-04-22T18:03:00.084Z"
 }
