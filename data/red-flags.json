@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations are underway, raising concerns about potential wrongdoing and corruption.",
+      "insight": "I notice a pattern of federal investigations being launched into various sectors, which may indicate a larger issue with accountability and transparency. Further investigation is needed to determine the scope and impact of these probes.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/apr/22/democrats-demand-fbi-director-kash-patel-take-alcohol-abuse-test",
+      "id": "rf-1776930576681-blksr54e8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-23T07:49:36.678Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Federal investigation into North Side home explosions",
       "insight": "This investigation raises concerns about the potential for widespread fraud and corruption. Further investigation is needed to determine the cause of the explosions and to identify any individuals or organizations involved.",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T05:29:12.973Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential fraud",
@@ -941,25 +961,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-18T14:03:25.197Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Minnesota state seeking returns of $2.48M in grants from Zion Baptist Church",
-      "insight": "This action suggests potential misuse of funds. Further review of Zion Baptist Church's financial records and grant usage is necessary.",
-      "entities": [
-        "Zion Baptist Church"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/state-seeks-returns-of-248m-in-grants-from-zion-baptist-church",
-      "id": "rf-1776512043089-72rzftmsu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-18T11:34:03.086Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -973,7 +974,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -990,5 +992,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-23T05:29:12.973Z"
+  "lastUpdated": "2026-04-23T07:49:36.678Z"
 }
