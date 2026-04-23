@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Trump administration freezes $259M in Medicaid funds for Minnesota",
+      "insight": "This move by the Trump administration raises concerns about the potential for politicization of Medicaid funding. It may be worth investigating whether this decision is related to the ongoing investigation into Medicaid fraud in Minnesota.",
+      "entities": [
+        "Trump administration",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/trump-freezes-259m-minnesota-medicaid-funds/ar-AAI3xLj",
+      "id": "rf-1776980649126-7mc8necsp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-23T21:44:09.122Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota DHS shows parents how to spot fraud and protect their children’s autism services",
       "insight": "This indicates potential vulnerabilities in the current system and a need for increased oversight.",
@@ -17,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T20:51:24.706Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "FBI investigation of reporter raises concerns over press freedom",
-      "insight": "I see a pattern of government agencies targeting journalists who investigate high-profile figures. This could be a red flag for further intimidation or retaliation against reporters.",
-      "entities": [
-        "Kash Patel",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Freedom of the Press Foundation",
-      "sourceUrl": "https://www.freedomofthepress.org/news/fbi-s-retaliatory-probe-of-times-reporter-is-off-the-rails/",
-      "id": "rf-1776971168297-3iin7ki5g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T19:06:08.294Z",
       "isNew": false
     },
     {
@@ -964,10 +964,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -984,5 +987,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-23T20:51:24.706Z"
+  "lastUpdated": "2026-04-23T21:44:09.122Z"
 }
