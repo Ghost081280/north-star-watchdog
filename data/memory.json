@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-17T11:51:41.669Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-17T13:16:09.020Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-23T22:42:39.789Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-23T23:43:20.103Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $11 million allegedly go in Medicaid fraud?",
-    "Where did the $250 million allegedly go in Ilhan Omar fraud scandal?",
     "Where did the $ doubling in 5 years allegedly go in Minnesota Medicaid spending investigation?",
     "Where did the $250Million allegedly go in Ilhan Omar Fraud Scheme?",
     "Where did the Unknown allegedly go in Federal investigation into North Side home explosions?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in FBI investigation into reporter?",
     "What other organizations is Antwan Clemons connected to?",
     "What other organizations is Carter Page connected to?",
-    "Where did the unknown allegedly go in FBI investigation into reporter?"
+    "Where did the unknown allegedly go in FBI investigation into reporter?",
+    "What specific allegations exist against Ilhan Omar?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2167,
-    "articlesProcessed": 108000,
-    "redFlagsFound": 2525,
+    "totalScans": 2168,
+    "articlesProcessed": 108050,
+    "redFlagsFound": 2526,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $250 million allegedly go in Feeding Our Future scheme?",
-        "Where did the $11 million allegedly go in Medicaid fraud case?"
+        "Where did the $11 million allegedly go in Medicaid fraud?",
+        "Where did the $250 million allegedly go in Ilhan Omar fraud scandal?",
+        "Where did the $ doubling in 5 years allegedly go in Minnesota Medicaid spending investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-23T22:42:39.789Z",
-  "lastUpdated": "2026-04-23T22:42:39.790Z"
+  "lastReflection": "2026-04-23T23:43:20.103Z",
+  "lastUpdated": "2026-04-23T23:43:20.104Z"
 }
