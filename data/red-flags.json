@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal investigation into North Side home explosions",
+      "insight": "This investigation raises concerns about the potential for widespread fraud and corruption. Further investigation is needed to determine the cause of the explosions and to identify any individuals or organizations involved.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KSAT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS3ljS25QRDNwQjBwYkV4TjM1dWdpaWM0b1JGbUpMSzRsUV9TR1JlWXNPVVdsNHlwSVhucV9OaXRhZXZwSlBYbk5NZFZaQTdyUjgzNDZXb3dtT2JVVGNyVjIwQXVEOTRGdno2bk9jWEJXdDkzWHZMd250eVFBaWxmZ0ZrNzVvdGVITkNLOVk4Ul9SMXhpYmJwMlltb2xJUmNXbGJHSGhiZTFGWEY2NUhzOGNUcEZRMGc",
+      "id": "rf-1776922152977-3zdf1dk7u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-23T05:29:12.973Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "The Minnesota Attorney General's Office is expanding its fraud prevention efforts, indicating a potential increase in fraud cases.",
       "insight": "The expansion of fraud prevention efforts by the Minnesota Attorney General's Office suggests a growing concern about fraud in the state.",
@@ -941,29 +960,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-18T11:34:03.086Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Zion Baptist Church grant returns sought",
-      "insight": "This may indicate potential misuse of funds or program irregularities.",
-      "entities": [
-        "Zion Baptist Church"
-      ],
-      "confidence": 60,
-      "priority": "medium",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/news/state-seeks-returns-of-$2-48m-in-grants-from-zion-baptist-church-2026-04-18",
-      "id": "rf-1776508741096-f8k8p7zv7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-18T10:39:01.092Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -971,7 +972,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -988,5 +990,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-23T02:29:11.516Z"
+  "lastUpdated": "2026-04-23T05:29:12.973Z"
 }
