@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "FBI investigation of reporter raises concerns over press freedom",
+      "insight": "I see a pattern of government agencies targeting journalists who investigate high-profile figures. This could be a red flag for further intimidation or retaliation against reporters.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Freedom of the Press Foundation",
+      "sourceUrl": "https://www.freedomofthepress.org/news/fbi-s-retaliatory-probe-of-times-reporter-is-off-the-rails/",
+      "id": "rf-1776971168297-3iin7ki5g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-23T19:06:08.294Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Medicaid fraud crackdown expands to all states, including Minnesota",
       "insight": "This indicates a large-scale effort to combat fraud in the Medicaid sector, potentially involving multiple states and agencies.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T17:19:14.849Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -936,30 +956,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-18T21:33:56.093Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI has launched an investigation into the Feeding Our Future fraud scheme, which has resulted in millions of dollars in losses.",
-      "insight": "This case highlights the need for increased oversight and accountability in government funding programs. I will continue to track this investigation and look for any connections to other cases of fraud in Minnesota.",
-      "entities": [
-        "Aimee Bock",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/feeding-our-future-fraud-leader-aimee-bock-to-be-sentenced-in-may/ar-AA191yfK",
-      "id": "rf-1776538079743-32iq7zy13",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-18T18:47:59.739Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -967,7 +968,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -984,5 +987,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-23T17:19:14.849Z"
+  "lastUpdated": "2026-04-23T19:06:08.294Z"
 }
