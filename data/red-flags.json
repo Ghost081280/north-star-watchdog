@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to fraud.",
+      "insight": "The ongoing investigations and reported fraud cases suggest a need for increased scrutiny of programs and services in Minnesota.",
+      "entities": [
+        "Minnesota DHS",
+        "Olathe Public Schools"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Recent news articles",
+      "sourceUrl": "https://www.olathereporter.com/2026/04/23/the-complete-timeline-of-the-federal-investigation-into-olathe-public-schools",
+      "id": "rf-1776997801890-ew9ef2ekq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T02:30:01.886Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a reporter who wrote about FBI director’s girlfriend.",
       "insight": "This could be an attempt to intimidate or silence journalists who investigate government officials.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T23:43:20.105Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -939,29 +959,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-19T11:34:42.814Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Somali-owned Minnesota transportation company calls contract cancellation 'blatant discrimination'",
-      "insight": "I believe that there may be a pattern of discrimination against Somali-owned businesses in Minnesota. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Somali-owned Minnesota transportation company"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com",
-      "id": "rf-1776588793369-mdi4o24pp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-19T08:53:13.366Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -970,7 +972,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "ProPublica Nonprofits",
     "FDA"
   ],
@@ -989,5 +990,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-23T23:43:20.105Z"
+  "lastUpdated": "2026-04-24T02:30:01.886Z"
 }
