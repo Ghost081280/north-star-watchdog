@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation dropped",
+      "description": "The DOJ's decision to drop its investigation into Jerome Powell raises concerns about potential wrongdoing and the lack of transparency surrounding the investigation.",
+      "insight": "As an investigator, I am concerned that the dropped investigation may indicate a lack of accountability within the Federal Reserve. Further research is needed to understand the circumstances surrounding the investigation and the potential implications for the financial sector.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTElSZlJSWDZsdXI2cy1xdzV1aFU1QXB4SzlLRkw2SGpSY3J1c2xncjhIN3Vnc2tmYzl1TUsyRnlvaEhmZ2tILUlad3J6dDJfVkRmdDU2WGpOcEw5cGxxLVlLVHlkS1JadWRpa1RxcGIzVDdYZTFJZFRoUEpRbFhqZW9aMEdwZGV2Yy1VN2tXcVFlSURuNEE",
+      "id": "rf-1777043236551-s5xbkfv5r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T15:07:16.547Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "The use of shell companies in Minnesota's Medicaid program raises concerns about potential fraud and abuse.",
       "insight": "The use of shell companies in healthcare programs can be a red flag for potential fraud. Investigating these companies and their connections to Medicaid providers may uncover further wrongdoing.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T13:20:20.545Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T13:20:20.545Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -939,29 +959,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-19T16:38:38.650Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Contract cancellation due to fraud allegations",
-      "insight": "This could indicate a larger issue with fraud in Minnesota's Medicaid program",
-      "entities": [
-        "Minnesota medical drivers"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQTRUdE1lcWV5aThrNW9FbjRaMEZnZ1BFa1ZzcjlYRU9KYXB6WjIxUXFYYnhPYktCWUFJaTNzTmhJRE5QdzRNS3h2dzY1LWFyY013NHh4UEwxQzBMTzVhczB1SXFnejZkaHJtbnBmaVRJNjZvamFiVWVkQjQ1X3ByTUlmaU1WbHlpSHRYUHhIdWZ3bHd0VWwtb09wTF9ybVhUTlNBamRLWGxJRU9s?oc=5",
-      "id": "rf-1776610389428-x5tdrheq2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-19T14:53:09.425Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -970,6 +972,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -987,5 +990,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T13:20:20.545Z"
+  "lastUpdated": "2026-04-24T15:07:16.547Z"
 }
