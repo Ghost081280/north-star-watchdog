@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "NFL players promoting charity linked to Minnesota fraud case",
+      "insight": "This could indicate a larger scheme to launder money or promote fraudulent charities.",
+      "entities": [
+        "NFL players",
+        "charity organization"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxOQXp4YVFoMGxUNWhxck5ydjB5U08yRjhnaF92QTBJNUJNZllNeWtUSGwybXp0V3piUjZqM2twNFJ5LUM3LXY0TkhteWdtRy1NelF3ZVpzTnE2WGxJQS13dHFwY2hBYURRQ0VZUkh2OUt4OW9Yaml3VG4tMlIzUEgzVUZXUzJyNUw5MVNDUTh6Y3hQR1ZSaXNSLXdJSWpLcFdxZGhVNENkLU1yZXFJZ0d2UVluZ2NFMnFQbzNtci1NZWdtOHR6b1J3Y3NMWHBLamZKaW5kaXBMd2NqMlZhVHdCUWhfRzBvbFRQTXlEbkM2MHVVX3Zka1dKTWRlNk94ekRHbGNuLUx6QlpPWlBBS1VBbzg3SnJCUzg2RUg2WXQwX2pSTHdYTzkwUUlaNTBVVnZlNDdsRXd4dWZhVy1qWkh0YWd5MHVvWm16WGRXeHpKVFA4TUJ4Rkd5azNnaW9aOEpNRzRoVkd6UVZ1NHFlcURXdE5GQjQ",
+      "id": "rf-1777008856418-ddtiatxx1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T05:34:16.413Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud.",
       "insight": "The ongoing investigations and reported fraud cases suggest a need for increased scrutiny of programs and services in Minnesota.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T02:30:01.886Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -78,25 +98,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T22:42:39.791Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota DHS shows parents how to spot fraud and protect their children’s autism services",
-      "insight": "This indicates potential vulnerabilities in the current system and a need for increased oversight.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota DHS shows parents how to spot fraud and protect their children’s autism services - Audacy",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE91ZHR2T1FVX0VSVmdVREhOTVhQaDRPaHNpT2t2Tm03X1ljblBFdG85TFJwZ0o4SEZaZTVJYzd1c2lBektLZUd6NFBWYWhkWjZFTzhTVkxMUHFpR3BXa2Y2Y0JFaUVRSVRUZXpOMDgwNDZxR1BJS3Fn",
-      "id": "rf-1776977484710-zze53mp95",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T20:51:24.706Z",
       "isNew": false
     },
     {
@@ -963,7 +964,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -973,6 +973,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -990,5 +991,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T02:30:01.886Z"
+  "lastUpdated": "2026-04-24T05:34:16.413Z"
 }
