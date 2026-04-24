@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to alleged fraud",
+      "insight": "Patterns of alleged fraud in Minnesota's Feeding Our Future program and other cases raise concerns about program integrity",
+      "entities": [
+        "Minnesota AG's office",
+        "Feeding Our Future program"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://www.washingtonexaminer.com/analysis/how-minnesota-attorney-general-keith-ellison-is-embroiled-in-the-feeding-our-future-scandal/",
+      "id": "rf-1777067134427-ckuhyjpxh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T21:45:34.423Z",
+      "isNew": true
+    },
+    {
       "type": "investigation dropped",
       "description": "The Justice Department dropped its investigation into Federal Reserve Chair Jerome Powell.",
       "insight": "This development raises concerns about the potential for undue influence or favoritism in the investigation process. Further investigation is needed to determine the reasons behind the dropped investigation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T20:44:43.787Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "scandal involvement",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T20:44:43.787Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -944,31 +964,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-20T08:04:19.835Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Feeding Our Future fraud leader Aimee Bock to be sentenced in May",
-      "insight": "This indicates a significant case of fraud in Minnesota, potentially involving multiple parties.",
-      "entities": [
-        "Aimee Bock",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en/en-us/article/Feeding-Our-Future-fraud-leader-Aimee-Bock-to-be-sentenced-in-May-2026-04-19",
-      "id": "rf-1776663586655-gr1rztvca",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T05:39:46.651Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -977,7 +976,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -995,5 +993,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T20:44:43.787Z"
+  "lastUpdated": "2026-04-24T21:45:34.423Z"
 }
