@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-18T08:47:09.618Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-18T09:46:19.712Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-24T22:38:07.415Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-24T23:38:39.296Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in FBI investigation into reporter?",
-    "What specific allegations exist against Ilhan Omar?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Ilhan Omar connected to?",
@@ -558,7 +556,9 @@
     "Where did the No amount specified allegedly go in Feeding Our Future Scandal?",
     "What other organizations is Carie Hallford connected to?",
     "Where did the $100M+ allegedly go in Feeding Our Future scandal?",
-    "What specific allegations exist against Jerome Powell?"
+    "What specific allegations exist against Jerome Powell?",
+    "Where did the N/A allegedly go in Fed Chair Jerome Powell Investigation?",
+    "Where did the N/A allegedly go in NYC Homeless Shelter Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2182,
-    "articlesProcessed": 108750,
-    "redFlagsFound": 2542,
+    "totalScans": 2183,
+    "articlesProcessed": 108800,
+    "redFlagsFound": 2543,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Carter Page connected to?",
         "Where did the unknown allegedly go in FBI investigation into reporter?",
-        "What specific allegations exist against Ilhan Omar?"
+        "What specific allegations exist against Ilhan Omar?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-24T22:38:07.415Z",
-  "lastUpdated": "2026-04-24T22:38:07.416Z"
+  "lastReflection": "2026-04-24T23:38:39.296Z",
+  "lastUpdated": "2026-04-24T23:38:39.297Z"
 }
