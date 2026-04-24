@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "A federal investigation into Olathe Public Schools has been launched, with a complete timeline of events available.",
+      "insight": "I suspect that there may be a larger pattern of abuse and corruption in public schools, and this investigation could be just the tip of the iceberg. Further research is needed to uncover the full extent of the issue.",
+      "entities": [
+        "Olathe Public Schools"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Olathe Reporter",
+      "sourceUrl": "https://www.olathereporter.com/news/the-complete-timeline-of-the-federal-investigation-into-olathe-public-schools/",
+      "id": "rf-1777024394446-uhei9ngs4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T09:53:14.441Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Ilhan Omar is being investigated for potential fraud and misuse of funds.",
       "insight": "The investigation into Ilhan Omar's potential fraud and misuse of funds raises concerns about the integrity of the US House of Representatives. Further investigation is needed to determine the extent of the alleged fraud.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T08:01:01.552Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential fraud",
@@ -77,26 +96,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-23T23:43:20.105Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Trump administration freezes $259M in Medicaid funds for Minnesota",
-      "insight": "This move may indicate a larger effort to restrict access to healthcare for vulnerable populations. I recommend investigating the administration's motivations and potential connections to healthcare industry lobbying.",
-      "entities": [
-        "Trump administration",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/trump-freezes-259m-minnesota-medicaid-funds/ar-AA19xL8q",
-      "id": "rf-1776984159795-5ug28n8g0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T22:42:39.791Z",
       "isNew": false
     },
     {
@@ -973,6 +972,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -990,5 +990,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T08:01:01.552Z"
+  "lastUpdated": "2026-04-24T09:53:14.441Z"
 }
