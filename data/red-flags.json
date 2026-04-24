@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "investigation into high-ranking official",
+      "description": "The DOJ's investigation into Jerome Powell raises concerns about the potential for political interference in the Federal Reserve's decision-making process.",
+      "insight": "The investigation's conclusion may have significant implications for the Federal Reserve's independence and the US economy.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/markets/us/doj-drops-investigation-into-fed-chair-powell-118559754",
+      "id": "rf-1777056532918-87if5fw4f",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T18:48:52.915Z",
+      "isNew": true
+    },
+    {
+      "type": "ongoing investigation into government officials",
+      "description": "The Minnesota Attorney General's office is investigating the Feeding Our Future scandal, which may involve high-ranking government officials.",
+      "insight": "The investigation may uncover a larger pattern of corruption and abuse of power in Minnesota's government.",
+      "entities": [
+        "Keith Ellison",
+        "Minnesota Attorney General's office"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Washington Examiner",
+      "sourceUrl": "https://www.washington_examiner.com/2024-04-24/how-minnesota-attorney-general-keith-ellison-embroiled-feeding-our-future-scandal",
+      "id": "rf-1777056532918-incmrskf2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T18:48:52.915Z",
+      "isNew": true
+    },
+    {
       "type": "investigation dropped",
       "description": "The DOJ's decision to drop its investigation into Jerome Powell raises concerns about potential wrongdoing and the lack of transparency surrounding the investigation.",
       "insight": "As an investigator, I am concerned that the dropped investigation may indicate a lack of accountability within the Federal Reserve. Further research is needed to understand the circumstances surrounding the investigation and the potential implications for the financial sector.",
@@ -920,49 +960,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-19T19:40:39.719Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating a fatal shooting in North Highlands",
-      "insight": "This could indicate a larger issue with violence in the area",
-      "entities": [
-        "FBI",
-        "North Highlands"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "ABC10",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSTRzbTVIaF9BSHFmR0dyYVZDVFpjakZERGYyRHZMUjR4dk5DVWJLVGdENFZCTEdnckpBeEhCODdfSGVVMnpGMmw0eks3SVpZdDdwVjhPa1czUTNGQWNsZDBoV3I4dUxMNDRlckNaclpRZ1BabTNKdnpBZjkxbTdDVjZBaldYdzNCZmI5Wi0wVnp3Wkc5bGtKMlN3bTNFbVNMVkg2NWJTV2NnTVhTcWpJWWhSNmxITVVzWEs3WnJSelVySmhidEwxYno1TkVFdWNORFVaZWFRQlA1dW9ZenZV",
-      "id": "rf-1776624487654-exxv4tq3x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-19T18:48:07.650Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid funding at risk",
-      "description": "$3.1 billion in Medicaid funding is at risk in Minnesota",
-      "insight": "This could have significant implications for healthcare services in Minnesota.",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KROX",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBQbjkxakNCSGpmNmZPdEEwVmFqUE9UZDFhWDE4a1ZmMUFEMTd3Z29UNG5oMDFGMVNiajdwQ2tkWko1RC1CRE9hWUdvT08zVXZSZnNJLUpSVzRlU00wVS1aLTVkUGk5dzVkYk9yOGpZTmd1Q2FnYzBGMWFUVUU",
-      "id": "rf-1776616718654-sglaojqru",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-19T16:38:38.650Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -970,7 +972,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -987,5 +991,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T17:49:02.420Z"
+  "lastUpdated": "2026-04-24T18:48:52.915Z"
 }
