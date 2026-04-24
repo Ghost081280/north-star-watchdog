@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-18T02:09:57.251Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-18T05:05:57.401Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-24T19:51:33.043Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-04-24T20:44:43.785Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Landlord with over 150 properties connected to?",
-    "Where did the $259M allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FBI investigation into reporter?",
     "What other organizations is Antwan Clemons connected to?",
     "What other organizations is Carter Page connected to?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Feeding Our Future scandal?",
     "What other organizations is Keith Ellison connected to?",
     "What other organizations is Kevin Warsh connected to?",
-    "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?"
+    "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?",
+    "Where did the No amount specified allegedly go in Federal Reserve Investigation?",
+    "Where did the No amount specified allegedly go in Feeding Our Future Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2179,
-    "articlesProcessed": 108600,
-    "redFlagsFound": 2538,
+    "totalScans": 2180,
+    "articlesProcessed": 108650,
+    "redFlagsFound": 2540,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B+ allegedly go in Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in FBI Investigation of Reporter?",
-        "Where did the $10B+ allegedly go in Minnesota Medicaid Fraud?"
+        "What other organizations is Landlord with over 150 properties connected to?",
+        "Where did the $259M allegedly go in Minnesota Medicaid fraud investigation?",
+        "Where did the Unknown allegedly go in FBI investigation into reporter?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-24T19:51:33.043Z",
-  "lastUpdated": "2026-04-24T19:51:33.044Z"
+  "lastReflection": "2026-04-24T20:44:43.785Z",
+  "lastUpdated": "2026-04-24T20:44:43.786Z"
 }
