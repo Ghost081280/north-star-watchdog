@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Ilhan Omar is being investigated for potential fraud and misuse of funds.",
+      "insight": "The investigation into Ilhan Omar's potential fraud and misuse of funds raises concerns about the integrity of the US House of Representatives. Further investigation is needed to determine the extent of the alleged fraud.",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "National Review",
+      "sourceUrl": "https://www.nationalreview.com/news/ilhan-omar-completely-ghosted-committee-investigating-somali-fraud-schemes-minnesota-lawmaker-says/",
+      "id": "rf-1777017661556-x66p95xg9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-24T08:01:01.552Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "NFL players promoting charity linked to Minnesota fraud case",
       "insight": "This could indicate a larger scheme to launder money or promote fraudulent charities.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T05:34:16.413Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -941,29 +960,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-19T14:53:09.425Z",
       "isNew": false
-    },
-    {
-      "type": "Contract cancellation",
-      "description": "A Somali-owned Minnesota transportation company had its contract cancelled, which the company claims is ‘blatant discrimination’.",
-      "insight": "This could be a sign of potential fraud or corruption in the contracting process. Further investigation is needed to determine the cause of the contract cancellation.",
-      "entities": [
-        "Somali-owned Minnesota transportation company"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/somali-owned-minnesota-transportation-company-calls-contract-cancellation-blatant-discrimination/600246433/",
-      "id": "rf-1776598482818-0q2vrwkkb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-19T11:34:42.814Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -972,8 +973,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -991,5 +990,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T05:34:16.413Z"
+  "lastUpdated": "2026-04-24T08:01:01.552Z"
 }
