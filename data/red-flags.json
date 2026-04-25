@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Investigation dropped",
+      "description": "The Justice Department dropped its investigation into Federal Reserve Chair Jerome Powell, despite concerns about potential conflicts of interest and leadership issues.",
+      "insight": "As an investigator, I find it concerning that the investigation was dropped without providing clear reasons or explanations. This raises questions about the independence of the Federal Reserve and the potential for undue influence. Further investigation is needed to determine the circumstances surrounding the dropped investigation.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WSJ",
+      "sourceUrl": "https://www.wsj.com/articles/justice-department-will-end-probe-of-jerome-powell-opening-path-for-kevin-warsh-11670244402",
+      "id": "rf-1777113729355-49rt7xz8i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T10:42:09.352Z",
+      "isNew": true
+    },
+    {
       "type": "investigation into high-ranking official",
       "description": "The DOJ's decision to drop the investigation into Jerome Powell raises questions about potential political influence and the oversight of high-ranking officials.",
       "insight": "The abrupt closure of this high-profile investigation warrants scrutiny, particularly given the potential implications for financial regulation and oversight.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-25T09:51:43.664Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential corruption",
@@ -136,26 +156,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T21:45:34.423Z",
-      "isNew": false
-    },
-    {
-      "type": "investigation dropped",
-      "description": "The Justice Department dropped its investigation into Federal Reserve Chair Jerome Powell.",
-      "insight": "This development raises concerns about the potential for undue influence or favoritism in the investigation process. Further investigation is needed to determine the reasons behind the dropped investigation.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/business/economy/justice-department-drops-investigation-federal-reserve-jerome-powell-rcna76841",
-      "id": "rf-1777063483790-buavyd13w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T20:44:43.787Z",
       "isNew": false
     },
     {
@@ -980,7 +980,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -997,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-25T09:51:43.664Z"
+  "lastUpdated": "2026-04-25T10:42:09.352Z"
 }
