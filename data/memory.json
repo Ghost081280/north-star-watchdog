@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-18T23:33:40.794Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-04-19T02:31:34.770Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-25T18:50:57.694Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-25T19:43:41.192Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Jerome Powell?",
     "Where did the N/A allegedly go in Fed Chair Jerome Powell Investigation?",
     "Where did the N/A allegedly go in NYC Homeless Shelter Investigation?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +557,8 @@
     "Where did the unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
     "Where did the unknown allegedly go in Minnesota Fraud Case?",
     "Where did the $0 allegedly go in DOJ Investigation into Federal Reserve Chair Jerome Powell?",
-    "Where did the $250M allegedly go in $250M fraud scandal involving Rep. Ilhan Omar?"
+    "Where did the $250M allegedly go in $250M fraud scandal involving Rep. Ilhan Omar?",
+    "Where did the $0 allegedly go in Federal Reserve Chair Jerome Powell Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2196,
-    "articlesProcessed": 109450,
-    "redFlagsFound": 2558,
+    "totalScans": 2197,
+    "articlesProcessed": 109500,
+    "redFlagsFound": 2559,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Carie Hallford connected to?",
-        "Where did the $100M+ allegedly go in Feeding Our Future scandal?",
-        "What specific allegations exist against Jerome Powell?"
+        "What specific allegations exist against Jerome Powell?",
+        "Where did the N/A allegedly go in Fed Chair Jerome Powell Investigation?",
+        "Where did the N/A allegedly go in NYC Homeless Shelter Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-25T18:50:57.694Z",
-  "lastUpdated": "2026-04-25T18:50:57.694Z"
+  "lastReflection": "2026-04-25T19:43:41.192Z",
+  "lastUpdated": "2026-04-25T19:43:41.193Z"
 }
