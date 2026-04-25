@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation into high-ranking official",
+      "description": "The DOJ's decision to drop the investigation into Jerome Powell raises questions about potential political influence and the oversight of high-ranking officials.",
+      "insight": "The abrupt closure of this high-profile investigation warrants scrutiny, particularly given the potential implications for financial regulation and oversight.",
+      "entities": [
+        "Jerome Powell",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://wsj.com/news/articles/justice-department-will-end-probe-of-jerome-powell-opening-path-for-kevin-warsh-CBMixAFBVV95cUxOcWRDLVBkaDhLa1dRSEk4N0pkT2Izcy1PMjRzelB1WDF1d3lLbVZGY1NyazM2a0E3djZiWnpIcWMxWFdTSEw3NkQ3cVdMdktyV210ZnN3VnlzVS1felo1cC1CYm5QNEhoRWhJX0YzUHhSbWNESzduNDdjdTY3d1VWR1did0JaMkpiYUN5WS1IX0hLWEFHRXpuaXRsQVlXeUxVdVZuajBZcjJIOGJUdGhiSWRYTm5mYUpDSnBFMzRNZC1TUThQ",
+      "id": "rf-1777110703667-yh47cocr1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T09:51:43.664Z",
+      "isNew": true
+    },
+    {
       "type": "potential corruption",
       "description": "Rep. Ilhan Omar skipped a fraud hearing, raising concerns about potential corruption or wrongdoing.",
       "insight": "This could indicate a larger issue with corruption or fraud in Minnesota that requires further investigation. I would recommend looking into Rep. Omar's financial records and potential connections to other entities or individuals involved in fraudulent activities.",
@@ -947,30 +967,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-20T19:03:48.706Z",
       "isNew": false
-    },
-    {
-      "type": "lawsuit",
-      "description": "FBI Director Kash Patel sues The Atlantic over a story claiming he has a drinking problem.",
-      "insight": "This lawsuit raises concerns about the credibility of The Atlantic and the potential impact on Kash Patel's reputation.",
-      "entities": [
-        "Kash Patel",
-        "The Atlantic"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Atlantic",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLWV6MVJIR0lwRTRLdHBVUURDRmpfbkoybXhTdWxPN29FcTFGR2VWVHAyNFRCMGszbjhyaUM4VXdXUDBJZWI2cGJ6WXN1ZVlHNTNqYmJwekczcG9FX0RLV0Q0clF5ak16bFdKVl96M2RaaE1pdzN1RldZbW02T1V1ZWtlZnhJTWY5NFUxR1R4WWFaMm5BMXc",
-      "id": "rf-1776707789971-efnw1ebs3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T17:56:29.968Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -979,7 +980,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -996,5 +997,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-25T08:51:10.654Z"
+  "lastUpdated": "2026-04-25T09:51:43.664Z"
 }
