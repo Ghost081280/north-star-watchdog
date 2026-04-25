@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "Rep. Ilhan Omar skipped a fraud hearing, raising concerns about her involvement in potential fraudulent activities.",
+      "insight": "This development warrants further investigation into Rep. Omar's activities and potential connections to fraudulent schemes.",
+      "entities": [
+        "Rep. Ilhan Omar"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "NewsNation",
+      "sourceUrl": "https://newsnation.com/2026/04/25/minn-lawmakers-demand-records-after-rep-ilhan-omar-skips-fraud-hearing/",
+      "id": "rf-1777126031399-4aajdecs2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T14:07:11.395Z",
+      "isNew": true
+    },
+    {
+      "type": "fraudulent IDs",
+      "description": "A semi driver in a deadly I-71 crash was accused of using fraudulent IDs, sparking a federal investigation.",
+      "insight": "The use of fraudulent IDs in this case raises concerns about the prevalence of identity theft and potential connections to larger organized crime schemes.",
+      "entities": [
+        "semi driver"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "10tv.com",
+      "sourceUrl": "https://10tv.com/2026/04/24/federal-investigation-launched-into-semi-driver-in-deadly-i-71-crash-accused-of-using-fraudulent-ids/",
+      "id": "rf-1777126031399-47wwcoodk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T14:07:11.395Z",
+      "isNew": true
+    },
+    {
       "type": "Investigation dropped",
       "description": "The Justice Department dropped its investigation into Federal Reserve Chair Jerome Powell, despite concerns about potential conflicts of interest and leadership issues.",
       "insight": "As an investigator, I find it concerning that the investigation was dropped without providing clear reasons or explanations. This raises questions about the independence of the Federal Reserve and the potential for undue influence. Further investigation is needed to determine the circumstances surrounding the dropped investigation.",
@@ -929,50 +967,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-20T20:43:24.858Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "$340 million in fraud schemes uncovered by the National Fraud Enforcement Division",
-      "insight": "Large-scale fraud schemes indicate a significant problem that requires further investigation",
-      "entities": [
-        "National Fraud Enforcement Division"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Lynnwood Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNc0ExNkNiOFNzSHNJWDgwZnNIYWJzd2hjcWx0eHVlOHJsY1BRZVVweHczNlh6NkhLSENyZ0xqdnlCZnBqVW1feGlGRzBXMXdIU0pPRGNPcTkwWHlfMENkaGhFdFA0QQ?oc=5",
-      "id": "rf-1776711828710-ytmc4w31x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T19:03:48.706Z",
-      "isNew": false
-    },
-    {
-      "type": "investigation",
-      "description": "Colorado Department of Human Services under investigation amid turnover, complaints and nearly $3 million in payouts",
-      "insight": "Investigation into Colorado Department of Human Services indicates potential mismanagement or wrongdoing",
-      "entities": [
-        "Colorado Department of Human Services"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "The Denver Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUF9rcXNrX0t6RWJnNjVhaHl5bmJQZlk4Y0l3cXowelZPOXIzd0dkVWM4R3RQNC0ySGk3bzFEMElRWUZzZTlFQjlxNDRFUVlQRXNwSGwyLWtRejZZcDBOM1Ezd1d6S2tDU2pKb21ZQWhOOGpsTjFDZ3NGOFllcnA3UzRwSzBtV21OSnkwUTZFX24wOW1oMEctT2g4ak44UlZR?oc=5",
-      "id": "rf-1776711828710-m2obc21y6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T19:03:48.706Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -980,8 +978,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -998,5 +995,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-25T13:01:06.638Z"
+  "lastUpdated": "2026-04-25T14:07:11.395Z"
 }

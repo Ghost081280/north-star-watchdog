@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-18T18:47:59.737Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-04-18T19:40:12.460Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-25T13:01:06.636Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-25T14:07:11.393Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2191,
-    "articlesProcessed": 109200,
-    "redFlagsFound": 2552,
+    "totalScans": 2192,
+    "articlesProcessed": 109250,
+    "redFlagsFound": 2554,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Jerome Powell connected to?",
-        "Where did the Unknown allegedly go in Federal Reserve Investigation?",
-        "Where did the $0 allegedly go in Investigation into Jerome Powell?"
+        "Where did the $0 allegedly go in Investigation into Jerome Powell?",
+        "Where did the $0 allegedly go in Feeding Our Future scandal?",
+        "What other organizations is Keith Ellison connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-25T13:01:06.636Z",
-  "lastUpdated": "2026-04-25T13:01:06.637Z"
+  "lastReflection": "2026-04-25T14:07:11.393Z",
+  "lastUpdated": "2026-04-25T14:07:11.394Z"
 }
