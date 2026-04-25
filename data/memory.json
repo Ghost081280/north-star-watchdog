@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-18T20:35:07.397Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-18T21:33:56.092Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-04-25T15:38:19.029Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-25T16:40:02.143Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Feeding Our Future scandal?",
-    "What other organizations is Keith Ellison connected to?",
-    "What other organizations is Kevin Warsh connected to?",
     "Where did the Unknown allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the No amount specified allegedly go in Federal Reserve Investigation?",
     "Where did the No amount specified allegedly go in Feeding Our Future Scandal?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
     "Where did the $500 million allegedly go in Spirit Airlines Bailout Investigation?",
-    "Where did the $0 allegedly go in Minnesota Child Care Centers Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Child Care Centers Fraud Investigation?",
+    "What other organizations is Eight individuals connected to?",
+    "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?",
+    "Where did the unknown allegedly go in Child care center fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2193,
-    "articlesProcessed": 109300,
-    "redFlagsFound": 2555,
+    "totalScans": 2194,
+    "articlesProcessed": 109350,
+    "redFlagsFound": 2556,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into Jerome Powell?",
         "Where did the $0 allegedly go in Feeding Our Future scandal?",
-        "What other organizations is Keith Ellison connected to?"
+        "What other organizations is Keith Ellison connected to?",
+        "What other organizations is Kevin Warsh connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-25T15:38:19.029Z",
-  "lastUpdated": "2026-04-25T15:38:19.029Z"
+  "lastReflection": "2026-04-25T16:40:02.143Z",
+  "lastUpdated": "2026-04-25T16:40:02.143Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal payment freeze puts some Minnesota families in danger of losing child care",
+      "insight": "I suspect that the federal payment freeze may be related to the ongoing investigation into child care center fraud in Minnesota. Further investigation is needed to determine the connection between the two.",
+      "entities": [
+        "Minnesota child care centers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/federal-payment-freeze-puts-some-minnesota-families-in-danger-of-losing-child-care-amid-investigation-into-alleged-fraud/ar-AAI5XZG",
+      "id": "rf-1777135202148-3zgn7osx4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T16:40:02.144Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Rep. Ilhan Omar skipped a fraud hearing, raising concerns about her involvement in potential fraudulent activities.",
       "insight": "This development warrants further investigation into Rep. Omar's activities and potential connections to fraudulent schemes.",
@@ -314,25 +333,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T15:07:16.547Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The federal government has frozen assets related to alleged Medicaid fraud in Minnesota.",
-      "insight": "The federal freeze on assets related to alleged Medicaid fraud indicates a serious concern about potential wrongdoing. Further investigation into these assets and their connections to Medicaid providers may uncover further evidence of fraud.",
-      "entities": [
-        "Minnesota Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Whistleblower Claims Retaliation Over Medicaid Fraud Reports",
-      "sourceUrl": "https://asatunews.co.id/Minnesota-Whistleblower-Claims-Retaliation-Over-Medicaid-Fraud-Reports-2026-04-24",
-      "id": "rf-1777036820549-zsanihlky",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T13:20:20.545Z",
       "isNew": false
     },
     {
@@ -971,8 +971,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,5 +996,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-25T15:38:19.031Z"
+  "lastUpdated": "2026-04-25T16:40:02.144Z"
 }
