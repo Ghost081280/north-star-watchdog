@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential fraud",
+      "description": "The Return to Nature funeral home investigation and the involvement of Carie Hallford.",
+      "insight": "This case may indicate a larger pattern of fraud in the funeral home industry, and further investigation is warranted.",
+      "entities": [
+        "Carie Hallford",
+        "Return to Nature funeral home"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KKTV",
+      "sourceUrl": "https://kktv.com/carie-hallford-receives-concurrent-sentence-on-state-charges-related-to-return-to-nature-funeral-home-investigation/",
+      "id": "rf-1777083110724-8e6q94ldx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-25T02:11:50.720Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ dropped its investigation into Fed Chair Jerome Powell, but concerns over the Fed's leadership and potential future actions remain.",
       "insight": "I notice that the investigation was concluded, but the implications of this development are still unfolding. Further research is needed to understand the potential consequences for the financial sector and the Fed's leadership.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-24T23:38:39.298Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -947,29 +967,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-20T16:08:03.486Z",
       "isNew": false
-    },
-    {
-      "type": "large payouts",
-      "description": "The Colorado Department of Human Services has made large payouts amid an investigation.",
-      "insight": "This could indicate potential wrongdoing or mismanagement within the department.",
-      "entities": [
-        "Colorado Department of Human Services"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Denver Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUF9rcXNrX0t6RWJnNjVhaHl5bmJQZlk4Y0l3cXowelZPOXIzd0dkVWM4R3RQNC0ySGk3bzFEMElRWUZzZTlFQjlxNDRFUVlQRXNwSGwyLWtRejZZcDBOM1Ezd1d6S2tDU2pKb21ZQWhOOGpsTjFDZ3NGOFllcnA3UzRwSzBtV21OSnkwUTZFX24wOW1oMEctT2g4ak44UlZR?oc=5",
-      "id": "rf-1776696551206-picng91a2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-20T14:49:11.202Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -978,8 +980,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -997,5 +997,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-24T23:38:39.298Z"
+  "lastUpdated": "2026-04-25T02:11:50.720Z"
 }
