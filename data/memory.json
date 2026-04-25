@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-19T02:31:34.770Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-19T05:27:46.292Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
@@ -510,6 +505,11 @@
       "date": "2026-04-25T19:43:41.192Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-25T20:37:23.463Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2197,
-    "articlesProcessed": 109500,
+    "totalScans": 2198,
+    "articlesProcessed": 109550,
     "redFlagsFound": 2559,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Jerome Powell?",
         "Where did the N/A allegedly go in Fed Chair Jerome Powell Investigation?",
-        "Where did the N/A allegedly go in NYC Homeless Shelter Investigation?"
+        "Where did the N/A allegedly go in NYC Homeless Shelter Investigation?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-25T19:43:41.192Z",
-  "lastUpdated": "2026-04-25T19:43:41.193Z"
+  "lastReflection": "2026-04-25T20:37:23.463Z",
+  "lastUpdated": "2026-04-25T20:37:23.464Z"
 }
