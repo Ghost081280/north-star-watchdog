@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-19T08:53:13.364Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-19T09:45:18.529Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 large dollar amount findings, Breaking news present",
       "confidence": 0.65
@@ -510,6 +505,11 @@
       "date": "2026-04-25T22:35:31.448Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-25T23:36:46.056Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Investigation into semi driver in deadly I-71 crash?",
-    "Where did the $0 allegedly go in Feeding Our Future scheme investigation?",
     "Where did the $0 allegedly go in Jerome Powell investigation?",
     "Where did the Unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
     "Where did the $0 allegedly go in DOJ Investigation into Jerome Powell?",
@@ -558,7 +556,9 @@
     "What other organizations is Jerome Powell connected to?",
     "What specific allegations exist against Jerome Powell?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the Multi-million dollars allegedly go in Housing Stabilization Fraud Scheme Investigation?"
+    "Where did the Multi-million dollars allegedly go in Housing Stabilization Fraud Scheme Investigation?",
+    "Where did the Unknown allegedly go in Federal Reserve Investigation?",
+    "Where did the $11 million allegedly go in Minnesota Medicaid Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2200,
-    "articlesProcessed": 109650,
-    "redFlagsFound": 2561,
+    "totalScans": 2201,
+    "articlesProcessed": 109700,
+    "redFlagsFound": 2563,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Investigation into Rep. Ilhan Omar?",
         "Where did the $0 allegedly go in Investigation into semi driver in deadly I-71 crash?",
-        "Where did the $0 allegedly go in Feeding Our Future scheme investigation?"
+        "Where did the $0 allegedly go in Feeding Our Future scheme investigation?",
+        "Where did the $0 allegedly go in Jerome Powell investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-25T22:35:31.448Z",
-  "lastUpdated": "2026-04-25T22:35:31.448Z"
+  "lastReflection": "2026-04-25T23:36:46.056Z",
+  "lastUpdated": "2026-04-25T23:36:46.057Z"
 }
