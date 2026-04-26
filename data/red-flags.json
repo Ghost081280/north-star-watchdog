@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "theft by executive director",
+      "description": "The executive director and a relative of a Minnesota suicide prevention nonprofit stole $220K from the organization",
+      "insight": "This case highlights the need for increased oversight and accountability in nonprofit organizations. I will investigate further to see if there are any other similar cases.",
+      "entities": [
+        "Minnesota suicide prevention nonprofit"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/prosecutors-minnesota-suicide-prevention-nonprofit-loses-220k-to-theft-by-executive-director-relative/ar-AAIuK3q",
+      "id": "rf-1777239382394-9qa1w8rt0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T21:36:22.391Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
       "insight": "This case suggests potential internal controls issues and possible collusion within the nonprofit.",
@@ -26,7 +45,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T20:37:01.391Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "theft",
@@ -959,29 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-21T23:34:07.342Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The Southern Poverty Law Center is under federal investigation for its paid informant program.",
-      "insight": "This investigation raises concerns about the Center's activities and potential misuse of funds.",
-      "entities": [
-        "Southern Poverty Law Center"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Daily Signal",
-      "sourceUrl": "https://www.dailysignal.com/2026/04/21/breaking-splc-under-criminal-investigation-for-paid-informant-program/",
-      "id": "rf-1776807846274-cek2zxvym",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T21:44:06.271Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T20:37:01.391Z"
+  "lastUpdated": "2026-04-26T21:36:22.391Z"
 }
