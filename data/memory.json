@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-19T14:01:19.318Z",
-      "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-19T14:53:09.423Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-26T08:59:11.258Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-04-26T09:59:04.348Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?",
     "Where did the unknown allegedly go in Child care center fraud investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the unknown allegedly go in Federal Reserve Chair Jerome Powell Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $multi-million allegedly go in Housing Stabilization Fraud scheme?",
     "What specific allegations exist against Nick Shirley?",
     "What specific allegations exist against Ilhan Omar?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2205,
-    "articlesProcessed": 109900,
-    "redFlagsFound": 2569,
+    "totalScans": 2206,
+    "articlesProcessed": 109950,
+    "redFlagsFound": 2570,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program termination",
-          "description": "Eight people face federal charges related to a multi-million dollar Housing Stabilization Fraud scheme in Minnesota",
-          "insight": "Potential large-scale fraud scheme involving housing stabilization funds. Investigate the individuals and entities involved.",
-          "entities": [
-            "Eight individuals"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMisgNBVV95cUxQM0NrNi13eDR4N192clVCRERmZXY5VDhQMEtYc0dZb2ZUU05Oczk5eV9yOGJGWm43b0xtQU5ZQUVidHRzbVZ6NFI3MGRTQktEelR3cjhRNTd4RE80OS00aDByY0poajZ2VzFfeXRJSC01NEhPejdScGVXZi10ZUhDbjRpNzV0cVlmdm0wMGlBQVlIWFZ1ak9qRmpXdlhXdkxoYnhTWnBNbF84TzFydVhQZmdvX3FlYm5Sbk1YMzFmZmxuMkpfV1VFWjZYYm9GcUhRRWNqN3F2NTh4LWZkMlN5UmdfWnhkYmZPcERPRTdIQ2ZlQUdELXdzbjRDM0pRR1dlYVhJbC16RWh2QW9YMVlXQU1oZUo2YTgtdkdxdG5oZlVKWUVsc0hIZUhvQlNfeGlVN2JBNU1pWHpsMktvbW1qNmpSc0IxZXBBM19BeDllLS1ZT0VCWlhUUWlBblNUXzh2V001X0RwSU93Y0pweGNzMGUteUowSU1iUGx6U0gxaDlZYlZqMjF1UkRoaDYzc1VaOXlDUWpkcHpOSmMtdHBDc1l0ME5MNEJjaGU3dHB3TTcwdw"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Child Care Centers Fraud Investigation?",
-        "What other organizations is Eight individuals connected to?",
-        "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?"
+        "Where did the multi-million dollars allegedly go in Housing Stabilization Fraud scheme?",
+        "Where did the unknown allegedly go in Child care center fraud investigation?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-26T08:59:11.258Z",
-  "lastUpdated": "2026-04-26T08:59:11.259Z"
+  "lastReflection": "2026-04-26T09:59:04.348Z",
+  "lastUpdated": "2026-04-26T09:59:04.348Z"
 }

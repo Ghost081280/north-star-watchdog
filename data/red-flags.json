@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Investigation dropped",
+      "description": "The Justice Department dropped its criminal investigation into Federal Reserve Chair Jerome Powell.",
+      "insight": "I find it suspicious that the investigation was dropped, given the severity of the allegations. Further investigation is needed to determine the reasons behind this decision.",
+      "entities": [
+        "Jerome Powell",
+        "Federal Reserve"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/justice-department-drops-criminal-probe-of-fed-chair-jerome-powell/",
+      "id": "rf-1777197544353-yda3igeq2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T09:59:04.349Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Federal payment freeze puts some Minnesota families in danger of losing child care amid investigation into alleged fraud",
       "insight": "Potential misuse of funds meant for vulnerable populations. Investigate the child care centers involved and the extent of the alleged fraud.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T08:59:11.260Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T08:59:11.260Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -948,25 +968,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-21T07:47:32.860Z",
       "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "HS hockey coach charged with stealing money from team fundraising event",
-      "insight": "This case indicates potential financial mismanagement and theft in youth sports organizations",
-      "entities": [
-        "HS hockey coach"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "kare11.com",
-      "sourceUrl": "https://kare11.com/news/hs-hockey-coach-charged-with-stealing-money-from-team-fundraising-event",
-      "id": "rf-1776757652864-zcs5j8u9o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T07:47:32.860Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -980,6 +981,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -997,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T08:59:11.260Z"
+  "lastUpdated": "2026-04-26T09:59:04.349Z"
 }
