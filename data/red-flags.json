@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple fraud allegations against Rep. Ilhan Omar",
+      "insight": "Patterns of alleged fraud and lack of transparency",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://msn.com/en-us/news/politics/mn-lawmaker-takes-action-to-get-answers-on-omars-alleged-fraud-ties-after-she-skips-key-hearing-ghosted-us",
+      "id": "rf-1777181894392-rg3ghqprj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T05:38:14.390Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Freeze on federal funds for child care centers",
+      "insight": "Potential impact on vulnerable populations",
+      "entities": [
+        "child care centers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://msn.com/en-us/news/us/colorado-springs-child-care-provider-testifies-on-federal-fund-freeze-to-us-senate",
+      "id": "rf-1777181894392-04vtdnq6y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T05:38:14.390Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "$220K stolen from Feeding Our Future",
       "insight": "The executive director and relative of Feeding Our Future are accused of stealing $220K, indicating potential internal controls issues and lack of oversight.",
@@ -18,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T02:34:32.077Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -76,25 +114,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-25T18:50:57.696Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal payment freeze puts some Minnesota families in danger of losing child care",
-      "insight": "I suspect that the federal payment freeze may be related to the ongoing investigation into child care center fraud in Minnesota. Further investigation is needed to determine the connection between the two.",
-      "entities": [
-        "Minnesota child care centers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/federal-payment-freeze-puts-some-minnesota-families-in-danger-of-losing-child-care-amid-investigation-into-alleged-fraud/ar-AAI5XZG",
-      "id": "rf-1777135202148-3zgn7osx4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-25T16:40:02.144Z",
       "isNew": false
     },
     {
@@ -949,25 +968,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-21T07:47:32.860Z",
       "isNew": false
-    },
-    {
-      "type": "alleged misconduct",
-      "description": "The Woodhaven mayor is under investigation for alleged misconduct.",
-      "insight": "This could indicate a larger issue with governance in Woodhaven.",
-      "entities": [
-        "Woodhaven mayor"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMDZhVWVOS09YMVFRTjJGZDBlbUtUOTRDd0JlWVN6alY5OC1lVS02U1ZFVXBjZk1SVERISExSR1BxU2t3TFl5NTV3NEJHM1NFVG81VmY5YnBZcjFyZXljNXRYMmJkeWdBY2NvbnIzREZzM21qQXBuZ3JJWDhsVEwzNW95bzJPdGIzSFczLWJ2OG5vNVNlNGZpT3hZUWoyTmFTd1RBcQ?oc=5",
-      "id": "rf-1776749189227-bolz75eny",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T05:26:29.224Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -981,8 +981,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T02:34:32.077Z"
+  "lastUpdated": "2026-04-26T05:38:14.390Z"
 }
