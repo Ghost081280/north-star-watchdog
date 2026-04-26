@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "financial irregularities",
+      "description": "Ilhan Omar's husband's California winery suddenly closed amid an investigation into her finances",
+      "insight": "This raises concerns about potential financial improprieties and the need for further investigation into Ilhan Omar's financial dealings",
+      "entities": [
+        "Ilhan Omar",
+        "California winery"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/04/25/ilhan-omar-husbands-california-winery-suddenly-closes-amid-investigation/",
+      "id": "rf-1777221664156-7ahaxd2w8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T16:41:04.152Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
       "insight": "This case suggests potential internal fraud and mismanagement within nonprofits in Minnesota.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T15:41:03.091Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "theft",
@@ -949,30 +969,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-21T21:44:06.271Z",
       "isNew": false
-    },
-    {
-      "type": "misuse of grants",
-      "description": "A church in Minnesota is being sued by the state's DHS for alleged misuse of $2.5 million in grants.",
-      "insight": "This case highlights the need for increased oversight of grant funding to non-profit organizations. Further investigation is needed to determine the extent of the misuse and to identify any other organizations that may be involved.",
-      "entities": [
-        "Minnesota DHS",
-        "church"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Center Square",
-      "sourceUrl": "https://www.thecentersquare.com/minnesota/minnesota-dhs-sues-church-over-alleged-misuse-of-2-5-million-in-grants/article_3b7f44ee-e72d-11ec-8f6d-87db17f44c7c.html",
-      "id": "rf-1776794688852-0dwdp7ptm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T18:04:48.848Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -981,7 +982,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -999,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T15:41:03.091Z"
+  "lastUpdated": "2026-04-26T16:41:04.152Z"
 }
