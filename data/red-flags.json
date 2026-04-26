@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "theft",
+      "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
+      "insight": "This incident indicates potential mismanagement and lack of oversight within the nonprofit sector in Minnesota. Further investigation into the nonprofit's financial management and regulatory compliance is warranted.",
+      "entities": [
+        "Minnesota suicide prevention nonprofit",
+        "Executive Director"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://msn.com/en-us/article/prosecutors-minnesota-suicide-prevention-nonprofit-loses-220k-to-theft-by-executive-director-relative",
+      "id": "rf-1777208603951-bd7t8r363",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T13:03:23.946Z",
+      "isNew": true
+    },
+    {
+      "type": "investigation dropped",
+      "description": "The Department of Justice dropped its criminal investigation into Federal Reserve Chair Jerome Powell.",
+      "insight": "The decision to drop the investigation may indicate a lack of evidence or insufficient grounds for prosecution. However, the referral to the Inspector General suggests that there may still be concerns about Powell's actions or potential conflicts of interest.",
+      "entities": [
+        "Federal Reserve Chair Jerome Powell",
+        "Department of Justice"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "TODAY.com",
+      "sourceUrl": "https://www.today.com/news/department-of-justice-drops-investigation-into-jerome-powell",
+      "id": "rf-1777208603951-cphdk04e7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-26T13:03:23.946Z",
+      "isNew": true
+    },
+    {
       "type": "Investigation dropped",
       "description": "The Justice Department dropped its criminal investigation into Federal Reserve Chair Jerome Powell.",
       "insight": "I find it suspicious that the investigation was dropped, given the severity of the allegations. Further investigation is needed to determine the reasons behind this decision.",
@@ -929,45 +969,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-21T15:12:32.900Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigating ballots found in Renton dumpster",
-      "insight": "This could be a sign of election tampering or voter fraud, which would be a serious concern.",
-      "entities": [
-        "FBI",
-        "Renton"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "KING5.com",
-      "sourceUrl": "https://www.king5.com/2026/04/21/feds-now-investigating-ballots-found-by-renton-dumpster/",
-      "id": "rf-1776769521252-948vo20gd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T11:05:21.248Z",
-      "isNew": false
-    },
-    {
-      "type": "misuse of funds",
-      "description": "Woodhaven mayor under investigation for alleged misuse of funds",
-      "insight": "This case suggests potential corruption and mismanagement of public funds",
-      "entities": [
-        "Woodhaven mayor"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://cbsnews.com/news/woodhaven-mayor-under-investigation-for-alleged-misuse-of-funds/",
-      "id": "rf-1776757652864-00hrcdh7v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T07:47:32.860Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -979,7 +980,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -996,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T11:38:32.421Z"
+  "lastUpdated": "2026-04-26T13:03:23.946Z"
 }
