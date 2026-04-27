@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "possible hijacking",
+      "description": "A truck driver vanished in Florida, possibly due to a hijacking",
+      "insight": "This could indicate a larger criminal operation involving stolen trucks or cargo.",
+      "entities": [
+        "Florida truck driver"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "WFTV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOXy1kOV92ZGV6NXRqY2pmalRQSjNxZndlWDNudzFMbkRDOUpfS1dVNkpKcHhJUHVsbDRWdWpHcTNRRko4d1M2b20xUDg2TVp5YzQzQ2F0TFdYTi1uTGJ2M2JLaUVZdlgtUHJQSGlZOVdKUnA0WFJRM1pvS2lmdFdNUmxxU0xueU1GSkp2N2FMNVlaVFhsYjlrSXdEUnZuMnBER080UkhuMnIxNGtxVld2QjBIdzFCTFRSRWE5MU9iYWQwckFrOUluYlRnQlZfRHg4VUdoUlo2cmZqT3JHVWE2bTd4MENKZkHSAfsBQVVfeXFMTkxXcnNjY0gybEsydU5UUkFMWjRnNGpGVnlXaU9fX3o4QmN5SXRPTUEzUjFqYU5SVktuNklQamV5eGwyQ1EtWUpJa0xhd0xqOFlDR2FVMUktVlpVOER0X1hWVUdrMWcyNXcwUnpoRGhzbndJdXoxSTlYTDJvMFEwOFBuOUFMdnZIS1pPYmtIMUhJOGhQeUxOR3FLV1I0YzRzMFpJeVpSZnNkejhOeGhNa2pWeEc3TzlZMWc0bE5HWnVVNWRJQUFjZGhOT3NFV3N0V1lvNWxJMTBFRXVfbHRhblJUb3RnOGZ3TlZZY24zTTROX3lVRkxFSVIzbnM",
+      "id": "rf-1777317487362-1m857btd2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-27T19:18:07.359Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has frozen Minnesota child care funds amid an investigation into alleged fraud.",
       "insight": "This could indicate a significant issue with the management of child care funds in Minnesota, potentially putting vulnerable populations at risk.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-27T17:21:10.489Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "theft",
@@ -950,40 +969,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-22T09:19:12.535Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Southern Poverty Law Center is under federal investigation for fraud and money laundering.",
-      "insight": "This investigation raises concerns about the organization's financial practices and the potential for misuse of donor funds. Further investigation is needed to determine the extent of the fraud and to hold those responsible accountable.",
-      "entities": [
-        "Southern Poverty Law Center"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AP News",
-      "sourceUrl": "https://apnews.com/article/southern-poverty-law-center-charged-fraud-money-laundering-4c551fc6f6a64e9ab7e1f4e2fbd94e8d",
-      "id": "rf-1776843858735-7bbodvq19",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T07:44:18.731Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-27T17:21:10.489Z"
+  "lastUpdated": "2026-04-27T19:18:07.359Z"
 }
