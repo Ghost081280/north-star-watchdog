@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Financial Mismanagement",
+      "description": "The Minnesota suicide prevention nonprofit's lack of internal controls and oversight allowed the executive director and their relative to steal $220,000.",
+      "insight": "This case highlights the need for nonprofits to implement robust financial management and oversight practices to prevent similar incidents. I will investigate further to identify potential patterns of financial mismanagement in other nonprofits.",
+      "entities": [
+        "Minnesota Suicide Prevention Nonprofit"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/prosecutors-minnesota-suicide-prevention-nonprofit-loses-220k-to-theft-by-executive-director-relative/ar-AAI5xLq",
+      "id": "rf-1777257391676-jt6cw9gyv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-27T02:36:31.672Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
       "insight": "This case suggests potential internal controls issues and lack of oversight within nonprofits in Minnesota.",
@@ -19,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-26T23:37:48.722Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "theft by executive director",
@@ -952,25 +971,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-22T05:24:59.338Z",
       "isNew": false
-    },
-    {
-      "type": "potential misuse of funds",
-      "description": "The Southern Poverty Law Center has been accused of misusing funds, including paying informants in extremist groups.",
-      "insight": "This raises concerns about the organization's financial management and potential misuse of donor funds. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Southern Poverty Law Center"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/southern-poverty-law-center-indicted-charges-fraudulently-paid-informants-extremist-n1296866",
-      "id": "rf-1776814447345-elywq4sq6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-21T23:34:07.342Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,8 +983,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1002,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-26T23:37:48.722Z"
+  "lastUpdated": "2026-04-27T02:36:31.672Z"
 }
