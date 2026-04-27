@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "A federal payment freeze has been put in place for some Minnesota families due to an investigation into alleged fraud in the child care industry.",
+      "insight": "This freeze could indicate a larger issue with fraud in the child care industry, and it's worth investigating further to see if there are any connections to other cases or entities.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal payment freeze puts some Minnesota families in danger of losing child care amid investigation into alleged fraud",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/federal-payment-freeze-puts-some-minnesota-families-in-danger-of-losing-child-care-amid-investigation-into-alleged-fraud/ar-AAIEGK5",
+      "id": "rf-1777304824907-l6pvukhkc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-27T15:47:04.903Z",
+      "isNew": true
+    },
+    {
       "type": "theft",
       "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
       "insight": "This case suggests potential internal controls issues and lack of oversight within nonprofits in Minnesota.",
@@ -36,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-27T11:02:30.732Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Trump freezes $259M Minnesota Medicaid funds",
-      "insight": "This could indicate a larger issue with Minnesota's Medicaid program and potentially lead to further investigations.",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en/en-us/article/2024-04-26-trump-freezes-259m-minnesota-medicaid-funds",
-      "id": "rf-1777278095708-jhukuwxgm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T08:21:35.705Z",
       "isNew": false
     },
     {
@@ -981,7 +981,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -999,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-27T13:49:17.624Z"
+  "lastUpdated": "2026-04-27T15:47:04.903Z"
 }

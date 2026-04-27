@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-20T19:03:48.704Z",
-      "summary": "SIGNIFICANT: 2 large dollar amount findings, 2 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-04-20T20:43:24.856Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-27T13:49:17.622Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-04-27T15:47:04.901Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Jerome Powell connected to?",
-    "What specific allegations exist against Jerome Powell?",
     "Where did the $220K allegedly go in Minnesota Child Care Centers Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Two brothers connected to?",
     "Where did the None allegedly go in White House Correspondents' Dinner shooting?",
     "Where did the None allegedly go in Feeding Our Future fraud case?",
-    "Where did the multi-million dollar allegedly go in Housing Stabilization Fraud scheme?"
+    "Where did the multi-million dollar allegedly go in Housing Stabilization Fraud scheme?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Where did the None allegedly go in Minnesota construction wage theft investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2224,
-    "articlesProcessed": 110850,
-    "redFlagsFound": 2590,
+    "totalScans": 2225,
+    "articlesProcessed": 110900,
+    "redFlagsFound": 2591,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $220K allegedly go in Minnesota suicide prevention nonprofit theft?",
-        "Where did the $220K allegedly go in Feeding Our Future fraud case?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Jerome Powell connected to?",
+        "What specific allegations exist against Jerome Powell?",
+        "Where did the $220K allegedly go in Minnesota Child Care Centers Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-27T13:49:17.622Z",
-  "lastUpdated": "2026-04-27T13:49:17.622Z"
+  "lastReflection": "2026-04-27T15:47:04.901Z",
+  "lastUpdated": "2026-04-27T15:47:04.902Z"
 }
