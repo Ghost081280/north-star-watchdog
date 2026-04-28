@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-21T16:59:25.173Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-21T18:04:48.846Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-28T18:16:26.813Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-28T20:14:38.331Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the None allegedly go in White House Correspondents' Dinner shooting?",
-    "Where did the None allegedly go in Feeding Our Future fraud case?",
     "Where did the multi-million dollar allegedly go in Housing Stabilization Fraud scheme?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the None allegedly go in Minnesota construction wage theft investigation?",
@@ -558,7 +556,9 @@
     "Where did the $1.28M allegedly go in Construction firms wage recovery?",
     "Where did the $1.28M allegedly go in Minnesota Labor Agency Wage Recovery?",
     "What specific allegations exist against Renee Good?",
-    "Where did the $0 allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
+    "What other organizations is James Comey connected to?",
+    "Where did the Millions in Taxpayer Money allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2236,
-    "articlesProcessed": 111450,
-    "redFlagsFound": 2605,
+    "totalScans": 2237,
+    "articlesProcessed": 111500,
+    "redFlagsFound": 2606,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Two brothers connected to?",
         "Where did the None allegedly go in White House Correspondents' Dinner shooting?",
-        "Where did the None allegedly go in Feeding Our Future fraud case?"
+        "Where did the None allegedly go in Feeding Our Future fraud case?",
+        "Where did the multi-million dollar allegedly go in Housing Stabilization Fraud scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-28T18:16:26.813Z",
-  "lastUpdated": "2026-04-28T18:16:26.814Z"
+  "lastReflection": "2026-04-28T20:14:38.331Z",
+  "lastUpdated": "2026-04-28T20:14:38.331Z"
 }
