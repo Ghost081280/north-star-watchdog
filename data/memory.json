@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-21T11:05:21.245Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-21T13:23:13.136Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-28T08:29:45.072Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-28T11:03:59.292Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Cole Tomas Allen connected to?",
     "What other organizations is Two brothers connected to?",
     "Where did the None allegedly go in White House Correspondents' Dinner shooting?",
     "Where did the None allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Renee Good Shooting Investigation?",
     "Where did the Unknown allegedly go in Trump Assassination Attempt Investigation?",
     "Where did the $1.28M allegedly go in Construction firms wage recovery?",
-    "Where did the $1.28M allegedly go in Minnesota Labor Agency Wage Recovery?"
+    "Where did the $1.28M allegedly go in Minnesota Labor Agency Wage Recovery?",
+    "What specific allegations exist against Renee Good?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2233,
-    "articlesProcessed": 111300,
-    "redFlagsFound": 2601,
+    "totalScans": 2234,
+    "articlesProcessed": 111350,
+    "redFlagsFound": 2603,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $259M allegedly go in Federal payment freeze investigation?",
         "What other organizations is Cole Tomas Allen connected to?",
-        "What other organizations is Two brothers connected to?"
+        "What other organizations is Two brothers connected to?",
+        "Where did the None allegedly go in White House Correspondents' Dinner shooting?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-28T08:29:45.072Z",
-  "lastUpdated": "2026-04-28T08:29:45.072Z"
+  "lastReflection": "2026-04-28T11:03:59.292Z",
+  "lastUpdated": "2026-04-28T11:03:59.293Z"
 }

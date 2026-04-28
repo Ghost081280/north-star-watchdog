@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "wage theft",
+      "description": "Construction firms in Minnesota pay $1.28M in stolen wages.",
+      "insight": "This is a significant recovery of stolen wages, indicating a large-scale wage theft scheme.",
+      "entities": [
+        "Construction firms"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeEZ5T1NPM1hULWJsTktQU1NSWTJRSWVGdlQwUDZaV2ZkRWdmOU40LXZsODJMbGFJaVVib0tScEVpbEluaFBhQWlYTnlZeXp4X1N6bXY0RVJlQTdKVTdhQjNjbkVMOVJtS1hnOGNia2JFWEdDZy10Y21WakE5RVlxYlNkYTNkSmV0MGxxZm4wazV3NlZmcWh0VG0wMGhqZ1BFLWlDU2pPWG5sUmlBdV9aZ0VmenhuZkM2amEyMWR2S0x0VkpldmRjTUVxaWpTelpmT0JUaWRBZ2tiZw",
+      "id": "rf-1777374239298-8ra2zlnva",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T11:03:59.294Z",
+      "isNew": true
+    },
+    {
+      "type": "ATF raid",
+      "description": "Arkansas lawmakers seek federal investigation into ATF raid.",
+      "insight": "This could indicate a potential misuse of power or excessive force by the ATF.",
+      "entities": [
+        "ATF",
+        "Arkansas lawmakers"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "thv11.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONjVSVWhEbnBKaVJDN1ZJaS1aWWw5Z1Nmemg4TThYMmw1cG40U21Kd2FfTlRsektKUTAtSnBRRXpTLTMwSlFKbkdMcEluVjR3S0tRdVliOFBIbzVjRWszM056SG9PUDZETC1WMnRmSnlLN1dMN2dmRjhkcTRmaE5BYVp5cnlXM1NNSjEwWEgwRElWTzA3SFVNMDM1UHp1NHJBa1RIUGtvNmVSeWhxTU51LWd0dGdNRUZDY1I4dXQ2bzVCWTN3dUx3dkpjR2NlZ1E0TVNzTHZJald4b1JZSXJCWHF5NEU",
+      "id": "rf-1777374239298-mr3prorv7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T11:03:59.294Z",
+      "isNew": true
+    },
+    {
+      "type": "wage theft",
       "description": "Construction firms underpaying workers",
       "insight": "This appears to be a case of wage theft, where construction firms underpaid their workers. Further investigation into these firms and their business practices may uncover more instances of fraud.",
       "entities": [
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T08:29:45.074Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -931,48 +970,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-22T23:43:58.895Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "Rep. Ilhan Omar linked to $250 million fraud scheme",
-      "insight": "This appears to be a significant case of alleged fraud involving a high-ranking government official.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Kenya Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01Z0wyUjBfRUFjQVVvSGppUC1Qd0h2RDYyVnMzOUJZQzl0MVpCMURjUjBZNG4zUFJhWWhQMjNvUTRCS2ZjN3dCSU5uaWNzeTZqMklWOXpmOVRvZGI4OTU3NUxvSUpKMFRuM25B",
-      "id": "rf-1776897924229-y08917w3v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T22:45:24.225Z",
-      "isNew": false
-    },
-    {
-      "type": "potential misconduct",
-      "description": "FBI Director Kash Patel under investigation for drinking report",
-      "insight": "This could indicate potential misconduct by a high-ranking law enforcement official.",
-      "entities": [
-        "Kash Patel"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "KOMO",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVWM2MjY0bDBVV3R4Z2dDSWtFTWhBY09Pa1hnZDdVdEdOc0VsSnJIN2dsc2cyZGh5V0tBRjI5RjNtc1BnYm9RYUsyTDRMSlNTQWhHZUVxNzBaQTBPWENFZHNDM3hocVlPMUx2SXBQY0RYTS14ZjNWNmMDItNWFX",
-      "id": "rf-1776897924229-koc4rrni6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T22:45:24.225Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-28T08:29:45.074Z"
+  "lastUpdated": "2026-04-28T11:03:59.294Z"
 }
