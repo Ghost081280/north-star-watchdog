@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The federal government has been actively investigating and raiding businesses in Minnesota for alleged social welfare fraud.",
+      "insight": "The connections between these raids and the indictment of James Comey suggest a larger pattern of corruption and abuse of power. Further investigation is needed to uncover the full extent of these crimes.",
+      "entities": [
+        "James Comey",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/federal-officers-raid-22-businesses-many-somali-linked-in-minneapolis/2026/04/28/",
+      "id": "rf-1777417016677-sbvr0s1wx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T22:56:56.674Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI executed search warrants at 22 locations in Minnesota, indicating a significant and coordinated investigation.",
       "insight": "The large number of search warrants and the targeting of Somali-owned businesses suggest a potentially large-scale fraud scheme.",
@@ -18,26 +38,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T18:16:26.815Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The FBI executed 22 search warrants in Minneapolis, indicating a significant and coordinated effort to investigate fraud.",
-      "insight": "The large number of search warrants and the targeting of multiple businesses suggest a complex and potentially large-scale fraud scheme.",
-      "entities": [
-        "Minnesota daycare centers",
-        "Somali-linked businesses"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/national/federal-officers-raid-22-businesses-many-somali-linked-minneapolis-2026-04-28-vd3w4e96z.html",
-      "id": "rf-1777394993309-olaws6ggc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-28T16:49:53.306Z",
       "isNew": false
     },
     {
@@ -984,7 +984,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1002,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-28T21:56:37.652Z"
+  "lastUpdated": "2026-04-28T22:56:56.674Z"
 }
