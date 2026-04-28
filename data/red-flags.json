@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Multiple federal investigations are currently underway, including the Renee Good shooting investigation and the Trump assassination attempt investigation.",
+      "insight": "I notice that there are multiple high-profile federal investigations currently underway. This could indicate a larger pattern of corruption or wrongdoing at the national level. I recommend continuing to monitor these investigations and looking for connections between them.",
+      "entities": [
+        "FBI",
+        "Secret Service"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/",
+      "id": "rf-1777344271281-kr0ojbgjq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T02:44:31.278Z",
+      "isNew": true
+    },
+    {
+      "type": "Wage Theft",
+      "description": "Multiple construction firms have been ordered to pay back wages to workers in recent months.",
+      "insight": "I notice that there have been multiple cases of wage theft by construction firms in recent months. This could indicate a larger pattern of exploitation of workers in the construction industry. I recommend continuing to monitor this issue and looking for connections between the firms involved.",
+      "entities": [
+        "Minnesota Construction Firms"
+      ],
+      "confidence": 70,
+      "priority": "Medium",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://www.minnesotareformer.com/",
+      "id": "rf-1777344271281-m99b13742",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T02:44:31.278Z",
+      "isNew": true
+    },
+    {
       "type": "potential fraud",
       "description": "Smyrna business owner under investigation after immigrants allege fraud",
       "insight": "This case raises concerns about potential fraudulent activities in Smyrna, Georgia. Further investigation is needed to uncover the extent of the alleged fraud and identify any other parties involved.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-27T23:52:38.435Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "stolen wages",
@@ -36,7 +75,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-27T23:52:38.435Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program mismanagement",
@@ -930,57 +969,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-22T20:03:52.473Z",
       "isNew": false
-    },
-    {
-      "type": "government program misuse",
-      "description": "Minnesota Medicaid spending doubled in 5 years",
-      "insight": "Rapid growth in Medicaid spending raises concerns about potential misuse or fraud within the program. This trend should be monitored closely.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "St. Cloud Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORnU5TEdmdjRZZGNXX1BEUU9IX3YwanA5Q0Y2U0pjb1BfVEQySUU3SkdrbEhkZmZQMDFkQnJxRVNnZWZzSGkyZlR3Q2JteG1ETUoybEwxdThRTEhYY0JkRFl2blVKTUdaZzFCaUkweW5IZFlKSkFfRXRfQ2RtMzNEa2lfMHp6N2pyUjdVaTcycUdTb1liWXJqc3NKVUJ3ZllCb2VBU1ExR2lTMm84bGRvRGV6M2g",
-      "id": "rf-1776888232476-xv4qnjykf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T20:03:52.473Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Ilhan Omar suspected of involvement in $250 million fraud scheme",
-      "insight": "This is a significant allegation that requires further investigation, potentially involving multiple entities and programs.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Kenya Times",
-      "sourceUrl": "https://www.washington_examiner.com/2026/04/minnesota-fraud-committee-suspects-ilhan-omar-involvement-feeding-our-future-scheme/",
-      "id": "rf-1776880980087-n3d03tf8f",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T18:03:00.084Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -997,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-27T23:52:38.435Z"
+  "lastUpdated": "2026-04-28T02:44:31.278Z"
 }
