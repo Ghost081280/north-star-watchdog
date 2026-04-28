@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI executed search warrants at 22 locations in Minnesota, indicating a significant and coordinated investigation.",
+      "insight": "The large number of search warrants and the targeting of Somali-owned businesses suggest a potentially large-scale fraud scheme.",
+      "entities": [
+        "FBI",
+        "Minnesota businesses"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/rss/articles/CBMiswFBVV95cUxOZXZrVzZ0allrUHJZRk5JWlBoQkdPNkZQQkZvLTJZN25CSUR3NW5rMjNfa3hFRTgtRkMtZzR2SGdYUFVXSzJULV9CclpTTkJrY2R5MFhhdjVPNHJFUVA1Ym1iaHgtSjBibldtMUx1WjlHTHRENlJ5eGtObFdpVlZKUUlvcnJ2QWVmSlVBZGFaTkVIaDVLUlRxUVNZT1djVlZCSmd1cUIwRnJBR19UUEhyMTdnTQ",
+      "id": "rf-1777400186818-t733gl5xl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T18:16:26.815Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The FBI executed 22 search warrants in Minneapolis, indicating a significant and coordinated effort to investigate fraud.",
       "insight": "The large number of search warrants and the targeting of multiple businesses suggest a complex and potentially large-scale fraud scheme.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T16:49:53.306Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "wage theft",
@@ -951,38 +971,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-23T05:29:12.973Z",
       "isNew": false
-    },
-    {
-      "type": "alleged alcohol abuse",
-      "description": "FBI Director Kash Patel is alleged to have alcohol abuse issues.",
-      "insight": "The allegations against Patel raise concerns about his ability to lead the FBI.",
-      "entities": [
-        "Kash Patel"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNcElmSEZia29rQjhBVzVGTTEwSTBCX0p3ZDhEU3JoT1hmaVVIcFl1WjNqUW5RMGpnbkd1WVI2a0hwcnMwRXRHVXIzOUsxZEVWOTNEbnZseWVldzZ4WDVJUWJZYUY4VVg4QWNUUTIwY1pkTjFILTRXcEpHdm9MQWwzMGhDNkdoRHhHRWZWVnJET2M3ZzdCTHJrM2drRVFlVU5KSFd0OC1xYXlvMW9lY2pvbEdjOURESENfV2swSVFyREhRT1pKS3I1M1FQbGV1QQ",
-      "id": "rf-1776901438898-37mt7tytg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T23:43:58.895Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-28T16:49:53.306Z"
+  "lastUpdated": "2026-04-28T18:16:26.815Z"
 }
