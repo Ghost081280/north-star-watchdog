@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The FBI executed 22 search warrants in Minneapolis, indicating a significant and coordinated effort to investigate fraud.",
+      "insight": "The large number of search warrants and the targeting of multiple businesses suggest a complex and potentially large-scale fraud scheme.",
+      "entities": [
+        "Minnesota daycare centers",
+        "Somali-linked businesses"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/federal-officers-raid-22-businesses-many-somali-linked-minneapolis-2026-04-28-vd3w4e96z.html",
+      "id": "rf-1777394993309-olaws6ggc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T16:49:53.306Z",
+      "isNew": true
+    },
+    {
       "type": "wage theft",
       "description": "Construction firms in Minnesota pay $1.28M in stolen wages.",
       "insight": "This is a significant recovery of stolen wages, indicating a large-scale wage theft scheme.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T11:03:59.294Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "ATF raid",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T11:03:59.294Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "wage theft",
@@ -56,26 +76,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T08:29:45.074Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Judge allows Trump administration to withhold Minnesota's Medicaid funds due to 'serious fraud problem'",
-      "insight": "This indicates a significant fraud issue within Minnesota's Medicaid program, potentially involving multiple entities and large sums of money.",
-      "entities": [
-        "Minnesota",
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxOTXpidXJIdm1TZk9Id2dlbFdtLVJaazJkcXpEeEJQTFJHRzg0YTdwd2MyLS1HZldObmVfd2tQaHlBTlRfS0JidExDbXExbWVLSTJpYmFIZmdHcXdxVmh0MDlfZTBiSE1rbjJvX2E4aTlmRHRhMndnV1lnZmJnN0VLNHVFcWVSc0FfMzdwNTJDX05GX0lyQmxHeG1jTk85a25Vd1NmcVQ5Z09oZWFocDNHRWtsb3NOZGVucGxoeFNhcklUaEhIN2VBYVdMNEhXWjRuZnJ1c2ltODRWRnhpRktpQjVBUk9PX3RSbnNGbmRFYkNEem1Gbm92ekNqTkdybTRJcmY0dHFyRk40T3BQY29TNWROaVl4Y1o0SFhjcHpwVXVnMlA5MjRrOHZhMWtPVUJiei1pTjhjOUZRdTg0N08xaENlNHkwVnFwLUYtcFRVNjhQTUpxNnZKUjlHUk5TbmVLcEhkMjA1OF9nNWliWDMxWUt2cUlCNHNEbGEtM1hRVE83Q2lXSWVwT2Vzcw",
-      "id": "rf-1777355886468-9d28ekfqu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-28T05:58:06.465Z",
       "isNew": false
     },
     {
@@ -974,8 +974,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1001,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-28T11:03:59.294Z"
+  "lastUpdated": "2026-04-28T16:49:53.306Z"
 }
