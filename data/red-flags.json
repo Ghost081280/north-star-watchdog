@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "wage theft",
+      "description": "Construction firms underpaying workers",
+      "insight": "This appears to be a case of wage theft, where construction firms underpaid their workers. Further investigation into these firms and their business practices may uncover more instances of fraud.",
+      "entities": [
+        "Construction firms"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minnesota Reformer",
+      "sourceUrl": "https://minnesota.reformer.com/story/construction-firms-pay-128m-workers-largest-wage-recovery-minnesota-labor-agency",
+      "id": "rf-1777364985077-aq2r5w3xj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-28T08:29:45.074Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Judge allows Trump administration to withhold Minnesota's Medicaid funds due to 'serious fraud problem'",
       "insight": "This indicates a significant fraud issue within Minnesota's Medicaid program, potentially involving multiple entities and large sums of money.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-04-28T05:58:06.465Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -950,31 +969,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-22T22:45:24.225Z",
       "isNew": false
-    },
-    {
-      "type": "large scale fraud",
-      "description": "$250 million potentially involved in Feeding Our Future scheme",
-      "insight": "The scale of potential fraud is alarming and warrants thorough investigation. Connections between entities and public officials must be scrutinized.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://www.washingtonexaminer.com/2026/04/22/minnesota-fraud-committee-suspects-ilhan-omar-involvement-feeding-our-future-scheme/",
-      "id": "rf-1776888232476-ptm7hjgh1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-22T20:03:52.473Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-28T05:58:06.465Z"
+  "lastUpdated": "2026-04-28T08:29:45.074Z"
 }
