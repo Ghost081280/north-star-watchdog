@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Feeding Our Future program terminated due to allegations of fraud",
+      "insight": "The termination of Feeding Our Future's program raises concerns about the organization's accountability and potential misuse of funds.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-aimee-bock-accused-of-leaking-protected-case-files",
+      "id": "rf-1777490601885-jcflhm9xc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-29T19:23:21.881Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Multiple businesses were raided by federal agents as part of a fraud investigation",
       "insight": "The large number of search warrants and the involvement of multiple agencies suggest a significant and organized fraud scheme",
@@ -951,41 +971,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-23T13:25:00.795Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are underway, raising concerns about potential wrongdoing and corruption.",
-      "insight": "I notice a pattern of federal investigations being launched into various sectors, which may indicate a larger issue with accountability and transparency. Further investigation is needed to determine the scope and impact of these probes.",
-      "entities": [
-        "Kash Patel",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/apr/22/democrats-demand-fbi-director-kash-patel-take-alcohol-abuse-test",
-      "id": "rf-1776930576681-blksr54e8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T07:49:36.678Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-29T17:27:07.825Z"
+  "lastUpdated": "2026-04-29T19:23:21.881Z"
 }
