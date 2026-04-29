@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-22T15:13:09.623Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 new legal actions, Breaking news present",
-      "confidence": 0.65
-    },
-    {
       "date": "2026-04-22T16:58:21.658Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-04-29T19:23:21.880Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-04-29T21:02:48.197Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Trump Assassination Attempt Investigation?",
-    "Where did the $1.28M allegedly go in Construction firms wage recovery?",
-    "Where did the $1.28M allegedly go in Minnesota Labor Agency Wage Recovery?",
     "What specific allegations exist against Renee Good?",
     "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is James Comey connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $100M+ allegedly go in Feeding Our Future Investigation?"
+    "Where did the $100M+ allegedly go in Feeding Our Future Investigation?",
+    "What specific allegations exist against Tim Walz?",
+    "What specific allegations exist against Kash Patel?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2248,
-    "articlesProcessed": 112050,
-    "redFlagsFound": 2614,
+    "totalScans": 2249,
+    "articlesProcessed": 112100,
+    "redFlagsFound": 2615,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Renee Good connected to?",
-        "What other organizations is Trump Assassination Attempt Suspect connected to?",
-        "What other organizations is Dallas Meth Trafficking Ring Leader connected to?"
+        "Where did the Unknown allegedly go in Trump Assassination Attempt Investigation?",
+        "Where did the $1.28M allegedly go in Construction firms wage recovery?",
+        "Where did the $1.28M allegedly go in Minnesota Labor Agency Wage Recovery?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-29T19:23:21.880Z",
-  "lastUpdated": "2026-04-29T19:23:21.880Z"
+  "lastReflection": "2026-04-29T21:02:48.197Z",
+  "lastUpdated": "2026-04-29T21:02:48.198Z"
 }
