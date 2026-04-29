@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-21T22:37:02.947Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-21T23:34:07.339Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-28T23:55:56.619Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-04-29T02:43:56.150Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota construction wage theft investigation?",
-    "Where did the $0 allegedly go in Federal investigation into Minnesota child care funds?",
-    "Where did the $1.28M allegedly go in Minnesota Group Home Investigation?",
-    "Where did the $0 allegedly go in North Side home explosions investigation?",
     "Where did the $0 allegedly go in Smyrna business owner investigation?",
     "Where did the $1.28M allegedly go in $1.28M stolen wages recovery?",
     "What other organizations is Renee Good connected to?",
@@ -558,7 +554,11 @@
     "Where did the Millions in Taxpayer Money allegedly go in Minnesota Fraud Investigation?",
     "Where did the $188,000 allegedly go in Minnesota Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Social-Welfare Fraud Probe?",
-    "Where did the $250M+ allegedly go in Feeding Our Future Investigation?"
+    "Where did the $250M+ allegedly go in Feeding Our Future Investigation?",
+    "What other organizations is Feeding Our Future ringleader connected to?",
+    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2240,
-    "articlesProcessed": 111650,
-    "redFlagsFound": 2609,
+    "totalScans": 2241,
+    "articlesProcessed": 111700,
+    "redFlagsFound": 2610,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
-        "Where did the None allegedly go in Minnesota construction wage theft investigation?",
-        "Where did the $0 allegedly go in Minnesota construction wage theft investigation?"
+        "Where did the $0 allegedly go in Minnesota construction wage theft investigation?",
+        "Where did the $0 allegedly go in Federal investigation into Minnesota child care funds?",
+        "Where did the $1.28M allegedly go in Minnesota Group Home Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-28T23:55:56.619Z",
-  "lastUpdated": "2026-04-28T23:55:56.620Z"
+  "lastReflection": "2026-04-29T02:43:56.150Z",
+  "lastUpdated": "2026-04-29T02:43:56.151Z"
 }
