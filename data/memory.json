@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-22T11:03:39.047Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-04-22T13:23:33.528Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-29T15:11:41.190Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-04-29T17:27:07.824Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Smyrna business owner investigation?",
-    "Where did the $1.28M allegedly go in $1.28M stolen wages recovery?",
     "What other organizations is Renee Good connected to?",
     "What other organizations is Trump Assassination Attempt Suspect connected to?",
     "What other organizations is Dallas Meth Trafficking Ring Leader connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Feeding Our Future ringleader connected to?",
     "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $0 allegedly go in Minnesota Fraud Probe?",
+    "Where did the $0 allegedly go in Quality Learning Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2246,
-    "articlesProcessed": 111950,
-    "redFlagsFound": 2612,
+    "totalScans": 2247,
+    "articlesProcessed": 112000,
+    "redFlagsFound": 2613,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-29T15:11:41.190Z",
-  "lastUpdated": "2026-04-29T15:11:41.190Z"
+  "lastReflection": "2026-04-29T17:27:07.824Z",
+  "lastUpdated": "2026-04-29T17:27:07.824Z"
 }
