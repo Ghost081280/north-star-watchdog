@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-23T13:25:00.794Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-23T15:51:56.371Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-04-30T20:58:46.722Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-04-30T22:00:41.517Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota Fraud Probe?",
     "Where did the $0 allegedly go in Quality Learning Fraud Case?",
@@ -558,7 +557,8 @@
     "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $90 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $91M allegedly go in Minnesota Medicaid Funding Fraud Investigation?"
+    "Where did the $91M allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
+    "Where did the $91 million allegedly go in Minnesota Medicaid Funding Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2260,
-    "articlesProcessed": 112650,
-    "redFlagsFound": 2625,
+    "totalScans": 2261,
+    "articlesProcessed": 112700,
+    "redFlagsFound": 2626,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
         "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in Minnesota Fraud Probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-30T20:58:46.722Z",
-  "lastUpdated": "2026-04-30T20:58:46.723Z"
+  "lastReflection": "2026-04-30T22:00:41.517Z",
+  "lastUpdated": "2026-04-30T22:00:41.518Z"
 }
