@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-23T17:19:14.847Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-23T19:06:08.292Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-04-30T23:01:14.169Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-04-30T23:59:31.724Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Quality Learning Fraud Case?",
-    "What other organizations is Aimee Bock connected to?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $100M+ allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $91M allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
     "Where did the $91 million allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the $90 million allegedly go in Feeding Our Future?",
-    "Where did the $91 million allegedly go in Minnesota Medicaid funding?"
+    "Where did the $91 million allegedly go in Minnesota Medicaid funding?",
+    "Where did the $91M allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $91M allegedly go in Minnesota Medicaid funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2262,
-    "articlesProcessed": 112750,
-    "redFlagsFound": 2628,
+    "totalScans": 2263,
+    "articlesProcessed": 112800,
+    "redFlagsFound": 2629,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The federal government has deferred $91 million in Minnesota Medicaid funding due to fraud vulnerabilities.",
-          "insight": "This suggests a significant concern about the integrity of Minnesota's Medicaid program and the potential for fraudulent activity.",
-          "entities": [
-            "Minnesota",
-            "Federal Government"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Baltimore Sun",
-          "sourceUrl": "https://www.baltimore.sun.com/news/breaking/2026/04/30/trump-administration-defers-91m-more-in-minnesota-medicaid-funding-citing-fraud-vulnerabilities"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $0 allegedly go in Minnesota Fraud Probe?",
-        "Where did the $0 allegedly go in Quality Learning Fraud Case?"
+        "Where did the $0 allegedly go in Quality Learning Fraud Case?",
+        "What other organizations is Aimee Bock connected to?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-30T23:01:14.169Z",
-  "lastUpdated": "2026-04-30T23:01:14.170Z"
+  "lastReflection": "2026-04-30T23:59:31.724Z",
+  "lastUpdated": "2026-04-30T23:59:31.724Z"
 }
