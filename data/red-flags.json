@@ -1,22 +1,43 @@
 {
   "flags": [
     {
-      "type": "federal freeze",
-      "description": "The federal government has deferred $91 million in Medicaid funding to Minnesota due to fraud vulnerabilities.",
-      "insight": "This suggests that there may be significant issues with Medicaid fraud in Minnesota, and the state may need to take steps to address these issues.",
+      "type": "federal_freeze",
+      "description": "The federal government has deferred $91 million in Minnesota Medicaid funding due to fraud vulnerabilities.",
+      "insight": "This suggests a significant concern about the integrity of Minnesota's Medicaid program and the potential for fraudulent activity.",
       "entities": [
-        "Minnesota"
+        "Minnesota",
+        "Federal Government"
       ],
-      "confidence": 80,
+      "confidence": 90,
       "priority": "high",
-      "source": "Federal Government",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ieFZpQS1tcmhITnlKbmd5X1NoQUVSYjBxeFNoNHNLc0NfRWtEV1JrNllMc0c5cjRlMHBYN1lOOFNTTW5Pdy1BQ01TS0tzMzJOa1FYd29ELWFvOEhDcUhjVjdtX1FKeEJHaVBKSmI2ZEtOSlpuWEdSc1RETndTQQ",
-      "id": "rf-1777586441524-hg4krw7j2",
+      "source": "Baltimore Sun",
+      "sourceUrl": "https://www.baltimore.sun.com/news/breaking/2026/04/30/trump-administration-defers-91m-more-in-minnesota-medicaid-funding-citing-fraud-vulnerabilities",
+      "id": "rf-1777590074174-ji0lasuf7",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-04-30T22:00:41.519Z",
+      "detectedAt": "2026-04-30T23:01:14.171Z",
+      "isNew": true
+    },
+    {
+      "type": "nonprofit_fraud",
+      "description": "The FBI has raided and is investigating Feeding Our Future, a nonprofit accused of fraud.",
+      "insight": "This suggests a significant concern about the integrity of nonprofit organizations in Minnesota and the potential for fraudulent activity.",
+      "entities": [
+        "Feeding Our Future",
+        "FBI"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "MPR News",
+      "sourceUrl": "https://www.mprnews.org/story/2026/04/30/feeding-our-future-judge-limits-bock-s-document-access-after-file-leak",
+      "id": "rf-1777590074174-msu8pkii1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-04-30T23:01:14.171Z",
       "isNew": true
     },
     {
@@ -953,23 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-23T15:51:56.372Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation has begun into at least 10 missing or dead scientists.",
-      "insight": "This investigation could potentially uncover a larger pattern of misconduct or negligence.",
-      "entities": [],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal agency (not specified)",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVTVVWXA2ZGRtc0ZYYWkwTzc1ZFJ5c040NndqQ081eThSbGp0MEwyU2I1bHpFMDdaUktULUZ4OXZGNTNlaXRoclExcmdXbWdhUTRXS0UtYXE2akFZaEJ6VnhJVlAyZ1UtY0FwTWlnTldXbWphUWVMS28xZ21nWFVOVjVJS2VMZmU5d1VSdFBtNi1RVVVMY0xsWTFNZ3A1UzlXaGE3cEtMZw?oc=5",
-      "id": "rf-1776950700799-96fikdd25",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T13:25:00.795Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-04-30T22:00:41.519Z"
+  "lastUpdated": "2026-04-30T23:01:14.171Z"
 }
