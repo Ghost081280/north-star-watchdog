@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-23T22:42:39.789Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-23T23:43:20.103Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-01T08:59:35.886Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-01T10:27:53.511Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2266,
-    "articlesProcessed": 112950,
-    "redFlagsFound": 2632,
+    "totalScans": 2267,
+    "articlesProcessed": 113000,
+    "redFlagsFound": 2633,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?",
-        "What other organizations is Owner of autism center connected to?"
+        "What other organizations is Owner of autism center connected to?",
+        "Where did the $100M+ allegedly go in Minnesota day care fraud investigation?",
+        "Where did the $X allegedly go in Minnesota Welfare Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-01T08:59:35.886Z",
-  "lastUpdated": "2026-05-01T08:59:35.887Z"
+  "lastReflection": "2026-05-01T10:27:53.511Z",
+  "lastUpdated": "2026-05-01T10:27:53.511Z"
 }
