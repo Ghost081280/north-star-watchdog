@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-23T19:06:08.292Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-23T20:51:24.703Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-04-30T23:59:31.724Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-01T04:00:14.650Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $100M+ allegedly go in Feeding Our Future Investigation?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Kash Patel?",
@@ -558,7 +556,9 @@
     "Where did the $90 million allegedly go in Feeding Our Future?",
     "Where did the $91 million allegedly go in Minnesota Medicaid funding?",
     "Where did the $91M allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $91M allegedly go in Minnesota Medicaid funding freeze?"
+    "Where did the $91M allegedly go in Minnesota Medicaid funding freeze?",
+    "Where did the $91M allegedly go in Feeding Our Future investigation?",
+    "Where did the $91M allegedly go in Minnesota Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2263,
-    "articlesProcessed": 112800,
-    "redFlagsFound": 2629,
+    "totalScans": 2264,
+    "articlesProcessed": 112850,
+    "redFlagsFound": 2630,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Quality Learning Fraud Case?",
-        "What other organizations is Aimee Bock connected to?",
-        "What other organizations is Tim Walz connected to?"
+        "What other organizations is Tim Walz connected to?",
+        "Where did the $100M+ allegedly go in Minnesota Fraud Investigation?",
+        "Where did the $100M+ allegedly go in Feeding Our Future Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-04-30T23:59:31.724Z",
-  "lastUpdated": "2026-04-30T23:59:31.724Z"
+  "lastReflection": "2026-05-01T04:00:14.650Z",
+  "lastUpdated": "2026-05-01T04:00:14.651Z"
 }
