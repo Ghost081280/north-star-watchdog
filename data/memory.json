@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-23T21:44:09.120Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-23T22:42:39.789Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-01T06:42:36.049Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-01T08:59:35.886Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?",
     "What other organizations is Owner of autism center connected to?",
     "Where did the $100M+ allegedly go in Minnesota day care fraud investigation?",
     "Where did the $X allegedly go in Minnesota Welfare Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $91M allegedly go in Minnesota Medicaid funding investigation?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $91M allegedly go in Feeding Our Future Investigation?",
-    "Where did the $91M allegedly go in Minnesota Medicaid Funding Investigation?"
+    "Where did the $91M allegedly go in Minnesota Medicaid Funding Investigation?",
+    "Where did the $91 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the unknown allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2265,
-    "articlesProcessed": 112900,
-    "redFlagsFound": 2631,
+    "totalScans": 2266,
+    "articlesProcessed": 112950,
+    "redFlagsFound": 2632,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Feeding Our Future Investigation?",
-        "What specific allegations exist against Tim Walz?",
-        "What specific allegations exist against Kash Patel?"
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $0 allegedly go in Minnesota Daycare Fraud Investigation?",
+        "What other organizations is Owner of autism center connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-01T06:42:36.049Z",
-  "lastUpdated": "2026-05-01T06:42:36.049Z"
+  "lastReflection": "2026-05-01T08:59:35.886Z",
+  "lastUpdated": "2026-05-01T08:59:35.887Z"
 }
