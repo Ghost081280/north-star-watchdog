@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-24T18:48:52.913Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-24T19:51:33.043Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-05-01T22:48:39.875Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-01T23:51:18.646Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $91M allegedly go in Minnesota Medicaid Funding Investigation?",
     "Where did the $91 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the unknown allegedly go in Feeding Our Future Investigation?",
     "Where did the $91 million allegedly go in Minnesota Medicaid Funding Deferral?",
@@ -558,7 +557,8 @@
     "What other organizations is Chuck Edwards connected to?",
     "What other organizations is Dr. Oz connected to?",
     "What other organizations is Robbins connected to?",
-    "Where did the $91M allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $91M allegedly go in Minnesota Medicaid fraud investigation?",
+    "What other organizations is Individuals involved in DermCare Management connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2277,
-    "articlesProcessed": 113500,
-    "redFlagsFound": 2648,
+    "totalScans": 2278,
+    "articlesProcessed": 113550,
+    "redFlagsFound": 2649,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $91M allegedly go in Feeding Our Future Investigation?",
-        "Where did the $91M allegedly go in Minnesota Medicaid Funding Investigation?"
+        "Where did the $91M allegedly go in Minnesota Medicaid Funding Investigation?",
+        "Where did the $91 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the unknown allegedly go in Feeding Our Future Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-01T22:48:39.875Z",
-  "lastUpdated": "2026-05-01T22:48:39.876Z"
+  "lastReflection": "2026-05-01T23:51:18.646Z",
+  "lastUpdated": "2026-05-01T23:51:18.647Z"
 }
