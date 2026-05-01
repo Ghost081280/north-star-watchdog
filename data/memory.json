@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-24T08:01:01.550Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-24T09:53:14.439Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-01T14:54:43.914Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-01T15:56:29.713Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the $90 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
     "Where did the $91M allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
     "Where did the $91 million allegedly go in Minnesota Medicaid Funding Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $91 million allegedly go in Minnesota Medicaid Funding Deferral?",
     "Where did the $11 million allegedly go in $11 million fraud case?",
     "What other organizations is Defendant in $11 million fraud case connected to?",
-    "Where did the Unknown allegedly go in Child Care Fraud Allegations Investigation?"
+    "Where did the Unknown allegedly go in Child Care Fraud Allegations Investigation?",
+    "Where did the $91 million allegedly go in Medicaid Funding Investigation?",
+    "Where did the $11 million allegedly go in Feeding our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2270,
-    "articlesProcessed": 113150,
-    "redFlagsFound": 2637,
+    "totalScans": 2271,
+    "articlesProcessed": 113200,
+    "redFlagsFound": 2638,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-01T14:54:43.914Z",
-  "lastUpdated": "2026-05-01T14:54:43.915Z"
+  "lastReflection": "2026-05-01T15:56:29.713Z",
+  "lastUpdated": "2026-05-01T15:56:29.714Z"
 }
