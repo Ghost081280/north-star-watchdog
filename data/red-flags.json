@@ -1,44 +1,44 @@
 {
   "flags": [
     {
-      "type": "shell_company",
-      "description": "Investigation into Aimee Bock and Feeding Our Future documents leak",
-      "insight": "Repeated leaks of documents suggest potential internal controls issues within Feeding Our Future.",
+      "type": "federal_funding_deferral",
+      "description": "CMS deferred $91 million in Medicaid funding for Minnesota due to fraud vulnerabilities",
+      "insight": "This deferral indicates a significant concern about the integrity of Minnesota's Medicaid program. Further investigation is warranted to identify the root causes of these vulnerabilities.",
+      "entities": [
+        "Minnesota DHS",
+        "CMS"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "National News Desk",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUmw4b3o5elBKM1Z5UVlkbjYtZzM0ZnVPZ0ZQcDhhdDJyel9pNW1fSDhKOVRMeWRSU3E4MkZyTldYdDFiR1ZTbGZSVDNNNDF4N1NHd0ljb3JGOFFCd1V3T01YSVRTMEVmYU85VGwyOWdIcVpEdnRZMkV0MUxxUzlJUVZKNzFqMXQzNVVKc2pvVVFfbGJCMWtOaDRnOXpRV0wyOU1HcEJPREtucUFOejlmTnZaU1N2UEFSaTk5Q1otOElwMWltRGQ4Y2YzblVxS2lFY2d5TVdKSzRCNUJ0UkoyeDJGRHpXOHlKSTMzN3lzWG4tY0EwQXAwdTh1eTdtcDg3",
+      "id": "rf-1777663276648-2xg2hjkp6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-01T19:21:16.644Z",
+      "isNew": true
+    },
+    {
+      "type": "whistleblower_leaks",
+      "description": "Aimee Bock repeatedly leaked Feeding Our Future documents, prompting feds to seek restrictions",
+      "insight": "The repeated leaks by Aimee Bock suggest potential ongoing issues with the management or oversight of the Feeding Our Future program. This warrants further investigation into the program's operations and potential fraud.",
       "entities": [
         "Aimee Bock",
         "Feeding Our Future"
       ],
-      "confidence": 70,
+      "confidence": 85,
       "priority": "medium",
       "source": "KFGO",
-      "sourceUrl": "https://kfgo.com/2026/05/01/feds-want-restrictions-sanctions-for-aimee-bock-after-repeated-leaks-of-feeding-our-future-documents/",
-      "id": "rf-1777654630662-86azu7e9d",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTUMzeFhkdEFmR0Nfd09LbjNYX0R2Q184Q29INGE5M0lDWV9QNTJwTmRKSDV0aE4zS1NQR29BZXpYM0lha0tPRGM5N18wbGhyWHN6cl90Q2Vlbm5famF0bU5lQVJmTmRJM0xrVjExZzVmQ1ZjSVJxcFFpVHlFcUtIdEk0M3hHem13SlFpcnRVYnVUcUsxd1dYbDRDanRMVGxTMzB0YXJpWUVkQ2dJWFJXX0R5T2hwdWlzV3BCOEZ3d1ZXWU5sSkxGNQ",
+      "id": "rf-1777663276648-w2olhm37j",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-05-01T16:57:10.658Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The federal government has deferred $91 million in Minnesota Medicaid funding due to fraud vulnerabilities.",
-      "insight": "This suggests a significant concern about the integrity of Minnesota's Medicaid program and the potential for fraudulent activity.",
-      "entities": [
-        "Minnesota",
-        "Federal Government"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Baltimore Sun",
-      "sourceUrl": "https://www.baltimore.sun.com/news/breaking/2026/04/30/trump-administration-defers-91m-more-in-minnesota-medicaid-funding-citing-fraud-vulnerabilities",
-      "id": "rf-1777590074174-ji0lasuf7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-30T23:01:14.171Z",
-      "isNew": false
+      "detectedAt": "2026-05-01T19:21:16.644Z",
+      "isNew": true
     },
     {
       "type": "nonprofit_fraud",
@@ -979,7 +979,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,6 +988,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-01T17:59:28.867Z"
+  "lastUpdated": "2026-05-01T19:21:16.644Z"
 }
