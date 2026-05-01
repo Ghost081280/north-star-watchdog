@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "CMS deferring $91 million in Medicaid funding",
+      "insight": "Potential indication of larger issue with Medicaid program",
+      "entities": [
+        "Minnesota state government",
+        "CMS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Dr. Oz notifies Minnesota Gov. Walz that CMS is deferring $91 million in Medicaid funding - National News Desk",
+      "sourceUrl": "https://www.nationalnewsdesk.com/dr-oz-notifies-minnesota-governor-walz-that-cms-is-deferring-91-million-in-medicaid-funding",
+      "id": "rf-1777668690944-jsge6akuy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-01T20:51:30.940Z",
+      "isNew": true
+    },
+    {
       "type": "federal_funding_deferral",
       "description": "CMS deferred $91 million in Medicaid funding for Minnesota due to fraud vulnerabilities",
       "insight": "This deferral indicates a significant concern about the integrity of Minnesota's Medicaid program. Further investigation is warranted to identify the root causes of these vulnerabilities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-01T19:21:16.644Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "whistleblower_leaks",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-01T19:21:16.644Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "nonprofit_fraud",
@@ -955,41 +975,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-23T23:43:20.105Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Justice Department settles lawsuit with Carter Page",
-      "insight": "This settlement may indicate a shift in the Justice Department's approach to surveillance and civil liberties. I recommend monitoring the department's actions and investigating potential implications for future cases.",
-      "entities": [
-        "Justice Department",
-        "Carter Page"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/politics/justice-department/justice-department-settles-lawsuit-carter-page-n1296834",
-      "id": "rf-1776984159795-s72u7thk9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T22:42:39.791Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-01T19:21:16.644Z"
+  "lastUpdated": "2026-05-01T20:51:30.940Z"
 }
