@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-24T09:53:14.439Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-24T11:06:08.578Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-01T15:56:29.713Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-01T16:57:10.656Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2271,
-    "articlesProcessed": 113200,
-    "redFlagsFound": 2638,
+    "totalScans": 2272,
+    "articlesProcessed": 113250,
+    "redFlagsFound": 2640,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Minnesota Welfare Fraud Investigation?",
-        "Where did the $90 million allegedly go in Feeding Our Future fraud case?",
-        "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $100M allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $91M allegedly go in Minnesota Medicaid Funding Fraud Investigation?",
+        "Where did the $91 million allegedly go in Minnesota Medicaid Funding Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-01T15:56:29.713Z",
-  "lastUpdated": "2026-05-01T15:56:29.714Z"
+  "lastReflection": "2026-05-01T16:57:10.656Z",
+  "lastUpdated": "2026-05-01T16:57:10.656Z"
 }

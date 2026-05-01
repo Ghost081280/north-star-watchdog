@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell_company",
+      "description": "Investigation into Aimee Bock and Feeding Our Future documents leak",
+      "insight": "Repeated leaks of documents suggest potential internal controls issues within Feeding Our Future.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "KFGO",
+      "sourceUrl": "https://kfgo.com/2026/05/01/feds-want-restrictions-sanctions-for-aimee-bock-after-repeated-leaks-of-feeding-our-future-documents/",
+      "id": "rf-1777654630662-86azu7e9d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-01T16:57:10.658Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The federal government has deferred $91 million in Minnesota Medicaid funding due to fraud vulnerabilities.",
       "insight": "This suggests a significant concern about the integrity of Minnesota's Medicaid program and the potential for fraudulent activity.",
@@ -955,40 +975,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-23T22:42:39.791Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The federal investigation into missing or dead scientists indicates a potential for foul play.",
-      "insight": "The investigation into missing scientists suggests a potential for widespread problems with scientist safety.",
-      "entities": [
-        "FBI"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPS2Q1N0J2bGZnTHpyS0Rnc1VsbjBKbjFkS1BpcjVvcVZiRGpSeEUxWl9yTXg4QTdvNGdqTmVra19UQ3BVMlFZeGlOVk5vaHRLWXc5cWEtWExGeTZuYWF4aUg2YWwxYjY4ZW5DWGhLUHZ3RDBBek04N1VlVlg3cVBZcml1RXUxeUJxWGQ4UllGdXN5aUstaGRCY094cUFRMmg3TGlET2h6Y0haMm5CLVZ3MUVUWEQ3UQ",
-      "id": "rf-1776959516375-9mufy5zk4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-23T15:51:56.372Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-01T15:56:29.715Z"
+  "lastUpdated": "2026-05-01T16:57:10.658Z"
 }
