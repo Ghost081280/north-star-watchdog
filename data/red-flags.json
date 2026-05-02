@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Sandhills Medical Foundation, Inc. Under Investigation for Data Breach of Over 169,000 Patient Records",
+      "insight": "This suggests a potential shell company or entity may be involved in healthcare data breaches",
+      "entities": [
+        "Sandhills Medical Foundation, Inc."
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.schubertlaw.com/sandhills-medical-foundation-inc-under-investigation-for-data-breach-of-over-169000-patient-records/",
+      "id": "rf-1777712697790-lnzpxjw43",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-02T09:04:57.786Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding our Future program has been terminated due to alleged fraud.",
       "insight": "This is a significant development, as it indicates that the program was likely involved in fraudulent activities. I recommend investigating further to determine the extent of the fraud and the individuals involved.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-02T07:41:48.714Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged fraud",
@@ -955,25 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T11:06:08.580Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Ilhan Omar is being investigated for potential fraud and misuse of funds.",
-      "insight": "The investigation into Ilhan Omar's potential fraud and misuse of funds raises concerns about the integrity of the US House of Representatives. Further investigation is needed to determine the extent of the alleged fraud.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "National Review",
-      "sourceUrl": "https://www.nationalreview.com/news/ilhan-omar-completely-ghosted-committee-investigating-somali-fraud-schemes-minnesota-lawmaker-says/",
-      "id": "rf-1777017661556-x66p95xg9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T08:01:01.552Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,8 +987,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-02T07:41:48.714Z"
+  "lastUpdated": "2026-05-02T09:04:57.786Z"
 }

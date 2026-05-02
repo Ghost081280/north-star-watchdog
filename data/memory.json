@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-24T22:38:07.415Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-24T23:38:39.296Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-02T07:41:48.712Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-02T09:04:57.784Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -532,16 +532,13 @@
     {
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
-      "confidence": 0.9000000000000004,
-      "count": 9,
+      "confidence": 0.95,
+      "count": 10,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-04-24T13:20:20.544Z"
+      "lastSeen": "2026-05-02T09:04:57.785Z"
     }
   ],
   "openQuestions": [
-    "Where did the $91 million allegedly go in Minnesota Medicaid funding investigation?",
-    "Where did the $2.2 million allegedly go in Largest Medicaid fraud case?",
-    "Where did the $91 million allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $800 thousand allegedly go in Feeding Our Future Fraud?",
     "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud?",
     "Where did the $800 thousand allegedly go in Feeding our Future fraud?",
@@ -558,7 +555,10 @@
     "Where did the $11M allegedly go in Feeding our Future Investigation?",
     "What other organizations is Kash Patel connected to?",
     "What other organizations is Rep. Chuck Edwards connected to?",
-    "Where did the $250M allegedly go in Feeding our Future investigation?"
+    "Where did the $250M allegedly go in Feeding our Future investigation?",
+    "What other organizations is Jeff Robbins connected to?",
+    "Where did the $2.2 million allegedly go in Medicaid fraud investigation?",
+    "Where did the $100M+ allegedly go in Feeding our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2281,
-    "articlesProcessed": 113700,
-    "redFlagsFound": 2653,
+    "totalScans": 2282,
+    "articlesProcessed": 113750,
+    "redFlagsFound": 2655,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Child Care Fraud Allegations Investigation?",
-        "Where did the $91 million allegedly go in Medicaid Funding Investigation?",
-        "Where did the $11 million allegedly go in Feeding our Future Investigation?"
+        "Where did the $91 million allegedly go in Minnesota Medicaid funding investigation?",
+        "Where did the $2.2 million allegedly go in Largest Medicaid fraud case?",
+        "Where did the $91 million allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T07:41:48.712Z",
-  "lastUpdated": "2026-05-02T07:41:48.713Z"
+  "lastReflection": "2026-05-02T09:04:57.784Z",
+  "lastUpdated": "2026-05-02T09:04:57.785Z"
 }
