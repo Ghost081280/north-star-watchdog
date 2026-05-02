@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T13:01:06.636Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-25T14:07:11.393Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-02T18:57:02.665Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-02T19:55:20.732Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2290,
-    "articlesProcessed": 114150,
-    "redFlagsFound": 2666,
+    "totalScans": 2291,
+    "articlesProcessed": 114200,
+    "redFlagsFound": 2667,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "Guilty plea in largest Medicaid fraud case in state history",
+          "insight": "This case highlights a significant issue with Medicaid fraud in Minnesota, with a $2.2 million penalty.",
+          "entities": [
+            "Minnesota"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwNBVV95cUxPdWlTMExtOVhpbTJvYzBoLVBKUGc1cU5yd1dYVGRQUDRxVDVlX2htWFV2UHBMY0JiTGozd1ZScUV4djJNMnhZWFlmMUEzbDc1Nmp0cU9qSTVtZ21MSjNoUF9kU2tSNS1FNUhDTmhfcDBDUWxpVTlBN3ZmR0VfNW1mQzJlREl5Ty1TMk9Cd3AzeVdYRlpqQkowTU56Z3R6TXAySmZCWjVCQklQQkRXaS01dHlyMC1qTXh5eGs3RE9QQWRUMkkzcXVPRjJRSlZ4ZmRSakdzLXpPcS1iVTBMUmNiVG5Cb24ycHBFcm1qUmhJWTE2Yk5nalJ2QmhEeXlzQXdUQTBiTGhXb1Z4aUlKSVQ4T1dvc2xCNDIwX2VWSkV0dWxvUnZXZ2Y5eGVKS1Y2ckFmb1BNWXQ4dmhONXBydnViOXVkYjVYekRNYmFPd1JrUGNrcmE4dEd3S1NoZml5bVlsaWdnOEZCR0xIZjU3OVMtald3bUhmdE5SNTc2WExLMG5ybG1GeU52Tm5lMHhnNTNZWTF4dkFmaE5PNWpad2hLLVJtcVEzR3JWN3NOTEt2UQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding our Future investigation?",
         "What other organizations is Jeff Robbins connected to?",
-        "Where did the $2.2 million allegedly go in Medicaid fraud investigation?"
+        "Where did the $2.2 million allegedly go in Medicaid fraud investigation?",
+        "Where did the $100M+ allegedly go in Feeding our Future investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T18:57:02.665Z",
-  "lastUpdated": "2026-05-02T18:57:02.666Z"
+  "lastReflection": "2026-05-02T19:55:20.732Z",
+  "lastUpdated": "2026-05-02T19:55:20.733Z"
 }
