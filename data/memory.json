@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T16:40:02.143Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-25T17:36:55.501Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-02T21:39:00.249Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-02T22:39:41.082Z",
+      "summary": "SIGNIFICANT: 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud case?",
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $2.2 million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Feeding our Future Investigation?",
-    "What other organizations is Ann Johnson Stewart connected to?",
     "What specific allegations exist against Ann Johnson Stewart?",
     "Where did the $11 million allegedly go in Medicaid Fraud Case?",
     "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?",
@@ -558,7 +553,12 @@
     "Where did the $2.2 million allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Kash Patel connected to?",
     "Where did the Unknown allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+    "What specific allegations exist against Ilhan Omar?",
+    "What specific allegations exist against Jack Brewer?",
+    "What specific allegations exist against Tim Walz?",
+    "What specific allegations exist against Keith Ellison?",
+    "Where did the $250M allegedly go in $250M fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2293,
-    "articlesProcessed": 114300,
-    "redFlagsFound": 2669,
+    "totalScans": 2294,
+    "articlesProcessed": 114350,
+    "redFlagsFound": 2671,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "embezzlement",
+          "description": "Kenner pastor indicted for embezzling more than $343k",
+          "insight": "This suggests potential mismanagement or fraud within religious organizations in Minnesota.",
+          "entities": [
+            "Kenner pastor"
+          ],
+          "confidence": 90,
+          "priority": "medium",
+          "source": "WDSU",
+          "sourceUrl": "https://wdsu.com/rss/articles/CBMiogFBVV95cUxNald2S1p1TEtDR04tMDRGSVI3bU1ab2xCWlo4YTIzal9fZTVRckhYNU5PajFCMFUybnVIVVVaMXRoYzFVenJGX0JGeGRhQnF2YkdNNUozY2UxcHZiWnJNQ3AxVG9NV0RMNndzSjFuSmhNVzFFYk9DV1FhcXczTFB0ZkNCTldEVUFaT3lGY09FeDU3V3YwREdXV0RFR1h2SktRWFE"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Feeding our Future investigation?",
         "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud case?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $2.2 million allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T21:39:00.249Z",
-  "lastUpdated": "2026-05-02T21:39:00.249Z"
+  "lastReflection": "2026-05-02T22:39:41.082Z",
+  "lastUpdated": "2026-05-02T22:39:41.083Z"
 }
