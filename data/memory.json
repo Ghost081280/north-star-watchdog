@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T05:10:42.640Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-25T07:13:29.973Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-02T11:43:39.929Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-02T13:07:18.124Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -533,17 +533,12 @@
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
       "confidence": 0.95,
-      "count": 11,
+      "count": 12,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-05-02T10:50:56.443Z"
+      "lastSeen": "2026-05-02T13:07:18.125Z"
     }
   ],
   "openQuestions": [
-    "What other organizations is Chuck Edwards connected to?",
-    "What other organizations is Dr. Oz connected to?",
-    "What other organizations is Robbins connected to?",
-    "Where did the $91M allegedly go in Minnesota Medicaid fraud investigation?",
-    "What other organizations is Individuals involved in DermCare Management connected to?",
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is Kenner pastor connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +553,12 @@
     "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud case?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $2.2 million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Feeding our Future Investigation?"
+    "Where did the Unknown allegedly go in Feeding our Future Investigation?",
+    "What other organizations is Ann Johnson Stewart connected to?",
+    "What specific allegations exist against Ann Johnson Stewart?",
+    "Where did the $11 million allegedly go in Medicaid Fraud Case?",
+    "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2284,
-    "articlesProcessed": 113850,
-    "redFlagsFound": 2658,
+    "totalScans": 2285,
+    "articlesProcessed": 113900,
+    "redFlagsFound": 2660,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $800 thousand allegedly go in Feeding our Future fraud?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Chuck Edwards connected to?"
+        "What other organizations is Chuck Edwards connected to?",
+        "What other organizations is Dr. Oz connected to?",
+        "What other organizations is Robbins connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T11:43:39.929Z",
-  "lastUpdated": "2026-05-02T11:43:39.930Z"
+  "lastReflection": "2026-05-02T13:07:18.124Z",
+  "lastUpdated": "2026-05-02T13:07:18.125Z"
 }
