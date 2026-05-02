@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding our Future program has been terminated due to alleged fraud.",
+      "insight": "This is a significant development, as it indicates that the program was likely involved in fraudulent activities. I recommend investigating further to determine the extent of the fraud and the individuals involved.",
+      "entities": [
+        "Feeding our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "DOJ",
+      "sourceUrl": "https://www.audacy.com/news/feds-want-restrictions-sanctions-for-aimee-bock-after-repeated-leaks-of-feeding-our-future-documents",
+      "id": "rf-1777707708718-1cmixpubi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-02T07:41:48.714Z",
+      "isNew": true
+    },
+    {
       "type": "alleged fraud",
       "description": "Robbins alleges that Governor Walz is involved in fraud",
       "insight": "This could indicate a potential scandal or issue with Governor Walz's administration, which could have significant implications for the state of Minnesota.",
@@ -955,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T08:01:01.552Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of programs due to fraud.",
-      "insight": "The ongoing investigations and reported fraud cases suggest a need for increased scrutiny of programs and services in Minnesota.",
-      "entities": [
-        "Minnesota DHS",
-        "Olathe Public Schools"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Recent news articles",
-      "sourceUrl": "https://www.olathereporter.com/2026/04/23/the-complete-timeline-of-the-federal-investigation-into-olathe-public-schools",
-      "id": "rf-1776997801890-ew9ef2ekq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T02:30:01.886Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +987,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-02T05:36:07.629Z"
+  "lastUpdated": "2026-05-02T07:41:48.714Z"
 }
