@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Medicaid providers under investigation",
+      "insight": "Possible patterns of abuse in Medicaid programs",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOa3ZPbnBEbTVvYnVlaFNLTm80a1c0LW9SYlFWMVVuR0xRUVE1RkV3VmFGbjFoSTROcVRCX2hCdGdNSnZKWDBrNE9fTlh1MzVlTGFPbzJ1dEV6WTRyOU5jTERVN0Q0NE5YUjlHYmpvdW96dGsxb2NxV1Mwekx4UG91TjVseE9ndjNzRXU1ZXkyenNMRkpiRV9pTFY4aXlqbXNwbWszaVRJLXJJN204dXI3emVSQUM4VmxKQ3UyelV4R2ttM0IzYWtSMUdEbw",
+      "id": "rf-1777740241368-buw16z09n",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-02T16:44:01.364Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Several shell companies have been identified as being involved in Medicaid fraud schemes.",
       "insight": "The use of shell companies is a common tactic in Medicaid fraud schemes, as it allows individuals to hide their identities and launder money. Further investigation is needed to identify the individuals behind these companies and to determine the full extent of their involvement in the schemes.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-02T15:43:49.849Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -954,26 +973,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T18:48:52.915Z",
       "isNew": false
-    },
-    {
-      "type": "investigation dropped",
-      "description": "The DOJ's decision to drop its investigation into Jerome Powell raises concerns about potential wrongdoing and the lack of transparency surrounding the investigation.",
-      "insight": "As an investigator, I am concerned that the dropped investigation may indicate a lack of accountability within the Federal Reserve. Further research is needed to understand the circumstances surrounding the investigation and the potential implications for the financial sector.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTElSZlJSWDZsdXI2cy1xdzV1aFU1QXB4SzlLRkw2SGpSY3J1c2xncjhIN3Vnc2tmYzl1TUsyRnlvaEhmZ2tILUlad3J6dDJfVkRmdDU2WGpOcEw5cGxxLVlLVHlkS1JadWRpa1RxcGIzVDdYZTFJZFRoUEpRbFhqZW9aMEdwZGV2Yy1VN2tXcVFlSURuNEE",
-      "id": "rf-1777043236551-s5xbkfv5r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T15:07:16.547Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,7 +986,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1005,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-02T15:43:49.849Z"
+  "lastUpdated": "2026-05-02T16:44:01.364Z"
 }
