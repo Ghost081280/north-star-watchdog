@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Minnesota revalidates Medicaid providers, leading to financial toll on autism treatment centers",
+      "insight": "Potential for widespread fraud and abuse in Medicaid programs for autism treatment.",
+      "entities": [
+        "Minnesota DHS",
+        "autism treatment centers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "As Minnesota revalidates Medicaid providers, autism treatment centers face a financial toll - Post Bulletin",
+      "sourceUrl": "https://www.postbulletin.com/article/local/as-minnesota-revalidates-medicaid-providers-autism-treatment-centers-face-a-financial-toll",
+      "id": "rf-1777743751967-yks2db923",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-02T17:42:31.963Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Medicaid providers under investigation",
       "insight": "Possible patterns of abuse in Medicaid programs",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-02T16:44:01.364Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -953,26 +973,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T18:48:52.915Z",
       "isNew": false
-    },
-    {
-      "type": "ongoing investigation into government officials",
-      "description": "The Minnesota Attorney General's office is investigating the Feeding Our Future scandal, which may involve high-ranking government officials.",
-      "insight": "The investigation may uncover a larger pattern of corruption and abuse of power in Minnesota's government.",
-      "entities": [
-        "Keith Ellison",
-        "Minnesota Attorney General's office"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://www.washington_examiner.com/2024-04-24/how-minnesota-attorney-general-keith-ellison-embroiled-feeding-our-future-scandal",
-      "id": "rf-1777056532918-incmrskf2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T18:48:52.915Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,7 +986,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-02T16:44:01.364Z"
+  "lastUpdated": "2026-05-02T17:42:31.963Z"
 }
