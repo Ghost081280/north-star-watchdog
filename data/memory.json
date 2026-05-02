@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T07:13:29.973Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-25T08:51:10.652Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-02T13:07:18.124Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-05-02T14:44:34.513Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Aimee Bock connected to?",
-    "What other organizations is Kenner pastor connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the $91M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $11M allegedly go in Feeding our Future Investigation?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Ann Johnson Stewart?",
     "Where did the $11 million allegedly go in Medicaid Fraud Case?",
     "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "Where did the None allegedly go in Feeding our Future Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2285,
-    "articlesProcessed": 113900,
-    "redFlagsFound": 2660,
+    "totalScans": 2286,
+    "articlesProcessed": 113950,
+    "redFlagsFound": 2661,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Chuck Edwards connected to?",
-        "What other organizations is Dr. Oz connected to?",
-        "What other organizations is Robbins connected to?"
+        "What other organizations is Aimee Bock connected to?",
+        "What other organizations is Kenner pastor connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T13:07:18.124Z",
-  "lastUpdated": "2026-05-02T13:07:18.125Z"
+  "lastReflection": "2026-05-02T14:44:34.513Z",
+  "lastUpdated": "2026-05-02T14:44:34.513Z"
 }
