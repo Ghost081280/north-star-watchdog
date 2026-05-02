@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T02:11:50.719Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-25T05:10:42.640Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-02T10:50:56.442Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-02T11:43:39.929Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $800 thousand allegedly go in Feeding our Future fraud?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Chuck Edwards connected to?",
     "What other organizations is Dr. Oz connected to?",
     "What other organizations is Robbins connected to?",
@@ -558,7 +556,9 @@
     "Where did the $2.2 million allegedly go in Medicaid fraud investigation?",
     "Where did the $100M+ allegedly go in Feeding our Future investigation?",
     "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud case?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $2.2 million allegedly go in Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Feeding our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2283,
-    "articlesProcessed": 113800,
-    "redFlagsFound": 2657,
+    "totalScans": 2284,
+    "articlesProcessed": 113850,
+    "redFlagsFound": 2658,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $800 thousand allegedly go in Feeding Our Future Fraud?",
-        "Where did the $2.2 million allegedly go in Minnesota Medicaid fraud?",
-        "Where did the $800 thousand allegedly go in Feeding our Future fraud?"
+        "Where did the $800 thousand allegedly go in Feeding our Future fraud?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Chuck Edwards connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-02T10:50:56.442Z",
-  "lastUpdated": "2026-05-02T10:50:56.443Z"
+  "lastReflection": "2026-05-02T11:43:39.929Z",
+  "lastUpdated": "2026-05-02T11:43:39.930Z"
 }
