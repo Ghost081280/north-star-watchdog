@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-26T11:38:32.420Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-26T13:03:23.944Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-05-03T19:55:31.569Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-03T20:40:55.513Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Keith Ellison?",
     "Where did the $250M allegedly go in $250M fraud case?",
     "What specific allegations exist against Gov. Tim Walz?",
@@ -558,7 +557,8 @@
     "Are any of these 4 figures connected to each other?",
     "Where did the unknown allegedly go in Medicaid Fraud Investigation?",
     "Where did the $250 million allegedly go in Ilhan Omar Charity Fraud?",
-    "Where did the $250 million allegedly go in $250M charity fraud case?"
+    "Where did the $250 million allegedly go in $250M charity fraud case?",
+    "Where did the $250 million allegedly go in $250 million charity fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2307,
-    "articlesProcessed": 115000,
-    "redFlagsFound": 2683,
+    "totalScans": 2308,
+    "articlesProcessed": 115050,
+    "redFlagsFound": 2684,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Jack Brewer?",
         "What specific allegations exist against Tim Walz?",
-        "What specific allegations exist against Keith Ellison?"
+        "What specific allegations exist against Keith Ellison?",
+        "Where did the $250M allegedly go in $250M fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-03T19:55:31.569Z",
-  "lastUpdated": "2026-05-03T19:55:31.569Z"
+  "lastReflection": "2026-05-03T20:40:55.513Z",
+  "lastUpdated": "2026-05-03T20:40:55.514Z"
 }
