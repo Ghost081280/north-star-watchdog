@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-25T19:43:41.192Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-25T20:37:23.463Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-03T02:43:54.557Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-03T05:57:54.377Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?",
-    "Are any of these 4 figures connected to each other?",
-    "Where did the None allegedly go in Feeding our Future Investigation?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $11 million allegedly go in Medicaid Fraud Investigation?",
     "Where did the $2.2 million allegedly go in Minnesota Medicaid Fraud Enforcement?",
@@ -558,7 +554,11 @@
     "What specific allegations exist against Keith Ellison?",
     "Where did the $250M allegedly go in $250M fraud case?",
     "What specific allegations exist against Gov. Tim Walz?",
-    "What specific allegations exist against AG Ellison?"
+    "What specific allegations exist against AG Ellison?",
+    "What other organizations is Ilhan Omar connected to?",
+    "What other organizations is Jack Brewer connected to?",
+    "Where did the $250M allegedly go in Minnesota child care fraud investigation?",
+    "Where did the $2.2M allegedly go in Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2296,
-    "articlesProcessed": 114450,
-    "redFlagsFound": 2672,
+    "totalScans": 2297,
+    "articlesProcessed": 114500,
+    "redFlagsFound": 2673,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Ann Johnson Stewart?",
-        "Where did the $11 million allegedly go in Medicaid Fraud Case?",
-        "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?"
+        "Where did the 169,000 patient records allegedly go in Sandhills Medical Foundation Data Breach?",
+        "Are any of these 4 figures connected to each other?",
+        "Where did the None allegedly go in Feeding our Future Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-03T02:43:54.557Z",
-  "lastUpdated": "2026-05-03T02:43:54.557Z"
+  "lastReflection": "2026-05-03T05:57:54.377Z",
+  "lastUpdated": "2026-05-03T05:57:54.378Z"
 }
