@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI seizure of Fulton County election ballots",
+      "insight": "Potential connection to broader election fraud investigation",
+      "entities": [
+        "Fulton County",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeU9hUFVCeElvX3NObnAwamdybjhQVG81YXJQVTgwSXdjVWFzVk90VGxCcnFLX0JFR2txUFBsdDRhWHJpX2ZNZlQ2eTBUQ2NuYlZHdmZyQzRfSHNyRVpEcEF2dFF2VzIwLXV6dVFmT195ZXAwTndZS2YyOVViRUUydXBnLWxXZXNvZGtsNklJNkllVml5NUZBczZrVFdtdw",
+      "id": "rf-1777808470389-xcty8ei5l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-03T11:41:10.385Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota revalidates Medicaid providers, autism treatment centers face financial toll",
       "insight": "Potential for widespread fraud in Medicaid programs",
@@ -951,26 +971,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T21:45:34.423Z",
       "isNew": false
-    },
-    {
-      "type": "scandal involvement",
-      "description": "Minnesota Attorney General Keith Ellison is embroiled in the Feeding Our Future scandal.",
-      "insight": "This development raises concerns about the potential for corruption or misconduct in the state government. Further investigation is needed to determine the extent of Ellison's involvement in the scandal.",
-      "entities": [
-        "Keith Ellison",
-        "State of Minnesota"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://www.washingtonexaminer.com/news/how-minnesota-attorney-general-keith-ellison-is-embroiled-in-the-feeding-our-future-scandal",
-      "id": "rf-1777063483790-itgcmpv94",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T20:44:43.787Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,6 +984,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1001,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-03T10:03:04.960Z"
+  "lastUpdated": "2026-05-03T11:41:10.385Z"
 }
