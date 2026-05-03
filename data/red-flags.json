@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota revalidates Medicaid providers, autism treatment centers face financial toll",
+      "insight": "Potential for widespread fraud in Medicaid programs",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Post Bulletin",
+      "sourceUrl": "https://www.postbulletin.com/article/news/local/as-minnesota-revalidates-medicaid-providers-autism-treatment-centers-face-a-financial-toll",
+      "id": "rf-1777776234562-h9uhhtfox",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-03T02:43:54.558Z",
+      "isNew": true
+    },
+    {
       "type": "embezzlement",
       "description": "Kenner pastor indicted for embezzling more than $343k",
       "insight": "This suggests potential mismanagement or fraud within religious organizations in Minnesota.",
@@ -952,30 +971,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-24T20:44:43.787Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has dropped its investigation into Fed Chair Jerome Powell, which may indicate a lack of transparency or accountability in the Federal Reserve.",
-      "insight": "As an investigator, I am concerned about the potential implications of this development for the US economy and the Federal Reserve. Further research is needed to determine the motivations behind the investigation's closure.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Scripps News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbWx1Q2cyeTB6RWV4cEdjWnoydjYwTlU4d0pTdHBJem15WjN2Zml3NVZmR3F4SHpYSWZ3Z0xWVVg2VHREMWpxNV9ocjJGdWZtQTRPdTRDSEZONmR6NFM2T0FmNUxGcmRnNjUtbTBMbUYtMWFXN1pfTHFSMndaQXcydFZxUkFGWTVTWDFJYWdiUWsxRlUtYmVDUzJJVHhJdFNwYmlLVWhCMUpfZmZWREpWMw?oc=5",
-      "id": "rf-1777060293048-ujcaje9qm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T19:51:33.045Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -983,7 +983,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-02T23:41:16.431Z"
+  "lastUpdated": "2026-05-03T02:43:54.558Z"
 }
