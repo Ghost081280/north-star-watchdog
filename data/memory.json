@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-26T09:59:04.348Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-26T10:52:56.018Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-03T17:45:12.473Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-03T18:57:36.029Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Ilhan Omar?",
     "What specific allegations exist against Jack Brewer?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Keith Ellison?",
@@ -558,7 +557,8 @@
     "Where did the $2.2 million allegedly go in Largest Medicaid Fraud Case?",
     "Are any of these 3 figures connected to each other?",
     "Are any of these 4 figures connected to each other?",
-    "Where did the unknown allegedly go in Medicaid Fraud Investigation?"
+    "Where did the unknown allegedly go in Medicaid Fraud Investigation?",
+    "Where did the $250 million allegedly go in Ilhan Omar Charity Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2305,
-    "articlesProcessed": 114900,
-    "redFlagsFound": 2681,
+    "totalScans": 2306,
+    "articlesProcessed": 114950,
+    "redFlagsFound": 2682,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
         "What specific allegations exist against Ilhan Omar?",
-        "What specific allegations exist against Jack Brewer?"
+        "What specific allegations exist against Jack Brewer?",
+        "What specific allegations exist against Tim Walz?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-03T17:45:12.473Z",
-  "lastUpdated": "2026-05-03T17:45:12.473Z"
+  "lastReflection": "2026-05-03T18:57:36.029Z",
+  "lastUpdated": "2026-05-03T18:57:36.030Z"
 }

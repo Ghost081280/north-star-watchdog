@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to fraud allegations",
+      "insight": "Patterns of fraud and corruption suggest a need for immediate action",
+      "entities": [
+        "Minnesota DHS",
+        "Federal Authorities"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Whistleblower testimony",
+      "sourceUrl": "https://msn.com/en-us/news/politics/whistleblower-testifies-on-minnesota-child-care-fraud-links-money-to-terrorist-groups",
+      "id": "rf-1777834656034-wf3hiwkm0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-03T18:57:36.031Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Ilhan Omar linked to $250 million charity fraud scheme",
       "insight": "This development raises concerns about potential corruption and abuse of power, and warrants further investigation into Omar's involvement and potential connections to other fraudulent activities",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-03T17:45:12.474Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -949,26 +969,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-25T02:11:50.720Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ dropped its investigation into Fed Chair Jerome Powell, but concerns over the Fed's leadership and potential future actions remain.",
-      "insight": "I notice that the investigation was concluded, but the implications of this development are still unfolding. Further research is needed to understand the potential consequences for the financial sector and the Fed's leadership.",
-      "entities": [
-        "Jerome Powell",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOUFJS3U1V2lGRUY5dEFReC1ZeDc0dk9uTkFnTWpLckdsczV3M0lNblFFS0IxYXlpcWl1SVBLUFZhNUt2ZWxOc0RobldwSVpWSVBqWXNybG84c1AzR0pnWWFwT043ME1LeGx5emJXNEVQeDY0Y04tTEw4cGZDMEdsZVJKQ1dxcEE2OXZ5OGFGaHUxQVh0c25pakJCTFVfdjVvM1VxWnlJTjBSaXhSY1QtR25jRkY4d2NIWjJWTUtBOW5pRnJNWWpWeWZZV2EyZGx6NkdBMVBOeHUybG8",
-      "id": "rf-1777073919302-w5ek875au",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-24T23:38:39.298Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -982,7 +982,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-03T17:45:12.474Z"
+  "lastUpdated": "2026-05-03T18:57:36.031Z"
 }
