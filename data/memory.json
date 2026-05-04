@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-27T02:36:31.670Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-27T05:52:53.762Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-04T20:13:34.034Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-04T21:59:05.841Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.95
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Jeff Bezos?",
-    "What specific allegations exist against MacKenzie Scott?",
-    "Where did the $250 million allegedly go in Minnesota Child Care Fraud?",
     "Where did the $2.2 million allegedly go in Largest Medicaid Fraud Case?",
     "Are any of these 3 figures connected to each other?",
     "Are any of these 4 figures connected to each other?",
@@ -558,7 +555,10 @@
     "Where did the $350 million allegedly go in Minnesota Medicaid fraud?",
     "Where did the $250 million allegedly go in Ilhan Omar charity fraud?",
     "Where did the $10 million allegedly go in Minnesota Medicaid fraud case?",
-    "Where did the $10 million allegedly go in SNAP fraud investigation?"
+    "Where did the $10 million allegedly go in SNAP fraud investigation?",
+    "What specific allegations exist against Ilhan Omar?",
+    "What specific allegations exist against Tim Walz?",
+    "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2319,
-    "articlesProcessed": 115600,
-    "redFlagsFound": 2696,
+    "totalScans": 2320,
+    "articlesProcessed": 115650,
+    "redFlagsFound": 2698,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large scale fraud",
+          "description": "The state of Minnesota sent $67 million to 9 childcare centers that were raided by federal agents.",
+          "insight": "This appears to be a large-scale fraud scheme involving childcare centers in Minnesota.",
+          "entities": [
+            "Minnesota State Government",
+            "FBI"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeExfT0s5NlQ0M3NpZ3paVFg1YmpKWmxuMDhZSTRfRW9OSXZZSzFxVE1LRDVHUXQtV3BYcm1KanpKZG9mT3otTnV0VXlVdng4dERDeEdWYlBfZFN1a3U0TjNOaF9FLUlkZ0xLY0JWLVk1Q0Z5cG40RHFvXzk5ejlIZ2JxZzQ2YjBRbDVTQVhuOGN5RkxGSWhhQ3pFSVRYWm83UUlaSDE3bDdPU3NWNmJhZg"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-04T20:13:34.034Z",
-  "lastUpdated": "2026-05-04T20:13:34.034Z"
+  "lastReflection": "2026-05-04T21:59:05.841Z",
+  "lastUpdated": "2026-05-04T21:59:05.842Z"
 }

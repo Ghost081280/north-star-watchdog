@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large scale fraud",
+      "description": "The state of Minnesota sent $67 million to 9 childcare centers that were raided by federal agents.",
+      "insight": "This appears to be a large-scale fraud scheme involving childcare centers in Minnesota.",
+      "entities": [
+        "Minnesota State Government",
+        "FBI"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeExfT0s5NlQ0M3NpZ3paVFg1YmpKWmxuMDhZSTRfRW9OSXZZSzFxVE1LRDVHUXQtV3BYcm1KanpKZG9mT3otTnV0VXlVdng4dERDeEdWYlBfZFN1a3U0TjNOaF9FLUlkZ0xLY0JWLVk1Q0Z5cG40RHFvXzk5ejlIZ2JxZzQ2YjBRbDVTQVhuOGN5RkxGSWhhQ3pFSVRYWm83UUlaSDE3bDdPU3NWNmJhZg",
+      "id": "rf-1777931945846-5cazkgjmc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-04T21:59:05.843Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud allegations",
       "insight": "The Minnesota fraud scandal and allegations of charity fraud raise concerns about program termination and the need for increased oversight.",
@@ -836,25 +856,6 @@
       "isNew": false
     },
     {
-      "type": "program termination",
-      "description": "Eight people face federal charges related to a multi-million dollar Housing Stabilization Fraud scheme in Minnesota",
-      "insight": "Potential large-scale fraud scheme involving housing stabilization funds. Investigate the individuals and entities involved.",
-      "entities": [
-        "Eight individuals"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgNBVV95cUxQM0NrNi13eDR4N192clVCRERmZXY5VDhQMEtYc0dZb2ZUU05Oczk5eV9yOGJGWm43b0xtQU5ZQUVidHRzbVZ6NFI3MGRTQktEelR3cjhRNTd4RE80OS00aDByY0poajZ2VzFfeXRJSC01NEhPejdScGVXZi10ZUhDbjRpNzV0cVlmdm0wMGlBQVlIWFZ1ak9qRmpXdlhXdkxoYnhTWnBNbF84TzFydVhQZmdvX3FlYm5Sbk1YMzFmZmxuMkpfV1VFWjZYYm9GcUhRRWNqN3F2NTh4LWZkMlN5UmdfWnhkYmZPcERPRTdIQ2ZlQUdELXdzbjRDM0pRR1dlYVhJbC16RWh2QW9YMVlXQU1oZUo2YTgtdkdxdG5oZlVKWUVsc0hIZUhvQlNfeGlVN2JBNU1pWHpsMktvbW1qNmpSc0IxZXBBM19BeDllLS1ZT0VCWlhUUWlBblNUXzh2V001X0RwSU93Y0pweGNzMGUteUowSU1iUGx6U0gxaDlZYlZqMjF1UkRoaDYzc1VaOXlDUWpkcHpOSmMtdHBDc1l0ME5MNEJjaGU3dHB3TTcwdw",
-      "id": "rf-1777193951263-ziq6li9i1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T08:59:11.260Z",
-      "isNew": false
-    },
-    {
       "type": "fraud allegations",
       "description": "Multiple fraud allegations against Rep. Ilhan Omar",
       "insight": "Patterns of alleged fraud and lack of transparency",
@@ -973,6 +974,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -981,6 +983,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -998,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-04T20:13:34.035Z"
+  "lastUpdated": "2026-05-04T21:59:05.843Z"
 }
