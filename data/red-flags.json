@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs linked to Minnesota autism centers",
+      "insight": "The investigation into Minnesota autism centers may lead to the termination of programs linked to potential fraud.",
+      "entities": [
+        "Minnesota Department of Human Services",
+        "autism centers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Expert details program linked to 5 Minnesota autism centers raided in fraud investigation - Channel 3000",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOZzkzdEVPVzV1MlZobVVaZW1IV0pFZm1BYlAxcWxXd3I0OUtpcGNtbHctQVVuU3RoWkZYcVRjSWh0LXhWRGxuOUtXaFphdHJHUDJyOGJlcUQtUlh2d3BxN3Qxb2U2SFRjNWlhc0J3Nk1mYTc5Zl9xam1GVzd4ZUhRS0R3RTJ7TW9aSDVkR2Z1UnN3bjcwN1g0TGFvZXVKUHFiUmZwRVBoNlVIajAyUHJMYmJfWFNHUWRfczZ4YmFMTXlzbkI2SC12OUVWVUd6RXEyZDRkOWRwR2ttb3dzSDkydW1aWVBDeXFkX3g1bVhnSGNUcmRSaWl1MHVJaFpPZ3k3SUk2SkhwNTl1eFl6bzhFRGlrODlwTU5uQmR4eXdPT1JyQQ",
+      "id": "rf-1777875111293-m7i26t011",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-04T06:11:51.290Z",
+      "isNew": true
+    },
+    {
       "type": "alleged charity fraud",
       "description": "Ilhan Omar linked to $250 million charity fraud scheme",
       "insight": "This alleged fraud scheme raises concerns about oversight and potential connections to terrorist groups.",
@@ -948,30 +968,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-25T10:42:09.352Z",
       "isNew": false
-    },
-    {
-      "type": "investigation into high-ranking official",
-      "description": "The DOJ's decision to drop the investigation into Jerome Powell raises questions about potential political influence and the oversight of high-ranking officials.",
-      "insight": "The abrupt closure of this high-profile investigation warrants scrutiny, particularly given the potential implications for financial regulation and oversight.",
-      "entities": [
-        "Jerome Powell",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://wsj.com/news/articles/justice-department-will-end-probe-of-jerome-powell-opening-path-for-kevin-warsh-CBMixAFBVV95cUxOcWRDLVBkaDhLa1dRSEk4N0pkT2Izcy1PMjRzelB1WDF1d3lLbVZGY1NyazM2a0E3djZiWnpIcWMxWFdTSEw3NkQ3cVdMdktyV210ZnN3VnlzVS1felo1cC1CYm5QNEhoRWhJX0YzUHhSbWNESzduNDdjdTY3d1VWR1did0JaMkpiYUN5WS1IX0hLWEFHRXpuaXRsQVlXeUxVdVZuajBZcjJIOGJUdGhiSWRYTm5mYUpDSnBFMzRNZC1TUThQ",
-      "id": "rf-1777110703667-yh47cocr1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-25T09:51:43.664Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -981,7 +982,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -999,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-04T02:41:36.994Z"
+  "lastUpdated": "2026-05-04T06:11:51.290Z"
 }
