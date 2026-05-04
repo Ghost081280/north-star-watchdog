@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-26T21:36:22.389Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-26T22:36:34.091Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-04T13:55:45.392Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
+    },
+    {
+      "date": "2026-05-04T16:02:04.394Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2316,
-    "articlesProcessed": 115450,
-    "redFlagsFound": 2693,
+    "totalScans": 2317,
+    "articlesProcessed": 115500,
+    "redFlagsFound": 2694,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota child care fraud investigation?",
-        "Where did the $2.2M allegedly go in Medicaid fraud investigation?",
-        "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?"
+        "Where did the $250 million allegedly go in Minnesota Child Care Fraud Investigation?",
+        "Where did the $2.2 million allegedly go in Medicaid Fraud Investigation?",
+        "What specific allegations exist against Jeff Bezos?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-04T13:55:45.392Z",
-  "lastUpdated": "2026-05-04T13:55:45.393Z"
+  "lastReflection": "2026-05-04T16:02:04.394Z",
+  "lastUpdated": "2026-05-04T16:02:04.395Z"
 }
