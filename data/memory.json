@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-27T05:52:53.762Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-04-27T08:21:35.703Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-04T21:59:05.841Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.95
+    },
+    {
+      "date": "2026-05-04T23:00:06.809Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2.2 million allegedly go in Largest Medicaid Fraud Case?",
-    "Are any of these 3 figures connected to each other?",
-    "Are any of these 4 figures connected to each other?",
-    "Where did the unknown allegedly go in Medicaid Fraud Investigation?",
     "Where did the $250 million allegedly go in Ilhan Omar Charity Fraud?",
     "Where did the $250 million allegedly go in $250M charity fraud case?",
     "Where did the $250 million allegedly go in $250 million charity fraud case?",
@@ -558,7 +554,11 @@
     "Where did the $10 million allegedly go in SNAP fraud investigation?",
     "What specific allegations exist against Ilhan Omar?",
     "What specific allegations exist against Tim Walz?",
-    "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?"
+    "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?",
+    "What other organizations is Shireen Gandhi connected to?",
+    "What specific allegations exist against Shireen Gandhi?",
+    "Where did the $67 million allegedly go in Minnesota Daycare Centers Fraud Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2320,
-    "articlesProcessed": 115650,
-    "redFlagsFound": 2698,
+    "totalScans": 2321,
+    "articlesProcessed": 115700,
+    "redFlagsFound": 2700,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large scale fraud",
-          "description": "The state of Minnesota sent $67 million to 9 childcare centers that were raided by federal agents.",
-          "insight": "This appears to be a large-scale fraud scheme involving childcare centers in Minnesota.",
-          "entities": [
-            "Minnesota State Government",
-            "FBI"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "5 EYEWITNESS NEWS",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeExfT0s5NlQ0M3NpZ3paVFg1YmpKWmxuMDhZSTRfRW9OSXZZSzFxVE1LRDVHUXQtV3BYcm1KanpKZG9mT3otTnV0VXlVdng4dERDeEdWYlBfZFN1a3U0TjNOaF9FLUlkZ0xLY0JWLVk1Q0Z5cG40RHFvXzk5ejlIZ2JxZzQ2YjBRbDVTQVhuOGN5RkxGSWhhQ3pFSVRYWm83UUlaSDE3bDdPU3NWNmJhZg"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Jeff Bezos?",
-        "What specific allegations exist against MacKenzie Scott?",
-        "Where did the $250 million allegedly go in Minnesota Child Care Fraud?"
+        "Where did the $2.2 million allegedly go in Largest Medicaid Fraud Case?",
+        "Are any of these 3 figures connected to each other?",
+        "Are any of these 4 figures connected to each other?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-04T21:59:05.841Z",
-  "lastUpdated": "2026-05-04T21:59:05.842Z"
+  "lastReflection": "2026-05-04T23:00:06.809Z",
+  "lastUpdated": "2026-05-04T23:00:06.810Z"
 }
