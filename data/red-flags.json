@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Secret Service has joined the investigation into bank fraud allegations against Nascar Legend Greg Biffle",
+      "insight": "This red flag suggests that the investigation into Greg Biffle's bank fraud allegations is serious and warrants federal attention. I recommend further investigation into Biffle's financial transactions and connections to determine the extent of the alleged fraud.",
+      "entities": [
+        "Greg Biffle"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "heavy.com",
+      "sourceUrl": "https://heavy.com/news/greg-biffle-bank-fraud-investigation/",
+      "id": "rf-1777954553506-gp17tqixm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-05T04:15:53.502Z",
+      "isNew": true
+    },
+    {
       "type": "large scale fraud",
       "description": "The state of Minnesota sent $67 million to 9 childcare centers that were raided by federal agents.",
       "insight": "This appears to be a large-scale fraud scheme involving childcare centers in Minnesota.",
@@ -951,29 +970,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-25T18:50:57.696Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "Rep. Ilhan Omar skipped a fraud hearing, raising concerns about her involvement in potential fraudulent activities.",
-      "insight": "This development warrants further investigation into Rep. Omar's activities and potential connections to fraudulent schemes.",
-      "entities": [
-        "Rep. Ilhan Omar"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "NewsNation",
-      "sourceUrl": "https://newsnation.com/2026/04/25/minn-lawmakers-demand-records-after-rep-ilhan-omar-skips-fraud-hearing/",
-      "id": "rf-1777126031399-4aajdecs2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-25T14:07:11.395Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -982,9 +983,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-05T00:02:26.271Z"
+  "lastUpdated": "2026-05-05T04:15:53.502Z"
 }
