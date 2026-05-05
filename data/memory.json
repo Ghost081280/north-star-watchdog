@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-28T02:44:31.277Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-28T05:58:06.463Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-05T21:00:54.310Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-05T22:08:35.704Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Ilhan Omar?",
-    "What specific allegations exist against Tim Walz?",
     "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?",
     "What other organizations is Shireen Gandhi connected to?",
     "What specific allegations exist against Shireen Gandhi?",
@@ -558,7 +556,9 @@
     "Where did the N/A allegedly go in Smith College Investigation?",
     "What other organizations is Rep. Omar connected to?",
     "Where did the $100M allegedly go in Minnesota Fraud Probe?",
-    "Where did the $1M allegedly go in Smith College Investigation?"
+    "Where did the $1M allegedly go in Smith College Investigation?",
+    "Where did the $ millions allegedly go in Minnesota Medicaid Fraud Control Unit investigation?",
+    "Where did the unknown allegedly go in Smith College investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2330,
-    "articlesProcessed": 116150,
-    "redFlagsFound": 2709,
+    "totalScans": 2331,
+    "articlesProcessed": 116200,
+    "redFlagsFound": 2710,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Ilhan Omar charity fraud?",
-        "Where did the $10 million allegedly go in Minnesota Medicaid fraud case?",
-        "Where did the $10 million allegedly go in SNAP fraud investigation?"
+        "What specific allegations exist against Ilhan Omar?",
+        "What specific allegations exist against Tim Walz?",
+        "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-05T21:00:54.310Z",
-  "lastUpdated": "2026-05-05T21:00:54.311Z"
+  "lastReflection": "2026-05-05T22:08:35.704Z",
+  "lastUpdated": "2026-05-05T22:08:35.705Z"
 }
