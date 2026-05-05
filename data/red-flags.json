@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Federal investigation into Smith College's admission of transgender women",
+      "insight": "This investigation raises concerns about the potential for discrimination and unequal treatment of transgender individuals. Further investigation is needed to determine the extent of the issue and potential wrongdoing.",
+      "entities": [
+        "Smith College"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/education/2023/05/05/smith-college-transgender-admissions-investigation/",
+      "id": "rf-1778014854316-4d6oawfhq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-05T21:00:54.312Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The federal government has opened an investigation into Smith College's admissions policy regarding transgender women",
       "insight": "This investigation may indicate a larger pattern of discrimination or non-compliance with federal regulations. Further research is needed to determine the scope and implications of this investigation.",
       "entities": [
@@ -951,40 +970,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-25T23:36:46.058Z",
       "isNew": false
-    },
-    {
-      "type": "Fraud",
-      "description": "Ilhan Omar has been accused of fraud, which is a serious concern.",
-      "insight": "I suspect that there may be more to this story than what has been reported so far. Further investigation is needed to determine the extent of Omar's involvement in the alleged fraud.",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/mn-lawmaker-takes-action-to-get-answers-on-omars-alleged-fraud-ties-after-she-skips-key-hearing/ar-AAIuZK3",
-      "id": "rf-1777156531454-gnjt6bwtw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-25T22:35:31.449Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-05T19:16:54.678Z"
+  "lastUpdated": "2026-05-05T21:00:54.312Z"
 }

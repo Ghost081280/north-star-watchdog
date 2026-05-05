@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-27T23:52:38.433Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-28T02:44:31.277Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-05T19:16:54.676Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-05T21:00:54.310Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Ilhan Omar charity fraud?",
-    "Where did the $10 million allegedly go in Minnesota Medicaid fraud case?",
-    "Where did the $10 million allegedly go in SNAP fraud investigation?",
     "What specific allegations exist against Ilhan Omar?",
     "What specific allegations exist against Tim Walz?",
     "Where did the $67 million allegedly go in FBI Investigation into Minnesota Childcare Centers?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in Minnesota DHS Fraud Investigation?",
     "Where did the $0 allegedly go in Smith College Federal Probe?",
     "Where did the $100M+ allegedly go in Minnesota Child Care Fraud Investigation?",
-    "Where did the N/A allegedly go in Smith College Investigation?"
+    "Where did the N/A allegedly go in Smith College Investigation?",
+    "What other organizations is Rep. Omar connected to?",
+    "Where did the $100M allegedly go in Minnesota Fraud Probe?",
+    "Where did the $1M allegedly go in Smith College Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2329,
-    "articlesProcessed": 116100,
-    "redFlagsFound": 2708,
+    "totalScans": 2330,
+    "articlesProcessed": 116150,
+    "redFlagsFound": 2709,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
-        "Where did the $350 million allegedly go in Minnesota Medicaid fraud?",
-        "Where did the $250 million allegedly go in Ilhan Omar charity fraud?"
+        "Where did the $250 million allegedly go in Ilhan Omar charity fraud?",
+        "Where did the $10 million allegedly go in Minnesota Medicaid fraud case?",
+        "Where did the $10 million allegedly go in SNAP fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-05T19:16:54.676Z",
-  "lastUpdated": "2026-05-05T19:16:54.677Z"
+  "lastReflection": "2026-05-05T21:00:54.310Z",
+  "lastUpdated": "2026-05-05T21:00:54.311Z"
 }
