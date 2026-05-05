@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-27T21:00:38.320Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-27T22:02:17.142Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-05T15:52:34.727Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-05T17:22:16.378Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Amy Klobuchar connected to?",
-    "Where did the $5 million allegedly go in Minnesota Autism Centers Fraud Investigation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the $350 million allegedly go in Minnesota Medicaid fraud?",
     "Where did the $250 million allegedly go in Ilhan Omar charity fraud?",
@@ -558,7 +556,9 @@
     "Where did the unknown allegedly go in Greg Biffle Bank Fraud Investigation?",
     "Where did the $725 million allegedly go in Minnesota DHS Investigation?",
     "Where did the undisclosed allegedly go in Minnesota DHS Fraud Investigation?",
-    "Where did the undisclosed allegedly go in Smith College Admissions Policy Investigation?"
+    "Where did the undisclosed allegedly go in Smith College Admissions Policy Investigation?",
+    "Where did the $0 allegedly go in Minnesota DHS Fraud Investigation?",
+    "Where did the $0 allegedly go in Smith College Federal Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2327,
-    "articlesProcessed": 116000,
-    "redFlagsFound": 2706,
+    "totalScans": 2328,
+    "articlesProcessed": 116050,
+    "redFlagsFound": 2707,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Minnesota Fraud Investigation?",
-        "What other organizations is Tim Walz connected to?",
-        "What other organizations is Amy Klobuchar connected to?"
+        "What other organizations is Amy Klobuchar connected to?",
+        "Where did the $5 million allegedly go in Minnesota Autism Centers Fraud Investigation?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-05T15:52:34.727Z",
-  "lastUpdated": "2026-05-05T15:52:34.727Z"
+  "lastReflection": "2026-05-05T17:22:16.378Z",
+  "lastUpdated": "2026-05-05T17:22:16.379Z"
 }
