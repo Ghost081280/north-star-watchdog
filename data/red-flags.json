@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The federal government has opened an investigation into Smith College's admissions policy regarding transgender women",
+      "insight": "This investigation may indicate a larger pattern of discrimination or non-compliance with federal regulations. Further research is needed to determine the scope and implications of this investigation.",
+      "entities": [
+        "Smith College"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "US Department of Education",
+      "sourceUrl": "https://www.washingtonpost.com/article/2026/05/05/smith-college-transgender-admissions-investigation/",
+      "id": "rf-1777996354733-gpq42las5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-05T15:52:34.728Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The Secret Service has joined the investigation into bank fraud allegations against Nascar Legend Greg Biffle",
       "insight": "This red flag suggests that the investigation into Greg Biffle's bank fraud allegations is serious and warrants federal attention. I recommend further investigation into Biffle's financial transactions and connections to determine the extent of the alleged fraud.",
       "entities": [
@@ -951,39 +970,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-25T22:35:31.449Z",
       "isNew": false
-    },
-    {
-      "type": "political figure involvement",
-      "description": "High-profile political figures involved in alleged fraud, specifically Rep. Ilhan Omar in a $250M fraud scandal.",
-      "insight": "The involvement of high-profile political figures in alleged fraud schemes can indicate a deeper issue with oversight and regulatory compliance.",
-      "entities": [
-        "Rep. Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSWRDNU9zWU4yNUpIR25pRTRvcDVHaVloZTg3RnJTT1Q0V1NyZGoyMHZBNFB4cldmb0tBeTBmWnlXREp2WjBKSk1HYTBEZWNKbGQtWnQxdVBsb1R5VkJmaERoaDJiRk80dHNoTlVzOV9fSDB5Y085dmdxY0l6eUp4aVBCMUFXSHNkR0pJQldLWnVTbEFZSk5GRWN2ZzAyRXRDMlJLeE5aUTY4UGRRaUJhR1ozeGJSRDRkRkk4SDItTFNMSVYwS1Qtcnk3VjUzUTZ5MEVabFpRTlpRaGZ4ZEZz?oc=5",
-      "id": "rf-1777143057699-3q4lmiuy9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-25T18:50:57.696Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-05T11:23:28.199Z"
+  "lastUpdated": "2026-05-05T15:52:34.728Z"
 }
