@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-28T11:03:59.292Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-04-28T16:49:53.305Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-06T02:39:29.905Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-06T05:56:23.678Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Shireen Gandhi?",
-    "Where did the $67 million allegedly go in Minnesota Daycare Centers Fraud Investigation?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Greg Biffle connected to?",
     "Where did the $67 million allegedly go in Minnesota DHS Fraud Investigation?",
     "Where did the unknown allegedly go in Greg Biffle Bank Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $ millions allegedly go in Minnesota Medicaid Fraud Control Unit investigation?",
     "Where did the unknown allegedly go in Smith College investigation?",
     "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $X allegedly go in Ilhan Omar Fraud Probe?"
+    "Where did the $X allegedly go in Ilhan Omar Fraud Probe?",
+    "What specific allegations exist against Kash Patel?",
+    "What specific allegations exist against Pima County Sheriff?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2333,
-    "articlesProcessed": 116300,
-    "redFlagsFound": 2711,
+    "totalScans": 2334,
+    "articlesProcessed": 116350,
+    "redFlagsFound": 2712,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-06T02:39:29.905Z",
-  "lastUpdated": "2026-05-06T02:39:29.905Z"
+  "lastReflection": "2026-05-06T05:56:23.678Z",
+  "lastUpdated": "2026-05-06T05:56:23.678Z"
 }
