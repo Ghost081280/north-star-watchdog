@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into LAUSD's handling of teachers accused of sexual misconduct",
+      "insight": "The investigation may uncover a larger pattern of misconduct and inadequate oversight within LAUSD.",
+      "entities": [
+        "LAUSD"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Los Angeles Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPS0x2d3lnMlVuWnhab29jTGJ6Zlh4WlZsZmdzbkdYbGhsOGhPNGhQVE5yRkRNSGZWcGI0SF9BWm9PRjV6MnluSWdBM043UnF2dXhIdVByYTBOTVAxc1FseWxJaE1tQzhIZWFSWmZBcG5DYkRNVE10aFUwUWZtNmdTNUdBRkl6Yzc4UWdGT3BFNWhlbWkxa25xcGZMbFVKUjNZM2pUajFzaXVGbzdCd05XZklDTHFDLWxHQkxkQ2syenVwaGlGM3RRTGZoODVBRnA5ZWRpOGZWY040YkZrN3hHWg",
+      "id": "rf-1778055941154-w10vcf2k4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-06T08:25:41.151Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Smith College is under federal investigation for its trans-inclusive admissions policy",
       "insight": "This investigation may indicate a larger trend of federal scrutiny of colleges and universities with trans-inclusive policies. I will continue to monitor this investigation and look for connections to other entities and programs.",
@@ -950,31 +969,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-26T05:38:14.390Z",
       "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "$220K stolen from Feeding Our Future",
-      "insight": "The executive director and relative of Feeding Our Future are accused of stealing $220K, indicating potential internal controls issues and lack of oversight.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilANBVV95cUxNaEtaS3JTLUVDdzh4N2dFRVZjcEFPUnVxcm9tX0Fibmx2S2I2MEJmWVk1R3NBV0NzbVJBbmIyZXhGS0lCNWFzQzFJQXNkaDJQRDRWQmlLd25ERHhpNjJoY2F5UFpBT0o1WmFiUFdnWGhKR3NxdzJvQUZSeF83ZUZ3YWJJM2pVTlhFcnk5a0J6aG9xODdYcDI0Y2NUbHF2YWQwSXZucGV2UTFhYUxCMjVzRlZmNWRJRnR2QXg4cmNKU3BpT2xkS3p2dDRhTFJFY2ZNTW4tS1BGMnhrWm9GcUlNWlg1MGVCRUJGUXRKdVpkMGdXcENOaEVHaVVxTG5HcTNuUFJZTFNmUHJTOG9GLURaRldGMEppQ0tCOVFfU3B0c2xLX3p6UlNHSEl3N2hyMnhnN3VHTDVxUXlHSlJoRUx1VjRYcWNRbm9DbEFHemRnblFoOHcxVzVfcnNqLUdEcHdxcDdFNWhHbU1uVklCWHpCd29vVHpiT1Z3M19Jajk3WkI1dXNpNUV2UFNrdS1SRUo2enJyNw",
-      "id": "rf-1777170872080-lg3tkl0jn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T02:34:32.077Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -983,7 +981,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-06T05:56:23.680Z"
+  "lastUpdated": "2026-05-06T08:25:41.151Z"
 }
