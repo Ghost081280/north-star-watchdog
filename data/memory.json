@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-29T05:53:51.834Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-29T08:13:49.592Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-06T21:55:26.531Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-06T22:52:03.355Z",
+      "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $X allegedly go in Ilhan Omar Fraud Probe?",
     "What specific allegations exist against Kash Patel?",
     "What specific allegations exist against Pima County Sheriff?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Virginia Corruption Probe?",
     "Where did the Unknown allegedly go in Minnesota Medicaid Fraud?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?",
+    "What specific allegations exist against Ilhan Omar?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2341,
-    "articlesProcessed": 116700,
-    "redFlagsFound": 2720,
+    "totalScans": 2342,
+    "articlesProcessed": 116750,
+    "redFlagsFound": 2721,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Smith College investigation?",
         "Where did the $X allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $X allegedly go in Ilhan Omar Fraud Probe?"
+        "Where did the $X allegedly go in Ilhan Omar Fraud Probe?",
+        "What specific allegations exist against Kash Patel?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-06T21:55:26.531Z",
-  "lastUpdated": "2026-05-06T21:55:26.531Z"
+  "lastReflection": "2026-05-06T22:52:03.355Z",
+  "lastUpdated": "2026-05-06T22:52:03.355Z"
 }
