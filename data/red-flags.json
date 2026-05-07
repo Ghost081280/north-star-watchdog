@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI searches Virginia Sen. Louise Lucas' office, businesses in Portsmouth",
+      "insight": "Potential corruption in Virginia state government",
+      "entities": [
+        "Virginia Senator Louise Lucas"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "VPM",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWw4d3Z1ZERqZ2VJU01waWNzZmVTT2RUMWZTRnpZZWJ2dXNTdGNHTXNUMzBOd3VPVEE2dnhyQlQ4LTEtY0ZIMFpVUnlWZ1A4Ty1wVWFqVy1xQlAwNzZrU0tuUUxkMHJoMHBYLUpvVHI5UFNaS0l2N0gwVWFqMklzRVZyZXR1UjJURmZTZmpCRDA3YW1LZFVXUWJWbm9taW8yTTFqbHB5YnVZcjNNVFQ3YQ",
+      "id": "rf-1778146245864-ke7euugj0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-07T09:30:45.860Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating Virginia State Senator Louise Lucas as part of a corruption probe.",
       "insight": "This investigation raises concerns about potential corruption and abuse of power by a public official.",
@@ -954,30 +973,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-26T16:41:04.152Z",
       "isNew": false
-    },
-    {
-      "type": "investigation dropped",
-      "description": "The Department of Justice dropped its criminal investigation into Federal Reserve Chair Jerome Powell.",
-      "insight": "The decision to drop the investigation may indicate a lack of evidence or insufficient grounds for prosecution. However, the referral to the Inspector General suggests that there may still be concerns about Powell's actions or potential conflicts of interest.",
-      "entities": [
-        "Federal Reserve Chair Jerome Powell",
-        "Department of Justice"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "TODAY.com",
-      "sourceUrl": "https://www.today.com/news/department-of-justice-drops-investigation-into-jerome-powell",
-      "id": "rf-1777208603951-cphdk04e7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T13:03:23.946Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -985,7 +986,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-07T06:08:27.832Z"
+  "lastUpdated": "2026-05-07T09:30:45.860Z"
 }
