@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "potential corruption",
+      "description": "Virginia state senator says after FBI raid, 'I am not backing down'",
+      "insight": "This suggests potential corruption or political interference in Virginia, with the senator seemingly resistant to FBI scrutiny.",
+      "entities": [
+        "Virginia state senator"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "KRCR",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPYjRLQWFDUTMzdGxhUl8yejNqN3VpYVF6eVB2MGZWcGR3V1RpSkR0eDJMb2hOQWQxZkI2Zmt1WE1kZm1zbUhCdEpRRlVRaWhHNll1cUdIa1RSUXhzNl9VT2FUNlpUUmNDSjJQOGNobEo5Y1BEWVdKWUtEdjI0T1h2empiaVN0MWEtRlhyZWhGRVBwaEprS19lWXVKdFdBU0tKd1Rza2ZqLUpuSnlyM2MwOUpfYXNVOUxFNGNJQWZnZ0JMOHZQekNzZFBxdUQ5NWdYc1FIZllySTBiTmpDZDFMVy1RaGhuejZzZ3F3R3FR",
+      "id": "rf-1778191008618-zazydw1tq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-07T21:56:48.614Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI raid on Louise Lucas's office and nearby weed dispensary",
       "insight": "This investigation may indicate a larger pattern of corruption or wrongdoing, and it is essential to monitor the situation closely. The fact that the FBI is involved suggests that the case may be more severe than initially thought.",
@@ -954,38 +973,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T02:36:31.672Z",
       "isNew": false
-    },
-    {
-      "type": "theft by executive director",
-      "description": "The executive director and a relative of a Minnesota suicide prevention nonprofit stole $220K from the organization",
-      "insight": "This case highlights the need for increased oversight and accountability in nonprofit organizations. I will investigate further to see if there are any other similar cases.",
-      "entities": [
-        "Minnesota suicide prevention nonprofit"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/news/us/prosecutors-minnesota-suicide-prevention-nonprofit-loses-220k-to-theft-by-executive-director-relative/ar-AAIuK3q",
-      "id": "rf-1777239382394-9qa1w8rt0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T21:36:22.391Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-07T20:13:19.140Z"
+  "lastUpdated": "2026-05-07T21:56:48.614Z"
 }
