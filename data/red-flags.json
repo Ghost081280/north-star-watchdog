@@ -1,6 +1,30 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating Virginia State Senator Louise Lucas as part of a corruption probe.",
+      "insight": "This investigation raises concerns about potential corruption and abuse of power by a public official.",
+      "entities": [
+        "Louise Lucas",
+        "Virginia Senate"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WTOP",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSHFPaVk2SWduOTVOUElvY3JLOHJlVV9xaVBQQkszNkRzZFVlY0x3WGRXVDFyM0d6N1lkaXR6eDVKMUJjVkFiMTBlTDZzTWdEZklfT1hZQ0s2UGpDWU1kSHpXOWpKM25oQjZBOHJxaFliQUxDSlpUeHB0X0I2SkRpWHRRVl9RaHJrWEhJQ3k3VHZ2ZlRTLTJMUU5Ib1lZX0FaR3FyRWJzUENEMWhVR2wwVnBKRi1XZkpnOW9YdGlB",
+      "searches": [
+        "Virginia corruption probe",
+        "Louise Lucas investigation"
+      ],
+      "id": "rf-1778121685082-jm2ya1vki",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-07T02:41:25.079Z",
+      "isNew": true
+    },
+    {
       "type": "Withholding records",
       "description": "Ilhan Omar is withholding records of her messages with the Feeding Our Future mastermind, raising concerns about potential corruption and fraud.",
       "insight": "This could indicate a larger pattern of corruption and cover-up, and further investigation is needed to determine the extent of Omar's involvement.",
@@ -18,7 +42,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-06T23:50:36.332Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -950,32 +974,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-26T13:03:23.946Z",
       "isNew": false
-    },
-    {
-      "type": "Investigation dropped",
-      "description": "The Justice Department dropped its criminal investigation into Federal Reserve Chair Jerome Powell.",
-      "insight": "I find it suspicious that the investigation was dropped, given the severity of the allegations. Further investigation is needed to determine the reasons behind this decision.",
-      "entities": [
-        "Jerome Powell",
-        "Federal Reserve"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/justice-department-drops-criminal-probe-of-fed-chair-jerome-powell/",
-      "id": "rf-1777197544353-yda3igeq2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T09:59:04.349Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,6 +986,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1001,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-06T23:50:36.332Z"
+  "lastUpdated": "2026-05-07T02:41:25.079Z"
 }
