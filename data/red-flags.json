@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI raid on Louise Lucas's office and nearby weed dispensary",
+      "insight": "This investigation may indicate a larger pattern of corruption or wrongdoing, and it is essential to monitor the situation closely. The fact that the FBI is involved suggests that the case may be more severe than initially thought.",
+      "entities": [
+        "Louise Lucas",
+        "Virginia State Senate"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "12News",
+      "sourceUrl": "https://www.12news.com/article/news/local/virginia/fbi-raids-office-of-virginia-state-senator-nearby-weed-dispensary-she-co-owns/291-8f7c bee5-4f7a-9f7c-8f7c9f7c8f7c",
+      "id": "rf-1778172504071-v4qaw8p0v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-07T16:48:24.067Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI searches Virginia Sen. Louise Lucas' office, businesses in Portsmouth",
       "insight": "Potential corruption in Virginia state government",
@@ -953,32 +973,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-26T21:36:22.391Z",
       "isNew": false
-    },
-    {
-      "type": "financial irregularities",
-      "description": "Ilhan Omar's husband's California winery suddenly closed amid an investigation into her finances",
-      "insight": "This raises concerns about potential financial improprieties and the need for further investigation into Ilhan Omar's financial dealings",
-      "entities": [
-        "Ilhan Omar",
-        "California winery"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/04/25/ilhan-omar-husbands-california-winery-suddenly-closes-amid-investigation/",
-      "id": "rf-1777221664156-7ahaxd2w8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-26T16:41:04.152Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +985,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-07T14:03:33.665Z"
+  "lastUpdated": "2026-05-07T16:48:24.067Z"
 }
