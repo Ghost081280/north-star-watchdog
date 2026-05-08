@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated due to the fraud scheme",
+      "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the fraud scheme. This highlights the need for better oversight and monitoring of such programs.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaEtaUV9OeGduVHRxVzNPRFA1OXNSSGk2dHJiX2tuNjR2eU5YcjgxZkF0QV9kVHB6UEZGbHhzRW93QmZmNWxBcXVQQm1NclZtWHZUdGdMZm5nUVh2Rzl4eHhucmhkVzBTLWtILWhsakRVQnViXy1FOWNrR1QxbXNqSzVicEdleHhfNTBYakNPSmZ5T1lvMjZMMVZJTUhzTXc1SldiQ3M4RjJTZUt0V09sQTE0NXNWVkdkcUo1QjBQSjB2eUZpa21tQU5GcXgtaFRNeWwzYQ",
+      "id": "rf-1778235856216-c6sj4nibf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-08T10:24:16.212Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The Feeding Our Future program was terminated due to allegations of fraud",
       "insight": "The program was vulnerable to abuse and lacked proper oversight",
       "entities": [
@@ -567,25 +586,6 @@
       "isNew": false
     },
     {
-      "type": "program_termination",
-      "description": "The Feeding our Future program has been terminated due to alleged fraud.",
-      "insight": "This is a significant development, as it indicates that the program was likely involved in fraudulent activities. I recommend investigating further to determine the extent of the fraud and the individuals involved.",
-      "entities": [
-        "Feeding our Future"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "DOJ",
-      "sourceUrl": "https://www.audacy.com/news/feds-want-restrictions-sanctions-for-aimee-bock-after-repeated-leaks-of-feeding-our-future-documents",
-      "id": "rf-1777707708718-1cmixpubi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T07:41:48.714Z",
-      "isNew": false
-    },
-    {
       "type": "alleged fraud",
       "description": "Robbins alleges that Governor Walz is involved in fraud",
       "insight": "This could indicate a potential scandal or issue with Governor Walz's administration, which could have significant implications for the state of Minnesota.",
@@ -977,17 +977,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-08T08:21:05.547Z"
+  "lastUpdated": "2026-05-08T10:24:16.212Z"
 }

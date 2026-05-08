@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-30T17:19:58.573Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-30T19:18:13.599Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-08T08:21:05.545Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-08T10:24:16.210Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Kash Patel?",
-    "Where did the $195 a day for residential care allegedly go in Minnesota Medicaid Fraud Enforcement?",
     "Where did the Unknown allegedly go in Federal Meatpacking Investigation?",
     "What other organizations is Disney Cruise Ship Employees connected to?",
     "What other organizations is Andy Ogles connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Rochester restaurant owner connected to?",
     "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $11M allegedly go in Medicaid fraud case?"
+    "Where did the $11M allegedly go in Medicaid fraud case?",
+    "What other organizations is Another defendant connected to?",
+    "What other organizations is Minnesota DHS official connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2357,
-    "articlesProcessed": 117500,
-    "redFlagsFound": 2739,
+    "totalScans": 2358,
+    "articlesProcessed": 117550,
+    "redFlagsFound": 2740,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "The Feeding Our Future program has been terminated due to the fraud scheme",
+          "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the fraud scheme. This highlights the need for better oversight and monitoring of such programs.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaEtaUV9OeGduVHRxVzNPRFA1OXNSSGk2dHJiX2tuNjR2eU5YcjgxZkF0QV9kVHB6UEZGbHhzRW93QmZmNWxBcXVQQm1NclZtWHZUdGdMZm5nUVh2Rzl4eHhucmhkVzBTLWtILWhsakRVQnViXy1FOWNrR1QxbXNqSzVicEdleHhfNTBYakNPSmZ5T1lvMjZMMVZJTUhzTXc1SldiQ3M4RjJTZUt0V09sQTE0NXNWVkdkcUo1QjBQSjB2eUZpa21tQU5GcXgtaFRNeWwzYQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X (undisclosed) allegedly go in Virginia Corruption Probe?",
         "What specific allegations exist against Kash Patel?",
-        "Where did the $195 a day for residential care allegedly go in Minnesota Medicaid Fraud Enforcement?"
+        "Where did the $195 a day for residential care allegedly go in Minnesota Medicaid Fraud Enforcement?",
+        "Where did the Unknown allegedly go in Federal Meatpacking Investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-08T08:21:05.545Z",
-  "lastUpdated": "2026-05-08T08:21:05.546Z"
+  "lastReflection": "2026-05-08T10:24:16.210Z",
+  "lastUpdated": "2026-05-08T10:24:16.211Z"
 }
