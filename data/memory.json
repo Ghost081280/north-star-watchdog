@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-04-30T19:18:13.599Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-04-30T20:58:46.722Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-08T10:24:16.210Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-05-08T12:07:51.472Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2358,
-    "articlesProcessed": 117550,
-    "redFlagsFound": 2740,
+    "totalScans": 2359,
+    "articlesProcessed": 117600,
+    "redFlagsFound": 2741,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Feeding Our Future program has been terminated due to the fraud scheme",
-          "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the fraud scheme. This highlights the need for better oversight and monitoring of such programs.",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "5 EYEWITNESS NEWS",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaEtaUV9OeGduVHRxVzNPRFA1OXNSSGk2dHJiX2tuNjR2eU5YcjgxZkF0QV9kVHB6UEZGbHhzRW93QmZmNWxBcXVQQm1NclZtWHZUdGdMZm5nUVh2Rzl4eHhucmhkVzBTLWtILWhsakRVQnViXy1FOWNrR1QxbXNqSzVicEdleHhfNTBYakNPSmZ5T1lvMjZMMVZJTUhzTXc1SldiQ3M4RjJTZUt0V09sQTE0NXNWVkdkcUo1QjBQSjB2eUZpa21tQU5GcXgtaFRNeWwzYQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Kash Patel?",
-        "Where did the $195 a day for residential care allegedly go in Minnesota Medicaid Fraud Enforcement?",
-        "Where did the Unknown allegedly go in Federal Meatpacking Investigation?"
+        "Where did the Unknown allegedly go in Federal Meatpacking Investigation?",
+        "What other organizations is Disney Cruise Ship Employees connected to?",
+        "What other organizations is Andy Ogles connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-08T10:24:16.210Z",
-  "lastUpdated": "2026-05-08T10:24:16.211Z"
+  "lastReflection": "2026-05-08T12:07:51.472Z",
+  "lastUpdated": "2026-05-08T12:07:51.473Z"
 }
