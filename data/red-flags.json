@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program was terminated due to allegations of fraud",
+      "insight": "The program was vulnerable to abuse and lacked proper oversight",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/rochester-restaurant-owner-another-defendent-sentenced-for-roles-in-feeding-our-future-fraud-scheme",
+      "id": "rf-1778213738635-avlxp5xwv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-08T04:15:38.631Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scheme",
       "description": "A Rochester man has been sentenced for his role in a $5.3M fraud scheme involving the Feeding Our Future program.",
       "insight": "This case highlights the need for increased oversight and monitoring of programs to prevent fraud. Further investigation is needed to determine the extent of the scheme and identify other potential perpetrators.",
@@ -954,30 +973,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T11:02:30.732Z",
       "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "Minnesota suicide prevention nonprofit loses $220K to theft",
-      "insight": "This could indicate a lack of oversight or internal controls within nonprofits in Minnesota.",
-      "entities": [
-        "Minnesota suicide prevention nonprofit"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en/en-us/article/2024-04-26-prosecutors-minnesota-suicide-prevention-nonprofit-loses-220k-to-theft-by-executive-director-relative",
-      "id": "rf-1777278095708-xzoyh97ka",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T08:21:35.705Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,6 +985,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-08T00:02:14.582Z"
+  "lastUpdated": "2026-05-08T04:15:38.631Z"
 }
