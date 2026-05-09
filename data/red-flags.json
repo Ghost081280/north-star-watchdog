@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The federal investigation into HISD's treatment of disabled students and plans to restructure special education services raises concerns about potential non-compliance with federal regulations.",
+      "insight": "This investigation could uncover a larger pattern of non-compliance and potential fraud in the special education sector, potentially involving multiple school districts and entities.",
+      "entities": [
+        "HISD",
+        "US Department of Education"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC13 Houston",
+      "sourceUrl": "https://abc13.com/department-of-education-opens-disability-discrimination-investigation-into-hisd-officials-say/14784646/",
+      "id": "rf-1778356742742-qyb4cvyhm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T19:59:02.739Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible termination of programs due to fraud concerns",
       "insight": "Patterns of fraud and abuse in programs like Medicaid and special education services",
@@ -957,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-28T02:44:31.278Z",
       "isNew": false
-    },
-    {
-      "type": "Wage Theft",
-      "description": "Multiple construction firms have been ordered to pay back wages to workers in recent months.",
-      "insight": "I notice that there have been multiple cases of wage theft by construction firms in recent months. This could indicate a larger pattern of exploitation of workers in the construction industry. I recommend continuing to monitor this issue and looking for connections between the firms involved.",
-      "entities": [
-        "Minnesota Construction Firms"
-      ],
-      "confidence": 70,
-      "priority": "Medium",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://www.minnesotareformer.com/",
-      "id": "rf-1777344271281-m99b13742",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-28T02:44:31.278Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,12 +985,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FDA",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T18:58:57.933Z"
+  "lastUpdated": "2026-05-09T19:59:02.739Z"
 }

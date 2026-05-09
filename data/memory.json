@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T23:51:18.646Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-05-02T02:33:38.955Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-09T18:58:57.931Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-09T19:59:02.738Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2377,
-    "articlesProcessed": 118450,
-    "redFlagsFound": 2760,
+    "totalScans": 2378,
+    "articlesProcessed": 118500,
+    "redFlagsFound": 2762,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
         "What specific allegations exist against Not Found?",
-        "Where did the $200M allegedly go in Minnesota Fraud Investigation?"
+        "Where did the $200M allegedly go in Minnesota Fraud Investigation?",
+        "What other organizations is Feeding Our Future connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T18:58:57.931Z",
-  "lastUpdated": "2026-05-09T18:58:57.932Z"
+  "lastReflection": "2026-05-09T19:59:02.738Z",
+  "lastUpdated": "2026-05-09T19:59:02.738Z"
 }
