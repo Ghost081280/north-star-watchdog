@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible termination of programs due to fraud concerns",
+      "insight": "Patterns of fraud and abuse in programs like Medicaid and special education services",
+      "entities": [
+        "Houston ISD",
+        "Minnesota"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOU0VrSlozeHo3bkZOVUFPZWNOQzFvYTZNWUZaM1pENzhyTTBhOGxHMXRnZzdzaDhWVUp2WEhaSEp3U1ZiMmVCZzFVR0FzamJHRXlQT3FReGE2SzNkWFVLVFFYRFRKMlJNUTJfckI4NXhqS3BwUmNZNXVKeElwekNpQ0NyQjdGdUw3TUd4UVNfSXBCcVQzMXdvRnY5RnR4dEFsd2JkTGM1RmRRUVpDSmJtTzlmQmpNWnc0NjlMTTJmZ1QzbDBv0gHKAUFVX3lxTE1kS0NaRmVhX3I4UzdRc0Mtb2RyTmJ0SE11WjJwZkZsWWYwTEROcnlqdWJZeEpPWEplcnVrV3hCeEtDMlZzSjFGN092Tlo3VHpsWGY4bUlNN1N0ZGltbUxsY1dPVGdySXVVRXoyVkR0dUE5YlpsMzVhekVhbmVkNDVVTTllQklUV0dwR2VGbGxTQ1NCTGl1V3pEUFFJeTQtcXQ0and0R2pvcHBNSHlDYXN1LW1RLWtFanFHVW96ZFhHc3Exb0F2SnU3Z1E",
+      "id": "rf-1778349006953-ncmuzc662",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T17:50:06.950Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The U.S. Department of Education has launched an investigation into Houston ISD's treatment of disabled students. This investigation has raised concerns about the district's compliance with federal laws and regulations.",
       "insight": "This investigation may indicate a larger pattern of non-compliance or neglect within the district. Further research is needed to determine the extent of the issue and potential consequences for the district.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-09T16:53:42.202Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "data breach",
@@ -956,25 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-28T02:44:31.278Z",
       "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "Smyrna business owner under investigation after immigrants allege fraud",
-      "insight": "This case raises concerns about potential fraudulent activities in Smyrna, Georgia. Further investigation is needed to uncover the extent of the alleged fraud and identify any other parties involved.",
-      "entities": [
-        "Smyrna business owner"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "WSMV",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWkRtdFhfdkY2TU1SVTNhRk53RVpiYWh0UTZRckZ4cTFXMmthTHpRUUFELWxCM2U5cTQ4RFlxYlY2aHQzR1FZZjVpNGk1azBjQmt6UVBHbkdDYmczODdvRkx2UWtzd0U4dk40bnNRdk1ESnhnUlpGZ3F6SlZvenBjT3JUSjBVUi1kMmFscUhRZWZ5b0ZMbjkwR3RwRmV3TFpvNHhyUUp1RQ?oc=5",
-      "id": "rf-1777333958438-26opmrrg5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T23:52:38.435Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,11 +985,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T16:53:42.202Z"
+  "lastUpdated": "2026-05-09T17:50:06.950Z"
 }
