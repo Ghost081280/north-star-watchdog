@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T16:57:10.656Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-01T17:59:28.865Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-05-09T11:50:44.709Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-09T13:14:12.477Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Rochester Restaurant Owner connected to?",
-    "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the unknown allegedly go in Feeding Our Future Fraud Scheme Investigation?",
     "What other organizations is Another Defendant connected to?",
     "Where did the $11M allegedly go in Minnesota Medicaid Fraud Case?",
     "Where did the Unknown allegedly go in Feeding Our Future Fraud Scheme?",
@@ -558,7 +555,10 @@
     "What other organizations is Not available connected to?",
     "Where did the Not specified allegedly go in Medicaid Fraud Investigation?",
     "Where did the Not specified allegedly go in Houston ISD Investigation?",
-    "Where did the $0 allegedly go in Houston ISD Investigation?"
+    "Where did the $0 allegedly go in Houston ISD Investigation?",
+    "Where did the $0 allegedly go in Houston ISD investigation?",
+    "Where did the $0 allegedly go in Minnesota fraud fighting?",
+    "Where did the $millions allegedly go in State sues Minneapolis crime prevention group?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2371,
-    "articlesProcessed": 118150,
-    "redFlagsFound": 2753,
+    "totalScans": 2372,
+    "articlesProcessed": 118200,
+    "redFlagsFound": 2754,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota DHS official connected to?",
         "What other organizations is Rochester Restaurant Owner connected to?",
-        "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the unknown allegedly go in Feeding Our Future Fraud Scheme Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T11:50:44.709Z",
-  "lastUpdated": "2026-05-09T11:50:44.710Z"
+  "lastReflection": "2026-05-09T13:14:12.477Z",
+  "lastUpdated": "2026-05-09T13:14:12.478Z"
 }
