@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Multiple federal investigations into education-related fraud cases",
+      "insight": "I notice a pattern of alleged fraud cases in the education sector, which warrants further investigation",
+      "entities": [
+        "Feeding Our Future",
+        "HISD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/news/us/two-more-plead-guilty-in-minnesota-s-feeding-our-future-fraud-case/ar-AA18q6VQ",
+      "id": "rf-1778315198129-3pdvx19ht",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T08:26:38.126Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "HISD under federal investigation for special education services",
       "insight": "This investigation may reveal a broader pattern of non-compliance with federal regulations in special education programs.",
@@ -954,37 +974,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T19:18:07.359Z",
       "isNew": false
-    },
-    {
-      "type": "theft",
-      "description": "A Minnesota suicide prevention nonprofit lost $220K to theft by its executive director and relative.",
-      "insight": "This case suggests potential internal controls issues and lack of oversight within nonprofits in Minnesota.",
-      "entities": [
-        "Minnesota suicide prevention nonprofit"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilANBVV95cUxNaEtaS3JTLUVDdzh4N2dFRVZjcEFPUnVxcm9tX0Fibmx2S2I2MEJmWVk1R3NBV0NzbVJBbmIyZXhGS0lCNWFzQzFJQXNkaDJQRDRWQmlLd25ERHhpNjJoY2F5UFpBT0o1WmFiUFdnWGhKR3NxdzJvQUZSeF83ZUZ3YWJJM2pVTlhFcnk5a0J6aG9xODdYcDI0Y2NUbHF2YWQwSXZucGV2UTFhYUxCMjVzRlZmNWRJRnR2QXg4cmNKU3BpT2xkS3p2dDRhTFJFY2ZNTW4tS1BGMnhrWm9GcUlNWlg1MGVCRUJGUXRKdVpkMGdXcENOaEVHaVVxTG5HcTNuUFJZTFNmUHJTOG9GLURaRldGMEppQ0tCOVFfU3B0c2xLX3p6UlNHSEl3N2hyMnhnN7VHTDVxUXlHSlJoRUx1VjRYcWNRbm9DbEFHemRnblFoOHcxVzVfcnNqLUdEcHdxcDdFNWhHbU1uVklCWHpCd29vVHpiT1Z3M19Jajk3WkI1dXNpNUV2UFNrdS1SRUo2enJyNw",
-      "id": "rf-1777287750736-zdkkut47i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T11:02:30.732Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T06:14:29.969Z"
+  "lastUpdated": "2026-05-09T08:26:38.126Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T13:27:02.850Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-01T14:54:43.914Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-09T06:14:29.968Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-09T08:26:38.124Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $5.3M allegedly go in Feeding Our Future fraud scheme?",
-    "What other organizations is Rochester restaurant owner connected to?",
-    "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $11M allegedly go in Medicaid fraud case?",
     "What other organizations is Another defendant connected to?",
@@ -558,7 +555,10 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
     "What specific allegations exist against Not Found?",
-    "Where did the $200M allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $200M allegedly go in Minnesota Fraud Investigation?",
+    "What other organizations is Feeding Our Future connected to?",
+    "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud case?",
+    "Where did the N/A allegedly go in HISD investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2368,
-    "articlesProcessed": 118000,
-    "redFlagsFound": 2749,
+    "totalScans": 2369,
+    "articlesProcessed": 118050,
+    "redFlagsFound": 2750,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T06:14:29.968Z",
-  "lastUpdated": "2026-05-09T06:14:29.968Z"
+  "lastReflection": "2026-05-09T08:26:38.124Z",
+  "lastUpdated": "2026-05-09T08:26:38.125Z"
 }
