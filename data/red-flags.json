@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "data breach",
+      "description": "Instructure's Canvas Learning Management System is under investigation for a data breach allegedly affecting nearly 275 million users.",
+      "insight": "This could have significant implications for user data security and potentially lead to further investigations into data handling practices.",
+      "entities": [
+        "Instructure",
+        "Canvas Learning Management System"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IRjRHUHBUWDVpUHp0Zi1FQ0d3dVc1czdhTk5hWmN1VUVVa1N6N0phUlNrQUFQNHR2S1FORzFqcFA0TzU0ZEEwblgyMDNQeDM5Mm85WGNOa0s1UQ",
+      "id": "rf-1778341894252-8bszrpdp5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T15:51:34.248Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into Houston ISD's treatment of disabled students and plans for special education services",
       "insight": "This investigation raises concerns over potential mismanagement of special education services in Houston ISD, potentially impacting thousands of students. Further investigation is needed to determine the extent of any wrongdoing.",
@@ -955,31 +975,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T23:52:38.435Z",
       "isNew": false
-    },
-    {
-      "type": "program mismanagement",
-      "description": "50 deaths in Minnesota group home industry with few consequences",
-      "insight": "This suggests a potential pattern of neglect or abuse in the group home industry, which warrants further investigation",
-      "entities": [
-        "Minnesota group home industry"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "APM Reports",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM0E0Uzd0VlFHeldlUGJNenNmSVR6a1Y0U1NjWXZyYzZDUHRvWmw0V2paZGJUNDk5cmdOQkZ5d1htRXVoTmZDOEJfc0s5eC0xZlBxMEZBY2h2Zl9JeEdYVmJpbXBmd3cxQ1pYc1R1SklnRTBhOG94dy1sc190YXBWeE00cmRjTTFRRExyeG56NDF2cjNqT3c",
-      "id": "rf-1777323638324-vkcakkdfo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T21:00:38.321Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -988,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T14:49:28.654Z"
+  "lastUpdated": "2026-05-09T15:51:34.248Z"
 }
