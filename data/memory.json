@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T22:48:39.875Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-01T23:51:18.646Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-05-09T17:50:06.948Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-09T18:58:57.931Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
     "What specific allegations exist against Not Found?",
     "Where did the $200M allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Feeding Our Future connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the $1.4M allegedly go in Minnesota Fraud Investigation?",
     "Where did the Unknown allegedly go in Houston ISD Investigation?",
-    "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?"
+    "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?",
+    "Where did the $200M allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2376,
-    "articlesProcessed": 118400,
-    "redFlagsFound": 2759,
+    "totalScans": 2377,
+    "articlesProcessed": 118450,
+    "redFlagsFound": 2760,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future fraud case?",
         "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
-        "What specific allegations exist against Not Found?"
+        "What specific allegations exist against Not Found?",
+        "Where did the $200M allegedly go in Minnesota Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T17:50:06.948Z",
-  "lastUpdated": "2026-05-09T17:50:06.949Z"
+  "lastReflection": "2026-05-09T18:58:57.931Z",
+  "lastUpdated": "2026-05-09T18:58:57.932Z"
 }
