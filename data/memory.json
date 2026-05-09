@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T10:27:53.511Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-01T11:58:17.343Z",
       "summary": "SIGNIFICANT: 2 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-09T00:01:00.452Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-09T03:49:11.223Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Rochester man connected to?",
-    "Where did the $11M allegedly go in Minnesota Medicaid fraud case?",
     "Where did the $5.3M allegedly go in Feeding Our Future fraud scheme?",
     "What other organizations is Rochester restaurant owner connected to?",
     "Where did the $11M allegedly go in Feeding Our Future fraud scheme?",
@@ -558,7 +556,9 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $100M allegedly go in Minnesota Medicaid fraud investigation?",
+    "What specific allegations exist against Not Found?",
+    "Where did the $200M allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2366,
-    "articlesProcessed": 117900,
-    "redFlagsFound": 2747,
+    "totalScans": 2367,
+    "articlesProcessed": 117950,
+    "redFlagsFound": 2749,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $11M allegedly go in $11M Medicaid fraud case?",
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Rochester man connected to?"
+        "What other organizations is Rochester man connected to?",
+        "Where did the $11M allegedly go in Minnesota Medicaid fraud case?",
+        "Where did the $5.3M allegedly go in Feeding Our Future fraud scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T00:01:00.452Z",
-  "lastUpdated": "2026-05-09T00:01:00.453Z"
+  "lastReflection": "2026-05-09T03:49:11.223Z",
+  "lastUpdated": "2026-05-09T03:49:11.224Z"
 }

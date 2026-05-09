@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "HISD under federal investigation for special education services",
+      "insight": "This investigation may reveal a broader pattern of non-compliance with federal regulations in special education programs.",
+      "entities": [
+        "HISD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Houston Chronicle",
+      "sourceUrl": "https://www.chron.com/hisd-under-federal-investigation-over-plans-for-special-education-services-2026-05-09",
+      "id": "rf-1778298551229-6qp2tm5w9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T03:49:11.225Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program has been terminated due to the fraud scheme",
       "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the fraud scheme. This highlights the need for better oversight and monitoring of such programs.",
@@ -954,39 +973,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T11:02:30.732Z",
       "isNew": false
-    },
-    {
-      "type": "group home industry irregularities",
-      "description": "The group home industry in Minnesota has seen fifty deaths with few consequences, suggesting potential regulatory and oversight issues.",
-      "insight": "This case points to a need for closer examination of regulatory oversight and potential systemic issues within Minnesota's group home industry.",
-      "entities": [
-        "Minnesota group home industry"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "APM Reports",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQM0E0Uzd0VlFHeldlUGJNenNmSVR6a1Y0U1NjWXZyYzZDUHRvWmw0V2paZGJUNDk5cmdOQkZ5d1htRXVoTmZDOEJfc0s5eC0xZlBxMEZBY2h2Zl9JeEdYVmJpbXBmd3cxQ1pYc1R1SklnRTBhOG94dy1sc190YXBWeE00cmRjTTFRRExyeG56NDF2cjNqT3c",
-      "id": "rf-1777287750736-uwnusum1e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T11:02:30.732Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T00:01:00.454Z"
+  "lastUpdated": "2026-05-09T03:49:11.225Z"
 }
