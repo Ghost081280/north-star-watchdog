@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The U.S. Department of Education has launched an investigation into Houston ISD's treatment of disabled students. This investigation has raised concerns about the district's compliance with federal laws and regulations.",
+      "insight": "This investigation may indicate a larger pattern of non-compliance or neglect within the district. Further research is needed to determine the extent of the issue and potential consequences for the district.",
+      "entities": [
+        "Houston ISD"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "U.S. Department of Education",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTVHZXlTOFdzVzVTM1QzQWl5blF5OTk1SUdjaTVoeHbiWGlGMUh0YXBYb01jdUdiYV9mbEtmQ28ta0dHeC1oazM4Y2IzMUVXRWZidkI2M01GZG5LT0RtUnE2aHd6OUFpYkNJVGhxRnV2Mkgya2dzWWhqWXYySW82TEFhUUVnbXl3S1ZkcGJ3cmZQMVJuWjZ0M2gydDljaVRXOHg5eWNFc3c",
+      "id": "rf-1778345622206-rslnx82h1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-09T16:53:42.202Z",
+      "isNew": true
+    },
+    {
       "type": "data breach",
       "description": "Instructure's Canvas Learning Management System is under investigation for a data breach allegedly affecting nearly 275 million users.",
       "insight": "This could have significant implications for user data security and potentially lead to further investigations into data handling practices.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-09T15:51:34.248Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -956,29 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-27T23:52:38.435Z",
       "isNew": false
-    },
-    {
-      "type": "stolen wages",
-      "description": "$1.28M stolen wages recovered for Twin Cities construction workers",
-      "insight": "This case highlights the issue of stolen wages in the construction industry. Further investigation is needed to identify the parties responsible and prevent similar incidents in the future.",
-      "entities": [
-        "Twin Cities construction workers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbF9pS19vUUt0T0RuSXpaaVJCdHh1YjBmcXJMdFNBUU91YTA5eDBIeVJ0LUZrZW5NSVdjdk9CeHdBZDJVSUdqVTNWSC1TdmE0VWNPc0dnM3JyaFJKdFRiTHk4Rlc2c05YajFtU3hCcXBkZ1cycjZLV3pHai1iQ3V4MzFGZkRsUnBxTGhXby1iNVFNTUdGcmN3b192cjRYN0JnbTFoQ0oxU2d5eWJ4c29DZ0U2Q3FJNVowaXQxN3RSOElPZw?oc=5",
-      "id": "rf-1777333958438-dvo0so29w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-27T23:52:38.435Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,8 +988,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T15:51:34.248Z"
+  "lastUpdated": "2026-05-09T16:53:42.202Z"
 }
