@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-01T14:54:43.914Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-01T15:56:29.713Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-09T08:26:38.124Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-09T10:04:50.788Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $11M allegedly go in Medicaid fraud case?",
-    "What other organizations is Another defendant connected to?",
     "What other organizations is Minnesota DHS official connected to?",
     "What other organizations is Rochester Restaurant Owner connected to?",
     "Where did the $11M allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $200M allegedly go in Minnesota Fraud Investigation?",
     "What other organizations is Feeding Our Future connected to?",
     "Where did the $250M allegedly go in Minnesota Feeding Our Future fraud case?",
-    "Where did the N/A allegedly go in HISD investigation?"
+    "Where did the N/A allegedly go in HISD investigation?",
+    "What other organizations is Not available connected to?",
+    "Where did the Not specified allegedly go in Medicaid Fraud Investigation?",
+    "Where did the Not specified allegedly go in Houston ISD Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2369,
-    "articlesProcessed": 118050,
-    "redFlagsFound": 2750,
+    "totalScans": 2370,
+    "articlesProcessed": 118100,
+    "redFlagsFound": 2751,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $5.3M allegedly go in Feeding Our Future fraud scheme?",
-        "What other organizations is Rochester restaurant owner connected to?",
-        "Where did the $11M allegedly go in Feeding Our Future fraud scheme?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $11M allegedly go in Medicaid fraud case?",
+        "What other organizations is Another defendant connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-09T08:26:38.124Z",
-  "lastUpdated": "2026-05-09T08:26:38.125Z"
+  "lastReflection": "2026-05-09T10:04:50.788Z",
+  "lastUpdated": "2026-05-09T10:04:50.789Z"
 }
