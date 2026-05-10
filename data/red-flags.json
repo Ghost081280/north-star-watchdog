@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "A Minnesota nonprofit has been accused of siphoning $6.5 million to fund personal expenses, including Vegas trips and luxury cars.",
+      "insight": "This case highlights the need for increased oversight of nonprofits and their financial activities. Further investigation is needed to determine the extent of the fraud and to identify any other potential shell companies or fraudulent activities.",
+      "entities": [
+        "Minnesota nonprofit"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/us/minnesota-nonprofit-accused-siphoning-6-5m-fund-vegas-trips-luxury-cars",
+      "id": "rf-1778432039871-aulhnhtys",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-10T16:53:59.867Z",
+      "isNew": true
+    },
+    {
       "type": "Theft",
       "description": "Nonprofit leaders allegedly siphoned $6.5 million for personal gain",
       "insight": "This appears to be a case of embezzlement and potential money laundering. Further investigation into the nonprofit's financial records and connections to other entities is warranted.",
@@ -958,40 +977,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-01T19:21:16.644Z",
       "isNew": false
-    },
-    {
-      "type": "nonprofit_fraud",
-      "description": "The FBI has raided and is investigating Feeding Our Future, a nonprofit accused of fraud.",
-      "insight": "This suggests a significant concern about the integrity of nonprofit organizations in Minnesota and the potential for fraudulent activity.",
-      "entities": [
-        "Feeding Our Future",
-        "FBI"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "MPR News",
-      "sourceUrl": "https://www.mprnews.org/story/2026/04/30/feeding-our-future-judge-limits-bock-s-document-access-after-file-leak",
-      "id": "rf-1777590074174-msu8pkii1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-30T23:01:14.171Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-10T15:52:48.914Z"
+  "lastUpdated": "2026-05-10T16:53:59.867Z"
 }
