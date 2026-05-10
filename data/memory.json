@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-02T16:44:01.362Z",
-      "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-02T17:42:31.961Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-10T11:50:37.291Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-10T13:14:45.043Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $millions allegedly go in State sues Minneapolis crime prevention group?",
     "Where did the $0 allegedly go in Minnesota fraud-fighting Office of Inspector General?",
     "Where did the $0 allegedly go in State lawsuit against Minneapolis crime prevention group?",
     "Where did the $millions allegedly go in State Lawsuit Against Crime Prevention Group?",
@@ -558,7 +557,8 @@
     "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Ilhan Omar?",
     "What other organizations is Unnamed Nonprofit Leaders connected to?",
-    "Where did the $6.5 million allegedly go in Minnesota Nonprofit Fraud Investigation?"
+    "Where did the $6.5 million allegedly go in Minnesota Nonprofit Fraud Investigation?",
+    "What other organizations is Not specified connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2387,
-    "articlesProcessed": 118950,
-    "redFlagsFound": 2772,
+    "totalScans": 2388,
+    "articlesProcessed": 119000,
+    "redFlagsFound": 2773,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Houston ISD investigation?",
-        "Where did the $0 allegedly go in Minnesota fraud fighting?",
-        "Where did the $millions allegedly go in State sues Minneapolis crime prevention group?"
+        "Where did the $millions allegedly go in State sues Minneapolis crime prevention group?",
+        "Where did the $0 allegedly go in Minnesota fraud-fighting Office of Inspector General?",
+        "Where did the $0 allegedly go in State lawsuit against Minneapolis crime prevention group?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-10T11:50:37.291Z",
-  "lastUpdated": "2026-05-10T11:50:37.292Z"
+  "lastReflection": "2026-05-10T13:14:45.043Z",
+  "lastUpdated": "2026-05-10T13:14:45.044Z"
 }

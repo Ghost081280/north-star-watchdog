@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Theft/Fraud",
+      "description": "Nonprofit leaders accused of siphoning $6.5 million for personal expenses, including Vegas trips, luxury cars, and private liquor store",
+      "insight": "This case raises concerns about the lack of oversight and accountability in nonprofit organizations, potentially allowing for large-scale theft and fraud.",
+      "entities": [
+        "Minnesota Nonprofit",
+        "Nonprofit Leaders"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Attorney General",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1ZDFYeGFUNEZqNTBGM2UxQzBYVnFZekJGbUIyOFF0Smk2TXNCOFZ2cmxFY3o4dlBfbmRmNWVFYmRGaklZY0JVekxuU1lfMDZlVzY0NTE0M25JTmlzdFRWbjVSbXV5ZEZfU0MwNWx5elFOUQ",
+      "id": "rf-1778418885048-qo5xop2rp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-10T13:14:45.045Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Feeding Our Future's alleged misuse of funds for lavish expenses",
       "insight": "The alleged fraud by Feeding Our Future raises concerns about the oversight and management of nonprofit organizations, particularly those receiving government funding.",
@@ -959,39 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-29T19:23:21.881Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "The Feeding Our Future ringleader allegedly leaked protected documents from jail to minimize her role in a fraud scheme",
-      "insight": "This raises concerns about the potential for other individuals or organizations to engage in similar behavior, and highlights the need for increased oversight and monitoring of federal funds.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/feeding-our-future-ringleader-leaked-protected-documents-from-jail/",
-      "id": "rf-1777430636156-dwwkcdnuq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-29T02:43:56.152Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-10T11:50:37.293Z"
+  "lastUpdated": "2026-05-10T13:14:45.045Z"
 }
