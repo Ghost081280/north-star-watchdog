@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-02T21:39:00.249Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-02T22:39:41.082Z",
       "summary": "SIGNIFICANT: 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-05-10T17:52:38.305Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-10T19:00:58.677Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?",
     "Where did the $200M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Nonprofit Leaders connected to?",
     "Where did the unknown allegedly go in Somali Fraud Probe?",
     "Where did the $6.5M allegedly go in Minnesota Nonprofit Fraud?",
-    "Where did the Not specified allegedly go in Somali Fraud Probe?"
+    "Where did the Not specified allegedly go in Somali Fraud Probe?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2392,
-    "articlesProcessed": 119200,
-    "redFlagsFound": 2777,
+    "totalScans": 2393,
+    "articlesProcessed": 119250,
+    "redFlagsFound": 2778,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.4M allegedly go in Minnesota Fraud Investigation?",
-        "Where did the Unknown allegedly go in Houston ISD Investigation?",
-        "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?"
+        "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?",
+        "Where did the $200M allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-10T17:52:38.305Z",
-  "lastUpdated": "2026-05-10T17:52:38.305Z"
+  "lastReflection": "2026-05-10T19:00:58.677Z",
+  "lastUpdated": "2026-05-10T19:00:58.678Z"
 }
