@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible termination of programs due to fraud allegations",
+      "insight": "The Feeding Our Future investigation may lead to program termination or reform.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Attorney General's Office",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EdWlObUpscTM2OEQ5S1VqQWJlbXVxYkJOdkx4Q2lwblBNWndkVXB3dTZ5M0JNSWM5dzI3WTlYTlFWbVJoeVJBTTR3aTRpNWZBYWtRVU81YmFZR3VsSnphVTNERktDSHJsUzlhRkJENllzdVJNT0wzcVBwWjlPZw?oc=5",
+      "id": "rf-1778381172054-kyd2fp29y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-10T02:46:12.051Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal investigation into Houston ISD's treatment of disabled students raises concerns about the district's handling of special education services.",
       "insight": "The investigation into Houston ISD's treatment of disabled students may indicate a larger pattern of neglect or abuse within the district. Further investigation is needed to determine the extent of the issue.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-09T23:45:38.598Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -957,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-28T11:03:59.294Z",
       "isNew": false
-    },
-    {
-      "type": "wage theft",
-      "description": "Construction firms underpaying workers",
-      "insight": "This appears to be a case of wage theft, where construction firms underpaid their workers. Further investigation into these firms and their business practices may uncover more instances of fraud.",
-      "entities": [
-        "Construction firms"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Minnesota Reformer",
-      "sourceUrl": "https://minnesota.reformer.com/story/construction-firms-pay-128m-workers-largest-wage-recovery-minnesota-labor-agency",
-      "id": "rf-1777364985077-aq2r5w3xj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-28T08:29:45.074Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-09T23:45:38.598Z"
+  "lastUpdated": "2026-05-10T02:46:12.051Z"
 }
