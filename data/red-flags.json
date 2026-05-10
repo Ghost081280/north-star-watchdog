@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Theft",
+      "description": "Nonprofit leaders allegedly siphoned $6.5 million for personal gain",
+      "insight": "This appears to be a case of embezzlement and potential money laundering. Further investigation into the nonprofit's financial records and connections to other entities is warranted.",
+      "entities": [
+        "Minnesota Nonprofit"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Attorney General",
+      "sourceUrl": "https://world.infonasional.com/2026/05/10/minnesota-sues-nonprofit-leaders-over-alleged-6-5-million-theft/",
+      "id": "rf-1778424689200-4c3ngea1h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-10T14:51:29.196Z",
+      "isNew": true
+    },
+    {
       "type": "Theft/Fraud",
       "description": "Nonprofit leaders accused of siphoning $6.5 million for personal expenses, including Vegas trips, luxury cars, and private liquor store",
       "insight": "This case raises concerns about the lack of oversight and accountability in nonprofit organizations, potentially allowing for large-scale theft and fraud.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-10T13:14:45.045Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-04-30T23:01:14.171Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Feeding Our Future program terminated due to allegations of fraud",
-      "insight": "The termination of Feeding Our Future's program raises concerns about the organization's accountability and potential misuse of funds.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://www.fox9.com/news/feeding-our-future-aimee-bock-accused-of-leaking-protected-case-files",
-      "id": "rf-1777490601885-jcflhm9xc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-04-29T19:23:21.881Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-10T13:14:45.045Z"
+  "lastUpdated": "2026-05-10T14:51:29.196Z"
 }
