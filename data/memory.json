@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-02T22:39:41.082Z",
-      "summary": "SIGNIFICANT: 1 new legal actions, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-02T23:41:16.430Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-10T19:00:58.677Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-10T20:02:50.901Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2393,
-    "articlesProcessed": 119250,
+    "totalScans": 2394,
+    "articlesProcessed": 119300,
     "redFlagsFound": 2778,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Office of Inspector General bill?",
         "Where did the $200M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-10T19:00:58.677Z",
-  "lastUpdated": "2026-05-10T19:00:58.678Z"
+  "lastReflection": "2026-05-10T20:02:50.901Z",
+  "lastUpdated": "2026-05-10T20:02:50.901Z"
 }
