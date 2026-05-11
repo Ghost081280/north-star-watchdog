@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "dark money",
+      "description": "Soros-linked network in Minnesota exposed at Senate hearing",
+      "insight": "I suspect that this network may be involved in other fraudulent activities, and further investigation is needed to uncover the full extent of their operations",
+      "entities": [
+        "Soros-linked network"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/world-news/dark-money-groups-funded-60m-soros-linked-network-in-minnesota-exposed-at-senate-hearing/articleshow/98314152.cms",
+      "id": "rf-1778507260491-gn1008432",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-11T13:47:40.487Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal authorities have frozen assets of several individuals and organizations suspected of Medicaid fraud.",
       "insight": "This pattern of federal freezes suggests a large-scale investigation into Medicaid fraud, potentially involving multiple states and millions of dollars.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-11T10:37:32.974Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-02T09:04:57.786Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "Robbins alleges that Governor Walz is involved in fraud",
-      "insight": "This could indicate a potential scandal or issue with Governor Walz's administration, which could have significant implications for the state of Minnesota.",
-      "entities": [
-        "Robbins",
-        "Governor Walz"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.economictimes.com/2026/05/01/i-know-where-bodies-are-buried-robins-exits-minnesota-gov-race-vows-to-expose-walzs-frauds",
-      "id": "rf-1777675719881-riyvtc096",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-01T22:48:39.877Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,12 +982,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-11T10:37:32.974Z"
+  "lastUpdated": "2026-05-11T13:47:40.487Z"
 }
