@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-03T11:41:10.383Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-03T13:06:12.782Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-11T06:39:30.636Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-11T10:37:32.972Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tim Walz?",
-    "What other organizations is Keith Ellison connected to?",
-    "What specific allegations exist against Keith Ellison?",
     "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Ilhan Omar?",
     "What other organizations is Unnamed Nonprofit Leaders connected to?",
@@ -558,7 +555,10 @@
     "Where did the $6.5 Million allegedly go in Minnesota Nonprofit Fraud Investigation?",
     "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
     "Where did the $6.5 million allegedly go in Feeding Our Future?",
-    "Where did the $142,000 allegedly go in Feeding Our Future?"
+    "Where did the $142,000 allegedly go in Feeding Our Future?",
+    "What other organizations is Feeding our Future defendants connected to?",
+    "Where did the $250M allegedly go in Minnesota Somali fraud probe?",
+    "Where did the $100M allegedly go in Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2399,
-    "articlesProcessed": 119550,
-    "redFlagsFound": 2781,
+    "totalScans": 2400,
+    "articlesProcessed": 119600,
+    "redFlagsFound": 2782,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in Virginia Senate Leader Investigation?",
         "What specific allegations exist against Tim Walz?",
-        "What other organizations is Keith Ellison connected to?"
+        "What other organizations is Keith Ellison connected to?",
+        "What specific allegations exist against Keith Ellison?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-11T06:39:30.636Z",
-  "lastUpdated": "2026-05-11T06:39:30.636Z"
+  "lastReflection": "2026-05-11T10:37:32.972Z",
+  "lastUpdated": "2026-05-11T10:37:32.972Z"
 }

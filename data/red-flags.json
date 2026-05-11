@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal authorities have frozen assets of several individuals and organizations suspected of Medicaid fraud.",
+      "insight": "This pattern of federal freezes suggests a large-scale investigation into Medicaid fraud, potentially involving multiple states and millions of dollars.",
+      "entities": [
+        "Feeding our Future",
+        "Somali daycare operators"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/news/minnesota-fraud-feeding-our-future-defendants-hit-with-prison-sentences-194557549.html",
+      "id": "rf-1778495852978-68vpulplg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-11T10:37:32.974Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible termination of government programs due to fraud",
       "insight": "Further investigation needed to determine extent of fraud and program impact",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-11T06:39:30.637Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-01T22:48:39.877Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "CMS deferring $91 million in Medicaid funding",
-      "insight": "Potential indication of larger issue with Medicaid program",
-      "entities": [
-        "Minnesota state government",
-        "CMS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Dr. Oz notifies Minnesota Gov. Walz that CMS is deferring $91 million in Medicaid funding - National News Desk",
-      "sourceUrl": "https://www.nationalnewsdesk.com/dr-oz-notifies-minnesota-governor-walz-that-cms-is-deferring-91-million-in-medicaid-funding",
-      "id": "rf-1777668690944-jsge6akuy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-01T20:51:30.940Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-11T06:39:30.637Z"
+  "lastUpdated": "2026-05-11T10:37:32.974Z"
 }
