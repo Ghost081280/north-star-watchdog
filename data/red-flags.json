@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential cover-up",
+      "description": "The fact that DHS handed out bonuses to staff in charge of a fraud-riddled program raises concerns about a potential cover-up.",
+      "insight": "This could indicate a lack of accountability and oversight within the organization, allowing fraudulent activities to continue unchecked.",
+      "entities": [
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/dhs-handed-out-bonuses-to-staff-in-charge-of-fraud-riddled-program",
+      "id": "rf-1778595679752-hjkct3g91",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-12T14:21:19.748Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "A program was found to be fraudulent and is being terminated.",
       "insight": "This indicates a potential pattern of fraud within the program.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-12T11:53:36.720Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-02T19:55:20.734Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota revalidates Medicaid providers, leading to financial toll on autism treatment centers",
-      "insight": "Potential for widespread fraud and abuse in Medicaid programs for autism treatment.",
-      "entities": [
-        "Minnesota DHS",
-        "autism treatment centers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "As Minnesota revalidates Medicaid providers, autism treatment centers face a financial toll - Post Bulletin",
-      "sourceUrl": "https://www.postbulletin.com/article/local/as-minnesota-revalidates-medicaid-providers-autism-treatment-centers-face-a-financial-toll",
-      "id": "rf-1777743751967-yks2db923",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T17:42:31.963Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,9 +986,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-12T11:53:36.720Z"
+  "lastUpdated": "2026-05-12T14:21:19.748Z"
 }
