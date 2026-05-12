@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "A program was found to be fraudulent and is being terminated.",
+      "insight": "This indicates a potential pattern of fraud within the program.",
+      "entities": [
+        "DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "DHS handed out bonuses to staff in charge of fraud-riddled program, newly obtained data shows",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam1QWHRSeG1CQ2twV21Ra0ZBUHhhQkp0RjNIRXFYbVY5ZExKLUVQTjF1dkY5RjRpdjVUS0JwWTc1VUFwUDhUU0JnLTBadjcxWDctRmcweElIRERqR1A4cWU4dklSeVdnTVc5aFo3ckRzZlcyUXp3dUdrSU9mblR2YnhRNUxON1RSRnhjXzVwZlJOMlZQczBzU05BWlhGc3h1bTY0dVotMzZqMkdIaEVYY0JwWlNLZF80NFgtaHlDcGFsUE0",
+      "id": "rf-1778586816723-kbq0ekmup",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-12T11:53:36.720Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "DHS handed out bonuses to staff in charge of fraud-riddled program",
       "insight": "Potential mismanagement of funds and lack of oversight",
       "entities": [
@@ -956,25 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-02T17:42:31.963Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Medicaid providers under investigation",
-      "insight": "Possible patterns of abuse in Medicaid programs",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOa3ZPbnBEbTVvYnVlaFNLTm80a1c0LW9SYlFWMVVuR0xRUVE1RkV3VmFGbjFoSTROcVRCX2hCdGdNSnZKWDBrNE9fTlh1MzVlTGFPbzJ1dEV6WTRyOU5jTERVN0Q0NE5YUjlHYmpvdW96dGsxb2NxV1Mwekx4UG91TjVseE9ndjNzRXU1ZXkyenNMRkpiRV9pTFY4aXlqbXNwbWszaVRJLXJJN204dXI3emVSQUM4VmxKQ3UyelV4R2ttM0IzYWtSMUdEbw",
-      "id": "rf-1777740241368-buw16z09n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T16:44:01.364Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,6 +987,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1004,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-12T09:36:36.061Z"
+  "lastUpdated": "2026-05-12T11:53:36.720Z"
 }
