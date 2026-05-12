@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "DHS handed out bonuses to staff in charge of fraud-riddled program",
+      "insight": "Potential mismanagement of funds and lack of oversight",
+      "entities": [
+        "DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam1QWHRSeG1CQ2twV21Ra0ZBUHhhQkp0RjNIRXFYbVY5ZExKLUVQTjF1dkY5RjRpdjVUS0JwWTc1VUFwUDhUU0JnLTBadjcxWDctRmcweElIRERqR1A4cWU4dklSeVdnTVc5aFo3ckRzZlcyUXp3dUdrSU9mblR2YnhRNUxON1RSRnhjXzVwZlJOMlZQczBzU05BWlhGc3h1bTY0dVotMzZqMkdIaEVYY0JwWlNLZF80NFgtaHlDcGFsUE0",
+      "priorityLevel": "high",
+      "id": "rf-1778566547154-m24szubaw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-12T06:15:47.151Z",
+      "isNew": true
+    },
+    {
       "type": "dark money",
       "description": "Soros-linked network in Minnesota exposed at Senate hearing",
       "insight": "I suspect that this network may be involved in other fraudulent activities, and further investigation is needed to uncover the full extent of their operations",
@@ -955,29 +975,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-02T16:44:01.364Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Sandhills Medical Foundation, Inc. Under Investigation for Data Breach of Over 169,000 Patient Records",
-      "insight": "This suggests a potential shell company or entity may be involved in healthcare data breaches",
-      "entities": [
-        "Sandhills Medical Foundation, Inc."
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.schubertlaw.com/sandhills-medical-foundation-inc-under-investigation-for-data-breach-of-over-169000-patient-records/",
-      "id": "rf-1777712697790-lnzpxjw43",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T09:04:57.786Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -985,7 +988,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-12T02:56:51.292Z"
+  "lastUpdated": "2026-05-12T06:15:47.151Z"
 }
