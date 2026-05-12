@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-04T11:47:20.675Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-04T13:55:45.392Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
@@ -510,6 +505,11 @@
       "date": "2026-05-12T21:18:30.141Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-12T22:59:41.243Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $20M allegedly go in Feeding our Future investigation?",
-    "What other organizations is Minnesota crime prevention group leader connected to?",
-    "Where did the $6.5 million allegedly go in Minnesota crime prevention group investigation?",
-    "What other organizations is Former Metro Transit police chief connected to?",
-    "Where did the $6.5 million allegedly go in Minnesota crime prevention group fraud scheme?",
     "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?",
     "What other organizations is Rep. Omar connected to?",
     "Where did the unknown allegedly go in Minnesota Fraud Probe?",
@@ -558,7 +553,12 @@
     "Where did the $2M allegedly go in Minnesota Fraud Probe?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $Unspecified allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $Unspecified allegedly go in Avride Federal Investigation?"
+    "Where did the $Unspecified allegedly go in Avride Federal Investigation?",
+    "What other organizations is Cameron Hamilton connected to?",
+    "What other organizations is Mahmoud Khalil connected to?",
+    "Where did the Unknown allegedly go in Hantavirus outbreak?",
+    "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
+    "Where did the Unknown allegedly go in Paxton sues Chinese childcare center owner?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2414,
-    "articlesProcessed": 120250,
-    "redFlagsFound": 2795,
+    "totalScans": 2415,
+    "articlesProcessed": 120300,
+    "redFlagsFound": 2797,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $142,000 allegedly go in Feeding Our Future Fraud Investigation?",
-        "What other organizations is Individuals associated with Feeding our Future connected to?",
-        "Where did the $20M allegedly go in Feeding our Future investigation?"
+        "Where did the $20M allegedly go in Feeding our Future investigation?",
+        "What other organizations is Minnesota crime prevention group leader connected to?",
+        "Where did the $6.5 million allegedly go in Minnesota crime prevention group investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-12T21:18:30.141Z",
-  "lastUpdated": "2026-05-12T21:18:30.142Z"
+  "lastReflection": "2026-05-12T22:59:41.243Z",
+  "lastUpdated": "2026-05-12T22:59:41.244Z"
 }

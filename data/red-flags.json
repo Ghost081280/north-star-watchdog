@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating several high-profile cases, including the death of Nancy Guthrie and the activities of Mahmoud Khalil.",
+      "insight": "I am concerned about the number of high-profile cases being investigated by the FBI, and the potential for further developments.",
+      "entities": [
+        "FBI",
+        "Nancy Guthrie",
+        "Mahmoud Khalil"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1778626781248-z3brpcad1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-12T22:59:41.245Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Potential for federal freeze on assets related to Minnesota fraud probe",
       "insight": "The Minnesota fraud probe and charges against pastors and Rep. Omar's involvement suggest a larger scheme that may involve additional entities and individuals",
@@ -955,38 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-02T22:39:41.084Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Guilty plea in largest Medicaid fraud case in state history",
-      "insight": "This case highlights a significant issue with Medicaid fraud in Minnesota, with a $2.2 million penalty.",
-      "entities": [
-        "Minnesota"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwNBVV95cUxPdWlTMExtOVhpbTJvYzBoLVBKUGc1cU5yd1dYVGRQUDRxVDVlX2htWFV2UHBMY0JiTGozd1ZScUV4djJNMnhZWFlmMUEzbDc1Nmp0cU9qSTVtZ21MSjNoUF9kU2tSNS1FNUhDTmhfcDBDUWxpVTlBN3ZmR0VfNW1mQzJlREl5Ty1TMk9Cd3AzeVdYRlpqQkowTU56Z3R6TXAySmZCWjVCQklQQkRXaS01dHlyMC1qTXh5eGs3RE9QQWRUMkkzcXVPRjJRSlZ4ZmRSakdzLXpPcS1iVTBMUmNiVG5Cb24ycHBFcm1qUmhJWTE2Yk5nalJ2QmhEeXlzQXdUQTBiTGhXb1Z4aUlKSVQ4T1dvc2xCNDIwX2VWSkV0dWxvUnZXZ2Y5eGVKS1Y2ckFmb1BNWXQ4dmhONXBydnViOXVkYjVYekRNYmFPd1JrUGNrcmE4dEd3S1NoZml5bVlsaWdnOEZCR0xIZjU3OVMtald3bUhmdE5SNTc2WExLMG5ybG1GeU52Tm5lMHhnNTNZWTF4dkFmaE5PNWpad2hLLVJtcVEzR3JWN3NOTEt2UQ",
-      "id": "rf-1777751720738-3f96qagc2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T19:55:20.734Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-12T21:18:30.143Z"
+  "lastUpdated": "2026-05-12T22:59:41.245Z"
 }
