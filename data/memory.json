@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-04T06:11:51.288Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-04T09:17:05.469Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-12T17:09:57.563Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-12T19:49:03.514Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $60M allegedly go in Soros-linked network in Minnesota?",
     "Where did the $142,000 allegedly go in Feeding Our Future Fraud Investigation?",
     "What other organizations is Individuals associated with Feeding our Future connected to?",
     "Where did the $20M allegedly go in Feeding our Future investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Minnesota fraud probe?",
     "Where did the Unknown allegedly go in FBI investigation into Avride self-driving cars?",
     "What other organizations is Minnesota Pastors connected to?",
-    "Where did the $2M allegedly go in Minnesota Fraud Probe?"
+    "Where did the $2M allegedly go in Minnesota Fraud Probe?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2412,
-    "articlesProcessed": 120150,
-    "redFlagsFound": 2793,
+    "totalScans": 2413,
+    "articlesProcessed": 120200,
+    "redFlagsFound": 2794,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Defendants in Feeding our Future case connected to?",
-        "Where did the $60M allegedly go in Feeding our Future fraud case?",
-        "Where did the $60M allegedly go in Soros-linked network in Minnesota?"
+        "Where did the $60M allegedly go in Soros-linked network in Minnesota?",
+        "Where did the $142,000 allegedly go in Feeding Our Future Fraud Investigation?",
+        "What other organizations is Individuals associated with Feeding our Future connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-12T17:09:57.563Z",
-  "lastUpdated": "2026-05-12T17:09:57.563Z"
+  "lastReflection": "2026-05-12T19:49:03.514Z",
+  "lastUpdated": "2026-05-12T19:49:03.515Z"
 }
