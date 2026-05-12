@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-03T21:40:02.436Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-03T22:39:39.616Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-12T06:15:47.149Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-12T09:36:36.059Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Robert P. Rubicco connected to?",
-    "Where did the $6.5 Million allegedly go in Minnesota Nonprofit Fraud Investigation?",
     "Where did the Unknown allegedly go in Medicaid Fraud Investigation?",
     "Where did the $6.5 million allegedly go in Feeding Our Future?",
     "Where did the $142,000 allegedly go in Feeding Our Future?",
@@ -558,7 +555,10 @@
     "Where did the $6.5 million allegedly go in Minnesota crime prevention group investigation?",
     "What other organizations is Former Metro Transit police chief connected to?",
     "Where did the $6.5 million allegedly go in Minnesota crime prevention group fraud scheme?",
-    "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?"
+    "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?",
+    "What other organizations is Rep. Omar connected to?",
+    "Where did the unknown allegedly go in Minnesota Fraud Probe?",
+    "Where did the unknown allegedly go in SPLC Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2408,
-    "articlesProcessed": 119950,
-    "redFlagsFound": 2789,
+    "totalScans": 2409,
+    "articlesProcessed": 120000,
+    "redFlagsFound": 2790,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not specified allegedly go in Somali Fraud Probe?",
         "Are any of these 2 figures connected to each other?",
-        "What other organizations is Robert P. Rubicco connected to?"
+        "What other organizations is Robert P. Rubicco connected to?",
+        "Where did the $6.5 Million allegedly go in Minnesota Nonprofit Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-12T06:15:47.149Z",
-  "lastUpdated": "2026-05-12T06:15:47.150Z"
+  "lastReflection": "2026-05-12T09:36:36.059Z",
+  "lastUpdated": "2026-05-12T09:36:36.060Z"
 }
