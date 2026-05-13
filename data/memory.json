@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-05T07:15:05.627Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-05T10:00:58.415Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-13T20:45:28.007Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-05-13T22:09:56.985Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Cameron Hamilton connected to?",
-    "What other organizations is Mahmoud Khalil connected to?",
-    "Where did the Unknown allegedly go in Hantavirus outbreak?",
     "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
     "Where did the Unknown allegedly go in Paxton sues Chinese childcare center owner?",
     "Where did the Unknown allegedly go in Hantavirus outbreak investigation?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Kristi Noem?",
     "What specific allegations exist against Tim Walz?",
     "Where did the $1 million allegedly go in Feeding Our Future fraud case?",
-    "Where did the $1 million allegedly go in Minnesota SNAP food stamp fraud?"
+    "Where did the $1 million allegedly go in Minnesota SNAP food stamp fraud?",
+    "What specific allegations exist against J.D. Vance?",
+    "Where did the $1.3 billion allegedly go in Minnesota Medicaid fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2423,
-    "articlesProcessed": 120700,
-    "redFlagsFound": 2809,
+    "totalScans": 2424,
+    "articlesProcessed": 120750,
+    "redFlagsFound": 2811,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "alleged fraud",
-          "description": "A million-dollar SNAP food stamp fraud scheme in Minnesota",
-          "insight": "This case suggests a significant issue with the administration of food stamp programs in Minnesota, potentially involving multiple individuals and organizations. Investigating the extent of this scheme and identifying those involved is crucial.",
+          "type": "Medicaid deferral",
+          "description": "$1.3 billion in Medicaid money deferred over suspicions of fraud in California",
+          "insight": "This deferral indicates significant concerns about fraud in Medicaid programs, potentially a larger issue nationwide.",
           "entities": [
-            "Minnesota",
-            "SNAP"
+            "California",
+            "Medicaid"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "New York Post",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa2VpenBZWTFWd0s0Zk4yWkdVMGROX2tmOXdEZnBUbVBMaWY4aDhadXVMazJxMXh5R3N6QnhGem5mMktJNDh6bjBsNlBWNWVjeG1yeEpUTXJhMy00UzlxUVdWcHVFNUp5NlM3SHg1VlFwZUl1cjlPS0RSME5hUFktdDVjdFc1MTlEa3V4REVUdE9fdEEyZVFXbFl4aV9HLThXQzltcWdWUXJOUEQtRkhz?oc=5"
+          "source": "Officials say $1.3 billion in Medicaid money to California will be deferred over suspicions of fraud",
+          "sourceUrl": "https://abc7.com/2026/05/13/officials-say-13-billion-in-medicaid-money-to-california-will-be-deferred-over-suspicions-of-fraud/14850145/"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2M allegedly go in Minnesota Fraud Probe?",
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $Unspecified allegedly go in Minnesota Medicaid Fraud?"
+        "What other organizations is Cameron Hamilton connected to?",
+        "What other organizations is Mahmoud Khalil connected to?",
+        "Where did the Unknown allegedly go in Hantavirus outbreak?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-13T20:45:28.007Z",
-  "lastUpdated": "2026-05-13T20:45:28.008Z"
+  "lastReflection": "2026-05-13T22:09:56.985Z",
+  "lastUpdated": "2026-05-13T22:09:56.986Z"
 }
