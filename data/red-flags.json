@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The USDA has paused grants to Minnesota due to SNAP fraud concerns.",
+      "insight": "This could indicate a larger issue with SNAP fraud in the state, and further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "USDA",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL News",
+      "sourceUrl": "https://www.aol.com/news/usda-pauses-grants-to-minnesota-amid-somali-fraud-crackdown/24651443/",
+      "id": "rf-1778658490679-o83jbtrpw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T07:48:10.675Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "Avride is under federal investigation after several crashes",
       "insight": "This investigation raises concerns about the safety of Avride's operations and the effectiveness of federal agencies in addressing corporate wrongdoing.",
@@ -38,26 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-12T22:59:41.245Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Potential for federal freeze on assets related to Minnesota fraud probe",
-      "insight": "The Minnesota fraud probe and charges against pastors and Rep. Omar's involvement suggest a larger scheme that may involve additional entities and individuals",
-      "entities": [
-        "Minnesota Churches",
-        "Rep. Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MinistryWatch",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTYXZQWmtwSjYxN2t3dk94b2FFdGFKckk1UG5USDUzRE9KdXZ3clhKLWdHd0xDVkd5X19UMzlGUThLSTg4MTl0MmRpTk02ODc1ekxpVHllWnpzTVR5YXB4N3FnMy1JaUNlWVgwb1dPVGo0RzdY?oc=5",
-      "id": "rf-1778605797572-kji12z7sy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-12T17:09:57.569Z",
       "isNew": false
     },
     {
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-13T04:42:48.639Z"
+  "lastUpdated": "2026-05-13T07:48:10.675Z"
 }
