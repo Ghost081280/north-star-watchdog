@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-04T16:02:04.394Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-04T18:13:14.266Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-13T00:07:07.258Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-13T04:42:48.637Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in SPLC Investigation?",
-    "Where did the $2M allegedly go in Minnesota Medicaid fraud case?",
     "What other organizations is James Comey connected to?",
     "What other organizations is Ilhan Omar connected to?",
     "What other organizations is Wadsworth man connected to?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Paxton sues Chinese childcare center owner?",
     "Where did the Unknown allegedly go in Hantavirus outbreak investigation?",
     "Where did the Unknown allegedly go in Avride investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Abdidwahid Mohamed connected to?",
+    "Where did the $1.1 million allegedly go in Minnesota SNAP Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2416,
-    "articlesProcessed": 120350,
-    "redFlagsFound": 2798,
+    "totalScans": 2417,
+    "articlesProcessed": 120400,
+    "redFlagsFound": 2799,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?",
-        "What other organizations is Rep. Omar connected to?",
-        "Where did the unknown allegedly go in Minnesota Fraud Probe?"
+        "Where did the unknown allegedly go in SPLC Investigation?",
+        "Where did the $2M allegedly go in Minnesota Medicaid fraud case?",
+        "What other organizations is James Comey connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-13T00:07:07.258Z",
-  "lastUpdated": "2026-05-13T00:07:07.259Z"
+  "lastReflection": "2026-05-13T04:42:48.637Z",
+  "lastUpdated": "2026-05-13T04:42:48.638Z"
 }
