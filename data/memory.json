@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-05T00:02:26.269Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-05T04:15:53.500Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-13T16:18:32.982Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-05-13T18:56:38.219Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2421,
-    "articlesProcessed": 120600,
-    "redFlagsFound": 2805,
+    "totalScans": 2422,
+    "articlesProcessed": 120650,
+    "redFlagsFound": 2807,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "alleged_fraud",
-          "description": "Over $9 billion allegedly stolen from Minnesota state services and programs.",
-          "insight": "This is a massive alleged fraud scheme and indicates a significant problem with oversight and regulation in Minnesota.",
-          "entities": [
-            "Minnesota State Government"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "kare11.com",
-          "sourceUrl": "https://kare11.com/news/report-minnesota-house-fraud-prevention-committee-finds-over-9-billion-stolen-from-state-services-programs"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota fraud probe?",
-        "Where did the Unknown allegedly go in FBI investigation into Avride self-driving cars?",
-        "What other organizations is Minnesota Pastors connected to?"
+        "Where did the $2M allegedly go in Minnesota Fraud Probe?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $Unspecified allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-13T16:18:32.982Z",
-  "lastUpdated": "2026-05-13T16:18:32.983Z"
+  "lastReflection": "2026-05-13T18:56:38.219Z",
+  "lastUpdated": "2026-05-13T18:56:38.219Z"
 }

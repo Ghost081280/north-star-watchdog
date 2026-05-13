@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The Trump administration has frozen Medicare enrollments for new home healthcare and hospice providers.",
+      "insight": "This freeze may indicate a significant issue with fraudulent activities in the healthcare sector, warranting further investigation.",
+      "entities": [
+        "Trump Administration",
+        "Minnesota healthcare providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSVVKT01GdEduM0R6a29XNjdoQnRPQ2dXLTFTbGh3by1IaExETS03cWZSbzlFRjRDUFl5ZlFRcVoxM1VkLW5QVlB2bms4bUhsZ2hZVjBwc3psUHhSaGhzaWQ0ZGxMc0tRUEVhUEpaSXpfdDkwWU1GWVdvYmdzYm9RUHBlYlNUeDJJZHE1Z0FUc1d2bDdfMWVSWlBfaGVuaTh2Vm1pMEF5dmFqWUd1bWNUR291OS1PVFhzaV85NFhkWQ?",
+      "id": "rf-1778698598224-j9eubj3zy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T18:56:38.220Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "The US House committee calls out Walz over redacted documents in fraud probe.",
+      "insight": "This may indicate a lack of transparency or cooperation from government officials, potentially hindering fraud investigations.",
+      "entities": [
+        "Tim Walz",
+        "Minnesota House"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Daily Signal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBvRjVJZGttS0RZOHpZZkVaSzJ2WUthOG5UN2c1V2FKZlptZTk4OTVPdGxTY21Na2d4cDlJY0VqVjJYUzJtU3A4b1N1YU9CRFhOQUw0dm9HQ2pRQnlSWDlaVEdNVFhfbzFaNmpRWU5KeHZVUEtELWlIQWlB",
+      "id": "rf-1778698598224-ern9sqfv4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T18:56:38.220Z",
+      "isNew": true
+    },
+    {
       "type": "alleged_fraud",
       "description": "Over $9 billion allegedly stolen from Minnesota state services and programs.",
       "insight": "This is a massive alleged fraud scheme and indicates a significant problem with oversight and regulation in Minnesota.",
@@ -17,26 +57,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-13T16:18:32.984Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "USDA pauses grants to Minnesota amid Somali fraud crackdown",
-      "insight": "This pause suggests potential widespread fraud in Minnesota's Somali community, warranting further investigation into grant misuse and potential connections to other fraud schemes.",
-      "entities": [
-        "USDA",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1MNnZiRXhsQVY4RS1BTFV4bExTOFlHNTNtT0FoZGNYNXVRRXRwNE5EWWs1Q2lCUXhQOHNud1YxREM1b2MxVEtfNWxrYVNHdy1qRmo3SmM1MnI3RUl0V3I0V0FScVBQOHVmbzQ1YlRBby10czNLNVhrT0R2OV9WUQ?oc=5",
-      "id": "rf-1778677836600-31z1n7xl5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T13:10:36.597Z",
       "isNew": false
     },
     {
@@ -956,30 +976,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-03T16:47:39.135Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI seizure of Fulton County election ballots",
-      "insight": "Potential connection to broader election fraud investigation",
-      "entities": [
-        "Fulton County",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeU9hUFVCeElvX3NObnAwamdybjhQVG81YXJQVTgwSXdjVWFzVk90VGxCcnFLX0JFR2txUFBsdDRhWHJpX2ZNZlQ2eTBUQ2NuYlZHdmZyQzRfSHNyRVpEcEF2dFF2VzIwLXV6dVFmT195ZXAwTndZS2YyOVViRUUydXBnLWxXZXNvZGtsNklJNkllVml5NUZBczZrVFdtdw",
-      "id": "rf-1777808470389-xcty8ei5l",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-03T11:41:10.385Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -988,6 +989,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-13T16:18:32.984Z"
+  "lastUpdated": "2026-05-13T18:56:38.220Z"
 }
