@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-04T21:59:05.841Z",
-      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.95
-    },
-    {
       "date": "2026-05-04T23:00:06.809Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-13T10:25:35.540Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-13T13:10:36.595Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Wadsworth man connected to?",
     "Where did the Unknown allegedly go in Minnesota fraud probe?",
     "Where did the Unknown allegedly go in FBI investigation into Avride self-driving cars?",
     "What other organizations is Minnesota Pastors connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Abdidwahid Mohamed connected to?",
     "Where did the $1.1 million allegedly go in Minnesota SNAP Fraud Investigation?",
     "Where did the $1.1 million allegedly go in Minnesota Food Grocery SNAP Fraud Scheme?",
-    "Where did the Unknown allegedly go in H-1B Visa Fraud Scheme?"
+    "Where did the Unknown allegedly go in H-1B Visa Fraud Scheme?",
+    "Where did the $1.1 million allegedly go in Minnesota Food Grocery SNAP Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2419,
-    "articlesProcessed": 120500,
-    "redFlagsFound": 2801,
+    "totalScans": 2420,
+    "articlesProcessed": 120550,
+    "redFlagsFound": 2803,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is James Comey connected to?",
-        "What other organizations is Ilhan Omar connected to?",
-        "What other organizations is Wadsworth man connected to?"
+        "What other organizations is Wadsworth man connected to?",
+        "Where did the Unknown allegedly go in Minnesota fraud probe?",
+        "Where did the Unknown allegedly go in FBI investigation into Avride self-driving cars?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-13T10:25:35.540Z",
-  "lastUpdated": "2026-05-13T10:25:35.541Z"
+  "lastReflection": "2026-05-13T13:10:36.595Z",
+  "lastUpdated": "2026-05-13T13:10:36.596Z"
 }
