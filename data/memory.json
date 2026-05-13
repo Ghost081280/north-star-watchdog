@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-05T04:15:53.500Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-05T07:15:05.627Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-13T18:56:38.219Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-13T20:45:28.007Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2M allegedly go in Minnesota Fraud Probe?",
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $Unspecified allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $Unspecified allegedly go in Avride Federal Investigation?",
     "What other organizations is Cameron Hamilton connected to?",
     "What other organizations is Mahmoud Khalil connected to?",
     "Where did the Unknown allegedly go in Hantavirus outbreak?",
@@ -558,7 +554,11 @@
     "Where did the $1.1 million allegedly go in Minnesota Food Grocery SNAP Fraud?",
     "What other organizations is Noel Rodriguez Alvarez connected to?",
     "Where did the $9 billion allegedly go in Minnesota House Fraud Prevention Committee?",
-    "Where did the Unknown allegedly go in USDA Grants to Minnesota?"
+    "Where did the Unknown allegedly go in USDA Grants to Minnesota?",
+    "What specific allegations exist against Kristi Noem?",
+    "What specific allegations exist against Tim Walz?",
+    "Where did the $1 million allegedly go in Feeding Our Future fraud case?",
+    "Where did the $1 million allegedly go in Minnesota SNAP food stamp fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2422,
-    "articlesProcessed": 120650,
-    "redFlagsFound": 2807,
+    "totalScans": 2423,
+    "articlesProcessed": 120700,
+    "redFlagsFound": 2809,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "alleged fraud",
+          "description": "A million-dollar SNAP food stamp fraud scheme in Minnesota",
+          "insight": "This case suggests a significant issue with the administration of food stamp programs in Minnesota, potentially involving multiple individuals and organizations. Investigating the extent of this scheme and identifying those involved is crucial.",
+          "entities": [
+            "Minnesota",
+            "SNAP"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "New York Post",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa2VpenBZWTFWd0s0Zk4yWkdVMGROX2tmOXdEZnBUbVBMaWY4aDhadXVMazJxMXh5R3N6QnhGem5mMktJNDh6bjBsNlBWNWVjeG1yeEpUTXJhMy00UzlxUVdWcHVFNUp5NlM3SHg1VlFwZUl1cjlPS0RSME5hUFktdDVjdFc1MTlEa3V4REVUdE9fdEEyZVFXbFl4aV9HLThXQzltcWdWUXJOUEQtRkhz?oc=5"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-13T18:56:38.219Z",
-  "lastUpdated": "2026-05-13T18:56:38.219Z"
+  "lastReflection": "2026-05-13T20:45:28.007Z",
+  "lastUpdated": "2026-05-13T20:45:28.008Z"
 }
