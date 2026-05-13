@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "alleged_fraud",
+      "description": "Over $9 billion allegedly stolen from Minnesota state services and programs.",
+      "insight": "This is a massive alleged fraud scheme and indicates a significant problem with oversight and regulation in Minnesota.",
+      "entities": [
+        "Minnesota State Government"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://kare11.com/news/report-minnesota-house-fraud-prevention-committee-finds-over-9-billion-stolen-from-state-services-programs",
+      "id": "rf-1778689112988-xemeiboh1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T16:18:32.984Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "USDA pauses grants to Minnesota amid Somali fraud crackdown",
       "insight": "This pause suggests potential widespread fraud in Minnesota's Somali community, warranting further investigation into grant misuse and potential connections to other fraud schemes.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-13T13:10:36.597Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-13T13:10:36.597Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal investigation",
@@ -764,26 +783,6 @@
       "isNew": false
     },
     {
-      "type": "large scale fraud",
-      "description": "The state of Minnesota sent $67 million to 9 childcare centers that were raided by federal agents.",
-      "insight": "This appears to be a large-scale fraud scheme involving childcare centers in Minnesota.",
-      "entities": [
-        "Minnesota State Government",
-        "FBI"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeExfT0s5NlQ0M3NpZ3paVFg1YmpKWmxuMDhZSTRfRW9OSXZZSzFxVE1LRDVHUXQtV3BYcm1KanpKZG9mT3otTnV0VXlVdng4dERDeEdWYlBfZFN1a3U0TjNOaF9FLUlkZ0xLY0JWLVk1Q0Z5cG40RHFvXzk5ejlIZ2JxZzQ2YjBRbDVTQVhuOGN5RkxGSWhhQ3pFSVRYWm83UUlaSDE3bDdPU3NWNmJhZg",
-      "id": "rf-1777931945846-5cazkgjmc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-04T21:59:05.843Z",
-      "isNew": false
-    },
-    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud allegations",
       "insight": "The Minnesota fraud scandal and allegations of charity fraud raise concerns about program termination and the need for increased oversight.",
@@ -985,13 +984,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-13T13:10:36.597Z"
+  "lastUpdated": "2026-05-13T16:18:32.984Z"
 }
