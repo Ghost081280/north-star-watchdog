@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Avride is under federal investigation after several crashes",
+      "insight": "This investigation raises concerns about the safety of Avride's operations and the effectiveness of federal agencies in addressing corporate wrongdoing.",
+      "entities": [
+        "Avride"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KVUE",
+      "sourceUrl": "https://www.kvue.com/article/news/local/austin-based-avride-under-investigation/269-2f7c7e7a-4a5a-43a2-8f4f-4f7c7e7a4a5a",
+      "id": "rf-1778630827264-3ru2yegv2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T00:07:07.260Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating several high-profile cases, including the death of Nancy Guthrie and the activities of Mahmoud Khalil.",
       "insight": "I am concerned about the number of high-profile cases being investigated by the FBI, and the potential for further developments.",
@@ -19,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-12T22:59:41.245Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -957,31 +976,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-03T02:43:54.558Z",
       "isNew": false
-    },
-    {
-      "type": "embezzlement",
-      "description": "Kenner pastor indicted for embezzling more than $343k",
-      "insight": "This suggests potential mismanagement or fraud within religious organizations in Minnesota.",
-      "entities": [
-        "Kenner pastor"
-      ],
-      "confidence": 90,
-      "priority": "medium",
-      "source": "WDSU",
-      "sourceUrl": "https://wdsu.com/rss/articles/CBMiogFBVV95cUxNald2S1p1TEtDR04tMDRGSVI3bU1ab2xCWlo4YTIzal9fZTVRckhYNU5PajFCMFUybnVIVVVaMXRoYzFVenJGX0JGeGRhQnF2YkdNNUozY2UxcHZiWnJNQ3AxVG9NV0RMNndzSjFuSmhNVzFFYk9DV1FhcXczTFB0ZkNCTldEVUFaT3lGY09FeDU3V3YwREdXV0RFR1h2SktRWFE",
-      "id": "rf-1777761581088-jorzd8d42",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-02T22:39:41.084Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +989,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-12T22:59:41.245Z"
+  "lastUpdated": "2026-05-13T00:07:07.260Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-04T13:55:45.392Z",
-      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.85
-    },
-    {
       "date": "2026-05-04T16:02:04.394Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-12T22:59:41.243Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-13T00:07:07.258Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?",
-    "What other organizations is Rep. Omar connected to?",
-    "Where did the unknown allegedly go in Minnesota Fraud Probe?",
     "Where did the unknown allegedly go in SPLC Investigation?",
     "Where did the $2M allegedly go in Minnesota Medicaid fraud case?",
     "What other organizations is James Comey connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Mahmoud Khalil connected to?",
     "Where did the Unknown allegedly go in Hantavirus outbreak?",
     "Where did the Unknown allegedly go in Nancy Guthrie investigation?",
-    "Where did the Unknown allegedly go in Paxton sues Chinese childcare center owner?"
+    "Where did the Unknown allegedly go in Paxton sues Chinese childcare center owner?",
+    "Where did the Unknown allegedly go in Hantavirus outbreak investigation?",
+    "Where did the Unknown allegedly go in Avride investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2415,
-    "articlesProcessed": 120300,
-    "redFlagsFound": 2797,
+    "totalScans": 2416,
+    "articlesProcessed": 120350,
+    "redFlagsFound": 2798,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $20M allegedly go in Feeding our Future investigation?",
-        "What other organizations is Minnesota crime prevention group leader connected to?",
-        "Where did the $6.5 million allegedly go in Minnesota crime prevention group investigation?"
+        "Where did the $2M allegedly go in Minnesota Government Fraud Crackdown?",
+        "What other organizations is Rep. Omar connected to?",
+        "Where did the unknown allegedly go in Minnesota Fraud Probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-12T22:59:41.243Z",
-  "lastUpdated": "2026-05-12T22:59:41.244Z"
+  "lastReflection": "2026-05-13T00:07:07.258Z",
+  "lastUpdated": "2026-05-13T00:07:07.259Z"
 }
