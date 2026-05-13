@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal government has frozen Medicaid enrollments for new home healthcare and hospice providers due to concerns about fraud.",
+      "insight": "This freeze may indicate a larger issue with Medicaid fraud, and further investigation is needed to determine the extent of the problem.",
+      "entities": [
+        "Medicaid"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/article/us-usa-medicaid-freeze-idUSKBN2CY2RO",
+      "id": "rf-1778716600129-kufshmegh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-13T23:56:40.125Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid deferral",
       "description": "$1.3 billion in Medicaid money deferred over suspicions of fraud in California",
       "insight": "This deferral indicates significant concerns about fraud in Medicaid programs, potentially a larger issue nationwide.",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-13T22:09:56.987Z",
-      "isNew": true
-    },
-    {
-      "type": "federal freeze",
-      "description": "The Trump administration has frozen Medicare enrollments for new home healthcare and hospice providers",
-      "insight": "This move indicates a potential for widespread fraud in the healthcare sector, particularly in home healthcare and hospice services. Further investigation into specific providers and their practices is warranted.",
-      "entities": [
-        "Trump administration",
-        "Medicare"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPSVVKT01GdEduM0R6a29XNjdoQnRPQ2dXLTFTbGh3by1IaExETS03cWZSbzlFRjRDUFl5ZlFRcVoxM1VkLW5QVlB2bms4bUhsZ2hZVjBwc3psUHhSaGhzaWQ0ZGxMc0tRUEVhUEpaSXpfdDkwWU1GWVdvYmdzYm9RUHBlYlNUeDJJZHE1Z0FUc1d2bDdfMWVSWlBfaGVuaTh2Vm1pMEF5dmFqWUd1bWNUR291OS1PVFhzaV85NFhkWQ?oc=5",
-      "id": "rf-1778705128013-e6wrc60az",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T20:45:28.009Z",
       "isNew": false
     },
     {
@@ -982,7 +981,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,8 +989,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-13T22:09:56.987Z"
+  "lastUpdated": "2026-05-13T23:56:40.125Z"
 }
