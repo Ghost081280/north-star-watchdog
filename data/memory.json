@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-06T02:39:29.905Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-06T05:56:23.678Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-05-14T19:44:23.215Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-14T21:08:46.446Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1 million allegedly go in Feeding Our Future fraud case?",
-    "Where did the $1 million allegedly go in Minnesota SNAP food stamp fraud?",
-    "What specific allegations exist against J.D. Vance?",
-    "Where did the $1.3 billion allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 3 figures connected to each other?",
     "What other organizations is Ex-Brooklyn Judge connected to?",
     "What other organizations is Kristi Noem connected to?",
     "What other organizations is California Mayor connected to?",
@@ -558,7 +553,12 @@
     "Where did the unknown allegedly go in FBI Operation Iron Pursuit?",
     "Where did the $billions allegedly go in Walz fraud report?",
     "What other organizations is Tim Walz connected to?",
-    "Where did the $1.5B allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $1.5B allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Valtteri Bottas connected to?",
+    "What other organizations is Milwaukee Elections Director connected to?",
+    "What other organizations is Former Newsom Chief of Staff connected to?",
+    "Where did the $0 allegedly go in Valtteri Bottas Cadillac Theft?",
+    "Where did the $billions allegedly go in Minnesota Oversight Committee?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2432,
-    "articlesProcessed": 121150,
-    "redFlagsFound": 2819,
+    "totalScans": 2433,
+    "articlesProcessed": 121200,
+    "redFlagsFound": 2820,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Kristi Noem?",
-        "What specific allegations exist against Tim Walz?",
-        "Where did the $1 million allegedly go in Feeding Our Future fraud case?"
+        "Where did the $1 million allegedly go in Feeding Our Future fraud case?",
+        "Where did the $1 million allegedly go in Minnesota SNAP food stamp fraud?",
+        "What specific allegations exist against J.D. Vance?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-14T19:44:23.215Z",
-  "lastUpdated": "2026-05-14T19:44:23.216Z"
+  "lastReflection": "2026-05-14T21:08:46.446Z",
+  "lastUpdated": "2026-05-14T21:08:46.447Z"
 }
