@@ -1,24 +1,44 @@
 {
   "flags": [
     {
-      "type": "federal_freeze",
-      "description": "Suspension of $1.3 billion in Medicaid payments to California due to suspicions of fraud",
-      "insight": "This suspension is a significant development in the effort to combat Medicaid fraud. It suggests that the federal government is taking a more aggressive approach to identifying and preventing fraud in the Medicaid program.",
+      "type": "federal freeze",
+      "description": "Suspension of $1.3 billion in Medicaid payments to California",
+      "insight": "This could indicate a significant fraud investigation and potential recovery of funds",
       "entities": [
         "California",
-        "HHS"
+        "JD Vance"
       ],
-      "confidence": 80,
+      "confidence": 90,
       "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/",
-      "id": "rf-1778740003762-wkzgxkjn2",
+      "source": "ABC7 Los Angeles",
+      "sourceUrl": "https://www.abc7.com/story/2026/05/13/vice-president-jd-vance-says-13-billion-medicaid-money-california-will-be-deferred-over-suspicions-fraud",
+      "id": "rf-1778759452294-gh408ku9n",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-05-14T06:26:43.759Z",
-      "isNew": false
+      "detectedAt": "2026-05-14T11:50:52.291Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "Possible program termination or freeze due to fraud allegations",
+      "insight": "This could indicate a larger issue with Medicaid payments and potential fraud",
+      "entities": [
+        "Minnesota",
+        "California"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/warning-from-judge-rattles-minnesota-s-hardline-strategy-to-battle-fraud/2026/05/14/",
+      "id": "rf-1778759452294-t3cimelan",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-14T11:50:52.291Z",
+      "isNew": true
     },
     {
       "type": "Medicaid deferral",
@@ -959,29 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-03T19:55:31.571Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Ilhan Omar linked to $250 million charity fraud scheme",
-      "insight": "This development raises concerns about potential corruption and abuse of power, and warrants further investigation into Omar's involvement and potential connections to other fraudulent activities",
-      "entities": [
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "World Israel News",
-      "sourceUrl": "https://www.worldisraelnews.com/ilhan-omar-linked-to-250-million-charity-fraud-scheme/",
-      "id": "rf-1777830312478-c03kec4mu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-03T17:45:12.474Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-14T09:33:35.464Z"
+  "lastUpdated": "2026-05-14T11:50:52.291Z"
 }
