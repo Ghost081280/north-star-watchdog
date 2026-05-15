@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Knox County Sheriff's Office has faced criticism over its handling of narcotics investigations, with some calling for the termination of the program.",
+      "insight": "This could be a sign of deeper issues within the department, and may lead to further investigations and reforms.",
+      "entities": [
+        "Knox County Sheriff's Office"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Knoxville News Sentinel",
+      "sourceUrl": "https://www.knoxnews.com/",
+      "id": "rf-1778853820249-ac9h9xvw8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-15T14:03:40.245Z",
+      "isNew": true
+    },
+    {
       "type": "Narcotics investigation",
       "description": "Kona man indicted on drug and firearm charges",
       "insight": "This case highlights the need for continued cooperation between local and federal authorities in investigating narcotics cases.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-15T11:54:57.349Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -959,32 +978,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-04T16:02:04.396Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud scheme",
-      "description": "Ilhan Omar linked to $250 million charity fraud scheme",
-      "insight": "This alleged scheme raises concerns about oversight and accountability in Minnesota.",
-      "entities": [
-        "Ilhan Omar",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "World Israel News",
-      "sourceUrl": "https://worldisraelnews.com/ilhan-omar-linked-to-250-million-charity-fraud-scheme/",
-      "id": "rf-1777895240680-7zn3pb2n9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-04T11:47:20.677Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-15T11:54:57.349Z"
+  "lastUpdated": "2026-05-15T14:03:40.245Z"
 }
