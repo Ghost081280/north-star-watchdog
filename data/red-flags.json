@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "large sum of money",
+      "description": "$13M and $250M are significant amounts of money involved in these investigations",
+      "insight": "These large sums of money raise concerns about potential fraud and misuse of funds",
+      "entities": [
+        "Minnesota Medicaid operator",
+        "Rep. Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVUlfRktDUTRZY085OWhJMm50YjM3THVuUWluR3o3Ui1RMGNlNzlWZ0Q3SkhpWElyd2xHYmpWcHMxdWJFcnVDeHB5UFg0dU45U1NOYjV6U2hnTXRvaTllSU1hMFZISDJMWVphX2hERDZ3MDhzYXBTQ1lDN2FheGs5WVlNWklKb3N4NjRJR250VVFrQmVrcGQ3TmxrVTBKaldrLUZveDRDZ3VlalpOb1FPRkJTeGxQTHM",
+      "id": "rf-1778967976478-qxruxf4py",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-16T21:46:16.474Z",
+      "isNew": true
+    },
+    {
+      "type": "large sum of money",
       "description": "$13M and $250M are significant amounts of money that warrant investigation",
       "insight": "These large sums of money raise concerns about potential fraud and misuse of funds.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-16T20:43:44.341Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -953,30 +973,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-08T04:15:38.631Z",
       "isNew": false
-    },
-    {
-      "type": "fraud scheme",
-      "description": "A Rochester man has been sentenced for his role in a $5.3M fraud scheme involving the Feeding Our Future program.",
-      "insight": "This case highlights the need for increased oversight and monitoring of programs to prevent fraud. Further investigation is needed to determine the extent of the scheme and identify other potential perpetrators.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KTTC",
-      "sourceUrl": "https://www.kttc.com/2026/05/07/rochester-man-who-stole-53m-sentenced-in-feeding-our-future-fraud-scheme/",
-      "id": "rf-1778194868026-5dmol9pzu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-07T23:01:08.023Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,7 +984,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-16T20:43:44.341Z"
+  "lastUpdated": "2026-05-16T21:46:16.474Z"
 }
