@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Potential conflicts of interest",
+      "description": "Kash Patel's travels and activities have raised concerns about potential conflicts of interest and ethical issues.",
+      "insight": "As an investigator, I am concerned about the potential for Patel's actions to compromise the integrity of the FBI and its investigations. Further scrutiny is needed to determine the extent of any potential wrongdoing.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2023/05/15/us/politics/kash-patel-fbi-ethics.html",
+      "id": "rf-1778921246143-170367rlf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-16T08:47:26.140Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Minnesota Medicaid operator's rapid growth and financial dealings have raised concerns over improper billing and financial mismanagement.",
       "insight": "The investigation into the Minnesota Medicaid operator's bankruptcy-to-riches rise has uncovered potential red flags, including improper billing and financial mismanagement. Further investigation is needed to determine the extent of the alleged fraud.",
@@ -959,29 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-05T21:00:54.312Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The federal government has opened an investigation into Smith College's admissions policy regarding transgender women",
-      "insight": "This investigation may indicate a larger pattern of discrimination or non-compliance with federal regulations. Further research is needed to determine the scope and implications of this investigation.",
-      "entities": [
-        "Smith College"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "US Department of Education",
-      "sourceUrl": "https://www.washingtonpost.com/article/2026/05/05/smith-college-transgender-admissions-investigation/",
-      "id": "rf-1777996354733-gpq42las5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-05T15:52:34.728Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-16T06:21:02.116Z"
+  "lastUpdated": "2026-05-16T08:47:26.140Z"
 }
