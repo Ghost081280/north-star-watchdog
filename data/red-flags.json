@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential program termination due to fraud allegations",
+      "insight": "The Minnesota Medicaid operator's fraud probe may lead to program termination",
+      "entities": [
+        "Minnesota Medicaid operator"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota Attorney General's Office",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVUlfRktDUTRZY085OWhJMm50YjM3THVuUWluR3o3Ui1RMGNlNzlWZ0Q3SkhpWElyd2xHYmpWcHMxdWJFcnVDeHB5UFg0dU45U1NOYjV6U2hnTXRvaTllSU1hMFZISDJMWVphX2hERDZ3MDhzYXBTQ1lDN2FheGs5WVlNWklKb3N4NjRJR250VVFrQmVrcGQ3TmxrVTBKaldrLUZveDRDZ3VlalpOb1FPRkJTeGxQTHM",
+      "id": "rf-1778926438909-277d2fncn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-16T10:13:58.904Z",
+      "isNew": true
+    },
+    {
       "type": "Potential conflicts of interest",
       "description": "Kash Patel's travels and activities have raised concerns about potential conflicts of interest and ethical issues.",
       "insight": "As an investigator, I am concerned about the potential for Patel's actions to compromise the integrity of the FBI and its investigations. Further scrutiny is needed to determine the extent of any potential wrongdoing.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-16T08:47:26.140Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -960,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-05T22:08:35.706Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal investigation into Smith College's admission of transgender women",
-      "insight": "This investigation raises concerns about the potential for discrimination and unequal treatment of transgender individuals. Further investigation is needed to determine the extent of the issue and potential wrongdoing.",
-      "entities": [
-        "Smith College"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/education/2023/05/05/smith-college-transgender-admissions-investigation/",
-      "id": "rf-1778014854316-4d6oawfhq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-05T21:00:54.312Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +992,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-16T08:47:26.140Z"
+  "lastUpdated": "2026-05-16T10:13:58.904Z"
 }
