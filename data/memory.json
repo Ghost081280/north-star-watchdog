@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-07T06:08:27.830Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-07T09:30:45.858Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-15T23:00:37.560Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-05-16T00:01:07.994Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Feeding Our Future?",
-    "What specific allegations exist against Knox County Sheriff's Office leaders?",
     "Are any of these 5 figures connected to each other?",
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Owens connected to?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FCC E-Rate fraud investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Operator Fraud Probe?",
-    "Where did the $100M+ allegedly go in FCC E-Rate Fraud Investigation?"
+    "Where did the $100M+ allegedly go in FCC E-Rate Fraud Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud Probe?",
+    "Where did the $0 allegedly go in FCC E-Rate Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2444,
-    "articlesProcessed": 121750,
-    "redFlagsFound": 2835,
+    "totalScans": 2445,
+    "articlesProcessed": 121800,
+    "redFlagsFound": 2837,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Former Keene Business Owner connected to?",
-        "What other organizations is Immigrant Businessman connected to?",
-        "Where did the $100M+ allegedly go in Feeding Our Future?"
+        "Where did the $100M+ allegedly go in Feeding Our Future?",
+        "What specific allegations exist against Knox County Sheriff's Office leaders?",
+        "Are any of these 5 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-15T23:00:37.560Z",
-  "lastUpdated": "2026-05-15T23:00:37.561Z"
+  "lastReflection": "2026-05-16T00:01:07.994Z",
+  "lastUpdated": "2026-05-16T00:01:07.995Z"
 }
