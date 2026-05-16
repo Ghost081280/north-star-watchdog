@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-07T23:01:08.021Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-08T00:02:14.579Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-05-16T14:55:29.469Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-16T15:57:33.500Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100,000 allegedly go in Knox County narcotics investigation?",
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $200,000 allegedly go in FBI Investigation into Milwaukee Election Staffers?",
-    "Where did the Eye-popping subsidy payments allegedly go in Minnesota Daycare Centers Exposed for Subsidy Payments?",
     "Where did the Unknown allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the Unknown allegedly go in FCC E-Rate fraud investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Operator Fraud Probe?",
@@ -558,7 +554,11 @@
     "Where did the $10B+ allegedly go in BlackRock private credit fund valuation practices investigation?",
     "What specific allegations exist against Kash Patel?",
     "What specific allegations exist against London Breed?",
-    "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation Investigation?"
+    "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation Investigation?",
+    "What other organizations is London Breed connected to?",
+    "What other organizations is Tova Noel connected to?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud?",
+    "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2452,
-    "articlesProcessed": 122150,
-    "redFlagsFound": 2846,
+    "totalScans": 2453,
+    "articlesProcessed": 122200,
+    "redFlagsFound": 2848,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $200,000 allegedly go in Minnesota Medicaid fraud investigation?",
         "Where did the $100,000 allegedly go in Knox County narcotics investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $200,000 allegedly go in FBI Investigation into Milwaukee Election Staffers?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-16T14:55:29.469Z",
-  "lastUpdated": "2026-05-16T14:55:29.469Z"
+  "lastReflection": "2026-05-16T15:57:33.500Z",
+  "lastUpdated": "2026-05-16T15:57:33.501Z"
 }
