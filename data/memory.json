@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-07T20:13:19.139Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-07T21:56:48.612Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-16T11:49:28.677Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-16T13:18:18.603Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ex-Air Force specialist connected to?",
-    "What other organizations is Knox County officials connected to?",
     "Where did the $200,000 allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $100,000 allegedly go in Knox County narcotics investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $ millions allegedly go in FCC E-Rate fraud investigation?",
     "Where did the $X allegedly go in FCC E-Rate Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid operator fraud probe?",
-    "Where did the $10B+ allegedly go in BlackRock private credit fund valuation practices investigation?"
+    "Where did the $10B+ allegedly go in BlackRock private credit fund valuation practices investigation?",
+    "What specific allegations exist against Kash Patel?",
+    "What specific allegations exist against London Breed?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2450,
-    "articlesProcessed": 122050,
-    "redFlagsFound": 2842,
+    "totalScans": 2451,
+    "articlesProcessed": 122100,
+    "redFlagsFound": 2844,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Medicaid fraud investigation?",
-        "Where did the Unknown allegedly go in Jackson bribery investigation?",
-        "What other organizations is Ex-Air Force specialist connected to?"
+        "What other organizations is Ex-Air Force specialist connected to?",
+        "What other organizations is Knox County officials connected to?",
+        "Where did the $200,000 allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-16T11:49:28.677Z",
-  "lastUpdated": "2026-05-16T11:49:28.678Z"
+  "lastReflection": "2026-05-16T13:18:18.603Z",
+  "lastUpdated": "2026-05-16T13:18:18.604Z"
 }
