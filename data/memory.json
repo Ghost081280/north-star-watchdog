@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-08T16:13:36.256Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-08T18:09:24.879Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-16T23:51:32.204Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-17T02:52:58.916Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ millions allegedly go in FCC E-Rate fraud investigation?",
-    "Where did the $X allegedly go in FCC E-Rate Fraud Investigation?",
-    "Where did the $100M+ allegedly go in Minnesota Medicaid operator fraud probe?",
     "Where did the $10B+ allegedly go in BlackRock private credit fund valuation practices investigation?",
     "What specific allegations exist against Kash Patel?",
     "What specific allegations exist against London Breed?",
@@ -558,7 +555,10 @@
     "Where did the $13M allegedly go in Minnesota Medicaid Operator Fraud Probe?",
     "Where did the Unknown allegedly go in BlackRock Private Credit Fund Valuation Practices Investigation?",
     "Where did the $250M allegedly go in COVID meal fraud investigation?",
-    "Where did the $13M allegedly go in Minnesota Medicaid operator bankruptcy?"
+    "Where did the $13M allegedly go in Minnesota Medicaid operator bankruptcy?",
+    "What other organizations is Feeding Our Future founder connected to?",
+    "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2460,
-    "articlesProcessed": 122550,
-    "redFlagsFound": 2854,
+    "totalScans": 2461,
+    "articlesProcessed": 122600,
+    "redFlagsFound": 2855,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kash Patel connected to?",
-        "Where did the $ millions allegedly go in Minnesota Medicaid operator fraud probe?",
-        "Where did the $ millions allegedly go in FCC E-Rate fraud investigation?"
+        "Where did the $ millions allegedly go in FCC E-Rate fraud investigation?",
+        "Where did the $X allegedly go in FCC E-Rate Fraud Investigation?",
+        "Where did the $100M+ allegedly go in Minnesota Medicaid operator fraud probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-16T23:51:32.204Z",
-  "lastUpdated": "2026-05-16T23:51:32.204Z"
+  "lastReflection": "2026-05-17T02:52:58.916Z",
+  "lastUpdated": "2026-05-17T02:52:58.918Z"
 }
