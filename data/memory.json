@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-09T00:01:00.452Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-09T03:49:11.223Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-17T13:16:36.813Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-17T14:55:16.650Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
     "Where did the $13M allegedly go in Minnesota Medicaid operator fraud probe?",
     "Where did the $13M allegedly go in Federal Way Mayor's $13M investigation?",
     "Where did the $250M allegedly go in Federal investigation into $250M COVID meal fraud?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Tim Walz?",
     "What other organizations is BlackRock connected to?",
     "Where did the $250M allegedly go in Minnesota COVID Meal Fraud Investigation?",
-    "Where did the Unknown allegedly go in Federal Investigation against BlackRock?"
+    "Where did the Unknown allegedly go in Federal Investigation against BlackRock?",
+    "Where did the $250M allegedly go in Minnesota COVID-19 Meal Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2465,
-    "articlesProcessed": 122800,
-    "redFlagsFound": 2862,
+    "totalScans": 2466,
+    "articlesProcessed": 122850,
+    "redFlagsFound": 2863,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud?",
-        "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "Where did the $13M allegedly go in Minnesota Medicaid operator fraud probe?",
+        "Where did the $13M allegedly go in Federal Way Mayor's $13M investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-17T13:16:36.813Z",
-  "lastUpdated": "2026-05-17T13:16:36.813Z"
+  "lastReflection": "2026-05-17T14:55:16.650Z",
+  "lastUpdated": "2026-05-17T14:55:16.650Z"
 }
