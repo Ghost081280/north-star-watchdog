@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-09T13:14:12.477Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-09T14:49:28.652Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-17T21:54:10.013Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-17T22:52:40.589Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 35,
+      "count": 36,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-04-11T14:35:45.683Z"
+      "lastSeen": "2026-05-17T22:52:40.590Z"
     },
     {
       "type": "federal_funding",
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $250 million allegedly go in Feeding Our Future COVID-19 fraud investigation?",
     "Where did the Undisclosed allegedly go in BlackRock asset value inflation investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in COVID Meal Fraud Investigation?",
     "Where did the $millions allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $250 million allegedly go in Feeding Our Future COVID-19 Relief Fraud?",
-    "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?"
+    "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $ millions allegedly go in Medicaid fraud in Minnesota?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2471,
-    "articlesProcessed": 123100,
-    "redFlagsFound": 2868,
+    "totalScans": 2472,
+    "articlesProcessed": 123150,
+    "redFlagsFound": 2870,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $13M allegedly go in Minnesota Medicaid operator bankruptcy?",
-        "What other organizations is Feeding Our Future founder connected to?",
-        "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?"
+        "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?",
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $250 million allegedly go in Feeding Our Future COVID-19 fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-17T21:54:10.013Z",
-  "lastUpdated": "2026-05-17T21:54:10.014Z"
+  "lastReflection": "2026-05-17T22:52:40.589Z",
+  "lastUpdated": "2026-05-17T22:52:40.590Z"
 }
