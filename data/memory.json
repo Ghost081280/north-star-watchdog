@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-09T11:50:44.709Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-09T13:14:12.477Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-17T20:48:52.028Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-17T21:54:10.013Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $13M allegedly go in Minnesota Medicaid operator bankruptcy?",
-    "What other organizations is Feeding Our Future founder connected to?",
     "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $250 million allegedly go in Feeding Our Future COVID-19 fraud investigation?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against AOC?",
     "Where did the $250M allegedly go in Minnesota COVID meal fraud?",
     "Where did the $250M allegedly go in COVID Meal Fraud Investigation?",
-    "Where did the $millions allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $millions allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $250 million allegedly go in Feeding Our Future COVID-19 Relief Fraud?",
+    "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2470,
-    "articlesProcessed": 123050,
-    "redFlagsFound": 2867,
+    "totalScans": 2471,
+    "articlesProcessed": 123100,
+    "redFlagsFound": 2868,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in COVID meal fraud investigation?",
         "Where did the $13M allegedly go in Minnesota Medicaid operator bankruptcy?",
-        "What other organizations is Feeding Our Future founder connected to?"
+        "What other organizations is Feeding Our Future founder connected to?",
+        "Where did the unknown allegedly go in Minnesota Medicaid operator fraud probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-17T20:48:52.028Z",
-  "lastUpdated": "2026-05-17T20:48:52.029Z"
+  "lastReflection": "2026-05-17T21:54:10.013Z",
+  "lastUpdated": "2026-05-17T21:54:10.014Z"
 }

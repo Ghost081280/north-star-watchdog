@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated amid allegations of fraud.",
+      "insight": "The termination of the program and the allegations of fraud raise concerns about the oversight and management of COVID-19 relief funds.",
+      "entities": [
+        "Feeding Our Future",
+        "U.S. Department of Agriculture"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/minnesota-squad-rep-ilhan-omar-knew-250m-covid-meal-fraud-mastermind-claims-jailhouse-interview-2026-05-16",
+      "id": "rf-1779054850020-fuozfj2sb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-17T21:54:10.015Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into BlackRock for asset value inflation accusations",
       "insight": "This investigation could potentially lead to a larger scandal involving other financial institutions. I recommend further investigation into BlackRock's business practices and any potential connections to other entities.",
@@ -955,25 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-09T17:50:06.950Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The U.S. Department of Education has launched an investigation into Houston ISD's treatment of disabled students. This investigation has raised concerns about the district's compliance with federal laws and regulations.",
-      "insight": "This investigation may indicate a larger pattern of non-compliance or neglect within the district. Further research is needed to determine the extent of the issue and potential consequences for the district.",
-      "entities": [
-        "Houston ISD"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "U.S. Department of Education",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNTVHZXlTOFdzVzVTM1QzQWl5blF5OTk1SUdjaTVoeHbiWGlGMUh0YXBYb01jdUdiYV9mbEtmQ28ta0dHeC1oazM4Y2IzMUVXRWZidkI2M01GZG5LT0RtUnE2aHd6OUFpYkNJVGhxRnV2Mkgya2dzWWhqWXYySW82TEFhUUVnbXl3S1ZkcGJ3cmZQMVJuWjZ0M2gydDljaVRXOHg5eWNFc3c",
-      "id": "rf-1778345622206-rslnx82h1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-09T16:53:42.202Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,7 +987,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-17T20:48:52.030Z"
+  "lastUpdated": "2026-05-17T21:54:10.015Z"
 }
