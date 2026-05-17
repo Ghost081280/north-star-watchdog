@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-08T22:59:20.495Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-09T00:01:00.452Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-17T11:04:22.764Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-17T13:16:36.813Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud?",
-    "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the $13M allegedly go in Minnesota Medicaid operator fraud probe?",
     "Where did the $13M allegedly go in Federal Way Mayor's $13M investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Tim Walz connected to?",
     "Where did the $250M allegedly go in COVID-19 Meal Fraud Investigation?",
     "What specific allegations exist against Tim Walz?",
-    "What other organizations is BlackRock connected to?"
+    "What other organizations is BlackRock connected to?",
+    "Where did the $250M allegedly go in Minnesota COVID Meal Fraud Investigation?",
+    "Where did the Unknown allegedly go in Federal Investigation against BlackRock?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2464,
-    "articlesProcessed": 122750,
-    "redFlagsFound": 2861,
+    "totalScans": 2465,
+    "articlesProcessed": 122800,
+    "redFlagsFound": 2862,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is London Breed connected to?",
-        "What other organizations is Tova Noel connected to?",
-        "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud?"
+        "Where did the $0 allegedly go in Minnesota Medicaid Operator Fraud?",
+        "Where did the $0 allegedly go in BlackRock Private Credit Fund Valuation?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-17T11:04:22.764Z",
-  "lastUpdated": "2026-05-17T11:04:22.765Z"
+  "lastReflection": "2026-05-17T13:16:36.813Z",
+  "lastUpdated": "2026-05-17T13:16:36.813Z"
 }
