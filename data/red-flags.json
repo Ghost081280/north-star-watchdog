@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of programs due to fraud investigations",
+      "insight": "Investigations into fraud may lead to program terminations, impacting services",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Sahan Journal",
+      "sourceUrl": "https://sahanjournal.com/feeding-our-future-leader-aimee-bock-faces-sentencing-in-400-million-fraud/",
+      "id": "rf-1779138698495-a1zum26bm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-18T21:11:38.490Z",
+      "isNew": true
+    },
+    {
       "type": "official inaction",
       "description": "New records reveal officials failed to act on fraud warnings in the Feeding Our Future case",
       "insight": "This suggests a potential pattern of neglect or corruption within the Minnesota government.",
@@ -956,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-10T08:52:48.030Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of programs due to fraud allegations",
-      "insight": "The Feeding Our Future investigation may lead to program termination or reform.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Attorney General's Office",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EdWlObUpscTM2OEQ5S1VqQWJlbXVxYkJOdkx4Q2lwblBNWndkVXB3dTZ5M0JNSWM5dzI3WTlYTlFWbVJoeVJBTTR3aTRpNWZBYWtRVU81YmFZR3VsSnphVTNERktDSHJsUzlhRkJENllzdVJNT0wzcVBwWjlPZw?oc=5",
-      "id": "rf-1778381172054-kyd2fp29y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-10T02:46:12.051Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-18T19:56:19.185Z"
+  "lastUpdated": "2026-05-18T21:11:38.490Z"
 }
