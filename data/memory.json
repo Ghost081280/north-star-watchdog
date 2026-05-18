@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-09T20:53:02.339Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-09T21:41:26.369Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-18T18:00:11.197Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-18T19:56:19.183Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota COVID-19 Meal Fraud Investigation?",
-    "What other organizations is Ilhan Omar connected to?",
     "Where did the $billions allegedly go in Walz Fraud Report?",
     "What other organizations is AOC connected to?",
     "What specific allegations exist against AOC?",
@@ -558,7 +556,9 @@
     "What other organizations is Aimee Bock connected to?",
     "Where did the $400 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $ millions allegedly go in Medicaid fraud investigation?",
-    "Where did the undisclosed allegedly go in Childcare center fraud investigation?"
+    "Where did the undisclosed allegedly go in Childcare center fraud investigation?",
+    "Where did the $400 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the undetermined allegedly go in Childcare center fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2478,
-    "articlesProcessed": 123450,
-    "redFlagsFound": 2875,
+    "totalScans": 2479,
+    "articlesProcessed": 123500,
+    "redFlagsFound": 2876,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Federal Investigation against BlackRock?",
         "Where did the $250M allegedly go in Minnesota COVID-19 Meal Fraud Investigation?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "Where did the $billions allegedly go in Walz Fraud Report?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-18T18:00:11.197Z",
-  "lastUpdated": "2026-05-18T18:00:11.198Z"
+  "lastReflection": "2026-05-18T19:56:19.183Z",
+  "lastUpdated": "2026-05-18T19:56:19.184Z"
 }
