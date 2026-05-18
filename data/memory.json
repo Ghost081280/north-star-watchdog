@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-09T15:51:34.246Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-05-09T16:53:42.200Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-17T23:56:16.435Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-18T03:31:32.265Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Undisclosed allegedly go in BlackRock asset value inflation investigation?",
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $250M allegedly go in COVID-19 Meal Fraud Investigation?",
     "What specific allegations exist against Tim Walz?",
     "What other organizations is BlackRock connected to?",
     "Where did the $250M allegedly go in Minnesota COVID Meal Fraud Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $ millions allegedly go in Medicaid fraud in Minnesota?",
-    "Where did the millions allegedly go in Medicaid fraud?"
+    "Where did the millions allegedly go in Medicaid fraud?",
+    "What other organizations is Vivek Ramaswamy connected to?",
+    "Where did the millions allegedly go in Medicaid fraud in Minnesota?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2473,
-    "articlesProcessed": 123200,
-    "redFlagsFound": 2871,
+    "totalScans": 2474,
+    "articlesProcessed": 123250,
+    "redFlagsFound": 2872,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future COVID-19 fraud investigation?",
         "Where did the Undisclosed allegedly go in BlackRock asset value inflation investigation?",
-        "What other organizations is Tim Walz connected to?"
+        "What other organizations is Tim Walz connected to?",
+        "Where did the $250M allegedly go in COVID-19 Meal Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-17T23:56:16.435Z",
-  "lastUpdated": "2026-05-17T23:56:16.435Z"
+  "lastReflection": "2026-05-18T03:31:32.265Z",
+  "lastUpdated": "2026-05-18T03:31:32.266Z"
 }
