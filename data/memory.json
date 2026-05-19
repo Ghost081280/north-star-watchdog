@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T14:51:29.194Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-10T15:52:48.912Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-19T20:47:53.357Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-19T22:14:57.346Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2488,
-    "articlesProcessed": 123950,
-    "redFlagsFound": 2887,
+    "totalScans": 2489,
+    "articlesProcessed": 124000,
+    "redFlagsFound": 2888,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal freeze",
+          "description": "The Feeding Our Future fraud case involves a significant amount of money ($250M) and high-profile charges",
+          "insight": "This case suggests a large-scale fraud scheme with potential connections to other organizations or individuals. Further investigation is needed to uncover the full extent of the scheme.",
+          "entities": [
+            "Aimee Bock",
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Pioneer Press",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUmMyTzgzTHVwV1ZxUFcxckxuZkx4Z1hGNWNKNnBrbVM4VkpuMEFfSjEyU3VJcFNJeThCQW9KOWV5RkZoT0dhaWpPV2hDekVtNUtnVnduTnZqRU90Z1piZnpfZ0g5ajE1RVk5UWVp6WkN2S29EZDVKYjBmMHJUd1hCdQ?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $millions allegedly go in Minnesota Medicaid Fraud?",
         "Where did the $250 million allegedly go in Feeding Our Future COVID-19 Relief Fraud?",
-        "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?"
+        "Where did the $6.5 million allegedly go in Minnesota Crime Prevention Group Fraud?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-19T20:47:53.357Z",
-  "lastUpdated": "2026-05-19T20:47:53.358Z"
+  "lastReflection": "2026-05-19T22:14:57.346Z",
+  "lastUpdated": "2026-05-19T22:14:57.347Z"
 }
