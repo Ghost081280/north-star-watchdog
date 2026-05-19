@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T02:46:12.050Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-10T06:10:46.601Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-19T00:16:05.664Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-19T04:59:19.228Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is AOC connected to?",
-    "What specific allegations exist against AOC?",
     "Where did the $250M allegedly go in Minnesota COVID meal fraud?",
     "Where did the $250M allegedly go in COVID Meal Fraud Investigation?",
     "Where did the $millions allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +556,9 @@
     "Where did the undisclosed allegedly go in Childcare center fraud investigation?",
     "Where did the $400 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the undetermined allegedly go in Childcare center fraud investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud?",
+    "Where did the $Unknown allegedly go in DOGE data access investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2482,
-    "articlesProcessed": 123650,
-    "redFlagsFound": 2880,
+    "totalScans": 2483,
+    "articlesProcessed": 123700,
+    "redFlagsFound": 2881,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal freeze",
+          "description": "The Feeding Our Future program was shut down due to allegations of fraud",
+          "insight": "The large amount of money involved ($250M) and the severity of the charges (50-year sentence request) indicate a significant case of fraud",
+          "entities": [
+            "Feeding Our Future",
+            "Aimee Bock"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "5 EYEWITNESS NEWS",
+          "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/prosecutors-ask-judge-to-sentence-feeding-our-future-ringleader-aimee-bock-to-50-years"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-19T00:16:05.664Z",
-  "lastUpdated": "2026-05-19T00:16:05.664Z"
+  "lastReflection": "2026-05-19T04:59:19.228Z",
+  "lastUpdated": "2026-05-19T04:59:19.229Z"
 }

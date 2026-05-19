@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The Feeding Our Future program was shut down due to allegations of fraud",
+      "insight": "The large amount of money involved ($250M) and the severity of the charges (50-year sentence request) indicate a significant case of fraud",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/prosecutors-ask-judge-to-sentence-feeding-our-future-ringleader-aimee-bock-to-50-years",
+      "id": "rf-1779166759234-1dll8t8nv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-19T04:59:19.230Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of programs due to fraud investigations",
       "insight": "Investigations into fraud may lead to program terminations, impacting services",
@@ -585,26 +605,6 @@
       "isNew": false
     },
     {
-      "type": "federal freeze",
-      "description": "Suspension of $1.3 billion in Medicaid payments to California",
-      "insight": "This could indicate a significant fraud investigation and potential recovery of funds",
-      "entities": [
-        "California",
-        "JD Vance"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "ABC7 Los Angeles",
-      "sourceUrl": "https://www.abc7.com/story/2026/05/13/vice-president-jd-vance-says-13-billion-medicaid-money-california-will-be-deferred-over-suspicions-fraud",
-      "id": "rf-1778759452294-gh408ku9n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-14T11:50:52.291Z",
-      "isNew": false
-    },
-    {
       "type": "program termination",
       "description": "Possible program termination or freeze due to fraud allegations",
       "insight": "This could indicate a larger issue with Medicaid payments and potential fraud",
@@ -980,6 +980,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +988,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-19T00:16:05.665Z"
+  "lastUpdated": "2026-05-19T04:59:19.230Z"
 }
