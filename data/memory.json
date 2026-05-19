@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T08:52:48.028Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-10T10:13:41.009Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-19T08:33:19.274Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-19T12:08:46.440Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.85
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2484,
-    "articlesProcessed": 123750,
-    "redFlagsFound": 2883,
+    "totalScans": 2485,
+    "articlesProcessed": 123800,
+    "redFlagsFound": 2884,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "The Feeding Our Future fraud case involves a large amount of money ($250M) and a severe sentence recommendation for Aimee Bock (50 years).",
-          "insight": "The case suggests a large-scale fraud scheme with severe consequences for those involved.",
-          "entities": [
-            "Feeding Our Future",
-            "Aimee Bock"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Prosecutors ask judge to sentence Feeding Our Future ringleader Aimee Bock to 50 years",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQazlhOENOd0VLdm1CbFNxQTJCd05fTXVVOGJuZWs0SDhGR1BkS3d0WFNxWUtzV0RycXBKb0RMZkhhZjdpS2g0UGo4Mmc5WEplSWw1UnU5Q3RFUElCSGJ1aTlKc0FOdFBkNnEwSXZyVmJ1YXZzZXAtQWw3NU50WUFndGNvdHJnS243Q0tabTZYYlRDYWNmUDF0TVpTNU9XTk1LTFcxVGsybVduNFJ3YncyYzhMbWpWZl9JMzZRQXZYdDdTeWFsQmlvSDNsbVZBd3hXYWRuSzdQM18xMnk3SEExN2VpUlhtdkVQNEhQX3pGVF9LUQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota COVID meal fraud?",
         "Where did the $250M allegedly go in COVID Meal Fraud Investigation?",
-        "Where did the $millions allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $millions allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $250 million allegedly go in Feeding Our Future COVID-19 Relief Fraud?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-19T08:33:19.274Z",
-  "lastUpdated": "2026-05-19T08:33:19.275Z"
+  "lastReflection": "2026-05-19T12:08:46.440Z",
+  "lastUpdated": "2026-05-19T12:08:46.441Z"
 }
