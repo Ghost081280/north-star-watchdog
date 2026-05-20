@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T15:52:48.912Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-10T16:53:59.866Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-19T22:14:57.346Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-05-20T00:03:31.032Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2489,
-    "articlesProcessed": 124000,
-    "redFlagsFound": 2888,
+    "totalScans": 2490,
+    "articlesProcessed": 124050,
+    "redFlagsFound": 2890,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "federal freeze",
-          "description": "The Feeding Our Future fraud case involves a significant amount of money ($250M) and high-profile charges",
-          "insight": "This case suggests a large-scale fraud scheme with potential connections to other organizations or individuals. Further investigation is needed to uncover the full extent of the scheme.",
+          "type": "program_termination",
+          "description": "Feeding Our Future program terminated due to fraud",
+          "insight": "Large-scale fraud schemes often involve program terminations or suspensions",
           "entities": [
-            "Aimee Bock",
-            "Feeding Our Future"
+            "Feeding Our Future",
+            "Aimee Bock"
           ],
-          "confidence": 90,
+          "confidence": 95,
           "priority": "high",
-          "source": "Pioneer Press",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUmMyTzgzTHVwV1ZxUFcxckxuZkx4Z1hGNWNKNnBrbVM4VkpuMEFfSjEyU3VJcFNJeThCQW9KOWV5RkZoT0dhaWpPV2hDekVtNUtnVnduTnZqRU90Z1piZnpfZ0g5ajE1RVk5UWVp6WkN2S29EZDVKYjBmMHJUd1hCdQ?oc=5"
+          "source": "Alpha News MN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM0IxS0ZoWTRacUJhaG1oN2NjMXljLTB5X3BBc19Ld3R4WnNSQlBjTUJ2a2wzVUM2Vi1yVWNWWHRjMXZseWJXNVFnbWdVQzl2cFIyaHF3QUpxdGFmZkROSmlOZlFlSzUxOWFMY1dDejg4V1M4ek9vT1BIRDl2LWQyM2xJSlllQ09zQXEtc0hLM2gzV1drbTY4aDBDWW0tdzFQSzdtV0cyNjZWMGNU?oc=5"
         }
       ]
     },
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-19T22:14:57.346Z",
-  "lastUpdated": "2026-05-19T22:14:57.347Z"
+  "lastReflection": "2026-05-20T00:03:31.032Z",
+  "lastUpdated": "2026-05-20T00:03:31.033Z"
 }
