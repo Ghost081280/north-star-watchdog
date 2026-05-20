@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T23:51:40.078Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-11T02:55:49.698Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-20T21:51:46.355Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-20T23:11:36.011Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $400 million allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the undetermined allegedly go in Childcare center fraud investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud?",
     "Where did the $Unknown allegedly go in DOGE data access investigation?",
     "Where did the $6.5M allegedly go in Minnesota crime prevention group fraud?",
@@ -558,7 +555,10 @@
     "What other organizations is Amy Bock connected to?",
     "What other organizations is Owners of housing stabilization provider connected to?",
     "Where did the $975,000 allegedly go in Feeding Our Future fraud case?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Aimee Bock connected to?",
+    "What specific allegations exist against Amy Bock?",
+    "Where did the $3.6M allegedly go in Medicaid housing fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2496,
-    "articlesProcessed": 124350,
-    "redFlagsFound": 2897,
+    "totalScans": 2497,
+    "articlesProcessed": 124400,
+    "redFlagsFound": 2898,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $400 million allegedly go in Feeding Our Future fraud case?",
-        "Where did the $ millions allegedly go in Medicaid fraud investigation?"
+        "Where did the $400 million allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the undetermined allegedly go in Childcare center fraud investigation?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-20T21:51:46.355Z",
-  "lastUpdated": "2026-05-20T21:51:46.356Z"
+  "lastReflection": "2026-05-20T23:11:36.011Z",
+  "lastUpdated": "2026-05-20T23:11:36.012Z"
 }

@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Feeding Our Future used shell companies to allegedly commit fraud",
+      "insight": "The use of shell companies to commit fraud is a common tactic and may indicate a larger scheme.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/child-care-fraud-charges-brought-against-feeding-our-future-defendant/100",
+      "id": "rf-1779318696016-ew3bo1sgv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-20T23:11:36.013Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing in Minnesota, including the Feeding Our Future case and the Ilhan Omar investigation.",
       "insight": "These investigations suggest a potential pattern of fraudulent activity in Minnesota, possibly involving government programs and high-profile individuals.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-20T21:51:46.357Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "securities law violations",
@@ -960,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-12T06:15:47.151Z",
       "isNew": false
-    },
-    {
-      "type": "dark money",
-      "description": "Soros-linked network in Minnesota exposed at Senate hearing",
-      "insight": "I suspect that this network may be involved in other fraudulent activities, and further investigation is needed to uncover the full extent of their operations",
-      "entities": [
-        "Soros-linked network"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://economictimes.indiatimes.com/news/international/world-news/dark-money-groups-funded-60m-soros-linked-network-in-minnesota-exposed-at-senate-hearing/articleshow/98314152.cms",
-      "id": "rf-1778507260491-gn1008432",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-11T13:47:40.487Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,8 +992,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-20T21:51:46.357Z"
+  "lastUpdated": "2026-05-20T23:11:36.013Z"
 }
