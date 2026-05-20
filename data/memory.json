@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T20:02:50.901Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-10T21:45:34.953Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-20T12:23:12.615Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-20T16:26:34.945Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Vivek Ramaswamy connected to?",
-    "Where did the millions allegedly go in Medicaid fraud in Minnesota?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $400 million allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Aamer Azeez connected to?",
     "What other organizations is Abdirizak A. Bihi connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $250M allegedly go in Minnesota Pandemic Fraud Case?",
+    "Where did the N/A allegedly go in DOJ Immigration Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2493,
-    "articlesProcessed": 124200,
-    "redFlagsFound": 2893,
+    "totalScans": 2494,
+    "articlesProcessed": 124250,
+    "redFlagsFound": 2894,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $ millions allegedly go in Medicaid fraud in Minnesota?",
-        "Where did the millions allegedly go in Medicaid fraud?",
-        "What other organizations is Vivek Ramaswamy connected to?"
+        "What other organizations is Vivek Ramaswamy connected to?",
+        "Where did the millions allegedly go in Medicaid fraud in Minnesota?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-20T12:23:12.615Z",
-  "lastUpdated": "2026-05-20T12:23:12.616Z"
+  "lastReflection": "2026-05-20T16:26:34.945Z",
+  "lastUpdated": "2026-05-20T16:26:34.945Z"
 }
