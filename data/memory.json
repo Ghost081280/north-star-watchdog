@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-10T21:45:34.953Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-10T22:44:38.076Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-20T16:26:34.945Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-05-20T19:23:35.366Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $400 million allegedly go in Feeding Our Future fraud case?",
     "Where did the $ millions allegedly go in Medicaid fraud investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Abdirizak A. Bihi connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $250M allegedly go in Minnesota Pandemic Fraud Case?",
-    "Where did the N/A allegedly go in DOJ Immigration Fraud Investigation?"
+    "Where did the N/A allegedly go in DOJ Immigration Fraud Investigation?",
+    "Where did the $550,000 allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2494,
-    "articlesProcessed": 124250,
-    "redFlagsFound": 2894,
+    "totalScans": 2495,
+    "articlesProcessed": 124300,
+    "redFlagsFound": 2896,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Vivek Ramaswamy connected to?",
-        "Where did the millions allegedly go in Medicaid fraud in Minnesota?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Aimee Bock connected to?",
+        "Where did the $400 million allegedly go in Feeding Our Future fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-20T16:26:34.945Z",
-  "lastUpdated": "2026-05-20T16:26:34.945Z"
+  "lastReflection": "2026-05-20T19:23:35.366Z",
+  "lastUpdated": "2026-05-20T19:23:35.367Z"
 }
