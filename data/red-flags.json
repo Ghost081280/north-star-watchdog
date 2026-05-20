@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations into Minnesota entities and individuals",
+      "insight": "Pattern of alleged fraud and abuse of public funds, potential connections between entities",
+      "entities": [
+        "Feeding Our Future",
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "",
+      "id": "rf-1779279792621-fny41jcjq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-20T12:23:12.617Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of Feeding Our Future program due to alleged fraud",
       "insight": "This could indicate a larger issue with oversight and management of nonprofit organizations in Minnesota",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-20T09:29:15.580Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -958,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-10T19:00:58.679Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "A Minnesota nonprofit has been accused of siphoning $6.5 million to fund personal expenses, including Vegas trips and luxury cars.",
-      "insight": "This case highlights the need for increased oversight of nonprofits and their financial activities. Further investigation is needed to determine the extent of the fraud and to identify any other potential shell companies or fraudulent activities.",
-      "entities": [
-        "Minnesota nonprofit"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/us/minnesota-nonprofit-accused-siphoning-6-5m-fund-vegas-trips-luxury-cars",
-      "id": "rf-1778432039871-aulhnhtys",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-10T16:53:59.867Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-20T09:29:15.580Z"
+  "lastUpdated": "2026-05-20T12:23:12.617Z"
 }
