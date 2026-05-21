@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-11T22:12:19.060Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-05-11T23:57:25.168Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-21T21:26:37.923Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-21T23:02:10.607Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Owners of housing stabilization provider connected to?",
-    "Where did the $975,000 allegedly go in Feeding Our Future fraud case?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "What specific allegations exist against Amy Bock?",
@@ -558,7 +556,9 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud?",
     "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud?",
     "What other organizations is Gregory Morgan connected to?",
-    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $90 million allegedly go in Minnesota Medicaid fraud?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2504,
-    "articlesProcessed": 124750,
-    "redFlagsFound": 2904,
+    "totalScans": 2505,
+    "articlesProcessed": 124800,
+    "redFlagsFound": 2905,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $550,000 allegedly go in Minnesota Fraud Investigation?",
-        "What other organizations is Amy Bock connected to?",
-        "What other organizations is Owners of housing stabilization provider connected to?"
+        "What other organizations is Owners of housing stabilization provider connected to?",
+        "Where did the $975,000 allegedly go in Feeding Our Future fraud case?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-21T21:26:37.923Z",
-  "lastUpdated": "2026-05-21T21:26:37.923Z"
+  "lastReflection": "2026-05-21T23:02:10.607Z",
+  "lastUpdated": "2026-05-21T23:02:10.608Z"
 }
