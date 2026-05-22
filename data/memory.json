@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-12T06:15:47.149Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-12T09:36:36.059Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-22T07:42:28.481Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-22T10:49:08.307Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.6M allegedly go in Medicaid housing fraud scheme?",
-    "What other organizations is Daycare Owner connected to?",
-    "What other organizations is Nonprofit Leader connected to?",
     "Where did the $4.6 million allegedly go in Minnesota Daycare Fraud Investigation?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +555,10 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "Where did the $90M allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud?",
-    "Where did the $90 million allegedly go in $90M Minnesota Medicaid fraud?"
+    "Where did the $90 million allegedly go in $90M Minnesota Medicaid fraud?",
+    "What other organizations is Abubakar Agila connected to?",
+    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $250 million allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2507,
-    "articlesProcessed": 124900,
-    "redFlagsFound": 2907,
+    "totalScans": 2508,
+    "articlesProcessed": 124950,
+    "redFlagsFound": 2908,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Amy Bock?",
         "Where did the $3.6M allegedly go in Medicaid housing fraud scheme?",
-        "What other organizations is Daycare Owner connected to?"
+        "What other organizations is Daycare Owner connected to?",
+        "What other organizations is Nonprofit Leader connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-22T07:42:28.481Z",
-  "lastUpdated": "2026-05-22T07:42:28.481Z"
+  "lastReflection": "2026-05-22T10:49:08.307Z",
+  "lastUpdated": "2026-05-22T10:49:08.308Z"
 }
