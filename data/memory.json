@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-12T02:56:51.290Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-12T06:15:47.149Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-22T03:29:03.617Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-22T07:42:28.481Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Amy Bock?",
     "Where did the $3.6M allegedly go in Medicaid housing fraud scheme?",
     "What other organizations is Daycare Owner connected to?",
     "What other organizations is Nonprofit Leader connected to?",
@@ -558,7 +557,8 @@
     "Where did the $90 million allegedly go in Minnesota Medicaid fraud?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "Where did the $90M allegedly go in Minnesota Medicaid Fraud?",
-    "Where did the $250M allegedly go in Feeding Our Future Fraud?"
+    "Where did the $250M allegedly go in Feeding Our Future Fraud?",
+    "Where did the $90 million allegedly go in $90M Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2506,
-    "articlesProcessed": 124850,
-    "redFlagsFound": 2906,
+    "totalScans": 2507,
+    "articlesProcessed": 124900,
+    "redFlagsFound": 2907,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Aimee Bock connected to?",
-        "What specific allegations exist against Amy Bock?"
+        "What specific allegations exist against Amy Bock?",
+        "Where did the $3.6M allegedly go in Medicaid housing fraud scheme?",
+        "What other organizations is Daycare Owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-22T03:29:03.617Z",
-  "lastUpdated": "2026-05-22T03:29:03.618Z"
+  "lastReflection": "2026-05-22T07:42:28.481Z",
+  "lastUpdated": "2026-05-22T07:42:28.481Z"
 }
