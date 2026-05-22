@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "DHS suspends license for East Bethel youth healing center",
+      "insight": "This could indicate a larger issue with oversight and regulation of youth services in Minnesota.",
+      "entities": [
+        "East Bethel youth healing center",
+        "DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX2RPN1BWT0lwMmdMQ0g3M3lKRTVMTXd6RWFQUzZZbzBCMHN0Nkc1ZnJ3dFlDV2M1UTBKRk5GbzBYM0pBVTZCWHBON1JWeUxWOHhGR3ItZE0yRzgwbXVxZjZpcWNDRTVmbG1qeWFwcVdPMGIwTzhQclUwWG9tOGFzajRIZ1owQdIBiwFBVV95cUxQblBsT0g1OS1YWVY5eDBvV3RfNnk5WmxfY3dQQTRNU1o3MlJLZFJxcXV5emNsQUczd3RsM1NIeXBMelNmT1pxQnJkblhmSnlkN19VVWQ5em1vR1BhQV9IaHBrbm5LT2ZIS0lrWFZqSGdvcDFKMDBZeXBrcVkzMEctbUVCSjh6ZDBZLXEw",
+      "id": "rf-1779487624095-vsqxs0lik",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-22T22:07:04.090Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Feeding Our Future used shell companies to allegedly commit fraud",
       "insight": "The use of shell companies to commit fraud is a common tactic and may indicate a larger scheme.",
@@ -959,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-12T11:53:36.720Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "DHS handed out bonuses to staff in charge of fraud-riddled program",
-      "insight": "Potential mismanagement of funds and lack of oversight",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam1QWHRSeG1CQ2twV21Ra0ZBUHhhQkp0RjNIRXFYbVY5ZExKLUVQTjF1dkY5RjRpdjVUS0JwWTc1VUFwUDhUU0JnLTBadjcxWDctRmcweElIRERqR1A4cWU4dklSeVdnTVc5aFo3ckRzZlcyUXp3dUdrSU9mblR2YnhRNUxON1RSRnhjXzVwZlJOMlZQczBzU05BWlhGc3h1bTY0dVotMzZqMkdIaEVYY0JwWlNLZF80NFgtaHlDcGFsUE0",
-      "priorityLevel": "high",
-      "id": "rf-1778566547154-m24szubaw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-12T06:15:47.151Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +992,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-22T20:42:49.729Z"
+  "lastUpdated": "2026-05-22T22:07:04.090Z"
 }
