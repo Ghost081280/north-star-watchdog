@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-13T20:45:28.007Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-13T22:09:56.985Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.8
@@ -510,6 +505,11 @@
       "date": "2026-05-23T19:23:56.344Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-23T20:49:21.557Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Kilmar Abrego Garcia?",
-    "What specific allegations exist against Robert P. Rubicco?",
     "What other organizations is Feeding Our Future founder connected to?",
     "Where did the $4M allegedly go in Minnesota Medicaid fraud case?",
     "Where did the $250M allegedly go in Feeding Our Future case?",
@@ -558,7 +556,9 @@
     "What other organizations is St. Paul business owner connected to?",
     "Where did the $4M allegedly go in Minnesota Medicaid fraud investigation?",
     "What specific allegations exist against Mark Osler?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+    "Where did the $4M allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2522,
-    "articlesProcessed": 125650,
-    "redFlagsFound": 2922,
+    "totalScans": 2523,
+    "articlesProcessed": 125700,
+    "redFlagsFound": 2923,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future?",
-        "Where did the $4M allegedly go in Minnesota Medicaid fraud?",
-        "What specific allegations exist against Kilmar Abrego Garcia?"
+        "What specific allegations exist against Kilmar Abrego Garcia?",
+        "What specific allegations exist against Robert P. Rubicco?",
+        "What other organizations is Feeding Our Future founder connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-23T19:23:56.344Z",
-  "lastUpdated": "2026-05-23T19:23:56.345Z"
+  "lastReflection": "2026-05-23T20:49:21.557Z",
+  "lastUpdated": "2026-05-23T20:49:21.558Z"
 }
