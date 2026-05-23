@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Multiple shell companies used to perpetrate fraud",
+      "insight": "Possible use of shell companies to launder money or hide assets",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPN3lOaXMwWk12VFkzc2NKa3RwemhSSDVHU1ZwQVR2Z1J3UGIyLW41aUptdFo1X2k2eUYtTXhldGVzMUV2ZGdvMHNGdXo2T3l2RzFFVWIxUGJGdDByWHFmT0gzTzg3eGNiUXg3cmdpd0dxZU1pQmZJZ0ZvUFJlN0dmU3BWQ1NWNE91VFAxX3hNNGxINUFUc3BaQllFVjJQVmNreDhhT0hKMmliOVFPU1FrV1JQdldXd0s2bGhyQk9iSmxOS0hVYlJGS1duQnR1V2ZGYTFtUA?oc=5",
+      "id": "rf-1779494764703-gow6jtau9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-23T00:06:04.699Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "DHS suspends license for East Bethel youth healing center",
       "insight": "This could indicate a larger issue with oversight and regulation of youth services in Minnesota.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-22T22:07:04.090Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -960,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-12T14:21:19.748Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "A program was found to be fraudulent and is being terminated.",
-      "insight": "This indicates a potential pattern of fraud within the program.",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "DHS handed out bonuses to staff in charge of fraud-riddled program, newly obtained data shows",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNam1QWHRSeG1CQ2twV21Ra0ZBUHhhQkp0RjNIRXFYbVY5ZExKLUVQTjF1dkY5RjRpdjVUS0JwWTc1VUFwUDhUU0JnLTBadjcxWDctRmcweElIRERqR1A4cWU4dklSeVdnTVc5aFo3ckRzZlcyUXp3dUdrSU9mblR2YnhRNUxON1RSRnhjXzVwZlJOMlZQczBzU05BWlhGc3h1bTY0dVotMzZqMkdIaEVYY0JwWlNLZF80NFgtaHlDcGFsUE0",
-      "id": "rf-1778586816723-kbq0ekmup",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-12T11:53:36.720Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,6 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-22T22:07:04.090Z"
+  "lastUpdated": "2026-05-23T00:06:04.699Z"
 }
