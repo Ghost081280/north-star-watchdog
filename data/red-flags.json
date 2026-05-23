@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "East Bethel youth healing center license suspended",
+      "insight": "Potential pattern of neglect or abuse",
+      "entities": [
+        "East Bethel youth healing center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQblBsT0g1OS1YWVY5eDBvV3RfNnk5WmxfY3dQQTRNU1o3MlJLZFJxcXV5emNsQUczd3RsM1NIeXBMelNmT1pxQnJkblhmSnlkN19VVWQ5em1vR1BhQV9IaHBrbm5LT2ZIS0lrWFZqSGdvcDFKMDBZeXBrcVkzMEctbUVCSjh6ZDBZLXEw0gGLAUFVX3lxTFBuUGxPSDU5LVhZVjl4MG9XdF82eTlabF9jd1BBNE1TWjcyUktkUnFxdXl6Y2xBRzN3dGwzU0h5cEx6U2ZPWkFCcmRuWGZKeWQ3X1VVZDl6bW9HUGFBX0hocGtubktPZkhLSWtYVmpIZ29wMUowMFl5cGtxWTMwRy1tRUJKOHpkMFktcTA?oc=5",
+      "id": "rf-1779511157082-plx0ez3im",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-23T04:39:17.078Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Multiple shell companies used to perpetrate fraud",
       "insight": "Possible use of shell companies to launder money or hide assets",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-23T00:06:04.699Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -960,30 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-12T22:59:41.245Z",
       "isNew": false
-    },
-    {
-      "type": "Potential cover-up",
-      "description": "The fact that DHS handed out bonuses to staff in charge of a fraud-riddled program raises concerns about a potential cover-up.",
-      "insight": "This could indicate a lack of accountability and oversight within the organization, allowing fraudulent activities to continue unchecked.",
-      "entities": [
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "5 EYEWITNESS NEWS",
-      "sourceUrl": "https://www.5eyewitnessnews.com/dhs-handed-out-bonuses-to-staff-in-charge-of-fraud-riddled-program",
-      "id": "rf-1778595679752-hjkct3g91",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-12T14:21:19.748Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,8 +991,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-23T00:06:04.699Z"
+  "lastUpdated": "2026-05-23T04:39:17.078Z"
 }
