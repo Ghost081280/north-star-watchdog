@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Multiple shell companies involved in Feeding Our Future fraud case",
+      "insight": "The Feeding Our Future case reveals a complex web of shell companies and individuals involved in the fraud.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Law360",
+      "sourceUrl": "https://www.law360.com/public-interest/features/1666337/ringleader-of-250m-covid-child-meals-fraud-gets-41-years",
+      "id": "rf-1779548389691-x13q1bb9z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-23T14:59:49.687Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "East Bethel youth healing center license suspended",
       "insight": "Potential pattern of neglect or abuse",
@@ -958,31 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-13T00:07:07.260Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating several high-profile cases, including the death of Nancy Guthrie and the activities of Mahmoud Khalil.",
-      "insight": "I am concerned about the number of high-profile cases being investigated by the FBI, and the potential for further developments.",
-      "entities": [
-        "FBI",
-        "Nancy Guthrie",
-        "Mahmoud Khalil"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/",
-      "id": "rf-1778626781248-z3brpcad1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-12T22:59:41.245Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-23T13:21:46.440Z"
+  "lastUpdated": "2026-05-23T14:59:49.687Z"
 }
