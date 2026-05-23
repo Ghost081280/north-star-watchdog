@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-13T18:56:38.219Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-13T20:45:28.007Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-05-23T18:00:17.261Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-23T19:23:56.344Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future?",
-    "Where did the $4M allegedly go in Minnesota Medicaid fraud?",
     "What specific allegations exist against Kilmar Abrego Garcia?",
     "What specific allegations exist against Robert P. Rubicco?",
     "What other organizations is Feeding Our Future founder connected to?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is St. Paul business owner connected to?",
-    "Where did the $4M allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $4M allegedly go in Minnesota Medicaid fraud investigation?",
+    "What specific allegations exist against Mark Osler?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2521,
-    "articlesProcessed": 125600,
-    "redFlagsFound": 2921,
+    "totalScans": 2522,
+    "articlesProcessed": 125650,
+    "redFlagsFound": 2922,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 4 figures connected to each other?",
-        "Where did the $46M allegedly go in Minnesota Medicaid and Autism Fraud?",
-        "Are any of these 3 figures connected to each other?"
+        "Where did the $250M allegedly go in Feeding Our Future?",
+        "Where did the $4M allegedly go in Minnesota Medicaid fraud?",
+        "What specific allegations exist against Kilmar Abrego Garcia?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-23T18:00:17.261Z",
-  "lastUpdated": "2026-05-23T18:00:17.262Z"
+  "lastReflection": "2026-05-23T19:23:56.344Z",
+  "lastUpdated": "2026-05-23T19:23:56.345Z"
 }
