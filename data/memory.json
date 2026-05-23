@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-13T00:07:07.258Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-13T04:42:48.637Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-23T04:39:17.076Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-23T07:31:23.375Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Abubakar Agila connected to?",
-    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $250 million allegedly go in Feeding Our Future?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
@@ -558,7 +556,9 @@
     "Where did the $46M allegedly go in Minnesota Medicaid and Autism Fraud?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $250M allegedly go in Feeding Our Future?",
-    "Where did the $4M allegedly go in Minnesota Medicaid fraud?"
+    "Where did the $4M allegedly go in Minnesota Medicaid fraud?",
+    "What specific allegations exist against Kilmar Abrego Garcia?",
+    "What specific allegations exist against Robert P. Rubicco?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2515,
-    "articlesProcessed": 125300,
-    "redFlagsFound": 2915,
+    "totalScans": 2516,
+    "articlesProcessed": 125350,
+    "redFlagsFound": 2916,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future Fraud?",
-        "Where did the $90 million allegedly go in $90M Minnesota Medicaid fraud?",
-        "What other organizations is Abubakar Agila connected to?"
+        "What other organizations is Abubakar Agila connected to?",
+        "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $250 million allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-23T04:39:17.076Z",
-  "lastUpdated": "2026-05-23T04:39:17.077Z"
+  "lastReflection": "2026-05-23T07:31:23.375Z",
+  "lastUpdated": "2026-05-23T07:31:23.376Z"
 }
