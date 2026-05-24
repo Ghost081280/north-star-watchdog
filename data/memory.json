@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-15T06:54:41.853Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-05-15T09:47:25.810Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-24T21:55:15.037Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-24T22:56:59.616Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Laura Stageberg connected to?",
-    "Where did the $46.6M allegedly go in Minnesota Medicaid fraud case?",
-    "Are any of these 4 figures connected to each other?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the $46.6M allegedly go in Minnesota Medicaid Fraud Case?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Robert F. Kennedy Jr.?",
     "Where did the $46.6M allegedly go in Medicaid fraud scheme?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "Where did the None allegedly go in Cuba sanctions investigation?"
+    "Where did the None allegedly go in Cuba sanctions investigation?",
+    "What other organizations is RFK Jr. connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+    "Where did the $46.6M allegedly go in Autism Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2536,
-    "articlesProcessed": 126350,
-    "redFlagsFound": 2933,
+    "totalScans": 2537,
+    "articlesProcessed": 126400,
+    "redFlagsFound": 2934,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $4M allegedly go in Minnesota Medicaid fraud scheme?",
         "What other organizations is Laura Stageberg connected to?",
-        "Where did the $46.6M allegedly go in Minnesota Medicaid fraud case?"
+        "Where did the $46.6M allegedly go in Minnesota Medicaid fraud case?",
+        "Are any of these 4 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-24T21:55:15.037Z",
-  "lastUpdated": "2026-05-24T21:55:15.038Z"
+  "lastReflection": "2026-05-24T22:56:59.616Z",
+  "lastUpdated": "2026-05-24T22:56:59.617Z"
 }
