@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple individuals and organizations are being investigated for federal crimes, including wire fraud and money laundering.",
+      "insight": "I notice that there are multiple cases involving large amounts of money and complex schemes. This suggests that there may be a larger network of individuals and organizations involved in these crimes.",
+      "entities": [
+        "Aimee Bock",
+        "Hasan Piker"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ investigation",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1779628928544-51uent1my",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-24T13:22:08.541Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Multiple shell companies involved in Feeding Our Future fraud case",
       "insight": "The Feeding Our Future case reveals a complex web of shell companies and individuals involved in the fraud.",
@@ -958,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-13T13:10:36.597Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "Avride is under federal investigation after several crashes",
-      "insight": "This investigation raises concerns about the safety of Avride's operations and the effectiveness of federal agencies in addressing corporate wrongdoing.",
-      "entities": [
-        "Avride"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KVUE",
-      "sourceUrl": "https://www.kvue.com/article/news/local/austin-based-avride-under-investigation/269-2f7c7e7a-4a5a-43a2-8f4f-4f7c7e7a4a5a",
-      "id": "rf-1778630827264-3ru2yegv2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T00:07:07.260Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,8 +991,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-24T11:15:30.233Z"
+  "lastUpdated": "2026-05-24T13:22:08.541Z"
 }

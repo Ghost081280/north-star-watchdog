@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-14T17:03:13.973Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-14T19:44:23.215Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-24T11:15:30.231Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-24T13:22:08.538Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Mark Osler?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "Where did the $4M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What specific allegations exist against Robert Kennedy Jr.?",
     "Where did the $46.6M allegedly go in Autism fraud bust?",
@@ -558,7 +555,10 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "What other organizations is Hasan Piker connected to?",
     "What other organizations is Medea Benjamin connected to?",
-    "Where did the $46.6M allegedly go in Medicaid Fraud Investigation?"
+    "Where did the $46.6M allegedly go in Medicaid Fraud Investigation?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $46.6M allegedly go in Medicaid fraud case?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2530,
-    "articlesProcessed": 126050,
-    "redFlagsFound": 2929,
+    "totalScans": 2531,
+    "articlesProcessed": 126100,
+    "redFlagsFound": 2930,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "What other organizations is St. Paul business owner connected to?",
-        "Where did the $4M allegedly go in Minnesota Medicaid fraud investigation?"
+        "What specific allegations exist against Mark Osler?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+        "Where did the $250M allegedly go in Feeding Our Future Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-24T11:15:30.231Z",
-  "lastUpdated": "2026-05-24T11:15:30.232Z"
+  "lastReflection": "2026-05-24T13:22:08.538Z",
+  "lastUpdated": "2026-05-24T13:22:08.539Z"
 }
