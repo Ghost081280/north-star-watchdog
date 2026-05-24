@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future program terminated due to fraud allegations",
+      "insight": "This termination suggests a high level of suspicion and potential wrongdoing within the organization.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Feeding Our Future founder Aimee Bock sentenced to 500 months in jail - Peoples Gazette Nigeria",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiimAFBVV95cUxPelpVLUM2R3lRS1hFNEEtNTNvVmxQbW9wVnFqOTV5TXR0MHhBdkVCWHgyckVlNlZORVpFRmNZc09DSENIMklRR3JoTWNxY09FQk5JRDNQRHhSZlFtbzY5SjI3WHZpbER3d2o1Z3FsU0hRX216Y2hwSmVEeEFUWFEzWV81eHhHZGtWdndVMmFFbmpLQmRyRER2Xw?oc=5",
+      "id": "rf-1779641969566-ehktm7xsy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-24T16:59:29.561Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple individuals and organizations are being investigated for federal crimes, including wire fraud and money laundering.",
       "insight": "I notice that there are multiple cases involving large amounts of money and complex schemes. This suggests that there may be a larger network of individuals and organizations involved in these crimes.",
@@ -193,26 +212,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-20T09:29:15.580Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Feeding Our Future program terminated due to fraud",
-      "insight": "Large-scale fraud schemes often involve program terminations or suspensions",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 95,
-      "priority": "high",
-      "source": "Alpha News MN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM0IxS0ZoWTRacUJhaG1oN2NjMXljLTB5X3BBc19Ld3R4WnNSQlBjTUJ2a2wzVUM2Vi1yVWNWWHRjMXZseWJXNVFnbWdVQzl2cFIyaHF3QUpxdGFmZkROSmlOZlFlSzUxOWFMY1dDejg4V1M4ek9vT1BIRDl2LWQyM2xJSlllQ09zQXEtc0hLM2gzV1drbTY4aDBDWW0tdzFQSzdtV0cyNjZWMGNU?oc=5",
-      "id": "rf-1779235411038-3egx2d5nw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-20T00:03:31.034Z",
       "isNew": false
     },
     {
@@ -982,6 +981,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-24T15:02:06.076Z"
+  "lastUpdated": "2026-05-24T16:59:29.561Z"
 }
