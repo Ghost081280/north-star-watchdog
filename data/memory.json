@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-14T11:50:52.289Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-14T14:06:44.253Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-05-24T06:58:08.304Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-24T09:23:06.040Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $46M allegedly go in $46 million autism scheme?",
-    "Where did the $250M allegedly go in Feeding Our Future Fraud Case?",
-    "Where did the $4M allegedly go in Minnesota Medicaid Fraud?",
-    "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is St. Paul business owner connected to?",
     "Where did the $4M allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +554,11 @@
     "Are any of these 4 figures connected to each other?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "Where did the $46.6M allegedly go in Minnesota Medicaid Fraud Case?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What specific allegations exist against Hasan Piker?",
+    "What specific allegations exist against Medea Benjamin?",
+    "Where did the $46.6 million allegedly go in Medicaid fraud case?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2528,
-    "articlesProcessed": 125950,
-    "redFlagsFound": 2927,
+    "totalScans": 2529,
+    "articlesProcessed": 126000,
+    "redFlagsFound": 2928,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future Fraud?",
-        "Where did the $4M allegedly go in $4M Minnesota Medicaid fraud scheme?",
-        "Where did the $46M allegedly go in $46 million autism scheme?"
+        "Where did the $46M allegedly go in $46 million autism scheme?",
+        "Where did the $250M allegedly go in Feeding Our Future Fraud Case?",
+        "Where did the $4M allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-24T06:58:08.304Z",
-  "lastUpdated": "2026-05-24T06:58:08.304Z"
+  "lastReflection": "2026-05-24T09:23:06.040Z",
+  "lastUpdated": "2026-05-24T09:23:06.040Z"
 }
