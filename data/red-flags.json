@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "shell company",
+      "description": "Feeding Our Future used shell companies to commit fraud",
+      "insight": "This indicates a complex and organized fraud scheme",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ investigation",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNbzlJUnlQa3FHb1MyMGM2VVRRZjRyZy11Ri1uaGZNTEllOVJ5WDM4aW5lOXZfR2R0bnItR1ZEN0hlUEN5d0VPZ29pMXlGc0dITnNZaHg4Z19VMG5vUlFwdmJNTnlRSHlFcVRhTmJOMHlVbGVVcDFLS3pPa2hoV3RjdVdjdl9EM2VjVVZvczI4ZmlRNVJFVWx6RHZVNU4zVHMzcWExZ0VJZkViN1JZQjZkeF9Rb1BGcTNaYU5sTEhyclVrbEhvUkwwck9NanhQMFFRVDJnQ0pzWDA0eXFaenB4aGRVQ2JmV3pNb3hRSXF0QQ",
+      "id": "rf-1779743082253-ui6bso1mx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T21:04:42.249Z",
+      "isNew": true
+    },
+    {
+      "type": "shell company",
       "description": "Feeding Our Future nonprofit used shell companies to facilitate fraud",
       "insight": "The use of shell companies to hide and launder funds is a common tactic in large-scale fraud schemes. Investigating the financial records and connections of these shell companies could reveal more about the scheme.",
       "entities": [
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-25T19:27:50.957Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -956,25 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-14T22:55:52.987Z",
       "isNew": false
-    },
-    {
-      "type": "culture of tolerance",
-      "description": "A recent report criticized the 'culture of tolerance' in Minnesota's government, which may have contributed to billions of dollars in alleged losses.",
-      "insight": "This could indicate a deeper issue with oversight and accountability in Minnesota's government.",
-      "entities": [
-        "Minnesota government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUVV3VWd0cVpwVlQyaXhnUkVhaFpKeU1VRWJNWDlESGk2dUxqM3pRNW5IVDlkUWR0X0NCU1plWHZTeGxvV1FyMmd1eDVwY2pBdVlHdVdFRDhNZDRHb0c1RGI4X091dXd3VmhJT3RVMm1lbVE1d2M0STFEVTJWa0lQbEpIOWxBRDhwaWdyZmI5NllEeDJ0Y003LXZZbWh2MFJlVWZvTUpiWVA3UEF5eW1RT09fVG5aOXBqdjBadFVzcWgxQWI2WENN0gHMAUFVX3lxTFBGTTc1dXd2Q1N6ZDJNYU9CTFhnU1J1ZjFpckJJY2NqX2pmeGFvdnRkMU13LXpaaEEwTUYxdmx1ZlpnUnVTZWFFZ21RTFl5eHV6Umo0NDFaYkd6aTUtbUs4WUJHd1p1VGFSdkZzN09QQS1iN3F4RC1yWkQycHYwTmUzUS14TWpEZ2szRVFwUGZhVHJYV2JYclk0MFhGbU5hc2hZbXpsak90RkZveUJzR1FuZEFSTHRRYWNXdHZJQzZPVjI3ZFhVYjB6QUJDNg",
-      "id": "rf-1778778193978-w5ltb0t7e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-14T17:03:13.975Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,13 +983,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "FEC",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-25T19:27:50.957Z"
+  "lastUpdated": "2026-05-25T21:04:42.249Z"
 }
