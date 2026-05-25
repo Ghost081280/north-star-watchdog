@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-15T23:00:37.560Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-05-16T00:01:07.994Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-25T17:42:57.285Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-25T19:27:50.955Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is RFK Jr. connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "Where did the $46.6M allegedly go in Autism Fraud Investigation?",
     "Where did the $46.6M allegedly go in Autism fraud investigation?",
     "What other organizations is RFK Jr connected to?",
@@ -558,7 +556,9 @@
     "What specific allegations exist against Hasan Piker?",
     "Where did the $250M allegedly go in Feeding Our Future scheme?",
     "What specific allegations exist against Robert F. Kennedy Jr.?",
-    "Where did the $250M allegedly go in Feeding Our Future?"
+    "Where did the $250M allegedly go in Feeding Our Future?",
+    "What other organizations is Abubakar Mohammed connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2543,
-    "articlesProcessed": 126700,
-    "redFlagsFound": 2942,
+    "totalScans": 2544,
+    "articlesProcessed": 126750,
+    "redFlagsFound": 2943,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-        "Where did the None allegedly go in Cuba sanctions investigation?",
-        "What other organizations is RFK Jr. connected to?"
+        "What other organizations is RFK Jr. connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+        "Where did the $46.6M allegedly go in Autism Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-25T17:42:57.285Z",
-  "lastUpdated": "2026-05-25T17:42:57.286Z"
+  "lastReflection": "2026-05-25T19:27:50.955Z",
+  "lastUpdated": "2026-05-25T19:27:50.955Z"
 }

@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "shell company",
+      "description": "Feeding Our Future nonprofit used shell companies to facilitate fraud",
+      "insight": "The use of shell companies to hide and launder funds is a common tactic in large-scale fraud schemes. Investigating the financial records and connections of these shell companies could reveal more about the scheme.",
+      "entities": [
+        "Feeding Our Future",
+        "Abubakar Mohammed"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPNkhRblBaQ0hGN3FDb202eXZQdDNpUUY2NS1aN3prTFFzUC1fYWd0QUt1QzhmanlPN2pjQVo4N0dUSG1qRUdXN2J6bXJWNWY0SUVvYk13TlluRzBRYXNnTHg2Y3ZYZ2lzb2l2QkZDSkdzaWk4bld0TU51bFhDaHl4WEluNzFHaWVKaUpiRFlGalZRa0JlNHp4OWNlcVhZcExPNkpvU0piY0w0UGUyeDNOZ0dFcmJsYzJKMTBkbGVtWEdaSHVfZ0lYZ185VVNWR0lIMl92T1pXNFVlODhzdHd5OWN4RHAyRmxhNVBXV2l3",
+      "id": "rf-1779737270960-4ok5jz3s7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T19:27:50.957Z",
+      "isNew": true
+    },
+    {
+      "type": "shell company",
       "description": "Non-profit organization 'Feeding Our Future' used shell companies to commit fraud",
       "insight": "This indicates a sophisticated scheme to hide illicit activities",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-25T17:42:57.287Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -955,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-14T17:03:13.975Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Possible program termination or freeze due to fraud allegations",
-      "insight": "This could indicate a larger issue with Medicaid payments and potential fraud",
-      "entities": [
-        "Minnesota",
-        "California"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/warning-from-judge-rattles-minnesota-s-hardline-strategy-to-battle-fraud/2026/05/14/",
-      "id": "rf-1778759452294-t3cimelan",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-14T11:50:52.291Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-25T17:42:57.287Z"
+  "lastUpdated": "2026-05-25T19:27:50.957Z"
 }
