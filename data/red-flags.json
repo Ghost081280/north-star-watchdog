@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Non-profit organization 'Feeding Our Future' used shell companies to commit fraud",
+      "insight": "This indicates a sophisticated scheme to hide illicit activities",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/minnesota-fraud-mastermind-gets-nearly-42-years-prison-massive-250m-feeding-our-future-scheme/",
+      "id": "rf-1779730977291-r8udpl69r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T17:42:57.287Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The 'Feeding Our Future' program was terminated due to widespread fraud.",
       "insight": "This indicates a large-scale fraud scheme that went undetected for a long time, allowing for significant financial losses.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-25T15:50:20.291Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large sums of money",
@@ -956,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-14T11:50:52.291Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid deferral",
-      "description": "$1.3 billion in Medicaid money deferred over suspicions of fraud in California",
-      "insight": "This deferral indicates significant concerns about fraud in Medicaid programs, potentially a larger issue nationwide.",
-      "entities": [
-        "California",
-        "Medicaid"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Officials say $1.3 billion in Medicaid money to California will be deferred over suspicions of fraud",
-      "sourceUrl": "https://abc7.com/2026/05/13/officials-say-13-billion-in-medicaid-money-to-california-will-be-deferred-over-suspicions-of-fraud/14850145/",
-      "id": "rf-1778710196991-stlw7t89s",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T22:09:56.987Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,7 +988,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-25T15:50:20.291Z"
+  "lastUpdated": "2026-05-25T17:42:57.287Z"
 }
