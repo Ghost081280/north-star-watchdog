@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "large sums of money",
+      "description": "$250M and $46.6M schemes indicate large-scale fraud",
+      "insight": "These large sums of money indicate a significant level of fraud and potentially widespread abuse of programs.",
+      "entities": [
+        "Minnesota",
+        "DOJ"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "",
+      "id": "rf-1779712164283-vpqvksv53",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T12:29:24.279Z",
+      "isNew": true
+    },
+    {
+      "type": "involvement of high-profile individuals",
+      "description": "Hasan Piker and Ilhan Omar involved in investigations",
+      "insight": "The involvement of high-profile individuals such as Hasan Piker and Ilhan Omar may indicate a complex web of relationships and potentially larger schemes.",
+      "entities": [
+        "Hasan Piker",
+        "Ilhan Omar"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "",
+      "id": "rf-1779712164283-vzu8e67y3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T12:29:24.279Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Feeding Our Future program terminated due to fraud allegations",
       "insight": "This termination suggests a high level of suspicion and potential wrongdoing within the organization.",
@@ -937,50 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-13T20:45:28.009Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The US House committee calls out Walz over redacted documents in fraud probe.",
-      "insight": "This may indicate a lack of transparency or cooperation from government officials, potentially hindering fraud investigations.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota House"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Daily Signal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBvRjVJZGttS0RZOHpZZkVaSzJ2WUthOG5UN2c1V2FKZlptZTk4OTVPdGxTY21Na2d4cDlJY0VqVjJYUzJtU3A4b1N1YU9CRFhOQUw0dm9HQ2pRQnlSWDlaVEdNVFhfbzFaNmpRWU5KeHZVUEtELWlIQWlB",
-      "id": "rf-1778698598224-ern9sqfv4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T18:56:38.220Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "US halting Medicare enrollments for new home healthcare and hospice providers",
-      "insight": "This halt suggests potential widespread fraud or abuse in the Medicare program for home healthcare and hospice providers, warranting further investigation into enrollment irregularities.",
-      "entities": [
-        "US Government",
-        "Medicare"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "KFGO",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPLTZyYWpuSV9BVFhLR21qdkszb1k5NmlJYktydE5GLTd4ZEwxTFFsckFTbzdYVzdTVVFyTGNYNENMc0hWak9LRjNHMDJNSklrU3NZb1NYTFptNlV3YzdZSVh5RGFDVjlDWmtLUzE3RzVLcUVmbmlpakNjLS00OGdOS3E5bEk2bDZ2UjdVaGt4X0ZIX1FtQW1sNExFMXB4UEVOcnNlUkZieUpvYWNkOEN2alVwbWU2MUE?oc=5",
-      "id": "rf-1778677836600-haqp0zfg5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T13:10:36.597Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -990,8 +991,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-25T08:55:42.229Z"
+  "lastUpdated": "2026-05-25T12:29:24.279Z"
 }
