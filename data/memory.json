@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T03:54:28.136Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-16T06:21:02.114Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-25T21:04:42.247Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-05-25T23:00:51.318Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $46.6M allegedly go in Autism fraud investigation?",
-    "What other organizations is RFK Jr connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?",
-    "What other organizations is Feeding Our Future leader connected to?",
-    "Where did the $46.6M allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud?",
     "Are any of these 3 figures connected to each other?",
     "What specific allegations exist against RFK Jr.?",
@@ -558,7 +553,12 @@
     "Where did the $250M allegedly go in Feeding Our Future?",
     "What other organizations is Abubakar Mohammed connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Are any of these 8 figures connected to each other?"
+    "Are any of these 8 figures connected to each other?",
+    "What other organizations is Hasan Piker connected to?",
+    "What other organizations is Medea Benjamin connected to?",
+    "What other organizations is Feeding Our Future mastermind connected to?",
+    "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?",
+    "Where did the $250M allegedly go in Feeding Our Future Scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2545,
-    "articlesProcessed": 126800,
-    "redFlagsFound": 2944,
+    "totalScans": 2546,
+    "articlesProcessed": 126850,
+    "redFlagsFound": 2945,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "shell company",
-          "description": "Feeding Our Future used shell companies to commit fraud",
-          "insight": "This indicates a complex and organized fraud scheme",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "DOJ investigation",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNbzlJUnlQa3FHb1MyMGM2VVRRZjRyZy11Ri1uaGZNTEllOVJ5WDM4aW5lOXZfR2R0bnItR1ZEN0hlUEN5d0VPZ29pMXlGc0dITnNZaHg4Z19VMG5vUlFwdmJNTnlRSHlFcVRhTmJOMHlVbGVVcDFLS3pPa2hoV3RjdVdjdl9EM2VjVVZvczI4ZmlRNVJFVWx6RHZVNU4zVHMzcWExZ0VJZkViN1JZQjZkeF9Rb1BGcTNaYU5sTEhyclVrbEhvUkwwck9NanhQMFFRVDJnQ0pzWDA0eXFaenB4aGRVQ2JmV3pNb3hRSXF0QQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $46.6M allegedly go in Autism Fraud Investigation?",
         "Where did the $46.6M allegedly go in Autism fraud investigation?",
-        "What other organizations is RFK Jr connected to?"
+        "What other organizations is RFK Jr connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-25T21:04:42.247Z",
-  "lastUpdated": "2026-05-25T21:04:42.248Z"
+  "lastReflection": "2026-05-25T23:00:51.318Z",
+  "lastUpdated": "2026-05-25T23:00:51.319Z"
 }
