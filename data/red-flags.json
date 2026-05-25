@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The 'Feeding Our Future' program was terminated due to widespread fraud.",
+      "insight": "This indicates a large-scale fraud scheme that went undetected for a long time, allowing for significant financial losses.",
+      "entities": [
+        "Minnesota Department of Education"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/opa/pr/2023/May/23-OPA-462.html",
+      "id": "rf-1779724220295-tyou4ppuy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-25T15:50:20.291Z",
+      "isNew": true
+    },
+    {
       "type": "large sums of money",
       "description": "$250M and $46.6M schemes indicate large-scale fraud",
       "insight": "These large sums of money indicate a significant level of fraud and potentially widespread abuse of programs.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-25T12:29:24.279Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "involvement of high-profile individuals",
@@ -38,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-25T12:29:24.279Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,32 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-13T22:09:56.987Z",
       "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "A million-dollar SNAP food stamp fraud scheme in Minnesota",
-      "insight": "This case suggests a significant issue with the administration of food stamp programs in Minnesota, potentially involving multiple individuals and organizations. Investigating the extent of this scheme and identifying those involved is crucial.",
-      "entities": [
-        "Minnesota",
-        "SNAP"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa2VpenBZWTFWd0s0Zk4yWkdVMGROX2tmOXdEZnBUbVBMaWY4aDhadXVMazJxMXh5R3N6QnhGem5mMktJNDh6bjBsNlBWNWVjeG1yeEpUTXJhMy00UzlxUVdWcHVFNUp5NlM3SHg1VlFwZUl1cjlPS0RSME5hUFktdDVjdFc1MTlEa3V4REVUdE9fdEEyZVFXbFl4aV9HLThXQzltcWdWUXJOUEQtRkhz?oc=5",
-      "id": "rf-1778705128013-aw7fr3axc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-13T20:45:28.009Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +988,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-25T12:29:24.279Z"
+  "lastUpdated": "2026-05-25T15:50:20.291Z"
 }
