@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-15T14:03:40.243Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-15T16:50:10.743Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-25T04:39:37.992Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-25T08:55:42.227Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Hasan Piker?",
-    "What specific allegations exist against Medea Benjamin?",
-    "Where did the $46.6 million allegedly go in Medicaid fraud case?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "What other organizations is Hasan Piker connected to?",
     "What other organizations is Medea Benjamin connected to?",
     "Where did the $46.6M allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the $46.6M allegedly go in Autism Fraud Investigation?",
     "Where did the $46.6M allegedly go in Autism fraud investigation?",
     "What other organizations is RFK Jr connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?"
+    "Where did the $250M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Feeding Our Future leader connected to?",
+    "Where did the $46.6M allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $250M allegedly go in Feeding Our Future Fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2539,
-    "articlesProcessed": 126500,
-    "redFlagsFound": 2936,
+    "totalScans": 2540,
+    "articlesProcessed": 126550,
+    "redFlagsFound": 2937,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $46.6M allegedly go in Minnesota Medicaid Fraud Case?",
-        "Are any of these 3 figures connected to each other?",
-        "What specific allegations exist against Hasan Piker?"
+        "What specific allegations exist against Hasan Piker?",
+        "What specific allegations exist against Medea Benjamin?",
+        "Where did the $46.6 million allegedly go in Medicaid fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-25T04:39:37.992Z",
-  "lastUpdated": "2026-05-25T04:39:37.993Z"
+  "lastReflection": "2026-05-25T08:55:42.227Z",
+  "lastUpdated": "2026-05-25T08:55:42.228Z"
 }
