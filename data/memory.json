@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T10:13:58.903Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-16T11:49:28.677Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-05-26T05:02:25.816Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-26T09:52:43.878Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against RFK Jr.?",
-    "What specific allegations exist against Ilhan Omar?",
-    "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
-    "Where did the $46.6M allegedly go in Autism care scam?",
     "Are any of these 4 figures connected to each other?",
     "What specific allegations exist against Robert Kennedy Jr.?",
     "What specific allegations exist against Hasan Piker?",
@@ -558,7 +554,11 @@
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?",
     "Where did the $250M allegedly go in Feeding Our Future Scheme?",
     "What other organizations is Aimee Bock connected to?",
-    "Where did the $250M allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $250M allegedly go in Minnesota Medicaid Fraud?",
+    "What specific allegations exist against Kerry-Lynne Findlay?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $90M allegedly go in Medicaid fraud case?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2548,
-    "articlesProcessed": 126950,
-    "redFlagsFound": 2946,
+    "totalScans": 2549,
+    "articlesProcessed": 127000,
+    "redFlagsFound": 2947,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future Fraud?",
-        "Are any of these 3 figures connected to each other?",
-        "What specific allegations exist against RFK Jr.?"
+        "What specific allegations exist against RFK Jr.?",
+        "What specific allegations exist against Ilhan Omar?",
+        "Where did the $250M allegedly go in $250M Minnesota fraud scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-26T05:02:25.816Z",
-  "lastUpdated": "2026-05-26T05:02:25.816Z"
+  "lastReflection": "2026-05-26T09:52:43.878Z",
+  "lastUpdated": "2026-05-26T09:52:43.879Z"
 }
