@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T11:49:28.677Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-16T13:18:18.603Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-26T09:52:43.878Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-26T16:42:03.305Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 4 figures connected to each other?",
-    "What specific allegations exist against Robert Kennedy Jr.?",
-    "What specific allegations exist against Hasan Piker?",
     "Where did the $250M allegedly go in Feeding Our Future scheme?",
     "What specific allegations exist against Robert F. Kennedy Jr.?",
     "Where did the $250M allegedly go in Feeding Our Future?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Kerry-Lynne Findlay?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $90M allegedly go in Medicaid fraud case?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Minnesota nonprofit leader connected to?",
+    "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?",
+    "Where did the $250M allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2549,
-    "articlesProcessed": 127000,
-    "redFlagsFound": 2947,
+    "totalScans": 2550,
+    "articlesProcessed": 127050,
+    "redFlagsFound": 2948,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against RFK Jr.?",
-        "What specific allegations exist against Ilhan Omar?",
-        "Where did the $250M allegedly go in $250M Minnesota fraud scheme?"
+        "Are any of these 4 figures connected to each other?",
+        "What specific allegations exist against Robert Kennedy Jr.?",
+        "What specific allegations exist against Hasan Piker?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-26T09:52:43.878Z",
-  "lastUpdated": "2026-05-26T09:52:43.879Z"
+  "lastReflection": "2026-05-26T16:42:03.305Z",
+  "lastUpdated": "2026-05-26T16:42:03.306Z"
 }
