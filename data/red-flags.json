@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud scheme",
+      "description": "A $21 million autism fraud scheme has been uncovered in Minnesota.",
+      "insight": "This case highlights the need for increased scrutiny of autism-related funding and the potential for fraud in this area.",
+      "entities": [
+        "Minnesota woman"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minnesota-woman-accused-in-21-million-autism-fraud-scheme-pleads-not-guilty/",
+      "id": "rf-1779831815482-krsaizdvj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-26T21:43:35.479Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "Feeding Our Future leader sentenced to 41.5 years for $250M fraud",
       "insight": "This case indicates a large-scale fraud scheme involving a nonprofit organization, which may be indicative of a larger pattern of corruption.",
@@ -18,26 +37,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-26T19:20:30.367Z",
-      "isNew": true
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has launched an investigation into Minnesota Medicaid fraud schemes, resulting in several convictions and sentences.",
-      "insight": "I notice a pattern of large-scale fraud schemes in Minnesota, often involving Medicaid programs. I recommend further investigation into these schemes to identify potential connections and patterns.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1779771745820-ir6ga8os2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-26T05:02:25.817Z",
       "isNew": false
     },
     {
@@ -979,6 +978,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,8 +987,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-26T19:20:30.367Z"
+  "lastUpdated": "2026-05-26T21:43:35.479Z"
 }
