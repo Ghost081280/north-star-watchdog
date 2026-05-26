@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T06:21:02.114Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-16T08:47:26.138Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-25T23:00:51.318Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-26T00:13:14.995Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2546,
-    "articlesProcessed": 126850,
+    "totalScans": 2547,
+    "articlesProcessed": 126900,
     "redFlagsFound": 2945,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $46.6M allegedly go in Autism fraud investigation?",
-        "What other organizations is RFK Jr connected to?",
-        "Where did the $250M allegedly go in Feeding Our Future investigation?"
+        "Where did the $250M allegedly go in Feeding Our Future Fraud?",
+        "Are any of these 3 figures connected to each other?",
+        "What specific allegations exist against RFK Jr.?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-25T23:00:51.318Z",
-  "lastUpdated": "2026-05-25T23:00:51.319Z"
+  "lastReflection": "2026-05-26T00:13:14.995Z",
+  "lastUpdated": "2026-05-26T00:13:14.995Z"
 }
