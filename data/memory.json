@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T15:57:33.500Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-16T17:00:17.899Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-26T21:43:35.476Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-05-26T23:08:56.929Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Hasan Piker connected to?",
     "What other organizations is Medea Benjamin connected to?",
     "What other organizations is Feeding Our Future mastermind connected to?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?",
@@ -558,7 +557,8 @@
     "What other organizations is Iowa woman connected to?",
     "Where did the $21 million allegedly go in Minnesota Autism Fraud Case?",
     "Where did the Unknown allegedly go in Olmsted County Fraud Case?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2552,
-    "articlesProcessed": 127150,
-    "redFlagsFound": 2951,
+    "totalScans": 2553,
+    "articlesProcessed": 127200,
+    "redFlagsFound": 2952,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud scheme",
+          "description": "A $21 million autism fraud scheme was uncovered in Minnesota, with a woman pleading not guilty to charges.",
+          "insight": "This large-scale fraud scheme highlights the need for increased scrutiny of autism treatment services and potential exploitation of vulnerable populations.",
+          "entities": [
+            "Minnesota woman"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "CBS News",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVlN0Z0l2THM0TGJnNEFheHd1cmZwN2pucnZyRDVubVJKbHpEYURSejBtRGlPWk45UVRDUi0wamFaWjIzMGg1N0NHYU5YUzh0Y3FYNG9XU19NRE5QTEpvdml5cVRxbGVRLWNiWi1mQWg1TkxUM2VxVTJwUUoyU2xwWVE5YzhYcjhwX3JKLVE5QbnZ3QQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Robert F. Kennedy Jr.?",
-        "Where did the $250M allegedly go in Feeding Our Future?",
-        "What other organizations is Abubakar Mohammed connected to?"
+        "What other organizations is Hasan Piker connected to?",
+        "What other organizations is Medea Benjamin connected to?",
+        "What other organizations is Feeding Our Future mastermind connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-26T21:43:35.476Z",
-  "lastUpdated": "2026-05-26T21:43:35.477Z"
+  "lastReflection": "2026-05-26T23:08:56.929Z",
+  "lastUpdated": "2026-05-26T23:08:56.930Z"
 }
