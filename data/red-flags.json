@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The DOJ has launched an investigation into Minnesota Medicaid fraud schemes, resulting in several convictions and sentences.",
+      "insight": "I notice a pattern of large-scale fraud schemes in Minnesota, often involving Medicaid programs. I recommend further investigation into these schemes to identify potential connections and patterns.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1779771745820-ir6ga8os2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-26T05:02:25.817Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Feeding Our Future used shell companies to commit fraud",
       "insight": "This indicates a complex and organized fraud scheme",
@@ -955,30 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-15T03:26:45.710Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating potential criminal allegations involving the USPS St. Louis processing facility.",
-      "insight": "This investigation highlights potential corruption and inefficiencies within the USPS. Further investigation is needed to determine the extent of any wrongdoing.",
-      "entities": [
-        "USPS",
-        "Rep. Ann Wagner"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcmo0b0dkZWkwUWNCNlUza19iNzhlYXBVR2VveHdTRjNxWU93MV9yeTdPNUZxd3RuUkI5MERoWWQ5RHFIVXNhMGI4N2E5Z2o2TWJGcFowaWtyOTJHSURMY1p3Z0hRem9pUEI5al9vU2NGQ0w0VVJTbkNsa19yeHdGTXF6SWdZMmRlcENlREk2NWd1UldCejVMcmVESm9nVXRrX3NZUDd5THN2MmFDTDJtN2dZY1V6MWZUajhn",
-      "id": "rf-1778799352991-d14n10enb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-14T22:55:52.987Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,7 +987,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-26T00:13:14.996Z"
+  "lastUpdated": "2026-05-26T05:02:25.817Z"
 }
