@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T13:18:18.603Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-16T14:55:29.469Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-26T16:42:03.305Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-26T19:20:30.364Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future scheme?",
     "What specific allegations exist against Robert F. Kennedy Jr.?",
     "Where did the $250M allegedly go in Feeding Our Future?",
     "What other organizations is Abubakar Mohammed connected to?",
@@ -558,7 +557,8 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Minnesota nonprofit leader connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?"
+    "Where did the $250M allegedly go in Feeding Our Future investigation?",
+    "Where did the $21M allegedly go in $21M autism fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2550,
-    "articlesProcessed": 127050,
-    "redFlagsFound": 2948,
+    "totalScans": 2551,
+    "articlesProcessed": 127100,
+    "redFlagsFound": 2949,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "Feeding Our Future leader sentenced to 41.5 years for $250M fraud",
+          "insight": "This case indicates a large-scale fraud scheme involving a nonprofit organization, which may be indicative of a larger pattern of corruption.",
+          "entities": [
+            "Feeding Our Future",
+            "Minnesota nonprofit leader"
+          ],
+          "confidence": 95,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNYUV5a2YxSXZNelBiVVlKRVlfWGNHX190eE5pS01XZzVsTXNYUHJpYmNWbXlXTW13OXhDR29PQjF5ZkQ4QjJhTzhySENxMmJGS0Nzc2pVckV0Tk44RXlvZlNXSGQzZ25nWjBWWkxKdmwzcVlfTmpMTEZCbi0tMkVQRWNhWU9ENlh2ZUxVSThrb1IzUDJMQm1lTl9tdGtRYVlMQzdCemFmY1dycEJfY1J1WmxYVWV2WFhVS2kyc2FkR1VTek93TjRhOXF1Umo2OE9KdldDbHhoOW1FNmRUMVcxR3NIWEhxRHM?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 4 figures connected to each other?",
-        "What specific allegations exist against Robert Kennedy Jr.?",
-        "What specific allegations exist against Hasan Piker?"
+        "Where did the $250M allegedly go in Feeding Our Future scheme?",
+        "What specific allegations exist against Robert F. Kennedy Jr.?",
+        "Where did the $250M allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-26T16:42:03.305Z",
-  "lastUpdated": "2026-05-26T16:42:03.306Z"
+  "lastReflection": "2026-05-26T19:20:30.364Z",
+  "lastUpdated": "2026-05-26T19:20:30.365Z"
 }
