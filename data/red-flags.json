@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Investigation into vehicle theft ring",
+      "insight": "This investigation may indicate a larger pattern of organized crime in the area. Further investigation is needed to determine the extent of the crime and to identify those responsible.",
+      "entities": [
+        "FBI",
+        "Davidson County"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Lebanon Democrat",
+      "sourceUrl": "https://www.lebanondemocrat.com/news/local/lebanon-police-fbi-continue-vehicle-theft-ring-investigation-with-search-warrant-in-davidson-county/article_3b4447c2-ef6f-11ec-8f9e-4f7c9a7c4f6d.html",
+      "id": "rf-1779852976198-hdrxfwc1x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-27T03:36:16.195Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scheme",
       "description": "A $21 million autism fraud scheme was uncovered in Minnesota, with a woman pleading not guilty to charges.",
       "insight": "This large-scale fraud scheme highlights the need for increased scrutiny of autism treatment services and potential exploitation of vulnerable populations.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-26T23:08:56.931Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large-scale fraud",
@@ -955,30 +975,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-15T11:54:57.349Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Fairfax County Commonwealth's Attorney's Office is under federal investigation.",
-      "insight": "This could indicate a larger issue with corruption or misconduct within the office.",
-      "entities": [
-        "Fairfax County Commonwealth's Attorney's Office"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZjBaVEVZTG9VMktVQnZRM3d3Tk5OWW5Iam0ySEstWGVGMzFnMWhmQVF3eHpSQnNZMFhHdGtiSUwwTk1GQjlpZVhUS2VCS2hudnhpODJHWHEtdWcxa3N3QUJpREY1bmlFSUF3anVwekFjaWdLY0xuanVKSXFKOG9MMFNYMklMNTdURU16MHdmMlg1UHVWd09Ja3N2bHZuRjhQNTh6Rk9RT1JQQllQVmRTSXNIMFNZb3BBazJ5MVZxUXhLdHZ6aVNoaWY2LTcyU1VEZVZ6NzJsZXY",
-      "id": "rf-1778838445815-yajd5flw6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-15T09:47:25.812Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -988,7 +988,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-26T23:08:56.931Z"
+  "lastUpdated": "2026-05-27T03:36:16.195Z"
 }
