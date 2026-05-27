@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "police misconduct",
+      "description": "Minneapolis Police Chief Brian O'Hara resigned after internal probe into his conduct",
+      "insight": "This incident raises concerns about potential police misconduct and the need for further investigation into the Minneapolis Police Department's practices and accountability measures.",
+      "entities": [
+        "Brian O'Hara",
+        "Minneapolis Police Department"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-police-chief-brian-ohara-resigns-after-internal-probe/",
+      "id": "rf-1779899779738-yrt3nd0sd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-27T16:36:19.735Z",
+      "isNew": true
+    },
+    {
       "type": "misconduct",
       "description": "Minneapolis Police Chief Brian O'Hara resigned after internal investigation",
       "insight": "This resignation indicates potential issues with police accountability",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-27T12:18:47.454Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -958,30 +978,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-16T08:47:26.140Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Minnesota Medicaid operator's rapid growth and financial dealings have raised concerns over improper billing and financial mismanagement.",
-      "insight": "The investigation into the Minnesota Medicaid operator's bankruptcy-to-riches rise has uncovered potential red flags, including improper billing and financial mismanagement. Further investigation is needed to determine the extent of the alleged fraud.",
-      "entities": [
-        "Minnesota Medicaid operator"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota Attorney General's Office",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVndSaEROY3p3U2QwZ09zdjBEMjJKZEFzZG9ERjE2U3JHU2p5ZjhLT3dGRmhzUmhCVEtiQ0dfNk9nd3ZyUmd6UVl5RUxVVWF5dU82UlhoWXd5S256QzNOYk5YLXI4Nk5wY1h0VGpZYUxvZGNUaDBMZ2pIMHhjNzBOWl9CRlg3OFdPWW13aDRPTi1lU0VaSWd2TFJtVXlFSWxmMElBR3gwT1FPaDFXUHFOeld2SFVtZ05telRFRmY5Uk11QQ?oc=5",
-      "id": "rf-1778903668141-bvmh8jgtp",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T03:54:28.138Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-27T12:18:47.454Z"
+  "lastUpdated": "2026-05-27T16:36:19.735Z"
 }

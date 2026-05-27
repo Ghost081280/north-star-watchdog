@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T20:43:44.340Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-16T21:46:16.472Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-27T12:18:47.452Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-27T16:36:19.733Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-    "Where did the $90M allegedly go in Medicaid fraud case?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Minnesota nonprofit leader connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?",
@@ -558,7 +556,9 @@
     "What other organizations is Brian O'Hara connected to?",
     "Where did the $0 allegedly go in Minneapolis Police Chief Misconduct Investigation?",
     "Where did the $billions allegedly go in Federal Fraud Crackdown in California?",
-    "Where did the $Billions allegedly go in Federal Fraud Crackdown in California?"
+    "Where did the $Billions allegedly go in Federal Fraud Crackdown in California?",
+    "What specific allegations exist against Ilhan Omar?",
+    "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2556,
-    "articlesProcessed": 127350,
-    "redFlagsFound": 2958,
+    "totalScans": 2557,
+    "articlesProcessed": 127400,
+    "redFlagsFound": 2960,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Kerry-Lynne Findlay?",
         "Where did the $250M allegedly go in Feeding Our Future fraud case?",
-        "Where did the $90M allegedly go in Medicaid fraud case?"
+        "Where did the $90M allegedly go in Medicaid fraud case?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-27T12:18:47.452Z",
-  "lastUpdated": "2026-05-27T12:18:47.453Z"
+  "lastReflection": "2026-05-27T16:36:19.733Z",
+  "lastUpdated": "2026-05-27T16:36:19.734Z"
 }
