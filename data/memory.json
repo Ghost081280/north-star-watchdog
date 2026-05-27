@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T23:51:32.204Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-17T02:52:58.916Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-27T21:52:46.061Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-27T23:15:42.544Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota nonprofit leader connected to?",
-    "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?",
-    "Where did the $21M allegedly go in $21M autism fraud case?",
-    "What other organizations is Minnesota woman connected to?",
     "What other organizations is Iowa woman connected to?",
     "Where did the $21 million allegedly go in Minnesota Autism Fraud Case?",
     "Where did the Unknown allegedly go in Olmsted County Fraud Case?",
@@ -558,7 +553,12 @@
     "Where did the $Billions allegedly go in Federal Fraud Crackdown in California?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the $90M allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $90M allegedly go in Minnesota Medicaid Fraud?",
+    "What other organizations is Uncle Nearest connected to?",
+    "What other organizations is Minneapolis Police Chief O'Hara connected to?",
+    "What other organizations is Five individuals connected to?",
+    "Where did the Unknown allegedly go in Uncle Nearest Investigation?",
+    "Where did the Unknown allegedly go in Minneapolis Police Department Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2559,
-    "articlesProcessed": 127500,
-    "redFlagsFound": 2962,
+    "totalScans": 2560,
+    "articlesProcessed": 127550,
+    "redFlagsFound": 2964,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Police Misconduct",
+          "description": "The Minneapolis police chief resigned due to allegations of interfering with a misconduct investigation",
+          "insight": "This case highlights the need for increased oversight and accountability within police departments. I recommend investigating other potential cases of police misconduct.",
+          "entities": [
+            "Minneapolis Police Department"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "InForum",
+          "sourceUrl": "https://www.inforum.com/news/minneapolis-police-chief-resigns-after-allegations-he-interfered-with-misconduct-investigation-focused-on-him"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
         "What other organizations is Minnesota nonprofit leader connected to?",
-        "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?"
+        "Where did the $90M allegedly go in Minnesota Medicaid fraud scheme?",
+        "Where did the $250M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-27T21:52:46.061Z",
-  "lastUpdated": "2026-05-27T21:52:46.062Z"
+  "lastReflection": "2026-05-27T23:15:42.544Z",
+  "lastUpdated": "2026-05-27T23:15:42.545Z"
 }
