@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into healthcare funds in California",
+      "insight": "This investigation reveals a potential large-scale fraud scheme in the healthcare industry, which could have significant financial and regulatory implications.",
+      "entities": [
+        "U.S. Department of Justice",
+        "California health funds"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSWxiMThla0xmNEp0Undydl9iMzB2bTVWX0tOQ0poTzMtbnNDNE03dE80UGF3alRqd0YzVFpkRDdSUEtHb2FJSVNhWG56UVdPZDYyOUNlLUI0NGhDOXBqWkd1UmhTWHRnbndzblpOUWlxUXhQZFFQWUg0Qm9PTWNBWmJzUkYyaktLQWJ2aF9oMzN3ZHJMSmZnY0twU3JaZ3ptMFpwY3RZa2dDU2Rmc3pZMlMxbkVFckM4bWJQM0ZRWjBWZw",
+      "id": "rf-1779868936010-bx11sp62b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-27T08:02:16.006Z",
+      "isNew": true
+    },
+    {
+      "type": "police_misconduct",
+      "description": "Minneapolis Police Chief Brian O'Hara resigned following an internal investigation into his conduct",
+      "insight": "This incident reveals a potential pattern of misconduct within the Minneapolis Police Department, which could have significant implications for police accountability and transparency.",
+      "entities": [
+        "Minneapolis Police Department",
+        "Brian O'Hara"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "ABC News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTVU0eGdBVk8wd0FVTUk0RGNLT2U2TFRnbmtCODB3SGxJaUtHOXItcGpyXzRJMWJDYU16SU13SjQ1SzJmeWFyaE4wNG1JRzJpY2g2ZGdpSVNrcFotX1U1ZnVIVUlOOGlDVjlXTnFwZ0puS2NES05xVTJOQ3NEcVJKbUttdk5zbnpUVnBDcFZwNnItaVRTblMwQmRNcEpkcW5vVnA3NEFBRjRBaGhuZ0ZpNzRYc9IBuAFBVV95cUxNRGpTSEFhaTFTNm4wdXRBTEE5MHRZOFFzbG5mOU9LYmZnc0ViQXZ0NGs2OEVKRjJQVHNTNzhWVzZYYm1nZW5IbzZDQU9xVTR5MjBObUg5RkptbU12ZklCTnd3LVhmSVhESUlkajNUbEF2MGZpQXhxQTVXa09IRnlmU1FNcGI0TUxUYjBhc3ZMUFBISV9YLS10RFc1RGJGU01ISTh6dHhHd2ZtOW1jenppazBQLXlTU1U3?oc=5",
+      "id": "rf-1779868936010-st3auuepy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-27T08:02:16.006Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Investigation into vehicle theft ring",
       "insight": "This investigation may indicate a larger pattern of organized crime in the area. Further investigation is needed to determine the extent of the crime and to identify those responsible.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-27T03:36:16.195Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud scheme",
@@ -937,44 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-15T23:00:37.562Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Knox County Sheriff's Office has faced criticism over its handling of narcotics investigations, with some calling for the termination of the program.",
-      "insight": "This could be a sign of deeper issues within the department, and may lead to further investigations and reforms.",
-      "entities": [
-        "Knox County Sheriff's Office"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Knoxville News Sentinel",
-      "sourceUrl": "https://www.knoxnews.com/",
-      "id": "rf-1778853820249-ac9h9xvw8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-15T14:03:40.245Z",
-      "isNew": false
-    },
-    {
-      "type": "Narcotics investigation",
-      "description": "Kona man indicted on drug and firearm charges",
-      "insight": "This case highlights the need for continued cooperation between local and federal authorities in investigating narcotics cases.",
-      "entities": [
-        "Kona man"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Big Island Now",
-      "sourceUrl": "https://www.bigislandnow.com",
-      "id": "rf-1778846097354-t3qq89vfa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-15T11:54:57.349Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,9 +989,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-27T03:36:16.195Z"
+  "lastUpdated": "2026-05-27T08:02:16.006Z"
 }

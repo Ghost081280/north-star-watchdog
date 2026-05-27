@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-16T17:59:58.498Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-16T19:18:50.357Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-27T03:36:16.193Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-27T08:02:16.004Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future Scheme?",
-    "What other organizations is Aimee Bock connected to?",
-    "Where did the $250M allegedly go in Minnesota Medicaid Fraud?",
     "What specific allegations exist against Kerry-Lynne Findlay?",
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $90M allegedly go in Medicaid fraud case?",
@@ -558,7 +555,10 @@
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Chief Brian O'Hara connected to?",
     "Where did the $ billions allegedly go in Federal fraud crackdown?",
-    "Where did the multiple vehicles allegedly go in Vehicle theft ring investigation?"
+    "Where did the multiple vehicles allegedly go in Vehicle theft ring investigation?",
+    "What other organizations is Brian O'Hara connected to?",
+    "Where did the $0 allegedly go in Minneapolis Police Chief Misconduct Investigation?",
+    "Where did the $billions allegedly go in Federal Fraud Crackdown in California?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2554,
-    "articlesProcessed": 127250,
-    "redFlagsFound": 2954,
+    "totalScans": 2555,
+    "articlesProcessed": 127300,
+    "redFlagsFound": 2956,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Medea Benjamin connected to?",
-        "What other organizations is Feeding Our Future mastermind connected to?",
-        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Case?"
+        "Where did the $250M allegedly go in Feeding Our Future Scheme?",
+        "What other organizations is Aimee Bock connected to?",
+        "Where did the $250M allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-27T03:36:16.193Z",
-  "lastUpdated": "2026-05-27T03:36:16.194Z"
+  "lastReflection": "2026-05-27T08:02:16.004Z",
+  "lastUpdated": "2026-05-27T08:02:16.005Z"
 }
