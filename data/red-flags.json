@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "misconduct",
+      "description": "Minneapolis Police Chief Brian O'Hara resigned after internal investigation",
+      "insight": "This resignation indicates potential issues with police accountability",
+      "entities": [
+        "Minneapolis Police Department",
+        "Brian O'Hara"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Minneapolis Police Department",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTVU0eGdBVk8wd0FVTUk0RGNLT2U2TFRnbmtCODB3SGxJaUtHOXItcGpyXzRJMWJDYU16SU13SjQ1SzJmeWFyaE4wNG1JRzJpY2g2ZGdpSVNrcFotX1U1ZnVIVUlOOGlDVjlXTnFwZ0puS2NES05xVTJOQ3NEcVJKbUttdk5zbnpUVnBDcFZwNnItaVRTblMwQmRNcEpkcW5vVnA3NEFBRjQBaGhuZ0ZpNzRYc9IBuAFBVV95cUxMRGpTSEFhaTFTNm4wdXRBTEE5MHRZOFFzbG5mOU9LYmZnc0ViQXZ0NGs2OEVKRjJQVHNTNzhWVzZYYm1nZW5IbzZDQU9xVTR5MjBObUg5RkptbU12ZklCTnd3LVhmSVhESUlkajNUbEF2MGZpQXhxQTVXa09IRnlmU1FNcGI0TUxUYjBhc3ZMUFBISV9YLS10RFc1RGJGU01ISTh6dHhHd2ZtOW1jenppazBQLXlTU1U3",
+      "id": "rf-1779884327457-j4h7f2fey",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-27T12:18:47.454Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Federal investigation into healthcare funds in California",
       "insight": "This investigation reveals a potential large-scale fraud scheme in the healthcare industry, which could have significant financial and regulatory implications.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-27T08:02:16.006Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "police_misconduct",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-05-27T08:02:16.006Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,30 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-16T03:54:28.138Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI expands Wisconsin 2020 election investigation",
-      "insight": "This could indicate a larger scheme to interfere with elections, potentially involving multiple entities and officials.",
-      "entities": [
-        "FBI",
-        "Wisconsin election officials"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "Wisconsin Law Journal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObmI1TWE4TFkzVm52d0h4TVotaXB4TXFuNDJGQ3FQeldQWm1kRUxwX0F2WUl0Q2R3a3FkYWdOYktJSlpWcm5LVlV6eDNYcG1JZ1l1d2QwNm5xOHhaVnJUODFxWGxpcVZtZzE3WnMtakQzMlhTMmpKNUJ3eGVMNWt5SUx4WWxZZzdzNVItNEM4Ny0",
-      "id": "rf-1778886037565-38hvefs55",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-15T23:00:37.562Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,8 +990,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-27T08:02:16.006Z"
+  "lastUpdated": "2026-05-27T12:18:47.454Z"
 }
