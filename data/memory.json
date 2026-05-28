@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-17T11:04:22.764Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-17T13:16:36.813Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-28T10:55:43.523Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-05-28T14:37:24.815Z",
+      "summary": "CRITICAL: 2 large dollar amount findings, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Brian O'Hara connected to?",
-    "Where did the $0 allegedly go in Minneapolis Police Chief Misconduct Investigation?",
-    "Where did the $billions allegedly go in Federal Fraud Crackdown in California?",
-    "Where did the $Billions allegedly go in Federal Fraud Crackdown in California?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $9 billion allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $90M allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +554,11 @@
     "What other organizations is E. Jean Carroll connected to?",
     "What other organizations is Unnamed CIA Official connected to?",
     "Where did the $Unknown allegedly go in Medicaid Fraud Scheme?",
-    "Where did the $40M allegedly go in Uncle Nearest Investigation?"
+    "Where did the $40M allegedly go in Uncle Nearest Investigation?",
+    "What other organizations is Two Minnesota Women (names not provided) connected to?",
+    "What other organizations is Ex-CIA official (name not provided) connected to?",
+    "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
+    "Where did the Not specified allegedly go in E. Jean Carroll Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2563,
-    "articlesProcessed": 127700,
-    "redFlagsFound": 2968,
+    "totalScans": 2564,
+    "articlesProcessed": 127750,
+    "redFlagsFound": 2970,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 4 figures connected to each other?",
-        "What other organizations is Chief Brian O'Hara connected to?",
-        "Where did the $ billions allegedly go in Federal fraud crackdown?"
+        "What other organizations is Brian O'Hara connected to?",
+        "Where did the $0 allegedly go in Minneapolis Police Chief Misconduct Investigation?",
+        "Where did the $billions allegedly go in Federal Fraud Crackdown in California?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-28T10:55:43.523Z",
-  "lastUpdated": "2026-05-28T10:55:43.524Z"
+  "lastReflection": "2026-05-28T14:37:24.815Z",
+  "lastUpdated": "2026-05-28T14:37:24.815Z"
 }
