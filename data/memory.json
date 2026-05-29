@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-17T17:01:21.822Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-17T19:06:20.145Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-28T23:15:31.492Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.8
+    },
+    {
+      "date": "2026-05-29T02:59:30.782Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Uncle Nearest Investigation?",
     "Where did the Unknown allegedly go in Minneapolis Police Department Investigation?",
     "What other organizations is David Rush connected to?",
     "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in E. Jean Carroll Investigation?",
     "What other organizations is Two Minnesota Women (names not specified) connected to?",
     "Where did the $21 million allegedly go in $21 million Medicaid fraud case?",
-    "Where did the Not specified allegedly go in E. Jean Carroll testimony investigation?"
+    "Where did the Not specified allegedly go in E. Jean Carroll testimony investigation?",
+    "Where did the $21 million allegedly go in $21 million Medicaid fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2567,
-    "articlesProcessed": 127900,
-    "redFlagsFound": 2973,
+    "totalScans": 2568,
+    "articlesProcessed": 127950,
+    "redFlagsFound": 2974,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "A $21 million Medicaid fraud scheme involving two Minnesota women",
+          "insight": "This scheme indicates a large-scale misuse of state funds meant for vulnerable populations. Further investigation into the individuals and organizations involved is warranted.",
+          "entities": [
+            "Two Minnesota Women"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "KLEW",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ19kWDVkU2gyZ3FHdVVJSjZuUTJNVFM5N1Y3c292bDl0S3lTNXZHZXZIejU1NUhWZkpFZUdBMnZRZ0dFZEpFWWhWU0I5WWNnVW5fY0xqWnpybzM5RThBUmphOFhWVkN1X09BNmpDdmtUT2wxYWNneGlXaGlIcEphSEwwaUlGaEhZb3BvQWZtVmlVT0J0WnE0ay1TQ2d5WUlyOWVkM0JvdXNVWGVaSHF1VUNILUFGTUlPMVkyUUZLRDhOQU5VTGhxMw?"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Uncle Nearest connected to?",
-        "What other organizations is Minneapolis Police Chief O'Hara connected to?",
-        "What other organizations is Five individuals connected to?"
+        "Where did the Unknown allegedly go in Uncle Nearest Investigation?",
+        "Where did the Unknown allegedly go in Minneapolis Police Department Investigation?",
+        "What other organizations is David Rush connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-28T23:15:31.492Z",
-  "lastUpdated": "2026-05-28T23:15:31.493Z"
+  "lastReflection": "2026-05-29T02:59:30.782Z",
+  "lastUpdated": "2026-05-29T02:59:30.783Z"
 }
