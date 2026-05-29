@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-18T03:31:32.265Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-18T08:01:11.980Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-29T20:23:05.839Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-05-29T22:28:41.895Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
-    "Where did the Not specified allegedly go in E. Jean Carroll Investigation?",
     "What other organizations is Two Minnesota women connected to?",
     "Where did the $21 million allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in E. Jean Carroll Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is ICE agent connected to?",
     "What other organizations is Bexar County towing company owner connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $90M allegedly go in Minnesota fraud schemes?",
+    "Where did the $9B allegedly go in Somali fraud hearing?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2573,
-    "articlesProcessed": 128200,
-    "redFlagsFound": 2979,
+    "totalScans": 2574,
+    "articlesProcessed": 128250,
+    "redFlagsFound": 2980,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,44 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 2 critical findings to X",
-      "data": [
-        {
-          "type": "fraud",
-          "description": "A leader of Feeding Our Future was sentenced to 41.5 years for $250M fraud.",
-          "insight": "This indicates a significant case of fraud and potential mismanagement of funds.",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 95,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYVlRd2x4eHNLTzZMNWdmSnRXNXpQS200ZnA3TnhXaEgwdUNPdC1BSnhxbzVSUHREYTRPdndDWlhXN2NGR29NQWttYTUzUHJvUVZUM1M0ajZ3MXkyMFV6Y1NOR04wem1YOXVySi1sV1lDb3huVmx3Y2gzQlZYNDBmVnd6M0t6VVVJWW1lejY0dEoxbzA4SUVEdVk0RnVza3I0LXVuQUxPUVB1LVU5R3cyYmVhRHAxTERDY3F5b05sdTB6WVdyUXc"
-        },
-        {
-          "type": "bribery",
-          "description": "A Bexar County towing company owner pleaded guilty in a federal bribery investigation.",
-          "insight": "This indicates corruption and potential abuse of power.",
-          "entities": [
-            "Bexar County towing company"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "kens5.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNbEpxbk1BbHZoWjlFYkU2X3cwdnZnY3F2Vk5qaFhUR3ktVDBDZG9UNzJWWl9sc2xXSkx2RWFrZFo5ekRybldHNlpDU2swQmNRSkpUelJkb1paR3ZXa0FxSFR2QWh1QUdYeVBPUHRvb0d1ck5oRjFLWkpaUzRsUmptY0ViOEVBWnVpOG9EanFTcmV6VURkT2o1V3otMWJINkF1SjdqdmpJR2RVbE44LWJZbUs4SFE1akxlWXM3UGJMd3NUWlhGTWQydGJHWERLdUF0T3BHekNGS2NWaThyWFNPem5wN1BVZV9VX2s1U0JhWG1Db0FTWmxPNEh5QUVUT0pfSzlxSXZGUjNlVzhUUmRGZnZHeGZJdENPQmg5blBPY2piS1hNWDFGUVlMd2F2dFRCcmpkWVVNaW9iUXVMV1E"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Unnamed CIA Official connected to?",
-        "Where did the $Unknown allegedly go in Medicaid Fraud Scheme?",
-        "Where did the $40M allegedly go in Uncle Nearest Investigation?"
+        "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
+        "Where did the Not specified allegedly go in E. Jean Carroll Investigation?",
+        "What other organizations is Two Minnesota women connected to?"
       ]
     }
   ],
@@ -625,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-29T20:23:05.839Z",
-  "lastUpdated": "2026-05-29T20:23:05.839Z"
+  "lastReflection": "2026-05-29T22:28:41.895Z",
+  "lastUpdated": "2026-05-29T22:28:41.896Z"
 }
