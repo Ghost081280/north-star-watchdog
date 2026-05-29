@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "A leader of Feeding Our Future was sentenced to 41.5 years for $250M fraud.",
+      "insight": "This indicates a significant case of fraud and potential mismanagement of funds.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 95,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYVlRd2x4eHNLTzZMNWdmSnRXNXpQS200ZnA3TnhXaEgwdUNPdC1BSnhxbzVSUHREYTRPdndDWlhXN2NGR29NQWttYTUzUHJvUVZUM1M0ajZ3MXkyMFV6Y1NOR04wem1YOXVySi1sV1lDb3huVmx3Y2gzQlZYNDBmVnd6M0t6VVVJWW1lejY0dEoxbzA4SUVEdVk0RnVza3I0LXVuQUxPUVB1LVU5R3cyYmVhRHAxTERDY3F5b05sdTB6WVdyUXc",
+      "id": "rf-1780086185844-2jivwjnhl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-29T20:23:05.840Z",
+      "isNew": true
+    },
+    {
+      "type": "bribery",
+      "description": "A Bexar County towing company owner pleaded guilty in a federal bribery investigation.",
+      "insight": "This indicates corruption and potential abuse of power.",
+      "entities": [
+        "Bexar County towing company"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "kens5.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNbEpxbk1BbHZoWjlFYkU2X3cwdnZnY3F2Vk5qaFhUR3ktVDBDZG9UNzJWWl9sc2xXSkx2RWFrZFo5ekRybldHNlpDU2swQmNRSkpUelJkb1paR3ZXa0FxSFR2QWh1QUdYeVBPUHRvb0d1ck5oRjFLWkpaUzRsUmptY0ViOEVBWnVpOG9EanFTcmV6VURkT2o1V3otMWJINkF1SjdqdmpJR2RVbE44LWJZbUs4SFE1akxlWXM3UGJMd3NUWlhGTWQydGJHWERLdUF0T3BHekNGS2NWaThyWFNPem5wN1BVZV9VX2s1U0JhWG1Db0FTWmxPNEh5QUVUT0pfSzlxSXZGUjNlVzhUUmRGZnZHeGZJdENPQmg5blBPY2piS1hNWDFGUVlMd2F2dFRCcmpkWVVNaW9iUXVMV1E",
+      "id": "rf-1780086185844-7b2eiufi2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-29T20:23:05.840Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A $21 million Medicaid fraud scheme involving two Minnesota women",
       "insight": "This scheme indicates a large-scale misuse of state funds meant for vulnerable populations. Further investigation into the individuals and organizations involved is warranted.",
@@ -939,44 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-16T15:57:33.502Z",
       "isNew": false
-    },
-    {
-      "type": "potential market manipulation",
-      "description": "BlackRock private credit fund valuation practices",
-      "insight": "The investigation into BlackRock's private credit fund valuation practices raises concerns over potential market manipulation. This could have far-reaching implications for the financial market.",
-      "entities": [
-        "BlackRock"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "News reports",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOSWZ2YXpWakdPV2FoRnZkWkhuMTB4b0xZZjAtNmJQeHpWTi1reHNCSDE4UzhEZnB6Y2h0eEJHQ3dVOWhPamtyNFdhdlR0SlZ2NVpNSldyYWtVVW54TEZrekJyU3dja3lxX1VvZm5iRzlWcU5xODBfT212NVM0cUlrclp6Z1I4TUViUzRMdnQzYlB4NTJrWldhQ3M4MGFzTjA2XzBRZFFYQWkzWUQ3bTJabkdKSVRTOFVyb2J3cFI1LTBtVV80LVJkWW12QkRWb3IxMDRHSG5BajRmOGx1cTRiWk5VWlV6VWJOeTNlZA",
-      "id": "rf-1778943329473-r2btehp11",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T14:55:29.470Z",
-      "isNew": false
-    },
-    {
-      "type": "potential misconduct",
-      "description": "Kash Patel's snorkeling trip to Pearl Harbor",
-      "insight": "This trip may be a conflict of interest and warrants further investigation",
-      "entities": [
-        "Kash Patel"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/05/15/snorkeling-at-pearl-harbor-kash-patels-travels-add-to-focus-on-ethical-issues.html",
-      "id": "rf-1778937498608-ov3iggijz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T13:18:18.605Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,10 +985,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-29T17:36:53.962Z"
+  "lastUpdated": "2026-05-29T20:23:05.840Z"
 }
