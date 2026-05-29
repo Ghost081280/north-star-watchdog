@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-17T20:48:52.028Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-17T21:54:10.013Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-29T06:59:26.867Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-29T10:51:44.648Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
-    "Where did the $40 million allegedly go in FBI Investigation into CIA Official?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is E. Jean Carroll connected to?",
     "What other organizations is Unnamed CIA Official connected to?",
@@ -558,7 +556,9 @@
     "Where did the Not specified allegedly go in E. Jean Carroll testimony investigation?",
     "Where did the $21 million allegedly go in $21 million Medicaid fraud scheme?",
     "What other organizations is Federal Judge (name not provided) connected to?",
-    "Where did the Not specified allegedly go in E. Jean Carroll Testimony Investigation?"
+    "Where did the Not specified allegedly go in E. Jean Carroll Testimony Investigation?",
+    "What other organizations is Ringleader of Feeding Our Future connected to?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2569,
-    "articlesProcessed": 128000,
-    "redFlagsFound": 2975,
+    "totalScans": 2570,
+    "articlesProcessed": 128050,
+    "redFlagsFound": 2976,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minneapolis Police Department Investigation?",
-        "What other organizations is David Rush connected to?",
-        "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?"
+        "Where did the $1.4M allegedly go in Ohio Childcare Fraud Investigation?",
+        "Where did the $40 million allegedly go in FBI Investigation into CIA Official?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-29T06:59:26.867Z",
-  "lastUpdated": "2026-05-29T06:59:26.868Z"
+  "lastReflection": "2026-05-29T10:51:44.648Z",
+  "lastUpdated": "2026-05-29T10:51:44.649Z"
 }
