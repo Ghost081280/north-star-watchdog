@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-18T21:11:38.489Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-18T23:00:28.278Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-30T11:27:14.534Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-05-30T13:25:28.206Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Feeding Our Future leader connected to?",
-    "What other organizations is ICE agent connected to?",
-    "What other organizations is Bexar County towing company owner connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $90M allegedly go in Minnesota fraud schemes?",
     "Where did the $9B allegedly go in Somali fraud hearing?",
@@ -558,7 +554,11 @@
     "Where did the $90M allegedly go in $90M Minnesota fraud schemes?",
     "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
     "Where did the $90 million allegedly go in $90M Minnesota fraud schemes?",
-    "Where did the $9B allegedly go in $9B Somali fraud?"
+    "Where did the $9B allegedly go in $9B Somali fraud?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Scheme?",
+    "Where did the Unknown allegedly go in Operation Soteria Shield?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2579,
-    "articlesProcessed": 128500,
-    "redFlagsFound": 2987,
+    "totalScans": 2580,
+    "articlesProcessed": 128550,
+    "redFlagsFound": 2988,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future Ringleader connected to?",
         "What other organizations is Feeding Our Future leader connected to?",
-        "What other organizations is ICE agent connected to?"
+        "What other organizations is ICE agent connected to?",
+        "What other organizations is Bexar County towing company owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-30T11:27:14.534Z",
-  "lastUpdated": "2026-05-30T11:27:14.535Z"
+  "lastReflection": "2026-05-30T13:25:28.206Z",
+  "lastUpdated": "2026-05-30T13:25:28.207Z"
 }
