@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Program Termination",
+      "description": "The TVA has frozen executive pay and cut 15 jobs in response to Trump demands.",
+      "insight": "This could be a sign of a larger investigation into the TVA and potential wrongdoing.",
+      "entities": [
+        "TVA"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Knoxville News Sentinel",
+      "sourceUrl": "https://www.knoxnews.com/story/news/2026/05/29/tva-freezes-executive-pay-cuts-15-jobs-response-trump-demands/7123456/",
+      "id": "rf-1780099719611-z5kpisnzh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-30T00:08:39.607Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "A leader of Feeding Our Future was sentenced to 41.5 years for $250M fraud.",
       "insight": "This indicates a significant case of fraud and potential mismanagement of funds.",
@@ -958,29 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-16T17:59:58.499Z",
       "isNew": false
-    },
-    {
-      "type": "regulatory investigation",
-      "description": "BlackRock's private credit fund valuation practices under investigation",
-      "insight": "This case could indicate a potential regulatory issue or industry-wide problem with valuation practices. Further investigation into BlackRock's practices and industry standards is needed.",
-      "entities": [
-        "BlackRock"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOSWZ2YXpWakdPV2FoRnZkWkhuMTB4b0xZZjAtNmJQeHpWTi1reHNCSDE4UzhEZnB6Y2h0eEJHQ3dVOWhPamtyNFdhdlR0SlZ2NVpNSldyYWtVVW54TEZrekJyU3dja3lxX1VvZm5iRzlWcU5xODBfT212NVM0cUlrclp6Z1I4TUViUzRMdnQzYlB4NTJrWldhQ3M4MGFzTjA2XzBRZFFYQWkzWUQ3bTJabkdKSVRTOFVyb2J3cFI1LTBtVV80LVJkWW12QkRWb3IxMDRHSG5BajRmOGx1cTRiWk5VWlV6VWJOeTNlZA",
-      "id": "rf-1778947053506-ussakml5y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T15:57:33.502Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1008,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-29T22:28:41.897Z"
+  "lastUpdated": "2026-05-30T00:08:39.607Z"
 }

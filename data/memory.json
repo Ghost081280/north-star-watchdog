@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-18T08:01:11.980Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-18T11:52:54.422Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-29T22:28:41.895Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-30T00:08:39.605Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Two Minnesota women connected to?",
-    "Where did the $21 million allegedly go in Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in E. Jean Carroll Investigation?",
-    "What other organizations is Two Minnesota Women (names not specified) connected to?",
-    "Where did the $21 million allegedly go in $21 million Medicaid fraud case?",
     "Where did the Not specified allegedly go in E. Jean Carroll testimony investigation?",
     "Where did the $21 million allegedly go in $21 million Medicaid fraud scheme?",
     "What other organizations is Federal Judge (name not provided) connected to?",
@@ -558,7 +553,12 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $90M allegedly go in Minnesota fraud schemes?",
-    "Where did the $9B allegedly go in Somali fraud hearing?"
+    "Where did the $9B allegedly go in Somali fraud hearing?",
+    "What other organizations is ICE Agent connected to?",
+    "What other organizations is Bexar County Towing Company Owner connected to?",
+    "What other organizations is 15 Individuals connected to?",
+    "Where did the $90M allegedly go in Minnesota Fraud Schemes Investigation?",
+    "Where did the Unknown allegedly go in Federal Bribery Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2574,
-    "articlesProcessed": 128250,
-    "redFlagsFound": 2980,
+    "totalScans": 2575,
+    "articlesProcessed": 128300,
+    "redFlagsFound": 2982,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
-        "Where did the Not specified allegedly go in E. Jean Carroll Investigation?",
-        "What other organizations is Two Minnesota women connected to?"
+        "What other organizations is Two Minnesota women connected to?",
+        "Where did the $21 million allegedly go in Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in E. Jean Carroll Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-29T22:28:41.895Z",
-  "lastUpdated": "2026-05-29T22:28:41.896Z"
+  "lastReflection": "2026-05-30T00:08:39.605Z",
+  "lastUpdated": "2026-05-30T00:08:39.606Z"
 }
