@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-19T08:33:19.274Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-19T12:08:46.440Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
@@ -510,6 +505,11 @@
       "date": "2026-05-30T19:11:00.266Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-05-30T20:54:11.566Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Federal Bribery Investigation?",
-    "Where did the $21 Million allegedly go in $21 Million Medicaid Fraud Scheme?",
-    "Where did the $90 Million allegedly go in $90M Minnesota fraud schemes?",
     "What other organizations is Two Minnesota Residents (names not provided) connected to?",
     "What other organizations is 15 accused individuals (names not provided) connected to?",
     "Where did the $90M allegedly go in $90M Minnesota fraud schemes?",
@@ -558,7 +555,10 @@
     "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Scheme?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $9B allegedly go in $9B Somali fraud investigation?",
-    "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?"
+    "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
+    "What other organizations is Former Minnesota Official connected to?",
+    "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $9 billion allegedly go in $9B Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2583,
-    "articlesProcessed": 128700,
-    "redFlagsFound": 2992,
+    "totalScans": 2584,
+    "articlesProcessed": 128750,
+    "redFlagsFound": 2993,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud scheme",
-          "description": "A $9B Somali fraud scheme has been uncovered in Minnesota, indicating a potential pattern of organized crime.",
-          "insight": "The scale of this fraud scheme suggests a high level of organization and potentially widespread impact.",
-          "entities": [
-            "Minnesota State Authorities",
-            "Somali immigrants"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Economic Times",
-          "sourceUrl": "https://www.economicstimes.com/news/politics/isn-t-9b-somali-fraud-serious-to-you-gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is 15 Individuals connected to?",
-        "Where did the $90M allegedly go in Minnesota Fraud Schemes Investigation?",
-        "Where did the Unknown allegedly go in Federal Bribery Investigation?"
+        "Where did the Unknown allegedly go in Federal Bribery Investigation?",
+        "Where did the $21 Million allegedly go in $21 Million Medicaid Fraud Scheme?",
+        "Where did the $90 Million allegedly go in $90M Minnesota fraud schemes?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-30T19:11:00.266Z",
-  "lastUpdated": "2026-05-30T19:11:00.267Z"
+  "lastReflection": "2026-05-30T20:54:11.566Z",
+  "lastUpdated": "2026-05-30T20:54:11.566Z"
 }
