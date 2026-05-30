@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-19T16:18:26.858Z",
-      "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.85
-    },
-    {
       "date": "2026-05-19T18:59:11.028Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.85
@@ -510,6 +505,11 @@
       "date": "2026-05-30T22:00:42.431Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-30T23:07:53.786Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $90M allegedly go in $90M Minnesota fraud schemes?",
-    "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
-    "Where did the $90 million allegedly go in $90M Minnesota fraud schemes?",
     "Where did the $9B allegedly go in $9B Somali fraud?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Scheme?",
@@ -558,7 +555,10 @@
     "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $9 billion allegedly go in $9B Somali Fraud Investigation?",
     "What other organizations is Aimee Bock connected to?",
-    "Where did the $250M allegedly go in $250M Minnesota fraud scheme?"
+    "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
+    "What other organizations is Minnesota Governor connected to?",
+    "What other organizations is Minnesota Attorney General connected to?",
+    "Where did the $9 Billion allegedly go in Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2585,
-    "articlesProcessed": 128800,
-    "redFlagsFound": 2994,
+    "totalScans": 2586,
+    "articlesProcessed": 128850,
+    "redFlagsFound": 2995,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Two Minnesota Residents (names not provided) connected to?",
-        "What other organizations is 15 accused individuals (names not provided) connected to?",
-        "Where did the $90M allegedly go in $90M Minnesota fraud schemes?"
+        "Where did the $90M allegedly go in $90M Minnesota fraud schemes?",
+        "Where did the $21 million allegedly go in $21 Million Medicaid Fraud Scheme?",
+        "Where did the $90 million allegedly go in $90M Minnesota fraud schemes?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-30T22:00:42.431Z",
-  "lastUpdated": "2026-05-30T22:00:42.432Z"
+  "lastReflection": "2026-05-30T23:07:53.786Z",
+  "lastUpdated": "2026-05-30T23:07:53.787Z"
 }
