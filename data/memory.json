@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-19T00:16:05.664Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-19T04:59:19.228Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-05-30T15:05:33.439Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-30T17:02:08.639Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is ICE Agent connected to?",
-    "What other organizations is Bexar County Towing Company Owner connected to?",
     "What other organizations is 15 Individuals connected to?",
     "Where did the $90M allegedly go in Minnesota Fraud Schemes Investigation?",
     "Where did the Unknown allegedly go in Federal Bribery Investigation?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Two Minnesota Residents connected to?",
     "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $1.776 Billion allegedly go in Trump's $1.776 Billion Anti-Weaponization Fund Investigation?"
+    "Where did the $1.776 Billion allegedly go in Trump's $1.776 Billion Anti-Weaponization Fund Investigation?",
+    "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Scheme?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2581,
-    "articlesProcessed": 128600,
-    "redFlagsFound": 2989,
+    "totalScans": 2582,
+    "articlesProcessed": 128650,
+    "redFlagsFound": 2990,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $90M allegedly go in Minnesota fraud schemes?",
-        "Where did the $9B allegedly go in Somali fraud hearing?"
+        "What other organizations is ICE Agent connected to?",
+        "What other organizations is Bexar County Towing Company Owner connected to?",
+        "What other organizations is 15 Individuals connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-30T15:05:33.439Z",
-  "lastUpdated": "2026-05-30T15:05:33.439Z"
+  "lastReflection": "2026-05-30T17:02:08.639Z",
+  "lastUpdated": "2026-05-30T17:02:08.640Z"
 }
