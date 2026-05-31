@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal sentencing",
+      "description": "Rameshwari Ramachandran, former Executive Director of Feeding Our Future, was sentenced to 41 years in prison for conspiracy to commit wire fraud and conspiracy to commit money laundering.",
+      "insight": "This sentence indicates a significant case of fraud and potentially signals further investigations into related parties.",
+      "entities": [
+        "Rameshwari Ramachandran",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdzNpUlJGWXNLRUpIaEV0Y2lfbS1NbUNpd0NoOFl1WTl0VWxfY3BKNnBoQ2RqcnhMUkFuTGZtMHY0bHdSS095NTZIem14clZXTFZYbFloU2xnWVJtcVhjNW9ibUJDZERrVEwwU2d1WDMtY3JvZGV3SVpubVJmWWtpVG14Y2VaVlRMbUZMLVpyWk9FWFdKRnJKTXp4bWdzQTZwa3RaU0RGWERTaUFwczJYVlJlRkRHUUM3T294b1IwOGdiU19TR0RzVzZSdzhoZFN6dXEzd3o3SzFnNmZaUEVMWTNKYjZVdXkyYzUzMUdR?oc=5",
+      "id": "rf-1780256269756-318na27fr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-31T19:37:49.753Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "Multiple large-scale fraud schemes uncovered in Minnesota, including a $9B Somali fraud scheme",
       "insight": "These schemes indicate a significant problem with fraud in Minnesota, potentially involving high-profile figures and large dollar amounts.",
@@ -959,31 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-16T21:46:16.474Z",
       "isNew": false
-    },
-    {
-      "type": "large sum of money",
-      "description": "$13M and $250M are significant amounts of money that warrant investigation",
-      "insight": "These large sums of money raise concerns about potential fraud and misuse of funds.",
-      "entities": [
-        "Minnesota Medicaid operator",
-        "Rep. Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.wfin.com/2026/05/15/minnesota-medicaid-operator%E2%80%99s-bankruptcy-to-riches-rise-crashes-into-fraud-probe/ https://nypost.com/2026/05/16/exclusive-minnesota-rep-ilhan-omar-knew-about-250m-covid-meal-fraud-mastermind/",
-      "id": "rf-1778964224345-01wrjejuf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T20:43:44.341Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-31T18:00:28.369Z"
+  "lastUpdated": "2026-05-31T19:37:49.753Z"
 }
