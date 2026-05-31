@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-20T05:03:31.858Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-20T09:29:15.578Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-05-31T12:11:01.805Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-05-31T14:43:32.643Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $9B allegedly go in $9B Somali fraud investigation?",
     "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
     "What other organizations is Former Minnesota Official connected to?",
     "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $9B allegedly go in Minnesota Somali fraud investigation?",
     "What other organizations is Two Minnesota Residents connected to?",
     "Where did the $90 Million allegedly go in Minnesota Fraud Schemes Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $9B allegedly go in Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2590,
-    "articlesProcessed": 129050,
-    "redFlagsFound": 2998,
+    "totalScans": 2591,
+    "articlesProcessed": 129100,
+    "redFlagsFound": 2999,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $1.776 Billion allegedly go in Trump's $1.776 Billion Anti-Weaponization Fund Investigation?",
-        "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Scheme?"
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $9B allegedly go in $9B Somali fraud investigation?",
+        "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-31T12:11:01.805Z",
-  "lastUpdated": "2026-05-31T12:11:01.805Z"
+  "lastReflection": "2026-05-31T14:43:32.643Z",
+  "lastUpdated": "2026-05-31T14:43:32.644Z"
 }
