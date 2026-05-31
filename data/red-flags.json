@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future program shut down due to fraud allegations",
+      "insight": "This indicates a large-scale fraud scheme that may have gone undetected for an extended period",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://www.msn.com/en-us/article/feeding-our-future-ringleader-gets-41-year-prison-term-arsid-details-emerge-nbclocal",
+      "id": "rf-1780265013433-kcdy9ugtk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-05-31T22:03:33.429Z",
+      "isNew": true
+    },
+    {
       "type": "federal sentencing",
       "description": "Rameshwari Ramachandran, former Executive Director of Feeding Our Future, was sentenced to 41 years in prison for conspiracy to commit wire fraud and conspiracy to commit money laundering.",
       "insight": "This sentence indicates a significant case of fraud and potentially signals further investigations into related parties.",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-17T02:52:58.919Z",
       "isNew": false
-    },
-    {
-      "type": "large sum of money",
-      "description": "$13M and $250M are significant amounts of money involved in these investigations",
-      "insight": "These large sums of money raise concerns about potential fraud and misuse of funds",
-      "entities": [
-        "Minnesota Medicaid operator",
-        "Rep. Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVUlfRktDUTRZY085OWhJMm50YjM3THVuUWluR3o3Ui1RMGNlNzlWZ0Q3SkhpWElyd2xHYmpWcHMxdWJFcnVDeHB5UFg0dU45U1NOYjV6U2hnTXRvaTllSU1hMFZISDJMWVphX2hERDZ3MDhzYXBTQ1lDN2FheGs5WVlNWklKb3N4NjRJR250VVFrQmVrcGQ3TmxrVTBKaldrLUZveDRDZ3VlalpOb1FPRkJTeGxQTHM",
-      "id": "rf-1778967976478-qxruxf4py",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-16T21:46:16.474Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,12 +986,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "FEC",
+    "FDA",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-05-31T20:58:14.200Z"
+  "lastUpdated": "2026-05-31T22:03:33.429Z"
 }
