@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-19T22:14:57.346Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-05-20T00:03:31.032Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-05-31T07:44:22.819Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-05-31T10:14:09.899Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2588,
-    "articlesProcessed": 128950,
+    "totalScans": 2589,
+    "articlesProcessed": 129000,
     "redFlagsFound": 2997,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "Multiple large-scale fraud schemes uncovered in Minnesota, including a $9B Somali fraud scheme",
-          "insight": "These schemes indicate a significant problem with fraud in Minnesota, potentially involving high-profile figures and large dollar amounts.",
-          "entities": [
-            "Minnesota Governor Walz",
-            "Minnesota AG Ellison"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Economic Times",
-          "sourceUrl": "https://www.economictimes.com/2026-05-29/isn-t-9b-somali-fraud-serious-to-you-gop-grill-minnesota-gov-walz-ag-ellison-in-fiery-hearing"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Scheme?",
-        "Where did the Unknown allegedly go in Operation Soteria Shield?",
-        "Are any of these 2 figures connected to each other?"
+        "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $1.776 Billion allegedly go in Trump's $1.776 Billion Anti-Weaponization Fund Investigation?",
+        "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Scheme?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-31T07:44:22.819Z",
-  "lastUpdated": "2026-05-31T07:44:22.820Z"
+  "lastReflection": "2026-05-31T10:14:09.899Z",
+  "lastUpdated": "2026-05-31T10:14:09.899Z"
 }
