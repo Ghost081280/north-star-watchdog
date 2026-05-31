@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-20T09:29:15.578Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-20T12:23:12.615Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-05-31T14:43:32.643Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-31T16:06:40.802Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
-    "What other organizations is Former Minnesota Official connected to?",
     "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $9 billion allegedly go in $9B Somali Fraud Investigation?",
     "What other organizations is Aimee Bock connected to?",
@@ -558,7 +556,9 @@
     "Where did the $90 Million allegedly go in Minnesota Fraud Schemes Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $9B allegedly go in Somali Fraud Investigation?"
+    "Where did the $9B allegedly go in Somali Fraud Investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud scandal?",
+    "Where did the $21M allegedly go in Minnesota Medicaid fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2591,
-    "articlesProcessed": 129100,
-    "redFlagsFound": 2999,
+    "totalScans": 2592,
+    "articlesProcessed": 129150,
+    "redFlagsFound": 3000,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $9B allegedly go in $9B Somali fraud investigation?",
-        "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?"
+        "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
+        "What other organizations is Former Minnesota Official connected to?",
+        "Where did the $21 million allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-31T14:43:32.643Z",
-  "lastUpdated": "2026-05-31T14:43:32.644Z"
+  "lastReflection": "2026-05-31T16:06:40.802Z",
+  "lastUpdated": "2026-05-31T16:06:40.803Z"
 }
