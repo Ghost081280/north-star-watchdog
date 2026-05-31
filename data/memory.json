@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-20T19:23:35.366Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-20T21:51:46.355Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-05-31T19:37:49.750Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-05-31T20:58:14.198Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Governor connected to?",
     "What other organizations is Minnesota Attorney General connected to?",
     "Where did the $9 Billion allegedly go in Somali Fraud Investigation?",
     "What other organizations is ICE Agent connected to?",
@@ -558,7 +557,8 @@
     "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Rameshwari Ramachandran connected to?",
-    "Where did the $90M allegedly go in Feeding Our Future investigation?"
+    "Where did the $90M allegedly go in Feeding Our Future investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2594,
-    "articlesProcessed": 129250,
-    "redFlagsFound": 3002,
+    "totalScans": 2595,
+    "articlesProcessed": 129300,
+    "redFlagsFound": 3003,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal sentencing",
-          "description": "Rameshwari Ramachandran, former Executive Director of Feeding Our Future, was sentenced to 41 years in prison for conspiracy to commit wire fraud and conspiracy to commit money laundering.",
-          "insight": "This sentence indicates a significant case of fraud and potentially signals further investigations into related parties.",
-          "entities": [
-            "Rameshwari Ramachandran",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdzNpUlJGWXNLRUpIaEV0Y2lfbS1NbUNpd0NoOFl1WTl0VWxfY3BKNnBoQ2RqcnhMUkFuTGZtMHY0bHdSS095NTZIem14clZXTFZYbFloU2xnWVJtcVhjNW9ibUJDZERrVEwwU2d1WDMtY3JvZGV3SVpubVJmWWtpVG14Y2VaVlRMbUZMLVpyWk9FWFdKRnJKTXp4bWdzQTZwa3RaU0RGWERTaUFwczJYVlJlRkRHUUM3T294b1IwOGdiU19TR0RzVzZSdzhoZFN6dXEzd3o3SzFnNmZaUEVMWTNKYjZVdXkyYzUzMUdR?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
-        "What other organizations is Minnesota Governor connected to?"
+        "What other organizations is Minnesota Governor connected to?",
+        "What other organizations is Minnesota Attorney General connected to?",
+        "Where did the $9 Billion allegedly go in Somali Fraud Investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-31T19:37:49.750Z",
-  "lastUpdated": "2026-05-31T19:37:49.751Z"
+  "lastReflection": "2026-05-31T20:58:14.198Z",
+  "lastUpdated": "2026-05-31T20:58:14.199Z"
 }
