@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-20T23:11:36.011Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-05-21T03:29:20.966Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-05-31T22:03:33.427Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-06-01T00:05:22.469Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is ICE Agent connected to?",
-    "Where did the $250 Million allegedly go in Minnesota Somali Fraud Hearing?",
     "What other organizations is Ilhan Omar connected to?",
     "What other organizations is Minnesota Governor Walz connected to?",
     "What other organizations is Minnesota AG Ellison connected to?",
@@ -558,7 +556,9 @@
     "Where did the $90M allegedly go in Feeding Our Future investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "What specific allegations exist against Ilhan Omar?",
-    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
+    "What other organizations is Woman at center of Minnesota fraud case connected to?",
+    "Where did the $90 Million allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2596,
-    "articlesProcessed": 129350,
-    "redFlagsFound": 3005,
+    "totalScans": 2597,
+    "articlesProcessed": 129400,
+    "redFlagsFound": 3006,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "Feeding Our Future program shut down due to fraud allegations",
-          "insight": "This indicates a large-scale fraud scheme that may have gone undetected for an extended period",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "MSN",
-          "sourceUrl": "https://www.msn.com/en-us/article/feeding-our-future-ringleader-gets-41-year-prison-term-arsid-details-emerge-nbclocal"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota Attorney General connected to?",
-        "Where did the $9 Billion allegedly go in Somali Fraud Investigation?",
-        "What other organizations is ICE Agent connected to?"
+        "What other organizations is ICE Agent connected to?",
+        "Where did the $250 Million allegedly go in Minnesota Somali Fraud Hearing?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-05-31T22:03:33.427Z",
-  "lastUpdated": "2026-05-31T22:03:33.428Z"
+  "lastReflection": "2026-06-01T00:05:22.469Z",
+  "lastUpdated": "2026-06-01T00:05:22.470Z"
 }
