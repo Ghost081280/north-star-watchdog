@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-21T15:20:18.572Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-21T17:56:05.771Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-06-01T17:35:08.142Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-06-01T21:31:26.305Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Two Minnesota Residents connected to?",
     "Where did the $90 Million allegedly go in Minnesota Fraud Schemes Investigation?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $21 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Feeding Our Future ringleader connected to?",
     "Where did the €500 million allegedly go in Wise Investigation?",
     "What other organizations is Ilhan Omar connected to?",
-    "Where did the $90M allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $90M allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $90M allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2600,
-    "articlesProcessed": 129550,
-    "redFlagsFound": 3010,
+    "totalScans": 2601,
+    "articlesProcessed": 129600,
+    "redFlagsFound": 3011,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota AG Ellison connected to?",
-        "Where did the $9B allegedly go in Minnesota Somali fraud investigation?",
-        "What other organizations is Two Minnesota Residents connected to?"
+        "What other organizations is Two Minnesota Residents connected to?",
+        "Where did the $90 Million allegedly go in Minnesota Fraud Schemes Investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-01T17:35:08.142Z",
-  "lastUpdated": "2026-06-01T17:35:08.143Z"
+  "lastReflection": "2026-06-01T21:31:26.305Z",
+  "lastUpdated": "2026-06-01T21:31:26.306Z"
 }
