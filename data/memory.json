@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-21T03:29:20.966Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-21T07:49:19.617Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-01T00:05:22.469Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-06-01T06:00:55.532Z",
+      "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.85
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
     "What other organizations is Minnesota Governor Walz connected to?",
     "What other organizations is Minnesota AG Ellison connected to?",
     "Where did the $9B allegedly go in Minnesota Somali fraud investigation?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Woman at center of Minnesota fraud case connected to?",
-    "Where did the $90 Million allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $90 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Feeding Our Future ringleader connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2597,
-    "articlesProcessed": 129400,
-    "redFlagsFound": 3006,
+    "totalScans": 2598,
+    "articlesProcessed": 129450,
+    "redFlagsFound": 3007,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is ICE Agent connected to?",
-        "Where did the $250 Million allegedly go in Minnesota Somali Fraud Hearing?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "What other organizations is Minnesota Governor Walz connected to?",
+        "What other organizations is Minnesota AG Ellison connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-01T00:05:22.469Z",
-  "lastUpdated": "2026-06-01T00:05:22.470Z"
+  "lastReflection": "2026-06-01T06:00:55.532Z",
+  "lastUpdated": "2026-06-01T06:00:55.532Z"
 }
