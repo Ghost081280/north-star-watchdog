@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-21T07:49:19.617Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-21T11:21:29.620Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-01T06:00:55.532Z",
       "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.85
+    },
+    {
+      "date": "2026-06-01T11:53:09.798Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Governor Walz connected to?",
     "What other organizations is Minnesota AG Ellison connected to?",
     "Where did the $9B allegedly go in Minnesota Somali fraud investigation?",
     "What other organizations is Two Minnesota Residents connected to?",
@@ -558,7 +557,8 @@
     "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Woman at center of Minnesota fraud case connected to?",
     "Where did the $90 Million allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "What other organizations is Feeding Our Future ringleader connected to?"
+    "What other organizations is Feeding Our Future ringleader connected to?",
+    "Where did the €500 million allegedly go in Wise Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2598,
-    "articlesProcessed": 129450,
-    "redFlagsFound": 3007,
+    "totalScans": 2599,
+    "articlesProcessed": 129500,
+    "redFlagsFound": 3009,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program_termination",
+          "description": "Medicaid providers face removal as validation deadline passes",
+          "insight": "This indicates a large-scale effort to crack down on fraudulent activities within the Medicaid program in Minnesota. The involvement of multiple agencies and the significant number of providers facing removal suggest a widespread issue.",
+          "entities": [
+            "Minnesota DHS",
+            "Medicaid providers"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "AOL.com",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lQlM2TnI2V3R5dkl2TUxuM2xXNURTam1NRk9sMUY3XzlDLXh1Vlh0MkdTREZHYTlEZzhOdklFc1VjazNQWG5TYTd4WWtMZXAtYWpORDlXRzk0RlJPcFFVSFRfczVjd3hUcWVGWlZkWjN0czNEZUNPa011ZXc/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
         "What other organizations is Minnesota Governor Walz connected to?",
-        "What other organizations is Minnesota AG Ellison connected to?"
+        "What other organizations is Minnesota AG Ellison connected to?",
+        "Where did the $9B allegedly go in Minnesota Somali fraud investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-01T06:00:55.532Z",
-  "lastUpdated": "2026-06-01T06:00:55.532Z"
+  "lastReflection": "2026-06-01T11:53:09.798Z",
+  "lastUpdated": "2026-06-01T11:53:09.799Z"
 }
