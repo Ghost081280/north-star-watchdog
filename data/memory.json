@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-22T07:42:28.481Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-22T10:49:08.307Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-02T17:22:04.122Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-02T20:46:30.070Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "What other organizations is Rameshwari Ramachandran connected to?",
-    "Where did the $90M allegedly go in Feeding Our Future investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "What specific allegations exist against Ilhan Omar?",
     "Where did the $90 million allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Woman at center of Minnesota fraud case connected to?",
@@ -558,7 +554,11 @@
     "Where did the Unknown allegedly go in Fertilizer Pricing Investigation?",
     "Where did the $11,000% allegedly go in Medicaid Autism Spending Investigation?",
     "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against Nancy Guthrie?"
+    "What specific allegations exist against Nancy Guthrie?",
+    "What other organizations is Jeffrey Royer connected to?",
+    "What other organizations is Nurse Practitioner connected to?",
+    "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Stark County Child Porn Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2606,
-    "articlesProcessed": 129850,
-    "redFlagsFound": 3016,
+    "totalScans": 2607,
+    "articlesProcessed": 129900,
+    "redFlagsFound": 3017,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $21M allegedly go in $21 Million Medicaid Fraud Scheme?",
         "Are any of these 3 figures connected to each other?",
-        "What other organizations is Rameshwari Ramachandran connected to?"
+        "What other organizations is Rameshwari Ramachandran connected to?",
+        "Where did the $90M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-02T17:22:04.122Z",
-  "lastUpdated": "2026-06-02T17:22:04.123Z"
+  "lastReflection": "2026-06-02T20:46:30.070Z",
+  "lastUpdated": "2026-06-02T20:46:30.071Z"
 }
