@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-22T18:53:22.480Z",
-      "summary": "SIGNIFICANT: 1 new legal actions, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-22T20:42:49.727Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-06-03T08:54:12.397Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-03T13:15:37.236Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2610,
-    "articlesProcessed": 130050,
-    "redFlagsFound": 3021,
+    "totalScans": 2611,
+    "articlesProcessed": 130100,
+    "redFlagsFound": 3023,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $90M allegedly go in Minnesota Medicaid fraud investigation?",
         "What other organizations is Erin Stewart connected to?",
-        "What other organizations is Brandon man connected to?"
+        "What other organizations is Brandon man connected to?",
+        "Where did the $90M allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-03T08:54:12.397Z",
-  "lastUpdated": "2026-06-03T08:54:12.398Z"
+  "lastReflection": "2026-06-03T13:15:37.236Z",
+  "lastUpdated": "2026-06-03T13:15:37.236Z"
 }
