@@ -2,6 +2,46 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations are currently underway, including the George Santos insider trading investigation and the LAUSD investigation.",
+      "insight": "These investigations suggest a pattern of potential wrongdoing at high levels of government and public institutions.",
+      "entities": [
+        "George Santos",
+        "LAUSD",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NPR",
+      "sourceUrl": "https://www.npr.org/2026/06/02/1144444444/doj-investigating-george-santos-insider-trading-kalshi",
+      "id": "rf-1780458822760-mj5wufr5a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-03T03:53:42.756Z",
+      "isNew": true
+    },
+    {
+      "type": "child porn investigation",
+      "description": "The Stark County volunteer assistant fire chief was arrested for child porn, highlighting the need for increased vigilance in this area.",
+      "insight": "This arrest suggests that child porn investigations may be on the rise, and it is essential to monitor this trend closely.",
+      "entities": [
+        "Stark County"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Jordan Miller News",
+      "sourceUrl": "https://www.jordanmiller.news/2026/06/02/federal-investigation-leads-to-arrest-of-stark-county-volunteer-assistant-fire-chief/",
+      "id": "rf-1780458822760-l2jb0p6ag",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-03T03:53:42.756Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing, including into NIH scientists and LAUSD Superintendent Carvalho",
       "insight": "These investigations indicate a potential pattern of misconduct and corruption across various sectors",
       "entities": [
@@ -19,7 +59,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-02T23:01:44.797Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -941,49 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-17T22:52:40.591Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated amid allegations of fraud.",
-      "insight": "The termination of the program and the allegations of fraud raise concerns about the oversight and management of COVID-19 relief funds.",
-      "entities": [
-        "Feeding Our Future",
-        "U.S. Department of Agriculture"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/minnesota-squad-rep-ilhan-omar-knew-250m-covid-meal-fraud-mastermind-claims-jailhouse-interview-2026-05-16",
-      "id": "rf-1779054850020-fuozfj2sb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-17T21:54:10.015Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into BlackRock for asset value inflation accusations",
-      "insight": "This investigation could potentially lead to a larger scandal involving other financial institutions. I recommend further investigation into BlackRock's business practices and any potential connections to other entities.",
-      "entities": [
-        "BlackRock"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Emirates Voice",
-      "sourceUrl": "https://www.emiratesvoice.com/article/federal-investigation-against-blackrock-details-of-asset-value-inflation-accusations-in-wall-street",
-      "id": "rf-1779044780151-wioeo79ae",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-17T19:06:20.147Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -992,8 +994,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-02T23:01:44.797Z"
+  "lastUpdated": "2026-06-03T03:53:42.756Z"
 }
