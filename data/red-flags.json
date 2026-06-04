@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota DHS terminated funding for 3,400+ Medicaid providers",
+      "insight": "This indicates a significant effort to crack down on potential fraud, but also raises concerns about the impact on legitimate providers and beneficiaries.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRllSdmpldXNLRDgxVVEyeDFZY3VqUFNjTXNOWHpFajBCbTl0WFVqUkNBakdQUVZsbzVmaEs5b0xIc21LLXpmaS1xYzFYczZTVHZFTVpvTmM3ODNRTVJGMFVjZTBzNURmNTFCZGF3djhITTZzTm1WZEFwbk9Tcm14Y2MzVllTSEFiZ3MwYnR3VVRTRHA0Y2hkQTNhanRhUdIBowFBVV95cUxPMG05UklJeS1VNFU4SnV0Q0YxNmR5bVAxMm5CNGgtZE5mQ2xNQzJYWlZXd1M4emlZb2pUcmtDbFhBMEZYbC1adDk2Y1pWU2hhdElkS1RsY01SSVBNME5XN0NBQW9IOTVwWkRRQUs3TVJ4bUFGTzRqak1DUVBIMkw1bVFmcGdTWm5vU01NQ253bjlxS2FMSHNYYTk3S2Y0NXYzMW5J",
+      "id": "rf-1780595109277-d33mbtu4w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-04T17:45:09.274Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "A $90 million Medicaid fraud indictment in Minneapolis indicates a significant issue with healthcare fraud in Minnesota.",
       "insight": "The $90 million Medicaid fraud case in Minneapolis suggests a large-scale fraud scheme that warrants further investigation.",
@@ -957,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-19T22:14:57.348Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "The Feeding Our Future fraud case involves a large amount of money ($250M) and a severe sentence recommendation for Aimee Bock (50 years).",
-      "insight": "The case suggests a large-scale fraud scheme with severe consequences for those involved.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Prosecutors ask judge to sentence Feeding Our Future ringleader Aimee Bock to 50 years",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQazlhOENOd0VLdm1CbFNxQTJCd05fTXVVOGJuZWs0SDhGR1BkS3d0WFNxWUtzV0RycXBKb0RMZkhhZjdpS2g0UGo4Mmc5WEplSWw1UnU5Q3RFUElCSGJ1aTlKc0FOdFBkNnEwSXZyVmJ1YXZzZXAtQWw3NU50WUFndGNvdHJnS243Q0tabTZYYlRDYWNmUDF0TVpTNU9XTk1LTFcxVGsybVduNFJ3YncyYzhMbWpWZl9JMzZRQXZYdDdTeWFsQmlvSDNsbVZBd3hXYWRuSzdQM18xMnk3SEExN2VpUlhtdkVQNEhQX3pGVF9LUQ",
-      "id": "rf-1779179599280-xct3oevug",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-19T08:33:19.276Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-04T14:55:26.189Z"
+  "lastUpdated": "2026-06-04T17:45:09.274Z"
 }
