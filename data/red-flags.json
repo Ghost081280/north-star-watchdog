@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation has been launched into MARTA safety after two stabbings.",
+      "insight": "This investigation may be related to larger issues with MARTA safety and security. Further research is needed to determine the scope of the investigation and potential connections to other cases.",
+      "entities": [
+        "MARTA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "11Alive",
+      "sourceUrl": "https://www.11alive.com/article/news/local/federal-investigation-into-marta-safety-after-two-stabbings/85-5e7f5c7a-7b4e-43a8-8f6f-4a94e6f4e7f4",
+      "id": "rf-1780611612790-3774s65py",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-04T22:20:12.787Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota DHS terminated funding for 3,400+ Medicaid providers",
       "insight": "This indicates a significant effort to crack down on potential fraud, but also raises concerns about the impact on legitimate providers and beneficiaries.",
@@ -956,40 +975,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-20T00:03:31.034Z",
       "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The Feeding Our Future fraud case involves a significant amount of money ($250M) and high-profile charges",
-      "insight": "This case suggests a large-scale fraud scheme with potential connections to other organizations or individuals. Further investigation is needed to uncover the full extent of the scheme.",
-      "entities": [
-        "Aimee Bock",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUmMyTzgzTHVwV1ZxUFcxckxuZkx4Z1hGNWNKNnBrbVM4VkpuMEFfSjEyU3VJcFNJeThCQW9KOWV5RkZoT0dhaWpPV2hDekVtNUtnVnduTnZqRU90Z1piZnpfZ0g5ajE1RVk5UWVp6WkN2S29EZDVKYjBmMHJUd1hCdQ?oc=5",
-      "id": "rf-1779228897352-qmlauc4dt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-19T22:14:57.348Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-04T20:03:40.531Z"
+  "lastUpdated": "2026-06-04T22:20:12.787Z"
 }
