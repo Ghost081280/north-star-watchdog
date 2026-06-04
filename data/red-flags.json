@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "Medicaid provider termination",
+      "description": "Rochester provider loses Medicaid funding, impacting 120 clients",
+      "insight": "This incident suggests potential fraud or abuse in Medicaid programs, requiring further investigation",
+      "entities": [
+        "Rochester provider"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KTTC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQjZuVkJpbXRtY0M2MXdrR0hQR1NxMXFzQVB2MVl0OFNhT3h4bFFNbWJURDQzSFdvODBrNEl3M1ZVdkhuQzF0NEJnWmZhQU5RdWtJQnAwbjRocVFZVEx5dnNXVlBsbFExemlGNnhPYkFWTVlvd2NDa0NhalIxLURudWwyWjY5Y21wZno5MkZBQkJyc29KMjZ0X3NJX1HSAbABQVVfeXFMTmh4cFRmV21uTTFzNm1ORUFsc1ZHTHZPcnRKZTQyeV95U1JudDRKNkVYVWhwcnFzMFFRS0JnSHBGSUxUbDhIa3Jrc0lYTk1EWmJVMk9vOHVyTml5cFhhR1FTekJETFBobHNkR2RiUFhTWGZDQ2loejJWVjA5SmJyU25PVDRuVVZqRk5yYXNHVTZQd3lCdHBVcmRERUtBSXZ1NTlOQk56emhSTzVUakdTTEU?locale=en-US&oc=5",
+      "id": "rf-1780544856605-z9r87x8jk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-04T03:47:36.602Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
+      "description": "Justice Department launches Title VI investigation into DEI programs at Arizona State University",
+      "insight": "This investigation suggests potential issues with DEI programs at ASU, requiring further scrutiny",
+      "entities": [
+        "Arizona State University"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Fox News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaUZ0bUdvNm9mZFJ0OTY4Uk5FMnk4bHJWLVNMS0x4X0ZYcWFpX3ZROTVtN0J0ZXdFNjRQS1lTUHF5M2sySTd0SzhFNDRCc0V5eGh4SUdpZmtSTWNkMVlnMEdzZndHem1TdW1QZlV2SXJRb3d2Wk9scUNNMHVWdzQ5SDBPNGRqS3I3azVYSTYwc2h5YTMtM3EtaFlkLWRUazFHZ281Y3N4OXdnOXBGNmZ6cHZ2ek9zQdIBuwFBVV95cUxNRWNmSXBpLS1GNG9PR0duVWQtQ2tEZk96MUduY2J1aXJqTDJJMEdoS0x4OU5vdlZ0QXlVeWdBR09xUDhPNFQ5RUhmT3g3ZkJUZDZTR1p5QzlCTzVDZmgyX3dDOVVEMS01NFpzSG1SVVUwdl9ha013elJoOGlUQXhldVpReXdkMGV0dmx4Z0VLTGhmZkRNTFMxdGs3N0ZwbjVzTTR1RlJyNDNnVk8yWUtjcUJLVUF3LXJJdFcw?oc=5",
+      "id": "rf-1780544856605-nbu9afmep",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-04T03:47:36.602Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations into high-profile figures and organizations",
       "insight": "Pattern of increased enforcement and scrutiny across various sectors",
@@ -939,46 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-19T08:33:19.276Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential termination of programs due to fraud investigations",
-      "insight": "Investigations into fraud may lead to program terminations, impacting services",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Sahan Journal",
-      "sourceUrl": "https://sahanjournal.com/feeding-our-future-leader-aimee-bock-faces-sentencing-in-400-million-fraud/",
-      "id": "rf-1779138698495-a1zum26bm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-18T21:11:38.490Z",
-      "isNew": false
-    },
-    {
-      "type": "official inaction",
-      "description": "New records reveal officials failed to act on fraud warnings in the Feeding Our Future case",
-      "insight": "This suggests a potential pattern of neglect or corruption within the Minnesota government.",
-      "entities": [
-        "Minnesota government",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/heres-what-to-know-about-newly-released-records-in-the-feeding-our-future-fraud-case/",
-      "id": "rf-1779091271986-chnpx4b51",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-18T08:01:11.982Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,10 +985,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-03T23:41:40.360Z"
+  "lastUpdated": "2026-06-04T03:47:36.602Z"
 }
