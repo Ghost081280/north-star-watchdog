@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-23T07:31:23.375Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-23T09:51:23.213Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-04T03:47:36.600Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-04T08:19:41.055Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
+      "confidence": 0.7
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $90M allegedly go in Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in Fertilizer Pricing Investigation?",
     "Where did the $11,000% allegedly go in Medicaid Autism Spending Investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in George Santos Insider Trading Investigation?",
     "Where did the $1.7M allegedly go in Feeding Our Future fraud?",
     "Where did the $0 allegedly go in Minnesota Medicaid Provider Fraud Investigation?",
-    "Where did the $0 allegedly go in ASU DEI Programs Investigation?"
+    "Where did the $0 allegedly go in ASU DEI Programs Investigation?",
+    "Where did the $90 Million allegedly go in Minnesota Medicaid Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2615,
-    "articlesProcessed": 130300,
-    "redFlagsFound": 3027,
+    "totalScans": 2616,
+    "articlesProcessed": 130350,
+    "redFlagsFound": 3029,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Medicaid fraud",
+          "description": "A $90 million Medicaid fraud indictment in Minneapolis indicates a significant issue with healthcare fraud in Minnesota.",
+          "insight": "The $90 million Medicaid fraud case in Minneapolis suggests a large-scale fraud scheme that warrants further investigation.",
+          "entities": [
+            "Minnesota Department of Health",
+            "DOJ"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "BlackPressUSA",
+          "sourceUrl": "https://blackpressusa.com/2026/06/04/doj-announces-90-million-medicaid-fraud-indictment-in-minneapolis-as-acting-ag-no-shows/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Erin Stewart connected to?",
-        "What other organizations is Brandon man connected to?",
-        "Where did the $90M allegedly go in Medicaid Fraud Investigation?"
+        "Where did the $90M allegedly go in Medicaid Fraud Investigation?",
+        "Where did the Unknown allegedly go in Fertilizer Pricing Investigation?",
+        "Where did the $11,000% allegedly go in Medicaid Autism Spending Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-04T03:47:36.600Z",
-  "lastUpdated": "2026-06-04T03:47:36.600Z"
+  "lastReflection": "2026-06-04T08:19:41.055Z",
+  "lastUpdated": "2026-06-04T08:19:41.056Z"
 }
