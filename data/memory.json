@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-23T21:53:21.981Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-23T22:52:16.214Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-05T05:15:41.463Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-06-05T09:43:11.127Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is George Santos connected to?",
-    "What other organizations is Alberto Carvalho connected to?",
-    "What other organizations is Jimmy Gomez connected to?",
     "What other organizations is Stark County volunteer assistant fire chief connected to?",
     "Where did the Unknown allegedly go in George Santos Insider Trading Investigation?",
     "Where did the $1.7M allegedly go in Feeding Our Future fraud?",
@@ -558,7 +555,10 @@
     "Where did the $90 million allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the Unknown allegedly go in MARTA Safety Investigation?",
     "Where did the $3.3 million allegedly go in Minnesota Medicaid fraud investigation?",
-    "Where did the $3.3 million allegedly go in Medicaid fraud investigation?"
+    "Where did the $3.3 million allegedly go in Medicaid fraud investigation?",
+    "What other organizations is Minnesota man connected to?",
+    "Where did the Unknown allegedly go in MARTA investigation?",
+    "Where did the $3.3 million allegedly go in Medicaid funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2623,
-    "articlesProcessed": 130700,
-    "redFlagsFound": 3037,
+    "totalScans": 2624,
+    "articlesProcessed": 130750,
+    "redFlagsFound": 3038,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "A Minnesota man was accused of $3.3 million in Medicaid fraud",
-          "insight": "This case highlights the need for increased scrutiny and regulation in the healthcare industry to prevent similar cases of fraud.",
-          "entities": [
-            "Minnesota man"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "kare11.com",
-          "sourceUrl": "https://kare11.com/news/minnesota-man-accused-of-3-3-million-in-medicaid-fraud-makes-initial-court-appearance-thursday"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 4 figures connected to each other?",
         "What other organizations is George Santos connected to?",
-        "What other organizations is Alberto Carvalho connected to?"
+        "What other organizations is Alberto Carvalho connected to?",
+        "What other organizations is Jimmy Gomez connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-05T05:15:41.463Z",
-  "lastUpdated": "2026-06-05T05:15:41.464Z"
+  "lastReflection": "2026-06-05T09:43:11.127Z",
+  "lastUpdated": "2026-06-05T09:43:11.129Z"
 }
