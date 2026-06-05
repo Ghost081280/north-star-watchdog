@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "high-risk Medicaid providers",
+      "description": "More than 60% of Minnesota high-risk Medicaid providers fail review",
+      "insight": "This indicates a significant risk of fraud in Minnesota's Medicaid program",
+      "entities": [
+        "Minnesota Medicaid providers"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Black Chronicle",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQajNJSVhITUVkb1pFQURhdkozbkxWd2FvZkZhR0l6aV9kaGtPZExqQ21NTXdMeXp0Nk9LdjF0LTZGa0Y5Y2ZCdVVqa0NTVUFMOW8zcExYSWI0OE41WloxVG5LSWExckFTcThEYWw3dV9GRzZnSGpsU3I5U3d2aUNfRFVsbUdPSjh2SDE2amVQNFdub3pxNE1DSmllbXNtbUdzMGdxQzQxSUFfdEtPYVptelhB?oc=5",
+      "id": "rf-1780689149195-vcyff7g48",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-05T19:52:29.192Z",
+      "isNew": true
+    },
+    {
+      "type": "FBI investigation",
+      "description": "FBI offers $150K reward for information leading to Feeding Our Future suspect's arrest",
+      "insight": "This indicates a significant investigation into Feeding Our Future",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "kare11.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOYzk5a2plSHplcVppVDNQTmxQOGI4cVJXTkhEMlFYU2lEaGVjY3VxTFhUNXRKa0pXTUc1bUtzSFc1Y1U4eUtua1psS0ZPX1gybTJ2SWtFak5jQkd3R3Nzd05wRXNLclRtUFFUelR2RFRJcVRFbERkVlBTYXhDay1wWXMtaHFENlZFOHNWWUNNN0VieFpiaVVVSXVlU216SVlMenJRY0EyNjl1WFhPWC11YlRoZjJMWWctaG8wNklBemoybm5aQTVtREFKTjVFN0UyR3ZaTTltNmpBU3VsT0RSMFAxWXplTHlEVTNEZnVacV9Od2ptN2lKWDV3?oc=5",
+      "id": "rf-1780689149195-tbxhzij46",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-05T19:52:29.192Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Medicaid funding cut for over 3,400 providers in Minnesota",
       "insight": "This could indicate a large-scale effort to crack down on Medicaid provider fraud, but also raises concerns about the impact on legitimate providers and patients.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-05T17:53:04.363Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -932,45 +970,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-22T22:07:04.090Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Feeding Our Future used shell companies to allegedly commit fraud",
-      "insight": "The use of shell companies to commit fraud is a common tactic and may indicate a larger scheme.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/child-care-fraud-charges-brought-against-feeding-our-future-defendant/100",
-      "id": "rf-1779318696016-ew3bo1sgv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-20T23:11:36.013Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing in Minnesota, including the Feeding Our Future case and the Ilhan Omar investigation.",
-      "insight": "These investigations suggest a potential pattern of fraudulent activity in Minnesota, possibly involving government programs and high-profile individuals.",
-      "entities": [
-        "Feeding Our Future",
-        "Ilhan Omar"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPcjNFNl8yVzF0a3RHbElyZVEzd2tEdnV4aHVLbVZGMW1qdzlmRjBqb2piU2tLelZCcU9fSnNTZXVTaktjTUhTbXZWTWUwMzNBSVZhemZtbDZkV3dQUHdiQk5sVlJNUDVIOTdLSFhzSllEU3VSbDFFOEk3WmZNMzRCUS1pb0hfTC1qeXJxaVhkMHNkc2haZnBaSnMxUHE3MVhSb2lTMWZRamQ2TXJ5eWF5ckx6VkJBbVhrN01rTklnMWVjR1phTEFmOVNFOVVWRjJhN3Rja0oxZ0pkNV9zNkQ5SDVtSW5CTDVMUmh3",
-      "id": "rf-1779313906361-94b9y304o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-20T21:51:46.357Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -979,10 +978,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-05T17:53:04.363Z"
+  "lastUpdated": "2026-06-05T19:52:29.192Z"
 }
