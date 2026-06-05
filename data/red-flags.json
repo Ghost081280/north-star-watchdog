@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Over 60% of Minnesota high-risk Medicaid providers failed review",
+      "insight": "This indicates a high level of potential fraud in the Medicaid program, requiring further investigation",
+      "entities": [
+        "Minnesota Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Black Chronicle",
+      "sourceUrl": "https://www.theblackchronicle.com/more-than-60-of-minnesota-high-risk-medicaid-providers-fail-review/",
+      "id": "rf-1780694654259-olag8yx26",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-05T21:24:14.256Z",
+      "isNew": true
+    },
+    {
       "type": "high-risk Medicaid providers",
       "description": "More than 60% of Minnesota high-risk Medicaid providers fail review",
       "insight": "This indicates a significant risk of fraud in Minnesota's Medicaid program",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-05T19:52:29.192Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "FBI investigation",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-05T19:52:29.192Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -950,40 +969,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-23T00:06:04.699Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "DHS suspends license for East Bethel youth healing center",
-      "insight": "This could indicate a larger issue with oversight and regulation of youth services in Minnesota.",
-      "entities": [
-        "East Bethel youth healing center",
-        "DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX2RPN1BWT0lwMmdMQ0g3M3lKRTVMTXd6RWFQUzZZbzBCMHN0Nkc1ZnJ3dFlDV2M1UTBKRk5GbzBYM0pBVTZCWHBON1JWeUxWOHhGR3ItZE0yRzgwbXVxZjZpcWNDRTVmbG1qeWFwcVdPMGIwTzhQclUwWG9tOGFzajRIZ1owQdIBiwFBVV95cUxQblBsT0g1OS1YWVY5eDBvV3RfNnk5WmxfY3dQQTRNU1o3MlJLZFJxcXV5emNsQUczd3RsM1NIeXBMelNmT1pxQnJkblhmSnlkN19VVWQ5em1vR1BhQV9IaHBrbm5LT2ZIS0lrWFZqSGdvcDFKMDBZeXBrcVkzMEctbUVCSjh6ZDBZLXEw",
-      "id": "rf-1779487624095-vsqxs0lik",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-22T22:07:04.090Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-05T19:52:29.192Z"
+  "lastUpdated": "2026-06-05T21:24:14.256Z"
 }
