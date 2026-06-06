@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota disenrolled thousands of high-risk Medicaid providers after review",
+      "insight": "This indicates a potential for widespread fraud in Medicaid programs, requiring further investigation.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Pioneer Press",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzNUNWpXcm10cmc?oc=5",
+      "id": "rf-1780786966747-6iqprjwai",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-06T23:02:46.743Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid provider disenrollment",
       "description": "Minnesota disenrolls thousands of high-risk Medicaid providers after review",
       "insight": "This indicates potential issues with Medicaid provider screening and oversight",
@@ -96,25 +115,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-06T11:25:01.111Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota disenrolled thousands of high-risk Medicaid providers after review",
-      "insight": "This suggests a large-scale effort to crack down on fraudulent activity in the Medicaid program. However, it also raises concerns about the potential for improper payments and lack of oversight.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzMUNWpXcm10cmc?oc=5",
-      "id": "rf-1780737888245-j8rtuyob7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-06T09:24:48.241Z",
       "isNew": false
     },
     {
@@ -974,16 +974,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-06T21:02:33.714Z"
+  "lastUpdated": "2026-06-06T23:02:46.743Z"
 }
