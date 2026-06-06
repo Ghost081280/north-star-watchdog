@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "MN disenrolls thousands of high-risk Medicaid providers after review - Pioneer Press",
+      "insight": "The disenrollment of high-risk Medicaid providers suggests a proactive approach to preventing fraud and abuse within the Medicaid program. This could indicate a larger effort to crack down on fraudulent activities in healthcare.",
+      "entities": [
+        "Minnesota DHS",
+        "Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MN disenrolls thousands of high-risk Medicaid providers",
+      "sourceUrl": "https://www.pioneerpress.com/2026/06/05/mn-disenrolls-thousands-high-risk-medicaid-providers-review/",
+      "id": "rf-1780745101115-jl39e37er",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-06T11:25:01.111Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota disenrolled thousands of high-risk Medicaid providers after review",
       "insight": "This suggests a large-scale effort to crack down on fraudulent activity in the Medicaid program. However, it also raises concerns about the potential for improper payments and lack of oversight.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-06T09:24:48.241Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -951,25 +971,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-24T13:22:08.541Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Multiple shell companies involved in Feeding Our Future fraud case",
-      "insight": "The Feeding Our Future case reveals a complex web of shell companies and individuals involved in the fraud.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Law360",
-      "sourceUrl": "https://www.law360.com/public-interest/features/1666337/ringleader-of-250m-covid-child-meals-fraud-gets-41-years",
-      "id": "rf-1779548389691-x13q1bb9z",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-23T14:59:49.687Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,6 +984,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1000,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-06T09:24:48.241Z"
+  "lastUpdated": "2026-06-06T11:25:01.111Z"
 }
