@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota disenrolls thousands of high-risk Medicaid providers after review",
+      "insight": "This suggests a significant issue with Medicaid providers in Minnesota, potentially indicating a large-scale fraud scheme.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Pioneer Press",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzNUNWpXcm10cmc",
+      "id": "rf-1780752501169-h4y00nq36",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-06T13:28:21.166Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "MN disenrolls thousands of high-risk Medicaid providers after review - Pioneer Press",
       "insight": "The disenrollment of high-risk Medicaid providers suggests a proactive approach to preventing fraud and abuse within the Medicaid program. This could indicate a larger effort to crack down on fraudulent activities in healthcare.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-06T11:25:01.111Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -951,26 +970,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-24T16:59:29.561Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple individuals and organizations are being investigated for federal crimes, including wire fraud and money laundering.",
-      "insight": "I notice that there are multiple cases involving large amounts of money and complex schemes. This suggests that there may be a larger network of individuals and organizations involved in these crimes.",
-      "entities": [
-        "Aimee Bock",
-        "Hasan Piker"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ investigation",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1779628928544-51uent1my",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-24T13:22:08.541Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,7 +983,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1002,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-06T11:25:01.111Z"
+  "lastUpdated": "2026-06-06T13:28:21.166Z"
 }
