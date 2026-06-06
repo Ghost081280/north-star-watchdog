@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-24T23:59:42.657Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-25T04:39:37.992Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-06-06T17:11:37.851Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-06T19:19:43.660Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $3.3 million allegedly go in Medicaid funding investigation?",
     "Where did the unknown allegedly go in MARTA federal investigation?",
     "Where did the $150K allegedly go in Feeding Our Future fraud?",
     "Where did the $150K allegedly go in Feeding Our Future?",
@@ -558,7 +557,8 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $250M allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
+    "Where did the Unknown allegedly go in Feeding Our Future Investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2637,
-    "articlesProcessed": 131350,
-    "redFlagsFound": 3055,
+    "totalScans": 2638,
+    "articlesProcessed": 131400,
+    "redFlagsFound": 3057,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota man connected to?",
-        "Where did the Unknown allegedly go in MARTA investigation?",
-        "Where did the $3.3 million allegedly go in Medicaid funding investigation?"
+        "Where did the $3.3 million allegedly go in Medicaid funding investigation?",
+        "Where did the unknown allegedly go in MARTA federal investigation?",
+        "Where did the $150K allegedly go in Feeding Our Future fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-06T17:11:37.851Z",
-  "lastUpdated": "2026-06-06T17:11:37.852Z"
+  "lastReflection": "2026-06-06T19:19:43.660Z",
+  "lastUpdated": "2026-06-06T19:19:43.661Z"
 }
