@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-24T13:22:08.538Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-24T15:02:06.074Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-05T23:06:55.034Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-06T02:55:29.454Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $90M allegedly go in $90 Million Medicaid Fraud Indictment?",
     "Where did the $2 Billion allegedly go in Minnesota Medicaid Provider Review?",
     "What other organizations is Unknown connected to?",
     "Where did the $90 million allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $100M allegedly go in Minnesota Medicaid Fraud?",
     "What specific allegations exist against Unknown?",
     "Where did the $0 allegedly go in Feeding Our Future Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $100M+ allegedly go in Ohio-Minnesota Medicaid Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2630,
-    "articlesProcessed": 131000,
-    "redFlagsFound": 3044,
+    "totalScans": 2631,
+    "articlesProcessed": 131050,
+    "redFlagsFound": 3046,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Gabe Evans?",
-        "What other organizations is David Valadao connected to?",
-        "What specific allegations exist against David Valadao?"
+        "Where did the $90M allegedly go in $90 Million Medicaid Fraud Indictment?",
+        "Where did the $2 Billion allegedly go in Minnesota Medicaid Provider Review?",
+        "What other organizations is Unknown connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-05T23:06:55.034Z",
-  "lastUpdated": "2026-06-05T23:06:55.035Z"
+  "lastReflection": "2026-06-06T02:55:29.454Z",
+  "lastUpdated": "2026-06-06T02:55:29.455Z"
 }
