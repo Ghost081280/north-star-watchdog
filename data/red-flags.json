@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into Minnesota grocer for fraud",
+      "insight": "This indicates a continued effort by the FBI to target and prosecute fraudsters.",
+      "entities": [
+        "Minnesota Grocer"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeWZlR3VxNW01UG1EQ3VGNmZMVEpKakdQdnBodVNINFJvSU84cm80dHVVcE9lUVc2T3ZPSmY5bjBSYmdoSTl1RUtyUFU4a01YdkxtZWVTTlo3ODhFTFpVa2FGNXRFd2J6N2pUUXJVTnZ4d2szYl9zMXljS2tsRjVlV3J3WkpubHBKVTRTUHFpdElLUHhuMGdhU2NCN2pMMjRCczZTRVRtZ0VzbnpLaTlIVjBIYmlyY211N1hneFJmNm5mUXpCQU5BcG03eTRGbDVQcDltVUNpMVNIUWE4RDhjZm44RmRFckV4Yzg1SktfUQ?oc=5",
+      "id": "rf-1780828060548-merks3gwo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-07T10:27:40.544Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "Multiple federal investigations are underway in California, including probes into election fraud and MARTA safety concerns",
       "insight": "The presence of multiple federal investigations in California suggests a pattern of potential wrongdoing or negligence. Further investigation is needed to determine the extent of these issues and to identify potential connections between them.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-07T07:53:29.562Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -288,25 +307,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-05T09:43:11.130Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "A Minnesota man was accused of $3.3 million in Medicaid fraud",
-      "insight": "This case highlights the need for increased scrutiny and regulation in the healthcare industry to prevent similar cases of fraud.",
-      "entities": [
-        "Minnesota man"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "kare11.com",
-      "sourceUrl": "https://kare11.com/news/minnesota-man-accused-of-3-3-million-in-medicaid-fraud-makes-initial-court-appearance-thursday",
-      "id": "rf-1780636541467-rfq1h5z6x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-05T05:15:41.465Z",
       "isNew": false
     },
     {
@@ -975,17 +975,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-07T07:53:29.562Z"
+  "lastUpdated": "2026-06-07T10:27:40.544Z"
 }

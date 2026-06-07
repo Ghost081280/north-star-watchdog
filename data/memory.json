@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-25T17:42:57.285Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-25T19:27:50.955Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-07T07:53:29.560Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-07T10:27:40.542Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $200M allegedly go in Feeding Our Future Investigation?",
     "Where did the $100M allegedly go in Minnesota Medicaid Fraud?",
     "What specific allegations exist against Unknown?",
     "Where did the $0 allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Michael Lewis Miles Jr. connected to?",
     "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
-    "Where did the Undisclosed allegedly go in MARTA Safety Investigation?"
+    "Where did the Undisclosed allegedly go in MARTA Safety Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2642,
-    "articlesProcessed": 131600,
-    "redFlagsFound": 3062,
+    "totalScans": 2643,
+    "articlesProcessed": 131650,
+    "redFlagsFound": 3064,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal investigation",
+          "description": "FBI investigation into Minnesota grocer for fraud",
+          "insight": "This indicates a continued effort by the FBI to target and prosecute fraudsters.",
+          "entities": [
+            "Minnesota Grocer"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "MSN",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeWZlR3VxNW01UG1EQ3VGNmZMVEpKakdQdnBodVNINFJvSU84cm80dHVVcE9lUVc2T3ZPSmY5bjBSYmdoSTl1RUtyUFU4a01YdkxtZWVTTlo3ODhFTFpVa2FGNXRFd2J6N2pUUXJVTnZ4d2szYl9zMXljS2tsRjVlV3J3WkpubHBKVTRTUHFpdElLUHhuMGdhU2NCN2pMMjRCczZTRVRtZ0VzbnpLaTlIVjBIYmlyY211N1hneFJmNm5mUXpCQU5BcG03eTRGbDVQcDltVUNpMVNIUWE4RDhjZm44RmRFckV4Yzg1SktfUQ?oc=5"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $150K allegedly go in Feeding Our Future?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Abigail Mingle connected to?"
+        "Where did the $200M allegedly go in Feeding Our Future Investigation?",
+        "Where did the $100M allegedly go in Minnesota Medicaid Fraud?",
+        "What specific allegations exist against Unknown?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-07T07:53:29.560Z",
-  "lastUpdated": "2026-06-07T07:53:29.561Z"
+  "lastReflection": "2026-06-07T10:27:40.542Z",
+  "lastUpdated": "2026-06-07T10:27:40.543Z"
 }
