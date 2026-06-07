@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-26T05:02:25.816Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-26T09:52:43.878Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-07T18:03:10.455Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-07T20:10:31.233Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2647,
-    "articlesProcessed": 131850,
-    "redFlagsFound": 3068,
+    "totalScans": 2648,
+    "articlesProcessed": 131900,
+    "redFlagsFound": 3070,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal investigation",
+          "description": "MARTA under federal investigation",
+          "insight": "Federal investigations indicate significant concerns about potential wrongdoing.",
+          "entities": [
+            "MARTA",
+            "Federal investigators"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Atlanta News First",
+          "sourceUrl": "https://www.atlanta-news-first.com/2026/06/05/marta-navigates-world-cup-while-under-federal-investigation"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M+ allegedly go in Ohio-Minnesota Medicaid Fraud?",
         "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Scheme?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-07T18:03:10.455Z",
-  "lastUpdated": "2026-06-07T18:03:10.456Z"
+  "lastReflection": "2026-06-07T20:10:31.233Z",
+  "lastUpdated": "2026-06-07T20:10:31.234Z"
 }
