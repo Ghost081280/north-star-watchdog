@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Multiple federal investigations are underway in California, including probes into election fraud and MARTA safety concerns",
+      "insight": "The presence of multiple federal investigations in California suggests a pattern of potential wrongdoing or negligence. Further investigation is needed to determine the extent of these issues and to identify potential connections between them.",
+      "entities": [
+        "California",
+        "MARTA"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/politics/justice-department/doj-office-says-multiple-probes-california-elections-underway-rcna73211",
+      "id": "rf-1780818809566-ceoi6zar5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-07T07:53:29.562Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "The Feeding Our Future organization has been linked to a $250M fraud scheme",
       "insight": "The existence of a large-scale fraud scheme involving Feeding Our Future raises concerns about the organization's financial management and potential connections to other entities or individuals involved in similar schemes.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-07T03:40:49.468Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -951,40 +971,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-25T19:27:50.957Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "Non-profit organization 'Feeding Our Future' used shell companies to commit fraud",
-      "insight": "This indicates a sophisticated scheme to hide illicit activities",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/minnesota-fraud-mastermind-gets-nearly-42-years-prison-massive-250m-feeding-our-future-scheme/",
-      "id": "rf-1779730977291-r8udpl69r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-25T17:42:57.287Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-07T03:40:49.468Z"
+  "lastUpdated": "2026-06-07T07:53:29.562Z"
 }
