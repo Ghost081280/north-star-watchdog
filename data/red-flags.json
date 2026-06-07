@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "The Feeding Our Future organization has been linked to a $250M fraud scheme",
+      "insight": "The existence of a large-scale fraud scheme involving Feeding Our Future raises concerns about the organization's financial management and potential connections to other entities or individuals involved in similar schemes.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MSN",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaXFHRFJTdy1WYVcyNFJ0bE5RRnVoZzdSWlVTazBLTUtoc2FyU0FwYWtlTGJMa2NDT1hlMUEyN0JKY2hkVWhXd2dWclkzS3pGNVNuOUhKVVYyQTlwYjJWa01FbDkxamJidFFuaFk4eGhpQTVYR216SHowN09HOGNweVNRZTJtV1dPQzFqaFh4N3NhZGlWenRRU1RCb09IR2lJNVVSbm91WldPZndObUE3SzA4QjhxakFXRkhEeA",
+      "id": "rf-1780803649472-0m0fqc5ye",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-07T03:40:49.468Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota disenrolled thousands of high-risk Medicaid providers after review",
       "insight": "This indicates a potential for widespread fraud in Medicaid programs, requiring further investigation.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-06T23:02:46.743Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid provider disenrollment",
@@ -951,25 +970,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-25T17:42:57.287Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The 'Feeding Our Future' program was terminated due to widespread fraud.",
-      "insight": "This indicates a large-scale fraud scheme that went undetected for a long time, allowing for significant financial losses.",
-      "entities": [
-        "Minnesota Department of Education"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/opa/pr/2023/May/23-OPA-462.html",
-      "id": "rf-1779724220295-tyou4ppuy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-25T15:50:20.291Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1001,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-06T23:02:46.743Z"
+  "lastUpdated": "2026-06-07T03:40:49.468Z"
 }
