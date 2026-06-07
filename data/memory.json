@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-26T09:52:43.878Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-26T16:42:03.305Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-06-07T20:10:31.233Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-06-07T22:02:47.309Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the $250M allegedly go in Minnesota Medicaid Fraud Scheme?",
     "Where did the $250M allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in MARTA federal investigation?",
     "Where did the $0 allegedly go in Pennsylvania Medicaid fraud investigation?",
     "Where did the $0 allegedly go in Minnesota Medicaid provider disenrollment?",
-    "Where did the N/A allegedly go in California Election Fraud Investigation?"
+    "Where did the N/A allegedly go in California Election Fraud Investigation?",
+    "Where did the $250M allegedly go in Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2648,
-    "articlesProcessed": 131900,
-    "redFlagsFound": 3070,
+    "totalScans": 2649,
+    "articlesProcessed": 131950,
+    "redFlagsFound": 3071,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal investigation",
-          "description": "MARTA under federal investigation",
-          "insight": "Federal investigations indicate significant concerns about potential wrongdoing.",
-          "entities": [
-            "MARTA",
-            "Federal investigators"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Atlanta News First",
-          "sourceUrl": "https://www.atlanta-news-first.com/2026/06/05/marta-navigates-world-cup-while-under-federal-investigation"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-07T20:10:31.233Z",
-  "lastUpdated": "2026-06-07T20:10:31.234Z"
+  "lastReflection": "2026-06-07T22:02:47.309Z",
+  "lastUpdated": "2026-06-07T22:02:47.310Z"
 }
