@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Federal investigation into MARTA safety brings hope to widow of slain bus driver",
+      "insight": "I notice a pattern of federal investigations into various entities, including MARTA and Medicaid providers. This suggests a broader effort to crack down on fraud and corruption.",
+      "entities": [
+        "MARTA",
+        "Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Atlanta News First",
+      "sourceUrl": "https://www.atlantanewsfirst.com/news/federal-investigation-into-marta-safety-brings-hope-to-widow-of-slain-bus-driver/",
+      "id": "rf-1780855390461-qpry6t8nq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-07T18:03:10.457Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "MARTA is under federal investigation for potential wrongdoing related to safety and operations.",
       "insight": "This investigation may uncover patterns of neglect or misconduct within MARTA, potentially leading to further scrutiny of transportation agencies.",
@@ -950,30 +970,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-27T03:36:16.195Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "Feeding Our Future leader sentenced to 41.5 years for $250M fraud",
-      "insight": "This case indicates a large-scale fraud scheme involving a nonprofit organization, which may be indicative of a larger pattern of corruption.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota nonprofit leader"
-      ],
-      "confidence": 95,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNYUV5a2YxSXZNelBiVVlKRVlfWGNHX190eE5pS01XZzVsTXNYUHJpYmNWbXlXTW13OXhDR29PQjF5ZkQ4QjJhTzhySENxMmJGS0Nzc2pVckV0Tk44RXlvZlNXSGQzZ25nWjBWWkxKdmwzcVlfTmpMTEZCbi0tMkVQRWNhWU9ENlh2ZUxVSThrb1IzUDJMQm1lTl9tdGtRYVlMQzdCemFmY1dycEJfY1J1WmxYVWV2WFhVS2kyc2FkR1VTek93TjRhOXF1Umo2OE9KdldDbHhoOW1FNmRUMVcxR3NIWEhxRHM?oc=5",
-      "id": "rf-1779823230371-pbqgaeihl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-26T19:20:30.367Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -981,7 +982,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -998,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-07T16:13:25.400Z"
+  "lastUpdated": "2026-06-07T18:03:10.457Z"
 }
