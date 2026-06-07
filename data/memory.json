@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-25T21:04:42.247Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-05-25T23:00:51.318Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-06-07T12:19:54.039Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-07T14:51:26.325Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Unknown?",
-    "Where did the $0 allegedly go in Feeding Our Future Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $100M+ allegedly go in Ohio-Minnesota Medicaid Fraud?",
     "Where did the $250M allegedly go in $250M Minnesota fraud scheme?",
     "What other organizations is Ilhan Omar connected to?",
@@ -558,7 +555,10 @@
     "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
     "Where did the Undisclosed allegedly go in MARTA Safety Investigation?",
     "Are any of these 2 figures connected to each other?",
-    "What specific allegations exist against Minnesota Grocer?"
+    "What specific allegations exist against Minnesota Grocer?",
+    "Where did the $0 allegedly go in MARTA federal investigation?",
+    "Where did the $0 allegedly go in Pennsylvania Medicaid fraud investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid provider disenrollment?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2644,
-    "articlesProcessed": 131700,
-    "redFlagsFound": 3065,
+    "totalScans": 2645,
+    "articlesProcessed": 131750,
+    "redFlagsFound": 3067,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $100M allegedly go in Minnesota Medicaid Fraud?",
         "What specific allegations exist against Unknown?",
-        "Where did the $0 allegedly go in Feeding Our Future Investigation?"
+        "Where did the $0 allegedly go in Feeding Our Future Investigation?",
+        "Where did the $0 allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-07T12:19:54.039Z",
-  "lastUpdated": "2026-06-07T12:19:54.040Z"
+  "lastReflection": "2026-06-07T14:51:26.325Z",
+  "lastUpdated": "2026-06-07T14:51:26.326Z"
 }
