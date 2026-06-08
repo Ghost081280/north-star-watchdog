@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-27T12:18:47.452Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-27T16:36:19.733Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-06-08T20:12:21.556Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-08T22:25:34.864Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is James Milliken connected to?",
     "What specific allegations exist against James Milliken?",
     "Where did the $250M allegedly go in Minnesota Fraud Charges?",
@@ -558,7 +557,8 @@
     "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $4.2 million allegedly go in Cryptocurrency Fraud Case?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $9B+ allegedly go in Minnesota Social Program Fraud?"
+    "Where did the $9B+ allegedly go in Minnesota Social Program Fraud?",
+    "Where did the $1B+ allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2655,
-    "articlesProcessed": 132250,
-    "redFlagsFound": 3078,
+    "totalScans": 2656,
+    "articlesProcessed": 132300,
+    "redFlagsFound": 3079,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in California Election Fraud Investigation?",
         "Where did the $250M allegedly go in Minnesota Medicaid fraud?",
-        "What other organizations is James Milliken connected to?"
+        "What other organizations is James Milliken connected to?",
+        "What specific allegations exist against James Milliken?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-08T20:12:21.556Z",
-  "lastUpdated": "2026-06-08T20:12:21.557Z"
+  "lastReflection": "2026-06-08T22:25:34.864Z",
+  "lastUpdated": "2026-06-08T22:25:34.865Z"
 }
