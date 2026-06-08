@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-26T21:43:35.476Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-26T23:08:56.929Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
@@ -510,6 +505,11 @@
       "date": "2026-06-08T05:29:43.430Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-08T10:49:45.207Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future?",
-    "Where did the $250M allegedly go in Ilhan Omar Fraud Allegations?",
-    "Where did the $250M allegedly go in Minnesota Medicaid Fraud?",
     "What other organizations is Michael Lewis Miles Jr. connected to?",
     "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
     "Where did the Undisclosed allegedly go in MARTA Safety Investigation?",
@@ -558,7 +555,10 @@
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Donald Trump?",
-    "What specific allegations exist against Netanyahu?"
+    "What specific allegations exist against Netanyahu?",
+    "What other organizations is Jorge Vaca connected to?",
+    "Where did the $30M allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2651,
-    "articlesProcessed": 132050,
-    "redFlagsFound": 3074,
+    "totalScans": 2652,
+    "articlesProcessed": 132100,
+    "redFlagsFound": 3075,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Medicaid fraud crackdown?",
-        "Where did the $250M allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the Unknown allegedly go in Feeding Our Future Investigation?"
+        "Where did the $250M allegedly go in Feeding Our Future?",
+        "Where did the $250M allegedly go in Ilhan Omar Fraud Allegations?",
+        "Where did the $250M allegedly go in Minnesota Medicaid Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-08T05:29:43.430Z",
-  "lastUpdated": "2026-06-08T05:29:43.431Z"
+  "lastReflection": "2026-06-08T10:49:45.207Z",
+  "lastUpdated": "2026-06-08T10:49:45.208Z"
 }
