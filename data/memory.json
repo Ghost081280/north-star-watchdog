@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-27T03:36:16.193Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-27T08:02:16.004Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-06-08T14:47:17.127Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-08T17:51:13.631Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Minnesota Grocer?",
-    "Where did the $0 allegedly go in MARTA federal investigation?",
-    "Where did the $0 allegedly go in Pennsylvania Medicaid fraud investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid provider disenrollment?",
     "Where did the N/A allegedly go in California Election Fraud Investigation?",
     "Where did the $250M allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is James Milliken connected to?",
@@ -558,7 +554,11 @@
     "What other organizations is Tim Walz connected to?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Ilhan Omar?",
-    "What specific allegations exist against Jorge Vaca?"
+    "What specific allegations exist against Jorge Vaca?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?",
+    "Where did the $4.2 million allegedly go in Cryptocurrency Fraud Case?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2653,
-    "articlesProcessed": 132150,
-    "redFlagsFound": 3076,
+    "totalScans": 2654,
+    "articlesProcessed": 132200,
+    "redFlagsFound": 3077,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Michael Lewis Miles Jr. connected to?",
-        "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
-        "Where did the Undisclosed allegedly go in MARTA Safety Investigation?"
+        "What specific allegations exist against Minnesota Grocer?",
+        "Where did the $0 allegedly go in MARTA federal investigation?",
+        "Where did the $0 allegedly go in Pennsylvania Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-08T14:47:17.127Z",
-  "lastUpdated": "2026-06-08T14:47:17.128Z"
+  "lastReflection": "2026-06-08T17:51:13.631Z",
+  "lastUpdated": "2026-06-08T17:51:13.632Z"
 }

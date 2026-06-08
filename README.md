@@ -7,7 +7,7 @@
 [![Follow @NorthStarAgent](https://img.shields.io/badge/X-@NorthStarAgent-black)](https://x.com/NorthStarAgent)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-<!-- LAST_SCAN -->Last AI scan: 2026-06-08T14:47:17.235Z<!-- /LAST_SCAN -->
+<!-- LAST_SCAN -->Last AI scan: 2026-06-08T17:51:13.720Z<!-- /LAST_SCAN -->
 
 **Autonomous AI-Powered Minnesota Fraud Investigation Tracker**
 
