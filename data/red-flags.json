@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "explosion incident",
+      "description": "I-290 explosion incident in Illinois",
+      "insight": "This incident raises concerns about public safety and potential causes of the explosion",
+      "entities": [
+        "Jorge Vaca"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "ABC7 Chicago",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOc2ljVXp0ZTcxcXJCbkxNOTRwcDdEZ1hMalhCb19MaUZ4bHZ2cThiWDVxVU95NnlBNTR4bHZBa1EtMEx4amd5TFlXWDRJRWhPaGhXNEI4RGk4MFdnRFZDX3M0UWpoUHpJQVRId213ekhGbUxrdDZqZnN2TGQ4UEFQbUtvcF9qMzB2TkZpLURqM3hnLWx1MVlwV25jSFlzUldwMDM0SDBuWk1DQUR3czZpbVVqMHdwalB1eUwxLXg4U0VLc1hEdDU3ZzhoaUVhcjhzNmtOUjc4N0o1OTUxWFJ2Ni1R0g",
+      "id": "rf-1780896583437-8g2qeux2j",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-08T05:29:43.432Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "MARTA under federal investigation",
       "insight": "Federal investigations indicate significant concerns about potential wrongdoing.",
@@ -950,31 +969,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-27T08:02:16.006Z",
       "isNew": false
-    },
-    {
-      "type": "police_misconduct",
-      "description": "Minneapolis Police Chief Brian O'Hara resigned following an internal investigation into his conduct",
-      "insight": "This incident reveals a potential pattern of misconduct within the Minneapolis Police Department, which could have significant implications for police accountability and transparency.",
-      "entities": [
-        "Minneapolis Police Department",
-        "Brian O'Hara"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "ABC News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTVU0eGdBVk8wd0FVTUk0RGNLT2U2TFRnbmtCODB3SGxJaUtHOXItcGpyXzRJMWJDYU16SU13SjQ1SzJmeWFyaE4wNG1JRzJpY2g2ZGdpSVNrcFotX1U1ZnVIVUlOOGlDVjlXTnFwZ0puS2NES05xVTJOQ3NEcVJKbUttdk5zbnpUVnBDcFZwNnItaVRTblMwQmRNcEpkcW5vVnA3NEFBRjRBaGhuZ0ZpNzRYc9IBuAFBVV95cUxNRGpTSEFhaTFTNm4wdXRBTEE5MHRZOFFzbG5mOU9LYmZnc0ViQXZ0NGs2OEVKRjJQVHNTNzhWVzZYYm1nZW5IbzZDQU9xVTR5MjBObUg5RkptbU12ZklCTnd3LVhmSVhESUlkajNUbEF2MGZpQXhxQTVXa09IRnlmU1FNcGI0TUxUYjBhc3ZMUFBISV9YLS10RFc1RGJGU01ISTh6dHhHd2ZtOW1jenppazBQLXlTU1U3?oc=5",
-      "id": "rf-1779868936010-st3auuepy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-27T08:02:16.006Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -984,7 +982,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-08T00:05:36.817Z"
+  "lastUpdated": "2026-06-08T05:29:43.432Z"
 }
