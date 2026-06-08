@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-26T23:08:56.929Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-27T03:36:16.193Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-08T10:49:45.207Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-06-08T14:47:17.127Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Michael Lewis Miles Jr. connected to?",
-    "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
-    "Where did the Undisclosed allegedly go in MARTA Safety Investigation?",
-    "Are any of these 2 figures connected to each other?",
     "What specific allegations exist against Minnesota Grocer?",
     "Where did the $0 allegedly go in MARTA federal investigation?",
     "Where did the $0 allegedly go in Pennsylvania Medicaid fraud investigation?",
@@ -558,7 +554,11 @@
     "What specific allegations exist against Netanyahu?",
     "What other organizations is Jorge Vaca connected to?",
     "Where did the $30M allegedly go in Minnesota Medicaid Fraud Investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future Investigation?"
+    "Where did the $250M allegedly go in Feeding Our Future Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What specific allegations exist against Tim Walz?",
+    "What specific allegations exist against Ilhan Omar?",
+    "What specific allegations exist against Jorge Vaca?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2652,
-    "articlesProcessed": 132100,
-    "redFlagsFound": 3075,
+    "totalScans": 2653,
+    "articlesProcessed": 132150,
+    "redFlagsFound": 3076,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future?",
-        "Where did the $250M allegedly go in Ilhan Omar Fraud Allegations?",
-        "Where did the $250M allegedly go in Minnesota Medicaid Fraud?"
+        "What other organizations is Michael Lewis Miles Jr. connected to?",
+        "Where did the Undisclosed allegedly go in California Primary Election Fraud Investigation?",
+        "Where did the Undisclosed allegedly go in MARTA Safety Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-08T10:49:45.207Z",
-  "lastUpdated": "2026-06-08T10:49:45.208Z"
+  "lastReflection": "2026-06-08T14:47:17.127Z",
+  "lastUpdated": "2026-06-08T14:47:17.128Z"
 }
