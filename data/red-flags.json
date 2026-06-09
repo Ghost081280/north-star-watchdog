@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Whistleblowers allegedly ignored in Minnesota social services programs",
+      "insight": "The alleged ignoring of whistleblowers in Minnesota's social services programs raises concerns about a potential cover-up and the effectiveness of internal controls.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NewsNation",
+      "sourceUrl": "https://www.newsnationnow.com/investigation/house-probe-alleges-minnesota-leaders-targeted-fraud-whistleblowers/",
+      "id": "rf-1781020409887-pb24wxkfj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-09T15:53:29.884Z",
+      "isNew": true
+    },
+    {
       "type": "alleged incompetence",
       "description": "Minnesota AG accused of 'incompetence, willful blindness or worse'",
       "insight": "The Minnesota AG's office may have been aware of the fraud but failed to act, or may have been complicit in the fraud.",
@@ -948,41 +967,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-27T23:15:42.547Z",
       "isNew": false
-    },
-    {
-      "type": "police misconduct",
-      "description": "Minneapolis Police Chief Brian O'Hara resigned after internal probe into his conduct",
-      "insight": "This incident raises concerns about potential police misconduct and the need for further investigation into the Minneapolis Police Department's practices and accountability measures.",
-      "entities": [
-        "Brian O'Hara",
-        "Minneapolis Police Department"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/minneapolis-police-chief-brian-ohara-resigns-after-internal-probe/",
-      "id": "rf-1779899779738-yrt3nd0sd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-27T16:36:19.735Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +996,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-09T12:35:33.418Z"
+  "lastUpdated": "2026-06-09T15:53:29.884Z"
 }

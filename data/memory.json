@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-28T02:55:37.127Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-28T06:54:48.504Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-09T12:35:33.416Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-09T15:53:29.882Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Donald Trump?",
     "What specific allegations exist against Netanyahu?",
     "What other organizations is Jorge Vaca connected to?",
     "Where did the $30M allegedly go in Minnesota Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?",
     "What other organizations is Minnesota Attorney General connected to?",
     "Where did the $9B allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2660,
-    "articlesProcessed": 132500,
-    "redFlagsFound": 3083,
+    "totalScans": 2661,
+    "articlesProcessed": 132550,
+    "redFlagsFound": 3084,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Ilhan Omar connected to?",
         "What specific allegations exist against Donald Trump?",
-        "What specific allegations exist against Netanyahu?"
+        "What specific allegations exist against Netanyahu?",
+        "What other organizations is Jorge Vaca connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-09T12:35:33.416Z",
-  "lastUpdated": "2026-06-09T12:35:33.417Z"
+  "lastReflection": "2026-06-09T15:53:29.882Z",
+  "lastUpdated": "2026-06-09T15:53:29.883Z"
 }
