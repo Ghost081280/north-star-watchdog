@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-27T21:52:46.061Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-27T23:15:42.544Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-06-09T05:04:41.123Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-09T09:39:37.775Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Minnesota Fraud Charges?",
-    "Are any of these 3 figures connected to each other?",
     "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Donald Trump?",
     "What specific allegations exist against Netanyahu?",
@@ -558,7 +556,9 @@
     "Where did the $9B+ allegedly go in Minnesota Social Program Fraud?",
     "Where did the $1B+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
-    "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?"
+    "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?",
+    "What other organizations is Minnesota Attorney General connected to?",
+    "Where did the $9B allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2658,
-    "articlesProcessed": 132400,
-    "redFlagsFound": 3081,
+    "totalScans": 2659,
+    "articlesProcessed": 132450,
+    "redFlagsFound": 3082,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against James Milliken?",
         "Where did the $250M allegedly go in Minnesota Fraud Charges?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "What other organizations is Ilhan Omar connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-09T05:04:41.123Z",
-  "lastUpdated": "2026-06-09T05:04:41.123Z"
+  "lastReflection": "2026-06-09T09:39:37.775Z",
+  "lastUpdated": "2026-06-09T09:39:37.776Z"
 }
