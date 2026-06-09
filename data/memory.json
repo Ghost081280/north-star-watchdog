@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-28T06:54:48.504Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-28T10:55:43.523Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-09T15:53:29.882Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-09T18:02:23.860Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Netanyahu?",
-    "What other organizations is Jorge Vaca connected to?",
-    "Where did the $30M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $250M allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Tim Walz connected to?",
     "What specific allegations exist against Tim Walz?",
@@ -558,7 +555,10 @@
     "What other organizations is Minnesota Attorney General connected to?",
     "Where did the $9B allegedly go in Minnesota Fraud Investigation?",
     "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?",
-    "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?"
+    "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?",
+    "What other organizations is JD Vance connected to?",
+    "What specific allegations exist against JD Vance?",
+    "Where did the $9 billion allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2661,
-    "articlesProcessed": 132550,
-    "redFlagsFound": 3084,
+    "totalScans": 2662,
+    "articlesProcessed": 132600,
+    "redFlagsFound": 3085,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Donald Trump?",
         "What specific allegations exist against Netanyahu?",
-        "What other organizations is Jorge Vaca connected to?"
+        "What other organizations is Jorge Vaca connected to?",
+        "Where did the $30M allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-09T15:53:29.882Z",
-  "lastUpdated": "2026-06-09T15:53:29.883Z"
+  "lastReflection": "2026-06-09T18:02:23.860Z",
+  "lastUpdated": "2026-06-09T18:02:23.861Z"
 }

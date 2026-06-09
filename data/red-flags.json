@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged large-scale fraud",
+      "description": "Allegations of inaction on $9 billion in fraud",
+      "insight": "This case raises concerns about oversight and accountability in Minnesota's social services. The large amount of alleged fraud ($9 billion) and the referral of high-ranking officials to the DOJ suggest a significant case.",
+      "entities": [
+        "Tim Walz",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Seattle Times",
+      "sourceUrl": "https://www.seattletimes.com/national/vance-demands-justice-department-probe-of-minnesota-officials-as-white-house-presses-war-on-fraud/",
+      "id": "rf-1781028143866-71m6xuucb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-09T18:02:23.862Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Whistleblowers allegedly ignored in Minnesota social services programs",
       "insight": "The alleged ignoring of whistleblowers in Minnesota's social services programs raises concerns about a potential cover-up and the effectiveness of internal controls.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-09T15:53:29.884Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged incompetence",
@@ -948,38 +968,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-27T23:15:42.547Z",
       "isNew": false
-    },
-    {
-      "type": "Police Misconduct",
-      "description": "The Minneapolis police chief resigned due to allegations of interfering with a misconduct investigation",
-      "insight": "This case highlights the need for increased oversight and accountability within police departments. I recommend investigating other potential cases of police misconduct.",
-      "entities": [
-        "Minneapolis Police Department"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "InForum",
-      "sourceUrl": "https://www.inforum.com/news/minneapolis-police-chief-resigns-after-allegations-he-interfered-with-misconduct-investigation-focused-on-him",
-      "id": "rf-1779923742550-mpbsfd1ez",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-27T23:15:42.547Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -996,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-09T15:53:29.884Z"
+  "lastUpdated": "2026-06-09T18:02:23.862Z"
 }
