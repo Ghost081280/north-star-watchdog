@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-27T23:15:42.544Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-05-28T02:55:37.127Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-09T09:39:37.775Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-09T12:35:33.416Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ilhan Omar connected to?",
     "What specific allegations exist against Donald Trump?",
     "What specific allegations exist against Netanyahu?",
     "What other organizations is Jorge Vaca connected to?",
@@ -558,7 +557,8 @@
     "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
     "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?",
     "What other organizations is Minnesota Attorney General connected to?",
-    "Where did the $9B allegedly go in Minnesota Fraud Investigation?"
+    "Where did the $9B allegedly go in Minnesota Fraud Investigation?",
+    "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2659,
-    "articlesProcessed": 132450,
-    "redFlagsFound": 3082,
+    "totalScans": 2660,
+    "articlesProcessed": 132500,
+    "redFlagsFound": 3083,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Minnesota Fraud Charges?",
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Ilhan Omar connected to?"
+        "What other organizations is Ilhan Omar connected to?",
+        "What specific allegations exist against Donald Trump?",
+        "What specific allegations exist against Netanyahu?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-09T09:39:37.775Z",
-  "lastUpdated": "2026-06-09T09:39:37.776Z"
+  "lastReflection": "2026-06-09T12:35:33.416Z",
+  "lastUpdated": "2026-06-09T12:35:33.417Z"
 }
