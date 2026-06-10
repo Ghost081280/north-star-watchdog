@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Legitimate providers cut off from funding due to Minnesota Medicaid revalidation process",
+      "insight": "This could indicate a lack of effective oversight or potential abuse of the system, requiring further investigation.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Northern News Now",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMVJuQ2FsdGVyNjBxTW9SdGs5WEJkVDNYMUt1NDhkdTRjSE9QNnRPQWdpTFNPVmEtbDFEdjJzTUQ0MjY4QlNwRmZyTUhhN216QUJseEFhc3RYMkxfQTQ4NVhJSnU3VnFnVnVmQ1czd2dGcFNMU054OW9jQ0s2M1Rzell2X2VYdUg1MWxNR3JFNEFIWGdMbWFBQUtoNU5nMzFnV3h6TXhCZnFpOGNqTzdfM2w3TdIBxwFBVV95cUxOSkhFY2ZtbC1iQWtKRnQ5STllLW9jUXc3eV8weHUweTlzTlJvOXRsRHlFazVyckdKWmIxcEpwWXJPVG1VSXgzNVFIdmRkUUd2M3RPQmxRV19vUVE1SmNvTURoY21RNVNoeXQxN1BhY2FTLXBoVVFINVc4MXk2WGhiSTFiTGhOWUQ0UDJPRUtkQ1ZVanNoTTEzM1FKeVFoZzVPbGsxUDduUUlWMkE0QUVKcnhKMElyRWRqQ0NyQ0N3WXBLSzdjcVNZ",
+      "id": "rf-1781085360918-5rqnnjhvl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-10T09:56:00.914Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Minnesota Medicaid revalidation process leaves legitimate providers cut off from funding",
       "insight": "This could indicate a lack of oversight or inefficient processes in the revalidation process",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-10T05:17:03.341Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "government corruption",
@@ -950,31 +969,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-29T20:23:05.840Z",
       "isNew": false
-    },
-    {
-      "type": "bribery",
-      "description": "A Bexar County towing company owner pleaded guilty in a federal bribery investigation.",
-      "insight": "This indicates corruption and potential abuse of power.",
-      "entities": [
-        "Bexar County towing company"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "kens5.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNbEpxbk1BbHZoWjlFYkU2X3cwdnZnY3F2Vk5qaFhUR3ktVDBDZG9UNzJWWl9sc2xXSkx2RWFrZFo5ekRybldHNlpDU2swQmNRSkpUelJkb1paR3ZXa0FxSFR2QWh1QUdYeVBPUHRvb0d1ck5oRjFLWkpaUzRsUmptY0ViOEVBWnVpOG9EanFTcmV6VURkT2o1V3otMWJINkF1SjdqdmpJR2RVbE44LWJZbUs4SFE1akxlWXM3UGJMd3NUWlhGTWQydGJHWERLdUF0T3BHekNGS2NWaThyWFNPem5wN1BVZV9VX2s1U0JhWG1Db0FTWmxPNEh5QUVUT0pfSzlxSXZGUjNlVzhUUmRGZnZHeGZJdENPQmg5blBPY2piS1hNWDFGUVlMd2F2dFRCcmpkWVVNaW9iUXVMV1E",
-      "id": "rf-1780086185844-7b2eiufi2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-29T20:23:05.840Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -982,8 +980,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +997,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-10T05:17:03.341Z"
+  "lastUpdated": "2026-06-10T09:56:00.914Z"
 }
