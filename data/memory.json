@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-29T13:59:16.275Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-29T17:36:53.961Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-10T19:34:11.981Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-10T22:00:07.451Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?",
-    "What other organizations is JD Vance connected to?",
-    "What specific allegations exist against JD Vance?",
     "Where did the $9 billion allegedly go in Minnesota Fraud Investigation?",
     "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
     "Where did the $0 allegedly go in Contra Costa County Tax Assessor's Office Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $1B+ allegedly go in Minnesota Medicaid Revalidation Investigation?",
     "Where did the $1B+ allegedly go in Vance Investigation into Minnesota Officials?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?"
+    "Where did the Unknown allegedly go in Minnesota Fraud Investigation?",
+    "What other organizations is Ammad Awan connected to?",
+    "Where did the $3.7M allegedly go in Feeding Our Future investigation?",
+    "Where did the $9B+ allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2670,
-    "articlesProcessed": 133000,
-    "redFlagsFound": 3093,
+    "totalScans": 2671,
+    "articlesProcessed": 133050,
+    "redFlagsFound": 3094,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?",
         "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?",
-        "What other organizations is JD Vance connected to?"
+        "What other organizations is JD Vance connected to?",
+        "What specific allegations exist against JD Vance?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-10T19:34:11.981Z",
-  "lastUpdated": "2026-06-10T19:34:11.982Z"
+  "lastReflection": "2026-06-10T22:00:07.451Z",
+  "lastUpdated": "2026-06-10T22:00:07.452Z"
 }

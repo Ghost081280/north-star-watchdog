@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential termination of Medicaid funding for some providers",
+      "insight": "This could indicate a large-scale effort to crack down on healthcare fraud",
+      "entities": [
+        "State of Minnesota",
+        "Medicaid providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "MinnPost",
+      "sourceUrl": "https://www.minnpost.com/2026/06/state-says-that-medicaid-providers-can-get-funding-as-they-appeal-dis-enrollment/",
+      "id": "rf-1781128807457-mb92hsjz6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-10T22:00:07.453Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating potential wrongdoing by Minnesota officials, including Governor Tim Walz and Attorney General Keith Ellison.",
       "insight": "The investigation suggests a potential pattern of corruption and abuse of power in Minnesota state government. Further research is needed to determine the extent of the wrongdoing and the individuals involved.",
@@ -951,31 +971,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-30T17:02:08.641Z",
       "isNew": false
-    },
-    {
-      "type": "Program Termination",
-      "description": "The TVA has frozen executive pay and cut 15 jobs in response to Trump demands.",
-      "insight": "This could be a sign of a larger investigation into the TVA and potential wrongdoing.",
-      "entities": [
-        "TVA"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Knoxville News Sentinel",
-      "sourceUrl": "https://www.knoxnews.com/story/news/2026/05/29/tva-freezes-executive-pay-cuts-15-jobs-response-trump-demands/7123456/",
-      "id": "rf-1780099719611-z5kpisnzh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-30T00:08:39.607Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,6 +983,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1001,5 +1002,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-10T19:34:11.983Z"
+  "lastUpdated": "2026-06-10T22:00:07.453Z"
 }
