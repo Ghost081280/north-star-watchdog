@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-28T18:10:37.518Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-05-28T21:07:21.645Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-06-09T22:23:20.446Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-10T00:11:28.148Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Jorge Vaca?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?",
     "Where did the $4.2 million allegedly go in Cryptocurrency Fraud Case?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Minnesota Fraud Investigation?",
     "Where did the $0 allegedly go in Contra Costa County Tax Assessor's Office Investigation?",
     "What other organizations is Tim Walz connected to?",
-    "Where did the $0 allegedly go in Operation Riptide?"
+    "Where did the $0 allegedly go in Operation Riptide?",
+    "Where did the $50M+ allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2664,
-    "articlesProcessed": 132700,
-    "redFlagsFound": 3087,
+    "totalScans": 2665,
+    "articlesProcessed": 132750,
+    "redFlagsFound": 3089,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "nonprofit fraud",
+          "description": "Large-scale alleged fraud at Feeding Our Future nonprofit",
+          "insight": "Significant financial losses and potential abuse of public trust",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Spokesman-Review",
+          "sourceUrl": "https://www.spokesman.com/stories/justice-department-seeks-to-strip-us-citizenship-from-convicted-feeding-our-future-fraudster-16-others/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Tim Walz?",
-        "What specific allegations exist against Ilhan Omar?",
-        "What specific allegations exist against Jorge Vaca?"
+        "What specific allegations exist against Jorge Vaca?",
+        "What other organizations is Keith Ellison connected to?",
+        "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-09T22:23:20.446Z",
-  "lastUpdated": "2026-06-09T22:23:20.447Z"
+  "lastReflection": "2026-06-10T00:11:28.148Z",
+  "lastUpdated": "2026-06-10T00:11:28.148Z"
 }
