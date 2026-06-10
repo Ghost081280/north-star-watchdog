@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-29T02:59:30.782Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-05-29T06:59:26.867Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-06-10T09:56:00.912Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-10T12:56:00.319Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
-    "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?",
-    "What other organizations is Minnesota Attorney General connected to?",
-    "Where did the $9B allegedly go in Minnesota Fraud Investigation?",
     "Where did the $9B+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $9B+ allegedly go in Minnesota Social Services Fraud Investigation?",
     "What other organizations is JD Vance connected to?",
@@ -558,7 +554,11 @@
     "Where did the $1B+ allegedly go in Minnesota Medicaid revalidation fraud?",
     "Where did the $100M+ allegedly go in Contra Costa County Tax Assessor's office fraud?",
     "Where did the $1B+ allegedly go in Minnesota Medicaid Revalidation Fraud?",
-    "Where did the $1B+ allegedly go in Vance Urges DOJ Probe of Minnesota Officials?"
+    "Where did the $1B+ allegedly go in Vance Urges DOJ Probe of Minnesota Officials?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $1B+ allegedly go in Minnesota Medicaid Revalidation Investigation?",
+    "Where did the $1B+ allegedly go in Vance Investigation into Minnesota Officials?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2667,
-    "articlesProcessed": 132850,
-    "redFlagsFound": 3091,
+    "totalScans": 2668,
+    "articlesProcessed": 132900,
+    "redFlagsFound": 3092,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B+ allegedly go in Minnesota Social Program Fraud?",
-        "Where did the $1B+ allegedly go in Minnesota Fraud Investigation?",
-        "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?"
+        "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
+        "Where did the $9B+ allegedly go in Minnesota Social Benefits Fraud Investigation?",
+        "What other organizations is Minnesota Attorney General connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-10T09:56:00.912Z",
-  "lastUpdated": "2026-06-10T09:56:00.912Z"
+  "lastReflection": "2026-06-10T12:56:00.319Z",
+  "lastUpdated": "2026-06-10T12:56:00.320Z"
 }
