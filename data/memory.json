@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-28T21:07:21.645Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-28T23:15:31.492Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.8
@@ -510,6 +505,11 @@
       "date": "2026-06-10T00:11:28.148Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-10T05:17:03.339Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Keith Ellison connected to?",
-    "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?",
-    "Where did the $4.2 million allegedly go in Cryptocurrency Fraud Case?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $9B+ allegedly go in Minnesota Social Program Fraud?",
     "Where did the $1B+ allegedly go in Minnesota Fraud Investigation?",
     "Where did the $100M+ allegedly go in Minnesota Social Services Fraud Investigation?",
@@ -558,7 +554,11 @@
     "Where did the $0 allegedly go in Contra Costa County Tax Assessor's Office Investigation?",
     "What other organizations is Tim Walz connected to?",
     "Where did the $0 allegedly go in Operation Riptide?",
-    "Where did the $50M+ allegedly go in Feeding Our Future fraud investigation?"
+    "Where did the $50M+ allegedly go in Feeding Our Future fraud investigation?",
+    "What other organizations is Vance connected to?",
+    "What other organizations is Gus Kramer connected to?",
+    "Where did the $1B+ allegedly go in Minnesota Medicaid revalidation fraud?",
+    "Where did the $100M+ allegedly go in Contra Costa County Tax Assessor's office fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2665,
-    "articlesProcessed": 132750,
-    "redFlagsFound": 3089,
+    "totalScans": 2666,
+    "articlesProcessed": 132800,
+    "redFlagsFound": 3090,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "nonprofit fraud",
-          "description": "Large-scale alleged fraud at Feeding Our Future nonprofit",
-          "insight": "Significant financial losses and potential abuse of public trust",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Spokesman-Review",
-          "sourceUrl": "https://www.spokesman.com/stories/justice-department-seeks-to-strip-us-citizenship-from-convicted-feeding-our-future-fraudster-16-others/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Jorge Vaca?",
         "What other organizations is Keith Ellison connected to?",
-        "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?"
+        "Where did the $10 billion allegedly go in Minnesota Welfare Fraud Investigation?",
+        "Where did the $4.2 million allegedly go in Cryptocurrency Fraud Case?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-10T00:11:28.148Z",
-  "lastUpdated": "2026-06-10T00:11:28.148Z"
+  "lastReflection": "2026-06-10T05:17:03.339Z",
+  "lastUpdated": "2026-06-10T05:17:03.340Z"
 }
