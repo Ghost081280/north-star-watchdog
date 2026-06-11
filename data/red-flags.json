@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "large-scale fraud",
+      "description": "The Feeding Our Future fraud scheme involves a large amount of money and multiple individuals.",
+      "insight": "The complexity and scale of the fraud scheme suggest a well-organized operation.",
+      "entities": [
+        "Feeding Our Future",
+        "FBI"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.kttc.com/2026-06-11/alleged-feeding-our-future-fraudster-surrenders-in-minneapolis",
+      "id": "rf-1781181887169-9t62jhk3u",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-11T12:44:47.165Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation has been launched into the Feeding Our Future fraud scheme, which has raised concerns about the organization's financial management and oversight.",
       "insight": "The investigation has revealed a pattern of suspicious transactions and a lack of transparency in the organization's financial dealings. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-11T08:44:51.882Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -950,25 +970,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-01T11:53:09.800Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Feeding Our Future program shut down due to fraud allegations",
-      "insight": "This indicates a large-scale fraud scheme that may have gone undetected for an extended period",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://www.msn.com/en-us/article/feeding-our-future-ringleader-gets-41-year-prison-term-arsid-details-emerge-nbclocal",
-      "id": "rf-1780265013433-kcdy9ugtk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-31T22:03:33.429Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -981,8 +982,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -999,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-11T08:44:51.882Z"
+  "lastUpdated": "2026-06-11T12:44:47.165Z"
 }
