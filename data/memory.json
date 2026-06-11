@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-30T04:52:11.337Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-05-30T07:40:48.470Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-06-11T12:44:47.163Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-11T16:54:00.913Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Gus Kramer connected to?",
-    "Where did the $1B+ allegedly go in Minnesota Medicaid revalidation fraud?",
-    "Where did the $100M+ allegedly go in Contra Costa County Tax Assessor's office fraud?",
     "Where did the $1B+ allegedly go in Minnesota Medicaid Revalidation Fraud?",
     "Where did the $1B+ allegedly go in Vance Urges DOJ Probe of Minnesota Officials?",
     "What other organizations is Keith Ellison connected to?",
@@ -558,7 +555,10 @@
     "Where did the $3M allegedly go in Morris Bank fraud case?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $90M allegedly go in Feeding Our Future fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "What other organizations is Said Abdullahi Ereg connected to?",
+    "Where did the $4.2M allegedly go in Feeding Our Future scam?",
+    "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud schemes?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2675,
-    "articlesProcessed": 133250,
-    "redFlagsFound": 3098,
+    "totalScans": 2676,
+    "articlesProcessed": 133300,
+    "redFlagsFound": 3099,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "large-scale fraud",
-          "description": "The Feeding Our Future fraud scheme involves a large amount of money and multiple individuals.",
-          "insight": "The complexity and scale of the fraud scheme suggest a well-organized operation.",
-          "entities": [
-            "Feeding Our Future",
-            "FBI"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FBI",
-          "sourceUrl": "https://www.kttc.com/2026-06-11/alleged-feeding-our-future-fraudster-surrenders-in-minneapolis"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $50M+ allegedly go in Feeding Our Future fraud investigation?",
-        "What other organizations is Vance connected to?",
-        "What other organizations is Gus Kramer connected to?"
+        "What other organizations is Gus Kramer connected to?",
+        "Where did the $1B+ allegedly go in Minnesota Medicaid revalidation fraud?",
+        "Where did the $100M+ allegedly go in Contra Costa County Tax Assessor's office fraud?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-11T12:44:47.163Z",
-  "lastUpdated": "2026-06-11T12:44:47.164Z"
+  "lastReflection": "2026-06-11T16:54:00.913Z",
+  "lastUpdated": "2026-06-11T16:54:00.914Z"
 }
