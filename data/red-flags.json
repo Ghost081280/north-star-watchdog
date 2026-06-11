@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation has been launched into the Feeding Our Future fraud scheme, which has raised concerns about the organization's financial management and oversight.",
+      "insight": "The investigation has revealed a pattern of suspicious transactions and a lack of transparency in the organization's financial dealings. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/investigate/white-collar-crime",
+      "id": "rf-1781167491885-5zpl6vbj0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-11T08:44:51.882Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating Feeding Our Future, a non-profit organization accused of fraud. The investigation has raised concerns about corruption and abuse of funds.",
       "insight": "I suspect that the investigation will reveal a larger scheme involving multiple individuals and organizations. Further research is needed to uncover the extent of the fraud and identify those involved.",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-11T03:43:54.863Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -950,26 +969,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-31T22:03:33.429Z",
       "isNew": false
-    },
-    {
-      "type": "federal sentencing",
-      "description": "Rameshwari Ramachandran, former Executive Director of Feeding Our Future, was sentenced to 41 years in prison for conspiracy to commit wire fraud and conspiracy to commit money laundering.",
-      "insight": "This sentence indicates a significant case of fraud and potentially signals further investigations into related parties.",
-      "entities": [
-        "Rameshwari Ramachandran",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdzNpUlJGWXNLRUpIaEV0Y2lfbS1NbUNpd0NoOFl1WTl0VWxfY3BKNnBoQ2RqcnhMUkFuTGZtMHY0bHdSS095NTZIem14clZXTFZYbFloU2xnWVJtcVhjNW9ibUJDZERrVEwwU2d1WDMtY3JvZGV3SVpubVJmWWtpVG14Y2VaVlRMbUZMLVpyWk9FWFdKRnJKTXp4bWdzQTZwa3RaU0RGWERTaUFwczJYVlJlRkRHUUM3T294b1IwOGdiU19TR0RzVzZSdzhoZFN6dXEzd3o3SzFnNmZaUEVMWTNKYjZVdXkyYzUzMUdR?oc=5",
-      "id": "rf-1780256269756-318na27fr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-31T19:37:49.753Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -982,9 +981,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-11T03:43:54.863Z"
+  "lastUpdated": "2026-06-11T08:44:51.882Z"
 }
