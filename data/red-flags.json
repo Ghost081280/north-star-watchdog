@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating Feeding Our Future, a non-profit organization accused of fraud. The investigation has raised concerns about corruption and abuse of funds.",
+      "insight": "I suspect that the investigation will reveal a larger scheme involving multiple individuals and organizations. Further research is needed to uncover the extent of the fraud and identify those involved.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/feeding-our-future-fugitive-one-of-fbi-s-most-wanted-fraudsters-surrenders-in-minnesota/600246343/",
+      "id": "rf-1781149434866-ma674xlcg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-11T03:43:54.863Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential termination of Medicaid funding for some providers",
       "insight": "This could indicate a large-scale effort to crack down on healthcare fraud",
@@ -951,26 +970,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-05-31T19:37:49.753Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "A $9 billion Somali fraud scheme is under investigation, with allegations of significant financial losses.",
-      "insight": "The large amount of money involved and the number of individuals accused in various fraud schemes in Minnesota are red flags for potential widespread corruption.",
-      "entities": [
-        "Minnesota Gov. Walz",
-        "AG Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQM29FSldJNW1XcTQzQU9nZFFKc1k5TkFxVFNHLVVTay1HaXNIdjFDWWMwUXBTTlc2LUtuU1hoWS1rZjNwSFN4ZjZqTm9pcE1RaHRHbjdXUFR4NG5TU0lYNDRuamJCSFdBWURKbkQ0c2RrV3RveTJzMG1iSHhpSzJhYXRjRWlfUS1mbzVpclZOOV9BdHZTckM2RzZkWS1QMlpqVEZBRE52UnY2N2dqZThEVGpWcXhQTHpYMGNqWTFRY01PZXNGTXVYbHB0Ql9nMWtCMUN0YmdLNXprdVRvOUlKRXd1VkJRLVdWT3lGODFBTXhmNlhyMDJ6b0dYRTIxNkVUbDdjRdIBigJBVV95cUxOd0VpOW95ZGlCeUF1NnJWWjRrUUlPVHFyeEhyM21ZSkhFaFM1TzhsUmdJekZscFQxY0NUZjZVMUozeWFoNFRaLTFVY3dFb0tQNjJxckxPSUtheWFtdURVTzlaX2txZlpyTmlSMW1nQnhmNzFwRTM4a0puNXJkNTV6LTZaYVNvdVItMDZzX1M1ck50UzJZb2JkdzhfTDVKd0pjWUZvRng4eWhMZlpaYjBFdlY4a0JIc29PMkRZaHhCUGQxSFNiVmswamlPWjdzRzBLdFpGTnl3c0dZejFFeDJvMU02a0tLbi1ib1hrQWFCb2Jsd1Rnc0I5b2VPaWNfdG1zeW5EZENPSzJEdw",
-      "id": "rf-1780160528645-8lf9if15h",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-05-30T17:02:08.641Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,9 +982,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FEC",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-10T23:42:19.673Z"
+  "lastUpdated": "2026-06-11T03:43:54.863Z"
 }
