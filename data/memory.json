@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-30T17:02:08.639Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-30T19:11:00.266Z",
       "summary": "ROUTINE: 2 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-06-12T10:08:26.083Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-12T14:09:51.221Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2681,
-    "articlesProcessed": 133550,
-    "redFlagsFound": 3104,
+    "totalScans": 2682,
+    "articlesProcessed": 133600,
+    "redFlagsFound": 3105,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future suspect connected to?",
         "What other organizations is Gray man connected to?",
-        "Where did the $250M allegedly go in Feeding Our Future investigation?"
+        "Where did the $250M allegedly go in Feeding Our Future investigation?",
+        "Where did the $3M allegedly go in Morris Bank fraud case?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-12T10:08:26.083Z",
-  "lastUpdated": "2026-06-12T10:08:26.084Z"
+  "lastReflection": "2026-06-12T14:09:51.221Z",
+  "lastUpdated": "2026-06-12T14:09:51.222Z"
 }
