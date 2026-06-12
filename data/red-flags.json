@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "The Ohio voting rights group under investigation may have used shell companies or other financial schemes to launder money.",
+      "insight": "As an investigator, I notice that the Ohio voting rights group's financial records may be worth examining to determine if there are any suspicious transactions or shell companies involved.",
+      "entities": [
+        "Ohio voting rights group"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Washington Post article",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/06/12/fbi-searches-offices-ohio-voter-registration-group-seizing-computers/",
+      "id": "rf-1781294872481-zw0mzrcpm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-12T20:07:52.477Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI raided an Ohio voting rights organization, and federal authorities are investigating a 'shock and awe' campaign in Colorado school districts.",
       "insight": "These investigations may indicate a larger pattern of fraud or corruption.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-12T17:37:02.100Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -949,25 +968,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-02T17:22:04.124Z",
       "isNew": false
-    },
-    {
-      "type": "federal_indictment",
-      "description": "A Brandon man was indicted in a federal mortgage fraud investigation.",
-      "insight": "This indicates a potential larger scheme involving mortgage fraud, possibly with connections to other cases.",
-      "entities": [
-        "Brandon man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WFLA",
-      "sourceUrl": "https://WFLA.com/rss/articles/CBMirgFBVV95cUxQVXduaW9VXy1HOUcxc2lVOGdwQWNMNTV6dk5zOWg5RzN5bzJCTDY1MlFlYVFpVnZHblJ4QXFQa09KVzVQR0RZWWxUWldELWtMeHAySFh1T0lfSVZkZS1qb0JGU1JhemNiZXZrdi11Uk5ad1FsU1UyOXlLSlBqRlUzM1BjT3hlV2w5SU1LQnZPSWhiRmQ2dFh6TXZWRkx1NkhJRDdnTG1LSFp6V2NaWFHSAbMBQVVfeXFMTmR0d0QyVU1sZC0xRnR5Y0pVUFREVW9JWFR4b28tSUwwbGFiV2ttWVVmRW43WEJaMzBqR3JCSC00Y1Q4cGRySzd0WXRzOUF5SkVqaFNLUi1venZDMU9LY3FSYTRKc0NJM0p6MDJxQnFoMFNZNmNpemV1TzhjUlNXY2g5YjEwb184dS1wYXpYNFhzdUFCSnFMN0R6dDJlcm5VYXdUR003T3FXUWp0eGJNVDZuLVU",
-      "id": "rf-1780371828703-vs816otk6",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-02T03:43:48.700Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -981,7 +981,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -999,5 +998,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-12T17:37:02.100Z"
+  "lastUpdated": "2026-06-12T20:07:52.477Z"
 }
