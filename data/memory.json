@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-31T12:11:01.805Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-05-31T14:43:32.643Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-06-13T11:13:25.112Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-06-13T13:55:10.836Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $185K allegedly go in Medicaid fraud charges?",
     "Where did the $4 million allegedly go in $4 million pandemic fraud?",
     "Where did the $185K allegedly go in Medicaid scam investigation?",
     "What specific allegations exist against Karen Bass?",
@@ -558,7 +556,9 @@
     "Where did the $2.5 million allegedly go in Minnesota Medicaid provider revalidation process investigation?",
     "Where did the Unknown allegedly go in Ohio voting rights group investigation?",
     "What other organizations is 2nd Milk founders connected to?",
-    "Where did the unknown allegedly go in FBI investigation into Las Vegas Paycheck Protection loan fraud?"
+    "Where did the unknown allegedly go in FBI investigation into Las Vegas Paycheck Protection loan fraud?",
+    "What other organizations is 7 Las Vegas men connected to?",
+    "Where did the Unknown allegedly go in OpenAI investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2689,
-    "articlesProcessed": 133950,
-    "redFlagsFound": 3113,
+    "totalScans": 2690,
+    "articlesProcessed": 134000,
+    "redFlagsFound": 3114,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $185K allegedly go in Medicaid Fraud Investigation?",
-        "Where did the $4.2M allegedly go in Feeding Our Future Investigation?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $185K allegedly go in Medicaid fraud charges?",
+        "Where did the $4 million allegedly go in $4 million pandemic fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-13T11:13:25.112Z",
-  "lastUpdated": "2026-06-13T11:13:25.112Z"
+  "lastReflection": "2026-06-13T13:55:10.836Z",
+  "lastUpdated": "2026-06-13T13:55:10.837Z"
 }
