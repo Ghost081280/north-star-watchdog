@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-30T23:07:53.786Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-05-31T03:37:35.133Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-06-12T22:23:53.908Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-06-13T00:20:13.360Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Erin Stewart connected to?",
-    "Where did the $185K allegedly go in Minnesota Medicaid fraud?",
-    "What other organizations is Care Coordinator connected to?",
     "What other organizations is Feeding Our Future Ringleader connected to?",
     "Where did the Unknown allegedly go in New Britain Spending Investigation?",
     "Where did the $185K allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Rochester Woman connected to?",
     "Where did the $0 allegedly go in Ohio Voting Rights Group Investigation?",
     "What specific allegations exist against David Crowley?",
-    "Where did the $185K allegedly go in Mower County care coordinator Medicaid fraud?"
+    "Where did the $185K allegedly go in Mower County care coordinator Medicaid fraud?",
+    "What other organizations is David Crowley connected to?",
+    "Where did the Unknown allegedly go in Ohio Voting Rights Group Investigation?",
+    "Where did the $185K allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2685,
-    "articlesProcessed": 133750,
-    "redFlagsFound": 3110,
+    "totalScans": 2686,
+    "articlesProcessed": 133800,
+    "redFlagsFound": 3111,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "Charges against a former Mower County care coordinator for Medicaid fraud",
-          "insight": "This case highlights the ongoing issue of Medicaid fraud and the importance of addressing it",
-          "entities": [
-            "Mower County care coordinator"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Minnesota Attorney General's office",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPWXBITUdTOFl6VEVkSHlEejE4dXVfNTZPWHI2MFBDUnFpUEhFa2RtQTZjQ3N0WmtmUWwyaXMzLXEzcXI4cUdmalRBRUE1XzFIVkgxZGR3b1lnRjkzY2Jub1pBMUh2M2Q5ZEJlbXNEX0VZLXBRZDI4S3ZFNjJ5cVphSDBMM1o0R0RfNTkxbHNjNHpYeDhveno3MWkzTEl6SDhzLThHa3hSdFRucm1ITFZ3b2hnMV9jY1M0UnJkdjZaa09YdTFJRTJRTlpwUlpVVjZlYmI4US1Xc2VJZlBBeHBSdkxTcnZNMXQ1d1Vhb1dtRXJWVVBUZTlsRFJ3"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $4.2M allegedly go in Feeding Our Future scam?",
-        "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud schemes?",
-        "What other organizations is Erin Stewart connected to?"
+        "What other organizations is Erin Stewart connected to?",
+        "Where did the $185K allegedly go in Minnesota Medicaid fraud?",
+        "What other organizations is Care Coordinator connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-12T22:23:53.908Z",
-  "lastUpdated": "2026-06-12T22:23:53.908Z"
+  "lastReflection": "2026-06-13T00:20:13.360Z",
+  "lastUpdated": "2026-06-13T00:20:13.361Z"
 }

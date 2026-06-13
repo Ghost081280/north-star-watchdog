@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating voting rights groups in Ohio, which could indicate a larger pattern of voter suppression or intimidation.",
+      "insight": "I suspect that these investigations may be part of a larger effort to undermine voting rights, particularly in marginalized communities. Further investigation is needed to determine the scope and motivations behind these actions.",
+      "entities": [
+        "Ohio voting rights group"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS0FZb3JlUjFVaDVFbjNSUjJmeG90M0RlQm45b1o0YWxvM2UxdHU3SzBBbXp4SEpnbnNvV203cUY2TnlvdTJMR1A3U2RsUmNzTHFsbUhEd29CYktjcE8wY0N4NU5GaHVJUEZpd0dpX1JrcTFzR3o0NlJRMl8zYzg1OUJ2STNlX0RsUU1nS3lqNnhQSGMzQ0E",
+      "id": "rf-1781310013368-ergdbza82",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-13T00:20:13.363Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI's search of the Ohio Organizing Collaborative's offices",
       "insight": "This investigation raises concerns about potential voter suppression and intimidation, and may have implications for the midterm elections",
       "entities": [
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-12T22:23:53.909Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -36,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-12T22:23:53.909Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -947,29 +966,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-03T03:53:42.756Z",
       "isNew": false
-    },
-    {
-      "type": "child porn investigation",
-      "description": "The Stark County volunteer assistant fire chief was arrested for child porn, highlighting the need for increased vigilance in this area.",
-      "insight": "This arrest suggests that child porn investigations may be on the rise, and it is essential to monitor this trend closely.",
-      "entities": [
-        "Stark County"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Jordan Miller News",
-      "sourceUrl": "https://www.jordanmiller.news/2026/06/02/federal-investigation-leads-to-arrest-of-stark-county-volunteer-assistant-fire-chief/",
-      "id": "rf-1780458822760-l2jb0p6ag",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-03T03:53:42.756Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -978,8 +979,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -997,5 +996,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-12T22:23:53.909Z"
+  "lastUpdated": "2026-06-13T00:20:13.363Z"
 }
