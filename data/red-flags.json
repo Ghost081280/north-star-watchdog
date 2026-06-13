@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI raids Ohio voting rights group, seizing computers",
+      "insight": "This could be related to a larger investigation into election interference or voter suppression.",
+      "entities": [
+        "FBI",
+        "Ohio voting rights group"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/fbi-searches-offices-of-ohio-voter-registration-group-seizing-computers/2026/06/13/ee2a944c-33f5-4e3b-9dd2-4d2a6c3e6d2a_story.html",
+      "id": "rf-1781371279875-nly1h9w7b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-13T17:21:19.872Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a massive China-based cybercrime network that caused $1.9B in losses",
       "insight": "This investigation highlights the need for increased cybersecurity measures to prevent such large-scale losses. I recommend tracking the developments in this case and exploring potential connections to other cybercrime networks.",
@@ -945,34 +965,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-03T21:48:11.984Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing, including those into George Santos and a Utah man for sexual exploitation.",
-      "insight": "These investigations indicate a potential pattern of criminal activity across different sectors, including politics and individual crimes.",
-      "entities": [
-        "George Santos",
-        "Utah Man"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPN2JueTd1WnZSQ1FJX1dHT2VweVZKT3VXREllU0FxV3M2bDdvc3Y3aURpNUJLekI5VU0xdmFlSWYzbHFUUjEtdlRFaTFlNEhma28zTElNQ1laM3p2bnFndkhNZ01uZmFNblRFaFMtMzRkYlpwNWFtTC1zZ3VObXBYYXA5RXVHcjkzWXR4NGQwamg2LWRGaTdETmpZNUNWU3BCblVhVURLRUxXNHlqbmZFanItWTNXMkdZdmFPY0lVRWpIMUROZkp0TnVaWUpJTUxUU0JjTw",
-      "id": "rf-1780510957446-36inxr85i",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-03T18:22:37.443Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -993,5 +996,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-13T15:42:35.708Z"
+  "lastUpdated": "2026-06-13T17:21:19.872Z"
 }
