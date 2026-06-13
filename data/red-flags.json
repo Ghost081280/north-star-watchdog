@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating a massive China-based cybercrime network that caused $1.9B in losses",
+      "insight": "This investigation highlights the need for increased cybersecurity measures to prevent such large-scale losses. I recommend tracking the developments in this case and exploring potential connections to other cybercrime networks.",
+      "entities": [
+        "FBI",
+        "China-based cybercrime network"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CyberScoop",
+      "sourceUrl": "https://www.cyberscoop.com/fbi-takes-down-massive-china-based-cybercrime-network/",
+      "id": "rf-1781349205118-hqvr78bpc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-13T11:13:25.113Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "FBI investigation into Ohio voting rights group for potential criminal fraud",
       "insight": "This investigation raises concerns about the potential for fraud in voting rights groups. Further investigation is needed to determine the extent of the fraud and whether it is related to other cases.",
       "entities": [
@@ -945,25 +965,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-03T18:22:37.443Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "George Santos under investigation for alleged insider trading and Kalshi betting scheme",
-      "insight": "This investigation raises concerns about potential corruption and abuse of power by a former elected official. Further investigation is needed to determine the extent of the alleged wrongdoing.",
-      "entities": [
-        "George Santos"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/06/03/us/politics/george-santos-investigation.html",
-      "id": "rf-1780492537241-epd3klr5a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-03T13:15:37.238Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -975,7 +976,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -992,5 +996,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-13T08:55:28.068Z"
+  "lastUpdated": "2026-06-13T11:13:25.113Z"
 }
