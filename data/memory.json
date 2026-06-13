@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-05-31T19:37:49.750Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-05-31T20:58:14.198Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-13T19:23:07.946Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-06-13T21:14:21.623Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $185K allegedly go in Mower County care coordinator Medicaid fraud?",
-    "What other organizations is David Crowley connected to?",
     "Where did the Unknown allegedly go in Ohio Voting Rights Group Investigation?",
     "Where did the $185K allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $2.5 million allegedly go in Minnesota Medicaid provider revalidation process investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is 15 individuals connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?",
     "Where did the $2.5M allegedly go in Child food program scheme?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Ilhan Omar connected to?",
+    "Where did the Unknown allegedly go in Paycheck Protection loan fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2693,
-    "articlesProcessed": 134150,
-    "redFlagsFound": 3119,
+    "totalScans": 2694,
+    "articlesProcessed": 134200,
+    "redFlagsFound": 3120,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $185K allegedly go in Medicaid fraud charges against former Mower County care coordinator?",
-        "Are any of these 4 figures connected to each other?",
-        "What other organizations is Rochester Woman connected to?"
+        "Where did the $185K allegedly go in Mower County care coordinator Medicaid fraud?",
+        "What other organizations is David Crowley connected to?",
+        "Where did the Unknown allegedly go in Ohio Voting Rights Group Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-13T19:23:07.946Z",
-  "lastUpdated": "2026-06-13T19:23:07.947Z"
+  "lastReflection": "2026-06-13T21:14:21.623Z",
+  "lastUpdated": "2026-06-13T21:14:21.624Z"
 }
