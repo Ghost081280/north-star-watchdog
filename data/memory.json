@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-01T00:05:22.469Z",
-      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-06-01T06:00:55.532Z",
       "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.85
@@ -510,6 +505,11 @@
       "date": "2026-06-14T03:51:49.738Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-14T08:15:04.510Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2696,
-    "articlesProcessed": 134300,
+    "totalScans": 2697,
+    "articlesProcessed": 134350,
     "redFlagsFound": 3122,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "Multiple cases of Medicaid fraud have been reported in Minnesota, including a $90M scheme.",
-          "insight": "This suggests a significant problem with oversight and enforcement in the state's Medicaid program.",
-          "entities": [
-            "Minnesota Department of Human Services"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "DOJ",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Ohio Voting Rights Group Investigation?",
-        "Where did the $185K allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "Where did the $2.5 million allegedly go in Minnesota Medicaid provider revalidation process investigation?"
+        "What other organizations is 2nd Milk founders connected to?",
+        "Where did the unknown allegedly go in FBI investigation into Las Vegas Paycheck Protection loan fraud?",
+        "What other organizations is 7 Las Vegas men connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-14T03:51:49.738Z",
-  "lastUpdated": "2026-06-14T03:51:49.739Z"
+  "lastReflection": "2026-06-14T08:15:04.510Z",
+  "lastUpdated": "2026-06-14T08:15:04.510Z"
 }
