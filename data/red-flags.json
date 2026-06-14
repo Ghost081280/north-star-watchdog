@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Multiple cases of Medicaid fraud have been reported in Minnesota, including a $90M scheme.",
+      "insight": "This suggests a significant problem with oversight and enforcement in the state's Medicaid program.",
+      "entities": [
+        "Minnesota Department of Human Services"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw",
+      "id": "rf-1781409109743-pp2lowiyz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-14T03:51:49.740Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI raids Ohio voting rights group, seizing computers",
       "insight": "This could be related to a larger investigation into election interference or voter suppression.",
@@ -544,25 +563,6 @@
       "isNew": false
     },
     {
-      "type": "federal investigation",
-      "description": "FBI investigation into Minnesota grocer for fraud",
-      "insight": "This indicates a continued effort by the FBI to target and prosecute fraudsters.",
-      "entities": [
-        "Minnesota Grocer"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "MSN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNeWZlR3VxNW01UG1EQ3VGNmZMVEpKakdQdnBodVNINFJvSU84cm80dHVVcE9lUVc2T3ZPSmY5bjBSYmdoSTl1RUtyUFU4a01YdkxtZWVTTlo3ODhFTFpVa2FGNXRFd2J6N2pUUXJVTnZ4d2szYl9zMXljS2tsRjVlV3J3WkpubHBKVTRTUHFpdElLUHhuMGdhU2NCN2pMMjRCczZTRVRtZ0VzbnpLaTlIVjBIYmlyY211N1hneFJmNm5mUXpCQU5BcG03eTRGbDVQcDltVUNpMVNIUWE4RDhjZm44RmRFckV4Yzg1SktfUQ?oc=5",
-      "id": "rf-1780828060548-merks3gwo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T10:27:40.544Z",
-      "isNew": false
-    },
-    {
       "type": "Federal Investigation",
       "description": "Multiple federal investigations are underway in California, including probes into election fraud and MARTA safety concerns",
       "insight": "The presence of multiple federal investigations in California suggests a pattern of potential wrongdoing or negligence. Further investigation is needed to determine the extent of these issues and to identify potential connections between them.",
@@ -969,16 +969,16 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -995,5 +995,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-13T23:03:05.698Z"
+  "lastUpdated": "2026-06-14T03:51:49.740Z"
 }
