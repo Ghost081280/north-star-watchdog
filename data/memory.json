@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-01T23:26:16.914Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-02T03:43:48.698Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-06-14T17:19:21.647Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-14T19:24:06.347Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -533,9 +533,9 @@
       "type": "healthcare_fraud",
       "description": "2 findings related to healthcare fraud",
       "confidence": 0.95,
-      "count": 12,
+      "count": 13,
       "firstSeen": "2026-01-15T21:21:13.968Z",
-      "lastSeen": "2026-05-02T13:07:18.125Z"
+      "lastSeen": "2026-06-14T19:24:06.348Z"
     }
   ],
   "openQuestions": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2701,
-    "articlesProcessed": 134550,
-    "redFlagsFound": 3125,
+    "totalScans": 2702,
+    "articlesProcessed": 134600,
+    "redFlagsFound": 3127,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,25 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "DOJ charges 15 in $90M Minnesota Medicaid fraud schemes",
+          "insight": "This indicates a significant federal investigation into Medicaid fraud in Minnesota, with multiple charges filed.",
+          "entities": [
+            "DOJ"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "DOJ",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-14T17:19:21.647Z",
-  "lastUpdated": "2026-06-14T17:19:21.648Z"
+  "lastReflection": "2026-06-14T19:24:06.347Z",
+  "lastUpdated": "2026-06-14T19:24:06.348Z"
 }

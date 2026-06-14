@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota DHS notifies 3,400+ Medicaid providers that they are facing removal",
+      "insight": "This indicates a large-scale effort to crack down on Medicaid fraud, but also raises concerns about the impact on legitimate providers.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaGE5VXU4MFpneXA0dThteW1IejdtZk9HanJpX2hYNmhHSl9DVVhWdWI2QXp0U3FvZVlVc21uRHVXLVFCV1VNanlMM1ZrOURtX3FSVkhteUMxd0x4LUtKSkpGeWRnZTN0cVdoWWRoUjNHUFdsRkZkWWZIcVNmOUxhXw",
+      "id": "rf-1781465046352-u0g3h4zan",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-14T19:24:06.349Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "DOJ charges 15 in $90M Minnesota Medicaid fraud schemes",
+      "insight": "This indicates a significant federal investigation into Medicaid fraud in Minnesota, with multiple charges filed.",
+      "entities": [
+        "DOJ"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw",
+      "id": "rf-1781465046352-jef7sels0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-14T19:24:06.349Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Thousands of Medicaid providers have been cut off due to the state's fraud cleanup efforts",
       "insight": "This could indicate a larger issue with Medicaid fraud in the state, and further investigation is needed to determine the extent of the problem",
@@ -17,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-14T11:29:38.416Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Multiple cases of Medicaid fraud have been reported in Minnesota, including a $90M scheme.",
-      "insight": "This suggests a significant problem with oversight and enforcement in the state's Medicaid program.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw",
-      "id": "rf-1781409109743-pp2lowiyz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-14T03:51:49.740Z",
       "isNew": false
     },
     {
@@ -945,30 +964,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-04T03:47:36.602Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations into high-profile figures and organizations",
-      "insight": "Pattern of increased enforcement and scrutiny across various sectors",
-      "entities": [
-        "George Santos",
-        "ASU"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "",
-      "id": "rf-1780523291987-6iswbl92b",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-03T21:48:11.984Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -976,7 +976,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -993,5 +995,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-14T17:19:21.649Z"
+  "lastUpdated": "2026-06-14T19:24:06.349Z"
 }
