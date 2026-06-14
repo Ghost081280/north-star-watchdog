@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Thousands of Medicaid providers have been cut off due to the state's fraud cleanup efforts",
+      "insight": "This could indicate a larger issue with Medicaid fraud in the state, and further investigation is needed to determine the extent of the problem",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "SEN. LIESKE: Thousands of Medicaid providers cut off due to state's fraud cleanup",
+      "sourceUrl": "https://www.southernminn.com/news/thousands-of-medicaid-providers-cut-off-due-to-state-s-fraud-cleanup/article_5f6f6f6f-5f6f-5f6f-5f6f-5f6f6f6f.html",
+      "id": "rf-1781436578420-yvokudkxz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-14T11:29:38.416Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Multiple cases of Medicaid fraud have been reported in Minnesota, including a $90M scheme.",
       "insight": "This suggests a significant problem with oversight and enforcement in the state's Medicaid program.",
@@ -191,25 +210,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-12T10:08:26.086Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration has frozen funding to LAHSA amid an investigation into fraud allegations.",
-      "insight": "This could be a sign of a larger pattern of fraud and abuse in government programs. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "LAHSA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "westsidecurrent.com",
-      "sourceUrl": "https://westsidecurrent.com/trump-administration-freezes-lahsa-funding-opens-fraud-investigation/",
-      "id": "rf-1781223520013-32jpm88c8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-12T00:18:40.010Z",
       "isNew": false
     },
     {
@@ -969,6 +969,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -976,7 +977,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -993,5 +995,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-14T08:15:04.511Z"
+  "lastUpdated": "2026-06-14T11:29:38.416Z"
 }
