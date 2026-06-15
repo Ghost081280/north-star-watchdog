@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-02T20:46:30.070Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-02T23:01:44.795Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-15T10:53:54.401Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-15T16:17:15.246Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota fraudster connected to?",
-    "What other organizations is 15 individuals connected to?",
-    "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?",
-    "Where did the $2.5M allegedly go in Child food program scheme?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Ilhan Omar connected to?",
     "Where did the Unknown allegedly go in Paycheck Protection loan fraud investigation?",
@@ -558,7 +554,11 @@
     "Where did the $90M allegedly go in Medicaid fraud schemes?",
     "What other organizations is Nnaji connected to?",
     "What other organizations is Blue Earth man connected to?",
-    "Where did the Not specified allegedly go in Paycheck Protection loan fraud investigation?"
+    "Where did the Not specified allegedly go in Paycheck Protection loan fraud investigation?",
+    "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
+    "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud?",
+    "Where did the $23M allegedly go in Blue Earth man fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2706,
-    "articlesProcessed": 134800,
-    "redFlagsFound": 3130,
+    "totalScans": 2707,
+    "articlesProcessed": 134850,
+    "redFlagsFound": 3131,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud schemes?",
-        "Where did the $2.5M allegedly go in $2.5M judgment?",
-        "Are any of these 3 figures connected to each other?"
+        "What other organizations is Minnesota fraudster connected to?",
+        "What other organizations is 15 individuals connected to?",
+        "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-15T10:53:54.401Z",
-  "lastUpdated": "2026-06-15T10:53:54.402Z"
+  "lastReflection": "2026-06-15T16:17:15.246Z",
+  "lastUpdated": "2026-06-15T16:17:15.246Z"
 }
