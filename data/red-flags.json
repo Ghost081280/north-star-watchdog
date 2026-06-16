@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "alleged plot",
+      "description": "FBI foiled alleged plot targeting UFC event at White House",
+      "insight": "This plot raises concerns about security measures in place for high-profile events and potential threats to public safety.",
+      "entities": [
+        "FBI",
+        "UFC"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/national/fbi-thwarted-attack-targeting-ufc-event-at-white-house-director-says/2026/06/16/",
+      "id": "rf-1781638403600-ptxod6rzg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-16T19:33:23.597Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The DOJ is investigating Gavin Newsom and his wife, with allegations of a politically motivated investigation",
       "insight": "I suspect that this investigation may be connected to other cases or entities, and I recommend further research into the matter. The fact that Newsom is accusing Trump of directing the investigation suggests a potential political motive, which could be worth exploring further.",
@@ -949,29 +969,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-05T00:05:44.972Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota DHS terminated funding for 3,400+ Medicaid providers",
-      "insight": "This indicates a significant effort to crack down on potential fraud, but also raises concerns about the impact on legitimate providers and beneficiaries.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRllSdmpldXNLRDgxVVEyeDFZY3VqUFNjTXNOWHpFajBCbTl0WFVqUkNBakdQUVZsbzVmaEs5b0xIc21LLXpmaS1xYzFYczZTVHZFTVpvTmM3ODNRTVJGMFVjZTBzNURmNTFCZGF3djhITTZzTm1WZEFwbk9Tcm14Y2MzVllTSEFiZ3MwYnR3VVRTRHA0Y2hkQTNhanRhUdIBowFBVV95cUxPMG05UklJeS1VNFU4SnV0Q0YxNmR5bVAxMm5CNGgtZE5mQ2xNQzJYWlZXd1M4emlZb2pUcmtDbFhBMEZYbC1adDk2Y1pWU2hhdElkS1RsY01SSVBNME5XN0NBQW9IOTVwWkRRQUs3TVJ4bUFGTzRqak1DUVBIMkw1bVFmcGdTWm5vU01NQ253bjlxS2FMSHNYYTk3S2Y0NXYzMW5J",
-      "id": "rf-1780595109277-d33mbtu4w",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-04T17:45:09.274Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -979,7 +982,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -996,5 +1000,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-16T15:08:20.198Z"
+  "lastUpdated": "2026-06-16T19:33:23.597Z"
 }
