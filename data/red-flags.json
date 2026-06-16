@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "federal charges",
+      "description": "15 individuals charged with conspiracy to impede agents during Minnesota immigration crackdown",
+      "insight": "This indicates a potential pattern of organized resistance to federal authorities, possibly linked to specific groups or ideologies.",
+      "entities": [
+        "Antifa"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "PBS",
+      "sourceUrl": "https://www.pbs.org/newshour/politics/federal-prosecutors-charge-15-people-with-impeding-agents-during-minnesota-immigration-crackdown",
+      "id": "rf-1781647830914-okitbmsh",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-16T22:10:30.910Z",
+      "isNew": true
+    },
+    {
+      "type": "security breach",
+      "description": "FBI thwarted alleged plot to attack White House UFC event",
+      "insight": "This suggests potential vulnerabilities in event security and the need for increased vigilance.",
+      "entities": [
+        "UFC",
+        "White House"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-foiled-alleged-plot-attack-white-house-ufc-event-kash-patel-says-n1279266",
+      "id": "rf-1781647830914-rykqmxezw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-16T22:10:30.910Z",
+      "isNew": true
+    },
+    {
       "type": "alleged plot",
       "description": "FBI foiled alleged plot targeting UFC event at White House",
       "insight": "This plot raises concerns about security measures in place for high-profile events and potential threats to public safety.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-16T19:33:23.597Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -931,50 +970,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-05T09:43:11.130Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal authorities are investigating MARTA after recent stabbings",
-      "insight": "This investigation highlights the need for increased safety measures and oversight in public transportation systems.",
-      "entities": [
-        "MARTA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "wsb-tv.com",
-      "sourceUrl": "https://wsb-tv.com/news/marta-under-federal-investigation-after-recent-stabbings",
-      "id": "rf-1780636541467-z5pnnv2d8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-05T05:15:41.465Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Federal investigation into MARTA after recent stabbings",
-      "insight": "This investigation may uncover deeper issues with MARTA's safety and security protocols",
-      "entities": [
-        "MARTA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "wsb-tv.com",
-      "sourceUrl": "https://wsb-tv.com/news/marta-under-federal-investigation-after-recent-stabbings",
-      "id": "rf-1780617944975-rmg8ln7a3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-05T00:05:44.972Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -983,6 +982,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1000,5 +1001,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-16T19:33:23.597Z"
+  "lastUpdated": "2026-06-16T22:10:30.910Z"
 }
