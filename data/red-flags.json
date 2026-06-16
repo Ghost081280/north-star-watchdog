@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The DOJ is investigating Gavin Newsom and his wife, with allegations of a politically motivated investigation",
+      "insight": "I suspect that this investigation may be connected to other cases or entities, and I recommend further research into the matter. The fact that Newsom is accusing Trump of directing the investigation suggests a potential political motive, which could be worth exploring further.",
+      "entities": [
+        "Gavin Newsom",
+        "Donald Trump"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/us-newsom-accuses-trump-directing-politically-motivated-investigation-2026-06-15/",
+      "id": "rf-1781601920998-6den70w3z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-16T09:25:20.995Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "The Feeding Our Future organization has been linked to a large-scale fraud scheme involving shell companies and misappropriation of funds.",
       "insight": "The use of shell companies to launder money and evade detection is a common tactic in large-scale fraud schemes. The Feeding Our Future organization appears to have utilized this method to carry out its fraudulent activities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-16T03:53:54.118Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -948,25 +968,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-04T17:45:09.274Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "George Santos is under federal investigation for alleged prediction market insider trading.",
-      "insight": "The investigation into George Santos highlights the need for transparency and accountability in financial dealings.",
-      "entities": [
-        "George Santos"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "MS NOW",
-      "sourceUrl": "https://msnow.com/2026/06/03/federal-authorities-investigate-george-santos-for-alleged-prediction-market-insider-trading/",
-      "id": "rf-1780561181061-hbdzo4vb8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-04T08:19:41.057Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -979,6 +980,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FEC",
     "ProPublica Nonprofits",
     "FDA"
   ],
@@ -997,5 +999,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-16T03:53:54.118Z"
+  "lastUpdated": "2026-06-16T09:25:20.995Z"
 }
