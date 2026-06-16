@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-03T08:54:12.397Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-03T13:15:37.236Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-15T23:02:04.292Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-16T03:53:54.116Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Ilhan Omar?",
-    "Where did the $2.5M allegedly go in $2.5M child food program scheme?",
-    "What other organizations is Jason Carney connected to?",
     "What other organizations is Lacey Carney connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the undisclosed allegedly go in Paycheck Protection Loan Fraud Investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Amira A. Abdullahi connected to?",
     "Where did the $40M allegedly go in Feeding Our Future Investigation?",
     "What other organizations is Abdirizak M. Abdulkadir connected to?",
-    "Where did the $90M allegedly go in Feeding Our Future investigation?"
+    "Where did the $90M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Najmo Ahmed connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud?",
+    "Where did the $0 allegedly go in Gavin Newsom investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2709,
-    "articlesProcessed": 134950,
-    "redFlagsFound": 3134,
+    "totalScans": 2710,
+    "articlesProcessed": 135000,
+    "redFlagsFound": 3135,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Feeding Our Future program was terminated amid allegations of fraud",
-          "insight": "The termination of the program and the charges filed against individuals involved suggest a large scale fraud scheme",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota DHS"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "5 EYEWITNESS NEWS",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPaUIxVjZ5eDg0dkZPV2RhZnBxTy0tTkFhbENBX05ubVlNeUFYUnRtZHlMblpmSXhVX18wT0pUZV9xd3JSQ1Nzbnptbk9BaDJlM1NtX3BFZ2xPaXJfaE0yWTNxQU1HTDZGeTJFM0o1MzMUSENHZzh5QkJlOXI4RnhtaWlaOTM3YzBsQWYyUUhiaWx0SFVhMzNXUUtucHRJNWZGVXoxWUlXM1VqYWpqOUJic0pZVHRuQV9QMUdMWjVQMEo4YmhkeFlMUEs4Z2J1Y2d6bWJwSUY5LURJckJSTW0xd2hGTUo0T2pmdjMyLTU5NEpUdXdVLTZzYndYZ1hLaEk"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is J.T. Young connected to?",
-        "What specific allegations exist against J.T. Young?",
-        "What specific allegations exist against Ilhan Omar?"
+        "What specific allegations exist against Ilhan Omar?",
+        "Where did the $2.5M allegedly go in $2.5M child food program scheme?",
+        "What other organizations is Jason Carney connected to?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-15T23:02:04.292Z",
-  "lastUpdated": "2026-06-15T23:02:04.293Z"
+  "lastReflection": "2026-06-16T03:53:54.116Z",
+  "lastUpdated": "2026-06-16T03:53:54.117Z"
 }
