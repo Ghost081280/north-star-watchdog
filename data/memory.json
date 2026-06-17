@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-04T03:47:36.600Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-04T08:19:41.055Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-06-16T22:10:30.908Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-06-17T00:14:54.445Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 2 new legal actions, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Not specified allegedly go in Paycheck Protection loan fraud investigation?",
-    "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
-    "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud?",
-    "Where did the $23M allegedly go in Blue Earth man fraud?",
     "Are any of these 3 figures connected to each other?",
     "What other organizations is Abdirizak A. Abdullahi connected to?",
     "What other organizations is Amira A. Abdullahi connected to?",
@@ -558,7 +554,11 @@
     "Where did the $0 allegedly go in Jennifer Siebel Newsom Investigation?",
     "What other organizations is Individuals Arrested connected to?",
     "Where did the $0 allegedly go in UFC Event Attack Investigation?",
-    "Where did the $0 allegedly go in Minnesota Immigration Crackdown?"
+    "Where did the $0 allegedly go in Minnesota Immigration Crackdown?",
+    "What other organizations is Asha Jama connected to?",
+    "What other organizations is Rochester restaurant worker connected to?",
+    "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2714,
-    "articlesProcessed": 135200,
-    "redFlagsFound": 3139,
+    "totalScans": 2715,
+    "articlesProcessed": 135250,
+    "redFlagsFound": 3141,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $90M allegedly go in Medicaid fraud schemes?",
-        "What other organizations is Nnaji connected to?",
-        "What other organizations is Blue Earth man connected to?"
+        "Where did the Not specified allegedly go in Paycheck Protection loan fraud investigation?",
+        "What other organizations is Individuals involved in Feeding Our Future fraud connected to?",
+        "Where did the $90M allegedly go in $90M Minnesota Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-16T22:10:30.908Z",
-  "lastUpdated": "2026-06-16T22:10:30.909Z"
+  "lastReflection": "2026-06-17T00:14:54.445Z",
+  "lastUpdated": "2026-06-17T00:14:54.446Z"
 }
