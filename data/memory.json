@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-04T22:20:12.785Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-05T00:05:44.970Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-06-17T21:04:02.404Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-17T23:22:41.927Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $40M allegedly go in Feeding Our Future Investigation?",
-    "What other organizations is Abdirizak M. Abdulkadir connected to?",
     "Where did the $90M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Najmo Ahmed connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud?",
@@ -558,7 +556,9 @@
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?",
-    "Where did the $40M allegedly go in Feeding Our Future investigation?"
+    "Where did the $40M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Kash Patel connected to?",
+    "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2720,
-    "articlesProcessed": 135500,
-    "redFlagsFound": 3144,
+    "totalScans": 2721,
+    "articlesProcessed": 135550,
+    "redFlagsFound": 3145,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Amira A. Abdullahi connected to?",
         "Where did the $40M allegedly go in Feeding Our Future Investigation?",
-        "What other organizations is Abdirizak M. Abdulkadir connected to?"
+        "What other organizations is Abdirizak M. Abdulkadir connected to?",
+        "Where did the $90M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-17T21:04:02.404Z",
-  "lastUpdated": "2026-06-17T21:04:02.405Z"
+  "lastReflection": "2026-06-17T23:22:41.927Z",
+  "lastUpdated": "2026-06-17T23:22:41.928Z"
 }

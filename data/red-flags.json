@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple fraud allegations against individuals and organizations, including Feeding Our Future and Kash Patel.",
+      "insight": "These allegations indicate a potential pattern of fraudulent activity that warrants further investigation.",
+      "entities": [
+        "Aimee Bock",
+        "Kash Patel",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://bringmethenews.com/news/2026/06/17/ringleader-aimee-bock-files-formal-appeal-in-feeding-our-future-fraud-case",
+      "id": "rf-1781738561932-ptq45zsxw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-17T23:22:41.929Z",
+      "isNew": true
+    },
+    {
       "type": "shell_company",
       "description": "Feeding Our Future used a complex web of shell companies to launder funds.",
       "insight": "The use of shell companies to hide illicit activities is a major red flag.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-17T21:04:02.406Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "wire fraud",
@@ -954,25 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-05T21:24:14.256Z",
       "isNew": false
-    },
-    {
-      "type": "high-risk Medicaid providers",
-      "description": "More than 60% of Minnesota high-risk Medicaid providers fail review",
-      "insight": "This indicates a significant risk of fraud in Minnesota's Medicaid program",
-      "entities": [
-        "Minnesota Medicaid providers"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Black Chronicle",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQajNJSVhITUVkb1pFQURhdkozbkxWd2FvZkZhR0l6aV9kaGtPZExqQ21NTXdMeXp0Nk9LdjF0LTZGa0Y5Y2ZCdVVqa0NTVUFMOW8zcExYSWI0OE41WloxVG5LSWExckFTcThEYWw3dV9GRzZnSGpsU3I5U3d2aUNfRFVsbUdPSjh2SDE2amVQNFdub3pxNE1DSmllbXNtbUdzMGdxQzQxSUFfdEtPYVptelhB?oc=5",
-      "id": "rf-1780689149195-vcyff7g48",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-05T19:52:29.192Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-17T21:04:02.406Z"
+  "lastUpdated": "2026-06-17T23:22:41.929Z"
 }
