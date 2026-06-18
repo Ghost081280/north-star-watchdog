@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The USDA ordered IU to destroy biological materials during an active investigation.",
+      "insight": "This could indicate a potential biosecurity risk or misuse of funds.",
+      "entities": [
+        "IU"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "USDA",
+      "sourceUrl": "https://wrtv.com/2026-06-18/usda-orders-iu-to-destroy-biological-materials-during-active-investigation",
+      "id": "rf-1781785454768-wiou04qnv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-18T12:24:14.764Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating the Feeding Our Future nonprofit for alleged fraud and money laundering",
       "insight": "I notice that the Feeding Our Future nonprofit has been accused of large-scale fraud, which raises concerns about the lack of oversight and regulation of nonprofits. I would investigate further to see if there are any other nonprofits that may be engaging in similar activities.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-18T08:45:36.009Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -956,30 +975,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-06T13:28:21.166Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "MN disenrolls thousands of high-risk Medicaid providers after review - Pioneer Press",
-      "insight": "The disenrollment of high-risk Medicaid providers suggests a proactive approach to preventing fraud and abuse within the Medicaid program. This could indicate a larger effort to crack down on fraudulent activities in healthcare.",
-      "entities": [
-        "Minnesota DHS",
-        "Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "MN disenrolls thousands of high-risk Medicaid providers",
-      "sourceUrl": "https://www.pioneerpress.com/2026/06/05/mn-disenrolls-thousands-high-risk-medicaid-providers-review/",
-      "id": "rf-1780745101115-jl39e37er",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-06T11:25:01.111Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-18T08:45:36.009Z"
+  "lastUpdated": "2026-06-18T12:24:14.764Z"
 }

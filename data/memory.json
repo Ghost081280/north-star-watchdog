@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-05T09:43:11.127Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-05T12:36:09.685Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-18T08:45:36.007Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-18T12:24:14.762Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the N/A allegedly go in Gavin Newsom Investigation?",
     "Where did the $0 allegedly go in UFC Event Plot Investigation?",
     "Where did the $0 allegedly go in Jennifer Siebel Newsom Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $250M allegedly go in Feeding Our Future fraud case?",
     "Where did the $100M allegedly go in Minnesota Medicaid fraud?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
-    "Where did the $100 million allegedly go in Minnesota Medicaid fraud?"
+    "Where did the $100 million allegedly go in Minnesota Medicaid fraud?",
+    "Where did the $40M allegedly go in Feeding Our Future fraud case?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2723,
-    "articlesProcessed": 135650,
-    "redFlagsFound": 3147,
+    "totalScans": 2724,
+    "articlesProcessed": 135700,
+    "redFlagsFound": 3148,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250M allegedly go in Feeding Our Future fraud?",
-        "Where did the $0 allegedly go in Gavin Newsom investigation?",
-        "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?"
+        "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?",
+        "Where did the N/A allegedly go in Gavin Newsom Investigation?",
+        "Where did the $0 allegedly go in UFC Event Plot Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-18T08:45:36.007Z",
-  "lastUpdated": "2026-06-18T08:45:36.008Z"
+  "lastReflection": "2026-06-18T12:24:14.762Z",
+  "lastUpdated": "2026-06-18T12:24:14.763Z"
 }
