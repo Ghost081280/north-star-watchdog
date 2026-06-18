@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The Minnesota Department of Health and Human Services terminated funding for Feeding Our Future due to allegations of fraud.",
+      "insight": "This termination suggests a significant level of suspicion and concern about the organization's activities.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota Department of Health and Human Services"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Star Tribune",
+      "sourceUrl": "https://www.startribune.com/archive-political-pressure-helped-restore-feeding-our-future-funding-despite-staff-warnings/100/",
+      "id": "rf-1781810806363-0ug1yrn8o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-18T19:26:46.359Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The USDA ordered IU to destroy biological materials during an active investigation.",
       "insight": "This could indicate a potential biosecurity risk or misuse of funds.",
       "entities": [
@@ -314,25 +334,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-15T04:03:34.265Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "DOJ charges 15 in $90M Minnesota Medicaid fraud schemes",
-      "insight": "This indicates a significant federal investigation into Medicaid fraud in Minnesota, with multiple charges filed.",
-      "entities": [
-        "DOJ"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdmNMVzRZYjdmeFRDWGNqRTN0SVljQnNOenFWczdMbE4waUt0WFg1Q1RUd1VhT2hyb2YzaGZyUHRMOVJSVXBHRnR5dWd0WEYxdXJzRkJPM1VFci1tVU9idW1uUXQzLXZTaVhfN083bWVIVDNmdy1iNzBXek40QVNleTYxRXlzdUx3dXJuenBtNXJIWlhvemc2enpFNHM3QjlDX0FycU54OWQ5MThtOUU0NUxIa05vV2V0UHUzb21BUnhoamtqaTNpZ3VhOWtZX25BNkFRQkpQZE1XdXVkVjZvT05FZ1VpcUNaU1BkUw",
-      "id": "rf-1781465046352-jef7sels0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-14T19:24:06.349Z",
       "isNew": false
     },
     {
@@ -979,6 +980,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -986,7 +988,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-18T16:29:16.841Z"
+  "lastUpdated": "2026-06-18T19:26:46.359Z"
 }
