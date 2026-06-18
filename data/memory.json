@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-05T17:53:04.361Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-05T19:52:29.190Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-18T19:26:46.358Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-06-18T22:06:04.452Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Individuals Arrested connected to?",
-    "Where did the $0 allegedly go in UFC Event Attack Investigation?",
-    "Where did the $0 allegedly go in Minnesota Immigration Crackdown?",
     "What other organizations is Asha Jama connected to?",
     "What other organizations is Rochester restaurant worker connected to?",
     "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
@@ -558,7 +555,10 @@
     "Where did the $40M allegedly go in Feeding Our Future fraud case?",
     "What specific allegations exist against Kennedy?",
     "Where did the $100 million allegedly go in Feeding Our Future fraud?",
-    "Where did the $100 million allegedly go in Partners in Nutrition fraud?"
+    "Where did the $100 million allegedly go in Partners in Nutrition fraud?",
+    "What other organizations is Feeding Our Future fraud kingpin connected to?",
+    "Where did the $100 million allegedly go in Feeding Our Future investigation?",
+    "Where did the Unknown allegedly go in MARTA investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2726,
-    "articlesProcessed": 135800,
-    "redFlagsFound": 3149,
+    "totalScans": 2727,
+    "articlesProcessed": 135850,
+    "redFlagsFound": 3150,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Minnesota Department of Health and Human Services terminated funding for Feeding Our Future due to allegations of fraud.",
-          "insight": "This termination suggests a significant level of suspicion and concern about the organization's activities.",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota Department of Health and Human Services"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Star Tribune",
-          "sourceUrl": "https://www.startribune.com/archive-political-pressure-helped-restore-feeding-our-future-funding-despite-staff-warnings/100/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the N/A allegedly go in Gavin Newsom Investigation?",
-        "Where did the $0 allegedly go in UFC Event Plot Investigation?",
-        "Where did the $0 allegedly go in Jennifer Siebel Newsom Investigation?"
+        "What other organizations is Individuals Arrested connected to?",
+        "Where did the $0 allegedly go in UFC Event Attack Investigation?",
+        "Where did the $0 allegedly go in Minnesota Immigration Crackdown?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-18T19:26:46.358Z",
-  "lastUpdated": "2026-06-18T19:26:46.358Z"
+  "lastReflection": "2026-06-18T22:06:04.452Z",
+  "lastUpdated": "2026-06-18T22:06:04.453Z"
 }

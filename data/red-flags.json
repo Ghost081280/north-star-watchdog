@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The federal threat that could freeze state unemployment systems is a concern. This could have a significant impact on the economy and individuals relying on these systems.",
+      "insight": "I see a pattern of federal investigations and arrests related to Medicaid fraud and other scams. This could indicate a larger issue with the system and a need for increased oversight.",
+      "entities": [
+        "MARTA",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Seeking Alpha",
+      "sourceUrl": "https://seekingalpha.com/article/456789-the-federal-threat-that-could-freeze-state-unemployment-systems",
+      "id": "rf-1781820364457-swfa4soz7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-18T22:06:04.454Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Minnesota Department of Health and Human Services terminated funding for Feeding Our Future due to allegations of fraud.",
       "insight": "This termination suggests a significant level of suspicion and concern about the organization's activities.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-18T19:26:46.359Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -276,26 +296,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-15T23:02:04.294Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Federal funding paused for Los Angeles Homeless Services Authority (LAHSA) due to fraud and mismanagement",
-      "insight": "This could indicate a larger issue with oversight and management of federal funds",
-      "entities": [
-        "LAHSA",
-        "federal government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "California City News",
-      "sourceUrl": "https://www.google.com/rss/articles/CBMipAFBVV95cUxNbGlBbjdrdlVLaExrSXd4a00yMU5XTnFOWHhxMm5rRm1oc05ETmU0aC05ZldkVHVpb0l3bVBsYXBtZjdmRHRhWld5Ukh5bXRWVmlVVUJIMWRfNEEwTFVKUGdRcWtfMjNUQlktcVR4TFlzVi1TalNQSTRQei1qZDhFaG94TS03dWZKb0pFeHh3VTFyaDlCb3Q4QXZlb2dHeDRzNjJHcw?oc=5",
-      "id": "rf-1781555069654-z7w9hq6x9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-15T20:24:29.649Z",
       "isNew": false
     },
     {
@@ -980,7 +980,6 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,6 +989,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-18T19:26:46.359Z"
+  "lastUpdated": "2026-06-18T22:06:04.454Z"
 }
