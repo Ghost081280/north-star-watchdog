@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating the Feeding Our Future nonprofit for alleged fraud and money laundering",
+      "insight": "I notice that the Feeding Our Future nonprofit has been accused of large-scale fraud, which raises concerns about the lack of oversight and regulation of nonprofits. I would investigate further to see if there are any other nonprofits that may be engaging in similar activities.",
+      "entities": [
+        "Aimee Bock",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AOL News",
+      "sourceUrl": "https://www.aol.com/news/ringleader-aimee-bock-files-formal-appeal-feeding-our-future-fraud-case-180000514.html",
+      "id": "rf-1781772336014-ed1ci06f6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-18T08:45:36.009Z",
+      "isNew": true
+    },
+    {
       "type": "fraud allegations",
       "description": "Multiple fraud allegations against individuals and organizations, including Feeding Our Future and Kash Patel.",
       "insight": "These allegations indicate a potential pattern of fraudulent activity that warrants further investigation.",
@@ -956,30 +976,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-06T11:25:01.111Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Over 60% of Minnesota high-risk Medicaid providers failed review",
-      "insight": "This indicates a high level of potential fraud in the Medicaid program, requiring further investigation",
-      "entities": [
-        "Minnesota Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Black Chronicle",
-      "sourceUrl": "https://www.theblackchronicle.com/more-than-60-of-minnesota-high-risk-medicaid-providers-fail-review/",
-      "id": "rf-1780694654259-olag8yx26",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-05T21:24:14.256Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-18T03:42:36.984Z"
+  "lastUpdated": "2026-06-18T08:45:36.009Z"
 }
