@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-05T00:05:44.970Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-06-05T05:15:41.463Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-06-17T23:22:41.927Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-18T03:42:36.982Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $90M allegedly go in Feeding Our Future investigation?",
-    "What other organizations is Najmo Ahmed connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud?",
     "Where did the $0 allegedly go in Gavin Newsom investigation?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?",
@@ -558,7 +556,9 @@
     "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?",
     "Where did the $40M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Kash Patel connected to?",
-    "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?"
+    "Where did the $10M+ allegedly go in Feeding Our Future Fraud Case?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud case?",
+    "Where did the $100M allegedly go in Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2721,
-    "articlesProcessed": 135550,
-    "redFlagsFound": 3145,
+    "totalScans": 2722,
+    "articlesProcessed": 135600,
+    "redFlagsFound": 3146,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Feeding Our Future Investigation?",
-        "What other organizations is Abdirizak M. Abdulkadir connected to?",
-        "Where did the $90M allegedly go in Feeding Our Future investigation?"
+        "Where did the $90M allegedly go in Feeding Our Future investigation?",
+        "What other organizations is Najmo Ahmed connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-17T23:22:41.927Z",
-  "lastUpdated": "2026-06-17T23:22:41.928Z"
+  "lastReflection": "2026-06-18T03:42:36.982Z",
+  "lastUpdated": "2026-06-18T03:42:36.983Z"
 }
