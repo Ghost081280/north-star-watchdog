@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "A Blaine man submitted false claims for a dead patient.",
+      "insight": "This case indicates potential systemic issues in healthcare billing and oversight.",
+      "entities": [
+        "Blaine man"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "FOX 9 Minneapolis-St. Paul",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUTFnNE9xTDN0bXFCZWlGZml3cENjWnVRWDN5cFA4TWNySUJLdVJIeE1NaDJQQlRQZ0l3WkZiLVNIYVN3Q1R2VFg2NjNJZ3RxNzBiaTZqMFlfV2piaEVVcVB3MW1MSTdVaWxSVGg5aVdHMTdhYzJpTXZGSENIdWtfbl83WEc4R2x5X1RFUnFPRk5Fb2x2RDRKb25LZDBSd9IBowFBVV95cUxOazNYdW9TNUhTOHZpdDNmYjZuSWJQemh2Z3IwaDZYQlZsaVg5akhYT2VsbDZEeklzTi1BeG5JRThCcV9JX3dtYm1jVzU3X2xkc2JIdURza19CNktHamlsWUZ5NlR4U09TczFTVFFlMkVEQzZ5OXFTZFJIRnV6Z2lfNmkxUHNZcEFkQVplckVfNEU3QktxSzNjaGNxZk9DUVRoNk1N?resource=FOX%209Minneapolis-St%2D%20Paul",
+      "id": "rf-1781868065334-exyr20r2i",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-19T11:21:05.330Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "A federal investigation is underway in Ohio County",
       "insight": "This investigation may be related to other cases of fraud in the area. I recommend tracking the investigation and looking for connections to other entities.",
@@ -956,41 +975,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-06T15:13:50.433Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating election fraud in California",
-      "insight": "This could indicate a significant effort to address concerns about election integrity, but also raises concerns about potential bias or politicization of the investigation.",
-      "entities": [
-        "FBI",
-        "California"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "HuffPost",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSDJIeUNuNHhfWjFUUTRQVnRQZlZCYWNBd0poRUJkZEl3MEhHaTFNZHdUcFAzdDhFX3dnbHN3eFpWWVg1QkQyUWpMbjlKVl9wX1ZSMXlFZFpwdHJ1U2hFYzY3VlJ3aGVjbWVSNi1fMVIxZzIxQUVDWV85eF9vU1dhRGN0YmFxalBOTTBadzBLSnF0aFVBZkFLMlJaaDJidGUzdTFGNnNR0gGrAUFVX3lxTE1KelRFYUR2cmVSTUpacExXdTk4aC1OVURUVXpRWnVQcGF1SlZ6dXdkeDlIUWUwd2o1LWd5M2pEbnRhVFlGT1lXTmdwRnYtWEhQT2pxcTdRNnl3ZW9SbF9iZ2p1VTdNUEl3ZkNadmlfMUpBMmJzRmRTX0I5bUcwemViT1p5ZWJ2SjI5SXVUeVlvSjVHTmFRMExvVGRPSUJPaURwd1hjYld0Rl84NA",
-      "id": "rf-1780758830438-5tr4cjfr4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-06T15:13:50.433Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-19T06:16:50.870Z"
+  "lastUpdated": "2026-06-19T11:21:05.330Z"
 }
