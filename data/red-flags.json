@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "A federal investigation is underway in Ohio County",
+      "insight": "This investigation may be related to other cases of fraud in the area. I recommend tracking the investigation and looking for connections to other entities.",
+      "entities": [
+        "Ohio County"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Department Of Homeland Security Conducts Investigation In Ohio County",
+      "sourceUrl": "https://www.theintelligencer.net/news/top-headlines/2023/06/department-of-homeland-security-conducts-investigation-in-ohio-county/",
+      "id": "rf-1781828728359-23mpkko20",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-19T00:25:28.356Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The federal threat that could freeze state unemployment systems is a concern. This could have a significant impact on the economy and individuals relying on these systems.",
       "insight": "I see a pattern of federal investigations and arrests related to Medicaid fraud and other scams. This could indicate a larger issue with the system and a need for increased oversight.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-18T22:06:04.454Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -957,40 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-06T15:13:50.433Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota disenrolls thousands of high-risk Medicaid providers after review",
-      "insight": "This suggests a significant issue with Medicaid providers in Minnesota, potentially indicating a large-scale fraud scheme.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzNUNWpXcm10cmc",
-      "id": "rf-1780752501169-h4y00nq36",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-06T13:28:21.166Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-18T22:06:04.454Z"
+  "lastUpdated": "2026-06-19T00:25:28.356Z"
 }
