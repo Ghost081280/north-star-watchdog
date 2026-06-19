@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-05T21:24:14.254Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-06-05T23:06:55.034Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-19T00:25:28.354Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-19T06:16:50.868Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the $90M allegedly go in Minnesota Medicaid fraud schemes?",
@@ -558,7 +557,8 @@
     "Where did the $100 million allegedly go in Feeding Our Future investigation?",
     "Where did the Unknown allegedly go in MARTA investigation?",
     "What other organizations is Blaine man connected to?",
-    "Where did the Unknown allegedly go in Minnesota Somali fraud hearing?"
+    "Where did the Unknown allegedly go in Minnesota Somali fraud hearing?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2728,
-    "articlesProcessed": 135900,
-    "redFlagsFound": 3151,
+    "totalScans": 2729,
+    "articlesProcessed": 135950,
+    "redFlagsFound": 3152,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Asha Jama connected to?",
-        "What other organizations is Rochester restaurant worker connected to?",
-        "Where did the $9B+ allegedly go in Feeding Our Future investigation?"
+        "Where did the $9B+ allegedly go in Feeding Our Future investigation?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Aimee Bock connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-19T00:25:28.354Z",
-  "lastUpdated": "2026-06-19T00:25:28.355Z"
+  "lastReflection": "2026-06-19T06:16:50.868Z",
+  "lastUpdated": "2026-06-19T06:16:50.869Z"
 }
