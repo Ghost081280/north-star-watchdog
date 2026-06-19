@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-06T13:28:21.164Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-06T15:13:50.432Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-19T21:08:43.168Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-19T22:55:41.750Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $100 million allegedly go in Partners in Nutrition fraud?",
-    "What other organizations is Feeding Our Future fraud kingpin connected to?",
-    "Where did the $100 million allegedly go in Feeding Our Future investigation?",
-    "Where did the Unknown allegedly go in MARTA investigation?",
     "What other organizations is Blaine man connected to?",
     "Where did the Unknown allegedly go in Minnesota Somali fraud hearing?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +554,11 @@
     "Where did the $10M+ allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is Minnesota Gov Walz connected to?",
     "What other organizations is AG Ellison connected to?",
-    "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?"
+    "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Keith Ellison connected to?",
+    "Where did the $9B allegedly go in Feeding Our Future fraud case?",
+    "Where did the $0 allegedly go in MLB investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2734,
-    "articlesProcessed": 136200,
-    "redFlagsFound": 3157,
+    "totalScans": 2735,
+    "articlesProcessed": 136250,
+    "redFlagsFound": 3159,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "$9B fraud case involving Somali funds",
+          "insight": "Possible large-scale corruption and embezzlement",
+          "entities": [
+            "Minnesota Attorney General Keith Ellison",
+            "Governor Tim Walz"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Economic Times",
+          "sourceUrl": "https://www.economictimes.com/2026-06-19/isn-t-9b-somali-fraud-serious-to-you-gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $40M allegedly go in Feeding Our Future fraud case?",
-        "What specific allegations exist against Kennedy?",
-        "Where did the $100 million allegedly go in Feeding Our Future fraud?"
+        "Where did the $100 million allegedly go in Partners in Nutrition fraud?",
+        "What other organizations is Feeding Our Future fraud kingpin connected to?",
+        "Where did the $100 million allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-19T21:08:43.168Z",
-  "lastUpdated": "2026-06-19T21:08:43.169Z"
+  "lastReflection": "2026-06-19T22:55:41.750Z",
+  "lastUpdated": "2026-06-19T22:55:41.751Z"
 }

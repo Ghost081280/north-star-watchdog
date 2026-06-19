@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "program mismanagement",
+      "description": "Allegations of mismanagement of Medicaid funds by Governor Walz's administration",
+      "insight": "Possible pattern of neglect or corruption in state programs",
+      "entities": [
+        "Governor Tim Walz",
+        "State of Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Cannon Falls Beacon",
+      "sourceUrl": "https://www.cannonfallsbeacon.com/from-st-paul-legitimate-medicaid-providers-being-cut-off-due-to-gov-walz-mismanagement",
+      "id": "rf-1781909741756-kkohma5ai",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-19T22:55:41.752Z",
+      "isNew": true
+    },
+    {
+      "type": "large-scale fraud",
+      "description": "$9B fraud case involving Somali funds",
+      "insight": "Possible large-scale corruption and embezzlement",
+      "entities": [
+        "Minnesota Attorney General Keith Ellison",
+        "Governor Tim Walz"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://www.economictimes.com/2026-06-19/isn-t-9b-somali-fraud-serious-to-you-gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing",
+      "id": "rf-1781909741756-386s435ca",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-19T22:55:41.752Z",
+      "isNew": true
+    },
+    {
       "type": "Mismanagement of government funds",
       "description": "Allegations of mismanagement of Medicaid funds in Minnesota",
       "insight": "The investigation into Medicaid fraud in Minnesota raises concerns about the mismanagement of government funds. It is essential to track the developments in this case and investigate further to ensure that those responsible are held accountable.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-19T21:08:43.170Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -938,49 +978,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-07T14:51:26.328Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid provider disenrollment",
-      "description": "Minnesota has disenrolled thousands of high-risk Medicaid providers after review.",
-      "insight": "This action suggests a proactive approach to preventing Medicaid fraud and abuse in Minnesota, but may also indicate a need for closer scrutiny of healthcare providers nationwide.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzNUNWpXcm10cmc",
-      "id": "rf-1780843886331-andyns71a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T14:51:26.328Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "Multiple federal investigations are underway in California, including probes into election fraud and MARTA safety concerns",
-      "insight": "The presence of multiple federal investigations in California suggests a pattern of potential wrongdoing or negligence. Further investigation is needed to determine the extent of these issues and to identify potential connections between them.",
-      "entities": [
-        "California",
-        "MARTA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/politics/justice-department/doj-office-says-multiple-probes-california-elections-underway-rcna73211",
-      "id": "rf-1780818809566-ceoi6zar5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T07:53:29.562Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +992,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-19T21:08:43.170Z"
+  "lastUpdated": "2026-06-19T22:55:41.752Z"
 }
