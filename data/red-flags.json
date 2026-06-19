@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Minnesota Medicaid program termination due to alleged mismanagement",
+      "insight": "Potential for widespread corruption and abuse",
+      "entities": [
+        "Minnesota DHS",
+        "healthcare providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Cannon Falls Beacon",
+      "sourceUrl": "https://www.cannonfallsbeacon.com/from-st-paul-legitimate-medicaid-providers-being-cut-off-due-to-gov-walz-mismanagement-sid47395146",
+      "id": "rf-1781898459646-e4umg3rpd",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-19T19:47:39.643Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "Multiple federal investigations are currently ongoing, including the Feeding Our Future investigation and the Paducah employment fraud case.",
       "insight": "These investigations suggest a pattern of fraudulent activity, and further investigation is needed to determine the extent of the fraud and to identify those responsible.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-19T17:55:27.947Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud",
@@ -956,29 +976,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-06T23:02:46.743Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid provider disenrollment",
-      "description": "Minnesota disenrolls thousands of high-risk Medicaid providers after review",
-      "insight": "This indicates potential issues with Medicaid provider screening and oversight",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdzAtN2ZVN29kMUVjeVRYaHJINTZOVWRmZ0pHbEJocU5KT0FtWlF1Z3FwZFZWTFJSNHRyZV9JV1pDaUhzQmpZS0c3SUpPMlE4Yl9fZnlyd3FNTkxtamd5T3VUdkNqMlFLVF9KcDB0bXFBVFFVYWtXSHhNSUlVT1hjRkQyU0l3alNPRTktUHVaNHIwV3ZGd0pCOUVCYnBnTzRxMzNUNWpXcm10cmc?oc=5",
-      "id": "rf-1780773583664-pe2n973vr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-06T19:19:43.661Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -988,7 +990,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
     "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-19T17:55:27.947Z"
+  "lastUpdated": "2026-06-19T19:47:39.643Z"
 }
