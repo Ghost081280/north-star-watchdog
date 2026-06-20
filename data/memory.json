@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-06T19:19:43.660Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-06T21:02:33.712Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-20T05:12:09.973Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-06-20T08:52:25.249Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2737,
-    "articlesProcessed": 136350,
+    "totalScans": 2738,
+    "articlesProcessed": 136400,
     "redFlagsFound": 3161,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is No specific individual found in the provided articles connected to?",
-        "Where did the $N/A allegedly go in Minnesota fraud charges?",
-        "Where did the $N/A allegedly go in Flesh-eating maggot outbreak investigation?"
+        "Where did the Unknown allegedly go in Feeding Our Future investigation?",
+        "Where did the Unknown allegedly go in Paducah employment fraud case?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-20T05:12:09.973Z",
-  "lastUpdated": "2026-06-20T05:12:09.974Z"
+  "lastReflection": "2026-06-20T08:52:25.249Z",
+  "lastUpdated": "2026-06-20T08:52:25.249Z"
 }
