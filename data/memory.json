@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-06T23:02:46.741Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-07T03:40:49.466Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-20T11:17:08.958Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-06-20T13:58:47.261Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Gov Walz connected to?",
     "What other organizations is AG Ellison connected to?",
     "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Minnesota AG Ellison?",
     "What other organizations is Fairmont police officer connected to?",
     "What specific allegations exist against Fairmont police officer?",
-    "Where did the $1.4 million allegedly go in Minnesota Public Benefits Scheme?"
+    "Where did the $1.4 million allegedly go in Minnesota Public Benefits Scheme?",
+    "What other organizations is Robert P. Rubicco connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2739,
-    "articlesProcessed": 136450,
-    "redFlagsFound": 3163,
+    "totalScans": 2740,
+    "articlesProcessed": 136500,
+    "redFlagsFound": 3164,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "A federal investigation into a $1.4 million public benefits scheme",
-          "insight": "This indicates a significant issue with public benefits management in Minnesota.",
-          "entities": [
-            "Minnesota"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "news.google.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPajhlYkU0dTliMVlKZDdrbzU5Ry0tMUJ5Sk13ZkZTbFZycldqQXpfU3Q3dnRpTEF0X0xtQ1VyLXMwcVVKaUlhOWI4S1ZVams5cm9GMjZqQTU4V19CdGJfX3FhMU9qSllieEthSzJZOHdrX3dvQ2FWRE9RSmNsSkYySXd2UVdCYnh5RmdYblN6cGtqTzd1UDFaZE42SmJrZG96SF85and0b19kUW5nbzJ6ZllhSFpDSWdYa1JGcFBnM01zckVod3QxQmhKWGhJNXNWR25DMmw3ak0ydw"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Feeding Our Future investigation?",
-        "Where did the Unknown allegedly go in Paducah employment fraud case?",
-        "Are any of these 2 figures connected to each other?"
+        "What other organizations is Minnesota Gov Walz connected to?",
+        "What other organizations is AG Ellison connected to?",
+        "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-20T11:17:08.958Z",
-  "lastUpdated": "2026-06-20T11:17:08.958Z"
+  "lastReflection": "2026-06-20T13:58:47.261Z",
+  "lastUpdated": "2026-06-20T13:58:47.261Z"
 }

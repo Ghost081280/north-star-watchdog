@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal investigators have arrested 15 people in a public benefits scheme",
+      "insight": "This case may be connected to other fraud schemes in Minnesota, and further investigation is needed to uncover the full extent of the fraud.",
+      "entities": [
+        "Minnesota AG Ellison"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal investigators",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPajhlYkU0dTliMVlKZDdrbzU5Ry0tMUJ5Sk13ZkZTbFZycldqQXpfU3Q3dnRpTEF0X0xtQ1VyLXMwcVVKaUlhOWI4S1ZVams5cm9GMjZqQTU4V19CdGJfX3FhMU9qSllieEthSzJZOHdrX3dvQ2FWRE9RSmNsSkYySXd2UVdCYnh5RmdYblN6cGtqTzd1UDFaZE42SmJrZG96SF85and0b19kUW5nbzJ6ZllhSFpDSWdYa1JGcFBnM01zckVod3QxQmhKWGhJNXNWR25DMmw3ak0ydw",
+      "id": "rf-1781963927268-40tshgcy3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-20T13:58:47.262Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program has been terminated",
       "insight": "This could indicate a larger issue with the program's management or oversight.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-20T11:17:08.960Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -36,25 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-20T11:17:08.960Z",
-      "isNew": true
-    },
-    {
-      "type": "federal_freeze",
-      "description": "15 individuals arrested for public benefits scheme, totaling $1.4 million",
-      "insight": "This large-scale fraud scheme raises concerns about the effectiveness of current oversight mechanisms in public benefits systems. Further investigation is needed to determine the extent of the scheme and to identify potential vulnerabilities in the system.",
-      "entities": [
-        "15 individuals"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal investigators",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPajhlYkU0dTliMVlKZDdrbzU5Ry0tMUJ5Sk13ZkZTbFZycldqQXpfU3Q3dnRpTEF0X0xtQ1VyLXMwcVVKaUlhOWI4S1ZVams5cm9GMjZqQTU4V19CdGJfX3FhMU9qSllieEthSzJZOHdrX3dvQ2FWRE9RSmNsSkYySXd2UVdCYnh5RmdYblN6cGtqTzd1UDFaZE42SmJrZG96SF85and0b19kUW5nbzJ6ZllhSFpDSWdYa1JGcFBnM01zckVod3QxQmhKWGhJNXNWR25DMmw3ak0ydw",
-      "id": "rf-1781932329978-bglad5ldh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-20T05:12:09.975Z",
       "isNew": false
     },
     {
@@ -987,9 +987,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-20T11:17:08.960Z"
+  "lastUpdated": "2026-06-20T13:58:47.262Z"
 }
