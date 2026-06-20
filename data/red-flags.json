@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigation into Kash Patel for unlawful bonus",
+      "insight": "This investigation raises concerns about corruption within the FBI. Further investigation is needed to determine the extent of the corruption.",
+      "entities": [
+        "Kash Patel",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "International Business Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQ2VuNUxqSGJWc1dUMGhYaW54R1U2RFl6XzNVUmlJa19naXFFbHJqbUtkM21IVk9pdzFnSmhsTXVySkNWTlJPVHc3cTN2eUo3NTZSTzVEc05NMXRSU0F2WEhlY2l1SVFxajRBVXo4Wl9MYlBvN0wzNmRXTWoxNlktUkMzYVNNd2pNZU1BYzdTQk4xVGFPMUFZRFFMQ1FpU3V0WmVGSldKZXpfNDdweklQOXNTS1BoTFFwSXVTSlQwM2t1NWM",
+      "id": "rf-1781976325726-h900ci0v6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-20T17:25:25.723Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal investigators have arrested 15 people in a public benefits scheme",
       "insight": "This case may be connected to other fraud schemes in Minnesota, and further investigation is needed to uncover the full extent of the fraud.",
@@ -956,30 +976,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-08T05:29:43.432Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "MARTA under federal investigation",
-      "insight": "Federal investigations indicate significant concerns about potential wrongdoing.",
-      "entities": [
-        "MARTA",
-        "Federal investigators"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Atlanta News First",
-      "sourceUrl": "https://www.atlanta-news-first.com/2026/06/05/marta-navigates-world-cup-while-under-federal-investigation",
-      "id": "rf-1780863031239-kiocj4whh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T20:10:31.235Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +988,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-20T15:47:23.956Z"
+  "lastUpdated": "2026-06-20T17:25:25.723Z"
 }
