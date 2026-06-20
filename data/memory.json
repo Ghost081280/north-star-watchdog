@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-07T10:27:40.542Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-06-07T12:19:54.039Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-20T17:25:25.721Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-06-20T19:23:23.600Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in MLB investigation?",
-    "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Keith Ellison?",
     "Where did the $9B allegedly go in $9B Somali fraud investigation?",
     "What other organizations is Aftyn Behn connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Kash Patel connected to?",
     "What other organizations is Logan man connected to?",
     "Where did the $1M allegedly go in FBI Investigation into Kash Patel?",
-    "Where did the $9B allegedly go in Minnesota AG Ellison Investigation?"
+    "Where did the $9B allegedly go in Minnesota AG Ellison Investigation?",
+    "What other organizations is Tim Walz connected to?",
+    "What other organizations is Keith Ellison connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2742,
-    "articlesProcessed": 136600,
-    "redFlagsFound": 3166,
+    "totalScans": 2743,
+    "articlesProcessed": 136650,
+    "redFlagsFound": 3167,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
-        "What other organizations is Tim Walz connected to?",
-        "What other organizations is Keith Ellison connected to?"
+        "Where did the $0 allegedly go in MLB investigation?",
+        "What specific allegations exist against Tim Walz?",
+        "What specific allegations exist against Keith Ellison?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-20T17:25:25.721Z",
-  "lastUpdated": "2026-06-20T17:25:25.721Z"
+  "lastReflection": "2026-06-20T19:23:23.600Z",
+  "lastUpdated": "2026-06-20T19:23:23.601Z"
 }
