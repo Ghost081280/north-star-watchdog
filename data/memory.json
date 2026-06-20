@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-07T03:40:49.466Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-07T07:53:29.560Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-20T13:58:47.261Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-06-20T15:47:23.954Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is AG Ellison connected to?",
     "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Keith Ellison connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Fairmont police officer connected to?",
     "What specific allegations exist against Fairmont police officer?",
     "Where did the $1.4 million allegedly go in Minnesota Public Benefits Scheme?",
-    "What other organizations is Robert P. Rubicco connected to?"
+    "What other organizations is Robert P. Rubicco connected to?",
+    "Where did the $9B allegedly go in Minnesota AG Ellison Fraud Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2740,
-    "articlesProcessed": 136500,
-    "redFlagsFound": 3164,
+    "totalScans": 2741,
+    "articlesProcessed": 136550,
+    "redFlagsFound": 3165,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota Gov Walz connected to?",
         "What other organizations is AG Ellison connected to?",
-        "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $9B allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-20T13:58:47.261Z",
-  "lastUpdated": "2026-06-20T13:58:47.261Z"
+  "lastReflection": "2026-06-20T15:47:23.954Z",
+  "lastUpdated": "2026-06-20T15:47:23.955Z"
 }
