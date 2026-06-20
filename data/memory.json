@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-06T17:11:37.851Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-06T19:19:43.660Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-20T00:08:43.794Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-06-20T05:12:09.973Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is No specific individual found in the provided articles connected to?",
-    "Where did the $N/A allegedly go in Minnesota fraud charges?",
-    "Where did the $N/A allegedly go in Flesh-eating maggot outbreak investigation?",
-    "What other organizations is Owner of two day care centers connected to?",
-    "What other organizations is Warren man connected to?",
     "Where did the Unknown allegedly go in Feeding Our Future investigation?",
     "Where did the Unknown allegedly go in Paducah employment fraud case?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +553,12 @@
     "Where did the $0 allegedly go in MLB investigation?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Keith Ellison?",
-    "Where did the $9B allegedly go in $9B Somali fraud investigation?"
+    "Where did the $9B allegedly go in $9B Somali fraud investigation?",
+    "What other organizations is Aftyn Behn connected to?",
+    "What other organizations is 15 individuals connected to?",
+    "What other organizations is 15 Minnesota Anti ICE Activists connected to?",
+    "Where did the $1.4 million allegedly go in Public Benefits Scheme Investigation?",
+    "Where did the None allegedly go in Tennessee Department of Children's Service Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2736,
-    "articlesProcessed": 136300,
-    "redFlagsFound": 3160,
+    "totalScans": 2737,
+    "articlesProcessed": 136350,
+    "redFlagsFound": 3161,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "alleged fraud",
-          "description": "A $9B alleged fraud case involving Minnesota and Somalia has raised significant concerns. The case involves high-ranking officials and has led to GOP scrutiny.",
-          "insight": "The alleged fraud case indicates a potential large-scale financial crime that warrants further investigation. The involvement of high-ranking officials adds to the urgency and concern.",
-          "entities": [
-            "Minnesota Governor's office",
-            "Minnesota AG's office"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Economic Times",
-          "sourceUrl": "https://www.economicstimes.com/2026-06-19/%27Isn%27t-%24-9B-Somali-fraud-serious-to-you-%27-GOP-grill-Minnesota-Gov-Walz-AG-Ellison-in-fiery-hearing-Article-35678946.html"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Blaine man connected to?",
-        "Where did the Unknown allegedly go in Minnesota Somali fraud hearing?",
-        "Are any of these 3 figures connected to each other?"
+        "What other organizations is No specific individual found in the provided articles connected to?",
+        "Where did the $N/A allegedly go in Minnesota fraud charges?",
+        "Where did the $N/A allegedly go in Flesh-eating maggot outbreak investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-20T00:08:43.794Z",
-  "lastUpdated": "2026-06-20T00:08:43.794Z"
+  "lastReflection": "2026-06-20T05:12:09.973Z",
+  "lastUpdated": "2026-06-20T05:12:09.974Z"
 }
