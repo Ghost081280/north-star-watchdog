@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated",
+      "insight": "This could indicate a larger issue with the program's management or oversight.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "American Experiment",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV1VzWk4tNUUwUWU3cjBicWstQ3B6eExXc05kYkdCSTZzb3JUUkY3d0xWSTBmZDFzUmRGSmxJWUV1Umw5NHU1UUpOOUJ2YnM2Qy1rWHNEN0xPSzVlV1UzdXNKZHREd200WmhHSzdCdE5oXzhaU3ZjeVdfcWJZT0UxRzFWUQ",
+      "id": "rf-1781954228963-n7g9dox24",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-20T11:17:08.960Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "A federal investigation into a $1.4 million public benefits scheme",
+      "insight": "This indicates a significant issue with public benefits management in Minnesota.",
+      "entities": [
+        "Minnesota"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "news.google.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPajhlYkU0dTliMVlKZDdrbzU5Ry0tMUJ5Sk13ZkZTbFZycldqQXpfU3Q3dnRpTEF0X0xtQ1VyLXMwcVVKaUlhOWI4S1ZVams5cm9GMjZqQTU4V19CdGJfX3FhMU9qSllieEthSzJZOHdrX3dvQ2FWRE9RSmNsSkYySXd2UVdCYnh5RmdYblN6cGtqTzd1UDFaZE42SmJrZG96SF85and0b19kUW5nbzJ6ZllhSFpDSWdYa1JGcFBnM01zckVod3QxQmhKWGhJNXNWR25DMmw3ak0ydw",
+      "id": "rf-1781954228963-bqmzoukl8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-20T11:17:08.960Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "15 individuals arrested for public benefits scheme, totaling $1.4 million",
       "insight": "This large-scale fraud scheme raises concerns about the effectiveness of current oversight mechanisms in public benefits systems. Further investigation is needed to determine the extent of the scheme and to identify potential vulnerabilities in the system.",
@@ -938,45 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-07T20:10:31.235Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Federal investigation into MARTA safety brings hope to widow of slain bus driver",
-      "insight": "I notice a pattern of federal investigations into various entities, including MARTA and Medicaid providers. This suggests a broader effort to crack down on fraud and corruption.",
-      "entities": [
-        "MARTA",
-        "Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Atlanta News First",
-      "sourceUrl": "https://www.atlantanewsfirst.com/news/federal-investigation-into-marta-safety-brings-hope-to-widow-of-slain-bus-driver/",
-      "id": "rf-1780855390461-qpry6t8nq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T18:03:10.457Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "MARTA is under federal investigation for potential wrongdoing related to safety and operations.",
-      "insight": "This investigation may uncover patterns of neglect or misconduct within MARTA, potentially leading to further scrutiny of transportation agencies.",
-      "entities": [
-        "MARTA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Atlanta News First",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd25VVEs0cUdQOWJTU1duWGRwZzFoSl93NVFFUXlKLTBHTU5UbkU4bEQzM1ctV3lyV0o1TllMXzkzallDSV9RVzRPSWJ1RE5ocVVJRGxlZENPZHVLZW45SkNOdTNCazFwUS1yX3RNZDdQd3NMV2xPOXFpVFg0T1lRV1JQbTEwY2RxVC12ZG9McEhtLVJITVBLczYtWC1SUEVtallUZFNmbG9EZzZCZUtV",
-      "id": "rf-1780843886331-payq2p2zf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-07T14:51:26.328Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +987,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-20T08:52:25.251Z"
+  "lastUpdated": "2026-06-20T11:17:08.960Z"
 }
