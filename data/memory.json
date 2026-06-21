@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-07T22:02:47.309Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-08T00:05:36.815Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-21T11:45:15.501Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-21T14:06:11.425Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota AG Ellison connected to?",
     "What specific allegations exist against Minnesota AG Ellison?",
     "What other organizations is Fairmont police officer connected to?",
     "What specific allegations exist against Fairmont police officer?",
@@ -558,7 +557,8 @@
     "What other organizations is Aftyn Behn connected to?",
     "Where did the $116K allegedly go in Minnesota Fraud Investigation?",
     "Where did the $9B allegedly go in Minnesota Fraud Scandal?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $116K allegedly go in Minnesota Fraud Scandal?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2748,
-    "articlesProcessed": 136900,
-    "redFlagsFound": 3172,
+    "totalScans": 2749,
+    "articlesProcessed": 136950,
+    "redFlagsFound": 3173,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $1.4 million allegedly go in Public Benefits Scheme Investigation?",
-        "Where did the None allegedly go in Tennessee Department of Children's Service Investigation?",
-        "What other organizations is Minnesota AG Ellison connected to?"
+        "What other organizations is Minnesota AG Ellison connected to?",
+        "What specific allegations exist against Minnesota AG Ellison?",
+        "What other organizations is Fairmont police officer connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-21T11:45:15.501Z",
-  "lastUpdated": "2026-06-21T11:45:15.502Z"
+  "lastReflection": "2026-06-21T14:06:11.425Z",
+  "lastUpdated": "2026-06-21T14:06:11.426Z"
 }
