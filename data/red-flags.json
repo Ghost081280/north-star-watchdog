@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Minnesota AG's office has been involved in a scandal over allegations of obstruction of justice.",
+      "insight": "This could indicate a larger issue with corruption within the state's government and law enforcement agencies. Further investigation is needed to determine the extent of the issue and identify any other entities or individuals involved.",
+      "entities": [
+        "Minnesota AG's office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/06/21/minnesota-ag-keith-ellison-erupts-after-being-asked-about-states-fraud-scandal-done-talking-to-you/",
+      "id": "rf-1782080036069-z2lnjgwbv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-21T22:13:56.065Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating the Tennessee Department of Children's Service.",
+      "insight": "This could indicate potential misconduct by the department and a need for oversight. Further investigation is needed to determine the extent of the issue and identify any other entities or individuals involved.",
+      "entities": [
+        "Tennessee Department of Children's Service"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WZTV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzFQR2txRjR0cEV6QkpCcFlKNTNVVkFXMUZHV2NsOXZ5Q3ZJbmx6YUtPU0dqTGRKLWFSVWVKVEFkT193WUVyOVhuSVkxcFZjZWdsWHIwTmlwUkxXNWlJNkJnY0d2amVpZ2Z4a2ZpdHNhYUwpS2ZaQkphNk5uWEdmUHgxS2ZkWEVvcGVPc08xUUNzY1g3X19qWUhtdHBjU01B",
+      "id": "rf-1782080036069-8qlkt2l4m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-21T22:13:56.065Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The Minnesota BCA is investigating a large-scale fraud case",
       "insight": "The investigation into the Minnesota fraud scandal raises concerns about the extent of the fraud and the involvement of high-ranking officials.",
@@ -938,58 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-10T05:17:03.341Z",
       "isNew": false
-    },
-    {
-      "type": "government corruption",
-      "description": "High-ranking officials referred for criminal investigation",
-      "insight": "Pattern of alleged corruption among top officials, potential misuse of public funds",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/refer-minnesota-officials-doj-criminal",
-      "id": "rf-1781050288154-45eahhq7g",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-10T00:11:28.150Z",
-      "isNew": false
-    },
-    {
-      "type": "nonprofit fraud",
-      "description": "Large-scale alleged fraud at Feeding Our Future nonprofit",
-      "insight": "Significant financial losses and potential abuse of public trust",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Spokesman-Review",
-      "sourceUrl": "https://www.spokesman.com/stories/justice-department-seeks-to-strip-us-citizenship-from-convicted-feeding-our-future-fraudster-16-others/",
-      "id": "rf-1781050288154-0avj9gd0n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-10T00:11:28.150Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-21T20:24:26.959Z"
+  "lastUpdated": "2026-06-21T22:13:56.065Z"
 }
