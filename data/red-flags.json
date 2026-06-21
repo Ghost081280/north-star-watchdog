@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota AG's office faced questioning and stormed off, raising concerns about transparency",
+      "insight": "The Minnesota AG's office needs to provide more transparency about the investigation",
+      "entities": [
+        "Minnesota AG's Office"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota AG STORMS OFF after being questioned on state’s fraud scandal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZS1qYXlRd1AxcDlhMnNKU294OXpIazdjc24tQTFGdGhhVHBvMkpNTll5MnQ1LWZBd3FFRU5fbjhyUURPZUktWmZfYlJiX3dHY3dSTnNR",
+      "id": "rf-1782042315507-1a5tnbcc7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-21T11:45:15.503Z",
+      "isNew": true
+    },
+    {
+      "type": "shell_company",
+      "description": "Robert P. Rubicco's daycare operation may have involved shell companies",
+      "insight": "Further investigation into Robert P. Rubicco's business operations is needed",
+      "entities": [
+        "Robert P. Rubicco"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Robert P. Rubicco: Criminal, Liar, Fraud, Daycare Operator — Part XXXIII",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOUI0ekNrbWktTEdIcGdIVHhtNkpZa1Qtb0hQcldLM1Zjbjdjajc2Zi1wajJITHljXzYyYW1GUnNacjZDNXpTQlB4QmlRME11YkR2QTRlZUtpMDg3SkVLUVBNcWREWGJ3SmdpWUhOMzBVRmVSZTViUnl4TEJmN3lXM2RWZHNJWXotdXdZNzgwVFVUVDZTSy0zdEpMX055VUZJOV9JTFNlYWZ3dFlCalUzOFZTOTVmUzI2b1lpVU9LcHFsdUttcW1ScTR5d2FvN3otRmtjT1dUYmk5X3B6b0FtWlo0VFFXR3lBN0xjSEVad3k4OGdOb096VWc2V2pOYkppemtqT0ZEZFFIcDVl",
+      "id": "rf-1782042315507-yj2ffg6w4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-21T11:45:15.503Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Aftyn Behn has called for a federal investigation into the Tennessee Department of Children's Service, citing concerns about the agency's handling of cases.",
       "insight": "This could indicate a larger issue with the agency's practices and procedures, and may warrant further investigation.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-21T08:38:42.508Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -938,44 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-09T18:02:23.862Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Whistleblowers allegedly ignored in Minnesota social services programs",
-      "insight": "The alleged ignoring of whistleblowers in Minnesota's social services programs raises concerns about a potential cover-up and the effectiveness of internal controls.",
-      "entities": [
-        "Minnesota Department of Human Services"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NewsNation",
-      "sourceUrl": "https://www.newsnationnow.com/investigation/house-probe-alleges-minnesota-leaders-targeted-fraud-whistleblowers/",
-      "id": "rf-1781020409887-pb24wxkfj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-09T15:53:29.884Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged incompetence",
-      "description": "Minnesota AG accused of 'incompetence, willful blindness or worse'",
-      "insight": "The Minnesota AG's office may have been aware of the fraud but failed to act, or may have been complicit in the fraud.",
-      "entities": [
-        "Minnesota Attorney General"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://foxnews.com/2026/06/08/minnesota-fraud-report-accuses-state-ag-of-incompetence-willful-blindness-or-worse",
-      "id": "rf-1780997977780-t7fxt35sv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-09T09:39:37.777Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +988,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-21T08:38:42.508Z"
+  "lastUpdated": "2026-06-21T11:45:15.503Z"
 }
