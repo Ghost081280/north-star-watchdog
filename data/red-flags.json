@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Possible termination of programs due to fraud",
+      "insight": "The rise in reported fraud cases, particularly in Minnesota, suggests a need for increased scrutiny of programs and potential termination of those found to be fraudulent.",
+      "entities": [
+        "Minnesota AG's Office",
+        "Medicaid"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR0FhVkJLRXBwdnBuaEJqSWxmMXo1TUxKRFNBNUlUNFhqTUotYklKaW9RR3NmQTVzOVZhOEFwOGtzRXgyVENlcDlTWEVZUGVHdnVLTnk1OWpKU2J0MFA5N1VkVkYxOHpTaUlLdXpobk9sOWNvT3ZpTm9qMlBvSUtvY0xJamlERE1OWmdTNUlCeVFpTmlQU1c1UGllOWc5aWpHaDljekZUd2d4VlhZMnBkRU84LXhJOW83a2lF0gHAAUFVX3lxTE5BemtGZTQ0RWpBTGs1cHQwV1BSOXc2SWd5NzhBb25BekNXR1VncmNNaEdpNjR6MzNyOGVOVGdzeWdCR1Fvdm1udGZpaFg3OGtnZTVVUnZNTFc5OU5PWlFPc2liNElIY1RlYVB0blp5ZU5qTlRSVFVQbnNpamMtQXA4aE1BcGtOMVE2cTlFN2tRaFlPTDBMSlFwTG15aTlLZWFJaWhyN1Iyc0Z4NWJJd2MzdVhZV0NGMGlJQ3JzQXdCcQ",
+      "id": "rf-1782060280761-gnjyjfnrb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-21T16:44:40.756Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Minnesota AG's office faced questioning and stormed off, raising concerns about transparency",
       "insight": "The Minnesota AG's office needs to provide more transparency about the investigation",
       "entities": [
@@ -956,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-10T00:11:28.150Z",
       "isNew": false
-    },
-    {
-      "type": "alleged large-scale fraud",
-      "description": "Allegations of inaction on $9 billion in fraud",
-      "insight": "This case raises concerns about oversight and accountability in Minnesota's social services. The large amount of alleged fraud ($9 billion) and the referral of high-ranking officials to the DOJ suggest a significant case.",
-      "entities": [
-        "Tim Walz",
-        "Minnesota State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Seattle Times",
-      "sourceUrl": "https://www.seattletimes.com/national/vance-demands-justice-department-probe-of-minnesota-officials-as-white-house-presses-war-on-fraud/",
-      "id": "rf-1781028143866-71m6xuucb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-09T18:02:23.862Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,9 +988,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FDA",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-21T14:06:11.427Z"
+  "lastUpdated": "2026-06-21T16:44:40.756Z"
 }
