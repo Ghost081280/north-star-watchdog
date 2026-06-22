@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "potential harassment by government agency",
+      "description": "The DOJ's use of grand jury subpoenas to investigate Walz and Minnesota officials has been ruled unlawful by a federal judge, who stated that the subpoenas were an attempt to harass the officials.",
+      "insight": "This development raises significant concerns about the potential for government agencies to abuse their power and harass individuals or organizations. Further investigation is needed to determine the motivations behind the DOJ's actions and to ensure that such abuses do not occur in the future.",
+      "entities": [
+        "DOJ",
+        "Walz",
+        "Minnesota officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/politics/justice-department/judge-quashes-unlawful-subpoenas-trump-administration-was-using-harass-minnesota-n1294448",
+      "id": "rf-1782161093533-czmjlkx7a",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-22T20:44:53.530Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "Minnesota nonprofit leader sentenced to prison for fraud",
       "insight": "The Feeding Our Future fraud case raises concerns about oversight and accountability in Minnesota nonprofits.",
@@ -958,40 +979,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-10T12:56:00.321Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Legitimate providers cut off from funding due to Minnesota Medicaid revalidation process",
-      "insight": "This could indicate a lack of effective oversight or potential abuse of the system, requiring further investigation.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Northern News Now",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMVJuQ2FsdGVyNjBxTW9SdGs5WEJkVDNYMUt1NDhkdTRjSE9QNnRPQWdpTFNPVmEtbDFEdjJzTUQ0MjY4QlNwRmZyTUhhN216QUJseEFhc3RYMkxfQTQ4NVhJSnU3VnFnVnVmQ1czd2dGcFNMU054OW9jQ0s2M1Rzell2X2VYdUg1MWxNR3JFNEFIWGdMbWFBQUtoNU5nMzFnV3h6TXhCZnFpOGNqTzdfM2w3TdIBxwFBVV95cUxOSkhFY2ZtbC1iQWtKRnQ5STllLW9jUXc3eV8weHUweTlzTlJvOXRsRHlFazVyckdKWmIxcEpwWXJPVG1VSXgzNVFIdmRkUUd2M3RPQmxRV19vUVE1SmNvTURoY21RNVNoeXQxN1BhY2FTLXBoVVFINVc4MXk2WGhiSTFiTGhOWUQ0UDJPRUtkQ1ZVanNoTTEzM1FKeVFoZzVPbGsxUDduUUlWMkE0QUVKcnhKMElyRWRqQ0NyQ0N3WXBLSzdjcVNZ",
-      "id": "rf-1781085360918-5rqnnjhvl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-10T09:56:00.914Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-22T17:39:19.538Z"
+  "lastUpdated": "2026-06-22T20:44:53.530Z"
 }
