@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-09T00:04:49.474Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-09T05:04:41.123Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-22T12:48:47.250Z",
       "summary": "NOTABLE: Federal involvement detected, 2 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-06-22T17:39:19.535Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B allegedly go in Somali Fraud Investigation?",
-    "What other organizations is Aftyn Behn connected to?",
     "Where did the $116K allegedly go in Minnesota Fraud Investigation?",
     "Where did the $9B allegedly go in Minnesota Fraud Scandal?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +556,9 @@
     "What other organizations is Asha Jama connected to?",
     "What other organizations is Alberto Carvalho connected to?",
     "What specific allegations exist against Alberto Carvalho?",
-    "Where did the $250M allegedly go in Feeding Our Future Fraud?"
+    "Where did the $250M allegedly go in Feeding Our Future Fraud?",
+    "Where did the Unknown allegedly go in LAUSD AI Project Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2756,
-    "articlesProcessed": 137300,
-    "redFlagsFound": 3182,
+    "totalScans": 2757,
+    "articlesProcessed": 137350,
+    "redFlagsFound": 3183,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud",
-          "description": "Minnesota nonprofit leader sentenced to prison for fraud",
-          "insight": "The Feeding Our Future fraud case raises concerns about oversight and accountability in Minnesota nonprofits.",
-          "entities": [
-            "Asha Jama",
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "AOL.com",
-          "sourceUrl": "https://www.aol.com/feeding-future-fraud-asha-jama-sentenced-6-months-prison"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Tim Walz connected to?",
-        "What other organizations is Keith Ellison connected to?",
-        "Where did the $116K allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the $9B allegedly go in Somali Fraud Investigation?",
+        "What other organizations is Aftyn Behn connected to?",
+        "Where did the $116K allegedly go in Minnesota Fraud Investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-22T12:48:47.250Z",
-  "lastUpdated": "2026-06-22T12:48:47.251Z"
+  "lastReflection": "2026-06-22T17:39:19.535Z",
+  "lastUpdated": "2026-06-22T17:39:19.536Z"
 }
