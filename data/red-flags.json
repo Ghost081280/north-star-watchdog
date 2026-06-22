@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "Minnesota nonprofit leader sentenced to prison for fraud",
+      "insight": "The Feeding Our Future fraud case raises concerns about oversight and accountability in Minnesota nonprofits.",
+      "entities": [
+        "Asha Jama",
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://www.aol.com/feeding-future-fraud-asha-jama-sentenced-6-months-prison",
+      "id": "rf-1782132527256-mnjksv7na",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-22T12:48:47.252Z",
+      "isNew": true
+    },
+    {
+      "type": "resignation amid investigation",
+      "description": "LAUSD Superintendent Alberto Carvalho resigns amid FBI investigation",
+      "insight": "The resignation of LAUSD Superintendent Alberto Carvalho raises questions about the integrity of the school district's leadership.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/l-a-usd-superintendent-alberto-carvalho-resigns-amid-fbi-investigation/",
+      "id": "rf-1782132527256-2cuccdib0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-22T12:48:47.252Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Minnesota AG's office has been involved in a scandal over allegations of obstruction of justice.",
       "insight": "This could indicate a larger issue with corruption within the state's government and law enforcement agencies. Further investigation is needed to determine the extent of the issue and identify any other entities or individuals involved.",
@@ -211,26 +251,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-20T11:17:08.960Z",
-      "isNew": false
-    },
-    {
-      "type": "alleged fraud",
-      "description": "A $9B alleged fraud case involving Minnesota and Somalia has raised significant concerns. The case involves high-ranking officials and has led to GOP scrutiny.",
-      "insight": "The alleged fraud case indicates a potential large-scale financial crime that warrants further investigation. The involvement of high-ranking officials adds to the urgency and concern.",
-      "entities": [
-        "Minnesota Governor's office",
-        "Minnesota AG's office"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.economicstimes.com/2026-06-19/%27Isn%27t-%24-9B-Somali-fraud-serious-to-you-%27-GOP-grill-Minnesota-Gov-Walz-AG-Ellison-in-fiery-hearing-Article-35678946.html",
-      "id": "rf-1781914123798-9p9a0jfxm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-20T00:08:43.795Z",
       "isNew": false
     },
     {
@@ -957,40 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-10T09:56:00.914Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota Medicaid revalidation process leaves legitimate providers cut off from funding",
-      "insight": "This could indicate a lack of oversight or inefficient processes in the revalidation process",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Northern News Now",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSkhFY2ZtbC1iQWtKRnQ5STllLW9jUXc3eV8weHUweTlzTlJvOXRsRHlFazVyckdKWmIxcEpwWXJPVG1VSXgzNVFIdmRkUUd2M3RPQmxRV19vUVE1SmNvTURoY21RNVNoeXQxN1BhY2FTLXBoVVFINVc4MXk2WGhiSTFiTGhOWUQ0UDJPRUtkQ1ZVanNoTTEzM1FKeVFoZzVPbGsxUDduUUlWMkE0QUVKcnhKMElyRWRqQ0NyQ0N3WXBLSzdjcVNZ",
-      "id": "rf-1781068623345-g6c15hdcg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-10T05:17:03.341Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FEC",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-22T06:28:05.236Z"
+  "lastUpdated": "2026-06-22T12:48:47.252Z"
 }
