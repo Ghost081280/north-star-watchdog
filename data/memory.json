@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-08T20:12:21.556Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-06-08T22:25:34.864Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-22T00:10:57.029Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-22T06:28:05.235Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $1M allegedly go in FBI Investigation into Kash Patel?",
-    "Where did the $9B allegedly go in Minnesota AG Ellison Investigation?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Keith Ellison connected to?",
     "Where did the $116K allegedly go in Minnesota Medicaid Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $116K allegedly go in Minnesota fraud case?",
     "What other organizations is Fairmont police officer connected to?",
     "Where did the $116K allegedly go in Minnesota fraud scandal?",
-    "Where did the $9B allegedly go in Somali fraud investigation?"
+    "Where did the $9B allegedly go in Somali fraud investigation?",
+    "What other organizations is Shontel Brown connected to?",
+    "Are any of these 5 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2754,
-    "articlesProcessed": 137200,
-    "redFlagsFound": 3179,
+    "totalScans": 2755,
+    "articlesProcessed": 137250,
+    "redFlagsFound": 3180,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Logan man connected to?",
         "Where did the $1M allegedly go in FBI Investigation into Kash Patel?",
-        "Where did the $9B allegedly go in Minnesota AG Ellison Investigation?"
+        "Where did the $9B allegedly go in Minnesota AG Ellison Investigation?",
+        "What other organizations is Tim Walz connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-22T00:10:57.029Z",
-  "lastUpdated": "2026-06-22T00:10:57.030Z"
+  "lastReflection": "2026-06-22T06:28:05.235Z",
+  "lastUpdated": "2026-06-22T06:28:05.235Z"
 }
