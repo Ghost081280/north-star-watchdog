@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "potential corruption",
+      "description": "Federal judge blocks DOJ subpoenas issued to Gov. Walz and Minneapolis mayor, suggesting potential corruption or abuse of power",
+      "insight": "This development raises concerns about the integrity of Minnesota's government and the potential for corruption. Further investigation is needed to uncover any wrongdoing.",
+      "entities": [
+        "Minnesota Officials",
+        "DOJ"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/06/22/federal-judge-rejects-doj-subpoenas-issued-gov-walz-minneapolis-mayor/",
+      "id": "rf-1782173067296-3xxnyt454",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T00:04:27.292Z",
+      "isNew": true
+    },
+    {
       "type": "potential harassment by government agency",
       "description": "The DOJ's use of grand jury subpoenas to investigate Walz and Minnesota officials has been ruled unlawful by a federal judge, who stated that the subpoenas were an attempt to harass the officials.",
       "insight": "This development raises significant concerns about the potential for government agencies to abuse their power and harass individuals or organizations. Further investigation is needed to determine the motivations behind the DOJ's actions and to ensure that such abuses do not occur in the future.",
@@ -959,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-10T22:00:07.453Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ is investigating potential wrongdoing by Minnesota officials, including Governor Tim Walz and Attorney General Keith Ellison.",
-      "insight": "The investigation suggests a potential pattern of corruption and abuse of power in Minnesota state government. Further research is needed to determine the extent of the wrongdoing and the individuals involved.",
-      "entities": [
-        "Tim Walz",
-        "Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KSL News",
-      "sourceUrl": "https://www.ksl.com/article/50474415/vance-demands-doj-probe-of-minnesota-officials",
-      "id": "rf-1781096160324-x8tzyla72",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-10T12:56:00.321Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-22T22:46:25.056Z"
+  "lastUpdated": "2026-06-23T00:04:27.292Z"
 }
