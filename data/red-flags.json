@@ -2,6 +2,27 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations are ongoing into high-profile individuals and organizations, including Minnesota officials, LAUSD superintendent, and Tesla.",
+      "insight": "The number of ongoing federal investigations suggests a potential pattern of wrongdoing or corruption among high-profile individuals and organizations.",
+      "entities": [
+        "Minnesota officials",
+        "LAUSD superintendent",
+        "Tesla"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeVZrUk0tdldrTEdyS3l2UnlDcjR6TEpyUkdocklkWEFOUmNKTmpRdEI5WE5DNm1MMEtyRFphQk1xRzVGYkhnNU5nQkZabUMtQXNNZXZ6ZGZqQmtBaUJRM1lHT0loclZCakZOT3dZR3hMRU5ncllteDBrSlFDNU1CMFlKRkR3eTAtbG90dWJIckw1T0pXbnUxOExtb0ZEQl9DdEhPcFBWUGgyV1ZVRGNJdjVyRXhlVm8teTNNX1RwYzVYR0Iz?oc=5",
+      "id": "rf-1782227824479-9xp67dp6g",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T15:17:04.476Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing into various individuals and organizations, including Tesla, LAUSD, and Minnesota officials.",
       "insight": "These investigations suggest a pattern of potential wrongdoing and lack of accountability. Further investigation is needed to uncover the extent of the issues.",
       "entities": [
@@ -19,7 +40,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-23T11:59:51.841Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "resignation",
@@ -39,7 +60,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-23T11:59:51.841Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -962,31 +983,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-12T10:08:26.086Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "The Feeding Our Future fraud scheme involves a large amount of money and multiple individuals.",
-      "insight": "The complexity and scale of the fraud scheme suggest a well-organized operation.",
-      "entities": [
-        "Feeding Our Future",
-        "FBI"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.kttc.com/2026-06-11/alleged-feeding-our-future-fraudster-surrenders-in-minneapolis",
-      "id": "rf-1781181887169-9t62jhk3u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-11T12:44:47.165Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +996,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-23T11:59:51.841Z"
+  "lastUpdated": "2026-06-23T15:17:04.476Z"
 }
