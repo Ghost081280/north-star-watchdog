@@ -2,6 +2,47 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations are ongoing into various individuals and organizations, including Tesla, LAUSD, and Minnesota officials.",
+      "insight": "These investigations suggest a pattern of potential wrongdoing and lack of accountability. Further investigation is needed to uncover the extent of the issues.",
+      "entities": [
+        "Tesla",
+        "LAUSD",
+        "Minnesota officials"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://www.wsj.com/articles/exclusive-fatal-tesla-crash-into-texas-home-now-under-federal-safety-investigation-2026-06-22",
+      "id": "rf-1782215991845-2xectvta3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T11:59:51.841Z",
+      "isNew": true
+    },
+    {
+      "type": "resignation",
+      "description": "LAUSD superintendent Alberto Carvalho resigned amid an FBI investigation.",
+      "insight": "This resignation suggests potential wrongdoing or lack of confidence in Carvalho's leadership. Further investigation is needed to determine the circumstances surrounding his resignation.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/alberto-carvalho-resigns-lausd-superintendent-fbi-investigation/",
+      "id": "rf-1782215991845-37wj5uq65",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T11:59:51.841Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "A federal judge has blocked a DOJ investigation into Minnesota state and city leaders, citing that the investigation was 'blatantly unlawful'.",
       "insight": "This development raises concerns about the potential for abuse of power and the importance of ensuring that investigations are conducted lawfully. I will continue to monitor this situation and track any further developments.",
       "entities": [
@@ -941,44 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-11T12:44:47.165Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation has been launched into the Feeding Our Future fraud scheme, which has raised concerns about the organization's financial management and oversight.",
-      "insight": "The investigation has revealed a pattern of suspicious transactions and a lack of transparency in the organization's financial dealings. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fbi.gov/investigate/white-collar-crime",
-      "id": "rf-1781167491885-5zpl6vbj0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-11T08:44:51.882Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Feeding Our Future, a non-profit organization accused of fraud. The investigation has raised concerns about corruption and abuse of funds.",
-      "insight": "I suspect that the investigation will reveal a larger scheme involving multiple individuals and organizations. Further research is needed to uncover the extent of the fraud and identify those involved.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Star Tribune",
-      "sourceUrl": "https://www.startribune.com/feeding-our-future-fugitive-one-of-fbi-s-most-wanted-fraudsters-surrenders-in-minnesota/600246343/",
-      "id": "rf-1781149434866-ma674xlcg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-11T03:43:54.863Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,8 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-23T08:32:33.999Z"
+  "lastUpdated": "2026-06-23T11:59:51.841Z"
 }
