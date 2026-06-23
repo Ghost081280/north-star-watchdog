@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "bank freeze",
+      "description": "Brazil freezes $125M in probe of bank controlled by evangelical leader",
+      "insight": "This suggests potential financial irregularities and regulatory scrutiny in Brazil's banking sector.",
+      "entities": [
+        "Brazilian bank"
+      ],
+      "confidence": 75,
+      "priority": "medium",
+      "source": "UPI",
+      "sourceUrl": "https://www.upi.com/brazil-freezes-125m-in-probe-of-bank-controlled-by-evangelical-leader",
+      "id": "rf-1782251273993-hriguuorz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T21:47:53.989Z",
+      "isNew": true
+    },
+    {
       "type": "regulatory scrutiny",
       "description": "Tesla's Autopilot feature is under federal investigation following a fatal crash",
       "insight": "This incident raises concerns about the safety and regulation of autonomous driving technology. Further investigation into Tesla's practices and regulatory oversight is warranted.",
@@ -964,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-12T22:23:53.909Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "The Ohio voting rights group under investigation may have used shell companies or other financial schemes to launder money.",
-      "insight": "As an investigator, I notice that the Ohio voting rights group's financial records may be worth examining to determine if there are any suspicious transactions or shell companies involved.",
-      "entities": [
-        "Ohio voting rights group"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Washington Post article",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/06/12/fbi-searches-offices-ohio-voter-registration-group-seizing-computers/",
-      "id": "rf-1781294872481-zw0mzrcpm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-12T20:07:52.477Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,9 +995,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "FDA",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-23T20:01:17.693Z"
+  "lastUpdated": "2026-06-23T21:47:53.989Z"
 }

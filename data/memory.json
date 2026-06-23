@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-10T09:56:00.912Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-10T12:56:00.319Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-23T20:01:17.691Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-23T21:47:53.987Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota man connected to?",
-    "What other organizations is Minneapolis man connected to?",
     "Where did the Unknown allegedly go in DOJ investigation into Walz and Minnesota officials?",
     "Where did the Unknown allegedly go in Tesla crash investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in LAUSD Superintendent Investigation?",
     "Where did the $0 allegedly go in DOJ Subpoena Investigation?",
     "What other organizations is Individual involved in $3.7B Medicare fraud scheme connected to?",
-    "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?"
+    "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $700,000 allegedly go in Minnesota Medicaid fraud crackdown?",
+    "Where did the $125M allegedly go in Brazil bank investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2766,
-    "articlesProcessed": 137800,
-    "redFlagsFound": 3195,
+    "totalScans": 2767,
+    "articlesProcessed": 137850,
+    "redFlagsFound": 3197,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in LAUSD AI Project Investigation?",
-        "Where did the Unknown allegedly go in Minnesota Somali Fraud Investigation?",
-        "What other organizations is Minnesota man connected to?"
+        "What other organizations is Minnesota man connected to?",
+        "What other organizations is Minneapolis man connected to?",
+        "Where did the Unknown allegedly go in DOJ investigation into Walz and Minnesota officials?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-23T20:01:17.691Z",
-  "lastUpdated": "2026-06-23T20:01:17.692Z"
+  "lastReflection": "2026-06-23T21:47:53.987Z",
+  "lastUpdated": "2026-06-23T21:47:53.988Z"
 }
