@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-10T12:56:00.319Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-10T16:34:43.722Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-23T21:47:53.987Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-06-23T23:07:59.056Z",
+      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
+      "confidence": 0.25
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in DOJ investigation into Walz and Minnesota officials?",
-    "Where did the Unknown allegedly go in Tesla crash investigation?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Minnesota Officials connected to?",
     "What other organizations is Individual (Minnesota Medicaid fraud) connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Individual involved in $3.7B Medicare fraud scheme connected to?",
     "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $700,000 allegedly go in Minnesota Medicaid fraud crackdown?",
-    "Where did the $125M allegedly go in Brazil bank investigation?"
+    "Where did the $125M allegedly go in Brazil bank investigation?",
+    "Where did the $6.5B allegedly go in Nationwide healthcare fraud takedown?",
+    "Where did the $700,000 allegedly go in Minnesota Medicaid fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2767,
-    "articlesProcessed": 137850,
-    "redFlagsFound": 3197,
+    "totalScans": 2768,
+    "articlesProcessed": 137900,
+    "redFlagsFound": 3198,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "large-scale fraud",
+          "description": "A $3.7B Medicare fraud scheme was uncovered, and a suspect was caught in Turkey and sent to Florida.",
+          "insight": "This large-scale fraud scheme warrants further investigation into the individuals and organizations involved.",
+          "entities": [
+            "Unnamed suspect"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Baltimore Sun",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY0hZb1prLXZNQTl2Q19pTHpJMmMyZDVCT0x0dUhaRkp5ck9zZ3BKV3NQM1hnNjR4WWY5OW1qem9rVUE3Rm1wOGlZY1FZWXY3d2JSZjJpUE5qSEgtTzMycnJoNmdWRDhralRSZmNSRG5BS2NJZ2ZXXzVBV3VNQ21kbGtJa1dxVlRVTFpvMHM3T29jaUh4Q0pRR0VpN0cwdTA4dkdkdVBIRklsd2FId0tvX25jOUpsdUJNLVVJ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota man connected to?",
-        "What other organizations is Minneapolis man connected to?",
-        "Where did the Unknown allegedly go in DOJ investigation into Walz and Minnesota officials?"
+        "Where did the Unknown allegedly go in DOJ investigation into Walz and Minnesota officials?",
+        "Where did the Unknown allegedly go in Tesla crash investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-23T21:47:53.987Z",
-  "lastUpdated": "2026-06-23T21:47:53.988Z"
+  "lastReflection": "2026-06-23T23:07:59.056Z",
+  "lastUpdated": "2026-06-23T23:07:59.057Z"
 }
