@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "regulatory scrutiny",
+      "description": "Tesla's Autopilot feature is under federal investigation following a fatal crash",
+      "insight": "This incident raises concerns about the safety and regulation of autonomous driving technology. Further investigation into Tesla's practices and regulatory oversight is warranted.",
+      "entities": [
+        "Tesla"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/06/23/technology/tesla-crash-investigation.html",
+      "id": "rf-1782237151650-y9k5hto07",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T17:52:31.647Z",
+      "isNew": true
+    },
+    {
+      "type": "resignation amid investigation",
+      "description": "LAUSD Superintendent Alberto Carvalho resigned amid an FBI investigation",
+      "insight": "This resignation suggests potential wrongdoing or mismanagement within the LAUSD. Further investigation into the circumstances surrounding Carvalho's resignation and the FBI investigation is necessary.",
+      "entities": [
+        "Alberto Carvalho",
+        "LAUSD"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/2026/06/23/los-angeles-schools-superintendent-resigns-fbi-investigation.html",
+      "id": "rf-1782237151650-n1kulbjgm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-23T17:52:31.647Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing into high-profile individuals and organizations, including Minnesota officials, LAUSD superintendent, and Tesla.",
       "insight": "The number of ongoing federal investigations suggests a potential pattern of wrongdoing or corruption among high-profile individuals and organizations.",
@@ -19,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-23T15:17:04.476Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -944,50 +983,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-12T20:07:52.477Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI raided an Ohio voting rights organization, and federal authorities are investigating a 'shock and awe' campaign in Colorado school districts.",
-      "insight": "These investigations may indicate a larger pattern of fraud or corruption.",
-      "entities": [
-        "Ohio voting rights organization",
-        "Colorado school districts"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://msnow.agiletigertech.com/",
-      "id": "rf-1781285822105-833fe0n60",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-12T17:37:02.100Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota resumes Medicare payments to most 'high-risk' providers it suspended",
-      "insight": "Potential for ongoing or widespread fraudulent activities in the healthcare sector, indicating a need for continued vigilance and oversight.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Pioneer Press",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRFdBcFpDMmVVcWFZYnBYMEVpVjBJeVAxc1VEc0VCMGdDTlNQaUtYUUlJam00MDdnOGtBUm5HRzczTG9hWV8xN21PMThtNmdpUmczOGVXZ25lSTRQdW5MbGx4NGxQNkdOV0oyNFFYZEdrVTgtTWZNbXZGS2JRaHR1TXNEdEtucVhzOURGR29mVmZPMkNjVDlaYzUzZDllMDBaQU9LZGZXdmlGMno5",
-      "id": "rf-1781258906089-i0asnxx5u",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-12T10:08:26.086Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
     "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -996,7 +997,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-23T15:17:04.476Z"
+  "lastUpdated": "2026-06-23T17:52:31.647Z"
 }
