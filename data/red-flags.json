@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "Assets frozen in connection with bribery investigation",
+      "insight": "The rapid succession of high-profile arrests and charges suggests a significant and well-coordinated investigation. The involvement of current and former NYPD officials indicates a potential for widespread corruption.",
+      "entities": [
+        "NYPD",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMFNoSGE1UTd2TWtJTFlIejcyb1NnanB1dFQtTlpVYkxXV0pULWx4UU9DY1hBc2ZXd3ltQWMzYktJWVYxQ2V4UmJMRjg4ZjU1UE9tMy11MjVnMzRsQ0FGV0dPLXh3SFlLb3g4OGh4bkFuNXlCeWlqaE9Oa0JpM1NUcVAzOGhkUEx5bW1qRVFQbWVSTU9t0gGaAUFVX3lxTFB1djNseXQxNWV6cDRBRS1XY1l0M0hxZ1lDSl9oU0RYZUI5ZWlVaTI4anB5bWhqejFNWGxjZXlzbTIxLWVVcTNYRTU1MnhZa0ZBZUhJN01mY2wyUDkyZ2k3MGxKUndGWS1zcldJbklySldBT2l5UFpLR0s1Z3UxMDAtMmhUa1BydWNyZmhVcEhMN3c2djVoOXBRcUE",
+      "id": "rf-1782334059987-yajm3tdp2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-24T20:47:39.982Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Seven providers charged for billing $700K in false claims",
       "insight": "This suggests a large-scale healthcare fraud scheme in Minnesota",
@@ -315,26 +335,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-21T22:13:56.065Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The Minnesota BCA is investigating a large-scale fraud case",
-      "insight": "The investigation into the Minnesota fraud scandal raises concerns about the extent of the fraud and the involvement of high-ranking officials.",
-      "entities": [
-        "Minnesota BCA",
-        "Minnesota AG Keith Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZmE4M2c0T01PelFoR3ZuT3hPN1dxYUpYNHo4dC1Ua0hpR2p3VXc1TVZraDBNd0JOemFpanRzcXFLQjJzSjBUUFI4cVNaX21nWTlzVlA3dDRIeG12ZVRJZjh1RmNQdWZqVlo4RVZBYVdxNTh0Vnk4aU1PNkV6S29SLUY1YXF2UmFWN1VuYm5nYlZOUUd2elRrNkNDM1ZBMUMxcmhVbVpqUnJvM3lGNVF3",
-      "id": "rf-1782065957822-il2c9hd0y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T18:19:17.818Z",
       "isNew": false
     },
     {
@@ -988,6 +988,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -997,7 +998,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1015,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-24T18:51:11.343Z"
+  "lastUpdated": "2026-06-24T20:47:39.982Z"
 }
