@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-11T16:54:00.913Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-11T19:35:36.792Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-24T20:47:39.980Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-06-24T22:16:11.271Z",
+      "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Individual involved in $3.7B Medicare fraud scheme connected to?",
-    "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $700,000 allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the $125M allegedly go in Brazil bank investigation?",
     "Where did the $6.5B allegedly go in Nationwide healthcare fraud takedown?",
@@ -558,7 +556,9 @@
     "What other organizations is Frank Carone connected to?",
     "What other organizations is Aimee Bock connected to?",
     "Where did the Unknown allegedly go in NYPD Bribery Investigation?",
-    "Where did the $120,000 allegedly go in NYPD Bribery Investigation?"
+    "Where did the $120,000 allegedly go in NYPD Bribery Investigation?",
+    "What other organizations is Eric Adams connected to?",
+    "Where did the $120,000 allegedly go in Federal Bribery Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2775,
-    "articlesProcessed": 138250,
-    "redFlagsFound": 3206,
+    "totalScans": 2776,
+    "articlesProcessed": 138300,
+    "redFlagsFound": 3207,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in DOJ Subpoena Investigation?",
         "What other organizations is Individual involved in $3.7B Medicare fraud scheme connected to?",
-        "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?"
+        "Where did the $14.5M allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud crackdown?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-24T20:47:39.980Z",
-  "lastUpdated": "2026-06-24T20:47:39.981Z"
+  "lastReflection": "2026-06-24T22:16:11.271Z",
+  "lastUpdated": "2026-06-24T22:16:11.272Z"
 }

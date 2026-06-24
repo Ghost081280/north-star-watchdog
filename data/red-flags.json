@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Multiple federal investigations into bribery and fraud schemes involving high-ranking officials and individuals",
+      "insight": "Patterns of corruption and potential connections between entities and programs are emerging, requiring further investigation",
+      "entities": [
+        "Eric Adams",
+        "Frank Carone",
+        "Fargo Woman"
+      ],
+      "confidence": 85,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX2FobGNQQl9yMEc0ejRWclhNeTRSNzRhclgwMDkxRFc1LUNWaDhKclJqckJuT3BwdXdzTWw2TG9oMWI4OU9vdVV2RG5kLWRIVTVaU2JRWndtMzd0MThnWXRIMnFSQm0tMV9vckN4Q0JVWGVEYXloV2NiSUJ5WE5jcG05bVZZelNvbmx6bGVRNl95TE9EcWpnRlp2UFlGX28xWk5reG0xbGJ2WUJMN3JxTk5iLS1vcWRuQWlnZ3Fn?oc=5",
+      "id": "rf-1782339371277-edl0qo9wp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-24T22:16:11.273Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "Assets frozen in connection with bribery investigation",
       "insight": "The rapid succession of high-profile arrests and charges suggests a significant and well-coordinated investigation. The involvement of current and former NYPD officials indicates a potential for widespread corruption.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-24T20:47:39.982Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -965,40 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-13T11:13:25.113Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI investigation into Ohio voting rights group for potential criminal fraud",
-      "insight": "This investigation raises concerns about the potential for fraud in voting rights groups. Further investigation is needed to determine the extent of the fraud and whether it is related to other cases.",
-      "entities": [
-        "Ohio voting rights group"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/ohio-voting-rights-group-facing-criminal-fraud-investigation/",
-      "id": "rf-1781327988481-kw2bbpp1e",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-13T05:19:48.477Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-24T20:47:39.982Z"
+  "lastUpdated": "2026-06-24T22:16:11.273Z"
 }
