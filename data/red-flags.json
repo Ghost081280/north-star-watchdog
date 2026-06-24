@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Multiple investigations and charges announced in the past 24 hours",
+      "insight": "I notice a pattern of Medicaid fraud cases being announced in the past 24 hours, with multiple investigations and charges being brought against individuals and organizations. This suggests a growing concern about Medicaid fraud and the need for increased scrutiny and oversight.",
+      "entities": [
+        "Fargo woman",
+        "7 Minnesota providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1782284074937-3op9js6wt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-24T06:54:34.934Z",
+      "isNew": true
+    },
+    {
       "type": "large-scale fraud",
       "description": "A $3.7B Medicare fraud scheme was uncovered, and a suspect was caught in Turkey and sent to Florida.",
       "insight": "This large-scale fraud scheme warrants further investigation into the individuals and organizations involved.",
@@ -964,25 +984,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-13T00:20:13.363Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI's search of the Ohio Organizing Collaborative's offices",
-      "insight": "This investigation raises concerns about potential voter suppression and intimidation, and may have implications for the midterm elections",
-      "entities": [
-        "Ohio Organizing Collaborative"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd29QZ2tRUFFrcGtSQnMyTWZUck9WN3QtQTIzQ0twWHpKVUllUGZJRkVLVThOLUw5UWY5SFRrZkxsd3A1WW9tYnlrQktwemVUU2dGQ1RLa0N0c05EaFdQWmpxcGJENTkyZU93X0JXWDRYSHZnSnpieVlDTWZrZTBpUnBsNkdnUFNSM25qLUplbE43QWpVLWpNSzRoT1RHWmxuMFliOUVoSlJuVHUwM2E2eFRTNGE5Z0hXdnFDY05QWjZxd3lHOWJKWA",
-      "id": "rf-1781303033911-mpqcj5s0a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-12T22:23:53.909Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-24T02:59:53.920Z"
+  "lastUpdated": "2026-06-24T06:54:34.934Z"
 }
