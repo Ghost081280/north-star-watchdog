@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-10T23:42:19.672Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-11T03:43:54.861Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-24T10:22:01.100Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-06-24T13:21:11.853Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tim Walz connected to?",
-    "Where did the $0 allegedly go in LAUSD chatbot contract investigation?",
     "Where did the $0 allegedly go in Minnesota state and city leaders investigation?",
     "Where did the $0 allegedly go in Tesla Autopilot Crash Investigation?",
     "Where did the $0 allegedly go in LAUSD Superintendent Investigation?",
@@ -558,7 +556,9 @@
     "Where did the $6.5B allegedly go in National Health Care Fraud Takedown?",
     "Where did the $700K allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
-    "Where did the $700K allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $700K allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $700K allegedly go in Minnesota Medicaid Fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2771,
-    "articlesProcessed": 138050,
-    "redFlagsFound": 3201,
+    "totalScans": 2772,
+    "articlesProcessed": 138100,
+    "redFlagsFound": 3202,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the 1 life lost allegedly go in Tesla Crash Investigation?",
         "What other organizations is Tim Walz connected to?",
-        "Where did the $0 allegedly go in LAUSD chatbot contract investigation?"
+        "Where did the $0 allegedly go in LAUSD chatbot contract investigation?",
+        "Where did the $0 allegedly go in Minnesota state and city leaders investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-24T10:22:01.100Z",
-  "lastUpdated": "2026-06-24T10:22:01.101Z"
+  "lastReflection": "2026-06-24T13:21:11.853Z",
+  "lastUpdated": "2026-06-24T13:21:11.854Z"
 }
