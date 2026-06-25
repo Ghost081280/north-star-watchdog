@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-12T17:37:02.098Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-06-12T20:07:52.475Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-25T17:11:17.525Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-25T19:57:56.120Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Frank Carone connected to?",
-    "What other organizations is Aimee Bock connected to?",
     "Where did the Unknown allegedly go in NYPD Bribery Investigation?",
     "Where did the $120,000 allegedly go in NYPD Bribery Investigation?",
     "What other organizations is Eric Adams connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Ashley Moody connected to?",
     "What other organizations is Tom Emmer connected to?",
     "What specific allegations exist against Tom Emmer?",
-    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+    "What other organizations is Not Applicable connected to?",
+    "Where did the Not Specified allegedly go in Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2782,
-    "articlesProcessed": 138600,
-    "redFlagsFound": 3213,
+    "totalScans": 2783,
+    "articlesProcessed": 138650,
+    "redFlagsFound": 3214,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $700K allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the $700K allegedly go in Minnesota Medicaid Fraud?"
+        "What other organizations is Frank Carone connected to?",
+        "What other organizations is Aimee Bock connected to?",
+        "Where did the Unknown allegedly go in NYPD Bribery Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-25T17:11:17.525Z",
-  "lastUpdated": "2026-06-25T17:11:17.526Z"
+  "lastReflection": "2026-06-25T19:57:56.120Z",
+  "lastUpdated": "2026-06-25T19:57:56.121Z"
 }
