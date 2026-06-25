@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-11T22:02:02.073Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, 1 new legal actions, Breaking news present",
-      "confidence": 0.65
-    },
-    {
       "date": "2026-06-12T00:18:40.008Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-25T00:10:48.613Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-06-25T05:04:14.314Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $125M allegedly go in Brazil bank investigation?",
-    "Where did the $6.5B allegedly go in Nationwide healthcare fraud takedown?",
     "Where did the $700,000 allegedly go in Minnesota Medicaid fraud?",
     "What other organizations is Fargo woman connected to?",
     "What other organizations is 7 Minnesota providers connected to?",
@@ -558,7 +556,9 @@
     "Where did the $120,000 allegedly go in NYPD Bribery Investigation?",
     "What other organizations is Eric Adams connected to?",
     "Where did the $120,000 allegedly go in Federal Bribery Probe?",
-    "Where did the $120,000 allegedly go in New York City Bribery Probe?"
+    "Where did the $120,000 allegedly go in New York City Bribery Probe?",
+    "What other organizations is 7 unnamed medical providers connected to?",
+    "Where did the $120,000 allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2777,
-    "articlesProcessed": 138350,
-    "redFlagsFound": 3208,
+    "totalScans": 2778,
+    "articlesProcessed": 138400,
+    "redFlagsFound": 3209,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud crackdown?",
         "Where did the $125M allegedly go in Brazil bank investigation?",
-        "Where did the $6.5B allegedly go in Nationwide healthcare fraud takedown?"
+        "Where did the $6.5B allegedly go in Nationwide healthcare fraud takedown?",
+        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-25T00:10:48.613Z",
-  "lastUpdated": "2026-06-25T00:10:48.613Z"
+  "lastReflection": "2026-06-25T05:04:14.314Z",
+  "lastUpdated": "2026-06-25T05:04:14.314Z"
 }
