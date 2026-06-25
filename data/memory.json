@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-12T05:48:08.290Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-12T10:08:26.083Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-25T08:58:49.201Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-25T11:42:41.685Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is 7 Minnesota providers connected to?",
-    "What other organizations is Texas woman connected to?",
-    "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
     "Where did the $6.5B allegedly go in National Health Care Fraud Takedown?",
     "Where did the $700K allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +555,10 @@
     "What other organizations is 7 unnamed medical providers connected to?",
     "Where did the $120,000 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Eric Adams' confidant Frank Carone connected to?",
-    "Where did the $1.4 billion allegedly go in Ebola funding?"
+    "Where did the $1.4 billion allegedly go in Ebola funding?",
+    "What other organizations is Fargo woman connected to?",
+    "Where did the $ millions allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $ billions allegedly go in DOJ’s Second National Health Care Fraud Takedown?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2779,
-    "articlesProcessed": 138450,
-    "redFlagsFound": 3210,
+    "totalScans": 2780,
+    "articlesProcessed": 138500,
+    "redFlagsFound": 3211,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud?",
-        "What other organizations is Fargo woman connected to?",
-        "What other organizations is 7 Minnesota providers connected to?"
+        "What other organizations is 7 Minnesota providers connected to?",
+        "What other organizations is Texas woman connected to?",
+        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-25T08:58:49.201Z",
-  "lastUpdated": "2026-06-25T08:58:49.201Z"
+  "lastReflection": "2026-06-25T11:42:41.685Z",
+  "lastUpdated": "2026-06-25T11:42:41.685Z"
 }
