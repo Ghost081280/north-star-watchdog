@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-13T08:55:28.067Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-13T11:13:25.112Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-06-26T07:50:32.041Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-06-26T10:50:01.427Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is 7 unnamed medical providers connected to?",
-    "Where did the $120,000 allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Eric Adams' confidant Frank Carone connected to?",
     "Where did the $1.4 billion allegedly go in Ebola funding?",
     "What other organizations is Fargo woman connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Rasmusson connected to?",
     "Where did the $3.5M allegedly go in Medicaid Fraud Investigation?",
     "Where did the $3.5M allegedly go in Elder Fraud Ring Investigation?",
-    "What specific allegations exist against Rasmusson?"
+    "What specific allegations exist against Rasmusson?",
+    "Where did the $ millions allegedly go in National anti-fraud effort?",
+    "Where did the $3.5M allegedly go in MCSO investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2787,
-    "articlesProcessed": 138850,
-    "redFlagsFound": 3218,
+    "totalScans": 2788,
+    "articlesProcessed": 138900,
+    "redFlagsFound": 3219,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $120,000 allegedly go in New York City Bribery Probe?",
         "What other organizations is 7 unnamed medical providers connected to?",
-        "Where did the $120,000 allegedly go in Minnesota Medicaid Fraud Investigation?"
+        "Where did the $120,000 allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "What other organizations is Eric Adams' confidant Frank Carone connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-26T07:50:32.041Z",
-  "lastUpdated": "2026-06-26T07:50:32.042Z"
+  "lastReflection": "2026-06-26T10:50:01.427Z",
+  "lastUpdated": "2026-06-26T10:50:01.428Z"
 }
