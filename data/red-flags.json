@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "USDA cancels key grants for Iowa farmers",
+      "insight": "This could indicate potential issues with program management or funding allocation",
+      "entities": [
+        "USDA",
+        "Iowa farmers"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "KWWL",
+      "sourceUrl": "https://kwwl.com/rss/articles/CBMiyAFBVV95cUxOaGRhQWNVekpWVDExd2dQcENEV21EQnVBMHJOTHZ2bGFaS1hMMzhvQzBKRVh4VHlfTUhVdTUyTlN6SUFjelVNMExwSnhwMmNCSUxIc2xUd1RWZ1J6QVc2OTU5MVFHdE52T1RrQTcwQXV5Mkg5NW5tNnRBcS1hQkFMN2hVS011RnRxbjhWZm5jYWRKaU5sR05iTWItRV95OFV1YWw0ekVwUk5yY3B4VC0xakJJNUNEd1h4ZFhhaC1rTHdQcUtJZ2ptRQ?oc=5",
+      "id": "rf-1782490517229-femye5mxz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-26T16:15:17.226Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Johns Hopkins University cuts 110 workers after losing some federal funding",
       "insight": "This could be a sign of a larger issue with federal funding, and potentially a red flag for fraud or mismanagement. I would investigate further to see if there are any connections to other entities or programs.",
@@ -970,25 +990,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-15T20:24:29.649Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota DHS notifies 3,400+ Medicaid providers that they are facing removal.",
-      "insight": "This could indicate a large-scale effort to crack down on fraudulent activity in Medicaid programs.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaGE5VXU4MFpneXA0dThteW1IejdtZk9HanJpX2hYNmhHSl9DVVhWdWI2QXp0U3FvZVlVc21uRHVXLVFCV1VNanlMM1ZrOURtX3FSVkhteUMxd0x4LUtKSkpGeWRnZTN0cVdoWWRoUjNHUFdsRkZkWWZIcVNmOUxhXw?oc=5",
-      "id": "rf-1781496214269-5gma3yd8y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-15T04:03:34.265Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,10 +998,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1021,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-26T13:16:22.801Z"
+  "lastUpdated": "2026-06-26T16:15:17.226Z"
 }
