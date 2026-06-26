@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-13T19:23:07.946Z",
-      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-06-13T21:14:21.623Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-26T20:45:54.200Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-26T22:12:10.340Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Tom Emmer?",
     "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Not Applicable connected to?",
     "Where did the Not Specified allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Tony Rodham connected to?",
     "What other organizations is Unnamed suspect connected to?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $5M allegedly go in Feeding Our Future Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2792,
-    "articlesProcessed": 139050,
-    "redFlagsFound": 3223,
+    "totalScans": 2793,
+    "articlesProcessed": 139100,
+    "redFlagsFound": 3224,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $700K allegedly go in Minnesota Medicaid fraud case?",
-        "Where did the $1.4 billion allegedly go in Ebola funding investigation?",
-        "What other organizations is Ashley Moody connected to?"
+        "What specific allegations exist against Tom Emmer?",
+        "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
+        "What other organizations is Not Applicable connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-26T20:45:54.200Z",
-  "lastUpdated": "2026-06-26T20:45:54.201Z"
+  "lastReflection": "2026-06-26T22:12:10.340Z",
+  "lastUpdated": "2026-06-26T22:12:10.341Z"
 }
