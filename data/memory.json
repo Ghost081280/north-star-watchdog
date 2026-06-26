@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-13T17:21:19.871Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-13T19:23:07.946Z",
       "summary": "NOTABLE: 1 new legal actions, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-06-26T18:51:38.894Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-26T20:45:54.200Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $700K allegedly go in Minnesota Medicaid fraud case?",
-    "Where did the $1.4 billion allegedly go in Ebola funding investigation?",
-    "What other organizations is Ashley Moody connected to?",
-    "What other organizations is Tom Emmer connected to?",
     "What specific allegations exist against Tom Emmer?",
     "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Not Applicable connected to?",
@@ -558,7 +554,11 @@
     "Where did the $0 allegedly go in FBI investigation into Johns Hopkins University?",
     "What other organizations is Ringleader in Sam Nordquist's torture connected to?",
     "Where did the Undisclosed allegedly go in Minnesota Medicaid Provider Investigation?",
-    "Where did the Undisclosed allegedly go in OneCoin Cryptocurrency Investment Fraud?"
+    "Where did the Undisclosed allegedly go in OneCoin Cryptocurrency Investment Fraud?",
+    "What other organizations is Tony Rodham connected to?",
+    "What other organizations is Unnamed suspect connected to?",
+    "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2791,
-    "articlesProcessed": 139000,
-    "redFlagsFound": 3222,
+    "totalScans": 2792,
+    "articlesProcessed": 139050,
+    "redFlagsFound": 3223,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Fargo woman connected to?",
-        "Where did the $ millions allegedly go in Minnesota Medicaid fraud investigation?",
-        "Where did the $ billions allegedly go in DOJ’s Second National Health Care Fraud Takedown?"
+        "Where did the $700K allegedly go in Minnesota Medicaid fraud case?",
+        "Where did the $1.4 billion allegedly go in Ebola funding investigation?",
+        "What other organizations is Ashley Moody connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-26T18:51:38.894Z",
-  "lastUpdated": "2026-06-26T18:51:38.895Z"
+  "lastReflection": "2026-06-26T20:45:54.200Z",
+  "lastUpdated": "2026-06-26T20:45:54.201Z"
 }
