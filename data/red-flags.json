@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Johns Hopkins University lost federal funding, resulting in 110 layoffs",
+      "insight": "This could be a sign of a larger issue with federal funding and potential fraud. I will investigate further to see if there are any connections to other entities or programs.",
+      "entities": [
+        "Johns Hopkins University"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/johns-hopkins-university-layoffs-federal-funding/",
+      "id": "rf-1782444612845-fbv5kzshi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-26T03:30:12.841Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Potential for program termination due to fraud",
       "insight": "The recent charges and investigations into Medicaid providers in Minnesota suggest a potential for program termination if fraud is not addressed.",
@@ -63,26 +82,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-24T22:16:11.273Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "Assets frozen in connection with bribery investigation",
-      "insight": "The rapid succession of high-profile arrests and charges suggests a significant and well-coordinated investigation. The involvement of current and former NYPD officials indicates a potential for widespread corruption.",
-      "entities": [
-        "NYPD",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMFNoSGE1UTd2TWtJTFlIejcyb1NnanB1dFQtTlpVYkxXV0pULWx4UU9DY1hBc2ZXd3ltQWMzYktJWVYxQ2V4UmJMRjg4ZjU1UE9tMy11MjVnMzRsQ0FGV0dPLXh3SFlLb3g4OGh4bkFuNXlCeWlqaE9Oa0JpM1NUcVAzOGhkUEx5bW1qRVFQbWVSTU9t0gGaAUFVX3lxTFB1djNseXQxNWV6cDRBRS1XY1l0M0hxZ1lDSl9oU0RYZUI5ZWlVaTI4anB5bWhqejFNWGxjZXlzbTIxLWVVcTNYRTU1MnhZa0ZBZUhJN01mY2wyUDkyZ2k3MGxKUndGWS1zcldJbklySldBT2l5UFpLR0s1Z3UxMDAtMmhUa1BydWNyZmhVcEhMN3c2djVoOXBRcUE",
-      "id": "rf-1782334059987-yajm3tdp2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-24T20:47:39.982Z",
       "isNew": false
     },
     {
@@ -994,6 +993,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1019,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-25T23:16:54.798Z"
+  "lastUpdated": "2026-06-26T03:30:12.841Z"
 }
