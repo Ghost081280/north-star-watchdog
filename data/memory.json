@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-13T23:03:05.696Z",
-      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-06-14T03:51:49.738Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-06-27T00:05:21.064Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-27T04:52:18.678Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $X allegedly go in Minnesota Medicaid fraud investigation?",
-    "What other organizations is Not Applicable connected to?",
     "Where did the Not Specified allegedly go in Medicaid Fraud Investigation?",
     "What other organizations is Minnesota Medicaid providers connected to?",
     "What other organizations is Rasmusson connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Unnamed suspect connected to?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
     "Are any of these 3 figures connected to each other?",
-    "Where did the $5M allegedly go in Feeding Our Future Fraud?"
+    "Where did the $5M allegedly go in Feeding Our Future Fraud?",
+    "What other organizations is Abdikerm Eidleh connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2794,
-    "articlesProcessed": 139150,
-    "redFlagsFound": 3224,
+    "totalScans": 2795,
+    "articlesProcessed": 139200,
+    "redFlagsFound": 3225,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-27T00:05:21.064Z",
-  "lastUpdated": "2026-06-27T00:05:21.065Z"
+  "lastReflection": "2026-06-27T04:52:18.678Z",
+  "lastUpdated": "2026-06-27T04:52:18.679Z"
 }
