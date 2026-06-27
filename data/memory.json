@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-14T08:15:04.510Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-14T11:29:38.414Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-06-27T07:48:24.409Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-27T10:06:21.562Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota Medicaid providers connected to?",
     "What other organizations is Rasmusson connected to?",
     "Where did the $3.5M allegedly go in Medicaid Fraud Investigation?",
     "Where did the $3.5M allegedly go in Elder Fraud Ring Investigation?",
@@ -558,7 +557,8 @@
     "Where did the $5M allegedly go in Feeding Our Future Fraud?",
     "What other organizations is Abdikerm Eidleh connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2796,
-    "articlesProcessed": 139250,
-    "redFlagsFound": 3226,
+    "totalScans": 2797,
+    "articlesProcessed": 139300,
+    "redFlagsFound": 3227,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Not Specified allegedly go in Medicaid Fraud Investigation?",
         "What other organizations is Minnesota Medicaid providers connected to?",
-        "What other organizations is Rasmusson connected to?"
+        "What other organizations is Rasmusson connected to?",
+        "Where did the $3.5M allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-27T07:48:24.409Z",
-  "lastUpdated": "2026-06-27T07:48:24.409Z"
+  "lastReflection": "2026-06-27T10:06:21.562Z",
+  "lastUpdated": "2026-06-27T10:06:21.563Z"
 }
