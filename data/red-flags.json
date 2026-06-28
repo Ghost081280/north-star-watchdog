@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "The use of shell companies to launder money and conceal the true owners of the funds",
+      "insight": "The use of shell companies is a common tactic in money laundering schemes, and it's likely that the Feeding Our Future scheme used similar methods to conceal the true owners of the funds. Further investigation is needed to identify the individuals and organizations involved in the scheme.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI investigation",
+      "sourceUrl": "https://www.theeconomictimes.com/news/international/us/$250-million-stolen-then-vanished-fbi-tracks-down-fraud-kingpin-in-somalia-after-4-years-on-run/articleshow/98327242.cms",
+      "id": "rf-1782674207661-8od0jc76p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-28T19:16:47.657Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The alleged leader of Feeding Our Future has been arrested in Somalia, indicating potential international involvement in the fraud scheme",
       "insight": "The fact that the alleged leader was able to flee to Somalia and remain at large for four years raises concerns about the effectiveness of international law enforcement cooperation and the potential for other individuals to evade justice",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-28T17:08:33.272Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -973,25 +992,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-17T00:14:54.447Z",
       "isNew": false
-    },
-    {
-      "type": "federal charges",
-      "description": "15 individuals charged with conspiracy to impede agents during Minnesota immigration crackdown",
-      "insight": "This indicates a potential pattern of organized resistance to federal authorities, possibly linked to specific groups or ideologies.",
-      "entities": [
-        "Antifa"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "PBS",
-      "sourceUrl": "https://www.pbs.org/newshour/politics/federal-prosecutors-charge-15-people-with-impeding-agents-during-minnesota-immigration-crackdown",
-      "id": "rf-1781647830914-okitbmsh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-16T22:10:30.910Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-28T17:08:33.272Z"
+  "lastUpdated": "2026-06-28T19:16:47.657Z"
 }
