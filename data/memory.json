@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-16T15:08:20.196Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-16T19:33:23.595Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-28T19:16:47.655Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-28T20:59:38.556Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Tony Rodham connected to?",
-    "What other organizations is Unnamed suspect connected to?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $5M allegedly go in Feeding Our Future Fraud?",
@@ -558,7 +556,9 @@
     "Where did the $250m allegedly go in Feeding Our Future fraud scheme?",
     "What other organizations is Feeding Our Future Leader connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Investigation?",
-    "What other organizations is Feeding Our Future leader connected to?"
+    "What other organizations is Feeding Our Future leader connected to?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $700K allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2811,
-    "articlesProcessed": 140000,
-    "redFlagsFound": 3241,
+    "totalScans": 2812,
+    "articlesProcessed": 140050,
+    "redFlagsFound": 3242,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Undisclosed allegedly go in OneCoin Cryptocurrency Investment Fraud?",
         "What other organizations is Tony Rodham connected to?",
-        "What other organizations is Unnamed suspect connected to?"
+        "What other organizations is Unnamed suspect connected to?",
+        "Where did the $700K allegedly go in Minnesota Medicaid fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-28T19:16:47.655Z",
-  "lastUpdated": "2026-06-28T19:16:47.655Z"
+  "lastReflection": "2026-06-28T20:59:38.556Z",
+  "lastUpdated": "2026-06-28T20:59:38.557Z"
 }
