@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program was terminated due to allegations of fraud",
+      "insight": "The program was vulnerable to abuse and lacked proper oversight",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTWVSemJ3NFN0dlJPdy14RDUtQk80eU83MXhDVGtUTGw0QnpGNkRaVXNOQ1B6LUhwaFJubzNGTEV0NllUTU9xbG92M1NUSnlyM0lzRFp1X1lvbWcwbmxKZ1I1QnlTclNQOUxibGlLUmk5cE1vc3Ytalo5QkdlYW9vT0JrY25YejU0OGFZTVFDbjdtVFc2QXRfb1dEaE9XcGhZRHdmNjNmTGVNcUnSAcQBQVVfeXFMTm92cmVBRXZHN01hSy1id1JSVkhVVzJSNFE5Q3pkZG12NzlleU53ZWpBdHdzSHU0RDN3M0pFMGRRQS1WaXVGSDNxZ0YzenV4VmNXTkU0SXRfSGVNLUloREZkYkd4QUY0YlAzY2ExM0h4UGlzQjBMaVR2bVBkRTc2T2ZOd1gtTFoyaFN2MVBQdE9fb1RUMENIWHRjbFJKRk1mT0lONm5Ja0NDdkZFakFhZ2hVdF9aSmlWa1JlUUFTdE1hNkExdA",
+      "id": "rf-1782654157391-ql20sn21h",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-28T13:42:37.388Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Feeding Our Future suspect was able to flee to Somalia, raising concerns about the ability of fraudsters to evade law enforcement.",
       "insight": "This case highlights the need for increased international cooperation to combat fraud and the importance of monitoring government programs for suspicious activity.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-28T11:06:06.096Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "international cooperation",
@@ -972,26 +992,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-16T22:10:30.910Z",
       "isNew": false
-    },
-    {
-      "type": "security breach",
-      "description": "FBI thwarted alleged plot to attack White House UFC event",
-      "insight": "This suggests potential vulnerabilities in event security and the need for increased vigilance.",
-      "entities": [
-        "UFC",
-        "White House"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-foiled-alleged-plot-attack-white-house-ufc-event-kash-patel-says-n1279266",
-      "id": "rf-1781647830914-rykqmxezw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-16T22:10:30.910Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1022,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-28T11:06:06.096Z"
+  "lastUpdated": "2026-06-28T13:42:37.388Z"
 }
