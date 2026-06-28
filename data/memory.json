@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-15T04:03:34.264Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-15T10:53:54.401Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-28T00:00:29.158Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-06-28T04:44:33.449Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Rasmusson connected to?",
-    "Where did the $3.5M allegedly go in Medicaid Fraud Investigation?",
     "Where did the $3.5M allegedly go in Elder Fraud Ring Investigation?",
     "What specific allegations exist against Rasmusson?",
     "Where did the $ millions allegedly go in National anti-fraud effort?",
@@ -558,7 +556,9 @@
     "What other organizations is Abdikerm Eidleh connected to?",
     "Where did the $250M allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
+    "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?",
+    "Where did the $700K allegedly go in Minnesota Medicaid Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2804,
-    "articlesProcessed": 139650,
-    "redFlagsFound": 3234,
+    "totalScans": 2805,
+    "articlesProcessed": 139700,
+    "redFlagsFound": 3235,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-28T00:00:29.158Z",
-  "lastUpdated": "2026-06-28T00:00:29.159Z"
+  "lastReflection": "2026-06-28T04:44:33.449Z",
+  "lastUpdated": "2026-06-28T04:44:33.449Z"
 }
