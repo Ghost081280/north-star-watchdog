@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-16T03:53:54.116Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-16T09:25:20.993Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-28T15:17:26.364Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-28T17:08:33.270Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Ringleader in Sam Nordquist's torture connected to?",
-    "Where did the Undisclosed allegedly go in Minnesota Medicaid Provider Investigation?",
     "Where did the Undisclosed allegedly go in OneCoin Cryptocurrency Investment Fraud?",
     "What other organizations is Tony Rodham connected to?",
     "What other organizations is Unnamed suspect connected to?",
@@ -558,7 +556,9 @@
     "Where did the $250m allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $700K+ allegedly go in Minnesota Medicaid fraud?",
-    "Where did the $250m allegedly go in Feeding Our Future fraud scheme?"
+    "Where did the $250m allegedly go in Feeding Our Future fraud scheme?",
+    "What other organizations is Feeding Our Future Leader connected to?",
+    "Where did the $250 million allegedly go in Feeding Our Future Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2809,
-    "articlesProcessed": 139900,
-    "redFlagsFound": 3239,
+    "totalScans": 2810,
+    "articlesProcessed": 139950,
+    "redFlagsFound": 3240,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in FBI investigation into Johns Hopkins University?",
         "What other organizations is Ringleader in Sam Nordquist's torture connected to?",
-        "Where did the Undisclosed allegedly go in Minnesota Medicaid Provider Investigation?"
+        "Where did the Undisclosed allegedly go in Minnesota Medicaid Provider Investigation?",
+        "Where did the Undisclosed allegedly go in OneCoin Cryptocurrency Investment Fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-28T15:17:26.364Z",
-  "lastUpdated": "2026-06-28T15:17:26.365Z"
+  "lastReflection": "2026-06-28T17:08:33.270Z",
+  "lastUpdated": "2026-06-28T17:08:33.271Z"
 }
