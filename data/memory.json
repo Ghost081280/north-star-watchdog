@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-17T00:14:54.445Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 2 new legal actions, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-06-17T06:09:05.330Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-29T00:07:10.635Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-06-29T05:29:32.618Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
     "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?",
     "Where did the $700K allegedly go in Minnesota Medicaid Fraud?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +556,9 @@
     "What other organizations is Minnesota Gov Walz connected to?",
     "What specific allegations exist against Minnesota Gov Walz?",
     "What other organizations is Letitia James connected to?",
-    "What specific allegations exist against Letitia James?"
+    "What specific allegations exist against Letitia James?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2814,
-    "articlesProcessed": 140150,
-    "redFlagsFound": 3244,
+    "totalScans": 2815,
+    "articlesProcessed": 140200,
+    "redFlagsFound": 3245,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $5M allegedly go in Feeding Our Future Fraud?",
-        "What other organizations is Abdikerm Eidleh connected to?"
+        "Where did the $250M allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
+        "Where did the $250M allegedly go in Feeding Our Future Fraud Scheme?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-29T00:07:10.635Z",
-  "lastUpdated": "2026-06-29T00:07:10.636Z"
+  "lastReflection": "2026-06-29T05:29:32.618Z",
+  "lastUpdated": "2026-06-29T05:29:32.619Z"
 }
