@@ -2,6 +2,27 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Multiple federal investigations into public figures have been launched in recent weeks, indicating a potential pattern of corruption and wrongdoing.",
+      "insight": "I notice that many of these investigations involve allegations of financial misconduct, which suggests that there may be a larger issue with financial transparency and accountability in the public sector. Further investigation is needed to determine the scope of this problem and identify potential solutions.",
+      "entities": [
+        "Ruben Gallego",
+        "Malik Beasley",
+        "Ed Davis"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Axios",
+      "sourceUrl": "https://www.axios.com/scoop-gallego-faces-federal-probe-over-campaign-spending",
+      "id": "rf-1782773721119-t21w04622",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-29T22:55:21.115Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Ruben Gallego under investigation for campaign finance violations",
       "insight": "This suggests a potential pattern of corruption in political campaigns, warranting further investigation into campaign finance practices.",
       "entities": [
@@ -17,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-29T21:25:30.286Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "indictment",
@@ -37,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-29T21:25:30.286Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal indictment",
@@ -971,29 +992,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-19T00:25:28.356Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The USDA ordered IU to destroy biological materials during an active investigation.",
-      "insight": "This could indicate a potential biosecurity risk or misuse of funds.",
-      "entities": [
-        "IU"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "USDA",
-      "sourceUrl": "https://wrtv.com/2026-06-18/usda-orders-iu-to-destroy-biological-materials-during-active-investigation",
-      "id": "rf-1781785454768-wiou04qnv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-18T12:24:14.764Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,7 +1006,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1021,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-29T21:25:30.286Z"
+  "lastUpdated": "2026-06-29T22:55:21.115Z"
 }
