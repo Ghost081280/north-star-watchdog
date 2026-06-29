@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-17T15:22:28.046Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-17T18:13:49.500Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-29T14:47:49.867Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-29T17:35:24.960Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250m allegedly go in Feeding Our Future fraud scheme?",
     "What other organizations is Feeding Our Future Leader connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Fraud Investigation?",
     "What other organizations is Feeding Our Future leader connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Abdikerm Eidleh connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 4 figures connected to each other?"
+    "Are any of these 4 figures connected to each other?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2817,
-    "articlesProcessed": 140300,
-    "redFlagsFound": 3247,
+    "totalScans": 2818,
+    "articlesProcessed": 140350,
+    "redFlagsFound": 3248,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Feeding Our Future suspect connected to?",
-        "Where did the $250m allegedly go in Feeding Our Future fraud investigation?",
-        "Where did the $9B+ allegedly go in Feeding Our Future fraud scheme?"
+        "Where did the $250m allegedly go in Feeding Our Future fraud scheme?",
+        "What other organizations is Feeding Our Future Leader connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-29T14:47:49.867Z",
-  "lastUpdated": "2026-06-29T14:47:49.868Z"
+  "lastReflection": "2026-06-29T17:35:24.960Z",
+  "lastUpdated": "2026-06-29T17:35:24.961Z"
 }
