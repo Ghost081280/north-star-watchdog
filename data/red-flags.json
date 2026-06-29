@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "The use of shell companies to facilitate fraud",
+      "insight": "The use of shell companies to facilitate fraud is a major concern, as it allows individuals to hide their involvement and avoid detection.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://redlakenationnews.com/2026/06/29/after-years-on-the-run-accused-recruiter-in-feeding-our-future-fraud-scheme-arrested-in-somalia/",
+      "id": "rf-1782744469875-66vbv43gv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-29T14:47:49.870Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The FBI has frozen assets related to the Feeding Our Future investigation, indicating a significant fraud scheme.",
       "insight": "I suspect that there may be more individuals involved in this scheme, and further investigation is needed to uncover the full extent of the fraud.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-29T10:53:43.880Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -974,30 +993,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-17T00:14:54.447Z",
       "isNew": false
-    },
-    {
-      "type": "immigration crackdown",
-      "description": "The Minnesota immigration crackdown has resulted in the arrest of 15 individuals charged with conspiracy to impede agents.",
-      "insight": "The crackdown has sparked controversy and raised concerns about the treatment of immigrants. Further investigation is needed to determine the circumstances surrounding the arrest and to ensure that the rights of all individuals involved are protected.",
-      "entities": [
-        "Minnesota immigration crackdown"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "DOJ",
-      "sourceUrl": "https://www.pbs.org/newshour/nation/federal-prosecutors-charge-15-people-with-conspiracy-to-impede-agents-during-minnesota-immigration-crackdown",
-      "id": "rf-1781655294451-5ox9q4key",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-17T00:14:54.447Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1007,7 +1006,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-29T10:53:43.880Z"
+  "lastUpdated": "2026-06-29T14:47:49.870Z"
 }
