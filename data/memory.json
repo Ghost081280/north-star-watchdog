@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-18T12:24:14.762Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-18T16:29:16.838Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-30T05:01:38.814Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-06-30T09:31:11.308Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Mike Brown connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "Where did the $700,000 allegedly go in Medicaid Fraud Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in NBA Gambling Scandal?",
     "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
-    "Where did the $9B allegedly go in Feeding Our Future fraud?"
+    "Where did the $9B allegedly go in Feeding Our Future fraud?",
+    "Where did the $16 billion allegedly go in Gateway Tunnel Project funding investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2823,
-    "articlesProcessed": 140600,
-    "redFlagsFound": 3256,
+    "totalScans": 2824,
+    "articlesProcessed": 140650,
+    "redFlagsFound": 3258,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The Trump administration's attempt to freeze funding for the Gateway Tunnel Project was deemed 'flagrantly' illegal by a federal judge.",
+          "insight": "This raises concerns about the Trump administration's actions and potential abuse of power. The Gateway Tunnel Project is a significant infrastructure project, and the funding freeze could have had major implications for the project's completion.",
+          "entities": [
+            "Trump administration",
+            "Gateway Tunnel Project"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "New Jersey Monitor",
+          "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWVmZlltRi1HbVhidlhPLVk1c09sNXBtVHR1ZTRmWFQ5TFNCdWM5T2laQThtNTBkb1pTTTc1S1dmVndRbFNLNklzS1F4VUJpb3NZRlNpdGNGb0E1LUVJemluMFBpenFRdm9yU3BTR2w2OTJ2eG9ZeGNNS1RFZFNiV2ZlalhPQQ"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
         "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
-        "What other organizations is Mike Brown connected to?"
+        "What other organizations is Mike Brown connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-30T05:01:38.814Z",
-  "lastUpdated": "2026-06-30T05:01:38.815Z"
+  "lastReflection": "2026-06-30T09:31:11.308Z",
+  "lastUpdated": "2026-06-30T09:31:11.309Z"
 }
