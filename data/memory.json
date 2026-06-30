@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-18T08:45:36.007Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-18T12:24:14.762Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-06-30T00:03:20.577Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-06-30T05:01:38.814Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
     "What other organizations is Mike Brown connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
@@ -558,7 +557,8 @@
     "Where did the Unknown allegedly go in Gallego Campaign Finance Investigation?",
     "Where did the Unknown allegedly go in NBA Gambling Scandal?",
     "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?",
-    "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?"
+    "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
+    "Where did the $9B allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2822,
-    "articlesProcessed": 140550,
-    "redFlagsFound": 3254,
+    "totalScans": 2823,
+    "articlesProcessed": 140600,
+    "redFlagsFound": 3256,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Letitia James connected to?",
-        "What specific allegations exist against Letitia James?",
-        "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?"
+        "Where did the $250 million allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
+        "What other organizations is Mike Brown connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-30T00:03:20.577Z",
-  "lastUpdated": "2026-06-30T00:03:20.578Z"
+  "lastReflection": "2026-06-30T05:01:38.814Z",
+  "lastUpdated": "2026-06-30T05:01:38.815Z"
 }

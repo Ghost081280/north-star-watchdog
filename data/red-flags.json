@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Justice Department's lawsuit against Minnesota over refusal to turn over SNAP data suggests potential issues with the state's administration of the program.",
+      "insight": "This could indicate a need for further investigation into Minnesota's handling of SNAP and potential vulnerabilities in the program.",
+      "entities": [
+        "Minnesota",
+        "Justice Department",
+        "SNAP"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbmpqckJrUzhVUFVnTmlfVXY5ZGZVNk81WnJsR3dxdWNZTWRjT3pwTU92VEZmLVM4djM0eUdfb1NvTlBETW0tblJnWXVsX3ZLR1hwYTQyRDVYdzdRQWZybVpXOFJxUjdvVlRIU3VzUUEtZVU1cnd0dF81SVlYVFhRTjZ0QmdEbkR6aTVmeUYwTXRDenhK?oc=5",
+      "id": "rf-1782795698820-uw54jdwx3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-30T05:01:38.816Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's attempt to freeze funding for the Gateway Tunnel Project has been blocked by a federal judge.",
       "insight": "This development suggests that the Trump administration's actions may have been illegal, and further investigation is needed to determine the extent of any wrongdoing.",
@@ -18,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-30T00:03:20.579Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -973,30 +994,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-19T11:21:05.330Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "A federal investigation is underway in Ohio County",
-      "insight": "This investigation may be related to other cases of fraud in the area. I recommend tracking the investigation and looking for connections to other entities.",
-      "entities": [
-        "Ohio County"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Department Of Homeland Security Conducts Investigation In Ohio County",
-      "sourceUrl": "https://www.theintelligencer.net/news/top-headlines/2023/06/department-of-homeland-security-conducts-investigation-in-ohio-county/",
-      "id": "rf-1781828728359-23mpkko20",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-19T00:25:28.356Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1006,6 +1007,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1023,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-30T00:03:20.579Z"
+  "lastUpdated": "2026-06-30T05:01:38.816Z"
 }
