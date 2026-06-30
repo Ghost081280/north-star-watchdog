@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-18T22:06:04.452Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-19T00:25:28.354Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-06-30T15:26:22.485Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-06-30T17:51:41.233Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $700,000 allegedly go in Medicaid Fraud Investigation?",
-    "What other organizations is Abdikerm Eidleh connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
     "Are any of these 4 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $9B allegedly go in Feeding Our Future fraud?",
     "Where did the $16 billion allegedly go in Gateway Tunnel Project funding investigation?",
     "Where did the $16 billion allegedly go in Gateway Tunnel funding freeze?",
-    "What other organizations is Mike Brown connected to?"
+    "What other organizations is Mike Brown connected to?",
+    "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?",
+    "Where did the Unknown allegedly go in NBA Gambling Probe?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2826,
-    "articlesProcessed": 140750,
-    "redFlagsFound": 3262,
+    "totalScans": 2827,
+    "articlesProcessed": 140800,
+    "redFlagsFound": 3263,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
         "Where did the $700,000 allegedly go in Medicaid Fraud Investigation?",
-        "What other organizations is Abdikerm Eidleh connected to?"
+        "What other organizations is Abdikerm Eidleh connected to?",
+        "Where did the $250 million allegedly go in Feeding Our Future fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-30T15:26:22.485Z",
-  "lastUpdated": "2026-06-30T15:26:22.486Z"
+  "lastReflection": "2026-06-30T17:51:41.233Z",
+  "lastUpdated": "2026-06-30T17:51:41.233Z"
 }
