@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "campaign spending irregularities",
+      "description": "Sen. Gallego is under federal investigation over campaign spending irregularities.",
+      "insight": "This suggests potential issues with campaign finance laws and possible misuse of campaign funds. Further investigation into Sen. Gallego's campaign finances and potential connections to other entities or individuals is necessary.",
+      "entities": [
+        "Sen. Gallego",
+        "Federal authorities"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Time Magazine",
+      "sourceUrl": "https://time.com/2026/06/30/sen-gallego-faces-probe-over-campaign-spending-what-to-know/",
+      "id": "rf-1782821256316-d5altc56o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-30T12:07:36.311Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's attempt to freeze funding for the Gateway Tunnel Project was deemed 'flagrantly' illegal by a federal judge.",
       "insight": "This raises concerns about the Trump administration's actions and potential abuse of power. The Gateway Tunnel Project is a significant infrastructure project, and the funding freeze could have had major implications for the project's completion.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-30T09:31:11.310Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "campaign_finance_violations",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-30T09:31:11.310Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -975,41 +995,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-19T19:47:39.643Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "Multiple federal investigations are currently ongoing, including the Feeding Our Future investigation and the Paducah employment fraud case.",
-      "insight": "These investigations suggest a pattern of fraudulent activity, and further investigation is needed to determine the extent of the fraud and to identify those responsible.",
-      "entities": [
-        "Feeding Our Future",
-        "Paducah employment fraud"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Federal investigation",
-      "sourceUrl": "https://www.americanexperiment.org/feed-our-future-sentence-18-six-months/",
-      "id": "rf-1781891727951-6gp1p8vei",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-19T17:55:27.947Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-30T09:31:11.310Z"
+  "lastUpdated": "2026-06-30T12:07:36.311Z"
 }

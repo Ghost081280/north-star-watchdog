@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-18T16:29:16.838Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-18T19:26:46.358Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, 1 high-confidence findings, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-06-30T09:31:11.308Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-06-30T12:07:36.309Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -525,9 +525,9 @@
       "type": "federal_funding",
       "description": "2 findings related to federal funding",
       "confidence": 0.95,
-      "count": 89,
+      "count": 90,
       "firstSeen": "2026-01-06T14:21:31.952Z",
-      "lastSeen": "2026-06-26T16:15:17.225Z"
+      "lastSeen": "2026-06-30T12:07:36.310Z"
     },
     {
       "type": "healthcare_fraud",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Mike Brown connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
     "Where did the $700,000 allegedly go in Medicaid Fraud Investigation?",
     "What other organizations is Abdikerm Eidleh connected to?",
@@ -558,7 +557,8 @@
     "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
     "Where did the $9B allegedly go in Feeding Our Future fraud?",
-    "Where did the $16 billion allegedly go in Gateway Tunnel Project funding investigation?"
+    "Where did the $16 billion allegedly go in Gateway Tunnel Project funding investigation?",
+    "Where did the $16 billion allegedly go in Gateway Tunnel funding freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2824,
-    "articlesProcessed": 140650,
-    "redFlagsFound": 3258,
+    "totalScans": 2825,
+    "articlesProcessed": 140700,
+    "redFlagsFound": 3260,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The Trump administration's attempt to freeze funding for the Gateway Tunnel Project was deemed 'flagrantly' illegal by a federal judge.",
-          "insight": "This raises concerns about the Trump administration's actions and potential abuse of power. The Gateway Tunnel Project is a significant infrastructure project, and the funding freeze could have had major implications for the project's completion.",
-          "entities": [
-            "Trump administration",
-            "Gateway Tunnel Project"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "New Jersey Monitor",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWVmZlltRi1HbVhidlhPLVk1c09sNXBtVHR1ZTRmWFQ5TFNCdWM5T2laQThtNTBkb1pTTTc1S1dmVndRbFNLNklzS1F4VUJpb3NZRlNpdGNGb0E1LUVJemluMFBpenFRdm9yU3BTR2w2OTJ2eG9ZeGNNS1RFZFNiV2ZlalhPQQ"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $700,000 allegedly go in Minnesota Medicaid fraud investigation?",
         "What other organizations is Mike Brown connected to?",
-        "Where did the $250 million allegedly go in Feeding Our Future Investigation?"
+        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
+        "Where did the $700,000 allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-06-30T09:31:11.308Z",
-  "lastUpdated": "2026-06-30T09:31:11.309Z"
+  "lastReflection": "2026-06-30T12:07:36.309Z",
+  "lastUpdated": "2026-06-30T12:07:36.310Z"
 }
