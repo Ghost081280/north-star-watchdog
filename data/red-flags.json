@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "corruption",
+      "description": "Ex-Councilman Mike Brown was convicted of corruption and sentenced to 2 years in prison.",
+      "insight": "This could indicate a larger issue with corruption in North Charleston and a need for further investigation.",
+      "entities": [
+        "Mike Brown",
+        "North Charleston"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Post and Courier",
+      "sourceUrl": "https://www.postandcourier.com/article/news/20260629/ex-councilman-mike-brown-gets-2-year-prison-term-north-charleston-corruption-case",
+      "id": "rf-1782833182492-i0k6449hl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-06-30T15:26:22.487Z",
+      "isNew": true
+    },
+    {
       "type": "campaign spending irregularities",
       "description": "Sen. Gallego is under federal investigation over campaign spending irregularities.",
       "insight": "This suggests potential issues with campaign finance laws and possible misuse of campaign funds. Further investigation into Sen. Gallego's campaign finances and potential connections to other entities or individuals is necessary.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-06-30T12:07:36.311Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -975,41 +995,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-19T21:08:43.170Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Minnesota Medicaid program termination due to alleged mismanagement",
-      "insight": "Potential for widespread corruption and abuse",
-      "entities": [
-        "Minnesota DHS",
-        "healthcare providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Cannon Falls Beacon",
-      "sourceUrl": "https://www.cannonfallsbeacon.com/from-st-paul-legitimate-medicaid-providers-being-cut-off-due-to-gov-walz-mismanagement-sid47395146",
-      "id": "rf-1781898459646-e4umg3rpd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-19T19:47:39.643Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1026,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-06-30T12:07:36.311Z"
+  "lastUpdated": "2026-06-30T15:26:22.487Z"
 }
