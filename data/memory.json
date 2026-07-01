@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-19T21:08:43.168Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-19T22:55:41.750Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-07-01T12:02:42.118Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-07-01T15:40:38.550Z",
+      "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "Where did the $9B allegedly go in Feeding Our Future Investigation?",
-    "Are any of these 3 figures connected to each other?",
     "Where did the $9B allegedly go in Minnesota Fraud Case?",
     "What other organizations is Ruben Gallego connected to?",
     "What other organizations is Malik Beasley connected to?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in NBA Gambling Probe?",
     "Are any of these 6 figures connected to each other?",
     "What other organizations is Goliath Ventures CEO connected to?",
-    "What other organizations is CEO of Goliath Ventures connected to?"
+    "What other organizations is CEO of Goliath Ventures connected to?",
+    "Where did the $0 allegedly go in Goliath Ventures Ponzi scheme investigation?",
+    "Where did the $0 allegedly go in Senator Ruben Gallego campaign funds investigation?",
+    "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2833,
-    "articlesProcessed": 141100,
-    "redFlagsFound": 3268,
+    "totalScans": 2834,
+    "articlesProcessed": 141150,
+    "redFlagsFound": 3270,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 4 figures connected to each other?",
         "Are any of these 2 figures connected to each other?",
-        "Where did the $9B allegedly go in Feeding Our Future Investigation?"
+        "Where did the $9B allegedly go in Feeding Our Future Investigation?",
+        "Are any of these 3 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-01T12:02:42.118Z",
-  "lastUpdated": "2026-07-01T12:02:42.119Z"
+  "lastReflection": "2026-07-01T15:40:38.550Z",
+  "lastUpdated": "2026-07-01T15:40:38.550Z"
 }
