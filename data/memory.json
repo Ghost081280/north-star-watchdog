@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T05:12:09.973Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-06-20T08:52:25.249Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-01T19:51:50.342Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-07-01T21:26:58.394Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Gallego Campaign Finance Investigation?",
-    "Where did the Unknown allegedly go in NBA Gambling Scandal?",
     "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
     "Where did the $9B allegedly go in Feeding Our Future fraud?",
@@ -558,7 +556,9 @@
     "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
     "Where did the $0 allegedly go in Egg settlement investigation?",
     "What specific allegations exist against Nancy Guthrie?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?",
+    "Where did the $0 allegedly go in Egg Settlement?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2836,
-    "articlesProcessed": 141250,
-    "redFlagsFound": 3273,
+    "totalScans": 2837,
+    "articlesProcessed": 141300,
+    "redFlagsFound": 3275,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fake ransom notes",
-          "description": "FBI determines ransom notes in Nancy Guthrie case are fake",
-          "insight": "This case highlights the complexity of kidnapping investigations and the potential for false leads.",
-          "entities": [
-            "Nancy Guthrie"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FOX 7 Austin",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdzZVS1QyZjRjRDFTQXhDSjhkc29vVHZlckplMTNzR1AzcnVfQWhDaWI4eHY2Z3ZrWk54TVFBTi1aenFETzdGQVo3aWo5UlVEM1FmYmNXQTNROE9PMS1tVmlzNFluZ2hkUlJ3eGF0OE1XeDZLNXl6S09iNllYdlNmeThibG15MDlXNjh2M21R?source=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Malik Beasley connected to?",
-        "What other organizations is Ed Davis connected to?",
-        "Where did the Unknown allegedly go in Gallego Campaign Finance Investigation?"
+        "Where did the Unknown allegedly go in Gallego Campaign Finance Investigation?",
+        "Where did the Unknown allegedly go in NBA Gambling Scandal?",
+        "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-01T19:51:50.342Z",
-  "lastUpdated": "2026-07-01T19:51:50.343Z"
+  "lastReflection": "2026-07-01T21:26:58.394Z",
+  "lastUpdated": "2026-07-01T21:26:58.395Z"
 }
