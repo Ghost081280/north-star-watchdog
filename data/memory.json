@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-19T22:55:41.750Z",
-      "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
-      "confidence": 0.25
-    },
-    {
       "date": "2026-06-20T00:08:43.794Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
@@ -510,6 +505,11 @@
       "date": "2026-07-01T15:40:38.550Z",
       "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-07-01T17:53:22.226Z",
+      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B allegedly go in Minnesota Fraud Case?",
-    "What other organizations is Ruben Gallego connected to?",
     "What other organizations is Malik Beasley connected to?",
     "What other organizations is Ed Davis connected to?",
     "Where did the Unknown allegedly go in Gallego Campaign Finance Investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is CEO of Goliath Ventures connected to?",
     "Where did the $0 allegedly go in Goliath Ventures Ponzi scheme investigation?",
     "Where did the $0 allegedly go in Senator Ruben Gallego campaign funds investigation?",
-    "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?"
+    "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?",
+    "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
+    "Where did the $0 allegedly go in Egg settlement investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2834,
-    "articlesProcessed": 141150,
-    "redFlagsFound": 3270,
+    "totalScans": 2835,
+    "articlesProcessed": 141200,
+    "redFlagsFound": 3271,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $9B allegedly go in Feeding Our Future Investigation?",
-        "Are any of these 3 figures connected to each other?"
+        "Where did the $9B allegedly go in Minnesota Fraud Case?",
+        "What other organizations is Ruben Gallego connected to?",
+        "What other organizations is Malik Beasley connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-01T15:40:38.550Z",
-  "lastUpdated": "2026-07-01T15:40:38.550Z"
+  "lastReflection": "2026-07-01T17:53:22.226Z",
+  "lastUpdated": "2026-07-01T17:53:22.226Z"
 }
