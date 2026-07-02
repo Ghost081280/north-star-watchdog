@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T13:58:47.261Z",
-      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-06-20T15:47:23.954Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-07-02T03:22:45.947Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-07-02T07:29:51.758Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2839,
-    "articlesProcessed": 141400,
-    "redFlagsFound": 3278,
+    "totalScans": 2840,
+    "articlesProcessed": 141450,
+    "redFlagsFound": 3280,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -584,17 +584,17 @@
       "description": "Post 1 critical findings to X",
       "data": [
         {
-          "type": "fake ransom notes",
-          "description": "FBI determines some ransom notes in Nancy Guthrie disappearance were fake",
-          "insight": "This suggests potential misdirection or false leads in the investigation into Nancy Guthrie's disappearance.",
+          "type": "alleged_fraud",
+          "description": "Alibaba, Payment Firm Will Pay $600 Million to Resolve US Probe",
+          "insight": "This highlights the significant financial impact of alleged fraud and the importance of regulatory compliance. The payment firm's involvement in the probe suggests a larger issue with financial regulations.",
           "entities": [
-            "FBI",
-            "Nancy Guthrie"
+            "Alibaba",
+            "Payment Firm"
           ],
           "confidence": 90,
           "priority": "high",
-          "source": "KFOX",
-          "sourceUrl": "https://www.kfox.com/news/fbi-determines-3-ransom-notes-in-nancy-guthrie-disappearance-were-fake-report"
+          "source": "Bloomberg.com",
+          "sourceUrl": "https://www.bloomberg.com/news/articles/2026/07/01/alibaba-payment-firm-will-pay-600-million-to-resolve-us-probe"
         }
       ]
     },
@@ -603,9 +603,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $16 billion allegedly go in Gateway Tunnel funding freeze?",
-        "What other organizations is Mike Brown connected to?",
-        "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?"
+        "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?",
+        "Where did the Unknown allegedly go in NBA Gambling Probe?",
+        "Are any of these 6 figures connected to each other?"
       ]
     }
   ],
@@ -614,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T03:22:45.947Z",
-  "lastUpdated": "2026-07-02T03:22:45.948Z"
+  "lastReflection": "2026-07-02T07:29:51.758Z",
+  "lastUpdated": "2026-07-02T07:29:51.759Z"
 }

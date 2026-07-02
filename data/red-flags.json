@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota attorney general shuts unit reviewing wrongful convictions, cites Trump funding cut",
+      "insight": "This raises concerns about the impact on justice and potential wrongful convictions. The unit's termination may lead to a backlog of cases and decreased scrutiny of convictions.",
+      "entities": [
+        "Minnesota attorney general"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/content/dam/Editors/Edimage/2026/Minnesota-attorney-general-shuts-unit-reviewing-wrongful-convictions-cites-Trump-funding-cut.pdf",
+      "id": "rf-1782977391763-9dofu7e03",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T07:29:51.760Z",
+      "isNew": true
+    },
+    {
+      "type": "alleged_fraud",
+      "description": "Alibaba, Payment Firm Will Pay $600 Million to Resolve US Probe",
+      "insight": "This highlights the significant financial impact of alleged fraud and the importance of regulatory compliance. The payment firm's involvement in the probe suggests a larger issue with financial regulations.",
+      "entities": [
+        "Alibaba",
+        "Payment Firm"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Bloomberg.com",
+      "sourceUrl": "https://www.bloomberg.com/news/articles/2026/07/01/alibaba-payment-firm-will-pay-600-million-to-resolve-us-probe",
+      "id": "rf-1782977391763-hjbvd1m4p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T07:29:51.760Z",
+      "isNew": true
+    },
+    {
       "type": "fake ransom notes",
       "description": "FBI determines some ransom notes in Nancy Guthrie disappearance were fake",
       "insight": "This suggests potential misdirection or false leads in the investigation into Nancy Guthrie's disappearance.",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T03:22:45.949Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -956,44 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-21T16:44:40.756Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota AG's office faced questioning and stormed off, raising concerns about transparency",
-      "insight": "The Minnesota AG's office needs to provide more transparency about the investigation",
-      "entities": [
-        "Minnesota AG's Office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Minnesota AG STORMS OFF after being questioned on state’s fraud scandal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZS1qYXlRd1AxcDlhMnNKU294OXpIazdjc24tQTFGdGhhVHBvMkpNTll5MnQ1LWZBd3FFRU5fbjhyUURPZUktWmZfYlJiX3dHY3dSTnNR",
-      "id": "rf-1782042315507-1a5tnbcc7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T11:45:15.503Z",
-      "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "Robert P. Rubicco's daycare operation may have involved shell companies",
-      "insight": "Further investigation into Robert P. Rubicco's business operations is needed",
-      "entities": [
-        "Robert P. Rubicco"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Robert P. Rubicco: Criminal, Liar, Fraud, Daycare Operator — Part XXXIII",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNOUI0ekNrbWktTEdIcGdIVHhtNkpZa1Qtb0hQcldLM1Zjbjdjajc2Zi1wajJITHljXzYyYW1GUnNacjZDNXpTQlB4QmlRME11YkR2QTRlZUtpMDg3SkVLUVBNcWREWGJ3SmdpWUhOMzBVRmVSZTViUnl4TEJmN3lXM2RWZHNJWXotdXdZNzgwVFVUVDZTSy0zdEpMX055VUZJOV9JTFNlYWZ3dFlCalUzOFZTOTVmUzI2b1lpVU9LcHFsdUttcW1ScTR5d2FvN3otRmtjT1dUYmk5X3B6b0FtWlo0VFFXR3lBN0xjSEVad3k4OGdOb096VWc2V2pOYkppemtqT0ZEZFFIcDVl",
-      "id": "rf-1782042315507-yj2ffg6w4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T11:45:15.503Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1002,13 +1003,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T03:22:45.949Z"
+  "lastUpdated": "2026-07-02T07:29:51.760Z"
 }
