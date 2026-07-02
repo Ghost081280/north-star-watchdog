@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating the 2020 Georgia election, with a focus on potential irregularities and voter suppression.",
+      "insight": "This investigation could lead to further consequences for individuals or organizations involved in election irregularities.",
+      "entities": [
+        "FBI",
+        "2020 Georgia election"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-orders-field-offices-to-send-analysts-to-atlanta-for-2020-election-investigation-sources-say/",
+      "id": "rf-1783014308407-qbi7kmou2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T17:45:08.403Z",
+      "isNew": true
+    },
+    {
       "type": "campaign finance violations",
       "description": "Investigation into Sen. Ruben Gallego",
       "insight": "This indicates potential issues with campaign finance practices among Minnesota politicians, which could have broader implications for the state's political landscape.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T15:14:31.197Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Program termination",
@@ -977,30 +997,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-22T12:48:47.252Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Minnesota AG's office has been involved in a scandal over allegations of obstruction of justice.",
-      "insight": "This could indicate a larger issue with corruption within the state's government and law enforcement agencies. Further investigation is needed to determine the extent of the issue and identify any other entities or individuals involved.",
-      "entities": [
-        "Minnesota AG's office"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/06/21/minnesota-ag-keith-ellison-erupts-after-being-asked-about-states-fraud-scandal-done-talking-to-you/",
-      "id": "rf-1782080036069-z2lnjgwbv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T22:13:56.065Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1008,7 +1008,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T15:14:31.197Z"
+  "lastUpdated": "2026-07-02T17:45:08.403Z"
 }

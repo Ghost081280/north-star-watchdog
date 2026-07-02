@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T21:16:44.398Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-06-20T23:06:35.428Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-07-02T15:14:31.195Z",
       "summary": "CRITICAL: 1 high-profile figures, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.8
+    },
+    {
+      "date": "2026-07-02T17:45:08.401Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?",
-    "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
-    "Where did the $0 allegedly go in Egg settlement investigation?",
     "What specific allegations exist against Nancy Guthrie?",
     "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?",
@@ -558,7 +555,10 @@
     "Where did the Unknown allegedly go in Nancy Guthrie Ransom Case?",
     "Where did the Millions allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 3 figures connected to each other?"
+    "Are any of these 3 figures connected to each other?",
+    "Where did the $0 allegedly go in FBI Investigation into 2020 Georgia Election?",
+    "Where did the $0 allegedly go in Minnesota DHS Fraud Whistleblower Allegations?",
+    "Where did the $0 allegedly go in DOJ Campaign Finance Investigation into Sen. Ruben Gallego?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2843,
-    "articlesProcessed": 141600,
-    "redFlagsFound": 3284,
+    "totalScans": 2844,
+    "articlesProcessed": 141650,
+    "redFlagsFound": 3286,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_investigation",
+          "description": "The FBI is investigating the 2020 Georgia election, with a focus on potential irregularities and voter suppression.",
+          "insight": "This investigation could lead to further consequences for individuals or organizations involved in election irregularities.",
+          "entities": [
+            "FBI",
+            "2020 Georgia election"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "CBS News",
+          "sourceUrl": "https://www.cbsnews.com/news/fbi-orders-field-offices-to-send-analysts-to-atlanta-for-2020-election-investigation-sources-say/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Goliath Ventures Ponzi scheme investigation?",
-        "Where did the $0 allegedly go in Senator Ruben Gallego campaign funds investigation?",
-        "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?"
+        "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?",
+        "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
+        "Where did the $0 allegedly go in Egg settlement investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T15:14:31.195Z",
-  "lastUpdated": "2026-07-02T15:14:31.196Z"
+  "lastReflection": "2026-07-02T17:45:08.401Z",
+  "lastUpdated": "2026-07-02T17:45:08.402Z"
 }
