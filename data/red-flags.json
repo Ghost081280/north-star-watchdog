@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "election investigation",
+      "description": "The FBI's investigation into Georgia's 2020 presidential election involves hundreds of analysts.",
+      "insight": "This investigation suggests that there may be concerns about the integrity of the election process.",
+      "entities": [
+        "FBI",
+        "Georgia"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/07/02/politics/fbi-georgia-election-investigation/index.html",
+      "id": "rf-1783033466561-4rxvfnyjo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T23:04:26.558Z",
+      "isNew": true
+    },
+    {
+      "type": "potential election fraud",
+      "description": "The investigation into Georgia's 2020 presidential election suggests potential election fraud.",
+      "insight": "This investigation suggests that there may be concerns about the integrity of the election process.",
+      "entities": [
+        "Georgia"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/2026/07/02/us/politics/fbi-georgia-election-investigation.html",
+      "id": "rf-1783033466561-yjg5wzuc6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T23:04:26.558Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Potential termination of programs due to fraud allegations",
       "insight": "Several programs are under scrutiny due to allegations of fraud, which could lead to program terminations if findings are confirmed.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T21:04:16.816Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -955,47 +994,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-23T00:04:27.292Z",
       "isNew": false
-    },
-    {
-      "type": "potential harassment by government agency",
-      "description": "The DOJ's use of grand jury subpoenas to investigate Walz and Minnesota officials has been ruled unlawful by a federal judge, who stated that the subpoenas were an attempt to harass the officials.",
-      "insight": "This development raises significant concerns about the potential for government agencies to abuse their power and harass individuals or organizations. Further investigation is needed to determine the motivations behind the DOJ's actions and to ensure that such abuses do not occur in the future.",
-      "entities": [
-        "DOJ",
-        "Walz",
-        "Minnesota officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/politics/justice-department/judge-quashes-unlawful-subpoenas-trump-administration-was-using-harass-minnesota-n1294448",
-      "id": "rf-1782161093533-czmjlkx7a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-22T20:44:53.530Z",
-      "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "Minnesota nonprofit leader sentenced to prison for fraud",
-      "insight": "The Feeding Our Future fraud case raises concerns about oversight and accountability in Minnesota nonprofits.",
-      "entities": [
-        "Asha Jama",
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://www.aol.com/feeding-future-fraud-asha-jama-sentenced-6-months-prison",
-      "id": "rf-1782132527256-mnjksv7na",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-22T12:48:47.252Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1027,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T21:04:16.816Z"
+  "lastUpdated": "2026-07-02T23:04:26.558Z"
 }
