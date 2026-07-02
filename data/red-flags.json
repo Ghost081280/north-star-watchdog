@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Potential termination of programs due to fraud allegations",
+      "insight": "Several programs are under scrutiny due to allegations of fraud, which could lead to program terminations if findings are confirmed.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KTTC | Rochester, MN",
+      "sourceUrl": "https://www.kttc.org/2026/07/02/kttc-still-waiting-on-minnesota-dhs-records-tied-to-fraud-whistleblower-allegations/",
+      "id": "rf-1783026256820-fn3r0vy8d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T21:04:16.816Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating the 2020 Georgia election, with a focus on potential irregularities and voter suppression.",
       "insight": "This investigation could lead to further consequences for individuals or organizations involved in election irregularities.",
@@ -977,30 +996,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-22T12:48:47.252Z",
       "isNew": false
-    },
-    {
-      "type": "resignation amid investigation",
-      "description": "LAUSD Superintendent Alberto Carvalho resigns amid FBI investigation",
-      "insight": "The resignation of LAUSD Superintendent Alberto Carvalho raises questions about the integrity of the school district's leadership.",
-      "entities": [
-        "Alberto Carvalho",
-        "LAUSD"
-      ],
-      "confidence": 85,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/l-a-usd-superintendent-alberto-carvalho-resigns-amid-fbi-investigation/",
-      "id": "rf-1782132527256-2cuccdib0",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-22T12:48:47.252Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1008,7 +1009,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1027,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T19:21:30.149Z"
+  "lastUpdated": "2026-07-02T21:04:16.816Z"
 }

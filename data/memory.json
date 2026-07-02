@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-21T03:58:58.318Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-21T08:38:42.506Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-02T19:21:30.147Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-02T21:04:16.814Z",
+      "summary": "NOTABLE: 2 high-profile figures, Breaking news present",
+      "confidence": 0.4
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?",
     "Where did the $0 allegedly go in Egg Settlement?",
     "What other organizations is Malik Beasley connected to?",
     "What other organizations is John Brennan connected to?",
@@ -558,7 +557,8 @@
     "Where did the $0 allegedly go in Minnesota DHS Fraud Whistleblower Allegations?",
     "Where did the $0 allegedly go in DOJ Campaign Finance Investigation into Sen. Ruben Gallego?",
     "Where did the $0 allegedly go in Minnesota DHS fraud whistleblower allegations?",
-    "Where did the $0 allegedly go in FBI investigation into 2020 Georgia election?"
+    "Where did the $0 allegedly go in FBI investigation into 2020 Georgia election?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2845,
-    "articlesProcessed": 141700,
-    "redFlagsFound": 3287,
+    "totalScans": 2846,
+    "articlesProcessed": 141750,
+    "redFlagsFound": 3288,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Nancy Guthrie?",
-        "Are any of these 2 figures connected to each other?",
-        "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?"
+        "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?",
+        "Where did the $0 allegedly go in Egg Settlement?",
+        "What other organizations is Malik Beasley connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T19:21:30.147Z",
-  "lastUpdated": "2026-07-02T19:21:30.148Z"
+  "lastReflection": "2026-07-02T21:04:16.814Z",
+  "lastUpdated": "2026-07-02T21:04:16.815Z"
 }
