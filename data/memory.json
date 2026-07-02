@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T15:47:23.954Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-06-20T17:25:25.721Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-07-02T07:29:51.758Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
       "confidence": 0.5
+    },
+    {
+      "date": "2026-07-02T10:36:56.450Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?",
-    "Where did the Unknown allegedly go in NBA Gambling Probe?",
     "Are any of these 6 figures connected to each other?",
     "What other organizations is Goliath Ventures CEO connected to?",
     "What other organizations is CEO of Goliath Ventures connected to?",
@@ -558,7 +556,9 @@
     "Where did the $ millions allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the 10 arrests allegedly go in Federal sex trafficking investigation?",
     "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
-    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?"
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?",
+    "Where did the $ millions allegedly go in Minnesota Medicaid Fraud Investigation?",
+    "Where did the Unknown allegedly go in Nancy Guthrie Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2840,
-    "articlesProcessed": 141450,
-    "redFlagsFound": 3280,
+    "totalScans": 2841,
+    "articlesProcessed": 141500,
+    "redFlagsFound": 3281,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "alleged_fraud",
-          "description": "Alibaba, Payment Firm Will Pay $600 Million to Resolve US Probe",
-          "insight": "This highlights the significant financial impact of alleged fraud and the importance of regulatory compliance. The payment firm's involvement in the probe suggests a larger issue with financial regulations.",
-          "entities": [
-            "Alibaba",
-            "Payment Firm"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Bloomberg.com",
-          "sourceUrl": "https://www.bloomberg.com/news/articles/2026/07/01/alibaba-payment-firm-will-pay-600-million-to-resolve-us-probe"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T07:29:51.758Z",
-  "lastUpdated": "2026-07-02T07:29:51.759Z"
+  "lastReflection": "2026-07-02T10:36:56.450Z",
+  "lastUpdated": "2026-07-02T10:36:56.451Z"
 }
