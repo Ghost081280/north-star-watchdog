@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T11:17:08.958Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.7
-    },
-    {
       "date": "2026-06-20T13:58:47.261Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-07-01T23:13:39.285Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
+    },
+    {
+      "date": "2026-07-02T03:22:45.947Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $16 billion allegedly go in Gateway Tunnel funding freeze?",
-    "What other organizations is Mike Brown connected to?",
     "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?",
     "Where did the Unknown allegedly go in NBA Gambling Probe?",
     "Are any of these 6 figures connected to each other?",
@@ -558,7 +556,9 @@
     "What other organizations is Malik Beasley connected to?",
     "What other organizations is John Brennan connected to?",
     "Where did the $ millions allegedly go in Minnesota Medicaid fraud crackdown?",
-    "Where did the 10 arrests allegedly go in Federal sex trafficking investigation?"
+    "Where did the 10 arrests allegedly go in Federal sex trafficking investigation?",
+    "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
+    "Where did the $0 allegedly go in Minnesota Medicaid Fraud Crackdown?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2838,
-    "articlesProcessed": 141350,
-    "redFlagsFound": 3276,
+    "totalScans": 2839,
+    "articlesProcessed": 141400,
+    "redFlagsFound": 3278,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fake ransom notes",
+          "description": "FBI determines some ransom notes in Nancy Guthrie disappearance were fake",
+          "insight": "This suggests potential misdirection or false leads in the investigation into Nancy Guthrie's disappearance.",
+          "entities": [
+            "FBI",
+            "Nancy Guthrie"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "KFOX",
+          "sourceUrl": "https://www.kfox.com/news/fbi-determines-3-ransom-notes-in-nancy-guthrie-disappearance-were-fake-report"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Gateway Tunnel Project Funding Investigation?",
-        "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
-        "Where did the $9B allegedly go in Feeding Our Future fraud?"
+        "Where did the $16 billion allegedly go in Gateway Tunnel funding freeze?",
+        "What other organizations is Mike Brown connected to?",
+        "Where did the $ millions allegedly go in Minnesota Drug Trafficking Investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-01T23:13:39.285Z",
-  "lastUpdated": "2026-07-01T23:13:39.286Z"
+  "lastReflection": "2026-07-02T03:22:45.947Z",
+  "lastUpdated": "2026-07-02T03:22:45.948Z"
 }
