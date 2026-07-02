@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T23:06:35.428Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-06-21T03:58:58.318Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-02T17:45:08.401Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-07-02T19:21:30.147Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Nancy Guthrie?",
-    "Are any of these 2 figures connected to each other?",
     "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?",
     "Where did the $0 allegedly go in Egg Settlement?",
     "What other organizations is Malik Beasley connected to?",
@@ -558,7 +556,9 @@
     "Are any of these 3 figures connected to each other?",
     "Where did the $0 allegedly go in FBI Investigation into 2020 Georgia Election?",
     "Where did the $0 allegedly go in Minnesota DHS Fraud Whistleblower Allegations?",
-    "Where did the $0 allegedly go in DOJ Campaign Finance Investigation into Sen. Ruben Gallego?"
+    "Where did the $0 allegedly go in DOJ Campaign Finance Investigation into Sen. Ruben Gallego?",
+    "Where did the $0 allegedly go in Minnesota DHS fraud whistleblower allegations?",
+    "Where did the $0 allegedly go in FBI investigation into 2020 Georgia election?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2844,
-    "articlesProcessed": 141650,
-    "redFlagsFound": 3286,
+    "totalScans": 2845,
+    "articlesProcessed": 141700,
+    "redFlagsFound": 3287,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_investigation",
-          "description": "The FBI is investigating the 2020 Georgia election, with a focus on potential irregularities and voter suppression.",
-          "insight": "This investigation could lead to further consequences for individuals or organizations involved in election irregularities.",
-          "entities": [
-            "FBI",
-            "2020 Georgia election"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "CBS News",
-          "sourceUrl": "https://www.cbsnews.com/news/fbi-orders-field-offices-to-send-analysts-to-atlanta-for-2020-election-investigation-sources-say/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?",
-        "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
-        "Where did the $0 allegedly go in Egg settlement investigation?"
+        "What specific allegations exist against Nancy Guthrie?",
+        "Are any of these 2 figures connected to each other?",
+        "Where did the $0 allegedly go in Minnesota DHS Commissioner Testifies Before Congress?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T17:45:08.401Z",
-  "lastUpdated": "2026-07-02T17:45:08.402Z"
+  "lastReflection": "2026-07-02T19:21:30.147Z",
+  "lastUpdated": "2026-07-02T19:21:30.148Z"
 }
