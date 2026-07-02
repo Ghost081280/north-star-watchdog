@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-20T19:23:23.600Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-06-20T21:16:44.398Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-07-02T12:56:42.640Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-02T15:14:31.195Z",
+      "summary": "CRITICAL: 1 high-profile figures, 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Goliath Ventures Ponzi scheme investigation?",
-    "Where did the $0 allegedly go in Senator Ruben Gallego campaign funds investigation?",
     "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?",
     "Where did the $0 allegedly go in Portland-area shelter provider investigation?",
     "Where did the $0 allegedly go in Egg settlement investigation?",
@@ -558,7 +556,9 @@
     "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie Ransom Case?",
-    "Where did the Millions allegedly go in Minnesota Medicaid Fraud?"
+    "Where did the Millions allegedly go in Minnesota Medicaid Fraud?",
+    "Where did the $700K allegedly go in Minnesota Medicaid fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2842,
-    "articlesProcessed": 141550,
-    "redFlagsFound": 3282,
+    "totalScans": 2843,
+    "articlesProcessed": 141600,
+    "redFlagsFound": 3284,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 6 figures connected to each other?",
-        "What other organizations is Goliath Ventures CEO connected to?",
-        "What other organizations is CEO of Goliath Ventures connected to?"
+        "Where did the $0 allegedly go in Goliath Ventures Ponzi scheme investigation?",
+        "Where did the $0 allegedly go in Senator Ruben Gallego campaign funds investigation?",
+        "Where did the $0 allegedly go in Eagle Bancorp money laundering investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T12:56:42.640Z",
-  "lastUpdated": "2026-07-02T12:56:42.640Z"
+  "lastReflection": "2026-07-02T15:14:31.195Z",
+  "lastUpdated": "2026-07-02T15:14:31.196Z"
 }

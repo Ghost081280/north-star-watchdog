@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "campaign finance violations",
+      "description": "Investigation into Sen. Ruben Gallego",
+      "insight": "This indicates potential issues with campaign finance practices among Minnesota politicians, which could have broader implications for the state's political landscape.",
+      "entities": [
+        "Sen. Ruben Gallego",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "AZ FREE NEWS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZWI5TE5zY2JTV2I2OEdhRFd2SWJpeEVGYXlQM0dmX2ZsT0ItX09WeVR6eE96QVBxZ1pVeWkxalRpNVZZQ3pLdy1Bd2JWRzZoN1NpQXpPS25HRHpqMTRKUEZ2VUxXNlRsSWJMeVVFbkFQc0xKVUZxeWxlQzJlWm5nV1c0OFUwTld3QTZEeUIwVGlBbFJTSnhpaFBrQQ",
+      "id": "rf-1783005271201-y5zx6kw5m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T15:14:31.197Z",
+      "isNew": true
+    },
+    {
       "type": "Program termination",
       "description": "The Minnesota attorney general has shut down a unit reviewing wrongful convictions, citing Trump funding cuts.",
       "insight": "This could be a sign of a larger issue with funding for important programs, potentially leading to more fraud and abuse.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T12:56:42.642Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -976,39 +996,19 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-21T22:13:56.065Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating the Tennessee Department of Children's Service.",
-      "insight": "This could indicate potential misconduct by the department and a need for oversight. Further investigation is needed to determine the extent of the issue and identify any other entities or individuals involved.",
-      "entities": [
-        "Tennessee Department of Children's Service"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "WZTV",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRzFQR2txRjR0cEV6QkpCcFlKNTNVVkFXMUZHV2NsOXZ5Q3ZJbmx6YUtPU0dqTGRKLWFSVWVKVEFkT193WUVyOVhuSVkxcFZjZWdsWHIwTmlwUkxXNWlJNkJnY0d2amVpZ2Z4a2ZpdHNhYUwpS2ZaQkphNk5uWEdmUHgxS2ZkWEVvcGVPc08xUUNzY1g3X19qWUhtdHBjU01B",
-      "id": "rf-1782080036069-8qlkt2l4m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T22:13:56.065Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T12:56:42.642Z"
+  "lastUpdated": "2026-07-02T15:14:31.197Z"
 }
