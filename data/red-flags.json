@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Program termination",
+      "description": "The Minnesota attorney general has shut down a unit reviewing wrongful convictions, citing Trump funding cuts.",
+      "insight": "This could be a sign of a larger issue with funding for important programs, potentially leading to more fraud and abuse.",
+      "entities": [
+        "Minnesota attorney general",
+        "Trump administration"
+      ],
+      "confidence": 80,
+      "priority": "High",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "id": "rf-1782997002646-x7bjpqjzq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-02T12:56:42.642Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Minnesota attorney general shuts unit reviewing wrongful convictions, cites Trump funding cut",
       "insight": "This raises concerns about the impact on justice and potential wrongful convictions. The unit's termination may lead to a backlog of cases and decreased scrutiny of convictions.",
@@ -975,26 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-21T22:13:56.065Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of programs due to fraud",
-      "insight": "The rise in reported fraud cases, particularly in Minnesota, suggests a need for increased scrutiny of programs and potential termination of those found to be fraudulent.",
-      "entities": [
-        "Minnesota AG's Office",
-        "Medicaid"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR0FhVkJLRXBwdnBuaEJqSWxmMXo1TUxKRFNBNUlUNFhqTUotYklKaW9RR3NmQTVzOVZhOEFwOGtzRXgyVENlcDlTWEVZUGVHdnVLTnk1OWpKU2J0MFA5N1VkVkYxOHpTaUlLdXpobk9sOWNvT3ZpTm9qMlBvSUtvY0xJamlERE1OWmdTNUlCeVFpTmlQU1c1UGllOWc5aWpHaDljekZUd2d4VlhZMnBkRU84LXhJOW83a2lF0gHAAUFVX3lxTE5BemtGZTQ0RWpBTGs1cHQwV1BSOXc2SWd5NzhBb25BekNXR1VncmNNaEdpNjR6MzNyOGVOVGdzeWdCR1Fvdm1udGZpaFg3OGtnZTVVUnZNTFc5OU5PWlFPc2liNElIY1RlYVB0blp5ZU5qTlRSVFVQbnNpamMtQXA4aE1BcGtOMVE2cTlFN2tRaFlPTDBMSlFwTG15aTlLZWFJaWhyN1Iyc0Z4NWJJd2MzdVhZV0NGMGlJQ3JzQXdCcQ",
-      "id": "rf-1782060280761-gnjyjfnrb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-21T16:44:40.756Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1003,11 +1003,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T10:36:56.452Z"
+  "lastUpdated": "2026-07-02T12:56:42.642Z"
 }
