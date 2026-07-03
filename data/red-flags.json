@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "election integrity",
+      "description": "FBI involvement in Georgia 2020 election investigation",
+      "insight": "The FBI's involvement in the Georgia 2020 election investigation raises concerns about election integrity and potential bias.",
+      "entities": [
+        "FBI",
+        "Georgia"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNc0Nxa2xZNHJiWmxSZjUySWxBM0w4MUxXUGxEUVpZbEVrY21rQ0o1YlVHc3kyYlRIdmxnYURtdGxwSjhQc1ZROS0ya192WDFITTl0Qmg5cVo4UjdnSVJhcm5WUXNQQ1BweldCOGw2RlBjTTFvNFE1M3BQNlBVcVBmUW5TTXhSM1VrVldsMzNJMy1MRnJ2Snc",
+      "id": "rf-1783112633976-zshfecjgl",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-03T21:03:53.973Z",
+      "isNew": true
+    },
+    {
+      "type": "election integrity",
       "description": "The FBI's involvement in investigating election records in Fulton County, Georgia, raises concerns about election integrity.",
       "insight": "The surge of 260 analysts to examine election records in Fulton County, Georgia, indicates a high level of scrutiny and potential concern about election integrity.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-03T19:18:26.840Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election interference",
@@ -974,30 +994,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-23T23:07:59.058Z",
       "isNew": false
-    },
-    {
-      "type": "bank freeze",
-      "description": "Brazil freezes $125M in probe of bank controlled by evangelical leader",
-      "insight": "This suggests potential financial irregularities and regulatory scrutiny in Brazil's banking sector.",
-      "entities": [
-        "Brazilian bank"
-      ],
-      "confidence": 75,
-      "priority": "medium",
-      "source": "UPI",
-      "sourceUrl": "https://www.upi.com/brazil-freezes-125m-in-probe-of-bank-controlled-by-evangelical-leader",
-      "id": "rf-1782251273993-hriguuorz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T21:47:53.989Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1007,6 +1007,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1024,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-03T19:18:26.840Z"
+  "lastUpdated": "2026-07-03T21:03:53.973Z"
 }
