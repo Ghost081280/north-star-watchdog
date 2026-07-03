@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI has launched an investigation into the 2020 Georgia election, with a focus on Fulton County.",
+      "insight": "This investigation may indicate a larger pattern of election irregularities or fraud, and warrants further examination.",
+      "entities": [
+        "FBI",
+        "Georgia"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CNN",
+      "sourceUrl": "https://www.cnn.com/2026/07/02/politics/fbi-georgia-election-investigation/index.html",
+      "id": "rf-1783046727086-wudub73ma",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-03T02:45:27.081Z",
+      "isNew": true
+    },
+    {
+      "type": "Theft Charges",
+      "description": "A non-profit organization has been charged with theft in a case against Harding Smith.",
+      "insight": "This charge may indicate a pattern of financial mismanagement or corruption within the non-profit sector, and warrants further investigation.",
+      "entities": [
+        "Harding Smith",
+        "Non-profit"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "hometownsource.com",
+      "sourceUrl": "https://hometownsource.com/2026/07/02/nonprofit-now-charged-with-theft-in-case-against-harding-smith/",
+      "id": "rf-1783046727086-gwn45d852",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-03T02:45:27.081Z",
+      "isNew": true
+    },
+    {
       "type": "election investigation",
       "description": "The FBI's investigation into Georgia's 2020 presidential election involves hundreds of analysts.",
       "insight": "This investigation suggests that there may be concerns about the integrity of the election process.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T23:04:26.558Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential election fraud",
@@ -37,7 +77,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-02T23:04:26.558Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -954,61 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-23T11:59:51.841Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal judge has blocked a DOJ investigation into Minnesota state and city leaders, citing that the investigation was 'blatantly unlawful'.",
-      "insight": "This development raises concerns about the potential for abuse of power and the importance of ensuring that investigations are conducted lawfully. I will continue to monitor this situation and track any further developments.",
-      "entities": [
-        "Minnesota state leaders",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Judge Throws Out ‘Blatantly Unlawful’ DOJ Subpoeana Targeting Walz, Other Minnesota Dems - Talking Points Memo",
-      "sourceUrl": "https://talkingpointsmemo.com/news/judge-throws-out-blantantly-unlawful-doj-subpoena-targeting-walz-other-minnesota-dems",
-      "id": "rf-1782190752128-zoihxscuj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T04:59:12.124Z",
-      "isNew": false
-    },
-    {
-      "type": "potential corruption",
-      "description": "Federal judge blocks DOJ subpoenas issued to Gov. Walz and Minneapolis mayor, suggesting potential corruption or abuse of power",
-      "insight": "This development raises concerns about the integrity of Minnesota's government and the potential for corruption. Further investigation is needed to uncover any wrongdoing.",
-      "entities": [
-        "Minnesota Officials",
-        "DOJ"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "The Washington Post",
-      "sourceUrl": "https://www.washingtonpost.com/politics/2026/06/22/federal-judge-rejects-doj-subpoenas-issued-gov-walz-minneapolis-mayor/",
-      "id": "rf-1782173067296-3xxnyt454",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T00:04:27.292Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-02T23:04:26.558Z"
+  "lastUpdated": "2026-07-03T02:45:27.081Z"
 }

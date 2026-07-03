@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-21T11:45:15.501Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-21T14:06:11.425Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-02T23:04:26.556Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-03T02:45:27.079Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in Egg Settlement?",
-    "What other organizations is Malik Beasley connected to?",
-    "What other organizations is John Brennan connected to?",
     "Where did the $ millions allegedly go in Minnesota Medicaid fraud crackdown?",
     "Where did the 10 arrests allegedly go in Federal sex trafficking investigation?",
     "Where did the $0 allegedly go in Nancy Guthrie Investigation?",
@@ -558,7 +555,10 @@
     "Where did the $0 allegedly go in DOJ Campaign Finance Investigation into Sen. Ruben Gallego?",
     "Where did the $0 allegedly go in Minnesota DHS fraud whistleblower allegations?",
     "Where did the $0 allegedly go in FBI investigation into 2020 Georgia election?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Harding Smith connected to?",
+    "Where did the None allegedly go in 2020 Georgia Election Investigation?",
+    "Where did the None allegedly go in LAHSA Funding Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2847,
-    "articlesProcessed": 141800,
-    "redFlagsFound": 3290,
+    "totalScans": 2848,
+    "articlesProcessed": 141850,
+    "redFlagsFound": 3292,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-02T23:04:26.556Z",
-  "lastUpdated": "2026-07-02T23:04:26.557Z"
+  "lastReflection": "2026-07-03T02:45:27.079Z",
+  "lastUpdated": "2026-07-03T02:45:27.080Z"
 }
