@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI's major personnel surge into Georgia's 2020 election investigation suggests significant concerns about election integrity.",
+      "insight": "The large-scale investigation indicates potential widespread issues with the 2020 election in Georgia.",
+      "entities": [
+        "FBI",
+        "Georgia"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple sources",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN7BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA?oc=5",
+      "id": "rf-1783091392553-t7mprciv2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-03T15:09:52.550Z",
+      "isNew": true
+    },
+    {
       "type": "program_investigation",
       "description": "The FBI's involvement in Fulton County's 2020 election investigation and the ongoing Medicaid fraud investigations in Minnesota.",
       "insight": "These investigations suggest a need for closer scrutiny of election processes and Medicaid programs.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-03T12:08:22.760Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -973,27 +993,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-23T15:17:04.476Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are ongoing into various individuals and organizations, including Tesla, LAUSD, and Minnesota officials.",
-      "insight": "These investigations suggest a pattern of potential wrongdoing and lack of accountability. Further investigation is needed to uncover the extent of the issues.",
-      "entities": [
-        "Tesla",
-        "LAUSD",
-        "Minnesota officials"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://www.wsj.com/articles/exclusive-fatal-tesla-crash-into-texas-home-now-under-federal-safety-investigation-2026-06-22",
-      "id": "rf-1782215991845-2xectvta3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T11:59:51.841Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,11 +1003,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-03T12:08:22.760Z"
+  "lastUpdated": "2026-07-03T15:09:52.550Z"
 }
