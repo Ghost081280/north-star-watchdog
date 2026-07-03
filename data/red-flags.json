@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_investigation",
+      "description": "The FBI's involvement in Fulton County's 2020 election investigation and the ongoing Medicaid fraud investigations in Minnesota.",
+      "insight": "These investigations suggest a need for closer scrutiny of election processes and Medicaid programs.",
+      "entities": [
+        "Fulton County",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI, Minnesota DHS",
+      "sourceUrl": "https://eciks.org/fbi-surges-260-analysts-to-georgia-2020-election-probe-in-fulton-county/",
+      "id": "rf-1783080502764-j4mdb2lmo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-03T12:08:22.760Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The FBI has launched an investigation into the 2020 Georgia election, with a focus on Fulton County.",
       "insight": "This investigation may indicate a larger pattern of election irregularities or fraud, and warrants further examination.",
@@ -974,34 +994,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-23T11:59:51.841Z",
       "isNew": false
-    },
-    {
-      "type": "resignation",
-      "description": "LAUSD superintendent Alberto Carvalho resigned amid an FBI investigation.",
-      "insight": "This resignation suggests potential wrongdoing or lack of confidence in Carvalho's leadership. Further investigation is needed to determine the circumstances surrounding his resignation.",
-      "entities": [
-        "Alberto Carvalho",
-        "LAUSD"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/alberto-carvalho-resigns-lausd-superintendent-fbi-investigation/",
-      "id": "rf-1782215991845-37wj5uq65",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T11:59:51.841Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1022,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-03T09:56:08.631Z"
+  "lastUpdated": "2026-07-03T12:08:22.760Z"
 }
