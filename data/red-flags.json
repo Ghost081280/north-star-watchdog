@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Corruption",
+      "description": "A Gavin Newsom appointee has pleaded guilty to corruption, highlighting the need for continued scrutiny of government officials.",
+      "insight": "This case highlights the importance of monitoring government officials for signs of corruption. Further investigation is needed to determine the extent of the corruption and whether others were involved.",
+      "entities": [
+        "Gavin Newsom",
+        "California State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2024/07/03/gavin-newsom-appointee-pleads-guilty-to-corruption/",
+      "id": "rf-1783198533160-7588ow680",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T20:55:33.157Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "The 'Shariah compliant' home scam that lost in Minnesota court may be related to a shell company.",
       "insight": "This could be a sign of a larger scheme to defraud people.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T19:08:47.022Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Federal Investigation",
@@ -969,41 +989,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-27T12:08:38.177Z",
       "isNew": false
-    },
-    {
-      "type": "fugitive arrest",
-      "description": "Abdikerm Eidleh was arrested in Somalia for his alleged role in a $250 million fraud scheme",
-      "insight": "The ease with which fugitives can flee to other countries and evade capture for extended periods highlights the need for continued international cooperation in fraud investigations.",
-      "entities": [
-        "Abdikerm Eidleh",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdnhvWGhiT0VoZVdXUjFuS0QtSVBROTZ4T3hFclJPRzhFdzh6MkNrZ1FoczhxS2ZZSHpaU21VTl9rQXBQSmU4ZUY0UUJOZmUzRXc2R05HLWRTNlE1NEpCOTlFSUNfWERXTUtsTjlFcmVkaUc4MDUzNG1hYTM3Q0dwUHZ3dGN4RmJuN0tPR3JyWQ?oc=5",
-      "id": "rf-1782554781566-0635ow31d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-27T10:06:21.564Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T19:08:47.022Z"
+  "lastUpdated": "2026-07-04T20:55:33.157Z"
 }
