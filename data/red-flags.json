@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "potential election interference",
+      "description": "The FBI's investigation into the 2020 election in Georgia raises concerns about potential election interference.",
+      "insight": "The investigation highlights the need for increased scrutiny of election processes to prevent interference.",
+      "entities": [
+        "FBI",
+        "Georgia election officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/jul/03/fbi-orders-260-staffers-to-georgia-to-assist-with-2020-election-investigation",
+      "id": "rf-1783166774774-54r07mz41",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T12:06:14.770Z",
+      "isNew": true
+    },
+    {
+      "type": "potential healthcare fraud",
+      "description": "The Medicaid fraud crackdown in Minnesota raises concerns about potential healthcare fraud.",
+      "insight": "The crackdown highlights the need for increased oversight of healthcare programs to prevent fraud.",
+      "entities": [
+        "Minnesota DHS",
+        "healthcare providers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Eden Prairie Local News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ1R1N0pRZ1A3YUxjeVVPX21mVHhLcVBjOUppSkRNeWhBS19LQ1pXblp3NDh0Q0JGcG9JOVhRLWJWMkZwRnNwdExsVDg2X0VIaVRoalNDOFJnSVdtLVppQmh5OGZjLU54OExYN29FckdtS1VKUy1aQjVqbEdyeHo0SEhRLU5QaGVLalIxV1R0R3ZWYVNLYU9hbkpGZEwtV1lUNVpyRmRiemljLWZyR0JxRHNjZGtmNlM1M1hfeXVBVXBCQXp3TXM2TnI4QmVHaE1FLWxhMi05SC00UQ",
+      "id": "rf-1783166774774-7wiskf5ux",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T12:06:14.770Z",
+      "isNew": true
+    },
+    {
       "type": "potential corruption",
       "description": "Gavin Newsom's appointee was involved in a corruption probe and wore an FBI wire.",
       "insight": "This suggests potential corruption within the California government and the need for further investigation.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T10:08:18.267Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election irregularities",
@@ -949,54 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-26T16:15:17.226Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential for program termination due to fraud",
-      "insight": "The recent charges and investigations into Medicaid providers in Minnesota suggest a potential for program termination if fraud is not addressed.",
-      "entities": [
-        "Minnesota DHS",
-        "Medicaid providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Bring Me The News",
-      "sourceUrl": "https://bringme.thenews.com/rss/articles/CBMiwwFBVV95cUxNVFpEeHlRUUJRTmlNeG1DbkxzWWN6NEc0aUNRZlZfZEFKcjRnVEdjTU5JQWZQTUdvbF94U3hCcWJWcUh4blNXeENXa05lQkpBSW5TRDZSY2puRFkzT2xmVU0tSHhlcDRuMTZlN2YwVUkyX3lHcFZHOEIxWFdaREdUNENUU0NIRURfNmhTaTJ3dWpYcG96aVdkczBjdDdGSm1KTU1Pa3NoREl6cUQyc2J3S1pUY3NIZmhSRFZ3TGNfSDZHYmM",
-      "id": "rf-1782423965801-7kotpmbc5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-25T21:46:05.797Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI and Santa Maria PD investigation leads to arrest for child sexual abuse material",
-      "insight": "This investigation may be related to a larger pattern of child exploitation, and further investigation is needed to uncover the scope of the issue.",
-      "entities": [
-        "FBI",
-        "Santa Maria PD"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Santa Maria Times",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOdUMxcmFGY1FkWk1oYnhzV2FiTkNBMC1fdUpxMko1aDA4bFBIWUdWRWN5MnhnSXhxdHFBcS1DYTIwWnoxVjZjRUVCUl9rODgtWTB0emtCY1RoVm5IdllRaG40T2NoeVA1T2xBSE9HSHJDTm1tY3drMEtmSmJBeGYwMHp0OHVwckxLT2hhTUIzRzROVTB5V2xZd1M2Tjl4NWZFRzhOUVpnaWRWbUhEd3hHUVV6OU5JY3dYN2dXWHB1WVJaY2ZOc0EyeUVoNFYzWjNoWUlwbnp2RFE3a29abU9QdWE3bV9kazktYmV0NndjckRvOXpSNVkxM1ZKNFVhSVg4bTZ1VnpOc1pTS1BwTEdQNkpnQknSAZoCQVVfeXFMUHdRWDRhZnM1RF9SZUp0cmlnTW9oWks1YXdhcExpVFh5ZVhCZ0JUU0NVTkJ4QUQ0MllabUdlTG5ZNUwxZWJ2M1hTdmR5cVhUQ2sxelVPTG53M0RWcUNwMzZfN3pSNVJzc0tQSVphbkQ5TUkxM21fYjBnRTZZU01nQlIzbzZsM3UwZEExQnhETDVQdWV6REVLSDRHUjFDM1drNnp1Rzh5LW9uOFRVNW9JRTVOS0VKeVhzZk1DRkw2ZThOMDBtSGxLYkFMZ2lUdzRCYlpabVlDeXl4eFFidnBDZDE5Z1RNRVd2aVdoclVlWHIzRU5GcDM5T2g3cS1vS2lqZ0R2dFE4b3dfaVRrNTgzUkkzYWpEeUdaUWNR",
-      "searches": [
-        "child exploitation",
-        "federal investigation"
-      ],
-      "id": "rf-1782377929206-2ri505qk2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-25T08:58:49.202Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -1023,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T10:08:18.267Z"
+  "lastUpdated": "2026-07-04T12:06:14.770Z"
 }
