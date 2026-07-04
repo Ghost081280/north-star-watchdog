@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "election investigation",
+      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, raises concerns about the integrity of the electoral process.",
+      "insight": "The investigation suggests that there may have been irregularities in the 2020 election in Fulton County, Georgia. Further investigation is needed to determine the extent of any potential wrongdoing.",
+      "entities": [
+        "Fulton County",
+        "Georgia"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN7BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA?oc=5",
+      "id": "rf-1783139675418-yusrc2a7r",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T04:34:35.415Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
+      "description": "The Medicaid fraud crackdown in Eden Prairie, Minnesota, raises concerns about the abuse of Medicaid funds.",
+      "insight": "The crackdown suggests that there may have been widespread abuse of Medicaid funds in Eden Prairie, Minnesota. Further investigation is needed to determine the extent of any potential wrongdoing.",
+      "entities": [
+        "Eden Prairie",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Minnesota DHS",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ1R1N0pRZ1A3YUxjeVVPX21mVHhLcVBjOUppSkRNeWhBS19LQ1pXblp3NDh0Q0JGcG9JOVhRLWJWMkZwRnNwdExsVDg2X0VIaVRoalNDOFJnSVdtLVppQmh5OGZjLU54OExYN29FckdtS1VKUy1aQjVqbEdyeHo0SEhRLU5QaGVLalIxV1R0R3ZWYVNLYU9hbkpGZEwtV1lUNVpyRmRiemljLWZyR0JxRHNjZGtmNlM1M1hfeXVBVXBCQXp3TXM2TnI4QmVHaE1FLWxhMi05SC00UQ?oc=5",
+      "id": "rf-1783139675418-75pjy5fxn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T04:34:35.415Z",
+      "isNew": true
+    },
+    {
       "type": "Potential Election Fraud",
       "description": "The FBI's investigation into Georgia's 2020 election has raised concerns about potential election fraud.",
       "insight": "I suspect that this investigation may uncover significant irregularities in the election process, potentially impacting the outcome of the election. Further investigation is needed to determine the extent of any fraud.",
@@ -17,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T00:14:47.782Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election integrity",
@@ -117,26 +157,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-03T15:09:52.550Z",
-      "isNew": false
-    },
-    {
-      "type": "program_investigation",
-      "description": "The FBI's involvement in Fulton County's 2020 election investigation and the ongoing Medicaid fraud investigations in Minnesota.",
-      "insight": "These investigations suggest a need for closer scrutiny of election processes and Medicaid programs.",
-      "entities": [
-        "Fulton County",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI, Minnesota DHS",
-      "sourceUrl": "https://eciks.org/fbi-surges-260-analysts-to-georgia-2020-election-probe-in-fulton-county/",
-      "id": "rf-1783080502764-j4mdb2lmo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-03T12:08:22.760Z",
       "isNew": false
     },
     {
@@ -974,40 +994,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-24T16:19:56.321Z",
       "isNew": false
-    },
-    {
-      "type": "Bribery",
-      "description": "Frank Carone, former NYC Mayor Eric Adams' chief of staff, arrested",
-      "insight": "This suggests corruption within high-level NYC government officials",
-      "entities": [
-        "Frank Carone",
-        "Eric Adams"
-      ],
-      "confidence": 95,
-      "priority": "high",
-      "source": "FOX 5 New York",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTEVGZ3E5Yi1oLVEwS0JkdVJSN25EUElDVGZPMURseGFMRXRZM2Z3TkUyT1RpbjBmcWNOQnVPQWtiQ3YzOHl1M1JEeDB0dklidVg5WmFVMHh3OEUwOHI0djhLb3lkdUk5X0tMVTB2ZDZya0ZZMWRBR0FDelRySE9RRi1wdElWd0JkYjRlYjc3aS1GUEl1THhYMlRVMzI2d0sya0hpdtIBrAFBVV95cUxNNjcxQ0s3Z3A2WEtmX3pRMHVUclZKcHVSWlZaTDZydVdoa0ZTVFlDU3BxQ0lsSDBONkphaVlyTHFhNW52azl0WktuOEl4ZXVac2JSaHAwdmpfV3RwUExjNjRYNkdBT2FWUkpycHlVR3FGcjNPVUlhb2FQajlTNW5qbGhKYkQ2b0lGUXdhZmVmdTJsTEZTUnotZUJBNDRla3RGRThVckZNLVlHVmRu",
-      "id": "rf-1782317996325-kxcc0908n",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-24T16:19:56.321Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1024,5 +1025,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T00:14:47.782Z"
+  "lastUpdated": "2026-07-04T04:34:35.415Z"
 }
