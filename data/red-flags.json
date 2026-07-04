@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "election irregularities",
+      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has uncovered potential irregularities.",
+      "insight": "The investigation highlights the need for transparency and accountability in the electoral process.",
+      "entities": [
+        "FBI",
+        "Fulton County"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN7BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA",
+      "id": "rf-1783151084372-dgfpzwwkq",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T07:44:44.368Z",
+      "isNew": true
+    },
+    {
       "type": "election investigation",
       "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, raises concerns about the integrity of the electoral process.",
       "insight": "The investigation suggests that there may have been irregularities in the 2020 election in Fulton County, Georgia. Further investigation is needed to determine the extent of any potential wrongdoing.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T04:34:35.415Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T04:34:35.415Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential Election Fraud",
@@ -975,25 +995,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-24T22:16:11.273Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Seven providers charged for billing $700K in false claims",
-      "insight": "This suggests a large-scale healthcare fraud scheme in Minnesota",
-      "entities": [
-        "Seven Minnesota Providers"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KNSI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPa201emNhaFN3VlZycU15S3Q2SWhZbnZiU0NYaWRSTGg5U29aeG9KeDdDYk9Sek9IUTlwMzRvMHlXdTl2WUZxOVI5Q3NSeVhJeXU5U3dhXzNmSXpGa3JzSF8ydTBlWDd1aUp4dExYWkdQell4Tk9aWWlSeEVCT252R2ZqTWU2R1EyVXladnM0RjQ3dHRFakRzMEZGTmJPN0RPX3BSekRuak10SnU3OEZ6YURaZzVxMTZtV0xqRjBlY1RoaUFVLU43WnpsOEhzN3E3REFJNG1ieVJDUnFqUEJIS3BGS2NJdVRTQThkLU1DY2phaG1Oa0Z6My1PQlZrdnpIdElJZDNxTjVSdmk3aUdDNE130gGSAkFVX3lxTE9rbTV6Y2FoU3dWVnJxTXlLdDZJaFludmJTQ1hpZFJMaDlTb1p4b0p4N0NiT1J6T0hROXAzNG8weVd1OXZZRnE5UjlDc1J5WEl5dTlTd2FfM2ZJekZrcnNIXzJ1MGVYN3VpSnh0TFhaR1B6WXhOT1pZaVJ4RUJPbnZHZmpNZTZHUTJVeVp2czRGNDd0dEVqRHMwRkZOYk83RE9fcFJ6RG5qTXRKdTc4RnphRFpnNXExNm1XTGpGMGVjVGhpQVUtTjdaemw4SHM3cTdEQUk0bWJ5UkNScWpQQkhLcEZLY0l1VFNBOGQtTUNjamFobU5rRnozLU9CVmt2ekh0SUlkM3FONVJ2aTdpR0M0TXc",
-      "id": "rf-1782317996325-y5ejy4l4m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-24T16:19:56.321Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,11 +1005,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1025,5 +1026,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T04:34:35.415Z"
+  "lastUpdated": "2026-07-04T07:44:44.368Z"
 }
