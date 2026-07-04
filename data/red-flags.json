@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI's investigation into the 2020 presidential election in Georgia has raised concerns about potential corruption and election tampering.",
+      "insight": "As an investigator, I am concerned about the potential implications of this investigation. If corruption or election tampering is found, it could have significant consequences for the democratic process.",
+      "entities": [
+        "Gavin Newsom",
+        "Alexis Podesta"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1783185376280-0ddwcnebv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T17:16:16.276Z",
+      "isNew": true
+    },
+    {
       "type": "corruption",
       "description": "The California Governor's Office is under investigation for corruption.",
       "insight": "This could be a sign of a larger issue with corruption in California politics.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T16:00:45.543Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential election interference",
@@ -969,30 +989,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-27T07:48:24.410Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Feeding Our Future fraud scheme is being investigated by the DOJ, with allegations of wire fraud and money laundering",
-      "insight": "I suspect that there may be more individuals involved in the scheme who have not yet been apprehended. Further investigation is needed to uncover the full extent of the scheme",
-      "entities": [
-        "Abdikerm Eidleh",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Sahan Journal",
-      "sourceUrl": "https://www.sahanjournal.com/articles/abdikerm-eidleh-key-figure-in-feeding-our-future-fraud-apprehended-in-somalia/",
-      "id": "rf-1782535938684-ejfimereg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-27T04:52:18.680Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1018,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T16:00:45.543Z"
+  "lastUpdated": "2026-07-04T17:16:16.276Z"
 }
