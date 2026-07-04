@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "election irregularities",
+      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has raised concerns about potential election irregularities.",
+      "insight": "The deployment of 260 analysts to assist with the probe suggests that the FBI has identified potential issues that require further investigation. This development warrants close monitoring to ensure the integrity of the electoral process.",
+      "entities": [
+        "Fulton County",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU3NEY2NaNGw4M01CbXd2NVVrUzJ4YXJMdi1WdVhVYjV2YjJEaEdPUVNZLUc2eVZuekl3SFJIRUVWWTVOVWNKQnVzOHdVMDVhU3Zud1ZNUEVFQmNocVpNcHF2Wk9zcFlhNUc0REdscUpCV21mX0czLVpldVF3cTNIWWJreWxVeTFiYWZPNXNYTEQ1aHdHbEo5dWtjaWlsTHBLT2NUSzR2UG13LXg3clRISFZEbUFVTTdZX0E",
+      "id": "rf-1783202265976-95p9wu7nj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T21:57:45.973Z",
+      "isNew": true
+    },
+    {
       "type": "Corruption",
       "description": "A Gavin Newsom appointee has pleaded guilty to corruption, highlighting the need for continued scrutiny of government officials.",
       "insight": "This case highlights the importance of monitoring government officials for signs of corruption. Further investigation is needed to determine the extent of the corruption and whether others were involved.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T20:55:33.157Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "shell company",
@@ -137,26 +157,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T10:08:18.267Z",
-      "isNew": false
-    },
-    {
-      "type": "election irregularities",
-      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has uncovered potential irregularities.",
-      "insight": "The investigation highlights the need for transparency and accountability in the electoral process.",
-      "entities": [
-        "FBI",
-        "Fulton County"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN7BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA",
-      "id": "rf-1783151084372-dgfpzwwkq",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T07:44:44.368Z",
       "isNew": false
     },
     {
@@ -993,17 +993,17 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T20:55:33.157Z"
+  "lastUpdated": "2026-07-04T21:57:45.973Z"
 }
