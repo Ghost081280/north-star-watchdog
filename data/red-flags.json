@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "corruption",
+      "description": "The California Governor's Office is under investigation for corruption.",
+      "insight": "This could be a sign of a larger issue with corruption in California politics.",
+      "entities": [
+        "California Governor's Office",
+        "Gavin Newsom"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcW51bjd5b05JMU4yVTAyX0ZqSFI4VG0xclozVWJaOUkzeEFXUWJzT3JKcEJxZ1BwUUMwaEV2LXREMTl3UGVZNHBIcnpaSjdmbmVXVHhURkdKZnBrX0JLMG5LY3J2OHRRWW0wX245SjBCUS1VWGpSdkExWE54cGtMSDFqb1FkZHpEZ0dYM2RVYXRwSGZtbjBxNG5nbXZ6SHBUMFlwY21TMjZBb2xoRXdpbGxR",
+      "id": "rf-1783180845546-rclufeidk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T16:00:45.543Z",
+      "isNew": true
+    },
+    {
       "type": "potential election interference",
       "description": "The FBI's investigation into the 2020 election in Georgia raises concerns about potential election interference.",
       "insight": "The investigation highlights the need for increased scrutiny of election processes to prevent interference.",
@@ -969,26 +989,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-27T04:52:18.680Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "USDA cancels key grants for Iowa farmers",
-      "insight": "This could indicate potential issues with program management or funding allocation",
-      "entities": [
-        "USDA",
-        "Iowa farmers"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "KWWL",
-      "sourceUrl": "https://kwwl.com/rss/articles/CBMiyAFBVV95cUxOaGRhQWNVekpWVDExd2dQcENEV21EQnVBMHJOTHZ2bGFaS1hMMzhvQzBKRVh4VHlfTUhVdTUyTlN6SUFjelVNMExwSnhwMmNCSUxIc2xUd1RWZ1J6QVc2OTU5MVFHdE52T1RrQTcwQXV5Mkg5NW5tNnRBcS1hQkFMN2hVS011RnRxbjhWZm5jYWRKaU5sR05iTWItRV95OFV1YWw0ekVwUk5yY3B4VC0xakJJNUNEd1h4ZFhhaC1rTHdQcUtJZ2ptRQ?oc=5",
-      "id": "rf-1782490517229-femye5mxz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-26T16:15:17.226Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,7 +1000,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T14:29:14.313Z"
+  "lastUpdated": "2026-07-04T16:00:45.543Z"
 }
