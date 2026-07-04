@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential Election Fraud",
+      "description": "The FBI's investigation into Georgia's 2020 election has raised concerns about potential election fraud.",
+      "insight": "I suspect that this investigation may uncover significant irregularities in the election process, potentially impacting the outcome of the election. Further investigation is needed to determine the extent of any fraud.",
+      "entities": [
+        "Georgia Secretary of State"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.fbi.gov/",
+      "id": "rf-1783124087786-quxt70qvj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-04T00:14:47.782Z",
+      "isNew": true
+    },
+    {
       "type": "election integrity",
       "description": "FBI involvement in Georgia 2020 election investigation",
       "insight": "The FBI's involvement in the Georgia 2020 election investigation raises concerns about election integrity and potential bias.",
@@ -975,29 +994,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-24T16:19:56.321Z",
       "isNew": false
-    },
-    {
-      "type": "large-scale fraud",
-      "description": "A $3.7B Medicare fraud scheme was uncovered, and a suspect was caught in Turkey and sent to Florida.",
-      "insight": "This large-scale fraud scheme warrants further investigation into the individuals and organizations involved.",
-      "entities": [
-        "Unnamed suspect"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Baltimore Sun",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY0hZb1prLXZNQTl2Q19pTHpJMmMyZDVCT0x0dUhaRkp5ck9zZ3BKV3NQM1hnNjR4WWY5OW1qem9rVUE3Rm1wOGlZY1FZWXY3d2JSZjJpUE5qSEgtTzMycnJoNmdWRDhralRSZmNSRG5BS2NJZ2ZXXzVBV3VNQ21kbGtJa1dxVlRVTFpvMHM3T29jaUh4Q0pRR0VpN0cwdTA4dkdkdVBIRklsd2FId0tvX25jOUpsdUJNLVVJ",
-      "id": "rf-1782256079062-44lxuct6a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-23T23:07:59.058Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1005,7 +1006,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1022,5 +1024,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-03T23:00:57.925Z"
+  "lastUpdated": "2026-07-04T00:14:47.782Z"
 }
