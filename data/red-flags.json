@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple fraud allegations have been made against various individuals and organizations, including a college hoops player and Alarum Technologies.",
+      "insight": "These allegations suggest a pattern of fraudulent activity that warrants further investigation.",
+      "entities": [
+        "Ex-College Hoops Player",
+        "Alarum Technologies"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Eurasia Review, Front Office Sports",
+      "sourceUrl": "https://www.eurasiareview.com/gop-lawmaker-seeks-omar-communications-after-eidleh-arrest-2026-07-05/",
+      "id": "rf-1783293077951-dtd23wc3o",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T23:11:17.948Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating Alarum Technologies, which has led to a stock rout and service suspension.",
       "insight": "This investigation raises concerns about potential wrongdoing in the technology sector and the impact on investors.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T22:00:37.129Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "election interference",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T22:00:37.129Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -967,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-29T21:25:30.286Z",
       "isNew": false
-    },
-    {
-      "type": "federal indictment",
-      "description": "Former NBA players Malik Beasley and Ed Davis were indicted on federal charges related to an alleged sports betting scheme.",
-      "insight": "This case suggests potential organized crime involvement in professional sports betting. Further investigation into connections between individuals and organizations is warranted.",
-      "entities": [
-        "Malik Beasley",
-        "Ed Davis"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "U.S. Department of Justice",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLVkxYVMwMUZXSnRwTG9zaU9jRlJtS0dOU1l5MXZQT0FvdDBqa3pyakVuT0xYUkZhQVA2MkhZaEluRkstajFRekh1R3k5MUQxd0ZfZVJQcE5TMXlIOHlrR2hPT2k3VGJZa3FRNktlYmNqSktnZkZWaWRvbFEydkszOGhPenJCeHJmYTl2VEZPZmJDaFRITFRsMFZXaEhvbFJSSkJZVDRSYUp6R2x1UXc?oc=5",
-      "id": "rf-1782762901944-2vosytsfg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T19:55:01.939Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,9 +999,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1018,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-05T22:00:37.129Z"
+  "lastUpdated": "2026-07-05T23:11:17.948Z"
 }
