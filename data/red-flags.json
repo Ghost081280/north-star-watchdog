@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating Alarum Technologies, which has led to a stock rout and service suspension.",
+      "insight": "This investigation raises concerns about potential wrongdoing in the technology sector and the impact on investors.",
+      "entities": [
+        "Alarum Technologies"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Globes - Israel Business News",
+      "sourceUrl": "https://globes.com.il/business-news/alarum-technologies-slumps-following-fbi-probe",
+      "id": "rf-1783288837133-fzdckhl8x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T22:00:37.129Z",
+      "isNew": true
+    },
+    {
+      "type": "election interference",
+      "description": "The FBI is expanding its investigation into Georgia's 2020 election.",
+      "insight": "This investigation raises concerns about potential election interference and the integrity of the electoral process.",
+      "entities": [
+        "Georgia",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "95.5 WSB",
+      "sourceUrl": "https://95.5wsb.com/news/fbi-reportedly-expands-investigation-into-georgias-2020-election",
+      "id": "rf-1783288837133-4wz0cbw74",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T22:00:37.129Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Multiple federal investigations are underway, including probes into Alarum Technologies and Georgia's 2020 election.",
       "insight": "These investigations suggest a pattern of potential wrongdoing across various sectors, including technology and elections.",
       "entities": [
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T20:12:28.050Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -948,45 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-29T19:55:01.939Z",
       "isNew": false
-    },
-    {
-      "type": "large alleged fraud",
-      "description": "The alleged $9 billion fraud related to feeding programs in Somalia.",
-      "insight": "This case indicates potential large-scale corruption and misuse of funds. Further investigation into the individuals and organizations involved is necessary.",
-      "entities": [
-        "U.S. Department of State"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "U.S. Department of State",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MVVhpRGdCRGJVdHVKb3M5eTBjN0Fta3ZNNDk1VzQ3ckI4NlVGRUpTY29zVTdFQ19vdDRlUXV6QWpzTXgtNl9oYUJJdFdLZE5uY3c?oc=5",
-      "id": "rf-1782762901944-uvzh5l2pz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T19:55:01.939Z",
-      "isNew": false
-    },
-    {
-      "type": "federal indictment",
-      "description": "Malik Beasley and Ed Davis indicted on federal gambling charges",
-      "insight": "The indictment of high-profile NBA players on federal charges suggests a significant investigation into illegal sports betting, potentially involving point shaving and prop bets.",
-      "entities": [
-        "Malik Beasley",
-        "Ed Davis"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple sources",
-      "sourceUrl": "https://www.espn.com/nba/story/_/id/40255183/ex-nba-players-malik-beasley-ed-davis-indicted-gambling-case",
-      "id": "rf-1782754524966-sddbynigl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T17:35:24.962Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,7 +1000,8 @@
     "MN DHS Licensing",
     "MN Transparency",
     "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-05T20:12:28.050Z"
+  "lastUpdated": "2026-07-05T22:00:37.129Z"
 }
