@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations are underway, including probes into Alarum Technologies and Georgia's 2020 election.",
+      "insight": "These investigations suggest a pattern of potential wrongdoing across various sectors, including technology and elections.",
+      "entities": [
+        "Alarum Technologies",
+        "Georgia election officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "https://globes.co.il/en/article/alarum-technologies-slumps-following-fbi-probe-100139846/",
+      "id": "rf-1783282348054-2yjthwrod",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T20:12:28.050Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "Alarum Technologies is under FBI investigation",
       "insight": "The FBI investigation into Alarum Technologies may be related to allegations of fraud or other financial crimes. This could have implications for the company's operations and reputation.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T18:01:34.710Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "legislative_action",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T18:01:34.710Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud investigation",
@@ -967,25 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-29T17:35:24.962Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "The use of shell companies to facilitate fraud",
-      "insight": "The use of shell companies to facilitate fraud is a major concern, as it allows individuals to hide their involvement and avoid detection.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://redlakenationnews.com/2026/06/29/after-years-on-the-run-accused-recruiter-in-feeding-our-future-fraud-scheme-arrested-in-somalia/",
-      "id": "rf-1782744469875-66vbv43gv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T14:47:49.870Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,8 +1000,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-05T18:01:34.710Z"
+  "lastUpdated": "2026-07-05T20:12:28.050Z"
 }
