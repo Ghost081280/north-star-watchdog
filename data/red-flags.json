@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "election irregularities",
+      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has uncovered potential irregularities.",
+      "insight": "The investigation highlights the need for scrutiny of election processes to ensure integrity.",
+      "entities": [
+        "Fulton County",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU3NEY2NaNGw4M01CbXd2NVVrUzJ4YXJMdi1WdVhVYjV2YjJEaEdPUVNZLUc2eVZuekl3SFJIRUVWWTVOVWNKQnVzOHdVMDVhU3Zud1ZNUEVFQmNocVpNcHF2Wk9zcFlhNUc0REdscUpCV21mX0czLVpldVF3cTNIWWJreWxVeTFiYWZPNXNYTEQ1aHdHbEo5dWtjaWlsTHBLT2NUSzR2UG13LXg3clRISFZEbUFVTTdZX0E",
+      "id": "rf-1783210003619-f6pbwz3v6",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T00:06:43.614Z",
+      "isNew": true
+    },
+    {
       "type": "election interference",
       "description": "The FBI is investigating the 2020 election in Georgia and has assigned 260 staffers to the case.",
       "insight": "This investigation raises concerns about the integrity of the 2020 election and potential interference.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T22:59:29.178Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Medicaid fraud",
@@ -38,26 +58,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-04T22:59:29.178Z",
-      "isNew": true
-    },
-    {
-      "type": "election irregularities",
-      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has raised concerns about potential election irregularities.",
-      "insight": "The deployment of 260 analysts to assist with the probe suggests that the FBI has identified potential issues that require further investigation. This development warrants close monitoring to ensure the integrity of the electoral process.",
-      "entities": [
-        "Fulton County",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQU3NEY2NaNGw4M01CbXd2NVVrUzJ4YXJMdi1WdVhVYjV2YjJEaEdPUVNZLUc2eVZuekl3SFJIRUVWWTVOVWNKQnVzOHdVMDVhU3Zud1ZNUEVFQmNocVpNcHF2Wk9zcFlhNUc0REdscUpCV21mX0czLVpldVF3cTNIWWJreWxVeTFiYWZPNXNYTEQ1aHdHbEo5dWtjaWlsTHBLT2NUSzR2UG13LXg3clRISFZEbUFVTTdZX0E",
-      "id": "rf-1783202265976-95p9wu7nj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T21:57:45.973Z",
       "isNew": false
     },
     {
@@ -999,11 +999,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-04T22:59:29.178Z"
+  "lastUpdated": "2026-07-05T00:06:43.614Z"
 }

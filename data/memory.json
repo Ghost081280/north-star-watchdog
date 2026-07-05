@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-24T02:59:53.919Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-24T06:54:34.932Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-04T22:59:29.177Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-07-05T00:06:43.612Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2868,
-    "articlesProcessed": 142850,
-    "redFlagsFound": 3318,
+    "totalScans": 2869,
+    "articlesProcessed": 142900,
+    "redFlagsFound": 3320,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,26 +578,6 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
-    {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "election interference",
-          "description": "The FBI is investigating the 2020 election in Georgia and has assigned 260 staffers to the case.",
-          "insight": "This investigation raises concerns about the integrity of the 2020 election and potential interference.",
-          "entities": [
-            "FBI",
-            "Georgia"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "FBI",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN3BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA?oc=5"
-        }
-      ]
-    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-04T22:59:29.177Z",
-  "lastUpdated": "2026-07-04T22:59:29.177Z"
+  "lastReflection": "2026-07-05T00:06:43.612Z",
+  "lastUpdated": "2026-07-05T00:06:43.613Z"
 }
