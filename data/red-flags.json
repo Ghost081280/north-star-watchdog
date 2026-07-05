@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple allegations of fraud across various sectors",
+      "insight": "There is a concerning trend of fraud allegations across different industries, including healthcare and elections",
+      "entities": [
+        "Kerr Kriisa",
+        "Gavin Newsom"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "https://news.google.com",
+      "id": "rf-1783238147356-tajsat5ff",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-05T07:55:47.352Z",
+      "isNew": true
+    },
+    {
       "type": "election irregularities",
       "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, has uncovered potential irregularities.",
       "insight": "The investigation highlights the need for scrutiny of election processes to ensure integrity.",
@@ -968,27 +988,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-28T13:42:37.388Z",
       "isNew": false
-    },
-    {
-      "type": "international cooperation",
-      "description": "Arrest of suspect in Somalia highlights international cooperation in fraud investigations",
-      "insight": "The arrest of Abdikerm Eidleh in Somalia shows that fraudsters cannot escape justice by fleeing abroad. This cooperation between US and Somali authorities is crucial in combating cross-border fraud.",
-      "entities": [
-        "Abdikerm Eidleh",
-        "FBI",
-        "Somali authorities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/us/minnesota-man-captured-somalia-250m-child-nutrition-fraud-scheme",
-      "id": "rf-1782583280920-fbz7283up",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-27T18:01:20.917Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1000,7 +999,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-05T05:00:59.694Z"
+  "lastUpdated": "2026-07-05T07:55:47.352Z"
 }
