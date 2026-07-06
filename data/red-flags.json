@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "Potential hit-and-run",
+      "description": "Paul Pelosi is under investigation for a potential hit-and-run in Napa County",
+      "insight": "This incident raises concerns about the potential for cover-ups or special treatment for high-profile individuals. Further investigation is necessary to determine the facts of the case.",
+      "entities": [
+        "Paul Pelosi"
+      ],
+      "confidence": 60,
+      "priority": "medium",
+      "source": "The San Francisco Standard",
+      "sourceUrl": "https://www.sfstandard.com/",
+      "id": "rf-1783354751061-66b69cxbc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T16:19:11.059Z",
+      "isNew": true
+    },
+    {
+      "type": "Fraud allegations",
+      "description": "Ilhan Omar is under investigation for fraud",
+      "insight": "These allegations raise concerns about the integrity of public officials and the potential for abuse of power. Further investigation is necessary to determine the facts of the case.",
+      "entities": [
+        "Ilhan Omar"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Eurasia Review",
+      "sourceUrl": "https://www.eurasiareview.com/",
+      "id": "rf-1783354751061-p2ubz736l",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T16:19:11.059Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Alarum Technologies is under investigation by the FBI, leading to a stock rout and service suspension.",
       "insight": "The investigation into Alarum Technologies raises concerns about potential wrongdoing in the company's operations.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-06T12:03:21.371Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "potential fraud",
@@ -36,7 +74,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-06T12:03:21.371Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -943,50 +981,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-30T12:07:36.311Z",
       "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration's attempt to freeze funding for the Gateway Tunnel Project was deemed 'flagrantly' illegal by a federal judge.",
-      "insight": "This raises concerns about the Trump administration's actions and potential abuse of power. The Gateway Tunnel Project is a significant infrastructure project, and the funding freeze could have had major implications for the project's completion.",
-      "entities": [
-        "Trump administration",
-        "Gateway Tunnel Project"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "New Jersey Monitor",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWVmZlltRi1HbVhidlhPLVk1c09sNXBtVHR1ZTRmWFQ5TFNCdWM5T2laQThtNTBkb1pTTTc1S1dmVndRbFNLNklzS1F4VUJpb3NZRlNpdGNGb0E1LUVJemluMFBpenFRdm9yU3BTR2w2OTJ2eG9ZeGNNS1RFZFNiV2ZlalhPQQ",
-      "id": "rf-1782811871315-z3is5k83m",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T09:31:11.310Z",
-      "isNew": false
-    },
-    {
-      "type": "campaign_finance_violations",
-      "description": "US Representative Ruben Gallego is under investigation for campaign finance violations.",
-      "insight": "This raises concerns about the integrity of Gallego's campaign and potential misuse of funds. Campaign finance violations can have serious implications for politicians and their campaigns.",
-      "entities": [
-        "Ruben Gallego",
-        "US Representative"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3FnSXplSF8ybk1yNEhJLTZUZGJxcjJRWGprSlhfNXhzdm5jeTd1NGtPb3g3WThnR2JhTk1GY2xTelNkZHF6aTcydUpOeDk4ZERmY3I2X1NGc2NIekZmNWxKaGV0RmxtRHZmRlF4bFRPd0E2Q3ZzYUFzNnl0LVEtUi1VUk1Dblo0bnBKTlF5UVJCYXVGN0FzcldsTzVfUnZ5QmtmUFBrRjBGVEtTQ0hzY0EzMWFNUQ",
-      "id": "rf-1782811871316-kexle1y7k",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T09:31:11.310Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-06T12:03:21.371Z"
+  "lastUpdated": "2026-07-06T16:19:11.059Z"
 }
