@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations are ongoing, including into Alarum Technologies and Georgia's 2020 election.",
+      "insight": "These investigations suggest a heightened focus on financial and electoral integrity.",
+      "entities": [
+        "Alarum Technologies",
+        "Georgia election officials"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdUZ1N3NoZS11d01DSlBRbG5MOE1TQzEtSjIyYWR2RENmWXBnWXdWdnNPMzdjbUdaeXFZUzU0bVZGSG9QZjVDQTUweWlRVEN2eS1uT0tlUTg2NEpyOTEwWHZkekFLcHljS0M3TXRwd0RTTTFDYlJWbkNuTHJyaGtUVW9ab0NWMG9oZktPckZ5NHpwZ2VWQ0dR",
+      "id": "rf-1783306709651-89uw3wfy5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T02:58:29.648Z",
+      "isNew": true
+    },
+    {
       "type": "fraud allegations",
       "description": "Multiple fraud allegations have been made against various individuals and organizations, including a college hoops player and Alarum Technologies.",
       "insight": "These allegations suggest a pattern of fraudulent activity that warrants further investigation.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-05T23:11:17.948Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -967,26 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-29T21:25:30.286Z",
       "isNew": false
-    },
-    {
-      "type": "indictment",
-      "description": "Malik Beasley and Ed Davis indicted on federal gambling charges",
-      "insight": "This indicates a potential pattern of corruption in professional sports, specifically related to sports betting.",
-      "entities": [
-        "Malik Beasley",
-        "Ed Davis"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Yahoo Sports",
-      "sourceUrl": "https://sports.yahoo.com/malik-beasley-indicted-federal-prosecutors-gambling-related-sports-betting-scheme-20260629",
-      "id": "rf-1782768330290-nvq5oelbw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T21:25:30.286Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -999,7 +999,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-05T23:11:17.948Z"
+  "lastUpdated": "2026-07-06T02:58:29.648Z"
 }
