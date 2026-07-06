@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "FBI investigation into Alarum Technologies",
+      "insight": "This investigation may indicate a larger pattern of fraudulent activities in the tech industry. Further research is needed to determine the extent of the issue.",
+      "entities": [
+        "Alarum Technologies"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Globes",
+      "sourceUrl": "https://www.globes.co.il/en/article-alarum-technologies-slumps-following-fbi-probe-1001462106",
+      "id": "rf-1783322188446-eluh5jnsv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T07:16:28.443Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing, including into Alarum Technologies and Georgia's 2020 election.",
       "insight": "These investigations suggest a heightened focus on financial and electoral integrity.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-06T02:58:29.648Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -968,29 +987,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-29T22:55:21.115Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Ruben Gallego under investigation for campaign finance violations",
-      "insight": "This suggests a potential pattern of corruption in political campaigns, warranting further investigation into campaign finance practices.",
-      "entities": [
-        "Ruben Gallego"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Washington Examiner",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3FnSXplSF8ybk1yNEhJLTZUZGJxcjJRWGprSlhfNXhzdm5jeTd1NGtPb3g3WThnR2JhTk1GY2xTelNkZHF6aTcydUpOeDk4ZERmY3I2X1NGc2NIekZmNWxKaGV0RmxtRHZmRlF4bFRPd0E2Q3ZzYUFzNnl0LVEtUi1VUk1Dblo0bnBKTlF5UVJCYXVGN0FzcldsTzVfUnZ5QmtmUFBrRjBGVEtTQ0hzY0EzMWFNUQ",
-      "id": "rf-1782768330290-92kert9qm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T21:25:30.286Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,8 +1000,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-06T02:58:29.648Z"
+  "lastUpdated": "2026-07-06T07:16:28.443Z"
 }
