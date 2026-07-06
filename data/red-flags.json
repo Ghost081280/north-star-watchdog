@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Alarum Technologies is under investigation by the FBI, leading to a stock rout and service suspension.",
+      "insight": "The investigation into Alarum Technologies raises concerns about potential wrongdoing in the company's operations.",
+      "entities": [
+        "Alarum Technologies"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Globes",
+      "sourceUrl": "https://www.globes.co.il/en/article/alarm-technologies-slumps-following-fbi-probe-1001438457/",
+      "id": "rf-1783339401374-drjyawypg",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T12:03:21.371Z",
+      "isNew": true
+    },
+    {
+      "type": "potential fraud",
+      "description": "Kerr Kriisa, a former Big 12 Guard, was arrested in a multimillion-dollar fraud case.",
+      "insight": "The arrest of Kerr Kriisa raises concerns about potential wrongdoing in college sports.",
+      "entities": [
+        "Kerr Kriisa"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Heartland College Sports",
+      "sourceUrl": "https://heartlandcollegesports.com/2026/07/05/former-big-12-guard-kerr-kriisa-arrested-in-fbi-fraud-investigation/",
+      "id": "rf-1783339401374-i0jhqi4c5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-06T12:03:21.371Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "FBI investigation into Alarum Technologies",
       "insight": "This investigation may indicate a larger pattern of fraudulent activities in the tech industry. Further research is needed to determine the extent of the issue.",
@@ -17,7 +55,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-06T07:16:28.443Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -945,53 +983,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-30T09:31:11.310Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "The Justice Department's lawsuit against Minnesota over refusal to turn over SNAP data suggests potential issues with the state's administration of the program.",
-      "insight": "This could indicate a need for further investigation into Minnesota's handling of SNAP and potential vulnerabilities in the program.",
-      "entities": [
-        "Minnesota",
-        "Justice Department",
-        "SNAP"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbmpqckJrUzhVUFVnTmlfVXY5ZGZVNk81WnJsR3dxdWNZTWRjT3pwTU92VEZmLVM4djM0eUdfb1NvTlBETW0tblJnWXVsX3ZLR1hwYTQyRDVYdzdRQWZybVpXOFJxUjdvVlRIU3VzUUEtZVU1cnd0dF81SVlYVFhRTjZ0QmdEbkR6aTVmeUYwTXRDenhK?oc=5",
-      "id": "rf-1782795698820-uw54jdwx3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T05:01:38.816Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations into public figures have been launched in recent weeks, indicating a potential pattern of corruption and wrongdoing.",
-      "insight": "I notice that many of these investigations involve allegations of financial misconduct, which suggests that there may be a larger issue with financial transparency and accountability in the public sector. Further investigation is needed to determine the scope of this problem and identify potential solutions.",
-      "entities": [
-        "Ruben Gallego",
-        "Malik Beasley",
-        "Ed Davis"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Axios",
-      "sourceUrl": "https://www.axios.com/scoop-gallego-faces-federal-probe-over-campaign-spending",
-      "id": "rf-1782773721119-t21w04622",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-29T22:55:21.115Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,7 +995,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1018,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-06T07:16:28.443Z"
+  "lastUpdated": "2026-07-06T12:03:21.371Z"
 }
