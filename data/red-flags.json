@@ -1,22 +1,43 @@
 {
   "flags": [
     {
-      "type": "Government Incompetence",
-      "description": "The Minnesota government fraud scandal has raised concerns about government incompetence and failed leadership.",
-      "insight": "I see a pattern of government incompetence and failed leadership in Minnesota, which has led to a massive fraud scandal. Further investigation is needed to determine the extent of this scandal and to identify those responsible.",
+      "type": "federal investigation",
+      "description": "FBI investigation into Cyber Dive CEO for alleged misuse of funds",
+      "insight": "Potential for larger scheme or pattern of misuse",
       "entities": [
-        "Minnesota Government"
+        "Cyber Dive",
+        "FBI"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.theeconomicTimes.com",
-      "id": "rf-1783375974565-17j71lvhy",
+      "source": "The Business Journals",
+      "sourceUrl": "https://www.bizjournals.com/bizjournals/news/2026/07/06/former-cyber-dive-ceo-under-fbi-investigation.html",
+      "id": "rf-1783382805977-zpr2b6cvn",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-07-06T22:12:54.562Z",
+      "detectedAt": "2026-07-07T00:06:45.973Z",
+      "isNew": true
+    },
+    {
+      "type": "large-scale fraud",
+      "description": "$9B Somali fraud scandal in Minnesota",
+      "insight": "Potential for widespread corruption and misuse of funds",
+      "entities": [
+        "Minnesota government",
+        "Somali community"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://www.economictimes.com/news/politics/isnt-9b-somali-fraud-serious-to-you-gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing",
+      "id": "rf-1783382805977-7846qh5bt",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-07T00:06:45.973Z",
       "isNew": true
     },
     {
@@ -961,41 +982,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-30T15:26:22.487Z",
       "isNew": false
-    },
-    {
-      "type": "campaign spending irregularities",
-      "description": "Sen. Gallego is under federal investigation over campaign spending irregularities.",
-      "insight": "This suggests potential issues with campaign finance laws and possible misuse of campaign funds. Further investigation into Sen. Gallego's campaign finances and potential connections to other entities or individuals is necessary.",
-      "entities": [
-        "Sen. Gallego",
-        "Federal authorities"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Time Magazine",
-      "sourceUrl": "https://time.com/2026/06/30/sen-gallego-faces-probe-over-campaign-spending-what-to-know/",
-      "id": "rf-1782821256316-d5altc56o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T12:07:36.311Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-06T22:12:54.562Z"
+  "lastUpdated": "2026-07-07T00:06:45.973Z"
 }
