@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Organized crime",
+      "description": "The FBI has charged 24 individuals in connection with an India-based organized crime group.",
+      "insight": "This suggests a significant increase in organized crime activity, and I believe we should investigate further to determine the extent of the group's operations.",
+      "entities": [
+        "Bishnoi gang"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Global News",
+      "sourceUrl": "https://www.globalnews.ca/news/9712344/bishnoi-gang-members-india-based-crime-groups-fbi-investigation/",
+      "id": "rf-1783465166398-f6tevwni2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-07T22:59:26.394Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Federal funding freeze for after-school programs",
       "insight": "This could indicate a larger issue with program management or oversight, potentially leading to further investigations and developments.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-07T21:22:36.768Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -961,25 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-01T15:40:38.551Z",
       "isNew": false
-    },
-    {
-      "type": "misuse of campaign funds",
-      "description": "Senator Ruben Gallego under investigation for misuse of campaign funds",
-      "insight": "This suggests potential corruption in political campaigns.",
-      "entities": [
-        "Senator Ruben Gallego"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/sen-ruben-gallego-campaign-funds-investigation/",
-      "id": "rf-1782920438555-avq8c0ofd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-01T15:40:38.551Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -993,8 +993,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-07T21:22:36.768Z"
+  "lastUpdated": "2026-07-07T22:59:26.394Z"
 }
