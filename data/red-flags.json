@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "FBI and other agencies investigating government officials and agencies",
+      "insight": "Pattern of alleged misconduct and corruption among government officials and agencies",
+      "entities": [
+        "Minnesota Gov Walz",
+        "Minnesota AG Ellison"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Economic Times",
+      "sourceUrl": "https://www.economicstimes.com/news/gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing",
+      "id": "rf-1783399868497-9mx91j7gv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-07T04:51:08.493Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "FBI investigation into Cyber Dive CEO for alleged misuse of funds",
       "insight": "Potential for larger scheme or pattern of misuse",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-07T00:06:45.973Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "large-scale fraud",
@@ -38,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-07T00:06:45.973Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Potential hit-and-run",
@@ -962,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-06-30T17:51:41.234Z",
       "isNew": false
-    },
-    {
-      "type": "corruption",
-      "description": "Ex-Councilman Mike Brown was convicted of corruption and sentenced to 2 years in prison.",
-      "insight": "This could indicate a larger issue with corruption in North Charleston and a need for further investigation.",
-      "entities": [
-        "Mike Brown",
-        "North Charleston"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Post and Courier",
-      "sourceUrl": "https://www.postandcourier.com/article/news/20260629/ex-councilman-mike-brown-gets-2-year-prison-term-north-charleston-corruption-case",
-      "id": "rf-1782833182492-i0k6449hl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T15:26:22.487Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -994,8 +994,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FEC",
-    "ProPublica Nonprofits"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-07T00:06:45.973Z"
+  "lastUpdated": "2026-07-07T04:51:08.493Z"
 }
