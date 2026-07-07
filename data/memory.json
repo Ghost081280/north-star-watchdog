@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-26T13:16:22.800Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-06-26T16:15:17.225Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-07T04:51:08.490Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-07T08:21:49.732Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Individual not specified in provided articles connected to?",
     "What specific allegations exist against Individual not specified in provided articles?",
     "Where did the $Multimillion-dollar allegedly go in Alarum Technologies FBI Probe?",
     "What other organizations is Ilhan Omar connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is AG Ellison connected to?",
     "What specific allegations exist against AG Ellison?",
     "What other organizations is Former Cyber Dive CEO connected to?",
-    "Where did the $9B allegedly go in $9B Somali fraud investigation?"
+    "Where did the $9B allegedly go in $9B Somali fraud investigation?",
+    "Where did the Unknown allegedly go in Sioux County Child Exploitation Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2888,
-    "articlesProcessed": 143750,
-    "redFlagsFound": 3342,
+    "totalScans": 2889,
+    "articlesProcessed": 143800,
+    "redFlagsFound": 3343,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Gavin Newsom?",
         "What other organizations is Individual not specified in provided articles connected to?",
-        "What specific allegations exist against Individual not specified in provided articles?"
+        "What specific allegations exist against Individual not specified in provided articles?",
+        "Where did the $Multimillion-dollar allegedly go in Alarum Technologies FBI Probe?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-07T04:51:08.490Z",
-  "lastUpdated": "2026-07-07T04:51:08.491Z"
+  "lastReflection": "2026-07-07T08:21:49.732Z",
+  "lastUpdated": "2026-07-07T08:21:49.732Z"
 }
