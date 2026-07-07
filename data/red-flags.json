@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Federal funding freeze for after-school programs",
+      "insight": "This could indicate a larger issue with program management or oversight, potentially leading to further investigations and developments.",
+      "entities": [
+        "Tulsa World"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Tulsa World",
+      "sourceUrl": "https://www.tulsa-world.com/…/after-school-programs-districts-feeling-impact-federal-funding-freeze",
+      "id": "rf-1783459356773-pzg9zahal",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-07T21:22:36.768Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "FBI and other agencies investigating government officials and agencies",
       "insight": "Pattern of alleged misconduct and corruption among government officials and agencies",
@@ -961,41 +980,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-01T15:40:38.551Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has announced charges against Minnesota drug trafficking organizations, and the FBI is investigating an NBA gambling probe. These investigations may be connected and could indicate a larger pattern of organized crime.",
-      "insight": "I suspect that these investigations may be connected and could indicate a larger pattern of organized crime. Further research is needed to determine the extent of the connections between these cases.",
-      "entities": [
-        "DOJ",
-        "FBI",
-        "NBA"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/doj-announces-charges-against-minnesota-drug-trafficking-organizations/",
-      "id": "rf-1782841901238-6c5fyg9pt",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-06-30T17:51:41.234Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-07T19:52:42.498Z"
+  "lastUpdated": "2026-07-07T21:22:36.768Z"
 }
