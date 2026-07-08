@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "alleged fraud",
+      "description": "Mission Regional Medical Center is under investigation for an alleged 'birth tourism' scheme.",
+      "insight": "This suggests a potential pattern of healthcare providers engaging in fraudulent activities for financial gain.",
+      "entities": [
+        "Mission Regional Medical Center"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FOX 26 Houston",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOVBnNlpfLWxWdV9TTXp1VUVTempUbUc3NmNKRHJ2dWdiTkppcU1pTlQ0TURNLVByVTNOSTdEWTJxTDJTY3dETW5MXzNWNnBWeFQ4SFBaSkYzVkRvNVlzNmhGTnh3VncyaUVkMEtKRHJ1cGRhWE9ha0FrM2lYZHVGNTJEejZndVV0emlBYWxLSS02U0FZbEFzSmJBZ3pmMUxES0E",
+      "id": "rf-1783513190660-vjctgsum0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-08T12:19:50.657Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating California Governor Gavin Newsom and his wife",
       "insight": "This investigation raises concerns about potential corruption and abuse of power by a high-ranking government official. Further investigation is needed to determine the extent of the allegations and any potential wrongdoing.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-08T10:14:48.940Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged 'birth tourism' scheme",
@@ -421,26 +440,6 @@
       "source": "FBI",
       "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN3BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA?oc=5",
       "id": "rf-1783205969182-83ibwunoz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T22:59:29.178Z",
-      "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "There is a Medicaid fraud crackdown bringing panic to patients and providers.",
-      "insight": "This crackdown raises concerns about the abuse of the Medicaid system and potential harm to patients.",
-      "entities": [
-        "Medicaid",
-        "providers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Eden Prairie Local News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZ1R1N0pRZ1A3YUxjeVVPX21mVHhLcVBjOUppSkRNeWhBS19LQ1pXblp3NDh0Q0JGcG9JOVhRLWJWMkZwRnNwdExsVDg2X0VIaVRoalNDOFJnSVdtLVppQmh5OGZjLU54OExYN29FckdtS1VKUy1aQjVqbEdyeHo0SEhRLU5QaGVLalIxV1R0R3ZWYVNLYU9hbkpGZEwtV1lUNVpyRmRiemljLWZyR0JxRHNjZGtmNlM1M1hfeXVBVXBCQXp3TXM2TnI4QmVHaE1FLWxhMi05SC00UQ?oc=5",
-      "id": "rf-1783205969182-mvebw7k26",
       "apisUsed": [
         "Google News"
       ],
@@ -984,16 +983,16 @@
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-08T10:14:48.940Z"
+  "lastUpdated": "2026-07-08T12:19:50.657Z"
 }
