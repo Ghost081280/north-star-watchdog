@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating the Argentine Football Association's financial dealings",
+      "insight": "This investigation may indicate a larger issue with corruption in international soccer, and may warrant further investigation.",
+      "entities": [
+        "Argentine Football Association"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Yahoo Sports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxONjc0SktIUDhDYnpwVzdmbjNqUUpyOGd6RFdHX3NnRGJmbW5WaHpLcXpHLS1UNXQ3dDdGMjJjQlZjX3dBS1cyVVlCYzJ3QmpfUjdYUFhJX1pWTU9STjFqWTNtYms5VkNlS1lldU5icEJDRW02djJ1cmhxNGYzTmdwSV9qTnpDcjR6QUJuVjYyRWxnWUQxUVh6LTVwa19tdw?oc=5",
+      "id": "rf-1783538528442-i8ryh8ibi",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-08T19:22:08.438Z",
+      "isNew": true
+    },
+    {
       "type": "alleged fraud",
       "description": "Mission Regional Medical Center is under investigation for an alleged 'birth tourism' scheme.",
       "insight": "This suggests a potential pattern of healthcare providers engaging in fraudulent activities for financial gain.",
@@ -960,29 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-01T19:51:50.344Z",
       "isNew": false
-    },
-    {
-      "type": "fake ransom notes",
-      "description": "FBI determines ransom notes in Nancy Guthrie case are fake",
-      "insight": "This case highlights the complexity of kidnapping investigations and the potential for false leads.",
-      "entities": [
-        "Nancy Guthrie"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "FOX 7 Austin",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdzZVS1QyZjRjRDFTQXhDSjhkc29vVHZlckplMTNzR1AzcnVfQWhDaWI4eHY2Z3ZrWk54TVFBTi1aenFETzdGQVo3aWo5UlVEM1FmYmNXQTNROE9PMS1tVmlzNFluZ2hkUlJ3eGF0OE1XeDZLNXl6S09iNllYdlNmeThibG15MDlXNjh2M21R?source=5",
-      "id": "rf-1782935510347-qa9oe6298",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-01T19:51:50.344Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-08T17:32:55.411Z"
+  "lastUpdated": "2026-07-08T19:22:08.438Z"
 }
