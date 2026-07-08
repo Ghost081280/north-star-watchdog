@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-27T07:48:24.409Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-27T10:06:21.562Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 new legal actions, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-07-07T22:59:26.392Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-07-08T00:04:44.906Z",
+      "summary": "NOTABLE: 1 new legal actions, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $9B allegedly go in Minnesota Government Fraud Scandal?",
-    "Where did the None allegedly go in FBI Investigation into Georgia 2020 Election Fraud?",
-    "What other organizations is Minnesota Gov Walz connected to?",
     "What specific allegations exist against Minnesota Gov Walz?",
     "What other organizations is AG Ellison connected to?",
     "What specific allegations exist against AG Ellison?",
@@ -558,7 +555,10 @@
     "Are any of these 5 figures connected to each other?",
     "What other organizations is Unspecified connected to?",
     "Where did the Undisclosed allegedly go in India-based organized crime investigation?",
-    "Where did the $150K allegedly go in Minnesota health insurance company fraud scheme?"
+    "Where did the $150K allegedly go in Minnesota health insurance company fraud scheme?",
+    "Where did the $547M allegedly go in FBI transnational gang crackdown?",
+    "Where did the $150K allegedly go in Minnesota health insurance company fraud?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2895,
-    "articlesProcessed": 144050,
-    "redFlagsFound": 3348,
+    "totalScans": 2896,
+    "articlesProcessed": 144100,
+    "redFlagsFound": 3349,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Alarum Investigation?",
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Minnesota Man connected to?"
+        "Where did the $9B allegedly go in Minnesota Government Fraud Scandal?",
+        "Where did the None allegedly go in FBI Investigation into Georgia 2020 Election Fraud?",
+        "What other organizations is Minnesota Gov Walz connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-07T22:59:26.392Z",
-  "lastUpdated": "2026-07-07T22:59:26.393Z"
+  "lastReflection": "2026-07-08T00:04:44.906Z",
+  "lastUpdated": "2026-07-08T00:04:44.906Z"
 }
