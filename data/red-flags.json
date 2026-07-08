@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud allegations",
+      "description": "Multiple fraud allegations against individuals and organizations, including Feeding Our Future and Cyber Dive",
+      "insight": "These allegations suggest a pattern of potential misuse of funds and resources across various entities",
+      "entities": [
+        "Feeding Our Future",
+        "Cyber Dive"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://kare11.com/news/article/650d4c72-11e7-45f8-bf46-55b6d7f9c29d.html",
+      "id": "rf-1783544739993-0n2oxgfzy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-08T21:05:39.988Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating the Argentine Football Association's financial dealings",
       "insight": "This investigation may indicate a larger issue with corruption in international soccer, and may warrant further investigation.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-08T19:22:08.438Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "alleged fraud",
@@ -960,30 +980,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-01T21:26:58.396Z",
       "isNew": false
-    },
-    {
-      "type": "alleged financial misconduct",
-      "description": "Portland-area shelter provider under investigation",
-      "insight": "This case raises concerns about the oversight and management of funds within the shelter system.",
-      "entities": [
-        "Portland-area shelter provider"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KOIN.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeXlpWHY1RlhkVlh4VzFlTGlFaUgtMGVhQlFrcklIVFVBTktNdm9hSzhDNjZELUFNNUNKMnpycXpuY2hRM2Z2SEtiN01xOE10amlRVTBFZ2RYNWhFc3RyQUwzZ3ZaUzVOMTV5THF0NS10b3c0Rk41bzFSTUdrQmQwV0JOR2Nxb2hLM3hXY2RkWXJBZFhldVJiTVVKbFNGU0xVdzE5WjhKTFNMQURVc2M2bWQxYjJZa2ZQQ1FXazZDRUR1ZGcwQkdN?oc=5",
-      "id": "rf-1782935510347-mbhznppfh",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-01T19:51:50.344Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,8 +992,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-08T19:22:08.438Z"
+  "lastUpdated": "2026-07-08T21:05:39.988Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-28T00:00:29.158Z",
-      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
-      "confidence": 0.35
-    },
-    {
       "date": "2026-06-28T04:44:33.449Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-07-08T19:22:08.436Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-08T21:05:39.986Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $150,000 allegedly go in Minnesota Health Insurance Fraud?",
-    "What specific allegations exist against Nick Shirley?",
-    "What specific allegations exist against Dexter?",
     "Are any of these 5 figures connected to each other?",
     "What other organizations is Unspecified connected to?",
     "Where did the Undisclosed allegedly go in India-based organized crime investigation?",
@@ -558,7 +555,10 @@
     "What other organizations is Kash Patel connected to?",
     "What specific allegations exist against Kash Patel?",
     "What specific allegations exist against Lorenzo Salgado Araujo?",
-    "Where did the $300M allegedly go in Argentina Football Association?"
+    "Where did the $300M allegedly go in Argentina Football Association?",
+    "What other organizations is A individual accused in Feeding Our Future scheme connected to?",
+    "What other organizations is Man accused in Feeding Our Future scheme connected to?",
+    "Where did the $150K allegedly go in Feeding Our Future?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2903,
-    "articlesProcessed": 144400,
-    "redFlagsFound": 3355,
+    "totalScans": 2904,
+    "articlesProcessed": 144450,
+    "redFlagsFound": 3356,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $150K allegedly go in Minnesota Health Insurance Company Fraud?",
-        "What other organizations is Dodge County Sheriff connected to?",
-        "What other organizations is Minnesota Tax Preparer connected to?"
+        "Where did the $150,000 allegedly go in Minnesota Health Insurance Fraud?",
+        "What specific allegations exist against Nick Shirley?",
+        "What specific allegations exist against Dexter?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-08T19:22:08.436Z",
-  "lastUpdated": "2026-07-08T19:22:08.437Z"
+  "lastReflection": "2026-07-08T21:05:39.986Z",
+  "lastUpdated": "2026-07-08T21:05:39.987Z"
 }
