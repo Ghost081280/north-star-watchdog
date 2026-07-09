@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "Possible termination of programs due to fraud",
+      "insight": "The recent guilty pleas and accusations in childcare fraud cases may lead to increased scrutiny and potential program termination.",
+      "entities": [
+        "Minnesota DHS",
+        "Feeding Our Future"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Recent news articles",
+      "sourceUrl": "https://www.google.com/search?q=2+women+plead+guilty+in+Minnesota+childcare+fraud+cases",
+      "id": "rf-1783622991361-695ufz3d4",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-09T18:49:51.358Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The FBI executed search warrants in multiple states, including Minnesota, related to fraud cases",
       "insight": "This indicates a large-scale investigation into fraud cases, potentially involving multiple organizations and individuals",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-09T16:26:42.300Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -960,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-02T07:29:51.760Z",
       "isNew": false
-    },
-    {
-      "type": "fake ransom notes",
-      "description": "FBI determines some ransom notes in Nancy Guthrie disappearance were fake",
-      "insight": "This suggests potential misdirection or false leads in the investigation into Nancy Guthrie's disappearance.",
-      "entities": [
-        "FBI",
-        "Nancy Guthrie"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "KFOX",
-      "sourceUrl": "https://www.kfox.com/news/fbi-determines-3-ransom-notes-in-nancy-guthrie-disappearance-were-fake-report",
-      "id": "rf-1782962565952-s4x0e20y3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-02T03:22:45.949Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,12 +988,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
+    "FDA",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-09T16:26:42.300Z"
+  "lastUpdated": "2026-07-09T18:49:51.358Z"
 }
