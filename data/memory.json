@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-28T13:42:37.386Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-28T15:17:26.364Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-09T06:52:23.516Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-07-09T10:23:57.400Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $150K allegedly go in Minnesota health insurance company fraud?",
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Minnesota Man connected to?",
-    "Where did the Unknown allegedly go in South Texas Hospital Investigation?",
     "Where did the Unknown allegedly go in FBI Transnational Gang Crackdown?",
     "What other organizations is Gavin Newsom connected to?",
     "Where did the $0 allegedly go in FBI Investigation into Minnesota Fraud?",
@@ -558,7 +554,11 @@
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
     "Where did the unknown allegedly go in Minnesota Housing Stabilization Services investigation?",
-    "What other organizations is Feeding Our Future ringleader connected to?"
+    "What other organizations is Feeding Our Future ringleader connected to?",
+    "What other organizations is Minnesota DHS commissioner connected to?",
+    "What specific allegations exist against Minnesota DHS commissioner?",
+    "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2907,
-    "articlesProcessed": 144600,
-    "redFlagsFound": 3358,
+    "totalScans": 2908,
+    "articlesProcessed": 144650,
+    "redFlagsFound": 3359,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $547M allegedly go in FBI transnational gang crackdown?",
         "Where did the $150K allegedly go in Minnesota health insurance company fraud?",
-        "Are any of these 2 figures connected to each other?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Minnesota Man connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-09T06:52:23.516Z",
-  "lastUpdated": "2026-07-09T06:52:23.516Z"
+  "lastReflection": "2026-07-09T10:23:57.400Z",
+  "lastUpdated": "2026-07-09T10:23:57.401Z"
 }
