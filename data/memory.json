@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-28T22:07:46.814Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-29T00:07:10.635Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-07-09T20:46:16.011Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-09T22:20:41.040Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Man accused in Feeding Our Future scheme connected to?",
-    "Where did the $150K allegedly go in Feeding Our Future?",
     "What other organizations is Rochester man connected to?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
@@ -558,7 +556,9 @@
     "What other organizations is Two women (names not specified) connected to?",
     "What other organizations is Feeding Our Future defendant (name not specified) connected to?",
     "What other organizations is Man connected to?",
-    "Where did the $150,000 allegedly go in Feeding Our Future fraud case?"
+    "Where did the $150,000 allegedly go in Feeding Our Future fraud case?",
+    "Where did the $426K allegedly go in Feeding Our Future investigation?",
+    "Where did the $X allegedly go in Minnesota Housing Stabilization Services fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2912,
-    "articlesProcessed": 144850,
-    "redFlagsFound": 3362,
+    "totalScans": 2913,
+    "articlesProcessed": 144900,
+    "redFlagsFound": 3363,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $300M allegedly go in Argentina Football Association?",
-        "What other organizations is A individual accused in Feeding Our Future scheme connected to?",
-        "What other organizations is Man accused in Feeding Our Future scheme connected to?"
+        "What other organizations is Man accused in Feeding Our Future scheme connected to?",
+        "Where did the $150K allegedly go in Feeding Our Future?",
+        "What other organizations is Rochester man connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-09T20:46:16.011Z",
-  "lastUpdated": "2026-07-09T20:46:16.012Z"
+  "lastReflection": "2026-07-09T22:20:41.040Z",
+  "lastUpdated": "2026-07-09T22:20:41.041Z"
 }
