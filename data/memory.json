@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-28T11:06:06.093Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-06-28T13:42:37.386Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-09T02:45:55.266Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-09T06:52:23.516Z",
+      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $547M allegedly go in FBI transnational gang crackdown?",
     "Where did the $150K allegedly go in Minnesota health insurance company fraud?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Minnesota Man connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Rochester man connected to?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
-    "Where did the unknown allegedly go in Minnesota Housing Stabilization Services investigation?"
+    "Where did the unknown allegedly go in Minnesota Housing Stabilization Services investigation?",
+    "What other organizations is Feeding Our Future ringleader connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2906,
-    "articlesProcessed": 144550,
-    "redFlagsFound": 3357,
+    "totalScans": 2907,
+    "articlesProcessed": 144600,
+    "redFlagsFound": 3358,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 5 figures connected to each other?",
-        "What other organizations is Unspecified connected to?",
-        "Where did the Undisclosed allegedly go in India-based organized crime investigation?"
+        "Where did the $547M allegedly go in FBI transnational gang crackdown?",
+        "Where did the $150K allegedly go in Minnesota health insurance company fraud?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-09T02:45:55.266Z",
-  "lastUpdated": "2026-07-09T02:45:55.266Z"
+  "lastReflection": "2026-07-09T06:52:23.516Z",
+  "lastUpdated": "2026-07-09T06:52:23.516Z"
 }
