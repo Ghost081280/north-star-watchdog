@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The FBI has put up a hefty reward for the capture of a Feeding Our Future fugitive, indicating a high level of concern and urgency in the investigation.",
+      "insight": "This suggests that the FBI is taking the investigation very seriously and is willing to take extraordinary measures to bring the fugitive to justice. I recommend tracking this development closely and looking for any connections to other entities or programs.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.startribune.com/fbi-puts-up-hefty-reward-in-hopes-of-capturing-feeding-our-future-fugitive-who-fled-u-s/600246994/",
+      "id": "rf-1783565155271-isbj5n9r3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-09T02:45:55.267Z",
+      "isNew": true
+    },
+    {
       "type": "fraud allegations",
       "description": "Multiple fraud allegations against individuals and organizations, including Feeding Our Future and Cyber Dive",
       "insight": "These allegations suggest a pattern of potential misuse of funds and resources across various entities",
@@ -113,25 +132,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-07T22:59:26.394Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Federal funding freeze for after-school programs",
-      "insight": "This could indicate a larger issue with program management or oversight, potentially leading to further investigations and developments.",
-      "entities": [
-        "Tulsa World"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Tulsa World",
-      "sourceUrl": "https://www.tulsa-world.com/…/after-school-programs-districts-feeling-impact-federal-funding-freeze",
-      "id": "rf-1783459356773-pzg9zahal",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-07T21:22:36.768Z",
       "isNew": false
     },
     {
@@ -984,10 +984,13 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-08T23:04:33.438Z"
+  "lastUpdated": "2026-07-09T02:45:55.267Z"
 }
