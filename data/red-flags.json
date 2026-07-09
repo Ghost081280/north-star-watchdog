@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Feeding Our Future program under investigation",
+      "insight": "The Feeding Our Future program is under investigation for potential fraud, with multiple individuals already charged or pleading guilty.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNcFF0T3NvVHZOTmJUYWMzMTA3cFRiUFdZanNUNVA3dlRvektKdDdva1ZISzF1Z2hZZmRLMjJraXZ2Wk9FMnQwczlDb2FrbHBxU3Azbnpka2ZuMGRCUzdtRWZydGE0emlla3JPaGhlS0pYQUphLVhTZG9rRGZSVjltMEtsUjJmSHBXM0JadFBZdDRsOF8wV0tUUXFseWdacEVQLTJZWFM2VHJsTWt4MlZsbWhoMHkxa1VPTmZFNFc3X3p3dlBjTXlkYV85c09OanJGYVg0UFd2cm9RQ2tIUUFtOEZsRWhmSExhNVJqZWFJbkZjbnRaeFAtQXpwQm5PTm52?oc=5",
+      "id": "rf-1783629976018-5t1fxw6l2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-09T20:46:16.013Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Possible termination of programs due to fraud",
       "insight": "The recent guilty pleas and accusations in childcare fraud cases may lead to increased scrutiny and potential program termination.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-09T18:49:51.358Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal freeze",
@@ -960,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-02T07:29:51.760Z",
       "isNew": false
-    },
-    {
-      "type": "alleged_fraud",
-      "description": "Alibaba, Payment Firm Will Pay $600 Million to Resolve US Probe",
-      "insight": "This highlights the significant financial impact of alleged fraud and the importance of regulatory compliance. The payment firm's involvement in the probe suggests a larger issue with financial regulations.",
-      "entities": [
-        "Alibaba",
-        "Payment Firm"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Bloomberg.com",
-      "sourceUrl": "https://www.bloomberg.com/news/articles/2026/07/01/alibaba-payment-firm-will-pay-600-million-to-resolve-us-probe",
-      "id": "rf-1782977391763-hjbvd1m4p",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-02T07:29:51.760Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,11 +987,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
+    "ProPublica Nonprofits",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1010,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-09T18:49:51.358Z"
+  "lastUpdated": "2026-07-09T20:46:16.013Z"
 }
