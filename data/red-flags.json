@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The FBI executed search warrants in multiple states, including Minnesota, related to fraud cases",
+      "insight": "This indicates a large-scale investigation into fraud cases, potentially involving multiple organizations and individuals",
+      "entities": [
+        "FBI",
+        "Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Google News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMm1MUHp4TzkxZEtycDloNVFucUJuRUpVOHZKSEFzWEhIM2lHRzQxbk44Ukg1MFdZNUxKd1dHcUx4Q1JGcUNZVWZ2OVZ6RGNYc2RqSGNNSV9ZM1ZGcHoxN2Q5clp5RExBeWRHdTcxdmFUQmtsSXJ6UXFzMXZaLTNPcDRCZTlZNnB0QVlZc2NPUmNWcW5GSlMxdVAwbnZNWS1XNEE0alpyVGtUbTVnVEZwNndRRnc1ZF9tbXVJM2V3cjLSAdQBQVVfeXFMTzloandHS3hrT2p1OTNtSzV2M1NuSHVmLTRxcGJ2WHRLaWJNbXo3THVfLUYyOXJreFkxdi1yOEhqSC1NVWRyMFZpMm5VVGRTay1oSF9DTWlYRXhLZ0ZtSmxwRTNYeHYzanZ0X242aEg2b3R5cU5Bc3pUeWt6cEFNbmFRMmxUeUxZcVUtVXk2WkIyWVR4UzBDc2xRV3pad0R5MHR2M3hCaHlqS3R1R3BGcm1Ba1ZtMjNjQVdiSUtNTFNrTTczNHRaNDJKWDNPWElPTEdpWTk?oc=5",
+      "id": "rf-1783614402303-huaiw54sf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-09T16:26:42.300Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program is under investigation for fraud",
       "insight": "The program's termination may be imminent due to widespread allegations of fraud. Further investigation is needed to determine the extent of the fraud and identify those responsible.",
@@ -36,25 +56,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-09T06:52:23.517Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The FBI has put up a hefty reward for the capture of a Feeding Our Future fugitive, indicating a high level of concern and urgency in the investigation.",
-      "insight": "This suggests that the FBI is taking the investigation very seriously and is willing to take extraordinary measures to bring the fugitive to justice. I recommend tracking this development closely and looking for any connections to other entities or programs.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.startribune.com/fbi-puts-up-hefty-reward-in-hopes-of-capturing-feeding-our-future-fugitive-who-fled-u-s/600246994/",
-      "id": "rf-1783565155271-isbj5n9r3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-09T02:45:55.267Z",
       "isNew": false
     },
     {
@@ -987,10 +988,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-09T13:48:23.656Z"
+  "lastUpdated": "2026-07-09T16:26:42.300Z"
 }
