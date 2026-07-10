@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-29T22:55:21.113Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-30T00:03:20.577Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-10T18:22:20.861Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-10T20:21:33.147Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2920,
-    "articlesProcessed": 145250,
-    "redFlagsFound": 3369,
+    "totalScans": 2921,
+    "articlesProcessed": 145300,
+    "redFlagsFound": 3370,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Minnesota Medicaid overbilling investigation?",
         "Where did the $X allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Two Minnesota daycare operators connected to?"
+        "What other organizations is Two Minnesota daycare operators connected to?",
+        "What other organizations is Former Rochester, Kasson daycare owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-10T18:22:20.861Z",
-  "lastUpdated": "2026-07-10T18:22:20.861Z"
+  "lastReflection": "2026-07-10T20:21:33.147Z",
+  "lastUpdated": "2026-07-10T20:21:33.148Z"
 }

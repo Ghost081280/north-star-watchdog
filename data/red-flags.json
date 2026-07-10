@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Potential for program termination due to widespread fraud",
+      "insight": "The large-scale fraud schemes uncovered suggest a need for increased oversight and potentially program termination to prevent further abuse.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota Daycare"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "New York Post",
+      "sourceUrl": "https://nypost.com/2026/07/10/minnesota-daycare-owner-outed-by-nick-shirley-admitted-to-filing-more-than-46m-in-false-claims/",
+      "id": "rf-1783714893152-d8s327uq9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-10T20:21:33.149Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Feeding Our Future fraud scheme involves multiple agencies and a large amount of money.",
       "insight": "The Feeding Our Future fraud scheme appears to be a complex case involving multiple entities and a large amount of money. Further investigation is needed to uncover the full extent of the scheme and identify all parties involved.",
@@ -19,7 +39,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-10T18:22:20.863Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program termination",
@@ -959,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-02T21:04:16.816Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "The FBI is investigating the 2020 Georgia election, with a focus on potential irregularities and voter suppression.",
-      "insight": "This investigation could lead to further consequences for individuals or organizations involved in election irregularities.",
-      "entities": [
-        "FBI",
-        "2020 Georgia election"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "CBS News",
-      "sourceUrl": "https://www.cbsnews.com/news/fbi-orders-field-offices-to-send-analysts-to-atlanta-for-2020-election-investigation-sources-say/",
-      "id": "rf-1783014308407-qbi7kmou2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-02T17:45:08.403Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,8 +992,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FDA",
-    "FEC"
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-10T18:22:20.863Z"
+  "lastUpdated": "2026-07-10T20:21:33.149Z"
 }
