@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-29T19:55:01.937Z",
-      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.95
-    },
-    {
       "date": "2026-06-29T21:25:30.284Z",
       "summary": "CRITICAL: Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-07-10T14:21:24.943Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-10T16:54:49.009Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $150,000 allegedly go in Feeding Our Future fraud case?",
-    "Where did the $426K allegedly go in Feeding Our Future investigation?",
-    "Where did the $X allegedly go in Minnesota Housing Stabilization Services fraud?",
     "Where did the $X allegedly go in Minnesota Medicaid overbilling investigation?",
     "Where did the $X allegedly go in Feeding Our Future investigation?",
     "What other organizations is Two Minnesota daycare operators connected to?",
@@ -558,7 +555,10 @@
     "What other organizations is Minnesota DHS Commissioner connected to?",
     "What specific allegations exist against Minnesota DHS Commissioner?",
     "What specific allegations exist against Gov. Newsom?",
-    "What specific allegations exist against Lorenzo Salgado Araujo?"
+    "What specific allegations exist against Lorenzo Salgado Araujo?",
+    "What other organizations is Minnesota Daycare Owner connected to?",
+    "Where did the $4.6M allegedly go in Minnesota Daycare Fraud?",
+    "Where did the $9B allegedly go in Somali Fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2918,
-    "articlesProcessed": 145150,
-    "redFlagsFound": 3367,
+    "totalScans": 2919,
+    "articlesProcessed": 145200,
+    "redFlagsFound": 3368,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
-        "What other organizations is Lorenzo Salgado Araujo connected to?",
-        "What other organizations is Two women (names not specified) connected to?"
+        "Where did the $150,000 allegedly go in Feeding Our Future fraud case?",
+        "Where did the $426K allegedly go in Feeding Our Future investigation?",
+        "Where did the $X allegedly go in Minnesota Housing Stabilization Services fraud?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-10T14:21:24.943Z",
-  "lastUpdated": "2026-07-10T14:21:24.944Z"
+  "lastReflection": "2026-07-10T16:54:49.009Z",
+  "lastUpdated": "2026-07-10T16:54:49.009Z"
 }
