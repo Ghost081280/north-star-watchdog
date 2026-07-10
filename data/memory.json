@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-29T17:35:24.960Z",
-      "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
-      "confidence": 0.55
-    },
-    {
       "date": "2026-06-29T19:55:01.937Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, 1 high-confidence findings, Breaking news present",
       "confidence": 0.95
@@ -510,6 +505,11 @@
       "date": "2026-07-10T11:50:01.374Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-10T14:21:24.943Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Lorenzo Salgado Araujo connected to?",
-    "What other organizations is Two women (names not specified) connected to?",
-    "What other organizations is Feeding Our Future defendant (name not specified) connected to?",
-    "What other organizations is Man connected to?",
     "Where did the $150,000 allegedly go in Feeding Our Future fraud case?",
     "Where did the $426K allegedly go in Feeding Our Future investigation?",
     "Where did the $X allegedly go in Minnesota Housing Stabilization Services fraud?",
@@ -558,7 +553,12 @@
     "What other organizations is Caitlin Clark connected to?",
     "What other organizations is Kash Patel connected to?",
     "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?",
-    "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?"
+    "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?",
+    "What specific allegations exist against Caitlin Clark?",
+    "What other organizations is Minnesota DHS Commissioner connected to?",
+    "What specific allegations exist against Minnesota DHS Commissioner?",
+    "What specific allegations exist against Gov. Newsom?",
+    "What specific allegations exist against Lorenzo Salgado Araujo?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2917,
-    "articlesProcessed": 145100,
-    "redFlagsFound": 3366,
+    "totalScans": 2918,
+    "articlesProcessed": 145150,
+    "redFlagsFound": 3367,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future fraud scheme?",
-        "Are any of these 3 figures connected to each other?",
-        "What other organizations is Ringleader of Feeding Our Future connected to?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Lorenzo Salgado Araujo connected to?",
+        "What other organizations is Two women (names not specified) connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-10T11:50:01.374Z",
-  "lastUpdated": "2026-07-10T11:50:01.375Z"
+  "lastReflection": "2026-07-10T14:21:24.943Z",
+  "lastUpdated": "2026-07-10T14:21:24.944Z"
 }
