@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "MN Medicaid providers in limbo after rapid revalidation process",
+      "insight": "The rapid revalidation process for MN Medicaid providers may indicate a potential vulnerability in the system, potentially leading to program termination.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "AOL.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORWlLci16WmVmLTJnRUg1cmwyVzROQms4NWtTOE1uZndSTXdKblNKN7FoeHVwTUFUYzZMNnZQeHpsWUVRelVOd3I1ZEowTGEzY3l1TkNMcTRtWFdmZEEwNTlLY0ZfSDd3U1ZmOVV0ejJicQlkWjdEVmUtemc2N2YyNkZMRQ",
+      "id": "rf-1783659003356-mt5pm95os",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-10T04:50:03.352Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Feeding Our Future program under investigation",
       "insight": "The Feeding Our Future program is under investigation for potential fraud, with multiple individuals already charged or pleading guilty.",
       "entities": [
@@ -960,25 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-02T12:56:42.642Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Minnesota attorney general shuts unit reviewing wrongful convictions, cites Trump funding cut",
-      "insight": "This raises concerns about the impact on justice and potential wrongful convictions. The unit's termination may lead to a backlog of cases and decreased scrutiny of convictions.",
-      "entities": [
-        "Minnesota attorney general"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/content/dam/Editors/Edimage/2026/Minnesota-attorney-general-shuts-unit-reviewing-wrongful-convictions-cites-Trump-funding-cut.pdf",
-      "id": "rf-1782977391763-9dofu7e03",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-02T07:29:51.760Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,7 +990,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-10T00:02:48.320Z"
+  "lastUpdated": "2026-07-10T04:50:03.352Z"
 }
