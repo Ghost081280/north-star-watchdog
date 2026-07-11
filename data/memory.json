@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-30T23:10:42.469Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-07-01T03:36:59.773Z",
       "summary": "NOTABLE: 3 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-07-11T13:14:11.968Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-11T14:51:54.860Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota DHS Commissioner connected to?",
-    "What specific allegations exist against Minnesota DHS Commissioner?",
     "What specific allegations exist against Gov. Newsom?",
     "What specific allegations exist against Lorenzo Salgado Araujo?",
     "What other organizations is Minnesota Daycare Owner connected to?",
@@ -558,7 +556,9 @@
     "Where did the $5.4M allegedly go in Daycare fraud investigation?",
     "Are any of these 3 figures connected to each other?",
     "What specific allegations exist against Carol Ammons?",
-    "Where did the $300 million allegedly go in Feeding Our Future fraud investigation?"
+    "Where did the $300 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $300 million allegedly go in Feeding Our Future investigation?",
+    "Where did the Unknown allegedly go in ICE shooting investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2929,
-    "articlesProcessed": 145700,
-    "redFlagsFound": 3378,
+    "totalScans": 2930,
+    "articlesProcessed": 145750,
+    "redFlagsFound": 3379,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?",
-        "What specific allegations exist against Caitlin Clark?",
-        "What other organizations is Minnesota DHS Commissioner connected to?"
+        "What other organizations is Minnesota DHS Commissioner connected to?",
+        "What specific allegations exist against Minnesota DHS Commissioner?",
+        "What specific allegations exist against Gov. Newsom?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-11T13:14:11.968Z",
-  "lastUpdated": "2026-07-11T13:14:11.968Z"
+  "lastReflection": "2026-07-11T14:51:54.860Z",
+  "lastUpdated": "2026-07-11T14:51:54.862Z"
 }
