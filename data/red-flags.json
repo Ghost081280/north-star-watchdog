@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Possible termination of programs due to fraud",
+      "insight": "The recent cases of childcare-related fraud highlight the need for increased oversight and monitoring of these programs.",
+      "entities": [
+        "Minnesota daycare owner"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The American Bazaar",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaWFTWG9laG9wc2Z1U0NsRTJ0X3BMYWNXbnVOUWVyMm9DU0ltQ2plaWV6eGNYc2xsektsZmdtbG93bEt2dmUxbEx1REJZbWE1aDFJT1RSdFVLOFdUNVRieXRwazM4a055SVdFSUhwNUZwTlJQVy1NSFpiYkVLM0Fyc3VyYjU4YUxJTE5tNVRpYjZqTGxmVkZvczV6eFdfNV81T2c5OXplZkF3V2k5a3lxOUZXS0w0ZGZ3WGhJNQ",
+      "id": "rf-1783736845253-h4zr08fnx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T02:27:25.249Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The USDA's Child and Adult Care Food Program (CACFP) has faced scrutiny and potential termination due to widespread fraud.",
       "insight": "The prevalence of fraud in nutrition programs like CACFP raises concerns about oversight and control measures.",
       "entities": [
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-10T23:07:06.997Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -961,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-03T02:45:27.081Z",
       "isNew": false
-    },
-    {
-      "type": "election investigation",
-      "description": "The FBI's investigation into Georgia's 2020 presidential election involves hundreds of analysts.",
-      "insight": "This investigation suggests that there may be concerns about the integrity of the election process.",
-      "entities": [
-        "FBI",
-        "Georgia"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/07/02/politics/fbi-georgia-election-investigation/index.html",
-      "id": "rf-1783033466561-4rxvfnyjo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-02T23:04:26.558Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,10 +991,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-10T23:07:06.997Z"
+  "lastUpdated": "2026-07-11T02:27:25.249Z"
 }
