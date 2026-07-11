@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Possible termination of programs due to fraud, e.g., Feeding Our Future",
+      "insight": "Patterns of fraud in nonprofits and government programs suggest a need for increased oversight and monitoring.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzkySkhhczNFVmpVTGtmbnNCNy1MZThwX1VQdHljTWx3Sll3VHFaVUl0YnozaVBfcnU2SHAtaTRSMzFGMUU1SDRNRUp5YkZqYU1yVDVjTlp2MkNwbzZESFlIandGS2U3elZVUjU4T2huQkk5SjMxWGoyajVvNXZtSS0xaGZwbG94LXdYYmRuWkhOVjdoZC1uVGNKLXI3UkZvM2N0Q095ZjJJdTN6OUp5WQ?",
+      "id": "rf-1783775651972-6df5azspv",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T13:14:11.969Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Feeding Our Future investigation resulted in a federal freeze of assets, highlighting the severity of the nonprofit fraud scheme.",
       "insight": "This red flag suggests that nonprofit organizations may be vulnerable to fraud and abuse, and that increased oversight and regulation are necessary to prevent such schemes.",
@@ -960,30 +980,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-03T02:45:27.081Z",
       "isNew": false
-    },
-    {
-      "type": "Theft Charges",
-      "description": "A non-profit organization has been charged with theft in a case against Harding Smith.",
-      "insight": "This charge may indicate a pattern of financial mismanagement or corruption within the non-profit sector, and warrants further investigation.",
-      "entities": [
-        "Harding Smith",
-        "Non-profit"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "hometownsource.com",
-      "sourceUrl": "https://hometownsource.com/2026/07/02/nonprofit-now-charged-with-theft-in-case-against-harding-smith/",
-      "id": "rf-1783046727086-gwn45d852",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-03T02:45:27.081Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +992,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-11T11:03:15.124Z"
+  "lastUpdated": "2026-07-11T13:14:11.969Z"
 }
