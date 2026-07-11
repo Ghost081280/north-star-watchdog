@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Possible termination of programs due to fraud, such as Feeding Our Future",
+      "insight": "The Feeding Our Future scheme and other nonprofit fraud cases suggest a need for increased oversight and monitoring of programs to prevent similar fraud.",
+      "entities": [
+        "Feeding Our Future",
+        "Minnesota nonprofits"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Feeding Our Future investigation",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzkySkhhczNFVmpVTGtmbnNCNy1MZThwX1VQdHljTWx3Sll3VHFaVUl0YnozaVBfcnU2SHAtaTRSMzFGMUU1SDRNRUp5YkZqYU1yVDVjTlp2MkNwbzZESFlIandGS2U3elZVUjU4T2huQkk5SjMxWGoyajVvNXZtSS0xaGZwbG94LXdYYmRuWkhOVjdoZC1uVGNKLXI3UkZvM2N0Q095ZjJJdTN6OUp5WQ",
+      "id": "rf-1783788934336-w7u2czvsw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T16:55:34.333Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Possible termination of programs due to fraud, e.g., Feeding Our Future",
       "insight": "Patterns of fraud in nonprofits and government programs suggest a need for increased oversight and monitoring.",
       "entities": [
@@ -960,26 +980,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-03T15:09:52.550Z",
       "isNew": false
-    },
-    {
-      "type": "Federal Investigation",
-      "description": "The FBI has launched an investigation into the 2020 Georgia election, with a focus on Fulton County.",
-      "insight": "This investigation may indicate a larger pattern of election irregularities or fraud, and warrants further examination.",
-      "entities": [
-        "FBI",
-        "Georgia"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CNN",
-      "sourceUrl": "https://www.cnn.com/2026/07/02/politics/fbi-georgia-election-investigation/index.html",
-      "id": "rf-1783046727086-wudub73ma",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-03T02:45:27.081Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1011,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-11T15:54:17.428Z"
+  "lastUpdated": "2026-07-11T16:55:34.333Z"
 }
