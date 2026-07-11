@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Feeding Our Future investigation resulted in a federal freeze of assets, highlighting the severity of the nonprofit fraud scheme.",
+      "insight": "This red flag suggests that nonprofit organizations may be vulnerable to fraud and abuse, and that increased oversight and regulation are necessary to prevent such schemes.",
+      "entities": [
+        "Feeding Our Future",
+        "Aimee Bock"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.aol.com/news/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence-164737643.html",
+      "id": "rf-1783748341271-r7j4bthjx",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T05:39:01.267Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "Possible termination of programs due to fraud",
       "insight": "The recent cases of childcare-related fraud highlight the need for increased oversight and monitoring of these programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-11T02:27:25.249Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -175,26 +195,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-09T18:49:51.358Z",
-      "isNew": false
-    },
-    {
-      "type": "federal freeze",
-      "description": "The FBI executed search warrants in multiple states, including Minnesota, related to fraud cases",
-      "insight": "This indicates a large-scale investigation into fraud cases, potentially involving multiple organizations and individuals",
-      "entities": [
-        "FBI",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Google News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMm1MUHp4TzkxZEtycDloNVFucUJuRUpVOHZKSEFzWEhIM2lHRzQxbk44Ukg1MFdZNUxKd1dHcUx4Q1JGcUNZVWZ2OVZ6RGNYc2RqSGNNSV9ZM1ZGcHoxN2Q5clp5RExBeWRHdTcxdmFUQmtsSXJ6UXFzMXZaLTNPcDRCZTlZNnB0QVlZc2NPUmNWcW5GSlMxdVAwbnZNWS1XNEE0alpyVGtUbTVnVEZwNndRRnc1ZF9tbXVJM2V3cjLSAdQBQVVfeXFMTzloandHS3hrT2p1OTNtSzV2M1NuSHVmLTRxcGJ2WHRLaWJNbXo3THVfLUYyOXJreFkxdi1yOEhqSC1NVWRyMFZpMm5VVGRTay1oSF9DTWlYRXhLZ0ZtSmxwRTNYeHYzanZ0X242aEg2b3R5cU5Bc3pUeWt6cEFNbmFRMmxUeUxZcVUtVXk2WkIyWVR4UzBDc2xRV3pad0R5MHR2M3hCaHlqS3R1R3BGcm1Ba1ZtMjNjQVdiSUtNTFNrTTczNHRaNDJKWDNPWElPTEdpWTk?oc=5",
-      "id": "rf-1783614402303-huaiw54sf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-09T16:26:42.300Z",
       "isNew": false
     },
     {
@@ -984,6 +984,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +992,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-11T02:27:25.249Z"
+  "lastUpdated": "2026-07-11T05:39:01.267Z"
 }

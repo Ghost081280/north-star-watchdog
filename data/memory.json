@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-30T12:07:36.309Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-06-30T15:26:22.485Z",
       "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
       "confidence": 0.4
@@ -510,6 +505,11 @@
       "date": "2026-07-11T02:27:25.247Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-11T05:39:01.265Z",
+      "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.75
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 36,
+      "count": 37,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-05-17T22:52:40.590Z"
+      "lastSeen": "2026-07-11T05:39:01.266Z"
     },
     {
       "type": "federal_funding",
@@ -539,10 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Minnesota woman connected to?",
-    "What other organizations is Former Buffalo priest connected to?",
-    "Where did the $4.6M allegedly go in Feeding Our Future investigation?",
-    "What other organizations is Daycare owner connected to?",
     "What other organizations is Caitlin Clark connected to?",
     "What other organizations is Kash Patel connected to?",
     "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?",
@@ -558,7 +554,11 @@
     "Where did the $9B allegedly go in Feeding Our Future Fraud Investigation?",
     "What other organizations is Minnesota daycare owner connected to?",
     "Where did the $5.4M allegedly go in Minnesota daycare fraud?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Aimee Bock connected to?",
+    "What other organizations is Carol Ammons connected to?",
+    "What other organizations is Former Miss America contestant connected to?",
+    "Where did the $250M allegedly go in Feeding Our Future investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2924,
-    "articlesProcessed": 145450,
-    "redFlagsFound": 3373,
+    "totalScans": 2925,
+    "articlesProcessed": 145500,
+    "redFlagsFound": 3375,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal_freeze",
+          "description": "The Feeding Our Future investigation resulted in a federal freeze of assets, highlighting the severity of the nonprofit fraud scheme.",
+          "insight": "This red flag suggests that nonprofit organizations may be vulnerable to fraud and abuse, and that increased oversight and regulation are necessary to prevent such schemes.",
+          "entities": [
+            "Feeding Our Future",
+            "Aimee Bock"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "DOJ",
+          "sourceUrl": "https://www.aol.com/news/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence-164737643.html"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $X allegedly go in Feeding Our Future investigation?",
-        "What other organizations is Two Minnesota daycare operators connected to?",
-        "What other organizations is Former Rochester, Kasson daycare owner connected to?"
+        "What other organizations is Minnesota woman connected to?",
+        "What other organizations is Former Buffalo priest connected to?",
+        "Where did the $4.6M allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-11T02:27:25.247Z",
-  "lastUpdated": "2026-07-11T02:27:25.248Z"
+  "lastReflection": "2026-07-11T05:39:01.265Z",
+  "lastUpdated": "2026-07-11T05:39:01.266Z"
 }
