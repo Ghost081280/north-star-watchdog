@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-30T17:51:41.233Z",
-      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
-      "confidence": 0.6
-    },
-    {
       "date": "2026-06-30T19:53:18.546Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-07-11T07:52:12.012Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-11T09:27:07.912Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?",
     "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?",
     "What specific allegations exist against Caitlin Clark?",
     "What other organizations is Minnesota DHS Commissioner connected to?",
@@ -558,7 +557,8 @@
     "What other organizations is Former Miss America contestant connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Daycare owner connected to?",
-    "Where did the $5.4M allegedly go in Daycare fraud investigation?"
+    "Where did the $5.4M allegedly go in Daycare fraud investigation?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2926,
-    "articlesProcessed": 145550,
-    "redFlagsFound": 3376,
+    "totalScans": 2927,
+    "articlesProcessed": 145600,
+    "redFlagsFound": 3377,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Caitlin Clark connected to?",
-        "What other organizations is Kash Patel connected to?",
-        "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?"
+        "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?",
+        "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?",
+        "What specific allegations exist against Caitlin Clark?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-11T07:52:12.012Z",
-  "lastUpdated": "2026-07-11T07:52:12.013Z"
+  "lastReflection": "2026-07-11T09:27:07.912Z",
+  "lastUpdated": "2026-07-11T09:27:07.914Z"
 }
