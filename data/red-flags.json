@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "Potential for termination of pandemic relief programs due to widespread fraud",
+      "insight": "The recent cases of childcare fraud and nonprofit fraud suggest a need for increased oversight and monitoring of pandemic relief programs to prevent further abuse.",
+      "entities": [
+        "Minnesota DHS",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.aol.com/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence/",
+      "id": "rf-1783796381017-10pnxz6mz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T18:59:41.013Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "The Feeding Our Future nonprofit program was terminated due to allegations of fraud.",
       "insight": "This termination suggests a potential lack of oversight and controls within the program.",
       "entities": [
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-11T17:54:38.963Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,26 +979,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-03T17:23:54.453Z",
       "isNew": false
-    },
-    {
-      "type": "financial crimes",
-      "description": "The 'Shariah compliant' home scam investigated in Minnesota raises concerns about financial crimes.",
-      "insight": "The scam's loss in court suggests that there may be a lack of effective enforcement against financial crimes.",
-      "entities": [
-        "Minnesota authorities",
-        "individuals involved in the scam"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Minnesota court",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHJ0ZmFwTnFkbm1NSHZVSi1JM1Q4UWlmcnRuMUVrOXVtd2x6ZnJnR25HM01FY09UTjkxaXBxWFNfREJ5c2lSUDZiQnRvSzM0aGpVSV9QVDl4MG9uemZqMHNxd2lmRE5YemtCVk5qdTJOZ1lYcGVSVzY5YlR2ZHJyVEpVZVRpNkVTWXZVTXdqZFMwTGdiVzI5NGxPbk4tZVZqanc",
-      "id": "rf-1783099434456-ksv8ck3vd",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-03T17:23:54.453Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,8 +992,7 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-11T17:54:38.963Z"
+  "lastUpdated": "2026-07-11T18:59:41.013Z"
 }
