@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-01T23:13:39.285Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-07-02T03:22:45.947Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-07-11T22:45:01.861Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-11T23:53:33.010Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $5.4M allegedly go in Minnesota daycare fraud?",
     "Are any of these 2 figures connected to each other?",
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is Carol Ammons connected to?",
@@ -558,7 +557,8 @@
     "Where did the $300 million allegedly go in FBI investigation into $300 million sent to Argentine soccer body?",
     "Are any of these 4 figures connected to each other?",
     "What other organizations is Robert P. Rubicco connected to?",
-    "Where did the N/A allegedly go in ICE shooting investigation?"
+    "Where did the N/A allegedly go in ICE shooting investigation?",
+    "Where did the $5.4M allegedly go in Feeding Our Future fraud?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2937,
-    "articlesProcessed": 146100,
-    "redFlagsFound": 3386,
+    "totalScans": 2938,
+    "articlesProcessed": 146150,
+    "redFlagsFound": 3387,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Feeding Our Future Fraud Investigation?",
-        "What other organizations is Minnesota daycare owner connected to?",
-        "Where did the $5.4M allegedly go in Minnesota daycare fraud?"
+        "Where did the $5.4M allegedly go in Minnesota daycare fraud?",
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Aimee Bock connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-11T22:45:01.861Z",
-  "lastUpdated": "2026-07-11T22:45:01.862Z"
+  "lastReflection": "2026-07-11T23:53:33.010Z",
+  "lastUpdated": "2026-07-11T23:53:33.011Z"
 }
