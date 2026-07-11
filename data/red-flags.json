@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "program_termination",
+      "description": "The state moved to revoke the original Treehouse License due to imminent danger",
+      "insight": "This suggests a serious lapse in oversight and potential harm to children",
+      "entities": [
+        "Robert P. Rubicco",
+        "Treehouse License"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Talk of the Sound",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOYm9zdU5NS1hIeU02ZW5zRHQ2bk51V2NaVmR6TXUxTXNPMjk1YVpMVGM0ZjFlU0tFU1RGMjBPdmY2WUVsVDZYcWxWV2VFSGVkUzl6OHBIaC1NV2p0SXlkZXV1SlY4VW1WWlZRSkVicjlLNlNUbXU0bUlKdTJ6VVo2ZHd3NXdTTzY0Q0hzVWctRkg3eUdrd21JVi1xVnUtY1h2dU5kUXJNUklpSFpBLV9HUlV0MGJjMlhBcjIxcXJnY0haNEpCQWM1M3IyX0RvSE5XLXA0WUFtZE1RRFJaLUtoYmV5RE9rQ0VtcHpEa3VrLTZEdEVFcmVnbTJBTlZiVVdiZjBscnBUc09PVE11cjQ3eGtGRklkMUlhaXpxdzg0S3RNUQ",
+      "id": "rf-1783800524666-n1l38lc0d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-11T20:08:44.663Z",
+      "isNew": true
+    },
+    {
+      "type": "program_termination",
       "description": "Potential for termination of pandemic relief programs due to widespread fraud",
       "insight": "The recent cases of childcare fraud and nonprofit fraud suggest a need for increased oversight and monitoring of pandemic relief programs to prevent further abuse.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-11T18:59:41.013Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -959,31 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-03T19:18:26.840Z",
       "isNew": false
-    },
-    {
-      "type": "election interference",
-      "description": "The FBI's investigation into the 2020 election in Georgia raises concerns about election interference.",
-      "insight": "The large number of staffers assigned to the investigation indicates a significant effort to examine election records, which may lead to findings of irregularities or interference.",
-      "entities": [
-        "FBI",
-        "Georgia government officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZlcyWW9LU0NJNGo0TjJrRTNHajF1Y0hCTHhqYUhBWXdlSC04TENhQzA5eUgxaVF3dndRZEJXczVXMWIxTU5ST3NzUXBIUmpZWm0wNTM0dDhvLWVlZ2RyOWVkTkJ5WjlyV25WWTlGWUt5SWtOOVJ6S1d3U25QYWdJYndZdWJuY01DTW5ncTJ6NHM3Z9IBlwFBVV95cUxObXZ1bW1INURQOHBoUzZUbnpDWDlCaE9YemtCVk5qdTJOZ1lYcGVSVzY5YlR2ZHJyVEpVZVRpNkVTWXZVTXdqZFMwTGdiVzI5NGxPbk4tZVZqanc",
-      "id": "rf-1783099434456-dv4p0mxsx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-03T17:23:54.453Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -992,7 +991,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-11T18:59:41.013Z"
+  "lastUpdated": "2026-07-11T20:08:44.663Z"
 }
