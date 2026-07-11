@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-06-30T15:26:22.485Z",
-      "summary": "NOTABLE: 1 high-profile figures, Breaking news present",
-      "confidence": 0.4
-    },
-    {
       "date": "2026-06-30T17:51:41.233Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
@@ -510,6 +505,11 @@
       "date": "2026-07-11T05:39:01.265Z",
       "summary": "CRITICAL: 1 high-profile figures, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.75
+    },
+    {
+      "date": "2026-07-11T07:52:12.012Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Caitlin Clark connected to?",
-    "What other organizations is Kash Patel connected to?",
     "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?",
     "Where did the unknown allegedly go in DOJ investigation into Caitlin Clark?",
     "What specific allegations exist against Caitlin Clark?",
@@ -558,7 +556,9 @@
     "What other organizations is Aimee Bock connected to?",
     "What other organizations is Carol Ammons connected to?",
     "What other organizations is Former Miss America contestant connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?"
+    "Where did the $250M allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Daycare owner connected to?",
+    "Where did the $5.4M allegedly go in Daycare fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2925,
-    "articlesProcessed": 145500,
-    "redFlagsFound": 3375,
+    "totalScans": 2926,
+    "articlesProcessed": 145550,
+    "redFlagsFound": 3376,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "federal_freeze",
-          "description": "The Feeding Our Future investigation resulted in a federal freeze of assets, highlighting the severity of the nonprofit fraud scheme.",
-          "insight": "This red flag suggests that nonprofit organizations may be vulnerable to fraud and abuse, and that increased oversight and regulation are necessary to prevent such schemes.",
-          "entities": [
-            "Feeding Our Future",
-            "Aimee Bock"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "DOJ",
-          "sourceUrl": "https://www.aol.com/news/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence-164737643.html"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota woman connected to?",
-        "What other organizations is Former Buffalo priest connected to?",
-        "Where did the $4.6M allegedly go in Feeding Our Future investigation?"
+        "What other organizations is Caitlin Clark connected to?",
+        "What other organizations is Kash Patel connected to?",
+        "Where did the $4.6M allegedly go in Minnesota daycare fraud investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-11T05:39:01.265Z",
-  "lastUpdated": "2026-07-11T05:39:01.266Z"
+  "lastReflection": "2026-07-11T07:52:12.012Z",
+  "lastUpdated": "2026-07-11T07:52:12.013Z"
 }
