@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-02T15:14:31.195Z",
-      "summary": "CRITICAL: 1 high-profile figures, 1 new legal actions, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.8
-    },
-    {
       "date": "2026-07-02T17:45:08.401Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
@@ -510,6 +505,11 @@
       "date": "2026-07-12T10:26:03.763Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-12T11:58:20.627Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2942,
-    "articlesProcessed": 146350,
-    "redFlagsFound": 3391,
+    "totalScans": 2943,
+    "articlesProcessed": 146400,
+    "redFlagsFound": 3392,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Daycare owner connected to?",
         "Where did the $5.4M allegedly go in Daycare fraud investigation?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "What specific allegations exist against Carol Ammons?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-12T10:26:03.763Z",
-  "lastUpdated": "2026-07-12T10:26:03.764Z"
+  "lastReflection": "2026-07-12T11:58:20.627Z",
+  "lastUpdated": "2026-07-12T11:58:20.627Z"
 }
