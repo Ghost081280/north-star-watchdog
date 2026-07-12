@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-02T23:04:26.556Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-03T02:45:27.079Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-07-12T15:58:24.369Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-12T17:01:59.776Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2946,
-    "articlesProcessed": 146550,
-    "redFlagsFound": 3395,
+    "totalScans": 2947,
+    "articlesProcessed": 146600,
+    "redFlagsFound": 3396,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
         "What specific allegations exist against Carol Ammons?",
-        "Where did the $300 million allegedly go in Feeding Our Future fraud investigation?"
+        "Where did the $300 million allegedly go in Feeding Our Future fraud investigation?",
+        "Where did the $300 million allegedly go in Feeding Our Future investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-12T15:58:24.369Z",
-  "lastUpdated": "2026-07-12T15:58:24.370Z"
+  "lastReflection": "2026-07-12T17:01:59.776Z",
+  "lastUpdated": "2026-07-12T17:01:59.776Z"
 }
