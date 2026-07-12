@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-02T10:36:56.450Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-02T12:56:42.640Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-12T05:56:17.117Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-12T08:13:53.243Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Former Miss America contestant connected to?",
-    "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Daycare owner connected to?",
     "Where did the $5.4M allegedly go in Daycare fraud investigation?",
     "Are any of these 3 figures connected to each other?",
@@ -558,7 +556,9 @@
     "Where did the $5.4M allegedly go in Feeding Our Future fraud?",
     "Where did the $5.4M allegedly go in Minnesota daycare fraud?",
     "Where did the $300M allegedly go in Argentine Soccer Federation investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "What other organizations is Aimee Bock connected to?",
+    "Where did the $5.4M allegedly go in Minnesota daycare fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2940,
-    "articlesProcessed": 146250,
-    "redFlagsFound": 3389,
+    "totalScans": 2941,
+    "articlesProcessed": 146300,
+    "redFlagsFound": 3390,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Aimee Bock connected to?",
-        "What other organizations is Carol Ammons connected to?",
-        "What other organizations is Former Miss America contestant connected to?"
+        "What other organizations is Former Miss America contestant connected to?",
+        "Where did the $250M allegedly go in Feeding Our Future investigation?",
+        "What other organizations is Daycare owner connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-12T05:56:17.117Z",
-  "lastUpdated": "2026-07-12T05:56:17.118Z"
+  "lastReflection": "2026-07-12T08:13:53.243Z",
+  "lastUpdated": "2026-07-12T08:13:53.244Z"
 }
