@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-02T07:29:51.758Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-07-02T10:36:56.450Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-12T02:32:54.618Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-07-12T05:56:17.117Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Aimee Bock connected to?",
-    "What other organizations is Carol Ammons connected to?",
     "What other organizations is Former Miss America contestant connected to?",
     "Where did the $250M allegedly go in Feeding Our Future investigation?",
     "What other organizations is Daycare owner connected to?",
@@ -558,7 +556,9 @@
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the N/A allegedly go in ICE shooting investigation?",
     "Where did the $5.4M allegedly go in Feeding Our Future fraud?",
-    "Where did the $5.4M allegedly go in Minnesota daycare fraud?"
+    "Where did the $5.4M allegedly go in Minnesota daycare fraud?",
+    "Where did the $300M allegedly go in Argentine Soccer Federation investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2939,
-    "articlesProcessed": 146200,
-    "redFlagsFound": 3388,
+    "totalScans": 2940,
+    "articlesProcessed": 146250,
+    "redFlagsFound": 3389,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "program_termination",
-          "description": "The Feeding Our Future program has been involved in a significant fraud scheme.",
-          "insight": "The Feeding Our Future program needs to be investigated for potential program termination due to the significant fraud scheme.",
-          "entities": [
-            "Feeding Our Future"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Feeding Our Future fraud: Rochester restaurant scheme defendant sentenced - AOL.com",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ1c1MnpWcm1oYjFiQ2JCeldnN013SkNqWUVBMWc3blRQSWJ0MUpoRXAyaVItZk93eDR0V1lSbG5xUHRub0tvdXlILVpTMFNuSkpLdFVud0J4SU42MWI5TG4wYUt6Ukotay15RTQwdldrd2QwZGo0QjhXTUhNV0Myd2hpVWt3RlZRQXNFVzVR"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "What other organizations is Aimee Bock connected to?",
-        "What other organizations is Carol Ammons connected to?"
+        "What other organizations is Carol Ammons connected to?",
+        "What other organizations is Former Miss America contestant connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-12T02:32:54.618Z",
-  "lastUpdated": "2026-07-12T02:32:54.619Z"
+  "lastReflection": "2026-07-12T05:56:17.117Z",
+  "lastUpdated": "2026-07-12T05:56:17.118Z"
 }
