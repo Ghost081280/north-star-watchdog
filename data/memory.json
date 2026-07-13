@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-03T19:18:26.838Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-03T21:03:53.971Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-13T02:34:23.660Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-13T06:15:11.247Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2953,
-    "articlesProcessed": 146900,
+    "totalScans": 2954,
+    "articlesProcessed": 146950,
     "redFlagsFound": 3401,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $300 million allegedly go in FBI investigation into $300 million sent to Argentine soccer body?",
         "Are any of these 4 figures connected to each other?",
-        "What other organizations is Robert P. Rubicco connected to?"
+        "What other organizations is Robert P. Rubicco connected to?",
+        "Where did the N/A allegedly go in ICE shooting investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-13T02:34:23.660Z",
-  "lastUpdated": "2026-07-13T02:34:23.660Z"
+  "lastReflection": "2026-07-13T06:15:11.247Z",
+  "lastUpdated": "2026-07-13T06:15:11.248Z"
 }
