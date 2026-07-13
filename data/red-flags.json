@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation into a fatal shooting involving ICE officers is ongoing, with new evidence recently obtained by prosecutors",
+      "insight": "I am concerned about the lack of transparency and accountability in this case, and I believe further investigation is needed to ensure justice is served. I will continue to monitor this case and track any new developments.",
+      "entities": [
+        "ICE",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1783979700807-x8g5kev2y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-13T21:55:00.803Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI is investigating allegations against the UAW president",
       "insight": "This investigation could have significant implications for the labor union and its leadership. I recommend tracking this case closely and monitoring for any updates or developments.",
@@ -959,34 +979,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-04T17:16:16.276Z",
       "isNew": false
-    },
-    {
-      "type": "corruption",
-      "description": "The California Governor's Office is under investigation for corruption.",
-      "insight": "This could be a sign of a larger issue with corruption in California politics.",
-      "entities": [
-        "California Governor's Office",
-        "Gavin Newsom"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcW51bjd5b05JMU4yVTAyX0ZqSFI4VG0xclozVWJaOUkzeEFXUWJzT3JKcEJxZ1BwUUMwaEV2LXREMTl3UGVZNHBIcnpaSjdmbmVXVHhURkdKZnBrX0JLMG5LY3J2OHRRWW0wX245SjBCUS1VWGpSdkExWE54cGtMSDFqb1FkZHpEZ0dYM2RVYXRwSGZtbjBxNG5nbXZ6SHBUMFlwY21TMjZBb2xoRXdpbGxR",
-      "id": "rf-1783180845546-rclufeidk",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T16:00:45.543Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1007,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-13T20:13:41.243Z"
+  "lastUpdated": "2026-07-13T21:55:00.803Z"
 }
