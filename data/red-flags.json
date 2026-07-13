@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating allegations against the UAW president",
+      "insight": "This investigation could have significant implications for the labor union and its leadership. I recommend tracking this case closely and monitoring for any updates or developments.",
+      "entities": [
+        "UAW president"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Crain's Detroit",
+      "sourceUrl": "https://www.crainsdetroit.com/law/feds-investigate-allegations-against-uaw-president",
+      "id": "rf-1783968186960-axzzbhvpz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-13T18:43:06.956Z",
+      "isNew": true
+    },
+    {
       "type": "program_investigation",
       "description": "The DOJ is investigating allegations around UAW President Shawn Fain",
       "insight": "This investigation could lead to further scrutiny of the United Auto Workers and potentially impact the automotive industry",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-13T16:31:20.747Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_investigation",
@@ -960,31 +979,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-04T16:00:45.543Z",
       "isNew": false
-    },
-    {
-      "type": "potential election interference",
-      "description": "The FBI's investigation into the 2020 election in Georgia raises concerns about potential election interference.",
-      "insight": "The investigation highlights the need for increased scrutiny of election processes to prevent interference.",
-      "entities": [
-        "FBI",
-        "Georgia election officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Guardian",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/jul/03/fbi-orders-260-staffers-to-georgia-to-assist-with-2020-election-investigation",
-      "id": "rf-1783166774774-54r07mz41",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T12:06:14.770Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -994,6 +992,7 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
+    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1011,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-13T16:31:20.747Z"
+  "lastUpdated": "2026-07-13T18:43:06.956Z"
 }
