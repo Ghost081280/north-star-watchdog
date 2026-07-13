@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "DOJ investigating allegations around UAW President Shawn Fain",
+      "insight": "The DOJ investigation into UAW President Shawn Fain suggests potential corruption and misuse of union funds. This could indicate a larger issue within the UAW that requires further investigation.",
+      "entities": [
+        "UAW",
+        "Shawn Fain",
+        "DOJ"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVG02SE16bkx3NlVrWVVvRnNjSjY2eUJWUnZ4Z3FNazlmUW9sSlJsWmxtZjB2Z1pxTGxodk5Nb19nN3BsUm96dHNoaDBaUWE3U25kUmZrSWhERW1xbW9GLWU0azh5WG1XYVhyNnpGNFpzeHpZejBWZzVpTUtnTzJ2LWNtS2pkOEFWTkw2WTQyclRfb1FQUFU3MmF6Y3g5bjN2WGZ2dFlR?oc=5",
+      "id": "rf-1783948951273-ej82i5pkr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-13T13:22:31.269Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ is investigating UAW President Shawn Fain for alleged mishandling of bonuses.",
       "insight": "This investigation may indicate a larger pattern of corruption within the UAW. Further investigation is needed to determine the extent of the alleged misconduct.",
@@ -958,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-04T10:08:18.267Z",
       "isNew": false
-    },
-    {
-      "type": "election investigation",
-      "description": "The FBI's investigation into the 2020 election in Fulton County, Georgia, raises concerns about the integrity of the electoral process.",
-      "insight": "The investigation suggests that there may have been irregularities in the 2020 election in Fulton County, Georgia. Further investigation is needed to determine the extent of any potential wrongdoing.",
-      "entities": [
-        "Fulton County",
-        "Georgia"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3B2dGtyS0tkVEdBb2dvR1B6WlRsSFNCUTVuYmdBNjE5YVVlLWl5cnVYN0pVVUM2bmhTRkNrVDFpZFFSNXVaQmdGU3dKd0ZnYW5TdTRLOTU0MHoxQ2drcXFocjlQN7BpcTU5TTRIT2w5V0FBdVNKTVdDY0xWQ3JJUA?oc=5",
-      "id": "rf-1783139675418-yusrc2a7r",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T04:34:35.415Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +993,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1009,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-13T10:24:09.876Z"
+  "lastUpdated": "2026-07-13T13:22:31.269Z"
 }
