@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-04T22:59:29.177Z",
-      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.45
-    },
-    {
       "date": "2026-07-05T00:06:43.612Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-14T14:48:13.193Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-07-14T16:13:07.206Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -517,9 +517,9 @@
       "type": "childcare_fraud",
       "description": "2 findings related to childcare fraud",
       "confidence": 0.95,
-      "count": 37,
+      "count": 38,
       "firstSeen": "2026-01-02T15:20:49.714Z",
-      "lastSeen": "2026-07-11T05:39:01.266Z"
+      "lastSeen": "2026-07-14T16:13:07.207Z"
     },
     {
       "type": "federal_funding",
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $0 allegedly go in UAW President Shawn Fain Investigation?",
     "Where did the $0 allegedly go in Minnesota Child Care Fraud?",
     "What other organizations is UAW President connected to?",
     "What other organizations is Man connected to?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Alex Pretti?",
     "Where did the $10B+ allegedly go in Feeding Our Future?",
-    "Where did the $10 billion allegedly go in Child care funding freeze?"
+    "Where did the $10 billion allegedly go in Child care funding freeze?",
+    "Where did the $1.1 million allegedly go in Minnesota Somali fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2967,
-    "articlesProcessed": 147600,
-    "redFlagsFound": 3416,
+    "totalScans": 2968,
+    "articlesProcessed": 147650,
+    "redFlagsFound": 3418,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "fraud",
+          "description": "Man pleads guilty to stealing $1.1 million from Feeding Our Future meals scheme",
+          "insight": "This case indicates potential fraud in the Feeding Our Future meals scheme, which may be related to other similar cases.",
+          "entities": [
+            "Abdirizak A. Yusuf"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "The Economic Times",
+          "sourceUrl": "https://economictimes.indiatimes.com/news/2024/07/14/minnesota-somali-fraud-man-pleads-guilty-to-stealing-1-1mn-from-feeding-our-future-meals-scheme"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $10M+ allegedly go in Minnesota Child Care Fraud?",
         "Where did the $0 allegedly go in UAW President Shawn Fain Investigation?",
-        "Where did the $0 allegedly go in Minnesota Child Care Fraud?"
+        "Where did the $0 allegedly go in Minnesota Child Care Fraud?",
+        "What other organizations is UAW President connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-14T14:48:13.193Z",
-  "lastUpdated": "2026-07-14T14:48:13.194Z"
+  "lastReflection": "2026-07-14T16:13:07.206Z",
+  "lastUpdated": "2026-07-14T16:13:07.207Z"
 }
