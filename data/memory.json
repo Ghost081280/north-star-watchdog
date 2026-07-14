@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-05T05:00:59.692Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-07-05T07:55:47.350Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-14T18:01:10.670Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-07-14T19:39:36.089Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the None allegedly go in ICE shooting investigation?",
     "What other organizations is Minnesota man connected to?",
     "What other organizations is Texas Man connected to?",
     "Where did the $1.1 million allegedly go in Feeding Our Future fraud investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Shireen Gandhi connected to?",
     "What other organizations is Minnesota daycare owner connected to?",
     "Where did the $10 million allegedly go in Minnesota DHS Fraud Investigation?",
-    "Where did the Unknown allegedly go in Taco Bell Investigation?"
+    "Where did the Unknown allegedly go in Taco Bell Investigation?",
+    "Are any of these 4 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2969,
-    "articlesProcessed": 147700,
-    "redFlagsFound": 3419,
+    "totalScans": 2970,
+    "articlesProcessed": 147750,
+    "redFlagsFound": 3421,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $0 allegedly go in Minnesota Child Care Fraud?",
-        "What other organizations is UAW President connected to?",
-        "What other organizations is Man connected to?"
+        "Where did the None allegedly go in ICE shooting investigation?",
+        "What other organizations is Minnesota man connected to?",
+        "What other organizations is Texas Man connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-14T18:01:10.670Z",
-  "lastUpdated": "2026-07-14T18:01:10.671Z"
+  "lastReflection": "2026-07-14T19:39:36.089Z",
+  "lastUpdated": "2026-07-14T19:39:36.090Z"
 }
