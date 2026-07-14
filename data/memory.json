@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-05T12:15:10.507Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-05T14:41:35.585Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-14T22:02:47.545Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-07-14T23:52:51.722Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 3 figures connected to each other?",
-    "Where did the $ allegedly go in Feeding Our Future scheme?",
-    "Where did the $ allegedly go in Blank Rome LLP data breach?",
     "What specific allegations exist against Byron Brown?",
     "What specific allegations exist against Louise Lucas?",
     "What specific allegations exist against Renee Good?",
@@ -558,7 +555,10 @@
     "What other organizations is Shawn Fain connected to?",
     "What specific allegations exist against Shawn Fain?",
     "Where did the $10 billion allegedly go in $10 billion child care funding freeze?",
-    "What other organizations is Rock Island nursing home owner connected to?"
+    "What other organizations is Rock Island nursing home owner connected to?",
+    "Where did the $0 allegedly go in Taco Bell Cyclosporiasis Outbreak Investigation?",
+    "Where did the $0 allegedly go in Pastor Greg Locke Financial Investigation?",
+    "Where did the $10B allegedly go in Trump Administration Federal Aid Freeze?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2972,
-    "articlesProcessed": 147850,
-    "redFlagsFound": 3425,
+    "totalScans": 2973,
+    "articlesProcessed": 147900,
+    "redFlagsFound": 3427,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 2 figures connected to each other?",
         "Are any of these 3 figures connected to each other?",
-        "Where did the $ allegedly go in Feeding Our Future scheme?"
+        "Where did the $ allegedly go in Feeding Our Future scheme?",
+        "Where did the $ allegedly go in Blank Rome LLP data breach?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-14T22:02:47.545Z",
-  "lastUpdated": "2026-07-14T22:02:47.546Z"
+  "lastReflection": "2026-07-14T23:52:51.722Z",
+  "lastUpdated": "2026-07-14T23:52:51.723Z"
 }

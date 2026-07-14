@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "financial irregularities",
+      "description": "Investigation into Pastor Greg Locke's finances",
+      "insight": "This could indicate potential financial misconduct or irregularities",
+      "entities": [
+        "Pastor Greg Locke"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "The Roys Report",
+      "sourceUrl": "https://www.theroysreport.com/2026/07/14/pastor-greg-locke-federal-investigation/",
+      "id": "rf-1784073171728-c86hsfezj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-14T23:52:51.724Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The retirement of DHS Deputy Commissioner Shireen Gandhi amid a fraud saga raises questions about the agency's handling of funds and programs.",
       "insight": "The circumstances surrounding Gandhi's retirement and the ongoing investigation into DHS's handling of funds warrant further scrutiny to ensure that programs are being managed effectively and efficiently.",
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-14T22:02:47.548Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud_charges",
@@ -955,30 +974,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-05T18:01:34.710Z",
       "isNew": false
-    },
-    {
-      "type": "fraud investigation",
-      "description": "The FBI is investigating Alarum, which has sparked a stock rout and service suspension.",
-      "insight": "This investigation may be related to other cases of corporate fraud, and it's essential to monitor the situation closely.",
-      "entities": [
-        "Alarum"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "CTech",
-      "sourceUrl": "https://www.ctech.cafedevmon.com/2026/07/05/fbi-investigation-into-alarum-sparks-stock-rout-and-service-suspension/",
-      "id": "rf-1783267597992-8mfliepan",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T16:06:37.988Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,8 +986,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-14T22:02:47.548Z"
+  "lastUpdated": "2026-07-14T23:52:51.724Z"
 }
