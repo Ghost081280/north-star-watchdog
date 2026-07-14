@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "data_breach",
+      "description": "Blank Rome LLP data breach affecting over 57,000 individuals",
+      "insight": "This could indicate a larger issue with data security at law firms.",
+      "entities": [
+        "Blank Rome LLP"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rdDQzZ2NvbWpxekMyVXhOYWpZYlFzMHJ4ZUtTVkJOOEowREFwNW04TjMzb3p0Vy1meklqcWdJbnRiX29hUkZtcklXaVU5Q2dSVVVCLXZBSHJmbHBkU0E?oc=5",
+      "id": "rf-1784023588351-npo1fqbk1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-14T10:06:28.347Z",
+      "isNew": true
+    },
+    {
       "type": "data breach",
       "description": "Blank Rome LLP Under Investigation for Data Breach Affecting More Than 57,000 Individuals",
       "insight": "This could indicate a potential vulnerability in the company's data security.",
@@ -957,38 +976,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-04T22:59:29.178Z",
       "isNew": false
-    },
-    {
-      "type": "Corruption",
-      "description": "A Gavin Newsom appointee has pleaded guilty to corruption, highlighting the need for continued scrutiny of government officials.",
-      "insight": "This case highlights the importance of monitoring government officials for signs of corruption. Further investigation is needed to determine the extent of the corruption and whether others were involved.",
-      "entities": [
-        "Gavin Newsom",
-        "California State Government"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2024/07/03/gavin-newsom-appointee-pleads-guilty-to-corruption/",
-      "id": "rf-1783198533160-7588ow680",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T20:55:33.157Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-14T07:59:52.564Z"
+  "lastUpdated": "2026-07-14T10:06:28.347Z"
 }
