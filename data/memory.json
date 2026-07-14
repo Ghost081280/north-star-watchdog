@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-05T10:10:59.916Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-05T12:15:10.507Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-14T20:58:52.001Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-07-14T22:02:47.545Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
     "Are any of these 3 figures connected to each other?",
     "Where did the $ allegedly go in Feeding Our Future scheme?",
     "Where did the $ allegedly go in Blank Rome LLP data breach?",
@@ -558,7 +557,8 @@
     "What specific allegations exist against Shireen Gandhi?",
     "What other organizations is Shawn Fain connected to?",
     "What specific allegations exist against Shawn Fain?",
-    "Where did the $10 billion allegedly go in $10 billion child care funding freeze?"
+    "Where did the $10 billion allegedly go in $10 billion child care funding freeze?",
+    "What other organizations is Rock Island nursing home owner connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2971,
-    "articlesProcessed": 147800,
-    "redFlagsFound": 3423,
+    "totalScans": 2972,
+    "articlesProcessed": 147850,
+    "redFlagsFound": 3425,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "fraud_charges",
-          "description": "A Minnesota daycare owner pleaded guilty to state and federal fraud charges over a multi-million-dollar scheme.",
-          "insight": "This indicates a significant case of fraud involving a large sum of money.",
-          "entities": [
-            "Minnesota daycare owner"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Heartlander News",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRW8xTXY1N2lCQ242bVdMSG1CWXVkelc0bi0weVZhbVhXZEowQlV6ZHA2dDljcmhCbjA1c3FzY0NFeE9Rd284Vmt3QzctQzNBVk1DN2M0M0p5eUhuanBNUFNQY0dqM2hHRTdKM3pDRVMxZGhpdzAwUmkwWDZ6Y1lBTXAzQkQ0TTBaS1ZQa3VPTWt1eml4a1JkbXdUQUpEMFZvQ2Y5OEh0T0pUUF9vUEt2SmgwTUNxS1haU29KNTQwaDlXLS1hSWpFZzQ1Y0J4cFk"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Minnesota man connected to?",
-        "What other organizations is Texas Man connected to?",
-        "Where did the $1.1 million allegedly go in Feeding Our Future fraud investigation?"
+        "Are any of these 2 figures connected to each other?",
+        "Are any of these 3 figures connected to each other?",
+        "Where did the $ allegedly go in Feeding Our Future scheme?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-14T20:58:52.001Z",
-  "lastUpdated": "2026-07-14T20:58:52.002Z"
+  "lastReflection": "2026-07-14T22:02:47.545Z",
+  "lastUpdated": "2026-07-14T22:02:47.546Z"
 }

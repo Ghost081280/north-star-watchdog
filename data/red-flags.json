@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The retirement of DHS Deputy Commissioner Shireen Gandhi amid a fraud saga raises questions about the agency's handling of funds and programs.",
+      "insight": "The circumstances surrounding Gandhi's retirement and the ongoing investigation into DHS's handling of funds warrant further scrutiny to ensure that programs are being managed effectively and efficiently.",
+      "entities": [
+        "DHS",
+        "Shireen Gandhi"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "News reports",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSzFmRXNMN1hoTFd3dFpUdjBUSlVXd3VkSUZMRURvQXZlc2laMkkxRkZQQjdwT3MzVS1JaWVFWms3eGtBRDRGYkFIdGhaUDRQX1J4SkFaZmdjZ3djbk8xaU9wMmtLWV92ZjdicmxQTk5NYTh4T0VldHVIaE05dmNfVmcyM2dZMENOb0tuNkc1TG9NYTZyLWIzSDFRdlhOZ1hRakNsN0xKMFlDS0owa2c",
+      "id": "rf-1784066567552-h2ixhj470",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-14T22:02:47.548Z",
+      "isNew": true
+    },
+    {
       "type": "fraud_charges",
       "description": "A Minnesota daycare owner pleaded guilty to state and federal fraud charges over a multi-million-dollar scheme.",
       "insight": "This indicates a significant case of fraud involving a large sum of money.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-14T20:58:52.003Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "fraud allegations",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-05T16:06:37.988Z",
       "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "Multiple allegations of fraud across various sectors",
-      "insight": "There is a concerning trend of fraud allegations across different industries, including healthcare and elections",
-      "entities": [
-        "Kerr Kriisa",
-        "Gavin Newsom"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Various news sources",
-      "sourceUrl": "https://news.google.com",
-      "id": "rf-1783238147356-tajsat5ff",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T07:55:47.352Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-14T20:58:52.003Z"
+  "lastUpdated": "2026-07-14T22:02:47.548Z"
 }
