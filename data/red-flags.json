@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "data breach",
+      "description": "Blank Rome LLP Under Investigation for Data Breach Affecting More Than 57,000 Individuals",
+      "insight": "This could indicate a potential vulnerability in the company's data security.",
+      "entities": [
+        "Blank Rome LLP"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.schubertjonckheer.com/privacy-alert-blank-rome-llp-under-investigation-for-data-breach-affecting-more-than-57000-individuals/",
+      "id": "rf-1783995203486-cxfxi3n2v",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-14T02:13:23.482Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Trump administration is under investigation for its handling of the International Criminal Court, with allegations of attempting to disable the court.",
       "insight": "I notice a pattern of the Trump administration being involved in multiple investigations, including the International Criminal Court and the ICE shootings. This could indicate a larger issue with the administration's handling of sensitive matters.",
@@ -17,7 +36,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-13T22:54:59.435Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -958,31 +977,10 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-04T20:55:33.157Z",
       "isNew": false
-    },
-    {
-      "type": "shell company",
-      "description": "The 'Shariah compliant' home scam that lost in Minnesota court may be related to a shell company.",
-      "insight": "This could be a sign of a larger scheme to defraud people.",
-      "entities": [
-        "Minnesota company"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "moneywise.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHJ0ZmFwTnFkbm1NSHZVSi1JM1Q4UWlmcnRuMUVrOXVtd2x6ZnJnR25HM01FY09UTjkxaXBxWFNfREJ5c2lSUDZiQnRvSzM0aGpVSV9QVDl4MG9uemZqMHNxd2lmRE5YemtCVk5qdTJOZ1lYcGVSVzY5YlR2ZHJyVEpVZVRpNkVTWXZVTXdqZFMwTGdiVzI5NGxPbk4tZVZqanc",
-      "priorityLevel": "high",
-      "id": "rf-1783192127026-h14qztyoo",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-04T19:08:47.022Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
-    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -992,7 +990,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-13T22:54:59.435Z"
+  "lastUpdated": "2026-07-14T02:13:23.482Z"
 }

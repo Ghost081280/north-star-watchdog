@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-04T14:29:14.312Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-04T16:00:45.541Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-13T22:54:59.433Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-14T02:13:23.480Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $300 million allegedly go in Argentine Soccer Federation investigation?",
     "What specific allegations exist against Robert P. Rubicco?",
     "Where did the $300 million allegedly go in Feeding Our Future?",
     "Where did the $250 million allegedly go in Feeding Our Future investigation?",
@@ -558,7 +557,8 @@
     "What other organizations is Texas Man connected to?",
     "Where did the $1.1 million allegedly go in Feeding Our Future fraud investigation?",
     "Where did the None allegedly go in Renee Good and Alex Pretti shooting investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2961,
-    "articlesProcessed": 147300,
-    "redFlagsFound": 3410,
+    "totalScans": 2962,
+    "articlesProcessed": 147350,
+    "redFlagsFound": 3412,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "data breach",
+          "description": "Blank Rome LLP Under Investigation for Data Breach Affecting More Than 57,000 Individuals",
+          "insight": "This could indicate a potential vulnerability in the company's data security.",
+          "entities": [
+            "Blank Rome LLP"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Schubert Jonckheer & Kolbe",
+          "sourceUrl": "https://www.schubertjonckheer.com/privacy-alert-blank-rome-llp-under-investigation-for-data-breach-affecting-more-than-57000-individuals/"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $5.4M allegedly go in Minnesota daycare fraud investigation?",
-        "Where did the $5.4M allegedly go in Feeding Our Future fraud investigation?",
-        "What specific allegations exist against Caitlin Clark?"
+        "Where did the $300 million allegedly go in Argentine Soccer Federation investigation?",
+        "What specific allegations exist against Robert P. Rubicco?",
+        "Where did the $300 million allegedly go in Feeding Our Future?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-13T22:54:59.433Z",
-  "lastUpdated": "2026-07-13T22:54:59.434Z"
+  "lastReflection": "2026-07-14T02:13:23.480Z",
+  "lastUpdated": "2026-07-14T02:13:23.481Z"
 }
