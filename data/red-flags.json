@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "financial impropriety",
+      "description": "Pastor Greg Locke's finances are under investigation",
+      "insight": "This could indicate potential misuse of funds or financial mismanagement.",
+      "entities": [
+        "Pastor Greg Locke"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "The Roys Report",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQzhKQTNxTFZ3NW8xTkVtbkhUREE1VUNOb1ctRVRxVEFoekNWZEh4SHdIUVFmVjVKa0NWU0Y3NDA0dUU1UjE2ZkV5ZmFwWVl3M0pRbTZGZmJHTVdkcGc1MjNNeWc3Q1QzMWVlTnpzRlZ3YU1pelphbnZpR1Jaa29lNVFiOE43MnJhSUdBQ1JSYlBIVEVINU9kVDZn?oc=5",
+      "id": "rf-1784093351570-h43xpw6lr",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-15T05:29:11.566Z",
+      "isNew": true
+    },
+    {
+      "type": "foodborne illness",
+      "description": "Taco Bell under investigation for cyclosporiasis outbreak",
+      "insight": "This could indicate a larger issue with food safety or supply chain management.",
+      "entities": [
+        "Taco Bell"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "The Courier-Journal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQWcwOGRnMzNqeUhQelRQaW1faFB4Si1fdmx3VU9Dd24yb2R6NXkwYXdMOHgwNXFVaFA5Uy1WWGptcDRFcnRTcE0tT3dwdVVBdkdaRnZCcXQtRmNHUmFaM0tsaUZNSnhKRUV2Ri1JeTRMbkdIT0xEdXFjNGVvX0ZPa0ZGenlHMDZWWlVSUHlNWDVLMWhXdGNXLXA3b1BPQU9BVWhyT1lKak03aDVCclZLY1RFX2FpTHF2VkM5Y3lrUkluNHgzS1hfYUJONA?oc=5",
+      "id": "rf-1784093351570-oe4jgd3d9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-15T05:29:11.566Z",
+      "isNew": true
+    },
+    {
       "type": "financial irregularities",
       "description": "Investigation into Pastor Greg Locke's finances",
       "insight": "This could indicate potential financial misconduct or irregularities",
@@ -935,45 +973,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-05T22:00:37.129Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Multiple federal investigations are underway, including probes into Alarum Technologies and Georgia's 2020 election.",
-      "insight": "These investigations suggest a pattern of potential wrongdoing across various sectors, including technology and elections.",
-      "entities": [
-        "Alarum Technologies",
-        "Georgia election officials"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News reports",
-      "sourceUrl": "https://globes.co.il/en/article/alarum-technologies-slumps-following-fbi-probe-100139846/",
-      "id": "rf-1783282348054-2yjthwrod",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T20:12:28.050Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Alarum Technologies is under FBI investigation",
-      "insight": "The FBI investigation into Alarum Technologies may be related to allegations of fraud or other financial crimes. This could have implications for the company's operations and reputation.",
-      "entities": [
-        "Alarum Technologies"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Globes - Israel Business News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdUZ1N3NoZS11d01DSlBRbG5MOE1TQzEtSjIyYWR2RENmWXBnWXdWdnNPMzdjbUdaeXFZUzU0bVZGSG9QZjVDQTUweWlRVEN2eS1uT0tlUTg2NEpyOTEwWHZkekFLcHljS0M3TXRwd0RTTTFDYlJWbkNuTHJyaGtUVW9ab0NWMG9oZktPckZ5NHpwZ2VWQ0dR",
-      "id": "rf-1783274494714-3o4dx37qr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T18:01:34.710Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,7 +985,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA"
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-15T02:11:50.608Z"
+  "lastUpdated": "2026-07-15T05:29:11.566Z"
 }
