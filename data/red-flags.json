@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Food safety outbreak",
+      "description": "Recent outbreak linked to Taco Bell",
+      "insight": "This suggests a problem with food safety at Taco Bell, and further investigation is needed to determine the source of the outbreak.",
+      "entities": [
+        "Taco Bell",
+        "FDA"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "CDC",
+      "sourceUrl": "https://www.google.com/url?q=https://www.cdc.gov/parasites/cyclosporiasis/outbreaks.html",
+      "id": "rf-1784146034617-2x5irb4j9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-15T20:07:14.612Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Weavers were sacked from Uncle Nearest amid a federal investigation",
       "insight": "This could be a sign of a larger issue, and I recommend investigating further to see if there are any connections to other entities or programs.",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-06T02:58:29.648Z",
       "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "Multiple fraud allegations have been made against various individuals and organizations, including a college hoops player and Alarum Technologies.",
-      "insight": "These allegations suggest a pattern of fraudulent activity that warrants further investigation.",
-      "entities": [
-        "Ex-College Hoops Player",
-        "Alarum Technologies"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Eurasia Review, Front Office Sports",
-      "sourceUrl": "https://www.eurasiareview.com/gop-lawmaker-seeks-omar-communications-after-eidleh-arrest-2026-07-05/",
-      "id": "rf-1783293077951-dtd23wc3o",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T23:11:17.948Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,7 +985,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-15T18:10:35.293Z"
+  "lastUpdated": "2026-07-15T20:07:14.612Z"
 }
