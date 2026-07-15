@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Weavers were sacked from Uncle Nearest amid a federal investigation",
+      "insight": "This could be a sign of a larger issue, and I recommend investigating further to see if there are any connections to other entities or programs.",
+      "entities": [
+        "Uncle Nearest",
+        "Weavers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Spirits Business",
+      "sourceUrl": "https://www.thespiritsbusiness.com/news/weavers-sacked-from-uncle-nearest-amid-federal-investigation/",
+      "id": "rf-1784117628836-5y45tssd5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-15T12:13:48.832Z",
+      "isNew": true
+    },
+    {
       "type": "investigation",
       "description": "FBI investigation into late Sen. Graham's sudden death",
       "insight": "This could indicate potential irregularities or suspicious circumstances surrounding Sen. Graham's death.",
@@ -954,29 +974,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-05T23:11:17.948Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Alarum Technologies, which has led to a stock rout and service suspension.",
-      "insight": "This investigation raises concerns about potential wrongdoing in the technology sector and the impact on investors.",
-      "entities": [
-        "Alarum Technologies"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Globes - Israel Business News",
-      "sourceUrl": "https://globes.com.il/business-news/alarum-technologies-slumps-following-fbi-probe",
-      "id": "rf-1783288837133-fzdckhl8x",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T22:00:37.129Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -984,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1001,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-15T10:47:41.599Z"
+  "lastUpdated": "2026-07-15T12:13:48.832Z"
 }
