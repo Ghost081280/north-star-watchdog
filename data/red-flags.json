@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "investigation",
+      "description": "FBI investigation into late Sen. Graham's sudden death",
+      "insight": "This could indicate potential irregularities or suspicious circumstances surrounding Sen. Graham's death.",
+      "entities": [
+        "FBI",
+        "Sen. Graham"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "eciks.org",
+      "sourceUrl": "https://eciks.org/fbi-searches-late-sen-grahams-dc-home-amid-death-investigation/",
+      "id": "rf-1784102727277-mol0657bm",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-15T08:05:27.273Z",
+      "isNew": true
+    },
+    {
       "type": "financial impropriety",
       "description": "Pastor Greg Locke's finances are under investigation",
       "insight": "This could indicate potential misuse of funds or financial mismanagement.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-15T05:29:11.566Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "foodborne illness",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-15T05:29:11.566Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "financial irregularities",
@@ -953,26 +973,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-05T22:00:37.129Z",
       "isNew": false
-    },
-    {
-      "type": "election interference",
-      "description": "The FBI is expanding its investigation into Georgia's 2020 election.",
-      "insight": "This investigation raises concerns about potential election interference and the integrity of the electoral process.",
-      "entities": [
-        "Georgia",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "95.5 WSB",
-      "sourceUrl": "https://95.5wsb.com/news/fbi-reportedly-expands-investigation-into-georgias-2020-election",
-      "id": "rf-1783288837133-4wz0cbw74",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-05T22:00:37.129Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -1004,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-15T05:29:11.566Z"
+  "lastUpdated": "2026-07-15T08:05:27.273Z"
 }

@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-05T18:01:34.708Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-05T20:12:28.048Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-15T05:29:11.564Z",
       "summary": "ROUTINE: 1 high-confidence findings, Breaking news present",
       "confidence": 0.25
+    },
+    {
+      "date": "2026-07-15T08:05:27.271Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2975,
-    "articlesProcessed": 148000,
-    "redFlagsFound": 3430,
+    "totalScans": 2976,
+    "articlesProcessed": 148050,
+    "redFlagsFound": 3432,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "foodborne illness",
-          "description": "Taco Bell under investigation for cyclosporiasis outbreak",
-          "insight": "This could indicate a larger issue with food safety or supply chain management.",
-          "entities": [
-            "Taco Bell"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "The Courier-Journal",
-          "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQWcwOGRnMzNqeUhQelRQaW1faFB4Si1fdmx3VU9Dd24yb2R6NXkwYXdMOHgwNXFVaFA5Uy1WWGptcDRFcnRTcE0tT3dwdVVBdkdaRnZCcXQtRmNHUmFaM0tsaUZNSnhKRUV2Ri1JeTRMbkdIT0xEdXFjNGVvX0ZPa0ZGenlHMDZWWlVSUHlNWDVLMWhXdGNXLXA3b1BPQU9BVWhyT1lKak03aDVCclZLY1RFX2FpTHF2VkM5Y3lrUkluNHgzS1hfYUJONA?oc=5"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Alex Pretti?",
-        "Where did the $10B+ allegedly go in Feeding Our Future?",
-        "Where did the $10 billion allegedly go in Child care funding freeze?"
+        "Where did the $10 billion allegedly go in Child care funding freeze?",
+        "Where did the $1.1 million allegedly go in Minnesota Somali fraud investigation?",
+        "What other organizations is Shireen Gandhi connected to?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-15T05:29:11.564Z",
-  "lastUpdated": "2026-07-15T05:29:11.565Z"
+  "lastReflection": "2026-07-15T08:05:27.271Z",
+  "lastUpdated": "2026-07-15T08:05:27.272Z"
 }
