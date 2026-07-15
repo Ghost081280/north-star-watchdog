@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-05T14:41:35.585Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-05T16:06:37.986Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-14T23:52:51.722Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-15T02:11:50.606Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Byron Brown?",
-    "What specific allegations exist against Louise Lucas?",
-    "What specific allegations exist against Renee Good?",
     "What specific allegations exist against Alex Pretti?",
     "Where did the $10B+ allegedly go in Feeding Our Future?",
     "Where did the $10 billion allegedly go in Child care funding freeze?",
@@ -558,7 +555,10 @@
     "What other organizations is Rock Island nursing home owner connected to?",
     "Where did the $0 allegedly go in Taco Bell Cyclosporiasis Outbreak Investigation?",
     "Where did the $0 allegedly go in Pastor Greg Locke Financial Investigation?",
-    "Where did the $10B allegedly go in Trump Administration Federal Aid Freeze?"
+    "Where did the $10B allegedly go in Trump Administration Federal Aid Freeze?",
+    "What other organizations is Pastor Greg Locke connected to?",
+    "Where did the Unknown allegedly go in Taco Bell Cyclosporiasis Outbreak?",
+    "Where did the $10 billion allegedly go in Trump Administration Freeze on Federal Funds?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2973,
-    "articlesProcessed": 147900,
-    "redFlagsFound": 3427,
+    "totalScans": 2974,
+    "articlesProcessed": 147950,
+    "redFlagsFound": 3428,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Are any of these 3 figures connected to each other?",
-        "Where did the $ allegedly go in Feeding Our Future scheme?",
-        "Where did the $ allegedly go in Blank Rome LLP data breach?"
+        "What specific allegations exist against Byron Brown?",
+        "What specific allegations exist against Louise Lucas?",
+        "What specific allegations exist against Renee Good?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-14T23:52:51.722Z",
-  "lastUpdated": "2026-07-14T23:52:51.723Z"
+  "lastReflection": "2026-07-15T02:11:50.606Z",
+  "lastUpdated": "2026-07-15T02:11:50.607Z"
 }
