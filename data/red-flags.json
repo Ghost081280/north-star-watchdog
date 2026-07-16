@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "Minnesota pauses new providers for 12 high-risk services",
+      "insight": "This pause may indicate a larger issue with oversight and potential fraud in these services.",
+      "entities": [
+        "Minnesota DHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/news/local-news/6-more-months-minnesota-medicaid-pause-new-providers-continues-12-high-risk-services",
+      "id": "rf-1784204370066-w61vcg6ya",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-16T12:19:30.062Z",
+      "isNew": true
+    },
+    {
+      "type": "federal_investigation",
+      "description": "FBI obtains warrant to search Salgado's van for evidence of drugs",
+      "insight": "This investigation may be connected to larger fraud or corruption schemes.",
+      "entities": [
+        "FBI",
+        "Houston ICE"
+      ],
+      "confidence": 75,
+      "priority": "high",
+      "source": "Houston Chronicle",
+      "sourceUrl": "https://www.houstonchronicle.com/breaking-news/article/fbi-obtains-warrant-search-salgado-s-van-evidence-182105835.php",
+      "id": "rf-1784204370066-r7qqt6rqa",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-16T12:19:30.062Z",
+      "isNew": true
+    },
+    {
       "type": "shell company",
       "description": "Minnesota businesses tied to Feeding Our Future received taxpayer money years later",
       "insight": "Potential for fraudulent activity and misuse of funds",
@@ -18,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-16T10:06:48.410Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -937,44 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-06T16:19:11.059Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Alarum Technologies is under investigation by the FBI, leading to a stock rout and service suspension.",
-      "insight": "The investigation into Alarum Technologies raises concerns about potential wrongdoing in the company's operations.",
-      "entities": [
-        "Alarum Technologies"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Globes",
-      "sourceUrl": "https://www.globes.co.il/en/article/alarm-technologies-slumps-following-fbi-probe-1001438457/",
-      "id": "rf-1783339401374-drjyawypg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-06T12:03:21.371Z",
-      "isNew": false
-    },
-    {
-      "type": "potential fraud",
-      "description": "Kerr Kriisa, a former Big 12 Guard, was arrested in a multimillion-dollar fraud case.",
-      "insight": "The arrest of Kerr Kriisa raises concerns about potential wrongdoing in college sports.",
-      "entities": [
-        "Kerr Kriisa"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Heartland College Sports",
-      "sourceUrl": "https://heartlandcollegesports.com/2026/07/05/former-big-12-guard-kerr-kriisa-arrested-in-fbi-fraud-investigation/",
-      "id": "rf-1783339401374-i0jhqi4c5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-06T12:03:21.371Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,12 +984,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-16T10:06:48.410Z"
+  "lastUpdated": "2026-07-16T12:19:30.062Z"
 }
