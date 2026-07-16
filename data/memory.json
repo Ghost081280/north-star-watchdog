@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-07T04:51:08.490Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-07T08:21:49.732Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-16T07:21:52.086Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-16T10:06:48.408Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Are any of these 2 figures connected to each other?",
-    "What other organizations is Weavers connected to?",
     "What other organizations is Man connected to?",
     "Where did the Undisclosed allegedly go in Minnesota daycare fraud scandal?",
     "Where did the $1.1M allegedly go in Feeding Our Future investigation?",
@@ -558,7 +556,9 @@
     "Where did the N/A allegedly go in Houston ICE Shooting Investigation?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the unknown allegedly go in Feeding Our Future investigation?",
-    "Where did the unknown allegedly go in Houston ICE shooting investigation?"
+    "Where did the unknown allegedly go in Houston ICE shooting investigation?",
+    "What other organizations is Daycare Owner (Feeding Our Future defendant) connected to?",
+    "Where did the $10M+ allegedly go in Feeding Our Future Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2987,
-    "articlesProcessed": 148500,
-    "redFlagsFound": 3439,
+    "totalScans": 2988,
+    "articlesProcessed": 148550,
+    "redFlagsFound": 3440,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Taco Bell Cyclosporiasis Outbreak?",
-        "Where did the $10 billion allegedly go in Trump Administration Freeze on Federal Funds?",
-        "Where did the $1.1M allegedly go in Feeding Our Future Fraud Scheme?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Weavers connected to?",
+        "What other organizations is Man connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-16T07:21:52.086Z",
-  "lastUpdated": "2026-07-16T07:21:52.087Z"
+  "lastReflection": "2026-07-16T10:06:48.408Z",
+  "lastUpdated": "2026-07-16T10:06:48.409Z"
 }

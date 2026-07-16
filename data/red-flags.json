@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "shell company",
+      "description": "Minnesota businesses tied to Feeding Our Future received taxpayer money years later",
+      "insight": "Potential for fraudulent activity and misuse of funds",
+      "entities": [
+        "Feeding Our Future",
+        "associated businesses"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "5 EYEWITNESS NEWS",
+      "sourceUrl": "https://www.5eyewitnessnews.com/minnesota-businesses-tied-to-feeding-our-future-got-taxpayer-money-years-later-complaint-says",
+      "id": "rf-1784196408412-wv479686x",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-16T10:06:48.410Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Minnesota county sues over feds stonewalling investigation into ICE arrest",
       "insight": "This could indicate a larger issue with federal cooperation in investigations, and may be worth further exploration.",
@@ -955,25 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-06T12:03:21.371Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI investigation into Alarum Technologies",
-      "insight": "This investigation may indicate a larger pattern of fraudulent activities in the tech industry. Further research is needed to determine the extent of the issue.",
-      "entities": [
-        "Alarum Technologies"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Globes",
-      "sourceUrl": "https://www.globes.co.il/en/article-alarum-technologies-slumps-following-fbi-probe-1001462106",
-      "id": "rf-1783322188446-eluh5jnsv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-06T07:16:28.443Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -982,12 +983,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-16T07:21:52.088Z"
+  "lastUpdated": "2026-07-16T10:06:48.410Z"
 }
