@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-07T11:48:03.416Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-07T14:34:04.525Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
@@ -510,6 +505,11 @@
       "date": "2026-07-16T12:19:30.060Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-16T14:59:42.228Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,11 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Undisclosed allegedly go in Minnesota daycare fraud scandal?",
-    "Where did the $1.1M allegedly go in Feeding Our Future investigation?",
-    "What specific allegations exist against Mike Lindell?",
-    "What specific allegations exist against Tim Walz?",
-    "What other organizations is Lorenzo Salgado Araujo connected to?",
     "What other organizations is Mike Lindell connected to?",
     "What other organizations is Tim Walz connected to?",
     "What other organizations is Feeding Our Future Ringleader connected to?",
@@ -558,7 +553,12 @@
     "Where did the unknown allegedly go in Houston ICE shooting investigation?",
     "What other organizations is Daycare Owner (Feeding Our Future defendant) connected to?",
     "Where did the $10M+ allegedly go in Feeding Our Future Investigation?",
-    "Where did the $700 million allegedly go in Feeding Our Future investigation?"
+    "Where did the $700 million allegedly go in Feeding Our Future investigation?",
+    "What other organizations is Pastor Greg Locke connected to?",
+    "What other organizations is Nick Shirley connected to?",
+    "What other organizations is Day care owner connected to?",
+    "Where did the $700 million allegedly go in Minnesota Medicaid fraud?",
+    "Are any of these 3 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2989,
-    "articlesProcessed": 148600,
-    "redFlagsFound": 3442,
+    "totalScans": 2990,
+    "articlesProcessed": 148650,
+    "redFlagsFound": 3443,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Man connected to?",
         "Where did the Undisclosed allegedly go in Minnesota daycare fraud scandal?",
-        "Where did the $1.1M allegedly go in Feeding Our Future investigation?"
+        "Where did the $1.1M allegedly go in Feeding Our Future investigation?",
+        "What specific allegations exist against Mike Lindell?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-16T12:19:30.060Z",
-  "lastUpdated": "2026-07-16T12:19:30.061Z"
+  "lastReflection": "2026-07-16T14:59:42.228Z",
+  "lastUpdated": "2026-07-16T14:59:42.229Z"
 }
