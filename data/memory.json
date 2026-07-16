@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-07T19:52:42.497Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-07T21:22:36.766Z",
       "summary": "SIGNIFICANT: Federal involvement detected, 1 new legal actions, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-07-16T18:05:22.075Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-16T20:01:51.095Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Houston ICE Shooting Investigation?",
-    "What other organizations is Daycare Owner connected to?",
-    "What other organizations is Twin Cities man connected to?",
     "Where did the N/A allegedly go in Houston ICE Shooting Investigation?",
     "What other organizations is Feeding Our Future defendant connected to?",
     "Where did the unknown allegedly go in Feeding Our Future investigation?",
@@ -558,7 +555,10 @@
     "What specific allegations exist against Nick Shirley?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Mike Lindell?",
-    "Where did the $700 million allegedly go in Minnesota Medicaid fraud investigation?"
+    "Where did the $700 million allegedly go in Minnesota Medicaid fraud investigation?",
+    "Where did the $200 million allegedly go in Feeding Our Future fraud?",
+    "Where did the $100K+ allegedly go in White House teleprompter operator insider trading?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 2992,
-    "articlesProcessed": 148750,
-    "redFlagsFound": 3446,
+    "totalScans": 2993,
+    "articlesProcessed": 148800,
+    "redFlagsFound": 3448,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,32 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "program termination",
+          "description": "Feeding Our Future scheme involved $200 million in fraud",
+          "insight": "This suggests a large-scale fraud scheme potentially involving multiple entities and individuals.",
+          "entities": [
+            "Feeding Our Future"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "wrganews.com",
+          "sourceUrl": "https://wrganews.com/2026-07-16/alleged-feeding-our-future-fraud-ringleader-extradited-from-somalia-to-face-us-charges"
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $250 million allegedly go in Feeding Our Future Investigation?",
         "Where did the Unknown allegedly go in Houston ICE Shooting Investigation?",
-        "What other organizations is Daycare Owner connected to?"
+        "What other organizations is Daycare Owner connected to?",
+        "What other organizations is Twin Cities man connected to?"
       ]
     }
   ],
@@ -594,6 +613,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-16T18:05:22.075Z",
-  "lastUpdated": "2026-07-16T18:05:22.075Z"
+  "lastReflection": "2026-07-16T20:01:51.095Z",
+  "lastUpdated": "2026-07-16T20:01:51.096Z"
 }
