@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-08T15:19:53.585Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-08T17:32:55.409Z",
       "summary": "Routine scan - no significant findings",
       "confidence": 0
@@ -510,6 +505,11 @@
       "date": "2026-07-17T12:07:50.787Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-17T14:42:28.542Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the $700 million allegedly go in Minnesota Medicaid fraud?",
-    "Are any of these 3 figures connected to each other?",
-    "What specific allegations exist against Pastor Greg Locke?",
     "What specific allegations exist against Nick Shirley?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Mike Lindell?",
@@ -558,7 +555,10 @@
     "Where did the $10M allegedly go in Motown Sports Village investigation?",
     "What specific allegations exist against Donald Trump?",
     "Where did the $240 million allegedly go in Feeding Our Future Fraud?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud?"
+    "Where did the $250 million allegedly go in Feeding Our Future fraud?",
+    "What other organizations is Robert P. Rubicco connected to?",
+    "Where did the $240 million allegedly go in Feeding Our Future fraud investigation?",
+    "Where did the $20 million allegedly go in Crypto fraud investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3000,
-    "articlesProcessed": 149150,
-    "redFlagsFound": 3454,
+    "totalScans": 3001,
+    "articlesProcessed": 149200,
+    "redFlagsFound": 3455,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Day care owner connected to?",
         "Where did the $700 million allegedly go in Minnesota Medicaid fraud?",
-        "Are any of these 3 figures connected to each other?"
+        "Are any of these 3 figures connected to each other?",
+        "What specific allegations exist against Pastor Greg Locke?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-17T12:07:50.787Z",
-  "lastUpdated": "2026-07-17T12:07:50.788Z"
+  "lastReflection": "2026-07-17T14:42:28.542Z",
+  "lastUpdated": "2026-07-17T14:42:28.543Z"
 }
