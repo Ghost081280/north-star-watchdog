@@ -2,22 +2,42 @@
   "flags": [
     {
       "type": "program_termination",
-      "description": "The Feeding Our Future program was terminated due to the fraud scheme",
-      "insight": "The large scale of the fraud ($240 million) and the extradition of the alleged ringleader indicate a significant and organized crime ring. Further investigation into other individuals and entities involved is warranted.",
+      "description": "The Feeding Our Future program was terminated due to the large-scale fraud scheme",
+      "insight": "The Feeding Our Future program was vulnerable to abuse, and the termination may indicate a larger issue with program oversight.",
       "entities": [
         "Feeding Our Future",
-        "Abdikerm Eidleh"
+        "Minnesota DHS"
       ],
-      "confidence": 90,
+      "confidence": 80,
       "priority": "high",
-      "source": "FTL Somalia",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTy1jYnlDbHNYUXRIMXNmY21ta0tpUmlfRUFySFFXUVFybXAtN3VrXzRtZklReXBZT0JiNU1tTFp4QUZHSFlkaHYxM3E0TTBFcTYxbDVtcUtUWGZUemJSY1BPMk1pYVZLMDc1UGZYUDFFN0VLSGpwMHZkcy1xa2pQZnZzUmpJTWctN3FkNzRTMlFkVVNlOGcwRHZyRlBfbDJPOGJmbkQxS2Q5M2ZwVndtTEl5MklvaW91NmpSWE9NREJFZw?oc=5",
-      "id": "rf-1784285131707-ddaj3royv",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcVBDZEdWRUlXb1V2SVdNNHhKR1hwNTFqM1pFM3BHX2ExMzN6b1N6MHViSWhtc3VMbTllMFJrZU5WNy1rY0FiaUNDbnVOZGJBTWpibEM5UFJ3UVZzLVFCTXRmY2lUN2o0bjB1bERrNUVpTVYzMmMtdEZyb3R2bU1rd180SXY2dzRNcHJWb2hDeldPeEotVVl3bmRzQzVsSGFGZkE3NGJ6aURJTFVOb08wUzlzdTNFNVBH",
+      "id": "rf-1784290070793-jagwxxedj",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-07-17T10:45:31.703Z",
+      "detectedAt": "2026-07-17T12:07:50.790Z",
+      "isNew": true
+    },
+    {
+      "type": "shell_company",
+      "description": "There may be shell companies involved in the Feeding Our Future fraud scheme",
+      "insight": "The use of shell companies may indicate a complex web of entities involved in the fraud scheme.",
+      "entities": [
+        "Feeding Our Future",
+        "Abdikerm Eidleh"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "News articles",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcVBDZEdWRUlXb1V2SVdNNHhKR1hwNTFqM1pFM3BHX2ExMzN6b1N6MHViSWhtc3VMbTllMFJrZU5WNy1rY0FiaUNDbnVOZGJBTWpibEM5UFJ3UVZzLVFCTXRmY2lUN2o0bjB1bERrNUVpTVYzMmMtdEZyb3R2bU1rd180SXY2dzRNcHJWb2hDeldPeEotVVl3bmRzQzVsSGFGZkE3NGJ6aURJTFVOb08wUzlzdTNFNVBH",
+      "id": "rf-1784290070793-dfv8rbup8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-17T12:07:50.790Z",
       "isNew": true
     },
     {
@@ -955,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-07T22:59:26.394Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "FBI and other agencies investigating government officials and agencies",
-      "insight": "Pattern of alleged misconduct and corruption among government officials and agencies",
-      "entities": [
-        "Minnesota Gov Walz",
-        "Minnesota AG Ellison"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://www.economicstimes.com/news/gop-grill-minnesota-governor-walz-ag-ellison-in-fiery-hearing",
-      "id": "rf-1783399868497-9mx91j7gv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-07T04:51:08.493Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,8 +987,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-17T10:45:31.703Z"
+  "lastUpdated": "2026-07-17T12:07:50.790Z"
 }
