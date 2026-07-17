@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "program_termination",
+      "description": "The Feeding Our Future program has been terminated due to allegations of fraud",
+      "insight": "This termination suggests a large-scale fraud scheme may have occurred, and further investigation is warranted.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Eurasia Review",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb3lkbks4T2VEblM2ajhjN1JvNjFaZ0Yzb1A2d0Q5c3RKS3hvOWpwWGllQ3VZUGVWVV9fRHFLNFB5VmdCQlJiSFRXS2Y4NnZBc1dqbXI5V2hJQXZUQS02cHhPclRWVy1VVkZ5bXBsc3VJRzVZNXBKekhXSHVPNDZuMkFTV3VTa1NfQldlOHpRRWhuMW1hMWFQZVUtZWRwSUpZd0Y3TFhzaU40RFNTX3ZLUTZB?oc=5",
+      "id": "rf-1784266889743-9vdxd79hj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-17T05:41:29.739Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "Feeding Our Future scheme involved $200 million in fraud",
       "insight": "This suggests a large-scale fraud scheme potentially involving multiple entities and individuals.",
@@ -667,26 +686,6 @@
     },
     {
       "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated due to widespread fraud",
-      "insight": "This termination suggests a large-scale exploitation of the program, potentially involving multiple individuals and organizations. Further investigation is needed to uncover the extent of the fraud and identify those responsible.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota Authorities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Economic Times",
-      "sourceUrl": "https://www.economictimes.com/Isn't-$9B-Somali-fraud-serious-to-you-GOP-grill-Minnesota-Gov-Walz-AG-Ellison-in-fiery-hearing/articleshow/111314876.cms",
-      "id": "rf-1783720827684-i9q8mcsr4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T22:00:27.680Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
       "description": "Potential for program termination due to widespread fraud",
       "insight": "The large-scale fraud schemes uncovered suggest a need for increased oversight and potentially program termination to prevent further abuse.",
       "entities": [
@@ -988,8 +987,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-17T02:44:02.002Z"
+  "lastUpdated": "2026-07-17T05:41:29.739Z"
 }
