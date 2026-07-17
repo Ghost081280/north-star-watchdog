@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-08T19:22:08.436Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-07-08T21:05:39.986Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-17T16:13:43.514Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-07-17T18:04:18.724Z",
+      "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.45
     }
   ],
   "patterns": [
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3002,
-    "articlesProcessed": 149250,
-    "redFlagsFound": 3457,
+    "totalScans": 3003,
+    "articlesProcessed": 149300,
+    "redFlagsFound": 3458,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,13 +579,33 @@
   },
   "currentFocus": [
     {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "federal investigation",
+          "description": "Multiple federal investigations into fraud schemes and food safety outbreaks",
+          "insight": "These investigations suggest a need for increased scrutiny of food aid programs and supply chains",
+          "entities": [
+            "Feeding Our Future",
+            "Taylor Farms"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "Various news sources",
+          "sourceUrl": ""
+        }
+      ]
+    },
+    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What specific allegations exist against Nick Shirley?",
         "What specific allegations exist against Tim Walz?",
-        "What specific allegations exist against Mike Lindell?"
+        "What specific allegations exist against Mike Lindell?",
+        "Where did the $700 million allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-17T16:13:43.514Z",
-  "lastUpdated": "2026-07-17T16:13:43.515Z"
+  "lastReflection": "2026-07-17T18:04:18.724Z",
+  "lastUpdated": "2026-07-17T18:04:18.724Z"
 }

@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations into fraud schemes and food safety outbreaks",
+      "insight": "These investigations suggest a need for increased scrutiny of food aid programs and supply chains",
+      "entities": [
+        "Feeding Our Future",
+        "Taylor Farms"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "Various news sources",
+      "sourceUrl": "",
+      "id": "rf-1784311458729-9a43wbsj9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-17T18:04:18.725Z",
+      "isNew": true
+    },
+    {
       "type": "program_fraud",
       "description": "The Feeding Our Future program was allegedly used to commit a massive $240 million fraud scheme",
       "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the massive fraud scheme. Further investigation is needed to identify other potential vulnerabilities in similar programs.",
@@ -17,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-17T16:13:43.516Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "foodborne_illness",
@@ -36,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-17T16:13:43.516Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "program_termination",
@@ -956,25 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-08T19:22:08.438Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating California Governor Gavin Newsom and his wife",
-      "insight": "This investigation raises concerns about potential corruption and abuse of power by a high-ranking government official. Further investigation is needed to determine the extent of the allegations and any potential wrongdoing.",
-      "entities": [
-        "Gavin Newsom"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZE5Jbk5OQXJTdmNwT3dqVFJaYXN2SEpna1dOVVFJWTd3TkJyal9XQ2hwSjJ5WVphSkpjU1hPSThTQnBJMTNCaHhTMURUenBtSldCYlg0cThIZEg2S2VCQlRSVjYtMkxfQzVoYnVSZTQxNE9DZzFjZ1NrRE9qNzlFN0dVaEJOUWluWVN6Ny1PSlRZbGNPR0o1cg",
-      "id": "rf-1783505688943-1effw7x21",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-08T10:14:48.940Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,8 +988,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "FDA",
     "ProPublica Nonprofits",
+    "FDA",
     "FEC"
   ],
   "sourcesChecked": [
@@ -1006,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-17T16:13:43.516Z"
+  "lastUpdated": "2026-07-17T18:04:18.725Z"
 }
