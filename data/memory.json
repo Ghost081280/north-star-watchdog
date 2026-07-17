@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-08T17:32:55.409Z",
-      "summary": "Routine scan - no significant findings",
-      "confidence": 0
-    },
-    {
       "date": "2026-07-08T19:22:08.436Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-17T14:42:28.542Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-07-17T16:13:43.514Z",
+      "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
+      "confidence": 0.35
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What specific allegations exist against Nick Shirley?",
     "What specific allegations exist against Tim Walz?",
     "What specific allegations exist against Mike Lindell?",
     "Where did the $700 million allegedly go in Minnesota Medicaid fraud investigation?",
@@ -558,7 +557,8 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud?",
     "What other organizations is Robert P. Rubicco connected to?",
     "Where did the $240 million allegedly go in Feeding Our Future fraud investigation?",
-    "Where did the $20 million allegedly go in Crypto fraud investigation?"
+    "Where did the $20 million allegedly go in Crypto fraud investigation?",
+    "Where did the $240 million allegedly go in Feeding Our Future fraud scheme?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3001,
-    "articlesProcessed": 149200,
-    "redFlagsFound": 3455,
+    "totalScans": 3002,
+    "articlesProcessed": 149250,
+    "redFlagsFound": 3457,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $700 million allegedly go in Minnesota Medicaid fraud?",
-        "Are any of these 3 figures connected to each other?",
-        "What specific allegations exist against Pastor Greg Locke?"
+        "What specific allegations exist against Nick Shirley?",
+        "What specific allegations exist against Tim Walz?",
+        "What specific allegations exist against Mike Lindell?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-17T14:42:28.542Z",
-  "lastUpdated": "2026-07-17T14:42:28.543Z"
+  "lastReflection": "2026-07-17T16:13:43.514Z",
+  "lastUpdated": "2026-07-17T16:13:43.515Z"
 }

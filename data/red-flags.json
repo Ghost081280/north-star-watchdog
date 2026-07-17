@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "program_fraud",
+      "description": "The Feeding Our Future program was allegedly used to commit a massive $240 million fraud scheme",
+      "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the massive fraud scheme. Further investigation is needed to identify other potential vulnerabilities in similar programs.",
+      "entities": [
+        "Feeding Our Future program"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FTL Somalia",
+      "sourceUrl": "https://ftl-somalia.com/abdikerm-eidleh-transferred-to-us-to-face-charges-in-240-million-feeding-our-future-fraud-scheme/",
+      "id": "rf-1784304823520-6qku3ffcu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-17T16:13:43.516Z",
+      "isNew": true
+    },
+    {
+      "type": "foodborne_illness",
+      "description": "The cyclosporiasis outbreak was linked to Taylor Farms lettuce",
+      "insight": "The outbreak highlights the need for stricter food safety regulations and monitoring to prevent similar outbreaks in the future.",
+      "entities": [
+        "Taylor Farms"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "WNDU",
+      "sourceUrl": "https://wndu.com/story/taylor-farms-lettuce-under-investigation-as-possible-source-of-cyclosporiasis-outbreak/2026-07-17",
+      "id": "rf-1784304823520-9cg6aw917",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-17T16:13:43.516Z",
+      "isNew": true
+    },
+    {
       "type": "program_termination",
       "description": "The Feeding Our Future program was terminated due to the large-scale fraud scheme",
       "insight": "The Feeding Our Future program was vulnerable to abuse, and the termination may indicate a larger issue with program oversight.",
@@ -937,44 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-08T10:14:48.940Z",
       "isNew": false
-    },
-    {
-      "type": "alleged 'birth tourism' scheme",
-      "description": "A South Texas hospital is under investigation for an alleged 'birth tourism' scheme, which raises concerns about public health and potential exploitation of immigrants.",
-      "insight": "This investigation may indicate a larger pattern of exploitation and abuse in the healthcare system. Further research is needed to determine the extent of this issue and identify potential perpetrators.",
-      "entities": [
-        "South Texas hospital"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FOX 7 Austin",
-      "sourceUrl": "https://www.fox7austin.com/news/south-texas-hospital-under-investigation-by-state-for-alleged-birth-tourism-scheme",
-      "id": "rf-1783483985085-zah3ayzhl",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-08T04:13:05.081Z",
-      "isNew": false
-    },
-    {
-      "type": "Organized crime",
-      "description": "The FBI has charged 24 individuals in connection with an India-based organized crime group.",
-      "insight": "This suggests a significant increase in organized crime activity, and I believe we should investigate further to determine the extent of the group's operations.",
-      "entities": [
-        "Bishnoi gang"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Global News",
-      "sourceUrl": "https://www.globalnews.ca/news/9712344/bishnoi-gang-members-india-based-crime-groups-fbi-investigation/",
-      "id": "rf-1783465166398-f6tevwni2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-07T22:59:26.394Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,8 +987,9 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
+    "FDA",
     "ProPublica Nonprofits",
-    "FDA"
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-17T14:42:28.545Z"
+  "lastUpdated": "2026-07-17T16:13:43.516Z"
 }
