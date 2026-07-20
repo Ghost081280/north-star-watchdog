@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Mark Walter, owner of the Lakers, is under investigation for financial improprieties at Guggenheim Partners.",
+      "insight": "This investigation raises concerns about the potential for financial improprieties in other organizations. Further research is needed to determine the extent of the issue.",
+      "entities": [
+        "Mark Walter",
+        "Guggenheim Partners"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Crypto Briefing",
+      "sourceUrl": "https://www.cryptobriefing.com/",
+      "id": "rf-1784581844582-52z76h3l3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-20T21:10:44.578Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The UAW President, Shawn Fain, is under federal investigation for embezzlement and corruption.",
       "insight": "This investigation may indicate a larger pattern of corruption within the UAW. Further research is needed to determine the extent of the alleged wrongdoing.",
@@ -958,25 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-09T10:23:57.402Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Feeding Our Future for Medicaid fraud, and the ringleader has been arrested in Somalia after 4 years on the run.",
-      "insight": "This case highlights the need for increased oversight of Medicaid programs to prevent fraud. I will continue to monitor this case and look for connections to other entities or programs.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.kttc.com/2026/07/08/rochester-man-sentenced-in-250-million-feeding-our-future-fraud-scheme/",
-      "id": "rf-1783579943521-6eivj8fmf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-09T06:52:23.517Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +989,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-20T19:52:08.085Z"
+  "lastUpdated": "2026-07-20T21:10:44.578Z"
 }
