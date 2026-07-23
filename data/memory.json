@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-14T16:13:07.206Z",
-      "summary": "SIGNIFICANT: 1 large dollar amount findings, 1 high-confidence findings, Breaking news present",
-      "confidence": 0.5
-    },
-    {
       "date": "2026-07-14T18:01:10.670Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
@@ -510,6 +505,11 @@
       "date": "2026-07-22T23:00:36.241Z",
       "summary": "NOTABLE: 1 large dollar amount findings, Breaking news present",
       "confidence": 0.35
+    },
+    {
+      "date": "2026-07-23T00:09:26.447Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3067,
-    "articlesProcessed": 152350,
+    "totalScans": 3068,
+    "articlesProcessed": 152400,
     "redFlagsFound": 3471,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $9B allegedly go in Minnesota Medicaid Fraud?",
-        "Where did the Unknown allegedly go in Guggenheim Partners Financial Improprieties?",
-        "What other organizations is Man from Moorhead connected to?"
+        "What other organizations is Man from Moorhead connected to?",
+        "What other organizations is Man from Minnesota connected to?",
+        "Where did the $1B allegedly go in Medicaid Fraud Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-22T23:00:36.241Z",
-  "lastUpdated": "2026-07-22T23:00:36.242Z"
+  "lastReflection": "2026-07-23T00:09:26.447Z",
+  "lastUpdated": "2026-07-23T00:09:26.448Z"
 }
