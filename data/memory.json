@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-16T10:06:48.408Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-16T12:19:30.060Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
@@ -510,6 +505,11 @@
       "date": "2026-07-24T21:00:42.328Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-07-24T22:13:18.897Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3087,
-    "articlesProcessed": 153350,
+    "totalScans": 3088,
+    "articlesProcessed": 153400,
     "redFlagsFound": 3479,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is New suspect connected to?",
-        "Where did the $4 million+ allegedly go in Feeding Our Future investigation?",
-        "Where did the $1 billion allegedly go in Medicaid payments investigation?"
+        "Are any of these 2 figures connected to each other?",
+        "What other organizations is Todd Blanche connected to?",
+        "Where did the $1 billion allegedly go in Medicaid Payments investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-24T21:00:42.328Z",
-  "lastUpdated": "2026-07-24T21:00:42.329Z"
+  "lastReflection": "2026-07-24T22:13:18.897Z",
+  "lastUpdated": "2026-07-24T22:13:18.897Z"
 }
