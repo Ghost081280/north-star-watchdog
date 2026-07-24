@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "data_breach",
+      "description": "Data breach of over 542,000 patient records",
+      "insight": "This breach highlights the need for increased security measures to protect patient records. I will be monitoring for any further developments and tracking the investigation into the breach.",
+      "entities": [
+        "Centers Lab NJ"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.schubertjonckheer.com/privacy-alert-centers-lab-nj-under-investigation-for-data-breach-of-over-542000-patient-records/",
+      "id": "rf-1784872337708-uguxduaow",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-24T05:52:17.704Z",
+      "isNew": true
+    },
+    {
       "type": "Fraud",
       "description": "Withholding of Medicaid payments due to fraud allegations",
       "insight": "This is a significant red flag as it indicates potential wrongdoing by government officials. Further investigation is needed to determine the extent of the fraud and those involved.",
@@ -959,26 +978,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-09T20:46:16.013Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Possible termination of programs due to fraud",
-      "insight": "The recent guilty pleas and accusations in childcare fraud cases may lead to increased scrutiny and potential program termination.",
-      "entities": [
-        "Minnesota DHS",
-        "Feeding Our Future"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Recent news articles",
-      "sourceUrl": "https://www.google.com/search?q=2+women+plead+guilty+in+Minnesota+childcare+fraud+cases",
-      "id": "rf-1783622991361-695ufz3d4",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-09T18:49:51.358Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -987,10 +986,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-24T02:57:41.643Z"
+  "lastUpdated": "2026-07-24T05:52:17.704Z"
 }
