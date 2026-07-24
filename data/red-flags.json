@@ -1,23 +1,42 @@
 {
   "flags": [
     {
-      "type": "Medicaid fraud",
-      "description": "Twin Cities man pleads guilty to pocketing $300K or more in Medicaid fraud case",
-      "insight": "This case highlights the need for increased scrutiny of Medicaid claims to prevent fraudulent activity. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
+      "type": "federal investigation",
+      "description": "The FBI is investigating Muskegon Heights city hall",
+      "insight": "This investigation may be related to other cases of corruption and fraud in the area. Further research is needed to determine the extent of the investigation and any potential connections to other cases.",
       "entities": [
-        "Twin Cities man"
+        "Muskegon Heights"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Red Lake Nation News",
-      "sourceUrl": "https://www.redlakenationnews.com/news/twin-cities-man-pleads-guilty-to-pocketing-300k-or-more-in-medicaid-fraud-case",
-      "id": "rf-1784881469337-4477hywlk",
+      "source": "FBI",
+      "sourceUrl": "https://www.fox17online.com/news/local-news/muskegon-heights/its-a-bed-of-corruption-feds-raid-muskegon-heights-city-hall-neighbors-call-for-answers",
+      "id": "rf-1784914122569-7homwlhyf",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-07-24T08:24:29.333Z",
-      "isNew": false
+      "detectedAt": "2026-07-24T17:28:42.565Z",
+      "isNew": true
+    },
+    {
+      "type": "Medicaid fraud",
+      "description": "Multiple cases of Medicaid fraud have been reported in the past week",
+      "insight": "These cases may be related to a larger scheme or trend of Medicaid fraud. Further research is needed to determine the extent of the fraud and any potential connections to other cases.",
+      "entities": [
+        "Minnesota Medicaid"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://kttc.com/2026/07/24/four-men-plead-guilty-in-2-2m-minnesota-medicaid-housing-fraud-scheme",
+      "id": "rf-1784914122569-hy9qu33s1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-24T17:28:42.565Z",
+      "isNew": true
     },
     {
       "type": "Data breach",
@@ -958,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-10T08:20:47.408Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "MN Medicaid providers in limbo after rapid revalidation process",
-      "insight": "The rapid revalidation process for MN Medicaid providers may indicate a potential vulnerability in the system, potentially leading to program termination.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORWlLci16WmVmLTJnRUg1cmwyVzROQms4NWtTOE1uZndSTXdKblNKN7FoeHVwTUFUYzZMNnZQeHpsWUVRelVOd3I1ZEowTGEzY3l1TkNMcTRtWFdmZEEwNTlLY0ZfSDd3U1ZmOVV0ejJicQlkWjdEVmUtemc2N2YyNkZMRQ",
-      "id": "rf-1783659003356-mt5pm95os",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T04:50:03.352Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,7 +988,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-24T15:24:05.226Z"
+  "lastUpdated": "2026-07-24T17:28:42.565Z"
 }
