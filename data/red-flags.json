@@ -1,6 +1,44 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Twin Cities man pleads guilty to pocketing $300K or more in Medicaid fraud case",
+      "insight": "This case highlights the need for increased scrutiny of Medicaid claims to prevent fraudulent activity. Further investigation is needed to determine the extent of the fraud and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Twin Cities man"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Red Lake Nation News",
+      "sourceUrl": "https://www.redlakenationnews.com/news/twin-cities-man-pleads-guilty-to-pocketing-300k-or-more-in-medicaid-fraud-case",
+      "id": "rf-1784881469337-4477hywlk",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-24T08:24:29.333Z",
+      "isNew": true
+    },
+    {
+      "type": "Data breach",
+      "description": "Data breach of patient records at Centers Lab NJ",
+      "insight": "This data breach highlights the need for increased security measures to protect patient records. Further investigation is needed to determine the extent of the breach and to identify any other individuals or organizations involved.",
+      "entities": [
+        "Centers Lab NJ"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "Schubert Jonckheer & Kolbe",
+      "sourceUrl": "https://www.sjklaw.com/news/privacy-alert-centers-lab-nj-under-investigation-for-data-breach-of-over-542000-patient-records",
+      "id": "rf-1784881469337-yb28553v1",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-24T08:24:29.333Z",
+      "isNew": true
+    },
+    {
       "type": "data_breach",
       "description": "Data breach of over 542,000 patient records",
       "insight": "This breach highlights the need for increased security measures to protect patient records. I will be monitoring for any further developments and tracking the investigation into the breach.",
@@ -17,26 +55,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-24T05:52:17.704Z",
-      "isNew": true
-    },
-    {
-      "type": "Fraud",
-      "description": "Withholding of Medicaid payments due to fraud allegations",
-      "insight": "This is a significant red flag as it indicates potential wrongdoing by government officials. Further investigation is needed to determine the extent of the fraud and those involved.",
-      "entities": [
-        "RFK Jr.",
-        "US Government"
-      ],
-      "confidence": 80,
-      "priority": "High",
-      "source": "IndiaWest",
-      "sourceUrl": "https://www.indiawest.com/",
-      "id": "rf-1784747627003-5aoicr3z7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-22T19:13:46.999Z",
       "isNew": false
     },
     {
@@ -959,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-10T04:50:03.352Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Feeding Our Future program under investigation",
-      "insight": "The Feeding Our Future program is under investigation for potential fraud, with multiple individuals already charged or pleading guilty.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNcFF0T3NvVHZOTmJUYWMzMTA3cFRiUFdZanNUNVA3dlRvektKdDdva1ZISzF1Z2hZZmRLMjJraXZ2Wk9FMnQwczlDb2FrbHBxU3Azbnpka2ZuMGRCUzdtRWZydGE0emlla3JPaGhlS0pYQUphLVhTZG9rRGZSVjltMEtsUjJmSHBXM0JadFBZdDRsOF8wV0tUUXFseWdacEVQLTJZWFM2VHJsTWt4MlZsbWhoMHkxa1VPTmZFNFc3X3p3dlBjTXlkYV85c09OanJGYVg0UFd2cm9RQ2tIUUFtOEZsRWhmSExhNVJqZWFJbkZjbnRaeFAtQXpwQm5PTm52?oc=5",
-      "id": "rf-1783629976018-5t1fxw6l2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-09T20:46:16.013Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,9 +989,7 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-24T05:52:17.704Z"
+  "lastUpdated": "2026-07-24T08:24:29.333Z"
 }
