@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-16T04:07:30.452Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-16T07:21:52.086Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-07-24T17:28:42.563Z",
       "summary": "NOTABLE: Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.45
+    },
+    {
+      "date": "2026-07-24T19:21:35.622Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3085,
-    "articlesProcessed": 153250,
+    "totalScans": 3086,
+    "articlesProcessed": 153300,
     "redFlagsFound": 3478,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -579,32 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Medicaid fraud",
-          "description": "Multiple cases of Medicaid fraud have been reported in the past week",
-          "insight": "These cases may be related to a larger scheme or trend of Medicaid fraud. Further research is needed to determine the extent of the fraud and any potential connections to other cases.",
-          "entities": [
-            "Minnesota Medicaid"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "DOJ",
-          "sourceUrl": "https://kttc.com/2026/07/24/four-men-plead-guilty-in-2-2m-minnesota-medicaid-housing-fraud-scheme"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is RFK Jr. connected to?",
-        "What other organizations is Feeding Our Future defendant connected to?",
-        "Where did the $1 Billion allegedly go in Feeding Our Future Investigation?"
+        "What other organizations is New suspect connected to?",
+        "Where did the $4 million+ allegedly go in Feeding Our Future investigation?",
+        "Where did the $1 billion allegedly go in Medicaid payments investigation?"
       ]
     }
   ],
@@ -613,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-07-24T17:28:42.563Z",
-  "lastUpdated": "2026-07-24T17:28:42.563Z"
+  "lastReflection": "2026-07-24T19:21:35.622Z",
+  "lastUpdated": "2026-07-24T19:21:35.622Z"
 }
