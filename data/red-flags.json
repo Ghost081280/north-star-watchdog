@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Potential fraud",
+      "description": "Ilhan Omar's sister was found to have used the same home address as figures involved in a $250M fraud scandal",
+      "insight": "This could indicate a potential connection between Ilhan Omar's family and the fraud scandal, and warrants further investigation",
+      "entities": [
+        "Ilhan Omar's sister"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Dallas Express",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaGtaSGJvVW1saTBpb00yb1J1QTNnbEJhdTRIZ3ZoTTUydVJCSzlka0xpUGhUdGdrZEcwX2l4RG9DaE13UzdFVmJ1ajNjdW0xQXRRam9MSTVpczhNV2hYY1BjZ1FnUVZ1VlUwUURCTmxYQXlxTDkxV3Y5d1JXZVVNLXJXRmpScGU4NWtvYnBkc19zaXBhcC15VjNIUEc4Yk5jUkhWUm9uTDlYRER10g",
+      "id": "rf-1784991671001-gt8glbl1t",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-25T15:01:10.997Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating Muskegon Heights city hall",
       "insight": "This investigation may be related to other cases of corruption and fraud in the area. Further research is needed to determine the extent of the investigation and any potential connections to other cases.",
@@ -958,25 +977,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-10T18:22:20.863Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "MN Medicaid providers in limbo after rapid revalidation process",
-      "insight": "This could indicate a larger issue with Medicaid provider oversight.",
-      "entities": [
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORWlLci16WmVmLTJnRUg1cmwyVzROQms4NWtTOE1uZndSTXdKblNKN3FoeHVwTUFUYzZMNnZQeHpsWUVRelVOd3I1ZEowTGEzY3l1TkNMcTRtWFdmZEEwNTlLY0ZfSDd3U1ZmOVV0ejJicQ",
-      "id": "rf-1783671647412-stohon87a",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T08:20:47.408Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,10 +985,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-25T13:19:47.139Z"
+  "lastUpdated": "2026-07-25T15:01:10.997Z"
 }
