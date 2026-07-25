@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation is underway in London City Hall",
+      "insight": "I suspect that this investigation may be related to other cases of fraud and corruption in the area. Further research is needed to determine the extent of the investigation and any potential connections to other cases.",
+      "entities": [
+        "London City Hall"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "FOX 56 News",
+      "sourceUrl": "https://fox56.com/news/federal-investigation-underway-in-london-city-hall/",
+      "id": "rf-1785012594002-nuwacb0ye",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-25T20:49:53.999Z",
+      "isNew": true
+    },
+    {
       "type": "Potential fraud",
       "description": "Ilhan Omar's sister was found to have used the same home address as figures involved in a $250M fraud scandal",
       "insight": "This could indicate a potential connection between Ilhan Omar's family and the fraud scandal, and warrants further investigation",
@@ -956,27 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-10T20:21:33.149Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Feeding Our Future fraud scheme involves multiple agencies and a large amount of money.",
-      "insight": "The Feeding Our Future fraud scheme appears to be a complex case involving multiple entities and a large amount of money. Further investigation is needed to uncover the full extent of the scheme and identify all parties involved.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaVI2VDJJN2RPbThoUGxIRElRbkJMOWhwWWwzR2dENU9rczVFTjVmZDZhbDBodFBrNEZKcGJ5M2szdFZLaW9aZms4aFVkWWcwVnZjQkwtWjBnMTh3ZW8zLVhhck1qbFNENGJMSURPSG40dmtXdVpEUGJndWtfUUJUWW1OcFZsWG9FTmx3OUFlT3RCd0N1OURCa1dVYlhBWUhtOXVCcFdET1psTEcwZ2tUc0Yza0IzRTlUcVZNNWdhOHBnM01hZHc",
-      "id": "rf-1783707740866-5lhjsrsoz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T18:22:20.863Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,10 +983,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-25T19:07:07.497Z"
+  "lastUpdated": "2026-07-25T20:49:53.999Z"
 }
