@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation has been launched into a video appearing to show a man kicking a sea lion on a California beach.",
+      "insight": "This incident highlights the need for increased awareness and enforcement of animal welfare laws. It also raises questions about the individual's motivations and potential connections to other cases of animal abuse.",
+      "entities": [
+        "USDA",
+        "California authorities"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/federal-officials-investigating-after-video-appears-show-man-kicking-sea-n1277441",
+      "id": "rf-1785166894261-1enijoisn",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-27T15:41:34.257Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "A federal investigation is underway in London City Hall, prompting concerns about potential corruption and abuse of power.",
       "insight": "I suspect that this investigation may be related to a larger pattern of corruption and abuse of power in local government. Further investigation is needed to determine the scope of the issue.",
       "entities": [
@@ -955,26 +975,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-10T23:07:06.997Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential for program termination due to widespread fraud",
-      "insight": "The large-scale fraud schemes uncovered suggest a need for increased oversight and potentially program termination to prevent further abuse.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota Daycare"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026/07/10/minnesota-daycare-owner-outed-by-nick-shirley-admitted-to-filing-more-than-46m-in-false-claims/",
-      "id": "rf-1783714893152-d8s327uq9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T20:21:33.149Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -983,10 +983,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-27T12:20:26.070Z"
+  "lastUpdated": "2026-07-27T15:41:34.257Z"
 }
