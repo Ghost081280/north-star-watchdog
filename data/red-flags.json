@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "Four men have been charged with using ChatGPT to fake records in a Medicaid scheme",
+      "insight": "This case highlights the need for increased scrutiny of Medicaid claims and the potential for new technologies to be used in fraudulent activities",
+      "entities": [
+        "Four Men",
+        "Minnesota Medicaid Scheme"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://medicaldaily.com/four-men-admit-using-chatgpt-to-fake-records-in-a-2-2-million-minnesota-medicaid-scheme",
+      "id": "rf-1785348340123-cpsjv432d",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-29T18:05:40.119Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "A federal investigation has been launched into a video appearing to show a man kicking a sea lion on a California beach.",
       "insight": "This incident highlights the need for increased awareness and enforcement of animal welfare laws. It also raises questions about the individual's motivations and potential connections to other cases of animal abuse.",
@@ -955,34 +975,16 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-11T02:27:25.249Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The USDA's Child and Adult Care Food Program (CACFP) has faced scrutiny and potential termination due to widespread fraud.",
-      "insight": "The prevalence of fraud in nutrition programs like CACFP raises concerns about oversight and control measures.",
-      "entities": [
-        "USDA",
-        "Minnesota Daycare Owners"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "New York Post",
-      "sourceUrl": "https://nypost.com/2026-07-10/minnesota-daycare-owner-outed-by-nick-shirley-admitted-to-filing-more-than-4-6m-in-false-claims/",
-      "id": "rf-1783724827001-l7mgg4jvu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-10T23:07:06.997Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1003,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-29T16:20:21.043Z"
+  "lastUpdated": "2026-07-29T18:05:40.119Z"
 }
