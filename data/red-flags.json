@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Federal Government has opened an investigation into the Minnesota Department of Education",
+      "insight": "This investigation may indicate a larger pattern of corruption or mismanagement within the state's education system. I recommend further investigation into the department's finances and leadership.",
+      "entities": [
+        "Minnesota Department of Education"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "minneapolimedia.town.news",
+      "sourceUrl": "https://minneapolimedia.town.news/us/news/federal-government-opens-investigation-into-minnesota-department-of-education-20260730",
+      "id": "rf-1785426674013-equpl64x0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-30T15:51:14.009Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The US Education Department has opened a federal investigation into the use of 'transgender dolls' in Minnesota schools",
       "insight": "This investigation raises concerns about the state's handling of sensitive issues and the potential for mismanagement of funds. I recommend further investigation into the state's education department and its handling of federal funds.",
@@ -955,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-11T13:14:11.969Z",
       "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Feeding Our Future investigation resulted in a federal freeze of assets, highlighting the severity of the nonprofit fraud scheme.",
-      "insight": "This red flag suggests that nonprofit organizations may be vulnerable to fraud and abuse, and that increased oversight and regulation are necessary to prevent such schemes.",
-      "entities": [
-        "Feeding Our Future",
-        "Aimee Bock"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.aol.com/news/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence-164737643.html",
-      "id": "rf-1783748341271-r7j4bthjx",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-11T05:39:01.267Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -984,12 +983,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "ProPublica Nonprofits",
-    "FDA"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1004,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-30T13:54:03.613Z"
+  "lastUpdated": "2026-07-30T15:51:14.009Z"
 }
