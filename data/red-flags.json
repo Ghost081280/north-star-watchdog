@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a potential cyberattack on Minnesota water facilities, which may have been launched by Iranian hackers.",
+      "insight": "This incident highlights the need for increased cybersecurity measures to protect critical infrastructure from foreign threats. I will continue to monitor this situation and investigate potential connections to other cyberattacks.",
+      "entities": [
+        "Iranian hackers",
+        "Minnesota water facilities"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "KFOR",
+      "sourceUrl": "https://www.kfor.com/news/us-investigating-whether-iran-launched-cyberattack-on-minnesota-water-facilities/",
+      "id": "rf-1785516254686-wefg3uizc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-31T16:44:14.681Z",
+      "isNew": true
+    },
+    {
       "type": "Cyberattack",
       "description": "A cyberattack on Minnesota water systems, with possible links to Iran.",
       "insight": "This incident highlights the vulnerability of critical infrastructure to cyber threats. Further investigation is needed to determine the extent of the attack and the motivations of the attackers.",
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-31T14:12:17.990Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Fraud",
@@ -37,7 +57,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-07-31T14:12:17.990Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "Cyberattack",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-12T02:32:54.621Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Potential for termination of pandemic relief programs due to widespread fraud",
-      "insight": "The recent cases of childcare fraud and nonprofit fraud suggest a need for increased oversight and monitoring of pandemic relief programs to prevent further abuse.",
-      "entities": [
-        "Minnesota DHS",
-        "FBI"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.aol.com/minnesota-nonprofit-fraud-ringleader-aimee-bock-gets-nearly-42-year-prison-sentence/",
-      "id": "rf-1783796381017-10pnxz6mz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-11T18:59:41.013Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -982,13 +982,11 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency",
-    "FDA",
-    "ProPublica Nonprofits",
-    "FEC"
+    "MN Transparency"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-31T14:12:17.990Z"
+  "lastUpdated": "2026-07-31T16:44:14.681Z"
 }
