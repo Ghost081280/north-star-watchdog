@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Cyberattack",
+      "description": "Possible Iran-linked cyberattack on Minnesota water systems",
+      "insight": "I suspect that the cyberattack on Minnesota water systems may be linked to a larger scheme, potentially involving Iranian hackers. Further investigation is needed to determine the extent of the attack and the parties involved.",
+      "entities": [
+        "Iran",
+        "Minnesota water systems"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.tippahnews.com/news/national/us-minnesota-investigating-possible-iran-linked-cyberattack-on-more-than-30-water-systems",
+      "id": "rf-1785478273400-mq8om7eah",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-31T06:11:13.397Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The Federal Government has opened an investigation into the Minnesota Department of Education",
       "insight": "This investigation may indicate a larger pattern of corruption or mismanagement within the state's education system. I recommend further investigation into the department's finances and leadership.",
@@ -954,26 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-11T16:55:34.333Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of programs due to fraud, e.g., Feeding Our Future",
-      "insight": "Patterns of fraud in nonprofits and government programs suggest a need for increased oversight and monitoring.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzkySkhhczNFVmpVTGtmbnNCNy1MZThwX1VQdHljTWx3Sll3VHFaVUl0YnozaVBfcnU2SHAtaTRSMzFGMUU1SDRNRUp5YkZqYU1yVDVjTlp2MkNwbzZESFlIandGS2U3elZVUjU4T2huQkk5SjMxWGoyajVvNXZtSS0xaGZwbG94LXdYYmRuWkhOVjdoZC1uVGNKLXI3UkZvM2N0Q095ZjJJdTN6OUp5WQ?",
-      "id": "rf-1783775651972-6df5azspv",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-11T13:14:11.969Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,7 +985,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-31T02:35:21.458Z"
+  "lastUpdated": "2026-07-31T06:11:13.397Z"
 }
