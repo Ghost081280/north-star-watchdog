@@ -2,6 +2,45 @@
   "flags": [
     {
       "type": "Cyberattack",
+      "description": "A cyberattack on Minnesota water systems, with possible links to Iran.",
+      "insight": "This incident highlights the vulnerability of critical infrastructure to cyber threats. Further investigation is needed to determine the extent of the attack and the motivations of the attackers.",
+      "entities": [
+        "Minnesota water systems",
+        "Iran"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-investigating-cyberattack-minnesota-water-systems-rcna43341",
+      "id": "rf-1785507137993-fl14mui2m",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-31T14:12:17.990Z",
+      "isNew": true
+    },
+    {
+      "type": "Fraud",
+      "description": "A fraud case involving Feeding Our Future, with multiple defendants pleading guilty.",
+      "insight": "This case highlights the need for greater oversight and accountability in the non-profit sector. Further investigation is needed to determine the extent of the fraud and the motivations of the perpetrators.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/usao-mn/press-release/20220727",
+      "id": "rf-1785507137993-12gqqymdy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-07-31T14:12:17.990Z",
+      "isNew": true
+    },
+    {
+      "type": "Cyberattack",
       "description": "Possible Iran-linked cyberattack on Minnesota water systems",
       "insight": "I suspect that the cyberattack on Minnesota water systems may be linked to a larger scheme, potentially involving Iranian hackers. Further investigation is needed to determine the extent of the attack and the parties involved.",
       "entities": [
@@ -935,45 +974,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-11T18:59:41.013Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future nonprofit program was terminated due to allegations of fraud.",
-      "insight": "This termination suggests a potential lack of oversight and controls within the program.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Alpha News MN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzkySkhhczNFVmpVTGtmbnNCNy1MZThwX1VQdHljTWx3Sll3VHFaVUl0YnozaVBfcnU2SHAtaTRSMzFGMUU1SDRNRUp5YkZqYU1yVDVjTlp2MkNwbzZESFlIandGS2U3elZVUjU4T2huQkk5SjMxWGoyajVvNXZtSS0xaGZwbG94LXdYYmRuWkhOVjdoZC1uVGNKLXI3UkZvM2N0Q095ZjJJdTN6OUp5WQ",
-      "id": "rf-1783792478966-di2b3zmwr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-11T17:54:38.963Z",
-      "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "Possible termination of programs due to fraud, such as Feeding Our Future",
-      "insight": "The Feeding Our Future scheme and other nonprofit fraud cases suggest a need for increased oversight and monitoring of programs to prevent similar fraud.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota nonprofits"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Feeding Our Future investigation",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzkySkhhczNFVmpVTGtmbnNCNy1MZThwX1VQdHljTWx3Sll3VHFaVUl0YnozaVBfcnU2SHAtaTRSMzFGMUU1SDRNRUp5YkZqYU1yVDVjTlp2MkNwbzZESFlIandGS2U3elZVUjU4T2huQkk5SjMxWGoyajVvNXZtSS0xaGZwbG94LXdYYmRuWkhOVjdoZC1uVGNKLXI3UkZvM2N0Q095ZjJJdTN6OUp5WQ",
-      "id": "rf-1783788934336-w7u2czvsw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-11T16:55:34.333Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -985,7 +985,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-07-31T11:57:49.547Z"
+  "lastUpdated": "2026-07-31T14:12:17.990Z"
 }
