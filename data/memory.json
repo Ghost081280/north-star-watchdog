@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-23T00:09:26.447Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-23T04:14:11.167Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-01T11:15:31.724Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
+    },
+    {
+      "date": "2026-08-01T13:14:59.256Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the undisclosed allegedly go in Minnesota Medicaid Fraud?",
     "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
     "Where did the $10M+ allegedly go in Minnesota Department of Education Investigation?",
     "What other organizations is Alex Pretti's parents' lawyer connected to?",
@@ -558,7 +557,8 @@
     "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
     "Where did the N/A allegedly go in Minnesota water system cyberattacks?",
     "What other organizations is Feeding Our Future scheme's alleged second in command connected to?",
-    "Where did the Unknown allegedly go in Cyberattack on Minnesota water systems?"
+    "Where did the Unknown allegedly go in Cyberattack on Minnesota water systems?",
+    "Where did the N/A allegedly go in Cyberattack on Minnesota water systems?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3167,
-    "articlesProcessed": 157300,
-    "redFlagsFound": 3497,
+    "totalScans": 3168,
+    "articlesProcessed": 157350,
+    "redFlagsFound": 3498,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -579,33 +579,13 @@
   },
   "currentFocus": [
     {
-      "type": "post_to_x",
-      "priority": "high",
-      "description": "Post 1 critical findings to X",
-      "data": [
-        {
-          "type": "Fraud scheme",
-          "description": "The Feeding Our Future fraud case involves a scheme to defraud the government of $250 million",
-          "insight": "This is a large and complex fraud scheme that could indicate a larger problem with fraud in the state.",
-          "entities": [
-            "Feeding Our Future",
-            "Minnesota"
-          ],
-          "confidence": 90,
-          "priority": "high",
-          "source": "Hiiraan Online",
-          "sourceUrl": "https://www.hiiraan.com/news/2026/08/extradited_minnesota_fugitive_pleads_not_guilty_in_250_million_feeding_our_future_fraud_case/"
-        }
-      ]
-    },
-    {
       "type": "investigate_questions",
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Kaohly Her connected to?",
-        "Where did the undisclosed allegedly go in Med School Admissions Investigations?",
-        "Where did the undisclosed allegedly go in Minnesota Medicaid Fraud?"
+        "Where did the undisclosed allegedly go in Minnesota Medicaid Fraud?",
+        "Where did the $100M+ allegedly go in Minnesota Medicaid Fraud Investigation?",
+        "Where did the $10M+ allegedly go in Minnesota Department of Education Investigation?"
       ]
     }
   ],
@@ -614,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-01T11:15:31.724Z",
-  "lastUpdated": "2026-08-01T11:15:31.725Z"
+  "lastReflection": "2026-08-01T13:14:59.256Z",
+  "lastUpdated": "2026-08-01T13:14:59.257Z"
 }
