@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "The FBI is investigating cyberattacks on water systems in 7 states.",
+      "insight": "This is a significant concern for public health and safety. I will continue to monitor the situation and look for any connections to other cases or entities.",
+      "entities": [
+        "FBI",
+        "water systems"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-warns-cyberattacks-water-systems-7-states-rcna10367",
+      "id": "rf-1785624828380-6xbjbt8yb",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-01T22:53:48.376Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration's funding freeze on certain programs has raised concerns about the impact on vulnerable populations.",
       "insight": "I suspect that this funding freeze may be related to the recent reports of fraud schemes targeting public benefits. Further investigation is needed to determine the extent of the issue.",
@@ -952,30 +972,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-13T18:43:06.956Z",
       "isNew": false
-    },
-    {
-      "type": "program_investigation",
-      "description": "The DOJ is investigating allegations around UAW President Shawn Fain",
-      "insight": "This investigation could lead to further scrutiny of the United Auto Workers and potentially impact the automotive industry",
-      "entities": [
-        "United Auto Workers",
-        "Shawn Fain"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVG02SE16bkx3NlVrWVVvRnNjSjY2eUJWUnZ4Z3FNazlmUW9sSlJsWmxtZjB2Z1pxTGxodk5Nb19nN3BsUm96dHNoaDBaUWE3U25kUmZrSWhERW1xbW9GLWU0azh5WG1XYVhyNnpGNFpzeHpZejBWZzVpTUtnTzJ2LWNtS2pkOEFWTkw2WTQyclRfb1FQUFU3MmF6Y3g5bjN2WGZ2dFlR",
-      "id": "rf-1783960280752-lye3bl89t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-13T16:31:20.747Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -983,7 +985,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1003,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-01T21:58:51.773Z"
+  "lastUpdated": "2026-08-01T22:53:48.376Z"
 }
