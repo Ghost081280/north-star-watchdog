@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation into the Feeding Our Future fraud case has led to the extradition and indictment of several individuals",
+      "insight": "The scale and complexity of the Feeding Our Future scheme suggest a high level of organization and planning, and it is likely that there are more individuals involved who have not yet been charged. Further investigation is needed to uncover the full extent of the scheme and bring all those responsible to justice.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI",
+      "sourceUrl": "https://www.hiiraan.com/news/2026/08/extradited-minnesota-fugitive-pleads-not-guilty-in-250-million-feeding-our-future-fraud-case/",
+      "id": "rf-1785575079975-swpgg7fww",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-01T09:04:39.973Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The FBI is investigating a potential cyberattack on Minnesota water facilities, which may have been launched by Iranian hackers.",
       "insight": "This incident highlights the need for increased cybersecurity measures to protect critical infrastructure from foreign threats. I will continue to monitor this situation and investigate potential connections to other cyberattacks.",
       "entities": [
@@ -955,29 +974,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-12T11:58:20.628Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program has been involved in a significant fraud scheme.",
-      "insight": "The Feeding Our Future program needs to be investigated for potential program termination due to the significant fraud scheme.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Feeding Our Future fraud: Rochester restaurant scheme defendant sentenced - AOL.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ1c1MnpWcm1oYjFiQ2JCeldnN013SkNqWUVBMWc3blRQSWJ0MUpoRXAyaVItZk93eDR0V1lSbG5xUHRub0tvdXlILVpTMFNuSkpLdFVud0J4SU42MWI5TG4wYUt6Ukotay15RTQwdldrd2QwZGo0QjhXTUhNV0Myd2hpVWt3RlZRQXNFVzVR",
-      "id": "rf-1783823574625-etpidjmbi",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-12T02:32:54.621Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -985,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-01T06:26:57.764Z"
+  "lastUpdated": "2026-08-01T09:04:39.973Z"
 }
