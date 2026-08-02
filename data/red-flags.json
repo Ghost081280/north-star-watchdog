@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "A federal investigation is underway into cyberattacks on water systems in 7 states, including Minnesota and Michigan.",
+      "insight": "I am concerned about the potential for further attacks and the impact on public health and safety. I recommend monitoring the situation closely and investigating any potential connections to other cyberattacks.",
+      "entities": [
+        "FBI",
+        "Minnesota",
+        "Michigan"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FBI warning",
+      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-warns-cyberattacks-water-systems-7-states-rcna43211",
+      "id": "rf-1785658847539-5onnx6f71",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-02T08:20:47.534Z",
+      "isNew": true
+    },
+    {
       "type": "Federal investigation",
       "description": "The FBI is investigating cyberattacks on water systems in 7 states.",
       "insight": "This is a significant concern for public health and safety. I will continue to monitor the situation and look for any connections to other cases or entities.",
@@ -953,29 +974,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-13T21:55:00.803Z",
       "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI is investigating allegations against the UAW president",
-      "insight": "This investigation could have significant implications for the labor union and its leadership. I recommend tracking this case closely and monitoring for any updates or developments.",
-      "entities": [
-        "UAW president"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Crain's Detroit",
-      "sourceUrl": "https://www.crainsdetroit.com/law/feds-investigate-allegations-against-uaw-president",
-      "id": "rf-1783968186960-axzzbhvpz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-13T18:43:06.956Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -983,7 +987,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1000,5 +1005,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-02T05:55:07.746Z"
+  "lastUpdated": "2026-08-02T08:20:47.534Z"
 }
