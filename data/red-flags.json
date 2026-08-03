@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Cryptocurrency theft",
+      "description": "Cryptocurrency theft by an FBI agent",
+      "insight": "The case of the FBI agent accused of stealing cryptocurrency highlights the need for increased scrutiny of law enforcement agencies and their handling of cryptocurrency cases. I recommend further investigation into the FBI's policies and procedures for handling cryptocurrency.",
+      "entities": [
+        "FBI",
+        "Cryptocurrency"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "WSJ",
+      "sourceUrl": "https://www.wsj.com/articles/fbi-agent-is-accused-of-taking-cryptocurrency-from-suspects-accounts-11673444001",
+      "id": "rf-1785794834953-h76dgj9o8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-03T22:07:14.949Z",
+      "isNew": true
+    },
+    {
       "type": "federal_investigation",
       "description": "The FBI is investigating cyberattacks on water systems across multiple states, including Minnesota and Michigan",
       "insight": "I notice a pattern of cyberattacks on critical infrastructure, which could indicate a larger threat to national security. I recommend investigating further to determine the scope and severity of the attacks.",
@@ -957,29 +977,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T02:13:23.482Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Trump administration is under investigation for its handling of the International Criminal Court, with allegations of attempting to disable the court.",
-      "insight": "I notice a pattern of the Trump administration being involved in multiple investigations, including the International Criminal Court and the ICE shootings. This could indicate a larger issue with the administration's handling of sensitive matters.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Al Jazeera",
-      "sourceUrl": "https://www.aljazeera.com/",
-      "id": "rf-1783983299439-y0tiubzgg",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-13T22:54:59.435Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -987,7 +989,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1004,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-03T20:25:48.100Z"
+  "lastUpdated": "2026-08-03T22:07:14.949Z"
 }
