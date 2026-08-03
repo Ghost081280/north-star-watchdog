@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_investigation",
+      "description": "The FBI is investigating cyberattacks on water systems across multiple states, including Minnesota and Michigan",
+      "insight": "I notice a pattern of cyberattacks on critical infrastructure, which could indicate a larger threat to national security. I recommend investigating further to determine the scope and severity of the attacks.",
+      "entities": [
+        "FBI",
+        "Minnesota",
+        "Michigan"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/michigan-joins-minnesota-in-reporting-cyberattacks-on-water-systems-fbi-investigating/",
+      "id": "rf-1785753650102-7ejscfs40",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-03T10:40:50.097Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating cyberattacks on water systems in multiple states, including Minnesota and Michigan.",
       "insight": "The fact that multiple states are affected suggests a coordinated effort, which raises concerns about the security of critical infrastructure. I will continue to monitor the situation and look for any connections to other cases.",
@@ -955,26 +976,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-13T22:54:59.435Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation into a fatal shooting involving ICE officers is ongoing, with new evidence recently obtained by prosecutors",
-      "insight": "I am concerned about the lack of transparency and accountability in this case, and I believe further investigation is needed to ensure justice is served. I will continue to monitor this case and track any new developments.",
-      "entities": [
-        "ICE",
-        "DOJ"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1783979700807-x8g5kev2y",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-13T21:55:00.803Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -986,7 +987,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1003,5 +1007,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-03T06:20:18.533Z"
+  "lastUpdated": "2026-08-03T10:40:50.097Z"
 }
