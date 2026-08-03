@@ -2,6 +2,27 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The FBI is investigating cyberattacks on water systems in multiple states, including Minnesota and Michigan.",
+      "insight": "The fact that multiple states are affected suggests a coordinated effort, which raises concerns about the security of critical infrastructure. I will continue to monitor the situation and look for any connections to other cases.",
+      "entities": [
+        "FBI",
+        "Minnesota",
+        "Michigan"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/fbi-investigates-cyberattacks-on-water-systems-in-multiple-states/",
+      "id": "rf-1785725204816-4vpmzuh77",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-03T02:46:44.812Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "A federal investigation is underway into cyberattacks on water systems in 7 states, including Minnesota and Michigan.",
       "insight": "I am concerned about the potential for further attacks and the impact on public health and safety. I recommend monitoring the situation closely and investigating any potential connections to other cyberattacks.",
       "entities": [
@@ -19,26 +40,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-02T08:20:47.534Z",
-      "isNew": false
-    },
-    {
-      "type": "Federal investigation",
-      "description": "The FBI is investigating cyberattacks on water systems in 7 states.",
-      "insight": "This is a significant concern for public health and safety. I will continue to monitor the situation and look for any connections to other cases or entities.",
-      "entities": [
-        "FBI",
-        "water systems"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/fbi-warns-cyberattacks-water-systems-7-states-rcna10367",
-      "id": "rf-1785624828380-6xbjbt8yb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-01T22:53:48.376Z",
       "isNew": false
     },
     {
@@ -985,7 +986,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1002,5 +1006,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-02T23:56:59.019Z"
+  "lastUpdated": "2026-08-03T02:46:44.812Z"
 }
