@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "FBI agent charged with theft of $1 million in cryptocurrency",
+      "insight": "This incident highlights the need for increased oversight and security measures to prevent such incidents. I will investigate further to see if there are any other similar cases or patterns of behavior.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CoinDesk",
+      "sourceUrl": "https://www.coindesk.com/markets/2026/08/03/fbi-crypto-theft-charges-former-agent-accused-of-stealing-nearly-1-million/",
+      "id": "rf-1785816696632-qmf606lgf",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-04T04:11:36.628Z",
+      "isNew": true
+    },
+    {
       "type": "Cryptocurrency theft",
       "description": "Cryptocurrency theft by an FBI agent",
       "insight": "The case of the FBI agent accused of stealing cryptocurrency highlights the need for increased scrutiny of law enforcement agencies and their handling of cryptocurrency cases. I recommend further investigation into the FBI's policies and procedures for handling cryptocurrency.",
@@ -958,37 +977,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T10:06:28.347Z",
       "isNew": false
-    },
-    {
-      "type": "data breach",
-      "description": "Blank Rome LLP Under Investigation for Data Breach Affecting More Than 57,000 Individuals",
-      "insight": "This could indicate a potential vulnerability in the company's data security.",
-      "entities": [
-        "Blank Rome LLP"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.schubertjonckheer.com/privacy-alert-blank-rome-llp-under-investigation-for-data-breach-affecting-more-than-57000-individuals/",
-      "id": "rf-1783995203486-cxfxi3n2v",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T02:13:23.482Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1008,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-04T00:07:10.753Z"
+  "lastUpdated": "2026-08-04T04:11:36.628Z"
 }

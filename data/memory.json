@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-25T21:53:38.853Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-07-25T22:53:39.562Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-04T00:07:10.751Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-08-04T04:11:36.625Z",
+      "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 new legal actions, Breaking news present",
+      "confidence": 0.8
     }
   ],
   "patterns": [
@@ -539,8 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is George Santos connected to?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
     "Where did the N/A allegedly go in Minnesota water system cyberattacks?",
     "What other organizations is Feeding Our Future scheme's alleged second in command connected to?",
     "Where did the Unknown allegedly go in Cyberattack on Minnesota water systems?",
@@ -558,7 +556,9 @@
     "What other organizations is FBI Agent connected to?",
     "Where did the $1M+ allegedly go in Medicaid Fraud Investigation?",
     "Where did the $1M allegedly go in Cryptocurrency Theft Investigation?",
-    "Are any of these 2 figures connected to each other?"
+    "Are any of these 2 figures connected to each other?",
+    "Where did the $1 million allegedly go in FBI Crypto Theft Investigation?",
+    "Where did the Unknown allegedly go in Minnesota Medicaid Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3199,
-    "articlesProcessed": 158850,
-    "redFlagsFound": 3508,
+    "totalScans": 3200,
+    "articlesProcessed": 158900,
+    "redFlagsFound": 3510,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-04T00:07:10.751Z",
-  "lastUpdated": "2026-08-04T00:07:10.752Z"
+  "lastReflection": "2026-08-04T04:11:36.625Z",
+  "lastUpdated": "2026-08-04T04:11:36.627Z"
 }
