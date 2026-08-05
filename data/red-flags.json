@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "fraud scheme",
+      "description": "A defendant in the Feeding Our Future case has been sentenced to 10 more years for admitting to a juror bribery plot.",
+      "insight": "This case highlights the need for continued vigilance in detecting and preventing fraud schemes. I will investigate further to see if there are any connections to other cases or entities.",
+      "entities": [
+        "Nolan Wells",
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "WCIV",
+      "sourceUrl": "https://www.wciv.com/news/national-news/feeding-our-future-defendant-gets-10-more-years-after-admitting-juror-bribery-plot",
+      "id": "rf-1785908639840-drqxbo4u7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-05T05:43:59.836Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "FBI agent charged with theft of $1 million in cryptocurrency",
       "insight": "This incident highlights the need for increased oversight and security measures to prevent such incidents. I will investigate further to see if there are any other similar cases or patterns of behavior.",
@@ -958,37 +978,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T16:13:07.209Z",
       "isNew": false
-    },
-    {
-      "type": "data_breach",
-      "description": "Blank Rome LLP data breach affecting over 57,000 individuals",
-      "insight": "This could indicate a larger issue with data security at law firms.",
-      "entities": [
-        "Blank Rome LLP"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rdDQzZ2NvbWpxekMyVXhOYWpZYlFzMHJ4ZUtTVkJOOEowREFwNW04TjMzb3p0Vy1meklqcWdJbnRiX29hUkZtcklXaVU5Q2dSVVVCLXZBSHJmbHBkU0E?oc=5",
-      "id": "rf-1784023588351-npo1fqbk1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T10:06:28.347Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1005,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-05T02:13:34.663Z"
+  "lastUpdated": "2026-08-05T05:43:59.836Z"
 }
