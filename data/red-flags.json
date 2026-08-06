@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The FBI is investigating a deadly shooting at a party in Morgan Hill, and a former president is being investigated for potentially working as a Russian asset. These investigations raise concerns about public safety and national security.",
+      "insight": "I notice that the FBI is taking a proactive approach to investigating high-profile cases, which may indicate a shift in their priorities. I would recommend further investigation into the Trump Russian asset investigation to determine the extent of the allegations.",
+      "entities": [
+        "Trump",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Axios",
+      "sourceUrl": "https://www.axios.com/",
+      "id": "rf-1786005134877-esdkk8z7z",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-06T08:32:14.873Z",
+      "isNew": true
+    },
+    {
       "type": "fraud scheme",
       "description": "A defendant in the Feeding Our Future case has been sentenced to 10 more years for admitting to a juror bribery plot.",
       "insight": "This case highlights the need for continued vigilance in detecting and preventing fraud schemes. I will investigate further to see if there are any connections to other cases or entities.",
@@ -959,29 +979,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T19:39:36.092Z",
       "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "Man pleads guilty to stealing $1.1 million from Feeding Our Future meals scheme",
-      "insight": "This case indicates potential fraud in the Feeding Our Future meals scheme, which may be related to other similar cases.",
-      "entities": [
-        "Abdirizak A. Yusuf"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://economictimes.indiatimes.com/news/2024/07/14/minnesota-somali-fraud-man-pleads-guilty-to-stealing-1-1mn-from-feeding-our-future-meals-scheme",
-      "id": "rf-1784045587213-t2u7cm7qc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T16:13:07.209Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -989,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1006,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-06T05:47:07.032Z"
+  "lastUpdated": "2026-08-06T08:32:14.873Z"
 }
