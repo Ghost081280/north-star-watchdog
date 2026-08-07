@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Medicaid fraud",
+      "description": "Over $1M in fraudulent Medicaid claims in Minnesota",
+      "insight": "I suspect a larger scheme involving multiple individuals and organizations. Further investigation is needed to uncover the full extent of the fraud.",
+      "entities": [
+        "Minnesota State University",
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "CPA Practice Advisor",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMExCaWZXTTdOLXJSZGZpcTV3UGJDNjlnVTdpY1g4WGhrVHlLOUJsMjJKai1XTXJlS1h2MnlRUnVPU0tvQk0xSlAyc3VYNGhBR1JNeENRbVpvdkFsSXh2SWtqMUNvYlFkTlFoTzdhcjdESDhDTlBrVEJkX3FCdHZ2OVV0NUNIZmRXVlYwdlloY3Iwa1lwOTcyejBwWEJZd2FoVmpPWk1oQUc4U1RXMk0waENJZFVJRk5KZ0tSR3NnYlRuLTU5Y1N3RGlVQ3lDLS1PcXRMMGhOSXdCZG9xdk9BQThLcw",
+      "id": "rf-1786128776672-uck7vwqjy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-07T18:52:56.668Z",
+      "isNew": true
+    },
+    {
       "type": "federal freeze",
       "description": "The Trump administration's plan to overhaul the Head Start program has raised concerns about the potential impact on vulnerable young children.",
       "insight": "The proposed changes to the Head Start program could have far-reaching consequences for thousands of children. I recommend investigating the potential motivations behind the overhaul and the potential beneficiaries of the changes.",
@@ -961,26 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T23:52:51.724Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The retirement of DHS Deputy Commissioner Shireen Gandhi amid a fraud saga raises questions about the agency's handling of funds and programs.",
-      "insight": "The circumstances surrounding Gandhi's retirement and the ongoing investigation into DHS's handling of funds warrant further scrutiny to ensure that programs are being managed effectively and efficiently.",
-      "entities": [
-        "DHS",
-        "Shireen Gandhi"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "News reports",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSzFmRXNMN1hoTFd3dFpUdjBUSlVXd3VkSUZMRURvQXZlc2laMkkxRkZQQjdwT3MzVS1JaWVFWms3eGtBRDRGYkFIdGhaUDRQX1J4SkFaZmdjZ3djbk8xaU9wMmtLWV92ZjdicmxQTk5NYTh4T0VldHVIaE05dmNfVmcyM2dZMENOb0tuNkc1TG9NYTZyLWIzSDFRdlhOZ1hRakNsN0xKMFlDS0owa2c",
-      "id": "rf-1784066567552-h2ixhj470",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T22:02:47.548Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,10 +989,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-07T17:47:15.634Z"
+  "lastUpdated": "2026-08-07T18:52:56.668Z"
 }
