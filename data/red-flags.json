@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "federal freeze",
+      "description": "The Trump administration's plan to overhaul the Head Start program has raised concerns about the potential impact on vulnerable young children.",
+      "insight": "The proposed changes to the Head Start program could have far-reaching consequences for thousands of children. I recommend investigating the potential motivations behind the overhaul and the potential beneficiaries of the changes.",
+      "entities": [
+        "HHS",
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/",
+      "id": "rf-1786118049816-sxpb1t8ef",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-07T15:54:09.812Z",
+      "isNew": true
+    },
+    {
+      "type": "program termination",
+      "description": "The investigation into Byron Donalds, a Florida governor candidate, has raised concerns about the potential for human trafficking in the state.",
+      "insight": "The investigation into Byron Donalds highlights the need for increased awareness and action to prevent human trafficking. I recommend investigating the potential connections between Donalds and other individuals or organizations involved in human trafficking.",
+      "entities": [
+        "Byron Donalds",
+        "DOJ"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "WKMG",
+      "sourceUrl": "https://www.wkmg.com/",
+      "id": "rf-1786118049816-rqhb3xzrw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-07T15:54:09.812Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Trump administration's proposed overhaul of the Head Start program could lead to a reduction in services for vulnerable children",
       "insight": "I am concerned about the potential consequences of the proposed changes to the Head Start program. The fact that the administration is proposing to eliminate regulations and cut funding for the program raises red flags about the impact on the most vulnerable children. I would recommend further investigation into the potential consequences of these changes.",
@@ -160,25 +200,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-02T08:20:47.534Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration's funding freeze on certain programs has raised concerns about the impact on vulnerable populations.",
-      "insight": "I suspect that this funding freeze may be related to the recent reports of fraud schemes targeting public benefits. Further investigation is needed to determine the extent of the issue.",
-      "entities": [
-        "Trump administration"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The New York Times",
-      "sourceUrl": "https://www.nytimes.com/2026/07/31/us/politics/trump-administration-funding-freeze.html",
-      "id": "rf-1785607132053-jvyh3btyj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-01T17:58:52.049Z",
       "isNew": false
     },
     {
@@ -960,29 +981,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T22:02:47.548Z",
       "isNew": false
-    },
-    {
-      "type": "fraud_charges",
-      "description": "A Minnesota daycare owner pleaded guilty to state and federal fraud charges over a multi-million-dollar scheme.",
-      "insight": "This indicates a significant case of fraud involving a large sum of money.",
-      "entities": [
-        "Minnesota daycare owner"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Heartlander News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRW8xTXY1N2lCQ242bVdMSG1CWXVkelc0bi0weVZhbVhXZEowQlV6ZHA2dDljcmhCbjA1c3FzY0NFeE9Rd284Vmt3QzctQzNBVk1DN2M0M0p5eUhuanBNUFNQY0dqM2hHRTdKM3pDRVMxZGhpdzAwUmkwWDZ6Y1lBTXAzQkQ0TTBaS1ZQa3VPTWt1eml4a1JkbXdUQUpEMFZvQ2Y5OEh0T0pUUF9vUEt2SmgwTUNxS1haU29KNTQwaDlXLS1hSWpFZzQ1Y0J4cFk",
-      "id": "rf-1784062732007-fbxfwd2y2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T20:58:52.003Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +993,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-07T14:13:21.410Z"
+  "lastUpdated": "2026-08-07T15:54:09.812Z"
 }
