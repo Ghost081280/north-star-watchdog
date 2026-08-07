@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "program termination",
+      "description": "The Trump administration's proposed overhaul of the Head Start program could lead to a reduction in services for vulnerable children",
+      "insight": "I am concerned about the potential consequences of the proposed changes to the Head Start program. The fact that the administration is proposing to eliminate regulations and cut funding for the program raises red flags about the impact on the most vulnerable children. I would recommend further investigation into the potential consequences of these changes.",
+      "entities": [
+        "Trump administration",
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Washington Post",
+      "sourceUrl": "https://www.washingtonpost.com/education/2026/08/06/hhs-proposes-cutting-many-federal-education-and-health-guidelines-for-head-start/",
+      "id": "rf-1786081149369-9xl5tbyy0",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-07T05:39:09.366Z",
+      "isNew": true
+    },
+    {
       "type": "Federal Investigation",
       "description": "The FBI is investigating a deadly shooting at a party in Morgan Hill, and a former president is being investigated for potentially working as a Russian asset. These investigations raise concerns about public safety and national security.",
       "insight": "I notice that the FBI is taking a proactive approach to investigating high-profile cases, which may indicate a shift in their priorities. I would recommend further investigation into the Trump Russian asset investigation to determine the extent of the allegations.",
@@ -959,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-14T20:58:52.003Z",
       "isNew": false
-    },
-    {
-      "type": "fraud allegations",
-      "description": "There are ongoing investigations into fraud allegations within DHS and a Rock Island nursing home owner was indicted for a federal fraud scheme.",
-      "insight": "These allegations and indictments indicate a potential for widespread fraud that needs to be addressed.",
-      "entities": [
-        "DHS",
-        "Rock Island nursing home owner"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Multiple news sources",
-      "sourceUrl": "https://www.alphanews.mn/2026-07-14/deputy-commissioner-shireen-gandhi-retiring-from-dhs-as-agency-embroiled-in-fraud-saga/",
-      "id": "rf-1784057976095-qjz3tw1jy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T19:39:36.092Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-07T03:54:36.530Z"
+  "lastUpdated": "2026-08-07T05:39:09.366Z"
 }
