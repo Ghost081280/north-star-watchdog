@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Federal investigation into organ harvesting, with allegations of patients being harvested while still showing signs of life",
+      "insight": "This investigation raises concerns about patient safety and the potential for fraudulent activities in the organ harvesting industry. Further investigation is needed to determine the extent of the issue.",
+      "entities": [
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/politics/organ-harvesting-began-while-patients-still-showed-signs-of-life-federal-investigation-finds",
+      "id": "rf-1786138605908-bzl4g60sj",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-07T21:36:45.904Z",
+      "isNew": true
+    },
+    {
       "type": "Medicaid fraud",
       "description": "Over $1M in fraudulent Medicaid claims in Minnesota",
       "insight": "I suspect a larger scheme involving multiple individuals and organizations. Further investigation is needed to uncover the full extent of the fraud.",
@@ -962,25 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-15T05:29:11.566Z",
       "isNew": false
-    },
-    {
-      "type": "financial irregularities",
-      "description": "Investigation into Pastor Greg Locke's finances",
-      "insight": "This could indicate potential financial misconduct or irregularities",
-      "entities": [
-        "Pastor Greg Locke"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "The Roys Report",
-      "sourceUrl": "https://www.theroysreport.com/2026/07/14/pastor-greg-locke-federal-investigation/",
-      "id": "rf-1784073171728-c86hsfezj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-14T23:52:51.724Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -989,10 +989,13 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-07T20:38:15.996Z"
+  "lastUpdated": "2026-08-07T21:36:45.904Z"
 }
