@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "A federal investigation found that organ harvesting began while patients still showed signs of life",
+      "insight": "This finding raises concerns about the handling of organ procurement and the potential for abuse. Further investigation is needed to determine the extent of this issue and ensure that patients are protected.",
+      "entities": [
+        "Organ procurement organizations"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "foxnews.com",
+      "sourceUrl": "https://www.foxnews.com/politics/organ-harvesting-began-while-patients-still-showed-signs-of-life-federal-investigation-finds",
+      "id": "rf-1786202838875-foc31bv4p",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T15:27:18.870Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Federal investigation into organ procurement practices, with a focus on patient safety and potential wrongdoing",
       "insight": "The investigation into organ procurement practices raises concerns about patient safety and potential wrongdoing. Further research is needed to determine the extent of the issue and identify potential wrongdoing.",
       "entities": [
@@ -963,26 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-15T20:07:14.612Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Weavers were sacked from Uncle Nearest amid a federal investigation",
-      "insight": "This could be a sign of a larger issue, and I recommend investigating further to see if there are any connections to other entities or programs.",
-      "entities": [
-        "Uncle Nearest",
-        "Weavers"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Spirits Business",
-      "sourceUrl": "https://www.thespiritsbusiness.com/news/weavers-sacked-from-uncle-nearest-amid-federal-investigation/",
-      "id": "rf-1784117628836-5y45tssd5",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-15T12:13:48.832Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -991,10 +990,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-08T14:29:40.007Z"
+  "lastUpdated": "2026-08-08T15:27:18.870Z"
 }
