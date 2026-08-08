@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The Department of Justice has closed its investigation into the city of Worcester after a federal investigation previously found the police department engaged in 'outrageous government conduct', 'excessive force', and 'sexual misconduct' by officers.",
+      "insight": "This investigation raises concerns about government accountability and the need for increased oversight. Further investigation is needed to determine the extent of the misconduct and ensure that those responsible are held accountable.",
+      "entities": [
+        "City of Worcester",
+        "Department of Justice"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Boston 25 News",
+      "sourceUrl": "https://www.boston25news.com/news/doj-closes-investigation-into-worcester-police-department-after-years-long-misconduct-probe/644111/",
+      "id": "rf-1786171669006-5z5xayzm7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T06:47:49.002Z",
+      "isNew": true
+    },
+    {
       "type": "program termination",
       "description": "The Director of African American Affairs at Minnesota State University was convicted of tax fraud and is no longer with the university",
       "insight": "This conviction highlights the need for increased oversight and accountability within university programs. Further investigation into the university's financial dealings and program management may be warranted.",
@@ -961,25 +981,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-15T05:29:11.566Z",
       "isNew": false
-    },
-    {
-      "type": "foodborne illness",
-      "description": "Taco Bell under investigation for cyclosporiasis outbreak",
-      "insight": "This could indicate a larger issue with food safety or supply chain management.",
-      "entities": [
-        "Taco Bell"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "The Courier-Journal",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQWcwOGRnMzNqeUhQelRQaW1faFB4Si1fdmx3VU9Dd24yb2R6NXkwYXdMOHgwNXFVaFA5Uy1WWGptcDRFcnRTcE0tT3dwdVVBdkdaRnZCcXQtRmNHUmFaM0tsaUZNSnhKRUV2Ri1JeTRMbkdIT0xEdXFjNGVvX0ZPa0ZGenlHMDZWWlVSUHlNWDVLMWhXdGNXLXA3b1BPQU9BVWhyT1lKak03aDVCclZLY1RFX2FpTHF2VkM5Y3lrUkluNHgzS1hfYUJONA?oc=5",
-      "id": "rf-1784093351570-oe4jgd3d9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-15T05:29:11.566Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -988,10 +989,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-08T05:41:09.661Z"
+  "lastUpdated": "2026-08-08T06:47:49.002Z"
 }
