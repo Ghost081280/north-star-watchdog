@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The DOJ has closed its investigation into the Worcester Police Department, but other investigations into misconduct and fraud are ongoing",
+      "insight": "I notice a pattern of investigations into misconduct and fraud across various agencies and organizations. Further investigation is needed to determine the extent of these issues and identify potential connections between entities.",
+      "entities": [
+        "Worcester Police Department",
+        "Minnesota State University"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.facebook.com/100064411155115/posts/pfbid02QjxLj5Y9kxj7jYj7K3K3K3j7jYj7jYj7jYj7jYj7j/",
+      "id": "rf-1786188355275-h548jrqj9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T11:25:55.271Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ has closed its investigation into the Worcester Police Department, but the investigation into Medicaid fraud in Minnesota is ongoing",
       "insight": "I notice that there are multiple investigations into government entities and programs, indicating a potential pattern of misconduct. I recommend further investigation into these entities and programs to determine the extent of the misconduct.",
       "entities": [
@@ -963,25 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-15T08:05:27.273Z",
       "isNew": false
-    },
-    {
-      "type": "financial impropriety",
-      "description": "Pastor Greg Locke's finances are under investigation",
-      "insight": "This could indicate potential misuse of funds or financial mismanagement.",
-      "entities": [
-        "Pastor Greg Locke"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "The Roys Report",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQzhKQTNxTFZ3NW8xTkVtbkhUREE1VUNOb1ctRVRxVEFoekNWZEh4SHdIUVFmVjVKa0NWU0Y3NDA0dUU1UjE2ZkV5ZmFwWVl3M0pRbTZGZmJHTVdkcGc1MjNNeWc3Q1QzMWVlTnpzRlZ3YU1pelphbnZpR1Jaa29lNVFiOE43MnJhSUdBQ1JSYlBIVEVINU9kVDZn?oc=5",
-      "id": "rf-1784093351570-h43xpw6lr",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-15T05:29:11.566Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -990,10 +991,12 @@
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-08T10:29:41.034Z"
+  "lastUpdated": "2026-08-08T11:25:55.271Z"
 }
