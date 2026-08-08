@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Federal investigation into organ procurement practices, with a focus on patient safety and potential wrongdoing",
+      "insight": "The investigation into organ procurement practices raises concerns about patient safety and potential wrongdoing. Further research is needed to determine the extent of the issue and identify potential wrongdoing.",
+      "entities": [
+        "HHS",
+        "organ procurement groups"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "HHS",
+      "sourceUrl": "https://www.hhs.gov/",
+      "id": "rf-1786192928868-uxk3rsr2e",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T12:42:08.864Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "The DOJ has closed its investigation into the Worcester Police Department, but other investigations into misconduct and fraud are ongoing",
       "insight": "I notice a pattern of investigations into misconduct and fraud across various agencies and organizations. Further investigation is needed to determine the extent of these issues and identify potential connections between entities.",
       "entities": [
@@ -18,7 +38,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-08T11:25:55.271Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -963,26 +983,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-15T12:13:48.832Z",
       "isNew": false
-    },
-    {
-      "type": "investigation",
-      "description": "FBI investigation into late Sen. Graham's sudden death",
-      "insight": "This could indicate potential irregularities or suspicious circumstances surrounding Sen. Graham's death.",
-      "entities": [
-        "FBI",
-        "Sen. Graham"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "eciks.org",
-      "sourceUrl": "https://eciks.org/fbi-searches-late-sen-grahams-dc-home-amid-death-investigation/",
-      "id": "rf-1784102727277-mol0657bm",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-15T08:05:27.273Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -996,7 +996,8 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits"
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-08T11:25:55.271Z"
+  "lastUpdated": "2026-08-08T12:42:08.864Z"
 }
