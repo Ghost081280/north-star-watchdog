@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-07-31T22:03:01.477Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-08-01T00:00:17.219Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-08T21:27:50.641Z",
       "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
       "confidence": 0.6
+    },
+    {
+      "date": "2026-08-08T22:26:28.895Z",
+      "summary": "SIGNIFICANT: 1 high-profile figures, Federal involvement detected, Breaking news present",
+      "confidence": 0.6
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Byron Donalds connected to?",
-    "What other organizations is Carol Ammons connected to?",
-    "Where did the unknown allegedly go in Head Start Overhaul Investigation?",
     "Where did the unknown allegedly go in Minnesota Medicaid Fraud Investigation?",
     "What other organizations is Mark Walter connected to?",
     "Where did the Unknown allegedly go in Head Start Overhaul Investigation?",
@@ -558,7 +555,10 @@
     "Where did the N/A allegedly go in Organ procurement organization investigation?",
     "Where did the Unknown allegedly go in Organ harvesting investigation?",
     "Where did the Unknown allegedly go in Worcester Police Department Investigation?",
-    "Where did the Unknown allegedly go in Kentucky Organ Procurement Organization Investigation?"
+    "Where did the Unknown allegedly go in Kentucky Organ Procurement Organization Investigation?",
+    "What other organizations is Director of African American Affairs connected to?",
+    "Where did the Unknown allegedly go in Organ Harvesting Investigation?",
+    "Are any of these 2 figures connected to each other?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3261,
-    "articlesProcessed": 161900,
-    "redFlagsFound": 3527,
+    "totalScans": 3262,
+    "articlesProcessed": 161950,
+    "redFlagsFound": 3529,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the $20,000 allegedly go in Morgan Hill Party Shooting?",
-        "Where did the None allegedly go in Trump Russian Asset Investigation?",
-        "What other organizations is Byron Donalds connected to?"
+        "What other organizations is Byron Donalds connected to?",
+        "What other organizations is Carol Ammons connected to?",
+        "Where did the unknown allegedly go in Head Start Overhaul Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-08T21:27:50.641Z",
-  "lastUpdated": "2026-08-08T21:27:50.642Z"
+  "lastReflection": "2026-08-08T22:26:28.895Z",
+  "lastUpdated": "2026-08-08T22:26:28.896Z"
 }

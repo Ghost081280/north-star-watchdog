@@ -1,6 +1,45 @@
 {
   "flags": [
     {
+      "type": "Police misconduct",
+      "description": "Multiple reports of police misconduct, including the Worcester Police Department investigation and the New Kensington officer under investigation.",
+      "insight": "I suspect a pattern of police misconduct that warrants further investigation. I recommend tracking police departments and officers accused of misconduct to identify potential connections and systemic issues.",
+      "entities": [
+        "Worcester Police Department",
+        "New Kensington Police Department"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Multiple news sources",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1786227988901-7x02oa940",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T22:26:28.897Z",
+      "isNew": true
+    },
+    {
+      "type": "Organ harvesting",
+      "description": "The federal investigation into organ harvesting has found disturbing practices, including harvesting organs from patients who still showed 'signs of life'.",
+      "insight": "I suspect a pattern of unethical practices in the organ harvesting industry. I recommend investigating the companies and individuals involved in the organ harvesting industry to identify potential connections and systemic issues.",
+      "entities": [
+        "Organ harvesting companies"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "Federal investigation",
+      "sourceUrl": "https://www.foxnews.com/",
+      "id": "rf-1786227988901-majj2ili2",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-08T22:26:28.897Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The DOJ has closed its investigation into the Worcester Police Department, but the findings are concerning and warrant further investigation.",
       "insight": "I see a pattern of police misconduct and a lack of accountability. Further investigation is needed to determine the extent of the problem and to hold those responsible accountable.",
@@ -17,7 +56,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-08T21:27:50.643Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal investigation",
@@ -942,59 +981,20 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-16T10:06:48.410Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "Minnesota county sues over feds stonewalling investigation into ICE arrest",
-      "insight": "This could indicate a larger issue with federal cooperation in investigations, and may be worth further exploration.",
-      "entities": [
-        "Minnesota county",
-        "ICE"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Courthouse News",
-      "sourceUrl": "https://www.courthousenews.com/",
-      "id": "rf-1784174850458-xhuskbvxb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-16T04:07:30.454Z",
-      "isNew": false
-    },
-    {
-      "type": "Food safety outbreak",
-      "description": "Recent outbreak linked to Taco Bell",
-      "insight": "This suggests a problem with food safety at Taco Bell, and further investigation is needed to determine the source of the outbreak.",
-      "entities": [
-        "Taco Bell",
-        "FDA"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "CDC",
-      "sourceUrl": "https://www.google.com/url?q=https://www.cdc.gov/parasites/cyclosporiasis/outbreaks.html",
-      "id": "rf-1784146034617-2x5irb4j9",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-15T20:07:14.612Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
-    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1011,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-08T21:27:50.643Z"
+  "lastUpdated": "2026-08-08T22:26:28.897Z"
 }
