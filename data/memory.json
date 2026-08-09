@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-01T09:04:39.972Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-08-01T11:15:31.724Z",
       "summary": "CRITICAL: 1 large dollar amount findings, Federal involvement detected, 1 high-confidence findings, Breaking news present",
       "confidence": 0.7
@@ -510,6 +505,11 @@
       "date": "2026-08-09T03:39:54.164Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-08-09T05:02:18.133Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3265,
-    "articlesProcessed": 162100,
+    "totalScans": 3266,
+    "articlesProcessed": 162150,
     "redFlagsFound": 3531,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Head Start Overhaul Investigation?",
-        "Where did the Unknown allegedly go in Federal Sex Trafficking Investigation?",
-        "What other organizations is Minnesota State University's Director of African American Affairs connected to?"
+        "What other organizations is Minnesota State University's Director of African American Affairs connected to?",
+        "Where did the $1M+ allegedly go in Medicaid fraud investigation?",
+        "Where did the $1M+ allegedly go in Minnesota Medicaid fraud investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-09T03:39:54.164Z",
-  "lastUpdated": "2026-08-09T03:39:54.165Z"
+  "lastReflection": "2026-08-09T05:02:18.133Z",
+  "lastUpdated": "2026-08-09T05:02:18.134Z"
 }
