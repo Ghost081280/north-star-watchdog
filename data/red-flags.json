@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "The DOJ has closed its investigation into the Worcester Police Department, but the findings of 'outrageous government conduct', 'excessive force', and 'sexual misconduct' by officers raise concerns about the department's practices.",
+      "insight": "This case highlights the need for increased oversight and accountability within government agencies. Further investigation is needed to determine the extent of the misconduct and to ensure that those responsible are held accountable.",
+      "entities": [
+        "Worcester Police Department"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1786258377610-dxvcr51jw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-09T06:52:57.607Z",
+      "isNew": true
+    },
+    {
       "type": "Government Misconduct",
       "description": "The Worcester Police Department investigation found 'outrageous government conduct', 'excessive force', and 'sexual misconduct' by officers.",
       "insight": "This investigation highlights the need for increased scrutiny of government agencies and the importance of holding those in power accountable for their actions.",
@@ -56,25 +75,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-08T22:26:28.897Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has closed its investigation into the Worcester Police Department, but the findings are concerning and warrant further investigation.",
-      "insight": "I see a pattern of police misconduct and a lack of accountability. Further investigation is needed to determine the extent of the problem and to hold those responsible accountable.",
-      "entities": [
-        "Worcester Police Department"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/",
-      "id": "rf-1786224470646-e9uid4fuf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-08T21:27:50.643Z",
       "isNew": false
     },
     {
@@ -984,6 +984,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -991,7 +992,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1008,5 +1010,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-09T05:02:18.135Z"
+  "lastUpdated": "2026-08-09T06:52:57.607Z"
 }
