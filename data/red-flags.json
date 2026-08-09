@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Government Misconduct",
+      "description": "The Worcester Police Department investigation and the Southern Illinois coal mine investigation have raised concerns about government misconduct and the potential for abuse of power.",
+      "insight": "These investigations suggest a pattern of government misconduct and a lack of accountability. Further investigation is needed to determine the extent of this misconduct and to hold those responsible accountable.",
+      "entities": [
+        "Worcester Police Department",
+        "Southern Illinois coal mine"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://www.justice.gov/",
+      "id": "rf-1786268216293-bc5v1t3e3",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-09T09:36:56.289Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Indiana refugee advocates are facing a state investigation, which has been blocked by a federal judge.",
       "insight": "This could indicate an overreach of state authority and a potential violation of federal law. Further investigation is needed to determine the motivations behind the state's actions.",
@@ -959,30 +979,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-16T12:19:30.062Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "FBI obtains warrant to search Salgado's van for evidence of drugs",
-      "insight": "This investigation may be connected to larger fraud or corruption schemes.",
-      "entities": [
-        "FBI",
-        "Houston ICE"
-      ],
-      "confidence": 75,
-      "priority": "high",
-      "source": "Houston Chronicle",
-      "sourceUrl": "https://www.houstonchronicle.com/breaking-news/article/fbi-obtains-warrant-search-salgado-s-van-evidence-182105835.php",
-      "id": "rf-1784204370066-r7qqt6rqa",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-16T12:19:30.062Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -990,7 +991,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1007,5 +1009,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-09T08:39:10.816Z"
+  "lastUpdated": "2026-08-09T09:36:56.289Z"
 }
