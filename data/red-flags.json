@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "FBI investigating North Korean remote IT staffer working for US agency",
+      "insight": "This investigation raises concerns about national security and the potential for foreign interference in US agencies. I recommend further investigation into the extent of North Korean involvement in US agencies and the potential risks to national security.",
+      "entities": [
+        "FBI",
+        "North Korea"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Federal News Network",
+      "sourceUrl": "https://www.federalnewsnetwork.com/",
+      "id": "rf-1786438333293-qs4up1xyw",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-11T08:52:13.289Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The White House has launched a $229B fraud crackdown tracker, with Minnesota featured prominently.",
       "insight": "I suspect that the federal government is taking a closer look at Minnesota's handling of welfare funds, and this tracker may be a way to increase transparency and accountability.",
@@ -962,25 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-16T20:01:51.097Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Federal and local investigators piece together Nolan Wells’ final hours. How AI-generated misinformation is complicating the search for answers",
-      "insight": "This could indicate a larger issue with misinformation and potential fraud in Minnesota, potentially involving multiple entities.",
-      "entities": [
-        "Nolan Wells"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Plataforma Media",
-      "sourceUrl": "https://www.plataformamedia.com/2026-07-16/federal-and-local-investigators-piece-together-nolan-wells-final-hours-how-ai-generated-misinformation-complicating-search-answers",
-      "id": "rf-1784218983269-v8uh9kcgb",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-16T16:23:03.264Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +993,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-11T07:02:47.187Z"
+  "lastUpdated": "2026-08-11T08:52:13.289Z"
 }
