@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-04T23:01:33.426Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-08-05T02:13:34.661Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-11T09:58:13.793Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
+    },
+    {
+      "date": "2026-08-11T10:52:21.619Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3307,
-    "articlesProcessed": 164150,
+    "totalScans": 3308,
+    "articlesProcessed": 164200,
     "redFlagsFound": 3543,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Kentucky Organ Procurement Organization Investigation?",
         "What other organizations is Director of African American Affairs connected to?",
-        "Where did the Unknown allegedly go in Organ Harvesting Investigation?"
+        "Where did the Unknown allegedly go in Organ Harvesting Investigation?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-11T09:58:13.793Z",
-  "lastUpdated": "2026-08-11T09:58:13.793Z"
+  "lastReflection": "2026-08-11T10:52:21.619Z",
+  "lastUpdated": "2026-08-11T10:52:21.619Z"
 }
