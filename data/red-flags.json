@@ -1,6 +1,25 @@
 {
   "flags": [
     {
+      "type": "fraud",
+      "description": "A Minnesota fugitive has pleaded not guilty in a $250 million fraud case",
+      "insight": "This case suggests a large-scale fraud operation in Minnesota, and further investigation is needed to uncover the extent of the fraud and those involved.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "hiiraan.com",
+      "sourceUrl": "https://hiiraan.com/extradited-minnesota-fugitive-pleads-not-guilty-in-250-million-feeding-our-future-fraud-case/",
+      "id": "rf-1786463957409-ly8o738me",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-11T15:59:17.406Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Federal prosecutors are investigating a $250 million fraud case involving Feeding Our Future",
       "insight": "I suspect that this case may be linked to other fraudulent activities in Minnesota, and I recommend further investigation into the matter.",
@@ -233,26 +252,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-08T12:42:08.864Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The DOJ has closed its investigation into the Worcester Police Department, but the investigation into Medicaid fraud in Minnesota is ongoing",
-      "insight": "I notice that there are multiple investigations into government entities and programs, indicating a potential pattern of misconduct. I recommend further investigation into these entities and programs to determine the extent of the misconduct.",
-      "entities": [
-        "Worcester Police Department",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://www.boston25news.com/news/doj-closes-investigation-into-worcester-police-department-after-years-long-misconduct-probe/",
-      "id": "rf-1786175226470-4ctfkmx4b",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-08T07:47:06.467Z",
       "isNew": false
     },
     {
@@ -993,7 +992,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1011,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-11T14:20:27.638Z"
+  "lastUpdated": "2026-08-11T15:59:17.406Z"
 }
