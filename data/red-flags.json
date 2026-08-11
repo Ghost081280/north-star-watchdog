@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "The FBI is investigating a possible hoax Wi-Fi network on a Delta flight to Atlanta",
+      "insight": "This incident raises concerns about the security of public Wi-Fi networks and the potential for malicious activity. I will investigate further to determine if there are any connections to other cases or entities.",
+      "entities": [
+        "Delta Airlines",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "medium",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/delta-flight-wifi-hoax-investigation/",
+      "id": "rf-1786478476481-i9n9bscbp",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-11T20:01:16.478Z",
+      "isNew": true
+    },
+    {
       "type": "fraud",
       "description": "A Minnesota fugitive has pleaded not guilty in a $250 million fraud case",
       "insight": "This case suggests a large-scale fraud operation in Minnesota, and further investigation is needed to uncover the extent of the fraud and those involved.",
@@ -962,25 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-17T12:07:50.790Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program has been terminated due to allegations of fraud",
-      "insight": "This termination suggests a large-scale fraud scheme may have occurred, and further investigation is warranted.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "Eurasia Review",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb3lkbks4T2VEblM2ajhjN1JvNjFaZ0Yzb1A2d0Q5c3RKS3hvOWpwWGllQ3VZUGVWVV9fRHFLNFB5VmdCQlJiSFRXS2Y4NnZBc1dqbXI5V2hJQXZUQS02cHhPclRWVy1VVkZ5bXBsc3VJRzVZNXBKekhXSHVPNDZuMkFTV3VTa1NfQldlOHpRRWhuMW1hMWFQZVUtZWRwSUpZd0Y3TFhzaU40RFNTX3ZLUTZB?oc=5",
-      "id": "rf-1784266889743-9vdxd79hj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-17T05:41:29.739Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -992,7 +993,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1009,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-11T18:58:28.188Z"
+  "lastUpdated": "2026-08-11T20:01:16.478Z"
 }
