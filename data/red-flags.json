@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "Federal prosecutors are investigating a $250 million fraud case involving Feeding Our Future",
+      "insight": "I suspect that this case may be linked to other fraudulent activities in Minnesota, and I recommend further investigation into the matter.",
+      "entities": [
+        "Feeding Our Future"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Hiiraan Online",
+      "sourceUrl": "https://www.hiiraan.com/2026/08/10/extradited-minnesota-fugitive-pleads-not-guilty-in-250-million-feeding-our-future-fraud-case/",
+      "id": "rf-1786442293798-eaj7z94hy",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-11T09:58:13.795Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "FBI investigating North Korean remote IT staffer working for US agency",
       "insight": "This investigation raises concerns about national security and the potential for foreign interference in US agencies. I recommend further investigation into the extent of North Korean involvement in US agencies and the potential risks to national security.",
       "entities": [
@@ -18,7 +37,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-11T08:52:13.289Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_freeze",
@@ -963,25 +982,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-17T05:41:29.739Z",
       "isNew": false
-    },
-    {
-      "type": "program termination",
-      "description": "Feeding Our Future scheme involved $200 million in fraud",
-      "insight": "This suggests a large-scale fraud scheme potentially involving multiple entities and individuals.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "wrganews.com",
-      "sourceUrl": "https://wrganews.com/2026-07-16/alleged-feeding-our-future-fraud-ringleader-extradited-from-somalia-to-face-us-charges",
-      "id": "rf-1784232111100-pk9y54ymu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-16T20:01:51.097Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -995,7 +995,6 @@
     "MN DHS Licensing",
     "MN Transparency",
     "ProPublica Nonprofits",
-    "FEC",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1013,5 +1012,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-11T08:52:13.289Z"
+  "lastUpdated": "2026-08-11T09:58:13.795Z"
 }

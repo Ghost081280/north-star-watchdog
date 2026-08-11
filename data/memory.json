@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-04T21:10:31.166Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-08-04T23:01:33.426Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-11T08:52:13.288Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-08-11T09:58:13.793Z",
+      "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
+      "confidence": 0.55
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Kentucky Organ Procurement Organization Investigation?",
     "What other organizations is Director of African American Affairs connected to?",
     "Where did the Unknown allegedly go in Organ Harvesting Investigation?",
     "Are any of these 2 figures connected to each other?",
@@ -558,7 +557,8 @@
     "Where did the Billions allegedly go in Medicaid Therapy Fraud?",
     "What other organizations is Extradited Minnesota fugitive connected to?",
     "Where did the $500m allegedly go in Minnesota Welfare Fraud Scandal?",
-    "Where did the $250 million allegedly go in Feeding Our Future fraud case?"
+    "Where did the $250 million allegedly go in Feeding Our Future fraud case?",
+    "What other organizations is Minnesota fugitive connected to?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3306,
-    "articlesProcessed": 164100,
-    "redFlagsFound": 3542,
+    "totalScans": 3307,
+    "articlesProcessed": 164150,
+    "redFlagsFound": 3543,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Worcester Police Department Investigation?",
         "Where did the Unknown allegedly go in Kentucky Organ Procurement Organization Investigation?",
-        "What other organizations is Director of African American Affairs connected to?"
+        "What other organizations is Director of African American Affairs connected to?",
+        "Where did the Unknown allegedly go in Organ Harvesting Investigation?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-11T08:52:13.288Z",
-  "lastUpdated": "2026-08-11T08:52:13.288Z"
+  "lastReflection": "2026-08-11T09:58:13.793Z",
+  "lastUpdated": "2026-08-11T09:58:13.793Z"
 }
