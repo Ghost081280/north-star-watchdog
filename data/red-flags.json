@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal funding freeze",
+      "description": "The Trump administration has frozen Medicaid funding for child sex-change procedures, citing concerns about the effectiveness and safety of these procedures.",
+      "insight": "This decision may be a red flag for potential discrimination against transgender youth and highlights the need for further investigation into the administration's motivations and the impact on affected individuals.",
+      "entities": [
+        "Trump administration",
+        "HHS"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Fox News",
+      "sourceUrl": "https://www.foxnews.com/politics/medicaid-ends-funding-child-sex-change-procedures",
+      "id": "rf-1786499053252-6a8zcz4ac",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-12T01:44:13.248Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "The FBI is investigating a possible hoax Wi-Fi network on a Delta flight to Atlanta",
       "insight": "This incident raises concerns about the security of public Wi-Fi networks and the potential for malicious activity. I will investigate further to determine if there are any connections to other cases or entities.",
@@ -76,26 +96,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-11T08:52:13.289Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The White House has launched a $229B fraud crackdown tracker, with Minnesota featured prominently.",
-      "insight": "I suspect that the federal government is taking a closer look at Minnesota's handling of welfare funds, and this tracker may be a way to increase transparency and accountability.",
-      "entities": [
-        "Minnesota DHS",
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "The Economic Times",
-      "sourceUrl": "https://economictimes.indiatimes.com/news/international/us/$500m-deferred-from-minnesota-wh-launches-229b-fraud-crackdown-tracker-mn-state-featured/articleshow/95044152.cms",
-      "id": "rf-1786384299243-8c59w42s8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-10T17:51:39.240Z",
       "isNew": false
     },
     {
@@ -993,7 +993,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits",
+    "FEC"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1013,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-11T23:37:00.425Z"
+  "lastUpdated": "2026-08-12T01:44:13.248Z"
 }
