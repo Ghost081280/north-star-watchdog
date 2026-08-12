@@ -1,24 +1,25 @@
 {
   "flags": [
     {
-      "type": "federal funding freeze",
-      "description": "The Trump administration has frozen Medicaid funding for child sex-change procedures, citing concerns about the effectiveness and safety of these procedures.",
-      "insight": "This decision may be a red flag for potential discrimination against transgender youth and highlights the need for further investigation into the administration's motivations and the impact on affected individuals.",
+      "type": "federal_freeze",
+      "description": "The Trump administration has held back $1B in Medicaid funds from California and Minnesota over fraud claims.",
+      "insight": "This development raises concerns about the administration's handling of Medicaid funds and its potential impact on vulnerable populations. Further investigation is needed to determine the extent of the fraud claims and the administration's justification for holding back funds.",
       "entities": [
         "Trump administration",
-        "HHS"
+        "California",
+        "Minnesota"
       ],
       "confidence": 80,
       "priority": "high",
-      "source": "Fox News",
-      "sourceUrl": "https://www.foxnews.com/politics/medicaid-ends-funding-child-sex-change-procedures",
-      "id": "rf-1786499053252-6a8zcz4ac",
+      "source": "Insight News",
+      "sourceUrl": "https://insightnews.com/trump-administration-holds-back-1b-medicaid-funds-from-california-and-minnesota-over-fraud-claims/",
+      "id": "rf-1786539787313-5stky23iw",
       "apisUsed": [
         "Google News"
       ],
       "sourceCount": 1,
-      "detectedAt": "2026-08-12T01:44:13.248Z",
-      "isNew": false
+      "detectedAt": "2026-08-12T13:03:07.309Z",
+      "isNew": true
     },
     {
       "type": "federal investigation",
@@ -986,6 +987,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -993,7 +995,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1010,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-12T11:11:59.747Z"
+  "lastUpdated": "2026-08-12T13:03:07.309Z"
 }
