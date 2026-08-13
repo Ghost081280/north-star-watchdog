@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "government targeting",
+      "description": "The government has been targeting left-leaning groups during the Minnesota immigration crackdown.",
+      "insight": "This pattern of targeting specific groups is concerning and warrants further investigation. It is possible that the government is using its power to silence opposition and dissent.",
+      "entities": [
+        "DOJ",
+        "Minnesota government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The New York Times",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1786654388361-r0u2sncli",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-13T20:53:08.357Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Mark Walter, owner of the Lakers, is under federal investigation, which may be related to the team's recent sale",
       "insight": "The timing of the Lakers' sale and the federal investigation into Mark Walter raises concerns about potential wrongdoing. Further investigation is needed to determine the extent of any potential fraud or corruption.",
@@ -965,33 +985,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-17T18:04:18.725Z",
       "isNew": false
-    },
-    {
-      "type": "program_fraud",
-      "description": "The Feeding Our Future program was allegedly used to commit a massive $240 million fraud scheme",
-      "insight": "The Feeding Our Future program was vulnerable to abuse and exploitation, which led to the massive fraud scheme. Further investigation is needed to identify other potential vulnerabilities in similar programs.",
-      "entities": [
-        "Feeding Our Future program"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FTL Somalia",
-      "sourceUrl": "https://ftl-somalia.com/abdikerm-eidleh-transferred-to-us-to-face-charges-in-240-million-feeding-our-future-fraud-scheme/",
-      "id": "rf-1784304823520-6qku3ffcu",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-17T16:13:43.516Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1012,5 +1016,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-13T19:58:33.378Z"
+  "lastUpdated": "2026-08-13T20:53:08.357Z"
 }
