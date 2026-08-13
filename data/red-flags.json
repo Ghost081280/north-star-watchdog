@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "Federal Investigation",
+      "description": "Mark Walter, the owner of the Lakers, is under federal investigation for potential connections to loans",
+      "insight": "I notice a pattern of federal investigations into high-profile individuals and organizations, which may indicate a larger issue with corruption and accountability. Further investigation is needed to determine the extent of these connections.",
+      "entities": [
+        "Mark Walter",
+        "Lakers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Sports Yahoo",
+      "sourceUrl": "https://sports.yahoo.com/mark-walter-investigation-explained-lakers-sale-144500657.html",
+      "id": "rf-1786632915212-bdyq8vhem",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-13T14:55:15.208Z",
+      "isNew": true
+    },
+    {
+      "type": "Federal Investigation",
       "description": "Mark Walter, owner of the Los Angeles Lakers, is under federal investigation, raising concerns about the potential for wrongdoing",
       "insight": "The investigation into Mark Walter highlights the need for increased scrutiny into the financial dealings of sports team owners, particularly when it comes to high-profile sales and transactions",
       "entities": [
@@ -963,34 +983,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-17T16:13:43.516Z",
       "isNew": false
-    },
-    {
-      "type": "program_termination",
-      "description": "The Feeding Our Future program was terminated due to the large-scale fraud scheme",
-      "insight": "The Feeding Our Future program was vulnerable to abuse, and the termination may indicate a larger issue with program oversight.",
-      "entities": [
-        "Feeding Our Future",
-        "Minnesota DHS"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcVBDZEdWRUlXb1V2SVdNNHhKR1hwNTFqM1pFM3BHX2ExMzN6b1N6MHViSWhtc3VMbTllMFJrZU5WNy1rY0FiaUNDbnVOZGJBTWpibEM5UFJ3UVZzLVFCTXRmY2lUN2o0bjB1bERrNUVpTVYzMmMtdEZyb3R2bU1rd180SXY2dzRNcHJWb2hDeldPeEotVVl3bmRzQzVsSGFGZkE3NGJ6aURJTFVOb08wUzlzdTNFNVBH",
-      "id": "rf-1784290070793-jagwxxedj",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-17T12:07:50.790Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1011,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-13T13:04:04.522Z"
+  "lastUpdated": "2026-08-13T14:55:15.208Z"
 }
