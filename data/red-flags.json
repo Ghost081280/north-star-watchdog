@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal Investigation",
+      "description": "Mark Walter, owner of the Los Angeles Lakers, is under federal investigation, raising concerns about the potential for wrongdoing",
+      "insight": "The investigation into Mark Walter highlights the need for increased scrutiny into the financial dealings of sports team owners, particularly when it comes to high-profile sales and transactions",
+      "entities": [
+        "Mark Walter",
+        "Los Angeles Lakers"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://www.usatoday.com/story/sports/nba/lakers/2026/08/13/lakers-sale-mark-walter-federal-probe/1036867002/",
+      "id": "rf-1786601709343-7v98m71s7",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-13T06:15:09.339Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has held back $1B in Medicaid funds from California and Minnesota over fraud claims.",
       "insight": "This development raises concerns about the administration's handling of Medicaid funds and its potential impact on vulnerable populations. Further investigation is needed to determine the extent of the fraud claims and the administration's justification for holding back funds.",
@@ -963,34 +983,17 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-17T12:07:50.790Z",
       "isNew": false
-    },
-    {
-      "type": "shell_company",
-      "description": "There may be shell companies involved in the Feeding Our Future fraud scheme",
-      "insight": "The use of shell companies may indicate a complex web of entities involved in the fraud scheme.",
-      "entities": [
-        "Feeding Our Future",
-        "Abdikerm Eidleh"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "News articles",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcVBDZEdWRUlXb1V2SVdNNHhKR1hwNTFqM1pFM3BHX2ExMzN6b1N6MHViSWhtc3VMbTllMFJrZU5WNy1rY0FiaUNDbnVOZGJBTWpibEM5UFJ3UVZzLVFCTXRmY2lUN2o0bjB1bERrNUVpTVYzMmMtdEZyb3R2bU1rd180SXY2dzRNcHJWb2hDeldPeEotVVl3bmRzQzVsSGFGZkE3NGJ6aURJTFVOb08wUzlzdTNFNVBH",
-      "id": "rf-1784290070793-dfv8rbup8",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-17T12:07:50.790Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1011,5 +1014,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-13T04:09:41.314Z"
+  "lastUpdated": "2026-08-13T06:15:09.339Z"
 }
