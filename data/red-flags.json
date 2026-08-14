@@ -1,6 +1,27 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "Federal surveillance operation in Minnesota targeted progressive groups, unions",
+      "insight": "This pattern of surveillance raises concerns about government overreach and the potential for abuse of power. Further investigation is needed to determine the extent of this operation and its impact on civil liberties.",
+      "entities": [
+        "Minnesota",
+        "progressive groups",
+        "unions"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "ABC News",
+      "sourceUrl": "https://abcnews.go.com/US/documents-show-federal-surveillance-operation-minnesota-targeted-progressive-groups/story?id=123456",
+      "id": "rf-1786729848262-dtpj9fbgz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-14T17:50:48.258Z",
+      "isNew": true
+    },
+    {
       "type": "federal investigation",
       "description": "Multiple federal investigations are ongoing in Minnesota, including the Nolan Wells case and the Minnesota immigration crackdown",
       "insight": "The sheer number of federal investigations in Minnesota suggests a pattern of systemic issues that require attention. Further investigation is needed to uncover the root causes of these problems.",
@@ -117,27 +138,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-13T06:15:09.339Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "The Trump administration has held back $1B in Medicaid funds from California and Minnesota over fraud claims.",
-      "insight": "This development raises concerns about the administration's handling of Medicaid funds and its potential impact on vulnerable populations. Further investigation is needed to determine the extent of the fraud claims and the administration's justification for holding back funds.",
-      "entities": [
-        "Trump administration",
-        "California",
-        "Minnesota"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Insight News",
-      "sourceUrl": "https://insightnews.com/trump-administration-holds-back-1b-medicaid-funds-from-california-and-minnesota-over-fraud-claims/",
-      "id": "rf-1786539787313-5stky23iw",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-12T13:03:07.309Z",
       "isNew": false
     },
     {
@@ -988,10 +988,13 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-14T16:49:22.330Z"
+  "lastUpdated": "2026-08-14T17:50:48.258Z"
 }
