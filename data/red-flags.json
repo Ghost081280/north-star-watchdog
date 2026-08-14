@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal investigation",
+      "description": "Multiple federal investigations are ongoing in Minnesota, including the Nolan Wells case and the Minnesota immigration crackdown",
+      "insight": "The sheer number of federal investigations in Minnesota suggests a pattern of systemic issues that require attention. Further investigation is needed to uncover the root causes of these problems.",
+      "entities": [
+        "Nolan Wells",
+        "Minnesota government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "DOJ",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZVpZRXp0eEJSbDRQaXgxdV9MNXpMNFk4UGZiZVE5UHpjTzl5MGtxNXRXbEF1cllrSUZtamNzNzRTSUhuV3NPeTFISVo3TVV4YlF3cDhUWXZubERURW84N3UyX2QxcGZ1ZDZweTR6MjVsZ0Fwa0dlc0ZzSllSQ1JLaDlIUkl5QTdyak9EU0x1aw",
+      "id": "rf-1786722566405-w26oopv96",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-14T15:49:26.402Z",
+      "isNew": true
+    },
+    {
       "type": "Lack of safety protections",
       "description": "Workers in the Ames Goldsmith plant lacked safety protections before a fatal chemical leak",
       "insight": "This incident raises concerns about the prioritization of profits over worker safety. Further investigation is needed to determine the extent of the negligence and to hold those responsible accountable.",
@@ -964,30 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-20T09:58:34.081Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The Feeding Our Future scandal involves a large-scale COVID-19 relief fraud scheme",
-      "insight": "The extradition of Abdullah Mahdi Hassan suggests a significant development in the investigation, potentially leading to further charges and convictions.",
-      "entities": [
-        "Feeding Our Future",
-        "Abdullah Mahdi Hassan"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Garowe Online",
-      "sourceUrl": "https://www.garoweonline.com/en/somalia/somali-fugitive-in-250-million-u-s-covid-fraud-case-returned-from-somalia-to-face-charges",
-      "id": "rf-1784325098038-cw067ybs7",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-17T21:51:38.034Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +996,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-14T14:19:09.702Z"
+  "lastUpdated": "2026-08-14T15:49:26.402Z"
 }
