@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Federal investigation",
+      "description": "Federal investigation into Nolan Wells' death raises concerns about government accountability and transparency",
+      "insight": "I notice a pattern of federal investigations into high-profile cases, which may indicate a lack of trust in local authorities or a desire for federal oversight. Further investigation is needed to determine the scope and implications of these investigations.",
+      "entities": [
+        "Nolan Wells",
+        "DOJ"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "USA Today",
+      "sourceUrl": "https://usatoday.com/",
+      "id": "rf-1786789201105-28mx2tq51",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-15T10:20:01.101Z",
+      "isNew": true
+    },
+    {
       "type": "Government Surveillance",
       "description": "Government investigated left-leaning groups amid Minnesota unrest and surveilled them during Operation Metro Surge",
       "insight": "These investigations raise concerns about government surveillance and the treatment of left-leaning groups. It is essential to monitor these investigations and ensure that the government is not overstepping its bounds.",
@@ -964,30 +984,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-24T05:52:17.704Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Mark Walter, owner of the Lakers, is under investigation for financial improprieties at Guggenheim Partners.",
-      "insight": "This investigation raises concerns about the potential for financial improprieties in other organizations. Further research is needed to determine the extent of the issue.",
-      "entities": [
-        "Mark Walter",
-        "Guggenheim Partners"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Crypto Briefing",
-      "sourceUrl": "https://www.cryptobriefing.com/",
-      "id": "rf-1784581844582-52z76h3l3",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-20T21:10:44.578Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -995,7 +996,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-15T09:23:01.948Z"
+  "lastUpdated": "2026-08-15T10:20:01.101Z"
 }
