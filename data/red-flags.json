@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Government Surveillance",
+      "description": "Government investigated left-leaning groups amid Minnesota unrest and surveilled them during Operation Metro Surge",
+      "insight": "These investigations raise concerns about government surveillance and the treatment of left-leaning groups. It is essential to monitor these investigations and ensure that the government is not overstepping its bounds.",
+      "entities": [
+        "Left-leaning groups",
+        "Minnesota government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NYT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSjRxQ2Q2Z2djWFJPQWY0X09YelRaaWQwY3VSTFo1ZWZGR28xQmVzc1lMNW53TGd3dGpjeUtKOGMzMEVVN2ppRG8zYXl4SllKTDhDYzJEM05EQlRNb3prU1JtbEhoeFdyWjVCRW1EeXZoOWE5cHlxNnZKdTUtN0NYZ2hMaWVvRzIzaVNkOTBHRUdtemY5OEU5YU1zQ3hLd3hDdWFKbjJqdFNjOGgtdENjdXZjQUpmSnUxcVJjUg",
+      "id": "rf-1786778887005-dwdam7sf9",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-15T07:28:07.001Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "Federal surveillance operation in Minnesota targeted progressive groups, unions",
       "insight": "This pattern of surveillance raises concerns about government overreach and the potential for abuse of power. Further investigation is needed to determine the extent of this operation and its impact on civil liberties.",
@@ -964,38 +984,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-20T21:10:44.578Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The UAW President, Shawn Fain, is under federal investigation for embezzlement and corruption.",
-      "insight": "This investigation may indicate a larger pattern of corruption within the UAW. Further research is needed to determine the extent of the alleged wrongdoing.",
-      "entities": [
-        "Shawn Fain",
-        "UAW"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "USA Today",
-      "sourceUrl": "https://www.usatoday.com/story/news/2026/07/19/uaw-president-shawn-fain-faces-federal-investigation/8146333002/",
-      "id": "rf-1784541514084-1qazqqek2",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-20T09:58:34.081Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1012,5 +1015,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-15T06:33:10.522Z"
+  "lastUpdated": "2026-08-15T07:28:07.001Z"
 }
