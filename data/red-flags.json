@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "Federal surveillance operation",
+      "description": "Documents show that federal surveillance operation targeted progressive groups and unions in Minnesota",
+      "insight": "This raises concerns about government overreach and the potential for abuse of power. Further investigation is needed to determine the extent of the operation and the justification for targeting specific groups.",
+      "entities": [
+        "Progressive groups",
+        "Unions in Minnesota"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Hill",
+      "sourceUrl": "https://thehill.com/homenews/state-watch/574141-federal-surveillance-operation-targeted-progressive-groups-unions-in-minnesota",
+      "id": "rf-1786800483477-kltanr66y",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-15T13:28:03.473Z",
+      "isNew": true
+    },
+    {
+      "type": "Federal surveillance operation",
       "description": "Federal surveillance operation targeted progressive groups, unions in Minnesota",
       "insight": "This operation raises concerns about government overreach and targeting of left-leaning groups. Further investigation is needed to determine the scope and motivations behind this operation.",
       "entities": [
@@ -966,37 +986,21 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-24T17:28:42.565Z",
       "isNew": false
-    },
-    {
-      "type": "Data breach",
-      "description": "Data breach of patient records at Centers Lab NJ",
-      "insight": "This data breach highlights the need for increased security measures to protect patient records. Further investigation is needed to determine the extent of the breach and to identify any other individuals or organizations involved.",
-      "entities": [
-        "Centers Lab NJ"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "Schubert Jonckheer & Kolbe",
-      "sourceUrl": "https://www.sjklaw.com/news/privacy-alert-centers-lab-nj-under-investigation-for-data-breach-of-over-542000-patient-records",
-      "id": "rf-1784881469337-yb28553v1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-24T08:24:29.333Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
     "OSHA",
+    "FDA",
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1013,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-15T12:32:28.236Z"
+  "lastUpdated": "2026-08-15T13:28:03.473Z"
 }
