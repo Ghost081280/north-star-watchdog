@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_surveillance",
+      "description": "Federal agents surveilled left-leaning groups in Minnesota",
+      "insight": "I notice a pattern of federal surveillance targeting left-leaning groups in Minnesota. This raises concerns about government overreach and the potential for abuse of power. I recommend further investigation into the scope and justification of this surveillance.",
+      "entities": [
+        "DOJ",
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NYT investigation",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1786810866900-9djtz3tqc",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-15T16:21:06.896Z",
+      "isNew": true
+    },
+    {
       "type": "Federal surveillance operation",
       "description": "Documents show that federal surveillance operation targeted progressive groups and unions in Minnesota",
       "insight": "This raises concerns about government overreach and the potential for abuse of power. Further investigation is needed to determine the extent of the operation and the justification for targeting specific groups.",
@@ -967,25 +987,6 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-24T17:28:42.565Z",
       "isNew": false
-    },
-    {
-      "type": "Medicaid fraud",
-      "description": "Multiple cases of Medicaid fraud have been reported in the past week",
-      "insight": "These cases may be related to a larger scheme or trend of Medicaid fraud. Further research is needed to determine the extent of the fraud and any potential connections to other cases.",
-      "entities": [
-        "Minnesota Medicaid"
-      ],
-      "confidence": 90,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://kttc.com/2026/07/24/four-men-plead-guilty-in-2-2m-minnesota-medicaid-housing-fraud-scheme",
-      "id": "rf-1784914122569-hy9qu33s1",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-24T17:28:42.565Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
@@ -997,7 +998,10 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FEC",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1014,5 +1018,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-15T15:17:47.517Z"
+  "lastUpdated": "2026-08-15T16:21:06.896Z"
 }
