@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "federal_freeze",
+      "description": "The Trump administration has frozen federal funding for various programs, including those related to healthcare and education",
+      "insight": "I notice a pattern of federal funding freezes, which may indicate a larger issue with the allocation of federal funds. Further investigation is needed to determine the cause and scope of these freezes.",
+      "entities": [
+        "Harvard University",
+        "Trump Administration"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Daily Bruin",
+      "sourceUrl": "https://dailybruin.com/",
+      "id": "rf-1786849333535-fajgqo5c5",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T03:02:13.532Z",
+      "isNew": true
+    },
+    {
       "type": "federal_surveillance",
       "description": "Federal agents surveilled left-leaning groups in Minnesota",
       "insight": "I notice a pattern of federal surveillance targeting left-leaning groups in Minnesota. This raises concerns about government overreach and the potential for abuse of power. I recommend further investigation into the scope and justification of this surveillance.",
@@ -98,27 +118,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-15T07:28:07.001Z",
-      "isNew": false
-    },
-    {
-      "type": "federal_freeze",
-      "description": "Federal surveillance operation in Minnesota targeted progressive groups, unions",
-      "insight": "This pattern of surveillance raises concerns about government overreach and the potential for abuse of power. Further investigation is needed to determine the extent of this operation and its impact on civil liberties.",
-      "entities": [
-        "Minnesota",
-        "progressive groups",
-        "unions"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "ABC News",
-      "sourceUrl": "https://abcnews.go.com/US/documents-show-federal-surveillance-operation-minnesota-targeted-progressive-groups/story?id=123456",
-      "id": "rf-1786729848262-dtpj9fbgz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-14T17:50:48.258Z",
       "isNew": false
     },
     {
@@ -991,6 +990,7 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -998,7 +998,9 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "ProPublica Nonprofits",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1015,5 +1017,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-16T01:08:37.695Z"
+  "lastUpdated": "2026-08-16T03:02:13.532Z"
 }
