@@ -1,6 +1,26 @@
 {
   "flags": [
     {
+      "type": "Government surveillance",
+      "description": "Allegations of FBI surveillance of left-leaning groups in Minnesota",
+      "insight": "This raises concerns about government overreach and potential civil liberties violations. I recommend further investigation into the extent of this surveillance and its potential impact on democratic institutions.",
+      "entities": [
+        "FBI",
+        "Left-leaning groups"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NYT",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1786872279406-pywxeqhoo",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T09:24:39.402Z",
+      "isNew": true
+    },
+    {
       "type": "Government Overreach",
       "description": "The FBI's surveillance of left-leaning groups in Minnesota has raised concerns about government overreach and the potential for abuse of power.",
       "insight": "This pattern of surveillance is concerning and warrants further investigation. It is essential to ensure that government agencies are not abusing their power and infringing on civil liberties.",
@@ -969,29 +989,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-27T15:41:34.257Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation is underway in London City Hall, prompting concerns about potential corruption and abuse of power.",
-      "insight": "I suspect that this investigation may be related to a larger pattern of corruption and abuse of power in local government. Further investigation is needed to determine the scope of the issue.",
-      "entities": [
-        "London City Hall"
-      ],
-      "confidence": 70,
-      "priority": "high",
-      "source": "Lexington Herald Leader",
-      "sourceUrl": "https://www.kentucky.com/news/local/article273111715.html",
-      "id": "rf-1785085061447-0h017z4nz",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-26T16:57:41.442Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -999,7 +1002,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1016,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-16T08:25:31.786Z"
+  "lastUpdated": "2026-08-16T09:24:39.402Z"
 }
