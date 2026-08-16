@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-11T08:52:13.288Z",
-      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
-      "confidence": 0.3
-    },
-    {
       "date": "2026-08-11T09:58:13.793Z",
       "summary": "SIGNIFICANT: 1 large dollar amount findings, Federal involvement detected, Breaking news present",
       "confidence": 0.55
@@ -510,6 +505,11 @@
       "date": "2026-08-16T13:29:26.928Z",
       "summary": "NOTABLE: Federal involvement detected, Breaking news present",
       "confidence": 0.3
+    },
+    {
+      "date": "2026-08-16T14:19:34.233Z",
+      "summary": "ROUTINE: Breaking news present",
+      "confidence": 0.1
     }
   ],
   "patterns": [
@@ -568,8 +568,8 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3405,
-    "articlesProcessed": 169000,
+    "totalScans": 3406,
+    "articlesProcessed": 169050,
     "redFlagsFound": 3566,
     "accuratePredictions": 0,
     "falsePositives": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "Where did the Unknown allegedly go in Minnesota immigration crackdown investigation?",
-        "Where did the Unknown allegedly go in Nolan Wells' death investigation?",
-        "What other organizations is Claudio Castro connected to?"
+        "What other organizations is Claudio Castro connected to?",
+        "Where did the Unknown allegedly go in Nolan Wells Case?",
+        "Are any of these 2 figures connected to each other?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-16T13:29:26.928Z",
-  "lastUpdated": "2026-08-16T13:29:26.929Z"
+  "lastReflection": "2026-08-16T14:19:34.233Z",
+  "lastUpdated": "2026-08-16T14:19:34.234Z"
 }
