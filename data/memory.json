@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-11T17:02:44.419Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-08-11T18:58:28.187Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-16T20:18:27.244Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-08-16T21:17:44.497Z",
+      "summary": "SIGNIFICANT: 1 new legal actions, 1 high-confidence findings, Breaking news present",
+      "confidence": 0.5
     }
   ],
   "patterns": [
@@ -539,9 +539,6 @@
     }
   ],
   "openQuestions": [
-    "Where did the Unknown allegedly go in Nolan Wells case?",
-    "What other organizations is Gregory Henderson Jr. connected to?",
-    "What other organizations is Former assistant Anoka County attorney connected to?",
     "Where did the Unknown allegedly go in Minnesota Unrest Investigation?",
     "Where did the Unknown allegedly go in Operation Metro Surge?",
     "Where did the Unknown allegedly go in Federal surveillance operation in Minnesota?",
@@ -558,7 +555,10 @@
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
     "Where did the $9B allegedly go in Minnesota Somali Fraud Hearing?",
-    "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?"
+    "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?",
+    "What other organizations is Judge Juan Merchan's daughter connected to?",
+    "Where did the Unknown allegedly go in FBI probe into alleged Chinese espionage?",
+    "Where did the Unknown allegedly go in Federal investigation into anti-Israel nonprofit?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3412,
-    "articlesProcessed": 169350,
-    "redFlagsFound": 3568,
+    "totalScans": 3413,
+    "articlesProcessed": 169400,
+    "redFlagsFound": 3570,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -578,6 +578,26 @@
     "tweetsPosted": 0
   },
   "currentFocus": [
+    {
+      "type": "post_to_x",
+      "priority": "high",
+      "description": "Post 1 critical findings to X",
+      "data": [
+        {
+          "type": "Sex trafficking organization",
+          "description": "A former assistant Anoka County attorney has been charged with helping operate a sex trafficking organization.",
+          "insight": "This highlights the need for increased awareness and action to prevent sex trafficking and the importance of holding those in power accountable.",
+          "entities": [
+            "Former assistant Anoka County attorney",
+            "Sex trafficking organization"
+          ],
+          "confidence": 90,
+          "priority": "high",
+          "source": "CBS News",
+          "sourceUrl": "https://www.cbsnews.com/news/former-anoka-county-attorney-charged-sex-trafficking/"
+        }
+      ]
+    },
     {
       "type": "investigate_questions",
       "priority": "medium",
@@ -594,6 +614,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-16T20:18:27.244Z",
-  "lastUpdated": "2026-08-16T20:18:27.244Z"
+  "lastReflection": "2026-08-16T21:17:44.497Z",
+  "lastUpdated": "2026-08-16T21:17:44.498Z"
 }

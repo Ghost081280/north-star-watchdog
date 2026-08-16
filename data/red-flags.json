@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Firm under investigation",
+      "description": "A firm co-owned by Judge Juan Merchan's daughter is under investigation.",
+      "insight": "This raises concerns about potential conflicts of interest and the need for transparency in investigations.",
+      "entities": [
+        "Judge Juan Merchan's daughter",
+        "Firm under investigation"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "The Independent",
+      "sourceUrl": "https://www.independent.co.uk/news/world/americas/us-politics/trump-hush-money-trial-investigation-latest-b2168446.html",
+      "id": "rf-1786915064503-0egidiso8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T21:17:44.499Z",
+      "isNew": true
+    },
+    {
+      "type": "Sex trafficking organization",
+      "description": "A former assistant Anoka County attorney has been charged with helping operate a sex trafficking organization.",
+      "insight": "This highlights the need for increased awareness and action to prevent sex trafficking and the importance of holding those in power accountable.",
+      "entities": [
+        "Former assistant Anoka County attorney",
+        "Sex trafficking organization"
+      ],
+      "confidence": 90,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/news/former-anoka-county-attorney-charged-sex-trafficking/",
+      "id": "rf-1786915064503-bux64efel",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T21:17:44.499Z",
+      "isNew": true
+    },
+    {
       "type": "Conflict of interest",
       "description": "Judge Juan Merchan's daughter's firm is under federal investigation, potentially creating a conflict of interest in his handling of Trump's hush-money trial",
       "insight": "This could indicate a larger pattern of corruption or cronyism within the US justice system. Further investigation is needed to determine the extent of this potential conflict of interest.",
@@ -952,49 +992,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-31T14:12:17.990Z",
       "isNew": false
-    },
-    {
-      "type": "Fraud",
-      "description": "A fraud case involving Feeding Our Future, with multiple defendants pleading guilty.",
-      "insight": "This case highlights the need for greater oversight and accountability in the non-profit sector. Further investigation is needed to determine the extent of the fraud and the motivations of the perpetrators.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 70,
-      "priority": "medium",
-      "source": "DOJ",
-      "sourceUrl": "https://www.justice.gov/usao-mn/press-release/20220727",
-      "id": "rf-1785507137993-12gqqymdy",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-31T14:12:17.990Z",
-      "isNew": false
-    },
-    {
-      "type": "Cyberattack",
-      "description": "Possible Iran-linked cyberattack on Minnesota water systems",
-      "insight": "I suspect that the cyberattack on Minnesota water systems may be linked to a larger scheme, potentially involving Iranian hackers. Further investigation is needed to determine the extent of the attack and the parties involved.",
-      "entities": [
-        "Iran",
-        "Minnesota water systems"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.tippahnews.com/news/national/us-minnesota-investigating-possible-iran-linked-cyberattack-on-more-than-30-water-systems",
-      "id": "rf-1785478273400-mq8om7eah",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-31T06:11:13.397Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1005,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-16T20:18:27.245Z"
+  "lastUpdated": "2026-08-16T21:17:44.499Z"
 }
