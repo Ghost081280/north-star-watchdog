@@ -12,11 +12,6 @@
   },
   "insights": [
     {
-      "date": "2026-08-11T11:41:55.223Z",
-      "summary": "ROUTINE: Breaking news present",
-      "confidence": 0.1
-    },
-    {
       "date": "2026-08-11T12:57:53.778Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
@@ -510,6 +505,11 @@
       "date": "2026-08-16T16:21:28.295Z",
       "summary": "ROUTINE: Breaking news present",
       "confidence": 0.1
+    },
+    {
+      "date": "2026-08-16T17:17:42.408Z",
+      "summary": "NOTABLE: Federal involvement detected, Breaking news present",
+      "confidence": 0.3
     }
   ],
   "patterns": [
@@ -539,7 +539,6 @@
     }
   ],
   "openQuestions": [
-    "What other organizations is Massachusetts Mayor connected to?",
     "Where did the Unknown allegedly go in Nolan Wells case?",
     "What other organizations is Gregory Henderson Jr. connected to?",
     "What other organizations is Former assistant Anoka County attorney connected to?",
@@ -558,7 +557,8 @@
     "Where did the $9B allegedly go in Minnesota Somali fraud investigation?",
     "What other organizations is Nancy Guthrie connected to?",
     "Where did the Unknown allegedly go in Nancy Guthrie Investigation?",
-    "Where did the $9B allegedly go in Minnesota Somali Fraud Hearing?"
+    "Where did the $9B allegedly go in Minnesota Somali Fraud Hearing?",
+    "Where did the $9B allegedly go in Minnesota Somali Fraud Investigation?"
   ],
   "experiments": [],
   "confidence": {
@@ -568,9 +568,9 @@
     "osintEnrichment": 0.5
   },
   "stats": {
-    "totalScans": 3408,
-    "articlesProcessed": 169150,
-    "redFlagsFound": 3567,
+    "totalScans": 3409,
+    "articlesProcessed": 169200,
+    "redFlagsFound": 3568,
     "accuratePredictions": 0,
     "falsePositives": 0,
     "issuesCreated": 0,
@@ -583,9 +583,9 @@
       "priority": "medium",
       "description": "Investigate 20 open questions",
       "questions": [
-        "What other organizations is Claudio Castro connected to?",
-        "Where did the Unknown allegedly go in Nolan Wells Case?",
-        "Are any of these 2 figures connected to each other?"
+        "What other organizations is Massachusetts Mayor connected to?",
+        "Where did the Unknown allegedly go in Nolan Wells case?",
+        "What other organizations is Gregory Henderson Jr. connected to?"
       ]
     }
   ],
@@ -594,6 +594,6 @@
     "Better pattern detection across scans",
     "More targeted OSINT queries"
   ],
-  "lastReflection": "2026-08-16T16:21:28.295Z",
-  "lastUpdated": "2026-08-16T16:21:28.296Z"
+  "lastReflection": "2026-08-16T17:17:42.408Z",
+  "lastUpdated": "2026-08-16T17:17:42.408Z"
 }
