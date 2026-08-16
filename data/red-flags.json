@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Conflict of interest",
+      "description": "Judge Juan Merchan's daughter's firm is under investigation, raising concerns about conflict of interest in Trump's hush-money trial",
+      "insight": "This development raises questions about the integrity of the trial and the potential for bias. Further investigation is needed to determine the extent of the conflict of interest and its impact on the trial.",
+      "entities": [
+        "Judge Juan Merchan",
+        "Trump"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "Hindustan Times",
+      "sourceUrl": "https://www.hindustantimes.com",
+      "id": "rf-1786886966934-xd5x0rmpu",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T13:29:26.930Z",
+      "isNew": true
+    },
+    {
+      "type": "Government surveillance",
+      "description": "Federal agents surveilled left-leaning groups in Minnesota, raising concerns about government overreach and potential targeting of certain groups",
+      "insight": "This development raises questions about the extent of government surveillance and the potential for abuse of power. Further investigation is needed to determine the scope of the surveillance and its impact on the targeted groups.",
+      "entities": [
+        "US Federal Government",
+        "Minnesota"
+      ],
+      "confidence": 70,
+      "priority": "medium",
+      "source": "NYT",
+      "sourceUrl": "https://www.nytimes.com",
+      "id": "rf-1786886966934-qflp7i02w",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T13:29:26.930Z",
+      "isNew": true
+    },
+    {
       "type": "Government surveillance",
       "description": "Allegations of FBI surveillance of left-leaning groups in Minnesota",
       "insight": "This raises concerns about government overreach and potential civil liberties violations. I recommend further investigation into the extent of this surveillance and its potential impact on democratic institutions.",
@@ -949,50 +989,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-30T05:38:22.972Z",
       "isNew": false
-    },
-    {
-      "type": "federal_investigation",
-      "description": "Four men have been charged with using ChatGPT to fake records in a Medicaid scheme",
-      "insight": "This case highlights the need for increased scrutiny of Medicaid claims and the potential for new technologies to be used in fraudulent activities",
-      "entities": [
-        "Four Men",
-        "Minnesota Medicaid Scheme"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "DOJ",
-      "sourceUrl": "https://medicaldaily.com/four-men-admit-using-chatgpt-to-fake-records-in-a-2-2-million-minnesota-medicaid-scheme",
-      "id": "rf-1785348340123-cpsjv432d",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-29T18:05:40.119Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "A federal investigation has been launched into a video appearing to show a man kicking a sea lion on a California beach.",
-      "insight": "This incident highlights the need for increased awareness and enforcement of animal welfare laws. It also raises questions about the individual's motivations and potential connections to other cases of animal abuse.",
-      "entities": [
-        "USDA",
-        "California authorities"
-      ],
-      "confidence": 80,
-      "priority": "medium",
-      "source": "NBC News",
-      "sourceUrl": "https://www.nbcnews.com/news/us-news/federal-officials-investigating-after-video-appears-show-man-kicking-sea-n1277441",
-      "id": "rf-1785166894261-1enijoisn",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-27T15:41:34.257Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1000,7 +1002,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1017,5 +1020,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-16T12:33:44.347Z"
+  "lastUpdated": "2026-08-16T13:29:26.930Z"
 }
