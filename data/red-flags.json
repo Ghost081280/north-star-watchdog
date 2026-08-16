@@ -1,6 +1,46 @@
 {
   "flags": [
     {
+      "type": "Government Overreach",
+      "description": "The FBI's surveillance of left-leaning groups in Minnesota has raised concerns about government overreach and the potential for abuse of power.",
+      "insight": "This pattern of surveillance is concerning and warrants further investigation. It is essential to ensure that government agencies are not abusing their power and infringing on civil liberties.",
+      "entities": [
+        "FBI",
+        "Left-leaning groups"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "NYT",
+      "sourceUrl": "https://www.nytimes.com/",
+      "id": "rf-1786852206553-12s3bvzei",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T03:50:06.550Z",
+      "isNew": true
+    },
+    {
+      "type": "Sex Trafficking",
+      "description": "The sex trafficking organization operated by a former assistant Anoka County attorney has raised concerns about the prevalence of sex trafficking in the state.",
+      "insight": "This case highlights the need for increased awareness and action to prevent sex trafficking. It is essential to investigate and prosecute those involved in such organizations to ensure justice for the victims.",
+      "entities": [
+        "Anoka County",
+        "Sex trafficking organization"
+      ],
+      "confidence": 70,
+      "priority": "high",
+      "source": "CBS News",
+      "sourceUrl": "https://www.cbsnews.com/",
+      "id": "rf-1786852206553-ko42osms8",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-16T03:50:06.550Z",
+      "isNew": true
+    },
+    {
       "type": "federal_freeze",
       "description": "The Trump administration has frozen federal funding for various programs, including those related to healthcare and education",
       "insight": "I notice a pattern of federal funding freezes, which may indicate a larger issue with the allocation of federal funds. Further investigation is needed to determine the cause and scope of these freezes.",
@@ -18,7 +58,7 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-16T03:02:13.532Z",
-      "isNew": true
+      "isNew": false
     },
     {
       "type": "federal_surveillance",
@@ -948,48 +988,11 @@
       "sourceCount": 1,
       "detectedAt": "2026-07-26T16:57:41.442Z",
       "isNew": false
-    },
-    {
-      "type": "Potential fraud",
-      "description": "Ilhan Omar's sister was found to have used the same home address as figures involved in a $250M fraud scandal",
-      "insight": "This could indicate a potential connection between Ilhan Omar's family and the fraud scandal, and warrants further investigation",
-      "entities": [
-        "Ilhan Omar's sister"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "Dallas Express",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaGtaSGJvVW1saTBpb00yb1J1QTNnbEJhdTRIZ3ZoTTUydVJCSzlka0xpUGhUdGdrZEcwX2l4RG9DaE13UzdFVmJ1ajNjdW0xQXRRam9MSTVpczhNV2hYY1BjZ1FnUVZ1VlUwUURCTmxYQXlxTDkxV3Y5d1JXZVVNLXJXRmpScGU4NWtvYnBkc19zaXBhcC15VjNIUEc4Yk5jUkhWUm9uTDlYRER10g",
-      "id": "rf-1784991671001-gt8glbl1t",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-25T15:01:10.997Z",
-      "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating Muskegon Heights city hall",
-      "insight": "This investigation may be related to other cases of corruption and fraud in the area. Further research is needed to determine the extent of the investigation and any potential connections to other cases.",
-      "entities": [
-        "Muskegon Heights"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "FBI",
-      "sourceUrl": "https://www.fox17online.com/news/local-news/muskegon-heights/its-a-bed-of-corruption-feds-raid-muskegon-heights-city-hall-neighbors-call-for-answers",
-      "id": "rf-1784914122569-7homwlhyf",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-24T17:28:42.565Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
     "FEC",
     "OIG Exclusions",
     "USASpending",
@@ -999,7 +1002,6 @@
     "MN Campaign Finance",
     "MN DHS Licensing",
     "MN Transparency",
-    "ProPublica Nonprofits",
     "FDA"
   ],
   "sourcesChecked": [
@@ -1017,5 +1019,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-16T03:02:13.532Z"
+  "lastUpdated": "2026-08-16T03:50:06.550Z"
 }
