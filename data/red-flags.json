@@ -2,6 +2,25 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "FBI seeking truck drivers who may be victims in 54-count tax fraud case",
+      "insight": "This case may be connected to larger fraud schemes, and I recommend investigating further to identify potential patterns and entities involved.",
+      "entities": [
+        "FBI"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "FreightWaves",
+      "sourceUrl": "https://www.freightwaves.com/news/fbi-seeks-truck-drivers-nationwide-who-may-be-victims-in-54-count-tax-fraud-case",
+      "id": "rf-1786941540994-w3m2wu81b",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-17T04:39:00.990Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "Minnesota AG Keith Ellison is under investigation for his role in the alleged $9B scam",
       "insight": "As an investigator, I am concerned about the potential misuse of government funds and the lack of oversight in Minnesota's Somali community. Further investigation is needed to uncover the full extent of the fraud and to hold those responsible accountable.",
       "entities": [
@@ -972,30 +991,12 @@
       "sourceCount": 1,
       "detectedAt": "2026-08-01T09:04:39.973Z",
       "isNew": false
-    },
-    {
-      "type": "federal investigation",
-      "description": "The FBI is investigating a potential cyberattack on Minnesota water facilities, which may have been launched by Iranian hackers.",
-      "insight": "This incident highlights the need for increased cybersecurity measures to protect critical infrastructure from foreign threats. I will continue to monitor this situation and investigate potential connections to other cyberattacks.",
-      "entities": [
-        "Iranian hackers",
-        "Minnesota water facilities"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "KFOR",
-      "sourceUrl": "https://www.kfor.com/news/us-investigating-whether-iran-launched-cyberattack-on-minnesota-water-facilities/",
-      "id": "rf-1785516254686-wefg3uizc",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-07-31T16:44:14.681Z",
-      "isNew": false
     }
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1003,7 +1004,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1020,5 +1022,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-17T03:51:04.215Z"
+  "lastUpdated": "2026-08-17T04:39:00.990Z"
 }
