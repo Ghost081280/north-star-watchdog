@@ -2,6 +2,26 @@
   "flags": [
     {
       "type": "federal investigation",
+      "description": "The US Senate is investigating alleged fraud in Minnesota's Somali community, and Minnesota AG Keith Ellison has been grilled at a hearing.",
+      "insight": "I suspect that there may be a larger pattern of fraud in Minnesota, and the investigation into the Somali community may be just the tip of the iceberg. Further investigation is needed to uncover the full extent of the fraud.",
+      "entities": [
+        "Keith Ellison",
+        "Minnesota State Government"
+      ],
+      "confidence": 80,
+      "priority": "high",
+      "source": "US Senate",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/world-news/you-helped-fraudsters-in-9b-scam-senators-grill-minnesota-ag-keith-ellison-at-explosive-hearing/articleshow/98315452.cms",
+      "id": "rf-1786949374360-pgpzx28bz",
+      "apisUsed": [
+        "Google News"
+      ],
+      "sourceCount": 1,
+      "detectedAt": "2026-08-17T06:49:34.356Z",
+      "isNew": true
+    },
+    {
+      "type": "federal investigation",
       "description": "FBI seeking truck drivers who may be victims in 54-count tax fraud case",
       "insight": "This case may be connected to larger fraud schemes, and I recommend investigating further to identify potential patterns and entities involved.",
       "entities": [
@@ -476,25 +496,6 @@
       ],
       "sourceCount": 1,
       "detectedAt": "2026-08-11T20:01:16.478Z",
-      "isNew": false
-    },
-    {
-      "type": "fraud",
-      "description": "A Minnesota fugitive has pleaded not guilty in a $250 million fraud case",
-      "insight": "This case suggests a large-scale fraud operation in Minnesota, and further investigation is needed to uncover the extent of the fraud and those involved.",
-      "entities": [
-        "Feeding Our Future"
-      ],
-      "confidence": 80,
-      "priority": "high",
-      "source": "hiiraan.com",
-      "sourceUrl": "https://hiiraan.com/extradited-minnesota-fugitive-pleads-not-guilty-in-250-million-feeding-our-future-fraud-case/",
-      "id": "rf-1786463957409-ly8o738me",
-      "apisUsed": [
-        "Google News"
-      ],
-      "sourceCount": 1,
-      "detectedAt": "2026-08-11T15:59:17.406Z",
       "isNew": false
     },
     {
@@ -995,6 +996,8 @@
   ],
   "sourcesUsed": [
     "Google News",
+    "ProPublica Nonprofits",
+    "FEC",
     "OIG Exclusions",
     "USASpending",
     "SEC EDGAR",
@@ -1002,7 +1005,8 @@
     "HUD",
     "MN Campaign Finance",
     "MN DHS Licensing",
-    "MN Transparency"
+    "MN Transparency",
+    "FDA"
   ],
   "sourcesChecked": [
     "Google News",
@@ -1019,5 +1023,5 @@
     "MN DHS Licensing",
     "MN Transparency"
   ],
-  "lastUpdated": "2026-08-17T05:32:59.061Z"
+  "lastUpdated": "2026-08-17T06:49:34.356Z"
 }
